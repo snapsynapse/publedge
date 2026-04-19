@@ -11,6 +11,73 @@ Per-content-type conventions for file paths, frontmatter, image handling, hub-vs
 
 All content is markdown with YAML frontmatter. Every entity carries `@type` mapping to a gist IRI per `/schema/json/context.jsonld`.
 
+## Spec version
+
+Current: **v0.2** (2026-04-19). Changes from v0.1:
+- Decoupled `@type` (artifact class) from `obligation_kind` (posture chip). Top-level `@type` is always one of `gist:Agreement`, `gist:Contract`, or `gist:Determination`, selected by artifact kind, not by whether the position permits or restricts conduct.
+- Added `type:` enum to lock instrument kinds.
+- Formalized shared "interpretive-instrument core fields" block used by JIA, RMA, no-action letter, advisory opinion, and private letter ruling.
+- Added `reliance_scope`, `source`, `publication_citations[]`, withdrawal fields, `redaction_level`.
+- Canonicalized `statute_anchors[]` as `{cite, url}` objects.
+- Canonicalized authority fields: both `authority:` (slug) and `issued_by:` (typed block) are required.
+- Retired free-text `prior_art_note`; disclaimer text is composed by the renderer from structured `source` + `status` fields.
+
+## Interpretive-instrument core fields
+
+Applies to every artifact that interprets a rule for identified facts: JIA, RMA, no-action letter, advisory opinion, private letter ruling, revenue ruling, interpretive letter. Type-specific sections below extend this core.
+
+```yaml
+---
+"@type": "<gist:Agreement | gist:Contract | gist:Determination>"   # artifact class
+id: PL-<TYPE>-<NNNN>                # permanent identifier
+slug: <kebab-case-slug>
+title: "<Human-readable title>"
+type: <jia | rma | no-action-letter | advisory-opinion | private-letter-ruling | revenue-ruling | interpretive-letter>
+source: <authority-issued | demonstration-remap | publedge-original-draft>
+jurisdiction: <us-federal | us-ut | us-ca | ...>
+authority: <slug>                   # URL-routing slug, e.g. sec-corpfin, cfpb, utah-oaip, irs-chief-counsel
+issued_by:                          # typed block for semantic consumers
+  "@type": "<gist:GovernmentOrganization | gist:SubCountryGovernment | gist:Organization>"
+  name: "<Full authority name>"
+  ref: "<authority homepage URL>"
+issuance_event: gist:Determination
+enacted: YYYY-MM-DD
+effective: YYYY-MM-DD
+official_url: "<canonical authority-hosted URL>"
+obligation_kind: [<requirement | restriction | permission>]   # one or more
+reliance_scope: <requesting-party-only | similarly-situated-third-parties | public | unspecified>
+requesting_party: "<name>" | null   # null when authority-initiated
+interpreting_authority: "<name>"    # human-readable duplicate of issued_by.name
+parties: []                         # JIA/RMA only; omit otherwise
+statute_anchors:
+  - cite: "<Bluebook-style citation>"
+    url: "<resolvable URL; prefer EveryAILaw, then eCFR, then LII>"
+publication_citations:              # where the instrument itself is published
+  - cite: "<e.g. 87 Fed. Reg. 39733>"
+    url: "<URL to that publication>"
+status: <draft | reviewed | published | superseded | withdrawn>
+supersedes: null | <PL-id>
+superseded_by: null | <PL-id>
+withdrawn_date: null | YYYY-MM-DD
+withdrawal_reason: null | "<short phrase>"
+withdrawn_by_instrument: null | <PL-id or URL>
+hash_chain_prev: null               # populated by skill-provenance verifier
+disclaimer: "<composed by renderer from source + status; override only when needed>"
+last_verified: YYYY-MM-DD
+schema: "https://publedge.org/schema/instrument.schema.json"
+created: YYYY-MM-DD
+modified: YYYY-MM-DD
+---
+```
+
+### Field notes
+
+- **`@type` mapping:** JIA = `gist:Agreement`, RMA = `gist:Contract`, all agency-issued interpretations (no-action letter, advisory opinion, PLR, revenue ruling, interpretive letter) = `gist:Determination`. The permission/restriction/requirement distinction belongs in `obligation_kind`, not the top-level class.
+- **`source` values:** `authority-issued` means the named authority produced and signed the artifact. `demonstration-remap` means PubLedge restructured a publicly archived external artifact into PubLedge frontmatter to illustrate the schema. `publedge-original-draft` means PubLedge authored a suggested interpretation awaiting authority review.
+- **`statute_anchors[]` vs `publication_citations[]`:** Anchors point at the rule the instrument interprets; publication citations point at where the instrument itself can be found in an official publication series (Federal Register, IRS Bulletin, SEC archive). They serve different queries.
+- **Withdrawal vs supersession:** Supersession replaces the position with a new one (`superseded_by` is required). Withdrawal rescinds without replacement (`withdrawn_date` and `withdrawal_reason` required; `withdrawn_by_instrument` optional).
+- **`disclaimer` composition:** Renderer generates disclaimer text from `source` and `status`. Override the field only when the source artifact carries authority-specific reliance language that must be preserved verbatim.
+
 ## Image conventions
 
 OG image per portfolio convention: `/imgs/og.png` (1200×630). Per-content OG override optional via frontmatter `og_image:` field. All other inline images live under `/imgs/{section}/{slug}-{descriptor}.{ext}` — kebab-case, no spaces.
@@ -19,75 +86,107 @@ OG image per portfolio convention: `/imgs/og.png` (1200×630). Per-content OG ov
 
 ### 1. JIA (Joint Interpretation Agreement)
 
-**Path:** `data/registry/jia/{slug}.md`
+**Path:** `data/registry/jia/{slug}.md` (canonical) or `data/examples/instruments/{slug}.md` (demonstration remaps).
 **Renders to:** `/reference/registry/{slug}/`
-**Hub appearance:** Title, jurisdiction badge, issuance date, obligation kind chip (requirement / restriction / permission), 1-line summary.
+**Hub appearance:** Title, jurisdiction badge, issuance date, obligation-kind chip, reliance-scope chip, source chip, 1-line summary.
 
-**Required frontmatter:**
+Uses core fields. JIA-specific additions:
 
 ```yaml
----
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Agreement"
-id: PL-JIA-0001
-slug: utah-mental-health-chatbot-disclosure-2026q2
-title: "Utah Mental Health Chatbot Disclosure — Joint Interpretation"
-jurisdiction: us-ut
-issuance_event: gist:Determination
-issued_date: 2026-04-15
-issued_by:
-  "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
-  name: "Utah Office of Artificial Intelligence Policy (OAIP)"
-  ref: "https://commerce.utah.gov/ai/learning-lab/"
+id: PL-JIA-<NNNN>
+type: jia
 parties:
-  - name: "Acme Health Tech Inc."
+  - name: "<Requesting party>"
     role: requesting_party
-  - name: "Utah OAIP"
+  - name: "<Authority>"
     role: interpreting_authority
-obligation_kind: [requirement, permission]   # any of: requirement, restriction, permission
-statute_anchors:
-  - cite: "Utah Code §13-72a-203"
-    url: "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure"
-  - cite: "Utah Code §13-72a-201"
-    url: "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-data-protection"
 terms:
   - "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm"
-    text: "Provider must display the standardized GenAI disclosure on first session and on session resumption after 30 minutes of inactivity."
-  - "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Permission"
-    text: "Compliance with the foregoing constitutes safe harbor under §13-75-104 for the disclosed product."
-prior_art:
-  - "SEC No-Action Letter, In re Acme Robo-Advisor (2019)"
-status: draft        # draft | reviewed | published | superseded
-supersedes: null
-superseded_by: null
-hash_chain_prev: null   # populated by skill-provenance verifier
-disclaimer: "Suggested prior art. Not official OAIP output."
-created: 2026-04-15
-modified: 2026-04-18
----
+    text: "<Obligation in the agreement>"
 ```
 
-**Body sections (recommended order):**
-
-1. Summary (2–3 sentences)
-2. Background / requesting party context
-3. Question(s) presented
-4. Interpretation
-5. Terms (mirrors frontmatter `terms[]` in narrative form)
-6. Statute citations (mirrors frontmatter `statute_anchors[]` with reasoning)
-7. Limitations
-8. Effective date and review trigger
+**Body sections (recommended order):** Summary · Background · Question(s) presented · Interpretation · Terms (narrative) · Statute citations (reasoning) · Limitations · Effective date and review trigger.
 
 ### 2. RMA (Regulatory Mitigation Agreement)
 
 **Path:** `data/registry/rma/{slug}.md`
 **Renders to:** `/reference/registry/{slug}/`
-**Hub appearance:** Same as JIA but with `gist:Contract` chip indicating enforceability.
+**Hub appearance:** Same as JIA with `gist:Contract` chip indicating enforceability.
 
-Frontmatter is identical to JIA except:
-- `"@type": "https://w3id.org/semanticarts/ns/ontology/gist/Contract"`
-- `id: PL-RMA-0001`
-- `enforcement_authority:` block required
-- `term_length:` and `review_date:` required
+Uses core fields. RMA-specific additions:
+
+```yaml
+"@type": "https://w3id.org/semanticarts/ns/ontology/gist/Contract"
+id: PL-RMA-<NNNN>
+type: rma
+enforcement_authority:
+  "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
+  name: "<Authority>"
+  ref: "<URL>"
+term_length: "<e.g. 24 months>"
+review_date: YYYY-MM-DD
+```
+
+### 2a. No-action letter
+
+**Path:** `data/registry/nal/{slug}.md` or `data/examples/instruments/{slug}.md` (remaps).
+**Renders to:** `/reference/registry/{slug}/`
+**Hub appearance:** Title, jurisdiction badge, division/office, `reliance_scope: similarly-situated-third-parties` chip, 1-line summary.
+
+Uses core fields. No-action-specific additions:
+
+```yaml
+"@type": "https://w3id.org/semanticarts/ns/ontology/gist/Determination"
+id: PL-NAL-<AUTHORITY>-<NNNN>      # e.g. PL-NAL-SEC-0001
+type: no-action-letter
+obligation_kind: [permission]      # no-action = forward-looking non-enforcement
+reliance_scope: similarly-situated-third-parties   # default; override only if letter limits
+```
+
+**Body sections:** Summary · Background · Question presented · Staff position (table) · Reliance scope · PubLedge schema mapping · Limitations · Sources.
+
+### 2b. Advisory opinion
+
+**Path:** `data/registry/ao/{slug}.md` or `data/examples/instruments/{slug}.md` (remaps).
+**Renders to:** `/reference/registry/{slug}/`
+
+Uses core fields. Advisory-opinion-specific additions:
+
+```yaml
+"@type": "https://w3id.org/semanticarts/ns/ontology/gist/Determination"
+id: PL-AO-<AUTHORITY>-<NNNN>
+type: advisory-opinion
+reliance_scope: public             # default for bureau-issued advisory opinions
+requesting_party: null | "<name>"  # null when authority-initiated
+```
+
+Advisory opinions are typically authority-initiated interpretive rules; `requesting_party: null` is common and the renderer must treat null as structured absence, not missing data.
+
+### 2c. Private letter ruling (PLR) and revenue ruling
+
+**Path:** `data/registry/plr/{slug}.md` or `data/examples/instruments/{slug}.md` (remaps).
+**Renders to:** `/reference/registry/{slug}/`
+
+Uses core fields. PLR-specific additions:
+
+```yaml
+"@type": "https://w3id.org/semanticarts/ns/ontology/gist/Determination"
+id: PL-PLR-<NNNN>                  # or PL-REV-<NNNN> for revenue rulings
+type: private-letter-ruling        # or revenue-ruling
+reliance_scope: requesting-party-only     # PLR default; revenue rulings = public
+redaction_level: <none | partial | full>  # FOIA-released PLRs are redacted
+requesting_party: "[Taxpayer redacted]" | "<name>"
+```
+
+- **`redaction_level`:** `full` = taxpayer identifying details removed (standard FOIA PLR release). `partial` = some facts redacted but requesting party identified. `none` = un-redacted (rare; typically revenue rulings, not PLRs).
+- PLRs cannot be cited as precedent by other taxpayers; renderer should surface this prominently given `reliance_scope: requesting-party-only`.
+
+### 2d. Interpretive letter / revenue ruling / other
+
+For CFTC interpretive letters, FINRA interpretive letters, state AG opinions, and similar, use the no-action-letter or advisory-opinion template as structurally closest, with `type:` set to the specific enum value. No additional fields required.
+
+
 
 ### 3. Template
 
@@ -257,9 +356,32 @@ Every detail page exposes three machine views in the page header:
 - `View as JSON` — frontmatter + body sections as structured JSON
 - `View as JSON-LD` — same payload with `@context` bound to gist
 
-## Disclaimer requirement
+## Reliance scope
 
-Every JIA, RMA, and template ships with a `disclaimer:` frontmatter field. Default text: "Suggested prior art. Not official OAIP (or other authority) output." The build renders this prominently in the page header until `status: published` is reached and lawyer-review checkpoint is signed off.
+`reliance_scope` captures who, beyond the two named parties, may rely on the interpretation. It maps onto a long-standing distinction across existing programs and is required on every JIA, RMA, and no-action-letter remap.
+
+| Value | Meaning | Typical source program |
+|-------|---------|------------------------|
+| `requesting-party-only` | Only the named requesting party may rely; third parties cannot cite as authority. | IRS Private Letter Rulings |
+| `similarly-situated-third-parties` | Third parties matching the material facts may rely; reliance scope follows the facts, not the name. | SEC / CFTC No-Action Letters, CFPB Advisory Opinions |
+| `public` | The interpretation is intended as general guidance for any regulated party. | Revenue Rulings, CFPB interpretive rules |
+| `unspecified` | Source artifact does not address reliance scope; must be resolved before `status: reviewed`. | Bespoke sandbox agreements without explicit scope language |
+
+When remapping an external artifact, choose the value that matches the letter's own language. When drafting a new PubLedge instrument, the default is `requesting-party-only` unless the authority explicitly extends scope.
+
+## Disclaimer composition
+
+Every interpretive instrument carries a `disclaimer:` field, but v0.2 moves the default text out of per-file YAML and into the renderer. Renderer keys off `source` + `status`:
+
+| `source` | `status` | Rendered disclaimer |
+|----------|----------|---------------------|
+| `authority-issued` | `published` | None (the authority's own reliance language in the body governs). |
+| `authority-issued` | `superseded` or `withdrawn` | "This instrument is no longer in effect. See `superseded_by` / `withdrawn_date`." |
+| `demonstration-remap` | any | "Demonstration remap of a publicly archived authority artifact. Not an authority-issued PubLedge instrument. The official source controls." |
+| `publedge-original-draft` | `draft` or `reviewed` | "Suggested prior art. Not authority-issued output. Awaiting lawyer review and authority sign-off before promotion." |
+| `publedge-original-draft` | `published` | Error — original drafts cannot reach `published` without authority sign-off, which changes `source` to `authority-issued`. |
+
+Override the `disclaimer:` field only when the source artifact carries authority-specific reliance language that must be preserved verbatim (e.g., an SEC no-action letter's exact staff caveat). Overrides are rendered in addition to, not in place of, the composed disclaimer.
 
 ## Cross-link conventions
 

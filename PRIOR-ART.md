@@ -123,6 +123,18 @@ The Utah Court Forms Library matters here as a model of *posture*: a state autho
 - **UK FCA Regulatory Sandbox cohort agreements** — the closest international parallel to Utah's sandbox. Currently published only as case studies, not as machine-readable instruments.
 - **HOA decision logs and co-op governance records** — the civic analog of regulatory interpretations. Same artifact shape (two parties, written, fact-specific, future-binding) at a different scale.
 
+## Reference remaps
+
+To show that the PubLedge schema is not Utah-specific — that the same frontmatter shape applies to existing federal-agency interpretive artifacts — three reference instruments have been retrofitted from publicly archived authority artifacts into PubLedge v0.2 frontmatter. These are demonstration remaps, not authority-issued PubLedge instruments; each carries `source: demonstration-remap` and a composed disclaimer directing readers to the official source for any reliance question.
+
+| Remap | Source letter | Demonstrates |
+|---|---|---|
+| [SEC no-action letter](data/examples/instruments/sec-latham-watkins-rule-506c-2025.md) | Latham & Watkins re Rule 506(c) (2025-03-12) | `obligation_kind: [permission]`, `reliance_scope: similarly-situated-third-parties` |
+| [CFPB advisory opinion](data/examples/instruments/cfpb-pay-to-pay-fees-2022.md) | Pay-to-Pay Fees, Regulation F (2022-06-29) | `obligation_kind: [restriction]`, `reliance_scope: public`, `requesting_party: null` |
+| [IRS private letter ruling](data/examples/instruments/irs-plr-202506001.md) | PLR 202506001 re §141 management contracts (2025-02-07) | `reliance_scope: requesting-party-only`, `redaction_level: full`, PDF-only source |
+
+Combined, the three remaps exercise every value of `obligation_kind` and `reliance_scope` and every release posture (HTML, PDF, redacted PDF) the schema anticipates.
+
 ## What PubLedge adds
 
 PubLedge does not invent a new instrument class. It treats an existing class as a single, ontology-bound, version-controlled, machine-readable resource and provides:
