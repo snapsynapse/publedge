@@ -78,10 +78,11 @@ h1, h2, h3, h4 {
   margin: 0 0 0.6em;
 }
 @media (prefers-color-scheme: dark) { :root:not(.light-mode) h1, :root:not(.light-mode) h2, :root:not(.light-mode) h3, :root:not(.light-mode) h4 { color: #e9ecf2; } }
-h1 { font-size: clamp(1.85rem, 3.5vw, 2.6rem); line-height: 1.15; }
-h2 { font-size: clamp(1.35rem, 2.5vw, 1.7rem); line-height: 1.25; margin-top: 1.6em; }
+h1 { font-size: clamp(1.85rem, 3.5vw, 2.6rem); line-height: 1.15; letter-spacing: -0.025em; }
+h2 { font-size: clamp(1.35rem, 2.5vw, 1.7rem); line-height: 1.25; letter-spacing: -0.015em; margin-top: 1.6em; }
 h3 { font-size: 1.15rem; margin-top: 1.4em; }
 h4 { font-size: 1rem; margin-top: 1.2em; }
+h1, h2, h3, h4 { scroll-margin-top: 5.5rem; }
 
 p { margin: 0 0 1em; }
 small { color: var(--muted); }
@@ -185,8 +186,12 @@ main > article > blockquote {
   max-width: var(--prose-max);
 }
 
-/* Site header — navy bar, white text, crimson top border */
+/* Site header — navy bar, white text, crimson top border.
+   Sticky so primary nav + search stay reachable on long pages. */
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
   background: var(--navy);
   color: #fff;
   border-top: 3px solid var(--crimson);
@@ -367,6 +372,7 @@ footer a { color: var(--link); }
   font-weight: 700;
   color: var(--navy-ink);
   line-height: 1.1;
+  font-variant-numeric: tabular-nums;
 }
 @media (prefers-color-scheme: dark) {
   :root:not(.light-mode) .stat-number { color: #e9ecf2; }
@@ -414,6 +420,7 @@ th, td {
   text-align: left;
   border-bottom: 1px solid var(--border);
   vertical-align: top;
+  font-variant-numeric: tabular-nums;
 }
 th {
   background: var(--bg-alt);
