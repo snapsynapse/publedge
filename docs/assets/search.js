@@ -39,7 +39,7 @@
         if (!matches.length) { results.innerHTML = ''; return; }
         results.innerHTML = matches.slice(0, 20).map(function (m) {
             var href = m.href.indexOf('http') === 0 || m.href.indexOf('/') === 0 ? m.href : siteBase + m.href;
-            return '<a href="' + href + '"><span class="search-type">' + (m.type || '') + '</span>' + escape(m.name) + '</a>';
+            return '<a href="' + escape(href) + '"><span class="search-type">' + escape(m.type || '') + '</span>' + escape(m.name) + '</a>';
         }).join('');
     }
 
