@@ -95,6 +95,7 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | First registry instance (PL-JIA-0001 stub) | draft |
 | Hash-pinned integrity + CI verification | done |
 | Discovery files (`llms.txt`, `agents.json`, `feed.xml`) | done |
+| Private snapshot for pre-release review | staged |
 | JSON Schema files + JSON-LD context | planned for v0.1 |
 | MCP server | planned for v0.2 |
 | Browser-side validators and comparison tooling | planned for v0.2 |
