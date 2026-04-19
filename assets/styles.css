@@ -187,17 +187,26 @@ main > article > blockquote {
 }
 
 /* Site header — navy bar, white text, crimson top border.
-   Sticky so primary nav + search stay reachable on long pages. */
+   Sticky so primary nav + search stay reachable on long pages.
+   DOM order keeps h1 → hamburger → nav → actions for semantics;
+   CSS order renders as h1 → actions (search + theme) → nav for
+   a calmer reading rhythm: identity, utilities, then nav options. */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 40;
+  display: flex;
+  flex-direction: column;
   background: var(--navy);
   color: #fff;
   border-top: 3px solid var(--crimson);
   box-shadow: var(--shadow-md);
 }
-.site-header > * { max-width: var(--content-max); margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+.site-header > * { max-width: var(--content-max); width: 100%; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+.site-header > h1 { order: 0; }
+.site-header > .hamburger-btn { order: 0; }
+.site-header > .header-actions { order: 1; }
+.site-header > .site-nav { order: 2; }
 .site-header h1 {
   font-family: var(--font-serif);
   font-size: 1.5rem;
@@ -309,17 +318,53 @@ main > article > blockquote {
   margin-right: 0.5em;
 }
 
-/* Footer */
-.site-footer {
-  background: var(--bg-alt);
+/* Footer — three-column secondary nav sits between main and site-footer.
+   Pattern borrowed from every-ai-law so copyright + disclaimer stay
+   compact while secondary links get room to breathe. */
+.footer-nav {
+  max-width: var(--content-max);
+  margin: 3rem auto 0;
+  padding: 2rem 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem 3rem;
   border-top: 1px solid var(--border);
-  margin-top: 4rem;
-  padding: 2rem 1.5rem;
+  font-size: 0.92rem;
+}
+.footer-section { display: flex; flex-direction: column; gap: 0.25rem; }
+.footer-section strong {
+  color: var(--navy-ink);
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.01em;
+}
+@media (prefers-color-scheme: dark) { :root:not(.light-mode) .footer-section strong { color: #e9ecf2; } }
+.footer-section a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.15rem 0;
+  border-bottom: 0;
+}
+.footer-section a:hover { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+
+/* Site footer — minimal copyright + disclaimer strip below footer-nav. */
+footer, .site-footer {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 2rem;
   text-align: center;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
 }
-footer a { color: var(--link); }
+.footer-nav + footer,
+.footer-nav + .site-footer { border-top: 0; margin-top: 0; }
+footer p, .site-footer p { margin: 0.25rem 0; }
+.footer-meta { color: var(--muted); }
+.footer-meta a { color: var(--link); }
+.footer-built { font-size: 0.78rem; opacity: 0.75; }
+footer a, .site-footer a { color: var(--link); }
 
 /* Cards */
 .card-grid {

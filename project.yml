@@ -81,9 +81,6 @@ mapping:
 # Site navigation
 # ---------------------------------------------------------------------------
 nav:
-  - id: home
-    label: Home
-    href: index.html
   - id: protocol
     label: Protocol
     href: reference/protocol/
@@ -99,24 +96,39 @@ nav:
   - id: matrix
     label: Matrix
     href: matrix.html
-  - id: timeline
-    label: Timeline
-    href: timeline.html
-  - id: compare
-    label: Compare
-    href: compare.html
-  - id: prior-art
-    label: Prior Art
-    href: reference/prior-art/
-  - id: vocabulary
-    label: Vocabulary
-    href: reference/vocabulary/
-  - id: about
-    label: About
-    href: about.html
-  - id: pattern
-    label: Pattern
-    href: pattern.html
+
+# Secondary links surfaced in the footer rather than the top nav
+# to keep the header short and scannable. Rendering handled by
+# build-extras.js (post-build HTML patch).
+footer_nav:
+  - heading: Explore
+    links:
+      - label: Timeline
+        href: timeline.html
+      - label: Compare
+        href: compare.html
+      - label: Applicability
+        href: primaries.html
+  - heading: Reference
+    links:
+      - label: Prior Art
+        href: reference/prior-art/
+      - label: Vocabulary
+        href: reference/vocabulary/
+      - label: Pattern
+        href: pattern.html
+      - label: About
+        href: about.html
+  - heading: Related
+    links:
+      - label: Knowledge as Code
+        href: https://knowledge-as-code.com/
+      - label: EveryAILaw
+        href: https://everyailaw.com/
+      - label: PAICE.work
+        href: https://paice.work/
+      - label: gist (Semantic Arts)
+        href: https://semanticarts.com/gist/
 
 # ---------------------------------------------------------------------------
 # Bridge pages — SEO-targeted detail pages

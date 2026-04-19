@@ -57,18 +57,11 @@
             <span class="hamburger-icon"></span>
         </button>
         <nav class="site-nav" id="siteNav" aria-label="Main navigation">
-            <a href="index.html" class="site-nav-link" onclick="passTheme(this)">Home</a>
             <a href="reference/protocol/" class="site-nav-link" onclick="passTheme(this)">Protocol</a>
             <a href="containers.html" class="site-nav-link" onclick="passTheme(this)">Registry</a>
             <a href="templates/" class="site-nav-link" onclick="passTheme(this)">Templates</a>
             <a href="primaries.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
             <a href="matrix.html" class="site-nav-link" onclick="passTheme(this)">Matrix</a>
-            <a href="timeline.html" class="site-nav-link" onclick="passTheme(this)">Timeline</a>
-            <a href="compare.html" class="site-nav-link active" onclick="passTheme(this)">Compare</a>
-            <a href="reference/prior-art/" class="site-nav-link" onclick="passTheme(this)">Prior Art</a>
-            <a href="reference/vocabulary/" class="site-nav-link" onclick="passTheme(this)">Vocabulary</a>
-            <a href="about.html" class="site-nav-link" onclick="passTheme(this)">About</a>
-            <a href="pattern.html" class="site-nav-link" onclick="passTheme(this)">Pattern</a>
         </nav>
         <div class="header-actions">
             <div class="site-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="searchResults">
@@ -119,10 +112,29 @@
         </script>
     
     </main>
-    <footer>
-        <p>Maintained with <a href="https://github.com/snapsynapse/publedge">version control</a>. This is a reference tool, not professional advice.</p>
-        <p>&copy; 2026 | Built with <a href="https://knowledge-as-code.com">Knowledge-as-Code</a>, a pattern by <a href="https://paice.work">PAICE.work</a></p>
-    </footer>
+    <nav class="footer-nav" aria-label="Footer navigation">
+<div class="footer-section"><strong>Explore</strong>
+<a href="timeline.html">Timeline</a>
+<a href="compare.html">Compare</a>
+<a href="primaries.html">Applicability</a>
+</div>
+<div class="footer-section"><strong>Reference</strong>
+<a href="reference/prior-art/">Prior Art</a>
+<a href="reference/vocabulary/">Vocabulary</a>
+<a href="pattern.html">Pattern</a>
+<a href="about.html">About</a>
+</div>
+<div class="footer-section"><strong>Related</strong>
+<a href="https://knowledge-as-code.com/">Knowledge as Code</a>
+<a href="https://everyailaw.com/">EveryAILaw</a>
+<a href="https://paice.work/">PAICE.work</a>
+<a href="https://semanticarts.com/gist/">gist (Semantic Arts)</a>
+</div>
+</nav>
+<footer class="site-footer">
+<p class="footer-meta">&copy; 2026 <a href="https://paice.work/">PAICE.work</a> · <a href="VERIFICATION.md">Not legal advice</a> · <a href="MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.1.0-pre · Built with <a href="https://knowledge-as-code.com">Knowledge as Code</a></p>
+</footer>
     <script src="assets/search.js"></script>
     <script src="assets/tables.js"></script>
     <script>

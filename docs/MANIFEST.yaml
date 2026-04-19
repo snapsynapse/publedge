@@ -83,7 +83,7 @@ files:
   # Project configuration
   - path: project.yml
     role: config
-    hash: sha256:ac598fee8ce36618d03a6eb6c2074188d3165ccbdfb2fc865a286367175e7aca
+    hash: sha256:6903433cdf254bdfee4a135628ba78703144d58e3cc1af84b4ad99987d30b4d9
     note: KaC build config — entity ontology, navigation, theme
 
   # Data — authorities
@@ -123,7 +123,7 @@ files:
 
   - path: PRIOR-ART.md
     role: protocol
-    hash: sha256:fda7b960d407db78bfc602bd39928c2f9c3043972968687ff89d2addbdece94b
+    hash: sha256:33c2f5e390cf0f197f8cd20be06f381d421cd27e3577417629a9e507eca67c97
     note: Survey of analogous instruments PubLedge draws from
 
   # Templates — Utah JIA + RMA under §13-72a (mental health chatbot) and §13-75 (safe harbor)

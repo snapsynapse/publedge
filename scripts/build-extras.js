@@ -143,6 +143,64 @@ function mdToHtml(md) {
     return out.join('\n');
 }
 
+// Kept in sync with project.yml `nav:` and `footer_nav:` blocks.
+// Hand-authored reference/template pages use this shell; config-driven
+// pages (containers/primaries/matrix/etc.) get the same nav via build.js
+// and the same footer-nav via patchFooterNav() below.
+const NAV_PRIMARY = [
+    { label: 'Protocol', href: 'reference/protocol/' },
+    { label: 'Registry', href: 'containers.html' },
+    { label: 'Templates', href: 'templates/' },
+    { label: 'Obligations', href: 'primaries.html' },
+    { label: 'Matrix', href: 'matrix.html' },
+];
+
+const FOOTER_NAV = [
+    { heading: 'Explore', links: [
+        { label: 'Timeline', href: 'timeline.html' },
+        { label: 'Compare', href: 'compare.html' },
+        { label: 'Applicability', href: 'primaries.html' },
+    ]},
+    { heading: 'Reference', links: [
+        { label: 'Prior Art', href: 'reference/prior-art/' },
+        { label: 'Vocabulary', href: 'reference/vocabulary/' },
+        { label: 'Pattern', href: 'pattern.html' },
+        { label: 'About', href: 'about.html' },
+    ]},
+    { heading: 'Related', links: [
+        { label: 'Knowledge as Code', href: 'https://knowledge-as-code.com/' },
+        { label: 'EveryAILaw', href: 'https://everyailaw.com/' },
+        { label: 'PAICE.work', href: 'https://paice.work/' },
+        { label: 'gist (Semantic Arts)', href: 'https://semanticarts.com/gist/' },
+    ]},
+];
+
+function isAbsoluteHref(href) { return /^(https?:)?\/\//.test(href); }
+
+function renderPrimaryNav(relRoot) {
+    return NAV_PRIMARY.map(l =>
+        `<a href="${isAbsoluteHref(l.href) ? l.href : relRoot + l.href}" class="site-nav-link">${escapeHTML(l.label)}</a>`
+    ).join('\n');
+}
+
+function renderFooterNav(relRoot) {
+    const sections = FOOTER_NAV.map(s => {
+        const items = s.links.map(l => {
+            const href = isAbsoluteHref(l.href) ? l.href : relRoot + l.href;
+            return `<a href="${href}">${escapeHTML(l.label)}</a>`;
+        }).join('\n');
+        return `<div class="footer-section"><strong>${escapeHTML(s.heading)}</strong>\n${items}\n</div>`;
+    }).join('\n');
+    return `<nav class="footer-nav" aria-label="Footer navigation">\n${sections}\n</nav>`;
+}
+
+function renderSiteFooter(relRoot) {
+    return `<footer class="site-footer">
+<p class="footer-meta">&copy; ${new Date().getFullYear()} <a href="https://paice.work/">PAICE.work</a> · <a href="${relRoot}VERIFICATION.md">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.1.0-pre · Built with <a href="https://knowledge-as-code.com">Knowledge as Code</a></p>
+</footer>`;
+}
+
 function pageShell({ title, canonicalPath, relRoot, bodyHtml, description }) {
     const canonical = `${SITE_URL}${canonicalPath}`;
     const desc = description || 'PubLedge — open recordkeeping protocol for fact-specific written interpretations.';
@@ -165,23 +223,14 @@ function pageShell({ title, canonicalPath, relRoot, bodyHtml, description }) {
 <header class="site-header">
 <h1><a href="${relRoot}index.html">PubLedge</a></h1>
 <nav class="site-nav" aria-label="Main navigation">
-<a href="${relRoot}index.html" class="site-nav-link">Home</a>
-<a href="${relRoot}reference/protocol/" class="site-nav-link">Protocol</a>
-<a href="${relRoot}containers.html" class="site-nav-link">Registry</a>
-<a href="${relRoot}templates/" class="site-nav-link">Templates</a>
-<a href="${relRoot}primaries.html" class="site-nav-link">Obligations</a>
-<a href="${relRoot}matrix.html" class="site-nav-link">Matrix</a>
-<a href="${relRoot}reference/prior-art/" class="site-nav-link">Prior Art</a>
-<a href="${relRoot}reference/vocabulary/" class="site-nav-link">Vocabulary</a>
-<a href="${relRoot}about.html" class="site-nav-link">About</a>
+${renderPrimaryNav(relRoot)}
 </nav>
 </header>
 <main>
 ${bodyHtml}
 </main>
-<footer class="site-footer">
-<p><small>PubLedge v0.1.0-pre · Drafting in public · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></small></p>
-</footer>
+${renderFooterNav(relRoot)}
+${renderSiteFooter(relRoot)}
 </body>
 </html>`;
 }
@@ -531,6 +580,45 @@ function patchA11y() {
     console.log(`  Accessibility patches: ${patched} HTML files`);
 }
 
+// ---------------------------------------------------------------------------
+// 6. Inject footer-nav + tidy footer on every build.js-emitted HTML page.
+//    Hand-authored pages already get this via pageShell(); config-driven
+//    pages (containers.html, matrix.html, detail bridges…) get it here.
+// ---------------------------------------------------------------------------
+function patchFooterNav() {
+    function walk(dir, fn) {
+        for (const entry of fs.readdirSync(dir)) {
+            const p = path.join(dir, entry);
+            const st = fs.statSync(p);
+            if (st.isDirectory()) walk(p, fn);
+            else fn(p);
+        }
+    }
+    let patched = 0;
+    walk(DOCS_DIR, (p) => {
+        if (!p.endsWith('.html')) return;
+        let html = fs.readFileSync(p, 'utf8');
+        if (html.includes('class="footer-nav"')) return; // already has it
+
+        // Compute depth to repo root.
+        const rel = path.relative(DOCS_DIR, p).split(path.sep);
+        const depth = Math.max(0, rel.length - 1);
+        const relRoot = '../'.repeat(depth);
+
+        const footerNav = renderFooterNav(relRoot);
+        const siteFooter = renderSiteFooter(relRoot);
+
+        // Replace the KaC generator footer with ours (if present).
+        const genericFooterRe = /<footer[^>]*>[\s\S]*?<\/footer>/;
+        if (genericFooterRe.test(html)) {
+            html = html.replace(genericFooterRe, `${footerNav}\n${siteFooter}`);
+            fs.writeFileSync(p, html);
+            patched++;
+        }
+    });
+    console.log(`  Footer navigation patched: ${patched} pages`);
+}
+
 console.log('PubLedge build extras:');
 copyReferenceHtml();
 const templates = renderTemplates();
@@ -538,4 +626,5 @@ copyStatics();
 renameFeed();
 extendDiscovery(templates);
 patchA11y();
+patchFooterNav();
 console.log('PubLedge extras complete.');
