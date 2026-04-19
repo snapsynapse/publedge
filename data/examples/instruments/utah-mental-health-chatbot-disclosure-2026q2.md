@@ -1,6 +1,6 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Agreement"
-id: PL-JIA-0001
+id: us-ut-oaip-jia-0001
 slug: utah-mental-health-chatbot-disclosure-2026q2
 title: "Utah Mental Health Chatbot Disclosure — Joint Interpretation"
 type: jia

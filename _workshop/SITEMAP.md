@@ -65,7 +65,7 @@ Header-only widget. No dedicated `/tools/search/` page. Index built at `scripts/
 JIA / RMA detail URLs use a human-readable slug plus a permanent ID in frontmatter.
 
 - URL: `/reference/registry/utah-mental-health-chatbot-disclosure-2026q2/`
-- Frontmatter: `id: PL-JIA-0001`
+- Frontmatter: `id: us-ut-oaip-jia-0001`
 
 Slug rules:
 - Lowercase, hyphen-separated
@@ -74,8 +74,9 @@ Slug rules:
 - Optional issuance period (`-2026q2`, `-2027`)
 
 Permanent ID rules:
-- `PL-JIA-NNNN` for JIAs, `PL-RMA-NNNN` for RMAs
-- Monotonic, never reused
+- `{jurisdiction}-{authority}-{kind}-{seq}` all lowercase (e.g. `us-ut-oaip-jia-0001`, `us-sec-nal-0001`, `us-irs-plr-202506001`)
+- Native document number preferred for `seq` when the authority issues one; else zero-padded sequential scoped to `{jurisdiction, kind}` by effective date
+- Permanent, never reused
 - Survives slug renames
 
 ## Bridge pages

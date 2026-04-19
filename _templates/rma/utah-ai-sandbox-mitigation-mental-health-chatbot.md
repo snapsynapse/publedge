@@ -1,6 +1,6 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Template"
-id: PL-TPL-RMA-0001
+id: us-ut-tpl-rma-0001
 slug: utah-ai-sandbox-mitigation-mental-health-chatbot
 title: "Utah RMA Template — AI Sandbox Mitigation, Mental-Health Chatbot Cohort"
 kind: rma

@@ -13,8 +13,8 @@
     },
     "id": {
       "type": "string",
-      "description": "Permanent PubLedge identifier in the form PL-RMA-NNNN.",
-      "pattern": "^PL-RMA-[0-9]{4}$"
+      "description": "Permanent PubLedge identifier in the form {jurisdiction}-{authority}-rma-{seq} (lowercase; seq may be native document number or zero-padded sequence scoped to jurisdiction+kind).",
+      "pattern": "^[a-z]{2}(-[a-z0-9]+)+-rma-[a-z0-9-]+$"
     },
     "name": { "type": "string", "minLength": 3 },
     "authority": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
@@ -30,7 +30,7 @@
     "term_end": { "type": "string", "format": "date" },
     "supersedes": {
       "type": "string",
-      "pattern": "^PL-RMA-[0-9]{4}$"
+      "pattern": "^[a-z]{2}(-[a-z0-9]+)+-rma-[a-z0-9-]+$"
     },
     "official_url": { "type": "string", "format": "uri" },
     "statute_anchors": {

@@ -2,7 +2,7 @@
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization"
 id: sec-corpfin
 name: SEC Division of Corporation Finance
-jurisdiction: us-federal
+jurisdiction: us
 website: https://www.sec.gov/divisions/corpfin
 last_verified: 2026-04-19
 ---

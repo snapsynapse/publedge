@@ -63,7 +63,7 @@ The `_workshop/` directory documents the design decisions behind the layout abov
 
 1. Pick a template under `_templates/jia/` or `_templates/rma/`.
 2. Replace every `{{variable_name}}` with the value applicable to your situation.
-3. Update the frontmatter `id` from `PL-TPL-...` to a fresh `PL-JIA-NNNN` or `PL-RMA-NNNN` identifier — monotonic, never reused.
+3. Update the frontmatter `id` from `{jurisdiction}-tpl-...` to a fresh `{jurisdiction}-{authority}-jia-{seq}` or `{jurisdiction}-{authority}-rma-{seq}` identifier (lowercase; see [PROTOCOL.md](PROTOCOL.md#identifiers-and-slugs)).
 4. Set `status: draft` and add the parties' names under `parties:`.
 5. Place the file under `data/registry/jia/` or `data/registry/rma/`.
 6. Run `./scripts/validate-hashes.sh --update` so `MANIFEST.yaml` reflects the new file.
@@ -95,13 +95,13 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | Protocol specification (`PROTOCOL.md`) | done |
 | Prior-art survey (`PRIOR-ART.md`) | done |
 | Initial Utah templates (3 JIA, 2 RMA) | done |
-| First registry instance (PL-JIA-0001 stub) | draft |
+| First registry instance (us-ut-oaip-jia-0001 stub) | draft |
 | Hash-pinned integrity + CI verification | done |
 | Discovery files (`llms.txt`, `agents.json`, `feed.xml`) | done |
 | MCP server (`mcp-server.js`) | done |
 | CLI validators (`scripts/validate.js`, `scripts/verify.js`) | done |
 | JSON Schemas (`schema/jia.schema.json`, `schema/rma.schema.json`) + JSON-LD context | done |
-| First registry instance PL-JIA-0001 (draft) | done |
+| First registry instance us-ut-oaip-jia-0001 (draft) | done |
 | Unified site generator (KaC + reference + templates in `docs/`) | done |
 | Frontmatter spec v0.2 (decoupled `@type`/`obligation_kind`, shared core fields, withdrawal lifecycle, redaction posture) | done |
 | SEC + CFPB + IRS demonstration remaps under `data/examples/instruments/` | done |

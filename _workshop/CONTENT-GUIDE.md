@@ -34,7 +34,7 @@ slug: <kebab-case-slug>
 title: "<Human-readable title>"
 type: <jia | rma | no-action-letter | advisory-opinion | private-letter-ruling | revenue-ruling | interpretive-letter>
 source: <authority-issued | demonstration-remap | publedge-original-draft>
-jurisdiction: <us-federal | us-ut | us-ca | ...>
+jurisdiction: <us | us-ut | us-ca | ...>   # bare country code for federal scope
 authority: <slug>                   # URL-routing slug, e.g. sec-corpfin, cfpb, utah-oaip, irs-chief-counsel
 issued_by:                          # typed block for semantic consumers
   "@type": "<gist:GovernmentOrganization | gist:SubCountryGovernment | gist:Organization>"
@@ -94,7 +94,7 @@ Uses core fields. JIA-specific additions:
 
 ```yaml
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Agreement"
-id: PL-JIA-<NNNN>
+id: {jurisdiction}-{authority}-jia-{seq}
 type: jia
 parties:
   - name: "<Requesting party>"
@@ -118,7 +118,7 @@ Uses core fields. RMA-specific additions:
 
 ```yaml
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Contract"
-id: PL-RMA-<NNNN>
+id: {jurisdiction}-{authority}-rma-{seq}
 type: rma
 enforcement_authority:
   "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
@@ -138,7 +138,7 @@ Uses core fields. No-action-specific additions:
 
 ```yaml
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Determination"
-id: PL-NAL-<AUTHORITY>-<NNNN>      # e.g. PL-NAL-SEC-0001
+id: {jurisdiction}-{authority}-nal-{seq}      # e.g. us-sec-nal-0001
 type: no-action-letter
 obligation_kind: [permission]      # no-action = forward-looking non-enforcement
 reliance_scope: similarly-situated-third-parties   # default; override only if letter limits
@@ -155,7 +155,7 @@ Uses core fields. Advisory-opinion-specific additions:
 
 ```yaml
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Determination"
-id: PL-AO-<AUTHORITY>-<NNNN>
+id: {jurisdiction}-{authority}-ao-{seq}       # e.g. us-cfpb-ao-0001
 type: advisory-opinion
 reliance_scope: public             # default for bureau-issued advisory opinions
 requesting_party: null | "<name>"  # null when authority-initiated
@@ -172,7 +172,7 @@ Uses core fields. PLR-specific additions:
 
 ```yaml
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Determination"
-id: PL-PLR-<NNNN>                  # or PL-REV-<NNNN> for revenue rulings
+id: {jurisdiction}-{authority}-plr-{native-number}   # e.g. us-irs-plr-202506001 (use authority's native number). Revenue rulings: {jurisdiction}-{authority}-rev-{native-number}.
 type: private-letter-ruling        # or revenue-ruling
 reliance_scope: requesting-party-only     # PLR default; revenue rulings = public
 redaction_level: <none | partial | full>  # FOIA-released PLRs are redacted
@@ -199,7 +199,7 @@ For CFTC interpretive letters, FINRA interpretive letters, state AG opinions, an
 ```yaml
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Template"
-id: PL-TPL-JIA-0001
+id: us-ut-tpl-jia-0001
 slug: utah-jia-genai-disclosure
 title: "Utah JIA Template — General GenAI Disclosure (§13-75-103)"
 kind: jia
@@ -305,7 +305,7 @@ title: "Does a mental-health chatbot require Utah disclosure?"
 slug: does-mental-health-chatbot-require-utah-disclosure
 answer_summary: "Yes — Utah Code §13-72a-203 requires disclosure for chatbots providing mental-health services to Utah residents."
 links_to:
-  - PL-JIA-0001
+  - us-ut-oaip-jia-0001
   - https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure
 created: 2026-04-18
 ---
@@ -385,6 +385,6 @@ Override the `disclaimer:` field only when the source artifact carries authority
 
 ## Cross-link conventions
 
-- Internal references between PubLedge entities use the permanent ID (`PL-JIA-0001`), resolved at build time to the current slug URL.
+- Internal references between PubLedge entities use the permanent ID (`us-ut-oaip-jia-0001`), resolved at build time to the current slug URL.
 - External statute references must include both `cite:` (Bluebook-style) and `url:` (canonical EveryAILaw anchor when available, otherwise authoritative source).
 - Never duplicate statute text. Always link out.

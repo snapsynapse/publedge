@@ -1,6 +1,6 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Template"
-id: PL-TPL-JIA-0001
+id: us-ut-tpl-jia-0001
 slug: utah-mental-health-chatbot-first-session-disclosure
 title: "Utah JIA Template — Mental-Health Chatbot First-Session Disclosure (§13-72a-203)"
 kind: jia

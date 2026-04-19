@@ -25,7 +25,7 @@ Authored for PubLedge:
 - `PROTOCOL.md` — protocol specification
 - `PRIOR-ART.md` — prior-art survey (Utah 63M-17, SEC no-action, IRS PLRs, CFPB advisory, Utah court forms)
 - Utah JIA + RMA templates under `_templates/` with gist `@type` in frontmatter
-- `data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md` — **PL-JIA-0001**, first registry instance (draft)
+- `data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md` — **us-ut-oaip-jia-0001**, first registry instance (draft)
 - Workshop outputs under `_workshop/` (TAXONOMY, SITEMAP, CONTENT-GUIDE, ROADMAP)
 - `vendor/gist/` pinned snapshot of `gistCore.ttl` with `VERSION.md` note
 - `ATTRIBUTION.md` citing gist (CC-BY 4.0, Semantic Arts)
@@ -49,7 +49,7 @@ Shipped 2026-04-19 (prior-art remap + spec v0.2 session):
   - [sec-latham-watkins-rule-506c-2025.md](data/examples/instruments/sec-latham-watkins-rule-506c-2025.md) — SEC no-action letter (Rule 506(c) verification, 2025-03-12); exercises `obligation_kind: [permission]` + `reliance_scope: similarly-situated-third-parties`
   - [cfpb-pay-to-pay-fees-2022.md](data/examples/instruments/cfpb-pay-to-pay-fees-2022.md) — CFPB advisory opinion (Pay-to-Pay Fees, Reg F, 2022-06-29); exercises `obligation_kind: [restriction]` + `reliance_scope: public` + `requesting_party: null`
   - [irs-plr-202506001.md](data/examples/instruments/irs-plr-202506001.md) — IRS PLR 202506001 (§141 management contracts, 2025-02-07); exercises `reliance_scope: requesting-party-only` + `redaction_level: full` + PDF-only source
-- Utah PL-JIA-0001 demo retrofitted to v0.2 frontmatter
+- Utah us-ut-oaip-jia-0001 demo retrofitted to v0.2 frontmatter
 - [PRIOR-ART.md](PRIOR-ART.md) updated with "Reference remaps" section linking the three demo instruments
 
 ## v0.1 — remaining before public freeze
@@ -58,7 +58,7 @@ Shipped 2026-04-19 (prior-art remap + spec v0.2 session):
 |---|---|---|
 | Lawyer review checkpoint (SLC attorney, week of 2026-04-20) | Sam | Output may add paywall prior-art; review doc itself may ship as first meta-JIA |
 | Private snapshot send (Boyd first, hold legislators 24h) | Sam | Tarball already staged |
-| PL-JIA-0001 promotion draft → reviewed → published | — | Awaits lawyer review |
+| us-ut-oaip-jia-0001 promotion draft → reviewed → published | — | Awaits lawyer review |
 | canonical-spec-page rendered at publedge.org | skill | Decision made: keep KaC multi-page home instead — this item is CLOSED, not needed |
 | repo-polish + promo-orchestrator | skill | Final step before v0.1 public |
 

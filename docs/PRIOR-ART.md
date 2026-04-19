@@ -132,8 +132,10 @@ To show that the PubLedge schema is not Utah-specific — that the same frontmat
 | [SEC no-action letter](data/examples/instruments/sec-latham-watkins-rule-506c-2025.md) | Latham & Watkins re Rule 506(c) (2025-03-12) | `obligation_kind: [permission]`, `reliance_scope: similarly-situated-third-parties` |
 | [CFPB advisory opinion](data/examples/instruments/cfpb-pay-to-pay-fees-2022.md) | Pay-to-Pay Fees, Regulation F (2022-06-29) | `obligation_kind: [restriction]`, `reliance_scope: public`, `requesting_party: null` |
 | [IRS private letter ruling](data/examples/instruments/irs-plr-202506001.md) | PLR 202506001 re §141 management contracts (2025-02-07) | `reliance_scope: requesting-party-only`, `redaction_level: full`, PDF-only source |
+| [IRS adverse determination](data/examples/instruments/irs-plr-202614036.md) | PLR 202614036, §501(c)(3) exemption denied (2026-01-12) | `obligation_kind: [restriction]` in a PLR (adverse/denial), dual-letter structure (proposed + final), private inurement ground, `authority: irs-tege` (second distinct IRS sub-agency) |
+| [CFTC interpretive letter](data/examples/instruments/cftc-fia-cta-registration-2017.md) | CFTC Letter 17-65, CTA registration / MiFID II unbundling (2017-12-11) | `type: interpretive-letter` (first in registry), trade-association requester, cross-jurisdictional trigger (MiFID II), `authority: cftc-dsio` (first CFTC authority) |
 
-Combined, the three remaps exercise every value of `obligation_kind` and `reliance_scope` and every release posture (HTML, PDF, redacted PDF) the schema anticipates.
+Combined, the five remaps span four agencies (SEC, CFPB, IRS ×2, CFTC), every value of `obligation_kind` and `reliance_scope`, every release posture (HTML, PDF, redacted PDF), both favorable and adverse PLR outcomes, and three instrument types (`no-action-letter`, `advisory-opinion`, `private-letter-ruling`, `interpretive-letter`).
 
 ## What PubLedge adds
 

@@ -1,6 +1,6 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Template"
-id: PL-TPL-RMA-0002
+id: us-ut-tpl-rma-0002
 slug: utah-genai-safe-harbor-enrollment
 title: "Utah RMA Template — GenAI Safe-Harbor Enrollment (§13-75-104)"
 kind: rma

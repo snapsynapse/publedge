@@ -1,11 +1,11 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Determination"
-id: PL-AO-CFPB-0001
+id: us-cfpb-ao-0001
 slug: cfpb-pay-to-pay-fees-2022
 title: "CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)"
 type: advisory-opinion
 source: demonstration-remap
-jurisdiction: us-federal
+jurisdiction: us
 authority: cfpb
 issued_by:
   "@type": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization"
