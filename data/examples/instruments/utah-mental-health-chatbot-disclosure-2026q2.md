@@ -1,22 +1,50 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Agreement"
 id: PL-JIA-0001
-name: Utah Mental Health Chatbot Disclosure JIA
-authority: utah-oaip
-jurisdiction: us-ut
+slug: utah-mental-health-chatbot-disclosure-2026q2
+title: "Utah Mental Health Chatbot Disclosure — Joint Interpretation"
 type: jia
-status: draft
+source: publedge-original-draft
+jurisdiction: us-ut
+authority: utah-oaip
+issued_by:
+  "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
+  name: "Utah Office of Artificial Intelligence Policy (OAIP)"
+  ref: "https://commerce.utah.gov/ai/learning-lab/"
+issuance_event: gist:Determination
 enacted: 2026-04-15
 effective: 2026-04-15
 official_url: https://commerce.utah.gov/ai/learning-lab/
+obligation_kind: [requirement, permission]
+reliance_scope: requesting-party-only
+requesting_party: "PubLedge (illustrative — suggested prior art, not party-specific)"
+interpreting_authority: "Utah Office of Artificial Intelligence Policy"
+parties:
+  - name: "PubLedge (illustrative requesting party)"
+    role: requesting_party
+  - name: "Utah OAIP"
+    role: interpreting_authority
 statute_anchors:
-  - https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure
-  - https://le.utah.gov/~2024/bills/static/SB0149.html
-requesting_party: PubLedge (illustrative — suggested prior art, not party-specific)
-interpreting_authority: Utah Office of Artificial Intelligence Policy
-disclaimer: "Suggested prior art. Not official OAIP output. Awaiting lawyer review before promotion to reviewed status."
+  - cite: "Utah Code §13-72a-203"
+    url: "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure"
+  - cite: "Utah SB0149 (2024)"
+    url: "https://le.utah.gov/~2024/bills/static/SB0149.html"
+publication_citations: []
+terms:
+  - "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm"
+    text: "Provider must display the standardized GenAI disclosure on first session and on session resumption after 30 minutes of inactivity."
+status: draft
+supersedes: null
+superseded_by: null
+withdrawn_date: null
+withdrawal_reason: null
+withdrawn_by_instrument: null
+hash_chain_prev: null
+disclaimer: ""
 last_verified: 2026-04-19
-schema: https://publedge.org/schema/jia.schema.json
+schema: https://publedge.org/schema/instrument.schema.json
+created: 2026-04-15
+modified: 2026-04-19
 ---
 
 ## Timeline

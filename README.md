@@ -47,7 +47,7 @@ CI runs all three of the above on every push.
 | `PRIOR-ART.md` | Survey of analogous instrument programs |
 | `MANIFEST.yaml` | SHA-256 hashes for every canonical file |
 | `_templates/jia/`, `_templates/rma/` | Fill-in templates with `{{variable}}` placeholders |
-| `data/examples/` | Reference instances of authorities, instruments, obligations, mappings |
+| `data/examples/` | Reference instances of authorities, instruments, obligations, mappings (incl. SEC / CFPB / IRS demonstration remaps) |
 | `reference/` | Rendered HTML pages (protocol, prior-art, registry, vocabulary) |
 | `tools/` | Rendered HTML pages (templates, planned tooling) |
 | `vendor/gist/` | Pinned snapshot of the Semantic Arts gist core ontology |
@@ -100,6 +100,8 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | JSON Schemas (`schema/jia.schema.json`, `schema/rma.schema.json`) + JSON-LD context | done |
 | First registry instance PL-JIA-0001 (draft) | done |
 | Unified site generator (KaC + reference + templates in `docs/`) | done |
+| Frontmatter spec v0.2 (decoupled `@type`/`obligation_kind`, shared core fields, withdrawal lifecycle, redaction posture) | done |
+| SEC + CFPB + IRS demonstration remaps under `data/examples/instruments/` | done |
 | Private snapshot for pre-release review | staged |
 | Lawyer review (SLC attorney, week of 2026-04-20) | pending |
 | Canonical-spec landing + repo-polish + promo | planned at release |
@@ -107,4 +109,4 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | Browser-side registry browser + comparison tooling | planned for v0.2 |
 | Branch-and-strip to reusable protocol template | planned for v0.2 |
 
-See [ROADMAP.md](ROADMAP.md) for phasing and [_workshop/ROADMAP.md](_workshop/ROADMAP.md) for the original workshop plan.
+See [ROADMAP.md](ROADMAP.md) for phasing, [HANDOFF.md](HANDOFF.md) for the next-session pickup brief, and [_workshop/ROADMAP.md](_workshop/ROADMAP.md) for the original workshop plan.
