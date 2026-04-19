@@ -95,6 +95,21 @@ a {
 a:hover { color: var(--link-hover); border-bottom-color: currentColor; }
 a:focus-visible { outline: 2px solid var(--crimson); outline-offset: 2px; border-radius: 2px; }
 
+/* WCAG 1.4.1 — links in prose must be distinguishable without relying on
+   color alone. Underline every link inside main and footer. */
+main a, footer a, .prose a, article a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+main a:hover, footer a:hover, .prose a:hover, article a:hover {
+  text-decoration-thickness: 2px;
+}
+/* Suppress underline for links that wrap cards, buttons, nav, or badges. */
+.site-nav-link, .bridge-cta, .card-title a, .skip-link,
+.stat-card a, .obligation-card > a, .search-results a,
+.compare-list a, .breadcrumb a { text-decoration: none !important; }
+
 code {
   font-family: var(--font-mono);
   font-size: 0.92em;
@@ -299,7 +314,7 @@ main > article > blockquote {
   color: var(--muted);
   font-size: 0.88rem;
 }
-.site-footer a { color: var(--link); }
+footer a { color: var(--link); }
 
 /* Cards */
 .card-grid {
@@ -327,8 +342,12 @@ main > article > blockquote {
   font-size: 1.05rem;
   margin-bottom: 0.4rem;
 }
-.card-title a { color: var(--navy); border-bottom: 0; }
+.card-title a { color: var(--navy-ink); border-bottom: 0; }
 .card-title a:hover { color: var(--crimson); }
+@media (prefers-color-scheme: dark) {
+  :root:not(.light-mode) .card-title a { color: #e9ecf2; }
+  :root:not(.light-mode) .card-title a:hover { color: #f6c6ce; }
+}
 .card-description { color: var(--muted); font-size: 0.92rem; margin-bottom: 0.75rem; }
 .card-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 0.82rem; color: var(--muted); }
 .meta-item { padding: 0.12rem 0.55rem; background: var(--bg-alt); border-radius: 999px; }
@@ -346,8 +365,11 @@ main > article > blockquote {
   font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--navy-ink);
   line-height: 1.1;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not(.light-mode) .stat-number { color: #e9ecf2; }
 }
 .stat-label { display: block; color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.3rem; }
 
@@ -366,10 +388,14 @@ main > article > blockquote {
 .group-badge.restriction { background: var(--crimson); }
 .group-badge.permission { background: #1f7a43; }
 .status-badge { border: 1px solid var(--border-strong); background: var(--panel); color: var(--text); }
-.status-badge.draft { border-color: var(--gold); color: #8a6908; background: #fff9e8; }
-.status-badge.reviewed { border-color: #2196c8; color: #0b5a7a; background: #e3f4fb; }
-.status-badge.published { border-color: #1f7a43; color: #0d4e2a; background: #e6f3ec; }
-.status-badge.superseded { border-color: var(--border-strong); color: var(--muted); background: var(--bg-alt); }
+/* Override the per-page inline CSS that KaC emits from project.yml.
+   Inline uses solid-color bg + white text that fails WCAG AA at gold.
+   !important needed because inline specificity matches ours and
+   inline comes later in the cascade. */
+.status-badge.draft { background: #fff4cc !important; color: #5a4100 !important; border: 1px solid #d4a017 !important; }
+.status-badge.reviewed { background: #e3f4fb !important; color: #0b5a7a !important; border: 1px solid #2196c8 !important; }
+.status-badge.published { background: #e6f3ec !important; color: #0d4e2a !important; border: 1px solid #1f7a43 !important; }
+.status-badge.superseded { background: var(--bg-alt) !important; color: var(--muted) !important; border: 1px solid var(--border-strong) !important; }
 
 /* Data tables */
 .data-table, table {
@@ -426,10 +452,13 @@ tbody tr:hover { background: var(--bg-alt); }
 .template-meta dd { margin: 0; }
 
 .template-vars { max-width: var(--prose-max); }
+/* Use !important to beat dark-mode :root:not(.light-mode) code rule which
+   has higher specificity than plain .template-vars code. */
 .template-vars code, code.tpl-var {
-  background: #fff6d6;
-  color: #7a5500;
-  border: 1px solid #e6cf7a;
+  background: #fff6d6 !important;
+  color: #4d3600 !important;
+  border: 1px solid #c7a82f !important;
+  font-weight: 500;
 }
 
 /* Bridge page CTAs */

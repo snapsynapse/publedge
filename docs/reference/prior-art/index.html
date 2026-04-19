@@ -20,12 +20,12 @@
 <style>
   :root {
     --bg: #fafaf7; --text: #141613; --muted: #5a6258;
-    --border: #e6e5dc; --accent: #4fc3f7; --accent-bg: #0f3460;
+    --border: #e6e5dc; --accent: #1e4c8a; --accent-bg: #0f2e5c;
     --highlight-soft: #e6f2ff;
   }
   @media (prefers-color-scheme: dark) {
     :root { --bg: #0b0f0c; --text: #ecefe8; --muted: #9aa396;
-            --border: #1f2a22; --accent: #4fc3f7; --accent-bg: #0f3460;
+            --border: #1f2a22; --accent: #7fb0e8; --accent-bg: #0f2e5c;
             --highlight-soft: #0f3460; }
   }
   * { box-sizing: border-box; }
@@ -50,6 +50,11 @@
   .views a { font-size: 0.85rem; padding: 4px 10px; border: 1px solid var(--border); border-radius: 4px; }
   .views a:hover { border-color: var(--accent); text-decoration: none; }
   footer { padding: 32px 24px 64px; color: var(--muted); font-size: 0.88rem; border-top: 1px solid var(--border); margin-top: 48px; }
+
+  /* a11y patch — underline prose links for WCAG 1.4.1 */
+  main a, article a, p a, li a, dd a, td a, th a, blockquote a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .crumbs a, nav a, .chip, .views a { text-decoration: none; }
+  pre { overflow-x: auto; }
 </style>
 </head>
 <body>

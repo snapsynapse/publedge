@@ -232,9 +232,9 @@ function renderTemplates() {
             if (typeof v === 'object') {
                 const name = v.name || Object.keys(v)[0];
                 const desc = v.description || v[name] || '';
-                return `<tr><td><code>{{${escapeHTML(name)}}}</code></td><td>${escapeHTML(desc)}</td></tr>`;
+                return `<tr><td><code class="tpl-var">{{${escapeHTML(name)}}}</code></td><td>${escapeHTML(desc)}</td></tr>`;
             }
-            return `<tr><td><code>{{${escapeHTML(v)}}}</code></td><td></td></tr>`;
+            return `<tr><td><code class="tpl-var">{{${escapeHTML(v)}}}</code></td><td></td></tr>`;
         }).join('');
 
         const bodyHtml = `
@@ -451,10 +451,72 @@ function extendDiscovery(templates) {
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// 6. Accessibility post-processing — patch KaC-generated HTML to add
+//    proper <main> landmark and make scrollable <pre> keyboard-focusable.
+// ---------------------------------------------------------------------------
+function patchA11y() {
+    function walk(dir, fn) {
+        for (const entry of fs.readdirSync(dir)) {
+            const p = path.join(dir, entry);
+            const st = fs.statSync(p);
+            if (st.isDirectory()) walk(p, fn);
+            else fn(p);
+        }
+    }
+    let patched = 0;
+    walk(DOCS_DIR, (p) => {
+        if (!p.endsWith('.html')) return;
+        let html = fs.readFileSync(p, 'utf8');
+        const orig = html;
+
+        // 1. KaC pages: div#main-content → main#main-content
+        html = html.replace(
+            /<div(\s+[^>]*?)\sid="main-content"([^>]*)>/,
+            '<main$1 id="main-content"$2>'
+        );
+        if (html !== orig) {
+            html = html.replace(/<\/div>(\s*(?:<footer|<\/body))/, '</main>$1');
+        }
+
+        // 2. Keyboard-focusable scrollable <pre>
+        html = html.replace(/<pre(?![^>]*tabindex)/g, '<pre tabindex="0"');
+
+        // 3. Hand-authored reference/*/index.html: rebrand legacy palette
+        //    and enforce WCAG link distinguishability on body prose.
+        const isReference = /\/reference\/[^/]+\/index\.html$/.test(p);
+        if (isReference) {
+            // Rebrand legacy palette to civic navy. Light mode keeps dark link;
+            // dark mode needs a light link for WCAG contrast on dark bg.
+            html = html.replace(/--accent-bg:\s*#0f3460/g, '--accent-bg: #0f2e5c');
+            html = html.replace(
+                /(:root\s*\{\s*[^}]*?)--accent:\s*#4fc3f7/,
+                '$1--accent: #1e4c8a'
+            );
+            html = html.replace(
+                /(@media\s*\([^)]*prefers-color-scheme:\s*dark[^)]*\)\s*\{\s*:root\s*\{\s*[^}]*?)--accent:\s*#4fc3f7/,
+                '$1--accent: #7fb0e8'
+            );
+            // Any residual #4fc3f7 (cyan) → dark-mode friendly light blue.
+            html = html.replace(/#4fc3f7/g, '#7fb0e8');
+            const a11yBlock = `
+  /* a11y patch — underline prose links for WCAG 1.4.1 */
+  main a, article a, p a, li a, dd a, td a, th a, blockquote a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .crumbs a, nav a, .chip, .views a { text-decoration: none; }
+  pre { overflow-x: auto; }`;
+            html = html.replace(/(<\/style>)/, a11yBlock + '\n$1');
+        }
+
+        if (html !== orig) { fs.writeFileSync(p, html); patched++; }
+    });
+    console.log(`  Accessibility patches: ${patched} HTML files`);
+}
+
 console.log('PubLedge build extras:');
 copyReferenceHtml();
 const templates = renderTemplates();
 copyStatics();
 renameFeed();
 extendDiscovery(templates);
+patchA11y();
 console.log('PubLedge extras complete.');
