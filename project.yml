@@ -168,6 +168,29 @@ verification:
   staleness_days: 90
 
 # ---------------------------------------------------------------------------
+# Ontology framework — semantic layer binding PubLedge entities to gist
+#
+# Adds @type to JSON API items and emits api/v1/context.jsonld.
+# gist is a minimalist enterprise upper ontology by Semantic Arts (CC BY 4.0).
+# Attribution required when publishing sites that use gist IRIs.
+# To disable: set enabled: false (removes @type fields and context.jsonld).
+# ---------------------------------------------------------------------------
+ontology:
+  enabled: true
+  framework: "gist"
+  base_iri: "https://ontologies.semanticarts.com/gist/"
+  attribution: "Semantic Arts, Inc. gist ontology (CC BY 4.0) https://semanticarts.com/gist"
+  entities:
+    primary:
+      gist_class: "gist:Requirement"
+    container:
+      gist_class: "gist:Agreement"
+    authority:
+      gist_class: "gist:GovernmentOrganization"
+    secondary:
+      gist_class: "gist:ContractTerm"
+
+# ---------------------------------------------------------------------------
 # Ecosystem — related projects shown on pattern/about pages
 # ---------------------------------------------------------------------------
 ecosystem:
