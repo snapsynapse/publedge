@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PubLedge Registry — published JIAs and RMAs</title>
+<meta name="description" content="The PubLedge registry of Joint Interpretation Agreements (JIAs) and Regulatory Mitigation Agreements (RMAs). Filterable by jurisdiction, authority, and obligation kind.">
+<meta name="theme-color" content="#0f3460">
+<link rel="canonical" href="https://publedge.org/reference/registry/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PubLedge Registry">
+<meta property="og:description" content="JIAs and RMAs published under PubLedge.">
+<meta property="og:url" content="https://publedge.org/reference/registry/">
+<meta property="og:image" content="https://publedge.org/imgs/og.png">
+<style>
+  :root { --bg:#fafaf7; --text:#141613; --muted:#5a6258; --border:#e6e5dc; --accent:#4fc3f7; --highlight-soft:#e6f2ff; --chip:#0f3460; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b0f0c; --text:#ecefe8; --muted:#9aa396; --border:#1f2a22; --accent:#4fc3f7; --highlight-soft:#0f3460; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  header,main,footer { max-width:880px; margin:0 auto; padding:0 24px; }
+  header { padding-top:36px; padding-bottom:12px; }
+  .crumbs { font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px; color:var(--muted); letter-spacing:0.05em; text-transform:uppercase; }
+  .crumbs a { color:var(--muted); text-decoration:none; } .crumbs a:hover { color:var(--accent); }
+  h1 { font-size:clamp(2rem,4vw,2.6rem); line-height:1.15; letter-spacing:-0.02em; margin:12px 0 8px; }
+  .meta { color:var(--muted); font-size:0.92rem; margin:0 0 24px; }
+  .disclaimer { background:var(--highlight-soft); border-left:3px solid var(--accent); padding:12px 16px; margin:0 0 28px; font-size:0.92rem; }
+  main { padding-bottom:80px; }
+  h2 { font-size:1.4rem; margin:36px 0 10px; letter-spacing:-0.01em; }
+  ul.flat { list-style:none; padding:0; margin:12px 0; }
+  ul.flat li { padding:14px 0; border-bottom:1px solid var(--border); display:flex; flex-wrap:wrap; gap:8px 14px; align-items:baseline; }
+  ul.flat li:last-child { border-bottom:0; }
+  .chip { display:inline-block; padding:2px 8px; font-size:0.75rem; border-radius:4px; background:var(--highlight-soft); color:var(--chip); font-family:ui-monospace,"SF Mono",Menlo,monospace; text-transform:uppercase; letter-spacing:0.04em; }
+  .chip.draft { background:#fff3cd; color:#7a5800; }
+  @media (prefers-color-scheme: dark) { .chip.draft { background:#3a2c00; color:#ffd966; } }
+  .pid { font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:0.82rem; color:var(--muted); }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+  .item-title { font-weight:600; }
+  .item-summary { width:100%; color:var(--muted); font-size:0.92rem; margin-top:4px; }
+  footer { padding:32px 24px 64px; color:var(--muted); font-size:0.88rem; border-top:1px solid var(--border); margin-top:48px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="crumbs"><a href="/">PubLedge</a> · <a href="/reference/">Reference</a> · Registry</div>
+  <h1>Registry</h1>
+  <p class="meta">Published JIAs and RMAs · 1 instrument · v0.1.0-pre</p>
+  <div class="disclaimer">
+    Drafting in public. Every instrument carries its own disclaimer indicating whether the relevant authority has signed off. v0.1 launches with one Utah JIA stub.
+  </div>
+</header>
+<main>
+  <h2>Utah</h2>
+  <ul class="flat">
+    <li>
+      <span class="chip">JIA</span>
+      <span class="chip draft">Draft</span>
+      <span class="pid">PL-JIA-0001</span>
+      <span class="item-title">Utah Mental-Health Chatbot First-Session Disclosure</span>
+      <a href="/data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md">View raw →</a>
+      <div class="item-summary">Joint reading of Utah Code §13-72a-203 — when and how a mental-health chatbot must identify itself as AI on first session and after extended user inactivity.</div>
+    </li>
+  </ul>
+  <p class="meta">More jurisdictions and instrument classes follow as the protocol matures. Templates are <a href="/tools/templates/">here</a>.</p>
+</main>
+<footer><p>PubLedge v0.1.0-pre · Content <a href="/LICENSE-CC-BY-4.0">CC-BY 4.0</a> · <a href="https://github.com/snapsynapse/publedge">Source</a></p></footer>
+</body>
+</html>

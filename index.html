@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PubLedge — a recordkeeping protocol for fact-specific written interpretations</title>
+<meta name="description" content="PubLedge is a transparent recordkeeping protocol for fact-specific written interpretations between two parties: JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments. Open ontology, open license, machine-readable, agent-discoverable.">
+<meta name="keywords" content="publedge, joint interpretation agreement, JIA, regulatory mitigation agreement, RMA, no-action letter, private letter ruling, regulatory protocol, knowledge as code, gist ontology, open standard">
+<meta name="author" content="Sam Rogers">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#0f3460">
+<link rel="canonical" href="https://publedge.org/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PubLedge">
+<meta property="og:title" content="PubLedge — open protocol for civic and regulatory interpretation records">
+<meta property="og:description" content="JIAs, RMAs, no-action letters, private letter rulings — drafted in public, machine-readable, agent-discoverable. Open ontology bound to Semantic Arts gist.">
+<meta property="og:url" content="https://publedge.org/">
+<meta property="og:image" content="https://publedge.org/imgs/og.png">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PubLedge — open recordkeeping protocol for written interpretations">
+<meta name="twitter:description" content="Transparent, machine-readable, agent-discoverable. Open ontology. Drafting in public.">
+<meta name="twitter:image" content="https://publedge.org/imgs/og.png">
+
+<link rel="alternate" type="application/rss+xml" title="PubLedge — Updates" href="/feed.xml">
+
+<style>
+  :root {
+    --bg: #fafaf7; --text: #141613; --muted: #5a6258;
+    --border: #e6e5dc; --accent: #4fc3f7; --accent-bg: #0f3460;
+    --highlight-soft: #e6f2ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0f0c; --text: #ecefe8; --muted: #9aa396;
+            --border: #1f2a22; --accent: #4fc3f7; --accent-bg: #0f3460;
+            --highlight-soft: #0f3460; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg); color: var(--text);
+    line-height: 1.6;
+  }
+  header, main, footer { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header { padding-top: 48px; padding-bottom: 12px; }
+  .brand {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 13px; color: var(--muted); letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    line-height: 1.1; letter-spacing: -0.02em;
+    margin: 12px 0 16px;
+  }
+  .lede { font-size: 1.15rem; color: var(--muted); margin: 0 0 28px; max-width: 56ch; }
+  .disclaimer {
+    background: var(--highlight-soft);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px; margin: 0 0 36px;
+    font-size: 0.92rem; color: var(--text);
+  }
+  main { padding-bottom: 80px; }
+  h2 { font-size: 1.4rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 18px 0 0; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  .card {
+    border: 1px solid var(--border); border-radius: 10px; padding: 20px;
+    text-decoration: none; color: var(--text); transition: border-color 0.15s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+  ul.flat { list-style: none; padding: 0; margin: 12px 0; }
+  ul.flat li { padding: 8px 0; border-bottom: 1px solid var(--border); }
+  ul.flat li:last-child { border-bottom: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: var(--highlight-soft); padding: 2px 6px; border-radius: 4px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.88em;
+  }
+  footer {
+    padding: 32px 24px 64px; color: var(--muted); font-size: 0.88rem;
+    border-top: 1px solid var(--border); margin-top: 48px;
+  }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">PubLedge · v0.1 · drafting in public</div>
+  <h1>An open recordkeeping protocol for written interpretations.</h1>
+  <p class="lede">PubLedge publishes Joint Interpretation Agreements (JIAs), Regulatory Mitigation Agreements (RMAs), no-action letters, private letter rulings, and analogous fact-specific written interpretations between two parties — in plain markdown, with machine-readable schemas bound to an open upper ontology.</p>
+  <div class="disclaimer">
+    This site is drafting in public. Templates and instances published here are <strong>suggested prior art</strong>, not official output of any regulator. See each instrument's disclaimer for scope.
+  </div>
+</header>
+
+<main>
+  <h2>Start here</h2>
+  <div class="grid">
+    <a class="card" href="/reference/protocol/">
+      <h3>Protocol →</h3>
+      <p>The PubLedge specification. What an interpretation record is, what it must contain, and how it is verified.</p>
+    </a>
+    <a class="card" href="/reference/registry/">
+      <h3>Registry →</h3>
+      <p>Browse the JIAs and RMAs published under PubLedge. Filter by jurisdiction, authority, and obligation kind.</p>
+    </a>
+    <a class="card" href="/tools/templates/">
+      <h3>Templates →</h3>
+      <p>Fill-in JIA and RMA templates. Download the raw markdown, complete it, submit it for inclusion.</p>
+    </a>
+    <a class="card" href="/reference/vocabulary/">
+      <h3>Vocabulary →</h3>
+      <p>PubLedge schemas bind to <a href="https://www.semanticarts.com/gist/">Semantic Arts gist</a>. The mapping is published and machine-readable.</p>
+    </a>
+  </div>
+
+  <h2>What's in the registry</h2>
+  <ul class="flat">
+    <li><strong>Utah</strong> — Joint Interpretation Agreements + Regulatory Mitigation Agreements covering Chapter 72 Part 4 (Office of AI Policy)</li>
+    <li><em>More jurisdictions and instrument classes follow as the protocol matures.</em></li>
+  </ul>
+
+  <h2>Built on</h2>
+  <ul class="flat">
+    <li><a href="https://knowledge-as-code.com">Knowledge as Code</a> — the pattern PubLedge inherits from</li>
+    <li><a href="https://www.semanticarts.com/gist/">gist (CC-BY 4.0)</a> — Semantic Arts upper ontology bound to PubLedge schemas</li>
+    <li><a href="https://everyailaw.com">Every AI Law</a> — statute reference spine cited from PubLedge JIA frontmatter</li>
+  </ul>
+
+  <h2>For machines</h2>
+  <ul class="flat">
+    <li><a href="/sitemap.xml"><code>/sitemap.xml</code></a> — all canonical URLs</li>
+    <li><a href="/feed.xml"><code>/feed.xml</code></a> — RSS for registry updates and protocol changelog</li>
+    <li><a href="/agents.json"><code>/agents.json</code></a> — agent discovery + MCP endpoint pointer</li>
+    <li><a href="/llms.txt"><code>/llms.txt</code></a> — concise index for LLM consumption</li>
+    <li><a href="/schema/json/"><code>/schema/json/</code></a> — JSON Schema files + JSON-LD context</li>
+  </ul>
+</main>
+
+<footer>
+  <p>PubLedge is a project under the <a href="https://paice.foundation/">PAICE.work portfolio</a>. Code is Apache 2.0; content is CC-BY 4.0. See <a href="/LICENSE">LICENSE</a>.</p>
+  <p>Source: <a href="https://github.com/snapsynapse/publedge">github.com/snapsynapse/publedge</a></p>
+</footer>
+</body>
+</html>

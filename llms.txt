@@ -1,0 +1,38 @@
+# PubLedge
+
+> Open recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, advisory opinions. Plain markdown with structured frontmatter, hash-pinned in MANIFEST.yaml, bound to the Semantic Arts gist upper ontology (CC-BY 4.0). Drafting in public; v0.1.0-pre.
+
+## Specification
+
+- [Protocol](https://publedge.org/PROTOCOL.md): The PubLedge specification — entity model, required frontmatter, identifier rules, statute-citation rules, integrity mechanism, drafting-in-public posture, supersession discipline.
+- [Prior art](https://publedge.org/PRIOR-ART.md): Survey of analogous programs (Utah Sandbox, SEC No-Action, IRS PLRs, CFPB Advisory Opinions, Utah Court Forms).
+- [Vocabulary mapping](https://publedge.org/reference/vocabulary/): How PubLedge entities bind to gist classes.
+- [Manifest](https://publedge.org/MANIFEST.yaml): SHA-256 hashes for every canonical file. Tampering is detectable.
+
+## Registry
+
+- [Registry hub](https://publedge.org/reference/registry/): All published JIAs and RMAs.
+- [Utah Mental-Health Chatbot Disclosure JIA (PL-JIA-0001)](https://publedge.org/data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md): Joint reading of Utah Code §13-72a-203.
+
+## Templates
+
+- [Templates hub](https://publedge.org/tools/templates/): Fill-in JIA and RMA templates with `{{variable}}` placeholders.
+- [JIA — first-session disclosure](https://publedge.org/_templates/jia/utah-mental-health-chatbot-first-session-disclosure.md): §13-72a-203.
+- [JIA — data protection](https://publedge.org/_templates/jia/utah-mental-health-chatbot-data-protection.md): §13-72a-201.
+- [JIA — advertising](https://publedge.org/_templates/jia/utah-mental-health-chatbot-advertising.md): §13-72a-202.
+- [RMA — sandbox mitigation](https://publedge.org/_templates/rma/utah-ai-sandbox-mitigation-mental-health-chatbot.md): Utah AI Learning Lab.
+- [RMA — safe-harbor enrollment](https://publedge.org/_templates/rma/utah-genai-safe-harbor-enrollment.md): §13-75-104.
+
+## Discovery
+
+- [Sitemap](https://publedge.org/sitemap.xml)
+- [Feed](https://publedge.org/feed.xml)
+- [Agents.json](https://publedge.org/agents.json)
+- [Robots](https://publedge.org/robots.txt)
+
+## Source
+
+- [GitHub repository](https://github.com/snapsynapse/publedge)
+- [License — content (CC-BY 4.0)](https://publedge.org/LICENSE-CC-BY-4.0)
+- [License — code (Apache 2.0)](https://publedge.org/LICENSE-APACHE)
+- [Attribution](https://publedge.org/ATTRIBUTION.md)

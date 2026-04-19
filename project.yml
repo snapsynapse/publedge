@@ -1,0 +1,179 @@
+# PubLedge Project Configuration
+# Edit this file to define the PubLedge ontology, then run: node scripts/build.js
+
+# ---------------------------------------------------------------------------
+# Project identity
+# ---------------------------------------------------------------------------
+name: "PubLedge"
+short_name: "publedge"
+url: "https://publedge.org/"
+repo: "https://github.com/snapsynapse/publedge"
+description: "Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments."
+
+# ---------------------------------------------------------------------------
+# Entity model — the ontology
+#
+# Mapped to Semantic Arts gist (CC-BY 4.0) upper ontology.
+# See /reference/vocabulary/ and vendor/gist/ for the binding.
+#
+#   Authority  → GovernmentOrganization (gist:GovernmentOrganization)
+#   Container  → Instrument: JIA (gist:Agreement) or RMA (gist:Contract)
+#   Secondary  → Term (gist:ContractTerm)
+#   Primary    → Obligation (gist:Requirement | gist:Restriction | gist:Permission)
+# ---------------------------------------------------------------------------
+entities:
+  primary:
+    name: Obligation
+    plural: Obligations
+    directory: obligations
+    groups:
+      - name: requirement
+        color: "#7c4dff"
+        color_light: "#4527a0"
+      - name: restriction
+        color: "#ff6e40"
+        color_light: "#bf360c"
+      - name: permission
+        color: "#4caf50"
+        color_light: "#1b7d1b"
+    body_sections:
+      - Summary
+      - What Counts
+      - What Does Not Count
+      - Statute Anchors
+
+  container:
+    name: Instrument
+    plural: Instruments
+    directory: instruments
+    statuses:
+      - name: draft
+        color: "#ff9800"
+        color_light: "#e65100"
+      - name: reviewed
+        color: "#4fc3f7"
+        color_light: "#0277bd"
+      - name: published
+        color: "#4caf50"
+        color_light: "#1b7d1b"
+      - name: superseded
+        color: "#607d8b"
+        color_light: "#455a64"
+    has_timeline: true
+    scope_field: jurisdiction
+
+  authority:
+    name: Authority
+    plural: Authorities
+    directory: authorities
+
+  secondary:
+    name: Term
+    plural: Terms
+    directory: terms
+    relationship: "establishes"
+
+# Mapping file — connects instruments to obligations via terms
+mapping:
+  file: "mapping/index.yml"
+
+# ---------------------------------------------------------------------------
+# Site navigation
+# ---------------------------------------------------------------------------
+nav:
+  - id: home
+    label: Home
+    href: index.html
+  - id: containers
+    label: Registry
+    href: containers.html
+  - id: primaries
+    label: Obligations
+    href: primaries.html
+  - id: matrix
+    label: Matrix
+    href: matrix.html
+  - id: timeline
+    label: Timeline
+    href: timeline.html
+  - id: compare
+    label: Compare
+    href: compare.html
+  - id: vocabulary
+    label: Vocabulary
+    href: vocabulary.html
+  - id: about
+    label: About
+    href: about.html
+  - id: pattern
+    label: Pattern
+    href: pattern.html
+
+# ---------------------------------------------------------------------------
+# Bridge pages — SEO-targeted detail pages
+# ---------------------------------------------------------------------------
+bridges:
+  requires: true
+  compare: true
+  applies_to:
+    field: jurisdiction
+
+# ---------------------------------------------------------------------------
+# Theme colors — civic blue / regulatory tone
+# ---------------------------------------------------------------------------
+theme:
+  accent: "#4fc3f7"
+  accent_light: "#0055aa"
+  accent_bg: "#0f3460"
+  accent_bg_light: "#e6f2ff"
+
+# ---------------------------------------------------------------------------
+# Pattern page — describes the Knowledge as Code pattern PubLedge inherits from
+# ---------------------------------------------------------------------------
+pattern:
+  enabled: true
+  canonical_url: "https://knowledge-as-code.com"
+  examples:
+    - name: "AI Tool Watch"
+      url: "https://aitool.watch"
+      description: "AI model capabilities across 12 products"
+    - name: "Every AI Law"
+      url: "https://everyailaw.com"
+      description: "Global AI regulatory landscape"
+    - name: "Meeting Standards Reference"
+      url: "https://meetings.snapsynapse.com"
+      description: "Meeting facilitation standards"
+
+# ---------------------------------------------------------------------------
+# Social / Open Graph meta tags
+# ---------------------------------------------------------------------------
+social:
+  og_image: "/imgs/og.png"
+  twitter_card: "summary_large_image"
+  twitter_site: ""
+
+# ---------------------------------------------------------------------------
+# Verification — staleness detection for entity freshness
+# ---------------------------------------------------------------------------
+verification:
+  staleness_days: 90
+
+# ---------------------------------------------------------------------------
+# Ecosystem — related projects shown on pattern/about pages
+# ---------------------------------------------------------------------------
+ecosystem:
+  - name: "Knowledge as Code"
+    url: "https://knowledge-as-code.com"
+    description: "The pattern definition and community hub"
+  - name: "Every AI Law"
+    url: "https://everyailaw.com"
+    description: "Global AI regulatory landscape — statute reference spine for PubLedge JIAs"
+  - name: "gist (Semantic Arts)"
+    url: "https://www.semanticarts.com/gist/"
+    description: "Upper ontology PubLedge schemas bind to (CC-BY 4.0)"
+  - name: "Skill Provenance"
+    url: "https://skillprovenance.dev"
+    description: "Manifest + hash integrity pattern PubLedge ships from day one"
+  - name: "Siteline"
+    url: "https://siteline.to"
+    description: "AI agent readiness scanner for websites"

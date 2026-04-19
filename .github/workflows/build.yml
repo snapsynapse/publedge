@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify content hashes
+        run: ./scripts/validate-hashes.sh
+
+      - name: Validate cross-references
+        run: node scripts/validate.js
+
+      - name: Build site (sanity check — output discarded)
+        run: node scripts/build.js
+
+# GitHub Pages serves directly from `main` branch root on this repo.
+# No deploy step is needed — pushing to main is the deploy.
+#
+# Template forks that want automated deploy-to-gh-pages can add back the
+# peaceiris/actions-gh-pages step here and set permissions.contents to write.

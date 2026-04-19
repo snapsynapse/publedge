@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PubLedge Vocabulary — gist binding</title>
+<meta name="description" content="How PubLedge entities bind to the Semantic Arts gist upper ontology. The mapping is published, machine-readable, and bound in /schema/json/context.jsonld.">
+<meta name="theme-color" content="#0f3460">
+<link rel="canonical" href="https://publedge.org/reference/vocabulary/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PubLedge Vocabulary — gist binding">
+<meta property="og:description" content="PubLedge entity-to-gist class mapping.">
+<meta property="og:url" content="https://publedge.org/reference/vocabulary/">
+<meta property="og:image" content="https://publedge.org/imgs/og.png">
+<style>
+  :root { --bg:#fafaf7; --text:#141613; --muted:#5a6258; --border:#e6e5dc; --accent:#4fc3f7; --highlight-soft:#e6f2ff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b0f0c; --text:#ecefe8; --muted:#9aa396; --border:#1f2a22; --accent:#4fc3f7; --highlight-soft:#0f3460; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  header,main,footer { max-width:880px; margin:0 auto; padding:0 24px; }
+  header { padding-top:36px; padding-bottom:12px; }
+  .crumbs { font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px; color:var(--muted); letter-spacing:0.05em; text-transform:uppercase; }
+  .crumbs a { color:var(--muted); text-decoration:none; } .crumbs a:hover { color:var(--accent); }
+  h1 { font-size:clamp(2rem,4vw,2.6rem); line-height:1.15; letter-spacing:-0.02em; margin:12px 0 8px; }
+  .meta { color:var(--muted); font-size:0.92rem; margin:0 0 24px; }
+  main { padding-bottom:80px; }
+  h2 { font-size:1.4rem; margin:36px 0 10px; letter-spacing:-0.01em; }
+  p { margin:0 0 14px; }
+  table { border-collapse:collapse; width:100%; margin:14px 0; font-size:0.94rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { background:var(--highlight-soft); font-weight:600; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+  code { background:var(--highlight-soft); padding:2px 6px; border-radius:4px; font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:0.88em; }
+  pre { background:var(--highlight-soft); padding:14px 16px; border-radius:8px; overflow-x:auto; font-size:0.86rem; }
+  pre code { background:none; padding:0; }
+  footer { padding:32px 24px 64px; color:var(--muted); font-size:0.88rem; border-top:1px solid var(--border); margin-top:48px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="crumbs"><a href="/">PubLedge</a> · <a href="/reference/">Reference</a> · Vocabulary</div>
+  <h1>Vocabulary</h1>
+  <p class="meta">PubLedge entity → gist class binding · v0.1.0-pre</p>
+</header>
+<main>
+
+<p>PubLedge does not invent a new ontology. Every entity binds to a class in <a href="https://www.semanticarts.com/gist/">Semantic Arts gist</a> (CC-BY 4.0), an open upper ontology of roughly 100 classes designed for cross-system interoperability. A pinned snapshot of gist core lives at <a href="/vendor/gist/"><code>/vendor/gist/</code></a>.</p>
+
+<h2>Role mapping</h2>
+
+<table>
+  <thead><tr><th>PubLedge role</th><th>Entity</th><th>gist class</th><th>IRI</th></tr></thead>
+  <tbody>
+    <tr><td>Authority</td><td>Authority</td><td><code>gist:GovernmentOrganization</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization</code></td></tr>
+    <tr><td>Container (interpretive)</td><td>Instrument (JIA)</td><td><code>gist:Agreement</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/Agreement</code></td></tr>
+    <tr><td>Container (enforceable)</td><td>Instrument (RMA)</td><td><code>gist:Contract</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/Contract</code></td></tr>
+    <tr><td>Secondary</td><td>Term</td><td><code>gist:ContractTerm</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm</code></td></tr>
+    <tr><td>Primary (must)</td><td>Obligation (requirement)</td><td><code>gist:Requirement</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/Requirement</code></td></tr>
+    <tr><td>Primary (must not)</td><td>Obligation (restriction)</td><td><code>gist:Restriction</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/Restriction</code></td></tr>
+    <tr><td>Primary (may)</td><td>Obligation (permission)</td><td><code>gist:Permission</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/Permission</code></td></tr>
+    <tr><td>Issuance event</td><td>Determination</td><td><code>gist:Determination</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/Determination</code></td></tr>
+    <tr><td>Statute reference</td><td>Statute citation</td><td><code>gist:ReferenceDocument</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/ReferenceDocument</code></td></tr>
+    <tr><td>Specification</td><td>Protocol</td><td><code>gist:Specification</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/Specification</code></td></tr>
+    <tr><td>Template</td><td>Fill-in template</td><td><code>gist:Template</code></td><td><code>https://w3id.org/semanticarts/ns/ontology/gist/Template</code></td></tr>
+  </tbody>
+</table>
+
+<h2>Why gist</h2>
+<ul>
+  <li><strong>Open license</strong> — CC-BY 4.0, no licensing friction.</li>
+  <li><strong>Small surface</strong> — ~100 classes, easy to learn end-to-end.</li>
+  <li><strong>OWL 2 DL</strong> — works with standard reasoners.</li>
+  <li><strong>Cross-domain</strong> — designed to bridge legal, contractual, organizational, and event vocabularies.</li>
+  <li><strong>Stable IRIs</strong> — w3id.org redirects, decoupled from any one host.</li>
+</ul>
+
+<h2>Machine binding</h2>
+
+<p>Every PubLedge frontmatter document carries an <code>@type</code> field whose value is a full gist IRI. The JSON-LD context at <code>/schema/json/context.jsonld</code> (published in a forthcoming v0.1 release) maps short names (<code>Agreement</code>, <code>Contract</code>, etc.) to those IRIs so that PubLedge JSON output validates as RDF without further configuration.</p>
+
+<p>Example minimal frontmatter:</p>
+
+<pre><code>"@type": "https://w3id.org/semanticarts/ns/ontology/gist/Agreement"
+issued_by:
+  "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
+  name: "Utah Office of Artificial Intelligence Policy (OAIP)"</code></pre>
+
+<h2>What we do not bind</h2>
+
+<p>PubLedge declines to mint its own namespace until it encounters a concept gist cannot express. When that happens, the namespace will be <code>https://w3id.org/publedge/ns/</code>, and the addition will be documented here. As of v0.1.0-pre, no PubLedge-specific class is needed.</p>
+
+<h2>References</h2>
+<ul>
+  <li><a href="https://www.semanticarts.com/gist/">gist project home</a></li>
+  <li><a href="/vendor/gist/">Pinned gist snapshot in this repo</a></li>
+  <li><a href="/reference/protocol/">PubLedge Protocol §Entity model</a></li>
+  <li><a href="/ATTRIBUTION.md">Attribution</a></li>
+</ul>
+
+</main>
+<footer><p>PubLedge Vocabulary v0.1.0-pre · Content <a href="/LICENSE-CC-BY-4.0">CC-BY 4.0</a> · <a href="https://github.com/snapsynapse/publedge">Source</a></p></footer>
+</body>
+</html>

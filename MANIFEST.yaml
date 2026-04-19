@@ -1,0 +1,158 @@
+# PubLedge Content Provenance Manifest
+#
+# Tracks SHA-256 hashes of canonical PubLedge content for tamper detection
+# and reproducibility. Run `./scripts/validate-hashes.sh` to verify, or
+# `./scripts/validate-hashes.sh --update` to recompute after intentional edits.
+#
+# Hash mechanism adapted from skill-provenance (https://skillprovenance.dev).
+# We do not adopt the full skill-provenance protocol — only the integrity
+# pattern.
+#
+# What gets hashed:
+#   - Protocol prose (PROTOCOL.md, PRIOR-ART.md, vocabulary)
+#   - All published JIA / RMA instances under data/examples/instruments/
+#   - All obligation definitions under data/examples/obligations/
+#   - All authority definitions under data/examples/authorities/
+#   - Mapping index
+#   - JSON Schemas + JSON-LD context (when published under schema/json/)
+#   - Vendored upper ontology snapshot (vendor/gist/gistCore.ttl)
+#   - License files
+#
+# What does NOT get hashed:
+#   - Build outputs (docs/)
+#   - Editor / OS artifacts
+#   - This file (MANIFEST.yaml is the control file)
+#   - Workshop scratchpad (_workshop/) — not a stable contract
+#   - index.html, 404.html — regenerated as the site evolves
+
+bundle: publedge
+bundle_version: 0.1.0-pre
+bundle_date: 2026-04-18
+description: >
+  PubLedge — open recordkeeping protocol for fact-specific written
+  interpretations between two parties (JIAs, RMAs, no-action letters,
+  private letter rulings).
+
+upstream:
+  - name: skill-provenance
+    url: https://skillprovenance.dev
+    used_for: hash mechanism only (validate.sh script pattern)
+  - name: gist (Semantic Arts)
+    url: https://www.semanticarts.com/gist/
+    used_for: upper ontology binding
+    pinned_at: vendor/gist/gistCore.ttl
+
+files:
+  # License files
+  - path: LICENSE
+    role: legal
+    hash: sha256:17298902087045c8684d1be30cf0e921bb5c52167201d148cc002eaa0763e7cb
+    note: License pointer document explaining dual-license split
+
+  - path: LICENSE-APACHE
+    role: legal
+    hash: sha256:3cbeb832e52ede2c154d4977567b70f204a853342e51d843458f9b785771f069
+    note: Apache 2.0 full text — covers code, schemas, scripts
+
+  - path: LICENSE-CC-BY-4.0
+    role: legal
+    hash: sha256:62a68518848c2fdcd108ff5cc11ba1516440c507bf425d5e76ad36886fd5752a
+    note: CC-BY 4.0 reference — covers content (markdown, YAML, HTML)
+
+  - path: ATTRIBUTION.md
+    role: legal
+    hash: sha256:29fa94ac52d43bd593f3fcd15312d33c031c3ce4d7bb3f9fbbf1b8b29b6b4a60
+    note: Credits KaC, gist, EveryAILaw
+
+  # Vendored upstream
+  - path: vendor/gist/gistCore.ttl
+    role: vendor
+    hash: sha256:0d8230f3a4df9aa7782ec79bfa83def34a13a066f60d5f5ef0f00b9cecce08b1
+    note: Pinned snapshot of Semantic Arts gist core ontology (CC-BY 4.0)
+
+  - path: vendor/gist/LICENSE.txt
+    role: vendor
+    hash: sha256:9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94
+    note: gist upstream license
+
+  - path: vendor/gist/VERSION.md
+    role: vendor
+    hash: sha256:1bd18183661c4b62b6e0134380d0559460d419c8eff36d1def309dd194426363
+    note: Snapshot provenance and refresh procedure
+
+  # Project configuration
+  - path: project.yml
+    role: config
+    hash: sha256:7781ad77470209d473a181da6a4033c8ed40e8991277452de37520ac0789034d
+    note: KaC build config — entity ontology, navigation, theme
+
+  # Data — authorities
+  - path: data/examples/authorities/utah-oaip.md
+    role: authority
+    hash: sha256:717725d7159ece5a250d9f51f8425ec9f5c113b9a92e08e751dde7394dd7cbbb
+    note: Utah Office of AI Policy
+
+  # Data — instruments (JIAs / RMAs)
+  - path: data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md
+    role: instrument
+    hash: sha256:76c92632c276047974b1ab30b6987d0262ecf037af11d7d971b435bf1b7b758a
+    note: Stub Utah JIA — first-session mental-health chatbot disclosure
+
+  # Data — obligations
+  - path: data/examples/obligations/disclose-genai-on-first-session.md
+    role: obligation
+    hash: sha256:837a15daebc85cd6887eee90ef7530e05ac5ca4d0235b936e2fe7e6d90b0a77f
+    note: Primary obligation — display GenAI disclosure on first session
+
+  # Data — mapping
+  - path: data/examples/mapping/index.yml
+    role: mapping
+    hash: sha256:f7c73f9a0b29d998194fe1cf9b97bc6d56235b14a37bff9d4a4c148ad4c39bcc
+    note: Connects instruments to obligations via terms
+
+  # Protocol prose
+  - path: README.md
+    role: protocol
+    hash: sha256:47960de81289533a79a96f988d792f7687a1e580dbc43b1c33c28340f8be66be
+    note: Repository overview rendered on GitHub
+
+  - path: PROTOCOL.md
+    role: protocol
+    hash: sha256:664c9261a06f9db91433546df41541f46e21009213b7d37b732528a270fcb809
+    note: PubLedge protocol specification
+
+  - path: PRIOR-ART.md
+    role: protocol
+    hash: sha256:770e54e67000d94fff2e301edf91e24cf63f4de571c125933c6aa5f54e3dedc2
+    note: Survey of analogous instruments PubLedge draws from
+
+  # Templates — Utah JIA + RMA under §13-72a (mental health chatbot) and §13-75 (safe harbor)
+  - path: _templates/jia/utah-mental-health-chatbot-first-session-disclosure.md
+    role: template
+    hash: sha256:0377ecaa1f41762f9c85a9f2cc450b8a9a6d92206e0111508fcbf6eb825f192f
+    note: JIA template — §13-72a-203 first-session disclosure
+
+  - path: _templates/jia/utah-mental-health-chatbot-data-protection.md
+    role: template
+    hash: sha256:ae9f77675905635b3c345fcd9a6fac27b46974ba3516e37c857baf642388c102
+    note: JIA template — §13-72a-201 data protection scope
+
+  - path: _templates/jia/utah-mental-health-chatbot-advertising.md
+    role: template
+    hash: sha256:11669504a7e41869750e72afcbbc22050b9c66bd0db24ac9c58f319c673fcf1c
+    note: JIA template — §13-72a-202 advertising and representations
+
+  - path: _templates/rma/utah-ai-sandbox-mitigation-mental-health-chatbot.md
+    role: template
+    hash: sha256:dc00c539c60fef133dd023bb3b9741d322f4d6b62ac4d15b668cce5a6ac9f50b
+    note: RMA template — Utah AI Learning Lab sandbox mitigation enrollment
+
+  - path: _templates/rma/utah-genai-safe-harbor-enrollment.md
+    role: template
+    hash: sha256:4adaeceb18fbc866d7921c30093fd2f8e29697d2b42714ecc6abefdd33b1c078
+    note: RMA template — §13-75-104 GenAI safe-harbor enrollment
+
+  # Pending — entries appear here as content is authored
+  # - path: schema/json/jia.schema.json
+  # - path: schema/json/rma.schema.json
+  # - path: schema/json/context.jsonld

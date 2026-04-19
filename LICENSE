@@ -1,0 +1,24 @@
+PubLedge License
+
+PubLedge is dual-licensed.
+
+- Code, schemas, scripts, build system, JSON Schema files, JSON-LD contexts,
+  and other machine-executable or machine-consumable artifacts are licensed
+  under the Apache License, Version 2.0. See LICENSE-APACHE.
+
+- Content — including but not limited to the protocol prose (PROTOCOL.md),
+  prior-art surveys (PRIOR-ART.md), JIA and RMA templates and instances,
+  obligation definitions, vocabulary documentation, origin pages, bridge
+  pages, and the rendered website — is licensed under the Creative Commons
+  Attribution 4.0 International License (CC-BY 4.0). See LICENSE-CC-BY-4.0.
+
+When in doubt about which license applies to a given file, treat the file as
+content (CC-BY 4.0) if it is a markdown document, YAML data file, or HTML
+page intended for human reading; treat it as code (Apache 2.0) if it is a
+JavaScript, shell, JSON Schema, JSON-LD context, or other build-system
+artifact intended for machine execution or validation.
+
+Copyright (c) 2026 PAICE.work PBC and PubLedge contributors.
+
+Bundled third-party works retain their original licenses:
+- vendor/gist/ — CC-BY 4.0 (Semantic Arts). See vendor/gist/LICENSE.txt.
