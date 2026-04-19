@@ -1,0 +1,45 @@
+# PubLedge
+
+> Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
+> Tracks 1 instruments, 1 obligations, and 1 provisions across 1 authorities.
+
+## Instruments
+
+- [Utah Mental Health Chatbot Disclosure JIA](https://publedge.org/container/PL-JIA-0001/): draft
+
+## Obligations
+
+- [Disclose GenAI on First Session](https://publedge.org/primary/disclose-genai-on-first-session/): 0 instruments support this
+
+## Tools
+
+- [Coverage Matrix](https://publedge.org/matrix.html): Which obligations each instrument supports
+- [Compare](https://publedge.org/compare.html): Side-by-side instrument comparison
+- [Timeline](https://publedge.org/timeline.html): Key dates and milestones
+
+## Machine-Readable
+
+- [JSON API](https://publedge.org/api/v1/index.json): Programmatic access to all data
+- [agents.json](https://publedge.org/agents.json): Agent discovery metadata
+- [Sitemap](https://publedge.org/sitemap.xml): All pages
+- [RSS Feed](https://publedge.org/feed.xml): Recent updates
+
+## Protocol
+
+- [Protocol specification](https://publedge.org/reference/protocol/): PubLedge entity model, frontmatter, identifier rules, integrity mechanism.
+- [Protocol source (Markdown)](https://publedge.org/PROTOCOL.md)
+- [Prior art survey](https://publedge.org/reference/prior-art/): Utah Sandbox, SEC No-Action, IRS PLRs, CFPB Advisory, Utah Court Forms.
+- [Prior art source (Markdown)](https://publedge.org/PRIOR-ART.md)
+- [Vocabulary mapping](https://publedge.org/reference/vocabulary/): PubLedge entities bound to gist classes.
+- [Roadmap](https://publedge.org/ROADMAP.md)
+- [Attribution](https://publedge.org/ATTRIBUTION.md)
+- [Manifest (SHA-256 hashes)](https://publedge.org/MANIFEST.yaml)
+
+## Templates
+
+- [Template library index](https://publedge.org/templates/)
+- [Utah JIA Template — Mental-Health Chatbot Advertising and Representations (§13-72a-202)](https://publedge.org/template/utah-mental-health-chatbot-advertising/): JIA · us-ut
+- [Utah JIA Template — Mental-Health Chatbot Data Protection (§13-72a-201)](https://publedge.org/template/utah-mental-health-chatbot-data-protection/): JIA · us-ut
+- [Utah JIA Template — Mental-Health Chatbot First-Session Disclosure (§13-72a-203)](https://publedge.org/template/utah-mental-health-chatbot-first-session-disclosure/): JIA · us-ut
+- [Utah RMA Template — AI Sandbox Mitigation, Mental-Health Chatbot Cohort](https://publedge.org/template/utah-ai-sandbox-mitigation-mental-health-chatbot/): RMA · us-ut
+- [Utah RMA Template — GenAI Safe-Harbor Enrollment (§13-75-104)](https://publedge.org/template/utah-genai-safe-harbor-enrollment/): RMA · us-ut

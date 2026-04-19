@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "generated": "2026-04-19T19:47:29.713Z",
+    "count": 1
+  },
+  "items": [
+    {
+      "id": "disclose-genai-on-first-session",
+      "name": "Disclose GenAI on First Session",
+      "group": "requirement",
+      "status": "draft"
+    }
+  ]
+}

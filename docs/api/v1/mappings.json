@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "generated": "2026-04-19T19:47:29.714Z",
+    "count": 1
+  },
+  "items": [
+    {
+      "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session",
+      "obligations": [
+        "disclose-genai-on-first-session"
+      ],
+      "regulation": "utah-mental-health-chatbot-disclosure-2026q2",
+      "authority": "utah-oaip",
+      "source_file": "data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md",
+      "source_heading": "First-Session Disclosure (§13-72a-203)"
+    }
+  ]
+}

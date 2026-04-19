@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://publedge.org/schema/jia.schema.json",
+  "title": "PubLedge Joint Interpretation Agreement (JIA)",
+  "description": "Frontmatter schema for a PubLedge JIA instrument — a written, jointly-authored interpretation between a regulator and a regulated party that constrains future behavior on identified facts. Binds to Semantic Arts gist via @type and w3id.org IRIs.",
+  "type": "object",
+  "required": ["@type", "id", "name", "authority", "jurisdiction", "type", "status"],
+  "properties": {
+    "@type": {
+      "type": "string",
+      "description": "JSON-LD type. Canonical value for JIAs.",
+      "const": "https://w3id.org/semanticarts/ns/ontology/gist/Agreement"
+    },
+    "id": {
+      "type": "string",
+      "description": "Permanent PubLedge identifier in the form PL-JIA-NNNN (four-digit sequential).",
+      "pattern": "^PL-JIA-[0-9]{4}$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable instrument name.",
+      "minLength": 3
+    },
+    "authority": {
+      "type": "string",
+      "description": "Kebab-case ID of the issuing or co-authoring authority (matches an authority entity).",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "description": "ISO-style jurisdiction code (e.g. us-ut, us-ca, us-federal).",
+      "pattern": "^[a-z]{2,3}(-[a-z0-9]{2,})?$"
+    },
+    "type": {
+      "const": "jia",
+      "description": "Instrument kind discriminator."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "published", "superseded"]
+    },
+    "enacted": { "type": "string", "format": "date" },
+    "effective": { "type": "string", "format": "date" },
+    "supersedes": {
+      "type": "string",
+      "description": "ID of a prior PubLedge instrument this one replaces.",
+      "pattern": "^PL-JIA-[0-9]{4}$"
+    },
+    "official_url": { "type": "string", "format": "uri" },
+    "statute_anchors": {
+      "type": "array",
+      "description": "URLs pointing to external statute references this JIA interprets. EveryAILaw anchors preferred.",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "requesting_party": {
+      "type": "string",
+      "description": "Legal name of the party requesting the interpretation."
+    },
+    "interpreting_authority": {
+      "type": "string",
+      "description": "Legal name of the authority providing the interpretation."
+    },
+    "review_date": { "type": "string", "format": "date" },
+    "last_verified": { "type": "string", "format": "date" },
+    "disclaimer": { "type": "string" }
+  },
+  "additionalProperties": true
+}

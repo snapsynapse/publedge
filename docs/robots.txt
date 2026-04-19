@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://publedge.org/sitemap.xml
+# Machine-readable site info: https://publedge.org/agents.json
+# LLM context: https://publedge.org/llms.txt

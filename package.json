@@ -4,7 +4,8 @@
   "description": "Template for building structured, version-controlled knowledge bases with an ontology-first approach.",
   "license": "MIT",
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js && node scripts/build-extras.js",
+    "build:kac": "node scripts/build.js",
     "validate": "node scripts/validate.js",
     "verify": "node scripts/verify.js"
   },

@@ -1,0 +1,11 @@
+# NOTE: build.js hardcodes the mapping field name as `regulation`.
+# In PubLedge ontology this is the Instrument ID. Field name is cosmetic;
+# rename when the build.js is patched to be config-driven (post-v0.1).
+
+- id: utah-mental-health-chatbot-disclosure-2026q2-first-session
+  regulation: utah-mental-health-chatbot-disclosure-2026q2
+  authority: utah-oaip
+  source_file: data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md
+  source_heading: First-Session Disclosure (§13-72a-203)
+  obligations:
+    - disclose-genai-on-first-session

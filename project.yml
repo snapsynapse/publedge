@@ -28,14 +28,14 @@ entities:
     directory: obligations
     groups:
       - name: requirement
-        color: "#7c4dff"
-        color_light: "#4527a0"
+        color: "#1a4180"
+        color_light: "#0f2e5c"
       - name: restriction
-        color: "#ff6e40"
-        color_light: "#bf360c"
+        color: "#c73041"
+        color_light: "#a31f34"
       - name: permission
-        color: "#4caf50"
-        color_light: "#1b7d1b"
+        color: "#2a8a54"
+        color_light: "#1f7a43"
     body_sections:
       - Summary
       - What Counts
@@ -48,17 +48,17 @@ entities:
     directory: instruments
     statuses:
       - name: draft
-        color: "#ff9800"
-        color_light: "#e65100"
+        color: "#d4a017"
+        color_light: "#b8860b"
       - name: reviewed
-        color: "#4fc3f7"
-        color_light: "#0277bd"
+        color: "#2a7ab0"
+        color_light: "#1a5fa3"
       - name: published
-        color: "#4caf50"
-        color_light: "#1b7d1b"
+        color: "#2a8a54"
+        color_light: "#1f7a43"
       - name: superseded
-        color: "#607d8b"
-        color_light: "#455a64"
+        color: "#7a8599"
+        color_light: "#5a6572"
     has_timeline: true
     scope_field: jurisdiction
 
@@ -84,9 +84,15 @@ nav:
   - id: home
     label: Home
     href: index.html
+  - id: protocol
+    label: Protocol
+    href: reference/protocol/
   - id: containers
     label: Registry
     href: containers.html
+  - id: templates
+    label: Templates
+    href: templates/
   - id: primaries
     label: Obligations
     href: primaries.html
@@ -99,9 +105,12 @@ nav:
   - id: compare
     label: Compare
     href: compare.html
+  - id: prior-art
+    label: Prior Art
+    href: reference/prior-art/
   - id: vocabulary
     label: Vocabulary
-    href: vocabulary.html
+    href: reference/vocabulary/
   - id: about
     label: About
     href: about.html
@@ -122,10 +131,10 @@ bridges:
 # Theme colors — civic blue / regulatory tone
 # ---------------------------------------------------------------------------
 theme:
-  accent: "#4fc3f7"
-  accent_light: "#0055aa"
-  accent_bg: "#0f3460"
-  accent_bg_light: "#e6f2ff"
+  accent: "#1a4180"
+  accent_light: "#0f2e5c"
+  accent_bg: "#0f2e5c"
+  accent_bg_light: "#e8eef7"
 
 # ---------------------------------------------------------------------------
 # Pattern page — describes the Knowledge as Code pattern PubLedge inherits from
