@@ -187,34 +187,32 @@ main > article > blockquote {
 }
 
 /* Site header — navy bar, white text, crimson top border.
-   Sticky so primary nav + search stay reachable on long pages.
-   DOM order keeps h1 → hamburger → nav → actions for semantics;
-   CSS order renders as h1 → actions (search + theme) → nav for
-   a calmer reading rhythm: identity, utilities, then nav options. */
+   Single-row flex layout (pattern from every-ai-law): title on the
+   left, primary nav, then search + theme toggle on the right.
+   Sticky so it stays reachable on long pages. Content horizontally
+   capped via padding that collapses to 1.5rem below --content-max. */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 40;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  padding: 0.6rem max(1.5rem, calc((100% - var(--content-max)) / 2 + 1.5rem));
   background: var(--navy);
   color: #fff;
   border-top: 3px solid var(--crimson);
   box-shadow: var(--shadow-md);
 }
-.site-header > * { max-width: var(--content-max); width: 100%; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
-.site-header > h1 { order: 0; }
-.site-header > .hamburger-btn { order: 0; }
-.site-header > .header-actions { order: 1; }
-.site-header > .site-nav { order: 2; }
 .site-header h1 {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: #fff;
   margin: 0;
-  padding: 1rem 1.5rem;
   letter-spacing: 0.01em;
+  flex: 0 0 auto;
 }
 .site-header h1 a { color: #fff; border-bottom: 0; }
 .site-header h1 a:hover { color: #f6e3b4; }
@@ -222,37 +220,37 @@ main > article > blockquote {
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0;
-  padding: 0 1.5rem;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  gap: 0.15rem;
+  align-items: center;
 }
 .site-nav-link {
   color: #e6ecf5;
-  padding: 0.75rem 1rem;
+  padding: 0.45rem 0.85rem;
   font-size: 0.92rem;
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 3px solid transparent;
-  margin-bottom: -1px;
-  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  border-radius: var(--radius);
+  border-bottom: 0;
+  transition: color 0.15s ease, background 0.15s ease;
 }
 .site-nav-link:hover {
   color: #fff;
-  background: var(--navy-hover);
-  border-bottom-color: var(--gold);
+  background: rgba(255,255,255,0.1);
 }
 .site-nav-link.active {
   color: #fff;
-  border-bottom-color: var(--crimson);
   background: var(--navy-hover);
+  box-shadow: inset 0 -2px 0 var(--crimson);
 }
 
+/* Search + theme toggle cluster, pushed to the far right on desktop. */
 .header-actions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.4rem 1.5rem;
-  background: var(--navy-hover);
+  margin-left: auto;
+  padding: 0;
+  background: transparent;
 }
 
 .theme-toggle, .hamburger-btn {
@@ -544,12 +542,20 @@ tbody tr:hover { background: var(--bg-alt); }
 .muted { color: var(--muted); }
 .text-center { text-align: center; }
 
+/* Desktop: hide hamburger, nav always visible inline. */
+.hamburger-btn { display: none; }
+
 /* Responsive */
 @media (max-width: 720px) {
-  .site-nav { padding: 0 0.75rem; overflow-x: auto; flex-wrap: nowrap; }
-  .site-nav-link { white-space: nowrap; padding: 0.65rem 0.75rem; font-size: 0.88rem; }
-  .site-header h1 { padding: 0.85rem 1rem; font-size: 1.25rem; }
-  .header-actions { padding: 0.4rem 1rem; }
+  .site-header { gap: 0.5rem; padding: 0.6rem 1rem; }
+  .site-header h1 { font-size: 1.2rem; flex: 1 1 auto; }
+  .hamburger-btn { display: inline-flex; align-items: center; justify-content: center; }
+  .site-nav { order: 3; flex-basis: 100%; flex-direction: column; gap: 0; display: none; padding-top: 0.25rem; border-top: 1px solid rgba(255,255,255,0.12); }
+  .site-nav.open { display: flex; }
+  .site-nav-link { padding: 0.6rem 0.5rem; font-size: 0.95rem; }
+  .site-nav-link.active { box-shadow: inset 3px 0 0 var(--crimson); }
+  .header-actions { margin-left: auto; }
+  .site-search { max-width: 160px; }
   main, .container { padding: 1.5rem 1rem 3rem; }
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.25rem; }
