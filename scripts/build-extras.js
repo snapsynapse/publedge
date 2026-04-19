@@ -482,10 +482,23 @@ function patchA11y() {
         // 2. Keyboard-focusable scrollable <pre>
         html = html.replace(/<pre(?![^>]*tabindex)/g, '<pre tabindex="0"');
 
-        // 3. Hand-authored reference/*/index.html: rebrand legacy palette
-        //    and enforce WCAG link distinguishability on body prose.
+        // 3. Hand-authored reference/*/index.html: link global stylesheet,
+        //    rebrand legacy palette, enforce WCAG link distinguishability.
         const isReference = /\/reference\/[^/]+\/index\.html$/.test(p);
         if (isReference) {
+            // Compute depth-to-root for asset link.
+            const rel = path.relative(DOCS_DIR, p).split(path.sep);
+            const depth = rel.length - 1;
+            const up = '../'.repeat(depth);
+            // Inject <link> to global stylesheet BEFORE the page's inline <style>
+            // so the inline rules win on conflicts (letting us preserve the
+            // hand-crafted prose layout) but fonts + colors inherit globally.
+            if (!html.includes('assets/styles.css')) {
+                html = html.replace(
+                    /(\n\s*<style>)/,
+                    `\n<link rel="stylesheet" href="${up}assets/styles.css">$1`
+                );
+            }
             // Rebrand legacy palette to civic navy. Light mode keeps dark link;
             // dark mode needs a light link for WCAG contrast on dark bg.
             html = html.replace(/--accent-bg:\s*#0f3460/g, '--accent-bg: #0f2e5c');
@@ -499,6 +512,12 @@ function patchA11y() {
             );
             // Any residual #4fc3f7 (cyan) → dark-mode friendly light blue.
             html = html.replace(/#4fc3f7/g, '#7fb0e8');
+            // Make the inline dark-mode :root rule respect the .light-mode class
+            // so the manual toggle works the same as on generator pages.
+            html = html.replace(
+                /(@media\s*\([^)]*prefers-color-scheme:\s*dark[^)]*\)\s*\{\s*):root(\s*\{)/,
+                '$1:root:not(.light-mode)$2'
+            );
             const a11yBlock = `
   /* a11y patch — underline prose links for WCAG 1.4.1 */
   main a, article a, p a, li a, dd a, td a, th a, blockquote a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }

@@ -113,7 +113,7 @@ files:
   # Protocol prose
   - path: README.md
     role: protocol
-    hash: sha256:09207448f6a7aa964ee27da15afa83aff398cf363cd43a29f1088c1934db7e42
+    hash: sha256:c5382c84f3700188d9e10edf284269f7df851df4cad41c4b1a191d25c05da33c
     note: Repository overview rendered on GitHub
 
   - path: PROTOCOL.md

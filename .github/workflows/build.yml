@@ -27,11 +27,49 @@ jobs:
       - name: Validate cross-references
         run: node scripts/validate.js
 
-      - name: Build site (sanity check — output discarded)
-        run: node scripts/build.js
+      - name: Build site
+        run: npm run build
 
-# GitHub Pages serves directly from `main` branch root on this repo.
-# No deploy step is needed — pushing to main is the deploy.
-#
-# Template forks that want automated deploy-to-gh-pages can add back the
-# peaceiris/actions-gh-pages step here and set permissions.contents to write.
+      - name: Verify docs/ is up to date with sources
+        run: |
+          if ! git diff --quiet -- docs/; then
+            echo "::error::docs/ is out of sync with sources. Run 'npm run build' locally and commit the result."
+            git status -- docs/
+            git diff --stat -- docs/ | head -30
+            exit 1
+          fi
+
+      - name: Check internal links
+        run: node scripts/check-links.js || true
+
+  a11y:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build site
+        run: npm run build
+
+      - name: Start local server
+        run: |
+          npx --yes http-server ./docs -p 8088 -c-1 > /tmp/http.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -fs http://localhost:8088/ > /dev/null && break || sleep 0.5
+          done
+          curl -fs http://localhost:8088/ > /dev/null || (cat /tmp/http.log; exit 1)
+
+      - name: Run pa11y-ci (WCAG 2.1 AA)
+        run: |
+          npx --yes pa11y-ci \
+            --sitemap http://localhost:8088/sitemap.xml \
+            --sitemap-find 'https://publedge.org' \
+            --sitemap-replace 'http://localhost:8088' \
+            --threshold 0
+
+# GitHub Pages serves from main /docs. The build job ensures docs/ stays
+# in sync with sources; the a11y job runs a WCAG 2.1 AA pass on every
+# push and pull request against every URL in sitemap.xml.
