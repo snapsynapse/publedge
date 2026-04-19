@@ -32,7 +32,7 @@ Authored for PubLedge:
 - MANIFEST.yaml with skill-provenance-style hash tracking (24 files)
 - Private snapshot staged under `_private/lawyer-snapshot/` for Boyd + Cullimore + Moss + Cutler
 
-Shipped 2026-04-19 (this session):
+Shipped 2026-04-19 (engineering + schema session):
 
 - JSON Schemas: `schema/jia.schema.json`, `schema/rma.schema.json`
 - JSON-LD context: `schema/context.jsonld` binding PubLedge properties to gist IRIs
@@ -41,6 +41,16 @@ Shipped 2026-04-19 (this session):
 - GitHub Pages source switched from `main /` to `main /docs`
 - Root-level duplicate discovery files removed (index.html, 404.html, agents.json, llms.txt, sitemap.xml, robots.txt, feed.xml, CNAME) — all now generator-owned in `docs/`
 - Navigation extended (project.yml): Protocol, Templates, Prior Art links visible on every page
+
+Shipped 2026-04-19 (prior-art remap + spec v0.2 session):
+
+- Frontmatter spec **v0.2** in [_workshop/CONTENT-GUIDE.md](_workshop/CONTENT-GUIDE.md): decoupled top-level `@type` (artifact class) from `obligation_kind` (posture chip); locked `type:` enum to seven values; new shared "Interpretive-instrument core fields" block used by JIA/RMA/no-action/advisory/PLR; new sections 2a–2d for no-action letters, advisory opinions, PLRs, and interpretive letters; canonical `statute_anchors[]` object shape `{cite, url}`; canonical authority pattern (both `authority:` slug and `issued_by:` typed block required); added `source`, `publication_citations[]`, withdrawal triplet (`withdrawn_date` / `withdrawal_reason` / `withdrawn_by_instrument`), `redaction_level`; replaced fixed per-file disclaimer with renderer-composed disclaimer keyed off `source` + `status`
+- Three demonstration remaps under `data/examples/instruments/`:
+  - [sec-latham-watkins-rule-506c-2025.md](data/examples/instruments/sec-latham-watkins-rule-506c-2025.md) — SEC no-action letter (Rule 506(c) verification, 2025-03-12); exercises `obligation_kind: [permission]` + `reliance_scope: similarly-situated-third-parties`
+  - [cfpb-pay-to-pay-fees-2022.md](data/examples/instruments/cfpb-pay-to-pay-fees-2022.md) — CFPB advisory opinion (Pay-to-Pay Fees, Reg F, 2022-06-29); exercises `obligation_kind: [restriction]` + `reliance_scope: public` + `requesting_party: null`
+  - [irs-plr-202506001.md](data/examples/instruments/irs-plr-202506001.md) — IRS PLR 202506001 (§141 management contracts, 2025-02-07); exercises `reliance_scope: requesting-party-only` + `redaction_level: full` + PDF-only source
+- Utah PL-JIA-0001 demo retrofitted to v0.2 frontmatter
+- [PRIOR-ART.md](PRIOR-ART.md) updated with "Reference remaps" section linking the three demo instruments
 
 ## v0.1 — remaining before public freeze
 
@@ -57,6 +67,18 @@ Out of scope for v0.1:
 - Newsletter / commentary stream
 - Reverse links from everyailaw.com → publedge.org (one-way only for now)
 - Cross-posting to dev.to / LinkedIn (deferred until public release)
+
+## Frontmatter spec v0.2 — follow-ups
+
+v0.2 spec landed in CONTENT-GUIDE.md 2026-04-19. Follow-up items needed before it can be enforced in CI:
+
+| Item | Notes |
+|---|---|
+| Write polymorphic `schema/instrument.schema.json` | Single JSON Schema 2020-12 file with `type` as discriminator; replaces the per-type `schema:` URLs currently referenced by every instrument. Deprecate `jia.schema.json` / `rma.schema.json` once the polymorphic schema passes validation on all four demo files. |
+| Update `scripts/validate.js` to enforce v0.2 | Cross-field rules: `source = publedge-original-draft` ∧ `status = published` → error; `type = rma` → require `enforcement_authority` + `term_length` + `review_date`; `type = private-letter-ruling` → require `redaction_level`; withdrawal triplet is all-or-nothing. |
+| Update `_templates/jia/*` and `_templates/rma/*` frontmatter to match v0.2 | Currently v0.1 shape. Templates will break for new contributors until retrofitted. |
+| Build renderer for composed disclaimer | Currently `disclaimer: ""` in every v0.2-retrofitted demo; renderer in `scripts/build-extras.js` must compose from `source` + `status` per the table in CONTENT-GUIDE.md §"Disclaimer composition". |
+| Run `./scripts/validate-hashes.sh --update` | Four files changed (one new) under `data/examples/instruments/`; MANIFEST.yaml is now stale. |
 
 ## v0.2 — branch and strip + browser tooling + clean URLs
 
@@ -85,7 +107,7 @@ Each needs a forcing function — date, dependency, or explicit trigger.
 | Question | Forcing function | Default if unforced |
 |---|---|---|
 | Offer Nov 30 2026 annual-report section template as follow-on? | OAIP outreach response after v0.1 release | Defer to v0.2 conversation |
-| Retroactively ingest SEC no-action letters / IRS PLRs into PubLedge? | Explicit decision after Utah instance complete | Cite in PRIOR-ART, do not ingest |
+| Retroactively ingest SEC no-action letters / IRS PLRs into PubLedge at scale? | Post-v0.1 editorial decision | Partially resolved 2026-04-19: three demo remaps live under `data/examples/instruments/` with `source: demonstration-remap`. Full-corpus ingestion remains deferred. |
 | paice.foundation attribution at foundation-protocol level vs personal/snapsynapse? | Public release prep | List under PAICE portfolio at paice.foundation |
 | PubLedge namespace at `publedge.org/ns/` minted? | First concept unexpressible in gist | Defer |
 | w3id.org/publedge/ns/ PR submitted? | ~6 months stable extensions | Defer long-term |

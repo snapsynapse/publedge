@@ -1,9 +1,24 @@
 {
   "meta": {
-    "generated": "2026-04-19T20:25:27.713Z",
-    "count": 1
+    "generated": "2026-04-19T20:53:10.621Z",
+    "count": 4
   },
   "items": [
+    {
+      "id": "cfpb",
+      "name": "Consumer Financial Protection Bureau",
+      "jurisdiction": "us-federal"
+    },
+    {
+      "id": "irs-chief-counsel",
+      "name": "IRS Office of Chief Counsel",
+      "jurisdiction": "us-federal"
+    },
+    {
+      "id": "sec-corpfin",
+      "name": "SEC Division of Corporation Finance",
+      "jurisdiction": "us-federal"
+    },
     {
       "id": "utah-oaip",
       "name": "Utah Office of Artificial Intelligence Policy",

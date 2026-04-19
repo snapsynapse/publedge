@@ -14,7 +14,7 @@ Three things in one place:
 
 1. **The protocol** — the [PROTOCOL.md](PROTOCOL.md) specification and the [PRIOR-ART.md](PRIOR-ART.md) survey that motivates it.
 2. **Utah-shaped reference content** — JIA and RMA templates plus the first registry instance, all anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104).
-3. **The published site** — handcrafted HTML at the repo root, served by GitHub Pages from `main`. The `scripts/build.js` step in CI is a sanity check; output goes to `docs/` and is gitignored.
+3. **The published site** — rendered HTML under `docs/`, served by GitHub Pages from `main /docs`. Regenerate with `npm run build` before committing; CI fails if `docs/` drifts from sources.
 
 ## What this repo is not
 
@@ -30,7 +30,7 @@ git clone https://github.com/snapsynapse/publedge.git
 cd publedge
 ./scripts/validate-hashes.sh        # verify integrity
 node scripts/validate.js            # cross-reference checks
-node scripts/build.js               # build site to ./docs (sanity check)
+npm run build                       # regenerate docs/ (Pages publish dir)
 ```
 
 After intentional content edits, refresh hashes:
@@ -39,7 +39,8 @@ After intentional content edits, refresh hashes:
 ./scripts/validate-hashes.sh --update
 ```
 
-CI runs all three of the above on every push.
+CI runs all three of the above, plus a pa11y-ci WCAG 2.1 AA pass across
+every URL in the sitemap, on every push and pull request.
 
 ## Repository layout
 
@@ -49,7 +50,7 @@ CI runs all three of the above on every push.
 | `PRIOR-ART.md` | Survey of analogous instrument programs |
 | `MANIFEST.yaml` | SHA-256 hashes for every canonical file |
 | `_templates/jia/`, `_templates/rma/` | Fill-in templates with `{{variable}}` placeholders |
-| `data/examples/` | Reference instances of authorities, instruments, obligations, mappings |
+| `data/examples/` | Reference instances of authorities, instruments, obligations, mappings (incl. SEC / CFPB / IRS demonstration remaps) |
 | `reference/` | Rendered HTML pages (protocol, prior-art, registry, vocabulary) |
 | `tools/` | Rendered HTML pages (templates, planned tooling) |
 | `vendor/gist/` | Pinned snapshot of the Semantic Arts gist core ontology |
@@ -102,6 +103,8 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | JSON Schemas (`schema/jia.schema.json`, `schema/rma.schema.json`) + JSON-LD context | done |
 | First registry instance PL-JIA-0001 (draft) | done |
 | Unified site generator (KaC + reference + templates in `docs/`) | done |
+| Frontmatter spec v0.2 (decoupled `@type`/`obligation_kind`, shared core fields, withdrawal lifecycle, redaction posture) | done |
+| SEC + CFPB + IRS demonstration remaps under `data/examples/instruments/` | done |
 | Private snapshot for pre-release review | staged |
 | Lawyer review (SLC attorney, week of 2026-04-20) | pending |
 | Canonical-spec landing + repo-polish + promo | planned at release |
@@ -109,4 +112,4 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | Browser-side registry browser + comparison tooling | planned for v0.2 |
 | Branch-and-strip to reusable protocol template | planned for v0.2 |
 
-See [ROADMAP.md](ROADMAP.md) for phasing and [_workshop/ROADMAP.md](_workshop/ROADMAP.md) for the original workshop plan.
+See [ROADMAP.md](ROADMAP.md) for phasing, [HANDOFF.md](HANDOFF.md) for the next-session pickup brief, and [_workshop/ROADMAP.md](_workshop/ROADMAP.md) for the original workshop plan.

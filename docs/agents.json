@@ -10,7 +10,7 @@
     {
       "id": "container-comparison",
       "name": "Instrument Comparison",
-      "description": "Compare 1 instruments across 1 obligations",
+      "description": "Compare 4 instruments across 1 obligations",
       "url": "https://publedge.org/compare.html"
     },
     {
@@ -73,8 +73,26 @@
   "content": {
     "containers": [
       {
+        "id": "PL-AO-CFPB-0001",
+        "name": "\"Consumer Financial Protection Bureau\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/PL-AO-CFPB-0001/"
+      },
+      {
+        "id": "PL-PLR-0001",
+        "name": "\"Internal Revenue Service, Office of Chief Counsel\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/PL-PLR-0001/"
+      },
+      {
+        "id": "PL-NAL-SEC-0001",
+        "name": "\"U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/PL-NAL-SEC-0001/"
+      },
+      {
         "id": "PL-JIA-0001",
-        "name": "Utah Mental Health Chatbot Disclosure JIA",
+        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
         "status": "draft",
         "url": "https://publedge.org/container/PL-JIA-0001/"
       }
@@ -88,6 +106,21 @@
       }
     ],
     "authorities": [
+      {
+        "id": "cfpb",
+        "name": "Consumer Financial Protection Bureau",
+        "url": "https://publedge.org/authority/cfpb/"
+      },
+      {
+        "id": "irs-chief-counsel",
+        "name": "IRS Office of Chief Counsel",
+        "url": "https://publedge.org/authority/irs-chief-counsel/"
+      },
+      {
+        "id": "sec-corpfin",
+        "name": "SEC Division of Corporation Finance",
+        "url": "https://publedge.org/authority/sec-corpfin/"
+      },
       {
         "id": "utah-oaip",
         "name": "Utah Office of Artificial Intelligence Policy",

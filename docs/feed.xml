@@ -5,12 +5,33 @@
     <link>https://publedge.org/</link>
     <description>Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.</description>
     <atom:link href="https://publedge.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 19 Apr 2026 20:25:27 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 20:53:10 GMT</lastBuildDate>
     <item>
-      <title>Utah Mental Health Chatbot Disclosure JIA</title>
+      <title>&quot;Consumer Financial Protection Bureau&quot;</title>
+      <link>https://publedge.org/container/PL-AO-CFPB-0001/</link>
+      <guid>https://publedge.org/container/PL-AO-CFPB-0001/</guid>
+      <description>&quot;Consumer Financial Protection Bureau&quot;: draft. 0 provisions.</description>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>&quot;Internal Revenue Service, Office of Chief Counsel&quot;</title>
+      <link>https://publedge.org/container/PL-PLR-0001/</link>
+      <guid>https://publedge.org/container/PL-PLR-0001/</guid>
+      <description>&quot;Internal Revenue Service, Office of Chief Counsel&quot;: draft. 0 provisions.</description>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>&quot;U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)&quot;</title>
+      <link>https://publedge.org/container/PL-NAL-SEC-0001/</link>
+      <guid>https://publedge.org/container/PL-NAL-SEC-0001/</guid>
+      <description>&quot;U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)&quot;: draft. 0 provisions.</description>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>&quot;Utah Office of Artificial Intelligence Policy (OAIP)&quot;</title>
       <link>https://publedge.org/container/PL-JIA-0001/</link>
       <guid>https://publedge.org/container/PL-JIA-0001/</guid>
-      <description>Utah Mental Health Chatbot Disclosure JIA: draft. 1 provisions.</description>
+      <description>&quot;Utah Office of Artificial Intelligence Policy (OAIP)&quot;: draft. 1 provisions.</description>
       <pubDate>Sun, 19 Apr 2026 00:00:00 GMT</pubDate>
     </item>
   </channel>

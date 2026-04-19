@@ -95,7 +95,7 @@ files:
   # Data — instruments (JIAs / RMAs)
   - path: data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md
     role: instrument
-    hash: sha256:6fb28afc82218cea4f5b9edb4aceb1d28938921315d0ee2fe91a12ca8a3f5d48
+    hash: sha256:3cd543fdf9279caf4d192cbd5441f1cfb2dec39d63e62401375dd41b7432a695
     note: PL-JIA-0001 — Utah Mental-Health Chatbot Disclosure JIA (draft)
 
   # Data — obligations
@@ -113,7 +113,7 @@ files:
   # Protocol prose
   - path: README.md
     role: protocol
-    hash: sha256:c5382c84f3700188d9e10edf284269f7df851df4cad41c4b1a191d25c05da33c
+    hash: sha256:fd1d8f186c17f7c8c9fba68ceae27d680e927f46ebe6ee58eee399d607fb01b3
     note: Repository overview rendered on GitHub
 
   - path: PROTOCOL.md
@@ -123,7 +123,7 @@ files:
 
   - path: PRIOR-ART.md
     role: protocol
-    hash: sha256:770e54e67000d94fff2e301edf91e24cf63f4de571c125933c6aa5f54e3dedc2
+    hash: sha256:fda7b960d407db78bfc602bd39928c2f9c3043972968687ff89d2addbdece94b
     note: Survey of analogous instruments PubLedge draws from
 
   # Templates — Utah JIA + RMA under §13-72a (mental health chatbot) and §13-75 (safe harbor)
@@ -169,5 +169,5 @@ files:
 
   - path: ROADMAP.md
     role: spec
-    hash: sha256:78dda3eb64c5556229c7af7f427d9cbe68f5e266d2b55a1d3cd0092f9ffad857
+    hash: sha256:0cdb081794ceb34509b4e14f214cb1a35746fb8de6d766b2c2d22f7d8ea8e284
     note: Living roadmap — housekeeping document for v0.1 / v0.2 tracking

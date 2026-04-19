@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - PubLedge</title>
+    <title>IRS Office of Chief Counsel - PubLedge</title>
     <meta name="theme-color" content="#1a1a2e">
-    <link rel="canonical" href="https://publedge.org/about.html">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="canonical" href="https://publedge.org/authority/irs-chief-counsel/">
+    <link rel="stylesheet" href="../../assets/styles.css">
     <style>/* Generated from project.yml — do not edit manually */
 .group-badge.requirement { background: #1a4180; }
 :is(html, body).light-mode .group-badge.requirement { background: #0f2e5c; }
@@ -31,12 +31,13 @@
 :root { --accent: #1a4180; }
 :is(html, body).light-mode { --accent: #0f2e5c; }
 </style>
-    <meta name="description" content="Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.">
-    <meta property="og:title" content="About">
-    <meta property="og:description" content="Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.">
+    
+    <meta name="description" content="">
+    <meta property="og:title" content="IRS Office of Chief Counsel">
+    <meta property="og:description" content="">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://publedge.org//imgs/og.png">
-    <meta property="og:url" content="https://publedge.org/about.html">
+    <meta property="og:url" content="https://publedge.org/authority/irs-chief-counsel/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="[object Object]">
     <script>
@@ -52,23 +53,23 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-        <h1><a href="index.html" onclick="passTheme(this)">PubLedge</a></h1>
+        <h1><a href="../../index.html" onclick="passTheme(this)">PubLedge</a></h1>
         <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
             <span class="hamburger-icon"></span>
         </button>
         <nav class="site-nav" id="siteNav" aria-label="Main navigation">
-            <a href="index.html" class="site-nav-link" onclick="passTheme(this)">Home</a>
-            <a href="reference/protocol/" class="site-nav-link" onclick="passTheme(this)">Protocol</a>
-            <a href="containers.html" class="site-nav-link" onclick="passTheme(this)">Registry</a>
-            <a href="templates/" class="site-nav-link" onclick="passTheme(this)">Templates</a>
-            <a href="primaries.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
-            <a href="matrix.html" class="site-nav-link" onclick="passTheme(this)">Matrix</a>
-            <a href="timeline.html" class="site-nav-link" onclick="passTheme(this)">Timeline</a>
-            <a href="compare.html" class="site-nav-link" onclick="passTheme(this)">Compare</a>
-            <a href="reference/prior-art/" class="site-nav-link" onclick="passTheme(this)">Prior Art</a>
-            <a href="reference/vocabulary/" class="site-nav-link" onclick="passTheme(this)">Vocabulary</a>
-            <a href="about.html" class="site-nav-link active" onclick="passTheme(this)">About</a>
-            <a href="pattern.html" class="site-nav-link" onclick="passTheme(this)">Pattern</a>
+            <a href="../../index.html" class="site-nav-link" onclick="passTheme(this)">Home</a>
+            <a href="../../reference/protocol/" class="site-nav-link" onclick="passTheme(this)">Protocol</a>
+            <a href="../../containers.html" class="site-nav-link" onclick="passTheme(this)">Registry</a>
+            <a href="../../templates/" class="site-nav-link" onclick="passTheme(this)">Templates</a>
+            <a href="../../primaries.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
+            <a href="../../matrix.html" class="site-nav-link" onclick="passTheme(this)">Matrix</a>
+            <a href="../../timeline.html" class="site-nav-link" onclick="passTheme(this)">Timeline</a>
+            <a href="../../compare.html" class="site-nav-link" onclick="passTheme(this)">Compare</a>
+            <a href="../../reference/prior-art/" class="site-nav-link" onclick="passTheme(this)">Prior Art</a>
+            <a href="../../reference/vocabulary/" class="site-nav-link" onclick="passTheme(this)">Vocabulary</a>
+            <a href="../../about.html" class="site-nav-link" onclick="passTheme(this)">About</a>
+            <a href="../../pattern.html" class="site-nav-link" onclick="passTheme(this)">Pattern</a>
         </nav>
         <div class="header-actions">
             <div class="site-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="searchResults">
@@ -79,28 +80,30 @@
         </div>
     </header>
     <main class="container" id="main-content">
-        <div class="about-content">
-        <h2 style="margin-top: 0.5rem;">About</h2>
-        <p>Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments. Tracks <strong>4 instruments</strong>, <strong>1 obligations</strong>, <strong>1 terms</strong>, and <strong>4 authoritys</strong>.</p>
-        <h3>Data Model</h3>
-        <p><strong>Authority</strong> &rarr; <strong>Instrument</strong> &rarr; <strong>Term</strong> &rarr; <strong>Obligation</strong></p>
-        <p>Obligations are the stable anchors. Terms are the implementations — different instruments establishes the same obligations differently.</p>
-        <h3>JSON API</h3>
-        <ul>
-            <li><span class="api-endpoint"><a href="api/v1/index.json">api/v1/index.json</a></span> — API manifest</li>
-            <li><span class="api-endpoint"><a href="api/v1/primaries.json">api/v1/primaries.json</a></span> — All obligations</li>
-            <li><span class="api-endpoint"><a href="api/v1/containers.json">api/v1/containers.json</a></span> — All instruments</li>
-        </ul>
-        <h3>Contributing</h3>
-        <p>See the <a href="https://github.com/snapsynapse/publedge">repository</a> for contribution guidelines.</p>
-    </div>
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../../index.html" onclick="passTheme(this)">Home</a>
+        <span class="sep">/</span> <span>IRS Office of Chief Counsel</span>
+    </nav>
+        <div class="detail-header">
+            <h2>IRS Office of Chief Counsel</h2>
+            <div class="detail-meta">
+                <span><strong>Scope:</strong> us-federal</span>
+                <span><a href="https://www.irs.gov/privacy-disclosure/written-determinations" target="_blank" rel="noopener">https://www.irs.gov/privacy-disclosure/written-determinations</a></span>
+            </div>
+        </div>
+        <h3>Instruments (1)</h3>
+        <table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>Provisions</th></tr></thead><tbody>
+            <tr><td><a href="../../container/PL-PLR-0001/index.html" onclick="passTheme(this)">&quot;Internal Revenue Service, Office of Chief Counsel&quot;</a></td><td><span class="status-badge draft">draft</span></td><td>Feb 7, 2025</td><td>0</td></tr>
+        </tbody></table>
+    
     </main>
     <footer>
         <p>Maintained with <a href="https://github.com/snapsynapse/publedge">version control</a>. This is a reference tool, not professional advice.</p>
         <p>&copy; 2026 | Built with <a href="https://knowledge-as-code.com">Knowledge-as-Code</a>, a pattern by <a href="https://paice.work">PAICE.work</a></p>
     </footer>
-    <script src="assets/search.js"></script>
-    <script src="assets/tables.js"></script>
+    <script src="../../assets/search.js"></script>
+    <script src="../../assets/tables.js"></script>
     <script>
         function toggleTheme() {
             document.documentElement.classList.toggle('light-mode');

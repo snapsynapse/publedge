@@ -82,10 +82,13 @@
         
         <h2 style="margin-top: 0.5rem;">Compare Instruments</h2>
         <p style="color: var(--text-secondary); margin-bottom: 1rem;">Select 2 or 3 to compare coverage.</p>
-        <div class="compare-selector" id="compareSelector"><label><input type="checkbox" name="cmp" value="PL-JIA-0001" onchange="updateComparison()"> <span>Utah Mental Health Chatbot Disclosure JIA</span></label></div>
+        <div class="compare-selector" id="compareSelector"><label><input type="checkbox" name="cmp" value="PL-AO-CFPB-0001" onchange="updateComparison()"> <span>&quot;Consumer Financial Protection Bureau&quot;</span></label>
+<label><input type="checkbox" name="cmp" value="PL-PLR-0001" onchange="updateComparison()"> <span>&quot;Internal Revenue Service, Office of Chief Counsel&quot;</span></label>
+<label><input type="checkbox" name="cmp" value="PL-NAL-SEC-0001" onchange="updateComparison()"> <span>&quot;U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)&quot;</span></label>
+<label><input type="checkbox" name="cmp" value="PL-JIA-0001" onchange="updateComparison()"> <span>&quot;Utah Office of Artificial Intelligence Policy (OAIP)&quot;</span></label></div>
         <div id="compareResult" class="compare-result"></div>
         <script>
-        var cmpData = [{"id":"PL-JIA-0001","name":"Utah Mental Health Chatbot Disclosure JIA","primaries":[]}];
+        var cmpData = [{"id":"PL-AO-CFPB-0001","name":"\"Consumer Financial Protection Bureau\"","primaries":[]},{"id":"PL-PLR-0001","name":"\"Internal Revenue Service, Office of Chief Counsel\"","primaries":[]},{"id":"PL-NAL-SEC-0001","name":"\"U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)\"","primaries":[]},{"id":"PL-JIA-0001","name":"\"Utah Office of Artificial Intelligence Policy (OAIP)\"","primaries":[]}];
         var pNames = {"disclose-genai-on-first-session":"Disclose GenAI on First Session"};
         function updateComparison() {
             var checked = Array.from(document.querySelectorAll('#compareSelector input:checked'));

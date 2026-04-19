@@ -1,12 +1,33 @@
 {
   "meta": {
-    "generated": "2026-04-19T20:25:27.713Z",
-    "count": 1
+    "generated": "2026-04-19T20:53:10.621Z",
+    "count": 4
   },
   "items": [
     {
+      "id": "PL-AO-CFPB-0001",
+      "name": "\"Consumer Financial Protection Bureau\"",
+      "status": "draft",
+      "effective": "2022-06-29",
+      "provision_count": 0
+    },
+    {
+      "id": "PL-PLR-0001",
+      "name": "\"Internal Revenue Service, Office of Chief Counsel\"",
+      "status": "draft",
+      "effective": "2025-02-07",
+      "provision_count": 0
+    },
+    {
+      "id": "PL-NAL-SEC-0001",
+      "name": "\"U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)\"",
+      "status": "draft",
+      "effective": "2025-03-12",
+      "provision_count": 0
+    },
+    {
       "id": "PL-JIA-0001",
-      "name": "Utah Mental Health Chatbot Disclosure JIA",
+      "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
       "status": "draft",
       "effective": "2026-04-15",
       "provision_count": 1
