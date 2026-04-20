@@ -1,32 +1,74 @@
 {
   "meta": {
-    "generated": "2026-04-19T22:41:00.745Z",
-    "count": 4
+    "generated": "2026-04-20T02:36:32.461Z",
+    "count": 10
   },
   "items": [
     {
-      "id": "PL-AO-CFPB-0001",
+      "id": "us-cfpb-ao-0001",
       "name": "\"Consumer Financial Protection Bureau\"",
       "status": "draft",
       "effective": "2022-06-29",
       "provision_count": 0
     },
     {
-      "id": "PL-PLR-0001",
+      "id": "us-cftc-il-17-65",
+      "name": "\"U.S. Commodity Futures Trading Commission, Division of Swap Dealer and Intermediary Oversight\"",
+      "status": "draft",
+      "effective": "2017-12-11",
+      "provision_count": 0
+    },
+    {
+      "id": "us-irs-plr-202506001",
       "name": "\"Internal Revenue Service, Office of Chief Counsel\"",
       "status": "draft",
       "effective": "2025-02-07",
       "provision_count": 0
     },
     {
-      "id": "PL-NAL-SEC-0001",
+      "id": "us-irs-plr-202614036",
+      "name": "\"Internal Revenue Service, Tax Exempt and Government Entities\"",
+      "status": "draft",
+      "effective": "2026-01-12",
+      "provision_count": 0
+    },
+    {
+      "id": "us-sec-nal-0001",
       "name": "\"U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)\"",
       "status": "draft",
       "effective": "2025-03-12",
       "provision_count": 0
     },
     {
-      "id": "PL-JIA-0001",
+      "id": "us-ut-oaip-rma-0002",
+      "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
+      "status": "draft",
+      "effective": "2025-05-31",
+      "provision_count": 0
+    },
+    {
+      "id": "us-ut-oaip-rma-0003",
+      "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
+      "status": "draft",
+      "effective": "2025-10-24",
+      "provision_count": 0
+    },
+    {
+      "id": "us-ut-oaip-rma-0001",
+      "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
+      "status": "draft",
+      "effective": "2024-11-18",
+      "provision_count": 0
+    },
+    {
+      "id": "us-ut-oaip-rma-0004",
+      "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
+      "status": "draft",
+      "effective": "null",
+      "provision_count": 0
+    },
+    {
+      "id": "us-ut-oaip-jia-0001",
       "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
       "status": "draft",
       "effective": "2026-04-15",

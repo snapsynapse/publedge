@@ -1,6 +1,6 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Template"
-id: PL-TPL-JIA-0002
+id: us-ut-tpl-jia-0002
 slug: utah-mental-health-chatbot-data-protection
 title: "Utah JIA Template — Mental-Health Chatbot Data Protection (§13-72a-201)"
 kind: jia

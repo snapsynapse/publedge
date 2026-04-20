@@ -1,14 +1,20 @@
 # PubLedge
 
 > Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
-> Tracks 4 instruments, 1 obligations, and 1 provisions across 4 authorities.
+> Tracks 10 instruments, 1 obligations, and 1 provisions across 6 authorities.
 
 ## Instruments
 
-- ["Consumer Financial Protection Bureau"](https://publedge.org/container/PL-AO-CFPB-0001/): draft
-- ["Internal Revenue Service, Office of Chief Counsel"](https://publedge.org/container/PL-PLR-0001/): draft
-- ["U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)"](https://publedge.org/container/PL-NAL-SEC-0001/): draft
-- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/PL-JIA-0001/): draft
+- ["Consumer Financial Protection Bureau"](https://publedge.org/container/us-cfpb-ao-0001/): draft
+- ["U.S. Commodity Futures Trading Commission, Division of Swap Dealer and Intermediary Oversight"](https://publedge.org/container/us-cftc-il-17-65/): draft
+- ["Internal Revenue Service, Office of Chief Counsel"](https://publedge.org/container/us-irs-plr-202506001/): draft
+- ["Internal Revenue Service, Tax Exempt and Government Entities"](https://publedge.org/container/us-irs-plr-202614036/): draft
+- ["U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)"](https://publedge.org/container/us-sec-nal-0001/): draft
+- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-rma-0002/): draft
+- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-rma-0003/): draft
+- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-rma-0001/): draft
+- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-rma-0004/): draft
+- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-jia-0001/): draft
 
 ## Obligations
 

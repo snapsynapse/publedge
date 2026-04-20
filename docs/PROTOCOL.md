@@ -54,7 +54,7 @@ Every PubLedge instrument has YAML frontmatter and a markdown body.
 
 ```yaml
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Agreement"  # or Contract
-id: PL-JIA-NNNN                          # Permanent identifier, monotonic, never reused
+id: {jurisdiction}-{authority}-{kind}-{seq}  # Permanent identifier, lowercase; seq native where available else zero-padded, scoped to jurisdiction+kind
 slug: jurisdiction-topic-period          # Human-readable URL slug
 title: "Plain-language title"
 jurisdiction: us-ut                       # ISO-style jurisdiction code
@@ -105,7 +105,7 @@ The body is the canonical human-readable form. The frontmatter is the canonical 
 
 ## Identifiers and slugs
 
-- **Permanent ID**: `PL-{KIND}-NNNN` where `KIND` is `JIA`, `RMA`, `NAL` (no-action letter), `PLR` (private letter ruling), `OPN` (advisory opinion). Monotonic, never reused, survives slug renames.
+- **Permanent ID**: `{jurisdiction}-{authority}-{kind}-{seq}`, all lowercase. `jurisdiction` is the ISO-style code (e.g. `us` for federal, `us-ut` for Utah). `authority` is the kebab-case authority slug (e.g. `oaip`, `sec`, `cfpb`, `irs`, `cftc`). `kind` is one of `jia`, `rma`, `nal` (no-action letter), `plr` (private letter ruling), `ao` (advisory opinion), `il` (interpretive letter), `tpl` (template). `seq` is the native document number where the authority provides one (e.g. `plr-202506001`, `il-17-65`); otherwise a zero-padded sequential number scoped to `{jurisdiction, kind}` ordered by effective date (e.g. `rma-0001`). IDs are permanent, never reused, and survive slug renames.
 - **Slug**: lowercase, hyphen-separated, jurisdiction prefix, topic descriptor, optional issuance period. Example: `utah-mental-health-chatbot-disclosure-2026q2`.
 - Internal references between PubLedge entities use the permanent ID, resolved at build time.
 
@@ -166,8 +166,8 @@ This posture is non-optional. PubLedge exists in part to publish interpretations
 
 When an instrument is replaced:
 
-1. The new instrument carries `supersedes: PL-JIA-NNNN` in frontmatter.
-2. The old instrument has its `status` set to `superseded` and gains `superseded_by: PL-JIA-NNNN+1`.
+1. The new instrument carries `supersedes: {prior-id}` in frontmatter.
+2. The old instrument has its `status` set to `superseded` and gains `superseded_by: {new-id}`.
 3. Both remain in the registry; URLs do not break.
 4. The old instrument's page renders a banner pointing to the new one.
 

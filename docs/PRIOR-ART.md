@@ -78,7 +78,7 @@ What is missing:
 - No structured connection between a PLR and the Internal Revenue Code sections it interprets.
 - Third parties cannot rely on PLRs by design, which is a feature of the tax system but limits the registry's public utility.
 
-PubLedge inherits the permanent-identifier discipline (`PL-PLR-NNNN` for IRS-style instruments in jurisdictions that adopt the pattern) and the explicit reliance-scope frontmatter field.
+PubLedge inherits the permanent-identifier discipline (jurisdiction-scoped IDs like `us-irs-plr-202506001` that preserve the authority's native numbering) and the explicit reliance-scope frontmatter field.
 
 ## 4. CFPB Advisory Opinion Program
 
@@ -134,8 +134,12 @@ To show that the PubLedge schema is not Utah-specific — that the same frontmat
 | [IRS private letter ruling](data/examples/instruments/irs-plr-202506001.md) | PLR 202506001 re §141 management contracts (2025-02-07) | `reliance_scope: requesting-party-only`, `redaction_level: full`, PDF-only source |
 | [IRS adverse determination](data/examples/instruments/irs-plr-202614036.md) | PLR 202614036, §501(c)(3) exemption denied (2026-01-12) | `obligation_kind: [restriction]` in a PLR (adverse/denial), dual-letter structure (proposed + final), private inurement ground, `authority: irs-tege` (second distinct IRS sub-agency) |
 | [CFTC interpretive letter](data/examples/instruments/cftc-fia-cta-registration-2017.md) | CFTC Letter 17-65, CTA registration / MiFID II unbundling (2017-12-11) | `type: interpretive-letter` (first in registry), trade-association requester, cross-jurisdictional trigger (MiFID II), `authority: cftc-dsio` (first CFTC authority) |
+| [Utah OAIP × ElizaChat RMA](data/examples/instruments/utah-elizachat-teen-mental-health-2024.md) | ElizaChat Agreement (signed 2024-11-18) | First RMA in registry (`us-ut-oaip-rma-0001`, earliest by effective date), incident-triggered 30-day cure forbearance, phased school-district rollout, pre-§13-77 GenAI disclosure anchor (§13-2-12(4)) |
+| [Utah OAIP × Dentacor RMA](data/examples/instruments/utah-dentacor-ai-radiograph-2025.md) | Dentacor Mitigation Agreement (signed 2025-05-31) | Scope-of-practice RMA for non-prescribing profession, single-statute forbearance (§58-69-5), closed list of three diagnoses + two procedures, dual-verification AI/human concurrence |
+| [Utah OAIP × Doctronic RMA](data/examples/instruments/utah-doctronic-rx-renewal-2025.md) | Doctronic Agreement (signed 2025-10-24) | Three-party contract (OAIP + DOPL + participant), multi-statute mitigation bundle (seven prescriber chapters), permission + requirement + restriction mix in one instrument |
+| [Utah OAIP × Legion Health RMA](data/examples/instruments/utah-legion-health-psych-refill-2026.md) | Legion Health Agreement (signed 2026-03-19) | Two-entity participant (Legion Health PA + Legion Health, Inc.), deferred Commencement Date (`term_start: null` until notice), statute renumbering straddle (§13-72-302 → §13-72-401 effective 2026-05-06), two-tier affiliated-provider forbearance |
 
-Combined, the five remaps span four agencies (SEC, CFPB, IRS ×2, CFTC), every value of `obligation_kind` and `reliance_scope`, every release posture (HTML, PDF, redacted PDF), both favorable and adverse PLR outcomes, and three instrument types (`no-action-letter`, `advisory-opinion`, `private-letter-ruling`, `interpretive-letter`).
+Combined, the nine remaps span five authorities (SEC, CFPB, IRS ×2, CFTC, Utah OAIP), every value of `obligation_kind` and `reliance_scope`, every release posture (HTML, PDF, redacted PDF), both favorable and adverse PLR outcomes, and five instrument types (`no-action-letter`, `advisory-opinion`, `private-letter-ruling`, `interpretive-letter`, `rma`). The four Utah RMAs are the first `gist:Contract` instruments in the registry — distinct from the `gist:Agreement`/`gist:Determination` interpretive instruments above — and exercise regulatory-mitigation shapes that interpretive-letter programs do not: event-triggered cure windows, phased rollout permissions, scope-of-practice waivers, and deferred commencement dates.
 
 ## What PubLedge adds
 

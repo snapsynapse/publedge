@@ -13,8 +13,8 @@
     },
     "id": {
       "type": "string",
-      "description": "Permanent PubLedge identifier in the form PL-JIA-NNNN (four-digit sequential).",
-      "pattern": "^PL-JIA-[0-9]{4}$"
+      "description": "Permanent PubLedge identifier in the form {jurisdiction}-{authority}-jia-{seq} (lowercase; seq may be native document number or zero-padded sequence scoped to jurisdiction+kind).",
+      "pattern": "^[a-z]{2}(-[a-z0-9]+)+-jia-[a-z0-9-]+$"
     },
     "name": {
       "type": "string",
@@ -28,7 +28,7 @@
     },
     "jurisdiction": {
       "type": "string",
-      "description": "ISO-style jurisdiction code (e.g. us-ut, us-ca, us-federal).",
+      "description": "ISO-style jurisdiction code (e.g. us, us-ut, us-ca). Federal scope uses bare country code (us).",
       "pattern": "^[a-z]{2,3}(-[a-z0-9]{2,})?$"
     },
     "type": {
@@ -44,7 +44,7 @@
     "supersedes": {
       "type": "string",
       "description": "ID of a prior PubLedge instrument this one replaces.",
-      "pattern": "^PL-JIA-[0-9]{4}$"
+      "pattern": "^[a-z]{2}(-[a-z0-9]+)+-jia-[a-z0-9-]+$"
     },
     "official_url": { "type": "string", "format": "uri" },
     "statute_anchors": {

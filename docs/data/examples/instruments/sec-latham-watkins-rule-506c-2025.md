@@ -1,11 +1,11 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Determination"
-id: PL-NAL-SEC-0001
+id: us-sec-nal-0001
 slug: sec-latham-watkins-rule-506c-2025
 title: "SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)"
 type: no-action-letter
 source: demonstration-remap
-jurisdiction: us-federal
+jurisdiction: us
 authority: sec-corpfin
 issued_by:
   "@type": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization"

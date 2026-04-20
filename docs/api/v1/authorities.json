@@ -1,23 +1,33 @@
 {
   "meta": {
-    "generated": "2026-04-19T22:41:00.746Z",
-    "count": 4
+    "generated": "2026-04-20T02:36:32.461Z",
+    "count": 6
   },
   "items": [
     {
       "id": "cfpb",
       "name": "Consumer Financial Protection Bureau",
-      "jurisdiction": "us-federal"
+      "jurisdiction": "us"
+    },
+    {
+      "id": "cftc-dsio",
+      "name": "CFTC Division of Swap Dealer and Intermediary Oversight",
+      "jurisdiction": "us"
     },
     {
       "id": "irs-chief-counsel",
       "name": "IRS Office of Chief Counsel",
-      "jurisdiction": "us-federal"
+      "jurisdiction": "us"
+    },
+    {
+      "id": "irs-tege",
+      "name": "IRS Tax Exempt and Government Entities Division",
+      "jurisdiction": "us"
     },
     {
       "id": "sec-corpfin",
       "name": "SEC Division of Corporation Finance",
-      "jurisdiction": "us-federal"
+      "jurisdiction": "us"
     },
     {
       "id": "utah-oaip",

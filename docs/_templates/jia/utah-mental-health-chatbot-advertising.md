@@ -1,6 +1,6 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Template"
-id: PL-TPL-JIA-0003
+id: us-ut-tpl-jia-0003
 slug: utah-mental-health-chatbot-advertising
 title: "Utah JIA Template — Mental-Health Chatbot Advertising and Representations (§13-72a-202)"
 kind: jia

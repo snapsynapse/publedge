@@ -10,7 +10,7 @@
     {
       "id": "container-comparison",
       "name": "Instrument Comparison",
-      "description": "Compare 4 instruments across 1 obligations",
+      "description": "Compare 10 instruments across 1 obligations",
       "url": "https://publedge.org/compare.html"
     },
     {
@@ -73,28 +73,64 @@
   "content": {
     "containers": [
       {
-        "id": "PL-AO-CFPB-0001",
+        "id": "us-cfpb-ao-0001",
         "name": "\"Consumer Financial Protection Bureau\"",
         "status": "draft",
-        "url": "https://publedge.org/container/PL-AO-CFPB-0001/"
+        "url": "https://publedge.org/container/us-cfpb-ao-0001/"
       },
       {
-        "id": "PL-PLR-0001",
+        "id": "us-cftc-il-17-65",
+        "name": "\"U.S. Commodity Futures Trading Commission, Division of Swap Dealer and Intermediary Oversight\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/us-cftc-il-17-65/"
+      },
+      {
+        "id": "us-irs-plr-202506001",
         "name": "\"Internal Revenue Service, Office of Chief Counsel\"",
         "status": "draft",
-        "url": "https://publedge.org/container/PL-PLR-0001/"
+        "url": "https://publedge.org/container/us-irs-plr-202506001/"
       },
       {
-        "id": "PL-NAL-SEC-0001",
+        "id": "us-irs-plr-202614036",
+        "name": "\"Internal Revenue Service, Tax Exempt and Government Entities\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/us-irs-plr-202614036/"
+      },
+      {
+        "id": "us-sec-nal-0001",
         "name": "\"U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)\"",
         "status": "draft",
-        "url": "https://publedge.org/container/PL-NAL-SEC-0001/"
+        "url": "https://publedge.org/container/us-sec-nal-0001/"
       },
       {
-        "id": "PL-JIA-0001",
+        "id": "us-ut-oaip-rma-0002",
         "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
         "status": "draft",
-        "url": "https://publedge.org/container/PL-JIA-0001/"
+        "url": "https://publedge.org/container/us-ut-oaip-rma-0002/"
+      },
+      {
+        "id": "us-ut-oaip-rma-0003",
+        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/us-ut-oaip-rma-0003/"
+      },
+      {
+        "id": "us-ut-oaip-rma-0001",
+        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/us-ut-oaip-rma-0001/"
+      },
+      {
+        "id": "us-ut-oaip-rma-0004",
+        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/us-ut-oaip-rma-0004/"
+      },
+      {
+        "id": "us-ut-oaip-jia-0001",
+        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
+        "status": "draft",
+        "url": "https://publedge.org/container/us-ut-oaip-jia-0001/"
       }
     ],
     "primaries": [
@@ -112,9 +148,19 @@
         "url": "https://publedge.org/authority/cfpb/"
       },
       {
+        "id": "cftc-dsio",
+        "name": "CFTC Division of Swap Dealer and Intermediary Oversight",
+        "url": "https://publedge.org/authority/cftc-dsio/"
+      },
+      {
         "id": "irs-chief-counsel",
         "name": "IRS Office of Chief Counsel",
         "url": "https://publedge.org/authority/irs-chief-counsel/"
+      },
+      {
+        "id": "irs-tege",
+        "name": "IRS Tax Exempt and Government Entities Division",
+        "url": "https://publedge.org/authority/irs-tege/"
       },
       {
         "id": "sec-corpfin",
@@ -129,7 +175,7 @@
     ],
     "templates": [
       {
-        "id": "PL-TPL-JIA-0003",
+        "id": "us-ut-tpl-jia-0003",
         "slug": "utah-mental-health-chatbot-advertising",
         "title": "Utah JIA Template — Mental-Health Chatbot Advertising and Representations (§13-72a-202)",
         "kind": "jia",
@@ -138,7 +184,7 @@
         "url": "https://publedge.org/template/utah-mental-health-chatbot-advertising/"
       },
       {
-        "id": "PL-TPL-JIA-0002",
+        "id": "us-ut-tpl-jia-0002",
         "slug": "utah-mental-health-chatbot-data-protection",
         "title": "Utah JIA Template — Mental-Health Chatbot Data Protection (§13-72a-201)",
         "kind": "jia",
@@ -147,7 +193,7 @@
         "url": "https://publedge.org/template/utah-mental-health-chatbot-data-protection/"
       },
       {
-        "id": "PL-TPL-JIA-0001",
+        "id": "us-ut-tpl-jia-0001",
         "slug": "utah-mental-health-chatbot-first-session-disclosure",
         "title": "Utah JIA Template — Mental-Health Chatbot First-Session Disclosure (§13-72a-203)",
         "kind": "jia",
@@ -156,7 +202,7 @@
         "url": "https://publedge.org/template/utah-mental-health-chatbot-first-session-disclosure/"
       },
       {
-        "id": "PL-TPL-RMA-0001",
+        "id": "us-ut-tpl-rma-0001",
         "slug": "utah-ai-sandbox-mitigation-mental-health-chatbot",
         "title": "Utah RMA Template — AI Sandbox Mitigation, Mental-Health Chatbot Cohort",
         "kind": "rma",
@@ -165,7 +211,7 @@
         "url": "https://publedge.org/template/utah-ai-sandbox-mitigation-mental-health-chatbot/"
       },
       {
-        "id": "PL-TPL-RMA-0002",
+        "id": "us-ut-tpl-rma-0002",
         "slug": "utah-genai-safe-harbor-enrollment",
         "title": "Utah RMA Template — GenAI Safe-Harbor Enrollment (§13-75-104)",
         "kind": "rma",
@@ -182,7 +228,7 @@
     "robots": "https://publedge.org/robots.txt"
   },
   "meta": {
-    "last_updated": "2026-04-19",
+    "last_updated": "2026-04-20",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"
