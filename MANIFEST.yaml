@@ -107,7 +107,7 @@ files:
   # Data — mapping
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:f98a6f0926febbf9fe020b3ac64e944e29fc18e2d19d4a11cfd926f0a7efe7d8
+    hash: sha256:f7c73f9a0b29d998194fe1cf9b97bc6d56235b14a37bff9d4a4c148ad4c39bcc
     note: Connects instruments to obligations via terms
 
   # Protocol prose
