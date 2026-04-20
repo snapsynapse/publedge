@@ -52,6 +52,19 @@ Shipped 2026-04-19 (prior-art remap + spec v0.2 session):
 - Utah us-ut-oaip-jia-0001 demo retrofitted to v0.2 frontmatter
 - [PRIOR-ART.md](PRIOR-ART.md) updated with "Reference remaps" section linking the three demo instruments
 
+Shipped 2026-04-19 (late session — Utah RMA quartet + federal expansions + ID migration):
+
+- Six new demonstration instruments under `data/examples/instruments/` ingested via `publedge-source-ingest` skill:
+  - [irs-plr-202614036.md](data/examples/instruments/irs-plr-202614036.md) — IRS adverse PLR, §501(c)(3) denial (2026-01-12); exercises `obligation_kind: [restriction]` in a PLR, dual-letter structure, `authority: irs-tege` (second distinct IRS sub-agency)
+  - [cftc-fia-cta-registration-2017.md](data/examples/instruments/cftc-fia-cta-registration-2017.md) — CFTC Letter 17-65, CTA registration / MiFID II unbundling (2017-12-11); first `type: interpretive-letter` in registry
+  - [utah-elizachat-teen-mental-health-2024.md](data/examples/instruments/utah-elizachat-teen-mental-health-2024.md) — `us-ut-oaip-rma-0001`; incident-triggered 30-day cure forbearance, phased school-district rollout, pre-§13-77 GenAI disclosure anchor
+  - [utah-dentacor-ai-radiograph-2025.md](data/examples/instruments/utah-dentacor-ai-radiograph-2025.md) — `us-ut-oaip-rma-0002`; scope-of-practice RMA for non-prescribing profession, single-statute forbearance (§58-69-5)
+  - [utah-doctronic-rx-renewal-2025.md](data/examples/instruments/utah-doctronic-rx-renewal-2025.md) — `us-ut-oaip-rma-0003`; three-party contract, multi-statute mitigation bundle across seven prescriber chapters
+  - [utah-legion-health-psych-refill-2026.md](data/examples/instruments/utah-legion-health-psych-refill-2026.md) — `us-ut-oaip-rma-0004`; two-entity participant, deferred Commencement Date (`term_start: null`), statute-renumbering straddle (§13-72-302 → §13-72-401), two-tier affiliated-provider forbearance
+- **Jurisdiction-scoped ID migration**: IDs changed from `PL-{KIND}-NNNN` to `{jurisdiction}-{authority}-{kind}-{seq}`, lowercase, with native document numbers preserved (`us-irs-plr-202506001`, `us-cftc-il-17-65`) and zero-padded sequences scoped to `{jurisdiction, kind}` by effective date (`us-ut-oaip-rma-0001`..`0004`). Bare `us` replaces `us-federal`. Schema regex patterns, `PROTOCOL.md` identifier section, `SKILL.md` Phase 4 spec, and all templates/docs updated.
+- Registry totals: 10 instruments spanning 6 authorities (Utah OAIP, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC DSIO) and 5 instrument types (`jia`, `rma`, `no-action-letter`, `advisory-opinion`, `private-letter-ruling`, `interpretive-letter`). Every value of `obligation_kind` and `reliance_scope` is now exercised by at least one instrument.
+- [PRIOR-ART.md](PRIOR-ART.md) expanded with the four Utah RMAs + CFTC interpretive letter + IRS adverse PLR rows; count updated 3 → 9 remaps.
+
 ## v0.1 — remaining before public freeze
 
 | Item | Owner | Notes |
@@ -78,7 +91,7 @@ v0.2 spec landed in CONTENT-GUIDE.md 2026-04-19. Follow-up items needed before i
 | Update `scripts/validate.js` to enforce v0.2 | Cross-field rules: `source = publedge-original-draft` ∧ `status = published` → error; `type = rma` → require `enforcement_authority` + `term_length` + `review_date`; `type = private-letter-ruling` → require `redaction_level`; withdrawal triplet is all-or-nothing. |
 | Update `_templates/jia/*` and `_templates/rma/*` frontmatter to match v0.2 | Currently v0.1 shape. Templates will break for new contributors until retrofitted. |
 | Build renderer for composed disclaimer | Currently `disclaimer: ""` in every v0.2-retrofitted demo; renderer in `scripts/build-extras.js` must compose from `source` + `status` per the table in CONTENT-GUIDE.md §"Disclaimer composition". |
-| Run `./scripts/validate-hashes.sh --update` | Four files changed (one new) under `data/examples/instruments/`; MANIFEST.yaml is now stale. |
+| Run `./scripts/validate-hashes.sh --update` | Many files changed under `data/examples/instruments/`, `_templates/`, `schema/`, `PROTOCOL.md`, etc. after the ID migration and RMA quartet; MANIFEST.yaml is now stale. |
 
 ## v0.2 — branch and strip + browser tooling + clean URLs
 
@@ -107,7 +120,7 @@ Each needs a forcing function — date, dependency, or explicit trigger.
 | Question | Forcing function | Default if unforced |
 |---|---|---|
 | Offer Nov 30 2026 annual-report section template as follow-on? | OAIP outreach response after v0.1 release | Defer to v0.2 conversation |
-| Retroactively ingest SEC no-action letters / IRS PLRs into PubLedge at scale? | Post-v0.1 editorial decision | Partially resolved 2026-04-19: three demo remaps live under `data/examples/instruments/` with `source: demonstration-remap`. Full-corpus ingestion remains deferred. |
+| Retroactively ingest SEC no-action letters / IRS PLRs into PubLedge at scale? | Post-v0.1 editorial decision | Partially resolved 2026-04-19: nine demo remaps live under `data/examples/instruments/` with `source: demonstration-remap` (SEC, CFPB, IRS × 2, CFTC, Utah OAIP × 4). Full-corpus ingestion remains deferred. |
 | paice.foundation attribution at foundation-protocol level vs personal/snapsynapse? | Public release prep | List under PAICE portfolio at paice.foundation |
 | PubLedge namespace at `publedge.org/ns/` minted? | First concept unexpressible in gist | Defer |
 | w3id.org/publedge/ns/ PR submitted? | ~6 months stable extensions | Defer long-term |

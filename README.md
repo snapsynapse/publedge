@@ -13,7 +13,7 @@ Plain markdown with structured frontmatter. Hash-pinned for integrity. Bound to 
 Three things in one place:
 
 1. **The protocol** — the [PROTOCOL.md](PROTOCOL.md) specification and the [PRIOR-ART.md](PRIOR-ART.md) survey that motivates it.
-2. **Utah-shaped reference content** — JIA and RMA templates plus the first registry instance, all anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104).
+2. **Utah-shaped reference content** — 5 JIA/RMA templates anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104), plus 10 demonstration instruments under `data/examples/instruments/` spanning 6 authorities (Utah OAIP, SEC, CFPB, IRS, CFTC) and 5 instrument types (JIA, RMA, no-action letter, advisory opinion, private letter ruling, interpretive letter).
 3. **The published site** — rendered HTML under `docs/`, served by GitHub Pages from `main /docs`. Regenerate with `npm run build` before committing; CI fails if `docs/` drifts from sources.
 
 ## What this repo is not
@@ -50,7 +50,7 @@ every URL in the sitemap, on every push and pull request.
 | `PRIOR-ART.md` | Survey of analogous instrument programs |
 | `MANIFEST.yaml` | SHA-256 hashes for every canonical file |
 | `_templates/jia/`, `_templates/rma/` | Fill-in templates with `{{variable}}` placeholders |
-| `data/examples/` | Reference instances of authorities, instruments, obligations, mappings (incl. SEC / CFPB / IRS demonstration remaps) |
+| `data/examples/` | Reference instances of authorities, instruments, obligations, mappings (10 demonstration remaps: Utah OAIP × 5, SEC, CFPB, IRS × 2, CFTC) |
 | `reference/` | Rendered HTML pages (protocol, prior-art, registry, vocabulary) |
 | `tools/` | Rendered HTML pages (templates, planned tooling) |
 | `vendor/gist/` | Pinned snapshot of the Semantic Arts gist core ontology |
@@ -95,16 +95,18 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | Protocol specification (`PROTOCOL.md`) | done |
 | Prior-art survey (`PRIOR-ART.md`) | done |
 | Initial Utah templates (3 JIA, 2 RMA) | done |
-| First registry instance (us-ut-oaip-jia-0001 stub) | draft |
+| First registry instance (`us-ut-oaip-jia-0001` draft) | done |
 | Hash-pinned integrity + CI verification | done |
 | Discovery files (`llms.txt`, `agents.json`, `feed.xml`) | done |
 | MCP server (`mcp-server.js`) | done |
 | CLI validators (`scripts/validate.js`, `scripts/verify.js`) | done |
 | JSON Schemas (`schema/jia.schema.json`, `schema/rma.schema.json`) + JSON-LD context | done |
-| First registry instance us-ut-oaip-jia-0001 (draft) | done |
 | Unified site generator (KaC + reference + templates in `docs/`) | done |
 | Frontmatter spec v0.2 (decoupled `@type`/`obligation_kind`, shared core fields, withdrawal lifecycle, redaction posture) | done |
-| SEC + CFPB + IRS demonstration remaps under `data/examples/instruments/` | done |
+| Federal demonstration remaps (SEC no-action, CFPB advisory, IRS PLRs × 2, CFTC interpretive letter) | done |
+| Utah OAIP RMA demonstration remaps (ElizaChat, Dentacor, Doctronic, Legion Health) | done |
+| Jurisdiction-scoped ID scheme (`{jurisdiction}-{authority}-{kind}-{seq}`) | done |
+| `publedge-source-ingest` skill under `.claude/skills/` for authored ingestion pipeline | done |
 | Private snapshot for pre-release review | staged |
 | Lawyer review (SLC attorney, week of 2026-04-20) | pending |
 | Canonical-spec landing + repo-polish + promo | planned at release |
