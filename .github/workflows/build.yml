@@ -67,10 +67,10 @@ jobs:
       - name: Run pa11y-ci (WCAG 2.1 AA)
         run: |
           npx --yes pa11y-ci \
+            --config .pa11yci.json \
             --sitemap http://localhost:8088/sitemap.xml \
             --sitemap-find 'https://publedge.org' \
-            --sitemap-replace 'http://localhost:8088' \
-            --threshold 0
+            --sitemap-replace 'http://localhost:8088'
 
 # GitHub Pages serves from main /docs. The build job ensures docs/ stays
 # in sync with sources; the a11y job runs a WCAG 2.1 AA pass on every
