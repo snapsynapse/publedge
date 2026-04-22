@@ -2555,18 +2555,28 @@ function build() {
     // Sitemap + robots
     const siteUrl = (config.url || '').replace(/\/?$/, '/');
     fs.writeFileSync(path.join(DOCS_DIR, 'sitemap.xml'), generateSitemap(config, sitemapPages));
-    const aiBots = ['GPTBot', 'ChatGPT-User', 'OAI-SearchBot', 'ClaudeBot', 'Claude-Web', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'cohere-ai', 'CCBot', 'Bytespider', 'Amazonbot', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'DuckAssistBot'];
+    const aiBots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-Web', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Amazonbot', 'Bytespider', 'cohere-ai', 'CCBot', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'DuckAssistBot'];
+    const seoBots = ['Googlebot', 'Bingbot', 'DuckDuckBot', 'Slurp', 'Twitterbot', 'facebookexternalhit'];
     const robotsLines = [
-        '# PubLedge is published under CC-BY-4.0. AI crawlers are explicitly allowed.',
+        '# PubLedge is published under CC-BY-4.0. AI crawlers and SEO bots are explicitly allowed.',
         'User-agent: *',
         'Allow: /',
-        ''
+        '',
+        '# AI / LLM crawlers — explicitly permitted'
     ];
     for (const bot of aiBots) {
+        robotsLines.push('');
         robotsLines.push(`User-agent: ${bot}`);
         robotsLines.push('Allow: /');
-        robotsLines.push('');
     }
+    robotsLines.push('');
+    robotsLines.push('# SEO / social crawlers');
+    for (const bot of seoBots) {
+        robotsLines.push('');
+        robotsLines.push(`User-agent: ${bot}`);
+        robotsLines.push('Allow: /');
+    }
+    robotsLines.push('');
     robotsLines.push(`Sitemap: ${siteUrl}sitemap.xml`);
     robotsLines.push(`# Machine-readable site info: ${siteUrl}agents.json`);
     robotsLines.push(`# LLM context: ${siteUrl}llms.txt`);

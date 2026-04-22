@@ -29,7 +29,7 @@ _private/
 
 # Environment
 .env
-.env.local
+.env.*
 
 # --- baseline additions (automated audit 2026-04-21) ---
 __pycache__/
