@@ -24,8 +24,8 @@ variables:
     description: "Mid-term review date (YYYY-MM-DD)"
   - name: termination_date
     description: "Term end date (YYYY-MM-DD) or 'indefinite'"
+source: publedge-original-draft
 status: draft
-disclaimer: "Suggested prior art. Not official OAIP output."
 created: 2026-04-18
 modified: 2026-04-18
 ---

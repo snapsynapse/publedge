@@ -22,8 +22,8 @@ variables:
     description: "Minutes of inactivity that trigger re-display of the AI disclosure (default 30)"
   - name: review_date
     description: "Date by which the parties will review the interpretation (YYYY-MM-DD)"
+source: publedge-original-draft
 status: draft
-disclaimer: "Suggested prior art. Not official OAIP output."
 created: 2026-04-18
 modified: 2026-04-18
 ---

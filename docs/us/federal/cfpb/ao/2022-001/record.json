@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/cfpb/ao/2022-001/",
-    "generated": "2026-04-22T04:33:35.413Z",
+    "generated": "2026-04-22T17:08:28.101Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -59,6 +59,7 @@
         "@type": "Legislation",
         "name": "cite: \"15 U.S.C. §1692f (FDCPA §808)\""
       }
-    ]
+    ],
+    "license": "Demonstration remap of a publicly archived authority artifact. Not an authority-issued PubLedge instrument. The official source controls."
   }
 }

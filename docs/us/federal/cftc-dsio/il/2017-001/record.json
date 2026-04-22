@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/",
-    "generated": "2026-04-22T04:33:35.414Z",
+    "generated": "2026-04-22T17:08:28.102Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -60,6 +60,7 @@
         "@type": "Legislation",
         "name": "cite: \"7 U.S.C. §1a(12) (Commodity Exchange Act definition of commodity trading advisor)\""
       }
-    ]
+    ],
+    "license": "Demonstration remap of a publicly archived authority artifact. Not an authority-issued PubLedge instrument. The official source controls."
   }
 }

@@ -24,8 +24,8 @@ variables:
     description: "Term end date (YYYY-MM-DD)"
   - name: incident_reporting_threshold
     description: "Event types and thresholds that trigger mandatory reporting to OAIP within 72 hours"
+source: publedge-original-draft
 status: draft
-disclaimer: "Suggested prior art. Not official OAIP output."
 created: 2026-04-18
 modified: 2026-04-18
 ---

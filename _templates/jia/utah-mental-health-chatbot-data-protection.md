@@ -22,8 +22,8 @@ variables:
     description: "Whether user data is used to train or fine-tune any model — 'no' or specific scope"
   - name: review_date
     description: "Date by which the parties will review the interpretation (YYYY-MM-DD)"
+source: publedge-original-draft
 status: draft
-disclaimer: "Suggested prior art. Not official OAIP output."
 created: 2026-04-18
 modified: 2026-04-18
 ---

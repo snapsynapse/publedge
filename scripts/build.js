@@ -803,6 +803,17 @@ function tdJurisdiction(jur, opts = {}) {
 }
 
 // Record at-a-glance summary strip — horizontal pill row above meta-detail.
+const { composeDisclaimer } = require('./lib/disclaimer');
+
+function renderRecordDisclaimer(c) {
+    const { text, error } = composeDisclaimer(c.source, c.status, c.disclaimer);
+    if (error) {
+        return `<aside class="record-disclaimer record-disclaimer-error" role="note" aria-label="Disclaimer error"><strong>Spec error:</strong> ${escapeHTML(error)}</aside>`;
+    }
+    if (!text) return '';
+    return `<aside class="record-disclaimer" role="note" aria-label="Record disclaimer">${escapeHTML(text)}</aside>`;
+}
+
 function renderRecordSummary(c, config) {
     const typeLabel = config.hierarchy?.type_labels?.[c.type] || c.type;
     const jur = config.hierarchy?.jurisdictions?.[c.jurisdiction];
@@ -1473,6 +1484,7 @@ function generateContainerDetail(config, container, data, configCSS) {
                 ${container.official_url ? `<span><a href="${escapeHTML(container.official_url)}" target="_blank" rel="noopener">Official source</a></span>` : ''}
             </div>
             ${renderIncompleteMetadataWarning(container)}
+            ${renderRecordDisclaimer(container)}
             <div class="citation-block">
                 <strong>Cite as:</strong> <code>${escapeHTML(container.id)}</code>${container.official_ref ? ` &middot; <em>${escapeHTML(container.official_ref)}</em>` : ''}
                 &middot; <a href="record.json">record.json</a>
@@ -1862,7 +1874,7 @@ function generateLegalDocumentJsonLd(c, config) {
         })),
         'isPartOf': c.program ? { '@type': 'CreativeWork', 'name': c.program } : undefined,
         'encoding': encoding.length ? encoding : undefined,
-        'license': c.disclaimer || undefined
+        'license': composeDisclaimer(c.source, c.status, c.disclaimer).text || undefined
     };
 }
 

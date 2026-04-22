@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/",
-    "generated": "2026-04-22T04:33:35.418Z",
+    "generated": "2026-04-22T17:08:28.108Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -76,6 +76,7 @@
         "@type": "Legislation",
         "name": "cite: \"Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act, restructured)\""
       }
-    ]
+    ],
+    "license": "Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law."
   }
 }

@@ -11,6 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { composeDisclaimer } = require('./lib/disclaimer');
 
 const ROOT = path.join(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, process.env.KAC_OUTPUT_DIR || 'docs');
@@ -317,7 +318,7 @@ function renderTemplates() {
 <dt>Kind</dt><dd>${escapeHTML((t.meta.kind || '').toUpperCase())}</dd>
 <dt>Jurisdiction</dt><dd>${escapeHTML(t.meta.jurisdiction || '')}</dd>
 <dt>Status</dt><dd>${escapeHTML(t.meta.status || '')}</dd>
-${t.meta.disclaimer ? `<dt>Disclaimer</dt><dd>${escapeHTML(t.meta.disclaimer)}</dd>` : ''}
+${(() => { const d = composeDisclaimer(t.meta.source, t.meta.status, t.meta.disclaimer); return d.text ? `<dt>Disclaimer</dt><dd>${escapeHTML(d.text)}</dd>` : ''; })()}
 </dl>
 ${varRows ? `<h2>Variables</h2><table class="template-vars"><thead><tr><th>Variable</th><th>Description</th></tr></thead><tbody>${varRows}</tbody></table>` : ''}
 <h2>Template body</h2>
