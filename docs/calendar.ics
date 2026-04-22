@@ -7,7 +7,7 @@ X-WR-CALNAME:PubLedge Enforcement Calendar
 X-WR-CALDESC:Key dates for every record in the PubLedge registry.
 BEGIN:VEVENT
 UID:us-cfpb-ao-2022-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20220629
 DTEND;VALUE=DATE:20220629
 SUMMARY:Effective: CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)
@@ -16,7 +16,7 @@ URL:https://publedge.org/us/federal/cfpb/ao/2022-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-cftc-dsio-il-2017-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20171211
 DTEND;VALUE=DATE:20171211
 SUMMARY:Effective: CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling
@@ -25,7 +25,7 @@ URL:https://publedge.org/us/federal/cftc-dsio/il/2017-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-irs-chief-counsel-plr-2025-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20250207
 DTEND;VALUE=DATE:20250207
 SUMMARY:Effective: IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)
@@ -34,7 +34,7 @@ URL:https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-irs-tege-plr-2026-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20260112
 DTEND;VALUE=DATE:20260112
 SUMMARY:Effective: IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied\, Mixed-Use Facility
@@ -43,7 +43,7 @@ URL:https://publedge.org/us/federal/irs-tege/plr/2026-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-sec-corpfin-nal-2025-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20250312
 DTEND;VALUE=DATE:20250312
 SUMMARY:Effective: SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)
@@ -52,7 +52,7 @@ URL:https://publedge.org/us/federal/sec-corpfin/nal/2025-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2024-sb149-enacted@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20240313
 DTEND;VALUE=DATE:20240313
 SUMMARY:Enacted: Utah SB 149 (2024) — Artificial Intelligence Amendments
@@ -61,7 +61,7 @@ URL:https://publedge.org/us/utah/legislature/statute/2024-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2024-sb149-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20240501
 DTEND;VALUE=DATE:20240501
 SUMMARY:Effective: Utah SB 149 (2024) — Artificial Intelligence Amendments
@@ -70,7 +70,7 @@ URL:https://publedge.org/us/utah/legislature/statute/2024-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2025-hb452-enacted@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20250326
 DTEND;VALUE=DATE:20250326
 SUMMARY:Enacted: Utah HB 452 (2025) — Mental Health Chatbot Regulations
@@ -79,7 +79,7 @@ URL:https://publedge.org/us/utah/legislature/statute/2025-002/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2025-hb452-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20250507
 DTEND;VALUE=DATE:20250507
 SUMMARY:Effective: Utah HB 452 (2025) — Mental Health Chatbot Regulations
@@ -88,7 +88,7 @@ URL:https://publedge.org/us/utah/legislature/statute/2025-002/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2025-sb226-enacted@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20250325
 DTEND;VALUE=DATE:20250325
 SUMMARY:Enacted: Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments
@@ -97,7 +97,7 @@ URL:https://publedge.org/us/utah/legislature/statute/2025-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2025-sb226-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20250507
 DTEND;VALUE=DATE:20250507
 SUMMARY:Effective: Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments
@@ -106,7 +106,7 @@ URL:https://publedge.org/us/utah/legislature/statute/2025-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2026-hb320-enacted@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20260319
 DTEND;VALUE=DATE:20260319
 SUMMARY:Enacted: Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements
@@ -115,7 +115,7 @@ URL:https://publedge.org/us/utah/legislature/statute/2026-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2026-hb320-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20260506
 DTEND;VALUE=DATE:20260506
 SUMMARY:Effective: Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements
@@ -124,7 +124,7 @@ URL:https://publedge.org/us/utah/legislature/statute/2026-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-jia-2026-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20260415
 DTEND;VALUE=DATE:20260415
 SUMMARY:Effective: Utah Mental Health Chatbot Disclosure — Joint Interpretation
@@ -133,7 +133,7 @@ URL:https://publedge.org/us/utah/oaip/jia/2026-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2024-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20241118
 DTEND;VALUE=DATE:20241118
 SUMMARY:Effective: Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)
@@ -142,7 +142,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2024-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2024-001-term-start@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20241118
 DTEND;VALUE=DATE:20241118
 SUMMARY:Term Start: Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)
@@ -151,7 +151,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2024-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2024-001-term-end@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20251118
 DTEND;VALUE=DATE:20251118
 SUMMARY:Term End: Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)
@@ -160,7 +160,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2024-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2025-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20250531
 DTEND;VALUE=DATE:20250531
 SUMMARY:Effective: Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)
@@ -169,7 +169,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2025-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2025-001-term-start@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20250531
 DTEND;VALUE=DATE:20250531
 SUMMARY:Term Start: Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)
@@ -178,7 +178,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2025-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2025-001-term-end@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20260531
 DTEND;VALUE=DATE:20260531
 SUMMARY:Term End: Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)
@@ -187,7 +187,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2025-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2025-002-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20251024
 DTEND;VALUE=DATE:20251024
 SUMMARY:Effective: Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)
@@ -196,7 +196,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2025-002/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2025-002-term-start@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20251024
 DTEND;VALUE=DATE:20251024
 SUMMARY:Term Start: Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)
@@ -205,7 +205,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2025-002/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2025-002-term-end@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261024
 SUMMARY:Term End: Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)
@@ -214,7 +214,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2025-002/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2026-001-enacted@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:20260319
 DTEND;VALUE=DATE:20260319
 SUMMARY:Enacted: Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)
@@ -223,7 +223,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2026-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2026-001-effective@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:null
 DTEND;VALUE=DATE:null
 SUMMARY:Effective: Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)
@@ -232,7 +232,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2026-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2026-001-term-start@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:null
 DTEND;VALUE=DATE:null
 SUMMARY:Term Start: Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)
@@ -241,7 +241,7 @@ URL:https://publedge.org/us/utah/oaip/rma/2026-001/
 END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-oaip-rma-2026-001-term-end@publedge.org
-DTSTAMP:20260422T033348Z
+DTSTAMP:20260422T040247Z
 DTSTART;VALUE=DATE:null
 DTEND;VALUE=DATE:null
 SUMMARY:Term End: Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)
