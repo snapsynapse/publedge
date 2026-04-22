@@ -882,9 +882,10 @@ function renderAuthorityLinkPanel(auth) {
 function renderUpcomingWidget(containers, config) {
     const today = new Date().toISOString().slice(0, 10);
     const events = [];
+    const isValidDate = (s) => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s);
     for (const c of containers) {
         const push = (kind, date) => {
-            if (!date || date < today) return;
+            if (!isValidDate(date) || date < today) return;
             events.push({
                 kind, date, container: c,
                 daysUntil: Math.ceil((new Date(date) - new Date(today)) / 86400000)
