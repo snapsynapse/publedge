@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://publedge.org/schema/instrument.schema.json",
+  "title": "PubLedge Instrument (polymorphic)",
+  "description": "Polymorphic frontmatter schema for every interpretive-instrument record in the PubLedge registry. Discriminates on `type`. Supersedes schema/jia.schema.json and schema/rma.schema.json (retained for backward compatibility). See _workshop/CONTENT-GUIDE.md §'Interpretive-instrument core fields' for field semantics.",
+  "type": "object",
+  "required": ["id", "type", "status", "source", "jurisdiction", "authority"],
+  "properties": {
+    "@type": { "type": "string", "format": "uri" },
+    "id": {
+      "type": "string",
+      "description": "Canonical identifier: {jurisdiction}-{authority}-{kind}-{YYYY-NNN}.",
+      "pattern": "^[a-z]{2}(-[a-z0-9]+)+-[a-z-]+-[a-z0-9-]+$"
+    },
+    "legacy_id": { "type": ["string", "null"] },
+    "instance": { "type": ["string", "null"] },
+    "slug": { "type": "string" },
+    "title": { "type": "string", "minLength": 3 },
+    "name": { "type": "string", "minLength": 3 },
+    "type": {
+      "type": "string",
+      "enum": [
+        "jia",
+        "rma",
+        "no-action-letter",
+        "advisory-opinion",
+        "private-letter-ruling",
+        "revenue-ruling",
+        "interpretive-letter",
+        "statute"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "authority-issued",
+        "demonstration-remap",
+        "publedge-original-draft",
+        "authoritative-reference"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "proposed",
+        "reviewed",
+        "published",
+        "enacted",
+        "enforcing",
+        "expired",
+        "superseded",
+        "withdrawn"
+      ]
+    },
+    "jurisdiction": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(-[a-z0-9]{2,})?$"
+    },
+    "authority": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "issued_by": { "type": ["object", "string", "null"] },
+    "reliance_scope": {
+      "type": ["string", "null"],
+      "enum": [
+        "requesting-party-only",
+        "similarly-situated-third-parties",
+        "public",
+        "unspecified",
+        null
+      ]
+    },
+    "obligation_kind": {
+      "description": "Requirement / restriction / permission classifier. May be a single value or a bracketed list.",
+      "type": ["string", "array", "null"]
+    },
+    "requesting_party": { "type": ["string", "object", "null"] },
+    "participating_party": { "type": ["string", "null"] },
+    "interpreting_authority": { "type": ["string", "null"] },
+    "issuing_authority": { "type": ["string", "null"] },
+    "enforcement_authority": { "type": ["string", "null"] },
+    "parties": { "type": ["array", "null"] },
+    "program": { "type": ["string", "null"] },
+    "enacted": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "effective": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "term_start": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "term_end": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "review_date": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "last_verified": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "created": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "modified": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "commencement_date_trigger": { "type": ["string", "null"] },
+    "supersedes": { "type": ["string", "null"] },
+    "superseded_by": { "type": ["string", "null"] },
+    "withdrawn_date": { "type": ["string", "null"] },
+    "withdrawal_reason": { "type": ["string", "null"] },
+    "withdrawn_by_instrument": { "type": ["string", "null"] },
+    "redaction_level": {
+      "type": ["string", "null"],
+      "enum": ["none", "partial", "full", null]
+    },
+    "official_url": { "type": ["string", "null"], "format": "uri" },
+    "official_ref": { "type": ["string", "null"] },
+    "publication_citations": { "type": ["array", "null"] },
+    "source_documents": { "type": ["array", "null"] },
+    "extracted_text": { "type": ["string", "null"] },
+    "statute_anchors": { "type": ["array", "null"] },
+    "mitigations": { "type": ["array", "null"] },
+    "provisions": { "type": ["array", "null"] },
+    "timeline": { "type": ["array", "null"] },
+    "disclaimer": { "type": ["string", "null"] }
+  },
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "rma" } }, "required": ["type"] },
+      "then": {
+        "anyOf": [
+          { "required": ["issuing_authority"] },
+          { "required": ["enforcement_authority"] },
+          { "required": ["parties"] }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": { "type": { "enum": ["private-letter-ruling", "revenue-ruling"] } },
+        "required": ["type"]
+      },
+      "then": { "required": ["redaction_level"] }
+    },
+    {
+      "if": {
+        "properties": {
+          "source": { "const": "publedge-original-draft" },
+          "status": { "enum": ["published", "enforcing", "enacted"] }
+        },
+        "required": ["source", "status"]
+      },
+      "then": { "not": {} }
+    }
+  ]
+}

@@ -142,12 +142,48 @@ function validate() {
         }
     }
 
-    // Validate container authority references
+    // Validate container authority references + v0.2 frontmatter-spec cross-field rules
+    const PUBLISHED_LIKE = new Set(['published', 'enforcing', 'enacted']);
+    const WITHDRAWAL_FIELDS = ['withdrawn_date', 'withdrawal_reason', 'withdrawn_by_instrument'];
+    const BLANK = v => v === undefined || v === null || /^(null|n\/a|tbd|)$/i.test(String(v).trim());
+
     for (const cId of containerIds) {
         const content = fs.readFileSync(path.join(containerDir, `${cId}.md`), 'utf-8');
         const fm = parseFrontmatter(content);
         if (fm.authority && !authorityIds.includes(fm.authority)) {
             console.error(`  ERROR: Container "${cId}" references unknown authority "${fm.authority}"`);
+            errors++;
+        }
+
+        // v0.2: source × status consistency
+        if (fm.source === 'publedge-original-draft' && PUBLISHED_LIKE.has(String(fm.status || '').trim())) {
+            console.error(`  ERROR: "${cId}" has source=publedge-original-draft with status=${fm.status} — originals cannot reach a published-like status without authority sign-off (which would change source to authority-issued).`);
+            errors++;
+        }
+
+        // v0.2: RMA required-fields guard (non-blocking warn if absent)
+        if (fm.type === 'rma') {
+            const hasIssuer = fm.issuing_authority || fm.enforcement_authority || /^\s*parties:/m.test(content);
+            if (!hasIssuer) {
+                console.error(`  ERROR: RMA "${cId}" missing issuing_authority / enforcement_authority / parties.`);
+                errors++;
+            }
+            if (BLANK(fm.term_start) && BLANK(fm.commencement_date_trigger)) {
+                console.error(`  ERROR: RMA "${cId}" missing term_start (or commencement_date_trigger for deferred-commencement RMAs).`);
+                errors++;
+            }
+        }
+
+        // v0.2: PLR/revenue-ruling require redaction_level
+        if ((fm.type === 'private-letter-ruling' || fm.type === 'revenue-ruling') && BLANK(fm.redaction_level)) {
+            console.error(`  ERROR: "${cId}" type=${fm.type} requires redaction_level (none | partial | full).`);
+            errors++;
+        }
+
+        // v0.2: withdrawal triplet all-or-nothing
+        const setCount = WITHDRAWAL_FIELDS.filter(k => !BLANK(fm[k])).length;
+        if (setCount > 0 && setCount < WITHDRAWAL_FIELDS.length) {
+            console.error(`  ERROR: "${cId}" has partial withdrawal triplet — withdrawn_date, withdrawal_reason, and withdrawn_by_instrument must be set together.`);
             errors++;
         }
     }
