@@ -34,7 +34,7 @@ entities:
         color: "#c73041"
         color_light: "#a31f34"
       - name: permission
-        color: "#2a8a54"
+        color: "#1f7a43"
         color_light: "#1f7a43"
     body_sections:
       - Summary
@@ -57,11 +57,11 @@ entities:
         color: "#2a7ab0"
         color_light: "#1a5fa3"
       - name: enforcing
-        color: "#2a8a54"
+        color: "#1f7a43"
         color_light: "#1f7a43"
       - name: phased-enforcement
-        color: "#3a9d6a"
-        color_light: "#2a8a54"
+        color: "#1f7a43"
+        color_light: "#1f7a43"
       - name: pending-replacement
         color: "#c88e1a"
         color_light: "#a17011"

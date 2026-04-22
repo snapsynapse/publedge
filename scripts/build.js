@@ -518,9 +518,11 @@ function renderThemeScript() {
 }
 
 function renderSiteBanner() {
-    return `<div class="site-banner" role="note">
+    // <aside> is a complementary landmark by default — brings the banner
+    // inside the landmark graph (axe region rule) while keeping semantics.
+    return `<aside class="site-banner" aria-label="Site disclaimer">
         <strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe each instrument's own legal state, not editorial endorsement — see <a href="/definitions/">Definitions</a>.
-    </div>`;
+    </aside>`;
 }
 
 function renderSiteNav(config, activePage, prefix) {
@@ -1555,21 +1557,23 @@ function generateCompareBridge(config, cA, cB, comparison, data, configCSS) {
     const { primaries } = data;
     const pName = id => { const p = primaries.find(pr => pr.id === id); return p ? (p.name || humanizeId(id)) : humanizeId(id); };
 
+    const aLabel = cA.title || cA.name || cA.id;
+    const bLabel = cB.title || cB.name || cB.id;
     const content = `
-        ${renderBreadcrumb([{ label: 'Compare', href: 'compare.html' }, { label: `${cA.name} vs ${cB.name}` }], '../../')}
-        <div class="bridge-header"><h2>${escapeHTML(cA.name)} vs ${escapeHTML(cB.name)}</h2></div>
+        ${renderBreadcrumb([{ label: 'Compare', href: 'compare.html' }, { label: `${aLabel} vs ${bLabel}` }], '../../')}
+        <div class="bridge-header"><h2>${escapeHTML(aLabel)} vs ${escapeHTML(bLabel)}</h2></div>
         <div class="compare-section"><h3>Shared (${comparison.shared_count})</h3>
             ${comparison.shared_obligations.length ? `<ul class="compare-list">${comparison.shared_obligations.map(o => `<li><a href="/primary/${o}/" onclick="passTheme(this)">${escapeHTML(pName(o))}</a></li>`).join('')}</ul>` : '<p style="color:var(--text-secondary);">None shared.</p>'}
         </div>
-        <div class="compare-section"><h3>Only in ${escapeHTML(cA.name)} (${comparison.only_a_count})</h3>
+        <div class="compare-section"><h3>Only in ${escapeHTML(aLabel)} (${comparison.only_a_count})</h3>
             ${comparison.only_a.length ? `<ul class="compare-list">${comparison.only_a.map(o => `<li><a href="/primary/${o}/">${escapeHTML(pName(o))}</a></li>`).join('')}</ul>` : '<p style="color:var(--text-secondary);">None unique.</p>'}
         </div>
-        <div class="compare-section"><h3>Only in ${escapeHTML(cB.name)} (${comparison.only_b_count})</h3>
+        <div class="compare-section"><h3>Only in ${escapeHTML(bLabel)} (${comparison.only_b_count})</h3>
             ${comparison.only_b.length ? `<ul class="compare-list">${comparison.only_b.map(o => `<li><a href="/primary/${o}/">${escapeHTML(pName(o))}</a></li>`).join('')}</ul>` : '<p style="color:var(--text-secondary);">None unique.</p>'}
         </div>
         <div style="margin-top: 2rem; text-align: center;">
-            <a href="${containerIndexHref(cA)}" onclick="passTheme(this)" class="bridge-cta">${escapeHTML(cA.name)}</a>
-            <a href="${containerIndexHref(cB)}" onclick="passTheme(this)" class="bridge-cta">${escapeHTML(cB.name)}</a>
+            <a href="${containerIndexHref(cA)}" onclick="passTheme(this)" class="bridge-cta">View ${escapeHTML(cA.title || cA.name || cA.id)}</a>
+            <a href="${containerIndexHref(cB)}" onclick="passTheme(this)" class="bridge-cta">View ${escapeHTML(cB.title || cB.name || cB.id)}</a>
         </div>
     `;
 

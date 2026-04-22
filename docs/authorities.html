@@ -16,18 +16,18 @@
 :is(html, body).light-mode .group-badge.restriction { background: #a31f34; }
 .matrix-table .matrix-row-header.group-restriction { border-left-color: #c73041; }
 :is(html, body).light-mode .matrix-table .matrix-row-header.group-restriction { border-left-color: #a31f34; }
-.group-badge.permission { background: #2a8a54; }
+.group-badge.permission { background: #1f7a43; }
 :is(html, body).light-mode .group-badge.permission { background: #1f7a43; }
-.matrix-table .matrix-row-header.group-permission { border-left-color: #2a8a54; }
+.matrix-table .matrix-row-header.group-permission { border-left-color: #1f7a43; }
 :is(html, body).light-mode .matrix-table .matrix-row-header.group-permission { border-left-color: #1f7a43; }
 .status-badge.proposed { background: #d4a017; color: #000; }
 :is(html, body).light-mode .status-badge.proposed { background: #b8860b; color: #fff; }
 .status-badge.enacted { background: #2a7ab0; color: #000; }
 :is(html, body).light-mode .status-badge.enacted { background: #1a5fa3; color: #fff; }
-.status-badge.enforcing { background: #2a8a54; color: #000; }
+.status-badge.enforcing { background: #1f7a43; color: #000; }
 :is(html, body).light-mode .status-badge.enforcing { background: #1f7a43; color: #fff; }
-.status-badge.phased-enforcement { background: #3a9d6a; color: #000; }
-:is(html, body).light-mode .status-badge.phased-enforcement { background: #2a8a54; color: #fff; }
+.status-badge.phased-enforcement { background: #1f7a43; color: #000; }
+:is(html, body).light-mode .status-badge.phased-enforcement { background: #1f7a43; color: #fff; }
 .status-badge.pending-replacement { background: #c88e1a; color: #000; }
 :is(html, body).light-mode .status-badge.pending-replacement { background: #a17011; color: #fff; }
 .status-badge.expired { background: #7a8599; color: #000; }
@@ -95,9 +95,9 @@
             <button class="theme-toggle" onclick="toggleTheme(); event.stopPropagation();" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
         </div>
     </header>
-    <div class="site-banner" role="note">
+    <aside class="site-banner" aria-label="Site disclaimer">
         <strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe each instrument's own legal state, not editorial endorsement — see <a href="/definitions/">Definitions</a>.
-    </div>
+    </aside>
     <main class="container" id="main-content">
         
         <h2 style="margin-top:0.5rem;">Authorities</h2>

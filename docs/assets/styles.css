@@ -52,6 +52,23 @@
     --navy-hover: #2a5aa8;
     --highlight-soft: #2a2010;
   }
+  /* WCAG 1.4.3 — tokens that carry a dark navy in the light theme
+     become unreadable against the dark background when used as
+     foreground text. Remap foreground usages to the link token,
+     which is tuned for the dark surface (#7fb0e8 on #0c111c ≈ 7.7:1). */
+  :root:not(.light-mode) .timeline-year,
+  :root:not(.light-mode) .timeline-regulation,
+  :root:not(.light-mode) .prevnext-prev,
+  :root:not(.light-mode) .prevnext-next,
+  :root:not(.light-mode) .upcoming-days,
+  :root:not(.light-mode) .table-result-count strong {
+    color: var(--link);
+  }
+  :root:not(.light-mode) .timeline-regulation:hover,
+  :root:not(.light-mode) .prevnext-prev:hover,
+  :root:not(.light-mode) .prevnext-next:hover {
+    color: var(--link-hover);
+  }
 }
 
 * { box-sizing: border-box; }
@@ -768,7 +785,7 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
     border-radius: 999px;
     letter-spacing: 0.02em;
 }
-.freshness-badge.fresh { background: #2a8a54; color: #fff; }
+.freshness-badge.fresh { background: #1f7a43; color: #fff; }
 .freshness-badge.aging { background: #d4a017; color: #0a1f3e; }
 .freshness-badge.stale { background: #a64a4a; color: #fff; }
 
@@ -913,7 +930,7 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
     vertical-align: middle;
     margin-left: 0.3rem;
 }
-.recency-badge.new { background: #c8811a; }
+.recency-badge.new { background: #8b5a0a; }
 .recency-badge.updated { background: #2a7ab0; }
 
 /* --------------------------------------------------------------------------
