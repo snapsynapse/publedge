@@ -579,6 +579,8 @@ function renderPageShell(config, { title, activePage, prefix, content, descripti
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${escapeHTML(title)} - ${escapeHTML(siteName)}</title>
     <meta name="theme-color" content="#1a1a2e">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/favicon.svg">
     ${canonical}
     <link rel="stylesheet" href="/assets/styles.css">
     <style>${configCSS || ''}</style>
@@ -622,6 +624,8 @@ function renderBridgeShell(config, { title, depth, content, description, canonic
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${escapeHTML(title)} - ${escapeHTML(config.name || '')}</title>
     <meta name="theme-color" content="#1a1a2e">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/favicon.svg">
     <link rel="canonical" href="${siteUrl}${canonicalPath || ''}">
     <link rel="stylesheet" href="/assets/styles.css">
     <style>${configCSS || ''}</style>
