@@ -557,12 +557,13 @@ function renderFooter(config) {
     </footer>`;
 }
 
-function renderPageShell(config, { title, activePage, prefix, content, description, canonicalPath, configCSS }) {
+function renderPageShell(config, { title, activePage, prefix, content, description, canonicalPath, configCSS, structuredData }) {
     prefix = prefix || '';
     const siteName = config.name || 'Knowledge Base';
     const siteUrl = config.url || '';
     const desc = description || config.description || '';
     const canonical = canonicalPath ? `<link rel="canonical" href="${siteUrl}${canonicalPath}">` : '';
+    const jsonLd = structuredData ? `\n    <script type="application/ld+json">${JSON.stringify(structuredData)}</script>` : '';
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -581,7 +582,7 @@ function renderPageShell(config, { title, activePage, prefix, content, descripti
     ${config.social?.og_image ? `<meta property="og:image" content="${siteUrl}${config.social.og_image}">` : ''}
     ${canonicalPath !== undefined ? `<meta property="og:url" content="${siteUrl}${canonicalPath || ''}">` : ''}
     <meta name="twitter:card" content="${config.social?.twitter_card || 'summary'}">
-    ${config.social?.twitter_site ? `<meta name="twitter:site" content="${config.social.twitter_site}">` : ''}
+    ${config.social?.twitter_site ? `<meta name="twitter:site" content="${config.social.twitter_site}">` : ''}${jsonLd}
     ${renderThemeInit()}
 </head>
 <body>
@@ -1007,7 +1008,29 @@ function generateContainersPage(config, data, configCSS) {
         </table>
     `;
 
-    return renderPageShell(config, { title: cPlural, activePage: 'containers', content, canonicalPath: 'instruments.html', configCSS });
+    const siteUrl = config.url || '';
+    const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': cPlural,
+        'description': `All ${cPlural.toLowerCase()} tracked by ${config.name || 'PubLedge'}.`,
+        'url': `${siteUrl}instruments.html`,
+        'numberOfItems': containers.length,
+        'itemListElement': containers.map((c, i) => ({
+            '@type': 'ListItem',
+            'position': i + 1,
+            'url': `${siteUrl}${containerIndexHref(c).replace(/^\//, '')}`,
+            'name': c.title || c.name || c.id,
+            'item': {
+                '@type': 'LegalDocument',
+                'identifier': c.id,
+                'name': c.title || c.name || c.id,
+                'url': `${siteUrl}${containerIndexHref(c).replace(/^\//, '')}`
+            }
+        }))
+    };
+
+    return renderPageShell(config, { title: cPlural, activePage: 'containers', content, canonicalPath: 'instruments.html', configCSS, structuredData });
 }
 
 function generateAuthoritiesPage(config, data, configCSS) {
@@ -1035,12 +1058,34 @@ function generateAuthoritiesPage(config, data, configCSS) {
             <tbody>${rows}</tbody>
         </table>
     `;
+    const siteUrl = config.url || '';
+    const authStructuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': 'Authorities',
+        'description': 'Organizations that issue interpretations, waivers, or enforcement positions tracked by PubLedge.',
+        'url': `${siteUrl}authorities.html`,
+        'numberOfItems': authorities.length,
+        'itemListElement': authorities.map((a, i) => ({
+            '@type': 'ListItem',
+            'position': i + 1,
+            'url': `${siteUrl}${authorityHref(a).replace(/^\//, '')}`,
+            'name': a.name || a.id,
+            'item': {
+                '@type': 'GovernmentOrganization',
+                'identifier': a.id,
+                'name': a.name || a.id,
+                'url': a.website || `${siteUrl}${authorityHref(a).replace(/^\//, '')}`
+            }
+        }))
+    };
     return renderPageShell(config, {
         title: 'Authorities',
         activePage: 'none',
         content,
         canonicalPath: 'authorities.html',
-        configCSS
+        configCSS,
+        structuredData: authStructuredData
     });
 }
 
@@ -1071,7 +1116,31 @@ function generatePrimariesPage(config, data, configCSS) {
         }).join('\n')}
     `;
 
-    return renderPageShell(config, { title: pPlural, activePage: 'primaries', content, canonicalPath: 'obligations.html', configCSS });
+    const siteUrl = config.url || '';
+    const primStructuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': pPlural,
+        'description': `Stable obligation anchors tracked by ${config.name || 'PubLedge'}; each is implemented by one or more ${cNameLower}s.`,
+        'url': `${siteUrl}obligations.html`,
+        'numberOfItems': primaries.length,
+        'itemListElement': primaries.map((p, i) => ({
+            '@type': 'ListItem',
+            'position': i + 1,
+            'url': `${siteUrl}primary/${p.id}/`,
+            'name': p.name || humanizeId(p.id),
+            'item': {
+                '@type': 'DefinedTerm',
+                'identifier': p.id,
+                'name': p.name || humanizeId(p.id),
+                'inDefinedTermSet': `${siteUrl}obligations.html`,
+                'url': `${siteUrl}primary/${p.id}/`,
+                'termCode': p.group
+            }
+        }))
+    };
+
+    return renderPageShell(config, { title: pPlural, activePage: 'primaries', content, canonicalPath: 'obligations.html', configCSS, structuredData: primStructuredData });
 }
 
 function generateMatrixPage(config, data, configCSS) {
@@ -1104,7 +1173,22 @@ function generateMatrixPage(config, data, configCSS) {
         </div>
     `;
 
-    return renderPageShell(config, { title: 'Coverage Matrix', activePage: 'matrix', content, canonicalPath: 'matrix.html', configCSS });
+    const siteUrl = config.url || '';
+    const matrixStructuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'Dataset',
+        'name': 'PubLedge Coverage Matrix',
+        'description': `Coverage matrix mapping ${primaries.length} ${(config.entities?.primary?.plural || 'primaries').toLowerCase()} across ${containers.length} ${(config.entities?.container?.plural || 'containers').toLowerCase()}. Each cell indicates whether a given instrument implements a given obligation.`,
+        'url': `${siteUrl}matrix.html`,
+        'keywords': ['coverage matrix', 'obligations', 'legal instruments', 'public interpretation'],
+        'license': 'https://creativecommons.org/licenses/by/4.0/',
+        'creator': { '@type': 'Organization', 'name': 'PAICE.work PBC', 'url': 'https://paice.foundation' },
+        'distribution': [
+            { '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/matrix.json` },
+            { '@type': 'DataDownload', 'encodingFormat': 'text/html', 'contentUrl': `${siteUrl}matrix.html` }
+        ]
+    };
+    return renderPageShell(config, { title: 'Coverage Matrix', activePage: 'matrix', content, canonicalPath: 'matrix.html', configCSS, structuredData: matrixStructuredData });
 }
 
 function generateTimelinePage(config, data, configCSS) {
@@ -1958,13 +2042,38 @@ function generateDefinitionsPage(config, data, configCSS) {
             ${html}
         </div>
     `;
+
+    // DefinedTermSet covering (a) status vocabulary, (b) instrument types
+    const siteUrl = config.url || '';
+    const statusTerms = (config.entities?.container?.statuses || []).map(s => ({
+        '@type': 'DefinedTerm',
+        'name': s.name || s,
+        'termCode': s.name || s,
+        'inDefinedTermSet': `${siteUrl}definitions/`
+    }));
+    const typeTerms = Object.entries(config.hierarchy?.type_labels || {}).map(([code, label]) => ({
+        '@type': 'DefinedTerm',
+        'name': label,
+        'termCode': code,
+        'inDefinedTermSet': `${siteUrl}definitions/`
+    }));
+    const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'DefinedTermSet',
+        'name': 'PubLedge Definitions',
+        'description': 'Controlled vocabulary and terms of art used across the PubLedge registry: instrument statuses, instrument types, and entity roles.',
+        'url': `${siteUrl}definitions/`,
+        'hasDefinedTerm': [...statusTerms, ...typeTerms]
+    };
+
     return renderBridgeShell(config, {
         title: 'Definitions',
         depth: 1,
         content,
         canonicalPath: 'definitions/',
         description: 'Controlled vocabulary and terms of art used across the PubLedge registry.',
-        configCSS
+        configCSS,
+        structuredData
     });
 }
 

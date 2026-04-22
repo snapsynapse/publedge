@@ -520,6 +520,170 @@ function extendDiscovery(templates) {
 }
 
 // ---------------------------------------------------------------------------
+// 5a. Split monolithic sitemap.xml into a sitemap index + per-section files
+// ---------------------------------------------------------------------------
+function splitSitemap() {
+    const smPath = path.join(DOCS_DIR, 'sitemap.xml');
+    if (!fs.existsSync(smPath)) return;
+    const xml = fs.readFileSync(smPath, 'utf8');
+
+    // Extract loc + lastmod pairs
+    const urlRe = /<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>\s*<\/url>/g;
+    const entries = [];
+    let m;
+    while ((m = urlRe.exec(xml)) !== null) entries.push({ loc: m[1], lastmod: m[2] });
+    if (!entries.length) return;
+
+    const today = new Date().toISOString().split('T')[0];
+    const baseUrl = SITE_URL.replace(/\/$/, '') + '/';
+    const stripBase = (loc) => loc.replace(baseUrl, '').replace(/^https?:\/\/[^/]+\//, '');
+
+    const buckets = {
+        records: [],
+        authorities: [],
+        statutes: [],
+        reference: [],
+        templates: [],
+        bridges: [],
+        meta: []
+    };
+    for (const e of entries) {
+        const p = stripBase(e.loc);
+        if (/^us\/[^/]+\/[^/]+\/[^/]+\/[^/]+\/?$/.test(p) && !/statute\//.test(p)) buckets.records.push(e);
+        else if (/^us\/[^/]+\/[^/]+\/statute\//.test(p)) buckets.statutes.push(e);
+        else if (/^authority\//.test(p) || p === 'authorities.html') buckets.authorities.push(e);
+        else if (/^(reference\/|PROTOCOL\.md|PRIOR-ART\.md|ROADMAP\.md|ATTRIBUTION\.md|MANIFEST\.yaml|schema\/)/.test(p)) buckets.reference.push(e);
+        else if (/^(template\/|templates\/?$)/.test(p)) buckets.templates.push(e);
+        else if (/^(requires\/|compare\/|applies-to\/)/.test(p)) buckets.bridges.push(e);
+        else buckets.meta.push(e);
+    }
+
+    function emit(name, list) {
+        if (!list.length) return null;
+        const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${list.map(e => `  <url><loc>${e.loc}</loc><lastmod>${e.lastmod}</lastmod></url>`).join('\n')}\n</urlset>\n`;
+        fs.writeFileSync(path.join(DOCS_DIR, name), xml);
+        return name;
+    }
+
+    const emitted = [];
+    for (const [key, list] of Object.entries(buckets)) {
+        const name = `sitemap-${key}.xml`;
+        if (emit(name, list)) emitted.push({ name, count: list.length });
+    }
+
+    // Replace sitemap.xml with a sitemap index pointing at section files
+    const index = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${emitted.map(e => `  <sitemap><loc>${baseUrl}${e.name}</loc><lastmod>${today}</lastmod></sitemap>`).join('\n')}\n</sitemapindex>\n`;
+    fs.writeFileSync(smPath, index);
+
+    console.log(`  Sitemap split: index + ${emitted.map(e => `${e.name} (${e.count})`).join(', ')}`);
+}
+
+// ---------------------------------------------------------------------------
+// 5b. Additional feed formats: JSON Feed 1.1 + Atom 1.0
+// ---------------------------------------------------------------------------
+function emitAdditionalFeeds() {
+    // Source: recently_changed.json (already written by build.js)
+    const rcPath = path.join(DOCS_DIR, 'api', 'v1', 'recently_changed.json');
+    if (!fs.existsSync(rcPath)) return;
+    const rc = JSON.parse(fs.readFileSync(rcPath, 'utf8'));
+    const items = (rc.items || rc.containers || rc.records || []).slice(0, 20);
+    if (!items.length) return;
+
+    const baseUrl = SITE_URL.replace(/\/$/, '') + '/';
+    const siteName = 'PubLedge';
+    const updated = new Date().toISOString();
+
+    // JSON Feed 1.1
+    const jf = {
+        version: 'https://jsonfeed.org/version/1.1',
+        title: `${siteName} — Recently Changed Records`,
+        home_page_url: baseUrl,
+        feed_url: `${baseUrl}feed.json`,
+        description: 'Most recently changed records in the PubLedge registry.',
+        language: 'en',
+        items: items.map(it => ({
+            id: it.url || it.id,
+            url: it.url || `${baseUrl}`,
+            title: it.title || it.name || it.id,
+            content_text: it.summary || it.description || (it.title || it.id),
+            date_modified: it.last_changed || it.lastmod || it.updated || updated,
+            tags: it.tags || undefined
+        }))
+    };
+    fs.writeFileSync(path.join(DOCS_DIR, 'feed.json'), JSON.stringify(jf, null, 2));
+
+    // Atom 1.0
+    const esc = (s) => (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const atomEntries = items.map(it => {
+        const id = it.url || `${baseUrl}${it.id || ''}`;
+        const title = it.title || it.name || it.id || '';
+        const updatedAt = it.last_changed || it.lastmod || it.updated || updated;
+        const summary = it.summary || it.description || title;
+        return `  <entry>
+    <id>${esc(id)}</id>
+    <title>${esc(title)}</title>
+    <link href="${esc(id)}"/>
+    <updated>${esc(updatedAt)}</updated>
+    <summary>${esc(summary)}</summary>
+  </entry>`;
+    }).join('\n');
+    const atom = `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>${siteName} — Recently Changed Records</title>
+  <subtitle>Most recently changed records in the PubLedge registry.</subtitle>
+  <link href="${baseUrl}" rel="alternate"/>
+  <link href="${baseUrl}atom.xml" rel="self"/>
+  <id>${baseUrl}</id>
+  <updated>${updated}</updated>
+  <author><name>PubLedge</name></author>
+${atomEntries}
+</feed>
+`;
+    fs.writeFileSync(path.join(DOCS_DIR, 'atom.xml'), atom);
+
+    console.log(`  Additional feeds emitted: feed.json (${items.length} items), atom.xml (${items.length} items)`);
+}
+
+// ---------------------------------------------------------------------------
+// 5c. JSON Schema for record.json payloads — referenced via $schema
+// ---------------------------------------------------------------------------
+function writeRecordSchema() {
+    const schemaDir = path.join(DOCS_DIR, 'schema', 'json');
+    ensureDir(schemaDir);
+    const schema = {
+        '$schema': 'https://json-schema.org/draft/2020-12/schema',
+        '$id': `${SITE_URL}schema/json/record.schema.json`,
+        'title': 'PubLedge record.json',
+        'description': 'JSON shape returned by the `.json` endpoint on each PubLedge record page.',
+        'type': 'object',
+        'required': ['id', 'type', 'authority', 'jurisdiction', 'url'],
+        'properties': {
+            'id': { 'type': 'string', 'description': 'Stable identifier matching the record\'s frontmatter id.' },
+            'type': { 'type': 'string', 'enum': ['statute', 'rma', 'jia', 'ao', 'nal', 'plr', 'il', 'policy'] },
+            'authority': { 'type': 'string', 'description': 'Authority slug (e.g. utah-oaip, cfpb, irs-chief-counsel).' },
+            'jurisdiction': { 'type': 'string', 'description': 'ISO-like jurisdiction (e.g. us-ut, us).' },
+            'url': { 'type': 'string', 'format': 'uri', 'description': 'Canonical hierarchical URL for this record.' },
+            'title': { 'type': 'string' },
+            'slug': { 'type': 'string' },
+            'status': { 'type': 'string', 'enum': ['proposed', 'enacted', 'enforcing', 'phased-enforcement', 'pending-replacement', 'draft', 'executed', 'expired', 'terminated'] },
+            'effective': { 'type': 'string', 'format': 'date' },
+            'enacted': { 'type': 'string', 'format': 'date' },
+            'expires': { 'type': 'string', 'format': 'date' },
+            'obligation_kind': { 'type': 'array', 'items': { 'type': 'string', 'enum': ['requirement', 'restriction', 'permission'] } },
+            'reliance_scope': { 'type': 'string', 'enum': ['public', 'similarly-situated-third-parties', 'requesting-party-only'] },
+            'statute_anchors': { 'type': 'array', 'items': { 'type': 'object', 'required': ['cite'], 'properties': { 'cite': { 'type': 'string' }, 'url': { 'type': 'string', 'format': 'uri' } } } },
+            'obligations': { 'type': 'array', 'items': { 'type': 'string' }, 'description': 'Stable obligation ids implemented by this record.' },
+            'source_url': { 'type': 'string', 'format': 'uri' },
+            'last_verified': { 'type': 'string', 'format': 'date' },
+            'integrity': { 'type': 'object', 'properties': { 'manifest': { 'type': 'string', 'format': 'uri' }, 'sha256': { 'type': 'string' } } }
+        },
+        'additionalProperties': true
+    };
+    fs.writeFileSync(path.join(schemaDir, 'record.schema.json'), JSON.stringify(schema, null, 2));
+    console.log('  record.schema.json written at /schema/json/record.schema.json');
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
@@ -647,6 +811,9 @@ const templates = renderTemplates();
 copyStatics();
 renameFeed();
 extendDiscovery(templates);
+splitSitemap();
+emitAdditionalFeeds();
+writeRecordSchema();
 patchA11y();
 patchFooterNav();
 console.log('PubLedge extras complete.');

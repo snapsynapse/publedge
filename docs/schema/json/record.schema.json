@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://publedge.org/schema/json/record.schema.json",
+  "title": "PubLedge record.json",
+  "description": "JSON shape returned by the `.json` endpoint on each PubLedge record page.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "authority",
+    "jurisdiction",
+    "url"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier matching the record's frontmatter id."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "statute",
+        "rma",
+        "jia",
+        "ao",
+        "nal",
+        "plr",
+        "il",
+        "policy"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "description": "Authority slug (e.g. utah-oaip, cfpb, irs-chief-counsel)."
+    },
+    "jurisdiction": {
+      "type": "string",
+      "description": "ISO-like jurisdiction (e.g. us-ut, us)."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical hierarchical URL for this record."
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "proposed",
+        "enacted",
+        "enforcing",
+        "phased-enforcement",
+        "pending-replacement",
+        "draft",
+        "executed",
+        "expired",
+        "terminated"
+      ]
+    },
+    "effective": {
+      "type": "string",
+      "format": "date"
+    },
+    "enacted": {
+      "type": "string",
+      "format": "date"
+    },
+    "expires": {
+      "type": "string",
+      "format": "date"
+    },
+    "obligation_kind": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "requirement",
+          "restriction",
+          "permission"
+        ]
+      }
+    },
+    "reliance_scope": {
+      "type": "string",
+      "enum": [
+        "public",
+        "similarly-situated-third-parties",
+        "requesting-party-only"
+      ]
+    },
+    "statute_anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "cite"
+        ],
+        "properties": {
+          "cite": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "obligations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Stable obligation ids implemented by this record."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date"
+    },
+    "integrity": {
+      "type": "object",
+      "properties": {
+        "manifest": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -291,6 +291,24 @@ const authorityPlural = slugify(config.entities?.authority?.plural || 'authoriti
 // Boundary helper
 // ---------------------------------------------------------------------------
 
+// Canonical URL helpers — mirror scripts/build.js::attachCanonicalPaths.
+function canonicalPathForContainer(c) {
+    const jurMap = config.hierarchy?.jurisdictions || {};
+    const typeMap = config.hierarchy?.type_segments || {};
+    const jur = jurMap[c.jurisdiction];
+    const auth = authorities.find(a => a.id === c.authority);
+    const typeSeg = typeMap[c.type] || c.type || 'record';
+    const instance = c.instance || c.id;
+    if (jur && auth && auth.url_segment) {
+        return `/${jur.country}/${jur.region}/${auth.url_segment}/${typeSeg}/${instance}/`;
+    }
+    return `/container/${c.id}/`;
+}
+function canonicalUrlForContainer(c) {
+    const base = (config.url || 'https://publedge.org/').replace(/\/$/, '');
+    return base + canonicalPathForContainer(c);
+}
+
 function boundary(message, suggestions, why) {
     const b = { message, suggestions: suggestions || [] };
     if (why) b.why = why;
@@ -326,8 +344,17 @@ function getToolDefinitions() {
         },
         {
             name: `list_${containerPlural}`,
-            description: `List all ${cPlural.toLowerCase()} in the knowledge base. Returns id, title, status, and authority.`,
-            inputSchema: { type: 'object', properties: {}, required: [] }
+            description: `List ${cPlural.toLowerCase()} in the knowledge base. Optional filters: jurisdiction, authority, type, status. Returns id, title, status, authority, type, jurisdiction, and canonical url for each match.`,
+            inputSchema: {
+                type: 'object',
+                properties: {
+                    jurisdiction: { type: 'string', description: 'Filter by jurisdiction slug (e.g. "us-ut", "us").' },
+                    authority: { type: 'string', description: 'Filter by authority slug (e.g. "utah-oaip", "cfpb").' },
+                    type: { type: 'string', description: 'Filter by instrument type (e.g. "statute", "rma", "jia", "ao", "nal", "plr", "il").' },
+                    status: { type: 'string', description: 'Filter by status (e.g. "enforcing", "executed", "enacted").' }
+                },
+                required: []
+            }
         },
         {
             name: `get_${containerName}`,
@@ -370,6 +397,42 @@ function getToolDefinitions() {
             name: 'get_mappings',
             description: `All mapping entries connecting ${cPlural.toLowerCase()} to ${pPlural.toLowerCase()} via ${config.entities?.secondary?.plural?.toLowerCase() || 'secondaries'}.`,
             inputSchema: { type: 'object', properties: {}, required: [] }
+        },
+        {
+            name: 'fetch_by_url',
+            description: `Fetch a ${cName.toLowerCase()} by its canonical URL (e.g. https://publedge.org/us/utah/oaip/rma/2025-001/ or /us/utah/oaip/rma/2025-001/). Returns the same payload as get_${containerName}.`,
+            inputSchema: {
+                type: 'object',
+                properties: { url: { type: 'string', description: 'Canonical hierarchical URL or path.' } },
+                required: ['url']
+            }
+        },
+        {
+            name: 'search_obligations',
+            description: `Search only within ${pPlural.toLowerCase()} (${pName.toLowerCase()} titles, IDs, body text). Same query semantics as search but scoped.`,
+            inputSchema: {
+                type: 'object',
+                properties: { query: { type: 'string', description: 'Search query (case-insensitive substring match)' } },
+                required: ['query']
+            }
+        },
+        {
+            name: 'get_upcoming',
+            description: `Return ${cPlural.toLowerCase()} with upcoming milestones (enacted, effective, expires dates in the future). Sorted by date ascending.`,
+            inputSchema: {
+                type: 'object',
+                properties: { limit: { type: 'number', description: 'Max results to return (default 20).' } },
+                required: []
+            }
+        },
+        {
+            name: 'get_recently_changed',
+            description: `Return ${cPlural.toLowerCase()} sorted by last_verified or last changelog entry, most recent first.`,
+            inputSchema: {
+                type: 'object',
+                properties: { limit: { type: 'number', description: 'Max results to return (default 20).' } },
+                required: []
+            }
         }
     ];
 }
@@ -407,8 +470,21 @@ function handleToolCall(name, args) {
 
     // --- list containers ---
     if (name === `list_${containerPlural}`) {
-        const items = containers.map(c => ({ id: c.id, title: c.title || humanizeId(c.id), status: c.status || '', authority: c.authority || '' }));
-        return { content: [{ type: 'text', text: JSON.stringify(items, null, 2) }] };
+        let list = containers;
+        if (args.jurisdiction) list = list.filter(c => c.jurisdiction === args.jurisdiction);
+        if (args.authority) list = list.filter(c => c.authority === args.authority);
+        if (args.type) list = list.filter(c => c.type === args.type);
+        if (args.status) list = list.filter(c => c.status === args.status);
+        const items = list.map(c => ({
+            id: c.id,
+            title: c.title || humanizeId(c.id),
+            status: c.status || '',
+            authority: c.authority || '',
+            type: c.type || '',
+            jurisdiction: c.jurisdiction || '',
+            url: canonicalUrlForContainer(c)
+        }));
+        return { content: [{ type: 'text', text: JSON.stringify({ count: items.length, filters: { jurisdiction: args.jurisdiction, authority: args.authority, type: args.type, status: args.status }, items }, null, 2) }] };
     }
 
     // --- get container ---
@@ -506,6 +582,91 @@ function handleToolCall(name, args) {
     // --- get_mappings ---
     if (name === 'get_mappings') {
         return { content: [{ type: 'text', text: JSON.stringify(mappings, null, 2) }] };
+    }
+
+    // --- fetch_by_url ---
+    if (name === 'fetch_by_url') {
+        const url = (args.url || '').trim();
+        if (!url) {
+            return {
+                content: [{ type: 'text', text: JSON.stringify({
+                    error: 'Empty url',
+                    boundary: boundary('A url is required.', ['Provide a canonical URL or path', 'Example: /us/utah/oaip/rma/2025-001/'])
+                }, null, 2) }],
+                isError: true
+            };
+        }
+        const targetPath = url.replace(/^https?:\/\/[^/]+/, '').replace(/\/+$/, '') + '/';
+        const match = containers.find(c => {
+            const p = canonicalPathForContainer(c);
+            return p === targetPath;
+        });
+        if (!match) {
+            return {
+                content: [{ type: 'text', text: JSON.stringify({
+                    error: `No ${(config.entities?.container?.name || 'container').toLowerCase()} found for url: ${url}`,
+                    boundary: boundary('URL did not match a canonical record path.', [`Use list_${containerPlural} to see available records + canonical urls`, 'Ensure url has trailing slash and matches the hierarchy pattern /{country}/{jurisdiction}/{authority}/{type}/{instance}/'])
+                }, null, 2) }],
+                isError: true
+            };
+        }
+        const { _body, ...rest } = match;
+        return { content: [{ type: 'text', text: JSON.stringify({ ...rest, url: canonicalUrlForContainer(match), body: _body }, null, 2) }] };
+    }
+
+    // --- search_obligations (entity-scoped) ---
+    if (name === 'search_obligations') {
+        const q = (args.query || '').toLowerCase();
+        if (!q) {
+            return {
+                content: [{ type: 'text', text: JSON.stringify({
+                    error: 'Empty search query',
+                    boundary: boundary('A non-empty query string is required.', ['Provide a keyword or phrase'])
+                }, null, 2) }],
+                isError: true
+            };
+        }
+        const results = [];
+        for (const p of primaries) {
+            const haystack = [p.id, p.title || '', p.name || '', p._body || ''].join(' ').toLowerCase();
+            if (haystack.includes(q)) results.push({ id: p.id, title: p.title || p.name || humanizeId(p.id), group: p.group || '' });
+        }
+        return { content: [{ type: 'text', text: JSON.stringify({ query: args.query, count: results.length, results }, null, 2) }] };
+    }
+
+    // --- get_upcoming ---
+    if (name === 'get_upcoming') {
+        const limit = args.limit || 20;
+        const today = new Date().toISOString().split('T')[0];
+        const events = [];
+        for (const c of containers) {
+            for (const field of ['enacted', 'effective', 'expires']) {
+                const d = c[field];
+                if (typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) && d >= today) {
+                    events.push({ id: c.id, title: c.title || humanizeId(c.id), milestone: field, date: d, url: canonicalUrlForContainer(c) });
+                }
+            }
+            for (const t of (c.timeline || [])) {
+                if (t && typeof t.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(t.date) && t.date >= today) {
+                    events.push({ id: c.id, title: c.title || humanizeId(c.id), milestone: t.milestone || 'timeline', date: t.date, notes: t.notes || '', url: canonicalUrlForContainer(c) });
+                }
+            }
+        }
+        events.sort((a, b) => a.date.localeCompare(b.date));
+        return { content: [{ type: 'text', text: JSON.stringify({ count: events.length, items: events.slice(0, limit) }, null, 2) }] };
+    }
+
+    // --- get_recently_changed ---
+    if (name === 'get_recently_changed') {
+        const limit = args.limit || 20;
+        const items = containers.map(c => {
+            const cl = Array.isArray(c.changelog) ? c.changelog : [];
+            const lastCl = cl.map(e => e.date).filter(Boolean).sort().pop();
+            const lastDate = c.last_verified || lastCl || c.effective || c.enacted || '';
+            return { id: c.id, title: c.title || humanizeId(c.id), last_changed: lastDate, url: canonicalUrlForContainer(c) };
+        }).filter(i => i.last_changed);
+        items.sort((a, b) => b.last_changed.localeCompare(a.last_changed));
+        return { content: [{ type: 'text', text: JSON.stringify({ count: items.length, items: items.slice(0, limit) }, null, 2) }] };
     }
 
     // --- unknown tool ---
