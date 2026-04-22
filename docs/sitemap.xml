@@ -41,7 +41,32 @@
   <url><loc>https://publedge.org/us/federal/sec-corpfin/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/us/federal/sec-corpfin/nal/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/definitions/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/ai-authorized-rx-renewal/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/ai-defense-elimination/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/cfpb-pay-to-pay-fee-prohibited/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/cftc-unbundled-fee-not-cta-trigger/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/chatbot-data-no-third-party-sharing/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/chatbot-safety-policy-filing/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/dentacor-58-69-5-enforcement-forborne/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/dentacor-hygienist-ai-concurrence-diagnosis/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/dentacor-informed-consent-no-dentist/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/disclose-genai-high-risk-proactive/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/primary/disclose-genai-on-first-session/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/disclose-genai-on-request/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/elizachat-phased-rollout/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/elizachat-pre-access-disclosure-bundle/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/irs-501c3-dual-test-failure/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/irs-incentive-fee-not-net-profits-share/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/learning-lab-agreement-participation/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/named-prescriber-enforcement-forborne/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/rma-data-security-63a-19-102/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/rma-end-of-term-report/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/rma-hold-harmless-state/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/rma-incident-notification-24hr/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/rma-monthly-report-to-oaip/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/rma-no-advertising-reference/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/sec-reg-d-506c-verification-safe-harbor/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/primary/telehealth-compliance-per-proposal/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/authority/cfpb/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/authority/cftc-dsio/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/authority/irs-chief-counsel/</loc><lastmod>2026-04-22</lastmod></url>
@@ -50,6 +75,61 @@
   <url><loc>https://publedge.org/authority/utah-legislature/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/authority/utah-oaip/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/requires/us-ut-oaip-jia-2026-001/disclose-genai-on-first-session/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2024-sb149/learning-lab-agreement-participation/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2024-sb149/ai-defense-elimination/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2025-sb226/disclose-genai-on-request/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2025-sb226/disclose-genai-high-risk-proactive/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2025-sb226/ai-defense-elimination/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2025-hb452/disclose-genai-on-first-session/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2025-hb452/chatbot-data-no-third-party-sharing/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2025-hb452/chatbot-safety-policy-filing/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-legislature-statute-2026-hb320/learning-lab-agreement-participation/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2024-001/rma-monthly-report-to-oaip/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2024-001/rma-end-of-term-report/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2024-001/rma-data-security-63a-19-102/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2024-001/rma-hold-harmless-state/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2024-001/rma-no-advertising-reference/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2024-001/rma-incident-notification-24hr/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2024-001/elizachat-pre-access-disclosure-bundle/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2024-001/elizachat-phased-rollout/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-001/rma-monthly-report-to-oaip/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-001/rma-end-of-term-report/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-001/rma-data-security-63a-19-102/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-001/rma-hold-harmless-state/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-001/rma-no-advertising-reference/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-001/dentacor-hygienist-ai-concurrence-diagnosis/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-001/dentacor-58-69-5-enforcement-forborne/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-001/dentacor-informed-consent-no-dentist/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-002/rma-monthly-report-to-oaip/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-002/rma-end-of-term-report/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-002/rma-data-security-63a-19-102/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-002/rma-hold-harmless-state/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-002/rma-no-advertising-reference/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-002/ai-authorized-rx-renewal/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-002/named-prescriber-enforcement-forborne/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2025-002/telehealth-compliance-per-proposal/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2026-001/rma-monthly-report-to-oaip/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2026-001/rma-end-of-term-report/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2026-001/rma-data-security-63a-19-102/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2026-001/rma-hold-harmless-state/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2026-001/rma-no-advertising-reference/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2026-001/ai-authorized-rx-renewal/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2026-001/named-prescriber-enforcement-forborne/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-ut-oaip-rma-2026-001/telehealth-compliance-per-proposal/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-cfpb-ao-2022-001/cfpb-pay-to-pay-fee-prohibited/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-cftc-dsio-il-2017-001/cftc-unbundled-fee-not-cta-trigger/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-irs-chief-counsel-plr-2025-001/irs-incentive-fee-not-net-profits-share/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-irs-tege-plr-2026-001/irs-501c3-dual-test-failure/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/requires/us-sec-corpfin-nal-2025-001/sec-reg-d-506c-verification-safe-harbor/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-legislature-statute-2024-sb149-vs-us-ut-legislature-statute-2025-sb226/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-legislature-statute-2024-sb149-vs-us-ut-legislature-statute-2026-hb320/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-legislature-statute-2025-hb452-vs-us-ut-oaip-jia-2026-001/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-oaip-rma-2024-001-vs-us-ut-oaip-rma-2025-001/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-oaip-rma-2024-001-vs-us-ut-oaip-rma-2025-002/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-oaip-rma-2024-001-vs-us-ut-oaip-rma-2026-001/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-oaip-rma-2025-001-vs-us-ut-oaip-rma-2025-002/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-oaip-rma-2025-001-vs-us-ut-oaip-rma-2026-001/</loc><lastmod>2026-04-22</lastmod></url>
+  <url><loc>https://publedge.org/compare/us-ut-oaip-rma-2025-002-vs-us-ut-oaip-rma-2026-001/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/applies-to/us/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/applies-to/us-ut/</loc><lastmod>2026-04-22</lastmod></url>
   <url><loc>https://publedge.org/reference/</loc><lastmod>2026-04-22</lastmod></url>

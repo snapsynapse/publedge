@@ -10,7 +10,7 @@
     {
       "id": "container-comparison",
       "name": "Legal Instrument Comparison",
-      "description": "Compare 14 legal instruments across 1 obligations",
+      "description": "Compare 14 legal instruments across 26 obligations",
       "url": "https://publedge.org/compare.html"
     },
     {
@@ -159,10 +159,160 @@
     ],
     "primaries": [
       {
+        "id": "ai-authorized-rx-renewal",
+        "name": "AI-Authorized Prescription Renewal (Utah Pilot)",
+        "group": "permission",
+        "url": "https://publedge.org/primary/ai-authorized-rx-renewal/"
+      },
+      {
+        "id": "ai-defense-elimination",
+        "name": "GenAI Is Not A Defense — Civil And Criminal",
+        "group": "restriction",
+        "url": "https://publedge.org/primary/ai-defense-elimination/"
+      },
+      {
+        "id": "cfpb-pay-to-pay-fee-prohibited",
+        "name": "Pay-To-Pay Fee Prohibited Without Express Authorization",
+        "group": "restriction",
+        "url": "https://publedge.org/primary/cfpb-pay-to-pay-fee-prohibited/"
+      },
+      {
+        "id": "cftc-unbundled-fee-not-cta-trigger",
+        "name": "Unbundled Advice Fee Does Not Trigger CTA Registration",
+        "group": "permission",
+        "url": "https://publedge.org/primary/cftc-unbundled-fee-not-cta-trigger/"
+      },
+      {
+        "id": "chatbot-data-no-third-party-sharing",
+        "name": "Mental Health Chatbot — No Third-Party Data Sharing",
+        "group": "restriction",
+        "url": "https://publedge.org/primary/chatbot-data-no-third-party-sharing/"
+      },
+      {
+        "id": "chatbot-safety-policy-filing",
+        "name": "Mental Health Chatbot — File 15-Element Safety Policy",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/chatbot-safety-policy-filing/"
+      },
+      {
+        "id": "dentacor-58-69-5-enforcement-forborne",
+        "name": "Dentacor — §58-69-5 Enforcement Forborne",
+        "group": "permission",
+        "url": "https://publedge.org/primary/dentacor-58-69-5-enforcement-forborne/"
+      },
+      {
+        "id": "dentacor-hygienist-ai-concurrence-diagnosis",
+        "name": "Dentacor — Hygienist + AI Concurrence Diagnosis",
+        "group": "permission",
+        "url": "https://publedge.org/primary/dentacor-hygienist-ai-concurrence-diagnosis/"
+      },
+      {
+        "id": "dentacor-informed-consent-no-dentist",
+        "name": "Dentacor — Informed Consent Disclosing Absence Of Dentist",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/dentacor-informed-consent-no-dentist/"
+      },
+      {
+        "id": "disclose-genai-high-risk-proactive",
+        "name": "Proactive GenAI Disclosure In High-Risk Interactions",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/disclose-genai-high-risk-proactive/"
+      },
+      {
         "id": "disclose-genai-on-first-session",
         "name": "Disclose GenAI on First Session",
         "group": "requirement",
         "url": "https://publedge.org/primary/disclose-genai-on-first-session/"
+      },
+      {
+        "id": "disclose-genai-on-request",
+        "name": "Disclose GenAI On Consumer Request",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/disclose-genai-on-request/"
+      },
+      {
+        "id": "elizachat-phased-rollout",
+        "name": "ElizaChat — Three-Phase Rollout Gate",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/elizachat-phased-rollout/"
+      },
+      {
+        "id": "elizachat-pre-access-disclosure-bundle",
+        "name": "ElizaChat — Pre-Access Disclosure Bundle",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/elizachat-pre-access-disclosure-bundle/"
+      },
+      {
+        "id": "irs-501c3-dual-test-failure",
+        "name": "§501(c)(3) Exemption Denied — Organizational And Operational Test Failure",
+        "group": "restriction",
+        "url": "https://publedge.org/primary/irs-501c3-dual-test-failure/"
+      },
+      {
+        "id": "irs-incentive-fee-not-net-profits-share",
+        "name": "Incentive-Fee Management Contract Not A Share Of Net Profits",
+        "group": "permission",
+        "url": "https://publedge.org/primary/irs-incentive-fee-not-net-profits-share/"
+      },
+      {
+        "id": "learning-lab-agreement-participation",
+        "name": "Learning Lab Agreement — Eligibility and Participation",
+        "group": "permission",
+        "url": "https://publedge.org/primary/learning-lab-agreement-participation/"
+      },
+      {
+        "id": "named-prescriber-enforcement-forborne",
+        "name": "Named-Prescriber Enforcement Forborne",
+        "group": "permission",
+        "url": "https://publedge.org/primary/named-prescriber-enforcement-forborne/"
+      },
+      {
+        "id": "rma-data-security-63a-19-102",
+        "name": "RMA — Data Security Under §63A-19-102",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/rma-data-security-63a-19-102/"
+      },
+      {
+        "id": "rma-end-of-term-report",
+        "name": "RMA — 30-Day End-Of-Term Report",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/rma-end-of-term-report/"
+      },
+      {
+        "id": "rma-hold-harmless-state",
+        "name": "RMA — Hold Harmless The State",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/rma-hold-harmless-state/"
+      },
+      {
+        "id": "rma-incident-notification-24hr",
+        "name": "RMA — 24-Hour Incident Notification",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/rma-incident-notification-24hr/"
+      },
+      {
+        "id": "rma-monthly-report-to-oaip",
+        "name": "RMA — Monthly Report To OAIP",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/rma-monthly-report-to-oaip/"
+      },
+      {
+        "id": "rma-no-advertising-reference",
+        "name": "RMA — No Advertising Reference To Agreement",
+        "group": "restriction",
+        "url": "https://publedge.org/primary/rma-no-advertising-reference/"
+      },
+      {
+        "id": "sec-reg-d-506c-verification-safe-harbor",
+        "name": "Rule 506(c) Verification Via High-Minimum + Representation",
+        "group": "permission",
+        "url": "https://publedge.org/primary/sec-reg-d-506c-verification-safe-harbor/"
+      },
+      {
+        "id": "telehealth-compliance-per-proposal",
+        "name": "Telehealth Compliance Anchored To Participant Proposal",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/telehealth-compliance-per-proposal/"
       }
     ],
     "authorities": [

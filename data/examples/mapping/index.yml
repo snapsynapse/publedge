@@ -9,3 +9,146 @@
   source_heading: First-Session Disclosure (§13-72a-203)
   obligations:
     - disclose-genai-on-first-session
+
+# --- Utah statutes ---
+
+- id: sb149-learning-lab-and-ai-defense
+  regulation: us-ut-legislature-statute-2024-sb149
+  authority: utah-legislature
+  source_file: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
+  source_heading: Summary
+  obligations:
+    - learning-lab-agreement-participation
+    - ai-defense-elimination
+
+- id: sb226-disclosure-and-ai-defense
+  regulation: us-ut-legislature-statute-2025-sb226
+  authority: utah-legislature
+  source_file: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
+  source_heading: Summary
+  obligations:
+    - disclose-genai-on-request
+    - disclose-genai-high-risk-proactive
+    - ai-defense-elimination
+
+- id: hb452-mental-health-chatbot-stack
+  regulation: us-ut-legislature-statute-2025-hb452
+  authority: utah-legislature
+  source_file: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
+  source_heading: Summary
+  obligations:
+    - disclose-genai-on-first-session
+    - chatbot-data-no-third-party-sharing
+    - chatbot-safety-policy-filing
+
+- id: hb320-joint-interpretation-agreements
+  regulation: us-ut-legislature-statute-2026-hb320
+  authority: utah-legislature
+  source_file: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
+  source_heading: Summary
+  obligations:
+    - learning-lab-agreement-participation
+
+# --- Utah OAIP RMAs ---
+
+- id: elizachat-rma-obligations
+  regulation: us-ut-oaip-rma-2024-001
+  authority: utah-oaip
+  source_file: data/examples/instruments/us-ut-oaip-rma-2024-001.md
+  source_heading: Obligations summary (Section VI and Schedule A §XV–XVI)
+  obligations:
+    - rma-monthly-report-to-oaip
+    - rma-end-of-term-report
+    - rma-data-security-63a-19-102
+    - rma-hold-harmless-state
+    - rma-no-advertising-reference
+    - rma-incident-notification-24hr
+    - elizachat-pre-access-disclosure-bundle
+    - elizachat-phased-rollout
+
+- id: dentacor-rma-obligations
+  regulation: us-ut-oaip-rma-2025-001
+  authority: utah-oaip
+  source_file: data/examples/instruments/us-ut-oaip-rma-2025-001.md
+  source_heading: Obligations summary (Section 6 and Schedule A §15C–D)
+  obligations:
+    - rma-monthly-report-to-oaip
+    - rma-end-of-term-report
+    - rma-data-security-63a-19-102
+    - rma-hold-harmless-state
+    - rma-no-advertising-reference
+    - dentacor-hygienist-ai-concurrence-diagnosis
+    - dentacor-58-69-5-enforcement-forborne
+    - dentacor-informed-consent-no-dentist
+
+- id: doctronic-rma-obligations
+  regulation: us-ut-oaip-rma-2025-002
+  authority: utah-oaip
+  source_file: data/examples/instruments/us-ut-oaip-rma-2025-002.md
+  source_heading: Obligations summary (Section 6 and Schedule A §16)
+  obligations:
+    - rma-monthly-report-to-oaip
+    - rma-end-of-term-report
+    - rma-data-security-63a-19-102
+    - rma-hold-harmless-state
+    - rma-no-advertising-reference
+    - ai-authorized-rx-renewal
+    - named-prescriber-enforcement-forborne
+    - telehealth-compliance-per-proposal
+
+- id: legion-rma-obligations
+  regulation: us-ut-oaip-rma-2026-001
+  authority: utah-oaip
+  source_file: data/examples/instruments/us-ut-oaip-rma-2026-001.md
+  source_heading: Obligations summary (Section 6 and Schedule A §17)
+  obligations:
+    - rma-monthly-report-to-oaip
+    - rma-end-of-term-report
+    - rma-data-security-63a-19-102
+    - rma-hold-harmless-state
+    - rma-no-advertising-reference
+    - ai-authorized-rx-renewal
+    - named-prescriber-enforcement-forborne
+    - telehealth-compliance-per-proposal
+
+# --- Federal authorities ---
+
+- id: cfpb-ao-2022-001-pay-to-pay
+  regulation: us-cfpb-ao-2022-001
+  authority: cfpb
+  source_file: data/examples/instruments/us-cfpb-ao-2022-001.md
+  source_heading: Interpretive position
+  obligations:
+    - cfpb-pay-to-pay-fee-prohibited
+
+- id: cftc-il-17-65-cta-unbundled-fee
+  regulation: us-cftc-dsio-il-2017-001
+  authority: cftc-dsio
+  source_file: data/examples/instruments/us-cftc-dsio-il-2017-001.md
+  source_heading: Interpretive position
+  obligations:
+    - cftc-unbundled-fee-not-cta-trigger
+
+- id: irs-plr-202506001-incentive-fee
+  regulation: us-irs-chief-counsel-plr-2025-001
+  authority: irs-chief-counsel
+  source_file: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
+  source_heading: Holding
+  obligations:
+    - irs-incentive-fee-not-net-profits-share
+
+- id: irs-tege-2026-001-501c3-adverse
+  regulation: us-irs-tege-plr-2026-001
+  authority: irs-tege
+  source_file: data/examples/instruments/us-irs-tege-plr-2026-001.md
+  source_heading: Holding
+  obligations:
+    - irs-501c3-dual-test-failure
+
+- id: sec-corpfin-nal-2025-001-rule-506c
+  regulation: us-sec-corpfin-nal-2025-001
+  authority: sec-corpfin
+  source_file: data/examples/instruments/us-sec-corpfin-nal-2025-001.md
+  source_heading: Staff position
+  obligations:
+    - sec-reg-d-506c-verification-safe-harbor

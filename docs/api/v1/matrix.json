@@ -1,13 +1,339 @@
 {
   "meta": {
-    "generated": "2026-04-22T02:24:05.642Z"
+    "generated": "2026-04-22T02:54:53.585Z"
   },
   "matrix": {
+    "ai-authorized-rx-renewal": {
+      "us-ut-oaip-rma-2025-002": {
+        "covered": true,
+        "provisions": [
+          "doctronic-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2026-001": {
+        "covered": true,
+        "provisions": [
+          "legion-rma-obligations"
+        ]
+      }
+    },
+    "ai-defense-elimination": {
+      "us-ut-legislature-statute-2024-sb149": {
+        "covered": true,
+        "provisions": [
+          "sb149-learning-lab-and-ai-defense"
+        ]
+      },
+      "us-ut-legislature-statute-2025-sb226": {
+        "covered": true,
+        "provisions": [
+          "sb226-disclosure-and-ai-defense"
+        ]
+      }
+    },
+    "cfpb-pay-to-pay-fee-prohibited": {
+      "us-cfpb-ao-2022-001": {
+        "covered": true,
+        "provisions": [
+          "cfpb-ao-2022-001-pay-to-pay"
+        ]
+      }
+    },
+    "cftc-unbundled-fee-not-cta-trigger": {
+      "us-cftc-dsio-il-2017-001": {
+        "covered": true,
+        "provisions": [
+          "cftc-il-17-65-cta-unbundled-fee"
+        ]
+      }
+    },
+    "chatbot-data-no-third-party-sharing": {
+      "us-ut-legislature-statute-2025-hb452": {
+        "covered": true,
+        "provisions": [
+          "hb452-mental-health-chatbot-stack"
+        ]
+      }
+    },
+    "chatbot-safety-policy-filing": {
+      "us-ut-legislature-statute-2025-hb452": {
+        "covered": true,
+        "provisions": [
+          "hb452-mental-health-chatbot-stack"
+        ]
+      }
+    },
+    "dentacor-58-69-5-enforcement-forborne": {
+      "us-ut-oaip-rma-2025-001": {
+        "covered": true,
+        "provisions": [
+          "dentacor-rma-obligations"
+        ]
+      }
+    },
+    "dentacor-hygienist-ai-concurrence-diagnosis": {
+      "us-ut-oaip-rma-2025-001": {
+        "covered": true,
+        "provisions": [
+          "dentacor-rma-obligations"
+        ]
+      }
+    },
+    "dentacor-informed-consent-no-dentist": {
+      "us-ut-oaip-rma-2025-001": {
+        "covered": true,
+        "provisions": [
+          "dentacor-rma-obligations"
+        ]
+      }
+    },
+    "disclose-genai-high-risk-proactive": {
+      "us-ut-legislature-statute-2025-sb226": {
+        "covered": true,
+        "provisions": [
+          "sb226-disclosure-and-ai-defense"
+        ]
+      }
+    },
     "disclose-genai-on-first-session": {
+      "us-ut-legislature-statute-2025-hb452": {
+        "covered": true,
+        "provisions": [
+          "hb452-mental-health-chatbot-stack"
+        ]
+      },
       "us-ut-oaip-jia-2026-001": {
         "covered": true,
         "provisions": [
           "utah-mental-health-chatbot-disclosure-2026q2-first-session"
+        ]
+      }
+    },
+    "disclose-genai-on-request": {
+      "us-ut-legislature-statute-2025-sb226": {
+        "covered": true,
+        "provisions": [
+          "sb226-disclosure-and-ai-defense"
+        ]
+      }
+    },
+    "elizachat-phased-rollout": {
+      "us-ut-oaip-rma-2024-001": {
+        "covered": true,
+        "provisions": [
+          "elizachat-rma-obligations"
+        ]
+      }
+    },
+    "elizachat-pre-access-disclosure-bundle": {
+      "us-ut-oaip-rma-2024-001": {
+        "covered": true,
+        "provisions": [
+          "elizachat-rma-obligations"
+        ]
+      }
+    },
+    "irs-501c3-dual-test-failure": {
+      "us-irs-tege-plr-2026-001": {
+        "covered": true,
+        "provisions": [
+          "irs-tege-2026-001-501c3-adverse"
+        ]
+      }
+    },
+    "irs-incentive-fee-not-net-profits-share": {
+      "us-irs-chief-counsel-plr-2025-001": {
+        "covered": true,
+        "provisions": [
+          "irs-plr-202506001-incentive-fee"
+        ]
+      }
+    },
+    "learning-lab-agreement-participation": {
+      "us-ut-legislature-statute-2024-sb149": {
+        "covered": true,
+        "provisions": [
+          "sb149-learning-lab-and-ai-defense"
+        ]
+      },
+      "us-ut-legislature-statute-2026-hb320": {
+        "covered": true,
+        "provisions": [
+          "hb320-joint-interpretation-agreements"
+        ]
+      }
+    },
+    "named-prescriber-enforcement-forborne": {
+      "us-ut-oaip-rma-2025-002": {
+        "covered": true,
+        "provisions": [
+          "doctronic-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2026-001": {
+        "covered": true,
+        "provisions": [
+          "legion-rma-obligations"
+        ]
+      }
+    },
+    "rma-data-security-63a-19-102": {
+      "us-ut-oaip-rma-2024-001": {
+        "covered": true,
+        "provisions": [
+          "elizachat-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-001": {
+        "covered": true,
+        "provisions": [
+          "dentacor-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-002": {
+        "covered": true,
+        "provisions": [
+          "doctronic-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2026-001": {
+        "covered": true,
+        "provisions": [
+          "legion-rma-obligations"
+        ]
+      }
+    },
+    "rma-end-of-term-report": {
+      "us-ut-oaip-rma-2024-001": {
+        "covered": true,
+        "provisions": [
+          "elizachat-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-001": {
+        "covered": true,
+        "provisions": [
+          "dentacor-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-002": {
+        "covered": true,
+        "provisions": [
+          "doctronic-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2026-001": {
+        "covered": true,
+        "provisions": [
+          "legion-rma-obligations"
+        ]
+      }
+    },
+    "rma-hold-harmless-state": {
+      "us-ut-oaip-rma-2024-001": {
+        "covered": true,
+        "provisions": [
+          "elizachat-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-001": {
+        "covered": true,
+        "provisions": [
+          "dentacor-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-002": {
+        "covered": true,
+        "provisions": [
+          "doctronic-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2026-001": {
+        "covered": true,
+        "provisions": [
+          "legion-rma-obligations"
+        ]
+      }
+    },
+    "rma-incident-notification-24hr": {
+      "us-ut-oaip-rma-2024-001": {
+        "covered": true,
+        "provisions": [
+          "elizachat-rma-obligations"
+        ]
+      }
+    },
+    "rma-monthly-report-to-oaip": {
+      "us-ut-oaip-rma-2024-001": {
+        "covered": true,
+        "provisions": [
+          "elizachat-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-001": {
+        "covered": true,
+        "provisions": [
+          "dentacor-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-002": {
+        "covered": true,
+        "provisions": [
+          "doctronic-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2026-001": {
+        "covered": true,
+        "provisions": [
+          "legion-rma-obligations"
+        ]
+      }
+    },
+    "rma-no-advertising-reference": {
+      "us-ut-oaip-rma-2024-001": {
+        "covered": true,
+        "provisions": [
+          "elizachat-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-001": {
+        "covered": true,
+        "provisions": [
+          "dentacor-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2025-002": {
+        "covered": true,
+        "provisions": [
+          "doctronic-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2026-001": {
+        "covered": true,
+        "provisions": [
+          "legion-rma-obligations"
+        ]
+      }
+    },
+    "sec-reg-d-506c-verification-safe-harbor": {
+      "us-sec-corpfin-nal-2025-001": {
+        "covered": true,
+        "provisions": [
+          "sec-corpfin-nal-2025-001-rule-506c"
+        ]
+      }
+    },
+    "telehealth-compliance-per-proposal": {
+      "us-ut-oaip-rma-2025-002": {
+        "covered": true,
+        "provisions": [
+          "doctronic-rma-obligations"
+        ]
+      },
+      "us-ut-oaip-rma-2026-001": {
+        "covered": true,
+        "provisions": [
+          "legion-rma-obligations"
         ]
       }
     }

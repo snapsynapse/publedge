@@ -1,161 +1,209 @@
-# Contributing
+# Contributing to PubLedge
 
-This project follows a zero-dependency, config-driven approach. All domain-specific settings live in `project.yml`, and all scripts use only Node.js built-ins.
+Zero external dependencies. All domain config lives in `project.yml`. Scripts use only Node.js built-ins.
 
-## Adding Entities
+## Code style
 
-### 1. Create the Markdown File
-
-Create a `.md` file in the appropriate `data/examples/` subdirectory:
-
-| Entity Role | Directory | Example |
-|-------------|-----------|---------|
-| Primary | `data/examples/requirements/` | `data-encryption.md` |
-| Container | `data/examples/frameworks/` | `iso-27001.md` |
-| Authority | `data/examples/organizations/` | `iso.md` |
-
-Directory names are configured in `project.yml` under `entities.<role>.directory`.
-
-### 2. Add YAML Frontmatter
-
-Every entity file starts with YAML frontmatter between `---` delimiters. See existing files for the required fields. At minimum:
-
-**Primary entities:**
-```yaml
----
-title: Data Encryption
-group: technical
-last_verified: 2025-01-15
----
-```
-
-**Container entities:**
-```yaml
----
-title: ISO 27001
-status: active
-authority: iso
-last_verified: 2025-01-15
----
-```
-
-**Authority entities:**
-```yaml
----
-title: International Organization for Standardization
-type: standards-body
-last_verified: 2025-01-15
----
-```
-
-### 3. Add Mapping Entries
-
-For containers that reference primary entities, add entries to `data/examples/mapping/index.yml` (or the path configured in `project.yml` under `mapping.file`):
-
-```yaml
-- id: provision-id
-  regulation: framework-id
-  obligations:
-    - primary-id-1
-    - primary-id-2
-```
-
-### 4. Validate and Build
-
-```bash
-# Check cross-references
-node scripts/validate.js
-
-# Check staleness and completeness
-node scripts/verify.js
-
-# Build the site and JSON API
-node scripts/build.js
-```
-
-Fix any errors reported by `validate.js` before submitting.
-
-## Modifying the Ontology
-
-The entity model is defined in `project.yml` under `entities:`. Each role has:
-
-- `name` — singular display name
-- `plural` — plural display name
-- `directory` — subdirectory under `data/examples/`
-- Role-specific fields (groups, statuses, etc.)
-
-When changing entity names or directories:
-1. Update `project.yml`
-2. Rename the corresponding data directory
-3. Run `validate.js` to confirm references still resolve
-4. Run `build.js` to regenerate the site
-
-## Code Style
-
-- **Zero dependencies.** All scripts use only Node.js built-ins. Do not add npm packages.
-- Use the existing YAML parser (`parseYaml`) rather than importing a YAML library.
+- No npm packages. Scripts use only Node.js built-ins.
+- Use the existing `parseYaml` helper rather than importing a YAML library.
+- `'use strict'` at the top of every script.
 - Keep functions pure where possible.
-- Use `'use strict'` at the top of every script.
 
-## Testing Changes Locally
+## Adding a new instrument
+
+This walkthrough uses `us-ut-oaip-rma-2025-001` (Dentacor AI Radiograph RMA) as the worked example.
+
+### 1. Choose a template
+
+Pick the template closest to the instrument type:
+
+```
+_templates/jia/template.md      ← Joint Interpretation Agreement
+_templates/rma/template.md      ← Regulatory Mitigation Agreement
+```
+
+For no-action letters, advisory opinions, PLRs, and interpretive letters, start from the most structurally similar template and adjust `type:` accordingly.
+
+### 2. Derive the stable identifier
+
+Format: `{jurisdiction}-{authority}-{type}-{YYYY-NNN}`
+
+| Field | Values |
+|---|---|
+| jurisdiction | `us-ut` (Utah), `us` (federal) |
+| authority | `utah-oaip`, `sec-corpfin`, `cfpb`, `irs-chief-counsel`, `irs-tege`, `cftc-dsio`, `utah-legislature` |
+| type | `jia`, `rma`, `nal`, `ao`, `plr`, `il`, `statute` |
+| YYYY-NNN | Effective year + zero-padded sequence within that authority+type+year scope |
+
+Dentacor example: `us-ut-oaip-rma-2025-001`
+
+The filename must equal the identifier: `us-ut-oaip-rma-2025-001.md`
+
+The canonical URL is derived automatically from the id:
+`/{country}/{jurisdiction}/{authority}/{type}/{YYYY-NNN}/`
+→ `/us/utah/oaip/rma/2025-001/`
+
+### 3. Fill in the frontmatter
+
+Required fields for all instrument types (frontmatter spec v0.2):
+
+```yaml
+---
+"@type": "https://w3id.org/semanticarts/ns/ontology/gist/Contract"
+id: us-ut-oaip-rma-2025-001
+instance: 2025-001
+slug: utah-dentacor-ai-radiograph-2025
+name: "Short display name"
+title: "Long page title"
+type: rma
+source: demonstration-remap          # or: publedge-original-draft
+jurisdiction: us-ut
+authority: utah-oaip
+issued_by:
+  "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
+  name: "Utah Office of Artificial Intelligence Policy (OAIP)"
+  ref: "https://commerce.utah.gov/ai/learning-lab/"
+issuance_event: gist:Determination
+enacted: 2025-05-31
+effective: 2025-05-31
+term_start: 2025-05-31
+term_end: 2026-05-31
+status: enforcing
+official_url: https://commerce.utah.gov/ai/agreements/dentacor/
+obligation_kind: [permission, requirement, restriction]
+reliance_scope: requesting-party-only
+parties:
+  - name: "Utah Office of Artificial Intelligence Policy"
+    role: issuing_authority
+  - name: "Dentacor, LLC"
+    role: participant
+statute_anchors:
+  - cite: "Utah Code §13-72-201"
+    url: "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html"
+disclaimer: ""
+---
+```
+
+`status` must be one of the 9 values defined in [DEFINITIONS.md](DEFINITIONS.md):
+`proposed`, `enacted`, `enforcing`, `phased-enforcement`, `pending-replacement`, `expired`, `superseded`, `withdrawn`, `terminated`.
+
+`source` controls disclaimer composition at render time:
+- `demonstration-remap` — editorial reconstruction of a publicly available document.
+- `publedge-original-draft` — originated in PubLedge; not yet reviewed by the issuing authority.
+
+### 4. Add source documents (optional but preferred)
+
+If a source PDF exists:
 
 ```bash
-# 1. Validate cross-references
+# Place PDF alongside the record in the instrument's docs/ dir (build script copies it)
+cp Dentacor-Mitigation-Agreement.pdf \
+  docs/us/utah/oaip/rma/2025-001/
+
+# OCR if no machine-readable text layer
+./scripts/ocr-pdf.sh \
+  docs/us/utah/oaip/rma/2025-001/Dentacor-Mitigation-Agreement.pdf
+```
+
+Reference from frontmatter:
+
+```yaml
+publication_citations:
+  - "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
+source_documents:
+  - Dentacor-Mitigation-Agreement.pdf
+extracted_text: Dentacor-Mitigation-Agreement.txt
+```
+
+### 5. Add obligation entries
+
+Obligations live in `data/examples/obligations/`. Each obligation is a separate markdown file:
+
+```yaml
+---
+id: us-ut-oaip-rma-2025-001-ob-01
+instrument: us-ut-oaip-rma-2025-001
+obligation_kind: requirement
+description: "Dual-verification: hygienist + AI must concur; discrepancy escalates to licensed dentist"
+statute_anchor:
+  cite: "Utah Code §58-69-5"
+  url: "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S5.html"
+---
+```
+
+### 6. Add mapping entries
+
+Add rows to `data/examples/mapping/index.yml`:
+
+```yaml
+- id: us-ut-oaip-rma-2025-001-map-01
+  instrument: us-ut-oaip-rma-2025-001
+  obligations:
+    - us-ut-oaip-rma-2025-001-ob-01
+```
+
+### 7. Check authority record exists
+
+Each `authority:` value needs a corresponding file under `data/examples/authorities/`. If adding a new authority, create `data/examples/authorities/{authority-slug}.md` with frontmatter: `id`, `name`, `@type`, `jurisdiction`, `ref`. Check `project.yml` under `entities.authority` for required fields.
+
+### 8. Validate and build
+
+```bash
+# Cross-reference checks (IDs, authority refs, status values)
 node scripts/validate.js
 
-# 2. Check entity freshness
+# Structural checks (freshness, completeness)
 node scripts/verify.js
 
-# 3. Build the site
+# Regenerate docs/
 node scripts/build.js
+node scripts/build-extras.js
 
-# 4. Preview locally (any static file server works)
-npx serve docs
-# or
+# Preview locally
 python3 -m http.server -d docs 8000
 ```
 
-Check the generated `docs/` directory for the HTML site and `docs/api/v1/` for the JSON API.
+Fix any errors from `validate.js` before submitting.
 
-## Pull Request Process
+### 9. Update hashes
 
-1. Create a feature branch from `main`
-2. Make your changes (add entities, update config, fix bugs)
-3. Run `validate.js` and `verify.js` — ensure no errors
-4. Run `build.js` — ensure it completes without errors
-5. Commit the source files (`data/`, `project.yml`, `scripts/`). Generated output in `docs/` may or may not be committed depending on your deployment strategy.
-6. Open a PR against `main` with a clear description of what changed and why
-
-## Container File Format
-
-Container entity files have a specific structure with a timeline table and provision sections separated by `---`:
-
-```markdown
----
-title: Example Framework
-status: active
-authority: org-id
----
-
-## Timeline
-
-| Date | Event |
-|------|-------|
-| 2024-01-01 | Published |
-
----
-
-## Provision Name
-
-| Property | Value |
-|----------|-------|
-| Category | example |
-
-### Requirements
-
-| Requirement | Description |
-|-------------|-------------|
-| req-id | Details here |
+```bash
+./scripts/validate-hashes.sh --update
 ```
 
-See existing container files for complete examples.
+Refreshes `MANIFEST.yaml` with SHA-256 hashes of all canonical files.
+
+### 10. Open a pull request
+
+1. Create a feature branch from `main`.
+2. Commit source files (`data/`, `project.yml`) and generated `docs/` — CI fails if `docs/` drifts from sources.
+3. Open PR describing: what instrument, what authority, what the `source` value is and why, any open questions.
+
+## `legacy_id` and redirect stubs
+
+If a record's identifier ever changes, add a `legacy_id:` field to frontmatter. The build script emits a meta-refresh redirect stub at the old path. Never delete old paths — URLs must not break.
+
+## Modifying project configuration
+
+`project.yml` drives entity roles, status enums, group definitions, and navigation. Changes to entity names or directories require:
+
+1. Update `project.yml`.
+2. Rename the corresponding data directory.
+3. Run `validate.js` — confirm references resolve.
+4. Run `build.js` — regenerate the site.
+
+## Modifying the build scripts
+
+`scripts/build.js` — entity pages, API JSON, sitemap.
+`scripts/build-extras.js` — reference HTML, feeds, discovery files, navigation shell.
+
+Both must complete without errors. CI runs them on every push and PR.
+
+## Pull request process
+
+1. Branch from `main`.
+2. Run `validate.js` and `verify.js` — no errors.
+3. Run `build.js` + `build-extras.js` — clean output.
+4. Run `validate-hashes.sh --update` — `MANIFEST.yaml` current.
+5. Commit source + `docs/`.
+6. Open PR with description of what changed and why.

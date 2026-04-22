@@ -1,12 +1,162 @@
 {
   "meta": {
-    "generated": "2026-04-22T02:24:05.640Z",
-    "count": 1
+    "generated": "2026-04-22T02:54:53.584Z",
+    "count": 26
   },
   "items": [
     {
+      "id": "ai-authorized-rx-renewal",
+      "name": "AI-Authorized Prescription Renewal (Utah Pilot)",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "ai-defense-elimination",
+      "name": "GenAI Is Not A Defense — Civil And Criminal",
+      "group": "restriction",
+      "status": "draft"
+    },
+    {
+      "id": "cfpb-pay-to-pay-fee-prohibited",
+      "name": "Pay-To-Pay Fee Prohibited Without Express Authorization",
+      "group": "restriction",
+      "status": "draft"
+    },
+    {
+      "id": "cftc-unbundled-fee-not-cta-trigger",
+      "name": "Unbundled Advice Fee Does Not Trigger CTA Registration",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "chatbot-data-no-third-party-sharing",
+      "name": "Mental Health Chatbot — No Third-Party Data Sharing",
+      "group": "restriction",
+      "status": "draft"
+    },
+    {
+      "id": "chatbot-safety-policy-filing",
+      "name": "Mental Health Chatbot — File 15-Element Safety Policy",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "dentacor-58-69-5-enforcement-forborne",
+      "name": "Dentacor — §58-69-5 Enforcement Forborne",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "dentacor-hygienist-ai-concurrence-diagnosis",
+      "name": "Dentacor — Hygienist + AI Concurrence Diagnosis",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "dentacor-informed-consent-no-dentist",
+      "name": "Dentacor — Informed Consent Disclosing Absence Of Dentist",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "disclose-genai-high-risk-proactive",
+      "name": "Proactive GenAI Disclosure In High-Risk Interactions",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
       "id": "disclose-genai-on-first-session",
       "name": "Disclose GenAI on First Session",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "disclose-genai-on-request",
+      "name": "Disclose GenAI On Consumer Request",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "elizachat-phased-rollout",
+      "name": "ElizaChat — Three-Phase Rollout Gate",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "elizachat-pre-access-disclosure-bundle",
+      "name": "ElizaChat — Pre-Access Disclosure Bundle",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "irs-501c3-dual-test-failure",
+      "name": "§501(c)(3) Exemption Denied — Organizational And Operational Test Failure",
+      "group": "restriction",
+      "status": "draft"
+    },
+    {
+      "id": "irs-incentive-fee-not-net-profits-share",
+      "name": "Incentive-Fee Management Contract Not A Share Of Net Profits",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "learning-lab-agreement-participation",
+      "name": "Learning Lab Agreement — Eligibility and Participation",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "named-prescriber-enforcement-forborne",
+      "name": "Named-Prescriber Enforcement Forborne",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "rma-data-security-63a-19-102",
+      "name": "RMA — Data Security Under §63A-19-102",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "rma-end-of-term-report",
+      "name": "RMA — 30-Day End-Of-Term Report",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "rma-hold-harmless-state",
+      "name": "RMA — Hold Harmless The State",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "rma-incident-notification-24hr",
+      "name": "RMA — 24-Hour Incident Notification",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "rma-monthly-report-to-oaip",
+      "name": "RMA — Monthly Report To OAIP",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "rma-no-advertising-reference",
+      "name": "RMA — No Advertising Reference To Agreement",
+      "group": "restriction",
+      "status": "draft"
+    },
+    {
+      "id": "sec-reg-d-506c-verification-safe-harbor",
+      "name": "Rule 506(c) Verification Via High-Minimum + Representation",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "telehealth-compliance-per-proposal",
+      "name": "Telehealth Compliance Anchored To Participant Proposal",
       "group": "requirement",
       "status": "draft"
     }

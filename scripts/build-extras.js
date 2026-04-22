@@ -256,6 +256,14 @@ function copyReferenceHtml() {
         `<script>window.location.replace("/about/");</script></head>` +
         `<body><p>This page has moved to <a href="/about/">/about/</a>.</p></body></html>`);
 
+    // Redirect stub at /pattern.html — generic KaC pattern page merged into /about/
+    fs.writeFileSync(path.join(DOCS_DIR, 'pattern.html'),
+        `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Moved</title>` +
+        `<link rel="canonical" href="/about/"><meta name="robots" content="noindex">` +
+        `<meta http-equiv="refresh" content="0; url=/about/">` +
+        `<script>window.location.replace("/about/");</script></head>` +
+        `<body><p>This page has moved to <a href="/about/">/about/</a>.</p></body></html>`);
+
     console.log(`  Reference pages copied: ${nRef + nAbout}`);
     return nRef + nAbout;
 }

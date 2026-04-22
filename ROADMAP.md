@@ -11,9 +11,9 @@ Living housekeeping document. Tracks what shipped, what's pending, and what's de
 
 ## Current version
 
-`v0.1.0-pre` — drafting in public. Freeze target: within days of 2026-04-18 workshop.
+`v0.1.0-pre` — drafting in public. Freeze target: after lawyer review checkpoint (week of 2026-04-20).
 
-## What shipped (as of 2026-04-19)
+## What shipped (as of 2026-04-21)
 
 Inherited free from the Knowledge-as-Code template at bootstrap:
 
@@ -65,14 +65,33 @@ Shipped 2026-04-19 (late session — Utah RMA quartet + federal expansions + ID 
 - Registry totals: 10 instruments spanning 6 authorities (Utah OAIP, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC DSIO) and 5 instrument types (`jia`, `rma`, `no-action-letter`, `advisory-opinion`, `private-letter-ruling`, `interpretive-letter`). Every value of `obligation_kind` and `reliance_scope` is now exercised by at least one instrument.
 - [PRIOR-ART.md](PRIOR-ART.md) expanded with the four Utah RMAs + CFTC interpretive letter + IRS adverse PLR rows; count updated 3 → 9 remaps.
 
+Shipped 2026-04-21 (canonical URL architecture + status vocabulary + EAL UI parity):
+
+- Canonical hierarchical URL paths: `/{country}/{jurisdiction}/{authority}/{type}/{YYYY-NNN}/`
+- Stable identifier scheme finalised: `{jurisdiction}-{authority}-{kind}-{YYYY-NNN}` (e.g. `us-ut-oaip-rma-2025-001`); filenames match.
+- `record.json` per instrument — Schema.org `LegalDocument` JSON-LD, served at canonical URL + `/record.json`.
+- Legacy `/container/{old-id}/` paths emit meta-refresh redirect stubs.
+- Jurisdiction index pages at every hierarchy level (`/us/`, `/us/utah/`, `/us/utah/oaip/`, etc.).
+- Utah landing at `/us/utah/` with narrative + 4-chapter statute map.
+- 4 Utah statutes ingested as first-class instrument records (`us-ut-legislature-statute-*`); `utah-legislature` authority added. Registry now 14 instruments, 7 authorities, 2 jurisdictions.
+- Status vocabulary expanded to 9 values; `DEFINITIONS.md` added; `/definitions/` page renders it.
+- PubLedge Disclaimer & Source Policy at `/reference/disclaimer/`; footer "Not legal advice" links there.
+- Source PDFs + OCR'd text linked from Utah RMA records; `scripts/ocr-pdf.sh` added.
+- `calendar.ics`, `api/v1/upcoming.json`, `api/v1/recently_changed.json` added.
+- UI: per-column sort/filter, keyboard shortcuts (`/`, `?`, `j/k`), rich ARIA search, freshness badges, anchor-copy buttons, print stylesheet, jurisdiction chips, prev/next sibling nav, changelog strip, schema-completeness warnings.
+- `assets/theme.js` shared theme + disclaimer-banner injector for hand-crafted pages.
+- Protocol content moved from `/reference/protocol/` → `/about/` (redirect stub retained).
+- Navigation: `Instruments`, `Obligations`, `Definitions`, `Authorities` pages.
+- Copyright → PAICE.work PBC.
+- `build.js` + `build-extras.js` dual-script pipeline; `npm run build` alias retained.
+
 ## v0.1 — remaining before public freeze
 
 | Item | Owner | Notes |
 |---|---|---|
 | Lawyer review checkpoint (SLC attorney, week of 2026-04-20) | Sam | Output may add paywall prior-art; review doc itself may ship as first meta-JIA |
 | Private snapshot send (Boyd first, hold legislators 24h) | Sam | Tarball already staged |
-| us-ut-oaip-jia-0001 promotion draft → reviewed → published | — | Awaits lawyer review |
-| canonical-spec-page rendered at publedge.org | skill | Decision made: keep KaC multi-page home instead — this item is CLOSED, not needed |
+| us-ut-oaip-jia-2026-001 promotion draft → reviewed → published | — | Awaits lawyer review |
 | repo-polish + promo-orchestrator | skill | Final step before v0.1 public |
 
 Out of scope for v0.1:
@@ -93,16 +112,29 @@ v0.2 spec landed in CONTENT-GUIDE.md 2026-04-19. Follow-up items needed before i
 | Build renderer for composed disclaimer | Currently `disclaimer: ""` in every v0.2-retrofitted demo; renderer in `scripts/build-extras.js` must compose from `source` + `status` per the table in CONTENT-GUIDE.md §"Disclaimer composition". |
 | Run `./scripts/validate-hashes.sh --update` | Many files changed under `data/examples/instruments/`, `_templates/`, `schema/`, `PROTOCOL.md`, etc. after the ID migration and RMA quartet; MANIFEST.yaml is now stale. |
 
-## v0.2 — branch and strip + browser tooling + clean URLs
+## v0.2 — obligations curation, more jurisdictions, lawyer-reviewed records, agent surface
 
 Triggered once Utah instance meets the six testable structural claims in the formative-intent note.
 
-- Branch the repo; strip Utah-specific content to leave a clean PubLedge protocol template. Mirror KaC ← AI Tool Watch pattern.
-- Branch destination decision at branch time: `jia.publedge.org` subdomain under this repo, or `github.com/snapsynapse/publedge-utah-jia` separate repo.
-- **Clean-URL migration**: convert KaC tool pages (`/matrix.html` → `/matrix/`, `/compare.html` → `/compare/`, etc.) — deferred from v0.1 because it requires modifying ~30 touchpoints in the inherited KaC generator. Current mixed style (clean URLs for entity detail, `.html` for tools) is acceptable for v0.1.
-- Browser-side registry browser + detail pages (native HTML; currently KaC renders all of these — this is actually already shipped in v0.1, needs only polish)
-- Search UI wired to `assets/data.json` (index already generated)
-- Contribute upstream improvements to KaC template so PubLedge doesn't need `build-extras.js` as a separate step
+**Content / editorial:**
+- Obligations + mapping curation pass: extract structured obligations from all 9 non-statute instruments; populate `data/examples/obligations/` + `data/examples/mapping/index.yml`.
+- More jurisdictions: California, EU, UK — leverage EveryAILaw's coverage.
+- Lawyer review + promote first batch of instruments from `status: enforcing` (editorial) to externally-reviewed.
+
+**Agent surface:**
+- JSON-LD on all top-level pages (`/about/`, `/definitions/`, `/reference/disclaimer/`, `/obligations.html`, `/instruments.html`, matrix page).
+- Split sitemap index (`sitemap.xml` → index + `sitemap-records.xml`, `sitemap-authorities.xml`, `sitemap-statutes.xml`, `sitemap-meta.xml`).
+- JSON Feed 1.1 (`feed.json`) + Atom 1.0 (`atom.xml`) alongside RSS.
+- MCP server completeness: verify all required tools exposed; register in `mcp.json`.
+- `schema/json/record.schema.json` — JSON Schema for `record.json` payload.
+- siteline-scan SNAP audit + agent-readiness-audit; remediate any blockers.
+
+**Engineering:**
+- Signed commits + hash-chain verification enforcement in CI.
+- Branch the repo; strip Utah-specific content to leave clean PubLedge protocol template. Mirror KaC ← AI Tool Watch pattern.
+- Branch destination decision at branch time: `jia.publedge.org` subdomain or `github.com/snapsynapse/publedge-utah-jia`.
+- Clean-URL migration: `/matrix.html` → `/matrix/`, `/compare.html` → `/compare/`, etc. (deferred from v0.1; ~30 touchpoints).
+- Contribute upstream improvements to KaC template to eliminate `build-extras.js` as separate step.
 
 ## Vocabulary / namespace evolution
 
@@ -120,7 +152,7 @@ Each needs a forcing function — date, dependency, or explicit trigger.
 | Question | Forcing function | Default if unforced |
 |---|---|---|
 | Offer Nov 30 2026 annual-report section template as follow-on? | OAIP outreach response after v0.1 release | Defer to v0.2 conversation |
-| Retroactively ingest SEC no-action letters / IRS PLRs into PubLedge at scale? | Post-v0.1 editorial decision | Partially resolved 2026-04-19: nine demo remaps live under `data/examples/instruments/` with `source: demonstration-remap` (SEC, CFPB, IRS × 2, CFTC, Utah OAIP × 4). Full-corpus ingestion remains deferred. |
+| Retroactively ingest SEC no-action letters / IRS PLRs into PubLedge at scale? | Post-v0.1 editorial decision | Partially resolved: 14 demo instruments live (SEC, CFPB, IRS × 2, CFTC, Utah OAIP × 5, Utah Legislature × 4) with `source: demonstration-remap`. Full-corpus ingestion deferred. |
 | paice.foundation attribution at foundation-protocol level vs personal/snapsynapse? | Public release prep | List under PAICE portfolio at paice.foundation |
 | PubLedge namespace at `publedge.org/ns/` minted? | First concept unexpressible in gist | Defer |
 | w3id.org/publedge/ns/ PR submitted? | ~6 months stable extensions | Defer long-term |

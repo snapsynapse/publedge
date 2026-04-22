@@ -1,7 +1,7 @@
 # PubLedge
 
 > Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
-> Tracks 14 legal instruments, 1 obligations, and 5 provisions across 7 authorities.
+> Tracks 14 legal instruments, 26 obligations, and 5 provisions across 7 authorities.
 
 ## Legal Instruments
 
@@ -22,7 +22,32 @@
 
 ## Obligations
 
-- [Disclose GenAI on First Session](https://publedge.org/primary/disclose-genai-on-first-session/): 1 legal instruments support this
+- [AI-Authorized Prescription Renewal (Utah Pilot)](https://publedge.org/primary/ai-authorized-rx-renewal/): 2 legal instruments support this
+- [GenAI Is Not A Defense — Civil And Criminal](https://publedge.org/primary/ai-defense-elimination/): 2 legal instruments support this
+- [Pay-To-Pay Fee Prohibited Without Express Authorization](https://publedge.org/primary/cfpb-pay-to-pay-fee-prohibited/): 1 legal instruments support this
+- [Unbundled Advice Fee Does Not Trigger CTA Registration](https://publedge.org/primary/cftc-unbundled-fee-not-cta-trigger/): 1 legal instruments support this
+- [Mental Health Chatbot — No Third-Party Data Sharing](https://publedge.org/primary/chatbot-data-no-third-party-sharing/): 1 legal instruments support this
+- [Mental Health Chatbot — File 15-Element Safety Policy](https://publedge.org/primary/chatbot-safety-policy-filing/): 1 legal instruments support this
+- [Dentacor — §58-69-5 Enforcement Forborne](https://publedge.org/primary/dentacor-58-69-5-enforcement-forborne/): 1 legal instruments support this
+- [Dentacor — Hygienist + AI Concurrence Diagnosis](https://publedge.org/primary/dentacor-hygienist-ai-concurrence-diagnosis/): 1 legal instruments support this
+- [Dentacor — Informed Consent Disclosing Absence Of Dentist](https://publedge.org/primary/dentacor-informed-consent-no-dentist/): 1 legal instruments support this
+- [Proactive GenAI Disclosure In High-Risk Interactions](https://publedge.org/primary/disclose-genai-high-risk-proactive/): 1 legal instruments support this
+- [Disclose GenAI on First Session](https://publedge.org/primary/disclose-genai-on-first-session/): 2 legal instruments support this
+- [Disclose GenAI On Consumer Request](https://publedge.org/primary/disclose-genai-on-request/): 1 legal instruments support this
+- [ElizaChat — Three-Phase Rollout Gate](https://publedge.org/primary/elizachat-phased-rollout/): 1 legal instruments support this
+- [ElizaChat — Pre-Access Disclosure Bundle](https://publedge.org/primary/elizachat-pre-access-disclosure-bundle/): 1 legal instruments support this
+- [§501(c)(3) Exemption Denied — Organizational And Operational Test Failure](https://publedge.org/primary/irs-501c3-dual-test-failure/): 1 legal instruments support this
+- [Incentive-Fee Management Contract Not A Share Of Net Profits](https://publedge.org/primary/irs-incentive-fee-not-net-profits-share/): 1 legal instruments support this
+- [Learning Lab Agreement — Eligibility and Participation](https://publedge.org/primary/learning-lab-agreement-participation/): 2 legal instruments support this
+- [Named-Prescriber Enforcement Forborne](https://publedge.org/primary/named-prescriber-enforcement-forborne/): 2 legal instruments support this
+- [RMA — Data Security Under §63A-19-102](https://publedge.org/primary/rma-data-security-63a-19-102/): 4 legal instruments support this
+- [RMA — 30-Day End-Of-Term Report](https://publedge.org/primary/rma-end-of-term-report/): 4 legal instruments support this
+- [RMA — Hold Harmless The State](https://publedge.org/primary/rma-hold-harmless-state/): 4 legal instruments support this
+- [RMA — 24-Hour Incident Notification](https://publedge.org/primary/rma-incident-notification-24hr/): 1 legal instruments support this
+- [RMA — Monthly Report To OAIP](https://publedge.org/primary/rma-monthly-report-to-oaip/): 4 legal instruments support this
+- [RMA — No Advertising Reference To Agreement](https://publedge.org/primary/rma-no-advertising-reference/): 4 legal instruments support this
+- [Rule 506(c) Verification Via High-Minimum + Representation](https://publedge.org/primary/sec-reg-d-506c-verification-safe-harbor/): 1 legal instruments support this
+- [Telehealth Compliance Anchored To Participant Proposal](https://publedge.org/primary/telehealth-compliance-per-proposal/): 2 legal instruments support this
 
 ## Tools
 

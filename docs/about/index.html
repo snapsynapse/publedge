@@ -257,13 +257,87 @@ review_date: YYYY-MM-DD</code></pre>
   <li>Not a replacement for official channels. PubLedge complements official rulings; it does not pretend to substitute for them.</li>
 </ul>
 
+<h2>For AI agents and automated consumers</h2>
+
+<p>PubLedge exposes a layered machine-readable surface. An agent that knows only the registry's root URL can discover and consume any record without scraping HTML.</p>
+
+<h3>Discovery</h3>
+
+<p>Start here to orient an agent to the registry:</p>
+
+<table>
+  <thead><tr><th>Endpoint</th><th>Format</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/agents.json"><code>/agents.json</code></a></td><td>JSON</td><td>Agent capability manifest — lists all machine-readable endpoints, MCP server config, and contact</td></tr>
+    <tr><td><a href="/llms.txt"><code>/llms.txt</code></a></td><td>plain text</td><td>Concise registry index formatted for LLM context windows</td></tr>
+    <tr><td><a href="/sitemap.xml"><code>/sitemap.xml</code></a></td><td>XML</td><td>All canonical URLs; use for crawl-budget-aware indexing</td></tr>
+    <tr><td><a href="/robots.txt"><code>/robots.txt</code></a></td><td>plain text</td><td>Crawl directives (allow all by default)</td></tr>
+  </tbody>
+</table>
+
+<h3>Record retrieval</h3>
+
+<p>Every instrument has a <code>record.json</code> endpoint at its canonical URL:</p>
+
+<pre tabindex="0"><code>GET /us/utah/oaip/rma/2025-001/record.json
+→ Schema.org LegalDocument (JSON-LD), parties, statute anchors, obligation summary, hash</code></pre>
+
+<p>Fetch by stable id: resolve <code>/{country}/{jurisdiction}/{authority}/{type}/{YYYY-NNN}/record.json</code>. IDs are permanent; the URL scheme is defined in <a href="/PROTOCOL.md">PROTOCOL.md</a>.</p>
+
+<h3>Change tracking</h3>
+
+<table>
+  <thead><tr><th>Endpoint</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/api/v1/recently_changed.json"><code>/api/v1/recently_changed.json</code></a></td><td>20 most-recently-changed records; poll for deltas</td></tr>
+    <tr><td><a href="/api/v1/upcoming.json"><code>/api/v1/upcoming.json</code></a></td><td>Records with enforcement or review dates within the next 90 days</td></tr>
+    <tr><td><a href="/feed.xml"><code>/feed.xml</code></a></td><td>RSS 2.0 — registry updates</td></tr>
+    <tr><td><a href="/calendar.ics"><code>/calendar.ics</code></a></td><td>iCalendar — enforcement milestones for calendar subscription</td></tr>
+  </tbody>
+</table>
+
+<h3>Bulk access</h3>
+
+<table>
+  <thead><tr><th>Endpoint</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/api/v1/containers.json"><code>/api/v1/containers.json</code></a></td><td>All instruments (summary fields)</td></tr>
+    <tr><td><a href="/api/v1/authorities.json"><code>/api/v1/authorities.json</code></a></td><td>All authorities</td></tr>
+    <tr><td><a href="/api/v1/mappings.json"><code>/api/v1/mappings.json</code></a></td><td>Obligation-to-statute mapping index</td></tr>
+    <tr><td><a href="/api/v1/matrix.json"><code>/api/v1/matrix.json</code></a></td><td>Coverage matrix (instruments × obligation kinds)</td></tr>
+  </tbody>
+</table>
+
+<h3>Schemas and ontology</h3>
+
+<table>
+  <thead><tr><th>Path</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/schema/json/"><code>/schema/json/</code></a></td><td>JSON Schemas for instrument frontmatter + <code>record.json</code> payload</td></tr>
+    <tr><td><a href="/schema/json/context.jsonld"><code>/schema/json/context.jsonld</code></a></td><td>JSON-LD context binding PubLedge properties to gist IRIs</td></tr>
+  </tbody>
+</table>
+
+<h3>MCP server</h3>
+
+<p>A read-only MCP server (<code>mcp-server.js</code>, stdio transport) exposes <code>list_*</code>, <code>get_*</code>, <code>search</code>, <code>get_matrix</code>, and <code>get_mappings</code> tools. Client configuration at <a href="https://github.com/snapsynapse/publedge/blob/main/mcp.json"><code>mcp.json</code></a>.</p>
+
+<h3>Recommended consumption pattern</h3>
+
+<ol>
+  <li>Fetch <code>/agents.json</code> for capability discovery and endpoint inventory.</li>
+  <li>Fetch <code>/llms.txt</code> for a compact orientation to registry scope and URL conventions.</li>
+  <li>Poll <code>/api/v1/recently_changed.json</code> for incremental updates.</li>
+  <li>Fetch <code>/{...}/record.json</code> for structured, citation-ready data on any specific instrument.</li>
+</ol>
+
 <h2>See also</h2>
 
 <ul>
   <li><a href="/reference/prior-art/">Prior Art</a> — survey of analogous instruments PubLedge draws from</li>
-  <li><a href="/reference/registry/">Registry</a> — published JIAs and RMAs</li>
-  <li><a href="/tools/templates/">Templates</a> — fill-in JIA and RMA templates</li>
-  <li><a href="/reference/vocabulary/">Vocabulary</a> — gist binding map</li>
+  <li><a href="/definitions/">Definitions</a> — canonical vocabulary (status values, instrument types, obligation kinds)</li>
+  <li><a href="/reference/vocabulary/">Vocabulary</a> — gist ontology binding map</li>
+  <li><a href="/templates/">Templates</a> — fill-in JIA and RMA templates</li>
 </ul>
 
 </main>

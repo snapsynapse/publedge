@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-04-22T02:24:05.642Z",
-    "count": 1
+    "generated": "2026-04-22T02:54:53.585Z",
+    "count": 14
   },
   "items": [
     {
@@ -13,6 +13,169 @@
       "authority": "utah-oaip",
       "source_file": "data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md",
       "source_heading": "First-Session Disclosure (§13-72a-203)"
+    },
+    {
+      "id": "sb149-learning-lab-and-ai-defense",
+      "obligations": [
+        "learning-lab-agreement-participation",
+        "ai-defense-elimination"
+      ],
+      "regulation": "us-ut-legislature-statute-2024-sb149",
+      "authority": "utah-legislature",
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+      "source_heading": "Summary"
+    },
+    {
+      "id": "sb226-disclosure-and-ai-defense",
+      "obligations": [
+        "disclose-genai-on-request",
+        "disclose-genai-high-risk-proactive",
+        "ai-defense-elimination"
+      ],
+      "regulation": "us-ut-legislature-statute-2025-sb226",
+      "authority": "utah-legislature",
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+      "source_heading": "Summary"
+    },
+    {
+      "id": "hb452-mental-health-chatbot-stack",
+      "obligations": [
+        "disclose-genai-on-first-session",
+        "chatbot-data-no-third-party-sharing",
+        "chatbot-safety-policy-filing"
+      ],
+      "regulation": "us-ut-legislature-statute-2025-hb452",
+      "authority": "utah-legislature",
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
+      "source_heading": "Summary"
+    },
+    {
+      "id": "hb320-joint-interpretation-agreements",
+      "obligations": [
+        "learning-lab-agreement-participation"
+      ],
+      "regulation": "us-ut-legislature-statute-2026-hb320",
+      "authority": "utah-legislature",
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+      "source_heading": "Summary"
+    },
+    {
+      "id": "elizachat-rma-obligations",
+      "obligations": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "rma-incident-notification-24hr",
+        "elizachat-pre-access-disclosure-bundle",
+        "elizachat-phased-rollout"
+      ],
+      "regulation": "us-ut-oaip-rma-2024-001",
+      "authority": "utah-oaip",
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+      "source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    {
+      "id": "dentacor-rma-obligations",
+      "obligations": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "dentacor-hygienist-ai-concurrence-diagnosis",
+        "dentacor-58-69-5-enforcement-forborne",
+        "dentacor-informed-consent-no-dentist"
+      ],
+      "regulation": "us-ut-oaip-rma-2025-001",
+      "authority": "utah-oaip",
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
+      "source_heading": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    {
+      "id": "doctronic-rma-obligations",
+      "obligations": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "ai-authorized-rx-renewal",
+        "named-prescriber-enforcement-forborne",
+        "telehealth-compliance-per-proposal"
+      ],
+      "regulation": "us-ut-oaip-rma-2025-002",
+      "authority": "utah-oaip",
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+      "source_heading": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    {
+      "id": "legion-rma-obligations",
+      "obligations": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "ai-authorized-rx-renewal",
+        "named-prescriber-enforcement-forborne",
+        "telehealth-compliance-per-proposal"
+      ],
+      "regulation": "us-ut-oaip-rma-2026-001",
+      "authority": "utah-oaip",
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+      "source_heading": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    {
+      "id": "cfpb-ao-2022-001-pay-to-pay",
+      "obligations": [
+        "cfpb-pay-to-pay-fee-prohibited"
+      ],
+      "regulation": "us-cfpb-ao-2022-001",
+      "authority": "cfpb",
+      "source_file": "data/examples/instruments/us-cfpb-ao-2022-001.md",
+      "source_heading": "Interpretive position"
+    },
+    {
+      "id": "cftc-il-17-65-cta-unbundled-fee",
+      "obligations": [
+        "cftc-unbundled-fee-not-cta-trigger"
+      ],
+      "regulation": "us-cftc-dsio-il-2017-001",
+      "authority": "cftc-dsio",
+      "source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md",
+      "source_heading": "Interpretive position"
+    },
+    {
+      "id": "irs-plr-202506001-incentive-fee",
+      "obligations": [
+        "irs-incentive-fee-not-net-profits-share"
+      ],
+      "regulation": "us-irs-chief-counsel-plr-2025-001",
+      "authority": "irs-chief-counsel",
+      "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md",
+      "source_heading": "Holding"
+    },
+    {
+      "id": "irs-tege-2026-001-501c3-adverse",
+      "obligations": [
+        "irs-501c3-dual-test-failure"
+      ],
+      "regulation": "us-irs-tege-plr-2026-001",
+      "authority": "irs-tege",
+      "source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md",
+      "source_heading": "Holding"
+    },
+    {
+      "id": "sec-corpfin-nal-2025-001-rule-506c",
+      "obligations": [
+        "sec-reg-d-506c-verification-safe-harbor"
+      ],
+      "regulation": "us-sec-corpfin-nal-2025-001",
+      "authority": "sec-corpfin",
+      "source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md",
+      "source_heading": "Staff position"
     }
   ]
 }
