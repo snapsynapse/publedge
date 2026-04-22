@@ -85,6 +85,36 @@ Shipped 2026-04-21 (canonical URL architecture + status vocabulary + EAL UI pari
 - Copyright → PAICE.work PBC.
 - `build.js` + `build-extras.js` dual-script pipeline; `npm run build` alias retained.
 
+Shipped 2026-04-21 (obligations + mapping extraction):
+
+- 25 new obligation records under `data/examples/obligations/` (1 → 26 total): 6 Utah statute obligations drawn from SB 149, SB 226, HB 452, HB 320; 14 Utah OAIP RMA obligations (6 cross-RMA shared + ElizaChat, Dentacor, Doctronic/Legion-specific); 5 federal obligations (CFPB pay-to-pay, CFTC unbundled-fee, IRS incentive-fee PLR, IRS 501(c)(3) adverse PLR, SEC Rule 506(c)).
+- 13 new mapping entries in `data/examples/mapping/index.yml` (1 → 14): every instrument in the registry now maps to one or more obligations.
+- Homepage stats move from 1 → 26 obligations, 1 → 14 provisions mapped; `/matrix.html` shows filled cells across the full registry; `/obligations.html` groups obligations by requirement/restriction/permission; 47 `requires/*` bridge pages auto-generated.
+- SB 271 personal-identity-abuse obligation deferred — no SB 271 instrument record yet in PubLedge.
+
+Shipped 2026-04-22 (agent-surface expansion):
+
+- JSON-LD on every top-level page: homepage `@graph` with `WebSite` + `Organization` + `DataCatalog` + 3 child `Dataset` nodes with `DataDownload` distributions; `ItemList` on `/instruments.html`, `/obligations.html`, `/authorities.html`; `Dataset` on `/matrix.html`; `DefinedTermSet` on `/definitions/`; `Article` on `/about/`; `DigitalDocument` on `/reference/disclaimer/`. `renderPageShell` extended to accept `structuredData` parameter so any future page can inherit.
+- Split sitemap: `sitemap.xml` is now a sitemap index; per-section files at `sitemap-records.xml`, `sitemap-authorities.xml`, `sitemap-statutes.xml`, `sitemap-reference.xml`, `sitemap-templates.xml`, `sitemap-bridges.xml`, `sitemap-meta.xml`.
+- Additional feeds: `feed.json` (JSON Feed 1.1) and `atom.xml` (Atom 1.0) alongside the existing RSS 2.0 `feed.xml`; all three pull from the 14-record recently-changed set.
+- `schema/json/record.schema.json` (JSON Schema draft 2020-12) shipped for the `record.json` payload shape; served at the canonical URL on every agent-readable record.
+- MCP server extended: `list_<containers>` now accepts `jurisdiction`/`authority`/`type`/`status` filters; new tools `fetch_by_url`, `search_obligations`, `get_upcoming`, `get_recently_changed`; canonical URL helpers in server mirror `build.js::attachCanonicalPaths`. 13 tools total, stdio JSON-RPC smoke-tested.
+- `robots.txt` gained explicit `Allow: /` entries for 17 AI crawlers (GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, anthropic-ai, PerplexityBot, Perplexity-User, Google-Extended, Applebot-Extended, cohere-ai, CCBot, Bytespider, Amazonbot, Meta-ExternalAgent, Meta-ExternalFetcher, DuckAssistBot). Prior generic `User-agent: *` allow retained for crawlers not in the list.
+- Open Graph meta fixes: `og:image` double-slash bug (siteUrl trailing slash + image leading slash) corrected; `twitter:site` no longer emits `[object Object]` from the YAML empty-string parser path; homepage `og:title` strengthened from bare `"Home"` to `"{site} — {tagline}"`.
+- Homepage `Use PubLedge` card grid with six concrete CTAs: Browse registry, Cite a record, Run the MCP server, Contribute, Subscribe, Read the disclaimer. Obligations section redesigned from full list (26 cards) to a 3-card group summary (Requirements/Restrictions/Permissions with counts + anchor links) plus a 4-card "Most cross-cutting" row ranked by `regCount`.
+- Favicon: `<link rel="icon" href="/favicon.svg" type="image/svg+xml">` declared on every generated and hand-authored page (browsers previously 404'd `/favicon.ico`).
+- Upcoming-milestones widget hardened against `effective: null` records (YAML parser returns string `"null"`, producing `NaNd`); explicit ISO-date guard added.
+
+Shipped 2026-04-22 (accessibility remediation):
+
+- Resolved all 70 axe-core instances across 4 rules from `.a11y-audit/audit-2026-04-22.md`:
+  - `color-contrast` (34 instances, serious): permission green `#2a8a54` → `#1f7a43` (5.8:1 on white); recency "new" badge `#c8811a` → `#8b5a0a` (4.8:1); dark-mode foreground remap for 6 selectors (navy → link token) so tokens used as text on `#0c111c` pass 4.5:1.
+  - `link-name` (2 instances, serious): `generateCompareBridge` emitted empty `.bridge-cta` anchors because `cA.name` / `cB.name` are undefined (containers use `.title`); fixed the fallback and added explicit "View " prefix.
+  - `region` (33 instances, moderate): `renderSiteBanner` emitted `<div role="note">` which is outside every landmark (note is not a landmark role); changed to `<aside aria-label="Site disclaimer">` (aside is a complementary landmark by default).
+  - `heading-order` (1 instance, moderate): `/reference/` had `<h1>` followed by `<h3>` on each card; promoted card headings to `<h2>`.
+- Agent-readiness audit artifact at `audits/agent-readiness-2026-04-22.md` covers SNAP scoring pre- and post-remediation (pre: grade C, 77/100; post: grade C, 74/100 — score drift due to a new `readability.semanticStructure` check added to the siteline rubric between scans, not a regression).
+- Rubric-improvement recommendations captured in LocalBrain (`1_Projects/Siteline/Rubric Recommendations from PubLedge Benchmark 2026-04-22.md`) and shared with siteline maintainer.
+
 ## v0.1 — remaining before public freeze
 
 | Item | Owner | Notes |
@@ -112,22 +142,20 @@ v0.2 spec landed in CONTENT-GUIDE.md 2026-04-19. Follow-up items needed before i
 | Build renderer for composed disclaimer | Currently `disclaimer: ""` in every v0.2-retrofitted demo; renderer in `scripts/build-extras.js` must compose from `source` + `status` per the table in CONTENT-GUIDE.md §"Disclaimer composition". |
 | Run `./scripts/validate-hashes.sh --update` | Many files changed under `data/examples/instruments/`, `_templates/`, `schema/`, `PROTOCOL.md`, etc. after the ID migration and RMA quartet; MANIFEST.yaml is now stale. |
 
-## v0.2 — obligations curation, more jurisdictions, lawyer-reviewed records, agent surface
+## v0.2 — more jurisdictions, lawyer-reviewed records, engineering
 
-Triggered once Utah instance meets the six testable structural claims in the formative-intent note.
+Triggered once Utah instance meets the six testable structural claims in the formative-intent note. The v0.2 obligations-curation and agent-surface items listed in the original plan shipped in the 2026-04-21 / 2026-04-22 sessions (see "What shipped" above).
 
 **Content / editorial:**
-- Obligations + mapping curation pass: extract structured obligations from all 9 non-statute instruments; populate `data/examples/obligations/` + `data/examples/mapping/index.yml`.
 - More jurisdictions: California, EU, UK — leverage EveryAILaw's coverage.
 - Lawyer review + promote first batch of instruments from `status: enforcing` (editorial) to externally-reviewed.
+- SB 271 (Utah personal-identity abuse) added as a first-class instrument record so the existing statute-level obligation has a home.
 
-**Agent surface:**
-- JSON-LD on all top-level pages (`/about/`, `/definitions/`, `/reference/disclaimer/`, `/obligations.html`, `/instruments.html`, matrix page).
-- Split sitemap index (`sitemap.xml` → index + `sitemap-records.xml`, `sitemap-authorities.xml`, `sitemap-statutes.xml`, `sitemap-meta.xml`).
-- JSON Feed 1.1 (`feed.json`) + Atom 1.0 (`atom.xml`) alongside RSS.
-- MCP server completeness: verify all required tools exposed; register in `mcp.json`.
-- `schema/json/record.schema.json` — JSON Schema for `record.json` payload.
-- siteline-scan SNAP audit + agent-readiness-audit; remediate any blockers.
+**Agent surface (follow-ons, not blocking):**
+- `DefinedTerm` JSON-LD on individual obligation detail pages (currently top-level `ItemList` only).
+- JSON-LD on `applies-to/*` bridge pages.
+- Webhooks / push channel: GitHub Actions → Discord/Slack on new records; POST-subscribable `push.json` endpoint.
+- Per-record "Cite this record" block (BibTeX, Bluebook, Hansard inline).
 
 **Engineering:**
 - Signed commits + hash-chain verification enforcement in CI.

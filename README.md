@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/snapsynapse/publedge/actions/workflows/build.yml/badge.svg)](https://github.com/snapsynapse/publedge/actions/workflows/build.yml)
 [![Spec](https://img.shields.io/badge/spec-v0.1.0--pre-blue)](PROTOCOL.md)
-[![Registry](https://img.shields.io/badge/registry-14%20instruments%20%C2%B7%207%20authorities-informational)](data/examples/instruments/)
+[![Registry](https://img.shields.io/badge/registry-14%20instruments%20%C2%B7%2026%20obligations%20%C2%B7%207%20authorities-informational)](data/examples/instruments/)
 [![Content license: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey)](LICENSE-CC-BY-4.0)
 [![Code license: Apache 2.0](https://img.shields.io/badge/code-Apache%202.0-lightgrey)](LICENSE-APACHE)
 [![Bound to gist](https://img.shields.io/badge/ontology-gist-green)](https://www.semanticarts.com/gist/)
@@ -18,8 +18,28 @@ Plain markdown with structured frontmatter. Hash-pinned for integrity. Bound to 
 Three things in one place:
 
 1. **The protocol** — the [PROTOCOL.md](PROTOCOL.md) specification and the [PRIOR-ART.md](PRIOR-ART.md) survey that motivates it.
-2. **Utah-shaped reference content** — 5 JIA/RMA templates anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104), plus 14 demonstration instruments under `data/examples/instruments/` spanning 7 authorities (Utah OAIP, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC, Utah Legislature) and 6 instrument types (JIA, RMA, no-action letter, advisory opinion, private letter ruling, interpretive letter, statute).
+2. **Utah-shaped reference content** — 5 JIA/RMA templates anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104), plus 14 demonstration instruments under `data/examples/instruments/` spanning 7 authorities (Utah OAIP, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC, Utah Legislature) and 6 instrument types (JIA, RMA, no-action letter, advisory opinion, private letter ruling, interpretive letter, statute). 26 first-class obligation records under `data/examples/obligations/` are mapped to the instruments via `data/examples/mapping/index.yml`.
 3. **The published site** — rendered HTML under `docs/`, served by GitHub Pages from `main /docs`. Regenerate with `node scripts/build.js && node scripts/build-extras.js` before committing; CI fails if `docs/` drifts from sources.
+
+## Machine-readable endpoints
+
+Every record and index is published in parallel HTML + structured form so agents can walk the registry without scraping:
+
+| Surface | Shape |
+|---|---|
+| `/` | `WebSite` + `Organization` + `DataCatalog` JSON-LD (`@graph`); links to every dataset distribution |
+| `/us/{jurisdiction}/{authority}/{type}/{instance}/` | Canonical hierarchical URL per record; inline `Schema.org` `LegalDocument` JSON-LD; PDF + OCR text co-located |
+| `/us/{jurisdiction}/{authority}/{type}/{instance}/record.json` | Same record as JSON; shape validated by `/schema/json/record.schema.json` |
+| `/instruments.html`, `/obligations.html`, `/authorities.html` | `ItemList` JSON-LD; human-readable filter + sort |
+| `/matrix.html` | `Dataset` JSON-LD + coverage matrix; `DataDownload` distribution at `/api/v1/matrix.json` |
+| `/definitions/` | `DefinedTermSet` with instrument types + statuses as `DefinedTerm`s |
+| `/api/v1/*.json` | Machine manifests: containers, primaries, authorities, mappings, matrix, upcoming, recently-changed |
+| `/calendar.ics` | Enforcement calendar (iCal) |
+| `/feed.xml`, `/atom.xml`, `/feed.json` | RSS 2.0, Atom 1.0, JSON Feed 1.1 |
+| `/sitemap.xml` | Sitemap index → per-section sitemaps (`records`, `authorities`, `statutes`, `reference`, `templates`, `bridges`, `meta`) |
+| `/llms.txt`, `/agents.json` | Agent-discovery briefing + capabilities |
+| `/robots.txt` | Explicit allow for 17 AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, etc.) |
+| `mcp-server.js` | MCP server exposing 13 read-only tools: `list_<legal-instruments>` (with jurisdiction/authority/type/status filters), `get_<legal-instrument>`, `list_obligations`, `get_obligation`, `list_authorities`, `get_authority`, `search`, `search_obligations`, `get_matrix`, `get_mappings`, `fetch_by_url`, `get_upcoming`, `get_recently_changed` |
 
 ## What this repo is not
 
@@ -122,6 +142,15 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | Status vocabulary (9 values) + `DEFINITIONS.md` + `/definitions/` page | done |
 | `publedge-source-ingest` skill for authored ingestion | done |
 | Disclaimer & Source Policy at `/reference/disclaimer/` | done |
+| Obligations + mapping curation pass (26 obligations, 14 mappings) | done |
+| JSON-LD on top-level pages (home @graph, ItemList indexes, DefinedTermSet, Dataset) | done |
+| Split sitemap index + 7 section sitemaps | done |
+| JSON Feed 1.1 + Atom 1.0 feeds alongside RSS | done |
+| `/schema/json/record.schema.json` (JSON Schema draft 2020-12) | done |
+| Extended MCP tool surface (13 tools; filters, URL-based fetch, upcoming, recently-changed) | done |
+| Explicit AI-crawler allowlist in `robots.txt` | done |
+| Agent-readiness + a11y audit artifacts in `audits/` + `.a11y-audit/` | done |
+| Axe-core WCAG 2.1 AA remediation (4 rules, 70 instances → 0) | done |
 | Private snapshot for pre-release review | staged |
 | Lawyer review (SLC attorney, week of 2026-04-20) | pending |
 | repo-polish + promo-orchestrator + public announcement | planned at release |
