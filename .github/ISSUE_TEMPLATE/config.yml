@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and discussion
+    url: https://github.com/snapsynapse/publedge/discussions
+    about: Ask or answer questions about PubLedge records, protocol semantics, or integration.
+  - name: Security report
+    url: https://github.com/snapsynapse/publedge/security/advisories/new
+    about: Privately disclose a vulnerability. See SECURITY.md for scope.

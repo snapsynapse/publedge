@@ -233,6 +233,8 @@ main > article > blockquote {
 }
 .site-header h1 a { color: #fff; border-bottom: 0; }
 .site-header h1 a:hover { color: #f6e3b4; }
+.site-brand { display: inline-flex; align-items: center; gap: 0.55rem; }
+.site-brand-icon { display: block; flex: 0 0 auto; border-radius: 4px; }
 
 .site-nav {
   display: flex;

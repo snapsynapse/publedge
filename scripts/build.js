@@ -532,7 +532,7 @@ function renderSiteNav(config, activePage, prefix) {
 
     return `<a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-        <h1><a href="/" onclick="passTheme(this)">${escapeHTML(siteName)}</a></h1>
+        <h1><a href="/" onclick="passTheme(this)" class="site-brand"><img src="/favicon.svg" alt="" class="site-brand-icon" width="28" height="28">${escapeHTML(siteName)}</a></h1>
         <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
             <span class="hamburger-icon"></span>
         </button>
