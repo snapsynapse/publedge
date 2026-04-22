@@ -895,7 +895,7 @@ function renderUpcomingWidget(containers, config) {
         push('Term ends', c.term_end);
     }
     events.sort((a, b) => a.date.localeCompare(b.date));
-    const top = events.slice(0, 4);
+    const top = events.slice(0, 3);
     if (!top.length) return '';
     const cards = top.map(e => `
         <a class="upcoming-card" href="${containerIndexHref(e.container)}">
@@ -944,7 +944,7 @@ function generateHomepage(config, data, configCSS) {
         </div>
 
         <h2>Use PubLedge</h2>
-        <div class="card-grid" style="margin-bottom:1rem;">
+        <div class="card-grid cols-3" style="margin-bottom:1rem;">
             <div class="obligation-card">
                 <div class="card-title"><a href="/instruments.html">Browse the registry</a></div>
                 <div class="card-description">Walk the hierarchical index of instruments by country, jurisdiction, authority, and type.</div>
