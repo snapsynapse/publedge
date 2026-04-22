@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - PubLedge</title>
+    <title>PubLedge — Public registry of fact-specific interpretations - PubLedge</title>
     <meta name="theme-color" content="#1a1a2e">
     
     <link rel="stylesheet" href="/assets/styles.css">
@@ -42,13 +42,14 @@
 :is(html, body).light-mode { --accent: #0f2e5c; }
 </style>
     <meta name="description" content="Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.">
-    <meta property="og:title" content="Home">
+    <meta property="og:title" content="PubLedge — Public registry of fact-specific interpretations">
     <meta property="og:description" content="Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://publedge.org//imgs/og.png">
+    <meta property="og:image" content="https://publedge.org/imgs/og.png">
     <meta property="og:url" content="https://publedge.org/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="[object Object]">
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://publedge.org/#website","url":"https://publedge.org/","name":"PubLedge","description":"Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.","inLanguage":"en","publisher":{"@id":"https://publedge.org/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://publedge.org/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"Organization","@id":"https://publedge.org/#organization","name":"PAICE.work PBC","url":"https://paice.foundation","logo":{"@type":"ImageObject","url":"https://publedge.org/imgs/og.png"},"sameAs":["https://github.com/snapsynapse/publedge","https://paice.foundation"]},{"@type":"DataCatalog","name":"PubLedge Registry","description":"Public registry of fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.","url":"https://publedge.org/instruments.html","publisher":{"@id":"https://publedge.org/#organization"},"license":"https://creativecommons.org/licenses/by/4.0/","dataset":[{"@type":"Dataset","name":"Legal Instruments","url":"https://publedge.org/instruments.html","distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://publedge.org/api/v1/containers.json"}]},{"@type":"Dataset","name":"Obligations","url":"https://publedge.org/obligations.html","distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://publedge.org/api/v1/primaries.json"}]},{"@type":"Dataset","name":"Coverage Matrix","url":"https://publedge.org/matrix.html","distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://publedge.org/api/v1/matrix.json"}]}]}]}</script>
     <script>
         (function() {
             var params = new URLSearchParams(window.location.search);
@@ -149,6 +150,34 @@
             <a class="stat-card" href="/timeline.html"><span class="stat-number" style="font-size:1.5rem;">Dates</span><span class="stat-label">Timeline</span></a>
             <a class="stat-card" href="/compare.html"><span class="stat-number" style="font-size:1.5rem;">vs</span><span class="stat-label">Compare</span></a>
             <a class="stat-card" href="/api/v1/index.json"><span class="stat-number" style="font-size:1.5rem;">API</span><span class="stat-label">JSON API</span></a>
+        </div>
+
+        <h2>Use PubLedge</h2>
+        <div class="card-grid" style="margin-bottom:1rem;">
+            <a class="obligation-card" href="/instruments.html" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Browse the registry</div>
+                <div class="card-description">Walk the hierarchical index of instruments by country, jurisdiction, authority, and type.</div>
+            </a>
+            <a class="obligation-card" href="/about/" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Cite a record</div>
+                <div class="card-description">Every record exposes a stable identifier, a canonical URL, a <code>record.json</code> endpoint, and <code>Schema.org</code> LegalDocument markup.</div>
+            </a>
+            <a class="obligation-card" href="https://github.com/snapsynapse/publedge/blob/main/mcp-server.js" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Run the MCP server</div>
+                <div class="card-description">Query the registry from Claude, Cursor, or any MCP client. List, filter, fetch by URL, search obligations, upcoming milestones.</div>
+            </a>
+            <a class="obligation-card" href="https://github.com/snapsynapse/publedge/issues/new" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Contribute or request</div>
+                <div class="card-description">Open a GitHub issue to add an instrument, flag a correction, or discuss a mapping. Contribution guidelines in <a href="/CONTRIBUTING.md">CONTRIBUTING.md</a>.</div>
+            </a>
+            <a class="obligation-card" href="/feed.json" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Subscribe to updates</div>
+                <div class="card-description">JSON Feed 1.1 (<a href="/feed.json">feed.json</a>), Atom (<a href="/atom.xml">atom.xml</a>), or RSS (<a href="/feed.xml">feed.xml</a>). Also: enforcement <a href="/calendar.ics">calendar.ics</a>.</div>
+            </a>
+            <a class="obligation-card" href="/reference/disclaimer/" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Read the disclaimer</div>
+                <div class="card-description">PubLedge is not legal advice. Source policy, limitation of liability, AI-assisted-compilation notice.</div>
+            </a>
         </div>
 
         

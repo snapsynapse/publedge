@@ -187,7 +187,6 @@ pattern:
 social:
   og_image: "/imgs/og.png"
   twitter_card: "summary_large_image"
-  twitter_site: ""
 
 # ---------------------------------------------------------------------------
 # Verification — staleness detection for entity freshness

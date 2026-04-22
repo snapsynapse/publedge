@@ -564,6 +564,11 @@ function renderPageShell(config, { title, activePage, prefix, content, descripti
     const desc = description || config.description || '';
     const canonical = canonicalPath ? `<link rel="canonical" href="${siteUrl}${canonicalPath}">` : '';
     const jsonLd = structuredData ? `\n    <script type="application/ld+json">${JSON.stringify(structuredData)}</script>` : '';
+    // Normalize URL joins: strip trailing slash from siteUrl before appending absolute paths
+    const urlBase = siteUrl.replace(/\/$/, '');
+    const absUrl = (p) => p.startsWith('/') ? `${urlBase}${p}` : `${urlBase}/${p}`;
+    const ogImage = config.social?.og_image;
+    const twitterSite = (typeof config.social?.twitter_site === 'string' && config.social.twitter_site.trim()) ? config.social.twitter_site.trim() : '';
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -579,10 +584,10 @@ function renderPageShell(config, { title, activePage, prefix, content, descripti
     <meta property="og:title" content="${escapeHTML(title)}">
     <meta property="og:description" content="${escapeHTML(desc)}">
     <meta property="og:type" content="website">
-    ${config.social?.og_image ? `<meta property="og:image" content="${siteUrl}${config.social.og_image}">` : ''}
+    ${ogImage ? `<meta property="og:image" content="${absUrl(ogImage)}">` : ''}
     ${canonicalPath !== undefined ? `<meta property="og:url" content="${siteUrl}${canonicalPath || ''}">` : ''}
     <meta name="twitter:card" content="${config.social?.twitter_card || 'summary'}">
-    ${config.social?.twitter_site ? `<meta name="twitter:site" content="${config.social.twitter_site}">` : ''}${jsonLd}
+    ${twitterSite ? `<meta name="twitter:site" content="${escapeHTML(twitterSite)}">` : ''}${jsonLd}
     ${renderThemeInit()}
 </head>
 <body>
@@ -603,6 +608,10 @@ function renderBridgeShell(config, { title, depth, content, description, canonic
     const prefix = depth > 0 ? '../'.repeat(depth) : '';
     const siteUrl = config.url || '';
     const jsonLd = structuredData ? `\n    <script type="application/ld+json">${JSON.stringify(structuredData)}</script>` : '';
+    const urlBase = siteUrl.replace(/\/$/, '');
+    const absUrl = (p) => p.startsWith('/') ? `${urlBase}${p}` : `${urlBase}/${p}`;
+    const ogImage = config.social?.og_image;
+    const twitterSite = (typeof config.social?.twitter_site === 'string' && config.social.twitter_site.trim()) ? config.social.twitter_site.trim() : '';
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -619,10 +628,10 @@ function renderBridgeShell(config, { title, depth, content, description, canonic
     <meta property="og:title" content="${escapeHTML(title)}">
     <meta property="og:description" content="${escapeHTML(description || '')}">
     <meta property="og:type" content="website">
-    ${config.social?.og_image ? `<meta property="og:image" content="${siteUrl}${config.social.og_image}">` : ''}
+    ${ogImage ? `<meta property="og:image" content="${absUrl(ogImage)}">` : ''}
     ${canonicalPath !== undefined ? `<meta property="og:url" content="${siteUrl}${canonicalPath || ''}">` : ''}
     <meta name="twitter:card" content="${config.social?.twitter_card || 'summary'}">
-    ${config.social?.twitter_site ? `<meta name="twitter:site" content="${config.social.twitter_site}">` : ''}${jsonLd}
+    ${twitterSite ? `<meta name="twitter:site" content="${escapeHTML(twitterSite)}">` : ''}${jsonLd}
     ${renderThemeInit()}
 </head>
 <body>
@@ -927,6 +936,34 @@ function generateHomepage(config, data, configCSS) {
             <a class="stat-card" href="/api/v1/index.json"><span class="stat-number" style="font-size:1.5rem;">API</span><span class="stat-label">JSON API</span></a>
         </div>
 
+        <h2>Use PubLedge</h2>
+        <div class="card-grid" style="margin-bottom:1rem;">
+            <a class="obligation-card" href="/instruments.html" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Browse the registry</div>
+                <div class="card-description">Walk the hierarchical index of instruments by country, jurisdiction, authority, and type.</div>
+            </a>
+            <a class="obligation-card" href="/about/" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Cite a record</div>
+                <div class="card-description">Every record exposes a stable identifier, a canonical URL, a <code>record.json</code> endpoint, and <code>Schema.org</code> LegalDocument markup.</div>
+            </a>
+            <a class="obligation-card" href="https://github.com/snapsynapse/publedge/blob/main/mcp-server.js" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Run the MCP server</div>
+                <div class="card-description">Query the registry from Claude, Cursor, or any MCP client. List, filter, fetch by URL, search obligations, upcoming milestones.</div>
+            </a>
+            <a class="obligation-card" href="https://github.com/snapsynapse/publedge/issues/new" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Contribute or request</div>
+                <div class="card-description">Open a GitHub issue to add an instrument, flag a correction, or discuss a mapping. Contribution guidelines in <a href="/CONTRIBUTING.md">CONTRIBUTING.md</a>.</div>
+            </a>
+            <a class="obligation-card" href="/feed.json" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Subscribe to updates</div>
+                <div class="card-description">JSON Feed 1.1 (<a href="/feed.json">feed.json</a>), Atom (<a href="/atom.xml">atom.xml</a>), or RSS (<a href="/feed.xml">feed.xml</a>). Also: enforcement <a href="/calendar.ics">calendar.ics</a>.</div>
+            </a>
+            <a class="obligation-card" href="/reference/disclaimer/" style="text-decoration:none;color:inherit;">
+                <div class="card-title">Read the disclaimer</div>
+                <div class="card-description">PubLedge is not legal advice. Source policy, limitation of liability, AI-assisted-compilation notice.</div>
+            </a>
+        </div>
+
         ${(() => {
             const today = new Date().toISOString().slice(0, 10);
             const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
@@ -979,7 +1016,51 @@ function generateHomepage(config, data, configCSS) {
 
     `;
 
-    return renderPageShell(config, { title: 'Home', activePage: 'home', content, canonicalPath: '', description: config.description, configCSS });
+    const siteUrl = config.url || '';
+    const homepageStructuredData = {
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                '@type': 'WebSite',
+                '@id': `${siteUrl}#website`,
+                'url': siteUrl,
+                'name': config.name || 'PubLedge',
+                'description': config.description || '',
+                'inLanguage': 'en',
+                'publisher': { '@id': `${siteUrl}#organization` },
+                'potentialAction': {
+                    '@type': 'SearchAction',
+                    'target': { '@type': 'EntryPoint', 'urlTemplate': `${siteUrl}?q={search_term_string}` },
+                    'query-input': 'required name=search_term_string'
+                }
+            },
+            {
+                '@type': 'Organization',
+                '@id': `${siteUrl}#organization`,
+                'name': 'PAICE.work PBC',
+                'url': 'https://paice.foundation',
+                'logo': { '@type': 'ImageObject', 'url': `${siteUrl}imgs/og.png` },
+                'sameAs': [
+                    'https://github.com/snapsynapse/publedge',
+                    'https://paice.foundation'
+                ]
+            },
+            {
+                '@type': 'DataCatalog',
+                'name': `${config.name || 'PubLedge'} Registry`,
+                'description': 'Public registry of fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.',
+                'url': `${siteUrl}instruments.html`,
+                'publisher': { '@id': `${siteUrl}#organization` },
+                'license': 'https://creativecommons.org/licenses/by/4.0/',
+                'dataset': [
+                    { '@type': 'Dataset', 'name': 'Legal Instruments', 'url': `${siteUrl}instruments.html`, 'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/containers.json` }] },
+                    { '@type': 'Dataset', 'name': 'Obligations', 'url': `${siteUrl}obligations.html`, 'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/primaries.json` }] },
+                    { '@type': 'Dataset', 'name': 'Coverage Matrix', 'url': `${siteUrl}matrix.html`, 'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/matrix.json` }] }
+                ]
+            }
+        ]
+    };
+    return renderPageShell(config, { title: `${config.name || 'PubLedge'} — ${config.tagline || 'Public registry of fact-specific interpretations'}`, activePage: 'home', content, canonicalPath: '', description: config.description, configCSS, structuredData: homepageStructuredData });
 }
 
 function generateContainersPage(config, data, configCSS) {
@@ -2442,15 +2523,23 @@ function build() {
     // Sitemap + robots
     const siteUrl = (config.url || '').replace(/\/?$/, '/');
     fs.writeFileSync(path.join(DOCS_DIR, 'sitemap.xml'), generateSitemap(config, sitemapPages));
-    fs.writeFileSync(path.join(DOCS_DIR, 'robots.txt'), [
+    const aiBots = ['GPTBot', 'ChatGPT-User', 'OAI-SearchBot', 'ClaudeBot', 'Claude-Web', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'cohere-ai', 'CCBot', 'Bytespider', 'Amazonbot', 'Meta-ExternalAgent', 'Meta-ExternalFetcher', 'DuckAssistBot'];
+    const robotsLines = [
+        '# PubLedge is published under CC-BY-4.0. AI crawlers are explicitly allowed.',
         'User-agent: *',
         'Allow: /',
-        '',
-        `Sitemap: ${siteUrl}sitemap.xml`,
-        `# Machine-readable site info: ${siteUrl}agents.json`,
-        `# LLM context: ${siteUrl}llms.txt`,
         ''
-    ].join('\n'));
+    ];
+    for (const bot of aiBots) {
+        robotsLines.push(`User-agent: ${bot}`);
+        robotsLines.push('Allow: /');
+        robotsLines.push('');
+    }
+    robotsLines.push(`Sitemap: ${siteUrl}sitemap.xml`);
+    robotsLines.push(`# Machine-readable site info: ${siteUrl}agents.json`);
+    robotsLines.push(`# LLM context: ${siteUrl}llms.txt`);
+    robotsLines.push('');
+    fs.writeFileSync(path.join(DOCS_DIR, 'robots.txt'), robotsLines.join('\n'));
 
     // --- Discovery files ---
 

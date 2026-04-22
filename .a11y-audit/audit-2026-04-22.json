@@ -1,0 +1,412 @@
+{
+  "date": "2026-04-22",
+  "tool": "a11y-audit report.js v1",
+  "pages": [
+    "http://127.0.0.1:8088/authorities.html",
+    "http://127.0.0.1:8088/reference/",
+    "http://127.0.0.1:8088/templates/",
+    "http://127.0.0.1:8088/instruments.html",
+    "http://127.0.0.1:8088/obligations.html",
+    "http://127.0.0.1:8088/matrix.html",
+    "http://127.0.0.1:8088/timeline.html",
+    "http://127.0.0.1:8088/compare.html",
+    "http://127.0.0.1:8088/pattern.html",
+    "http://127.0.0.1:8088/us/",
+    "http://127.0.0.1:8088/definitions/",
+    "http://127.0.0.1:8088/requires/us-ut-legislature-statute-2025-sb226/disclose-genai-high-risk-proactive/",
+    "http://127.0.0.1:8088/requires/us-ut-oaip-rma-2026-001/rma-data-security-63a-19-102/",
+    "http://127.0.0.1:8088/primary/ai-authorized-rx-renewal/",
+    "http://127.0.0.1:8088/primary/named-prescriber-enforcement-forborne/",
+    "http://127.0.0.1:8088/us/utah/legislature/statute/2025-002/",
+    "http://127.0.0.1:8088/us/federal/sec-corpfin/nal/2025-001/",
+    "http://127.0.0.1:8088/compare/us-ut-legislature-statute-2024-sb149-vs-us-ut-legislature-statute-2025-sb226/",
+    "http://127.0.0.1:8088/compare/us-ut-oaip-rma-2025-002-vs-us-ut-oaip-rma-2026-001/",
+    "http://127.0.0.1:8088/us/federal/cfpb/ao/",
+    "http://127.0.0.1:8088/us/federal/irs-tege/plr/",
+    "http://127.0.0.1:8088/authority/cfpb/",
+    "http://127.0.0.1:8088/authority/utah-oaip/",
+    "http://127.0.0.1:8088/us/utah/oaip/",
+    "http://127.0.0.1:8088/us/utah/legislature/",
+    "http://127.0.0.1:8088/template/utah-mental-health-chatbot-advertising/",
+    "http://127.0.0.1:8088/template/utah-genai-safe-harbor-enrollment/",
+    "http://127.0.0.1:8088/reference/prior-art/",
+    "http://127.0.0.1:8088/reference/protocol/",
+    "http://127.0.0.1:8088/applies-to/us-ut/",
+    "http://127.0.0.1:8088/applies-to/us/",
+    "http://127.0.0.1:8088/us/federal/",
+    "http://127.0.0.1:8088/us/utah/",
+    "http://127.0.0.1:8088/"
+  ],
+  "lighthouse": {
+    "status": "skipped",
+    "reason": "Lighthouse disabled for this run"
+  },
+  "summary": {
+    "critical": 0,
+    "serious": 36,
+    "moderate": 34,
+    "minor": 0
+  },
+  "violations": [
+    {
+      "rule": "region",
+      "impact": "moderate",
+      "wcag": [],
+      "pages": [
+        "http://127.0.0.1:8088/authorities.html",
+        "http://127.0.0.1:8088/templates/",
+        "http://127.0.0.1:8088/instruments.html",
+        "http://127.0.0.1:8088/obligations.html",
+        "http://127.0.0.1:8088/matrix.html",
+        "http://127.0.0.1:8088/timeline.html",
+        "http://127.0.0.1:8088/compare.html",
+        "http://127.0.0.1:8088/pattern.html",
+        "http://127.0.0.1:8088/us/",
+        "http://127.0.0.1:8088/definitions/",
+        "http://127.0.0.1:8088/requires/us-ut-legislature-statute-2025-sb226/disclose-genai-high-risk-proactive/",
+        "http://127.0.0.1:8088/requires/us-ut-oaip-rma-2026-001/rma-data-security-63a-19-102/",
+        "http://127.0.0.1:8088/primary/ai-authorized-rx-renewal/",
+        "http://127.0.0.1:8088/primary/named-prescriber-enforcement-forborne/",
+        "http://127.0.0.1:8088/us/utah/legislature/statute/2025-002/",
+        "http://127.0.0.1:8088/us/federal/sec-corpfin/nal/2025-001/",
+        "http://127.0.0.1:8088/compare/us-ut-legislature-statute-2024-sb149-vs-us-ut-legislature-statute-2025-sb226/",
+        "http://127.0.0.1:8088/compare/us-ut-oaip-rma-2025-002-vs-us-ut-oaip-rma-2026-001/",
+        "http://127.0.0.1:8088/us/federal/cfpb/ao/",
+        "http://127.0.0.1:8088/us/federal/irs-tege/plr/",
+        "http://127.0.0.1:8088/authority/cfpb/",
+        "http://127.0.0.1:8088/authority/utah-oaip/",
+        "http://127.0.0.1:8088/us/utah/oaip/",
+        "http://127.0.0.1:8088/us/utah/legislature/",
+        "http://127.0.0.1:8088/template/utah-mental-health-chatbot-advertising/",
+        "http://127.0.0.1:8088/template/utah-genai-safe-harbor-enrollment/",
+        "http://127.0.0.1:8088/reference/prior-art/",
+        "http://127.0.0.1:8088/reference/protocol/",
+        "http://127.0.0.1:8088/applies-to/us-ut/",
+        "http://127.0.0.1:8088/applies-to/us/",
+        "http://127.0.0.1:8088/us/federal/",
+        "http://127.0.0.1:8088/us/utah/",
+        "http://127.0.0.1:8088/"
+      ],
+      "instances": 33
+    },
+    {
+      "rule": "heading-order",
+      "impact": "moderate",
+      "wcag": [],
+      "pages": [
+        "http://127.0.0.1:8088/reference/"
+      ],
+      "instances": 1
+    },
+    {
+      "rule": "color-contrast",
+      "impact": "serious",
+      "wcag": [
+        "1.4.3"
+      ],
+      "pages": [
+        "http://127.0.0.1:8088/instruments.html",
+        "http://127.0.0.1:8088/obligations.html",
+        "http://127.0.0.1:8088/timeline.html",
+        "http://127.0.0.1:8088/primary/ai-authorized-rx-renewal/",
+        "http://127.0.0.1:8088/primary/named-prescriber-enforcement-forborne/",
+        "http://127.0.0.1:8088/us/utah/legislature/statute/2025-002/",
+        "http://127.0.0.1:8088/us/federal/sec-corpfin/nal/2025-001/",
+        "http://127.0.0.1:8088/"
+      ],
+      "instances": 34
+    },
+    {
+      "rule": "link-name",
+      "impact": "serious",
+      "wcag": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "pages": [
+        "http://127.0.0.1:8088/compare/us-ut-legislature-statute-2024-sb149-vs-us-ut-legislature-statute-2025-sb226/"
+      ],
+      "instances": 2
+    }
+  ],
+  "matrix": {
+    "1.1.1": "not-applicable",
+    "1.2.1": "manual",
+    "1.2.2": "not-applicable",
+    "1.2.3": "manual",
+    "1.2.4": "manual",
+    "1.2.5": "manual",
+    "1.3.1": "pass",
+    "1.3.2": "manual",
+    "1.3.3": "manual",
+    "1.3.4": "manual",
+    "1.3.5": "pass",
+    "1.4.1": "pass",
+    "1.4.2": "not-applicable",
+    "1.4.3": "fail",
+    "1.4.4": "pass",
+    "1.4.5": "manual",
+    "1.4.10": "manual",
+    "1.4.11": "manual",
+    "1.4.12": "pass",
+    "1.4.13": "manual",
+    "2.1.1": "not-applicable",
+    "2.1.2": "manual",
+    "2.1.4": "manual",
+    "2.2.1": "not-applicable",
+    "2.2.2": "not-applicable",
+    "2.3.1": "manual",
+    "2.4.1": "pass",
+    "2.4.2": "pass",
+    "2.4.3": "manual",
+    "2.4.4": "fail",
+    "2.4.5": "manual",
+    "2.4.6": "manual",
+    "2.4.7": "manual",
+    "2.5.1": "manual",
+    "2.5.2": "manual",
+    "2.5.3": "manual",
+    "2.5.4": "manual",
+    "3.1.1": "pass",
+    "3.1.2": "not-applicable",
+    "3.2.1": "manual",
+    "3.2.2": "manual",
+    "3.2.3": "manual",
+    "3.2.4": "manual",
+    "3.3.1": "manual",
+    "3.3.2": "pass",
+    "3.3.3": "manual",
+    "3.3.4": "manual",
+    "4.1.1": "manual",
+    "4.1.2": "fail",
+    "4.1.3": "manual"
+  },
+  "expected_url": "https://publedge.org",
+  "runtime_url": "http://127.0.0.1:8088",
+  "sampling": {
+    "source": "sitemap (/sitemap.xml)",
+    "totalPages": 151,
+    "selectedPages": 42,
+    "groups": [
+      {
+        "pattern": "authorities",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "reference",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "PROTOCOL.md",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "PRIOR-ART.md",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "ROADMAP.md",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "ATTRIBUTION.md",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "MANIFEST.yaml",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "templates",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "instruments",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "obligations",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "matrix",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "timeline",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "compare",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "pattern",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "us",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "definitions",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      },
+      {
+        "pattern": "requires/*/*",
+        "count": 47,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "primary/*",
+        "count": 26,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "us/*/*/*/*",
+        "count": 14,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "compare/*",
+        "count": 9,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "us/*/*/*",
+        "count": 8,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "authority/*",
+        "count": 7,
+        "scanned": 2,
+        "entity": {
+          "entityType": "authorities",
+          "description": null,
+          "count": null
+        }
+      },
+      {
+        "pattern": "us/*/*",
+        "count": 7,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "template/*",
+        "count": 5,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "reference/*",
+        "count": 4,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "schema/*",
+        "count": 3,
+        "scanned": 3,
+        "entity": null
+      },
+      {
+        "pattern": "applies-to/*",
+        "count": 2,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "us/*",
+        "count": 2,
+        "scanned": 2,
+        "entity": null
+      },
+      {
+        "pattern": "/",
+        "count": 1,
+        "scanned": 1,
+        "entity": null
+      }
+    ]
+  },
+  "sharedTemplates": [
+    {
+      "patterns": [
+        "authorities",
+        "templates",
+        "matrix",
+        "compare",
+        "pattern",
+        "us",
+        "definitions",
+        "requires/*/*",
+        "compare/*",
+        "us/*/*/*",
+        "authority/*",
+        "us/*/*",
+        "template/*",
+        "reference/*",
+        "applies-to/*",
+        "us/*"
+      ],
+      "rules": [
+        "region"
+      ],
+      "pageCount": 24
+    },
+    {
+      "patterns": [
+        "instruments",
+        "obligations",
+        "timeline",
+        "primary/*",
+        "us/*/*/*/*",
+        "/"
+      ],
+      "rules": [
+        "color-contrast",
+        "region"
+      ],
+      "pageCount": 8
+    }
+  ]
+}
