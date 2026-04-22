@@ -1008,18 +1008,41 @@ function generateHomepage(config, data, configCSS) {
         ${hasMore ? `<p style="margin-top:0.75rem;"><a href="/instruments.html">See all ${containers.length} ${containerName.toLowerCase()} →</a></p>` : ''}`;
         })()}
 
-        <h2>${escapeHTML(primaryName)}</h2>
-        <div class="card-grid">
-            ${primaries.map(p => {
-                const regCount = Object.keys(matrix[p.id] || {}).length;
+        ${(() => {
+            const cNameLower = (config.entities?.container?.name || 'container').toLowerCase();
+            const primaryGroups = config.entities?.primary?.groups || [];
+            // Row 1: three group-summary cards (requirement / restriction / permission)
+            const groupCards = primaryGroups.map(g => {
+                const name = g.name || g;
+                const count = primaries.filter(p => p.group === name).length;
+                const label = humanizeId(name) + (count === 1 ? '' : 's');
+                return `<a class="stat-card" href="/obligations.html#${escapeHTML(name)}">
+                    <span class="stat-number">${count}</span>
+                    <span class="stat-label">${escapeHTML(label)}</span>
+                </a>`;
+            }).join('\n');
+            // Row 2: four load-bearing obligations by regCount desc, tiebreak on name
+            const byLoad = [...primaries]
+                .map(p => ({ p, regCount: Object.keys(matrix[p.id] || {}).length }))
+                .sort((a, b) => b.regCount - a.regCount || (a.p.name || a.p.id).localeCompare(b.p.name || b.p.id))
+                .slice(0, 4);
+            const topCards = byLoad.map(({ p, regCount }) => {
                 const summary = p._body ? (p._body.match(/## Summary\n\n([^\n#]+)/) || [])[1]?.trim() || '' : '';
                 return `<div class="obligation-card">
                     <div class="card-title"><a href="/primary/${p.id}/" onclick="passTheme(this)">${escapeHTML(p.name || humanizeId(p.id))}</a></div>
-                    <div class="card-meta">${renderGroupBadge(p.group)} <span class="meta-item">${regCount} ${(config.entities?.container?.name || 'container').toLowerCase()}${regCount !== 1 ? 's' : ''}</span></div>
+                    <div class="card-meta">${renderGroupBadge(p.group)} <span class="meta-item">${regCount} ${cNameLower}${regCount !== 1 ? 's' : ''}</span></div>
                     ${summary ? `<div class="card-description">${escapeHTML(summary)}</div>` : ''}
                 </div>`;
-            }).join('\n')}
-        </div>
+            }).join('\n');
+            const plural = (config.entities?.primary?.plural || 'Obligations').toLowerCase();
+            return `
+        <h2>${escapeHTML(primaryName)} <span style="font-size:0.7em;color:var(--muted);font-weight:400;">— by group</span></h2>
+        <div class="stats-bar">${groupCards}</div>
+
+        <h2 style="margin-top:1.6em;">Most cross-cutting <span style="font-size:0.7em;color:var(--muted);font-weight:400;">— ${plural} shared by the most ${cNameLower}s</span></h2>
+        <div class="card-grid">${topCards}</div>
+        <p style="margin-top:0.75rem;"><a href="/obligations.html">See all ${primaries.length} ${plural} →</a></p>`;
+        })()}
 
     `;
 
@@ -1189,7 +1212,7 @@ function generatePrimariesPage(config, data, configCSS) {
             const groupName = g.name || g;
             const groupItems = primaries.filter(p => p.group === groupName);
             if (!groupItems.length) return '';
-            return `<h3>${renderGroupBadge(groupName)} ${escapeHTML(humanizeId(groupName))}</h3>
+            return `<h3 id="${escapeHTML(groupName)}">${renderGroupBadge(groupName)} ${escapeHTML(humanizeId(groupName))}</h3>
             <div class="card-grid">
                 ${groupItems.map(p => {
                     const regCount = Object.keys(matrix[p.id] || {}).length;
