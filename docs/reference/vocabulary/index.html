@@ -12,29 +12,10 @@
 <meta property="og:description" content="PubLedge entity-to-gist class mapping.">
 <meta property="og:url" content="https://publedge.org/reference/vocabulary/">
 <meta property="og:image" content="https://publedge.org/imgs/og.png">
-<link rel="stylesheet" href="../../assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/theme.js"></script>
 <style>
-  :root { --bg:#fafaf7; --text:#141613; --muted:#5a6258; --border:#e6e5dc; --accent: #1e4c8a; --highlight-soft:#e6f2ff; }
-  @media (prefers-color-scheme: dark) { :root:not(.light-mode) { --bg:#0b0f0c; --text:#ecefe8; --muted:#9aa396; --border:#1f2a22; --accent: #7fb0e8; --highlight-soft:#0f3460; } }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-  header,main,footer { max-width:880px; margin:0 auto; padding:0 24px; }
-  header { padding-top:36px; padding-bottom:12px; }
-  .crumbs { font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px; color:var(--muted); letter-spacing:0.05em; text-transform:uppercase; }
-  .crumbs a { color:var(--muted); text-decoration:none; } .crumbs a:hover { color:var(--accent); }
-  h1 { font-size:clamp(2rem,4vw,2.6rem); line-height:1.15; letter-spacing:-0.02em; margin:12px 0 8px; }
-  .meta { color:var(--muted); font-size:0.92rem; margin:0 0 24px; }
-  main { padding-bottom:80px; }
-  h2 { font-size:1.4rem; margin:36px 0 10px; letter-spacing:-0.01em; }
-  p { margin:0 0 14px; }
-  table { border-collapse:collapse; width:100%; margin:14px 0; font-size:0.94rem; }
-  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
-  th { background:var(--highlight-soft); font-weight:600; }
-  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
-  code { background:var(--highlight-soft); padding:2px 6px; border-radius:4px; font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:0.88em; }
-  pre { background:var(--highlight-soft); padding:14px 16px; border-radius:8px; overflow-x:auto; font-size:0.86rem; }
-  pre code { background:none; padding:0; }
-  footer { padding:32px 24px 64px; color:var(--muted); font-size:0.88rem; border-top:1px solid var(--border); margin-top:48px; }
+  .protocol-meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 1rem; }
 
   /* a11y patch — underline prose links for WCAG 1.4.1 */
   main a, article a, p a, li a, dd a, td a, th a, blockquote a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
@@ -43,12 +24,28 @@
 </style>
 </head>
 <body>
-<header>
-  <div class="crumbs"><a href="/">PubLedge</a> · <a href="/reference/">Reference</a> · Vocabulary</div>
-  <h1>Vocabulary</h1>
-  <p class="meta">PubLedge entity → gist class binding · v0.1.0-pre</p>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <h1><a href="/">PubLedge</a></h1>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/instruments.html" class="site-nav-link">Registry</a>
+    <a href="/templates/" class="site-nav-link">Templates</a>
+    <a href="/obligations.html" class="site-nav-link">Obligations</a>
+    <a href="/matrix.html" class="site-nav-link">Matrix</a>
+    <a href="/about/" class="site-nav-link">About</a>
+  </nav>
+  <div class="header-actions">
+    <button class="theme-toggle" onclick="toggleTheme(); event.stopPropagation();" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
+  </div>
 </header>
-<main>
+<main id="main-content">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span class="sep">/</span>
+    <a href="/reference/">Reference</a> <span class="sep">/</span>
+    <span>Vocabulary</span>
+  </nav>
+  <h1>Vocabulary</h1>
+  <p class="protocol-meta">PubLedge entity → gist class binding · v0.1.0-pre</p>
 
 <p>PubLedge does not invent a new ontology. Every entity binds to a class in <a href="https://www.semanticarts.com/gist/">Semantic Arts gist</a> (CC-BY 4.0), an open upper ontology of roughly 100 classes designed for cross-system interoperability. A pinned snapshot of gist core lives at <a href="/vendor/gist/"><code>/vendor/gist/</code></a>.</p>
 
@@ -105,27 +102,26 @@ issued_by:
 
 </main>
 <nav class="footer-nav" aria-label="Footer navigation">
-<div class="footer-section"><strong>Explore</strong>
-<a href="../../timeline.html">Timeline</a>
-<a href="../../compare.html">Compare</a>
-<a href="../../primaries.html">Applicability</a>
+<div class="footer-section"><strong>Products &amp; Services</strong>
+<a href="../../instruments.html">All Legal Instruments</a>
+<a href="../../obligations.html">Obligations</a>
+<a href="../../matrix.html">Coverage Matrix</a>
+<a href="../../calendar.ics">Enforcement Calendar (ICS)</a>
 </div>
-<div class="footer-section"><strong>Reference</strong>
+<div class="footer-section"><strong>About &amp; Contact</strong>
+<a href="../../about/">About this project</a>
+<a href="../../definitions/">Definitions</a>
 <a href="../../reference/prior-art/">Prior Art</a>
 <a href="../../reference/vocabulary/">Vocabulary</a>
-<a href="../../pattern.html">Pattern</a>
-<a href="../../about.html">About</a>
 </div>
 <div class="footer-section"><strong>Related</strong>
-<a href="https://knowledge-as-code.com/">Knowledge as Code</a>
 <a href="https://everyailaw.com/">EveryAILaw</a>
-<a href="https://paice.work/">PAICE.work</a>
 <a href="https://semanticarts.com/gist/">gist (Semantic Arts)</a>
 </div>
 </nav>
 <footer class="site-footer">
-<p class="footer-meta">&copy; 2026 <a href="https://paice.work/">PAICE.work</a> · <a href="../../VERIFICATION.md">Not legal advice</a> · <a href="../../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.0-pre · Built with <a href="https://knowledge-as-code.com">Knowledge as Code</a></p>
+<p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="../../reference/disclaimer/">Not legal advice</a> · <a href="../../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.1.0-pre</p>
 </footer>
 </body>
 </html>

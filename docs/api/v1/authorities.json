@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-04-20T03:04:58.255Z",
-    "count": 6
+    "generated": "2026-04-22T02:24:05.642Z",
+    "count": 7
   },
   "items": [
     {
@@ -28,6 +28,11 @@
       "id": "sec-corpfin",
       "name": "SEC Division of Corporation Finance",
       "jurisdiction": "us"
+    },
+    {
+      "id": "utah-legislature",
+      "name": "Utah State Legislature",
+      "jurisdiction": "us-ut"
     },
     {
       "id": "utah-oaip",

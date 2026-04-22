@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About PubLedge — protocol and project overview</title>
+<meta name="description" content="PubLedge is an open recordkeeping protocol for fact-specific written interpretations between two parties. Markdown + structured frontmatter, hash-pinned, machine-readable, bound to gist.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#0f3460">
+<link rel="canonical" href="https://publedge.org/about/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PubLedge">
+<meta property="og:title" content="About PubLedge — protocol and project overview">
+<meta property="og:description" content="What an interpretation record is, what it must contain, and how it is verified.">
+<meta property="og:url" content="https://publedge.org/about/">
+<meta property="og:image" content="https://publedge.org/imgs/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="text/markdown" title="Raw markdown source" href="/PROTOCOL.md">
+<link rel="alternate" type="application/rss+xml" title="PubLedge — Updates" href="/feed.xml">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/theme.js"></script>
+
+<style>
+  /* Protocol-only flourishes. Site chrome inherits from the shared stylesheet. */
+  .protocol-meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 1rem; }
+  .protocol-disclaimer {
+    background: var(--highlight-soft); border-left: 3px solid var(--navy);
+    padding: 0.75rem 1rem; margin: 0 0 1.6rem; font-size: 0.92rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+  .views { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 0 0 1.6rem; }
+  .views a {
+    font-size: 0.85rem; padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    text-decoration: none;
+  }
+  .views a:hover { border-color: var(--navy); text-decoration: none; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <h1><a href="/">PubLedge</a></h1>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/instruments.html" class="site-nav-link">Registry</a>
+    <a href="/templates/" class="site-nav-link">Templates</a>
+    <a href="/obligations.html" class="site-nav-link">Obligations</a>
+    <a href="/matrix.html" class="site-nav-link">Matrix</a>
+    <a href="/about/" class="site-nav-link active">About</a>
+  </nav>
+  <div class="header-actions">
+    <button class="theme-toggle" onclick="toggleTheme(); event.stopPropagation();" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span class="sep">/</span>
+    <span>About</span>
+  </nav>
+  <h1>About PubLedge</h1>
+  <p class="protocol-meta">Protocol v0.1.0-pre · CC-BY 4.0 · Issued 2026-04-18</p>
+  <div class="views">
+    <a href="/PROTOCOL.md">View raw markdown</a>
+    <a href="/MANIFEST.yaml">Verify integrity</a>
+  </div>
+  <div class="protocol-disclaimer">
+    Drafting in public. v0.1.0-pre. Subject to revision before the v0.1 freeze.
+  </div>
+
+<p>PubLedge is an open recordkeeping protocol for fact-specific written interpretations between two parties.</p>
+
+<p>A PubLedge record captures a question, an answer, who agreed to it, what statutes or rules it relies on, and what the parties are now permitted, required, or restricted from doing as a result. Records are plain markdown with structured frontmatter. They are versioned in git, hash-pinned for integrity, and machine-readable through schemas bound to an open upper ontology.</p>
+
+<h2>What PubLedge is for</h2>
+
+<p>PubLedge generalizes a single class of artifact across many domains:</p>
+<ul>
+  <li><strong>Regulatory</strong> — Joint Interpretation Agreements (JIAs), Regulatory Mitigation Agreements (RMAs), no-action letters, private letter rulings, advisory opinions</li>
+  <li><strong>Civic</strong> — HOA decision logs, co-op governance records, flying-club asset agreements, tool-library lending records, community land-trust commitments</li>
+  <li><strong>Private</strong> — published private rulings between two parties (e.g., a vendor and a regulator) where one party wants the public to be able to read and rely on the interpretation</li>
+</ul>
+<p>The civic and regulatory framings are different use cases of the same underlying artifact: a written interpretation, jointly authored or approved, that constrains future behavior between the parties and may be of interest to third parties.</p>
+
+<h2>Core principles</h2>
+
+<ol>
+  <li><strong>Human-readable, machine-verifiable</strong> — every record is markdown a person can read and JSON a machine can parse.</li>
+  <li><strong>Plain text, no proprietary dependencies</strong> — git is the only required tool.</li>
+  <li><strong>Open ontology</strong> — entities bind to <a href="https://www.semanticarts.com/gist/">Semantic Arts gist</a> (CC-BY 4.0) for cross-system interoperability.</li>
+  <li><strong>Hash-pinned integrity</strong> — every published record is hashed in <code>MANIFEST.yaml</code>; tampering is detectable.</li>
+  <li><strong>Drafting-in-public posture</strong> — published records carry a disclaimer until reviewed and accepted by the relevant authority.</li>
+</ol>
+
+<h2>Entity model</h2>
+
+<p>PubLedge inherits the Knowledge-as-Code four-role spine and binds each role to a gist class:</p>
+
+<table>
+  <thead>
+    <tr><th>Role</th><th>Name</th><th>gist class</th><th>What it is</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Authority</td><td>Authority</td><td><code>gist:GovernmentOrganization</code></td><td>The party with interpretive or regulatory authority (Utah OAIP, SEC, IRS, CFPB; or, for civic uses, an HOA board, co-op council, etc.)</td></tr>
+    <tr><td>Container</td><td>Instrument</td><td><code>gist:Agreement</code> (JIA) or <code>gist:Contract</code> (RMA, enforceable)</td><td>The interpretation record itself</td></tr>
+    <tr><td>Secondary</td><td>Term</td><td><code>gist:ContractTerm</code></td><td>An individual clause within an instrument</td></tr>
+    <tr><td>Primary</td><td>Obligation</td><td><code>gist:Requirement</code> / <code>gist:Restriction</code> / <code>gist:Permission</code></td><td>The behavior the instrument requires, prohibits, or permits</td></tr>
+  </tbody>
+</table>
+
+<p>The act of issuance is itself typed <code>gist:Determination</code>. This separates the artifact (the agreement) from the event (the act of agreeing).</p>
+
+<p>The vocabulary mapping is published at <a href="/reference/vocabulary/"><code>/reference/vocabulary/</code></a> and bound machine-readably in <code>/schema/json/context.jsonld</code>.</p>
+
+<h2>Required structure</h2>
+
+<p>Every PubLedge instrument has YAML frontmatter and a markdown body.</p>
+
+<h3>Required frontmatter fields</h3>
+
+<pre tabindex="0"><code>"@type": "https://w3id.org/semanticarts/ns/ontology/gist/Agreement"  # or Contract
+id: PL-JIA-NNNN                          # Permanent identifier, monotonic, never reused
+slug: jurisdiction-topic-period          # Human-readable URL slug
+title: "Plain-language title"
+jurisdiction: us-ut                       # ISO-style jurisdiction code
+issued_date: YYYY-MM-DD
+issued_by:                                # The Authority
+  "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
+  name: "..."
+  ref: "..."                              # Authoritative URL
+parties:
+  - name: "..."
+    role: requesting_party | interpreting_authority | counterparty
+obligation_kind: [requirement, restriction, permission]   # any subset
+statute_anchors:
+  - cite: "Bluebook-style citation"
+    url: "Canonical EveryAILaw anchor or authoritative source"
+terms:
+  - "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm"
+    text: "Plain-language clause"
+status: draft | reviewed | published | superseded
+disclaimer: "Default text or instrument-specific override"
+created: YYYY-MM-DD
+modified: YYYY-MM-DD</code></pre>
+
+<p>RMAs additionally require:</p>
+
+<pre tabindex="0"><code>enforcement_authority:
+  name: "..."
+term_length: "ISO-8601 duration or 'indefinite'"
+review_date: YYYY-MM-DD</code></pre>
+
+<h3>Recommended body structure</h3>
+
+<p>In order:</p>
+<ol>
+  <li><strong>Summary</strong> — 2-3 sentences a non-specialist can read</li>
+  <li><strong>Background</strong> — context for the requesting party and the question presented</li>
+  <li><strong>Question(s) presented</strong> — what the parties asked</li>
+  <li><strong>Interpretation</strong> — what the authority agreed</li>
+  <li><strong>Terms</strong> — narrative form of the frontmatter <code>terms[]</code></li>
+  <li><strong>Statute citations</strong> — narrative form of <code>statute_anchors[]</code> with reasoning</li>
+  <li><strong>Limitations</strong> — scope, exclusions, expiry triggers</li>
+  <li><strong>Effective date and review trigger</strong></li>
+</ol>
+
+<p>The body is the canonical human-readable form. The frontmatter is the canonical machine-readable form. Both must agree; the validator (<code>scripts/validate.js</code>) enforces this.</p>
+
+<h2>Identifiers and slugs</h2>
+
+<ul>
+  <li><strong>Permanent ID</strong>: <code>PL-{KIND}-NNNN</code> where <code>KIND</code> is <code>JIA</code>, <code>RMA</code>, <code>NAL</code> (no-action letter), <code>PLR</code> (private letter ruling), <code>OPN</code> (advisory opinion). Monotonic, never reused, survives slug renames.</li>
+  <li><strong>Slug</strong>: lowercase, hyphen-separated, jurisdiction prefix, topic descriptor, optional issuance period. Example: <code>utah-mental-health-chatbot-disclosure-2026q2</code>.</li>
+  <li>Internal references between PubLedge entities use the permanent ID, resolved at build time.</li>
+</ul>
+
+<h2>Statute citations</h2>
+
+<p>Citations carry both a Bluebook-style <code>cite</code> and a <code>url</code>. The URL must be the most stable resolvable anchor available:</p>
+
+<ol>
+  <li>First preference: an <a href="https://everyailaw.com/">Every AI Law</a> provision anchor.</li>
+  <li>Second preference: the official jurisdictional source (e.g., <code>le.utah.gov</code>, <code>sec.gov</code>, <code>irs.gov</code>).</li>
+  <li>Never: a paywall, a PDF on a private mirror, or an unstable third-party summary.</li>
+</ol>
+
+<p>Citation text is never duplicated into PubLedge — always linked out. PubLedge is the interpretation registry, not a statute mirror.</p>
+
+<h2>Integrity</h2>
+
+<p>Every published file referenced by <code>MANIFEST.yaml</code> is SHA-256 hashed. The manifest itself is the control file and is not self-hashed. Verification:</p>
+
+<pre tabindex="0"><code>./scripts/validate-hashes.sh</code></pre>
+
+<p>After intentional edits:</p>
+
+<pre tabindex="0"><code>./scripts/validate-hashes.sh --update</code></pre>
+
+<p>CI runs <code>validate-hashes.sh</code> on every push. A mismatch fails the build.</p>
+
+<p>The hash mechanism is adapted from <a href="https://skillprovenance.dev">skill-provenance</a>. PubLedge does not adopt the full skill-provenance protocol — only the integrity pattern.</p>
+
+<h2>Discoverability</h2>
+
+<p>Every PubLedge site exposes the following at the root:</p>
+
+<table>
+  <thead><tr><th>File</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td><code>/sitemap.xml</code></td><td>All canonical URLs</td></tr>
+    <tr><td><code>/feed.xml</code></td><td>RSS — registry updates and protocol changelog</td></tr>
+    <tr><td><code>/agents.json</code></td><td>Agent discovery + MCP endpoint pointer</td></tr>
+    <tr><td><code>/llms.txt</code></td><td>Concise index for LLM consumption</td></tr>
+    <tr><td><code>/robots.txt</code></td><td>Crawl directives (allow all by default)</td></tr>
+    <tr><td><code>/schema/json/</code></td><td>JSON Schemas + JSON-LD context</td></tr>
+  </tbody>
+</table>
+
+<p>These are the primary mechanisms by which AI agents and search engines discover PubLedge content without scraping HTML. They are mandatory.</p>
+
+<h2>Drafting in public</h2>
+
+<p>Every PubLedge instrument carries a <code>disclaimer</code> frontmatter field. The default text:</p>
+
+<blockquote>Suggested prior art. Not official output of any authority.</blockquote>
+
+<p>The disclaimer is rendered prominently in the page header until <code>status: published</code> is reached and the responsible authority has either signed off or expressly declined to do so. Records that move to <code>published</code> without authority sign-off must retain a softened disclaimer indicating that the interpretation is the requesting party's good-faith reading, not an official ruling.</p>
+
+<p>This posture is non-optional. PubLedge exists in part to publish interpretations <em>before</em> an authority issues an official version, so that a public conversation has source material to work from.</p>
+
+<h2>Supersession</h2>
+
+<p>When an instrument is replaced:</p>
+
+<ol>
+  <li>The new instrument carries <code>supersedes: PL-JIA-NNNN</code> in frontmatter.</li>
+  <li>The old instrument has its <code>status</code> set to <code>superseded</code> and gains <code>superseded_by: PL-JIA-NNNN+1</code>.</li>
+  <li>Both remain in the registry; URLs do not break.</li>
+  <li>The old instrument's page renders a banner pointing to the new one.</li>
+</ol>
+
+<p>This is mandatory. PubLedge never deletes, only supersedes. The historical record is part of the value.</p>
+
+<h2>License</h2>
+
+<p>PubLedge content (markdown, YAML, HTML) is licensed CC-BY 4.0. PubLedge code, schemas, and scripts are licensed Apache 2.0. See <a href="/LICENSE">LICENSE</a>, <a href="/LICENSE-APACHE">LICENSE-APACHE</a>, <a href="/LICENSE-CC-BY-4.0">LICENSE-CC-BY-4.0</a>.</p>
+
+<p>Bundled vendor snapshots retain their upstream licenses. The pinned gist core ontology is CC-BY 4.0 (Semantic Arts).</p>
+
+<h2>What PubLedge is not</h2>
+
+<ul>
+  <li>Not a regulator. PubLedge does not issue rulings.</li>
+  <li>Not a law firm. PubLedge templates are prior art, not legal advice.</li>
+  <li>Not a blockchain. The integrity layer is plain SHA-256 over plain files.</li>
+  <li>Not a CMS. PubLedge ships a static site; editors edit markdown in git.</li>
+  <li>Not a replacement for official channels. PubLedge complements official rulings; it does not pretend to substitute for them.</li>
+</ul>
+
+<h2>See also</h2>
+
+<ul>
+  <li><a href="/reference/prior-art/">Prior Art</a> — survey of analogous instruments PubLedge draws from</li>
+  <li><a href="/reference/registry/">Registry</a> — published JIAs and RMAs</li>
+  <li><a href="/tools/templates/">Templates</a> — fill-in JIA and RMA templates</li>
+  <li><a href="/reference/vocabulary/">Vocabulary</a> — gist binding map</li>
+</ul>
+
+</main>
+
+<nav class="footer-nav" aria-label="Footer navigation">
+<div class="footer-section"><strong>Products &amp; Services</strong>
+<a href="../instruments.html">All Legal Instruments</a>
+<a href="../obligations.html">Obligations</a>
+<a href="../matrix.html">Coverage Matrix</a>
+<a href="../calendar.ics">Enforcement Calendar (ICS)</a>
+</div>
+<div class="footer-section"><strong>About &amp; Contact</strong>
+<a href="../about/">About this project</a>
+<a href="../definitions/">Definitions</a>
+<a href="../reference/prior-art/">Prior Art</a>
+<a href="../reference/vocabulary/">Vocabulary</a>
+</div>
+<div class="footer-section"><strong>Related</strong>
+<a href="https://everyailaw.com/">EveryAILaw</a>
+<a href="https://semanticarts.com/gist/">gist (Semantic Arts)</a>
+</div>
+</nav>
+<footer class="site-footer">
+<p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="../reference/disclaimer/">Not legal advice</a> · <a href="../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.1.0-pre</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
+    "generated": "2026-04-22T02:24:05.675Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-ut-oaip-rma-2025-002",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2025-002",
+    "slug": "utah-doctronic-rx-renewal-2025",
+    "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+    "type": "rma",
+    "jurisdiction": "us-ut",
+    "authority": "utah-oaip",
+    "issued_by": null,
+    "enacted": "2025-10-24",
+    "effective": "2025-10-24",
+    "official_url": "https://commerce.utah.gov/ai/agreements/doctronic/",
+    "obligation_kind": "[permission, requirement, restriction]",
+    "reliance_scope": "requesting-party-only",
+    "parties": [
+      "name: \"Utah Office of Artificial Intelligence Policy\""
+    ],
+    "statute_anchors": [
+      "cite: \"Utah Code §13-72-201\""
+    ],
+    "publication_citations": [
+      "\"https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-19",
+    "timeline": [],
+    "source_documents": [
+      {
+        "role": "signed-agreement",
+        "filename": "Doctronic-Final-Agreement.pdf",
+        "url": "https://publedge.org/us/utah/oaip/rma/2025-002/Doctronic-Final-Agreement.pdf",
+        "media_type": "application/pdf",
+        "authoritative": true
+      },
+      {
+        "role": "extracted-text",
+        "filename": "Doctronic-Final-Agreement.txt",
+        "url": "https://publedge.org/us/utah/oaip/rma/2025-002/Doctronic-Final-Agreement.txt",
+        "media_type": "text/plain",
+        "authoritative": false,
+        "extraction_method": "ocr-tesseract-v5",
+        "note": "OCR-extracted from signed PDF; minor transcription errors possible — signed PDF is authoritative."
+      }
+    ]
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-ut-oaip-rma-2025-002",
+    "name": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+    "headline": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+    "description": "Regulatory Mitigation Agreement (us-ut)",
+    "url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
+    "sameAs": [
+      "https://commerce.utah.gov/ai/agreements/doctronic/"
+    ],
+    "dateCreated": "2026-04-19",
+    "dateModified": "2026-04-19",
+    "datePublished": "2025-10-24",
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"Utah Code §13-72-201\""
+      }
+    ],
+    "isPartOf": {
+      "@type": "CreativeWork",
+      "name": "Utah Artificial Intelligence Learning Laboratory"
+    },
+    "encoding": [
+      {
+        "@type": "MediaObject",
+        "contentUrl": "https://publedge.org/us/utah/oaip/rma/2025-002/Doctronic-Final-Agreement.pdf",
+        "encodingFormat": "application/pdf",
+        "name": "Doctronic-Final-Agreement.pdf",
+        "description": "Signed agreement (authoritative source)."
+      },
+      {
+        "@type": "MediaObject",
+        "contentUrl": "https://publedge.org/us/utah/oaip/rma/2025-002/Doctronic-Final-Agreement.txt",
+        "encodingFormat": "text/plain",
+        "name": "Doctronic-Final-Agreement.txt",
+        "description": "OCR-extracted from signed PDF; minor transcription errors possible — signed PDF is authoritative."
+      }
+    ]
+  }
+}

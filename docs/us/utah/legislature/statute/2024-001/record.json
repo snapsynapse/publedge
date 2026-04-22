@@ -1,0 +1,111 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/utah/legislature/statute/2024-001/",
+    "generated": "2026-04-22T02:24:05.670Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-ut-legislature-statute-2024-sb149",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2024-001",
+    "slug": "utah-sb149-ai-amendments",
+    "title": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+    "type": "statute",
+    "jurisdiction": "us-ut",
+    "authority": "utah-legislature",
+    "issued_by": null,
+    "enacted": "2024-03-13",
+    "effective": "2024-05-01",
+    "official_url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+    "obligation_kind": "[requirement, restriction, permission]",
+    "reliance_scope": "public",
+    "parties": null,
+    "statute_anchors": [
+      "cite: \"Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act)\""
+    ],
+    "publication_citations": [
+      "cite: \"Utah SB 149 (2024 General Session), Governor Signed March 13, 2024\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-21",
+    "timeline": [
+      {
+        "milestone": "Introduced",
+        "date": "2024-01-25",
+        "notes": "Senate Rules Committee"
+      },
+      {
+        "milestone": "Senate passed",
+        "date": "2024-02-12",
+        "notes": "22-0-7"
+      },
+      {
+        "milestone": "House passed",
+        "date": "2024-02-28",
+        "notes": "73-0-2"
+      },
+      {
+        "milestone": "Governor Signed",
+        "date": "2024-03-13",
+        "notes": "Gov. Cox"
+      },
+      {
+        "milestone": "Effective",
+        "date": "2024-05-01",
+        "notes": "Office of AI Policy operational, §76-2-107 criminal mirror, §13-2-12 disclosure"
+      },
+      {
+        "milestone": "Boyd appointed",
+        "date": "2024-04-30",
+        "notes": "First Director, Office of AI Policy"
+      },
+      {
+        "milestone": "Amended by SB 226",
+        "date": "2025-05-07",
+        "notes": "§13-2-12 repealed; disclosure moved to Chapter 75"
+      },
+      {
+        "milestone": "Amended by HB 452",
+        "date": "2025-05-07",
+        "notes": "Mental health chatbot provisions added (Chapter 72a)"
+      },
+      {
+        "milestone": "Amended by HB 320",
+        "date": "2026-05-06",
+        "notes": "Chapter 72 restructured; Learning Lab + JIA instrument added"
+      },
+      {
+        "milestone": "Chapter 72 sunset",
+        "date": "2027-07-01",
+        "notes": "Office + Lab + agreements expire unless extended"
+      }
+    ],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-ut-legislature-statute-2024-sb149",
+    "name": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+    "headline": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+    "description": "Statute (us-ut)",
+    "url": "https://publedge.org/us/utah/legislature/statute/2024-001/",
+    "sameAs": [
+      "https://le.utah.gov/~2024/bills/static/SB0149.html"
+    ],
+    "dateCreated": "2026-04-21",
+    "dateModified": "2026-04-21",
+    "datePublished": "2024-05-01",
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act)\""
+      }
+    ]
+  }
+}

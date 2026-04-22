@@ -3,6 +3,8 @@
 id: cftc-dsio
 name: CFTC Division of Swap Dealer and Intermediary Oversight
 jurisdiction: us
+url_segment: cftc-dsio
+path_jurisdiction: federal
 website: https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm
 last_verified: 2026-04-19
 ---

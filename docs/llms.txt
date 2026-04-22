@@ -1,29 +1,33 @@
 # PubLedge
 
 > Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
-> Tracks 10 instruments, 1 obligations, and 1 provisions across 6 authorities.
+> Tracks 14 legal instruments, 1 obligations, and 5 provisions across 7 authorities.
 
-## Instruments
+## Legal Instruments
 
-- ["Consumer Financial Protection Bureau"](https://publedge.org/container/us-cfpb-ao-0001/): draft
-- ["U.S. Commodity Futures Trading Commission, Division of Swap Dealer and Intermediary Oversight"](https://publedge.org/container/us-cftc-il-17-65/): draft
-- ["Internal Revenue Service, Office of Chief Counsel"](https://publedge.org/container/us-irs-plr-202506001/): draft
-- ["Internal Revenue Service, Tax Exempt and Government Entities"](https://publedge.org/container/us-irs-plr-202614036/): draft
-- ["U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)"](https://publedge.org/container/us-sec-nal-0001/): draft
-- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-rma-0002/): draft
-- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-rma-0003/): draft
-- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-rma-0001/): draft
-- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-rma-0004/): draft
-- ["Utah Office of Artificial Intelligence Policy (OAIP)"](https://publedge.org/container/us-ut-oaip-jia-0001/): draft
+- [CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)](https://publedge.org/us/federal/cfpb/ao/2022-001/): enforcing
+- [CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling](https://publedge.org/us/federal/cftc-dsio/il/2017-001/): enforcing
+- [IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)](https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/): enforcing
+- [IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility](https://publedge.org/us/federal/irs-tege/plr/2026-001/): enforcing
+- [SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)](https://publedge.org/us/federal/sec-corpfin/nal/2025-001/): enforcing
+- [Utah SB 149 (2024) — Artificial Intelligence Amendments](https://publedge.org/us/utah/legislature/statute/2024-001/): enforcing
+- [Utah HB 452 (2025) — Mental Health Chatbot Regulations](https://publedge.org/us/utah/legislature/statute/2025-002/): enforcing
+- [Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments](https://publedge.org/us/utah/legislature/statute/2025-001/): enforcing
+- [Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements](https://publedge.org/us/utah/legislature/statute/2026-001/): enforcing
+- [Utah Mental Health Chatbot Disclosure — Joint Interpretation](https://publedge.org/us/utah/oaip/jia/2026-001/): proposed
+- [Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)](https://publedge.org/us/utah/oaip/rma/2024-001/): expired
+- [Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-001/): enforcing
+- [Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-002/): enforcing
+- [Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)](https://publedge.org/us/utah/oaip/rma/2026-001/): enacted
 
 ## Obligations
 
-- [Disclose GenAI on First Session](https://publedge.org/primary/disclose-genai-on-first-session/): 0 instruments support this
+- [Disclose GenAI on First Session](https://publedge.org/primary/disclose-genai-on-first-session/): 1 legal instruments support this
 
 ## Tools
 
-- [Coverage Matrix](https://publedge.org/matrix.html): Which obligations each instrument supports
-- [Compare](https://publedge.org/compare.html): Side-by-side instrument comparison
+- [Coverage Matrix](https://publedge.org/matrix.html): Which obligations each legal instrument supports
+- [Compare](https://publedge.org/compare.html): Side-by-side legal instrument comparison
 - [Timeline](https://publedge.org/timeline.html): Key dates and milestones
 
 ## Machine-Readable

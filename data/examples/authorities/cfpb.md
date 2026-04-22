@@ -3,6 +3,8 @@
 id: cfpb
 name: Consumer Financial Protection Bureau
 jurisdiction: us
+url_segment: cfpb
+path_jurisdiction: federal
 website: https://www.consumerfinance.gov/
 last_verified: 2026-04-19
 ---

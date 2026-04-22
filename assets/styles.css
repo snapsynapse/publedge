@@ -31,8 +31,8 @@
   --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
-  --content-max: 1120px;
-  --prose-max: 720px;
+  --content-max: 1280px;
+  --prose-max: 760px;
 }
 
 /* Dark mode: preserved but muted — civic sites are rarely dark by default.
@@ -446,10 +446,9 @@ footer a, .site-footer a { color: var(--link); }
 .status-badge.published { background: #e6f3ec !important; color: #0d4e2a !important; border: 1px solid #1f7a43 !important; }
 .status-badge.superseded { background: var(--bg-alt) !important; color: var(--muted) !important; border: 1px solid var(--border-strong) !important; }
 
-/* Data tables */
+/* Data tables — span the full container width (EAL convention). */
 .data-table, table {
   width: 100%;
-  max-width: var(--prose-max);
   border-collapse: collapse;
   margin: 1.2em 0;
   font-size: 0.93rem;
@@ -567,4 +566,549 @@ tbody tr:hover { background: var(--bg-alt); }
   .site-header, .site-footer, .site-search, .theme-toggle, .hamburger-btn { display: none; }
   body { background: #fff; color: #000; }
   a { color: #000; text-decoration: underline; }
+}
+
+/* --------------------------------------------------------------------------
+   Explicit .dark-mode class — mirrors the @media (prefers-color-scheme: dark)
+   rules above so the theme toggle works regardless of OS preference.
+
+   State machine:
+   - no class        → OS preference decides (via @media query above)
+   - .light-mode     → force light (wins over @media dark)
+   - .dark-mode      → force dark (applies even when OS is light)
+-------------------------------------------------------------------------- */
+
+:root.dark-mode {
+    --bg: #0c111c;
+    --bg-alt: #121826;
+    --panel: #161d2d;
+    --text: #e9ecf2;
+    --muted: #9aa3b2;
+    --border: #1f2a3d;
+    --border-strong: #2d3a52;
+    --link: #7fb0e8;
+    --link-hover: #b4d0ee;
+    --navy: #1a4180;
+    --navy-hover: #2a5aa8;
+    --highlight-soft: #2a2010;
+}
+:root.dark-mode h1,
+:root.dark-mode h2,
+:root.dark-mode h3,
+:root.dark-mode h4 { color: #e9ecf2; }
+:root.dark-mode code { color: #cbd5e1; }
+:root.dark-mode .footer-section strong { color: #e9ecf2; }
+:root.dark-mode .card-title a { color: #e9ecf2; }
+:root.dark-mode .card-title a:hover { color: #f6c6ce; }
+:root.dark-mode .stat-number { color: #e9ecf2; }
+:root.dark-mode th { color: #e9ecf2; }
+
+/* --------------------------------------------------------------------------
+   Site-wide disclaimer banner — same amber signal in both modes.
+-------------------------------------------------------------------------- */
+.site-banner {
+    background: #fff6d6;
+    color: #5a4a14;
+    border-top: 1px solid #e4d2a0;
+    border-bottom: 1px solid #e4d2a0;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+}
+.site-banner a {
+    color: #a31f34;
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Layout uniformity — tables fill the container width by default.
+   (main/.container max-width is already set upstream; do not re-declare.)
+-------------------------------------------------------------------------- */
+.container table,
+.container .data-table,
+main table,
+main .data-table {
+    width: 100%;
+    table-layout: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Homepage stat cards as links — inherit color, keep card look, hover lift.
+-------------------------------------------------------------------------- */
+a.stat-card {
+    display: block;
+    padding: 1rem 1.1rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+a.stat-card:hover,
+a.stat-card:focus-visible {
+    border-color: var(--navy);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+    color: inherit;
+    border-bottom: 1px solid var(--navy);
+}
+
+/* --------------------------------------------------------------------------
+   Sortable + filterable table headers (adapted from EveryAILaw).
+-------------------------------------------------------------------------- */
+.th-content { display: flex; flex-direction: column; gap: 4px; }
+.th-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.sort-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 5px solid currentColor;
+    opacity: 0.3;
+    transition: opacity 0.15s;
+}
+th[data-sortable]:hover .sort-arrow { opacity: 0.5; }
+th[aria-sort="ascending"] .sort-arrow {
+    opacity: 1;
+    color: var(--navy);
+    border-bottom: 5px solid currentColor;
+    border-top: none;
+}
+th[aria-sort="descending"] .sort-arrow {
+    opacity: 1;
+    color: var(--navy);
+    border-top: 5px solid currentColor;
+    border-bottom: none;
+}
+.th-filter {
+    display: block;
+    width: 100%;
+    padding: 3px 6px;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+}
+.th-filter:focus {
+    outline: 2px solid var(--navy);
+    outline-offset: 1px;
+}
+.table-result-count {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+    transition: background 0.2s, padding 0.2s;
+}
+.table-result-count.filtered {
+    background: var(--bg-alt);
+    border: 1px solid var(--navy);
+    border-radius: var(--radius);
+    padding: 0.35rem 0.75rem;
+    color: var(--text);
+}
+.table-result-count strong { color: var(--navy); }
+tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
+
+/* --------------------------------------------------------------------------
+   Keyboard help overlay.
+-------------------------------------------------------------------------- */
+.keyboard-help-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keyboard-help {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    max-width: 360px;
+    width: 90%;
+    color: var(--text);
+    box-shadow: var(--shadow-md);
+}
+.keyboard-help h3 { margin: 0 0 1rem; font-family: var(--font-serif); }
+.keyboard-help dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.5rem 1rem; margin: 0; }
+.keyboard-help dt { font-weight: 600; }
+.keyboard-help kbd {
+    font-family: var(--font-mono);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 0.05rem 0.4rem;
+    font-size: 0.85em;
+}
+
+/* --------------------------------------------------------------------------
+   Freshness badge — color by age of last_verified.
+-------------------------------------------------------------------------- */
+.freshness-badge {
+    display: inline-block;
+    padding: 0.1rem 0.55rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+}
+.freshness-badge.fresh { background: #2a8a54; color: #fff; }
+.freshness-badge.aging { background: #d4a017; color: #0a1f3e; }
+.freshness-badge.stale { background: #a64a4a; color: #fff; }
+
+/* --------------------------------------------------------------------------
+   Timeline (adapted from EveryAILaw).
+-------------------------------------------------------------------------- */
+.timeline { margin: 1.5rem 0; position: relative; }
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+.timeline-year {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy-ink);
+    font-family: var(--font-serif);
+    margin: 1.5rem 0 0.5rem;
+    padding-left: 48px;
+}
+.timeline-entry {
+    position: relative;
+    padding: 0.75rem 0.75rem 0.75rem 48px;
+    margin: 0.25rem 0;
+    scroll-margin-top: 72px;
+}
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 18px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--border-strong);
+    background: var(--panel);
+    box-sizing: border-box;
+}
+.timeline-entry.past::before {
+    background: #2a8a54;
+    border-color: #2a8a54;
+}
+.timeline-entry.future::before {
+    background: transparent;
+    border-color: var(--navy);
+}
+.timeline-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.timeline-content {
+    display: flex;
+    gap: 0.5rem 0.75rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.timeline-regulation { font-weight: 600; color: var(--navy); text-decoration: none; }
+.timeline-regulation:hover { color: var(--crimson); }
+.timeline-milestone {
+    font-size: 0.9rem;
+    color: var(--text);
+}
+.timeline-jurisdiction {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: var(--bg-alt);
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Compare page — side-by-side list readability.
+-------------------------------------------------------------------------- */
+.compare-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.35rem 1rem;
+    margin: 1rem 0 1.5rem;
+    padding: 1rem;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.compare-selector label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.35rem;
+    cursor: pointer;
+    font-size: 0.92rem;
+}
+.compare-result { margin-top: 1rem; }
+.compare-section {
+    margin: 1.25rem 0;
+    padding: 1rem 1.25rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.compare-section h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    color: var(--navy);
+}
+.compare-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.25rem;
+}
+.compare-list li {
+    padding: 0.4rem 0.75rem;
+    background: var(--bg-alt);
+    border-radius: var(--radius);
+    font-size: 0.92rem;
+}
+
+/* --------------------------------------------------------------------------
+   Recency pill (new / updated) on homepage legal-instrument rows.
+-------------------------------------------------------------------------- */
+.recency-badge {
+    display: inline-block;
+    padding: 0.08rem 0.45rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 3px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 0.3rem;
+}
+.recency-badge.new { background: #c8811a; }
+.recency-badge.updated { background: #2a7ab0; }
+
+/* --------------------------------------------------------------------------
+   Jurisdiction chips — colored per data-jurisdiction attr.
+-------------------------------------------------------------------------- */
+.jurisdiction-chip {
+    display: inline-block;
+    padding: 0.1rem 0.55rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+    background: var(--bg-alt);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+.jurisdiction-chip[data-jurisdiction="us-ut"] {
+    background: #1a4180; color: #fff; border-color: transparent;
+}
+.jurisdiction-chip[data-jurisdiction="us"] {
+    background: #a31f34; color: #fff; border-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   Record summary strip (above detail-meta).
+-------------------------------------------------------------------------- */
+.record-summary-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    margin: 0.5rem 0 0.75rem;
+    padding: 0.6rem 0.9rem;
+    background: var(--bg-alt);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+}
+.record-summary-strip .summary-item { white-space: nowrap; }
+.record-summary-strip strong { color: var(--muted); font-weight: 600; margin-right: 0.25rem; }
+
+/* --------------------------------------------------------------------------
+   Record changelog (bottom of detail).
+-------------------------------------------------------------------------- */
+.record-changelog {
+    margin: 2rem 0 0;
+    padding: 0.75rem 1rem;
+    background: var(--bg-alt);
+    border-radius: var(--radius);
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+.record-changelog strong { color: var(--text); margin-right: 0.25rem; }
+
+/* --------------------------------------------------------------------------
+   Citation block.
+-------------------------------------------------------------------------- */
+.citation-block {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-alt);
+    border-left: 3px solid var(--navy);
+    font-size: 0.9rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* --------------------------------------------------------------------------
+   Prev/next sibling-record nav.
+-------------------------------------------------------------------------- */
+.record-prevnext {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem 0 0;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--border);
+    font-size: 0.92rem;
+}
+.record-prevnext a {
+    text-decoration: none;
+    color: var(--navy);
+    font-weight: 600;
+}
+.record-prevnext a:hover { color: var(--crimson); }
+
+/* --------------------------------------------------------------------------
+   Incomplete-metadata warning.
+-------------------------------------------------------------------------- */
+.incomplete-metadata {
+    margin: 0.75rem 0;
+    padding: 0.6rem 1rem;
+    background: #fff6d6;
+    border: 1px solid #e4d2a0;
+    border-left: 4px solid #c8811a;
+    border-radius: var(--radius);
+    font-size: 0.88rem;
+    color: #5a4a14;
+}
+
+/* --------------------------------------------------------------------------
+   Authority-link panel.
+-------------------------------------------------------------------------- */
+.authority-link-panel {
+    margin: 1rem 0 1.5rem;
+    padding: 0.85rem 1.1rem;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--navy);
+    border-radius: var(--radius);
+    font-size: 0.92rem;
+}
+.authority-link-panel strong { margin-right: 0.5rem; color: var(--text); }
+
+/* --------------------------------------------------------------------------
+   Upcoming milestones widget (homepage).
+-------------------------------------------------------------------------- */
+.upcoming-widget {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin: 0.75rem 0 1.5rem;
+}
+.upcoming-card {
+    display: block;
+    padding: 0.9rem 1rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--navy);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 120ms, box-shadow 120ms;
+}
+.upcoming-card:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); color: inherit; }
+.upcoming-days {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+}
+.upcoming-kind {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin: 0.25rem 0;
+}
+.upcoming-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin: 0.25rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.upcoming-date { font-size: 0.8rem; color: var(--muted); }
+
+/* --------------------------------------------------------------------------
+   Anchor-link copy button (hover-revealed).
+-------------------------------------------------------------------------- */
+.anchor-link {
+    opacity: 0;
+    margin-left: 0.4em;
+    font-size: 0.7em;
+    text-decoration: none;
+    transition: opacity 150ms;
+    cursor: pointer;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+.detail-header:hover .anchor-link { opacity: 0.7; }
+.anchor-link:hover { opacity: 1 !important; }
+
+/* --------------------------------------------------------------------------
+   Print stylesheet — lawyers print. Hide chrome, unfold details.
+-------------------------------------------------------------------------- */
+@media print {
+    body { background: #fff; color: #000; }
+    .site-header, .site-banner, .site-footer, .footer-nav,
+    .theme-toggle, .hamburger-btn, .site-search, .back-to-top,
+    .skip-link, .record-prevnext, .anchor-link, .search-results {
+        display: none !important;
+    }
+    main, .container { max-width: none; padding: 0; }
+    details { page-break-inside: avoid; }
+    details[open] > summary ~ * { display: revert !important; }
+    details:not([open]) { }
+    details > summary { display: none; }
+    details { display: block; }
+    a { color: #000 !important; text-decoration: underline !important; }
+    a[href]:after { content: " (" attr(href) ")"; font-size: 0.85em; color: #666; }
+    a[href^="#"]:after, a[href^="/"]:after { content: ""; }
+    .data-table, table { border: 1px solid #999; page-break-inside: avoid; }
+    th { background: #eee !important; color: #000 !important; }
+    pre { border: 1px solid #999; white-space: pre-wrap; word-wrap: break-word; }
+    .upcoming-widget, .stats-bar { page-break-inside: avoid; }
 }

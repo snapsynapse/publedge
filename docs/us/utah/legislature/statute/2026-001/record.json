@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/",
+    "generated": "2026-04-22T02:24:05.672Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-ut-legislature-statute-2026-hb320",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2026-001",
+    "slug": "utah-hb320-learning-lab-restructure",
+    "title": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+    "type": "statute",
+    "jurisdiction": "us-ut",
+    "authority": "utah-legislature",
+    "issued_by": null,
+    "enacted": "2026-03-19",
+    "effective": "2026-05-06",
+    "official_url": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+    "obligation_kind": "[requirement, permission]",
+    "reliance_scope": "public",
+    "parties": null,
+    "statute_anchors": [
+      "cite: \"Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act, restructured)\""
+    ],
+    "publication_citations": [
+      "cite: \"Utah HB 320 (2026 General Session)\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-21",
+    "timeline": [
+      {
+        "milestone": "Introduced",
+        "date": "2026-01",
+        "notes": "2026 General Session"
+      },
+      {
+        "milestone": "Governor Signed",
+        "date": "2026-03-19",
+        "notes": ""
+      },
+      {
+        "milestone": "Effective",
+        "date": "2026-05-06",
+        "notes": "Chapter 72 restructured; JIA instrument live"
+      },
+      {
+        "milestone": "Second annual report",
+        "date": "2026-11-30",
+        "notes": "First under restructured Chapter 72"
+      }
+    ],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-ut-legislature-statute-2026-hb320",
+    "name": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+    "headline": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+    "description": "Statute (us-ut)",
+    "url": "https://publedge.org/us/utah/legislature/statute/2026-001/",
+    "sameAs": [
+      "https://le.utah.gov/~2026/bills/static/HB0320.html"
+    ],
+    "dateCreated": "2026-04-21",
+    "dateModified": "2026-04-21",
+    "datePublished": "2026-05-06",
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act, restructured)\""
+      }
+    ]
+  }
+}

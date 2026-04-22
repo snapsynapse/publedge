@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/",
+    "generated": "2026-04-22T02:24:05.667Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-irs-chief-counsel-plr-2025-001",
+    "legacy_id": null,
+    "official_ref": "PLR 202506001",
+    "instance": "2025-001",
+    "slug": "irs-plr-202506001",
+    "title": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
+    "type": "private-letter-ruling",
+    "jurisdiction": "us",
+    "authority": "irs-chief-counsel",
+    "issued_by": null,
+    "enacted": "2025-02-07",
+    "effective": "2025-02-07",
+    "official_url": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+    "obligation_kind": "[permission]",
+    "reliance_scope": "requesting-party-only",
+    "parties": "[]",
+    "statute_anchors": [
+      "cite: \"26 U.S.C. §141 (private business use of tax-exempt bond proceeds)\""
+    ],
+    "publication_citations": [
+      "cite: \"IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-19",
+    "timeline": [],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-irs-chief-counsel-plr-2025-001",
+    "alternateName": "PLR 202506001",
+    "name": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
+    "headline": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
+    "description": "Private Letter Ruling (us)",
+    "url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/",
+    "sameAs": [
+      "https://www.irs.gov/pub/irs-wd/202506001.pdf"
+    ],
+    "dateCreated": "2026-04-19",
+    "dateModified": "2026-04-19",
+    "datePublished": "2025-02-07",
+    "author": {
+      "@type": "GovernmentOrganization",
+      "name": "IRS Office of Chief Counsel"
+    },
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"26 U.S.C. §141 (private business use of tax-exempt bond proceeds)\""
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-001/",
+    "generated": "2026-04-22T02:24:05.671Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-ut-legislature-statute-2025-sb226",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2025-001",
+    "slug": "utah-sb226-genai-consumer-protection",
+    "title": "Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments",
+    "type": "statute",
+    "jurisdiction": "us-ut",
+    "authority": "utah-legislature",
+    "issued_by": null,
+    "enacted": "2025-03-25",
+    "effective": "2025-05-07",
+    "official_url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+    "obligation_kind": "[requirement, permission]",
+    "reliance_scope": "public",
+    "parties": null,
+    "statute_anchors": [
+      "cite: \"Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)\""
+    ],
+    "publication_citations": [
+      "cite: \"Utah SB 226 (2025 General Session)\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-21",
+    "timeline": [
+      {
+        "milestone": "Introduced",
+        "date": "2025-02",
+        "notes": "2025 General Session"
+      },
+      {
+        "milestone": "Governor Signed",
+        "date": "2025-03-25",
+        "notes": ""
+      },
+      {
+        "milestone": "Effective",
+        "date": "2025-05-07",
+        "notes": "Four-bill single-day AI package (with SB 271, SB 332, HB 452)"
+      },
+      {
+        "milestone": "First annual report",
+        "date": "2025-11-30",
+        "notes": "To Business & Labor Interim Committee"
+      }
+    ],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-ut-legislature-statute-2025-sb226",
+    "name": "Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments",
+    "headline": "Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments",
+    "description": "Statute (us-ut)",
+    "url": "https://publedge.org/us/utah/legislature/statute/2025-001/",
+    "sameAs": [
+      "https://le.utah.gov/~2025/bills/static/SB0226.html"
+    ],
+    "dateCreated": "2026-04-21",
+    "dateModified": "2026-04-21",
+    "datePublished": "2025-05-07",
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)\""
+      }
+    ]
+  }
+}

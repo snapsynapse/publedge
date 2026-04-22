@@ -3,6 +3,8 @@
 id: irs-chief-counsel
 name: IRS Office of Chief Counsel
 jurisdiction: us
+url_segment: irs-chief-counsel
+path_jurisdiction: federal
 website: https://www.irs.gov/privacy-disclosure/written-determinations
 last_verified: 2026-04-19
 ---

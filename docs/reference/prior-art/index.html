@@ -16,41 +16,18 @@
 <meta property="og:image" content="https://publedge.org/imgs/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="text/markdown" title="Raw markdown source" href="/PRIOR-ART.md">
-<link rel="stylesheet" href="../../assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/theme.js"></script>
 
 <style>
-  :root {
-    --bg: #fafaf7; --text: #141613; --muted: #5a6258;
-    --border: #e6e5dc; --accent: #1e4c8a; --accent-bg: #0f2e5c;
-    --highlight-soft: #e6f2ff;
+  .protocol-meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 1rem; }
+  .views { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 0 0 1.6rem; }
+  .views a {
+    font-size: 0.85rem; padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    text-decoration: none;
   }
-  @media (prefers-color-scheme: dark) {
-    :root:not(.light-mode) { --bg: #0b0f0c; --text: #ecefe8; --muted: #9aa396;
-            --border: #1f2a22; --accent: #7fb0e8; --accent-bg: #0f2e5c;
-            --highlight-soft: #0f3460; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-  header, main, footer { max-width: 880px; margin: 0 auto; padding: 0 24px; }
-  header { padding-top: 36px; padding-bottom: 12px; }
-  .crumbs { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
-  .crumbs a { color: var(--muted); text-decoration: none; }
-  .crumbs a:hover { color: var(--accent); }
-  h1 { font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1.15; letter-spacing: -0.02em; margin: 12px 0 8px; }
-  .meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 24px; }
-  main { padding-bottom: 80px; }
-  h2 { font-size: 1.4rem; margin: 36px 0 10px; letter-spacing: -0.01em; }
-  h3 { font-size: 1.05rem; margin: 18px 0 6px; color: var(--muted); }
-  p { margin: 0 0 14px; }
-  ul, ol { margin: 0 0 14px; padding-left: 22px; }
-  li { margin: 4px 0; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  code { background: var(--highlight-soft); padding: 2px 6px; border-radius: 4px; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.88em; }
-  .views { display: flex; gap: 12px; flex-wrap: wrap; margin: 0 0 28px; }
-  .views a { font-size: 0.85rem; padding: 4px 10px; border: 1px solid var(--border); border-radius: 4px; }
-  .views a:hover { border-color: var(--accent); text-decoration: none; }
-  footer { padding: 32px 24px 64px; color: var(--muted); font-size: 0.88rem; border-top: 1px solid var(--border); margin-top: 48px; }
+  .views a:hover { border-color: var(--navy); text-decoration: none; }
 
   /* a11y patch — underline prose links for WCAG 1.4.1 */
   main a, article a, p a, li a, dd a, td a, th a, blockquote a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
@@ -59,17 +36,33 @@
 </style>
 </head>
 <body>
-<header>
-  <div class="crumbs"><a href="/">PubLedge</a> · <a href="/reference/">Reference</a> · Prior Art</div>
-  <h1>PubLedge Prior Art</h1>
-  <p class="meta">Descriptive survey · CC-BY 4.0 · 2026-04-18</p>
-  <div class="views">
-    <a href="/PRIOR-ART.md">View raw markdown</a>
-    <a href="/reference/protocol/">Protocol →</a>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <h1><a href="/">PubLedge</a></h1>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/instruments.html" class="site-nav-link">Registry</a>
+    <a href="/templates/" class="site-nav-link">Templates</a>
+    <a href="/obligations.html" class="site-nav-link">Obligations</a>
+    <a href="/matrix.html" class="site-nav-link">Matrix</a>
+    <a href="/about/" class="site-nav-link">About</a>
+  </nav>
+  <div class="header-actions">
+    <button class="theme-toggle" onclick="toggleTheme(); event.stopPropagation();" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
   </div>
 </header>
 
-<main>
+<main id="main-content">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span class="sep">/</span>
+    <a href="/reference/">Reference</a> <span class="sep">/</span>
+    <span>Prior Art</span>
+  </nav>
+  <h1>PubLedge Prior Art</h1>
+  <p class="protocol-meta">Descriptive survey · CC-BY 4.0 · 2026-04-18</p>
+  <div class="views">
+    <a href="/PRIOR-ART.md">View raw markdown</a>
+    <a href="/about/">About →</a>
+  </div>
 
 <p>PubLedge is not a new idea. Governments and private bodies have been issuing fact-specific written interpretations for decades — they just have not been treated as a single class of artifact, version-controlled, hash-pinned, or made machine-readable through a shared ontology.</p>
 
@@ -224,27 +217,26 @@
 </main>
 
 <nav class="footer-nav" aria-label="Footer navigation">
-<div class="footer-section"><strong>Explore</strong>
-<a href="../../timeline.html">Timeline</a>
-<a href="../../compare.html">Compare</a>
-<a href="../../primaries.html">Applicability</a>
+<div class="footer-section"><strong>Products &amp; Services</strong>
+<a href="../../instruments.html">All Legal Instruments</a>
+<a href="../../obligations.html">Obligations</a>
+<a href="../../matrix.html">Coverage Matrix</a>
+<a href="../../calendar.ics">Enforcement Calendar (ICS)</a>
 </div>
-<div class="footer-section"><strong>Reference</strong>
+<div class="footer-section"><strong>About &amp; Contact</strong>
+<a href="../../about/">About this project</a>
+<a href="../../definitions/">Definitions</a>
 <a href="../../reference/prior-art/">Prior Art</a>
 <a href="../../reference/vocabulary/">Vocabulary</a>
-<a href="../../pattern.html">Pattern</a>
-<a href="../../about.html">About</a>
 </div>
 <div class="footer-section"><strong>Related</strong>
-<a href="https://knowledge-as-code.com/">Knowledge as Code</a>
 <a href="https://everyailaw.com/">EveryAILaw</a>
-<a href="https://paice.work/">PAICE.work</a>
 <a href="https://semanticarts.com/gist/">gist (Semantic Arts)</a>
 </div>
 </nav>
 <footer class="site-footer">
-<p class="footer-meta">&copy; 2026 <a href="https://paice.work/">PAICE.work</a> · <a href="../../VERIFICATION.md">Not legal advice</a> · <a href="../../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.0-pre · Built with <a href="https://knowledge-as-code.com">Knowledge as Code</a></p>
+<p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="../../reference/disclaimer/">Not legal advice</a> · <a href="../../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.1.0-pre</p>
 </footer>
 </body>
 </html>

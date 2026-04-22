@@ -1,8 +1,15 @@
 {
   "meta": {
-    "generated": "2026-04-20T03:04:58.255Z"
+    "generated": "2026-04-22T02:24:05.642Z"
   },
   "matrix": {
-    "disclose-genai-on-first-session": {}
+    "disclose-genai-on-first-session": {
+      "us-ut-oaip-jia-2026-001": {
+        "covered": true,
+        "provisions": [
+          "utah-mental-health-chatbot-disclosure-2026q2-first-session"
+        ]
+      }
+    }
   }
 }

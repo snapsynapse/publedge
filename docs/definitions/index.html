@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definitions - PubLedge</title>
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="canonical" href="https://publedge.org/definitions/">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <style>/* Generated from project.yml — do not edit manually */
+.group-badge.requirement { background: #1a4180; }
+:is(html, body).light-mode .group-badge.requirement { background: #0f2e5c; }
+.matrix-table .matrix-row-header.group-requirement { border-left-color: #1a4180; }
+:is(html, body).light-mode .matrix-table .matrix-row-header.group-requirement { border-left-color: #0f2e5c; }
+.group-badge.restriction { background: #c73041; }
+:is(html, body).light-mode .group-badge.restriction { background: #a31f34; }
+.matrix-table .matrix-row-header.group-restriction { border-left-color: #c73041; }
+:is(html, body).light-mode .matrix-table .matrix-row-header.group-restriction { border-left-color: #a31f34; }
+.group-badge.permission { background: #2a8a54; }
+:is(html, body).light-mode .group-badge.permission { background: #1f7a43; }
+.matrix-table .matrix-row-header.group-permission { border-left-color: #2a8a54; }
+:is(html, body).light-mode .matrix-table .matrix-row-header.group-permission { border-left-color: #1f7a43; }
+.status-badge.proposed { background: #d4a017; color: #000; }
+:is(html, body).light-mode .status-badge.proposed { background: #b8860b; color: #fff; }
+.status-badge.enacted { background: #2a7ab0; color: #000; }
+:is(html, body).light-mode .status-badge.enacted { background: #1a5fa3; color: #fff; }
+.status-badge.enforcing { background: #2a8a54; color: #000; }
+:is(html, body).light-mode .status-badge.enforcing { background: #1f7a43; color: #fff; }
+.status-badge.phased-enforcement { background: #3a9d6a; color: #000; }
+:is(html, body).light-mode .status-badge.phased-enforcement { background: #2a8a54; color: #fff; }
+.status-badge.pending-replacement { background: #c88e1a; color: #000; }
+:is(html, body).light-mode .status-badge.pending-replacement { background: #a17011; color: #fff; }
+.status-badge.expired { background: #7a8599; color: #000; }
+:is(html, body).light-mode .status-badge.expired { background: #5a6572; color: #fff; }
+.status-badge.superseded { background: #7a8599; color: #000; }
+:is(html, body).light-mode .status-badge.superseded { background: #5a6572; color: #fff; }
+.status-badge.withdrawn { background: #a64a4a; color: #000; }
+:is(html, body).light-mode .status-badge.withdrawn { background: #803535; color: #fff; }
+.status-badge.terminated { background: #c73041; color: #000; }
+:is(html, body).light-mode .status-badge.terminated { background: #a31f34; color: #fff; }
+:root { --accent: #1a4180; }
+:is(html, body).light-mode { --accent: #0f2e5c; }
+</style>
+    
+    <meta name="description" content="Controlled vocabulary and terms of art used across the PubLedge registry.">
+    <meta property="og:title" content="Definitions">
+    <meta property="og:description" content="Controlled vocabulary and terms of art used across the PubLedge registry.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://publedge.org//imgs/og.png">
+    <meta property="og:url" content="https://publedge.org/definitions/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="[object Object]">
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var urlTheme = params.get('theme');
+            var theme = urlTheme || localStorage.getItem('theme');
+            if (theme === 'light') {
+                document.documentElement.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            } else if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+            // Strip ?theme from URL so reloads respect localStorage (which the
+            // button updates) rather than re-pinning the old URL-specified theme.
+            if (urlTheme) {
+                params.delete('theme');
+                var q = params.toString();
+                var newUrl = window.location.pathname + (q ? '?' + q : '') + window.location.hash;
+                window.history.replaceState(null, '', newUrl);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <h1><a href="/" onclick="passTheme(this)">PubLedge</a></h1>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <span class="hamburger-icon"></span>
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+            <a href="/instruments.html" class="site-nav-link" onclick="passTheme(this)">Registry</a>
+            <a href="/templates/" class="site-nav-link" onclick="passTheme(this)">Templates</a>
+            <a href="/obligations.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
+            <a href="/matrix.html" class="site-nav-link" onclick="passTheme(this)">Matrix</a>
+            <a href="/about/" class="site-nav-link" onclick="passTheme(this)">About</a>
+        </nav>
+        <div class="header-actions">
+            <div class="site-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="searchResults">
+                <input type="search" id="siteSearchInput" class="search-input" placeholder="Search..." aria-label="Search" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
+                <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme(); event.stopPropagation();" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
+        </div>
+    </header>
+    <div class="site-banner" role="note">
+        <strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe each instrument's own legal state, not editorial endorsement — see <a href="/definitions/">Definitions</a>.
+    </div>
+    <main class="container" id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/" onclick="passTheme(this)">Home</a>
+        <span class="sep">/</span> <span>Definitions</span>
+    </nav>
+        <div class="about-content">
+            <h1>Definitions</h1>
+<p>This document specifies the controlled vocabulary PubLedge uses for instrument status, alongside clarifying definitions for the terms of art that appear in the registry.</p>
+<hr>
+<h2>Scope</h2>
+<p>PubLedge tracks fact-specific written interpretations between two parties: Joint Interpretation Agreements (JIAs), Regulatory Mitigation Agreements (RMAs), SEC no-action letters, CFPB advisory opinions, IRS private letter rulings, CFTC interpretive letters, and analogous instruments. Statutes are tracked as first-class records where an interpretation is anchored to them, so that the statute-to-instrument relationship can be queried directly.</p>
+<p>Terminology choices below reflect three concerns:</p>
+<p>1. <strong>Precision</strong>: each term is a distinct legal term of art, not a synonym for its neighbors. 2. <strong>Interoperability</strong>: where the same concept appears in <a href="https://everyailaw.com/">EveryAILaw</a>, the vocabulary is identical so cross-registry joins work. 3. <strong>Disclosure</strong>: PubLedge itself is a reference project under development. The registry's <code>status</code> field describes the instrument's legal state, not the registry's editorial state. See the site-wide disclaimer banner.</p>
+<hr>
+<h2>Status vocabulary</h2>
+<p>The <code>status:</code> frontmatter field on every instrument record takes one of the following values.</p>
+<h3>Lifecycle transitions</h3>
+<pre tabindex="0"><code>proposed → enacted → enforcing → { expired, superseded, withdrawn, terminated }
+                              ↘ pending-replacement → superseded
+                              ↘ phased-enforcement → enforcing (per phase)</code></pre>
+<h3>Values</h3>
+<table class="data-table"><thead><tr><th>Status</th><th>Definition</th><th>Authoritative source</th></tr></thead><tbody><tr><td><code>proposed</code></td><td>Instrument has been drafted but has not been executed, adopted, or issued. Applies to instruments PubLedge suggests as prior art, to unratified agreements, and to bills that have been introduced but not enacted.</td><td>EveryAILaw convention</td></tr><tr><td><code>enacted</code></td><td>Instrument has been signed, executed, or otherwise formally adopted by its issuing authority or parties, but is not yet in force. Used when a stated effective date, phase-in date, or commencement trigger has not been reached.</td><td>EveryAILaw convention</td></tr><tr><td><code>enforcing</code></td><td>Instrument is in force and its terms are operative. For statutes: enforceable by the relevant authority. For agreements: the term is active and the parties are bound. For agency instruments (no-action letters, advisory opinions, private letter rulings): the position remains the published view of the issuing office.</td><td>EveryAILaw convention</td></tr><tr><td><code>phased-enforcement</code></td><td>Instrument is in force but specific provisions take effect on rolling dates. Used when a single record covers multiple obligations that phase in over time.</td><td>EveryAILaw convention</td></tr><tr><td><code>pending-replacement</code></td><td>Instrument is known to be replaced by a forthcoming instrument covering the same subject matter. Forward-looking flag; once the replacement is executed, transition to <code>superseded</code>.</td><td>EveryAILaw convention</td></tr><tr><td><code>expired</code></td><td>Instrument's stated term has ended and no extension or replacement was executed. Natural discharge by the passage of time; no party action required. Distinguish from <code>terminated</code> (action by a party) and <code>superseded</code> (replaced by a newer instrument). Legal basis: Restatement (Second) of Contracts §235, discharge by expiration.</td><td>PubLedge addition</td></tr><tr><td><code>superseded</code></td><td>Instrument has been replaced by a newer instrument on the same subject matter. The record should also populate the <code>superseded_by:</code> field with the canonical identifier of the replacing instrument.</td><td>PubLedge addition</td></tr><tr><td><code>withdrawn</code></td><td>Instrument has been rescinded unilaterally by the issuing authority before its stated term ended. Applies to agency instruments (advisory opinions, no-action letters, interpretive letters) where the agency pulls back the position. Does not apply to statutes (which are "repealed") or to two-party agreements (which are "terminated").</td><td>PubLedge addition</td></tr><tr><td><code>terminated</code></td><td>Bilateral or multilateral instrument has been ended early by action — party notice, mutual consent, or material breach. Distinguish from <code>expired</code> (natural term end) and <code>withdrawn</code> (unilateral issuer action on a one-sided instrument).</td><td>PubLedge addition</td></tr></tbody></table>
+<h3>Color and semantic intent</h3>
+<p>The site renders status as a badge colored by semantic group:</p>
+<ul><li><strong>Active (green family)</strong>: <code>enforcing</code>, <code>phased-enforcement</code></li><li><strong>Pre-active (amber/blue family)</strong>: <code>proposed</code>, <code>enacted</code></li><li><strong>Future-facing (amber family)</strong>: <code>pending-replacement</code></li><li><strong>Past (gray family)</strong>: <code>expired</code>, <code>superseded</code></li><li><strong>Action-ended (red family)</strong>: <code>withdrawn</code>, <code>terminated</code></li></ul>
+<hr>
+<h2>Instrument types</h2>
+<p>The <code>type:</code> frontmatter field identifies the genre of instrument. The URL segment is derived from this value via <code>project.yml > hierarchy.type_segments</code>.</p>
+<table class="data-table"><thead><tr><th>Type</th><th>URL segment</th><th>Definition</th></tr></thead><tbody><tr><td><code>rma</code></td><td><code>rma</code></td><td><strong>Regulatory Mitigation Agreement.</strong> A written agreement between a regulator and a participating entity that waives specified statutory or regulatory provisions for a stated term, in exchange for scope limits, safeguards, and reporting. Utah OAIP is the primary US issuer (Utah Code §13-72-401).</td></tr><tr><td><code>jia</code></td><td><code>jia</code></td><td><strong>Joint Interpretation Agreement.</strong> A written agreement between a regulator and a requesting party that clarifies how existing law applies to a specific fact pattern, without waiving the underlying law. Utah OAIP is authorized to issue JIAs under §13-72-401 (HB 320, 2026).</td></tr><tr><td><code>no-action-letter</code></td><td><code>nal</code></td><td>A letter from SEC staff (typically the Division of Corporation Finance or Trading and Markets) stating that staff would not recommend enforcement action if the requester proceeds with a specified transaction. Binds staff, not the Commission; reliance typically limited to the requesting party or similarly-situated third parties.</td></tr><tr><td><code>advisory-opinion</code></td><td><code>ao</code></td><td>A formal statement by a regulatory agency (CFPB, FTC, HHS OIG) interpreting an ambiguous regulation as applied to specified facts. Public; binds the agency's enforcement posture; subsequent amendment or withdrawal is disclosed.</td></tr><tr><td><code>interpretive-letter</code></td><td><code>il</code></td><td>An explanatory letter issued by agency staff (CFTC DSIO, OCC, FRB) addressing a specific factual scenario. Similar in function to a no-action letter but framed as an interpretation rather than non-enforcement.</td></tr><tr><td><code>private-letter-ruling</code></td><td><code>plr</code></td><td>An IRS written determination issued to a specific taxpayer addressing their specific transaction. Relied upon only by the requesting taxpayer; publicly released with identifying information redacted.</td></tr><tr><td><code>statute</code></td><td><code>statute</code></td><td>A law enacted by a legislature, tracked as a first-class record in PubLedge when one or more registered instruments interpret or waive it. The <code>statute</code> type holds anchoring metadata; authoritative full text lives at the issuing body (for example, <a href="https://le.utah.gov/">le.utah.gov</a>) and at <a href="https://everyailaw.com/">EveryAILaw</a>.</td></tr></tbody></table>
+<hr>
+<h2>Reliance scope</h2>
+<p>The <code>reliance_scope:</code> field describes who may rely on the instrument.</p>
+<table class="data-table"><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td><code>public</code></td><td>Anyone may rely on the instrument's stated interpretation — statutes, advisory opinions, rules of general applicability.</td></tr><tr><td><code>requesting-party-only</code></td><td>Only the entity that requested the instrument may rely on it (IRS PLRs, most RMAs and JIAs).</td></tr><tr><td><code>similarly-situated-third-parties</code></td><td>The requesting party plus third parties who share the material facts. Typical for SEC no-action letters and some CFTC letters.</td></tr></tbody></table>
+<hr>
+<h2>Identifier scheme</h2>
+<p>Every instrument carries two identifiers:</p>
+<ul><li><strong>Stable identifier</strong> (<code>id</code> field, URL filename): <code>{country}-{jurisdiction}-{authority}-{type}-{YYYY}-{NNN}</code>. Example: <code>us-ut-oaip-rma-2025-001</code>. This is the canonical citation form; remains valid even if the URL architecture changes.</li><li><strong>Canonical URL</strong>: <code>/{country}/{jurisdiction}/{authority}/{type}/{YYYY-NNN}/</code>. Example: <code>/us/utah/oaip/rma/2025-001/</code>. Human-browseable hierarchy.</li><li><strong>Legacy identifier</strong> (<code>legacy_id</code> field, when applicable): the pre-migration ID preserved for redirect resolution and historical citation resolution.</li><li><strong>Official reference</strong> (<code>official_ref</code> field, when applicable): the issuing authority's own citation convention. Example: IRS "PLR 202506001", CFTC "Letter 17-65".</li></ul>
+<p>The <code>record.json</code> endpoint emits all identifiers alongside the full record payload and a Schema.org <code>LegalDocument</code> JSON-LD block.</p>
+<hr>
+<h2>Terms-of-art distinctions worth preserving</h2>
+<h3><code>expired</code> vs <code>terminated</code> vs <code>withdrawn</code> vs <code>superseded</code></h3>
+<p>These four terms describe mutually exclusive modes of an instrument ceasing to be in force. Collapsing them loses legal precision.</p>
+<ul><li><strong><code>expired</code></strong>: stated duration ran out. No party took action; no replacement exists. <em>Restatement (Second) of Contracts §235 — discharge by expiration.</em></li><li><strong><code>terminated</code></strong>: a party ended it before its stated term via notice, mutual consent, or breach. <em>Restatement §243 — discharge by breach.</em></li><li><strong><code>withdrawn</code></strong>: the issuing authority rescinded its own unilateral position (advisory opinions, no-action letters). No bilateral agreement to terminate.</li><li><strong><code>superseded</code></strong>: a newer instrument on the same subject replaced it; continuity via substitution.</li></ul>
+<h3><code>enacted</code> vs <code>enforcing</code></h3>
+<ul><li><strong><code>enacted</code></strong>: the instrument has been signed/executed but a stated effective date, commencement notice, or phase-in trigger has not yet been reached.</li><li><strong><code>enforcing</code></strong>: the instrument's terms are operative.</li></ul>
+<p>This distinction matters for RMAs that are signed but held in abeyance pending a participant notice (Utah §13-72-401(2.B)-style commencement triggers), and for statutes with stated effective dates that postdate the signing.</p>
+<h3><code>advisory opinion</code> vs <code>no-action letter</code> vs <code>interpretive letter</code></h3>
+<p>The three instruments share a function (written agency position on a specific fact pattern) but differ in their legal posture:</p>
+<ul><li>An <strong>advisory opinion</strong> declares the agency's interpretation of the law.</li><li>A <strong>no-action letter</strong> declares the agency's enforcement intent (staff will not recommend enforcement).</li><li>An <strong>interpretive letter</strong> provides an explanation or construction of an existing rule.</li></ul>
+<p>PubLedge preserves the distinction in both the <code>type:</code> field and the URL type segment.</p>
+<hr>
+<h2>Versioning and changes to this document</h2>
+<p>This document is canonical for the PubLedge project. Changes require a pull request to the <a href="https://github.com/snapsynapse/publedge">GitHub repository</a> and are published with the next site build.</p>
+<p>Cross-project vocabulary alignment: <code>proposed</code>, <code>enacted</code>, <code>enforcing</code>, <code>phased-enforcement</code>, and <code>pending-replacement</code> track <a href="https://everyailaw.com/">EveryAILaw</a>'s convention verbatim. Additions (<code>expired</code>, <code>superseded</code>, <code>withdrawn</code>, <code>terminated</code>) are PubLedge-specific because they describe dispositions that rarely apply to statutes but are routine for fact-specific instruments.</p>
+<hr>
+<h2>Disclaimer</h2>
+<p>PubLedge is a reference tool under development. This registry is not authoritative and does not constitute legal advice. Each record's <code>status:</code> field describes the underlying instrument's legal state based on public sources as of its <code>last_verified:</code> date. The registry's own editorial and review state is disclosed separately in the site-wide banner and in the project's <a href="README.md">README</a>. For authoritative text, consult the issuing authority or the links in each record's <code>official_url:</code> and <code>publication_citations:</code> fields.</p>
+        </div>
+    
+    </main>
+    <nav class="footer-nav" aria-label="Footer navigation">
+<div class="footer-section"><strong>Products &amp; Services</strong>
+<a href="../instruments.html">All Legal Instruments</a>
+<a href="../obligations.html">Obligations</a>
+<a href="../matrix.html">Coverage Matrix</a>
+<a href="../calendar.ics">Enforcement Calendar (ICS)</a>
+</div>
+<div class="footer-section"><strong>About &amp; Contact</strong>
+<a href="../about/">About this project</a>
+<a href="../definitions/">Definitions</a>
+<a href="../reference/prior-art/">Prior Art</a>
+<a href="../reference/vocabulary/">Vocabulary</a>
+</div>
+<div class="footer-section"><strong>Related</strong>
+<a href="https://everyailaw.com/">EveryAILaw</a>
+<a href="https://semanticarts.com/gist/">gist (Semantic Arts)</a>
+</div>
+</nav>
+<footer class="site-footer">
+<p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="../reference/disclaimer/">Not legal advice</a> · <a href="../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.1.0-pre</p>
+</footer>
+    <script src="/assets/search.js"></script>
+    <script src="/assets/tables.js"></script>
+    <script>
+        function toggleTheme() {
+            var html = document.documentElement;
+            var currentlyLight =
+                html.classList.contains('light-mode') ||
+                (!html.classList.contains('dark-mode') &&
+                 !window.matchMedia('(prefers-color-scheme: dark)').matches);
+            html.classList.remove('light-mode', 'dark-mode');
+            if (currentlyLight) {
+                html.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        function toggleMobileMenu() {
+            var btn = document.querySelector('.hamburger-btn');
+            var menu = document.getElementById('siteNav');
+            var isOpen = menu.classList.toggle('open');
+            btn.classList.toggle('active', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        }
+        document.addEventListener('click', function(e) {
+            var menu = document.getElementById('siteNav');
+            var btn = document.querySelector('.hamburger-btn');
+            if (menu && btn && menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                menu.classList.remove('open');
+                btn.classList.remove('active');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+        function passTheme(link) {
+            // No-op: theme is persisted via localStorage (read on every load by
+            // renderThemeInit). URL query param was causing stale theme to pin
+            // across reloads and override toggle clicks. Keeping the function so
+            // existing onclick="passTheme(this)" call sites don't error.
+        }
+        (function() {
+            var btn = document.createElement('button');
+            btn.className = 'back-to-top';
+            btn.setAttribute('aria-label', 'Back to top');
+            btn.textContent = '\u2191';
+            document.body.appendChild(btn);
+            window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 400); });
+            btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        })();
+    </script>
+</body>
+</html>

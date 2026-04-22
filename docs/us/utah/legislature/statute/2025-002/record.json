@@ -1,0 +1,76 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-002/",
+    "generated": "2026-04-22T02:24:05.670Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-ut-legislature-statute-2025-hb452",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2025-002",
+    "slug": "utah-hb452-mental-health-chatbots",
+    "title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+    "type": "statute",
+    "jurisdiction": "us-ut",
+    "authority": "utah-legislature",
+    "issued_by": null,
+    "enacted": "2025-03-26",
+    "effective": "2025-05-07",
+    "official_url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+    "obligation_kind": "[requirement, restriction]",
+    "reliance_scope": "public",
+    "parties": null,
+    "statute_anchors": [
+      "cite: \"Utah Code Title 13, Chapter 72a (Mental Health Chatbots)\""
+    ],
+    "publication_citations": [
+      "cite: \"Utah HB 452 (2025 General Session)\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-21",
+    "timeline": [
+      {
+        "milestone": "Introduced",
+        "date": "2025-02",
+        "notes": "2025 General Session"
+      },
+      {
+        "milestone": "Governor Signed",
+        "date": "2025-03-26",
+        "notes": ""
+      },
+      {
+        "milestone": "Effective",
+        "date": "2025-05-07",
+        "notes": "Chapter 72a stands up"
+      }
+    ],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-ut-legislature-statute-2025-hb452",
+    "name": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+    "headline": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+    "description": "Statute (us-ut)",
+    "url": "https://publedge.org/us/utah/legislature/statute/2025-002/",
+    "sameAs": [
+      "https://le.utah.gov/~2025/bills/static/HB0452.html"
+    ],
+    "dateCreated": "2026-04-21",
+    "dateModified": "2026-04-21",
+    "datePublished": "2025-05-07",
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"Utah Code Title 13, Chapter 72a (Mental Health Chatbots)\""
+      }
+    ]
+  }
+}

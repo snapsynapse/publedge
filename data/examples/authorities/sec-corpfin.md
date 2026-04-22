@@ -3,6 +3,8 @@
 id: sec-corpfin
 name: SEC Division of Corporation Finance
 jurisdiction: us
+url_segment: sec-corpfin
+path_jurisdiction: federal
 website: https://www.sec.gov/divisions/corpfin
 last_verified: 2026-04-19
 ---

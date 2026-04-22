@@ -9,14 +9,14 @@
   "capabilities": [
     {
       "id": "container-comparison",
-      "name": "Instrument Comparison",
-      "description": "Compare 10 instruments across 1 obligations",
+      "name": "Legal Instrument Comparison",
+      "description": "Compare 14 legal instruments across 1 obligations",
       "url": "https://publedge.org/compare.html"
     },
     {
       "id": "coverage-matrix",
       "name": "Coverage Matrix",
-      "description": "See which obligations each instrument supports",
+      "description": "See which obligations each legal instrument supports",
       "url": "https://publedge.org/matrix.html"
     },
     {
@@ -27,7 +27,7 @@
       "endpoints": [
         {
           "path": "api/v1/containers.json",
-          "description": "All instruments"
+          "description": "All legal instruments"
         },
         {
           "path": "api/v1/primaries.json",
@@ -73,64 +73,88 @@
   "content": {
     "containers": [
       {
-        "id": "us-cfpb-ao-0001",
-        "name": "\"Consumer Financial Protection Bureau\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-cfpb-ao-0001/"
+        "id": "us-cfpb-ao-2022-001",
+        "name": "CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/federal/cfpb/ao/2022-001/"
       },
       {
-        "id": "us-cftc-il-17-65",
-        "name": "\"U.S. Commodity Futures Trading Commission, Division of Swap Dealer and Intermediary Oversight\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-cftc-il-17-65/"
+        "id": "us-cftc-dsio-il-2017-001",
+        "name": "CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/"
       },
       {
-        "id": "us-irs-plr-202506001",
-        "name": "\"Internal Revenue Service, Office of Chief Counsel\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-irs-plr-202506001/"
+        "id": "us-irs-chief-counsel-plr-2025-001",
+        "name": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/"
       },
       {
-        "id": "us-irs-plr-202614036",
-        "name": "\"Internal Revenue Service, Tax Exempt and Government Entities\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-irs-plr-202614036/"
+        "id": "us-irs-tege-plr-2026-001",
+        "name": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/"
       },
       {
-        "id": "us-sec-nal-0001",
-        "name": "\"U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-sec-nal-0001/"
+        "id": "us-sec-corpfin-nal-2025-001",
+        "name": "SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/"
       },
       {
-        "id": "us-ut-oaip-rma-0002",
-        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-ut-oaip-rma-0002/"
+        "id": "us-ut-legislature-statute-2024-sb149",
+        "name": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/utah/legislature/statute/2024-001/"
       },
       {
-        "id": "us-ut-oaip-rma-0003",
-        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-ut-oaip-rma-0003/"
+        "id": "us-ut-legislature-statute-2025-hb452",
+        "name": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/utah/legislature/statute/2025-002/"
       },
       {
-        "id": "us-ut-oaip-rma-0001",
-        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-ut-oaip-rma-0001/"
+        "id": "us-ut-legislature-statute-2025-sb226",
+        "name": "Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/utah/legislature/statute/2025-001/"
       },
       {
-        "id": "us-ut-oaip-rma-0004",
-        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-ut-oaip-rma-0004/"
+        "id": "us-ut-legislature-statute-2026-hb320",
+        "name": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/utah/legislature/statute/2026-001/"
       },
       {
-        "id": "us-ut-oaip-jia-0001",
-        "name": "\"Utah Office of Artificial Intelligence Policy (OAIP)\"",
-        "status": "draft",
-        "url": "https://publedge.org/container/us-ut-oaip-jia-0001/"
+        "id": "us-ut-oaip-jia-2026-001",
+        "name": "Utah Mental Health Chatbot Disclosure — Joint Interpretation",
+        "status": "proposed",
+        "url": "https://publedge.org/us/utah/oaip/jia/2026-001/"
+      },
+      {
+        "id": "us-ut-oaip-rma-2024-001",
+        "name": "Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)",
+        "status": "expired",
+        "url": "https://publedge.org/us/utah/oaip/rma/2024-001/"
+      },
+      {
+        "id": "us-ut-oaip-rma-2025-001",
+        "name": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/utah/oaip/rma/2025-001/"
+      },
+      {
+        "id": "us-ut-oaip-rma-2025-002",
+        "name": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+        "status": "enforcing",
+        "url": "https://publedge.org/us/utah/oaip/rma/2025-002/"
+      },
+      {
+        "id": "us-ut-oaip-rma-2026-001",
+        "name": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
+        "status": "enacted",
+        "url": "https://publedge.org/us/utah/oaip/rma/2026-001/"
       }
     ],
     "primaries": [
@@ -166,6 +190,11 @@
         "id": "sec-corpfin",
         "name": "SEC Division of Corporation Finance",
         "url": "https://publedge.org/authority/sec-corpfin/"
+      },
+      {
+        "id": "utah-legislature",
+        "name": "Utah State Legislature",
+        "url": "https://publedge.org/authority/utah-legislature/"
       },
       {
         "id": "utah-oaip",
@@ -228,7 +257,7 @@
     "robots": "https://publedge.org/robots.txt"
   },
   "meta": {
-    "last_updated": "2026-04-20",
+    "last_updated": "2026-04-22",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"

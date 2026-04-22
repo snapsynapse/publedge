@@ -1,6 +1,189 @@
 {
   "meta": {
-    "generated": "2026-04-20T03:04:58.255Z"
+    "generated": "2026-04-22T02:24:05.642Z"
   },
-  "comparisons": []
+  "comparisons": [
+    {
+      "regulations": [
+        "us-cfpb-ao-2022-001",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-cftc-dsio-il-2017-001",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-irs-chief-counsel-plr-2025-001",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-irs-tege-plr-2026-001",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-sec-corpfin-nal-2025-001",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-ut-legislature-statute-2024-sb149",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-ut-legislature-statute-2025-hb452",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-ut-legislature-statute-2025-sb226",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-ut-legislature-statute-2026-hb320",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-ut-oaip-jia-2026-001",
+        "us-ut-oaip-rma-2024-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "disclose-genai-on-first-session"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-ut-oaip-jia-2026-001",
+        "us-ut-oaip-rma-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "disclose-genai-on-first-session"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-ut-oaip-jia-2026-001",
+        "us-ut-oaip-rma-2025-002"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "disclose-genai-on-first-session"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-ut-oaip-jia-2026-001",
+        "us-ut-oaip-rma-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "disclose-genai-on-first-session"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    }
+  ]
 }

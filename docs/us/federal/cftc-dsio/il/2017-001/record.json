@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/",
+    "generated": "2026-04-22T02:24:05.666Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-cftc-dsio-il-2017-001",
+    "legacy_id": null,
+    "official_ref": "CFTC Letter 17-65",
+    "instance": "2017-001",
+    "slug": "cftc-fia-cta-registration-2017",
+    "title": "CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling",
+    "type": "interpretive-letter",
+    "jurisdiction": "us",
+    "authority": "cftc-dsio",
+    "issued_by": null,
+    "enacted": "2017-12-11",
+    "effective": "2017-12-11",
+    "official_url": "https://cftc.gov/csl/17-65/download",
+    "obligation_kind": "[permission]",
+    "reliance_scope": "similarly-situated-third-parties",
+    "parties": "[]",
+    "statute_anchors": [
+      "cite: \"7 U.S.C. §1a(12) (Commodity Exchange Act definition of commodity trading advisor)\""
+    ],
+    "publication_citations": [
+      "cite: \"CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-19",
+    "timeline": [],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-cftc-dsio-il-2017-001",
+    "alternateName": "CFTC Letter 17-65",
+    "name": "CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling",
+    "headline": "CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling",
+    "description": "Interpretive Letter (us)",
+    "url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/",
+    "sameAs": [
+      "https://cftc.gov/csl/17-65/download"
+    ],
+    "dateCreated": "2026-04-19",
+    "dateModified": "2026-04-19",
+    "datePublished": "2017-12-11",
+    "author": {
+      "@type": "GovernmentOrganization",
+      "name": "CFTC Division of Swap Dealer and Intermediary Oversight"
+    },
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"7 U.S.C. §1a(12) (Commodity Exchange Act definition of commodity trading advisor)\""
+      }
+    ]
+  }
+}

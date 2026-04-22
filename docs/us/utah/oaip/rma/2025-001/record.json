@@ -1,0 +1,99 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-001/",
+    "generated": "2026-04-22T02:24:05.674Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-ut-oaip-rma-2025-001",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2025-001",
+    "slug": "utah-dentacor-ai-radiograph-2025",
+    "title": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
+    "type": "rma",
+    "jurisdiction": "us-ut",
+    "authority": "utah-oaip",
+    "issued_by": null,
+    "enacted": "2025-05-31",
+    "effective": "2025-05-31",
+    "official_url": "https://commerce.utah.gov/ai/agreements/dentacor/",
+    "obligation_kind": "[permission, requirement, restriction]",
+    "reliance_scope": "requesting-party-only",
+    "parties": [
+      "name: \"Utah Office of Artificial Intelligence Policy\""
+    ],
+    "statute_anchors": [
+      "cite: \"Utah Code §13-72-201\""
+    ],
+    "publication_citations": [
+      "\"https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-19",
+    "timeline": [],
+    "source_documents": [
+      {
+        "role": "signed-agreement",
+        "filename": "Dentacor-Mitigation-Agreement.pdf",
+        "url": "https://publedge.org/us/utah/oaip/rma/2025-001/Dentacor-Mitigation-Agreement.pdf",
+        "media_type": "application/pdf",
+        "authoritative": true
+      },
+      {
+        "role": "extracted-text",
+        "filename": "Dentacor-Mitigation-Agreement.txt",
+        "url": "https://publedge.org/us/utah/oaip/rma/2025-001/Dentacor-Mitigation-Agreement.txt",
+        "media_type": "text/plain",
+        "authoritative": false,
+        "extraction_method": "ocr-tesseract-v5",
+        "note": "OCR-extracted from signed PDF; minor transcription errors possible — signed PDF is authoritative."
+      }
+    ]
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-ut-oaip-rma-2025-001",
+    "name": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
+    "headline": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
+    "description": "Regulatory Mitigation Agreement (us-ut)",
+    "url": "https://publedge.org/us/utah/oaip/rma/2025-001/",
+    "sameAs": [
+      "https://commerce.utah.gov/ai/agreements/dentacor/"
+    ],
+    "dateCreated": "2026-04-19",
+    "dateModified": "2026-04-19",
+    "datePublished": "2025-05-31",
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"Utah Code §13-72-201\""
+      }
+    ],
+    "isPartOf": {
+      "@type": "CreativeWork",
+      "name": "Utah Artificial Intelligence Learning Laboratory"
+    },
+    "encoding": [
+      {
+        "@type": "MediaObject",
+        "contentUrl": "https://publedge.org/us/utah/oaip/rma/2025-001/Dentacor-Mitigation-Agreement.pdf",
+        "encodingFormat": "application/pdf",
+        "name": "Dentacor-Mitigation-Agreement.pdf",
+        "description": "Signed agreement (authoritative source)."
+      },
+      {
+        "@type": "MediaObject",
+        "contentUrl": "https://publedge.org/us/utah/oaip/rma/2025-001/Dentacor-Mitigation-Agreement.txt",
+        "encodingFormat": "text/plain",
+        "name": "Dentacor-Mitigation-Agreement.txt",
+        "description": "OCR-extracted from signed PDF; minor transcription errors possible — signed PDF is authoritative."
+      }
+    ]
+  }
+}

@@ -43,22 +43,40 @@ entities:
       - Statute Anchors
 
   container:
-    name: Instrument
-    plural: Instruments
+    name: Legal Instrument
+    plural: Legal Instruments
     directory: instruments
+    # Status vocabulary — see DEFINITIONS.md for semantics + lifecycle.
+    # proposed/enacted/enforcing/phased-enforcement/pending-replacement
+    # track EveryAILaw's convention verbatim for cross-registry joins.
     statuses:
-      - name: draft
+      - name: proposed
         color: "#d4a017"
         color_light: "#b8860b"
-      - name: reviewed
+      - name: enacted
         color: "#2a7ab0"
         color_light: "#1a5fa3"
-      - name: published
+      - name: enforcing
         color: "#2a8a54"
         color_light: "#1f7a43"
+      - name: phased-enforcement
+        color: "#3a9d6a"
+        color_light: "#2a8a54"
+      - name: pending-replacement
+        color: "#c88e1a"
+        color_light: "#a17011"
+      - name: expired
+        color: "#7a8599"
+        color_light: "#5a6572"
       - name: superseded
         color: "#7a8599"
         color_light: "#5a6572"
+      - name: withdrawn
+        color: "#a64a4a"
+        color_light: "#803535"
+      - name: terminated
+        color: "#c73041"
+        color_light: "#a31f34"
     has_timeline: true
     scope_field: jurisdiction
 
@@ -81,52 +99,50 @@ mapping:
 # Site navigation
 # ---------------------------------------------------------------------------
 nav:
-  - id: protocol
-    label: Protocol
-    href: reference/protocol/
   - id: containers
     label: Registry
-    href: containers.html
+    href: instruments.html
   - id: templates
     label: Templates
     href: templates/
   - id: primaries
     label: Obligations
-    href: primaries.html
+    href: obligations.html
   - id: matrix
     label: Matrix
     href: matrix.html
+  - id: about
+    label: About
+    href: about/
 
 # Secondary links surfaced in the footer rather than the top nav
 # to keep the header short and scannable. Rendering handled by
 # build-extras.js (post-build HTML patch).
 footer_nav:
-  - heading: Explore
+  - heading: "Products & Services"
     links:
-      - label: Timeline
-        href: timeline.html
-      - label: Compare
-        href: compare.html
-      - label: Applicability
-        href: primaries.html
-  - heading: Reference
+      - label: All Legal Instruments
+        href: instruments.html
+      - label: Obligations
+        href: obligations.html
+      - label: Coverage Matrix
+        href: matrix.html
+      - label: Enforcement Calendar (ICS)
+        href: calendar.ics
+  - heading: "About & Contact"
     links:
+      - label: About this project
+        href: about/
+      - label: Definitions
+        href: definitions/
       - label: Prior Art
         href: reference/prior-art/
       - label: Vocabulary
         href: reference/vocabulary/
-      - label: Pattern
-        href: pattern.html
-      - label: About
-        href: about.html
   - heading: Related
     links:
-      - label: Knowledge as Code
-        href: https://knowledge-as-code.com/
       - label: EveryAILaw
         href: https://everyailaw.com/
-      - label: PAICE.work
-        href: https://paice.work/
       - label: gist (Semantic Arts)
         href: https://semanticarts.com/gist/
 
@@ -201,6 +217,47 @@ ontology:
       gist_class: "gist:GovernmentOrganization"
     secondary:
       gist_class: "gist:ContractTerm"
+
+# ---------------------------------------------------------------------------
+# Hierarchy — canonical URL architecture
+#
+# Canonical pattern: /{country}/{jurisdiction}/{authority}/{instrument-type}/{instance}
+# Example: /us/utah/oaip/rma/2025-001
+#
+# Each jurisdiction key maps its frontmatter value (e.g. `us-ut`) to URL segments.
+# Each authority file declares its own `url_segment` in its frontmatter.
+# Instrument type URL segments are declared below.
+# ---------------------------------------------------------------------------
+hierarchy:
+  enabled: true
+  jurisdictions:
+    us-ut:
+      country: us
+      region: utah
+      label: "Utah"
+    us:
+      country: us
+      region: federal
+      label: "US Federal"
+  type_segments:
+    rma: rma
+    jia: jia
+    statute: statute
+    advisory-opinion: ao
+    interpretive-letter: il
+    private-letter-ruling: plr
+    no-action-letter: nal
+  type_labels:
+    rma: "Regulatory Mitigation Agreement"
+    jia: "Joint Interpretation Agreement"
+    statute: "Statute"
+    advisory-opinion: "Advisory Opinion"
+    interpretive-letter: "Interpretive Letter"
+    private-letter-ruling: "Private Letter Ruling"
+    no-action-letter: "No-Action Letter"
+  legacy_prefix: container
+  emit_json_endpoints: true
+  emit_jsonld: true
 
 # ---------------------------------------------------------------------------
 # Ecosystem — related projects shown on pattern/about pages

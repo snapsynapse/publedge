@@ -148,29 +148,28 @@ function mdToHtml(md) {
 // pages (containers/primaries/matrix/etc.) get the same nav via build.js
 // and the same footer-nav via patchFooterNav() below.
 const NAV_PRIMARY = [
-    { label: 'Protocol', href: 'reference/protocol/' },
-    { label: 'Registry', href: 'containers.html' },
+    { label: 'Registry', href: 'instruments.html' },
     { label: 'Templates', href: 'templates/' },
-    { label: 'Obligations', href: 'primaries.html' },
+    { label: 'Obligations', href: 'obligations.html' },
     { label: 'Matrix', href: 'matrix.html' },
+    { label: 'About', href: 'about/' },
 ];
 
 const FOOTER_NAV = [
-    { heading: 'Explore', links: [
-        { label: 'Timeline', href: 'timeline.html' },
-        { label: 'Compare', href: 'compare.html' },
-        { label: 'Applicability', href: 'primaries.html' },
+    { heading: 'Products & Services', links: [
+        { label: 'All Legal Instruments', href: 'instruments.html' },
+        { label: 'Obligations', href: 'obligations.html' },
+        { label: 'Coverage Matrix', href: 'matrix.html' },
+        { label: 'Enforcement Calendar (ICS)', href: 'calendar.ics' },
     ]},
-    { heading: 'Reference', links: [
+    { heading: 'About & Contact', links: [
+        { label: 'About this project', href: 'about/' },
+        { label: 'Definitions', href: 'definitions/' },
         { label: 'Prior Art', href: 'reference/prior-art/' },
         { label: 'Vocabulary', href: 'reference/vocabulary/' },
-        { label: 'Pattern', href: 'pattern.html' },
-        { label: 'About', href: 'about.html' },
     ]},
     { heading: 'Related', links: [
-        { label: 'Knowledge as Code', href: 'https://knowledge-as-code.com/' },
         { label: 'EveryAILaw', href: 'https://everyailaw.com/' },
-        { label: 'PAICE.work', href: 'https://paice.work/' },
         { label: 'gist (Semantic Arts)', href: 'https://semanticarts.com/gist/' },
     ]},
 ];
@@ -196,8 +195,8 @@ function renderFooterNav(relRoot) {
 
 function renderSiteFooter(relRoot) {
     return `<footer class="site-footer">
-<p class="footer-meta">&copy; ${new Date().getFullYear()} <a href="https://paice.work/">PAICE.work</a> · <a href="${relRoot}VERIFICATION.md">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.0-pre · Built with <a href="https://knowledge-as-code.com">Knowledge as Code</a></p>
+<p class="footer-meta">&copy; ${new Date().getFullYear()} <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="${relRoot}reference/disclaimer/">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.1.0-pre</p>
 </footer>`;
 }
 
@@ -218,6 +217,7 @@ function pageShell({ title, canonicalPath, relRoot, bodyHtml, description }) {
 <meta property="og:url" content="${canonical}">
 <meta property="og:image" content="${SITE_URL}imgs/og.png">
 <link rel="stylesheet" href="${relRoot}assets/styles.css">
+<script src="${relRoot}assets/theme.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -236,14 +236,28 @@ ${renderSiteFooter(relRoot)}
 }
 
 // ---------------------------------------------------------------------------
-// 1. Copy reference/**/*.html verbatim into docs/reference/
+// 1. Copy reference/**/*.html and about/**/*.html verbatim into docs/
 // ---------------------------------------------------------------------------
 function copyReferenceHtml() {
-    const src = path.join(ROOT, 'reference');
-    const dst = path.join(DOCS_DIR, 'reference');
-    const n = copyRecursive(src, dst);
-    console.log(`  Reference pages copied: ${n}`);
-    return n;
+    const srcRef = path.join(ROOT, 'reference');
+    const dstRef = path.join(DOCS_DIR, 'reference');
+    const nRef = copyRecursive(srcRef, dstRef);
+    const srcAbout = path.join(ROOT, 'about');
+    const dstAbout = path.join(DOCS_DIR, 'about');
+    const nAbout = fs.existsSync(srcAbout) ? copyRecursive(srcAbout, dstAbout) : 0;
+
+    // Redirect stub at /reference/protocol/ — page content moved to /about/
+    const oldProtocolDir = path.join(DOCS_DIR, 'reference', 'protocol');
+    if (!fs.existsSync(oldProtocolDir)) fs.mkdirSync(oldProtocolDir, { recursive: true });
+    fs.writeFileSync(path.join(oldProtocolDir, 'index.html'),
+        `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Moved</title>` +
+        `<link rel="canonical" href="/about/"><meta name="robots" content="noindex">` +
+        `<meta http-equiv="refresh" content="0; url=/about/">` +
+        `<script>window.location.replace("/about/");</script></head>` +
+        `<body><p>This page has moved to <a href="/about/">/about/</a>.</p></body></html>`);
+
+    console.log(`  Reference pages copied: ${nRef + nAbout}`);
+    return nRef + nAbout;
 }
 
 // ---------------------------------------------------------------------------

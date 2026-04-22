@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/",
+    "generated": "2026-04-22T02:24:05.668Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-irs-tege-plr-2026-001",
+    "legacy_id": null,
+    "official_ref": "PLR 202614036",
+    "instance": "2026-001",
+    "slug": "irs-plr-202614036",
+    "title": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
+    "type": "private-letter-ruling",
+    "jurisdiction": "us",
+    "authority": "irs-tege",
+    "issued_by": null,
+    "enacted": "2026-01-12",
+    "effective": "2026-01-12",
+    "official_url": "https://irs.gov/pub/irs-wd/202614036.pdf",
+    "obligation_kind": "[restriction]",
+    "reliance_scope": "requesting-party-only",
+    "parties": "[]",
+    "statute_anchors": [
+      "cite: \"26 U.S.C. §501(c)(3) (charitable organization exemption)\""
+    ],
+    "publication_citations": [
+      "cite: \"IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)\""
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-19",
+    "timeline": [],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-irs-tege-plr-2026-001",
+    "alternateName": "PLR 202614036",
+    "name": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
+    "headline": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
+    "description": "Private Letter Ruling (us)",
+    "url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/",
+    "sameAs": [
+      "https://irs.gov/pub/irs-wd/202614036.pdf"
+    ],
+    "dateCreated": "2026-04-19",
+    "dateModified": "2026-04-19",
+    "datePublished": "2026-01-12",
+    "author": {
+      "@type": "GovernmentOrganization",
+      "name": "IRS Exempt Organizations Rulings and Agreements"
+    },
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"26 U.S.C. §501(c)(3) (charitable organization exemption)\""
+      }
+    ]
+  }
+}

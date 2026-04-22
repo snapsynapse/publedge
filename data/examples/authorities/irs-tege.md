@@ -3,6 +3,8 @@
 id: irs-tege
 name: IRS Tax Exempt and Government Entities Division
 jurisdiction: us
+url_segment: irs-tege
+path_jurisdiction: federal
 website: https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance
 last_verified: 2026-04-19
 ---

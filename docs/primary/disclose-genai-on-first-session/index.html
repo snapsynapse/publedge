@@ -6,7 +6,7 @@
     <title>Disclose GenAI on First Session - PubLedge</title>
     <meta name="theme-color" content="#1a1a2e">
     <link rel="canonical" href="https://publedge.org/primary/disclose-genai-on-first-session/">
-    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css">
     <style>/* Generated from project.yml — do not edit manually */
 .group-badge.requirement { background: #1a4180; }
 :is(html, body).light-mode .group-badge.requirement { background: #0f2e5c; }
@@ -20,14 +20,24 @@
 :is(html, body).light-mode .group-badge.permission { background: #1f7a43; }
 .matrix-table .matrix-row-header.group-permission { border-left-color: #2a8a54; }
 :is(html, body).light-mode .matrix-table .matrix-row-header.group-permission { border-left-color: #1f7a43; }
-.status-badge.draft { background: #d4a017; color: #000; }
-:is(html, body).light-mode .status-badge.draft { background: #b8860b; color: #fff; }
-.status-badge.reviewed { background: #2a7ab0; color: #000; }
-:is(html, body).light-mode .status-badge.reviewed { background: #1a5fa3; color: #fff; }
-.status-badge.published { background: #2a8a54; color: #000; }
-:is(html, body).light-mode .status-badge.published { background: #1f7a43; color: #fff; }
+.status-badge.proposed { background: #d4a017; color: #000; }
+:is(html, body).light-mode .status-badge.proposed { background: #b8860b; color: #fff; }
+.status-badge.enacted { background: #2a7ab0; color: #000; }
+:is(html, body).light-mode .status-badge.enacted { background: #1a5fa3; color: #fff; }
+.status-badge.enforcing { background: #2a8a54; color: #000; }
+:is(html, body).light-mode .status-badge.enforcing { background: #1f7a43; color: #fff; }
+.status-badge.phased-enforcement { background: #3a9d6a; color: #000; }
+:is(html, body).light-mode .status-badge.phased-enforcement { background: #2a8a54; color: #fff; }
+.status-badge.pending-replacement { background: #c88e1a; color: #000; }
+:is(html, body).light-mode .status-badge.pending-replacement { background: #a17011; color: #fff; }
+.status-badge.expired { background: #7a8599; color: #000; }
+:is(html, body).light-mode .status-badge.expired { background: #5a6572; color: #fff; }
 .status-badge.superseded { background: #7a8599; color: #000; }
 :is(html, body).light-mode .status-badge.superseded { background: #5a6572; color: #fff; }
+.status-badge.withdrawn { background: #a64a4a; color: #000; }
+:is(html, body).light-mode .status-badge.withdrawn { background: #803535; color: #fff; }
+.status-badge.terminated { background: #c73041; color: #000; }
+:is(html, body).light-mode .status-badge.terminated { background: #a31f34; color: #fff; }
 :root { --accent: #1a4180; }
 :is(html, body).light-mode { --accent: #0f2e5c; }
 </style>
@@ -43,9 +53,22 @@
     <script>
         (function() {
             var params = new URLSearchParams(window.location.search);
-            if (params.get('theme') === 'light' || localStorage.getItem('theme') === 'light') {
+            var urlTheme = params.get('theme');
+            var theme = urlTheme || localStorage.getItem('theme');
+            if (theme === 'light') {
                 document.documentElement.classList.add('light-mode');
                 localStorage.setItem('theme', 'light');
+            } else if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+            // Strip ?theme from URL so reloads respect localStorage (which the
+            // button updates) rather than re-pinning the old URL-specified theme.
+            if (urlTheme) {
+                params.delete('theme');
+                var q = params.toString();
+                var newUrl = window.location.pathname + (q ? '?' + q : '') + window.location.hash;
+                window.history.replaceState(null, '', newUrl);
             }
         })();
     </script>
@@ -53,72 +76,87 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-        <h1><a href="../../index.html" onclick="passTheme(this)">PubLedge</a></h1>
+        <h1><a href="/" onclick="passTheme(this)">PubLedge</a></h1>
         <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
             <span class="hamburger-icon"></span>
         </button>
         <nav class="site-nav" id="siteNav" aria-label="Main navigation">
-            <a href="../../reference/protocol/" class="site-nav-link" onclick="passTheme(this)">Protocol</a>
-            <a href="../../containers.html" class="site-nav-link" onclick="passTheme(this)">Registry</a>
-            <a href="../../templates/" class="site-nav-link" onclick="passTheme(this)">Templates</a>
-            <a href="../../primaries.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
-            <a href="../../matrix.html" class="site-nav-link" onclick="passTheme(this)">Matrix</a>
+            <a href="/instruments.html" class="site-nav-link" onclick="passTheme(this)">Registry</a>
+            <a href="/templates/" class="site-nav-link" onclick="passTheme(this)">Templates</a>
+            <a href="/obligations.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
+            <a href="/matrix.html" class="site-nav-link" onclick="passTheme(this)">Matrix</a>
+            <a href="/about/" class="site-nav-link" onclick="passTheme(this)">About</a>
         </nav>
         <div class="header-actions">
             <div class="site-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="searchResults">
                 <input type="search" id="siteSearchInput" class="search-input" placeholder="Search..." aria-label="Search" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
                 <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
             </div>
-            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
+            <button class="theme-toggle" onclick="toggleTheme(); event.stopPropagation();" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
         </div>
     </header>
+    <div class="site-banner" role="note">
+        <strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe each instrument's own legal state, not editorial endorsement — see <a href="/definitions/">Definitions</a>.
+    </div>
     <main class="container" id="main-content">
         
         <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../../index.html" onclick="passTheme(this)">Home</a>
-        <span class="sep">/</span> <a href="../../primaries.html" onclick="passTheme(this)">Obligations</a>
+        <a href="/" onclick="passTheme(this)">Home</a>
+        <span class="sep">/</span> <a href="/obligations.html" onclick="passTheme(this)">Obligations</a>
         <span class="sep">/</span> <span>Disclose GenAI on First Session</span>
     </nav>
         <div class="detail-header">
             <h2>Disclose GenAI on First Session</h2>
-            <div class="detail-meta"><span class="group-badge requirement">requirement</span> <span class="meta-item">0 instruments</span></div>
+            <div class="detail-meta"><span class="group-badge requirement">requirement</span> <span class="meta-item">1 legal instrument</span></div>
         </div>
         <p style="font-size:1rem;line-height:1.6;margin:1rem 0;">A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.</p>
         <h3>What Counts</h3><ul><li>Modal or banner shown on first session that names &quot;AI&quot; or &quot;generative AI&quot; plainly</li><li>Re-display on session resumption after a defined inactivity threshold (e.g., 30 minutes)</li><li>Disclosure is in the user's preferred language when supported by the product</li></ul>
         <h3>What Does Not Count</h3><ul><li>Burying the notice in a privacy policy or terms-of-service link only</li><li>Disclosure phrased ambiguously (&quot;smart assistant,&quot; &quot;automated helper&quot;) without the word &quot;AI&quot;</li><li>One-time disclosure across multiple unrelated sessions</li></ul>
-        <h3>Implementing Instruments</h3>
-        <p style="color:var(--text-secondary);">No instruments currently implement this.</p>
+        <h3>Implementing Legal Instruments</h3>
+        <table class="data-table"><thead><tr><th>Legal Instrument</th><th>Scope</th><th>Status</th><th>Provisions</th></tr></thead><tbody>
+            <tr><td><a href="/us/utah/oaip/jia/2026-001/" onclick="passTheme(this)">Utah Mental Health Chatbot Disclosure — Joint Interpretation</a></td><td>us-ut</td><td><span class="status-badge proposed">proposed</span></td><td>1</td></tr>
+        </tbody></table>
     
     </main>
     <nav class="footer-nav" aria-label="Footer navigation">
-<div class="footer-section"><strong>Explore</strong>
-<a href="../../timeline.html">Timeline</a>
-<a href="../../compare.html">Compare</a>
-<a href="../../primaries.html">Applicability</a>
+<div class="footer-section"><strong>Products &amp; Services</strong>
+<a href="../../instruments.html">All Legal Instruments</a>
+<a href="../../obligations.html">Obligations</a>
+<a href="../../matrix.html">Coverage Matrix</a>
+<a href="../../calendar.ics">Enforcement Calendar (ICS)</a>
 </div>
-<div class="footer-section"><strong>Reference</strong>
+<div class="footer-section"><strong>About &amp; Contact</strong>
+<a href="../../about/">About this project</a>
+<a href="../../definitions/">Definitions</a>
 <a href="../../reference/prior-art/">Prior Art</a>
 <a href="../../reference/vocabulary/">Vocabulary</a>
-<a href="../../pattern.html">Pattern</a>
-<a href="../../about.html">About</a>
 </div>
 <div class="footer-section"><strong>Related</strong>
-<a href="https://knowledge-as-code.com/">Knowledge as Code</a>
 <a href="https://everyailaw.com/">EveryAILaw</a>
-<a href="https://paice.work/">PAICE.work</a>
 <a href="https://semanticarts.com/gist/">gist (Semantic Arts)</a>
 </div>
 </nav>
 <footer class="site-footer">
-<p class="footer-meta">&copy; 2026 <a href="https://paice.work/">PAICE.work</a> · <a href="../../VERIFICATION.md">Not legal advice</a> · <a href="../../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.0-pre · Built with <a href="https://knowledge-as-code.com">Knowledge as Code</a></p>
+<p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="../../reference/disclaimer/">Not legal advice</a> · <a href="../../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.1.0-pre</p>
 </footer>
-    <script src="../../assets/search.js"></script>
-    <script src="../../assets/tables.js"></script>
+    <script src="/assets/search.js"></script>
+    <script src="/assets/tables.js"></script>
     <script>
         function toggleTheme() {
-            document.documentElement.classList.toggle('light-mode');
-            localStorage.setItem('theme', document.documentElement.classList.contains('light-mode') ? 'light' : 'dark');
+            var html = document.documentElement;
+            var currentlyLight =
+                html.classList.contains('light-mode') ||
+                (!html.classList.contains('dark-mode') &&
+                 !window.matchMedia('(prefers-color-scheme: dark)').matches);
+            html.classList.remove('light-mode', 'dark-mode');
+            if (currentlyLight) {
+                html.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            }
         }
         function toggleMobileMenu() {
             var btn = document.querySelector('.hamburger-btn');
@@ -137,11 +175,10 @@
             }
         });
         function passTheme(link) {
-            if (document.documentElement.classList.contains('light-mode')) {
-                var url = new URL(link.href, window.location.href);
-                url.searchParams.set('theme', 'light');
-                link.href = url.pathname + url.search + url.hash;
-            }
+            // No-op: theme is persisted via localStorage (read on every load by
+            // renderThemeInit). URL query param was causing stale theme to pin
+            // across reloads and override toggle clicks. Keeping the function so
+            // existing onclick="passTheme(this)" call sites don't error.
         }
         (function() {
             var btn = document.createElement('button');

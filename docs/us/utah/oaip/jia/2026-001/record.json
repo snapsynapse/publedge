@@ -1,0 +1,82 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
+    "generated": "2026-04-22T02:24:05.672Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-ut-oaip-jia-2026-001",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2026-001",
+    "slug": "utah-mental-health-chatbot-disclosure-2026q2",
+    "title": "Utah Mental Health Chatbot Disclosure — Joint Interpretation",
+    "type": "jia",
+    "jurisdiction": "us-ut",
+    "authority": "utah-oaip",
+    "issued_by": null,
+    "enacted": "2026-04-15",
+    "effective": "2026-04-15",
+    "official_url": "https://commerce.utah.gov/ai/learning-lab/",
+    "obligation_kind": "[requirement, permission]",
+    "reliance_scope": "requesting-party-only",
+    "parties": [
+      "name: \"PubLedge (illustrative requesting party)\""
+    ],
+    "statute_anchors": [
+      "cite: \"Utah Code §13-72a-203\""
+    ],
+    "publication_citations": "[]",
+    "terms": [
+      "\"@type\": \"https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm\""
+    ],
+    "status": "proposed",
+    "supersedes": "null",
+    "superseded_by": "null",
+    "last_verified": "2026-04-19",
+    "timeline": [
+      {
+        "milestone": "Drafted",
+        "date": "2026-04-15",
+        "notes": "Initial PubLedge draft, suggested prior art"
+      },
+      {
+        "milestone": "Reviewed",
+        "date": "TBD",
+        "notes": "Lawyer review pending"
+      },
+      {
+        "milestone": "Published",
+        "date": "TBD",
+        "notes": "Awaiting v0.1 release"
+      }
+    ],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-ut-oaip-jia-2026-001",
+    "name": "Utah Mental Health Chatbot Disclosure — Joint Interpretation",
+    "headline": "Utah Mental Health Chatbot Disclosure — Joint Interpretation",
+    "description": "Joint Interpretation Agreement (us-ut)",
+    "url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
+    "sameAs": [
+      "https://commerce.utah.gov/ai/learning-lab/"
+    ],
+    "dateCreated": "2026-04-15",
+    "dateModified": "2026-04-19",
+    "datePublished": "2026-04-15",
+    "author": {
+      "@type": "GovernmentOrganization",
+      "name": "Utah Office of Artificial Intelligence Policy"
+    },
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "cite: \"Utah Code §13-72a-203\""
+      }
+    ]
+  }
+}
