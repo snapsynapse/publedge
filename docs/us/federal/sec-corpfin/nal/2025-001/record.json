@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/",
-    "generated": "2026-04-22T17:24:49.696Z",
+    "generated": "2026-04-24T02:46:53.780Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,23 +15,40 @@
     "type": "no-action-letter",
     "jurisdiction": "us",
     "authority": "sec-corpfin",
-    "issued_by": null,
+    "url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/",
+    "issued_by": {
+      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization",
+      "name": "U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)",
+      "ref": "https://www.sec.gov/divisions/corpfin"
+    },
     "enacted": "2025-03-12",
     "effective": "2025-03-12",
     "official_url": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
-    "obligation_kind": "[permission]",
+    "obligation_kind": [
+      "permission"
+    ],
     "reliance_scope": "similarly-situated-third-parties",
-    "parties": "[]",
+    "parties": [],
     "statute_anchors": [
-      "cite: \"17 CFR §230.506(c)\""
+      {
+        "cite": "17 CFR §230.506(c)",
+        "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-230/subject-group-ECFRfdd94b1cf5a5091/section-230.506"
+      },
+      {
+        "cite": "17 CFR §230.506 (LII mirror)",
+        "url": "https://www.law.cornell.edu/cfr/text/17/230.506"
+      }
     ],
     "publication_citations": [
-      "cite: \"SEC Division of Corporation Finance No-Action Letter archive (2025)\""
+      {
+        "cite": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
+        "url": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225"
+      }
     ],
     "terms": null,
     "status": "enforcing",
-    "supersedes": "null",
-    "superseded_by": "null",
+    "supersedes": null,
+    "superseded_by": null,
     "last_verified": "2026-04-19",
     "timeline": [],
     "source_documents": []
@@ -52,12 +69,19 @@
     "datePublished": "2025-03-12",
     "author": {
       "@type": "GovernmentOrganization",
-      "name": "SEC Division of Corporation Finance (Office of Small Business Policy)"
+      "name": "U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)",
+      "url": "https://www.sec.gov/divisions/corpfin"
     },
     "about": [
       {
         "@type": "Legislation",
-        "name": "cite: \"17 CFR §230.506(c)\""
+        "name": "17 CFR §230.506(c)",
+        "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-230/subject-group-ECFRfdd94b1cf5a5091/section-230.506"
+      },
+      {
+        "@type": "Legislation",
+        "name": "17 CFR §230.506 (LII mirror)",
+        "url": "https://www.law.cornell.edu/cfr/text/17/230.506"
       }
     ],
     "license": "Demonstration remap of a publicly archived authority artifact. Not an authority-issued PubLedge instrument. The official source controls."

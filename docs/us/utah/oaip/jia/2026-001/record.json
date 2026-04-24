@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
-    "generated": "2026-04-22T17:24:49.702Z",
+    "generated": "2026-04-24T02:46:53.786Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,25 +15,50 @@
     "type": "jia",
     "jurisdiction": "us-ut",
     "authority": "utah-oaip",
-    "issued_by": null,
+    "url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
+    "issued_by": {
+      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
+      "ref": "https://commerce.utah.gov/ai/learning-lab/"
+    },
     "enacted": "2026-04-15",
     "effective": "2026-04-15",
     "official_url": "https://commerce.utah.gov/ai/learning-lab/",
-    "obligation_kind": "[requirement, permission]",
+    "obligation_kind": [
+      "requirement",
+      "permission"
+    ],
     "reliance_scope": "requesting-party-only",
     "parties": [
-      "name: \"PubLedge (illustrative requesting party)\""
+      {
+        "name": "PubLedge (illustrative requesting party)",
+        "role": "requesting_party"
+      },
+      {
+        "name": "Utah OAIP",
+        "role": "interpreting_authority"
+      }
     ],
     "statute_anchors": [
-      "cite: \"Utah Code §13-72a-203\""
+      {
+        "cite": "Utah Code §13-72a-203",
+        "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure"
+      },
+      {
+        "cite": "Utah SB0149 (2024)",
+        "url": "https://le.utah.gov/~2024/bills/static/SB0149.html"
+      }
     ],
-    "publication_citations": "[]",
+    "publication_citations": [],
     "terms": [
-      "\"@type\": \"https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm\""
+      {
+        "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm",
+        "text": "Provider must display the standardized GenAI disclosure on first session and on session resumption after 30 minutes of inactivity."
+      }
     ],
     "status": "proposed",
-    "supersedes": "null",
-    "superseded_by": "null",
+    "supersedes": null,
+    "superseded_by": null,
     "last_verified": "2026-04-19",
     "timeline": [
       {
@@ -70,12 +95,19 @@
     "datePublished": "2026-04-15",
     "author": {
       "@type": "GovernmentOrganization",
-      "name": "Utah Office of Artificial Intelligence Policy"
+      "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
+      "url": "https://commerce.utah.gov/ai/learning-lab/"
     },
     "about": [
       {
         "@type": "Legislation",
-        "name": "cite: \"Utah Code §13-72a-203\""
+        "name": "Utah Code §13-72a-203",
+        "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah SB0149 (2024)",
+        "url": "https://le.utah.gov/~2024/bills/static/SB0149.html"
       }
     ],
     "license": "Suggested prior art. Not authority-issued output. Awaiting lawyer review and authority sign-off before promotion."

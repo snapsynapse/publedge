@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/",
-    "generated": "2026-04-22T17:24:49.696Z",
+    "generated": "2026-04-24T02:46:53.779Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,23 +15,48 @@
     "type": "private-letter-ruling",
     "jurisdiction": "us",
     "authority": "irs-tege",
-    "issued_by": null,
+    "url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/",
+    "issued_by": {
+      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization",
+      "name": "Internal Revenue Service, Tax Exempt and Government Entities",
+      "ref": "https://irs.gov/privacy-disclosure/written-determinations"
+    },
     "enacted": "2026-01-12",
     "effective": "2026-01-12",
     "official_url": "https://irs.gov/pub/irs-wd/202614036.pdf",
-    "obligation_kind": "[restriction]",
+    "obligation_kind": [
+      "restriction"
+    ],
     "reliance_scope": "requesting-party-only",
-    "parties": "[]",
+    "parties": [],
     "statute_anchors": [
-      "cite: \"26 U.S.C. §501(c)(3) (charitable organization exemption)\""
+      {
+        "cite": "26 U.S.C. §501(c)(3) (charitable organization exemption)",
+        "url": "https://www.law.cornell.edu/uscode/text/26/501"
+      },
+      {
+        "cite": "26 U.S.C. §501(a) (general exemption from federal income tax)",
+        "url": "https://www.law.cornell.edu/uscode/text/26/501"
+      },
+      {
+        "cite": "Treas. Reg. §1.501(c)(3)-1 (organizational and operational tests)",
+        "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.501(c)(3)-1"
+      },
+      {
+        "cite": "26 U.S.C. §170 (charitable contribution deductions)",
+        "url": "https://www.law.cornell.edu/uscode/text/26/170"
+      }
     ],
     "publication_citations": [
-      "cite: \"IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)\""
+      {
+        "cite": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
+        "url": "https://irs.gov/pub/irs-wd/202614036.pdf"
+      }
     ],
     "terms": null,
     "status": "enforcing",
-    "supersedes": "null",
-    "superseded_by": "null",
+    "supersedes": null,
+    "superseded_by": null,
     "last_verified": "2026-04-19",
     "timeline": [],
     "source_documents": []
@@ -53,12 +78,29 @@
     "datePublished": "2026-01-12",
     "author": {
       "@type": "GovernmentOrganization",
-      "name": "IRS Exempt Organizations Rulings and Agreements"
+      "name": "Internal Revenue Service, Tax Exempt and Government Entities",
+      "url": "https://irs.gov/privacy-disclosure/written-determinations"
     },
     "about": [
       {
         "@type": "Legislation",
-        "name": "cite: \"26 U.S.C. §501(c)(3) (charitable organization exemption)\""
+        "name": "26 U.S.C. §501(c)(3) (charitable organization exemption)",
+        "url": "https://www.law.cornell.edu/uscode/text/26/501"
+      },
+      {
+        "@type": "Legislation",
+        "name": "26 U.S.C. §501(a) (general exemption from federal income tax)",
+        "url": "https://www.law.cornell.edu/uscode/text/26/501"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Treas. Reg. §1.501(c)(3)-1 (organizational and operational tests)",
+        "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.501(c)(3)-1"
+      },
+      {
+        "@type": "Legislation",
+        "name": "26 U.S.C. §170 (charitable contribution deductions)",
+        "url": "https://www.law.cornell.edu/uscode/text/26/170"
       }
     ],
     "license": "Demonstration remap of a publicly archived authority artifact. Not an authority-issued PubLedge instrument. The official source controls."

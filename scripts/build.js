@@ -13,6 +13,9 @@
 
 const fs = require('fs');
 const path = require('path');
+const { parseYaml } = require('./lib/parse');
+const { loadMappingIndex } = require('./lib/mapping');
+const { loadMarkdownDir } = require('./lib/content');
 
 const ROOT = path.join(__dirname, '..');
 // Output directory for the generated site.
@@ -21,115 +24,6 @@ const ROOT = path.join(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, process.env.KAC_OUTPUT_DIR || 'docs');
 const API_DIR = path.join(DOCS_DIR, 'api', 'v1');
 const ASSETS_DIR = path.join(DOCS_DIR, 'assets');
-
-// ---------------------------------------------------------------------------
-// YAML-lite parser (handles project.yml without dependencies)
-// ---------------------------------------------------------------------------
-
-function parseYaml(content) {
-    const lines = content.split('\n');
-    const result = {};
-    // Stack tracks: { obj, indent, key, isList }
-    const stack = [{ obj: result, indent: -2 }];
-
-    for (let i = 0; i < lines.length; i++) {
-        const raw = lines[i];
-        if (raw.trim() === '' || raw.trim().startsWith('#')) continue;
-
-        const indent = raw.search(/\S/);
-        const trimmed = raw.trim();
-
-        // Pop stack back to appropriate parent
-        while (stack.length > 1 && stack[stack.length - 1].indent >= indent) stack.pop();
-
-        const isList = trimmed.startsWith('- ');
-        const lineContent = isList ? trimmed.slice(2).trim() : trimmed;
-
-        if (isList) {
-            // Inline object: - { key: val, key: val }
-            if (lineContent.startsWith('{') && lineContent.endsWith('}')) {
-                const obj = {};
-                lineContent.slice(1, -1).split(',').forEach(pair => {
-                    const ci = pair.indexOf(':');
-                    if (ci !== -1) obj[pair.slice(0, ci).trim()] = pair.slice(ci + 1).trim().replace(/^["']|["']$/g, '');
-                });
-                const parent = stack[stack.length - 1].obj;
-                const lastKey = stack[stack.length - 1].lastListKey;
-                if (lastKey && Array.isArray(parent[lastKey])) parent[lastKey].push(obj);
-                continue;
-            }
-
-            // List item with key:value — start of a multi-line object or single-line
-            const ci = lineContent.indexOf(':');
-            if (ci !== -1) {
-                const k = lineContent.slice(0, ci).trim();
-                const v = lineContent.slice(ci + 1).trim().replace(/^["']|["']$/g, '');
-
-                // Look ahead: are there continuation lines at deeper indent?
-                const nextI = i + 1;
-                const hasChildren = nextI < lines.length &&
-                    lines[nextI].trim() !== '' && !lines[nextI].trim().startsWith('#') &&
-                    !lines[nextI].trim().startsWith('- ') &&
-                    lines[nextI].search(/\S/) > indent;
-
-                const parent = stack[stack.length - 1].obj;
-                const listKey = stack[stack.length - 1].lastListKey;
-
-                if (hasChildren || v === '') {
-                    // Multi-line list object: create obj, add first key, push for continuation
-                    const obj = {};
-                    if (v) obj[k] = v;
-                    if (listKey && Array.isArray(parent[listKey])) {
-                        parent[listKey].push(obj);
-                    }
-                    stack.push({ obj, indent, lastListKey: null });
-                } else {
-                    // Single key:value list item — wrap as object
-                    const obj = {};
-                    obj[k] = v;
-                    if (listKey && Array.isArray(parent[listKey])) parent[listKey].push(obj);
-                }
-            } else {
-                // Simple list item: - value
-                const parent = stack[stack.length - 1].obj;
-                const listKey = stack[stack.length - 1].lastListKey;
-                if (listKey && Array.isArray(parent[listKey])) {
-                    parent[listKey].push(lineContent.replace(/^["']|["']$/g, ''));
-                }
-            }
-            continue;
-        }
-
-        // Regular key: value
-        const ci = trimmed.indexOf(':');
-        if (ci === -1) continue;
-
-        const key = trimmed.slice(0, ci).trim();
-        const val = trimmed.slice(ci + 1).trim().replace(/^["']|["']$/g, '');
-        const parent = stack[stack.length - 1].obj;
-
-        if (val === '') {
-            // Look ahead to determine if this is a list or object
-            const nextI = i + 1;
-            let nextNonEmpty = null;
-            for (let j = nextI; j < lines.length; j++) {
-                if (lines[j].trim() && !lines[j].trim().startsWith('#')) { nextNonEmpty = lines[j].trim(); break; }
-            }
-
-            if (nextNonEmpty && nextNonEmpty.startsWith('- ')) {
-                parent[key] = [];
-                stack.push({ obj: parent, indent, lastListKey: key });
-            } else {
-                parent[key] = {};
-                stack.push({ obj: parent[key], indent });
-            }
-        } else {
-            parent[key] = val;
-        }
-    }
-
-    return result;
-}
 
 function loadConfig() {
     const configPath = path.join(ROOT, 'project.yml');
@@ -158,6 +52,10 @@ function humanizeId(id) {
 
 function ensureDir(dir) {
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+}
+
+function removePath(target) {
+    if (fs.existsSync(target)) fs.rmSync(target, { recursive: true, force: true });
 }
 
 function formatDate(dateStr) {
@@ -236,104 +134,6 @@ function parseBulletList(text) {
 }
 
 // ---------------------------------------------------------------------------
-// Parsing
-// ---------------------------------------------------------------------------
-
-function parseFrontmatter(content) {
-    const match = content.match(/^---\n([\s\S]*?)\n---/);
-    if (!match) return { frontmatter: {}, body: content };
-
-    const frontmatter = {};
-    let currentKey = null;
-    let listValues = [];
-
-    match[1].split('\n').forEach(line => {
-        if (line.match(/^\s+-\s+/)) {
-            if (currentKey) listValues.push(line.replace(/^\s+-\s+/, '').trim());
-            return;
-        }
-        if (currentKey && listValues.length > 0) {
-            frontmatter[currentKey] = listValues;
-            listValues = [];
-            currentKey = null;
-        }
-        // Skip indented key:value pairs — they belong to a nested structure
-        // whose top-level key is already captured; the naive parser does not
-        // descend into nested objects, so ignore the interior to avoid
-        // polluting the top-level frontmatter with child-field values.
-        if (/^\s+\S/.test(line) && !line.match(/^\s+-/)) return;
-        const [key, ...valueParts] = line.split(':');
-        if (key && valueParts.length) {
-            let value = valueParts.join(':').trim();
-            // Strip wrapping double or single quotes
-            if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
-                value = value.slice(1, -1);
-            }
-            if (value === '') {
-                currentKey = key.trim();
-            } else {
-                frontmatter[key.trim()] = value;
-                currentKey = null;
-            }
-        }
-    });
-    if (currentKey && listValues.length > 0) {
-        frontmatter[currentKey] = listValues;
-    }
-
-    return { frontmatter, body: content.slice(match[0].length).trim() };
-}
-
-function parseTable(tableText) {
-    const lines = tableText.trim().split('\n').filter(l => l.trim());
-    if (lines.length < 2) return [];
-    const headers = lines[0].split('|').map(h => h.trim()).filter(Boolean);
-    const rows = [];
-    for (let i = 2; i < lines.length; i++) {
-        const cells = lines[i].split('|').map(c => c.trim()).filter(Boolean);
-        const row = {};
-        headers.forEach((h, idx) => { row[h.toLowerCase().replace(/\s+/g, '_')] = cells[idx] || ''; });
-        rows.push(row);
-    }
-    return rows;
-}
-
-function parseProvisionSection(section) {
-    const trimmed = section.trim();
-    const lines = trimmed.split('\n');
-    const nameMatch = lines[0].match(/^## (.+)/);
-    if (!nameMatch) return null;
-
-    const provision = { name: nameMatch[1] };
-
-    const propTableMatch = trimmed.match(/\| Property \| Value \|[\s\S]*?\n\n/);
-    if (propTableMatch) {
-        parseTable(propTableMatch[0]).forEach(p => {
-            provision[p.property.toLowerCase().replace(/\s+/g, '_')] = p.value;
-        });
-    }
-
-    const reqMatch = trimmed.match(/### Requirements\n\n([\s\S]*?)(?=\n###|\n---|\n## |$)/);
-    if (reqMatch) provision.requirements = parseTable(reqMatch[1]);
-
-    const penMatch = trimmed.match(/### Penalties\n\n([\s\S]*?)(?=\n###|\n---|\n## |$)/);
-    if (penMatch) provision.penalties = parseTable(penMatch[1]);
-
-    const srcMatch = trimmed.match(/### Sources\n\n([\s\S]*?)(?=\n###|\n---|\n## |$)/);
-    if (srcMatch) {
-        provision.sources = (srcMatch[1].match(/\[([^\]]+)\]\(([^)]+)\)/g) || []).map(s => {
-            const m = s.match(/\[([^\]]+)\]\(([^)]+)\)/);
-            return m ? { title: m[1], url: m[2] } : null;
-        }).filter(Boolean);
-    }
-
-    const talkMatch = trimmed.match(/### Talking Point\n\n> "([^"]+)"/);
-    if (talkMatch) provision.talking_point = talkMatch[1];
-
-    return provision;
-}
-
-// ---------------------------------------------------------------------------
 // Data loading (config-driven)
 // ---------------------------------------------------------------------------
 
@@ -348,51 +148,11 @@ function findDataDir(config) {
 }
 
 function loadDir(dir) {
-    if (!fs.existsSync(dir)) return [];
-    return fs.readdirSync(dir)
-        .filter(f => f.endsWith('.md') && !f.startsWith('_'))
-        .map(f => {
-            const content = fs.readFileSync(path.join(dir, f), 'utf-8');
-            const { frontmatter, body } = parseFrontmatter(content);
-            return { id: f.replace('.md', ''), ...frontmatter, _body: body, _file: f };
-        });
+    return loadMarkdownDir(dir, { includeFile: true });
 }
 
 function loadContainers(dir) {
-    if (!fs.existsSync(dir)) return [];
-    return fs.readdirSync(dir)
-        .filter(f => f.endsWith('.md') && !f.startsWith('_'))
-        .map(f => {
-            const content = fs.readFileSync(path.join(dir, f), 'utf-8');
-            const { frontmatter, body } = parseFrontmatter(content);
-            const id = f.replace('.md', '');
-            const timelineMatch = body.match(/## Timeline\n\n([\s\S]*?)(?=\n---|\n## )/);
-            const timeline = timelineMatch ? parseTable(timelineMatch[1]) : [];
-            const provisionSections = body.split(/\n---\n/).slice(1);
-            const provisions = provisionSections.map(parseProvisionSection).filter(Boolean);
-            return { id, ...frontmatter, timeline, provisions, _body: body, _file: f };
-        });
-}
-
-function loadMappingIndex(filePath) {
-    if (!fs.existsSync(filePath)) return [];
-    const content = fs.readFileSync(filePath, 'utf-8');
-    const entries = [];
-    let current = null;
-
-    for (const line of content.split('\n')) {
-        if (line.startsWith('- id:')) {
-            if (current) entries.push(current);
-            current = { id: line.replace('- id:', '').trim(), obligations: [] };
-        } else if (current) {
-            const match = line.match(/^\s+(\w[\w_]*):\s*(.+)/);
-            if (match && match[1] !== 'obligations') current[match[1]] = match[2].trim();
-            const listMatch = line.match(/^\s+-\s+(.+)/);
-            if (listMatch) current.obligations.push(listMatch[1].trim());
-        }
-    }
-    if (current) entries.push(current);
-    return entries;
+    return loadMarkdownDir(dir, { includeFile: true, parseContainer: true });
 }
 
 // ---------------------------------------------------------------------------
@@ -684,12 +444,23 @@ function renderSourceDocuments(container) {
         const href = filename.startsWith('/') || filename.startsWith('http')
             ? filename
             : `/${canonical}${filename}`;
+        if (!filename.startsWith('http') && !filename.startsWith('/')) {
+            const localPath = path.join(DOCS_DIR, canonical, filename);
+            if (!fs.existsSync(localPath)) return '';
+        }
         const label = filename.split('/').pop();
         const isPdf = /\.pdf$/i.test(filename);
         return `<li><a href="${escapeHTML(href)}" target="_blank" rel="noopener">${escapeHTML(label)}</a>${isPdf ? ' <span style="opacity:0.6;font-size:0.85em;">(PDF)</span>' : ''}</li>`;
-    }).join('');
+    }).filter(Boolean).join('');
     const textFile = container.extracted_text;
-    const textLink = textFile ? `<li><a href="${escapeHTML(textFile)}">${escapeHTML(textFile)}</a> <span style="opacity:0.6;font-size:0.85em;">(plain text — OCR-extracted)</span></li>` : '';
+    let textLink = '';
+    if (textFile) {
+        const textPath = path.join(DOCS_DIR, canonical, textFile);
+        if (fs.existsSync(textPath)) {
+            textLink = `<li><a href="${escapeHTML(textFile)}">${escapeHTML(textFile)}</a> <span style="opacity:0.6;font-size:0.85em;">(plain text — OCR-extracted)</span></li>`;
+        }
+    }
+    if (!items && !textLink) return '';
     return `<h3>Source Documents</h3><ul class="source-documents">${items}${textLink}</ul>`;
 }
 
@@ -1896,6 +1667,7 @@ function generateRecordJsonEndpoint(c, config) {
             type: c.type || null,
             jurisdiction: c.jurisdiction || null,
             authority: c.authority || null,
+            url: (config.url || '').replace(/\/+$/, '') + containerHref(c),
             issued_by: c.issued_by || null,
             enacted: c.enacted || null,
             effective: c.effective || null,
@@ -2246,6 +2018,19 @@ function statuteGovernsDescription(s) {
 // Build
 // ---------------------------------------------------------------------------
 
+function cleanGeneratedOutputs() {
+    const managedDirs = [
+        'applies-to',
+        'authority',
+        'compare',
+        'container',
+        'primary',
+        'requires',
+        'us'
+    ];
+    for (const dir of managedDirs) removePath(path.join(DOCS_DIR, dir));
+}
+
 function build() {
     const startTime = Date.now();
     const config = loadConfig();
@@ -2255,6 +2040,8 @@ function build() {
     if (process.env.KAC_SITE_URL) config.url = process.env.KAC_SITE_URL;
 
     console.log(`Building ${config.name || 'project'}...\n`);
+
+    cleanGeneratedOutputs();
 
     const dataDir = findDataDir(config);
     const primaryDir = path.join(dataDir, config.entities?.primary?.directory || 'primary');

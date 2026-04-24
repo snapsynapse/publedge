@@ -42,7 +42,7 @@ jobs:
           fi
 
       - name: Check internal links
-        run: node scripts/check-links.js || true
+        run: node scripts/check-links.js
 
   a11y:
     runs-on: ubuntu-latest

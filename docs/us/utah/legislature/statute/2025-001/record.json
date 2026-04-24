@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-001/",
-    "generated": "2026-04-22T17:24:49.700Z",
+    "generated": "2026-04-24T02:46:53.784Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,23 +15,49 @@
     "type": "statute",
     "jurisdiction": "us-ut",
     "authority": "utah-legislature",
-    "issued_by": null,
+    "url": "https://publedge.org/us/utah/legislature/statute/2025-001/",
+    "issued_by": {
+      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "name": "Utah State Legislature",
+      "ref": "https://le.utah.gov/"
+    },
     "enacted": "2025-03-25",
     "effective": "2025-05-07",
     "official_url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
-    "obligation_kind": "[requirement, permission]",
+    "obligation_kind": [
+      "requirement",
+      "permission"
+    ],
     "reliance_scope": "public",
     "parties": null,
     "statute_anchors": [
-      "cite: \"Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)\""
+      {
+        "cite": "Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+      },
+      {
+        "cite": "Utah Code §13-75-102 (civil AI-assisted-violation liability)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S102.html"
+      },
+      {
+        "cite": "Utah Code §13-75-103 (disclosure requirements)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S103.html"
+      },
+      {
+        "cite": "Utah Code §13-75-104 (disclosure safe harbor)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S104.html"
+      }
     ],
     "publication_citations": [
-      "cite: \"Utah SB 226 (2025 General Session)\""
+      {
+        "cite": "Utah SB 226 (2025 General Session)",
+        "url": "https://le.utah.gov/~2025/bills/static/SB0226.html"
+      }
     ],
     "terms": null,
     "status": "enforcing",
-    "supersedes": "null",
-    "superseded_by": "null",
+    "supersedes": null,
+    "superseded_by": null,
     "last_verified": "2026-04-21",
     "timeline": [
       {
@@ -71,10 +97,31 @@
     "dateCreated": "2026-04-21",
     "dateModified": "2026-04-21",
     "datePublished": "2025-05-07",
+    "author": {
+      "@type": "GovernmentOrganization",
+      "name": "Utah State Legislature",
+      "url": "https://le.utah.gov/"
+    },
     "about": [
       {
         "@type": "Legislation",
-        "name": "cite: \"Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)\""
+        "name": "Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §13-75-102 (civil AI-assisted-violation liability)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S102.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §13-75-103 (disclosure requirements)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S103.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §13-75-104 (disclosure safe harbor)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S104.html"
       }
     ],
     "license": "Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law."

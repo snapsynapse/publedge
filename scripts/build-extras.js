@@ -12,6 +12,7 @@
 const fs = require('fs');
 const path = require('path');
 const { composeDisclaimer } = require('./lib/disclaimer');
+const { parseFrontmatter } = require('./lib/parse');
 
 const ROOT = path.join(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, process.env.KAC_OUTPUT_DIR || 'docs');
@@ -39,48 +40,6 @@ function escapeHTML(s) {
     return String(s == null ? '' : s)
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-}
-
-function parseFrontmatter(md) {
-    const m = md.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
-    if (!m) return { meta: {}, body: md };
-    const meta = {};
-    let key = null;
-    let listKey = null;
-    const block = m[1];
-    const lines = block.split('\n');
-    for (const raw of lines) {
-        if (!raw.trim() || raw.trim().startsWith('#')) continue;
-        const indent = raw.search(/\S/);
-        const trimmed = raw.trim();
-        if (trimmed.startsWith('- ')) {
-            if (listKey) {
-                const item = trimmed.slice(2).trim();
-                if (item.includes(':') && !item.startsWith('"')) {
-                    const ci = item.indexOf(':');
-                    const k = item.slice(0, ci).trim().replace(/^["']|["']$/g, '');
-                    const v = item.slice(ci + 1).trim().replace(/^["']|["']$/g, '');
-                    meta[listKey].push({ [k]: v });
-                } else {
-                    meta[listKey].push(item.replace(/^["']|["']$/g, ''));
-                }
-            }
-            continue;
-        }
-        const ci = trimmed.indexOf(':');
-        if (ci === -1) continue;
-        const k = trimmed.slice(0, ci).trim().replace(/^["']|["']$/g, '');
-        const v = trimmed.slice(ci + 1).trim().replace(/^["']|["']$/g, '');
-        key = k;
-        if (v === '') {
-            meta[k] = [];
-            listKey = k;
-        } else {
-            meta[k] = v;
-            listKey = null;
-        }
-    }
-    return { meta, body: m[2] };
 }
 
 // Minimal Markdown → HTML: headings, paragraphs, fenced code, inline code,
@@ -286,7 +245,7 @@ function renderTemplates() {
                 walk(p);
             } else if (entry.endsWith('.md')) {
                 const md = fs.readFileSync(p, 'utf8');
-                const { meta, body } = parseFrontmatter(md);
+                const { frontmatter: meta, body } = parseFrontmatter(md);
                 if (!meta.slug) continue;
                 templates.push({ meta, body, path: p });
             }
@@ -390,8 +349,15 @@ function copyStatics() {
     const tplN = copyRecursive(path.join(ROOT, '_templates'), path.join(DOCS_DIR, '_templates'));
     const dataN = copyRecursive(path.join(ROOT, 'data'), path.join(DOCS_DIR, 'data'));
     const schemaN = copyRecursive(path.join(ROOT, 'schema'), path.join(DOCS_DIR, 'schema'));
+    const vendorN = copyRecursive(path.join(ROOT, 'vendor'), path.join(DOCS_DIR, 'vendor'));
     const assetsN = copyRecursive(path.join(ROOT, 'assets'), path.join(DOCS_DIR, 'assets'));
-    console.log(`  Static artifacts: ${n} top-level, ${imgsN} imgs, ${tplN} template sources, ${dataN} data files, ${schemaN} schema files, ${assetsN} asset files`);
+    const jsonContextSrc = path.join(ROOT, 'schema', 'context.jsonld');
+    const jsonContextDst = path.join(DOCS_DIR, 'schema', 'json', 'context.jsonld');
+    if (fs.existsSync(jsonContextSrc)) {
+        ensureDir(path.dirname(jsonContextDst));
+        fs.copyFileSync(jsonContextSrc, jsonContextDst);
+    }
+    console.log(`  Static artifacts: ${n} top-level, ${imgsN} imgs, ${tplN} template sources, ${dataN} data files, ${schemaN} schema files, ${vendorN} vendor files, ${assetsN} asset files`);
 }
 
 // ---------------------------------------------------------------------------
@@ -657,26 +623,57 @@ function writeRecordSchema() {
         'title': 'PubLedge record.json',
         'description': 'JSON shape returned by the `.json` endpoint on each PubLedge record page.',
         'type': 'object',
-        'required': ['id', 'type', 'authority', 'jurisdiction', 'url'],
+        'required': ['@context', 'meta', 'record', 'jsonld'],
         'properties': {
-            'id': { 'type': 'string', 'description': 'Stable identifier matching the record\'s frontmatter id.' },
-            'type': { 'type': 'string', 'enum': ['statute', 'rma', 'jia', 'ao', 'nal', 'plr', 'il', 'policy'] },
-            'authority': { 'type': 'string', 'description': 'Authority slug (e.g. utah-oaip, cfpb, irs-chief-counsel).' },
-            'jurisdiction': { 'type': 'string', 'description': 'ISO-like jurisdiction (e.g. us-ut, us).' },
-            'url': { 'type': 'string', 'format': 'uri', 'description': 'Canonical hierarchical URL for this record.' },
-            'title': { 'type': 'string' },
-            'slug': { 'type': 'string' },
-            'status': { 'type': 'string', 'enum': ['proposed', 'enacted', 'enforcing', 'phased-enforcement', 'pending-replacement', 'draft', 'executed', 'expired', 'terminated'] },
-            'effective': { 'type': 'string', 'format': 'date' },
-            'enacted': { 'type': 'string', 'format': 'date' },
-            'expires': { 'type': 'string', 'format': 'date' },
-            'obligation_kind': { 'type': 'array', 'items': { 'type': 'string', 'enum': ['requirement', 'restriction', 'permission'] } },
-            'reliance_scope': { 'type': 'string', 'enum': ['public', 'similarly-situated-third-parties', 'requesting-party-only'] },
-            'statute_anchors': { 'type': 'array', 'items': { 'type': 'object', 'required': ['cite'], 'properties': { 'cite': { 'type': 'string' }, 'url': { 'type': 'string', 'format': 'uri' } } } },
-            'obligations': { 'type': 'array', 'items': { 'type': 'string' }, 'description': 'Stable obligation ids implemented by this record.' },
-            'source_url': { 'type': 'string', 'format': 'uri' },
-            'last_verified': { 'type': 'string', 'format': 'date' },
-            'integrity': { 'type': 'object', 'properties': { 'manifest': { 'type': 'string', 'format': 'uri' }, 'sha256': { 'type': 'string' } } }
+            '@context': { 'type': 'string', 'format': 'uri' },
+            'meta': {
+                'type': 'object',
+                'required': ['canonical_url', 'generated'],
+                'properties': {
+                    'canonical_url': { 'type': 'string', 'format': 'uri' },
+                    'generated': { 'type': 'string', 'format': 'date-time' },
+                    'schema': { 'type': ['string', 'null'] }
+                },
+                'additionalProperties': true
+            },
+            'record': {
+                'type': 'object',
+                'required': ['id', 'type', 'authority', 'jurisdiction', 'url'],
+                'properties': {
+                    'id': { 'type': 'string', 'description': 'Stable identifier matching the record frontmatter id.' },
+                    'legacy_id': { 'type': ['string', 'null'] },
+                    'official_ref': { 'type': ['string', 'null'] },
+                    'instance': { 'type': ['string', 'null'] },
+                    'slug': { 'type': ['string', 'null'] },
+                    'title': { 'type': ['string', 'null'] },
+                    'type': { 'type': ['string', 'null'], 'enum': ['rma', 'jia', 'statute', 'advisory-opinion', 'interpretive-letter', 'private-letter-ruling', 'no-action-letter'] },
+                    'jurisdiction': { 'type': ['string', 'null'], 'description': 'ISO-like jurisdiction (e.g. us-ut, us).' },
+                    'authority': { 'type': ['string', 'null'], 'description': 'Authority slug (e.g. utah-oaip, cfpb, irs-chief-counsel).' },
+                    'url': { 'type': ['string', 'null'], 'format': 'uri' },
+                    'issued_by': { 'type': ['object', 'string', 'array', 'null'] },
+                    'enacted': { 'type': ['string', 'null'], 'format': 'date' },
+                    'effective': { 'type': ['string', 'null'], 'format': 'date' },
+                    'official_url': { 'type': ['string', 'null'], 'format': 'uri' },
+                    'obligation_kind': { 'type': ['array', 'string', 'null'], 'items': { 'type': 'string', 'enum': ['requirement', 'restriction', 'permission'] } },
+                    'reliance_scope': { 'type': ['string', 'null'], 'enum': ['public', 'similarly-situated-third-parties', 'requesting-party-only'] },
+                    'parties': { 'type': ['array', 'string', 'null'] },
+                    'statute_anchors': { 'type': ['array', 'null'], 'items': { 'type': ['object', 'string'] } },
+                    'publication_citations': { 'type': ['array', 'null'], 'items': { 'type': ['object', 'string'] } },
+                    'terms': { 'type': ['array', 'string', 'null'] },
+                    'status': { 'type': ['string', 'null'], 'enum': ['proposed', 'enacted', 'enforcing', 'phased-enforcement', 'pending-replacement', 'expired', 'superseded', 'withdrawn', 'terminated'] },
+                    'supersedes': { 'type': ['string', 'null'] },
+                    'superseded_by': { 'type': ['string', 'null'] },
+                    'last_verified': { 'type': ['string', 'null'], 'format': 'date' },
+                    'timeline': { 'type': 'array', 'items': { 'type': 'object' } },
+                    'source_documents': { 'type': 'array', 'items': { 'type': 'object' } }
+                },
+                'additionalProperties': true
+            },
+            'jsonld': {
+                'type': 'object',
+                'required': ['@context', '@type'],
+                'additionalProperties': true
+            }
         },
         'additionalProperties': true
     };

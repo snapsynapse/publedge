@@ -83,20 +83,20 @@ files:
   # Project configuration
   - path: project.yml
     role: config
-    hash: sha256:6903433cdf254bdfee4a135628ba78703144d58e3cc1af84b4ad99987d30b4d9
+    hash: sha256:7ca6c5a6dd3a4c17b3d180380858f59c4a3fd4c6352122b1ceefeb32cba71b53
     note: KaC build config — entity ontology, navigation, theme
 
   # Data — authorities
   - path: data/examples/authorities/utah-oaip.md
     role: authority
-    hash: sha256:fd36fa6e40b3d194b09db4e10b9b512093354e5d10872330bca717c1cf488c2c
+    hash: sha256:e3f8e81c7f83fff77637ea432e5c3e4830515ed35b860d4055f69879e15308ed
     note: Utah Office of AI Policy
 
   # Data — instruments (JIAs / RMAs)
-  - path: data/examples/instruments/utah-mental-health-chatbot-disclosure-2026q2.md
+  - path: data/examples/instruments/us-ut-oaip-jia-2026-001.md
     role: instrument
-    hash: sha256:b5537e1af91fa4118f831a9dccbad5dfa3836b8d782546b6895713c9f40e5630
-    note: us-ut-oaip-jia-0001 — Utah Mental-Health Chatbot Disclosure JIA (draft)
+    hash: sha256:069a20a2846571475e268e4568c4438820a67de351a94fc5a4a413a6288af7d9
+    note: us-ut-oaip-jia-2026-001 — Utah Mental-Health Chatbot Disclosure JIA (draft) — renamed from utah-mental-health-chatbot-disclosure-2026q2.md during 2026-04-19 jurisdiction-scoped ID migration
 
   # Data — obligations
   - path: data/examples/obligations/disclose-genai-on-first-session.md
@@ -107,13 +107,13 @@ files:
   # Data — mapping
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:f7c73f9a0b29d998194fe1cf9b97bc6d56235b14a37bff9d4a4c148ad4c39bcc
+    hash: sha256:3f9308318a0768a932d25cc0189cafe289a887731960d51251104d98a06c723e
     note: Connects instruments to obligations via terms
 
   # Protocol prose
   - path: README.md
     role: protocol
-    hash: sha256:f5421e2f284b5e57ef4ca9921dfa5b8ea4107d978c6c3301ed7ab3804f7953f1
+    hash: sha256:753a67239148e1b8d1625a4c4bb4be296b4a6fcc48a8b43f79436da03af37f8b
     note: Repository overview rendered on GitHub
 
   - path: PROTOCOL.md
@@ -129,27 +129,27 @@ files:
   # Templates — Utah JIA + RMA under §13-72a (mental health chatbot) and §13-75 (safe harbor)
   - path: _templates/jia/utah-mental-health-chatbot-first-session-disclosure.md
     role: template
-    hash: sha256:d241b5fc559a22c73d5cb267b5e2dd1e7deeca448208d4f28658d80a974fb738
+    hash: sha256:a45b2202be8dcb79aaa239203dc20365c27b2fa29f091ae1fa694a7946e65475
     note: JIA template — §13-72a-203 first-session disclosure
 
   - path: _templates/jia/utah-mental-health-chatbot-data-protection.md
     role: template
-    hash: sha256:dd07e2466c84ebf1f09263b9f2e524fde755743eab7b3e9ad16d4915edcc3f5a
+    hash: sha256:8010ad4cd4002cb930aa4da2a14789ff29d577f66114cd8bf40e8fedbaa4aaa4
     note: JIA template — §13-72a-201 data protection scope
 
   - path: _templates/jia/utah-mental-health-chatbot-advertising.md
     role: template
-    hash: sha256:d508a44fd8254b2998f436631d251b86b8712ca7c2d9a7eb1c1ea978217ad8d7
+    hash: sha256:998702f6c8afccedc28c04edb7766833cb03f002e72f3fa5434ada743aeb19f5
     note: JIA template — §13-72a-202 advertising and representations
 
   - path: _templates/rma/utah-ai-sandbox-mitigation-mental-health-chatbot.md
     role: template
-    hash: sha256:62d20b97b42addcc623947af1d25f5cf3f06e441d1ccd71744c3e5f244533865
+    hash: sha256:9736c19c052316e5d772d79ef8b49efb3e83a5db6a13468d40bac8886c472d40
     note: RMA template — Utah AI Learning Lab sandbox mitigation enrollment
 
   - path: _templates/rma/utah-genai-safe-harbor-enrollment.md
     role: template
-    hash: sha256:d69f5eddf8fb4fc661f3ffd60ac897da9d63334a1abc43a477d52edd5ec3cb96
+    hash: sha256:d4912e581ae809698455f6b8a251555853a64755f659a9c176a216714e810b1f
     note: RMA template — §13-75-104 GenAI safe-harbor enrollment
 
   - path: schema/jia.schema.json
@@ -160,7 +160,12 @@ files:
   - path: schema/rma.schema.json
     role: schema
     hash: sha256:3be4a222b99cbc6a6bc942794344e74fe948e1315b2c98cbc3f261dbffddb9f8
-    note: JSON Schema for PubLedge RMA instrument frontmatter
+    note: JSON Schema for PubLedge RMA instrument frontmatter (v0.1 — superseded by instrument.schema.json, retained for backward compatibility)
+
+  - path: schema/instrument.schema.json
+    role: schema
+    hash: sha256:14ce232ea77ca3b3ee69491e6a5990652b0475895062305cbd47905cb0cb60a0
+    note: Polymorphic JSON Schema for every PubLedge instrument — v0.2, supersedes jia.schema.json + rma.schema.json
 
   - path: schema/context.jsonld
     role: schema
@@ -169,5 +174,5 @@ files:
 
   - path: ROADMAP.md
     role: spec
-    hash: sha256:b9c757d4608e6f57946926b235ac1e9198d3b48ac2af8c23d94277503cab3de1
+    hash: sha256:06bd146ca6404fa7cd4f5f6115adee4c9fc967348ecb32e62a044995be134dcd
     note: Living roadmap — housekeeping document for v0.1 / v0.2 tracking

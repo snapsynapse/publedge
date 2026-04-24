@@ -69,22 +69,35 @@ function extractLinks(html, filePath) {
 // ---------------------------------------------------------------------------
 
 function resolveLink(href, sourceFile) {
-    // Skip external links, anchors, javascript, mailto, tel, and JS template expressions
-    if (href.startsWith('http://') || href.startsWith('https://') ||
-        href.startsWith('#') || href.startsWith('javascript:') ||
+    // Skip anchors, javascript, mailto, tel, and JS template expressions
+    if (href.startsWith('#') || href.startsWith('javascript:') ||
         href.startsWith('mailto:') || href.startsWith('tel:') ||
         href.startsWith('data:') ||
         href.includes("' +") || href.includes("${") || href.includes("'+")) {
         return null; // Not a resolvable link
     }
 
+    if (href.startsWith('http://') || href.startsWith('https://')) {
+        try {
+            const url = new URL(href);
+            if (url.hostname !== 'publedge.org') return null;
+            href = url.pathname;
+        } catch (_) {
+            return null;
+        }
+    }
+
     // Strip query string and anchor
     const cleanHref = href.split('?')[0].split('#')[0];
     if (!cleanHref) return null;
 
-    // Resolve relative to the directory of the source file
-    const sourceDir = path.dirname(sourceFile);
-    const resolved = path.resolve(sourceDir, cleanHref);
+    let resolved;
+    if (cleanHref.startsWith('/')) {
+        resolved = path.join(DOCS_DIR, cleanHref.replace(/^\/+/, ''));
+    } else {
+        const sourceDir = path.dirname(sourceFile);
+        resolved = path.resolve(sourceDir, cleanHref);
+    }
 
     // Check if it resolves to a file
     if (fs.existsSync(resolved)) return null; // OK
@@ -93,6 +106,11 @@ function resolveLink(href, sourceFile) {
     if (cleanHref.endsWith('/')) {
         const indexPath = path.join(resolved, 'index.html');
         if (fs.existsSync(indexPath)) return null; // OK
+    }
+
+    if (!path.extname(cleanHref)) {
+        const indexPath = path.join(resolved, 'index.html');
+        if (fs.existsSync(indexPath)) return null;
     }
 
     // Broken link

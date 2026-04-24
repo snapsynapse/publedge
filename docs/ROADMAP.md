@@ -115,6 +115,17 @@ Shipped 2026-04-22 (accessibility remediation):
 - Agent-readiness audit artifact at `audits/agent-readiness-2026-04-22.md` covers SNAP scoring pre- and post-remediation (pre: grade C, 77/100; post: grade C, 74/100 — score drift due to a new `readability.semanticStructure` check added to the siteline rubric between scans, not a regression).
 - Rubric-improvement recommendations captured in LocalBrain (`1_Projects/Siteline/Rubric Recommendations from PubLedge Benchmark 2026-04-22.md`) and shared with siteline maintainer.
 
+Shipped 2026-04-22 (frontmatter spec v0.2 enforcement):
+
+- `scripts/lib/disclaimer.js` — shared `composeDisclaimer(source, status, override)` helper. Keys off `source` + `status`; per-file `disclaimer:` overrides are appended, not substituted. Extended the CONTENT-GUIDE §"Disclaimer composition" table to cover `authoritative-reference` (statute records) and the `enforcing` / `enacted` / `proposed` status values observed in the current registry. Flags `publedge-original-draft` × published-like status as a spec error.
+- `scripts/build.js::renderRecordDisclaimer()` — composed disclaimer renders as `<aside class="record-disclaimer">` on every instrument detail page between the incomplete-metadata warning and the citation block. Schema.org `LegalDocument` `license` field now sources from the composed text.
+- `scripts/build-extras.js` — template detail page uses the shared composer; `<dt>Disclaimer</dt>` row only emits when composed text is non-empty.
+- `_templates/jia/*`, `_templates/rma/*` retrofitted to v0.2: `source: publedge-original-draft` added; per-file generic `disclaimer:` stripped (renderer composes the identical text). Authority-specific overrides (e.g. SEC staff caveat) would still live in the per-file field.
+- `assets/styles.css` — `.record-disclaimer` + `.record-disclaimer-error` styling consistent with `.citation-block`.
+- `schema/instrument.schema.json` — single JSON Schema 2020-12 file, polymorphic on `type` across all eight values currently in the registry (jia, rma, no-action-letter, advisory-opinion, private-letter-ruling, revenue-ruling, interpretive-letter, statute). `allOf` with `if`/`then` branches enforce type-specific requirements without the pain of per-type files. `schema/jia.schema.json` + `schema/rma.schema.json` retained so existing frontmatter `schema:` URLs continue to resolve.
+- `scripts/validate.js` — four v0.2 cross-field checks: (1) `source: publedge-original-draft` × published-like status → error; (2) `type: rma` requires `issuing_authority` / `enforcement_authority` / `parties` AND a `term_start` (or `commencement_date_trigger` for deferred-commencement RMAs); (3) `type: private-letter-ruling` / `revenue-ruling` requires `redaction_level`; (4) withdrawal triplet (`withdrawn_date` / `withdrawal_reason` / `withdrawn_by_instrument`) is all-or-nothing. Registry passes clean on current 14 instruments.
+- MANIFEST refreshed: all 25 hashes recomputed, stale `utah-mental-health-chatbot-disclosure-2026q2.md` path renamed to `us-ut-oaip-jia-2026-001.md` (ID-migration cleanup), new `schema/instrument.schema.json` added to provenance tracking.
+
 ## v0.1 — remaining before public freeze
 
 | Item | Owner | Notes |
@@ -132,15 +143,7 @@ Out of scope for v0.1:
 
 ## Frontmatter spec v0.2 — follow-ups
 
-v0.2 spec landed in CONTENT-GUIDE.md 2026-04-19. Follow-up items needed before it can be enforced in CI:
-
-| Item | Notes |
-|---|---|
-| Write polymorphic `schema/instrument.schema.json` | Single JSON Schema 2020-12 file with `type` as discriminator; replaces the per-type `schema:` URLs currently referenced by every instrument. Deprecate `jia.schema.json` / `rma.schema.json` once the polymorphic schema passes validation on all four demo files. |
-| Update `scripts/validate.js` to enforce v0.2 | Cross-field rules: `source = publedge-original-draft` ∧ `status = published` → error; `type = rma` → require `enforcement_authority` + `term_length` + `review_date`; `type = private-letter-ruling` → require `redaction_level`; withdrawal triplet is all-or-nothing. |
-| Update `_templates/jia/*` and `_templates/rma/*` frontmatter to match v0.2 | Currently v0.1 shape. Templates will break for new contributors until retrofitted. |
-| Build renderer for composed disclaimer | Currently `disclaimer: ""` in every v0.2-retrofitted demo; renderer in `scripts/build-extras.js` must compose from `source` + `status` per the table in CONTENT-GUIDE.md §"Disclaimer composition". |
-| Run `./scripts/validate-hashes.sh --update` | Many files changed under `data/examples/instruments/`, `_templates/`, `schema/`, `PROTOCOL.md`, etc. after the ID migration and RMA quartet; MANIFEST.yaml is now stale. |
+All five v0.2 enforcement items shipped 2026-04-22 (see "Shipped" entry above). Outstanding gap: polymorphic `instrument.schema.json` is declared but not yet wired into a CI step — `scripts/validate.js` enforces cross-field rules programmatically, but no schema-validator library runs the JSON Schema itself. Tracked as a v0.2 engineering item.
 
 ## v0.2 — more jurisdictions, lawyer-reviewed records, engineering
 

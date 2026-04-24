@@ -5,138 +5,271 @@
   "description": "JSON shape returned by the `.json` endpoint on each PubLedge record page.",
   "type": "object",
   "required": [
-    "id",
-    "type",
-    "authority",
-    "jurisdiction",
-    "url"
+    "@context",
+    "meta",
+    "record",
+    "jsonld"
   ],
   "properties": {
-    "id": {
-      "type": "string",
-      "description": "Stable identifier matching the record's frontmatter id."
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "statute",
-        "rma",
-        "jia",
-        "ao",
-        "nal",
-        "plr",
-        "il",
-        "policy"
-      ]
-    },
-    "authority": {
-      "type": "string",
-      "description": "Authority slug (e.g. utah-oaip, cfpb, irs-chief-counsel)."
-    },
-    "jurisdiction": {
-      "type": "string",
-      "description": "ISO-like jurisdiction (e.g. us-ut, us)."
-    },
-    "url": {
-      "type": "string",
-      "format": "uri",
-      "description": "Canonical hierarchical URL for this record."
-    },
-    "title": {
-      "type": "string"
-    },
-    "slug": {
-      "type": "string"
-    },
-    "status": {
-      "type": "string",
-      "enum": [
-        "proposed",
-        "enacted",
-        "enforcing",
-        "phased-enforcement",
-        "pending-replacement",
-        "draft",
-        "executed",
-        "expired",
-        "terminated"
-      ]
-    },
-    "effective": {
-      "type": "string",
-      "format": "date"
-    },
-    "enacted": {
-      "type": "string",
-      "format": "date"
-    },
-    "expires": {
-      "type": "string",
-      "format": "date"
-    },
-    "obligation_kind": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "requirement",
-          "restriction",
-          "permission"
-        ]
-      }
-    },
-    "reliance_scope": {
-      "type": "string",
-      "enum": [
-        "public",
-        "similarly-situated-third-parties",
-        "requesting-party-only"
-      ]
-    },
-    "statute_anchors": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "cite"
-        ],
-        "properties": {
-          "cite": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string",
-            "format": "uri"
-          }
-        }
-      }
-    },
-    "obligations": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "Stable obligation ids implemented by this record."
-    },
-    "source_url": {
+    "@context": {
       "type": "string",
       "format": "uri"
     },
-    "last_verified": {
-      "type": "string",
-      "format": "date"
-    },
-    "integrity": {
+    "meta": {
       "type": "object",
+      "required": [
+        "canonical_url",
+        "generated"
+      ],
       "properties": {
-        "manifest": {
+        "canonical_url": {
           "type": "string",
           "format": "uri"
         },
-        "sha256": {
-          "type": "string"
+        "generated": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "schema": {
+          "type": [
+            "string",
+            "null"
+          ]
         }
-      }
+      },
+      "additionalProperties": true
+    },
+    "record": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "authority",
+        "jurisdiction",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable identifier matching the record frontmatter id."
+        },
+        "legacy_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "official_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "instance": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "slug": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "rma",
+            "jia",
+            "statute",
+            "advisory-opinion",
+            "interpretive-letter",
+            "private-letter-ruling",
+            "no-action-letter"
+          ]
+        },
+        "jurisdiction": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "ISO-like jurisdiction (e.g. us-ut, us)."
+        },
+        "authority": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Authority slug (e.g. utah-oaip, cfpb, irs-chief-counsel)."
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "issued_by": {
+          "type": [
+            "object",
+            "string",
+            "array",
+            "null"
+          ]
+        },
+        "enacted": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "effective": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "official_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "obligation_kind": {
+          "type": [
+            "array",
+            "string",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "requirement",
+              "restriction",
+              "permission"
+            ]
+          }
+        },
+        "reliance_scope": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "public",
+            "similarly-situated-third-parties",
+            "requesting-party-only"
+          ]
+        },
+        "parties": {
+          "type": [
+            "array",
+            "string",
+            "null"
+          ]
+        },
+        "statute_anchors": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "object",
+              "string"
+            ]
+          }
+        },
+        "publication_citations": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "object",
+              "string"
+            ]
+          }
+        },
+        "terms": {
+          "type": [
+            "array",
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "proposed",
+            "enacted",
+            "enforcing",
+            "phased-enforcement",
+            "pending-replacement",
+            "expired",
+            "superseded",
+            "withdrawn",
+            "terminated"
+          ]
+        },
+        "supersedes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "superseded_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "last_verified": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "timeline": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "source_documents": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "jsonld": {
+      "type": "object",
+      "required": [
+        "@context",
+        "@type"
+      ],
+      "additionalProperties": true
     }
   },
   "additionalProperties": true

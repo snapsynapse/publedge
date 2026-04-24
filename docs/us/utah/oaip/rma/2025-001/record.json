@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-001/",
-    "generated": "2026-04-22T17:24:49.703Z",
+    "generated": "2026-04-24T02:46:53.787Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,25 +15,74 @@
     "type": "rma",
     "jurisdiction": "us-ut",
     "authority": "utah-oaip",
-    "issued_by": null,
+    "url": "https://publedge.org/us/utah/oaip/rma/2025-001/",
+    "issued_by": {
+      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
+      "ref": "https://commerce.utah.gov/ai/learning-lab/"
+    },
     "enacted": "2025-05-31",
     "effective": "2025-05-31",
     "official_url": "https://commerce.utah.gov/ai/agreements/dentacor/",
-    "obligation_kind": "[permission, requirement, restriction]",
+    "obligation_kind": [
+      "permission",
+      "requirement",
+      "restriction"
+    ],
     "reliance_scope": "requesting-party-only",
     "parties": [
-      "name: \"Utah Office of Artificial Intelligence Policy\""
+      {
+        "name": "Utah Office of Artificial Intelligence Policy",
+        "role": "issuing_authority"
+      },
+      {
+        "name": "Utah Division of Professional Licensing",
+        "role": "co_signatory_authority"
+      },
+      {
+        "name": "Dentacor, LLC",
+        "role": "participant"
+      }
     ],
     "statute_anchors": [
-      "cite: \"Utah Code §13-72-201\""
+      {
+        "cite": "Utah Code §13-72-201",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html"
+      },
+      {
+        "cite": "Utah Code §13-72-302",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html"
+      },
+      {
+        "cite": "Utah Code §58-69 (Dental Practice Act)",
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69.html"
+      },
+      {
+        "cite": "Utah Code §58-69-301(2)(b)",
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S301.html"
+      },
+      {
+        "cite": "Utah Code §58-69-102(10)",
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S102.html"
+      },
+      {
+        "cite": "Utah Code §58-69-5 (Unlawful / unprofessional conduct)",
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S5.html"
+      },
+      {
+        "cite": "Utah Code §63A-19-102",
+        "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html"
+      }
     ],
     "publication_citations": [
-      "\"https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf\""
+      {
+        "\"https": "//commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
+      }
     ],
     "terms": null,
     "status": "enforcing",
-    "supersedes": "null",
-    "superseded_by": "null",
+    "supersedes": null,
+    "superseded_by": null,
     "last_verified": "2026-04-19",
     "timeline": [],
     "source_documents": [
@@ -69,10 +118,46 @@
     "dateCreated": "2026-04-19",
     "dateModified": "2026-04-19",
     "datePublished": "2025-05-31",
+    "author": {
+      "@type": "GovernmentOrganization",
+      "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
+      "url": "https://commerce.utah.gov/ai/learning-lab/"
+    },
     "about": [
       {
         "@type": "Legislation",
-        "name": "cite: \"Utah Code §13-72-201\""
+        "name": "Utah Code §13-72-201",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §13-72-302",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §58-69 (Dental Practice Act)",
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §58-69-301(2)(b)",
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S301.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §58-69-102(10)",
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S102.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §58-69-5 (Unlawful / unprofessional conduct)",
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S5.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §63A-19-102",
+        "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html"
       }
     ],
     "isPartOf": {

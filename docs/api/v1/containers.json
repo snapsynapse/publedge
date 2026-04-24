@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-22T17:24:49.664Z",
+    "generated": "2026-04-24T02:46:53.751Z",
     "count": 14
   },
   "items": [
@@ -99,7 +99,7 @@
       "id": "us-ut-oaip-rma-2026-001",
       "name": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
       "status": "enacted",
-      "effective": "null",
+      "effective": null,
       "provision_count": 0
     }
   ]

@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/",
-    "generated": "2026-04-22T17:24:49.694Z",
+    "generated": "2026-04-24T02:46:53.777Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,23 +15,44 @@
     "type": "interpretive-letter",
     "jurisdiction": "us",
     "authority": "cftc-dsio",
-    "issued_by": null,
+    "url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/",
+    "issued_by": {
+      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization",
+      "name": "U.S. Commodity Futures Trading Commission, Division of Swap Dealer and Intermediary Oversight",
+      "ref": "https://cftc.gov/LawRegulation/CFTCStaffLetters/index.htm"
+    },
     "enacted": "2017-12-11",
     "effective": "2017-12-11",
     "official_url": "https://cftc.gov/csl/17-65/download",
-    "obligation_kind": "[permission]",
+    "obligation_kind": [
+      "permission"
+    ],
     "reliance_scope": "similarly-situated-third-parties",
-    "parties": "[]",
+    "parties": [],
     "statute_anchors": [
-      "cite: \"7 U.S.C. §1a(12) (Commodity Exchange Act definition of commodity trading advisor)\""
+      {
+        "cite": "7 U.S.C. §1a(12) (Commodity Exchange Act definition of commodity trading advisor)",
+        "url": "https://www.law.cornell.edu/uscode/text/7/1a"
+      },
+      {
+        "cite": "17 C.F.R. §4.6(a)(3) (swap dealer exclusion from CTA definition)",
+        "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.6"
+      },
+      {
+        "cite": "17 C.F.R. §4.14(a)(6) (introducing broker exemption from CTA registration)",
+        "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.14"
+      }
     ],
     "publication_citations": [
-      "cite: \"CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)\""
+      {
+        "cite": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
+        "url": "https://cftc.gov/csl/17-65/download"
+      }
     ],
     "terms": null,
     "status": "enforcing",
-    "supersedes": "null",
-    "superseded_by": "null",
+    "supersedes": null,
+    "superseded_by": null,
     "last_verified": "2026-04-19",
     "timeline": [],
     "source_documents": []
@@ -53,12 +74,24 @@
     "datePublished": "2017-12-11",
     "author": {
       "@type": "GovernmentOrganization",
-      "name": "CFTC Division of Swap Dealer and Intermediary Oversight"
+      "name": "U.S. Commodity Futures Trading Commission, Division of Swap Dealer and Intermediary Oversight",
+      "url": "https://cftc.gov/LawRegulation/CFTCStaffLetters/index.htm"
     },
     "about": [
       {
         "@type": "Legislation",
-        "name": "cite: \"7 U.S.C. §1a(12) (Commodity Exchange Act definition of commodity trading advisor)\""
+        "name": "7 U.S.C. §1a(12) (Commodity Exchange Act definition of commodity trading advisor)",
+        "url": "https://www.law.cornell.edu/uscode/text/7/1a"
+      },
+      {
+        "@type": "Legislation",
+        "name": "17 C.F.R. §4.6(a)(3) (swap dealer exclusion from CTA definition)",
+        "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.6"
+      },
+      {
+        "@type": "Legislation",
+        "name": "17 C.F.R. §4.14(a)(6) (introducing broker exemption from CTA registration)",
+        "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.14"
       }
     ],
     "license": "Demonstration remap of a publicly archived authority artifact. Not an authority-issued PubLedge instrument. The official source controls."
