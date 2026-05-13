@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json",
+  "id": "elizachat-rma-obligations-elizachat-phased-rollout",
+  "title": "ElizaChat — Three-Phase Rollout Gate",
+  "content": "ElizaChat must be released in three sequential phases — OAIP trusted-tester cohort, OAIP-reviewed limited student cohort, and full Utah-district student availability — with written OAIP approval required before advancing to each subsequent phase.",
+  "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "elizachat-phased-rollout",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "elizachat",
+    "phased rollout",
+    "trusted tester",
+    "phase gate"
+  ]
+}

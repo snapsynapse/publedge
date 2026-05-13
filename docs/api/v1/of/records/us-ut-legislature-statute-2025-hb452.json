@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
+  "id": "us-ut-legislature-statute-2025-hb452",
+  "title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+  "short_title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "kind": "statute",
+  "enacted": "2025-03-26",
+  "effective": "2025-05-07",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+  ],
+  "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+  "jurisdiction": "us-ut",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-002/"
+}

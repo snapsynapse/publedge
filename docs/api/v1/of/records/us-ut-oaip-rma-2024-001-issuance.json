@@ -1,0 +1,13 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Determination",
+  "@id": "https://publedge.org/determination/us-ut-oaip-rma-2024-001-issuance.json",
+  "id": "us-ut-oaip-rma-2024-001-issuance",
+  "issued_date": "2024-11-18",
+  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "decides": [],
+  "disposition": "issued",
+  "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+  "notes": "Issuance record for Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024).",
+  "source": "https://commerce.utah.gov/ai/agreements/elizachat/"
+}

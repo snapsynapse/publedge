@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Restriction",
+  "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json",
+  "id": "sb226-disclosure-and-ai-defense-ai-defense-elimination",
+  "title": "GenAI Is Not A Defense — Civil And Criminal",
+  "content": "Utah removed \"the AI did it\" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror (§13-75-102, SB 226, effective 2025-05-07) together eliminate the doctrine across Utah consumer-protection and criminal law.",
+  "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+  "anchors": [],
+  "publedge_primary_id": "ai-defense-elimination",
+  "publedge_group": "restriction",
+  "publedge_status": "draft",
+  "search_terms": [
+    "ai defense",
+    "liability",
+    "civil",
+    "criminal",
+    "sb149",
+    "sb226"
+  ]
+}

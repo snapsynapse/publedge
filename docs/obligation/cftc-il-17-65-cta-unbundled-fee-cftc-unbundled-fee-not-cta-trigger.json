@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json",
+  "id": "cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger",
+  "title": "Unbundled Advice Fee Does Not Trigger CTA Registration",
+  "content": "A registered FCM, swap dealer, or introducing broker that qualifies for the CTA exclusion or exemption does not lose that status solely because it begins receiving a separate unbundled fee for commodity trading advice. The \"solely incidental\" or \"solely in connection with\" test continues to govern under a facts-and-circumstances analysis; separate compensation is one factor but is not dispositive.",
+  "created_by": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
+  "anchors": [],
+  "publedge_primary_id": "cftc-unbundled-fee-not-cta-trigger",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "cta registration",
+    "mifid ii",
+    "fcm",
+    "swap dealer",
+    "introducing broker",
+    "unbundled fee"
+  ]
+}

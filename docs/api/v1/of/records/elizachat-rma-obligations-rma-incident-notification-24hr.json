@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json",
+  "id": "elizachat-rma-obligations-rma-incident-notification-24hr",
+  "title": "RMA — 24-Hour Incident Notification",
+  "content": "An RMA participant must notify OAIP within 24 hours of any incident that results in harm to the health, safety, or financial well-being of a user of the mitigated technology.",
+  "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "rma-incident-notification-24hr",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "rma",
+    "incident",
+    "notification",
+    "harm",
+    "24 hours"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
+  "id": "elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle",
+  "title": "ElizaChat — Pre-Access Disclosure Bundle",
+  "content": "Before granting any user access to ElizaChat app functionality, the participant must present a five-element disclosure — participant identity, GenAI use notice, testing-risk notice, data use and sharing practices, and OAIP complaint channel — in clear and conspicuous form, and must secure user acknowledgment before access is granted.",
+  "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "elizachat-pre-access-disclosure-bundle",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "elizachat",
+    "disclosure",
+    "pre-access",
+    "disclosure bundle"
+  ]
+}

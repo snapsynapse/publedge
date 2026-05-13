@@ -1,0 +1,15 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
+  "id": "irs-plr-202506001-incentive-fee",
+  "text": "Holding",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
+  "creates": [
+    "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json"
+  ],
+  "anchors": [],
+  "source_heading": "Holding",
+  "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md"
+}

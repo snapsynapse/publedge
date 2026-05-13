@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Authority",
+  "@id": "https://publedge.org/authority/cfpb.json",
+  "id": "cfpb",
+  "organization": {
+    "@type": "gist:GovernmentOrganization",
+    "name": "Consumer Financial Protection Bureau"
+  },
+  "authority_basis": {
+    "kind": "statutory",
+    "instrument_ref": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json"
+  },
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "website": "https://www.consumerfinance.gov/",
+  "url_segment": "cfpb"
+}

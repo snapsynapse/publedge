@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-24T02:46:53.760Z",
+    "generated": "2026-05-13T22:10:27.833Z",
     "version": "1.0",
     "project": "publedge"
   },
@@ -22,6 +22,9 @@
     },
     "comparisons": {
       "path": "comparisons.json"
+    },
+    "obligation-first": {
+      "path": "of/index.json"
     }
   }
 }

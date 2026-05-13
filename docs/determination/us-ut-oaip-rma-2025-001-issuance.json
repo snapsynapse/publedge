@@ -1,0 +1,13 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Determination",
+  "@id": "https://publedge.org/determination/us-ut-oaip-rma-2025-001-issuance.json",
+  "id": "us-ut-oaip-rma-2025-001-issuance",
+  "issued_date": "2025-05-31",
+  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "decides": [],
+  "disposition": "issued",
+  "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+  "notes": "Issuance record for Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025).",
+  "source": "https://commerce.utah.gov/ai/agreements/dentacor/"
+}

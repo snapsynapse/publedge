@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Restriction",
+  "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
+  "id": "dentacor-rma-obligations-rma-no-advertising-reference",
+  "title": "RMA — No Advertising Reference To Agreement",
+  "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
+  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "rma-no-advertising-reference",
+  "publedge_group": "restriction",
+  "publedge_status": "draft",
+  "search_terms": [
+    "rma",
+    "advertising",
+    "promotion",
+    "marketing"
+  ]
+}

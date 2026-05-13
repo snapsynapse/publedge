@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+  "id": "us-ut-oaip-rma-2026-001",
+  "title": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
+  "short_title": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
+  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "kind": "rma",
+  "enacted": "2026-03-19",
+  "status": "enacted",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/legion-rma-obligations.json"
+  ],
+  "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+  "jurisdiction": "us-ut",
+  "publedge_status": "enacted",
+  "canonical_url": "https://publedge.org/us/utah/oaip/rma/2026-001/"
+}

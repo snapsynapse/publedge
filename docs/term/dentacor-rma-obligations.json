@@ -1,0 +1,22 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/dentacor-rma-obligations.json",
+  "id": "dentacor-rma-obligations",
+  "text": "Obligations summary (Section 6 and Schedule A §15C–D)",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+  "creates": [
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json",
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json"
+  ],
+  "anchors": [],
+  "source_heading": "Obligations summary (Section 6 and Schedule A §15C–D)",
+  "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-001.md"
+}

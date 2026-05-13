@@ -1,0 +1,22 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/legion-rma-obligations.json",
+  "id": "legion-rma-obligations",
+  "text": "Obligations summary (Section 6 and Schedule A §17)",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+  "creates": [
+    "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json",
+    "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json",
+    "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
+    "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json"
+  ],
+  "anchors": [],
+  "source_heading": "Obligations summary (Section 6 and Schedule A §17)",
+  "source_file": "data/examples/instruments/us-ut-oaip-rma-2026-001.md"
+}

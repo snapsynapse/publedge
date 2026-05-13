@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
+  "id": "us-cfpb-ao-2022-001",
+  "title": "CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)",
+  "short_title": "CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)",
+  "issuedBy": "https://publedge.org/authority/cfpb.json",
+  "kind": "advisory-opinion",
+  "enacted": "2022-06-29",
+  "effective": "2022-06-29",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json"
+  ],
+  "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+  "jurisdiction": "us",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/federal/cfpb/ao/2022-001/"
+}

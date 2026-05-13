@@ -1,0 +1,22 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/doctronic-rma-obligations.json",
+  "id": "doctronic-rma-obligations",
+  "text": "Obligations summary (Section 6 and Schedule A §16)",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+  "creates": [
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json"
+  ],
+  "anchors": [],
+  "source_heading": "Obligations summary (Section 6 and Schedule A §16)",
+  "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md"
+}

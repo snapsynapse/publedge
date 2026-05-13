@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json",
+  "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session",
+  "title": "Disclose GenAI on First Session",
+  "content": "A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.",
+  "created_by": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
+  "anchors": [
+    "https://everyailaw.com/obligation/transparency.json"
+  ],
+  "publedge_primary_id": "disclose-genai-on-first-session",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "disclosure",
+    "genai",
+    "first session",
+    "chatbot"
+  ]
+}

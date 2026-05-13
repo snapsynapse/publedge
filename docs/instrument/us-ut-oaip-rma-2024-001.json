@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+  "id": "us-ut-oaip-rma-2024-001",
+  "title": "Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)",
+  "short_title": "Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)",
+  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "kind": "rma",
+  "enacted": "2024-11-18",
+  "effective": "2024-11-18",
+  "status": "sunset",
+  "enforcement_status": "constrained",
+  "hasTerm": [
+    "https://publedge.org/term/elizachat-rma-obligations.json"
+  ],
+  "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+  "jurisdiction": "us-ut",
+  "publedge_status": "expired",
+  "canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/"
+}

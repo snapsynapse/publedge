@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
+  "id": "sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive",
+  "title": "Proactive GenAI Disclosure In High-Risk Interactions",
+  "content": "A supplier engaged in a \"high-risk AI interaction\" in a regulated occupation must proactively disclose GenAI use before the interaction begins — verbally at the start of an oral exchange, and in writing before a written exchange. The high-risk tier is statutorily defined and narrower than general consumer interactions.",
+  "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+  "anchors": [],
+  "publedge_primary_id": "disclose-genai-high-risk-proactive",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "disclosure",
+    "high-risk",
+    "regulated occupation",
+    "proactive",
+    "sb226"
+  ]
+}

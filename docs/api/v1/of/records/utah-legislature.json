@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Authority",
+  "@id": "https://publedge.org/authority/utah-legislature.json",
+  "id": "utah-legislature",
+  "organization": {
+    "@type": "gist:GovernmentOrganization",
+    "name": "Utah State Legislature"
+  },
+  "authority_basis": {
+    "kind": "statutory",
+    "instrument_ref": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json"
+  },
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
+  "website": "https://le.utah.gov/",
+  "url_segment": "legislature"
+}

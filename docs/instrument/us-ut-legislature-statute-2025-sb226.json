@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
+  "id": "us-ut-legislature-statute-2025-sb226",
+  "title": "Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments",
+  "short_title": "Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments",
+  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "kind": "statute",
+  "enacted": "2025-03-25",
+  "effective": "2025-05-07",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+  ],
+  "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+  "jurisdiction": "us-ut",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-001/"
+}

@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json",
+  "id": "dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis",
+  "title": "Dentacor — Hygienist + AI Concurrence Diagnosis",
+  "content": "Licensed Utah dental hygienists employed by Dentacor may diagnose periodontal disease, complete edentulism, and complete anodontia using an AI-assisted radiograph diagnostic tool in place of general dentist supervision. Diagnosis requires concurrence of both the hygienist and the AI system, and is limited to the procedures authorized under the companion permission (scaling and root planing; fitting of full dentures).",
+  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "dentacor-hygienist-ai-concurrence-diagnosis",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "dentacor",
+    "hygienist",
+    "radiograph",
+    "diagnosis",
+    "ai concurrence"
+  ]
+}

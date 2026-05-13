@@ -1,0 +1,15 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
+  "id": "cftc-il-17-65-cta-unbundled-fee",
+  "text": "Interpretive position",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
+  "creates": [
+    "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json"
+  ],
+  "anchors": [],
+  "source_heading": "Interpretive position",
+  "source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md"
+}

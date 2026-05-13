@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+  "id": "us-ut-oaip-rma-2025-002",
+  "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+  "short_title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "kind": "rma",
+  "enacted": "2025-10-24",
+  "effective": "2025-10-24",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/doctronic-rma-obligations.json"
+  ],
+  "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+  "jurisdiction": "us-ut",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-002/"
+}

@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json",
+  "id": "irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share",
+  "title": "Incentive-Fee Management Contract Not A Share Of Net Profits",
+  "content": "On the facts represented, an incentive-fee management contract between a §501(c)(3) bond issuer and a hotel manager — where the incentive fee is calculated on gross revenue subject to an adjustment contingent on a net-profit-variant metric — does not constitute sharing of net profits under Rev. Proc. 2017-13 §5.02(2) and therefore does not cause private business use under IRC §141. The ruling applies only to the requesting taxpayer on the specific facts presented.",
+  "created_by": "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
+  "anchors": [],
+  "publedge_primary_id": "irs-incentive-fee-not-net-profits-share",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "private business use",
+    "501c3 bonds",
+    "rev proc 2017-13",
+    "safe harbor",
+    "incentive fee"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json",
+  "id": "doctronic-rma-obligations-rma-data-security-63a-19-102",
+  "title": "RMA — Data Security Under §63A-19-102",
+  "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
+  "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "rma-data-security-63a-19-102",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "rma",
+    "data security",
+    "cybersecurity",
+    "63a-19-102"
+  ]
+}

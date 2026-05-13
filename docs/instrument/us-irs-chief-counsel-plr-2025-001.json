@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
+  "id": "us-irs-chief-counsel-plr-2025-001",
+  "title": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
+  "short_title": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
+  "issuedBy": "https://publedge.org/authority/irs-chief-counsel.json",
+  "kind": "private-letter-ruling",
+  "enacted": "2025-02-07",
+  "effective": "2025-02-07",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/irs-plr-202506001-incentive-fee.json"
+  ],
+  "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+  "jurisdiction": "us",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/"
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json",
+  "id": "dentacor-rma-obligations-dentacor-informed-consent-no-dentist",
+  "title": "Dentacor — Informed Consent Disclosing Absence Of Dentist",
+  "content": "Before performing any RMA-authorized procedure, a Dentacor-employed hygienist must obtain patient informed consent that explicitly discloses the absence of dentist supervision and explains that a hygienist does not have the full training or scope of practice of a dentist.",
+  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "dentacor-informed-consent-no-dentist",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "dentacor",
+    "informed consent",
+    "dentist supervision",
+    "patient disclosure"
+  ]
+}

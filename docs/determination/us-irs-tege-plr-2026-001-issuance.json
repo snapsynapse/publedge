@@ -1,0 +1,13 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Determination",
+  "@id": "https://publedge.org/determination/us-irs-tege-plr-2026-001-issuance.json",
+  "id": "us-irs-tege-plr-2026-001-issuance",
+  "issued_date": "2026-01-12",
+  "issuedBy": "https://publedge.org/authority/irs-tege.json",
+  "decides": [],
+  "disposition": "issued",
+  "target_instrument": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
+  "notes": "Issuance record for IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility.",
+  "source": "https://irs.gov/pub/irs-wd/202614036.pdf"
+}

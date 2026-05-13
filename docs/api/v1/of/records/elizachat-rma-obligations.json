@@ -1,0 +1,22 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/elizachat-rma-obligations.json",
+  "id": "elizachat-rma-obligations",
+  "text": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+  "creates": [
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json",
+    "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
+    "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json"
+  ],
+  "anchors": [],
+  "source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+  "source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md"
+}

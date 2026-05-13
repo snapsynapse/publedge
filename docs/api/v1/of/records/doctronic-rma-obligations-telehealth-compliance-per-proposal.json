@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json",
+  "id": "doctronic-rma-obligations-telehealth-compliance-per-proposal",
+  "title": "Telehealth Compliance Anchored To Participant Proposal",
+  "content": "A participant operating AI-assisted prescription renewal must adhere to Utah's telehealth provider requirements in §26B-4-704, with specific subsections deemed satisfied by following the patient-journey and escalation protocols described in the participant's Proposal (Schedule B). Certain subsections (e.g., the patient-records portability default) are inapplicable; others are substituted by Proposal-section conformance.",
+  "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "telehealth-compliance-per-proposal",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "telehealth",
+    "26b-4-704",
+    "proposal compliance",
+    "doctronic",
+    "legion"
+  ]
+}

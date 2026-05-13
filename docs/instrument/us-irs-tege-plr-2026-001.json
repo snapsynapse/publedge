@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
+  "id": "us-irs-tege-plr-2026-001",
+  "title": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
+  "short_title": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
+  "issuedBy": "https://publedge.org/authority/irs-tege.json",
+  "kind": "private-letter-ruling",
+  "enacted": "2026-01-12",
+  "effective": "2026-01-12",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json"
+  ],
+  "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+  "jurisdiction": "us",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/"
+}

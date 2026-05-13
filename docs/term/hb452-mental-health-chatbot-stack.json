@@ -1,0 +1,17 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+  "id": "hb452-mental-health-chatbot-stack",
+  "text": "Summary",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
+  "creates": [
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json"
+  ],
+  "anchors": [],
+  "source_heading": "Summary",
+  "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md"
+}

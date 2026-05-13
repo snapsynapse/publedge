@@ -1,0 +1,15 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
+  "id": "sec-corpfin-nal-2025-001-rule-506c",
+  "text": "Staff position",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
+  "creates": [
+    "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json"
+  ],
+  "anchors": [],
+  "source_heading": "Staff position",
+  "source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md"
+}

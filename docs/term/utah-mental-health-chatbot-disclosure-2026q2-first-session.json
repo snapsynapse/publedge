@@ -1,0 +1,17 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
+  "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session",
+  "text": "Display disclosure: On first session, plainly identify the service as an AI chatbot Re-display on resumption: After 30 minutes of inactivity, re-display the disclosure",
+  "section": "Utah Code §13-72a-203",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
+  "creates": [
+    "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json"
+  ],
+  "anchors": [
+    "https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json"
+  ],
+  "source_heading": "First-Session Disclosure (§13-72a-203)",
+  "source_file": "data/examples/instruments/us-ut-oaip-jia-2026-001.md"
+}

@@ -1,0 +1,146 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "generated": "2026-05-13T22:10:27.785Z",
+  "authorities": [
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Authority",
+      "@id": "https://publedge.org/authority/cfpb.json",
+      "id": "cfpb",
+      "organization": {
+        "@type": "gist:GovernmentOrganization",
+        "name": "Consumer Financial Protection Bureau"
+      },
+      "authority_basis": {
+        "kind": "statutory",
+        "instrument_ref": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json"
+      },
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "website": "https://www.consumerfinance.gov/",
+      "url_segment": "cfpb"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Authority",
+      "@id": "https://publedge.org/authority/cftc-dsio.json",
+      "id": "cftc-dsio",
+      "organization": {
+        "@type": "gist:GovernmentOrganization",
+        "name": "CFTC Division of Swap Dealer and Intermediary Oversight"
+      },
+      "authority_basis": {
+        "kind": "statutory",
+        "instrument_ref": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json"
+      },
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "website": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
+      "url_segment": "cftc-dsio"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Authority",
+      "@id": "https://publedge.org/authority/irs-chief-counsel.json",
+      "id": "irs-chief-counsel",
+      "organization": {
+        "@type": "gist:GovernmentOrganization",
+        "name": "IRS Office of Chief Counsel"
+      },
+      "authority_basis": {
+        "kind": "statutory",
+        "instrument_ref": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json"
+      },
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "website": "https://www.irs.gov/privacy-disclosure/written-determinations",
+      "url_segment": "irs-chief-counsel"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Authority",
+      "@id": "https://publedge.org/authority/irs-tege.json",
+      "id": "irs-tege",
+      "organization": {
+        "@type": "gist:GovernmentOrganization",
+        "name": "IRS Tax Exempt and Government Entities Division"
+      },
+      "authority_basis": {
+        "kind": "statutory",
+        "instrument_ref": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json"
+      },
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "website": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
+      "url_segment": "irs-tege"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Authority",
+      "@id": "https://publedge.org/authority/sec-corpfin.json",
+      "id": "sec-corpfin",
+      "organization": {
+        "@type": "gist:GovernmentOrganization",
+        "name": "SEC Division of Corporation Finance"
+      },
+      "authority_basis": {
+        "kind": "statutory",
+        "instrument_ref": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json"
+      },
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "website": "https://www.sec.gov/divisions/corpfin",
+      "url_segment": "sec-corpfin"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Authority",
+      "@id": "https://publedge.org/authority/utah-legislature.json",
+      "id": "utah-legislature",
+      "organization": {
+        "@type": "gist:GovernmentOrganization",
+        "name": "Utah State Legislature"
+      },
+      "authority_basis": {
+        "kind": "statutory",
+        "instrument_ref": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json"
+      },
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
+      "website": "https://le.utah.gov/",
+      "url_segment": "legislature"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Authority",
+      "@id": "https://publedge.org/authority/utah-oaip.json",
+      "id": "utah-oaip",
+      "organization": {
+        "@type": "gist:GovernmentOrganization",
+        "name": "Utah Office of Artificial Intelligence Policy"
+      },
+      "authority_basis": {
+        "kind": "statutory",
+        "instrument_ref": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json"
+      },
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
+      "website": "https://commerce.utah.gov/ai/learning-lab/",
+      "url_segment": "oaip"
+    }
+  ]
+}

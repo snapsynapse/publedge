@@ -1,0 +1,13 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Determination",
+  "@id": "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json",
+  "id": "us-ut-legislature-statute-2024-sb149-issuance",
+  "issued_date": "2024-03-13",
+  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "decides": [],
+  "disposition": "issued",
+  "target_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
+  "notes": "Issuance record for Utah SB 149 (2024) — Artificial Intelligence Amendments.",
+  "source": "https://le.utah.gov/~2024/bills/static/SB0149.html"
+}

@@ -1,0 +1,15 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
+  "id": "hb320-joint-interpretation-agreements",
+  "text": "Summary",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
+  "creates": [
+    "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json"
+  ],
+  "anchors": [],
+  "source_heading": "Summary",
+  "source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md"
+}

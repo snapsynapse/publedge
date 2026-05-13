@@ -1,0 +1,13 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Determination",
+  "@id": "https://publedge.org/determination/us-ut-legislature-statute-2026-hb320-issuance.json",
+  "id": "us-ut-legislature-statute-2026-hb320-issuance",
+  "issued_date": "2026-03-19",
+  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "decides": [],
+  "disposition": "issued",
+  "target_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
+  "notes": "Issuance record for Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements.",
+  "source": "https://le.utah.gov/~2026/bills/static/HB0320.html"
+}

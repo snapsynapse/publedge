@@ -10,6 +10,10 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 Follow-on work tracked in [ROADMAP.md](ROADMAP.md).
 
+### Added
+- Obligation-First v0.1 binding export under `/api/v1/of/`, with companion JSON records for authorities, instruments, terms, obligations, and determinations.
+- `npm run validate:of` bridge validation using the Obligation-First adopter kit, plus CI coverage for the generated binding.
+
 ## [0.1.0-pre] — 2026-04-22
 
 ### Added

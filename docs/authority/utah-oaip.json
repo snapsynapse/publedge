@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Authority",
+  "@id": "https://publedge.org/authority/utah-oaip.json",
+  "id": "utah-oaip",
+  "organization": {
+    "@type": "gist:GovernmentOrganization",
+    "name": "Utah Office of Artificial Intelligence Policy"
+  },
+  "authority_basis": {
+    "kind": "statutory",
+    "instrument_ref": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json"
+  },
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
+  "website": "https://commerce.utah.gov/ai/learning-lab/",
+  "url_segment": "oaip"
+}

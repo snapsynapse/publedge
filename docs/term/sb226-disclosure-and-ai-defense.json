@@ -1,0 +1,17 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+  "id": "sb226-disclosure-and-ai-defense",
+  "text": "Summary",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
+  "creates": [
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json"
+  ],
+  "anchors": [],
+  "source_heading": "Summary",
+  "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md"
+}

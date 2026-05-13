@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json",
+  "id": "sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor",
+  "title": "Rule 506(c) Verification Via High-Minimum + Representation",
+  "content": "An issuer conducting a Rule 506(c) offering satisfies the \"reasonable steps to verify\" accredited-investor requirement when it (1) imposes a minimum investment amount high enough that only accredited investors would reasonably be expected to meet it, (2) obtains written representations of accredited status and that the investment is not financed by a third party for purposes of the investment, and (3) has no actual knowledge of contradictory facts. The position restates the principles-based standard; it does not create an exclusive verification method.",
+  "created_by": "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
+  "anchors": [],
+  "publedge_primary_id": "sec-reg-d-506c-verification-safe-harbor",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "rule 506c",
+    "accredited investor",
+    "reasonable steps to verify",
+    "regulation d",
+    "private placement"
+  ]
+}

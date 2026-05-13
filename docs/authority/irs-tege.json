@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Authority",
+  "@id": "https://publedge.org/authority/irs-tege.json",
+  "id": "irs-tege",
+  "organization": {
+    "@type": "gist:GovernmentOrganization",
+    "name": "IRS Tax Exempt and Government Entities Division"
+  },
+  "authority_basis": {
+    "kind": "statutory",
+    "instrument_ref": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json"
+  },
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "website": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
+  "url_segment": "irs-tege"
+}

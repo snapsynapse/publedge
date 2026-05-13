@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Restriction",
+  "@id": "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json",
+  "id": "irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure",
+  "title": "§501(c)(3) Exemption Denied — Organizational And Operational Test Failure",
+  "content": "An organization fails §501(c)(3) exemption where its Articles of Incorporation neither limit purposes to exempt activities nor dedicate assets to exempt purposes on dissolution, and where a substantial portion of its activities consists of unrestricted commercial leasing coupled with fundraising that benefits a for-profit entity controlled by one of its own Directors. Bylaws containing the required provisions do not cure deficient Articles; a single substantial non-exempt purpose is disqualifying regardless of any exempt purposes present.",
+  "created_by": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
+  "anchors": [],
+  "publedge_primary_id": "irs-501c3-dual-test-failure",
+  "publedge_group": "restriction",
+  "publedge_status": "draft",
+  "search_terms": [
+    "501c3",
+    "organizational test",
+    "operational test",
+    "private inurement",
+    "commercial leasing",
+    "adverse determination"
+  ]
+}

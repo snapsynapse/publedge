@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Authority",
+  "@id": "https://publedge.org/authority/irs-chief-counsel.json",
+  "id": "irs-chief-counsel",
+  "organization": {
+    "@type": "gist:GovernmentOrganization",
+    "name": "IRS Office of Chief Counsel"
+  },
+  "authority_basis": {
+    "kind": "statutory",
+    "instrument_ref": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json"
+  },
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "website": "https://www.irs.gov/privacy-disclosure/written-determinations",
+  "url_segment": "irs-chief-counsel"
+}

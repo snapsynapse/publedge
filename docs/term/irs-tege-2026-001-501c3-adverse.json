@@ -1,0 +1,15 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
+  "id": "irs-tege-2026-001-501c3-adverse",
+  "text": "Holding",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
+  "creates": [
+    "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json"
+  ],
+  "anchors": [],
+  "source_heading": "Holding",
+  "source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md"
+}

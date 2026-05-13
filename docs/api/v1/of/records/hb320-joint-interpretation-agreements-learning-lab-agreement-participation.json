@@ -1,0 +1,22 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json",
+  "id": "hb320-joint-interpretation-agreements-learning-lab-agreement-participation",
+  "title": "Learning Lab Agreement — Eligibility and Participation",
+  "content": "A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or judiciary, higher-ed, or political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
+  "created_by": "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
+  "anchors": [],
+  "publedge_primary_id": "learning-lab-agreement-participation",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "learning lab",
+    "regulatory mitigation",
+    "joint interpretation",
+    "oaip",
+    "sandbox",
+    "sb149",
+    "hb320"
+  ]
+}

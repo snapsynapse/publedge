@@ -16,6 +16,7 @@ const path = require('path');
 const { parseYaml } = require('./lib/parse');
 const { loadMappingIndex } = require('./lib/mapping');
 const { loadMarkdownDir } = require('./lib/content');
+const { buildObligationFirstRecords, writeObligationFirstRecords } = require('./lib/obligation-first');
 
 const ROOT = path.join(__dirname, '..');
 // Output directory for the generated site.
@@ -2024,8 +2025,12 @@ function cleanGeneratedOutputs() {
         'authority',
         'compare',
         'container',
+        'determination',
+        'instrument',
+        'obligation',
         'primary',
         'requires',
+        'term',
         'us'
     ];
     for (const dir of managedDirs) removePath(path.join(DOCS_DIR, dir));
@@ -2113,6 +2118,10 @@ function build() {
     fs.writeFileSync(path.join(API_DIR, 'matrix.json'), JSON.stringify({ meta: { generated: new Date().toISOString() }, matrix }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'comparisons.json'), JSON.stringify({ meta: { generated: new Date().toISOString() }, comparisons }, null, 2));
 
+    const obligationFirstRecords = buildObligationFirstRecords(config, data);
+    writeObligationFirstRecords(config, obligationFirstRecords, DOCS_DIR);
+    console.log('  of/*.json: Obligation-First v0.1 binding records');
+
     // upcoming.json — future effective + term-end dates, sorted by proximity.
     {
         const today = new Date().toISOString().slice(0, 10);
@@ -2171,7 +2180,7 @@ function build() {
             items
         }, null, 2));
     }
-    fs.writeFileSync(path.join(API_DIR, 'index.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), version: '1.0', project: config.short_name || 'kac' }, files: { primaries: { path: 'primaries.json' }, containers: { path: 'containers.json' }, authorities: { path: 'authorities.json' }, mappings: { path: 'mappings.json' }, matrix: { path: 'matrix.json' }, comparisons: { path: 'comparisons.json' } } }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'index.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), version: '1.0', project: config.short_name || 'kac' }, files: { primaries: { path: 'primaries.json' }, containers: { path: 'containers.json' }, authorities: { path: 'authorities.json' }, mappings: { path: 'mappings.json' }, matrix: { path: 'matrix.json' }, comparisons: { path: 'comparisons.json' }, 'obligation-first': { path: 'of/index.json' } } }, null, 2));
 
     console.log('  JSON API: 6 files');
 

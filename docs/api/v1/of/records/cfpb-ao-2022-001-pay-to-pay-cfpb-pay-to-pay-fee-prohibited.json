@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Restriction",
+  "@id": "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json",
+  "id": "cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited",
+  "title": "Pay-To-Pay Fee Prohibited Without Express Authorization",
+  "content": "A debt collector subject to the Fair Debt Collection Practices Act may not charge a pay-to-pay convenience fee for online or phone payments unless the fee is either expressly authorized by the agreement creating the debt or affirmatively permitted by a specific law. Silence, absence of prohibition, and third-party payment-processor routing do not cure the violation.",
+  "created_by": "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
+  "anchors": [],
+  "publedge_primary_id": "cfpb-pay-to-pay-fee-prohibited",
+  "publedge_group": "restriction",
+  "publedge_status": "draft",
+  "search_terms": [
+    "fdcpa",
+    "pay-to-pay",
+    "convenience fee",
+    "debt collection",
+    "regulation f"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json",
+  "id": "dentacor-rma-obligations-rma-monthly-report-to-oaip",
+  "title": "RMA — Monthly Report To OAIP",
+  "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
+  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "rma-monthly-report-to-oaip",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "rma",
+    "reporting",
+    "monthly",
+    "oaip",
+    "learning lab"
+  ]
+}

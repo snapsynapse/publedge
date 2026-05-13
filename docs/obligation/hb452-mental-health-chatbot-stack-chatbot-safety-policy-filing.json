@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json",
+  "id": "hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing",
+  "title": "Mental Health Chatbot — File 15-Element Safety Policy",
+  "content": "A mental health chatbot supplier must draft, file with Utah's Division of Consumer Protection, and operationally comply with a fifteen-element written safety policy covering purposes, clinical practices, testing, risk protocols, user reporting, HIPAA posture, and more. Compliance with the filed policy at the time of an alleged violation provides an affirmative defense against §58-1-501(1)-(2) unauthorized-practice actions.",
+  "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+  "anchors": [],
+  "publedge_primary_id": "chatbot-safety-policy-filing",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "chatbot",
+    "mental health",
+    "safety policy",
+    "safe harbor",
+    "filing",
+    "hb452"
+  ]
+}

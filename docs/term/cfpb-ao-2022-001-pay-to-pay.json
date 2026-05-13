@@ -1,0 +1,15 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
+  "id": "cfpb-ao-2022-001-pay-to-pay",
+  "text": "Interpretive position",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
+  "creates": [
+    "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json"
+  ],
+  "anchors": [],
+  "source_heading": "Interpretive position",
+  "source_file": "data/examples/instruments/us-cfpb-ao-2022-001.md"
+}

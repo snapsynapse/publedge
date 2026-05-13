@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
+  "id": "us-cftc-dsio-il-2017-001",
+  "title": "CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling",
+  "short_title": "CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling",
+  "issuedBy": "https://publedge.org/authority/cftc-dsio.json",
+  "kind": "interpretive-letter",
+  "enacted": "2017-12-11",
+  "effective": "2017-12-11",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json"
+  ],
+  "source": "https://cftc.gov/csl/17-65/download",
+  "jurisdiction": "us",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/"
+}

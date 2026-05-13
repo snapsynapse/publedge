@@ -1,0 +1,18 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "generated": "2026-05-13T22:10:27.785Z",
+  "files": {
+    "authorities": "authorities.json",
+    "instruments": "instruments.json",
+    "terms": "terms.json",
+    "obligations": "obligations.json",
+    "determinations": "determinations.json"
+  },
+  "counts": {
+    "authorities": 7,
+    "instruments": 14,
+    "terms": 14,
+    "obligations": 47,
+    "determinations": 14
+  }
+}

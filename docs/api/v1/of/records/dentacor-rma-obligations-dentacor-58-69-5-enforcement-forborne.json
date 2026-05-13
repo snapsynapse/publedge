@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
+  "id": "dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne",
+  "title": "Dentacor — §58-69-5 Enforcement Forborne",
+  "content": "During the Dentacor demonstration period, the Utah Division of Professional Licensing (DOPL) forgoes enforcement of unlawful and unprofessional-conduct actions under Utah Code §58-69-5 solely for conduct authorized by the RMA. Enforcement remains in full force for any conduct outside the mitigation scope.",
+  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "dentacor-58-69-5-enforcement-forborne",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "dentacor",
+    "enforcement",
+    "58-69-5",
+    "unlawful conduct",
+    "forbearance"
+  ]
+}

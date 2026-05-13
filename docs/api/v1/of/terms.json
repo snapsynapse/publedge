@@ -1,0 +1,251 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "generated": "2026-05-13T22:10:27.785Z",
+  "terms": [
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
+      "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session",
+      "text": "Display disclosure: On first session, plainly identify the service as an AI chatbot Re-display on resumption: After 30 minutes of inactivity, re-display the disclosure",
+      "section": "Utah Code §13-72a-203",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
+      "creates": [
+        "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json"
+      ],
+      "anchors": [
+        "https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json"
+      ],
+      "source_heading": "First-Session Disclosure (§13-72a-203)",
+      "source_file": "data/examples/instruments/us-ut-oaip-jia-2026-001.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
+      "id": "sb149-learning-lab-and-ai-defense",
+      "text": "Summary",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
+      "creates": [
+        "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
+        "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json"
+      ],
+      "anchors": [],
+      "source_heading": "Summary",
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+      "id": "sb226-disclosure-and-ai-defense",
+      "text": "Summary",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
+      "creates": [
+        "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
+        "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
+        "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json"
+      ],
+      "anchors": [],
+      "source_heading": "Summary",
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+      "id": "hb452-mental-health-chatbot-stack",
+      "text": "Summary",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
+      "creates": [
+        "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
+        "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
+        "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json"
+      ],
+      "anchors": [],
+      "source_heading": "Summary",
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
+      "id": "hb320-joint-interpretation-agreements",
+      "text": "Summary",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
+      "creates": [
+        "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json"
+      ],
+      "anchors": [],
+      "source_heading": "Summary",
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "id": "elizachat-rma-obligations",
+      "text": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+      "creates": [
+        "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json",
+        "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json",
+        "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json",
+        "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json",
+        "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json",
+        "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json",
+        "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
+        "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json"
+      ],
+      "anchors": [],
+      "source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "id": "dentacor-rma-obligations",
+      "text": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+      "creates": [
+        "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json",
+        "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json",
+        "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json",
+        "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json",
+        "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
+        "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json",
+        "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
+        "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json"
+      ],
+      "anchors": [],
+      "source_heading": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-001.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "id": "doctronic-rma-obligations",
+      "text": "Obligations summary (Section 6 and Schedule A §16)",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+      "creates": [
+        "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
+        "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
+        "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json",
+        "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json",
+        "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json",
+        "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json",
+        "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
+        "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json"
+      ],
+      "anchors": [],
+      "source_heading": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/legion-rma-obligations.json",
+      "id": "legion-rma-obligations",
+      "text": "Obligations summary (Section 6 and Schedule A §17)",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+      "creates": [
+        "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json",
+        "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json",
+        "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json",
+        "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json",
+        "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json",
+        "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json",
+        "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
+        "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json"
+      ],
+      "anchors": [],
+      "source_heading": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2026-001.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
+      "id": "cfpb-ao-2022-001-pay-to-pay",
+      "text": "Interpretive position",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
+      "creates": [
+        "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json"
+      ],
+      "anchors": [],
+      "source_heading": "Interpretive position",
+      "source_file": "data/examples/instruments/us-cfpb-ao-2022-001.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
+      "id": "cftc-il-17-65-cta-unbundled-fee",
+      "text": "Interpretive position",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
+      "creates": [
+        "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json"
+      ],
+      "anchors": [],
+      "source_heading": "Interpretive position",
+      "source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
+      "id": "irs-plr-202506001-incentive-fee",
+      "text": "Holding",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
+      "creates": [
+        "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json"
+      ],
+      "anchors": [],
+      "source_heading": "Holding",
+      "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
+      "id": "irs-tege-2026-001-501c3-adverse",
+      "text": "Holding",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
+      "creates": [
+        "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json"
+      ],
+      "anchors": [],
+      "source_heading": "Holding",
+      "source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
+      "id": "sec-corpfin-nal-2025-001-rule-506c",
+      "text": "Staff position",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
+      "creates": [
+        "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json"
+      ],
+      "anchors": [],
+      "source_heading": "Staff position",
+      "source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md"
+    }
+  ]
+}

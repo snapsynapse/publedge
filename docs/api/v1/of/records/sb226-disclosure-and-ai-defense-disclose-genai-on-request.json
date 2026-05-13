@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
+  "id": "sb226-disclosure-and-ai-defense-disclose-genai-on-request",
+  "title": "Disclose GenAI On Consumer Request",
+  "content": "A supplier using generative AI in a consumer transaction must disclose that fact when the consumer makes a clear and unambiguous request. A safe harbor is available: a clear and conspicuous disclosure at the outset and throughout the interaction eliminates enforcement exposure, regardless of whether a request is made.",
+  "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+  "anchors": [],
+  "publedge_primary_id": "disclose-genai-on-request",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "disclosure",
+    "genai",
+    "consumer request",
+    "safe harbor",
+    "sb226"
+  ]
+}

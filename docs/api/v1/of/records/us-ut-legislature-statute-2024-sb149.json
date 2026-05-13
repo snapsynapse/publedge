@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
+  "id": "us-ut-legislature-statute-2024-sb149",
+  "title": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+  "short_title": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "kind": "statute",
+  "enacted": "2024-03-13",
+  "effective": "2024-05-01",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
+  ],
+  "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+  "jurisdiction": "us-ut",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/utah/legislature/statute/2024-001/"
+}

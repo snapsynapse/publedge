@@ -1,0 +1,936 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "generated": "2026-05-13T22:10:27.785Z",
+  "obligations": [
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json",
+      "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session",
+      "title": "Disclose GenAI on First Session",
+      "content": "A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.",
+      "created_by": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
+      "anchors": [
+        "https://everyailaw.com/obligation/transparency.json"
+      ],
+      "publedge_primary_id": "disclose-genai-on-first-session",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "disclosure",
+        "genai",
+        "first session",
+        "chatbot"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
+      "id": "sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation",
+      "title": "Learning Lab Agreement — Eligibility and Participation",
+      "content": "A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or judiciary, higher-ed, or political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
+      "created_by": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
+      "anchors": [],
+      "publedge_primary_id": "learning-lab-agreement-participation",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "learning lab",
+        "regulatory mitigation",
+        "joint interpretation",
+        "oaip",
+        "sandbox",
+        "sb149",
+        "hb320"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json",
+      "id": "sb149-learning-lab-and-ai-defense-ai-defense-elimination",
+      "title": "GenAI Is Not A Defense — Civil And Criminal",
+      "content": "Utah removed \"the AI did it\" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror (§13-75-102, SB 226, effective 2025-05-07) together eliminate the doctrine across Utah consumer-protection and criminal law.",
+      "created_by": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
+      "anchors": [],
+      "publedge_primary_id": "ai-defense-elimination",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "ai defense",
+        "liability",
+        "civil",
+        "criminal",
+        "sb149",
+        "sb226"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
+      "id": "sb226-disclosure-and-ai-defense-disclose-genai-on-request",
+      "title": "Disclose GenAI On Consumer Request",
+      "content": "A supplier using generative AI in a consumer transaction must disclose that fact when the consumer makes a clear and unambiguous request. A safe harbor is available: a clear and conspicuous disclosure at the outset and throughout the interaction eliminates enforcement exposure, regardless of whether a request is made.",
+      "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+      "anchors": [],
+      "publedge_primary_id": "disclose-genai-on-request",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "disclosure",
+        "genai",
+        "consumer request",
+        "safe harbor",
+        "sb226"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
+      "id": "sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive",
+      "title": "Proactive GenAI Disclosure In High-Risk Interactions",
+      "content": "A supplier engaged in a \"high-risk AI interaction\" in a regulated occupation must proactively disclose GenAI use before the interaction begins — verbally at the start of an oral exchange, and in writing before a written exchange. The high-risk tier is statutorily defined and narrower than general consumer interactions.",
+      "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+      "anchors": [],
+      "publedge_primary_id": "disclose-genai-high-risk-proactive",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "disclosure",
+        "high-risk",
+        "regulated occupation",
+        "proactive",
+        "sb226"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json",
+      "id": "sb226-disclosure-and-ai-defense-ai-defense-elimination",
+      "title": "GenAI Is Not A Defense — Civil And Criminal",
+      "content": "Utah removed \"the AI did it\" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror (§13-75-102, SB 226, effective 2025-05-07) together eliminate the doctrine across Utah consumer-protection and criminal law.",
+      "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+      "anchors": [],
+      "publedge_primary_id": "ai-defense-elimination",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "ai defense",
+        "liability",
+        "civil",
+        "criminal",
+        "sb149",
+        "sb226"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
+      "id": "hb452-mental-health-chatbot-stack-disclose-genai-on-first-session",
+      "title": "Disclose GenAI on First Session",
+      "content": "A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.",
+      "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+      "anchors": [],
+      "publedge_primary_id": "disclose-genai-on-first-session",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "disclosure",
+        "genai",
+        "first session",
+        "chatbot"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
+      "id": "hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing",
+      "title": "Mental Health Chatbot — No Third-Party Data Sharing",
+      "content": "A mental health chatbot supplier may not sell or share identifiable health information or user inputs with third parties. Narrow exceptions exist for user-consented or user-requested transfers to a health care provider or plan. Third-party sharing for functionality requires HIPAA-equivalent controls (45 CFR Parts 160 and 164, Subparts A and E) as if the supplier were a covered entity.",
+      "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+      "anchors": [],
+      "publedge_primary_id": "chatbot-data-no-third-party-sharing",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "chatbot",
+        "mental health",
+        "data protection",
+        "hipaa",
+        "hb452"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json",
+      "id": "hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing",
+      "title": "Mental Health Chatbot — File 15-Element Safety Policy",
+      "content": "A mental health chatbot supplier must draft, file with Utah's Division of Consumer Protection, and operationally comply with a fifteen-element written safety policy covering purposes, clinical practices, testing, risk protocols, user reporting, HIPAA posture, and more. Compliance with the filed policy at the time of an alleged violation provides an affirmative defense against §58-1-501(1)-(2) unauthorized-practice actions.",
+      "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+      "anchors": [],
+      "publedge_primary_id": "chatbot-safety-policy-filing",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "chatbot",
+        "mental health",
+        "safety policy",
+        "safe harbor",
+        "filing",
+        "hb452"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json",
+      "id": "hb320-joint-interpretation-agreements-learning-lab-agreement-participation",
+      "title": "Learning Lab Agreement — Eligibility and Participation",
+      "content": "A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or judiciary, higher-ed, or political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
+      "created_by": "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
+      "anchors": [],
+      "publedge_primary_id": "learning-lab-agreement-participation",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "learning lab",
+        "regulatory mitigation",
+        "joint interpretation",
+        "oaip",
+        "sandbox",
+        "sb149",
+        "hb320"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json",
+      "id": "elizachat-rma-obligations-rma-monthly-report-to-oaip",
+      "title": "RMA — Monthly Report To OAIP",
+      "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
+      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-monthly-report-to-oaip",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "reporting",
+        "monthly",
+        "oaip",
+        "learning lab"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json",
+      "id": "elizachat-rma-obligations-rma-end-of-term-report",
+      "title": "RMA — 30-Day End-Of-Term Report",
+      "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
+      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-end-of-term-report",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "reporting",
+        "termination",
+        "end of term"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json",
+      "id": "elizachat-rma-obligations-rma-data-security-63a-19-102",
+      "title": "RMA — Data Security Under §63A-19-102",
+      "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
+      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-data-security-63a-19-102",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "data security",
+        "cybersecurity",
+        "63a-19-102"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json",
+      "id": "elizachat-rma-obligations-rma-hold-harmless-state",
+      "title": "RMA — Hold Harmless The State",
+      "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
+      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-hold-harmless-state",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "indemnification",
+        "hold harmless"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json",
+      "id": "elizachat-rma-obligations-rma-no-advertising-reference",
+      "title": "RMA — No Advertising Reference To Agreement",
+      "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
+      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-no-advertising-reference",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "advertising",
+        "promotion",
+        "marketing"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json",
+      "id": "elizachat-rma-obligations-rma-incident-notification-24hr",
+      "title": "RMA — 24-Hour Incident Notification",
+      "content": "An RMA participant must notify OAIP within 24 hours of any incident that results in harm to the health, safety, or financial well-being of a user of the mitigated technology.",
+      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-incident-notification-24hr",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "incident",
+        "notification",
+        "harm",
+        "24 hours"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
+      "id": "elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle",
+      "title": "ElizaChat — Pre-Access Disclosure Bundle",
+      "content": "Before granting any user access to ElizaChat app functionality, the participant must present a five-element disclosure — participant identity, GenAI use notice, testing-risk notice, data use and sharing practices, and OAIP complaint channel — in clear and conspicuous form, and must secure user acknowledgment before access is granted.",
+      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "elizachat-pre-access-disclosure-bundle",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "elizachat",
+        "disclosure",
+        "pre-access",
+        "disclosure bundle"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json",
+      "id": "elizachat-rma-obligations-elizachat-phased-rollout",
+      "title": "ElizaChat — Three-Phase Rollout Gate",
+      "content": "ElizaChat must be released in three sequential phases — OAIP trusted-tester cohort, OAIP-reviewed limited student cohort, and full Utah-district student availability — with written OAIP approval required before advancing to each subsequent phase.",
+      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "elizachat-phased-rollout",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "elizachat",
+        "phased rollout",
+        "trusted tester",
+        "phase gate"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json",
+      "id": "dentacor-rma-obligations-rma-monthly-report-to-oaip",
+      "title": "RMA — Monthly Report To OAIP",
+      "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
+      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-monthly-report-to-oaip",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "reporting",
+        "monthly",
+        "oaip",
+        "learning lab"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json",
+      "id": "dentacor-rma-obligations-rma-end-of-term-report",
+      "title": "RMA — 30-Day End-Of-Term Report",
+      "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
+      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-end-of-term-report",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "reporting",
+        "termination",
+        "end of term"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json",
+      "id": "dentacor-rma-obligations-rma-data-security-63a-19-102",
+      "title": "RMA — Data Security Under §63A-19-102",
+      "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
+      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-data-security-63a-19-102",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "data security",
+        "cybersecurity",
+        "63a-19-102"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json",
+      "id": "dentacor-rma-obligations-rma-hold-harmless-state",
+      "title": "RMA — Hold Harmless The State",
+      "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
+      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-hold-harmless-state",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "indemnification",
+        "hold harmless"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
+      "id": "dentacor-rma-obligations-rma-no-advertising-reference",
+      "title": "RMA — No Advertising Reference To Agreement",
+      "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
+      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-no-advertising-reference",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "advertising",
+        "promotion",
+        "marketing"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json",
+      "id": "dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis",
+      "title": "Dentacor — Hygienist + AI Concurrence Diagnosis",
+      "content": "Licensed Utah dental hygienists employed by Dentacor may diagnose periodontal disease, complete edentulism, and complete anodontia using an AI-assisted radiograph diagnostic tool in place of general dentist supervision. Diagnosis requires concurrence of both the hygienist and the AI system, and is limited to the procedures authorized under the companion permission (scaling and root planing; fitting of full dentures).",
+      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "dentacor-hygienist-ai-concurrence-diagnosis",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "dentacor",
+        "hygienist",
+        "radiograph",
+        "diagnosis",
+        "ai concurrence"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
+      "id": "dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne",
+      "title": "Dentacor — §58-69-5 Enforcement Forborne",
+      "content": "During the Dentacor demonstration period, the Utah Division of Professional Licensing (DOPL) forgoes enforcement of unlawful and unprofessional-conduct actions under Utah Code §58-69-5 solely for conduct authorized by the RMA. Enforcement remains in full force for any conduct outside the mitigation scope.",
+      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "dentacor-58-69-5-enforcement-forborne",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "dentacor",
+        "enforcement",
+        "58-69-5",
+        "unlawful conduct",
+        "forbearance"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json",
+      "id": "dentacor-rma-obligations-dentacor-informed-consent-no-dentist",
+      "title": "Dentacor — Informed Consent Disclosing Absence Of Dentist",
+      "content": "Before performing any RMA-authorized procedure, a Dentacor-employed hygienist must obtain patient informed consent that explicitly discloses the absence of dentist supervision and explains that a hygienist does not have the full training or scope of practice of a dentist.",
+      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "dentacor-informed-consent-no-dentist",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "dentacor",
+        "informed consent",
+        "dentist supervision",
+        "patient disclosure"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
+      "id": "doctronic-rma-obligations-rma-monthly-report-to-oaip",
+      "title": "RMA — Monthly Report To OAIP",
+      "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
+      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-monthly-report-to-oaip",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "reporting",
+        "monthly",
+        "oaip",
+        "learning lab"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
+      "id": "doctronic-rma-obligations-rma-end-of-term-report",
+      "title": "RMA — 30-Day End-Of-Term Report",
+      "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
+      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-end-of-term-report",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "reporting",
+        "termination",
+        "end of term"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json",
+      "id": "doctronic-rma-obligations-rma-data-security-63a-19-102",
+      "title": "RMA — Data Security Under §63A-19-102",
+      "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
+      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-data-security-63a-19-102",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "data security",
+        "cybersecurity",
+        "63a-19-102"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json",
+      "id": "doctronic-rma-obligations-rma-hold-harmless-state",
+      "title": "RMA — Hold Harmless The State",
+      "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
+      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-hold-harmless-state",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "indemnification",
+        "hold harmless"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json",
+      "id": "doctronic-rma-obligations-rma-no-advertising-reference",
+      "title": "RMA — No Advertising Reference To Agreement",
+      "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
+      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-no-advertising-reference",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "advertising",
+        "promotion",
+        "marketing"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json",
+      "id": "doctronic-rma-obligations-ai-authorized-rx-renewal",
+      "title": "AI-Authorized Prescription Renewal (Utah Pilot)",
+      "content": "During the mitigation period, a participant may use its AI technology to authorize the renewal of a verified prescription for a Utah resident and issue such prescriptions to a pharmacist licensed under Utah Code §58-17b. Mitigation applies solely to the renewal workflow described in the Proposal; it does not extend to new prescriptions, other services, or products outside the authorized scope.",
+      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "ai-authorized-rx-renewal",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "prescription renewal",
+        "ai rx",
+        "telehealth",
+        "doctronic",
+        "legion",
+        "58-17b"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
+      "id": "doctronic-rma-obligations-named-prescriber-enforcement-forborne",
+      "title": "Named-Prescriber Enforcement Forborne",
+      "content": "DOPL forgoes unlawful-conduct and unprofessional-conduct enforcement under §58-1-501(1)-(2) and related professional-licensing provisions against any provider who (1) acts solely as the named prescriber for AI-authorized renewals, (2) does not interact directly with a patient or other provider, and (3) complies with the RMA terms. Forbearance applies only to conduct authorized by the agreement.",
+      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "named-prescriber-enforcement-forborne",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "named prescriber",
+        "enforcement forbearance",
+        "unprofessional conduct",
+        "58-1-501",
+        "doctronic",
+        "legion"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json",
+      "id": "doctronic-rma-obligations-telehealth-compliance-per-proposal",
+      "title": "Telehealth Compliance Anchored To Participant Proposal",
+      "content": "A participant operating AI-assisted prescription renewal must adhere to Utah's telehealth provider requirements in §26B-4-704, with specific subsections deemed satisfied by following the patient-journey and escalation protocols described in the participant's Proposal (Schedule B). Certain subsections (e.g., the patient-records portability default) are inapplicable; others are substituted by Proposal-section conformance.",
+      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "telehealth-compliance-per-proposal",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "telehealth",
+        "26b-4-704",
+        "proposal compliance",
+        "doctronic",
+        "legion"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json",
+      "id": "legion-rma-obligations-rma-monthly-report-to-oaip",
+      "title": "RMA — Monthly Report To OAIP",
+      "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
+      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-monthly-report-to-oaip",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "reporting",
+        "monthly",
+        "oaip",
+        "learning lab"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json",
+      "id": "legion-rma-obligations-rma-end-of-term-report",
+      "title": "RMA — 30-Day End-Of-Term Report",
+      "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
+      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-end-of-term-report",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "reporting",
+        "termination",
+        "end of term"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json",
+      "id": "legion-rma-obligations-rma-data-security-63a-19-102",
+      "title": "RMA — Data Security Under §63A-19-102",
+      "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
+      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-data-security-63a-19-102",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "data security",
+        "cybersecurity",
+        "63a-19-102"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json",
+      "id": "legion-rma-obligations-rma-hold-harmless-state",
+      "title": "RMA — Hold Harmless The State",
+      "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
+      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-hold-harmless-state",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "indemnification",
+        "hold harmless"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json",
+      "id": "legion-rma-obligations-rma-no-advertising-reference",
+      "title": "RMA — No Advertising Reference To Agreement",
+      "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
+      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "rma-no-advertising-reference",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rma",
+        "advertising",
+        "promotion",
+        "marketing"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json",
+      "id": "legion-rma-obligations-ai-authorized-rx-renewal",
+      "title": "AI-Authorized Prescription Renewal (Utah Pilot)",
+      "content": "During the mitigation period, a participant may use its AI technology to authorize the renewal of a verified prescription for a Utah resident and issue such prescriptions to a pharmacist licensed under Utah Code §58-17b. Mitigation applies solely to the renewal workflow described in the Proposal; it does not extend to new prescriptions, other services, or products outside the authorized scope.",
+      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "ai-authorized-rx-renewal",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "prescription renewal",
+        "ai rx",
+        "telehealth",
+        "doctronic",
+        "legion",
+        "58-17b"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
+      "id": "legion-rma-obligations-named-prescriber-enforcement-forborne",
+      "title": "Named-Prescriber Enforcement Forborne",
+      "content": "DOPL forgoes unlawful-conduct and unprofessional-conduct enforcement under §58-1-501(1)-(2) and related professional-licensing provisions against any provider who (1) acts solely as the named prescriber for AI-authorized renewals, (2) does not interact directly with a patient or other provider, and (3) complies with the RMA terms. Forbearance applies only to conduct authorized by the agreement.",
+      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "named-prescriber-enforcement-forborne",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "named prescriber",
+        "enforcement forbearance",
+        "unprofessional conduct",
+        "58-1-501",
+        "doctronic",
+        "legion"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json",
+      "id": "legion-rma-obligations-telehealth-compliance-per-proposal",
+      "title": "Telehealth Compliance Anchored To Participant Proposal",
+      "content": "A participant operating AI-assisted prescription renewal must adhere to Utah's telehealth provider requirements in §26B-4-704, with specific subsections deemed satisfied by following the patient-journey and escalation protocols described in the participant's Proposal (Schedule B). Certain subsections (e.g., the patient-records portability default) are inapplicable; others are substituted by Proposal-section conformance.",
+      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "telehealth-compliance-per-proposal",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "telehealth",
+        "26b-4-704",
+        "proposal compliance",
+        "doctronic",
+        "legion"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json",
+      "id": "cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited",
+      "title": "Pay-To-Pay Fee Prohibited Without Express Authorization",
+      "content": "A debt collector subject to the Fair Debt Collection Practices Act may not charge a pay-to-pay convenience fee for online or phone payments unless the fee is either expressly authorized by the agreement creating the debt or affirmatively permitted by a specific law. Silence, absence of prohibition, and third-party payment-processor routing do not cure the violation.",
+      "created_by": "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
+      "anchors": [],
+      "publedge_primary_id": "cfpb-pay-to-pay-fee-prohibited",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "fdcpa",
+        "pay-to-pay",
+        "convenience fee",
+        "debt collection",
+        "regulation f"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json",
+      "id": "cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger",
+      "title": "Unbundled Advice Fee Does Not Trigger CTA Registration",
+      "content": "A registered FCM, swap dealer, or introducing broker that qualifies for the CTA exclusion or exemption does not lose that status solely because it begins receiving a separate unbundled fee for commodity trading advice. The \"solely incidental\" or \"solely in connection with\" test continues to govern under a facts-and-circumstances analysis; separate compensation is one factor but is not dispositive.",
+      "created_by": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
+      "anchors": [],
+      "publedge_primary_id": "cftc-unbundled-fee-not-cta-trigger",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "cta registration",
+        "mifid ii",
+        "fcm",
+        "swap dealer",
+        "introducing broker",
+        "unbundled fee"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json",
+      "id": "irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share",
+      "title": "Incentive-Fee Management Contract Not A Share Of Net Profits",
+      "content": "On the facts represented, an incentive-fee management contract between a §501(c)(3) bond issuer and a hotel manager — where the incentive fee is calculated on gross revenue subject to an adjustment contingent on a net-profit-variant metric — does not constitute sharing of net profits under Rev. Proc. 2017-13 §5.02(2) and therefore does not cause private business use under IRC §141. The ruling applies only to the requesting taxpayer on the specific facts presented.",
+      "created_by": "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
+      "anchors": [],
+      "publedge_primary_id": "irs-incentive-fee-not-net-profits-share",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "private business use",
+        "501c3 bonds",
+        "rev proc 2017-13",
+        "safe harbor",
+        "incentive fee"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Restriction",
+      "@id": "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json",
+      "id": "irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure",
+      "title": "§501(c)(3) Exemption Denied — Organizational And Operational Test Failure",
+      "content": "An organization fails §501(c)(3) exemption where its Articles of Incorporation neither limit purposes to exempt activities nor dedicate assets to exempt purposes on dissolution, and where a substantial portion of its activities consists of unrestricted commercial leasing coupled with fundraising that benefits a for-profit entity controlled by one of its own Directors. Bylaws containing the required provisions do not cure deficient Articles; a single substantial non-exempt purpose is disqualifying regardless of any exempt purposes present.",
+      "created_by": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
+      "anchors": [],
+      "publedge_primary_id": "irs-501c3-dual-test-failure",
+      "publedge_group": "restriction",
+      "publedge_status": "draft",
+      "search_terms": [
+        "501c3",
+        "organizational test",
+        "operational test",
+        "private inurement",
+        "commercial leasing",
+        "adverse determination"
+      ]
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json",
+      "id": "sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor",
+      "title": "Rule 506(c) Verification Via High-Minimum + Representation",
+      "content": "An issuer conducting a Rule 506(c) offering satisfies the \"reasonable steps to verify\" accredited-investor requirement when it (1) imposes a minimum investment amount high enough that only accredited investors would reasonably be expected to meet it, (2) obtains written representations of accredited status and that the investment is not financed by a third party for purposes of the investment, and (3) has no actual knowledge of contradictory facts. The position restates the principles-based standard; it does not create an exclusive verification method.",
+      "created_by": "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
+      "anchors": [],
+      "publedge_primary_id": "sec-reg-d-506c-verification-safe-harbor",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "rule 506c",
+        "accredited investor",
+        "reasonable steps to verify",
+        "regulation d",
+        "private placement"
+      ]
+    }
+  ]
+}

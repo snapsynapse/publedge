@@ -1,0 +1,20 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Authority",
+  "@id": "https://publedge.org/authority/sec-corpfin.json",
+  "id": "sec-corpfin",
+  "organization": {
+    "@type": "gist:GovernmentOrganization",
+    "name": "SEC Division of Corporation Finance"
+  },
+  "authority_basis": {
+    "kind": "statutory",
+    "instrument_ref": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json"
+  },
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "website": "https://www.sec.gov/divisions/corpfin",
+  "url_segment": "sec-corpfin"
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Determination",
+  "@id": "https://publedge.org/determination/us-irs-chief-counsel-plr-2025-001-issuance.json",
+  "id": "us-irs-chief-counsel-plr-2025-001-issuance",
+  "issued_date": "2025-02-07",
+  "issuedBy": "https://publedge.org/authority/irs-chief-counsel.json",
+  "decides": [],
+  "disposition": "issued",
+  "target_instrument": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
+  "notes": "Issuance record for IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141).",
+  "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf"
+}

@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json",
+  "id": "doctronic-rma-obligations-ai-authorized-rx-renewal",
+  "title": "AI-Authorized Prescription Renewal (Utah Pilot)",
+  "content": "During the mitigation period, a participant may use its AI technology to authorize the renewal of a verified prescription for a Utah resident and issue such prescriptions to a pharmacist licensed under Utah Code §58-17b. Mitigation applies solely to the renewal workflow described in the Proposal; it does not extend to new prescriptions, other services, or products outside the authorized scope.",
+  "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "ai-authorized-rx-renewal",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "prescription renewal",
+    "ai rx",
+    "telehealth",
+    "doctronic",
+    "legion",
+    "58-17b"
+  ]
+}

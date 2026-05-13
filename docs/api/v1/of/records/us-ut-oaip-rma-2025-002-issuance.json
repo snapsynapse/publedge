@@ -1,0 +1,13 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Determination",
+  "@id": "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json",
+  "id": "us-ut-oaip-rma-2025-002-issuance",
+  "issued_date": "2025-10-24",
+  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "decides": [],
+  "disposition": "issued",
+  "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+  "notes": "Issuance record for Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025).",
+  "source": "https://commerce.utah.gov/ai/agreements/doctronic/"
+}

@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
+  "id": "doctronic-rma-obligations-named-prescriber-enforcement-forborne",
+  "title": "Named-Prescriber Enforcement Forborne",
+  "content": "DOPL forgoes unlawful-conduct and unprofessional-conduct enforcement under §58-1-501(1)-(2) and related professional-licensing provisions against any provider who (1) acts solely as the named prescriber for AI-authorized renewals, (2) does not interact directly with a patient or other provider, and (3) complies with the RMA terms. Forbearance applies only to conduct authorized by the agreement.",
+  "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "named-prescriber-enforcement-forborne",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "named prescriber",
+    "enforcement forbearance",
+    "unprofessional conduct",
+    "58-1-501",
+    "doctronic",
+    "legion"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
+  "id": "sb149-learning-lab-and-ai-defense",
+  "text": "Summary",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
+  "creates": [
+    "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
+    "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json"
+  ],
+  "anchors": [],
+  "source_heading": "Summary",
+  "source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md"
+}

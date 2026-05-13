@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
+  "id": "hb452-mental-health-chatbot-stack-disclose-genai-on-first-session",
+  "title": "Disclose GenAI on First Session",
+  "content": "A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.",
+  "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+  "anchors": [],
+  "publedge_primary_id": "disclose-genai-on-first-session",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "disclosure",
+    "genai",
+    "first session",
+    "chatbot"
+  ]
+}

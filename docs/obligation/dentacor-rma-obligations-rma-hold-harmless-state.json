@@ -1,0 +1,18 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json",
+  "id": "dentacor-rma-obligations-rma-hold-harmless-state",
+  "title": "RMA — Hold Harmless The State",
+  "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
+  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "rma-hold-harmless-state",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "rma",
+    "indemnification",
+    "hold harmless"
+  ]
+}

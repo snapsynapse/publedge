@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
+  "id": "doctronic-rma-obligations-rma-end-of-term-report",
+  "title": "RMA — 30-Day End-Of-Term Report",
+  "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
+  "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "rma-end-of-term-report",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "rma",
+    "reporting",
+    "termination",
+    "end of term"
+  ]
+}

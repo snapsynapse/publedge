@@ -1,0 +1,21 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+  "id": "us-ut-oaip-rma-2025-001",
+  "title": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
+  "short_title": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
+  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "kind": "rma",
+  "enacted": "2025-05-31",
+  "effective": "2025-05-31",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [
+    "https://publedge.org/term/dentacor-rma-obligations.json"
+  ],
+  "source": "https://commerce.utah.gov/ai/agreements/dentacor/",
+  "jurisdiction": "us-ut",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-001/"
+}
