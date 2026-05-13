@@ -12,6 +12,7 @@ const scripts = [
     'eval-discovery.js',
     'eval-mcp-contract.js',
     'eval-content-source.js',
+    'eval-obligation-first-binding.js',
     'eval-redirects.js',
     'eval-deterministic-build.js',
     'eval-links.js',
