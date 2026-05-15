@@ -13,6 +13,10 @@ Plain markdown with structured frontmatter. Hash-pinned for integrity. Bound to 
 
 **Drafting in public. v0.1.0-pre. Subject to revision before the v0.1 freeze.**
 
+## Part of the PAICE legal graph
+
+PubLedge is one component of the PAICE legal graph (with EveryAILaw, AI Incident Law, and Obligation First). It is intentionally open: code under Apache 2.0, protocol and content under CC BY 4.0, commercial use permitted with attribution. The open siblings are funded by EveryAILaw Pro, the graph's single restricted layer; openness here is a deliberate PBC-charter choice. The canonical model is in the PAICE Foundation INTENT.
+
 ## What this repo is
 
 Three things in one place:
