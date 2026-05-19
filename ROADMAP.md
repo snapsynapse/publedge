@@ -159,6 +159,7 @@ Triggered once Utah instance meets the six testable structural claims in the for
 - JSON-LD on `applies-to/*` bridge pages.
 - Webhooks / push channel: GitHub Actions → Discord/Slack on new records; POST-subscribable `push.json` endpoint.
 - Per-record "Cite this record" block (BibTeX, Bluebook, Hansard inline).
+- Per-record provenance panel: render the MANIFEST SHA-256 plus git change history (when changed, by whom, supporting source) on each record page, so the existing integrity layer is visible without cloning. Pairs with the planned browser-side registry browser. Mechanism already exists (MANIFEST + git + CI drift-fail); this is rendering only, not new trust machinery.
 
 **Engineering:**
 - Signed commits + hash-chain verification enforcement in CI.

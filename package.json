@@ -1,8 +1,8 @@
 {
-  "name": "knowledge-as-code-template",
-  "version": "1.0.0",
-  "description": "Template for building structured, version-controlled knowledge bases with an ontology-first approach.",
-  "license": "MIT",
+  "name": "publedge",
+  "version": "0.1.0-pre",
+  "description": "Open recordkeeping protocol for fact-specific written interpretations between two parties (JIAs, RMAs, no-action letters, advisory opinions, private letter rulings). Plain markdown, hash-pinned, gist-bound.",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "node scripts/build.js && node scripts/build-extras.js",
     "build:kac": "node scripts/build.js",
@@ -23,18 +23,21 @@
     "eval:verification-exit": "node scripts/eval-verification-exit.js"
   },
   "author": "PAICE.work PBC <https://paice.work/>",
-  "homepage": "https://github.com/snapsynapse/knowledge-as-code-template",
+  "homepage": "https://publedge.org/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/snapsynapse/knowledge-as-code-template"
+    "url": "https://github.com/snapsynapse/publedge"
   },
   "keywords": [
     "knowledge-base",
     "ontology",
     "static-site",
-    "zero-dependency",
     "knowledge-as-code",
-    "mcp"
+    "mcp",
+    "legal",
+    "regulatory",
+    "jia",
+    "rma"
   ],
   "engines": {
     "node": ">=16"

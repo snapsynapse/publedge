@@ -11,7 +11,7 @@ Open recordkeeping protocol for fact-specific written interpretations between tw
 
 Plain markdown with structured frontmatter. Hash-pinned for integrity. Bound to the [Semantic Arts gist](https://www.semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
 
-**Drafting in public. v0.1.0-pre. Subject to revision before the v0.1 freeze.**
+**Public. Spec frozen at v0.1.0-pre (2026-04-22). Drafting continues in public toward v0.2.**
 
 ## Part of the PAICE legal graph
 
@@ -158,10 +158,12 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | Explicit AI-crawler allowlist in `robots.txt` | done |
 | Agent-readiness + a11y audit artifacts in `audits/` + `.a11y-audit/` | done |
 | Axe-core WCAG 2.1 AA remediation (4 rules, 70 instances → 0) | done |
-| Private snapshot for pre-release review | staged |
-| Lawyer review (SLC attorney, week of 2026-04-20) | pending |
-| repo-polish + promo-orchestrator + public announcement | planned at release |
+| Private snapshot for pre-release review | sent |
+| Lawyer review (SLC attorney) | pending |
+| repo-polish | done |
+| Repository public | done |
+| promo-orchestrator + public announcement | pending |
 | Browser-side registry browser + comparison tooling | planned for v0.2 |
 | Branch-and-strip to reusable protocol template | planned for v0.2 |
 
-See [ROADMAP.md](ROADMAP.md) for phasing, [HANDOFF.md](HANDOFF.md) for the next-session pickup brief, and [_workshop/ROADMAP.md](_workshop/ROADMAP.md) for the original workshop plan.
+See [ROADMAP.md](ROADMAP.md) for phasing and [_workshop/ROADMAP.md](_workshop/ROADMAP.md) for the original workshop plan.
