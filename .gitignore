@@ -31,6 +31,10 @@ _private/
 .env
 .env.*
 
+# Eval scratch runs and local agent config — not for the public repo
+publedge-eval-*/
+.agents/
+
 # --- baseline additions (automated audit 2026-04-21) ---
 __pycache__/
 *.pyc
