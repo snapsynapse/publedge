@@ -107,18 +107,18 @@ files:
   # Data — mapping
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:3f9308318a0768a932d25cc0189cafe289a887731960d51251104d98a06c723e
+    hash: sha256:3b1263ab438ca9533d9b26ab48fadbb6620b2df39bf325ed59cd1128f4fe7d40
     note: Connects instruments to obligations via terms
 
   # Protocol prose
   - path: README.md
     role: protocol
-    hash: sha256:753a67239148e1b8d1625a4c4bb4be296b4a6fcc48a8b43f79436da03af37f8b
+    hash: sha256:f73cc8fea680776b36120d21ad8807368dd76f0e3fbe05187c0b8195a3004565
     note: Repository overview rendered on GitHub
 
   - path: PROTOCOL.md
     role: protocol
-    hash: sha256:7b03b79b942466fdf59935214dcd5ab9e70f60043e1c03de3b94725473d20bb8
+    hash: sha256:8cf479e8c6c13e64779f89c037e84d4887b65a0275044dbfdfee71418db11ca6
     note: PubLedge protocol specification
 
   - path: PRIOR-ART.md
@@ -174,5 +174,5 @@ files:
 
   - path: ROADMAP.md
     role: spec
-    hash: sha256:06bd146ca6404fa7cd4f5f6115adee4c9fc967348ecb32e62a044995be134dcd
+    hash: sha256:2c8172d6e25a607941e03a9fc8b1f96f01174fe504c424f1a17d45537964982b
     note: Living roadmap — housekeeping document for v0.1 / v0.2 tracking

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-05-13T22:10:27.833Z",
+    "generated": "2026-05-19T05:39:38.882Z",
     "count": 14,
     "window_days": 30
   },
@@ -126,7 +126,7 @@
       "record_id": "us-ut-oaip-jia-2026-001",
       "title": "Utah Mental Health Chatbot Disclosure — Joint Interpretation",
       "url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
-      "change_type": "added",
+      "change_type": "updated",
       "created": "2026-04-15",
       "modified": "2026-04-19",
       "last_verified": "2026-04-19",

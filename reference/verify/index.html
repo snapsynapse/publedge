@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to verify a record — PubLedge</title>
+<meta name="description" content="Plain-language guide: how anyone can independently confirm a PubLedge record has not been altered since it was published. No account, no special software, no trust in PubLedge required.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0f3460">
+<link rel="canonical" href="https://publedge.org/reference/verify/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PubLedge">
+<meta property="og:title" content="How to verify a PubLedge record">
+<meta property="og:description" content="Independently confirm a record has not been altered since publication. No account, no special software, no trust in PubLedge required.">
+<meta property="og:url" content="https://publedge.org/reference/verify/">
+<meta property="og:image" content="https://publedge.org/imgs/og.png">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/theme.js"></script>
+<style>
+  .verify-meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 1rem; }
+  .verify-lead { font-size: 1.05rem; }
+  .verify-step { border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; margin: 1rem 0; }
+  .verify-step h3 { margin-top: 0; }
+  .verify-note { color: var(--muted); font-size: 0.92rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "name": "How to verify a PubLedge record",
+  "description": "Plain-language guide to independently confirming that a PubLedge record has not been altered since publication.",
+  "url": "https://publedge.org/reference/verify/",
+  "mainEntityOfPage": "https://publedge.org/reference/verify/",
+  "author": {"@type": "Organization", "name": "PAICE.work PBC", "url": "https://paice.foundation"},
+  "publisher": {"@type": "Organization", "name": "PAICE.work PBC", "url": "https://paice.foundation"},
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "inLanguage": "en",
+  "encodingFormat": "text/html",
+  "isPartOf": {"@type": "WebSite", "name": "PubLedge", "url": "https://publedge.org/"}
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <h1><a href="/" class="site-brand"><img src="/favicon.svg" alt="" class="site-brand-icon" width="28" height="28">PubLedge</a></h1>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/instruments.html" class="site-nav-link">Registry</a>
+    <a href="/templates/" class="site-nav-link">Templates</a>
+    <a href="/obligations.html" class="site-nav-link">Obligations</a>
+    <a href="/matrix.html" class="site-nav-link">Matrix</a>
+    <a href="/about/" class="site-nav-link">About</a>
+  </nav>
+  <div class="header-actions">
+    <button class="theme-toggle" onclick="toggleTheme(); event.stopPropagation();" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
+  </div>
+</header>
+<main id="main-content">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span class="sep">/</span>
+    <a href="/reference/">Reference</a> <span class="sep">/</span>
+    <span>How to verify a record</span>
+  </nav>
+  <h1>How to verify a record</h1>
+  <p class="verify-meta">Last updated: May 18, 2026</p>
+
+  <p class="verify-lead">Every PubLedge record carries a fingerprint. Anyone can recompute that fingerprint and check it against the public manifest. If the record was altered by even one character, the fingerprints will not match. You do not need an account, special software, or to trust PubLedge. That is the point.</p>
+
+  <h2>What the fingerprint is</h2>
+  <p>A fingerprint is a SHA-256 hash: a short string of letters and numbers computed from the exact bytes of a file. Change anything in the file, even a single space, and the hash changes completely. It is not reversible and it cannot be forged. PubLedge records every canonical file's hash in one public control file, <code>MANIFEST.yaml</code>, at the root of the repository and the published site.</p>
+  <p>This is plain SHA-256 over plain files. It is not a blockchain, and it does not require one.</p>
+
+  <h2>The simplest check (no command line)</h2>
+  <div class="verify-step">
+    <h3>1. Find the record's hash on its own page</h3>
+    <p>Open the record. Its machine-readable form is published alongside it at <code>record.json</code> in the same folder. The record's hash is listed there and on the record page's provenance section.</p>
+  </div>
+  <div class="verify-step">
+    <h3>2. Find the same file in the manifest</h3>
+    <p>Open <a href="/MANIFEST.yaml">/MANIFEST.yaml</a>. Each canonical file is listed with its SHA-256 hash. Locate the line for the record you are checking.</p>
+  </div>
+  <div class="verify-step">
+    <h3>3. Compare</h3>
+    <p>The two hashes must be identical. If they match, the published record is byte-for-byte the file the manifest vouches for. If they differ, the record has changed since the manifest was last signed off, and you should treat it as suspect and ask why.</p>
+  </div>
+  <p class="verify-note">Both numbers are public. Neither the operator nor anyone else can show you one value while the manifest says another, because the manifest is itself published and version-controlled.</p>
+
+  <h2>The independent check (one command)</h2>
+  <p>If you want to compute the fingerprint yourself rather than trust the value shown to you, download the record's source markdown file and run, on macOS or Linux:</p>
+  <pre><code>shasum -a 256 us-ut-oaip-rma-2025-001.md</code></pre>
+  <p>Compare the output to the entry in <code>MANIFEST.yaml</code>. Or clone the repository and run the project's own checker, which verifies every file at once:</p>
+  <pre><code>./scripts/validate-hashes.sh</code></pre>
+  <p>Continuous integration runs that same check on every change. A mismatch fails the build in public view.</p>
+
+  <h2>The change history</h2>
+  <p>Hashes prove a record matches the manifest now. The git history proves how it got there. Every change to every record is a public commit recording what changed, when, and by whom. Nothing is deleted: PubLedge supersedes and annotates, it never overwrites. You can read the full lineage of any record at <a href="https://github.com/snapsynapse/publedge">the repository</a>.</p>
+
+  <h2>What this proves, and what it does not</h2>
+  <ul>
+    <li>It proves a record has not been altered since it was published and hashed.</li>
+    <li>It proves the operator cannot quietly rewrite history; tampering is detectable by anyone, including the regulated party and the issuing authority.</li>
+    <li>It does not prove the interpretation is legally correct. That is what each record's <code>disclaimer</code>, status, and any <a href="/reference/disclaimer/">source policy</a> are for.</li>
+    <li>It does not require you to trust PubLedge. The whole mechanism exists so you do not have to.</li>
+  </ul>
+
+  <h2>Related</h2>
+  <ul>
+    <li><a href="/reference/protocol/">Protocol</a> — Integrity and Authority response sections</li>
+    <li><a href="/reference/disclaimer/">Disclaimer &amp; Source Policy</a></li>
+    <li><a href="/MANIFEST.yaml">MANIFEST.yaml</a> — the public hash control file</li>
+  </ul>
+</main>
+<footer></footer>
+</body>
+</html>

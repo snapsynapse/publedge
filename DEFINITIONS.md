@@ -125,6 +125,22 @@ PubLedge preserves the distinction in both the `type:` field and the URL type se
 
 ---
 
+## Authority response positions
+
+The `position` value in an `authority_response` entry (see [PROTOCOL.md](PROTOCOL.md) → Authority response) is one of a closed set. It records how the responding authority characterizes its own relationship to the interpretation, not PubLedge's editorial judgment.
+
+| Value | Meaning |
+|---|---|
+| `concurs` | The authority agrees the interpretation reflects its position. |
+| `disputes` | The authority states the interpretation is wrong or misleading. |
+| `clarifies` | The authority neither fully agrees nor disputes; it adds or corrects detail. |
+| `declines-to-comment` | The authority acknowledges the record but takes no position. |
+| `superseded-by-official` | The authority has since issued an official instrument that governs instead; pair with `supersedes` / `superseded_by` per Supersession. |
+
+`declines-to-comment` is a recorded response, not the same as the absence of any response. Absence is never interpreted (PROTOCOL.md → Authority response, non-goals).
+
+---
+
 ## Versioning and changes to this document
 
 This document is canonical for the PubLedge project. Changes require a pull request to the [GitHub repository](https://github.com/snapsynapse/publedge) and are published with the next site build.

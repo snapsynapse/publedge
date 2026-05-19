@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>https://publedge.org/sitemap-records.xml</loc><lastmod>2026-05-13</lastmod></sitemap>
-  <sitemap><loc>https://publedge.org/sitemap-authorities.xml</loc><lastmod>2026-05-13</lastmod></sitemap>
-  <sitemap><loc>https://publedge.org/sitemap-statutes.xml</loc><lastmod>2026-05-13</lastmod></sitemap>
-  <sitemap><loc>https://publedge.org/sitemap-reference.xml</loc><lastmod>2026-05-13</lastmod></sitemap>
-  <sitemap><loc>https://publedge.org/sitemap-templates.xml</loc><lastmod>2026-05-13</lastmod></sitemap>
-  <sitemap><loc>https://publedge.org/sitemap-bridges.xml</loc><lastmod>2026-05-13</lastmod></sitemap>
-  <sitemap><loc>https://publedge.org/sitemap-meta.xml</loc><lastmod>2026-05-13</lastmod></sitemap>
+  <sitemap><loc>https://publedge.org/sitemap-records.xml</loc><lastmod>2026-05-19</lastmod></sitemap>
+  <sitemap><loc>https://publedge.org/sitemap-authorities.xml</loc><lastmod>2026-05-19</lastmod></sitemap>
+  <sitemap><loc>https://publedge.org/sitemap-statutes.xml</loc><lastmod>2026-05-19</lastmod></sitemap>
+  <sitemap><loc>https://publedge.org/sitemap-reference.xml</loc><lastmod>2026-05-19</lastmod></sitemap>
+  <sitemap><loc>https://publedge.org/sitemap-templates.xml</loc><lastmod>2026-05-19</lastmod></sitemap>
+  <sitemap><loc>https://publedge.org/sitemap-bridges.xml</loc><lastmod>2026-05-19</lastmod></sitemap>
+  <sitemap><loc>https://publedge.org/sitemap-meta.xml</loc><lastmod>2026-05-19</lastmod></sitemap>
 </sitemapindex>

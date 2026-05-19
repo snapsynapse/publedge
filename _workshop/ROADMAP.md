@@ -32,7 +32,7 @@ In scope:
 - KaC features ON: registry browser + detail pages, coverage matrix, comparison tool, search, MCP server, validate.js, verify.js, bridge pages, timeline
 - Discovery files ON day 1: llms.txt, agents.json, sitemap.xml, feed.xml, robots.txt
 - Lawyer review checkpoint before public release
-- Private snapshot to Boyd + Cullimore + Moss + Cutler — **staged 2026-04-18** (cover notes + tarball under `_private/lawyer-snapshot/`, gitignored). Send order: Boyd first, hold legislators 24 hours for any redirect.
+- Private snapshot to external reviewers — **staged 2026-04-18** (cover notes + tarball under `_private/lawyer-snapshot/`, gitignored). Send order: external reviewers first, hold legislators 24 hours for any redirect.
 - canonical-spec-page rendered at publedge.org
 - repo-polish + promo-orchestrator at public release (step 11)
 

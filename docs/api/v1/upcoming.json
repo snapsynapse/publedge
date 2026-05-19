@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated": "2026-05-13T22:10:27.832Z",
+    "generated": "2026-05-19T05:39:38.882Z",
     "count": 2,
-    "today": "2026-05-13"
+    "today": "2026-05-19"
   },
   "items": [
     {
       "kind": "term-end",
       "date": "2026-05-31",
-      "days_until": 18,
+      "days_until": 12,
       "record_id": "us-ut-oaip-rma-2025-001",
       "title": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
       "url": "https://publedge.org/us/utah/oaip/rma/2025-001/",
@@ -19,7 +19,7 @@
     {
       "kind": "term-end",
       "date": "2026-10-24",
-      "days_until": 164,
+      "days_until": 158,
       "record_id": "us-ut-oaip-rma-2025-002",
       "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
       "url": "https://publedge.org/us/utah/oaip/rma/2025-002/",

@@ -173,6 +173,43 @@ When an instrument is replaced:
 
 This is mandatory. PubLedge never deletes, only supersedes. The historical record is part of the value.
 
+## Authority response
+
+PubLedge is operator-agnostic. The authority that issued or enforces an instrument is never the operator of the registry. The protocol nonetheless gives that authority a first-class, low-friction way to respond to or correct any record about its own instrument, without operating, hosting, or maintaining anything.
+
+Three mechanisms, lowest friction first:
+
+1. Open a GitHub issue or pull request against the record. Standard git. No PubLedge account.
+2. Point to the authority's own published statement. The record gains an `authority_response` entry whose `source` is the authority's URL; PubLedge quotes, it does not paraphrase.
+3. Supply a signed statement recorded directly in the record's frontmatter under `authority_response`.
+
+The `authority_response` field is an optional list. Each entry:
+
+```yaml
+authority_response:
+  - from: utah-oaip            # authority slug or name
+    date: 2026-05-18           # ISO date
+    position: clarifies        # see DEFINITIONS.md → Authority response positions
+    statement: >
+      The Office's view is that ... .
+    source: https://...        # optional: the authority's own published statement
+    signature: pgp:0xABCD1234  # optional: detached-signature or PGP fingerprint reference
+```
+
+Rendering rules:
+
+1. An authority response is rendered prominently on the record page, above the body, visually distinct from the `disclaimer`.
+2. A response never deletes or edits the original interpretation. It annotates it. This follows the same never-delete-only-annotate rule as Supersession.
+3. Multiple responses are kept in chronological order. None is removed when a later one is added.
+
+Non-goals, stated so the posture is unambiguous:
+
+- This is not sign-off-as-a-service. PubLedge does not solicit responses and does not gate publication on them.
+- Absence of a response means nothing. It is not implied consent, dispute, or endorsement.
+- The authority controls its own words. Where `source` is present, the authority's published text governs; the in-record `statement` is a convenience copy.
+
+This section reinforces, rather than softens, "Not a regulator": PubLedge gives the regulator a microphone, not a console.
+
 ## License
 
 PubLedge content (markdown, YAML, HTML) is licensed CC-BY 4.0. PubLedge code, schemas, and scripts are licensed Apache 2.0. See `LICENSE`, `LICENSE-APACHE`, `LICENSE-CC-BY-4.0`.

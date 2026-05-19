@@ -30,7 +30,7 @@ Authored for PubLedge:
 - `vendor/gist/` pinned snapshot of `gistCore.ttl` with `VERSION.md` note
 - `ATTRIBUTION.md` citing gist (CC-BY 4.0, Semantic Arts)
 - MANIFEST.yaml with skill-provenance-style hash tracking (24 files)
-- Private snapshot staged under `_private/lawyer-snapshot/` for Boyd + Cullimore + Moss + Cutler
+- Private snapshot staged under `_private/lawyer-snapshot/` for external reviewers
 
 Shipped 2026-04-19 (engineering + schema session):
 
@@ -131,7 +131,7 @@ Shipped 2026-04-22 (frontmatter spec v0.2 enforcement):
 | Item | Owner | Notes |
 |---|---|---|
 | Lawyer review checkpoint (SLC attorney, week of 2026-04-20) | Sam | Output may add paywall prior-art; review doc itself may ship as first meta-JIA |
-| Private snapshot send (Boyd first, hold legislators 24h) | Sam | Tarball already staged |
+| Private snapshot send (external reviewers first, hold legislators 24h) | Sam | Tarball already staged |
 | us-ut-oaip-jia-2026-001 promotion draft → reviewed → published | — | Awaits lawyer review |
 | repo-polish + promo-orchestrator | skill | Final step before v0.1 public |
 
@@ -167,6 +167,24 @@ Triggered once Utah instance meets the six testable structural claims in the for
 - Branch destination decision at branch time: `jia.publedge.org` subdomain or `github.com/snapsynapse/publedge-utah-jia`.
 - Clean-URL migration: `/matrix.html` → `/matrix/`, `/compare.html` → `/compare/`, etc. (deferred from v0.1; ~30 touchpoints).
 - Contribute upstream improvements to KaC template to eliminate `build-extras.js` as separate step.
+
+## Regulator-trust track
+
+Motivated by the question "what would a regulator value, and what smooths the initial approach." The posture constraint is load-bearing: with a regulator the risk is perceived neutrality, not missing features. Do not add anything ops-flavored here.
+
+Spec landed (this session):
+- `## Authority response` section in [PROTOCOL.md](PROTOCOL.md) + `authority_response` frontmatter field; `position` vocabulary in [DEFINITIONS.md](DEFINITIONS.md). Operator-agnostic response path (PR / issue / signed field). This is the single biggest objection-smoother: converts "watchdog pointed at us" into "a microphone we can speak through."
+- Plain-language [/reference/verify/](reference/verify/index.html) page: non-engineer "confirm a record was not altered," no terminal required as the primary path. Linked from `/reference/`.
+
+Wiring still owed (engineering, not blocking the regulator conversation):
+- `authority_response` into the polymorphic record schema + `scripts/validate.js` cross-field rules (shape, closed `position` enum, `source`-vs-`statement` precedence).
+- Renderer support: render the `authority_response` block prominently on the record page, visually distinct from `disclaimer`, chronological, never destructive.
+- Add `authority_response` to the canonical frontmatter spec in [_workshop/CONTENT-GUIDE.md](_workshop/CONTENT-GUIDE.md).
+- Confirm `/reference/verify/` is picked up by the sitemap reference section, `llms.txt`, and `/reference/` nav after build (page copies into `docs/` cleanly today; surface enumeration not yet verified).
+- Pull the per-record provenance panel (already listed under Agent surface) forward from v0.2 for this audience; it is what the verify page points at.
+
+Content (highest trust-per-unit-effort):
+- One exemplary Utah OAIP record cited and labeled faithfully enough that the office recognizes its own thing. One strong record beats breadth. Accuracy is load-bearing; needs real source material or explicit hypothetical labeling.
 
 ## Vocabulary / namespace evolution
 

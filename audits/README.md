@@ -81,7 +81,7 @@ the final main commit:
 - [ ] MANIFEST hash verification green
 - [ ] Link check (`node scripts/check-links.js`)
 - [ ] Lawyer review checkpoint complete (Sam)
-- [ ] Private snapshot delivered to Boyd + Cullimore + Moss + Cutler (Sam)
+- [ ] Private snapshot delivered to external reviewers (Sam)
 
 The CI workflow (`.github/workflows/ci.yml`) automates the first three
 build-level checks on every push; the rest are manual gates.
