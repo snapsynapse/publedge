@@ -957,6 +957,9 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
 .jurisdiction-chip[data-jurisdiction="us-ut"] {
     background: #1a4180; color: #fff; border-color: transparent;
 }
+.jurisdiction-chip[data-jurisdiction="us-co"] {
+    background: #0057b8; color: #fff; border-color: transparent;
+}
 .jurisdiction-chip[data-jurisdiction="us"] {
     background: #a31f34; color: #fff; border-color: transparent;
 }

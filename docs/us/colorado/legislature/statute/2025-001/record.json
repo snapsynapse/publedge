@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "meta": {
-    "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/",
-    "generated": "2026-05-22T01:09:01.387Z",
+    "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2025-001/",
+    "generated": "2026-05-22T01:15:50.564Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,7 +15,7 @@
     "type": "statute",
     "jurisdiction": "us-co",
     "authority": "colorado-legislature",
-    "url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/",
+    "url": "https://publedge.org/us/colorado/legislature/statute/2025-001/",
     "issued_by": {
       "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Colorado General Assembly",
@@ -87,7 +87,7 @@
     "name": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
     "headline": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
     "description": "Statute (us-co)",
-    "url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/",
+    "url": "https://publedge.org/us/colorado/legislature/statute/2025-001/",
     "sameAs": [
       "https://leg.colorado.gov/bills/sb25b-004"
     ],

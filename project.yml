@@ -234,6 +234,10 @@ hierarchy:
       country: us
       region: utah
       label: "Utah"
+    us-co:
+      country: us
+      region: colorado
+      label: "Colorado"
     us:
       country: us
       region: federal

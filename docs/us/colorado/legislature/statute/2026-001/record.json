@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "meta": {
-    "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2026-sb26-189/",
-    "generated": "2026-05-22T01:09:01.388Z",
+    "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",
+    "generated": "2026-05-22T01:15:50.565Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,7 +15,7 @@
     "type": "statute",
     "jurisdiction": "us-co",
     "authority": "colorado-legislature",
-    "url": "https://publedge.org/container/us-co-legislature-statute-2026-sb26-189/",
+    "url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",
     "issued_by": {
       "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Colorado General Assembly",
@@ -108,7 +108,7 @@
     "name": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
     "headline": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
     "description": "Statute (us-co)",
-    "url": "https://publedge.org/container/us-co-legislature-statute-2026-sb26-189/",
+    "url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",
     "sameAs": [
       "https://leg.colorado.gov/bills/sb26-189"
     ],

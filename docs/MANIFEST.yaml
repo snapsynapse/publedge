@@ -174,5 +174,5 @@ files:
 
   - path: ROADMAP.md
     role: spec
-    hash: sha256:2c8172d6e25a607941e03a9fc8b1f96f01174fe504c424f1a17d45537964982b
+    hash: sha256:ead300172e1183888cdac4096efbaeae06251a2c7f544b169172c94be25bc8f0
     note: Living roadmap — housekeeping document for v0.1 / v0.2 tracking

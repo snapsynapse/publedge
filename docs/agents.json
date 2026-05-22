@@ -50,6 +50,24 @@
           "description": "Pre-computed comparisons"
         }
       ]
+    },
+    {
+      "id": "protocol-spec",
+      "name": "PubLedge Protocol Specification",
+      "description": "Entity model, frontmatter contract, integrity mechanism.",
+      "url": "https://publedge.org/reference/protocol/"
+    },
+    {
+      "id": "template-library",
+      "name": "JIA and RMA Template Library",
+      "description": "5 fill-in templates for Utah Chapter 72 Part 4.",
+      "url": "https://publedge.org/templates/"
+    },
+    {
+      "id": "mcp-server",
+      "name": "MCP Server",
+      "description": "Read-only MCP server exposing the PubLedge knowledge base. Run: node mcp-server.js",
+      "source": "https://github.com/snapsynapse/publedge/blob/main/mcp-server.js"
     }
   ],
   "content": {
@@ -70,19 +88,19 @@
         "id": "us-co-legislature-statute-2024-sb24-205",
         "name": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
         "status": "superseded",
-        "url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/"
+        "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/"
       },
       {
         "id": "us-co-legislature-statute-2025-sb25b-004",
         "name": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
         "status": "enforcing",
-        "url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/"
+        "url": "https://publedge.org/us/colorado/legislature/statute/2025-001/"
       },
       {
         "id": "us-co-legislature-statute-2026-sb26-189",
         "name": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
         "status": "enforcing",
-        "url": "https://publedge.org/container/us-co-legislature-statute-2026-sb26-189/"
+        "url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
       },
       {
         "id": "us-irs-chief-counsel-plr-2025-001",
@@ -356,12 +374,59 @@
         "name": "Utah Office of Artificial Intelligence Policy",
         "url": "https://publedge.org/authority/utah-oaip/"
       }
+    ],
+    "templates": [
+      {
+        "id": "us-ut-tpl-jia-0003",
+        "slug": "utah-mental-health-chatbot-advertising",
+        "title": "Utah JIA Template — Mental-Health Chatbot Advertising and Representations (§13-72a-202)",
+        "kind": "jia",
+        "jurisdiction": "us-ut",
+        "status": "draft",
+        "url": "https://publedge.org/template/utah-mental-health-chatbot-advertising/"
+      },
+      {
+        "id": "us-ut-tpl-jia-0002",
+        "slug": "utah-mental-health-chatbot-data-protection",
+        "title": "Utah JIA Template — Mental-Health Chatbot Data Protection (§13-72a-201)",
+        "kind": "jia",
+        "jurisdiction": "us-ut",
+        "status": "draft",
+        "url": "https://publedge.org/template/utah-mental-health-chatbot-data-protection/"
+      },
+      {
+        "id": "us-ut-tpl-jia-0001",
+        "slug": "utah-mental-health-chatbot-first-session-disclosure",
+        "title": "Utah JIA Template — Mental-Health Chatbot First-Session Disclosure (§13-72a-203)",
+        "kind": "jia",
+        "jurisdiction": "us-ut",
+        "status": "draft",
+        "url": "https://publedge.org/template/utah-mental-health-chatbot-first-session-disclosure/"
+      },
+      {
+        "id": "us-ut-tpl-rma-0001",
+        "slug": "utah-ai-sandbox-mitigation-mental-health-chatbot",
+        "title": "Utah RMA Template — AI Sandbox Mitigation, Mental-Health Chatbot Cohort",
+        "kind": "rma",
+        "jurisdiction": "us-ut",
+        "status": "draft",
+        "url": "https://publedge.org/template/utah-ai-sandbox-mitigation-mental-health-chatbot/"
+      },
+      {
+        "id": "us-ut-tpl-rma-0002",
+        "slug": "utah-genai-safe-harbor-enrollment",
+        "title": "Utah RMA Template — GenAI Safe-Harbor Enrollment (§13-75-104)",
+        "kind": "rma",
+        "jurisdiction": "us-ut",
+        "status": "draft",
+        "url": "https://publedge.org/template/utah-genai-safe-harbor-enrollment/"
+      }
     ]
   },
   "discovery": {
     "llms_txt": "https://publedge.org/llms.txt",
     "sitemap": "https://publedge.org/sitemap.xml",
-    "rss": "https://publedge.org/index.xml",
+    "rss": "https://publedge.org/feed.xml",
     "robots": "https://publedge.org/robots.txt"
   },
   "meta": {
@@ -396,5 +461,8 @@
       "url": "https://siteline.to",
       "description": "AI agent readiness scanner for websites"
     }
-  ]
+  ],
+  "integrity": {
+    "manifest": "https://publedge.org/MANIFEST.yaml"
+  }
 }

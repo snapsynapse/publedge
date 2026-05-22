@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "meta": {
-    "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/",
-    "generated": "2026-05-22T01:09:01.386Z",
+    "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
+    "generated": "2026-05-22T01:15:50.562Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -15,7 +15,7 @@
     "type": "statute",
     "jurisdiction": "us-co",
     "authority": "colorado-legislature",
-    "url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/",
+    "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
     "issued_by": {
       "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Colorado General Assembly",
@@ -143,7 +143,7 @@
     "name": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
     "headline": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
     "description": "Statute (us-co)",
-    "url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/",
+    "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
     "sameAs": [
       "https://leg.colorado.gov/bills/sb24-205"
     ],

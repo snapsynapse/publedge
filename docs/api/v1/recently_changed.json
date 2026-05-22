@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-05-22T01:09:01.361Z",
+    "generated": "2026-05-22T01:15:50.537Z",
     "count": 3,
     "window_days": 30
   },
@@ -8,7 +8,7 @@
     {
       "record_id": "us-co-legislature-statute-2024-sb24-205",
       "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
-      "url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/",
+      "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
       "change_type": "added",
       "created": "2026-05-21",
       "modified": "2026-05-21",
@@ -21,7 +21,7 @@
     {
       "record_id": "us-co-legislature-statute-2025-sb25b-004",
       "title": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
-      "url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/",
+      "url": "https://publedge.org/us/colorado/legislature/statute/2025-001/",
       "change_type": "added",
       "created": "2026-05-21",
       "modified": "2026-05-21",
@@ -34,7 +34,7 @@
     {
       "record_id": "us-co-legislature-statute-2026-sb26-189",
       "title": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
-      "url": "https://publedge.org/container/us-co-legislature-statute-2026-sb26-189/",
+      "url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",
       "change_type": "added",
       "created": "2026-05-21",
       "modified": "2026-05-21",

@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-05-22T01:09:01.318Z",
+  "generated": "2026-05-22T01:15:50.495Z",
   "instruments": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -61,7 +61,7 @@
       "source": "https://leg.colorado.gov/bills/sb24-205",
       "jurisdiction": "us-co",
       "publedge_status": "superseded",
-      "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/"
+      "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/"
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -80,7 +80,7 @@
       "source": "https://leg.colorado.gov/bills/sb25b-004",
       "jurisdiction": "us-co",
       "publedge_status": "enforcing",
-      "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/"
+      "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2025-001/"
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -99,7 +99,7 @@
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "jurisdiction": "us-co",
       "publedge_status": "enforcing",
-      "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2026-sb26-189/"
+      "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
     },
     {
       "@context": "https://obligationfirst.org/v1/",
