@@ -1,0 +1,192 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/",
+    "generated": "2026-05-22T01:09:01.386Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-co-legislature-statute-2024-sb24-205",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2024-001",
+    "slug": "colorado-sb24-205-ai-act",
+    "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+    "type": "statute",
+    "jurisdiction": "us-co",
+    "authority": "colorado-legislature",
+    "url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/",
+    "issued_by": {
+      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "name": "Colorado General Assembly",
+      "ref": "https://leg.colorado.gov/"
+    },
+    "enacted": "2024-05-17",
+    "effective": "2026-06-30",
+    "official_url": "https://leg.colorado.gov/bills/sb24-205",
+    "obligation_kind": [
+      "requirement",
+      "restriction"
+    ],
+    "reliance_scope": "public",
+    "parties": null,
+    "statute_anchors": [
+      {
+        "cite": "C.R.S. Title 6, Article 1, Part 17 (Artificial Intelligence)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "cite": "C.R.S. §6-1-1701 (definitions)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "cite": "C.R.S. §6-1-1702 (developer duty of reasonable care)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "cite": "C.R.S. §6-1-1703 (deployer duty of reasonable care; impact assessments; consumer notice)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "cite": "C.R.S. §6-1-1704 (consumer rights to explanation, correction, human review)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "cite": "C.R.S. §6-1-1706 (Attorney General enforcement; rulemaking authority)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      }
+    ],
+    "publication_citations": [
+      {
+        "cite": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+        "url": "https://leg.colorado.gov/bills/sb24-205"
+      }
+    ],
+    "terms": null,
+    "status": "superseded",
+    "supersedes": null,
+    "superseded_by": "us-co-legislature-statute-2026-sb26-189",
+    "last_verified": "2026-05-21",
+    "timeline": [
+      {
+        "milestone": "Introduced",
+        "date": "2024-04-10",
+        "notes": "Senate"
+      },
+      {
+        "milestone": "Senate passed",
+        "date": "2024-05-03",
+        "notes": ""
+      },
+      {
+        "milestone": "House passed",
+        "date": "2024-05-08",
+        "notes": ""
+      },
+      {
+        "milestone": "Governor Signed",
+        "date": "2024-05-17",
+        "notes": "Gov. Jared Polis; signing letter expressed reservations and called for revision before effective date"
+      },
+      {
+        "milestone": "Original effective date set",
+        "date": "2026-02-01",
+        "notes": "As enacted, before any delay"
+      },
+      {
+        "milestone": "SB 25-318 fails",
+        "date": "2025-05",
+        "notes": "Regular-session substantive-amendment bill postponed indefinitely / withdrawn by sponsor"
+      },
+      {
+        "milestone": "Special session",
+        "date": "2025-08-21",
+        "notes": "First Extraordinary Session convened to amend the Act"
+      },
+      {
+        "milestone": "Amended by SB 25B-004",
+        "date": "2025-08-28",
+        "notes": "Effective date pushed from 2026-02-01 to 2026-06-30; no substantive change"
+      },
+      {
+        "milestone": "xAI v. Weiser filed",
+        "date": "2026-04-09",
+        "notes": "xAI challenge in D. Colo. (No. 1:26-cv-01515)"
+      },
+      {
+        "milestone": "DOJ intervenes",
+        "date": "2026-04-24",
+        "notes": "Federal government joins challenge"
+      },
+      {
+        "milestone": "Enforcement stayed",
+        "date": "2026-05",
+        "notes": "Joint motion stayed enforcement deadlines pending injunction ruling"
+      },
+      {
+        "milestone": "Superseded by SB 26-189",
+        "date": "2026-05-14",
+        "notes": "Replacement statute signed"
+      },
+      {
+        "milestone": "Scheduled effective date",
+        "date": "2026-06-30",
+        "notes": "Never took effect; replaced before this date"
+      }
+    ],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-co-legislature-statute-2024-sb24-205",
+    "name": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+    "headline": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+    "description": "Statute (us-co)",
+    "url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/",
+    "sameAs": [
+      "https://leg.colorado.gov/bills/sb24-205"
+    ],
+    "dateCreated": "2026-05-21",
+    "dateModified": "2026-05-21",
+    "datePublished": "2026-06-30",
+    "author": {
+      "@type": "GovernmentOrganization",
+      "name": "Colorado General Assembly",
+      "url": "https://leg.colorado.gov/"
+    },
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "C.R.S. Title 6, Article 1, Part 17 (Artificial Intelligence)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "@type": "Legislation",
+        "name": "C.R.S. §6-1-1701 (definitions)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "@type": "Legislation",
+        "name": "C.R.S. §6-1-1702 (developer duty of reasonable care)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "@type": "Legislation",
+        "name": "C.R.S. §6-1-1703 (deployer duty of reasonable care; impact assessments; consumer notice)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "@type": "Legislation",
+        "name": "C.R.S. §6-1-1704 (consumer rights to explanation, correction, human review)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      },
+      {
+        "@type": "Legislation",
+        "name": "C.R.S. §6-1-1706 (Attorney General enforcement; rulemaking authority)",
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
+      }
+    ],
+    "license": "Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law."
+  }
+}

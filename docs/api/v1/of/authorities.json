@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-05-19T05:39:38.842Z",
+  "generated": "2026-05-22T01:09:01.318Z",
   "authorities": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -41,6 +41,26 @@
       },
       "website": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
       "url_segment": "cftc-dsio"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Authority",
+      "@id": "https://publedge.org/authority/colorado-legislature.json",
+      "id": "colorado-legislature",
+      "organization": {
+        "@type": "gist:GovernmentOrganization",
+        "name": "Colorado General Assembly"
+      },
+      "authority_basis": {
+        "kind": "statutory",
+        "instrument_ref": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json"
+      },
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      },
+      "website": "https://leg.colorado.gov/",
+      "url_segment": "legislature"
     },
     {
       "@context": "https://obligationfirst.org/v1/",

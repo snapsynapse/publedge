@@ -1,12 +1,15 @@
 # PubLedge
 
 > Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
-> Tracks 14 legal instruments, 26 obligations, and 5 provisions across 7 authorities.
+> Tracks 17 legal instruments, 26 obligations, and 8 provisions across 8 authorities.
 
 ## Legal Instruments
 
 - [CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)](https://publedge.org/us/federal/cfpb/ao/2022-001/): enforcing
 - [CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling](https://publedge.org/us/federal/cftc-dsio/il/2017-001/): enforcing
+- [Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems](https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/): superseded
+- [Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)](https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/): enforcing
+- [Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act](https://publedge.org/container/us-co-legislature-statute-2026-sb26-189/): enforcing
 - [IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)](https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/): enforcing
 - [IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility](https://publedge.org/us/federal/irs-tege/plr/2026-001/): enforcing
 - [SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)](https://publedge.org/us/federal/sec-corpfin/nal/2025-001/): enforcing
@@ -60,24 +63,4 @@
 - [JSON API](https://publedge.org/api/v1/index.json): Programmatic access to all data
 - [agents.json](https://publedge.org/agents.json): Agent discovery metadata
 - [Sitemap](https://publedge.org/sitemap.xml): All pages
-- [RSS Feed](https://publedge.org/feed.xml): Recent updates
-
-## Protocol
-
-- [Protocol specification](https://publedge.org/reference/protocol/): PubLedge entity model, frontmatter, identifier rules, integrity mechanism.
-- [Protocol source (Markdown)](https://publedge.org/PROTOCOL.md)
-- [Prior art survey](https://publedge.org/reference/prior-art/): Utah Sandbox, SEC No-Action, IRS PLRs, CFPB Advisory, Utah Court Forms.
-- [Prior art source (Markdown)](https://publedge.org/PRIOR-ART.md)
-- [Vocabulary mapping](https://publedge.org/reference/vocabulary/): PubLedge entities bound to gist classes.
-- [Roadmap](https://publedge.org/ROADMAP.md)
-- [Attribution](https://publedge.org/ATTRIBUTION.md)
-- [Manifest (SHA-256 hashes)](https://publedge.org/MANIFEST.yaml)
-
-## Templates
-
-- [Template library index](https://publedge.org/templates/)
-- [Utah JIA Template — Mental-Health Chatbot Advertising and Representations (§13-72a-202)](https://publedge.org/template/utah-mental-health-chatbot-advertising/): JIA · us-ut
-- [Utah JIA Template — Mental-Health Chatbot Data Protection (§13-72a-201)](https://publedge.org/template/utah-mental-health-chatbot-data-protection/): JIA · us-ut
-- [Utah JIA Template — Mental-Health Chatbot First-Session Disclosure (§13-72a-203)](https://publedge.org/template/utah-mental-health-chatbot-first-session-disclosure/): JIA · us-ut
-- [Utah RMA Template — AI Sandbox Mitigation, Mental-Health Chatbot Cohort](https://publedge.org/template/utah-ai-sandbox-mitigation-mental-health-chatbot/): RMA · us-ut
-- [Utah RMA Template — GenAI Safe-Harbor Enrollment (§13-75-104)](https://publedge.org/template/utah-genai-safe-harbor-enrollment/): RMA · us-ut
+- [RSS Feed](https://publedge.org/index.xml): Recent updates

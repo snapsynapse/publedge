@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
+  "id": "us-co-legislature-statute-2024-sb24-205",
+  "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+  "short_title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+  "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "kind": "statute",
+  "enacted": "2024-05-17",
+  "effective": "2026-06-30",
+  "status": "superseded",
+  "enforcement_status": "routine",
+  "hasTerm": [],
+  "source": "https://leg.colorado.gov/bills/sb24-205",
+  "jurisdiction": "us-co",
+  "publedge_status": "superseded",
+  "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2024-sb24-205/"
+}

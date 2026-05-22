@@ -85,7 +85,7 @@
             <button class="theme-toggle" onclick="toggleTheme(); event.stopPropagation();" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
         </div>
     </header>
-    <main class="container" id="main-content" style="text-align:center;">
+    <div class="container" id="main-content" style="text-align:center;">
         <h1 style="margin-top:2rem;">404 — Page Not Found</h1>
         <p style="color:var(--text-secondary); margin: 1rem 0 2rem;">The page you're looking for doesn't exist or has moved.</p>
         <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
@@ -93,29 +93,11 @@
             <a href="/instruments.html" class="bridge-cta">All legal instruments</a>
             <a href="/obligations.html" class="bridge-cta">All obligations</a>
         </div>
-    </main>
-    <nav class="footer-nav" aria-label="Footer navigation">
-<div class="footer-section"><strong>Products &amp; Services</strong>
-<a href="instruments.html">All Legal Instruments</a>
-<a href="obligations.html">Obligations</a>
-<a href="matrix.html">Coverage Matrix</a>
-<a href="calendar.ics">Enforcement Calendar (ICS)</a>
-</div>
-<div class="footer-section"><strong>About &amp; Contact</strong>
-<a href="about/">About this project</a>
-<a href="definitions/">Definitions</a>
-<a href="reference/prior-art/">Prior Art</a>
-<a href="reference/vocabulary/">Vocabulary</a>
-</div>
-<div class="footer-section"><strong>Related</strong>
-<a href="https://everyailaw.com/">EveryAILaw</a>
-<a href="https://semanticarts.com/gist/">gist (Semantic Arts)</a>
-</div>
-</nav>
-<footer class="site-footer">
-<p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="reference/disclaimer/">Not legal advice</a> · <a href="MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.0-pre</p>
-</footer>
+    </div>
+    <footer>
+        <p>Maintained with <a href="https://github.com/snapsynapse/publedge">version control</a>. This is a reference tool, not professional advice.</p>
+        <p>&copy; 2026 | Built with <a href="https://knowledge-as-code.com">Knowledge-as-Code</a>, a pattern by <a href="https://paice.work">PAICE.work</a></p>
+    </footer>
     <script>
         function toggleTheme() {
             var html = document.documentElement;

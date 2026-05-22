@@ -1,0 +1,19 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Instrument",
+  "@id": "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json",
+  "id": "us-co-legislature-statute-2025-sb25b-004",
+  "title": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+  "short_title": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+  "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "kind": "statute",
+  "enacted": "2025-08-28",
+  "effective": "2025-08-28",
+  "status": "in-force",
+  "enforcement_status": "routine",
+  "hasTerm": [],
+  "source": "https://leg.colorado.gov/bills/sb25b-004",
+  "jurisdiction": "us-co",
+  "publedge_status": "enforcing",
+  "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/"
+}

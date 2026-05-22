@@ -1,0 +1,13 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Determination",
+  "@id": "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json",
+  "id": "us-co-legislature-statute-2026-sb26-189-issuance",
+  "issued_date": "2026-05-14",
+  "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "decides": [],
+  "disposition": "issued",
+  "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+  "notes": "Issuance record for Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act.",
+  "source": "https://leg.colorado.gov/bills/sb26-189"
+}

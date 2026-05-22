@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-05-19T05:39:38.842Z",
+  "generated": "2026-05-22T01:09:01.318Z",
   "determinations": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -27,6 +27,45 @@
       "target_instrument": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
       "notes": "Issuance record for CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling.",
       "source": "https://cftc.gov/csl/17-65/download"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Determination",
+      "@id": "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json",
+      "id": "us-co-legislature-statute-2024-sb24-205-issuance",
+      "issued_date": "2024-05-17",
+      "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+      "decides": [],
+      "disposition": "issued",
+      "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
+      "notes": "Issuance record for Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems.",
+      "source": "https://leg.colorado.gov/bills/sb24-205"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Determination",
+      "@id": "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json",
+      "id": "us-co-legislature-statute-2025-sb25b-004-issuance",
+      "issued_date": "2025-08-28",
+      "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+      "decides": [],
+      "disposition": "issued",
+      "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json",
+      "notes": "Issuance record for Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay).",
+      "source": "https://leg.colorado.gov/bills/sb25b-004"
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Determination",
+      "@id": "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json",
+      "id": "us-co-legislature-statute-2026-sb26-189-issuance",
+      "issued_date": "2026-05-14",
+      "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+      "decides": [],
+      "disposition": "issued",
+      "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+      "notes": "Issuance record for Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act.",
+      "source": "https://leg.colorado.gov/bills/sb26-189"
     },
     {
       "@context": "https://obligationfirst.org/v1/",

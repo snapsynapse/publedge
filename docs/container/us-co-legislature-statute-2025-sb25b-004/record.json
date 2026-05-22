@@ -1,0 +1,111 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/",
+    "generated": "2026-05-22T01:09:01.387Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-co-legislature-statute-2025-sb25b-004",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2025-001",
+    "slug": "colorado-sb25b-004-ai-act-delay",
+    "title": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+    "type": "statute",
+    "jurisdiction": "us-co",
+    "authority": "colorado-legislature",
+    "url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/",
+    "issued_by": {
+      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "name": "Colorado General Assembly",
+      "ref": "https://leg.colorado.gov/"
+    },
+    "enacted": "2025-08-28",
+    "effective": "2025-08-28",
+    "official_url": "https://leg.colorado.gov/bills/sb25b-004",
+    "obligation_kind": [
+      "requirement"
+    ],
+    "reliance_scope": "public",
+    "parties": null,
+    "statute_anchors": [
+      {
+        "cite": "C.R.S. Title 6, Article 1, Part 17 (Artificial Intelligence) — effective-date provision",
+        "url": "https://leg.colorado.gov/bills/sb25b-004"
+      }
+    ],
+    "publication_citations": [
+      {
+        "cite": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025",
+        "url": "https://leg.colorado.gov/bills/sb25b-004"
+      }
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": null,
+    "superseded_by": null,
+    "last_verified": "2026-05-21",
+    "timeline": [
+      {
+        "milestone": "Special session convened",
+        "date": "2025-08-21",
+        "notes": "First Extraordinary Session, called by Gov. Polis"
+      },
+      {
+        "milestone": "Introduced",
+        "date": "2025-08-21",
+        "notes": "Originally a substantive-amendment vehicle"
+      },
+      {
+        "milestone": "Amended to delay-only",
+        "date": "2025-08",
+        "notes": "Substantive reforms stripped after negotiations collapsed; bill reduced to an effective-date extension"
+      },
+      {
+        "milestone": "Passed both chambers",
+        "date": "2025-08",
+        "notes": "Broad bipartisan support"
+      },
+      {
+        "milestone": "Governor Signed",
+        "date": "2025-08-28",
+        "notes": "Gov. Jared Polis"
+      },
+      {
+        "milestone": "Effect",
+        "date": "2025-08-28",
+        "notes": "SB 24-205 effective date moved from 2026-02-01 to 2026-06-30"
+      }
+    ],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-co-legislature-statute-2025-sb25b-004",
+    "name": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+    "headline": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+    "description": "Statute (us-co)",
+    "url": "https://publedge.org/container/us-co-legislature-statute-2025-sb25b-004/",
+    "sameAs": [
+      "https://leg.colorado.gov/bills/sb25b-004"
+    ],
+    "dateCreated": "2026-05-21",
+    "dateModified": "2026-05-21",
+    "datePublished": "2025-08-28",
+    "author": {
+      "@type": "GovernmentOrganization",
+      "name": "Colorado General Assembly",
+      "url": "https://leg.colorado.gov/"
+    },
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "C.R.S. Title 6, Article 1, Part 17 (Artificial Intelligence) — effective-date provision",
+        "url": "https://leg.colorado.gov/bills/sb25b-004"
+      }
+    ],
+    "license": "Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law."
+  }
+}

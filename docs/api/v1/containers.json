@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-05-19T05:39:38.839Z",
-    "count": 14
+    "generated": "2026-05-22T01:09:01.312Z",
+    "count": 17
   },
   "items": [
     {
@@ -17,6 +17,27 @@
       "status": "enforcing",
       "effective": "2017-12-11",
       "provision_count": 0
+    },
+    {
+      "id": "us-co-legislature-statute-2024-sb24-205",
+      "name": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+      "status": "superseded",
+      "effective": "2026-06-30",
+      "provision_count": 1
+    },
+    {
+      "id": "us-co-legislature-statute-2025-sb25b-004",
+      "name": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+      "status": "enforcing",
+      "effective": "2025-08-28",
+      "provision_count": 1
+    },
+    {
+      "id": "us-co-legislature-statute-2026-sb26-189",
+      "name": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
+      "status": "enforcing",
+      "effective": "2027-01-01",
+      "provision_count": 1
     },
     {
       "id": "us-irs-chief-counsel-plr-2025-001",

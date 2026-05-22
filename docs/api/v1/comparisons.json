@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-05-19T05:39:38.840Z"
+    "generated": "2026-05-22T01:09:01.315Z"
   },
   "comparisons": [
     {
@@ -22,6 +22,48 @@
     {
       "regulations": [
         "us-cfpb-ao-2022-001",
+        "us-co-legislature-statute-2024-sb24-205"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "cfpb-pay-to-pay-fee-prohibited"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-cfpb-ao-2022-001",
+        "us-co-legislature-statute-2025-sb25b-004"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "cfpb-pay-to-pay-fee-prohibited"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-cfpb-ao-2022-001",
+        "us-co-legislature-statute-2026-sb26-189"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "cfpb-pay-to-pay-fee-prohibited"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-cfpb-ao-2022-001",
         "us-irs-chief-counsel-plr-2025-001"
       ],
       "shared_obligations": [],
@@ -247,6 +289,48 @@
     {
       "regulations": [
         "us-cftc-dsio-il-2017-001",
+        "us-co-legislature-statute-2024-sb24-205"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "cftc-unbundled-fee-not-cta-trigger"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-cftc-dsio-il-2017-001",
+        "us-co-legislature-statute-2025-sb25b-004"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "cftc-unbundled-fee-not-cta-trigger"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-cftc-dsio-il-2017-001",
+        "us-co-legislature-statute-2026-sb26-189"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "cftc-unbundled-fee-not-cta-trigger"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 1,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-cftc-dsio-il-2017-001",
         "us-irs-chief-counsel-plr-2025-001"
       ],
       "shared_obligations": [],
@@ -467,6 +551,609 @@
       ],
       "shared_count": 0,
       "only_a_count": 1,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-irs-chief-counsel-plr-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "irs-incentive-fee-not-net-profits-share"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-irs-tege-plr-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "irs-501c3-dual-test-failure"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-sec-corpfin-nal-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "sec-reg-d-506c-verification-safe-harbor"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-legislature-statute-2024-sb149"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "learning-lab-agreement-participation",
+        "ai-defense-elimination"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 2
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-legislature-statute-2025-hb452"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session",
+        "chatbot-data-no-third-party-sharing",
+        "chatbot-safety-policy-filing"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 3
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-legislature-statute-2025-sb226"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-request",
+        "disclose-genai-high-risk-proactive",
+        "ai-defense-elimination"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 3
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-legislature-statute-2026-hb320"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "learning-lab-agreement-participation"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-oaip-rma-2024-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "rma-incident-notification-24hr",
+        "elizachat-pre-access-disclosure-bundle",
+        "elizachat-phased-rollout"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-oaip-rma-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "dentacor-hygienist-ai-concurrence-diagnosis",
+        "dentacor-58-69-5-enforcement-forborne",
+        "dentacor-informed-consent-no-dentist"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-oaip-rma-2025-002"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "ai-authorized-rx-renewal",
+        "named-prescriber-enforcement-forborne",
+        "telehealth-compliance-per-proposal"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-oaip-rma-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "ai-authorized-rx-renewal",
+        "named-prescriber-enforcement-forborne",
+        "telehealth-compliance-per-proposal"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-irs-chief-counsel-plr-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "irs-incentive-fee-not-net-profits-share"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-irs-tege-plr-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "irs-501c3-dual-test-failure"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-sec-corpfin-nal-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "sec-reg-d-506c-verification-safe-harbor"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-legislature-statute-2024-sb149"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "learning-lab-agreement-participation",
+        "ai-defense-elimination"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 2
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-legislature-statute-2025-hb452"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session",
+        "chatbot-data-no-third-party-sharing",
+        "chatbot-safety-policy-filing"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 3
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-legislature-statute-2025-sb226"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-request",
+        "disclose-genai-high-risk-proactive",
+        "ai-defense-elimination"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 3
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-legislature-statute-2026-hb320"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "learning-lab-agreement-participation"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-oaip-rma-2024-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "rma-incident-notification-24hr",
+        "elizachat-pre-access-disclosure-bundle",
+        "elizachat-phased-rollout"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-oaip-rma-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "dentacor-hygienist-ai-concurrence-diagnosis",
+        "dentacor-58-69-5-enforcement-forborne",
+        "dentacor-informed-consent-no-dentist"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-oaip-rma-2025-002"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "ai-authorized-rx-renewal",
+        "named-prescriber-enforcement-forborne",
+        "telehealth-compliance-per-proposal"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2025-sb25b-004",
+        "us-ut-oaip-rma-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "ai-authorized-rx-renewal",
+        "named-prescriber-enforcement-forborne",
+        "telehealth-compliance-per-proposal"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-irs-chief-counsel-plr-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "irs-incentive-fee-not-net-profits-share"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-irs-tege-plr-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "irs-501c3-dual-test-failure"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-sec-corpfin-nal-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "sec-reg-d-506c-verification-safe-harbor"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-legislature-statute-2024-sb149"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "learning-lab-agreement-participation",
+        "ai-defense-elimination"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 2
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-legislature-statute-2025-hb452"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session",
+        "chatbot-data-no-third-party-sharing",
+        "chatbot-safety-policy-filing"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 3
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-legislature-statute-2025-sb226"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-request",
+        "disclose-genai-high-risk-proactive",
+        "ai-defense-elimination"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 3
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-legislature-statute-2026-hb320"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "learning-lab-agreement-participation"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "disclose-genai-on-first-session"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 1
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-oaip-rma-2024-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "rma-incident-notification-24hr",
+        "elizachat-pre-access-disclosure-bundle",
+        "elizachat-phased-rollout"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-oaip-rma-2025-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "dentacor-hygienist-ai-concurrence-diagnosis",
+        "dentacor-58-69-5-enforcement-forborne",
+        "dentacor-informed-consent-no-dentist"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-oaip-rma-2025-002"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "ai-authorized-rx-renewal",
+        "named-prescriber-enforcement-forborne",
+        "telehealth-compliance-per-proposal"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
+      "only_b_count": 8
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2026-sb26-189",
+        "us-ut-oaip-rma-2026-001"
+      ],
+      "shared_obligations": [],
+      "only_a": [],
+      "only_b": [
+        "rma-monthly-report-to-oaip",
+        "rma-end-of-term-report",
+        "rma-data-security-63a-19-102",
+        "rma-hold-harmless-state",
+        "rma-no-advertising-reference",
+        "ai-authorized-rx-renewal",
+        "named-prescriber-enforcement-forborne",
+        "telehealth-compliance-per-proposal"
+      ],
+      "shared_count": 0,
+      "only_a_count": 0,
       "only_b_count": 8
     },
     {
