@@ -42,7 +42,8 @@ sponsors:
 status: superseded
 supersedes: null
 superseded_by: us-co-legislature-statute-2026-sb26-189
-amended_by: []
+amended_by:
+  - us-co-legislature-statute-2025-sb25b-004
 hash_chain_prev: null
 disclaimer: ""
 last_verified: 2026-05-21
@@ -59,13 +60,15 @@ modified: 2026-05-21
 | Senate passed | 2024-05-03 | |
 | House passed | 2024-05-08 | |
 | Governor Signed | 2024-05-17 | Gov. Jared Polis; signing letter expressed reservations and called for revision before effective date |
-| AG enforcement workshop | 2024-Q4 | Stakeholder process convened by Colorado AG |
-| Working group report | 2025 | Recommended substantive narrowing |
-| Special session | 2025-08 | First attempt to amend; failed to pass |
-| Federal litigation filed | 2025 | Industry plaintiffs challenged on preemption / First Amendment grounds |
-| Preliminary injunction | 2026 | Original SB 24-205 obligations enjoined pending merits |
+| Original effective date set | 2026-02-01 | As enacted, before any delay |
+| SB 25-318 fails | 2025-05 | Regular-session substantive-amendment bill postponed indefinitely / withdrawn by sponsor |
+| Special session | 2025-08-21 | First Extraordinary Session convened to amend the Act |
+| Amended by SB 25B-004 | 2025-08-28 | Effective date pushed from 2026-02-01 to 2026-06-30; no substantive change |
+| xAI v. Weiser filed | 2026-04-09 | xAI challenge in D. Colo. (No. 1:26-cv-01515) |
+| DOJ intervenes | 2026-04-24 | Federal government joins challenge |
+| Enforcement stayed | 2026-05 | Joint motion stayed enforcement deadlines pending injunction ruling |
 | Superseded by SB 26-189 | 2026-05-14 | Replacement statute signed |
-| Originally effective | 2026-06-30 | Never took effect as enacted; replaced before effective date |
+| Scheduled effective date | 2026-06-30 | Never took effect; replaced before this date |
 
 ---
 
@@ -78,7 +81,7 @@ SB 24-205 was the United States' first comprehensive state statute imposing duti
 - Granted consumers rights to plain-language explanation of adverse consequential decisions, opportunity to correct incorrect personal data, and human review where technically feasible (§6-1-1704).
 - Reserved enforcement to the Colorado Attorney General; no private right of action (§6-1-1706).
 
-The act was signed with explicit reservations from Governor Polis, who urged the General Assembly to refine the statute before its effective date. Stakeholder workshops, a 2025 special session that failed to pass amendments, and federal litigation that produced a preliminary injunction together drove the General Assembly to replace the statute entirely with SB 26-189 in May 2026, before SB 24-205 ever took effect as enacted.
+The act was signed with explicit reservations from Governor Polis, who urged the General Assembly to refine the statute before its effective date. It never took effect as enacted. A 2025 regular-session amendment bill (SB 25-318) was withdrawn by its sponsor; an August 2025 special session produced only SB 25B-004, which delayed the effective date from February 1, 2026 to June 30, 2026 without substantive change. Federal litigation followed — xAI v. Weiser (D. Colo. No. 1:26-cv-01515), filed April 2026, with the US Department of Justice intervening, and enforcement deadlines stayed by joint motion. The General Assembly then replaced the statute entirely with SB 26-189, signed May 14, 2026, before the delayed effective date arrived.
 
 ### Talking Point
 

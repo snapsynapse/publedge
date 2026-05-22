@@ -18,4 +18,5 @@ For full statutory text and legislative history, see [leg.colorado.gov](https://
 ## Instruments
 
 - us-co-legislature-statute-2024-sb24-205
+- us-co-legislature-statute-2025-sb25b-004
 - us-co-legislature-statute-2026-sb26-189
