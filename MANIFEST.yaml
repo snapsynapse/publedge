@@ -83,7 +83,7 @@ files:
   # Project configuration
   - path: project.yml
     role: config
-    hash: sha256:7ca6c5a6dd3a4c17b3d180380858f59c4a3fd4c6352122b1ceefeb32cba71b53
+    hash: sha256:182d84bec08e9cddfca6655e2fa742b4f168bd2b2f845d62fe62a5b9d88b7f42
     note: KaC build config — entity ontology, navigation, theme
 
   # Data — authorities

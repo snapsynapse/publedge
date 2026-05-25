@@ -127,7 +127,7 @@ PubLedge preserves the distinction in both the `type:` field and the URL type se
 
 ## Authority response positions
 
-The `position` value in an `authority_response` entry (see [PROTOCOL.md](PROTOCOL.md) → Authority response) is one of a closed set. It records how the responding authority characterizes its own relationship to the interpretation, not PubLedge's editorial judgment.
+The `position` value in an `authority_response` entry (see [PROTOCOL.md](/PROTOCOL.md) → Authority response) is one of a closed set. It records how the responding authority characterizes its own relationship to the interpretation, not PubLedge's editorial judgment.
 
 | Value | Meaning |
 |---|---|

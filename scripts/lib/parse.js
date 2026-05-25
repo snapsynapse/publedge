@@ -1,8 +1,56 @@
 #!/usr/bin/env node
 'use strict';
 
+function stripOuterQuotes(rawValue) {
+    return String(rawValue).trim().replace(/^["']|["']$/g, '');
+}
+
+function normalizeKey(rawKey) {
+    return stripOuterQuotes(rawKey);
+}
+
+function findMappingColon(text) {
+    let quote = null;
+    for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (quote) {
+            if (ch === quote && text[i - 1] !== '\\') quote = null;
+            continue;
+        }
+        if (ch === '"' || ch === "'") {
+            quote = ch;
+            continue;
+        }
+        if (ch === ':' && (i === text.length - 1 || /\s/.test(text[i + 1]))) return i;
+    }
+    return -1;
+}
+
+function splitInlinePairs(text) {
+    const pairs = [];
+    let quote = null;
+    let start = 0;
+    for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (quote) {
+            if (ch === quote && text[i - 1] !== '\\') quote = null;
+            continue;
+        }
+        if (ch === '"' || ch === "'") {
+            quote = ch;
+            continue;
+        }
+        if (ch === ',') {
+            pairs.push(text.slice(start, i));
+            start = i + 1;
+        }
+    }
+    pairs.push(text.slice(start));
+    return pairs;
+}
+
 function parseScalar(rawValue) {
-    const value = String(rawValue).trim().replace(/^["']|["']$/g, '');
+    const value = stripOuterQuotes(rawValue);
     if (value === 'null') return null;
     if (value === 'true') return true;
     if (value === 'false') return false;
@@ -36,9 +84,9 @@ function parseYaml(content) {
         if (isList) {
             if (lineContent.startsWith('{') && lineContent.endsWith('}')) {
                 const obj = {};
-                lineContent.slice(1, -1).split(',').forEach(pair => {
-                    const ci = pair.indexOf(':');
-                    if (ci !== -1) obj[pair.slice(0, ci).trim()] = parseScalar(pair.slice(ci + 1));
+                splitInlinePairs(lineContent.slice(1, -1)).forEach(pair => {
+                    const ci = findMappingColon(pair);
+                    if (ci !== -1) obj[normalizeKey(pair.slice(0, ci))] = parseScalar(pair.slice(ci + 1));
                 });
                 const parent = stack[stack.length - 1].obj;
                 const lastKey = stack[stack.length - 1].lastListKey;
@@ -46,9 +94,9 @@ function parseYaml(content) {
                 continue;
             }
 
-            const ci = lineContent.indexOf(':');
+            const ci = findMappingColon(lineContent);
             if (ci !== -1) {
-                const key = lineContent.slice(0, ci).trim();
+                const key = normalizeKey(lineContent.slice(0, ci));
                 const rawValue = lineContent.slice(ci + 1).trim();
                 const value = parseScalar(rawValue);
                 const nextI = i + 1;
@@ -80,10 +128,10 @@ function parseYaml(content) {
             continue;
         }
 
-        const ci = trimmed.indexOf(':');
+        const ci = findMappingColon(trimmed);
         if (ci === -1) continue;
 
-        const key = trimmed.slice(0, ci).trim();
+        const key = normalizeKey(trimmed.slice(0, ci));
         const rawValue = trimmed.slice(ci + 1).trim();
         const value = parseScalar(rawValue);
         const parent = stack[stack.length - 1].obj;

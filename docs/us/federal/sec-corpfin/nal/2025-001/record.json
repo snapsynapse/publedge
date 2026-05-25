@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/",
-    "generated": "2026-05-22T01:15:50.568Z",
+    "generated": "2026-05-25T01:27:26.278Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -17,7 +17,7 @@
     "authority": "sec-corpfin",
     "url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/",
     "issued_by": {
-      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization",
+      "@type": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization",
       "name": "U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)",
       "ref": "https://www.sec.gov/divisions/corpfin"
     },
@@ -68,7 +68,7 @@
     "dateModified": "2026-04-19",
     "datePublished": "2025-03-12",
     "author": {
-      "@type": "GovernmentOrganization",
+      "@type": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization",
       "name": "U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)",
       "url": "https://www.sec.gov/divisions/corpfin"
     },

@@ -154,7 +154,7 @@
 <p>PubLedge preserves the distinction in both the <code>type:</code> field and the URL type segment.</p>
 <hr>
 <h2>Authority response positions</h2>
-<p>The <code>position</code> value in an <code>authority_response</code> entry (see <a href="PROTOCOL.md">PROTOCOL.md</a> → Authority response) is one of a closed set. It records how the responding authority characterizes its own relationship to the interpretation, not PubLedge's editorial judgment.</p>
+<p>The <code>position</code> value in an <code>authority_response</code> entry (see <a href="/PROTOCOL.md">PROTOCOL.md</a> → Authority response) is one of a closed set. It records how the responding authority characterizes its own relationship to the interpretation, not PubLedge's editorial judgment.</p>
 <table class="data-table"><thead><tr><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td><code>concurs</code></td><td>The authority agrees the interpretation reflects its position.</td></tr><tr><td><code>disputes</code></td><td>The authority states the interpretation is wrong or misleading.</td></tr><tr><td><code>clarifies</code></td><td>The authority neither fully agrees nor disputes; it adds or corrects detail.</td></tr><tr><td><code>declines-to-comment</code></td><td>The authority acknowledges the record but takes no position.</td></tr><tr><td><code>superseded-by-official</code></td><td>The authority has since issued an official instrument that governs instead; pair with <code>supersedes</code> / <code>superseded_by</code> per Supersession.</td></tr></tbody></table>
 <p><code>declines-to-comment</code> is a recorded response, not the same as the absence of any response. Absence is never interpreted (PROTOCOL.md → Authority response, non-goals).</p>
 <hr>

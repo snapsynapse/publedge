@@ -5,6 +5,7 @@ const { spawnSync } = require('child_process');
 const path = require('path');
 
 const scripts = [
+    'eval-parser.js',
     'eval-record-schema.js',
     'eval-schema-parity.js',
     'eval-clean-build.js',

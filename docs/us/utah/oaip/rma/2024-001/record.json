@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/",
-    "generated": "2026-05-22T01:15:50.576Z",
+    "generated": "2026-05-25T01:27:26.286Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -17,7 +17,7 @@
     "authority": "utah-oaip",
     "url": "https://publedge.org/us/utah/oaip/rma/2024-001/",
     "issued_by": {
-      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
       "ref": "https://commerce.utah.gov/ai/learning-lab/"
     },
@@ -75,9 +75,7 @@
       }
     ],
     "publication_citations": [
-      {
-        "\"https": "//commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
-      }
+      "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
     ],
     "terms": null,
     "status": "expired",
@@ -119,7 +117,7 @@
     "dateModified": "2026-04-19",
     "datePublished": "2024-11-18",
     "author": {
-      "@type": "GovernmentOrganization",
+      "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
       "url": "https://commerce.utah.gov/ai/learning-lab/"
     },

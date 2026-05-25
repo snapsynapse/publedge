@@ -159,6 +159,9 @@ node scripts/verify.js
 node scripts/build.js
 node scripts/build-extras.js
 
+# Run contract and regression evals, including frontmatter parser coverage
+npm run evals
+
 # Preview locally
 python3 -m http.server -d docs 8000
 ```
@@ -196,14 +199,18 @@ If a record's identifier ever changes, add a `legacy_id:` field to frontmatter. 
 
 `scripts/build.js` — entity pages, API JSON, sitemap.
 `scripts/build-extras.js` — reference HTML, feeds, discovery files, navigation shell.
+`scripts/lib/parse.js` — YAML-lite parser shared by validators and the static build.
+`mcp-server.js` keeps a parser copy for zero-dependency MCP startup; parser behavior changes must stay in sync with `scripts/lib/parse.js`.
 
 Both must complete without errors. CI runs them on every push and PR.
+Run `npm run evals` after parser or build changes. `scripts/eval-parser.js` specifically covers quoted frontmatter keys such as `"@type"` and URL scalar list values such as `publication_citations`.
 
 ## Pull request process
 
 1. Branch from `main`.
 2. Run `validate.js` and `verify.js` — no errors.
 3. Run `build.js` + `build-extras.js` — clean output.
-4. Run `validate-hashes.sh --update` — `MANIFEST.yaml` current.
-5. Commit source + `docs/`.
-6. Open PR with description of what changed and why.
+4. Run `npm run evals` — all contract and parser regression checks pass.
+5. Run `validate-hashes.sh --update` — `MANIFEST.yaml` current.
+6. Commit source + `docs/`.
+7. Open PR with description of what changed and why.

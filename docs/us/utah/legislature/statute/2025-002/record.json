@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-002/",
-    "generated": "2026-05-22T01:15:50.571Z",
+    "generated": "2026-05-25T01:27:26.281Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -17,7 +17,7 @@
     "authority": "utah-legislature",
     "url": "https://publedge.org/us/utah/legislature/statute/2025-002/",
     "issued_by": {
-      "\"@type\"": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah State Legislature",
       "ref": "https://le.utah.gov/"
     },
@@ -97,7 +97,7 @@
     "dateModified": "2026-04-21",
     "datePublished": "2025-05-07",
     "author": {
-      "@type": "GovernmentOrganization",
+      "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah State Legislature",
       "url": "https://le.utah.gov/"
     },

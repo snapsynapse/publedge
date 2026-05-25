@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated": "2026-05-22T01:15:50.537Z",
+    "generated": "2026-05-25T01:27:26.249Z",
     "count": 4,
-    "today": "2026-05-22"
+    "today": "2026-05-25"
   },
   "items": [
     {
       "kind": "term-end",
       "date": "2026-05-31",
-      "days_until": 9,
+      "days_until": 6,
       "record_id": "us-ut-oaip-rma-2025-001",
       "title": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
       "url": "https://publedge.org/us/utah/oaip/rma/2025-001/",
@@ -19,7 +19,7 @@
     {
       "kind": "effective",
       "date": "2026-06-30",
-      "days_until": 39,
+      "days_until": 36,
       "record_id": "us-co-legislature-statute-2024-sb24-205",
       "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
       "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
@@ -30,7 +30,7 @@
     {
       "kind": "term-end",
       "date": "2026-10-24",
-      "days_until": 155,
+      "days_until": 152,
       "record_id": "us-ut-oaip-rma-2025-002",
       "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
       "url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
@@ -41,7 +41,7 @@
     {
       "kind": "effective",
       "date": "2027-01-01",
-      "days_until": 224,
+      "days_until": 221,
       "record_id": "us-co-legislature-statute-2026-sb26-189",
       "title": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
       "url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",

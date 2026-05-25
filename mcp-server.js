@@ -17,8 +17,71 @@ const path = require('path');
 const ROOT = __dirname;
 
 // ---------------------------------------------------------------------------
-// YAML-lite parser (copied from scripts/build.js)
+// YAML-lite parser (kept in sync with scripts/lib/parse.js)
 // ---------------------------------------------------------------------------
+
+function stripOuterQuotes(rawValue) {
+    return String(rawValue).trim().replace(/^["']|["']$/g, '');
+}
+
+function normalizeKey(rawKey) {
+    return stripOuterQuotes(rawKey);
+}
+
+function findMappingColon(text) {
+    let quote = null;
+    for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (quote) {
+            if (ch === quote && text[i - 1] !== '\\') quote = null;
+            continue;
+        }
+        if (ch === '"' || ch === "'") {
+            quote = ch;
+            continue;
+        }
+        if (ch === ':' && (i === text.length - 1 || /\s/.test(text[i + 1]))) return i;
+    }
+    return -1;
+}
+
+function splitInlinePairs(text) {
+    const pairs = [];
+    let quote = null;
+    let start = 0;
+    for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (quote) {
+            if (ch === quote && text[i - 1] !== '\\') quote = null;
+            continue;
+        }
+        if (ch === '"' || ch === "'") {
+            quote = ch;
+            continue;
+        }
+        if (ch === ',') {
+            pairs.push(text.slice(start, i));
+            start = i + 1;
+        }
+    }
+    pairs.push(text.slice(start));
+    return pairs;
+}
+
+function parseScalar(rawValue) {
+    const value = stripOuterQuotes(rawValue);
+    if (value === 'null') return null;
+    if (value === 'true') return true;
+    if (value === 'false') return false;
+    if (value === '[]') return [];
+    if (value === '{}') return {};
+    if (value.startsWith('[') && value.endsWith(']')) {
+        const inner = value.slice(1, -1).trim();
+        if (!inner) return [];
+        return inner.split(',').map(part => parseScalar(part));
+    }
+    return value;
+}
 
 function parseYaml(content) {
     const lines = content.split('\n');
@@ -40,9 +103,9 @@ function parseYaml(content) {
         if (isList) {
             if (lineContent.startsWith('{') && lineContent.endsWith('}')) {
                 const obj = {};
-                lineContent.slice(1, -1).split(',').forEach(pair => {
-                    const ci = pair.indexOf(':');
-                    if (ci !== -1) obj[pair.slice(0, ci).trim()] = pair.slice(ci + 1).trim().replace(/^["']|["']$/g, '');
+                splitInlinePairs(lineContent.slice(1, -1)).forEach(pair => {
+                    const ci = findMappingColon(pair);
+                    if (ci !== -1) obj[normalizeKey(pair.slice(0, ci))] = parseScalar(pair.slice(ci + 1));
                 });
                 const parent = stack[stack.length - 1].obj;
                 const lastKey = stack[stack.length - 1].lastListKey;
@@ -50,10 +113,11 @@ function parseYaml(content) {
                 continue;
             }
 
-            const ci = lineContent.indexOf(':');
+            const ci = findMappingColon(lineContent);
             if (ci !== -1) {
-                const k = lineContent.slice(0, ci).trim();
-                const v = lineContent.slice(ci + 1).trim().replace(/^["']|["']$/g, '');
+                const k = normalizeKey(lineContent.slice(0, ci));
+                const rawValue = lineContent.slice(ci + 1).trim();
+                const v = parseScalar(rawValue);
                 const nextI = i + 1;
                 const hasChildren = nextI < lines.length &&
                     lines[nextI].trim() !== '' && !lines[nextI].trim().startsWith('#') &&
@@ -63,9 +127,9 @@ function parseYaml(content) {
                 const parent = stack[stack.length - 1].obj;
                 const listKey = stack[stack.length - 1].lastListKey;
 
-                if (hasChildren || v === '') {
+                if (hasChildren || rawValue === '') {
                     const obj = {};
-                    if (v) obj[k] = v;
+                    if (rawValue !== '') obj[k] = v;
                     if (listKey && Array.isArray(parent[listKey])) parent[listKey].push(obj);
                     stack.push({ obj, indent, lastListKey: null });
                 } else {
@@ -77,20 +141,21 @@ function parseYaml(content) {
                 const parent = stack[stack.length - 1].obj;
                 const listKey = stack[stack.length - 1].lastListKey;
                 if (listKey && Array.isArray(parent[listKey])) {
-                    parent[listKey].push(lineContent.replace(/^["']|["']$/g, ''));
+                    parent[listKey].push(parseScalar(lineContent));
                 }
             }
             continue;
         }
 
-        const ci = trimmed.indexOf(':');
+        const ci = findMappingColon(trimmed);
         if (ci === -1) continue;
 
-        const key = trimmed.slice(0, ci).trim();
-        const val = trimmed.slice(ci + 1).trim().replace(/^["']|["']$/g, '');
+        const key = normalizeKey(trimmed.slice(0, ci));
+        const rawValue = trimmed.slice(ci + 1).trim();
+        const val = parseScalar(rawValue);
         const parent = stack[stack.length - 1].obj;
 
-        if (val === '') {
+        if (rawValue === '') {
             const nextI = i + 1;
             let nextNonEmpty = null;
             for (let j = nextI; j < lines.length; j++) {
@@ -129,36 +194,10 @@ function humanizeId(id) {
 function parseFrontmatter(content) {
     const match = content.match(/^---\n([\s\S]*?)\n---/);
     if (!match) return { frontmatter: {}, body: content };
-
-    const frontmatter = {};
-    let currentKey = null;
-    let listValues = [];
-
-    match[1].split('\n').forEach(line => {
-        if (line.match(/^\s+-\s+/)) {
-            if (currentKey) listValues.push(line.replace(/^\s+-\s+/, '').trim());
-            return;
-        }
-        if (currentKey && listValues.length > 0) {
-            frontmatter[currentKey] = listValues;
-            listValues = [];
-            currentKey = null;
-        }
-        const [key, ...valueParts] = line.split(':');
-        if (key && valueParts.length) {
-            const value = valueParts.join(':').trim();
-            if (value === '') {
-                currentKey = key.trim();
-            } else {
-                frontmatter[key.trim()] = value;
-                currentKey = null;
-            }
-        }
-    });
-    if (currentKey && listValues.length > 0) {
-        frontmatter[currentKey] = listValues;
-    }
-    return { frontmatter, body: content.slice(match[0].length).trim() };
+    return {
+        frontmatter: parseYaml(match[1]),
+        body: content.slice(match[0].length).trim()
+    };
 }
 
 function findDataDir() {

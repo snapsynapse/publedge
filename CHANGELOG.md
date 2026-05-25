@@ -13,6 +13,13 @@ Follow-on work tracked in [ROADMAP.md](ROADMAP.md).
 ### Added
 - Obligation-First v0.1 binding export under `/api/v1/of/`, with companion JSON records for authorities, instruments, terms, obligations, and determinations.
 - `npm run validate:of` bridge validation using the Obligation-First adopter kit, plus CI coverage for the generated binding.
+- Parser regression eval covering quoted frontmatter keys and URL scalar list values.
+
+### Fixed
+- YAML-lite parsing now preserves quoted keys such as `"@type"` as `@type` and keeps URL list entries such as `publication_citations` as scalar strings instead of malformed objects.
+- MCP frontmatter parsing now matches the shared parser used by the build and validation scripts.
+- `/definitions/` no longer emits a broken relative link to `PROTOCOL.md`.
+- `MANIFEST.yaml` now matches the current `project.yml` hash.
 
 ## [0.1.0-pre] — 2026-04-22
 
