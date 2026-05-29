@@ -13,6 +13,18 @@ Plain markdown with structured frontmatter. Hash-pinned for integrity. Bound to 
 
 **Public. Spec frozen at v0.1.0-pre (2026-04-22). Drafting continues in public toward v0.2.**
 
+## Who this is for
+
+Regulators, regulated parties, and civic bodies that issue or rely on fact-specific written interpretations and need them recorded in a portable, queryable form.
+
+## What problem it solves
+
+Fact-specific interpretations (no-action letters, private rulings, JIAs, HOA decisions) live in scattered, unstructured records that can't be compared across authorities. PubLedge is an open protocol that records them as hash-pinned markdown bound to a shared ontology.
+
+## Canonical URL
+
+https://publedge.org/
+
 ## Part of the PAICE legal graph
 
 PubLedge is one component of the PAICE legal graph (with EveryAILaw, AI Incident Law, and Obligation First). It is intentionally open: code under Apache 2.0, protocol and content under CC BY 4.0, commercial use permitted with attribution. The open siblings are funded by EveryAILaw Pro, the graph's single restricted layer; openness here is a deliberate PBC-charter choice. The canonical model is in the PAICE Foundation INTENT.
