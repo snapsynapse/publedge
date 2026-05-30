@@ -26,6 +26,10 @@ function rpc(proc, id, method, params) {
     });
 }
 
+function parseToolPayload(response) {
+    return JSON.parse(response.result.content[0].text);
+}
+
 (async () => {
     const project = loadProjectData();
     const proc = spawn(process.execPath, ['mcp-server.js'], { cwd: ROOT, stdio: ['pipe', 'pipe', 'inherit'] });
@@ -49,12 +53,42 @@ function rpc(proc, id, method, params) {
 
         const sample = project.containers[0];
         const getContainer = await rpc(proc, 4, 'tools/call', { name: 'fetch_by_url', arguments: { url: `https://publedge.org/${sample._canonicalPath}` } });
-        const fetched = JSON.parse(getContainer.result.content[0].text);
+        const fetched = parseToolPayload(getContainer);
         if (fetched.id !== sample.id) failures.push(`fetch_by_url returned ${fetched.id} for ${sample.id}`);
 
         const searchObligations = await rpc(proc, 5, 'tools/call', { name: 'search_obligations', arguments: { query: project.primaries[0].id.split('-')[0] } });
-        const searchPayload = JSON.parse(searchObligations.result.content[0].text);
+        const searchPayload = parseToolPayload(searchObligations);
         if (!Array.isArray(searchPayload.results) || searchPayload.results.length === 0) failures.push('search_obligations returned no results for a known obligation token');
+
+        const relativeContainer = await rpc(proc, 6, 'tools/call', { name: 'fetch_by_url', arguments: { url: `/${sample._canonicalPath}` } });
+        const relativeFetched = parseToolPayload(relativeContainer);
+        if (relativeFetched.id !== sample.id) failures.push(`fetch_by_url failed root-relative canonical path for ${sample.id}`);
+
+        const rejectedUrls = [
+            `https://evil.example/${sample._canonicalPath}`,
+            `http://publedge.org/${sample._canonicalPath}`,
+            `https://www.publedge.org/${sample._canonicalPath}`,
+            `https://publedge.org:443/${sample._canonicalPath}`,
+            `https://PUBLEDGE.ORG/${sample._canonicalPath}`,
+            `https://xn--publdge-9za.org/${sample._canonicalPath}`,
+            `//publedge.org/${sample._canonicalPath}`,
+            `%2f%2fpubledge.org/${sample._canonicalPath}`,
+            `https://publedge.org/%2f${sample._canonicalPath}`,
+            `https://publedge.org/%2e%2e/${sample._canonicalPath}`,
+            `/../${sample._canonicalPath}`,
+            `/${sample._canonicalPath.replace(/\//, '//')}`,
+            `https://publedge.org\\${sample._canonicalPath}`,
+            `https://publedge.org/${sample._canonicalPath}?utm_source=test`,
+            `https://publedge.org/${sample._canonicalPath}#fragment`,
+            `not-a-root-relative-path`,
+            ` /${sample._canonicalPath}`,
+            `/${sample._canonicalPath} bad`
+        ];
+        let id = 7;
+        for (const url of rejectedUrls) {
+            const rejected = await rpc(proc, id++, 'tools/call', { name: 'fetch_by_url', arguments: { url } });
+            if (!rejected.result?.isError) failures.push(`fetch_by_url accepted non-canonical URL: ${url}`);
+        }
 
         if (failures.length) {
             console.error(`eval-mcp-contract: FAILED (${failures.length})`);

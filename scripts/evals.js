@@ -12,10 +12,13 @@ const scripts = [
     'eval-route-inventory.js',
     'eval-discovery.js',
     'eval-mcp-contract.js',
+    'eval-mcp-parser-lockstep.js',
     'eval-content-source.js',
+    'eval-verification-allowlist.js',
     'eval-obligation-first-binding.js',
     'eval-redirects.js',
     'eval-deterministic-build.js',
+    'eval-manifest-scope.js',
     'eval-links.js',
     'eval-verification-exit.js'
 ];

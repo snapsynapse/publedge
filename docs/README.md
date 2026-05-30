@@ -1,17 +1,29 @@
 # PubLedge
 
 [![CI](https://github.com/snapsynapse/publedge/actions/workflows/build.yml/badge.svg)](https://github.com/snapsynapse/publedge/actions/workflows/build.yml)
-[![Spec](https://img.shields.io/badge/spec-v0.1.0--pre-blue)](PROTOCOL.md)
+[![Spec](https://img.shields.io/badge/spec-v0.1.1--pre-blue)](PROTOCOL.md)
 [![Registry](https://img.shields.io/badge/registry-14%20instruments%20%C2%B7%2026%20obligations%20%C2%B7%207%20authorities-informational)](data/examples/instruments/)
 [![Content license: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey)](LICENSE-CC-BY-4.0)
 [![Code license: Apache 2.0](https://img.shields.io/badge/code-Apache%202.0-lightgrey)](LICENSE-APACHE)
-[![Bound to gist](https://img.shields.io/badge/ontology-gist-green)](https://www.semanticarts.com/gist/)
+[![Bound to gist](https://img.shields.io/badge/ontology-gist-green)](https://semanticarts.com/gist/)
 
 Open recordkeeping protocol for fact-specific written interpretations between two parties — Joint Interpretation Agreements (JIAs), Regulatory Mitigation Agreements (RMAs), no-action letters, private letter rulings, advisory opinions, and analogous civic instruments (HOA decision logs, co-op governance records, flying-club asset agreements, and the like).
 
-Plain markdown with structured frontmatter. Hash-pinned for integrity. Bound to the [Semantic Arts gist](https://www.semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
+Plain markdown with structured frontmatter. Hash-pinned for integrity. Bound to the [Semantic Arts gist](https://semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
 
-**Public. Spec frozen at v0.1.0-pre (2026-04-22). Drafting continues in public toward v0.2.**
+**Public. Current release v0.1.1-pre (2026-05-30). Drafting continues in public toward v0.2.**
+
+## Who this is for
+
+Regulators, regulated parties, and civic bodies that issue or rely on fact-specific written interpretations and need them recorded in a portable, queryable form.
+
+## What problem it solves
+
+Fact-specific interpretations (no-action letters, private rulings, JIAs, HOA decisions) live in scattered, unstructured records that can't be compared across authorities. PubLedge is an open protocol that records them as hash-pinned markdown bound to a shared ontology.
+
+## Canonical URL
+
+https://publedge.org/
 
 ## Part of the PAICE legal graph
 
@@ -121,7 +133,7 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 ## Built on
 
 - [Knowledge as Code](https://knowledge-as-code.com) — the four-role entity pattern (Authority / Container / Secondary / Primary) PubLedge inherits.
-- [gist (Semantic Arts)](https://www.semanticarts.com/gist/) — open upper ontology bound to PubLedge entities.
+- [gist (Semantic Arts)](https://semanticarts.com/gist/) — open upper ontology bound to PubLedge entities.
 - [Every AI Law](https://everyailaw.com) — preferred source for statute-anchor URLs in `statute_anchors[]`.
 - [skill-provenance](https://skillprovenance.dev) — hash-mechanism pattern adapted for `validate-hashes.sh`. PubLedge does not adopt the full skill-provenance protocol.
 

@@ -155,6 +155,7 @@ function normalizeGeneratedContent(relPath, raw) {
     }
     return raw
         .replace(/"generated":\s*"[^"]+"/g, '"generated":"__GENERATED__"')
+        .replace(/<lastmod>[^<]+<\/lastmod>/g, '<lastmod>__LASTMOD__</lastmod>')
         .replace(/<lastBuildDate>[^<]+<\/lastBuildDate>/g, '<lastBuildDate>__LAST_BUILD_DATE__</lastBuildDate>')
         .replace(/<pubDate>[^<]+<\/pubDate>/g, '<pubDate>__PUB_DATE__</pubDate>')
         .replace(/<updated>[^<]+<\/updated>/g, '<updated>__UPDATED__</updated>')

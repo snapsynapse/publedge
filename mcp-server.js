@@ -13,167 +13,10 @@
 
 const fs = require('fs');
 const path = require('path');
+const { parseYaml } = require('./scripts/lib/parse');
+const { loadMarkdownDir } = require('./scripts/lib/content');
 
 const ROOT = __dirname;
-
-// ---------------------------------------------------------------------------
-// YAML-lite parser (kept in sync with scripts/lib/parse.js)
-// ---------------------------------------------------------------------------
-
-function stripOuterQuotes(rawValue) {
-    return String(rawValue).trim().replace(/^["']|["']$/g, '');
-}
-
-function normalizeKey(rawKey) {
-    return stripOuterQuotes(rawKey);
-}
-
-function findMappingColon(text) {
-    let quote = null;
-    for (let i = 0; i < text.length; i++) {
-        const ch = text[i];
-        if (quote) {
-            if (ch === quote && text[i - 1] !== '\\') quote = null;
-            continue;
-        }
-        if (ch === '"' || ch === "'") {
-            quote = ch;
-            continue;
-        }
-        if (ch === ':' && (i === text.length - 1 || /\s/.test(text[i + 1]))) return i;
-    }
-    return -1;
-}
-
-function splitInlinePairs(text) {
-    const pairs = [];
-    let quote = null;
-    let start = 0;
-    for (let i = 0; i < text.length; i++) {
-        const ch = text[i];
-        if (quote) {
-            if (ch === quote && text[i - 1] !== '\\') quote = null;
-            continue;
-        }
-        if (ch === '"' || ch === "'") {
-            quote = ch;
-            continue;
-        }
-        if (ch === ',') {
-            pairs.push(text.slice(start, i));
-            start = i + 1;
-        }
-    }
-    pairs.push(text.slice(start));
-    return pairs;
-}
-
-function parseScalar(rawValue) {
-    const value = stripOuterQuotes(rawValue);
-    if (value === 'null') return null;
-    if (value === 'true') return true;
-    if (value === 'false') return false;
-    if (value === '[]') return [];
-    if (value === '{}') return {};
-    if (value.startsWith('[') && value.endsWith(']')) {
-        const inner = value.slice(1, -1).trim();
-        if (!inner) return [];
-        return inner.split(',').map(part => parseScalar(part));
-    }
-    return value;
-}
-
-function parseYaml(content) {
-    const lines = content.split('\n');
-    const result = {};
-    const stack = [{ obj: result, indent: -2 }];
-
-    for (let i = 0; i < lines.length; i++) {
-        const raw = lines[i];
-        if (raw.trim() === '' || raw.trim().startsWith('#')) continue;
-
-        const indent = raw.search(/\S/);
-        const trimmed = raw.trim();
-
-        while (stack.length > 1 && stack[stack.length - 1].indent >= indent) stack.pop();
-
-        const isList = trimmed.startsWith('- ');
-        const lineContent = isList ? trimmed.slice(2).trim() : trimmed;
-
-        if (isList) {
-            if (lineContent.startsWith('{') && lineContent.endsWith('}')) {
-                const obj = {};
-                splitInlinePairs(lineContent.slice(1, -1)).forEach(pair => {
-                    const ci = findMappingColon(pair);
-                    if (ci !== -1) obj[normalizeKey(pair.slice(0, ci))] = parseScalar(pair.slice(ci + 1));
-                });
-                const parent = stack[stack.length - 1].obj;
-                const lastKey = stack[stack.length - 1].lastListKey;
-                if (lastKey && Array.isArray(parent[lastKey])) parent[lastKey].push(obj);
-                continue;
-            }
-
-            const ci = findMappingColon(lineContent);
-            if (ci !== -1) {
-                const k = normalizeKey(lineContent.slice(0, ci));
-                const rawValue = lineContent.slice(ci + 1).trim();
-                const v = parseScalar(rawValue);
-                const nextI = i + 1;
-                const hasChildren = nextI < lines.length &&
-                    lines[nextI].trim() !== '' && !lines[nextI].trim().startsWith('#') &&
-                    !lines[nextI].trim().startsWith('- ') &&
-                    lines[nextI].search(/\S/) > indent;
-
-                const parent = stack[stack.length - 1].obj;
-                const listKey = stack[stack.length - 1].lastListKey;
-
-                if (hasChildren || rawValue === '') {
-                    const obj = {};
-                    if (rawValue !== '') obj[k] = v;
-                    if (listKey && Array.isArray(parent[listKey])) parent[listKey].push(obj);
-                    stack.push({ obj, indent, lastListKey: null });
-                } else {
-                    const obj = {};
-                    obj[k] = v;
-                    if (listKey && Array.isArray(parent[listKey])) parent[listKey].push(obj);
-                }
-            } else {
-                const parent = stack[stack.length - 1].obj;
-                const listKey = stack[stack.length - 1].lastListKey;
-                if (listKey && Array.isArray(parent[listKey])) {
-                    parent[listKey].push(parseScalar(lineContent));
-                }
-            }
-            continue;
-        }
-
-        const ci = findMappingColon(trimmed);
-        if (ci === -1) continue;
-
-        const key = normalizeKey(trimmed.slice(0, ci));
-        const rawValue = trimmed.slice(ci + 1).trim();
-        const val = parseScalar(rawValue);
-        const parent = stack[stack.length - 1].obj;
-
-        if (rawValue === '') {
-            const nextI = i + 1;
-            let nextNonEmpty = null;
-            for (let j = nextI; j < lines.length; j++) {
-                if (lines[j].trim() && !lines[j].trim().startsWith('#')) { nextNonEmpty = lines[j].trim(); break; }
-            }
-            if (nextNonEmpty && nextNonEmpty.startsWith('- ')) {
-                parent[key] = [];
-                stack.push({ obj: parent, indent, lastListKey: key });
-            } else {
-                parent[key] = {};
-                stack.push({ obj: parent[key], indent });
-            }
-        } else {
-            parent[key] = val;
-        }
-    }
-    return result;
-}
 
 // ---------------------------------------------------------------------------
 // Shared helpers (from scripts/build.js)
@@ -191,15 +34,6 @@ function humanizeId(id) {
     return String(id || '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 }
 
-function parseFrontmatter(content) {
-    const match = content.match(/^---\n([\s\S]*?)\n---/);
-    if (!match) return { frontmatter: {}, body: content };
-    return {
-        frontmatter: parseYaml(match[1]),
-        body: content.slice(match[0].length).trim()
-    };
-}
-
 function findDataDir() {
     const dirs = ['data/examples', 'data'];
     for (const base of dirs) {
@@ -210,61 +44,11 @@ function findDataDir() {
 }
 
 function loadDir(dir) {
-    if (!fs.existsSync(dir)) return [];
-    return fs.readdirSync(dir)
-        .filter(f => f.endsWith('.md') && !f.startsWith('_'))
-        .map(f => {
-            const content = fs.readFileSync(path.join(dir, f), 'utf-8');
-            const { frontmatter, body } = parseFrontmatter(content);
-            return { id: f.replace('.md', ''), ...frontmatter, _body: body };
-        });
-}
-
-function parseTable(tableText) {
-    const lines = tableText.trim().split('\n').filter(l => l.trim());
-    if (lines.length < 2) return [];
-    const headers = lines[0].split('|').map(h => h.trim()).filter(Boolean);
-    const rows = [];
-    for (let i = 2; i < lines.length; i++) {
-        const cells = lines[i].split('|').map(c => c.trim()).filter(Boolean);
-        const row = {};
-        headers.forEach((h, idx) => { row[h.toLowerCase().replace(/\s+/g, '_')] = cells[idx] || ''; });
-        rows.push(row);
-    }
-    return rows;
-}
-
-function parseProvisionSection(section) {
-    const trimmed = section.trim();
-    const lines = trimmed.split('\n');
-    const nameMatch = lines[0].match(/^## (.+)/);
-    if (!nameMatch) return null;
-    const provision = { name: nameMatch[1] };
-    const propTableMatch = trimmed.match(/\| Property \| Value \|[\s\S]*?\n\n/);
-    if (propTableMatch) {
-        parseTable(propTableMatch[0]).forEach(p => {
-            provision[p.property.toLowerCase().replace(/\s+/g, '_')] = p.value;
-        });
-    }
-    const reqMatch = trimmed.match(/### Requirements\n\n([\s\S]*?)(?=\n###|\n---|\n## |$)/);
-    if (reqMatch) provision.requirements = parseTable(reqMatch[1]);
-    return provision;
+    return loadMarkdownDir(dir);
 }
 
 function loadContainers(dir) {
-    if (!fs.existsSync(dir)) return [];
-    return fs.readdirSync(dir)
-        .filter(f => f.endsWith('.md') && !f.startsWith('_'))
-        .map(f => {
-            const content = fs.readFileSync(path.join(dir, f), 'utf-8');
-            const { frontmatter, body } = parseFrontmatter(content);
-            const id = f.replace('.md', '');
-            const timelineMatch = body.match(/## Timeline\n\n([\s\S]*?)(?=\n---|\n## )/);
-            const timeline = timelineMatch ? parseTable(timelineMatch[1]) : [];
-            const provisionSections = body.split(/\n---\n/).slice(1);
-            const provisions = provisionSections.map(parseProvisionSection).filter(Boolean);
-            return { id, ...frontmatter, timeline, provisions, _body: body };
-        });
+    return loadMarkdownDir(dir, { parseContainer: true });
 }
 
 function loadMappingIndex(filePath) {
@@ -346,6 +130,46 @@ function canonicalPathForContainer(c) {
 function canonicalUrlForContainer(c) {
     const base = (config.url || 'https://publedge.org/').replace(/\/$/, '');
     return base + canonicalPathForContainer(c);
+}
+
+function normalizeFetchPath(rawInput) {
+    const input = String(rawInput || '');
+    const raw = input.trim();
+    if (!raw) return { error: 'Empty url' };
+    if (raw !== input) return { error: 'URL contains leading or trailing whitespace' };
+    if (/[\u0000-\u001f\u007f\s]/.test(raw)) return { error: 'URL contains whitespace or control characters' };
+    if (raw.includes('\\') || /%5c/i.test(raw)) return { error: 'URL contains a backslash' };
+    if (/^\/\/|^%2f%2f/i.test(raw)) return { error: 'Protocol-relative URLs are not canonical PubLedge URLs' };
+    if (/%2f/i.test(raw)) return { error: 'Encoded slashes are not canonical PubLedge URLs' };
+    if (/%2e/i.test(raw)) return { error: 'Encoded dot segments are not canonical PubLedge URLs' };
+
+    const configured = new URL(config.url || 'https://publedge.org/');
+    let pathname;
+
+    if (/^https?:\/\//i.test(raw)) {
+        let parsed;
+        try {
+            parsed = new URL(raw);
+        } catch (_) {
+            return { error: 'Malformed absolute URL' };
+        }
+        const canonicalPrefix = configured.origin + '/';
+        if (!raw.startsWith(canonicalPrefix)) return { error: `URL origin must be exactly ${configured.origin}` };
+        if (parsed.protocol !== 'https:') return { error: 'Canonical PubLedge URLs must use https' };
+        if (parsed.origin !== configured.origin) return { error: `URL origin must be ${configured.origin}` };
+        if (parsed.search || parsed.hash) return { error: 'Canonical PubLedge URLs must not include query strings or fragments' };
+        pathname = parsed.pathname;
+    } else {
+        if (/^[a-z][a-z0-9+.-]*:/i.test(raw)) return { error: 'Unsupported URL scheme' };
+        if (!raw.startsWith('/')) return { error: 'Relative canonical paths must start with /' };
+        if (raw.includes('?') || raw.includes('#')) return { error: 'Canonical PubLedge paths must not include query strings or fragments' };
+        pathname = raw;
+    }
+
+    if (!pathname.startsWith('/')) return { error: 'Canonical path must start with /' };
+    if (pathname.includes('//')) return { error: 'Canonical path must not contain empty path segments' };
+    if (pathname.split('/').some(part => part === '.' || part === '..')) return { error: 'Canonical path must not contain dot segments' };
+    return { path: pathname.replace(/\/+$/, '') + '/' };
 }
 
 function boundary(message, suggestions, why) {
@@ -625,17 +449,18 @@ function handleToolCall(name, args) {
 
     // --- fetch_by_url ---
     if (name === 'fetch_by_url') {
-        const url = (args.url || '').trim();
-        if (!url) {
+        const url = String(args.url || '').trim();
+        const normalized = normalizeFetchPath(args.url);
+        if (normalized.error) {
             return {
                 content: [{ type: 'text', text: JSON.stringify({
-                    error: 'Empty url',
-                    boundary: boundary('A url is required.', ['Provide a canonical URL or path', 'Example: /us/utah/oaip/rma/2025-001/'])
+                    error: normalized.error,
+                    boundary: boundary('A canonical PubLedge URL or path is required.', ['Use a https://publedge.org/ URL', 'Use a root-relative path such as /us/utah/oaip/rma/2025-001/'])
                 }, null, 2) }],
                 isError: true
             };
         }
-        const targetPath = url.replace(/^https?:\/\/[^/]+/, '').replace(/\/+$/, '') + '/';
+        const targetPath = normalized.path;
         const match = containers.find(c => {
             const p = canonicalPathForContainer(c);
             return p === targetPath;

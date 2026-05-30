@@ -193,6 +193,13 @@ social:
 # ---------------------------------------------------------------------------
 verification:
   staleness_days: 90
+  # Relationship-only instruments intentionally kept in the registry to
+  # preserve amendment/supersession chains even when they do not introduce
+  # standalone PubLedge obligation mappings.
+  allowed_unmapped_instruments:
+    - us-co-legislature-statute-2024-sb24-205
+    - us-co-legislature-statute-2025-sb25b-004
+    - us-co-legislature-statute-2026-sb26-189
 
 # ---------------------------------------------------------------------------
 # Ontology framework — semantic layer binding PubLedge entities to gist
@@ -273,7 +280,7 @@ ecosystem:
     url: "https://everyailaw.com"
     description: "Global AI regulatory landscape — statute reference spine for PubLedge JIAs"
   - name: "gist (Semantic Arts)"
-    url: "https://www.semanticarts.com/gist/"
+    url: "https://semanticarts.com/gist/"
     description: "Upper ontology PubLedge schemas bind to (CC-BY 4.0)"
   - name: "Skill Provenance"
     url: "https://skillprovenance.dev"

@@ -39,15 +39,7 @@ jobs:
         run: OBLIGATION_FIRST_DIR="$PWD/obligation-first" npm run validate:of
 
       - name: Verify docs/ is up to date with sources
-        run: |
-          # Exclude paths that embed a build timestamp (non-deterministic on each build).
-          # Tracked upstream: KaC build.js emits `meta.generated` in api/*.json and pubDate in feed.xml.
-          if ! git diff --quiet -- docs/ ':(exclude)docs/api/*.json' ':(exclude)docs/feed.xml' ':(exclude)docs/sitemap.xml'; then
-            echo "::error::docs/ is out of sync with sources. Run 'npm run build' locally and commit the result."
-            git status -- docs/
-            git diff --stat -- docs/ ':(exclude)docs/api/*.json' ':(exclude)docs/feed.xml' ':(exclude)docs/sitemap.xml' | head -30
-            exit 1
-          fi
+        run: node scripts/eval-clean-build.js
 
       - name: Check internal links
         run: node scripts/check-links.js

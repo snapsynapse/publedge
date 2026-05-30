@@ -1,6 +1,6 @@
 {
   "name": "publedge",
-  "version": "0.1.0-pre",
+  "version": "0.1.1-pre",
   "description": "Open recordkeeping protocol for fact-specific written interpretations between two parties (JIAs, RMAs, no-action letters, advisory opinions, private letter rulings). Plain markdown, hash-pinned, gist-bound.",
   "license": "Apache-2.0",
   "scripts": {
@@ -16,9 +16,12 @@
     "eval:route-inventory": "node scripts/eval-route-inventory.js",
     "eval:discovery": "node scripts/eval-discovery.js",
     "eval:mcp-contract": "node scripts/eval-mcp-contract.js",
+    "eval:mcp-parser-lockstep": "node scripts/eval-mcp-parser-lockstep.js",
     "eval:content-source": "node scripts/eval-content-source.js",
+    "eval:verification-allowlist": "node scripts/eval-verification-allowlist.js",
     "eval:redirects": "node scripts/eval-redirects.js",
     "eval:deterministic-build": "node scripts/eval-deterministic-build.js",
+    "eval:manifest-scope": "node scripts/eval-manifest-scope.js",
     "eval:links": "node scripts/eval-links.js",
     "eval:verification-exit": "node scripts/eval-verification-exit.js"
   },

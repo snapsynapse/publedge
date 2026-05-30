@@ -4,18 +4,26 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-Not all v0.1.0-pre history is versioned separately; early drafting work was compressed into a single prerelease entry below. Subsequent releases will track individually.
+Not all v0.1.0-pre history is versioned separately; early drafting work was compressed into a single prerelease entry below. Subsequent releases are tracked individually.
 
 ## [Unreleased]
 
 Follow-on work tracked in [ROADMAP.md](ROADMAP.md).
 
+## [0.1.1-pre] — 2026-05-30
+
+Security hardening and release-readiness patch.
+
 ### Added
 - Obligation-First v0.1 binding export under `/api/v1/of/`, with companion JSON records for authorities, instruments, terms, obligations, and determinations.
 - `npm run validate:of` bridge validation using the Obligation-First adopter kit, plus CI coverage for the generated binding.
 - Parser regression eval covering quoted frontmatter keys and URL scalar list values.
+- Verification allowlist for relationship-only instruments that preserve amendment/supersession chains without standalone obligation mappings.
+- Evals for MCP URL boundaries, MCP parser lockstep, verification allowlist semantics, generated-output normalization, and manifest scope coverage.
 
 ### Fixed
+- MCP `fetch_by_url` now rejects cross-origin, non-HTTPS, protocol-relative, encoded-slash, backslash, whitespace/control-character, query-string, and fragment URL forms instead of stripping arbitrary origins and matching only by path.
+- MCP record loading now uses the shared parser/content loader instead of duplicated YAML and container parsing logic.
 - YAML-lite parsing now preserves quoted keys such as `"@type"` as `@type` and keeps URL list entries such as `publication_citations` as scalar strings instead of malformed objects.
 - MCP frontmatter parsing now matches the shared parser used by the build and validation scripts.
 - `/definitions/` no longer emits a broken relative link to `PROTOCOL.md`.
@@ -71,5 +79,6 @@ Follow-on work tracked in [ROADMAP.md](ROADMAP.md).
 - CI: pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap on every push and pull request; docs/ sync check; hash validation
 - `.gitignore` aligned to portfolio hygiene baseline (`.env.*` glob, `__pycache__/`, `*.pyc`, `dist/`, `build/`, `.venv/`, `venv/`)
 
-[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.0-pre...HEAD
+[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.1-pre...HEAD
+[0.1.1-pre]: https://github.com/snapsynapse/publedge/compare/v0.1.0-pre...v0.1.1-pre
 [0.1.0-pre]: https://github.com/snapsynapse/publedge/releases/tag/v0.1.0-pre

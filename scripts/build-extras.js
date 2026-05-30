@@ -156,7 +156,7 @@ function renderFooterNav(relRoot) {
 function renderSiteFooter(relRoot) {
     return `<footer class="site-footer">
 <p class="footer-meta">&copy; ${new Date().getFullYear()} <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="${relRoot}reference/disclaimer/">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.0-pre</p>
+<p class="footer-built">PubLedge v0.1.1-pre</p>
 </footer>`;
 }
 

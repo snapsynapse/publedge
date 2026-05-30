@@ -11,7 +11,7 @@ Living housekeeping document. Tracks what shipped, what's pending, and what's de
 
 ## Current version
 
-`v0.1.0-pre` — drafting in public. Freeze target: after lawyer review checkpoint (week of 2026-04-20).
+`v0.1.1-pre` — hardening release, published 2026-05-30. Drafting continues in public toward v0.2.
 
 ## What shipped (as of 2026-04-21)
 

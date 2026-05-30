@@ -1,7 +1,7 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Specification"
 title: "PubLedge Protocol"
-version: "0.1.0-pre"
+version: "0.1.1-pre"
 license: "CC-BY-4.0"
 created: 2026-04-18
 modified: 2026-04-18
@@ -27,7 +27,7 @@ The civic and regulatory framings are different use cases of the same underlying
 
 1. **Human-readable, machine-verifiable** — every record is markdown a person can read and JSON a machine can parse.
 2. **Plain text, no proprietary dependencies** — git is the only required tool.
-3. **Open ontology** — entities bind to [Semantic Arts gist](https://www.semanticarts.com/gist/) (CC-BY 4.0) for cross-system interoperability.
+3. **Open ontology** — entities bind to [Semantic Arts gist](https://semanticarts.com/gist/) (CC-BY 4.0) for cross-system interoperability.
 4. **Hash-pinned integrity** — every published record is hashed in `MANIFEST.yaml`; tampering is detectable.
 5. **Drafting-in-public posture** — published records carry a disclaimer until reviewed and accepted by the relevant authority.
 

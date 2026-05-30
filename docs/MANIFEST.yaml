@@ -1,178 +1,627 @@
 # PubLedge Content Provenance Manifest
 #
-# Tracks SHA-256 hashes of canonical PubLedge content for tamper detection
-# and reproducibility. Run `./scripts/validate-hashes.sh` to verify, or
-# `./scripts/validate-hashes.sh --update` to recompute after intentional edits.
+# Tracks SHA-256 hashes of canonical PubLedge source content for tamper
+# detection and reproducibility. Run `./scripts/validate-hashes.sh` to
+# verify, or `./scripts/validate-hashes.sh --update` to recompute after
+# intentional edits.
 #
 # Hash mechanism adapted from skill-provenance (https://skillprovenance.dev).
-# We do not adopt the full skill-provenance protocol — only the integrity
-# pattern.
+# PubLedge uses only the integrity pattern, not the full protocol.
 #
-# What gets hashed:
-#   - Protocol prose (PROTOCOL.md, PRIOR-ART.md, vocabulary)
-#   - All published JIA / RMA instances under data/examples/instruments/
-#   - All obligation definitions under data/examples/obligations/
-#   - All authority definitions under data/examples/authorities/
-#   - Mapping index
-#   - JSON Schemas + JSON-LD context (published under schema/)
-#   - Vendored upper ontology snapshot (vendor/gist/gistCore.ttl)
-#   - License files
+# Hashed scope:
+#   - Protocol, security, verification, changelog, and contribution prose
+#   - Project/package/MCP configuration
+#   - MCP server, build, validation, eval, and CI workflow code
+#   - All canonical data/examples authorities, instruments, obligations, mapping
+#   - Templates, schemas, JSON-LD context, and vendored gist snapshot files
+#   - License and attribution files
 #
-# What does NOT get hashed:
+# Excluded scope:
 #   - Build outputs (docs/)
+#   - Generated feeds/API/sitemaps
 #   - Editor / OS artifacts
 #   - This file (MANIFEST.yaml is the control file)
-#   - Workshop scratchpad (_workshop/) — not a stable contract
-#   - index.html, 404.html — regenerated as the site evolves
+#   - Workshop scratchpad (_workshop/)
 
 bundle: publedge
-bundle_version: 0.1.0-pre
-bundle_date: 2026-04-18
+bundle_version: 0.1.1-pre
+bundle_date: 2026-05-30
 description: >
-  PubLedge — open recordkeeping protocol for fact-specific written
-  interpretations between two parties (JIAs, RMAs, no-action letters,
-  private letter rulings).
+  PubLedge open recordkeeping protocol for fact-specific written
+  interpretations between two parties.
 
 upstream:
   - name: skill-provenance
     url: https://skillprovenance.dev
-    used_for: hash mechanism only (validate.sh script pattern)
+    used_for: hash mechanism only
   - name: gist (Semantic Arts)
-    url: https://www.semanticarts.com/gist/
+    url: https://semanticarts.com/gist/
     used_for: upper ontology binding
     pinned_at: vendor/gist/gistCore.ttl
 
 files:
-  # License files
-  - path: LICENSE
-    role: legal
-    hash: sha256:17298902087045c8684d1be30cf0e921bb5c52167201d148cc002eaa0763e7cb
-    note: License pointer document explaining dual-license split
+  - path: data/examples/authorities/cfpb.md
+    role: authority
+    hash: sha256:3ca5f6965c9280d0c9545c09200173ac348c0a3d0f60d133a98d0b0fa2d3e4a4
+    note: data/examples/authorities/cfpb.md
 
-  - path: LICENSE-APACHE
-    role: legal
-    hash: sha256:3cbeb832e52ede2c154d4977567b70f204a853342e51d843458f9b785771f069
-    note: Apache 2.0 full text — covers code, schemas, scripts
+  - path: data/examples/authorities/cftc-dsio.md
+    role: authority
+    hash: sha256:126e57d5bf9d9bfea26c9e786e8a94c7fa10192266ee370520296d82f1ffc38c
+    note: data/examples/authorities/cftc-dsio.md
 
-  - path: LICENSE-CC-BY-4.0
-    role: legal
-    hash: sha256:62a68518848c2fdcd108ff5cc11ba1516440c507bf425d5e76ad36886fd5752a
-    note: CC-BY 4.0 reference — covers content (markdown, YAML, HTML)
+  - path: data/examples/authorities/colorado-legislature.md
+    role: authority
+    hash: sha256:25ba8530bf786c5ba151f3e33b01bc28e14a1979e27357e3873bf0f01a1f7e13
+    note: data/examples/authorities/colorado-legislature.md
+
+  - path: data/examples/authorities/irs-chief-counsel.md
+    role: authority
+    hash: sha256:140ce6fb936c2a1680bc861e8f2a35648a37a6e5d3a362526b1ff72616e1cab9
+    note: data/examples/authorities/irs-chief-counsel.md
+
+  - path: data/examples/authorities/irs-tege.md
+    role: authority
+    hash: sha256:cb3dbe7a81caab15581f97a431c72a4263bf1153fe72893eca2a062e8452ea03
+    note: data/examples/authorities/irs-tege.md
+
+  - path: data/examples/authorities/sec-corpfin.md
+    role: authority
+    hash: sha256:5729d233daed0323f24ea0e8b9c5c412c109cfe9c032f3354146dc16480b460e
+    note: data/examples/authorities/sec-corpfin.md
+
+  - path: data/examples/authorities/utah-legislature.md
+    role: authority
+    hash: sha256:c4afaef88654e92f549715f36e28bc35916d4c8c5a56201b5ec249dc4fb488f9
+    note: data/examples/authorities/utah-legislature.md
+
+  - path: data/examples/authorities/utah-oaip.md
+    role: authority
+    hash: sha256:e3f8e81c7f83fff77637ea432e5c3e4830515ed35b860d4055f69879e15308ed
+    note: data/examples/authorities/utah-oaip.md
+
+  - path: .github/workflows/build.yml
+    role: ci
+    hash: sha256:672e617cbc5fbde4831d6eb0ecf0a7bd3d9c498bf61829cdd5e8f41e20b08270
+    note: .github/workflows/build.yml
+
+  - path: .github/workflows/verify.yml
+    role: ci
+    hash: sha256:d55d4d2d2f5b7fe6c1a67465bb5ffffb0e645c9e5c94b31cdb223aa59c4cb8e5
+    note: .github/workflows/verify.yml
+
+  - path: mcp.json
+    role: config
+    hash: sha256:c4eeab49387e1bf3a17687bb0eaa2d50ba54aa79c4125ca01a0a2895b1b0d2b4
+    note: mcp.json
+
+  - path: package.json
+    role: config
+    hash: sha256:38a7187b47917f6849ab75517322d7454197b2aec4f0afe3ef16ee6c374005c2
+    note: package.json
+
+  - path: project.yml
+    role: config
+    hash: sha256:8fe15da397319418eb74e67f9cc59acb879cb416198d1229a8bb45530ef64067
+    note: project.yml
+
+  - path: data/examples/instruments/us-cfpb-ao-2022-001.md
+    role: instrument
+    hash: sha256:4b735a92e81aed9f16c5ab0ffd39ef8f8e731fb3b8667abee78e2ad340954703
+    note: data/examples/instruments/us-cfpb-ao-2022-001.md
+
+  - path: data/examples/instruments/us-cftc-dsio-il-2017-001.md
+    role: instrument
+    hash: sha256:8a63f3e4db25002af362d56f3336114a1f7cdd9ac56a34a194ad93058b4b47db
+    note: data/examples/instruments/us-cftc-dsio-il-2017-001.md
+
+  - path: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
+    role: instrument
+    hash: sha256:674d249edf774c0aab5c108712a13356f329345dba9d91d65801f4de89afbea8
+    note: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
+
+  - path: data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md
+    role: instrument
+    hash: sha256:147a5573b8e0535559c25257c59536b8b07af6952599234a9ca9fa978013bc16
+    note: data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md
+
+  - path: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
+    role: instrument
+    hash: sha256:f0f12d0dfe3c33d45b3c2c3fb3b745adcde173c534462f62ce2edd4de238a399
+    note: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
+
+  - path: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
+    role: instrument
+    hash: sha256:38ec505f96b0d2134cf5f4e94b464ccc3ea0cb7fb32691143236665fb5dd6ea5
+    note: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
+
+  - path: data/examples/instruments/us-irs-tege-plr-2026-001.md
+    role: instrument
+    hash: sha256:2de656a010238529e9162a86b218cbae10a6e803ba5c35630e67e1185bab774f
+    note: data/examples/instruments/us-irs-tege-plr-2026-001.md
+
+  - path: data/examples/instruments/us-sec-corpfin-nal-2025-001.md
+    role: instrument
+    hash: sha256:ff27c1733d96fbd84d777e8484d2998e57b46f0f61d7206f835430006db0bba3
+    note: data/examples/instruments/us-sec-corpfin-nal-2025-001.md
+
+  - path: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
+    role: instrument
+    hash: sha256:34aa75e209fcdf9d9fc9da11a005b5093cb8d8bd6cd62c0436db4eab211ec763
+    note: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
+
+  - path: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
+    role: instrument
+    hash: sha256:d7b472eeefd4053cdff5010a41cea2d18d81aff7567c8aedc6cba7889a22c89c
+    note: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
+
+  - path: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
+    role: instrument
+    hash: sha256:cc93e96a73d79084508d24534c547790aa19ae0e4abcf897f3c8d08e476dcda0
+    note: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
+
+  - path: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
+    role: instrument
+    hash: sha256:b539f7f5f7981962789a86dbb4ea9af36619238b842b816fcb1b91bfd9e3e3ce
+    note: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
+
+  - path: data/examples/instruments/us-ut-oaip-jia-2026-001.md
+    role: instrument
+    hash: sha256:069a20a2846571475e268e4568c4438820a67de351a94fc5a4a413a6288af7d9
+    note: data/examples/instruments/us-ut-oaip-jia-2026-001.md
+
+  - path: data/examples/instruments/us-ut-oaip-rma-2024-001.md
+    role: instrument
+    hash: sha256:f065766038bb2ed9909fa155357396a4effbcab1fe81371dd960d805b695ba05
+    note: data/examples/instruments/us-ut-oaip-rma-2024-001.md
+
+  - path: data/examples/instruments/us-ut-oaip-rma-2025-001.md
+    role: instrument
+    hash: sha256:58fc5cc1b108a1f115ed098efc7703a6580c4f7e39f53b1cfe2fb2cbfb98a76d
+    note: data/examples/instruments/us-ut-oaip-rma-2025-001.md
+
+  - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
+    role: instrument
+    hash: sha256:bf314d29dcaa6342a9e1459bfe65545c9d96ddad215b7b646b24e4b7d4943882
+    note: data/examples/instruments/us-ut-oaip-rma-2025-002.md
+
+  - path: data/examples/instruments/us-ut-oaip-rma-2026-001.md
+    role: instrument
+    hash: sha256:cf93341ccf9d44ac82c953b12a7a0f67304a87e4a526601627339ebf2f337180
+    note: data/examples/instruments/us-ut-oaip-rma-2026-001.md
 
   - path: ATTRIBUTION.md
     role: legal
     hash: sha256:29fa94ac52d43bd593f3fcd15312d33c031c3ce4d7bb3f9fbbf1b8b29b6b4a60
-    note: Credits KaC, gist, EveryAILaw
+    note: ATTRIBUTION.md
 
-  # Vendored upstream
-  - path: vendor/gist/gistCore.ttl
-    role: vendor
-    hash: sha256:0d8230f3a4df9aa7782ec79bfa83def34a13a066f60d5f5ef0f00b9cecce08b1
-    note: Pinned snapshot of Semantic Arts gist core ontology (CC-BY 4.0)
+  - path: LICENSE
+    role: legal
+    hash: sha256:17298902087045c8684d1be30cf0e921bb5c52167201d148cc002eaa0763e7cb
+    note: LICENSE
 
-  - path: vendor/gist/LICENSE.txt
-    role: vendor
-    hash: sha256:9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94
-    note: gist upstream license
+  - path: LICENSE-APACHE
+    role: legal
+    hash: sha256:3cbeb832e52ede2c154d4977567b70f204a853342e51d843458f9b785771f069
+    note: LICENSE-APACHE
 
-  - path: vendor/gist/VERSION.md
-    role: vendor
-    hash: sha256:1bd18183661c4b62b6e0134380d0559460d419c8eff36d1def309dd194426363
-    note: Snapshot provenance and refresh procedure
+  - path: LICENSE-CC-BY-4.0
+    role: legal
+    hash: sha256:62a68518848c2fdcd108ff5cc11ba1516440c507bf425d5e76ad36886fd5752a
+    note: LICENSE-CC-BY-4.0
 
-  # Project configuration
-  - path: project.yml
-    role: config
-    hash: sha256:182d84bec08e9cddfca6655e2fa742b4f168bd2b2f845d62fe62a5b9d88b7f42
-    note: KaC build config — entity ontology, navigation, theme
-
-  # Data — authorities
-  - path: data/examples/authorities/utah-oaip.md
-    role: authority
-    hash: sha256:e3f8e81c7f83fff77637ea432e5c3e4830515ed35b860d4055f69879e15308ed
-    note: Utah Office of AI Policy
-
-  # Data — instruments (JIAs / RMAs)
-  - path: data/examples/instruments/us-ut-oaip-jia-2026-001.md
-    role: instrument
-    hash: sha256:069a20a2846571475e268e4568c4438820a67de351a94fc5a4a413a6288af7d9
-    note: us-ut-oaip-jia-2026-001 — Utah Mental-Health Chatbot Disclosure JIA (draft) — renamed from utah-mental-health-chatbot-disclosure-2026q2.md during 2026-04-19 jurisdiction-scoped ID migration
-
-  # Data — obligations
-  - path: data/examples/obligations/disclose-genai-on-first-session.md
-    role: obligation
-    hash: sha256:ff9ba78518a50fd4756d36f216805a39b565fe861577ba775bab793fc9d52366
-    note: Primary obligation — display GenAI disclosure on first session
-
-  # Data — mapping
   - path: data/examples/mapping/index.yml
     role: mapping
     hash: sha256:3b1263ab438ca9533d9b26ab48fadbb6620b2df39bf325ed59cd1128f4fe7d40
-    note: Connects instruments to obligations via terms
+    note: data/examples/mapping/index.yml
 
-  # Protocol prose
-  - path: README.md
-    role: protocol
-    hash: sha256:f73cc8fea680776b36120d21ad8807368dd76f0e3fbe05187c0b8195a3004565
-    note: Repository overview rendered on GitHub
+  - path: data/examples/obligations/ai-authorized-rx-renewal.md
+    role: obligation
+    hash: sha256:fa6cb04b669cd71f0dea6728f98bdaf854c647020bc4af99aae90c34df6796a9
+    note: data/examples/obligations/ai-authorized-rx-renewal.md
 
-  - path: PROTOCOL.md
+  - path: data/examples/obligations/ai-defense-elimination.md
+    role: obligation
+    hash: sha256:91859d895ba38da53da46ef6b1740b6380940c53e01169c716a6a12b85a09bc9
+    note: data/examples/obligations/ai-defense-elimination.md
+
+  - path: data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md
+    role: obligation
+    hash: sha256:69b9f0d252a3569cfcfbbafb37324a435589472de686cbca90cfe763888b323f
+    note: data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md
+
+  - path: data/examples/obligations/cftc-unbundled-fee-not-cta-trigger.md
+    role: obligation
+    hash: sha256:357e591c11ddbfe4a8b0a935112ed256b3d041c4b8d4ab5e4218110c174fa5ca
+    note: data/examples/obligations/cftc-unbundled-fee-not-cta-trigger.md
+
+  - path: data/examples/obligations/chatbot-data-no-third-party-sharing.md
+    role: obligation
+    hash: sha256:c066e00e64f5e481b0d0ccf622512dfe5d812c12428647a93bef172fb1502657
+    note: data/examples/obligations/chatbot-data-no-third-party-sharing.md
+
+  - path: data/examples/obligations/chatbot-safety-policy-filing.md
+    role: obligation
+    hash: sha256:23de693532815e437f3f5a69f2404d558c49e18452e5b693488cb591564952d7
+    note: data/examples/obligations/chatbot-safety-policy-filing.md
+
+  - path: data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md
+    role: obligation
+    hash: sha256:846de645ed7abbe5a03b7e1b265e99cf964786af482f4d89d0db365c2a18709f
+    note: data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md
+
+  - path: data/examples/obligations/dentacor-hygienist-ai-concurrence-diagnosis.md
+    role: obligation
+    hash: sha256:6761e5f424fbef816cd0e26a9408b8b693e90f9f01eb74c22e35e9cbf9fba453
+    note: data/examples/obligations/dentacor-hygienist-ai-concurrence-diagnosis.md
+
+  - path: data/examples/obligations/dentacor-informed-consent-no-dentist.md
+    role: obligation
+    hash: sha256:5a0cb34be46dc8c2238d3f329081eca521ba25d642e7f212701f283b382e1b7e
+    note: data/examples/obligations/dentacor-informed-consent-no-dentist.md
+
+  - path: data/examples/obligations/disclose-genai-high-risk-proactive.md
+    role: obligation
+    hash: sha256:7f650b4dc2077a769a2178630853b372eda4d0517ee0330e452f2f9aa2ebbc84
+    note: data/examples/obligations/disclose-genai-high-risk-proactive.md
+
+  - path: data/examples/obligations/disclose-genai-on-first-session.md
+    role: obligation
+    hash: sha256:ff9ba78518a50fd4756d36f216805a39b565fe861577ba775bab793fc9d52366
+    note: data/examples/obligations/disclose-genai-on-first-session.md
+
+  - path: data/examples/obligations/disclose-genai-on-request.md
+    role: obligation
+    hash: sha256:f28f25f8e8e9a32d0cf7b28670ba8ba5103f329832a0d697765bd912d7b09da3
+    note: data/examples/obligations/disclose-genai-on-request.md
+
+  - path: data/examples/obligations/elizachat-phased-rollout.md
+    role: obligation
+    hash: sha256:8144e9c44c7e99f4a88f51e100da77f5817d21843197182679dcabef3190369e
+    note: data/examples/obligations/elizachat-phased-rollout.md
+
+  - path: data/examples/obligations/elizachat-pre-access-disclosure-bundle.md
+    role: obligation
+    hash: sha256:14ed91dbd399b6fcce80e13a05a2cf4793d4cdf32ef11185284f002d1f70995b
+    note: data/examples/obligations/elizachat-pre-access-disclosure-bundle.md
+
+  - path: data/examples/obligations/irs-501c3-dual-test-failure.md
+    role: obligation
+    hash: sha256:60f40e109f52694c82b601120e67cd83f245bdf4aa8f12225f522b4ed99e18f5
+    note: data/examples/obligations/irs-501c3-dual-test-failure.md
+
+  - path: data/examples/obligations/irs-incentive-fee-not-net-profits-share.md
+    role: obligation
+    hash: sha256:957f9a377fe671137d56dcf6079fca86194b2ecd2299df5df47c2879c267a555
+    note: data/examples/obligations/irs-incentive-fee-not-net-profits-share.md
+
+  - path: data/examples/obligations/learning-lab-agreement-participation.md
+    role: obligation
+    hash: sha256:29a3307d34033aefd354ff2fa87cd998119e1948a41ca75ce2e0ac8bd015fb62
+    note: data/examples/obligations/learning-lab-agreement-participation.md
+
+  - path: data/examples/obligations/named-prescriber-enforcement-forborne.md
+    role: obligation
+    hash: sha256:4654583986327f1b9e5b959c65fa172f8f4400a253928f2ebdad8e79ff0e9aad
+    note: data/examples/obligations/named-prescriber-enforcement-forborne.md
+
+  - path: data/examples/obligations/rma-data-security-63a-19-102.md
+    role: obligation
+    hash: sha256:d8a291d4cc7592941a107f367f198aece1253cc077b60210ea839de4f86a5fa4
+    note: data/examples/obligations/rma-data-security-63a-19-102.md
+
+  - path: data/examples/obligations/rma-end-of-term-report.md
+    role: obligation
+    hash: sha256:57d2b169df148263b696135478cfd4c1405a03cc73166a4f37b44bf8b4161207
+    note: data/examples/obligations/rma-end-of-term-report.md
+
+  - path: data/examples/obligations/rma-hold-harmless-state.md
+    role: obligation
+    hash: sha256:3d4f82bb0b04522d061d8a63456eefd3804d576ce28e33821f3629174f39130c
+    note: data/examples/obligations/rma-hold-harmless-state.md
+
+  - path: data/examples/obligations/rma-incident-notification-24hr.md
+    role: obligation
+    hash: sha256:82311284630c5183b1960e7a75505bc0cc9771d1d92e816e7dbef7b3ee4c27be
+    note: data/examples/obligations/rma-incident-notification-24hr.md
+
+  - path: data/examples/obligations/rma-monthly-report-to-oaip.md
+    role: obligation
+    hash: sha256:942059c454c0b6b2d5c6db7fe41de1b586d92bad63c0161f40d2332ee333c1fd
+    note: data/examples/obligations/rma-monthly-report-to-oaip.md
+
+  - path: data/examples/obligations/rma-no-advertising-reference.md
+    role: obligation
+    hash: sha256:062f1cbf98df52d615ba7ea3216504aea9404cb8ae33ac024af03c53383e5314
+    note: data/examples/obligations/rma-no-advertising-reference.md
+
+  - path: data/examples/obligations/sec-reg-d-506c-verification-safe-harbor.md
+    role: obligation
+    hash: sha256:715ea7b3b57908022ab292021f63762a5842f5460c22ba0608e596da7c7ddca6
+    note: data/examples/obligations/sec-reg-d-506c-verification-safe-harbor.md
+
+  - path: data/examples/obligations/telehealth-compliance-per-proposal.md
+    role: obligation
+    hash: sha256:71e21540414df88bce4718c7c3e0d06d987b81e719e7884540e3f97b38058cb8
+    note: data/examples/obligations/telehealth-compliance-per-proposal.md
+
+  - path: CHANGELOG.md
     role: protocol
-    hash: sha256:8cf479e8c6c13e64779f89c037e84d4887b65a0275044dbfdfee71418db11ca6
-    note: PubLedge protocol specification
+    hash: sha256:6b8604e88478bffbb51bba9dd8a2f1c3c5d3721c70c2d2e9419f078237772d19
+    note: CHANGELOG.md
+
+  - path: CONTRIBUTING.md
+    role: protocol
+    hash: sha256:ef3cd3a08db43d97fa8b18ce372f20e10a2c2ae654a54cda4c514c313e91cd98
+    note: CONTRIBUTING.md
+
+  - path: DEFINITIONS.md
+    role: protocol
+    hash: sha256:63da31d08e340e0f7441e740dfff91e59ec0dc9d487be92e34169db9409dd579
+    note: DEFINITIONS.md
 
   - path: PRIOR-ART.md
     role: protocol
     hash: sha256:38af1101db25dac94fd7e76dbed559cde7db3f2df7b1af1ad1262f6066964e19
-    note: Survey of analogous instruments PubLedge draws from
+    note: PRIOR-ART.md
 
-  # Templates — Utah JIA + RMA under §13-72a (mental health chatbot) and §13-75 (safe harbor)
-  - path: _templates/jia/utah-mental-health-chatbot-first-session-disclosure.md
-    role: template
-    hash: sha256:a45b2202be8dcb79aaa239203dc20365c27b2fa29f091ae1fa694a7946e65475
-    note: JIA template — §13-72a-203 first-session disclosure
+  - path: PROTOCOL.md
+    role: protocol
+    hash: sha256:16a495fed965b19ca0fe24eec36704b8cb923d07c49f68e0a5a1c738a4ffa8d1
+    note: PROTOCOL.md
 
-  - path: _templates/jia/utah-mental-health-chatbot-data-protection.md
-    role: template
-    hash: sha256:8010ad4cd4002cb930aa4da2a14789ff29d577f66114cd8bf40e8fedbaa4aaa4
-    note: JIA template — §13-72a-201 data protection scope
+  - path: README.md
+    role: protocol
+    hash: sha256:605ef8b827528e92e917102d30bf42eec2e1fa5b2a558a50e3bf606c1087d17a
+    note: README.md
 
-  - path: _templates/jia/utah-mental-health-chatbot-advertising.md
-    role: template
-    hash: sha256:998702f6c8afccedc28c04edb7766833cb03f002e72f3fa5434ada743aeb19f5
-    note: JIA template — §13-72a-202 advertising and representations
+  - path: ROADMAP.md
+    role: protocol
+    hash: sha256:88a88e5172b5753d4e1a864448a9ea0627de76bcb9d6d30619f407e9cba771b6
+    note: ROADMAP.md
 
-  - path: _templates/rma/utah-ai-sandbox-mitigation-mental-health-chatbot.md
-    role: template
-    hash: sha256:9736c19c052316e5d772d79ef8b49efb3e83a5db6a13468d40bac8886c472d40
-    note: RMA template — Utah AI Learning Lab sandbox mitigation enrollment
+  - path: SECURITY.md
+    role: protocol
+    hash: sha256:09685013a792abea4e7a06c9babef453050168bc9a73c1e8591e4007c235b283
+    note: SECURITY.md
 
-  - path: _templates/rma/utah-genai-safe-harbor-enrollment.md
-    role: template
-    hash: sha256:d4912e581ae809698455f6b8a251555853a64755f659a9c176a216714e810b1f
-    note: RMA template — §13-75-104 GenAI safe-harbor enrollment
-
-  - path: schema/jia.schema.json
-    role: schema
-    hash: sha256:830d02d999b8222f8d44da272d12ade81a00b7ed01d4ee69294116bd1eb32759
-    note: JSON Schema for PubLedge JIA instrument frontmatter
-
-  - path: schema/rma.schema.json
-    role: schema
-    hash: sha256:3be4a222b99cbc6a6bc942794344e74fe948e1315b2c98cbc3f261dbffddb9f8
-    note: JSON Schema for PubLedge RMA instrument frontmatter (v0.1 — superseded by instrument.schema.json, retained for backward compatibility)
-
-  - path: schema/instrument.schema.json
-    role: schema
-    hash: sha256:14ce232ea77ca3b3ee69491e6a5990652b0475895062305cbd47905cb0cb60a0
-    note: Polymorphic JSON Schema for every PubLedge instrument — v0.2, supersedes jia.schema.json + rma.schema.json
+  - path: VERIFICATION.md
+    role: protocol
+    hash: sha256:eafeded6cdd7c3547d4c40818b8c42ac4990dbbeecef598c2b892167df9753be
+    note: VERIFICATION.md
 
   - path: schema/context.jsonld
     role: schema
     hash: sha256:404c258aefcd446f4272593639d788ee808089b9c1b5a7d793f4322290ff0373
-    note: JSON-LD context binding PubLedge properties to gist IRIs
+    note: schema/context.jsonld
 
-  - path: ROADMAP.md
-    role: spec
-    hash: sha256:ead300172e1183888cdac4096efbaeae06251a2c7f544b169172c94be25bc8f0
-    note: Living roadmap — housekeeping document for v0.1 / v0.2 tracking
+  - path: schema/instrument.schema.json
+    role: schema
+    hash: sha256:14ce232ea77ca3b3ee69491e6a5990652b0475895062305cbd47905cb0cb60a0
+    note: schema/instrument.schema.json
+
+  - path: schema/jia.schema.json
+    role: schema
+    hash: sha256:830d02d999b8222f8d44da272d12ade81a00b7ed01d4ee69294116bd1eb32759
+    note: schema/jia.schema.json
+
+  - path: schema/rma.schema.json
+    role: schema
+    hash: sha256:3be4a222b99cbc6a6bc942794344e74fe948e1315b2c98cbc3f261dbffddb9f8
+    note: schema/rma.schema.json
+
+  - path: _templates/jia/utah-mental-health-chatbot-advertising.md
+    role: template
+    hash: sha256:998702f6c8afccedc28c04edb7766833cb03f002e72f3fa5434ada743aeb19f5
+    note: _templates/jia/utah-mental-health-chatbot-advertising.md
+
+  - path: _templates/jia/utah-mental-health-chatbot-data-protection.md
+    role: template
+    hash: sha256:8010ad4cd4002cb930aa4da2a14789ff29d577f66114cd8bf40e8fedbaa4aaa4
+    note: _templates/jia/utah-mental-health-chatbot-data-protection.md
+
+  - path: _templates/jia/utah-mental-health-chatbot-first-session-disclosure.md
+    role: template
+    hash: sha256:a45b2202be8dcb79aaa239203dc20365c27b2fa29f091ae1fa694a7946e65475
+    note: _templates/jia/utah-mental-health-chatbot-first-session-disclosure.md
+
+  - path: _templates/rma/utah-ai-sandbox-mitigation-mental-health-chatbot.md
+    role: template
+    hash: sha256:9736c19c052316e5d772d79ef8b49efb3e83a5db6a13468d40bac8886c472d40
+    note: _templates/rma/utah-ai-sandbox-mitigation-mental-health-chatbot.md
+
+  - path: _templates/rma/utah-genai-safe-harbor-enrollment.md
+    role: template
+    hash: sha256:d4912e581ae809698455f6b8a251555853a64755f659a9c176a216714e810b1f
+    note: _templates/rma/utah-genai-safe-harbor-enrollment.md
+
+  - path: mcp-server.js
+    role: tooling
+    hash: sha256:10aaa8d40516355816c539f94435285857e812a228591654afe354484b1bad1b
+    note: mcp-server.js
+
+  - path: scripts/build-extras.js
+    role: tooling
+    hash: sha256:fe79e8a051cf262b9125911f87e5a2c337e8ac0eb73fbe0bc925276162b96da4
+    note: scripts/build-extras.js
+
+  - path: scripts/build.js
+    role: tooling
+    hash: sha256:e40420552aa9011f57f150cb16fbea6145d7e363a70c84d56fedbf4ce09074f0
+    note: scripts/build.js
+
+  - path: scripts/check-links.js
+    role: tooling
+    hash: sha256:62d2f15099cf1c010af987cdb115737120f60a6acfb918ed08017b4486168860
+    note: scripts/check-links.js
+
+  - path: scripts/eval-clean-build.js
+    role: tooling
+    hash: sha256:d8b21ca8372ca63eb1e1d6936fe4a168d72211b9325d0625810fc99858c795b0
+    note: scripts/eval-clean-build.js
+
+  - path: scripts/eval-content-source.js
+    role: tooling
+    hash: sha256:4bd3d13521cf9fc6b96b67a39c4a6fa2da83f3121fa97227e7f858c5d6b3fe40
+    note: scripts/eval-content-source.js
+
+  - path: scripts/eval-deterministic-build.js
+    role: tooling
+    hash: sha256:df4da7e41e0ccdf1d216214bb90cb20e14bdccf3643d6c144e891572c4119265
+    note: scripts/eval-deterministic-build.js
+
+  - path: scripts/eval-discovery.js
+    role: tooling
+    hash: sha256:d00f8c81ed4d029e17bdd007ae999f991739599aa77479f1ca524243cfed3367
+    note: scripts/eval-discovery.js
+
+  - path: scripts/eval-links.js
+    role: tooling
+    hash: sha256:09a513d8404bb7b61c9545bb7c5230931ca11e6752d15fc6cd5da3812757fca7
+    note: scripts/eval-links.js
+
+  - path: scripts/eval-manifest-scope.js
+    role: tooling
+    hash: sha256:5153e3564aeeee8474a74635706043b5e2aa5807d7cc21a3b69a7b8afa73cfb4
+    note: scripts/eval-manifest-scope.js
+
+  - path: scripts/eval-mcp-contract.js
+    role: tooling
+    hash: sha256:ee6cdf34b362265e92dea12b2b744eae38f11ae2abdf6539b5be637f682b3b19
+    note: scripts/eval-mcp-contract.js
+
+  - path: scripts/eval-mcp-parser-lockstep.js
+    role: tooling
+    hash: sha256:2d21cef5788ddd545a5e4ee4965132ee6cb00b991e00ab3ef08a3118faf70779
+    note: scripts/eval-mcp-parser-lockstep.js
+
+  - path: scripts/eval-obligation-first-binding.js
+    role: tooling
+    hash: sha256:9245b2a50adff5adddbe13a8b139ecf4cffb4e61a90d0bf131c5b5c111c7e6de
+    note: scripts/eval-obligation-first-binding.js
+
+  - path: scripts/eval-parser.js
+    role: tooling
+    hash: sha256:76697139a423a28c047dd0f2b752c6957c877f0aa2f3a36559ab1986aa75040b
+    note: scripts/eval-parser.js
+
+  - path: scripts/eval-record-schema.js
+    role: tooling
+    hash: sha256:7dabd8be1b39f4b8a9cdd2d51f6668cfa00837a4a5c1745f186f12eeabb258bf
+    note: scripts/eval-record-schema.js
+
+  - path: scripts/eval-redirects.js
+    role: tooling
+    hash: sha256:372e6c0af513d190c8fc4658ce8424246b27bdb09ad62e3e40cf0525c04784b5
+    note: scripts/eval-redirects.js
+
+  - path: scripts/eval-route-inventory.js
+    role: tooling
+    hash: sha256:7e5c35ed541f78a1100c128fbfca2d45835489133e89c207a2ca11a7efb9bdf9
+    note: scripts/eval-route-inventory.js
+
+  - path: scripts/eval-schema-parity.js
+    role: tooling
+    hash: sha256:bbec81f48e3f8a4e209e34db24dfe1246da8b74bb416ccc2d811823a52bb49b7
+    note: scripts/eval-schema-parity.js
+
+  - path: scripts/eval-verification-allowlist.js
+    role: tooling
+    hash: sha256:fcebbaf381b4d46c54cf28a4bb333478ca41504af9b53f68c3cafe11a228ea66
+    note: scripts/eval-verification-allowlist.js
+
+  - path: scripts/eval-verification-exit.js
+    role: tooling
+    hash: sha256:dacbffab5a3dd3da3be5a6a38ac4a7636dc3f884d31e753f37260cc7ea85d599
+    note: scripts/eval-verification-exit.js
+
+  - path: scripts/evals.js
+    role: tooling
+    hash: sha256:eda7899b28235bd69de800b8505f2a364e594e804880b8e11c0817b064f4ee22
+    note: scripts/evals.js
+
+  - path: scripts/lib/content.js
+    role: tooling
+    hash: sha256:64f0d3e0322c875c459aa2daee81d0895446094c3dc1da902186d4bb6ed5e6dd
+    note: scripts/lib/content.js
+
+  - path: scripts/lib/disclaimer.js
+    role: tooling
+    hash: sha256:94e4450e176c8d4e9254f3cd2e4557b77c178902129b8b1137585a5766fd817a
+    note: scripts/lib/disclaimer.js
+
+  - path: scripts/lib/eval-kit.js
+    role: tooling
+    hash: sha256:94b5ad6d3f610fa1ec5e4de63bf363183ba09abdcc4cfa3712678e86aef64a8e
+    note: scripts/lib/eval-kit.js
+
+  - path: scripts/lib/mapping.js
+    role: tooling
+    hash: sha256:e14015638256cb5cc37da42665304a70ef8360e65e7e1a8c339874f7302c6c15
+    note: scripts/lib/mapping.js
+
+  - path: scripts/lib/obligation-first.js
+    role: tooling
+    hash: sha256:94f1dff5cafe9252d6d79e514c28e3f346174be6606bf74d1551d61a7b30daa3
+    note: scripts/lib/obligation-first.js
+
+  - path: scripts/lib/parse.js
+    role: tooling
+    hash: sha256:34b4a440da0f8459e8fe65154185c48268e36539e512f27bfb46775007ab6254
+    note: scripts/lib/parse.js
+
+  - path: scripts/lib/verify-policy.js
+    role: tooling
+    hash: sha256:647e61a061137ab9ab14d1fd1c856f5defa008427c87302e5744ea04fc2b7adb
+    note: scripts/lib/verify-policy.js
+
+  - path: scripts/migrate-url-architecture.js
+    role: tooling
+    hash: sha256:654cc1859fd70ff12121e7b7e9699f590e7e3cdb3fb87ae5ffed22255ebf153d
+    note: scripts/migrate-url-architecture.js
+
+  - path: scripts/ocr-pdf.sh
+    role: tooling
+    hash: sha256:5745a18de9e87ecc4b01e5405ffb94a26c59398b598d70dad18be84595361306
+    note: scripts/ocr-pdf.sh
+
+  - path: scripts/validate-hashes.sh
+    role: tooling
+    hash: sha256:dcf50fea6860c50c0b7c79a7229c5d9855ad49bcbad4a5db8f5bf8b0758bd3c9
+    note: scripts/validate-hashes.sh
+
+  - path: scripts/validate-obligation-first.js
+    role: tooling
+    hash: sha256:25d2ad4345a43fe679302dfc6a5401a21cd74e8a15f42287b5c476f3d456a26c
+    note: scripts/validate-obligation-first.js
+
+  - path: scripts/validate.js
+    role: tooling
+    hash: sha256:7ced17720681c17f559eee6e298b03902da8994acb32fdf3cbf456ccbf55e7d8
+    note: scripts/validate.js
+
+  - path: scripts/verify.js
+    role: tooling
+    hash: sha256:95257eeb04a70d8ca626f78a75297dcca9fc7d0fad2c6df8f7495a987331e35d
+    note: scripts/verify.js
+
+  - path: vendor/gist/gistCore.ttl
+    role: vendor
+    hash: sha256:0d8230f3a4df9aa7782ec79bfa83def34a13a066f60d5f5ef0f00b9cecce08b1
+    note: vendor/gist/gistCore.ttl
+
+  - path: vendor/gist/LICENSE.txt
+    role: vendor
+    hash: sha256:9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94
+    note: vendor/gist/LICENSE.txt
+
+  - path: vendor/gist/UPSTREAM-README.md
+    role: vendor
+    hash: sha256:e7c54a4678c09fe90ad4d6a4bdf82f0e4d89130648bb2df2404e638a3760f9a7
+    note: vendor/gist/UPSTREAM-README.md
+
+  - path: vendor/gist/VERSION.md
+    role: vendor
+    hash: sha256:1bd18183661c4b62b6e0134380d0559460d419c8eff36d1def309dd194426363
+    note: vendor/gist/VERSION.md
+

@@ -16,6 +16,7 @@ const fs = require('fs');
 const path = require('path');
 const { parseYaml, parseFrontmatter } = require('./lib/parse');
 const { loadMappingIndex } = require('./lib/mapping');
+const { classifyUnmappedContainers, getAllowedUnmappedInstrumentIds } = require('./lib/verify-policy');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -124,18 +125,21 @@ function verify() {
 
     let completenessErrors = 0;
 
-    // Check each container has at least one mapping
-    const containersMapped = new Set();
-    for (const m of mappings) {
-        const cId = m.regulation || m.container || m.framework;
-        if (cId) containersMapped.add(cId);
+    // Check each container has at least one mapping, except explicitly allowed
+    // relationship-only instruments that preserve amendment/supersession chains.
+    const allowedUnmappedIds = getAllowedUnmappedInstrumentIds(config);
+    const unmapped = classifyUnmappedContainers(containers, mappings, allowedUnmappedIds);
+
+    for (const c of unmapped.allowed) {
+        console.log(`  ALLOWED: ${config.entities?.container?.name || 'Container'} "${c.id}" has no mapping entries (relationship-only instrument)`);
+    }
+    if (unmapped.allowed.length > 0) {
+        console.log();
     }
 
-    for (const c of containers) {
-        if (!containersMapped.has(c.id)) {
-            console.log(`  WARNING: ${config.entities?.container?.name || 'Container'} "${c.id}" has no mapping entries`);
-            completenessErrors++;
-        }
+    for (const c of unmapped.errors) {
+        console.log(`  WARNING: ${config.entities?.container?.name || 'Container'} "${c.id}" has no mapping entries`);
+        completenessErrors++;
     }
 
     // Check each mapping references valid primaries
