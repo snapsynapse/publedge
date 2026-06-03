@@ -427,7 +427,8 @@
     "llms_txt": "https://publedge.org/llms.txt",
     "sitemap": "https://publedge.org/sitemap.xml",
     "rss": "https://publedge.org/feed.xml",
-    "robots": "https://publedge.org/robots.txt"
+    "robots": "https://publedge.org/robots.txt",
+    "naming_profile": "https://publedge.org/.well-known/obligation-first-naming-profile.jsonld"
   },
   "meta": {
     "last_updated": "2026-06-03",
