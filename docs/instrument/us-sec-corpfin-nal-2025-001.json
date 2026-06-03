@@ -15,7 +15,11 @@
     "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json"
   ],
   "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
-  "jurisdiction": "us",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/"
 }

@@ -15,5 +15,9 @@
     "genai",
     "first session",
     "chatbot"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

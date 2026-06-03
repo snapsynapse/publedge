@@ -15,5 +15,9 @@
     "reporting",
     "termination",
     "end of term"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

@@ -15,7 +15,11 @@
     "https://publedge.org/term/hb320-joint-interpretation-agreements.json"
   ],
   "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
-  "jurisdiction": "us-ut",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
+  "citation": "Utah HB 320 (2026 General Session)",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/"
 }

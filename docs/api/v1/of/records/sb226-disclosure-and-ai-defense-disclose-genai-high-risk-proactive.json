@@ -16,5 +16,9 @@
     "regulated occupation",
     "proactive",
     "sb226"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

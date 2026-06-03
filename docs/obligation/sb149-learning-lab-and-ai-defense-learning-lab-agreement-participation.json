@@ -18,5 +18,9 @@
     "sandbox",
     "sb149",
     "hb320"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

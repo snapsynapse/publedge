@@ -16,5 +16,9 @@
     "convenience fee",
     "debt collection",
     "regulation f"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  }
 }

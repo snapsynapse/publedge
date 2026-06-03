@@ -16,5 +16,9 @@
     "rev proc 2017-13",
     "safe harbor",
     "incentive fee"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  }
 }

@@ -6,6 +6,7 @@ jurisdiction: us
 url_segment: sec-corpfin
 path_jurisdiction: federal
 website: https://www.sec.gov/divisions/corpfin
+wikidata_qid: Q28945713
 last_verified: 2026-04-19
 ---
 

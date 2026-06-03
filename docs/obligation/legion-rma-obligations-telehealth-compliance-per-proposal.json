@@ -16,5 +16,9 @@
     "proposal compliance",
     "doctronic",
     "legion"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

@@ -17,5 +17,9 @@
     "swap dealer",
     "introducing broker",
     "unbundled fee"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  }
 }

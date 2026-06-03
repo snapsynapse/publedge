@@ -15,5 +15,9 @@
     "data security",
     "cybersecurity",
     "63a-19-102"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

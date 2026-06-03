@@ -16,5 +16,9 @@
     "radiograph",
     "diagnosis",
     "ai concurrence"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

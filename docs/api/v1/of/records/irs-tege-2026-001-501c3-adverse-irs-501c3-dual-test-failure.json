@@ -17,5 +17,9 @@
     "private inurement",
     "commercial leasing",
     "adverse determination"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  }
 }

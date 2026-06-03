@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-05-30T17:12:06.615Z",
+  "generated": "2026-06-03T16:23:54.110Z",
   "terms": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -17,7 +17,11 @@
         "https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json"
       ],
       "source_heading": "First-Session Disclosure (§13-72a-203)",
-      "source_file": "data/examples/instruments/us-ut-oaip-jia-2026-001.md"
+      "source_file": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -33,7 +37,11 @@
       ],
       "anchors": [],
       "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md"
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -50,7 +58,11 @@
       ],
       "anchors": [],
       "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md"
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -67,7 +79,11 @@
       ],
       "anchors": [],
       "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md"
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -82,7 +98,11 @@
       ],
       "anchors": [],
       "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md"
+      "source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -104,7 +124,11 @@
       ],
       "anchors": [],
       "source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)",
-      "source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md"
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -126,7 +150,11 @@
       ],
       "anchors": [],
       "source_heading": "Obligations summary (Section 6 and Schedule A §15C–D)",
-      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-001.md"
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -148,7 +176,11 @@
       ],
       "anchors": [],
       "source_heading": "Obligations summary (Section 6 and Schedule A §16)",
-      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md"
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -170,7 +202,11 @@
       ],
       "anchors": [],
       "source_heading": "Obligations summary (Section 6 and Schedule A §17)",
-      "source_file": "data/examples/instruments/us-ut-oaip-rma-2026-001.md"
+      "source_file": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -185,7 +221,11 @@
       ],
       "anchors": [],
       "source_heading": "Interpretive position",
-      "source_file": "data/examples/instruments/us-cfpb-ao-2022-001.md"
+      "source_file": "data/examples/instruments/us-cfpb-ao-2022-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -200,7 +240,11 @@
       ],
       "anchors": [],
       "source_heading": "Interpretive position",
-      "source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md"
+      "source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -215,7 +259,11 @@
       ],
       "anchors": [],
       "source_heading": "Holding",
-      "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md"
+      "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -230,7 +278,11 @@
       ],
       "anchors": [],
       "source_heading": "Holding",
-      "source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md"
+      "source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      }
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -245,7 +297,11 @@
       ],
       "anchors": [],
       "source_heading": "Staff position",
-      "source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md"
+      "source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      }
     }
   ]
 }

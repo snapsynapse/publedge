@@ -17,5 +17,9 @@
     "58-1-501",
     "doctronic",
     "legion"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

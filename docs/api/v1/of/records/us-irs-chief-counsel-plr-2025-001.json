@@ -15,7 +15,11 @@
     "https://publedge.org/term/irs-plr-202506001-incentive-fee.json"
   ],
   "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
-  "jurisdiction": "us",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/"
 }

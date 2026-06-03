@@ -15,7 +15,11 @@
     "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
   ],
   "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
-  "jurisdiction": "us-ut",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
+  "citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/utah/legislature/statute/2024-001/"
 }

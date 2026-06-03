@@ -15,5 +15,9 @@
     "phased rollout",
     "trusted tester",
     "phase gate"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

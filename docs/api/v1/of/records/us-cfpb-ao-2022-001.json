@@ -15,7 +15,11 @@
     "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json"
   ],
   "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
-  "jurisdiction": "us",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/federal/cfpb/ao/2022-001/"
 }

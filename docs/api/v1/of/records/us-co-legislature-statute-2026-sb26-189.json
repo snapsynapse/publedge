@@ -13,7 +13,11 @@
   "enforcement_status": "routine",
   "hasTerm": [],
   "source": "https://leg.colorado.gov/bills/sb26-189",
-  "jurisdiction": "us-co",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  },
+  "citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
 }

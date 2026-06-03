@@ -14,5 +14,9 @@
     "rma",
     "indemnification",
     "hold harmless"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

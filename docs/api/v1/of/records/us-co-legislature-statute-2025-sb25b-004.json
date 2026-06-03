@@ -13,7 +13,11 @@
   "enforcement_status": "routine",
   "hasTerm": [],
   "source": "https://leg.colorado.gov/bills/sb25b-004",
-  "jurisdiction": "us-co",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  },
+  "citation": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2025-001/"
 }

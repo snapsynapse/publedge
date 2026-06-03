@@ -15,7 +15,10 @@
     "https://publedge.org/term/dentacor-rma-obligations.json"
   ],
   "source": "https://commerce.utah.gov/ai/agreements/dentacor/",
-  "jurisdiction": "us-ut",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-001/"
 }

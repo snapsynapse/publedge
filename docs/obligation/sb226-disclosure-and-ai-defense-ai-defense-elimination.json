@@ -17,5 +17,9 @@
     "criminal",
     "sb149",
     "sb226"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

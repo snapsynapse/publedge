@@ -16,5 +16,8 @@
     "ref": "us-ut"
   },
   "website": "https://le.utah.gov/",
-  "url_segment": "legislature"
+  "url_segment": "legislature",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q7892726"
+  ]
 }

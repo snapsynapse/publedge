@@ -15,5 +15,9 @@
     "disclosure",
     "pre-access",
     "disclosure bundle"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

@@ -16,5 +16,9 @@
     "notification",
     "harm",
     "24 hours"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

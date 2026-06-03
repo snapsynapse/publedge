@@ -15,5 +15,9 @@
     "advertising",
     "promotion",
     "marketing"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

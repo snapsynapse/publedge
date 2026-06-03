@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://publedge.org/reference/</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/reference/protocol/</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/reference/prior-art/</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/reference/registry/</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/reference/vocabulary/</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/PROTOCOL.md</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/PRIOR-ART.md</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/ROADMAP.md</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/ATTRIBUTION.md</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/MANIFEST.yaml</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/schema/jia.schema.json</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/schema/rma.schema.json</loc><lastmod>2026-05-30</lastmod></url>
-  <url><loc>https://publedge.org/schema/context.jsonld</loc><lastmod>2026-05-30</lastmod></url>
+  <url><loc>https://publedge.org/reference/</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/reference/protocol/</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/reference/prior-art/</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/reference/registry/</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/reference/vocabulary/</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/PROTOCOL.md</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/PRIOR-ART.md</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/ROADMAP.md</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/ATTRIBUTION.md</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/MANIFEST.yaml</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/schema/jia.schema.json</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/schema/rma.schema.json</loc><lastmod>2026-06-03</lastmod></url>
+  <url><loc>https://publedge.org/schema/context.jsonld</loc><lastmod>2026-06-03</lastmod></url>
 </urlset>

@@ -16,5 +16,9 @@
     "58-69-5",
     "unlawful conduct",
     "forbearance"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

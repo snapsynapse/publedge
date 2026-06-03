@@ -15,7 +15,10 @@
     "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json"
   ],
   "source": "https://commerce.utah.gov/ai/learning-lab/",
-  "jurisdiction": "us-ut",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
   "publedge_status": "proposed",
   "canonical_url": "https://publedge.org/us/utah/oaip/jia/2026-001/"
 }

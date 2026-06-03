@@ -15,7 +15,11 @@
     "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json"
   ],
   "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
-  "jurisdiction": "us",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/"
 }

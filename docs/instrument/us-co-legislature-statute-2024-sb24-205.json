@@ -13,7 +13,11 @@
   "enforcement_status": "routine",
   "hasTerm": [],
   "source": "https://leg.colorado.gov/bills/sb24-205",
-  "jurisdiction": "us-co",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  },
+  "citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
   "publedge_status": "superseded",
   "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/"
 }

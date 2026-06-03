@@ -16,5 +16,9 @@
     "reasonable steps to verify",
     "regulation d",
     "private placement"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  }
 }

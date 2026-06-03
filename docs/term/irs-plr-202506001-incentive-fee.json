@@ -11,5 +11,9 @@
   ],
   "anchors": [],
   "source_heading": "Holding",
-  "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md"
+  "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  }
 }

@@ -430,7 +430,7 @@
     "robots": "https://publedge.org/robots.txt"
   },
   "meta": {
-    "last_updated": "2026-05-30",
+    "last_updated": "2026-06-03",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"

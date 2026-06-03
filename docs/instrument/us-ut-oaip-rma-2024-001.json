@@ -15,7 +15,10 @@
     "https://publedge.org/term/elizachat-rma-obligations.json"
   ],
   "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
-  "jurisdiction": "us-ut",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
   "publedge_status": "expired",
   "canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/"
 }

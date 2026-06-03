@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-05-30T17:12:06.615Z",
+  "generated": "2026-06-03T16:23:54.110Z",
   "authorities": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -20,7 +20,10 @@
         "ref": "us"
       },
       "website": "https://www.consumerfinance.gov/",
-      "url_segment": "cfpb"
+      "url_segment": "cfpb",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q3078237"
+      ]
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -60,7 +63,10 @@
         "ref": "us-co"
       },
       "website": "https://leg.colorado.gov/",
-      "url_segment": "legislature"
+      "url_segment": "legislature",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q515231"
+      ]
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -120,7 +126,10 @@
         "ref": "us"
       },
       "website": "https://www.sec.gov/divisions/corpfin",
-      "url_segment": "sec-corpfin"
+      "url_segment": "sec-corpfin",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q28945713"
+      ]
     },
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -140,7 +149,10 @@
         "ref": "us-ut"
       },
       "website": "https://le.utah.gov/",
-      "url_segment": "legislature"
+      "url_segment": "legislature",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q7892726"
+      ]
     },
     {
       "@context": "https://obligationfirst.org/v1/",

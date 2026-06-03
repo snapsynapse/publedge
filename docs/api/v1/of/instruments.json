@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-05-30T17:12:06.615Z",
+  "generated": "2026-06-03T16:23:54.110Z",
   "instruments": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -19,7 +19,11 @@
         "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json"
       ],
       "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
-      "jurisdiction": "us",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/federal/cfpb/ao/2022-001/"
     },
@@ -40,7 +44,11 @@
         "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json"
       ],
       "source": "https://cftc.gov/csl/17-65/download",
-      "jurisdiction": "us",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/"
     },
@@ -59,7 +67,11 @@
       "enforcement_status": "routine",
       "hasTerm": [],
       "source": "https://leg.colorado.gov/bills/sb24-205",
-      "jurisdiction": "us-co",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      },
+      "citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
       "publedge_status": "superseded",
       "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/"
     },
@@ -78,7 +90,11 @@
       "enforcement_status": "routine",
       "hasTerm": [],
       "source": "https://leg.colorado.gov/bills/sb25b-004",
-      "jurisdiction": "us-co",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      },
+      "citation": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2025-001/"
     },
@@ -97,7 +113,11 @@
       "enforcement_status": "routine",
       "hasTerm": [],
       "source": "https://leg.colorado.gov/bills/sb26-189",
-      "jurisdiction": "us-co",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      },
+      "citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
     },
@@ -118,7 +138,11 @@
         "https://publedge.org/term/irs-plr-202506001-incentive-fee.json"
       ],
       "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
-      "jurisdiction": "us",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/"
     },
@@ -139,7 +163,11 @@
         "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json"
       ],
       "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
-      "jurisdiction": "us",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/"
     },
@@ -160,7 +188,11 @@
         "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json"
       ],
       "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
-      "jurisdiction": "us",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
+      "citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/"
     },
@@ -181,7 +213,11 @@
         "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
       ],
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
+      "citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2024-001/"
     },
@@ -202,7 +238,11 @@
         "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
       ],
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
+      "citation": "Utah HB 452 (2025 General Session)",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-002/"
     },
@@ -223,7 +263,11 @@
         "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
       ],
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
+      "citation": "Utah SB 226 (2025 General Session)",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-001/"
     },
@@ -244,7 +288,11 @@
         "https://publedge.org/term/hb320-joint-interpretation-agreements.json"
       ],
       "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
+      "citation": "Utah HB 320 (2026 General Session)",
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/"
     },
@@ -265,7 +313,10 @@
         "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json"
       ],
       "source": "https://commerce.utah.gov/ai/learning-lab/",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "publedge_status": "proposed",
       "canonical_url": "https://publedge.org/us/utah/oaip/jia/2026-001/"
     },
@@ -286,7 +337,10 @@
         "https://publedge.org/term/elizachat-rma-obligations.json"
       ],
       "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "publedge_status": "expired",
       "canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/"
     },
@@ -307,7 +361,10 @@
         "https://publedge.org/term/dentacor-rma-obligations.json"
       ],
       "source": "https://commerce.utah.gov/ai/agreements/dentacor/",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-001/"
     },
@@ -328,7 +385,10 @@
         "https://publedge.org/term/doctronic-rma-obligations.json"
       ],
       "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "publedge_status": "enforcing",
       "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-002/"
     },
@@ -348,7 +408,10 @@
         "https://publedge.org/term/legion-rma-obligations.json"
       ],
       "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
-      "jurisdiction": "us-ut",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "publedge_status": "enacted",
       "canonical_url": "https://publedge.org/us/utah/oaip/rma/2026-001/"
     }

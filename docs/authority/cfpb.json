@@ -16,5 +16,8 @@
     "ref": "us"
   },
   "website": "https://www.consumerfinance.gov/",
-  "url_segment": "cfpb"
+  "url_segment": "cfpb",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q3078237"
+  ]
 }

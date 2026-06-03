@@ -15,7 +15,11 @@
     "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
   ],
   "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
-  "jurisdiction": "us-ut",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
+  "citation": "Utah SB 226 (2025 General Session)",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-001/"
 }

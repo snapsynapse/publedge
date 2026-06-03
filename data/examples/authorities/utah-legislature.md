@@ -6,6 +6,7 @@ jurisdiction: us-ut
 url_segment: legislature
 path_jurisdiction: utah
 website: https://le.utah.gov/
+wikidata_qid: Q7892726
 last_verified: 2026-04-21
 ---
 

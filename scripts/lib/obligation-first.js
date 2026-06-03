@@ -94,10 +94,25 @@ function buildLookups(data) {
     return { containersById, primariesById, authoritiesById, provisionDetails };
 }
 
+function typedJurisdiction(ref) {
+    if (!ref) return undefined;
+    return { '@type': 'gist:Jurisdiction', ref };
+}
+
+function instrumentCitation(container) {
+    const cites = container.publication_citations;
+    if (!Array.isArray(cites) || cites.length === 0) return undefined;
+    const first = cites[0];
+    return (first && typeof first === 'object' && first.cite) ? first.cite : undefined;
+}
+
 function buildAuthorityRecords(config, data) {
     return data.authorities.map(authority => {
         const firstInstrument = data.containers.find(container => container.authority === authority.id);
-        return {
+        const sameAs = authority.wikidata_qid
+            ? [`https://www.wikidata.org/wiki/${authority.wikidata_qid}`]
+            : undefined;
+        const record = {
             '@context': OF_CONTEXT,
             '@type': 'of:Authority',
             '@id': authorityUri(config, authority.id),
@@ -110,13 +125,12 @@ function buildAuthorityRecords(config, data) {
                 kind: 'statutory',
                 instrument_ref: firstInstrument ? instrumentUri(config, firstInstrument.id) : `${authorityUri(config, authority.id)}#authority-basis`
             },
-            jurisdiction: {
-                '@type': 'gist:Jurisdiction',
-                ref: authority.jurisdiction || ''
-            },
+            jurisdiction: typedJurisdiction(authority.jurisdiction),
             website: authority.website || null,
             url_segment: authority.url_segment || null
         };
+        if (sameAs) record.sameAs = sameAs;
+        return record;
     });
 }
 
@@ -142,7 +156,8 @@ function buildInstrumentRecords(config, data) {
         enforcement_status: enforcementStatus(container),
         hasTerm: termsByInstrument.get(container.id) || [],
         source: container.official_url || undefined,
-        jurisdiction: container.jurisdiction,
+        jurisdiction: typedJurisdiction(container.jurisdiction),
+        citation: instrumentCitation(container),
         publedge_status: container.status,
         canonical_url: container._canonicalPath ? `${siteBase(config)}/${container._canonicalPath}` : undefined
     }));
@@ -150,11 +165,13 @@ function buildInstrumentRecords(config, data) {
 
 function buildTermRecords(config, data) {
     const { provisionDetails } = buildLookups(data);
+    const jurByInstrument = new Map(data.containers.map(c => [c.id, c.jurisdiction]));
     return data.mappingIndex.map(mapping => {
         const detail = provisionDetails.get(mapping.id);
         const provision = detail ? detail.provision : mapping;
         const anchors = everyAiLawAnchors(mapping).termAnchors;
-        return {
+        const jur = jurByInstrument.get(mapping.regulation);
+        const record = {
             '@context': OF_CONTEXT,
             '@type': 'of:Term',
             '@id': termUri(config, mapping.id),
@@ -167,20 +184,24 @@ function buildTermRecords(config, data) {
             source_heading: mapping.source_heading,
             source_file: mapping.source_file
         };
+        if (jur) record.jurisdiction = typedJurisdiction(jur);
+        return record;
     });
 }
 
 function buildObligationRecords(config, data) {
     const { primariesById, provisionDetails } = buildLookups(data);
+    const jurByInstrument = new Map(data.containers.map(c => [c.id, c.jurisdiction]));
     const records = [];
 
     for (const mapping of data.mappingIndex) {
+        const jur = jurByInstrument.get(mapping.regulation);
         for (const obligationId of mapping.obligations || []) {
             const primary = primariesById.get(obligationId) || { id: obligationId, name: obligationId };
             const detail = provisionDetails.get(mapping.id);
             const provision = detail ? detail.provision : {};
             const recordId = concreteObligationId(mapping.id, obligationId);
-            records.push({
+            const record = {
                 '@context': OF_CONTEXT,
                 '@type': obligationType(primary.group),
                 '@id': obligationUri(config, recordId),
@@ -194,7 +215,9 @@ function buildObligationRecords(config, data) {
                 publedge_group: primary.group || undefined,
                 publedge_status: primary.status || undefined,
                 search_terms: primary.search_terms || []
-            });
+            };
+            if (jur) record.jurisdiction = typedJurisdiction(jur);
+            records.push(record);
         }
     }
 

@@ -6,6 +6,7 @@ jurisdiction: us-co
 url_segment: legislature
 path_jurisdiction: colorado
 website: https://leg.colorado.gov/
+wikidata_qid: Q515231
 last_verified: 2026-05-21
 ---
 

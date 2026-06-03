@@ -15,7 +15,11 @@
     "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json"
   ],
   "source": "https://cftc.gov/csl/17-65/download",
-  "jurisdiction": "us",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
+  "citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
   "publedge_status": "enforcing",
   "canonical_url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/"
 }

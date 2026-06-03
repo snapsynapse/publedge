@@ -14,7 +14,10 @@
     "https://publedge.org/term/legion-rma-obligations.json"
   ],
   "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
-  "jurisdiction": "us-ut",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
   "publedge_status": "enacted",
   "canonical_url": "https://publedge.org/us/utah/oaip/rma/2026-001/"
 }

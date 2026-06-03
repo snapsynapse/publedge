@@ -15,5 +15,9 @@
     "informed consent",
     "dentist supervision",
     "patient disclosure"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }

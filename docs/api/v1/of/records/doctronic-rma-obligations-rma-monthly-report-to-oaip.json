@@ -16,5 +16,9 @@
     "monthly",
     "oaip",
     "learning lab"
-  ]
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  }
 }
