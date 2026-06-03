@@ -82,7 +82,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:5606096260618c5f4f1bd22c5b37b0900156a2be602bf2d91ab01a4f1f3fea48
+    hash: sha256:1ab09192e84f9b5941f37254818198badda7206c53620a628fb3a934b8f87975
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml

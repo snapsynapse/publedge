@@ -35,6 +35,9 @@ jobs:
           repository: snapsynapse/obligation-first
           path: obligation-first
 
+      - name: Install Obligation-First dependencies
+        run: npm ci --prefix obligation-first
+
       - name: Validate Obligation-First binding
         run: OBLIGATION_FIRST_DIR="$PWD/obligation-first" npm run validate:of
 
