@@ -73,7 +73,7 @@ Shipped 2026-04-21 (canonical URL architecture + status vocabulary + EAL UI pari
 - Legacy `/container/{old-id}/` paths emit meta-refresh redirect stubs.
 - Jurisdiction index pages at every hierarchy level (`/us/`, `/us/utah/`, `/us/utah/oaip/`, etc.).
 - Utah landing at `/us/utah/` with narrative + 4-chapter statute map.
-- 4 Utah statutes ingested as first-class instrument records (`us-ut-legislature-statute-*`); `utah-legislature` authority added. Registry now 14 instruments, 7 authorities, 2 jurisdictions.
+- 5 Utah statutes ingested as first-class instrument records (`us-ut-legislature-statute-*`); `utah-legislature` authority added. Registry now 18 instruments, 8 authorities, 2 jurisdictions.
 - Status vocabulary expanded to 9 values; `DEFINITIONS.md` added; `/definitions/` page renders it.
 - PubLedge Disclaimer & Source Policy at `/reference/disclaimer/`; footer "Not legal advice" links there.
 - Source PDFs + OCR'd text linked from Utah RMA records; `scripts/ocr-pdf.sh` added.

@@ -34,7 +34,7 @@ PubLedge is one component of the PAICE legal graph (with EveryAILaw, AI Incident
 Three things in one place:
 
 1. **The protocol** — the [PROTOCOL.md](PROTOCOL.md) specification and the [PRIOR-ART.md](PRIOR-ART.md) survey that motivates it.
-2. **Utah-shaped reference content** — 5 JIA/RMA templates anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104), plus 14 demonstration instruments under `data/examples/instruments/` spanning 7 authorities (Utah OAIP, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC, Utah Legislature) and 6 instrument types (JIA, RMA, no-action letter, advisory opinion, private letter ruling, interpretive letter, statute). 26 first-class obligation records under `data/examples/obligations/` are mapped to the instruments via `data/examples/mapping/index.yml`.
+2. **Utah-shaped reference content** — 5 JIA/RMA templates anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104), plus 18 demonstration instruments under `data/examples/instruments/` spanning 8 authorities (Utah OAIP, Utah Legislature, Colorado Legislature, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC) and 7 instrument types (JIA, RMA, no-action letter, advisory opinion, private letter ruling, interpretive letter, statute). 26 first-class obligation records under `data/examples/obligations/` are mapped to the instruments via `data/examples/mapping/index.yml`.
 3. **The published site** — rendered HTML under `docs/`, served by GitHub Pages from `main /docs`. Regenerate with `node scripts/build.js && node scripts/build-extras.js` before committing; CI fails if `docs/` drifts from sources.
 
 ## Machine-readable endpoints
@@ -95,7 +95,7 @@ CI runs all of the above, plus a pa11y-ci WCAG 2.1 AA pass across every URL in t
 | `DEFINITIONS.md` | Canonical vocabulary (status values, instrument types, obligation kinds) |
 | `MANIFEST.yaml` | SHA-256 hashes for every canonical file |
 | `_templates/jia/`, `_templates/rma/` | Fill-in templates with `{{variable}}` placeholders |
-| `data/examples/instruments/` | 14 demonstration instruments; filename = stable id (e.g. `us-ut-oaip-rma-2025-001.md`) |
+| `data/examples/instruments/` | 18 demonstration instruments; filename = stable id (e.g. `us-ut-oaip-rma-2025-001.md`) |
 | `data/examples/authorities/` | Authority records for each issuing body |
 | `data/examples/obligations/` | Obligation definitions linked from instruments |
 | `data/examples/mapping/` | Obligation-to-statute mapping index |

@@ -177,8 +177,8 @@ pattern:
     - name: "Every AI Law"
       url: "https://everyailaw.com"
       description: "Global AI regulatory landscape"
-    - name: "Meeting Standards Reference"
-      url: "https://meetings.snapsynapse.com"
+    - name: "Virtual Classroom Watch"
+      url: "https://VirtualClassroom.watch/"
       description: "Meeting facilitation standards"
 
 # ---------------------------------------------------------------------------
@@ -200,6 +200,7 @@ verification:
     - us-co-legislature-statute-2024-sb24-205
     - us-co-legislature-statute-2025-sb25b-004
     - us-co-legislature-statute-2026-sb26-189
+    - us-ut-legislature-statute-2025-sb332
 
 # ---------------------------------------------------------------------------
 # Ontology framework — semantic layer binding PubLedge entities to gist

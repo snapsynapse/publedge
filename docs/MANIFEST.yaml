@@ -72,7 +72,7 @@ files:
 
   - path: data/examples/authorities/utah-legislature.md
     role: authority
-    hash: sha256:fc19fb408b65a50e464f03a415f75b7e67c2992c44f0943437aa7681827de092
+    hash: sha256:627652d3301589e33a0dc71818f096fc34679c08c65b671882c68e1698dff148
     note: data/examples/authorities/utah-legislature.md
 
   - path: data/examples/authorities/utah-oaip.md
@@ -102,7 +102,7 @@ files:
 
   - path: project.yml
     role: config
-    hash: sha256:8fe15da397319418eb74e67f9cc59acb879cb416198d1229a8bb45530ef64067
+    hash: sha256:2edec8b61e2117012743173a9104aaeb7aa9b1bcf6c5a2d6cb974a5f65173197
     note: project.yml
 
   - path: data/examples/instruments/us-cfpb-ao-2022-001.md
@@ -147,7 +147,7 @@ files:
 
   - path: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
     role: instrument
-    hash: sha256:34aa75e209fcdf9d9fc9da11a005b5093cb8d8bd6cd62c0436db4eab211ec763
+    hash: sha256:4916b71063acd7eee5e94cbdf6064b67e73021a75923f21b550e6f149c1937a9
     note: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
@@ -159,6 +159,11 @@ files:
     role: instrument
     hash: sha256:cc93e96a73d79084508d24534c547790aa19ae0e4abcf897f3c8d08e476dcda0
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
+
+  - path: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
+    role: instrument
+    hash: sha256:ff6e767695ef875bb16c099e74379b8df95a66ec0dc9e1e0d1e17112c5697e06
+    note: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
     role: instrument
@@ -372,12 +377,12 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:605ef8b827528e92e917102d30bf42eec2e1fa5b2a558a50e3bf606c1087d17a
+    hash: sha256:da51f3306380ba8bdce5e5fdcb45b114d02b2a16707221fd820b2d51f1a142ad
     note: README.md
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:88a88e5172b5753d4e1a864448a9ea0627de76bcb9d6d30619f407e9cba771b6
+    hash: sha256:b2a967c79069ec80223e68b173b993587327fe6053fd78ab5249e25c9121e01b
     note: ROADMAP.md
 
   - path: SECURITY.md
@@ -447,7 +452,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:5d6ff08258b439541f472f20bc41049b819870eeb0d19638b4cc329e6c3675d0
+    hash: sha256:5a4855b92099a95bcdd869fc22f2bba1eccdc70d07223738371a9fdd3c782d04
     note: scripts/build.js
 
   - path: scripts/check-links.js
@@ -624,4 +629,3 @@ files:
     role: vendor
     hash: sha256:1bd18183661c4b62b6e0134380d0559460d419c8eff36d1def309dd194426363
     note: vendor/gist/VERSION.md
-

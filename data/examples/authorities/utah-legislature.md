@@ -21,4 +21,5 @@ For full statutory text and legislative history, see [le.utah.gov](https://le.ut
 - us-ut-legislature-statute-2024-sb149
 - us-ut-legislature-statute-2025-sb226
 - us-ut-legislature-statute-2025-hb452
+- us-ut-legislature-statute-2025-sb332
 - us-ut-legislature-statute-2026-hb320
