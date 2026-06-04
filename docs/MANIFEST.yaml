@@ -42,7 +42,7 @@ upstream:
 files:
   - path: data/examples/authorities/cfpb.md
     role: authority
-    hash: sha256:3ca5f6965c9280d0c9545c09200173ac348c0a3d0f60d133a98d0b0fa2d3e4a4
+    hash: sha256:65d858460f28a4228125b92d6f62fcb3f11bf12de93e1c2be2a43ac5fe3f867c
     note: data/examples/authorities/cfpb.md
 
   - path: data/examples/authorities/cftc-dsio.md
@@ -52,7 +52,7 @@ files:
 
   - path: data/examples/authorities/colorado-legislature.md
     role: authority
-    hash: sha256:25ba8530bf786c5ba151f3e33b01bc28e14a1979e27357e3873bf0f01a1f7e13
+    hash: sha256:0d68ee947e991028afc28e4f4defd6578d991204b693bb04bd0b14579174da32
     note: data/examples/authorities/colorado-legislature.md
 
   - path: data/examples/authorities/irs-chief-counsel.md
@@ -67,12 +67,12 @@ files:
 
   - path: data/examples/authorities/sec-corpfin.md
     role: authority
-    hash: sha256:5729d233daed0323f24ea0e8b9c5c412c109cfe9c032f3354146dc16480b460e
+    hash: sha256:a607fa1dc00920969072a3d12b038ff41f7c2e3b077182a4488ef31a93ead586
     note: data/examples/authorities/sec-corpfin.md
 
   - path: data/examples/authorities/utah-legislature.md
     role: authority
-    hash: sha256:c4afaef88654e92f549715f36e28bc35916d4c8c5a56201b5ec249dc4fb488f9
+    hash: sha256:fc19fb408b65a50e464f03a415f75b7e67c2992c44f0943437aa7681827de092
     note: data/examples/authorities/utah-legislature.md
 
   - path: data/examples/authorities/utah-oaip.md
@@ -82,7 +82,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:672e617cbc5fbde4831d6eb0ecf0a7bd3d9c498bf61829cdd5e8f41e20b08270
+    hash: sha256:1ab09192e84f9b5941f37254818198badda7206c53620a628fb3a934b8f87975
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -562,7 +562,7 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:94f1dff5cafe9252d6d79e514c28e3f346174be6606bf74d1551d61a7b30daa3
+    hash: sha256:d0e579566b872a21bb0b205433d9efac49e3fef40381df459cd2ada32ededb47
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/parse.js

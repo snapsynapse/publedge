@@ -40,8 +40,13 @@ function normalizeStatus(status) {
 }
 
 function enforcementStatus(record) {
+    // OF semantics: enforcement_status is orthogonal to lifecycle status.
+    // `constrained` specifically means a live instrument whose enforcement
+    // is limited by an external Determination (court order, agency
+    // forbearance). An instrument that ended on its own terms (expired,
+    // terminated, withdrawn) is captured by `status: sunset` and was
+    // routinely enforceable during its active life — not constrained.
     if (record.status === 'proposed' || record.status === 'draft') return 'unsignaled';
-    if (record.status === 'withdrawn' || record.status === 'expired' || record.status === 'terminated') return 'constrained';
     return 'routine';
 }
 

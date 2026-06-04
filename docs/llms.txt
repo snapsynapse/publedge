@@ -62,7 +62,6 @@
 
 - [JSON API](https://publedge.org/api/v1/index.json): Programmatic access to all data
 - [agents.json](https://publedge.org/agents.json): Agent discovery metadata
-- [Obligation-First naming profile](https://publedge.org/.well-known/obligation-first-naming-profile.jsonld): IRI scheme and crosswalk declarations (OF v0.4.x)
 - [Sitemap](https://publedge.org/sitemap.xml): All pages
 - [RSS Feed](https://publedge.org/feed.xml): Recent updates
 

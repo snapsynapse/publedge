@@ -10,7 +10,7 @@
   "enacted": "2024-11-18",
   "effective": "2024-11-18",
   "status": "sunset",
-  "enforcement_status": "constrained",
+  "enforcement_status": "routine",
   "hasTerm": [
     "https://publedge.org/term/elizachat-rma-obligations.json"
   ],

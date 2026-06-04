@@ -562,7 +562,7 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:d0e579566b872a21bb0b205433d9efac49e3fef40381df459cd2ada32ededb47
+    hash: sha256:1ba359db3f4a2b4ca3a58a0848968d2661a2662e0715e44b1ea48ec166156844
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/parse.js

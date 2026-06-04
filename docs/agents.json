@@ -427,11 +427,10 @@
     "llms_txt": "https://publedge.org/llms.txt",
     "sitemap": "https://publedge.org/sitemap.xml",
     "rss": "https://publedge.org/feed.xml",
-    "robots": "https://publedge.org/robots.txt",
-    "naming_profile": "https://publedge.org/.well-known/obligation-first-naming-profile.jsonld"
+    "robots": "https://publedge.org/robots.txt"
   },
   "meta": {
-    "last_updated": "2026-06-03",
+    "last_updated": "2026-06-04",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"
