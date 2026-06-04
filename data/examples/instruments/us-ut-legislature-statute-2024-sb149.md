@@ -38,6 +38,7 @@ superseded_by: null
 amended_by:
   - us-ut-legislature-statute-2025-sb226
   - us-ut-legislature-statute-2025-hb452
+  - us-ut-legislature-statute-2025-sb332
   - us-ut-legislature-statute-2026-hb320
 hash_chain_prev: null
 disclaimer: ""
