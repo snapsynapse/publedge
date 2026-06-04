@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
-    "generated": "2026-06-04T19:40:09.998Z",
+    "generated": "2026-06-04T20:06:18.628Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -59,7 +59,7 @@
     "status": "proposed",
     "supersedes": null,
     "superseded_by": null,
-    "last_verified": "2026-04-19",
+    "last_verified": "2026-06-04",
     "timeline": [
       {
         "milestone": "Drafted",
@@ -91,7 +91,7 @@
       "https://commerce.utah.gov/ai/learning-lab/"
     ],
     "dateCreated": "2026-04-15",
-    "dateModified": "2026-04-19",
+    "dateModified": "2026-06-04",
     "datePublished": "2026-04-15",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",

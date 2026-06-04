@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/",
-    "generated": "2026-06-04T19:40:09.997Z",
+    "generated": "2026-06-04T20:06:18.627Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -62,7 +62,7 @@
     "status": "enforcing",
     "supersedes": null,
     "superseded_by": null,
-    "last_verified": "2026-04-21",
+    "last_verified": "2026-06-04",
     "timeline": [
       {
         "milestone": "Introduced",
@@ -99,7 +99,7 @@
       "https://le.utah.gov/~2026/bills/static/HB0320.html"
     ],
     "dateCreated": "2026-04-21",
-    "dateModified": "2026-04-21",
+    "dateModified": "2026-06-04",
     "datePublished": "2026-05-06",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",

@@ -1,10 +1,49 @@
 {
   "meta": {
-    "generated": "2026-06-04T19:40:09.962Z",
-    "count": 4,
+    "generated": "2026-06-04T20:06:18.593Z",
+    "count": 13,
     "window_days": 30
   },
   "items": [
+    {
+      "record_id": "us-ut-legislature-statute-2024-sb149",
+      "title": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+      "url": "https://publedge.org/us/utah/legislature/statute/2024-001/",
+      "change_type": "updated",
+      "created": "2026-04-21",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-legislature",
+      "type": "statute",
+      "status": "enforcing"
+    },
+    {
+      "record_id": "us-ut-legislature-statute-2025-hb452",
+      "title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+      "url": "https://publedge.org/us/utah/legislature/statute/2025-002/",
+      "change_type": "updated",
+      "created": "2026-04-21",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-legislature",
+      "type": "statute",
+      "status": "enforcing"
+    },
+    {
+      "record_id": "us-ut-legislature-statute-2025-sb226",
+      "title": "Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments",
+      "url": "https://publedge.org/us/utah/legislature/statute/2025-001/",
+      "change_type": "updated",
+      "created": "2026-04-21",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-legislature",
+      "type": "statute",
+      "status": "enforcing"
+    },
     {
       "record_id": "us-ut-legislature-statute-2025-sb332",
       "title": "Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)",
@@ -17,6 +56,84 @@
       "authority": "utah-legislature",
       "type": "statute",
       "status": "enforcing"
+    },
+    {
+      "record_id": "us-ut-legislature-statute-2026-hb320",
+      "title": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+      "url": "https://publedge.org/us/utah/legislature/statute/2026-001/",
+      "change_type": "updated",
+      "created": "2026-04-21",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-legislature",
+      "type": "statute",
+      "status": "enforcing"
+    },
+    {
+      "record_id": "us-ut-oaip-jia-2026-001",
+      "title": "Utah Mental Health Chatbot Disclosure — Joint Interpretation",
+      "url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
+      "change_type": "updated",
+      "created": "2026-04-15",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-oaip",
+      "type": "jia",
+      "status": "proposed"
+    },
+    {
+      "record_id": "us-ut-oaip-rma-2024-001",
+      "title": "Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)",
+      "url": "https://publedge.org/us/utah/oaip/rma/2024-001/",
+      "change_type": "updated",
+      "created": "2026-04-19",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-oaip",
+      "type": "rma",
+      "status": "expired"
+    },
+    {
+      "record_id": "us-ut-oaip-rma-2025-001",
+      "title": "Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
+      "url": "https://publedge.org/us/utah/oaip/rma/2025-001/",
+      "change_type": "updated",
+      "created": "2026-04-19",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-oaip",
+      "type": "rma",
+      "status": "enforcing"
+    },
+    {
+      "record_id": "us-ut-oaip-rma-2025-002",
+      "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+      "url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
+      "change_type": "updated",
+      "created": "2026-04-19",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-oaip",
+      "type": "rma",
+      "status": "enforcing"
+    },
+    {
+      "record_id": "us-ut-oaip-rma-2026-001",
+      "title": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
+      "url": "https://publedge.org/us/utah/oaip/rma/2026-001/",
+      "change_type": "updated",
+      "created": "2026-04-19",
+      "modified": "2026-06-04",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-oaip",
+      "type": "rma",
+      "status": "enacted"
     },
     {
       "record_id": "us-co-legislature-statute-2024-sb24-205",

@@ -5,34 +5,97 @@
   <link href="https://publedge.org/" rel="alternate"/>
   <link href="https://publedge.org/atom.xml" rel="self"/>
   <id>https://publedge.org/</id>
-  <updated>2026-06-04T19:40:10.175Z</updated>
+  <updated>2026-06-04T20:06:18.801Z</updated>
   <author><name>PubLedge</name></author>
+  <entry>
+    <id>https://publedge.org/us/utah/legislature/statute/2024-001/</id>
+    <title>Utah SB 149 (2024) — Artificial Intelligence Amendments</title>
+    <link href="https://publedge.org/us/utah/legislature/statute/2024-001/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah SB 149 (2024) — Artificial Intelligence Amendments</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/legislature/statute/2025-002/</id>
+    <title>Utah HB 452 (2025) — Mental Health Chatbot Regulations</title>
+    <link href="https://publedge.org/us/utah/legislature/statute/2025-002/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah HB 452 (2025) — Mental Health Chatbot Regulations</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/legislature/statute/2025-001/</id>
+    <title>Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments</title>
+    <link href="https://publedge.org/us/utah/legislature/statute/2025-001/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments</summary>
+  </entry>
   <entry>
     <id>https://publedge.org/us/utah/legislature/statute/2025-003/</id>
     <title>Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)</title>
     <link href="https://publedge.org/us/utah/legislature/statute/2025-003/"/>
-    <updated>2026-06-04T19:40:10.175Z</updated>
+    <updated>2026-06-04T20:06:18.801Z</updated>
     <summary>Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/legislature/statute/2026-001/</id>
+    <title>Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements</title>
+    <link href="https://publedge.org/us/utah/legislature/statute/2026-001/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/oaip/jia/2026-001/</id>
+    <title>Utah Mental Health Chatbot Disclosure — Joint Interpretation</title>
+    <link href="https://publedge.org/us/utah/oaip/jia/2026-001/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah Mental Health Chatbot Disclosure — Joint Interpretation</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/oaip/rma/2024-001/</id>
+    <title>Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)</title>
+    <link href="https://publedge.org/us/utah/oaip/rma/2024-001/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/oaip/rma/2025-001/</id>
+    <title>Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)</title>
+    <link href="https://publedge.org/us/utah/oaip/rma/2025-001/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/oaip/rma/2025-002/</id>
+    <title>Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)</title>
+    <link href="https://publedge.org/us/utah/oaip/rma/2025-002/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/oaip/rma/2026-001/</id>
+    <title>Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)</title>
+    <link href="https://publedge.org/us/utah/oaip/rma/2026-001/"/>
+    <updated>2026-06-04T20:06:18.801Z</updated>
+    <summary>Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)</summary>
   </entry>
   <entry>
     <id>https://publedge.org/us/colorado/legislature/statute/2024-001/</id>
     <title>Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems</title>
     <link href="https://publedge.org/us/colorado/legislature/statute/2024-001/"/>
-    <updated>2026-06-04T19:40:10.175Z</updated>
+    <updated>2026-06-04T20:06:18.801Z</updated>
     <summary>Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems</summary>
   </entry>
   <entry>
     <id>https://publedge.org/us/colorado/legislature/statute/2025-001/</id>
     <title>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)</title>
     <link href="https://publedge.org/us/colorado/legislature/statute/2025-001/"/>
-    <updated>2026-06-04T19:40:10.175Z</updated>
+    <updated>2026-06-04T20:06:18.801Z</updated>
     <summary>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)</summary>
   </entry>
   <entry>
     <id>https://publedge.org/us/colorado/legislature/statute/2026-001/</id>
     <title>Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act</title>
     <link href="https://publedge.org/us/colorado/legislature/statute/2026-001/"/>
-    <updated>2026-06-04T19:40:10.175Z</updated>
+    <updated>2026-06-04T20:06:18.801Z</updated>
     <summary>Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act</summary>
   </entry>
 </feed>

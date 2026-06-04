@@ -39,10 +39,10 @@ supersedes: null
 superseded_by: null
 hash_chain_prev: null
 disclaimer: ""
-last_verified: 2026-04-21
+last_verified: 2026-06-04
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-21
-modified: 2026-04-21
+modified: 2026-06-04
 ---
 
 ## Timeline
