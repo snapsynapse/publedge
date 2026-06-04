@@ -1,0 +1,132 @@
+{
+  "@context": "https://schema.org",
+  "meta": {
+    "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-003/",
+    "generated": "2026-06-04T19:35:04.660Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json"
+  },
+  "record": {
+    "id": "us-ut-legislature-statute-2025-sb332",
+    "legacy_id": null,
+    "official_ref": null,
+    "instance": "2025-003",
+    "slug": "utah-sb332-ai-sunset-extension",
+    "title": "Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)",
+    "type": "statute",
+    "jurisdiction": "us-ut",
+    "authority": "utah-legislature",
+    "url": "https://publedge.org/us/utah/legislature/statute/2025-003/",
+    "issued_by": {
+      "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "name": "Utah State Legislature",
+      "ref": "https://le.utah.gov/"
+    },
+    "enacted": "2025-03-25",
+    "effective": "2025-05-07",
+    "official_url": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+    "obligation_kind": [],
+    "reliance_scope": "public",
+    "parties": null,
+    "statute_anchors": [
+      {
+        "cite": "Utah Code §63I-2-213 (2025 amendment — Title 13 Chapter 72 sunset date)",
+        "url": "https://le.utah.gov/xcode/Title63I/Chapter2/63I-2-S213.html"
+      },
+      {
+        "cite": "Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act — extended chapter)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html"
+      }
+    ],
+    "publication_citations": [
+      {
+        "cite": "Utah SB 332 (2025 General Session), Governor Signed March 25, 2025",
+        "url": "https://le.utah.gov/~2025/bills/static/SB0332.html"
+      },
+      {
+        "cite": "Utah SB 332 Enrolled (PDF)",
+        "url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf"
+      }
+    ],
+    "terms": null,
+    "status": "enforcing",
+    "supersedes": null,
+    "superseded_by": null,
+    "last_verified": "2026-06-04",
+    "timeline": [
+      {
+        "milestone": "Introduced",
+        "date": "2025-02-24",
+        "notes": "Senate Rules Committee"
+      },
+      {
+        "milestone": "Senate Business and Labor — favorable",
+        "date": "2025-02-26",
+        "notes": "7-0-1"
+      },
+      {
+        "milestone": "Senate passed 3rd reading",
+        "date": "2025-03-03",
+        "notes": "24-0-5"
+      },
+      {
+        "milestone": "House Law Enforcement and Criminal Justice — favorable",
+        "date": "2025-03-04",
+        "notes": "8-0-3"
+      },
+      {
+        "milestone": "House passed",
+        "date": "2025-03-05",
+        "notes": "74-0-1"
+      },
+      {
+        "milestone": "Governor Signed",
+        "date": "2025-03-25",
+        "notes": "Gov. Cox"
+      },
+      {
+        "milestone": "Effective",
+        "date": "2025-05-07",
+        "notes": "Default 2025 session effective date"
+      },
+      {
+        "milestone": "Chapter 72 sunset (post-amendment)",
+        "date": "2027-07-01",
+        "notes": "Extended from 2025-05-01"
+      }
+    ],
+    "source_documents": []
+  },
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "identifier": "us-ut-legislature-statute-2025-sb332",
+    "name": "Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)",
+    "headline": "Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)",
+    "description": "Statute (us-ut)",
+    "url": "https://publedge.org/us/utah/legislature/statute/2025-003/",
+    "sameAs": [
+      "https://le.utah.gov/~2025/bills/static/SB0332.html"
+    ],
+    "dateCreated": "2026-06-04",
+    "dateModified": "2026-06-04",
+    "datePublished": "2025-05-07",
+    "author": {
+      "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+      "name": "Utah State Legislature",
+      "url": "https://le.utah.gov/"
+    },
+    "about": [
+      {
+        "@type": "Legislation",
+        "name": "Utah Code §63I-2-213 (2025 amendment — Title 13 Chapter 72 sunset date)",
+        "url": "https://le.utah.gov/xcode/Title63I/Chapter2/63I-2-S213.html"
+      },
+      {
+        "@type": "Legislation",
+        "name": "Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act — extended chapter)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html"
+      }
+    ],
+    "license": "Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law."
+  }
+}

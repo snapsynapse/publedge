@@ -1,7 +1,7 @@
 # PubLedge
 
 > Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
-> Tracks 17 legal instruments, 26 obligations, and 8 provisions across 8 authorities.
+> Tracks 18 legal instruments, 26 obligations, and 9 provisions across 8 authorities.
 
 ## Legal Instruments
 
@@ -16,6 +16,7 @@
 - [Utah SB 149 (2024) — Artificial Intelligence Amendments](https://publedge.org/us/utah/legislature/statute/2024-001/): enforcing
 - [Utah HB 452 (2025) — Mental Health Chatbot Regulations](https://publedge.org/us/utah/legislature/statute/2025-002/): enforcing
 - [Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments](https://publedge.org/us/utah/legislature/statute/2025-001/): enforcing
+- [Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)](https://publedge.org/us/utah/legislature/statute/2025-003/): enforcing
 - [Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements](https://publedge.org/us/utah/legislature/statute/2026-001/): enforcing
 - [Utah Mental Health Chatbot Disclosure — Joint Interpretation](https://publedge.org/us/utah/oaip/jia/2026-001/): proposed
 - [Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)](https://publedge.org/us/utah/oaip/rma/2024-001/): expired

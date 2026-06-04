@@ -5,27 +5,34 @@
   <link href="https://publedge.org/" rel="alternate"/>
   <link href="https://publedge.org/atom.xml" rel="self"/>
   <id>https://publedge.org/</id>
-  <updated>2026-06-04T02:02:36.215Z</updated>
+  <updated>2026-06-04T19:35:04.861Z</updated>
   <author><name>PubLedge</name></author>
+  <entry>
+    <id>https://publedge.org/us/utah/legislature/statute/2025-003/</id>
+    <title>Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)</title>
+    <link href="https://publedge.org/us/utah/legislature/statute/2025-003/"/>
+    <updated>2026-06-04T19:35:04.861Z</updated>
+    <summary>Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)</summary>
+  </entry>
   <entry>
     <id>https://publedge.org/us/colorado/legislature/statute/2024-001/</id>
     <title>Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems</title>
     <link href="https://publedge.org/us/colorado/legislature/statute/2024-001/"/>
-    <updated>2026-06-04T02:02:36.215Z</updated>
+    <updated>2026-06-04T19:35:04.861Z</updated>
     <summary>Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems</summary>
   </entry>
   <entry>
     <id>https://publedge.org/us/colorado/legislature/statute/2025-001/</id>
     <title>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)</title>
     <link href="https://publedge.org/us/colorado/legislature/statute/2025-001/"/>
-    <updated>2026-06-04T02:02:36.215Z</updated>
+    <updated>2026-06-04T19:35:04.861Z</updated>
     <summary>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)</summary>
   </entry>
   <entry>
     <id>https://publedge.org/us/colorado/legislature/statute/2026-001/</id>
     <title>Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act</title>
     <link href="https://publedge.org/us/colorado/legislature/statute/2026-001/"/>
-    <updated>2026-06-04T02:02:36.215Z</updated>
+    <updated>2026-06-04T19:35:04.861Z</updated>
     <summary>Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act</summary>
   </entry>
 </feed>

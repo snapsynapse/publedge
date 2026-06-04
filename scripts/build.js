@@ -2010,6 +2010,18 @@ function generateUtahLandingNarrative(data) {
         <div class="about-content">
             <p><em>The Utah Office of Artificial Intelligence Policy (OAIP) is the first dedicated US state AI regulator. It operates the Utah Artificial Intelligence Learning Laboratory — a regulatory-mitigation sandbox where participating companies receive tailored relief from specific state laws in exchange for data-sharing, safeguards, and audits. Under HB 320 (2026), OAIP may also issue Joint Interpretation Agreements that clarify how existing Utah law applies to AI without waiving the underlying law.</em></p>
             <p>PubLedge treats Utah OAIP's <strong>Regulatory Mitigation Agreement (RMA)</strong> and <strong>Joint Interpretation Agreement (JIA)</strong> as the prototypical instruments for its broader registry. The two-instrument architecture — waiver + interpretation — maps cleanly to SEC no-action letters, CFPB advisory opinions, and IRS private letter rulings at the federal level, and to analogous instruments in other jurisdictions.</p>
+            <h3>Why this page exists</h3>
+            <p>Utah's <a href="https://commerce.utah.gov/ai/regulatory-mitigation/roadmap-for-regulatory-relief/">Roadmap for Regulatory Relief</a> commits OAIP to publishing "a public-facing version of the proposal with the agreement" for each RMA, to promote transparency and accountability. PubLedge is a ready-made, versioned, tamper-evident implementation of that commitment — discoverable, linkable, and machine-readable, with no change to OAIP's confidentiality posture.</p>
+            <p>Separately, <a href="https://le.utah.gov/~2026/bills/static/HB0320.html">HB 320 (2026)</a> §13-72-201(3)(d) requires OAIP to report annually to the Business and Labor Interim Committee on every executed RMA and JIA. PubLedge is a standing public-facing companion to that statutory report — continuously current between November cycles.</p>
+            <h3>Propose a correction</h3>
+            <p>PubLedge's Utah reference instance is a third-party public mirror, not an OAIP product. If you are OAIP staff, a participant, or an outside reviewer who has spotted an inaccuracy, please <a href="https://github.com/snapsynapse/publedge/issues/new?title=Utah%20correction%3A%20&labels=correction,us-ut">open a correction issue on GitHub</a> or email <a href="mailto:hello@paice.work?subject=PubLedge%20Utah%20correction">hello@paice.work</a>. Every page's frontmatter is versioned in <a href="https://github.com/snapsynapse/publedge">the public repo</a>; corrections land as commits with a clear audit trail.</p>
+            <h3>Related Utah AI statutes (not in this registry)</h3>
+            <p>Per PubLedge's scope, statutes appear here only when a PubLedge instrument cites or interprets them. The following 2025 Utah AI statutes are intentionally not in this registry because no OAIP instrument currently invokes them; their authoritative obligation maps live at EveryAILaw:</p>
+            <ul>
+                <li><strong>SB 180 (2025)</strong> — law-enforcement AI policy + police-report disclosure. See <a href="https://everyailaw.com/regulation/utah-sb149/index.html">EveryAILaw Utah AI stack</a>.</li>
+                <li><strong>SB 271 (2025)</strong> — unauthorized AI impersonation / deepfake amendments. See <a href="https://everyailaw.com/regulation/utah-sb149/index.html">EveryAILaw Utah AI stack</a>.</li>
+            </ul>
+            <p>If OAIP later issues an RMA or JIA that invokes either statute, a scaffolding stub will be added here per the standard.</p>
         </div>
     `;
 }
@@ -2020,7 +2032,7 @@ function generateUtahStatuteMap(data) {
     if (!statutes.length) return '';
     return `
         <h3>Statutory Framework</h3>
-        <p style="color:var(--text-secondary);">Four bills passed across three legislative sessions form the statutory spine that OAIP interprets and, in limited cases, waives.</p>
+        <p style="color:var(--text-secondary);">Five bills passed across three legislative sessions form the statutory spine that OAIP interprets and, in limited cases, waives. SB 332 (2025) is included as a scaffolding stub because it extended the Chapter 72 sunset from 2025-05-01 to 2027-07-01, materially affecting every RMA and JIA reliance period; its substantive text lives at <a href="https://everyailaw.com/regulation/utah-sb149/index.html">EveryAILaw</a>.</p>
         <table class="data-table">
             <thead><tr><th>Bill</th><th>Session</th><th>Governs</th><th>Effective</th></tr></thead>
             <tbody>
@@ -2039,6 +2051,7 @@ function statuteGovernsDescription(s) {
     const map = {
         'us-ut-legislature-statute-2024-sb149': 'Title 13 Ch. 72 (OAIP + Learning Lab); §76-2-107 (criminal AI defense eliminated)',
         'us-ut-legislature-statute-2025-sb226': 'Title 13 Ch. 75 (GenAI disclosure; civil AI defense eliminated)',
+        'us-ut-legislature-statute-2025-sb332': 'AIPA sunset extended from 2025-05-01 to 2027-07-01 (§63I-2-213)',
         'us-ut-legislature-statute-2025-hb452': 'Title 13 Ch. 72a (mental health chatbot regulations)',
         'us-ut-legislature-statute-2026-hb320': 'Learning Lab restructure; JIA instrument; 36-month term'
     };

@@ -442,12 +442,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:fe79e8a051cf262b9125911f87e5a2c337e8ac0eb73fbe0bc925276162b96da4
+    hash: sha256:57e2e117522e79bf00aea79c6523e4bb32fd09af5f046fcbb9b415e0a8eb7a01
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:e40420552aa9011f57f150cb16fbea6145d7e363a70c84d56fedbf4ce09074f0
+    hash: sha256:5d6ff08258b439541f472f20bc41049b819870eeb0d19638b4cc329e6c3675d0
     note: scripts/build.js
 
   - path: scripts/check-links.js

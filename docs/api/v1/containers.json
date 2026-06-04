@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-06-04T02:02:35.941Z",
-    "count": 17
+    "generated": "2026-06-04T19:35:04.579Z",
+    "count": 18
   },
   "items": [
     {
@@ -77,6 +77,13 @@
     {
       "id": "us-ut-legislature-statute-2025-sb226",
       "name": "Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments",
+      "status": "enforcing",
+      "effective": "2025-05-07",
+      "provision_count": 1
+    },
+    {
+      "id": "us-ut-legislature-statute-2025-sb332",
+      "name": "Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)",
       "status": "enforcing",
       "effective": "2025-05-07",
       "provision_count": 1
