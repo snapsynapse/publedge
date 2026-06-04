@@ -128,8 +128,13 @@ const FOOTER_NAV = [
         { label: 'Prior Art', href: 'reference/prior-art/' },
         { label: 'Vocabulary', href: 'reference/vocabulary/' },
     ]},
-    { heading: 'Related', links: [
-        { label: 'EveryAILaw', href: 'https://everyailaw.com/' },
+    { heading: 'Part of the PAICE legal graph', links: [
+        { label: 'EveryAILaw — AI obligation registry', href: 'https://everyailaw.com/' },
+        { label: 'AI Incident Law — public-record corpus of alleged AI incidents', href: 'https://aiincidentlaw.org/' },
+        { label: 'Obligation-First — shared upper schema (implemented here)', href: 'https://obligationfirst.org/' },
+        { label: 'PAICE portfolio', href: 'https://paice.foundation/' },
+    ]},
+    { heading: 'External references', links: [
         { label: 'gist (Semantic Arts)', href: 'https://semanticarts.com/gist/' },
     ]},
 ];

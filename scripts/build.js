@@ -841,6 +841,8 @@ function generateHomepage(config, data, configCSS) {
                 'description': config.description || '',
                 'inLanguage': 'en',
                 'publisher': { '@id': `${siteUrl}#organization` },
+                'isPartOf': { '@id': 'https://paice.foundation/#legal-graph' },
+                'conformsTo': { '@type': 'CreativeWork', 'url': 'https://obligationfirst.org/', 'name': 'Obligation-First' },
                 'potentialAction': {
                     '@type': 'SearchAction',
                     'target': { '@type': 'EntryPoint', 'urlTemplate': `${siteUrl}?q={search_term_string}` },
@@ -856,6 +858,18 @@ function generateHomepage(config, data, configCSS) {
                 'sameAs': [
                     'https://github.com/snapsynapse/publedge',
                     'https://paice.foundation'
+                ]
+            },
+            {
+                '@type': 'CreativeWork',
+                '@id': 'https://paice.foundation/#legal-graph',
+                'name': 'PAICE legal graph',
+                'url': 'https://paice.foundation/',
+                'hasPart': [
+                    { '@type': 'CreativeWork', 'url': 'https://everyailaw.com/', 'name': 'EveryAILaw' },
+                    { '@type': 'CreativeWork', 'url': 'https://publedge.org/', 'name': 'PubLedge' },
+                    { '@type': 'CreativeWork', 'url': 'https://aiincidentlaw.org/', 'name': 'AI Incident Law' },
+                    { '@type': 'CreativeWork', 'url': 'https://obligationfirst.org/', 'name': 'Obligation-First' }
                 ]
             },
             {
