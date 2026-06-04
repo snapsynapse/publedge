@@ -47,9 +47,9 @@
         if (document.querySelector('.site-banner')) return;
         var header = document.querySelector('header.site-header, header');
         if (!header) return;
-        var b = document.createElement('div');
+        var b = document.createElement('aside');
         b.className = 'site-banner';
-        b.setAttribute('role', 'note');
+        b.setAttribute('aria-label', 'Site disclaimer');
         b.innerHTML = '<strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe each instrument\u2019s own legal state, not editorial endorsement \u2014 see <a href="/definitions/">Definitions</a>.';
         if (header.nextSibling) {
             header.parentNode.insertBefore(b, header.nextSibling);

@@ -380,7 +380,9 @@ footer, .site-footer {
 footer p, .site-footer p { margin: 0.25rem 0; }
 .footer-meta { color: var(--muted); }
 .footer-meta a { color: var(--link); }
-.footer-built { font-size: 0.78rem; opacity: 0.75; }
+/* No opacity — applying opacity over --muted on the cream background drops
+   contrast below WCAG AA 4.5:1. The smaller size de-emphasises the text. */
+.footer-built { font-size: 0.78rem; }
 footer a, .site-footer a { color: var(--link); }
 
 /* Cards */

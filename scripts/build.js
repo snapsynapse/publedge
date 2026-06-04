@@ -26,6 +26,22 @@ const DOCS_DIR = path.join(ROOT, process.env.KAC_OUTPUT_DIR || 'docs');
 const API_DIR = path.join(DOCS_DIR, 'api', 'v1');
 const ASSETS_DIR = path.join(DOCS_DIR, 'assets');
 
+// Pick black or white text for a hex background by WCAG relative luminance,
+// so generated badges keep adequate contrast for any configured group/status
+// color instead of always hard-coding white or black (which fails when the
+// configured color sits near the opposite end of the luminance scale).
+function readableTextColor(hexBg) {
+    let h = String(hexBg || '').trim().replace(/^#/, '');
+    if (h.length === 3) h = h.split('').map(c => c + c).join('');
+    if (!/^[0-9a-f]{6}$/i.test(h)) return '#fff';
+    const chan = i => {
+        const v = parseInt(h.substr(i, 2), 16) / 255;
+        return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    };
+    const L = 0.2126 * chan(0) + 0.7152 * chan(2) + 0.0722 * chan(4);
+    return (L + 0.05) / 0.05 >= 1.05 / (L + 0.05) ? '#000' : '#fff';
+}
+
 function loadConfig() {
     const configPath = path.join(ROOT, 'project.yml');
     if (!fs.existsSync(configPath)) {
@@ -172,8 +188,8 @@ function generateConfigCSS(config) {
         const name = g.name || g;
         const color = g.color || '#888';
         const colorLight = g.color_light || color;
-        css += `.group-badge.${name} { background: ${color}; }\n`;
-        css += `:is(html, body).light-mode .group-badge.${name} { background: ${colorLight}; }\n`;
+        css += `.group-badge.${name} { background: ${color}; color: ${readableTextColor(color)}; }\n`;
+        css += `:is(html, body).light-mode .group-badge.${name} { background: ${colorLight}; color: ${readableTextColor(colorLight)}; }\n`;
         css += `.matrix-table .matrix-row-header.group-${name} { border-left-color: ${color}; }\n`;
         css += `:is(html, body).light-mode .matrix-table .matrix-row-header.group-${name} { border-left-color: ${colorLight}; }\n`;
     });
@@ -183,8 +199,8 @@ function generateConfigCSS(config) {
         const name = s.name || s;
         const color = s.color || '#888';
         const colorLight = s.color_light || color;
-        css += `.status-badge.${name} { background: ${color}; color: #000; }\n`;
-        css += `:is(html, body).light-mode .status-badge.${name} { background: ${colorLight}; color: #fff; }\n`;
+        css += `.status-badge.${name} { background: ${color}; color: ${readableTextColor(color)}; }\n`;
+        css += `:is(html, body).light-mode .status-badge.${name} { background: ${colorLight}; color: ${readableTextColor(colorLight)}; }\n`;
     });
 
     // Theme accent overrides
