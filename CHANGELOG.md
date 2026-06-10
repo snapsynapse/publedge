@@ -10,6 +10,22 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 Follow-on work tracked in [ROADMAP.md](ROADMAP.md).
 
+## [0.1.1] — 2026-06-10
+
+First stable npm publish.
+
+### Notes
+
+- npm package version (`package.json`) now tracks **MCP server stability**, not the PROTOCOL.md spec maturity. The two version rates are decoupled. Spec still tracks at `v0.1.1-pre` per [PROTOCOL.md](PROTOCOL.md); the MCP server itself is stable, contract-tested (`eval:mcp-contract`), and ready for general use.
+- This is the first published npm version. Earlier `0.1.1-pre` work was internal/unpublished.
+
+### Added
+- npm package: `publedge` on the public registry, installable as `npx -y publedge` for any MCP-aware agent client.
+- `mcpName` field in `package.json` matching the Official MCP Registry submission (`io.github.snapsynapse/publedge`).
+- `bin` entry registers `publedge` as a CLI; the existing `mcp-server.js` runs as the canonical executable.
+- `files` whitelist restricts the npm tarball to the runtime surface (mcp-server.js, project.yml, scripts/lib, data/examples, mcp.json, licenses, README, PROTOCOL).
+- Engine pin moved to `node >=20` to match the rest of the PAICE legal graph MCP servers (`every-ai-law`, `ai-incident-law`).
+
 ## [0.1.1-pre] — 2026-05-30
 
 Security hardening and release-readiness patch.

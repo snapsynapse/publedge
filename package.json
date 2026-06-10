@@ -1,8 +1,58 @@
 {
   "name": "publedge",
-  "version": "0.1.1-pre",
-  "description": "Open recordkeeping protocol for fact-specific written interpretations between two parties (JIAs, RMAs, no-action letters, advisory opinions, private letter rulings). Plain markdown, hash-pinned, gist-bound.",
+  "version": "0.1.1",
+  "mcpName": "io.github.snapsynapse/publedge",
+  "description": "MCP server and recordkeeping protocol for fact-specific written interpretations between two parties: JIAs, RMAs, no-action letters, advisory opinions, private letter rulings. Plain markdown, hash-pinned, gist-bound. The verifiable-records layer of the PAICE legal graph.",
+  "homepage": "https://publedge.org/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snapsynapse/publedge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snapsynapse/publedge/issues"
+  },
   "license": "Apache-2.0",
+  "author": "PAICE.work PBC <https://paice.work/>",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "knowledge-base",
+    "ontology",
+    "static-site",
+    "knowledge-as-code",
+    "legal",
+    "regulatory",
+    "jia",
+    "rma",
+    "no-action-letter",
+    "private-letter-ruling",
+    "paice",
+    "paice-legal-graph",
+    "obligation-first"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "publedge": "mcp-server.js"
+  },
+  "main": "mcp-server.js",
+  "files": [
+    "mcp-server.js",
+    "project.yml",
+    "scripts/lib/*.js",
+    "data/examples/instruments/*.md",
+    "data/examples/obligations/*.md",
+    "data/examples/authorities/*.md",
+    "data/examples/mapping/*.yml",
+    "mcp.json",
+    "README.md",
+    "LICENSE",
+    "LICENSE-APACHE",
+    "LICENSE-CC-BY-4.0",
+    "ATTRIBUTION.md",
+    "PROTOCOL.md"
+  ],
   "scripts": {
     "build": "node scripts/build.js && node scripts/build-extras.js",
     "build:kac": "node scripts/build.js",
@@ -24,25 +74,5 @@
     "eval:manifest-scope": "node scripts/eval-manifest-scope.js",
     "eval:links": "node scripts/eval-links.js",
     "eval:verification-exit": "node scripts/eval-verification-exit.js"
-  },
-  "author": "PAICE.work PBC <https://paice.work/>",
-  "homepage": "https://publedge.org/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/snapsynapse/publedge"
-  },
-  "keywords": [
-    "knowledge-base",
-    "ontology",
-    "static-site",
-    "knowledge-as-code",
-    "mcp",
-    "legal",
-    "regulatory",
-    "jia",
-    "rma"
-  ],
-  "engines": {
-    "node": ">=16"
   }
 }
