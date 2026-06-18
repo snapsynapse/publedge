@@ -263,6 +263,24 @@ review_date: YYYY-MM-DD</code></pre>
 
 <p>This is mandatory. PubLedge never deletes, only supersedes. The historical record is part of the value.</p>
 
+<h2 id="authority-response">Authority response</h2>
+
+<p>PubLedge is operator-agnostic. The authority that issued or enforces an instrument is never required to operate the registry, but it has a first-class way to respond to a record about its own instrument.</p>
+
+<p>The optional <code>authority_response</code> frontmatter field records an authority-supplied annotation. It is rendered prominently on the record page above citation metadata, included in the record's <code>record.json</code> endpoint, and validated against the closed response vocabulary.</p>
+
+<pre><code>authority_response:
+  - from: utah-oaip
+    date: 2026-05-18
+    position: clarifies
+    statement: "Authority-supplied text copied into the record."
+    source: https://commerce.utah.gov/ai/example-response/
+    signature: pgp:0xABCD1234</code></pre>
+
+<p>The <code>position</code> value must be one of <code>concurs</code>, <code>disputes</code>, <code>clarifies</code>, <code>declines-to-comment</code>, or <code>superseded-by-official</code>. Each entry needs <code>from</code>, ISO <code>date</code>, and at least one of <code>statement</code> or authority-hosted <code>source</code>. When both are present, the source controls.</p>
+
+<p>A response never deletes or replaces the original interpretation. It annotates the record, preserving the same historical posture as supersession and hash verification.</p>
+
 <h2>License</h2>
 
 <p>PubLedge content (markdown, YAML, HTML) is licensed CC-BY 4.0. PubLedge code, schemas, and scripts are licensed Apache 2.0. See <a href="/LICENSE">LICENSE</a>, <a href="/LICENSE-APACHE">LICENSE-APACHE</a>, <a href="/LICENSE-CC-BY-4.0">LICENSE-CC-BY-4.0</a>.</p>

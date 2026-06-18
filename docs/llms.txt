@@ -58,17 +58,20 @@
 - [Coverage Matrix](https://publedge.org/matrix.html): Which obligations each legal instrument supports
 - [Compare](https://publedge.org/compare.html): Side-by-side legal instrument comparison
 - [Timeline](https://publedge.org/timeline.html): Key dates and milestones
+- [Authority response protocol](https://publedge.org/about/#authority-response): How issuing or enforcing authorities annotate, correct, or clarify records
 
 ## Machine-Readable
 
 - [JSON API](https://publedge.org/api/v1/index.json): Programmatic access to all data
+- [Record schema](https://publedge.org/schema/json/record.schema.json): record.json shape, including authority_response annotations
 - [agents.json](https://publedge.org/agents.json): Agent discovery metadata
 - [Sitemap](https://publedge.org/sitemap.xml): All pages
 - [RSS Feed](https://publedge.org/feed.xml): Recent updates
 
 ## Protocol
 
-- [Protocol specification](https://publedge.org/reference/protocol/): PubLedge entity model, frontmatter, identifier rules, integrity mechanism.
+- [Protocol specification](https://publedge.org/about/): PubLedge entity model, frontmatter, identifier rules, integrity mechanism.
+- [Authority response](https://publedge.org/about/#authority-response): Optional authority annotation field for concurrence, dispute, clarification, no-comment, or official supersession.
 - [Protocol source (Markdown)](https://publedge.org/PROTOCOL.md)
 - [Prior art survey](https://publedge.org/reference/prior-art/): Utah Sandbox, SEC No-Action, IRS PLRs, CFPB Advisory, Utah Court Forms.
 - [Prior art source (Markdown)](https://publedge.org/PRIOR-ART.md)

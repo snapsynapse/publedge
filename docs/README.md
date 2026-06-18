@@ -45,7 +45,7 @@ Every record and index is published in parallel HTML + structured form so agents
 |---|---|
 | `/` | `WebSite` + `Organization` + `DataCatalog` JSON-LD (`@graph`); links to every dataset distribution |
 | `/us/{jurisdiction}/{authority}/{type}/{instance}/` | Canonical hierarchical URL per record; inline `Schema.org` `LegalDocument` JSON-LD; PDF + OCR text co-located |
-| `/us/{jurisdiction}/{authority}/{type}/{instance}/record.json` | Same record as JSON; shape validated by `/schema/json/record.schema.json` |
+| `/us/{jurisdiction}/{authority}/{type}/{instance}/record.json` | Same record as JSON; shape validated by `/schema/json/record.schema.json`; includes `authority_response` annotations when present |
 | `/instruments.html`, `/obligations.html`, `/authorities.html` | `ItemList` JSON-LD; human-readable filter + sort |
 | `/matrix.html` | `Dataset` JSON-LD + coverage matrix; `DataDownload` distribution at `/api/v1/matrix.json` |
 | `/definitions/` | `DefinedTermSet` with instrument types + statuses as `DefinedTerm`s |
@@ -168,6 +168,7 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | `/schema/json/record.schema.json` (JSON Schema draft 2020-12) | done |
 | Extended MCP tool surface (13 tools; filters, URL-based fetch, upcoming, recently-changed) | done |
 | Explicit AI-crawler allowlist in `robots.txt` | done |
+| Authority response protocol field, rendering, schema, and validation | done |
 | Agent-readiness + a11y audit artifacts in `audits/` + `.a11y-audit/` | done |
 | Axe-core WCAG 2.1 AA remediation (4 rules, 70 instances → 0) | done |
 | Private snapshot for pre-release review | sent |

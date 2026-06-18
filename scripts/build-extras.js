@@ -320,7 +320,7 @@ ${mdToHtml(t.body)}
 <h1>PubLedge Templates</h1>
 <p>Suggested prior-art templates for Joint Interpretation Agreements (JIAs) and Regulatory Mitigation Agreements (RMAs) under Utah Code Title 13 Chapter 72 Part 4. Not official OAIP output.</p>
 ${sections || '<p>No templates published.</p>'}
-<p><a href="../reference/protocol/">← Back to protocol</a></p>`;
+<p><a href="../about/">← Back to protocol</a></p>`;
     fs.writeFileSync(path.join(DOCS_DIR, 'templates', 'index.html'), pageShell({
         title: 'Templates',
         canonicalPath: 'templates/',
@@ -433,7 +433,8 @@ function extendDiscovery(templates) {
             '',
             '## Protocol',
             '',
-            `- [Protocol specification](${SITE_URL}reference/protocol/): PubLedge entity model, frontmatter, identifier rules, integrity mechanism.`,
+            `- [Protocol specification](${SITE_URL}about/): PubLedge entity model, frontmatter, identifier rules, integrity mechanism.`,
+            `- [Authority response](${SITE_URL}about/#authority-response): Optional authority annotation field for concurrence, dispute, clarification, no-comment, or official supersession.`,
             `- [Protocol source (Markdown)](${SITE_URL}PROTOCOL.md)`,
             `- [Prior art survey](${SITE_URL}reference/prior-art/): Utah Sandbox, SEC No-Action, IRS PLRs, CFPB Advisory, Utah Court Forms.`,
             `- [Prior art source (Markdown)](${SITE_URL}PRIOR-ART.md)`,
@@ -460,7 +461,15 @@ function extendDiscovery(templates) {
             id: 'protocol-spec',
             name: 'PubLedge Protocol Specification',
             description: 'Entity model, frontmatter contract, integrity mechanism.',
-            url: `${SITE_URL}reference/protocol/`
+            url: `${SITE_URL}about/`
+        });
+        j.capabilities.push({
+            id: 'authority-response',
+            name: 'Authority Response Protocol',
+            description: 'Machine-readable authority_response entries let authorities annotate, correct, clarify, decline to comment on, or supersede a PubLedge record without replacing the original record.',
+            url: `${SITE_URL}about/#authority-response`,
+            schema_field: 'authority_response',
+            positions: ['concurs', 'disputes', 'clarifies', 'declines-to-comment', 'superseded-by-official']
         });
         j.capabilities.push({
             id: 'template-library',
@@ -668,6 +677,26 @@ function writeRecordSchema() {
                     'status': { 'type': ['string', 'null'], 'enum': ['proposed', 'enacted', 'enforcing', 'phased-enforcement', 'pending-replacement', 'expired', 'superseded', 'withdrawn', 'terminated'] },
                     'supersedes': { 'type': ['string', 'null'] },
                     'superseded_by': { 'type': ['string', 'null'] },
+                    'authority_response': {
+                        'type': ['array', 'null'],
+                        'items': {
+                            'type': 'object',
+                            'required': ['from', 'date', 'position'],
+                            'properties': {
+                                'from': { 'type': 'string' },
+                                'date': { 'type': 'string', 'format': 'date' },
+                                'position': { 'type': 'string', 'enum': ['concurs', 'disputes', 'clarifies', 'declines-to-comment', 'superseded-by-official'] },
+                                'statement': { 'type': ['string', 'null'] },
+                                'source': { 'type': ['string', 'null'], 'format': 'uri' },
+                                'signature': { 'type': ['string', 'null'] }
+                            },
+                            'additionalProperties': true,
+                            'anyOf': [
+                                { 'required': ['statement'] },
+                                { 'required': ['source'] }
+                            ]
+                        }
+                    },
                     'last_verified': { 'type': ['string', 'null'], 'format': 'date' },
                     'timeline': { 'type': 'array', 'items': { 'type': 'object' } },
                     'source_documents': { 'type': 'array', 'items': { 'type': 'object' } }

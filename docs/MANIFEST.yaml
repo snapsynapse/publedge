@@ -357,7 +357,7 @@ files:
 
   - path: CONTRIBUTING.md
     role: protocol
-    hash: sha256:ef3cd3a08db43d97fa8b18ce372f20e10a2c2ae654a54cda4c514c313e91cd98
+    hash: sha256:f24796b258257d1e63dd4608b456ac78c7aa322c6c9580a8db7440ab2c119b43
     note: CONTRIBUTING.md
 
   - path: DEFINITIONS.md
@@ -377,7 +377,7 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:da51f3306380ba8bdce5e5fdcb45b114d02b2a16707221fd820b2d51f1a142ad
+    hash: sha256:de5da33289643d3eb9788d8c2f9b576227f2b419ec8c4c826492040601a37903
     note: README.md
 
   - path: ROADMAP.md
@@ -447,12 +447,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:57e2e117522e79bf00aea79c6523e4bb32fd09af5f046fcbb9b415e0a8eb7a01
+    hash: sha256:8f1d7c5692fa0b39b045410ade4838dd68c3109ce16c9fb0c635e83d764f3539
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:b97663d5ac18b4363c369528c965384f46c5e473a63adf5b5acec3b4794d038e
+    hash: sha256:3ee7071b4b133eb3166d78ebf88a1a5fb75aea213f3508052ccccd93ae55fc8d
     note: scripts/build.js
 
   - path: scripts/check-links.js

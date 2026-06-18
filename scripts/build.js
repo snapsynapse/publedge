@@ -793,6 +793,10 @@ function generateHomepage(config, data, configCSS) {
                 <div class="card-title"><a href="/reference/disclaimer/">Read the disclaimer</a></div>
                 <div class="card-description">PubLedge is not legal advice. Source policy, limitation of liability, AI-assisted-compilation notice.</div>
             </div>
+            <div class="obligation-card">
+                <div class="card-title"><a href="/about/#authority-response">Respond as an authority</a></div>
+                <div class="card-description">Authorities can annotate a record with <code>authority_response</code>. Responses preserve the original record while adding the authority's own position, source, date, and optional signature.</div>
+            </div>
         </div>
 
         ${(() => {
@@ -2490,10 +2494,12 @@ function build() {
         `- [Coverage Matrix](${siteUrl}matrix.html): Which ${pPlural.toLowerCase()} each ${cSingular} supports`,
         `- [Compare](${siteUrl}compare.html): Side-by-side ${cSingular} comparison`,
         `- [Timeline](${siteUrl}timeline.html): Key dates and milestones`,
+        `- [Authority response protocol](${siteUrl}about/#authority-response): How issuing or enforcing authorities annotate, correct, or clarify records`,
         '',
         '## Machine-Readable',
         '',
         `- [JSON API](${siteUrl}api/v1/index.json): Programmatic access to all data`,
+        `- [Record schema](${siteUrl}schema/json/record.schema.json): record.json shape, including authority_response annotations`,
         `- [agents.json](${siteUrl}agents.json): Agent discovery metadata`,
         `- [Sitemap](${siteUrl}sitemap.xml): All pages`,
         `- [RSS Feed](${siteUrl}index.xml): Recent updates`,
@@ -2536,6 +2542,14 @@ function build() {
                     { path: 'api/v1/matrix.json', description: 'Coverage matrix' },
                     { path: 'api/v1/comparisons.json', description: 'Pre-computed comparisons' }
                 ]
+            },
+            {
+                id: 'authority-response',
+                name: 'Authority Response',
+                description: 'Protocol field and rendered record-page panel for authority-supplied concurrence, dispute, clarification, decline-to-comment, or official supersession notices.',
+                url: `${siteUrl}about/#authority-response`,
+                schema_field: 'authority_response',
+                positions: ['concurs', 'disputes', 'clarifies', 'declines-to-comment', 'superseded-by-official']
             }
         ],
         content: {
@@ -2547,7 +2561,9 @@ function build() {
             llms_txt: `${siteUrl}llms.txt`,
             sitemap: `${siteUrl}sitemap.xml`,
             rss: `${siteUrl}index.xml`,
-            robots: `${siteUrl}robots.txt`
+            robots: `${siteUrl}robots.txt`,
+            record_schema: `${siteUrl}schema/json/record.schema.json`,
+            protocol_authority_response: `${siteUrl}about/#authority-response`
         },
         meta: {
             last_updated: new Date().toISOString().split('T')[0],

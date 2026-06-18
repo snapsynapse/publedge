@@ -52,10 +52,38 @@
       ]
     },
     {
+      "id": "authority-response",
+      "name": "Authority Response",
+      "description": "Protocol field and rendered record-page panel for authority-supplied concurrence, dispute, clarification, decline-to-comment, or official supersession notices.",
+      "url": "https://publedge.org/about/#authority-response",
+      "schema_field": "authority_response",
+      "positions": [
+        "concurs",
+        "disputes",
+        "clarifies",
+        "declines-to-comment",
+        "superseded-by-official"
+      ]
+    },
+    {
       "id": "protocol-spec",
       "name": "PubLedge Protocol Specification",
       "description": "Entity model, frontmatter contract, integrity mechanism.",
-      "url": "https://publedge.org/reference/protocol/"
+      "url": "https://publedge.org/about/"
+    },
+    {
+      "id": "authority-response",
+      "name": "Authority Response Protocol",
+      "description": "Machine-readable authority_response entries let authorities annotate, correct, clarify, decline to comment on, or supersede a PubLedge record without replacing the original record.",
+      "url": "https://publedge.org/about/#authority-response",
+      "schema_field": "authority_response",
+      "positions": [
+        "concurs",
+        "disputes",
+        "clarifies",
+        "declines-to-comment",
+        "superseded-by-official"
+      ]
     },
     {
       "id": "template-library",
@@ -433,7 +461,9 @@
     "llms_txt": "https://publedge.org/llms.txt",
     "sitemap": "https://publedge.org/sitemap.xml",
     "rss": "https://publedge.org/feed.xml",
-    "robots": "https://publedge.org/robots.txt"
+    "robots": "https://publedge.org/robots.txt",
+    "record_schema": "https://publedge.org/schema/json/record.schema.json",
+    "protocol_authority_response": "https://publedge.org/about/#authority-response"
   },
   "meta": {
     "last_updated": "2026-06-18",

@@ -91,6 +91,20 @@ disclaimer: ""
 - `demonstration-remap` — editorial reconstruction of a publicly available document.
 - `publedge-original-draft` — originated in PubLedge; not yet reviewed by the issuing authority.
 
+Optional authority responses are recorded in `authority_response`. Use this only for an authority-supplied annotation, correction, clarification, no-comment response, or official supersession notice. The response annotates the record; it does not replace the original interpretation.
+
+```yaml
+authority_response:
+  - from: utah-oaip
+    date: 2026-05-18
+    position: clarifies
+    statement: "Authority-supplied text copied into the record."
+    source: https://commerce.utah.gov/ai/example-response/
+    signature: pgp:0xABCD1234
+```
+
+`position` must be one of `concurs`, `disputes`, `clarifies`, `declines-to-comment`, or `superseded-by-official`. Each entry needs `from`, ISO `date`, and at least one of `statement` or an authority-hosted `source` URL. When both are present, the source controls.
+
 ### 4. Add source documents (optional but preferred)
 
 If a source PDF exists:

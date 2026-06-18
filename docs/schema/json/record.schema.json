@@ -241,6 +241,71 @@
             "null"
           ]
         },
+        "authority_response": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "required": [
+              "from",
+              "date",
+              "position"
+            ],
+            "properties": {
+              "from": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string",
+                "format": "date"
+              },
+              "position": {
+                "type": "string",
+                "enum": [
+                  "concurs",
+                  "disputes",
+                  "clarifies",
+                  "declines-to-comment",
+                  "superseded-by-official"
+                ]
+              },
+              "statement": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "uri"
+              },
+              "signature": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": true,
+            "anyOf": [
+              {
+                "required": [
+                  "statement"
+                ]
+              },
+              {
+                "required": [
+                  "source"
+                ]
+              }
+            ]
+          }
+        },
         "last_verified": {
           "type": [
             "string",
