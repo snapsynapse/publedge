@@ -55,6 +55,13 @@ statute_anchors:
 publication_citations:              # where the instrument itself is published
   - cite: "<e.g. 87 Fed. Reg. 39733>"
     url: "<URL to that publication>"
+authority_response:                 # optional; authority annotation, not record replacement
+  - from: <authority slug or name>
+    date: YYYY-MM-DD
+    position: <concurs | disputes | clarifies | declines-to-comment | superseded-by-official>
+    statement: "<authority-supplied statement>"
+    source: "<optional authority-hosted https URL; controls over statement>"
+    signature: "<optional detached-signature or PGP fingerprint reference>"
 status: <draft | reviewed | published | superseded | withdrawn>
 supersedes: null | <PL-id>
 superseded_by: null | <PL-id>
@@ -77,6 +84,7 @@ modified: YYYY-MM-DD
 - **`statute_anchors[]` vs `publication_citations[]`:** Anchors point at the rule the instrument interprets; publication citations point at where the instrument itself can be found in an official publication series (Federal Register, IRS Bulletin, SEC archive). They serve different queries.
 - **Withdrawal vs supersession:** Supersession replaces the position with a new one (`superseded_by` is required). Withdrawal rescinds without replacement (`withdrawn_date` and `withdrawal_reason` required; `withdrawn_by_instrument` optional).
 - **`disclaimer` composition:** Renderer generates disclaimer text from `source` and `status`. Override the field only when the source artifact carries authority-specific reliance language that must be preserved verbatim.
+- **`authority_response[]`:** Optional list of authority responses or corrections. Entries annotate the record and never replace the original interpretation. Each entry requires `from`, ISO `date`, closed-set `position`, and at least one of `statement` or authority-hosted `source`. When both `source` and `statement` are present, the source controls.
 
 ## Image conventions
 

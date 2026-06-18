@@ -602,6 +602,31 @@ function renderRecordDisclaimer(c) {
     return `<aside class="record-disclaimer" role="note" aria-label="Record disclaimer">${escapeHTML(text)}</aside>`;
 }
 
+function renderAuthorityResponses(c) {
+    if (!Array.isArray(c.authority_response) || !c.authority_response.length) return '';
+    const responses = [...c.authority_response].sort((a, b) => String(a?.date || '').localeCompare(String(b?.date || '')));
+    const items = responses.map(r => {
+        const position = String(r.position || '').replace(/-/g, ' ');
+        const statement = r.statement ? `<p>${escapeHTML(r.statement)}</p>` : '';
+        const source = r.source ? `<a href="${escapeHTML(r.source)}" target="_blank" rel="noopener">Authority source</a>` : '';
+        const signature = r.signature ? `<span>Signature: <code>${escapeHTML(r.signature)}</code></span>` : '';
+        const sourceNote = r.source && r.statement ? '<span>Source controls if it differs from the copied statement.</span>' : '';
+        return `<article class="authority-response-entry">
+            <div class="authority-response-meta">
+                <strong>${escapeHTML(r.from || 'Authority')}</strong>
+                <span>${formatDate(r.date)}</span>
+                <span class="authority-response-position">${escapeHTML(position)}</span>
+            </div>
+            ${statement}
+            ${source || signature || sourceNote ? `<div class="authority-response-links">${[source, signature, sourceNote].filter(Boolean).join(' &middot; ')}</div>` : ''}
+        </article>`;
+    }).join('');
+    return `<section class="authority-response-panel" aria-label="Authority response">
+        <h3>Authority Response</h3>
+        ${items}
+    </section>`;
+}
+
 function renderRecordSummary(c, config) {
     const typeLabel = config.hierarchy?.type_labels?.[c.type] || c.type;
     const jur = config.hierarchy?.jurisdictions?.[c.jurisdiction];
@@ -1287,6 +1312,7 @@ function generateContainerDetail(config, container, data, configCSS) {
             </div>
             ${renderIncompleteMetadataWarning(container)}
             ${renderRecordDisclaimer(container)}
+            ${renderAuthorityResponses(container)}
             <div class="citation-block">
                 <strong>Cite as:</strong> <code>${escapeHTML(container.id)}</code>${container.official_ref ? ` &middot; <em>${escapeHTML(container.official_ref)}</em>` : ''}
                 &middot; <a href="record.json">record.json</a>
@@ -1712,6 +1738,7 @@ function generateRecordJsonEndpoint(c, config) {
             status: c.status || null,
             supersedes: c.supersedes || null,
             superseded_by: c.superseded_by || null,
+            authority_response: c.authority_response || null,
             last_verified: c.last_verified || null,
             timeline: c.timeline || [],
             source_documents: buildSourceDocuments(c, config)

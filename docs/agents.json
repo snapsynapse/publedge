@@ -436,7 +436,7 @@
     "robots": "https://publedge.org/robots.txt"
   },
   "meta": {
-    "last_updated": "2026-06-04",
+    "last_updated": "2026-06-18",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"

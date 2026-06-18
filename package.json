@@ -62,6 +62,7 @@
     "evals": "node scripts/evals.js",
     "eval:record-schema": "node scripts/eval-record-schema.js",
     "eval:schema-parity": "node scripts/eval-schema-parity.js",
+    "eval:authority-response": "node scripts/eval-authority-response.js",
     "eval:clean-build": "node scripts/eval-clean-build.js",
     "eval:route-inventory": "node scripts/eval-route-inventory.js",
     "eval:discovery": "node scripts/eval-discovery.js",

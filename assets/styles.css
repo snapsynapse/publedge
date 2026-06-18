@@ -1024,6 +1024,53 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
     background: #fdecea;
 }
 
+.authority-response-panel {
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    background: var(--panel);
+    border: 1px solid var(--border-strong);
+    border-left: 3px solid var(--navy);
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+.authority-response-panel h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+}
+.authority-response-entry + .authority-response-entry {
+    margin-top: 0.85rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
+}
+.authority-response-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.7rem;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+}
+.authority-response-meta strong {
+    color: var(--text);
+}
+.authority-response-position {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: var(--bg-alt);
+    color: var(--text);
+    border: 1px solid var(--border);
+    text-transform: capitalize;
+}
+.authority-response-entry p {
+    margin: 0.55rem 0 0;
+    line-height: 1.5;
+}
+.authority-response-links {
+    margin-top: 0.45rem;
+    color: var(--text-secondary);
+    font-size: 0.86rem;
+}
+
 /* --------------------------------------------------------------------------
    Prev/next sibling-record nav.
 -------------------------------------------------------------------------- */

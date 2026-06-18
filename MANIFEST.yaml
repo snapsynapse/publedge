@@ -97,7 +97,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:38a7187b47917f6849ab75517322d7454197b2aec4f0afe3ef16ee6c374005c2
+    hash: sha256:68ef46f6daeb532e285c47ea8596c9dd0555e387cb9e45ccdf5ce1298d9305ab
     note: package.json
 
   - path: project.yml
@@ -352,7 +352,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:6b8604e88478bffbb51bba9dd8a2f1c3c5d3721c70c2d2e9419f078237772d19
+    hash: sha256:006ba8abe56c33a8e03c492f44cb0a5f303221930c5bbff3963c2ac11ea1fbd1
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -382,7 +382,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:b2a967c79069ec80223e68b173b993587327fe6053fd78ab5249e25c9121e01b
+    hash: sha256:cb5e251e1dc2164a28ba3bf614f574c2dc5678ccd0a68b3bacd8afbeb4c8b3ec
     note: ROADMAP.md
 
   - path: SECURITY.md
@@ -402,7 +402,7 @@ files:
 
   - path: schema/instrument.schema.json
     role: schema
-    hash: sha256:14ce232ea77ca3b3ee69491e6a5990652b0475895062305cbd47905cb0cb60a0
+    hash: sha256:4827991789a2b7f6a868632f1f3c1e74c8f7cd5553faccee23df3e03bab1b267
     note: schema/instrument.schema.json
 
   - path: schema/jia.schema.json
@@ -452,13 +452,18 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:5a4855b92099a95bcdd869fc22f2bba1eccdc70d07223738371a9fdd3c782d04
+    hash: sha256:b97663d5ac18b4363c369528c965384f46c5e473a63adf5b5acec3b4794d038e
     note: scripts/build.js
 
   - path: scripts/check-links.js
     role: tooling
     hash: sha256:62d2f15099cf1c010af987cdb115737120f60a6acfb918ed08017b4486168860
     note: scripts/check-links.js
+
+  - path: scripts/eval-authority-response.js
+    role: tooling
+    hash: sha256:37f06d0c545ad3b1b49504ff67647debb66c6dafecf68143a4685d07cca0054d
+    note: scripts/eval-authority-response.js
 
   - path: scripts/eval-clean-build.js
     role: tooling
@@ -542,7 +547,7 @@ files:
 
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:eda7899b28235bd69de800b8505f2a364e594e804880b8e11c0817b064f4ee22
+    hash: sha256:1b6cf420b8e8a1c2b2f61b1f32c2083831660a991dd66952dcb3620bb6da53a7
     note: scripts/evals.js
 
   - path: scripts/lib/content.js
@@ -602,7 +607,7 @@ files:
 
   - path: scripts/validate.js
     role: tooling
-    hash: sha256:7ced17720681c17f559eee6e298b03902da8994acb32fdf3cbf456ccbf55e7d8
+    hash: sha256:f612e51db430d51850c486f7bcdc281576e216c1cd065252378e1028bf3d20b0
     note: scripts/validate.js
 
   - path: scripts/verify.js

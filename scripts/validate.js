@@ -81,7 +81,24 @@ function validate() {
     // Validate container authority references + v0.2 frontmatter-spec cross-field rules
     const PUBLISHED_LIKE = new Set(['published', 'enforcing', 'enacted']);
     const WITHDRAWAL_FIELDS = ['withdrawn_date', 'withdrawal_reason', 'withdrawn_by_instrument'];
+    const AUTHORITY_RESPONSE_POSITIONS = new Set([
+        'concurs',
+        'disputes',
+        'clarifies',
+        'declines-to-comment',
+        'superseded-by-official'
+    ]);
     const BLANK = v => v === undefined || v === null || /^(null|n\/a|tbd|)$/i.test(String(v).trim());
+    const ISO_DATE = v => /^\d{4}-\d{2}-\d{2}$/.test(String(v || '').trim());
+    const HTTPS_URL = v => {
+        if (BLANK(v)) return false;
+        try {
+            const u = new URL(String(v));
+            return u.protocol === 'https:';
+        } catch (_) {
+            return false;
+        }
+    };
 
     for (const cId of containerIds) {
         const content = fs.readFileSync(path.join(containerDir, `${cId}.md`), 'utf-8');
@@ -121,6 +138,45 @@ function validate() {
         if (setCount > 0 && setCount < WITHDRAWAL_FIELDS.length) {
             console.error(`  ERROR: "${cId}" has partial withdrawal triplet — withdrawn_date, withdrawal_reason, and withdrawn_by_instrument must be set together.`);
             errors++;
+        }
+
+        // Authority-response guard: response entries annotate records, never
+        // replace them. Each entry needs a known posture and either an
+        // authority-hosted source URL or an in-record statement.
+        if (!BLANK(fm.authority_response)) {
+            if (!Array.isArray(fm.authority_response)) {
+                console.error(`  ERROR: "${cId}" authority_response must be a list.`);
+                errors++;
+            } else {
+                fm.authority_response.forEach((entry, idx) => {
+                    const label = `authority_response[${idx}]`;
+                    if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+                        console.error(`  ERROR: "${cId}" ${label} must be an object.`);
+                        errors++;
+                        return;
+                    }
+                    if (BLANK(entry.from)) {
+                        console.error(`  ERROR: "${cId}" ${label} missing from.`);
+                        errors++;
+                    }
+                    if (!ISO_DATE(entry.date)) {
+                        console.error(`  ERROR: "${cId}" ${label} date must be ISO YYYY-MM-DD.`);
+                        errors++;
+                    }
+                    if (!AUTHORITY_RESPONSE_POSITIONS.has(String(entry.position || '').trim())) {
+                        console.error(`  ERROR: "${cId}" ${label} has unknown position "${entry.position}".`);
+                        errors++;
+                    }
+                    if (BLANK(entry.statement) && BLANK(entry.source)) {
+                        console.error(`  ERROR: "${cId}" ${label} requires statement or source.`);
+                        errors++;
+                    }
+                    if (!BLANK(entry.source) && !HTTPS_URL(entry.source)) {
+                        console.error(`  ERROR: "${cId}" ${label} source must be an https URL.`);
+                        errors++;
+                    }
+                });
+            }
         }
     }
 

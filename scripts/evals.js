@@ -8,6 +8,7 @@ const scripts = [
     'eval-parser.js',
     'eval-record-schema.js',
     'eval-schema-parity.js',
+    'eval-authority-response.js',
     'eval-clean-build.js',
     'eval-route-inventory.js',
     'eval-discovery.js',

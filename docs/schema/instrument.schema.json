@@ -97,6 +97,43 @@
     "withdrawn_date": { "type": ["string", "null"] },
     "withdrawal_reason": { "type": ["string", "null"] },
     "withdrawn_by_instrument": { "type": ["string", "null"] },
+    "authority_response": {
+      "type": ["array", "null"],
+      "description": "Optional authority-supplied responses or corrections. Entries annotate the record and never replace the original interpretation.",
+      "items": {
+        "type": "object",
+        "required": ["from", "date", "position"],
+        "properties": {
+          "from": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Authority slug or authority name."
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "position": {
+            "type": "string",
+            "enum": [
+              "concurs",
+              "disputes",
+              "clarifies",
+              "declines-to-comment",
+              "superseded-by-official"
+            ]
+          },
+          "statement": { "type": ["string", "null"] },
+          "source": { "type": ["string", "null"], "format": "uri" },
+          "signature": { "type": ["string", "null"] }
+        },
+        "additionalProperties": true,
+        "anyOf": [
+          { "required": ["statement"] },
+          { "required": ["source"] }
+        ]
+      }
+    },
     "redaction_level": {
       "type": ["string", "null"],
       "enum": ["none", "partial", "full", null]

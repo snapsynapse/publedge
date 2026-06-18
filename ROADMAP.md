@@ -176,10 +176,13 @@ Spec landed (this session):
 - `## Authority response` section in [PROTOCOL.md](PROTOCOL.md) + `authority_response` frontmatter field; `position` vocabulary in [DEFINITIONS.md](DEFINITIONS.md). Operator-agnostic response path (PR / issue / signed field). This is the single biggest objection-smoother: converts "watchdog pointed at us" into "a microphone we can speak through."
 - Plain-language [/reference/verify/](reference/verify/index.html) page: non-engineer "confirm a record was not altered," no terminal required as the primary path. Linked from `/reference/`.
 
+Wiring shipped 2026-06-18:
+- `authority_response` added to the polymorphic record schema + `scripts/validate.js` cross-field rules (list shape, closed `position` enum, ISO date, `source` / `statement` guard).
+- Renderer support: record pages render the `authority_response` block prominently above citation metadata, visually distinct from `disclaimer`, chronological, never destructive.
+- `authority_response` added to the canonical frontmatter spec in [_workshop/CONTENT-GUIDE.md](_workshop/CONTENT-GUIDE.md).
+- Regression coverage: `scripts/eval-authority-response.js` checks schema enum coverage and validator rejection of invalid response entries.
+
 Wiring still owed (engineering, not blocking the regulator conversation):
-- `authority_response` into the polymorphic record schema + `scripts/validate.js` cross-field rules (shape, closed `position` enum, `source`-vs-`statement` precedence).
-- Renderer support: render the `authority_response` block prominently on the record page, visually distinct from `disclaimer`, chronological, never destructive.
-- Add `authority_response` to the canonical frontmatter spec in [_workshop/CONTENT-GUIDE.md](_workshop/CONTENT-GUIDE.md).
 - Confirm `/reference/verify/` is picked up by the sitemap reference section, `llms.txt`, and `/reference/` nav after build (page copies into `docs/` cleanly today; surface enumeration not yet verified).
 - Pull the per-record provenance panel (already listed under Agent surface) forward from v0.2 for this audience; it is what the verify page points at.
 
