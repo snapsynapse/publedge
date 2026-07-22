@@ -68,28 +68,28 @@
     <span>How to verify a record</span>
   </nav>
   <h1>How to verify a record</h1>
-  <p class="verify-meta">Last updated: May 18, 2026</p>
+  <p class="verify-meta">Last updated: July 21, 2026</p>
 
-  <p class="verify-lead">Every PubLedge record carries a fingerprint. Anyone can recompute that fingerprint and check it against the public manifest. If the record was altered by even one character, the fingerprints will not match. You do not need an account, special software, or to trust PubLedge. That is the point.</p>
+  <p class="verify-lead">Every canonical PubLedge source file has a fingerprint in the public manifest. Anyone can recompute that fingerprint and check whether the file matches the current manifest.</p>
 
   <h2>What the fingerprint is</h2>
-  <p>A fingerprint is a SHA-256 hash: a short string of letters and numbers computed from the exact bytes of a file. Change anything in the file, even a single space, and the hash changes completely. It is not reversible and it cannot be forged. PubLedge records every canonical file's hash in one public control file, <code>MANIFEST.yaml</code>, at the root of the repository and the published site.</p>
-  <p>This is plain SHA-256 over plain files. It is not a blockchain, and it does not require one.</p>
+  <p>A fingerprint is a SHA-256 hash computed from the exact bytes of a file. Change anything in the file, even a single space, and the hash changes. PubLedge records each canonical source file's hash in <code>MANIFEST.yaml</code>, published at the repository root and on the site.</p>
+  <p>This is a consistency check, not independent proof of publication time. The manifest is not currently signed or anchored by an external timestamp service.</p>
 
-  <h2>The simplest check (no command line)</h2>
+  <h2>Inspect the current manifest (no command line)</h2>
   <div class="verify-step">
-    <h3>1. Find the record's hash on its own page</h3>
-    <p>Open the record. Its machine-readable form is published alongside it at <code>record.json</code> in the same folder. The record's hash is listed there and on the record page's provenance section.</p>
+    <h3>1. Identify the source file</h3>
+    <p>Find the record's stable id on its public page. Canonical instrument sources live in <code>data/examples/instruments/&lt;id&gt;.md</code> in the repository.</p>
   </div>
   <div class="verify-step">
-    <h3>2. Find the same file in the manifest</h3>
-    <p>Open <a href="/MANIFEST.yaml">/MANIFEST.yaml</a>. Each canonical file is listed with its SHA-256 hash. Locate the line for the record you are checking.</p>
+    <h3>2. Find the source entry in the manifest</h3>
+    <p>Open <a href="/MANIFEST.yaml">/MANIFEST.yaml</a> and locate that source path. The entry gives the SHA-256 value expected for the current published source.</p>
   </div>
   <div class="verify-step">
-    <h3>3. Compare</h3>
-    <p>The two hashes must be identical. If they match, the published record is byte-for-byte the file the manifest vouches for. If they differ, the record has changed since the manifest was last signed off, and you should treat it as suspect and ask why.</p>
+    <h3>3. Recompute before relying on the result</h3>
+    <p>Download the source file and compute its hash using the command below. A match shows that the downloaded source is byte-for-byte consistent with the current manifest. A mismatch means the file or manifest changed and needs investigation.</p>
   </div>
-  <p class="verify-note">Both numbers are public. Neither the operator nor anyone else can show you one value while the manifest says another, because the manifest is itself published and version-controlled.</p>
+  <p class="verify-note">The rendered HTML and adjacent <code>record.json</code> are generated outputs. The manifest hashes the canonical markdown source, not those generated representations.</p>
 
   <h2>The independent check (one command)</h2>
   <p>If you want to compute the fingerprint yourself rather than trust the value shown to you, download the record's source markdown file and run, on macOS or Linux:</p>
@@ -99,15 +99,19 @@
   <p>Continuous integration runs that same check on every change. A mismatch fails the build in public view.</p>
 
   <h2>The change history</h2>
-  <p>Hashes prove a record matches the manifest now. The git history proves how it got there. Every change to every record is a public commit recording what changed, when, and by whom. Nothing is deleted: PubLedge supersedes and annotates, it never overwrites. You can read the full lineage of any record at <a href="https://github.com/snapsynapse/publedge">the repository</a>.</p>
+  <p>Git history provides a public, reviewable change log for the current repository history. It is useful provenance evidence, but an ordinary Git branch can be rewritten by its maintainers. PubLedge does not currently claim an independently immutable history. You can inspect the available lineage at <a href="https://github.com/snapsynapse/publedge">the repository</a>.</p>
 
   <h2>What this proves, and what it does not</h2>
   <ul>
-    <li>It proves a record has not been altered since it was published and hashed.</li>
-    <li>It proves the operator cannot quietly rewrite history; tampering is detectable by anyone, including the regulated party and the issuing authority.</li>
+    <li>It shows whether a downloaded canonical source matches the current manifest.</li>
+    <li>It makes accidental drift and file-to-manifest mismatches detectable.</li>
+    <li>It does not independently prove when the file existed or prevent a publisher from replacing both a file and an unsigned manifest.</li>
     <li>It does not prove the interpretation is legally correct. That is what each record's <code>disclaimer</code>, status, and any <a href="/reference/disclaimer/">source policy</a> are for.</li>
     <li>It does not require you to trust PubLedge. The whole mechanism exists so you do not have to.</li>
   </ul>
+
+  <h2>External timestamp evidence</h2>
+  <p>A publisher that needs independent evidence of publication time can attach a proof from established infrastructure such as an RFC 3161 timestamp authority or OpenTimestamps. PubLedge treats those proofs as pluggable evidence; it does not reimplement timestamping infrastructure.</p>
 
   <h2>Related</h2>
   <ul>
@@ -141,7 +145,7 @@
 </nav>
 <footer class="site-footer">
 <p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="../../reference/disclaimer/">Not legal advice</a> · <a href="../../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.1-pre</p>
+<p class="footer-built">PubLedge v0.1.2-pre</p>
 </footer>
 </body>
 </html>

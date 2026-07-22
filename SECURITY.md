@@ -4,17 +4,18 @@
 
 | Version | Supported |
 |---|---|
-| 0.1.x-pre | :white_check_mark: |
+| Protocol 0.1.x-pre | :white_check_mark: |
+| MCP server 0.1.x | :white_check_mark: |
 | < 0.1.0 | :x: |
 
-PubLedge is in pre-release drafting. The latest commit on `main` is the currently supported version; earlier tags are snapshots, not maintained branches.
+The PubLedge protocol remains pre-1.0; the MCP package follows stable semantic versions. The latest commit on `main` is the currently supported version; earlier tags are snapshots, not maintained branches.
 
 ## Scope
 
 PubLedge is a static site and a read-only MCP server over a public dataset. The substantive security concerns are:
 
 - **Supply chain** — integrity of `data/examples/instruments/*.md`, `data/examples/obligations/*.md`, `data/examples/mapping/index.yml`, `_templates/`, `schema/`, the build scripts, and the MCP server.
-- **Integrity claims** — `MANIFEST.yaml` pins a SHA-256 over every canonical file. Any mismatch between the file tree and the manifest is a security-relevant bug.
+- **Integrity claims** — `MANIFEST.yaml` records a SHA-256 over every canonical file. It provides source-to-current-manifest consistency, not independent proof of publication time or immutable history. Any mismatch between the file tree and the manifest is a security-relevant bug.
 - **AI-crawler policy** — `robots.txt` is intentionally permissive. A change that restricts crawler access without explicit discussion is a security-relevant regression for this project's goals.
 - **Build pipeline** — `scripts/build.js` and `scripts/build-extras.js` generate every HTML page and JSON API response. Injection points in those generators are security-relevant.
 
@@ -55,8 +56,8 @@ Every canonical file in the repository is hashed in `MANIFEST.yaml`. To verify a
 ./scripts/validate-hashes.sh
 ```
 
-A non-zero exit code indicates either an intentional edit that needs a manifest refresh (`./scripts/validate-hashes.sh --update`) or an unexpected tamper that warrants investigation.
+A non-zero exit code indicates either an intentional edit that needs a manifest refresh (`./scripts/validate-hashes.sh --update`) or an unexpected mismatch that warrants investigation. Because the manifest is currently unsigned and not externally timestamped, a successful check does not independently establish when the files were published.
 
 ## Cryptographic signing
 
-Commits are not currently signed. Adding signed commits and a hash-chain verification step in CI is tracked in `ROADMAP.md` under v0.2 engineering.
+Commits are not currently signed, and the manifest is not externally timestamped. Add signing or pluggable timestamp evidence only when an [INTENT.md](INTENT.md) demand trigger establishes a concrete requirement.

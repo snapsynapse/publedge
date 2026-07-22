@@ -21,11 +21,17 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Verify content hashes
         run: ./scripts/validate-hashes.sh
 
       - name: Validate cross-references
         run: node scripts/validate.js
+
+      - name: Validate instrument frontmatter schema
+        run: npm run eval:instrument-schema
 
       - name: Build site
         run: npm run build
@@ -41,11 +47,8 @@ jobs:
       - name: Validate Obligation-First binding
         run: OBLIGATION_FIRST_DIR="$PWD/obligation-first" npm run validate:of
 
-      - name: Verify docs/ is up to date with sources
-        run: node scripts/eval-clean-build.js
-
-      - name: Check internal links
-        run: node scripts/check-links.js
+      - name: Run conformance eval suite
+        run: npm run evals
 
   a11y:
     runs-on: ubuntu-latest

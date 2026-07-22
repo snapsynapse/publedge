@@ -18,6 +18,9 @@ function listedManifestPaths() {
 
 function canonicalSourcePaths() {
     const paths = new Set([
+        'AGENTS.md',
+        'CLAUDE.md',
+        'PROJECT_CONTEXT.md',
         'LICENSE',
         'LICENSE-APACHE',
         'LICENSE-CC-BY-4.0',
@@ -25,19 +28,25 @@ function canonicalSourcePaths() {
         'CHANGELOG.md',
         'CONTRIBUTING.md',
         'DEFINITIONS.md',
+        'INTENT.md',
         'mcp-server.js',
         'mcp.json',
+        'server.json',
         'package.json',
+        'package-lock.json',
         'PRIOR-ART.md',
         'project.yml',
         'PROTOCOL.md',
         'README.md',
+        'RELEASE_NOTES-v0.1.2-pre.md',
         'ROADMAP.md',
         'SECURITY.md',
         'VERIFICATION.md'
     ]);
 
     const includeDirs = [
+        'about',
+        'assets',
         'data/examples/authorities',
         'data/examples/instruments',
         'data/examples/mapping',
@@ -45,11 +54,13 @@ function canonicalSourcePaths() {
         '_templates',
         'schema',
         'scripts',
+        'reference',
         'vendor/gist',
-        '.github/workflows'
+        '.github/workflows',
+        '.github/ISSUE_TEMPLATE'
     ];
     for (const dir of includeDirs) {
-        for (const file of walkFiles(path.join(ROOT, dir), p => /\.(md|ya?ml|json|jsonld|ttl|txt|js|sh)$/.test(p))) {
+        for (const file of walkFiles(path.join(ROOT, dir), p => /\.(md|ya?ml|json|jsonld|ttl|txt|js|css|html|sh)$/.test(p))) {
             paths.add(rel(file));
         }
     }

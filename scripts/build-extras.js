@@ -161,7 +161,7 @@ function renderFooterNav(relRoot) {
 function renderSiteFooter(relRoot) {
     return `<footer class="site-footer">
 <p class="footer-meta">&copy; ${new Date().getFullYear()} <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="${relRoot}reference/disclaimer/">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.1-pre</p>
+<p class="footer-built">PubLedge v0.1.2-pre</p>
 </footer>`;
 }
 
@@ -338,7 +338,7 @@ ${sections || '<p>No templates published.</p>'}
 // ---------------------------------------------------------------------------
 function copyStatics() {
     const files = ['MANIFEST.yaml', 'LICENSE', 'LICENSE-APACHE', 'LICENSE-CC-BY-4.0',
-        'PROTOCOL.md', 'PRIOR-ART.md', 'ROADMAP.md', 'ATTRIBUTION.md', 'README.md',
+        'PROTOCOL.md', 'PRIOR-ART.md', 'ROADMAP.md', 'INTENT.md', 'ATTRIBUTION.md', 'README.md',
         'CONTRIBUTING.md', 'VERIFICATION.md'];
     let n = 0;
     for (const f of files) {
@@ -350,6 +350,8 @@ function copyStatics() {
     }
     // imgs/
     const imgsN = copyRecursive(path.join(ROOT, 'imgs'), path.join(DOCS_DIR, 'imgs'));
+    const faviconSrc = path.join(ROOT, 'imgs', 'logo.svg');
+    if (fs.existsSync(faviconSrc)) fs.copyFileSync(faviconSrc, path.join(DOCS_DIR, 'favicon.svg'));
     // Expose raw template + data directories for citation integrity
     const tplN = copyRecursive(path.join(ROOT, '_templates'), path.join(DOCS_DIR, '_templates'));
     const dataN = copyRecursive(path.join(ROOT, 'data'), path.join(DOCS_DIR, 'data'));
@@ -403,14 +405,20 @@ function extendDiscovery(templates) {
         'reference/prior-art/',
         'reference/registry/',
         'reference/vocabulary/',
+        'reference/verify/',
+        '.well-known/mcp.json',
+        'schema/json/',
         'templates/',
         'PROTOCOL.md',
         'PRIOR-ART.md',
         'ROADMAP.md',
+        'INTENT.md',
         'ATTRIBUTION.md',
         'MANIFEST.yaml',
         'schema/jia.schema.json',
         'schema/rma.schema.json',
+        'schema/instrument.schema.json',
+        'schema/json/record.schema.json',
         'schema/context.jsonld'
     ];
     for (const t of templates) newPaths.push(`template/${t.meta.slug}/`);
@@ -439,7 +447,9 @@ function extendDiscovery(templates) {
             `- [Prior art survey](${SITE_URL}reference/prior-art/): Utah Sandbox, SEC No-Action, IRS PLRs, CFPB Advisory, Utah Court Forms.`,
             `- [Prior art source (Markdown)](${SITE_URL}PRIOR-ART.md)`,
             `- [Vocabulary mapping](${SITE_URL}reference/vocabulary/): PubLedge entities bound to gist classes.`,
+            `- [Verification guide](${SITE_URL}reference/verify/): What the current SHA-256 manifest proves, its limits, and how to recompute a source hash.`,
             `- [Roadmap](${SITE_URL}ROADMAP.md)`,
+            `- [Project intent](${SITE_URL}INTENT.md)`,
             `- [Attribution](${SITE_URL}ATTRIBUTION.md)`,
             `- [Manifest (SHA-256 hashes)](${SITE_URL}MANIFEST.yaml)`,
             '',
@@ -464,23 +474,22 @@ function extendDiscovery(templates) {
             url: `${SITE_URL}about/`
         });
         j.capabilities.push({
-            id: 'authority-response',
-            name: 'Authority Response Protocol',
-            description: 'Machine-readable authority_response entries let authorities annotate, correct, clarify, decline to comment on, or supersede a PubLedge record without replacing the original record.',
-            url: `${SITE_URL}about/#authority-response`,
-            schema_field: 'authority_response',
-            positions: ['concurs', 'disputes', 'clarifies', 'declines-to-comment', 'superseded-by-official']
-        });
-        j.capabilities.push({
             id: 'template-library',
             name: 'JIA and RMA Template Library',
             description: `${templates.length} fill-in templates for Utah Chapter 72 Part 4.`,
             url: `${SITE_URL}templates/`
         });
         j.capabilities.push({
+            id: 'integrity-verification',
+            name: 'Source Integrity Verification',
+            description: 'Recompute SHA-256 values to compare canonical source files with the current unsigned manifest; external timestamp evidence is optional and not supplied by PubLedge.',
+            url: `${SITE_URL}reference/verify/`
+        });
+        j.capabilities.push({
             id: 'mcp-server',
             name: 'MCP Server',
-            description: 'Read-only MCP server exposing the PubLedge knowledge base. Run: node mcp-server.js',
+            description: 'Read-only MCP server exposing the PubLedge knowledge base. Run: npx -y publedge',
+            url: `${SITE_URL}.well-known/mcp.json`,
             source: `https://github.com/snapsynapse/publedge/blob/main/mcp-server.js`
         });
         j.content = j.content || {};
@@ -533,7 +542,7 @@ function splitSitemap() {
         if (/^us\/[^/]+\/[^/]+\/[^/]+\/[^/]+\/?$/.test(p) && !/statute\//.test(p)) buckets.records.push(e);
         else if (/^us\/[^/]+\/[^/]+\/statute\//.test(p)) buckets.statutes.push(e);
         else if (/^authority\//.test(p) || p === 'authorities.html') buckets.authorities.push(e);
-        else if (/^(reference\/|PROTOCOL\.md|PRIOR-ART\.md|ROADMAP\.md|ATTRIBUTION\.md|MANIFEST\.yaml|schema\/)/.test(p)) buckets.reference.push(e);
+        else if (/^(reference\/|PROTOCOL\.md|PRIOR-ART\.md|ROADMAP\.md|INTENT\.md|ATTRIBUTION\.md|MANIFEST\.yaml|schema\/)/.test(p)) buckets.reference.push(e);
         else if (/^(template\/|templates\/?$)/.test(p)) buckets.templates.push(e);
         else if (/^(requires\/|compare\/|applies-to\/)/.test(p)) buckets.bridges.push(e);
         else buckets.meta.push(e);
@@ -568,7 +577,6 @@ function emitAdditionalFeeds() {
     if (!fs.existsSync(rcPath)) return;
     const rc = JSON.parse(fs.readFileSync(rcPath, 'utf8'));
     const items = (rc.items || rc.containers || rc.records || []).slice(0, 20);
-    if (!items.length) return;
 
     const baseUrl = SITE_URL.replace(/\/$/, '') + '/';
     const siteName = 'PubLedge';
@@ -712,7 +720,38 @@ function writeRecordSchema() {
         'additionalProperties': true
     };
     fs.writeFileSync(path.join(schemaDir, 'record.schema.json'), JSON.stringify(schema, null, 2));
-    console.log('  record.schema.json written at /schema/json/record.schema.json');
+    const bodyHtml = `<h1>PubLedge schemas</h1>
+<p>Machine-readable contracts for PubLedge source records and generated representations.</p>
+<ul>
+<li><a href="/schema/instrument.schema.json"><code>instrument.schema.json</code></a>: polymorphic JSON Schema 2020-12 contract for instrument frontmatter.</li>
+<li><a href="/schema/json/record.schema.json"><code>record.schema.json</code></a>: contract for each generated <code>record.json</code>.</li>
+<li><a href="/schema/json/context.jsonld"><code>context.jsonld</code></a>: JSON-LD context binding PubLedge terms to gist.</li>
+<li><a href="/schema/jia.schema.json"><code>jia.schema.json</code></a> and <a href="/schema/rma.schema.json"><code>rma.schema.json</code></a>: compatibility schemas retained for existing references.</li>
+</ul>`;
+    fs.writeFileSync(path.join(schemaDir, 'index.html'), pageShell({
+        title: 'Schemas',
+        canonicalPath: 'schema/json/',
+        relRoot: '../../',
+        bodyHtml,
+        description: 'JSON Schema and JSON-LD contracts for PubLedge records.'
+    }));
+    console.log('  Schema index + record.schema.json written at /schema/json/');
+}
+
+function writeMcpDiscovery() {
+    const dir = path.join(DOCS_DIR, '.well-known');
+    ensureDir(dir);
+    const discovery = {
+        mcpServers: {
+            publedge: {
+                command: 'npx',
+                args: ['-y', 'publedge'],
+                description: 'Read-only access to the PubLedge legal-instrument registry.'
+            }
+        }
+    };
+    fs.writeFileSync(path.join(dir, 'mcp.json'), JSON.stringify(discovery, null, 2));
+    console.log('  MCP discovery written at /.well-known/mcp.json');
 }
 
 // ---------------------------------------------------------------------------
@@ -846,6 +885,7 @@ extendDiscovery(templates);
 splitSitemap();
 emitAdditionalFeeds();
 writeRecordSchema();
+writeMcpDiscovery();
 patchA11y();
 patchFooterNav();
 console.log('PubLedge extras complete.');

@@ -12,7 +12,7 @@ Agreements (RMAs), no-action letters, advisory opinions, private letter rulings,
 interpretive letters, and analogous civic instruments (HOA decision logs, co-op
 governance records, and the like).
 
-Records are plain markdown with structured frontmatter, SHA-256 hash-pinned, and
+Records are plain markdown with structured frontmatter, checked against a SHA-256 manifest, and
 bound to the Semantic Arts *gist* upper ontology so records from different
 authorities can be compared and queried together. Every record is published in
 parallel human-HTML and machine-readable form (`record.json`, JSON-LD, feeds,
@@ -53,11 +53,11 @@ registry through structured endpoints and the MCP server.
 
 ## Current status (2026-07)
 
-Public and stable. Spec at `v0.1.1-pre`; MCP server published stable (npm +
-Official MCP Registry). Drafting continues in public toward **v0.2**.
-Outstanding: SLC attorney legal review (pending), public announcement via
-promo-orchestrator (pending), and v0.2 engineering/coverage items. See
-`ROADMAP.md` and the `README.md` status table for detail.
+Public and maintained. Spec at `v0.1.2-pre`; MCP server published stable (npm +
+Official MCP Registry). PubLedge is the thin recordkeeping convention of the
+PAICE legal graph. Standalone product expansion is parked pending a concrete
+legal-graph, regulator, court, civic-body, or adopter demand signal. See
+`INTENT.md` for authoritative strategy and `ROADMAP.md` for maintenance work.
 
 ## Editing notes for content skills
 

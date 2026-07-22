@@ -1,8 +1,8 @@
 {
   "name": "publedge",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "mcpName": "io.github.snapsynapse/publedge",
-  "description": "MCP server and recordkeeping protocol for fact-specific written interpretations between two parties: JIAs, RMAs, no-action letters, advisory opinions, private letter rulings. Plain markdown, hash-pinned, gist-bound. The verifiable-records layer of the PAICE legal graph.",
+  "description": "MCP server and recordkeeping protocol for fact-specific written interpretations between two parties: JIAs, RMAs, no-action letters, advisory opinions, private letter rulings. Plain markdown, manifest-checked, gist-bound. The verifiable-records layer of the PAICE legal graph.",
   "homepage": "https://publedge.org/",
   "repository": {
     "type": "git",
@@ -40,7 +40,9 @@
   "files": [
     "mcp-server.js",
     "project.yml",
-    "scripts/lib/*.js",
+    "scripts/lib/parse.js",
+    "scripts/lib/content.js",
+    "scripts/lib/mapping.js",
     "data/examples/instruments/*.md",
     "data/examples/obligations/*.md",
     "data/examples/authorities/*.md",
@@ -60,6 +62,7 @@
     "validate:of": "node scripts/validate-obligation-first.js",
     "verify": "node scripts/verify.js",
     "evals": "node scripts/evals.js",
+    "eval:instrument-schema": "node scripts/eval-instrument-schema.js",
     "eval:record-schema": "node scripts/eval-record-schema.js",
     "eval:schema-parity": "node scripts/eval-schema-parity.js",
     "eval:authority-response": "node scripts/eval-authority-response.js",
@@ -72,8 +75,17 @@
     "eval:verification-allowlist": "node scripts/eval-verification-allowlist.js",
     "eval:redirects": "node scripts/eval-redirects.js",
     "eval:deterministic-build": "node scripts/eval-deterministic-build.js",
+    "eval:generated-tree-parity": "node scripts/eval-generated-tree-parity.js",
+    "eval:discovery-contract": "node scripts/eval-discovery-contract.js",
+    "eval:package-smoke": "node scripts/eval-package-smoke.js",
+    "eval:public-claims": "node scripts/eval-public-claims.js",
+    "eval:format-contracts": "node scripts/eval-format-contracts.js",
     "eval:manifest-scope": "node scripts/eval-manifest-scope.js",
     "eval:links": "node scripts/eval-links.js",
     "eval:verification-exit": "node scripts/eval-verification-exit.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
   }
 }

@@ -1,17 +1,17 @@
 # PubLedge
 
 [![CI](https://github.com/snapsynapse/publedge/actions/workflows/build.yml/badge.svg)](https://github.com/snapsynapse/publedge/actions/workflows/build.yml)
-[![Spec](https://img.shields.io/badge/spec-v0.1.1--pre-blue)](PROTOCOL.md)
-[![Registry](https://img.shields.io/badge/registry-14%20instruments%20%C2%B7%2026%20obligations%20%C2%B7%207%20authorities-informational)](data/examples/instruments/)
+[![Spec](https://img.shields.io/badge/spec-v0.1.2--pre-blue)](PROTOCOL.md)
+[![Registry](https://img.shields.io/badge/registry-18%20instruments%20%C2%B7%2026%20obligations%20%C2%B7%208%20authorities-informational)](data/examples/instruments/)
 [![Content license: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey)](LICENSE-CC-BY-4.0)
 [![Code license: Apache 2.0](https://img.shields.io/badge/code-Apache%202.0-lightgrey)](LICENSE-APACHE)
 [![Bound to gist](https://img.shields.io/badge/ontology-gist-green)](https://semanticarts.com/gist/)
 
 Open recordkeeping protocol for fact-specific written interpretations between two parties — Joint Interpretation Agreements (JIAs), Regulatory Mitigation Agreements (RMAs), no-action letters, private letter rulings, advisory opinions, and analogous civic instruments (HOA decision logs, co-op governance records, flying-club asset agreements, and the like).
 
-Plain markdown with structured frontmatter. Hash-pinned for integrity. Bound to the [Semantic Arts gist](https://semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
+Plain markdown with structured frontmatter. SHA-256 manifest checks provide source-to-manifest consistency. Bound to the [Semantic Arts gist](https://semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
 
-**Public. Current release v0.1.1-pre (2026-05-30). Drafting continues in public toward v0.2.**
+**Public and maintained. Protocol specification v0.1.2-pre; stable MCP server v0.1.2. Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
 
 ## Who this is for
 
@@ -19,7 +19,7 @@ Regulators, regulated parties, and civic bodies that issue or rely on fact-speci
 
 ## What problem it solves
 
-Fact-specific interpretations (no-action letters, private rulings, JIAs, HOA decisions) live in scattered, unstructured records that can't be compared across authorities. PubLedge is an open protocol that records them as hash-pinned markdown bound to a shared ontology.
+Fact-specific interpretations (no-action letters, private rulings, JIAs, HOA decisions) live in scattered, unstructured records that can't be compared across authorities. PubLedge is an open protocol that records them as manifest-checked markdown bound to a shared ontology.
 
 ## Canonical URL
 
@@ -55,6 +55,7 @@ Every record and index is published in parallel HTML + structured form so agents
 | `/feed.xml`, `/atom.xml`, `/feed.json` | RSS 2.0, Atom 1.0, JSON Feed 1.1 |
 | `/sitemap.xml` | Sitemap index → per-section sitemaps (`records`, `authorities`, `statutes`, `reference`, `templates`, `bridges`, `meta`) |
 | `/llms.txt`, `/agents.json` | Agent-discovery briefing + capabilities |
+| `/.well-known/mcp.json` | Installable MCP server discovery for `npx -y publedge` |
 | `/robots.txt` | Explicit allow for 17 AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, etc.) |
 | `mcp-server.js` | MCP server exposing 13 read-only tools: `list_<legal-instruments>` (with jurisdiction/authority/type/status filters), `get_<legal-instrument>`, `list_obligations`, `get_obligation`, `list_authorities`, `get_authority`, `search`, `search_obligations`, `get_matrix`, `get_mappings`, `fetch_by_url`, `get_upcoming`, `get_recently_changed` |
 
@@ -86,11 +87,40 @@ After intentional content edits, refresh hashes:
 
 CI runs all of the above, plus a pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap, on every push and pull request.
 
+## Use PubLedge in five minutes
+
+Choose the surface that matches the job:
+
+1. Browse the [instrument registry](https://publedge.org/instruments.html) or open a canonical record such as the [SEC CorpFin no-action letter](https://publedge.org/us/federal/sec-corpfin/nal/2025-001/).
+2. Query an index without scraping HTML:
+```bash
+curl -sS https://publedge.org/api/v1/containers.json | jq '.[0]'
+```
+3. Fetch a record-shaped JSON representation by appending `record.json` to its canonical record URL:
+```bash
+curl -sS https://publedge.org/us/federal/sec-corpfin/nal/2025-001/record.json | jq '.id, .status'
+```
+4. Add the read-only MCP server to any stdio-capable client:
+```json
+{
+  "mcpServers": {
+    "publedge": {
+      "command": "npx",
+      "args": ["-y", "publedge"]
+    }
+  }
+}
+```
+5. Use `search` to discover records and `fetch_by_url` when you already have a canonical PubLedge URL. The complete endpoint and capability inventories are at [api/v1/index.json](https://publedge.org/api/v1/index.json) and [agents.json](https://publedge.org/agents.json).
+
+Canonical markdown under `data/examples/` is the maintained source. Published HTML, API indexes, and each `record.json` are generated representations and should not be edited directly.
+
 ## Repository layout
 
 | Path | Purpose |
 |---|---|
 | `PROTOCOL.md` | The PubLedge specification |
+| `INTENT.md` | Authoritative repository disposition, active work, and revisit triggers |
 | `PRIOR-ART.md` | Survey of analogous instrument programs |
 | `DEFINITIONS.md` | Canonical vocabulary (status values, instrument types, obligation kinds) |
 | `MANIFEST.yaml` | SHA-256 hashes for every canonical file |
@@ -172,11 +202,12 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | Agent-readiness + a11y audit artifacts in `audits/` + `.a11y-audit/` | done |
 | Axe-core WCAG 2.1 AA remediation (4 rules, 70 instances → 0) | done |
 | Private snapshot for pre-release review | sent |
-| Lawyer review (SLC attorney) | pending |
+| Lawyer review (SLC attorney) | pending; demand-triggered |
 | repo-polish | done |
 | Repository public | done |
-| promo-orchestrator + public announcement | pending |
-| Browser-side registry browser + comparison tooling | planned for v0.2 |
-| Branch-and-strip to reusable protocol template | planned for v0.2 |
+| Obligation-First v0.4.x naming profile | done |
+| promo-orchestrator + public announcement | parked |
+| Browser-side registry browser + comparison tooling | parked |
+| Branch-and-strip to reusable protocol template | parked |
 
 See [ROADMAP.md](ROADMAP.md) for phasing and [_workshop/ROADMAP.md](_workshop/ROADMAP.md) for the original workshop plan.

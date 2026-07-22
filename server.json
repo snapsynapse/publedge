@@ -8,13 +8,13 @@
     "url": "https://github.com/snapsynapse/publedge",
     "source": "github"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "publedge",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "transport": {
         "type": "stdio"
       }
@@ -31,7 +31,7 @@
       "legal_graph_position": 3,
       "legal_graph_narrative": "https://aiincidentlaw.org/docs/legal-graph.html",
       "protocol_spec": "https://publedge.org/PROTOCOL.md",
-      "spec_version": "v0.1.1-pre"
+      "spec_version": "v0.1.2-pre"
     }
   }
 }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About PubLedge — protocol and project overview</title>
-<meta name="description" content="PubLedge is an open recordkeeping protocol for fact-specific written interpretations between two parties. Markdown + structured frontmatter, hash-pinned, machine-readable, bound to gist.">
+<meta name="description" content="PubLedge is an open recordkeeping protocol for fact-specific written interpretations between two parties. Markdown + structured frontmatter, manifest-checked, machine-readable, bound to gist.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#0f3460">
@@ -42,7 +42,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "About PubLedge — protocol and project overview",
-  "description": "PubLedge is an open recordkeeping protocol for fact-specific written interpretations between two parties. Markdown + structured frontmatter, hash-pinned, machine-readable, bound to gist.",
+  "description": "PubLedge is an open recordkeeping protocol for fact-specific written interpretations between two parties. Markdown + structured frontmatter, manifest-checked, machine-readable, bound to gist.",
   "url": "https://publedge.org/about/",
   "mainEntityOfPage": "https://publedge.org/about/",
   "author": {"@type": "Organization", "name": "PAICE.work PBC", "url": "https://paice.foundation"},
@@ -81,18 +81,18 @@
     <span>About</span>
   </nav>
   <h1>About PubLedge</h1>
-  <p class="protocol-meta">Protocol v0.1.0-pre · CC-BY 4.0 · Issued 2026-04-18</p>
+  <p class="protocol-meta">Protocol v0.1.2-pre · MCP server v0.1.2 · CC-BY 4.0</p>
   <div class="views">
     <a href="/PROTOCOL.md">View raw markdown</a>
     <a href="/MANIFEST.yaml">Verify integrity</a>
   </div>
   <div class="protocol-disclaimer">
-    Drafting in public. v0.1.0-pre. Subject to revision before the v0.1 freeze.
+    Public and maintained. The protocol remains pre-1.0 and may evolve through documented revisions.
   </div>
 
 <p>PubLedge is an open recordkeeping protocol for fact-specific written interpretations between two parties.</p>
 
-<p>A PubLedge record captures a question, an answer, who agreed to it, what statutes or rules it relies on, and what the parties are now permitted, required, or restricted from doing as a result. Records are plain markdown with structured frontmatter. They are versioned in git, hash-pinned for integrity, and machine-readable through schemas bound to an open upper ontology.</p>
+<p>A PubLedge record captures a question, an answer, who agreed to it, what statutes or rules it relies on, and what the parties are now permitted, required, or restricted from doing as a result. Records are plain markdown with structured frontmatter. They are versioned in git, checked against a SHA-256 manifest for source consistency, and machine-readable through schemas bound to an open upper ontology.</p>
 
 <h2>What PubLedge is for</h2>
 
@@ -360,7 +360,7 @@ review_date: YYYY-MM-DD</code></pre>
 
 <h3>MCP server</h3>
 
-<p>A read-only MCP server (<code>mcp-server.js</code>, stdio transport) exposes <code>list_*</code>, <code>get_*</code>, <code>search</code>, <code>get_matrix</code>, and <code>get_mappings</code> tools. Client configuration at <a href="https://github.com/snapsynapse/publedge/blob/main/mcp.json"><code>mcp.json</code></a>.</p>
+<p>A read-only MCP server (stdio transport) exposes <code>list_*</code>, <code>get_*</code>, <code>search</code>, <code>get_matrix</code>, and <code>get_mappings</code> tools. Run it with <code>npx -y publedge</code>; installable discovery is published at <a href="/.well-known/mcp.json"><code>/.well-known/mcp.json</code></a>.</p>
 
 <h3>Recommended consumption pattern</h3>
 
@@ -407,7 +407,7 @@ review_date: YYYY-MM-DD</code></pre>
 </nav>
 <footer class="site-footer">
 <p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="../reference/disclaimer/">Not legal advice</a> · <a href="../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.1-pre</p>
+<p class="footer-built">PubLedge v0.1.2-pre</p>
 </footer>
 </body>
 </html>

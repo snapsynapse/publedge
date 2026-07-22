@@ -1,7 +1,7 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Specification"
 title: "PubLedge Protocol"
-version: "0.1.1-pre"
+version: "0.1.2-pre"
 license: "CC-BY-4.0"
 created: 2026-04-18
 modified: 2026-04-18

@@ -48,9 +48,12 @@
         "published",
         "enacted",
         "enforcing",
+        "phased-enforcement",
+        "pending-replacement",
         "expired",
         "superseded",
-        "withdrawn"
+        "withdrawn",
+        "terminated"
       ]
     },
     "jurisdiction": {
@@ -154,10 +157,26 @@
     {
       "if": { "properties": { "type": { "const": "rma" } }, "required": ["type"] },
       "then": {
-        "anyOf": [
-          { "required": ["issuing_authority"] },
-          { "required": ["enforcement_authority"] },
-          { "required": ["parties"] }
+        "allOf": [
+          {
+            "anyOf": [
+              { "required": ["issuing_authority"] },
+              { "required": ["enforcement_authority"] },
+              { "required": ["parties"] }
+            ]
+          },
+          {
+            "anyOf": [
+              {
+                "properties": { "term_start": { "type": "string" } },
+                "required": ["term_start"]
+              },
+              {
+                "properties": { "commencement_date_trigger": { "type": "string", "minLength": 1 } },
+                "required": ["commencement_date_trigger"]
+              }
+            ]
+          }
         ]
       }
     },
@@ -177,6 +196,18 @@
         "required": ["source", "status"]
       },
       "then": { "not": {} }
+    },
+    {
+      "if": {
+        "anyOf": [
+          { "required": ["withdrawn_date"] },
+          { "required": ["withdrawal_reason"] },
+          { "required": ["withdrawn_by_instrument"] }
+        ]
+      },
+      "then": {
+        "required": ["withdrawn_date", "withdrawal_reason", "withdrawn_by_instrument"]
+      }
     }
   ]
 }

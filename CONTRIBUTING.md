@@ -213,8 +213,7 @@ If a record's identifier ever changes, add a `legacy_id:` field to frontmatter. 
 
 `scripts/build.js` — entity pages, API JSON, sitemap.
 `scripts/build-extras.js` — reference HTML, feeds, discovery files, navigation shell.
-`scripts/lib/parse.js` — YAML-lite parser shared by validators and the static build.
-`mcp-server.js` keeps a parser copy for zero-dependency MCP startup; parser behavior changes must stay in sync with `scripts/lib/parse.js`.
+`scripts/lib/parse.js`, `content.js`, and `mapping.js` provide the zero-dependency parsers shared by validators, the static build, and the MCP server. Parser behavior changes therefore have one implementation and must be covered by the parser and MCP lockstep evals.
 
 Both must complete without errors. CI runs them on every push and PR.
 Run `npm run evals` after parser or build changes. `scripts/eval-parser.js` specifically covers quoted frontmatter keys such as `"@type"` and URL scalar list values such as `publication_citations`.

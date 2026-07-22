@@ -347,10 +347,28 @@
         }
     }
 
+    // Enhance deterministic absolute verification dates with a relative age.
+    // The source HTML remains stable across builds; only the browser view ages.
+    function initFreshnessBadges() {
+        var badges = document.querySelectorAll('.freshness-badge[data-last-verified]');
+        var now = new Date();
+        for (var i = 0; i < badges.length; i++) {
+            var badge = badges[i];
+            var value = badge.getAttribute('data-last-verified');
+            var verified = new Date(value + 'T00:00:00Z');
+            if (isNaN(verified.getTime())) continue;
+            var days = Math.max(0, Math.floor((now.getTime() - verified.getTime()) / 86400000));
+            var state = days < 90 ? 'fresh' : days < 180 ? 'aging' : 'stale';
+            badge.classList.add(state);
+            badge.textContent = state === 'fresh' ? 'verified ' + days + 'd ago' : state + ' (' + days + 'd)';
+        }
+    }
+
     function initAll() {
         initTables();
         initKeyboardAndDismiss();
         initAnchors();
+        initFreshnessBadges();
     }
 
     if (document.readyState === 'loading') {

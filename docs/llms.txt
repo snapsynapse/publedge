@@ -65,8 +65,11 @@
 - [JSON API](https://publedge.org/api/v1/index.json): Programmatic access to all data
 - [Record schema](https://publedge.org/schema/json/record.schema.json): record.json shape, including authority_response annotations
 - [agents.json](https://publedge.org/agents.json): Agent discovery metadata
+- [MCP discovery](https://publedge.org/.well-known/mcp.json): Installable stdio server configuration
 - [Sitemap](https://publedge.org/sitemap.xml): All pages
 - [RSS Feed](https://publedge.org/feed.xml): Recent updates
+- [Atom Feed](https://publedge.org/atom.xml): Recent updates
+- [JSON Feed](https://publedge.org/feed.json): Recent updates
 
 ## Protocol
 
@@ -76,7 +79,9 @@
 - [Prior art survey](https://publedge.org/reference/prior-art/): Utah Sandbox, SEC No-Action, IRS PLRs, CFPB Advisory, Utah Court Forms.
 - [Prior art source (Markdown)](https://publedge.org/PRIOR-ART.md)
 - [Vocabulary mapping](https://publedge.org/reference/vocabulary/): PubLedge entities bound to gist classes.
+- [Verification guide](https://publedge.org/reference/verify/): What the current SHA-256 manifest proves, its limits, and how to recompute a source hash.
 - [Roadmap](https://publedge.org/ROADMAP.md)
+- [Project intent](https://publedge.org/INTENT.md)
 - [Attribution](https://publedge.org/ATTRIBUTION.md)
 - [Manifest (SHA-256 hashes)](https://publedge.org/MANIFEST.yaml)
 

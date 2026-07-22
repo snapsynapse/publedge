@@ -26,6 +26,8 @@ parties:
     role: issuing_authority
 inline_objects:
   - { "@type": "Thing", url: "https://example.com/a,b" }
+requesting_party: "[Taxpayer redacted]"
+quoted_null: "null"
 `);
 
 assertEqual('top-level quoted key', parsed['@type'], 'https://w3id.org/semanticarts/ns/ontology/gist/Contract');
@@ -35,5 +37,7 @@ assertEqual('bare URL list scalar', parsed.publication_citations?.[1], 'https://
 assertEqual('list object child field', parsed.parties?.[0]?.role, 'issuing_authority');
 assertEqual('inline object quoted key', parsed.inline_objects?.[0]?.['@type'], 'Thing');
 assertEqual('inline object URL with comma', parsed.inline_objects?.[0]?.url, 'https://example.com/a,b');
+assertEqual('quoted bracket scalar remains string', parsed.requesting_party, '[Taxpayer redacted]');
+assertEqual('quoted null remains string', parsed.quoted_null, 'null');
 
 reportFailures('eval-parser', failures);

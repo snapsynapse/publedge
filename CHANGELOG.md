@@ -8,7 +8,42 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 ## [Unreleased]
 
-Follow-on work tracked in [ROADMAP.md](ROADMAP.md).
+## [0.1.2] - 2026-07-21
+
+Maintenance, adoption, and delivery hardening release. The protocol release tag is `v0.1.2-pre`; the stable MCP/npm package version is `0.1.2`.
+
+### Changed
+
+- Codified the repo-scoped disposition in `INTENT.md`: maintain PubLedge as the thin recordkeeping convention of the PAICE legal graph and park standalone product expansion until a concrete demand trigger.
+- Made generated freshness badges deterministic; relative age and state are now browser enhancements over an absolute `last_verified` date.
+- Reframed the verification guide around source-to-current-manifest consistency and documented the limits of an unsigned, non-timestamped manifest.
+- Added risk-based verification cadences for active instruments, authorities, obligations, and historical demonstration remaps.
+- Made clean builds authoritative for the full generated tree while preserving GitHub Pages control files.
+- Expanded the JSON API inventory, `agents.json`, `llms.txt`, and schema discovery surfaces.
+- CI now runs the complete eval suite rather than a selected subset.
+- Reduced the npm runtime package to the three shared libraries used by the MCP server.
+
+### Added
+
+- Ajv-backed JSON Schema 2020-12 validation for every instrument frontmatter record in CI.
+- Verification-guide discovery through the reference sitemap, `llms.txt`, and `agents.json`.
+- Generated-tree parity, discovery-contract, installed-package smoke, public-claims, and format-contract evals.
+- Installable MCP discovery at `/.well-known/mcp.json` and a browsable schema index at `/schema/json/`.
+- A five-minute HTML, API, and MCP adoption path in the README.
+- A dedicated authority correction and response issue template.
+
+### Fixed
+
+- Quoted bracket-shaped and null-shaped YAML scalars remain strings instead of being reinterpreted after quote removal.
+- Empty Atom and JSON feeds are regenerated instead of retaining stale items.
+- Duplicate `authority-response` capability metadata was removed from `agents.json`.
+- Internal-link evaluation now rejects directory targets without an index and caught the previously missing generated favicon.
+- Public version, registry-count, integrity, and JSON-LD availability claims now match the delivered surfaces.
+
+### Removed
+
+- Dead hand-authored tool pages and the completed one-time URL migration script.
+- Unused build helpers, duplicated MCP mapping parsing, stale legacy generated instrument aliases, and orphaned generated artifacts.
 
 ## [0.1.1] — 2026-06-10
 
@@ -95,6 +130,8 @@ Security hardening and release-readiness patch.
 - CI: pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap on every push and pull request; docs/ sync check; hash validation
 - `.gitignore` aligned to portfolio hygiene baseline (`.env.*` glob, `__pycache__/`, `*.pyc`, `dist/`, `build/`, `.venv/`, `venv/`)
 
-[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.1-pre...HEAD
+[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.2-pre...HEAD
+[0.1.2]: https://github.com/snapsynapse/publedge/compare/v0.1.1-pre...v0.1.2-pre
+[0.1.1]: https://npmjs.com/package/publedge/v/0.1.1
 [0.1.1-pre]: https://github.com/snapsynapse/publedge/compare/v0.1.0-pre...v0.1.1-pre
 [0.1.0-pre]: https://github.com/snapsynapse/publedge/releases/tag/v0.1.0-pre

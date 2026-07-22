@@ -6,6 +6,7 @@ const path = require('path');
 
 const scripts = [
     'eval-parser.js',
+    'eval-instrument-schema.js',
     'eval-record-schema.js',
     'eval-schema-parity.js',
     'eval-authority-response.js',
@@ -19,6 +20,11 @@ const scripts = [
     'eval-obligation-first-binding.js',
     'eval-redirects.js',
     'eval-deterministic-build.js',
+    'eval-generated-tree-parity.js',
+    'eval-discovery-contract.js',
+    'eval-package-smoke.js',
+    'eval-public-claims.js',
+    'eval-format-contracts.js',
     'eval-manifest-scope.js',
     'eval-links.js',
     'eval-verification-exit.js'

@@ -33,11 +33,22 @@ function verify() {
 
     const config = parseYaml(fs.readFileSync(configPath, 'utf-8'));
     const stalenessDays = parseInt(config.verification?.staleness_days || '90', 10);
+    const authorityStalenessDays = parseInt(config.verification?.authority_staleness_days || stalenessDays, 10);
+    const obligationStalenessDays = parseInt(config.verification?.obligation_staleness_days || stalenessDays, 10);
+    const historicalDemonstrationStalenessDays = parseInt(config.verification?.historical_demonstration_staleness_days || stalenessDays, 10);
     const now = new Date();
 
     console.log('Knowledge Base Verification Report');
     console.log('==================================\n');
-    console.log(`Staleness threshold: ${stalenessDays} days\n`);
+    console.log(`Staleness policy: active instruments ${stalenessDays}d; authorities ${authorityStalenessDays}d; obligations ${obligationStalenessDays}d; historical demonstrations ${historicalDemonstrationStalenessDays}d\n`);
+
+    function thresholdFor(entity) {
+        if (entity.role === (config.entities?.authority?.name || 'Authority')) return authorityStalenessDays;
+        if (entity.role === (config.entities?.primary?.name || 'Primary')) return obligationStalenessDays;
+        const isHistoricalDemonstration = entity.source === 'demonstration-remap' &&
+            !['jia', 'rma', 'statute'].includes(entity.type);
+        return isHistoricalDemonstration ? historicalDemonstrationStalenessDays : stalenessDays;
+    }
 
     // Find data directory
     const dataDirs = ['data/examples', 'data'];
@@ -86,15 +97,16 @@ function verify() {
         }
         const verifiedDate = new Date(entity.last_verified + 'T00:00:00');
         const daysSince = Math.floor((now - verifiedDate) / (1000 * 60 * 60 * 24));
-        if (daysSince > stalenessDays) {
-            staleEntities.push({ ...entity, daysSince });
+        const threshold = thresholdFor(entity);
+        if (daysSince > threshold) {
+            staleEntities.push({ ...entity, daysSince, threshold });
         }
     }
 
     if (staleEntities.length > 0) {
         console.log(`STALE (${staleEntities.length}):`);
         for (const e of staleEntities) {
-            console.log(`  [${e.role}] ${e.id} — last verified ${e.daysSince} days ago (${e.last_verified})`);
+            console.log(`  [${e.role}] ${e.id} — last verified ${e.daysSince} days ago (${e.last_verified}); cadence ${e.threshold} days`);
         }
         console.log();
     }

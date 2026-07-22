@@ -35,7 +35,7 @@ published static site under `docs/` (served by GitHub Pages from `main /docs`).
 
 | Path | Purpose |
 |---|---|
-| `PROTOCOL.md` | The specification (spec version `v0.1.1-pre`, decoupled from npm version) |
+| `PROTOCOL.md` | The specification (spec version `v0.1.2-pre`, decoupled from npm version) |
 | `PRIOR-ART.md`, `DEFINITIONS.md` | Prior-art survey; canonical vocabulary |
 | `MANIFEST.yaml` | SHA-256 hashes for every canonical file |
 | `_templates/jia/`, `_templates/rma/` | Fill-in templates with `{{variable}}` placeholders |
@@ -90,10 +90,10 @@ filename must match the id. See `README.md` "Contributing an instrument" and
 
 ## Current state (2026-07)
 
-Healthy and stable. Repo is public; MCP server published to npm + MCP Registry
-(v0.1.1, stable). Working tree clean on `main`, in sync with `origin/main`.
-Spec drafting continues in public toward **v0.2**. Outstanding: lawyer review
-(SLC attorney) pending; promo-orchestrator + public announcement pending; v0.2
-items (browser-side registry browser, branch-and-strip reusable template,
-wiring polymorphic `instrument.schema.json` into a CI step). See `README.md`
-status table and `ROADMAP.md` for full phasing.
+Public and maintained. The MCP server is published to npm + MCP Registry
+(v0.1.2, stable). PubLedge is the thin recordkeeping convention of the PAICE
+legal graph. Standalone product expansion is parked pending a concrete demand
+signal. Active work is routine maintenance, existing-record fidelity,
+Obligation-First compatibility, authority responses, and integration required
+by an active downstream consumer. See `INTENT.md` for authoritative strategy
+and `ROADMAP.md` for maintenance work.

@@ -11,7 +11,13 @@ Living housekeeping document. Tracks what shipped, what's pending, and what's de
 
 ## Current version
 
-`v0.1.1-pre` — hardening release, published 2026-05-30. Drafting continues in public toward v0.2.
+Protocol specification `v0.1.2-pre`; stable MCP server `v0.1.2`, released 2026-07-21.
+
+## Current disposition
+
+Standalone product expansion is parked. PubLedge is maintained as the thin recordkeeping convention and verifiable-records layer of the PAICE legal graph. See [INTENT.md](INTENT.md) for the authoritative scope, active work, and revisit triggers.
+
+The active lane is routine maintenance, existing-record fidelity, Obligation-First compatibility, authority responses, and integration demanded by an active legal-graph consumer. The v0.2 feature lists below are historical planning context, not an active work queue.
 
 ## What shipped (as of 2026-04-21)
 
@@ -126,28 +132,24 @@ Shipped 2026-04-22 (frontmatter spec v0.2 enforcement):
 - `scripts/validate.js` — four v0.2 cross-field checks: (1) `source: publedge-original-draft` × published-like status → error; (2) `type: rma` requires `issuing_authority` / `enforcement_authority` / `parties` AND a `term_start` (or `commencement_date_trigger` for deferred-commencement RMAs); (3) `type: private-letter-ruling` / `revenue-ruling` requires `redaction_level`; (4) withdrawal triplet (`withdrawn_date` / `withdrawal_reason` / `withdrawn_by_instrument`) is all-or-nothing. Registry passes clean on current 14 instruments.
 - MANIFEST refreshed: all 25 hashes recomputed, stale `utah-mental-health-chatbot-disclosure-2026q2.md` path renamed to `us-ut-oaip-jia-2026-001.md` (ID-migration cleanup), new `schema/instrument.schema.json` added to provenance tracking.
 
-## v0.1 — remaining before public freeze
+## Maintenance lane
 
 | Item | Owner | Notes |
 |---|---|---|
-| Lawyer review checkpoint (SLC attorney, week of 2026-04-20) | Sam | Output may add paywall prior-art; review doc itself may ship as first meta-JIA |
-| Private snapshot send (external reviewers first, hold legislators 24h) | Sam | Tarball already staged |
-| us-ut-oaip-jia-2026-001 promotion draft → reviewed → published | — | Awaits lawyer review |
-| repo-polish + promo-orchestrator | skill | Final step before v0.1 public |
+| Existing-record verification | Sam/editor | Verify against underlying authority sources; do not bump dates without source review |
+| Build, schema, accessibility, and security maintenance | maintainer | Keep the published site, MCP package, and legal-graph bindings healthy |
+| Lawyer review and JIA promotion | Sam | Resume when a regulator, adopter, or legal-graph counterparty creates demand |
+| Public promotion | Sam | Parked pending an INTENT.md revisit trigger |
 
-Out of scope for v0.1:
-
-- Newsletter / commentary stream
-- Reverse links from everyailaw.com → publedge.org (one-way only for now)
-- Cross-posting to dev.to / LinkedIn (deferred until public release)
+Verification cadence is risk-based: active statutes and agreements use 90 days, authorities and obligation definitions use 180 days, and historical federal demonstration remaps use 365 days. A changed source or explicit authority response always triggers immediate review regardless of cadence.
 
 ## Frontmatter spec v0.2 — follow-ups
 
-All five v0.2 enforcement items shipped 2026-04-22 (see "Shipped" entry above). Outstanding gap: polymorphic `instrument.schema.json` is declared but not yet wired into a CI step — `scripts/validate.js` enforces cross-field rules programmatically, but no schema-validator library runs the JSON Schema itself. Tracked as a v0.2 engineering item.
+All five v0.2 enforcement items shipped 2026-04-22 (see "Shipped" entry above). The polymorphic `instrument.schema.json` is enforced in CI by `scripts/eval-instrument-schema.js` using a JSON Schema 2020-12 validator.
 
-## v0.2 — more jurisdictions, lawyer-reviewed records, engineering
+## Parked v0.2 candidates
 
-Triggered once Utah instance meets the six testable structural claims in the formative-intent note. The v0.2 obligations-curation and agent-surface items listed in the original plan shipped in the 2026-04-21 / 2026-04-22 sessions (see "What shipped" above).
+These candidates require a revisit trigger from [INTENT.md](INTENT.md). They are not an active backlog. The v0.2 obligations-curation and agent-surface items listed in the original plan shipped in the 2026-04-21 / 2026-04-22 sessions (see "What shipped" above).
 
 **Content / editorial:**
 - More jurisdictions: California, EU, UK — leverage EveryAILaw's coverage.
@@ -182,9 +184,9 @@ Wiring shipped 2026-06-18:
 - `authority_response` added to the canonical frontmatter spec in [_workshop/CONTENT-GUIDE.md](_workshop/CONTENT-GUIDE.md).
 - Regression coverage: `scripts/eval-authority-response.js` checks schema enum coverage and validator rejection of invalid response entries.
 
-Wiring still owed (engineering, not blocking the regulator conversation):
-- Confirm `/reference/verify/` is picked up by the sitemap reference section, `llms.txt`, and `/reference/` nav after build (page copies into `docs/` cleanly today; surface enumeration not yet verified).
-- Pull the per-record provenance panel (already listed under Agent surface) forward from v0.2 for this audience; it is what the verify page points at.
+Wiring shipped 2026-07-21:
+- `/reference/verify/` is included in the reference sitemap, `llms.txt`, `agents.json`, and `/reference/` navigation.
+- The verification guide distinguishes current-manifest consistency from independent publication-time evidence and no longer promises an unimplemented per-record provenance panel.
 
 Content (highest trust-per-unit-effort):
 - One exemplary Utah OAIP record cited and labeled faithfully enough that the office recognizes its own thing. One strong record beats breadth. Accuracy is load-bearing; needs real source material or explicit hypothetical labeling.
@@ -214,7 +216,7 @@ Each needs a forcing function — date, dependency, or explicit trigger.
 
 ## Cross-project dependencies
 
-- **EveryAILaw**: worktree `cc/hungry-mayer-d26631` must merge to main + deploy to GitHub Pages before PubLedge JIA frontmatter URLs resolve. Mitigation: verify each cited URL during template drafting.
+- **EveryAILaw**: preferred source for statute-anchor URLs. Verify cited URLs during record maintenance.
 - **Knowledge-as-Code template** (`~/Git/knowledge-as-code-template`): architectural seed. Breaking upstream changes require coordinated update.
 - **skill-provenance**: hashes generated at bootstrap must remain stable across Utah-instance → template strip.
 - **PAICE-for-States (Utah)**: consumes PubLedge templates via MCP. PAICE-Utah is PubLedge-native; PubLedge governance stays neutral. See [hub analysis](https://snapsynapse.com/) — no PubLedge-side changes required for PAICE to integrate.

@@ -46,9 +46,9 @@
     <span>Vocabulary</span>
   </nav>
   <h1>Vocabulary</h1>
-  <p class="protocol-meta">PubLedge entity → gist class binding · v0.1.1-pre</p>
+  <p class="protocol-meta">PubLedge entity → gist class binding · v0.1.2-pre</p>
 
-<p>PubLedge does not invent a new ontology. Every entity binds to a class in <a href="https://semanticarts.com/gist/">Semantic Arts gist</a> (CC-BY 4.0), an open upper ontology of roughly 100 classes designed for cross-system interoperability. A pinned snapshot of gist core lives at <a href="/vendor/gist/"><code>/vendor/gist/</code></a>.</p>
+<p>PubLedge does not invent a new ontology. Every entity binds to a class in <a href="https://semanticarts.com/gist/">Semantic Arts gist</a> (CC-BY 4.0), an open upper ontology of roughly 100 classes designed for cross-system interoperability. A pinned snapshot of gist core is documented at <a href="/vendor/gist/UPSTREAM-README.md"><code>/vendor/gist/UPSTREAM-README.md</code></a>.</p>
 
 <h2>Role mapping</h2>
 
@@ -80,7 +80,7 @@
 
 <h2>Machine binding</h2>
 
-<p>Every PubLedge frontmatter document carries an <code>@type</code> field whose value is a full gist IRI. The JSON-LD context at <code>/schema/json/context.jsonld</code> (published in a forthcoming v0.1 release) maps short names (<code>Agreement</code>, <code>Contract</code>, etc.) to those IRIs so that PubLedge JSON output validates as RDF without further configuration.</p>
+<p>Every PubLedge frontmatter document carries an <code>@type</code> field whose value is a full gist IRI. The published JSON-LD context at <a href="/schema/json/context.jsonld"><code>/schema/json/context.jsonld</code></a> maps short names (<code>Agreement</code>, <code>Contract</code>, etc.) to those IRIs so that PubLedge JSON output can be interpreted as RDF without further configuration.</p>
 
 <p>Example minimal frontmatter:</p>
 
@@ -91,12 +91,12 @@ issued_by:
 
 <h2>What we do not bind</h2>
 
-<p>PubLedge declines to mint its own namespace until it encounters a concept gist cannot express. When that happens, the namespace will be <code>https://w3id.org/publedge/ns/</code>, and the addition will be documented here. As of v0.1.1-pre, no PubLedge-specific class is needed.</p>
+<p>PubLedge declines to mint its own namespace until it encounters a concept gist cannot express. When that happens, the namespace will be <code>https://w3id.org/publedge/ns/</code>, and the addition will be documented here. As of v0.1.2-pre, no PubLedge-specific class is needed.</p>
 
 <h2>References</h2>
 <ul>
   <li><a href="https://semanticarts.com/gist/">gist project home</a></li>
-  <li><a href="/vendor/gist/">Pinned gist snapshot in this repo</a></li>
+  <li><a href="/vendor/gist/UPSTREAM-README.md">Pinned gist snapshot in this repo</a></li>
   <li><a href="/about/">PubLedge Protocol §Entity model</a></li>
   <li><a href="/ATTRIBUTION.md">Attribution</a></li>
 </ul>
@@ -127,7 +127,7 @@ issued_by:
 </nav>
 <footer class="site-footer">
 <p class="footer-meta">&copy; 2026 <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="../../reference/disclaimer/">Not legal advice</a> · <a href="../../MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.1-pre</p>
+<p class="footer-built">PubLedge v0.1.2-pre</p>
 </footer>
 </body>
 </html>

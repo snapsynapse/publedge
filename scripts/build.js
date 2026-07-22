@@ -531,26 +531,14 @@ function th(label, opts = {}) {
 }
 
 // --- Freshness helpers ---
-function daysSince(dateStr) {
-    if (!dateStr) return null;
-    const s = String(dateStr).trim();
-    if (!s || /^(null|undefined|tbd|n\/a)$/i.test(s)) return null;
-    const then = new Date(s + 'T00:00:00');
-    if (isNaN(then.getTime())) return null;
-    const diff = Date.now() - then.getTime();
-    return Math.floor(diff / 86400000);
-}
-
-function freshnessBadge(lastVerified, opts = {}) {
-    const days = daysSince(lastVerified);
-    if (days === null) return '';
-    const staleAt = (opts.staleAt || 180);
-    const agingAt = (opts.agingAt || 90);
-    let klass, label;
-    if (days < agingAt) { klass = 'fresh'; label = 'verified ' + days + 'd ago'; }
-    else if (days < staleAt) { klass = 'aging'; label = 'aging (' + days + 'd)'; }
-    else { klass = 'stale'; label = 'stale (' + days + 'd)'; }
-    return `<span class="freshness-badge ${klass}" title="Last verified ${escapeHTML(lastVerified)}">${escapeHTML(label)}</span>`;
+// Keep generated HTML deterministic. assets/tables.js enhances this absolute
+// date into an age label and color in the browser.
+function freshnessBadge(lastVerified) {
+    const value = String(lastVerified || '').trim();
+    if (!value || /^(null|undefined|tbd|n\/a)$/i.test(value)) return '';
+    const parsed = new Date(value + 'T00:00:00Z');
+    if (isNaN(parsed.getTime())) return '';
+    return `<span class="freshness-badge" data-last-verified="${escapeHTML(value)}" title="Last verified ${escapeHTML(value)}">Verified ${escapeHTML(value)}</span>`;
 }
 
 function tdDate(dateStr) {
@@ -564,17 +552,6 @@ function tdStatus(status) {
 function tdNumber(n) {
     const num = parseFloat(n) || 0;
     return `<td data-sort-value="${num}">${n}</td>`;
-}
-
-function tdPrice(priceStr) {
-    const num = priceStr === 'Free' || priceStr === 'free' ? 0 : parseFloat(String(priceStr).replace(/[^0-9.]/g, '')) || 0;
-    return `<td data-sort-value="${num}">${escapeHTML(priceStr || '')}</td>`;
-}
-
-function tdRange(rangeStr) {
-    const parts = String(rangeStr || '0').split('-');
-    const max = parseFloat(parts[parts.length - 1].replace(/[^0-9.]/g, '')) || 0;
-    return `<td data-sort-value="${max}">${escapeHTML(rangeStr || '')}</td>`;
 }
 
 // Jurisdiction chip — colored pill keyed by jurisdiction id. CSS provides
@@ -1241,35 +1218,6 @@ function generateComparePage(config, data, configCSS) {
     `;
 
     return renderPageShell(config, { title: 'Compare', activePage: 'compare', content, canonicalPath: 'compare.html', configCSS });
-}
-
-function generateAboutPage(config, data, configCSS) {
-    const { primaries, containers, authorities, totalProvisions } = data;
-    const pName = config.entities?.primary?.name || 'Primary';
-    const pPlural = config.entities?.primary?.plural || 'Primaries';
-    const cName = config.entities?.container?.name || 'Container';
-    const cPlural = config.entities?.container?.plural || 'Containers';
-    const secName = config.entities?.secondary?.name || 'Provision';
-    const authName = config.entities?.authority?.name || 'Authority';
-    const rel = config.entities?.secondary?.relationship || 'implements';
-
-    const content = `<div class="about-content">
-        <h2 style="margin-top: 0.5rem;">About</h2>
-        <p>${escapeHTML(config.description || '')} Tracks <strong>${containers.length} ${cPlural.toLowerCase()}</strong>, <strong>${primaries.length} ${pPlural.toLowerCase()}</strong>, <strong>${totalProvisions} ${secName.toLowerCase()}s</strong>, and <strong>${authorities.length} ${authName.toLowerCase()}${authorities.length !== 1 ? 's' : ''}</strong>.</p>
-        <h3>Data Model</h3>
-        <p><strong>${escapeHTML(authName)}</strong> &rarr; <strong>${escapeHTML(cName)}</strong> &rarr; <strong>${escapeHTML(secName)}</strong> &rarr; <strong>${escapeHTML(pName)}</strong></p>
-        <p>${escapeHTML(pPlural)} are the stable anchors. ${escapeHTML(secName)}s are the implementations — different ${cPlural.toLowerCase()} ${rel} the same ${pPlural.toLowerCase()} differently.</p>
-        <h3>JSON API</h3>
-        <ul>
-            <li><span class="api-endpoint"><a href="/api/v1/index.json">api/v1/index.json</a></span> — API manifest</li>
-            <li><span class="api-endpoint"><a href="/api/v1/primaries.json">api/v1/primaries.json</a></span> — All ${pPlural.toLowerCase()}</li>
-            <li><span class="api-endpoint"><a href="/api/v1/containers.json">api/v1/containers.json</a></span> — All ${cPlural.toLowerCase()}</li>
-        </ul>
-        <h3>Contributing</h3>
-        <p>See the <a href="${escapeHTML(config.repo || '#')}">repository</a> for contribution guidelines.</p>
-    </div>`;
-
-    return renderPageShell(config, { title: 'About', activePage: 'about', content, canonicalPath: 'about.html', configCSS });
 }
 
 // ---------------------------------------------------------------------------
@@ -2094,20 +2042,11 @@ function statuteGovernsDescription(s) {
 // ---------------------------------------------------------------------------
 
 function cleanGeneratedOutputs() {
-    const managedDirs = [
-        'applies-to',
-        'authority',
-        'compare',
-        'container',
-        'determination',
-        'instrument',
-        'obligation',
-        'primary',
-        'requires',
-        'term',
-        'us'
-    ];
-    for (const dir of managedDirs) removePath(path.join(DOCS_DIR, dir));
+    ensureDir(DOCS_DIR);
+    const preserved = new Set(['CNAME', '.nojekyll']);
+    for (const entry of fs.readdirSync(DOCS_DIR)) {
+        if (!preserved.has(entry)) removePath(path.join(DOCS_DIR, entry));
+    }
 }
 
 function build() {
@@ -2254,7 +2193,29 @@ function build() {
             items
         }, null, 2));
     }
-    fs.writeFileSync(path.join(API_DIR, 'index.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), version: '1.0', project: config.short_name || 'kac' }, files: { primaries: { path: 'primaries.json' }, containers: { path: 'containers.json' }, authorities: { path: 'authorities.json' }, mappings: { path: 'mappings.json' }, matrix: { path: 'matrix.json' }, comparisons: { path: 'comparisons.json' }, 'obligation-first': { path: 'of/index.json' } } }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'index.json'), JSON.stringify({
+        meta: { generated: new Date().toISOString(), version: '1.0', project: config.short_name || 'kac' },
+        files: {
+            primaries: { path: 'primaries.json', media_type: 'application/json' },
+            containers: { path: 'containers.json', media_type: 'application/json' },
+            authorities: { path: 'authorities.json', media_type: 'application/json' },
+            mappings: { path: 'mappings.json', media_type: 'application/json' },
+            matrix: { path: 'matrix.json', media_type: 'application/json' },
+            comparisons: { path: 'comparisons.json', media_type: 'application/json' },
+            upcoming: { path: 'upcoming.json', media_type: 'application/json' },
+            recently_changed: { path: 'recently_changed.json', media_type: 'application/json' },
+            'obligation-first': { path: 'of/index.json', media_type: 'application/json' }
+        },
+        resources: {
+            record_schema: { url: `${(config.url || '').replace(/\/$/, '')}/schema/json/record.schema.json`, media_type: 'application/schema+json' },
+            frontmatter_schema: { url: `${(config.url || '').replace(/\/$/, '')}/schema/instrument.schema.json`, media_type: 'application/schema+json' },
+            jsonld_context: { url: `${(config.url || '').replace(/\/$/, '')}/schema/json/context.jsonld`, media_type: 'application/ld+json' },
+            rss: { url: `${(config.url || '').replace(/\/$/, '')}/feed.xml`, media_type: 'application/rss+xml' },
+            atom: { url: `${(config.url || '').replace(/\/$/, '')}/atom.xml`, media_type: 'application/atom+xml' },
+            json_feed: { url: `${(config.url || '').replace(/\/$/, '')}/feed.json`, media_type: 'application/feed+json' },
+            calendar: { url: `${(config.url || '').replace(/\/$/, '')}/calendar.ics`, media_type: 'text/calendar' }
+        }
+    }, null, 2));
 
     console.log('  JSON API: 6 files');
 
@@ -2501,8 +2462,11 @@ function build() {
         `- [JSON API](${siteUrl}api/v1/index.json): Programmatic access to all data`,
         `- [Record schema](${siteUrl}schema/json/record.schema.json): record.json shape, including authority_response annotations`,
         `- [agents.json](${siteUrl}agents.json): Agent discovery metadata`,
+        `- [MCP discovery](${siteUrl}.well-known/mcp.json): Installable stdio server configuration`,
         `- [Sitemap](${siteUrl}sitemap.xml): All pages`,
-        `- [RSS Feed](${siteUrl}index.xml): Recent updates`,
+        `- [RSS Feed](${siteUrl}feed.xml): Recent updates`,
+        `- [Atom Feed](${siteUrl}atom.xml): Recent updates`,
+        `- [JSON Feed](${siteUrl}feed.json): Recent updates`,
         ''
     ].join('\n');
     fs.writeFileSync(path.join(DOCS_DIR, 'llms.txt'), llmsTxt);
@@ -2540,7 +2504,9 @@ function build() {
                     { path: 'api/v1/authorities.json', description: `All ${aPlural.toLowerCase()}` },
                     { path: 'api/v1/mappings.json', description: 'All mappings' },
                     { path: 'api/v1/matrix.json', description: 'Coverage matrix' },
-                    { path: 'api/v1/comparisons.json', description: 'Pre-computed comparisons' }
+                    { path: 'api/v1/comparisons.json', description: 'Pre-computed comparisons' },
+                    { path: 'api/v1/upcoming.json', description: 'Upcoming effective and enforcement dates' },
+                    { path: 'api/v1/recently_changed.json', description: 'Recently changed records' }
                 ]
             },
             {
@@ -2560,7 +2526,11 @@ function build() {
         discovery: {
             llms_txt: `${siteUrl}llms.txt`,
             sitemap: `${siteUrl}sitemap.xml`,
-            rss: `${siteUrl}index.xml`,
+            rss: `${siteUrl}feed.xml`,
+            atom: `${siteUrl}atom.xml`,
+            json_feed: `${siteUrl}feed.json`,
+            calendar: `${siteUrl}calendar.ics`,
+            mcp: `${siteUrl}.well-known/mcp.json`,
             robots: `${siteUrl}robots.txt`,
             record_schema: `${siteUrl}schema/json/record.schema.json`,
             protocol_authority_response: `${siteUrl}about/#authority-response`

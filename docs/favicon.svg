@@ -1,10 +1,10 @@
-<!-- PubLedge favicon — [§] mark on civic navy rounded square.
-     Brackets in off-white (#e6ecf5) for clean contrast;
-     § in warm gold (#f6e3b4) to read as an embossed seal.
-     Baked background so the mark survives any tab color. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0f2e5c"/>
-  <path d="M10 5 L6 5 L6 27 L10 27" fill="none" stroke="#e6ecf5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M22 5 L26 5 L26 27 L22 27" fill="none" stroke="#e6ecf5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="16" y="22.5" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="600" fill="#f6e3b4">§</text>
+<!-- PubLedge inline nav logo — [§] mark.
+     Brackets encode "bilateral, enclosed, written record".
+     § encodes the statutory section every JIA/RMA/PLR cites.
+     Uses currentColor so it inherits the surrounding text color.
+     viewBox 0 0 32 32; render at 24–32px in nav. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+  <path d="M10 5 L6 5 L6 27 L10 27" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 5 L26 5 L26 27 L22 27" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="16" y="22.5" text-anchor="middle" font-family="Georgia, 'Source Serif 4', 'Source Serif Pro', serif" font-size="18" font-weight="600" fill="currentColor">§</text>
 </svg>

@@ -50,7 +50,11 @@ function splitInlinePairs(text) {
 }
 
 function parseScalar(rawValue) {
-    const value = stripOuterQuotes(rawValue);
+    const raw = String(rawValue).trim();
+    const isQuoted = raw.length >= 2 &&
+        ((raw.startsWith('"') && raw.endsWith('"')) || (raw.startsWith("'") && raw.endsWith("'")));
+    if (isQuoted) return raw.slice(1, -1);
+    const value = raw;
     if (value === 'null') return null;
     if (value === 'true') return true;
     if (value === 'false') return false;

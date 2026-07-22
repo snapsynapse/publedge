@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "publedge": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "publedge"
+      ],
+      "description": "Read-only access to the PubLedge legal-instrument registry."
+    }
+  }
+}

@@ -48,6 +48,14 @@
         {
           "path": "api/v1/comparisons.json",
           "description": "Pre-computed comparisons"
+        },
+        {
+          "path": "api/v1/upcoming.json",
+          "description": "Upcoming effective and enforcement dates"
+        },
+        {
+          "path": "api/v1/recently_changed.json",
+          "description": "Recently changed records"
         }
       ]
     },
@@ -72,29 +80,22 @@
       "url": "https://publedge.org/about/"
     },
     {
-      "id": "authority-response",
-      "name": "Authority Response Protocol",
-      "description": "Machine-readable authority_response entries let authorities annotate, correct, clarify, decline to comment on, or supersede a PubLedge record without replacing the original record.",
-      "url": "https://publedge.org/about/#authority-response",
-      "schema_field": "authority_response",
-      "positions": [
-        "concurs",
-        "disputes",
-        "clarifies",
-        "declines-to-comment",
-        "superseded-by-official"
-      ]
-    },
-    {
       "id": "template-library",
       "name": "JIA and RMA Template Library",
       "description": "5 fill-in templates for Utah Chapter 72 Part 4.",
       "url": "https://publedge.org/templates/"
     },
     {
+      "id": "integrity-verification",
+      "name": "Source Integrity Verification",
+      "description": "Recompute SHA-256 values to compare canonical source files with the current unsigned manifest; external timestamp evidence is optional and not supplied by PubLedge.",
+      "url": "https://publedge.org/reference/verify/"
+    },
+    {
       "id": "mcp-server",
       "name": "MCP Server",
-      "description": "Read-only MCP server exposing the PubLedge knowledge base. Run: node mcp-server.js",
+      "description": "Read-only MCP server exposing the PubLedge knowledge base. Run: npx -y publedge",
+      "url": "https://publedge.org/.well-known/mcp.json",
       "source": "https://github.com/snapsynapse/publedge/blob/main/mcp-server.js"
     }
   ],
@@ -461,12 +462,16 @@
     "llms_txt": "https://publedge.org/llms.txt",
     "sitemap": "https://publedge.org/sitemap.xml",
     "rss": "https://publedge.org/feed.xml",
+    "atom": "https://publedge.org/atom.xml",
+    "json_feed": "https://publedge.org/feed.json",
+    "calendar": "https://publedge.org/calendar.ics",
+    "mcp": "https://publedge.org/.well-known/mcp.json",
     "robots": "https://publedge.org/robots.txt",
     "record_schema": "https://publedge.org/schema/json/record.schema.json",
     "protocol_authority_response": "https://publedge.org/about/#authority-response"
   },
   "meta": {
-    "last_updated": "2026-06-18",
+    "last_updated": "2026-07-22",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"

@@ -135,12 +135,13 @@ function resolveDocsPath(urlOrPath, docsDir = DOCS_DIR) {
     if (fs.existsSync(candidate) && fs.statSync(candidate).isDirectory()) {
         const indexPath = path.join(candidate, 'index.html');
         if (fs.existsSync(indexPath)) return indexPath;
+        return null;
     }
     if (!path.extname(candidate)) {
         const indexPath = path.join(candidate, 'index.html');
         if (fs.existsSync(indexPath)) return indexPath;
     }
-    return candidate;
+    return fs.existsSync(candidate) && fs.statSync(candidate).isFile() ? candidate : null;
 }
 
 function normalizeGeneratedContent(relPath, raw) {

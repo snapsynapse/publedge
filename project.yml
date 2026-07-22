@@ -193,6 +193,11 @@ social:
 # ---------------------------------------------------------------------------
 verification:
   staleness_days: 90
+  # Cadence reflects maintenance risk. Active statutes and agreements keep the
+  # 90-day default; slower-changing entity classes avoid meaningless date bumps.
+  authority_staleness_days: 180
+  obligation_staleness_days: 180
+  historical_demonstration_staleness_days: 365
   # Relationship-only instruments intentionally kept in the registry to
   # preserve amendment/supersession chains even when they do not introduce
   # standalone PubLedge obligation mappings.
