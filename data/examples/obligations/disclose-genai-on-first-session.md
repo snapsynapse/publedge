@@ -4,6 +4,7 @@ id: disclose-genai-on-first-session
 name: Disclose GenAI on First Session
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-18
 search_terms:
   - disclosure

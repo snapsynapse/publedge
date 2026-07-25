@@ -16,6 +16,7 @@
   <url><loc>https://publedge.org/schema/jia.schema.json</loc><lastmod>2026-07-25</lastmod></url>
   <url><loc>https://publedge.org/schema/rma.schema.json</loc><lastmod>2026-07-25</lastmod></url>
   <url><loc>https://publedge.org/schema/instrument.schema.json</loc><lastmod>2026-07-25</lastmod></url>
+  <url><loc>https://publedge.org/schema/obligation-record.schema.json</loc><lastmod>2026-07-25</lastmod></url>
   <url><loc>https://publedge.org/schema/json/record.schema.json</loc><lastmod>2026-07-25</lastmod></url>
   <url><loc>https://publedge.org/schema/context.jsonld</loc><lastmod>2026-07-25</lastmod></url>
 </urlset>

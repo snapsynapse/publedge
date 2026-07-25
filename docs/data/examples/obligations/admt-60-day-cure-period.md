@@ -4,6 +4,7 @@ id: admt-60-day-cure-period
 name: ADMT Sixty-Day Cure Period Before Enforcement
 group: permission
 status: draft
+lifecycle_status: operative
 last_verified: 2026-07-24
 search_terms:
   - admt

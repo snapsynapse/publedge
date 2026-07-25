@@ -4,6 +4,7 @@ id: sec-reg-d-506c-verification-safe-harbor
 name: Rule 506(c) Verification Via High-Minimum + Representation
 group: permission
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - rule 506c

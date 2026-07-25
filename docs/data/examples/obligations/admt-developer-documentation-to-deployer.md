@@ -4,6 +4,7 @@ id: admt-developer-documentation-to-deployer
 name: ADMT Developer Documentation To Deployer
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-07-24
 search_terms:
   - admt

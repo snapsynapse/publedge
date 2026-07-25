@@ -4,6 +4,7 @@ id: rma-incident-notification-24hr
 name: RMA — 24-Hour Incident Notification
 group: requirement
 status: draft
+lifecycle_status: expired
 last_verified: 2026-04-21
 search_terms:
   - rma

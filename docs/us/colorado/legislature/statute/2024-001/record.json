@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
-    "generated": "2026-07-25T20:43:24.302Z",
+    "generated": "2026-07-25T21:19:42.445Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -44,11 +44,11 @@
         "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
       },
       {
-        "cite": "C.R.S. §6-1-1703 (deployer duty of reasonable care; impact assessments; consumer notice)",
+        "cite": "C.R.S. §6-1-1703 (deployer duty of reasonable care; impact assessments; consumer notice, correction, and appeal)",
         "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
       },
       {
-        "cite": "C.R.S. §6-1-1704 (consumer rights to explanation, correction, human review)",
+        "cite": "C.R.S. §6-1-1704 (disclosure when consumers interact with an AI system)",
         "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
       },
       {
@@ -67,7 +67,7 @@
     "supersedes": null,
     "superseded_by": "us-co-legislature-statute-2026-sb26-189",
     "authority_response": null,
-    "last_verified": "2026-05-21",
+    "last_verified": "2026-07-25",
     "timeline": [
       {
         "milestone": "Introduced",
@@ -149,7 +149,7 @@
       "https://leg.colorado.gov/bills/sb24-205"
     ],
     "dateCreated": "2026-05-21",
-    "dateModified": "2026-05-21",
+    "dateModified": "2026-07-25",
     "datePublished": "2026-06-30",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
@@ -174,12 +174,12 @@
       },
       {
         "@type": "Legislation",
-        "name": "C.R.S. §6-1-1703 (deployer duty of reasonable care; impact assessments; consumer notice)",
+        "name": "C.R.S. §6-1-1703 (deployer duty of reasonable care; impact assessments; consumer notice, correction, and appeal)",
         "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
       },
       {
         "@type": "Legislation",
-        "name": "C.R.S. §6-1-1704 (consumer rights to explanation, correction, human review)",
+        "name": "C.R.S. §6-1-1704 (disclosure when consumers interact with an AI system)",
         "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
       },
       {

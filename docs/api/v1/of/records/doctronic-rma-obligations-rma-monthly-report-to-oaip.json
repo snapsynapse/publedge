@@ -10,6 +10,7 @@
   "publedge_primary_id": "rma-monthly-report-to-oaip",
   "publedge_group": "requirement",
   "publedge_status": "draft",
+  "publedge_lifecycle_status": "operative",
   "search_terms": [
     "rma",
     "reporting",

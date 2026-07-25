@@ -4,6 +4,7 @@ id: rma-no-advertising-reference
 name: RMA — No Advertising Reference To Agreement
 group: restriction
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - rma

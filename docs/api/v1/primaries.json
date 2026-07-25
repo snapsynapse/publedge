@@ -1,200 +1,253 @@
 {
   "meta": {
-    "generated": "2026-07-25T20:43:24.251Z",
-    "count": 32
+    "generated": "2026-07-25T21:19:42.389Z",
+    "count": 35
   },
   "items": [
     {
       "id": "admt-60-day-cure-period",
       "name": "ADMT Sixty-Day Cure Period Before Enforcement",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "admt-correction-and-human-review",
       "name": "ADMT Data Correction And Human Review Of Adverse Outcomes",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "admt-deployer-3-year-record-retention",
       "name": "ADMT Deployer Three-Year Record Retention",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "admt-deployer-pre-decision-notice",
       "name": "ADMT Deployer Notice Before Consequential Decision",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "admt-developer-documentation-to-deployer",
       "name": "ADMT Developer Documentation To Deployer",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "admt-post-adverse-explanation-30-days",
       "name": "ADMT Post-Adverse Explanation Within 30 Days",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "ai-authorized-rx-renewal",
       "name": "AI-Authorized Prescription Renewal (Utah Pilot)",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "ai-defense-elimination",
       "name": "GenAI Is Not A Defense — Civil And Criminal",
       "group": "restriction",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "cfpb-pay-to-pay-fee-prohibited",
       "name": "Pay-To-Pay Fee Prohibited Without Express Authorization",
       "group": "restriction",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "cftc-unbundled-fee-not-cta-trigger",
       "name": "Unbundled Advice Fee Does Not Trigger CTA Registration",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "chatbot-data-no-third-party-sharing",
       "name": "Mental Health Chatbot — No Third-Party Data Sharing",
       "group": "restriction",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "chatbot-safety-policy-filing",
       "name": "Mental Health Chatbot — File 15-Element Safety Policy",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "dentacor-58-69-5-enforcement-forborne",
       "name": "Dentacor — §58-69-5 Enforcement Forborne",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "dentacor-hygienist-ai-concurrence-diagnosis",
       "name": "Dentacor — Hygienist + AI Concurrence Diagnosis",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "dentacor-informed-consent-no-dentist",
       "name": "Dentacor — Informed Consent Disclosing Absence Of Dentist",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "disclose-genai-high-risk-proactive",
       "name": "Proactive GenAI Disclosure In High-Risk Interactions",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "disclose-genai-on-first-session",
       "name": "Disclose GenAI on First Session",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "disclose-genai-on-request",
       "name": "Disclose GenAI On Consumer Request",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "elizachat-phased-rollout",
       "name": "ElizaChat — Three-Phase Rollout Gate",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "expired"
     },
     {
       "id": "elizachat-pre-access-disclosure-bundle",
       "name": "ElizaChat — Pre-Access Disclosure Bundle",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "expired"
+    },
+    {
+      "id": "high-risk-ai-consumer-notice-correction-and-appeal",
+      "name": "High-Risk AI Consumer Notice, Correction, And Appeal",
+      "group": "requirement",
+      "status": "draft",
+      "lifecycle_status": "never-operative"
+    },
+    {
+      "id": "high-risk-ai-impact-assessment",
+      "name": "High-Risk AI Impact Assessment",
+      "group": "requirement",
+      "status": "draft",
+      "lifecycle_status": "never-operative"
+    },
+    {
+      "id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+      "name": "High-Risk AI Reasonable Care Against Algorithmic Discrimination",
+      "group": "requirement",
+      "status": "draft",
+      "lifecycle_status": "never-operative"
     },
     {
       "id": "irs-501c3-dual-test-failure",
       "name": "§501(c)(3) Exemption Denied — Organizational And Operational Test Failure",
       "group": "restriction",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "irs-incentive-fee-not-net-profits-share",
       "name": "Incentive-Fee Management Contract Not A Share Of Net Profits",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "learning-lab-agreement-participation",
       "name": "Learning Lab Agreement — Eligibility and Participation",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "named-prescriber-enforcement-forborne",
       "name": "Named-Prescriber Enforcement Forborne",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "rma-data-security-63a-19-102",
       "name": "RMA — Data Security Under §63A-19-102",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "rma-end-of-term-report",
       "name": "RMA — 30-Day End-Of-Term Report",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "rma-hold-harmless-state",
       "name": "RMA — Hold Harmless The State",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "rma-incident-notification-24hr",
       "name": "RMA — 24-Hour Incident Notification",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "expired"
     },
     {
       "id": "rma-monthly-report-to-oaip",
       "name": "RMA — Monthly Report To OAIP",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "rma-no-advertising-reference",
       "name": "RMA — No Advertising Reference To Agreement",
       "group": "restriction",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "sec-reg-d-506c-verification-safe-harbor",
       "name": "Rule 506(c) Verification Via High-Minimum + Representation",
       "group": "permission",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     },
     {
       "id": "telehealth-compliance-per-proposal",
       "name": "Telehealth Compliance Anchored To Participant Proposal",
       "group": "requirement",
-      "status": "draft"
+      "status": "draft",
+      "lifecycle_status": "operative"
     }
   ]
 }

@@ -1,6 +1,6 @@
-# PubLedge v0.1.2
+# PubLedge v0.1.3
 
-PubLedge `v0.1.2` advances the protocol's maintenance and adoption posture while publishing MCP/npm package `0.1.2`.
+PubLedge `v0.1.3` advances the protocol's maintenance and adoption posture while preparing MCP/npm package `0.1.3`.
 
 ## Highlights
 
@@ -14,16 +14,19 @@ PubLedge `v0.1.2` advances the protocol's maintenance and adoption posture while
 
 ## Verification
 
-- 145 canonical manifest hashes verified.
-- 18 instruments, 26 obligations, 8 authorities, and 14 mappings passed cross-reference validation.
-- All 23 evals passed, including local tarball installation and MCP initialization.
-- 105 Obligation-First records passed adopter validation.
-- Verification reported 52 fresh records, 0 stale records, and 0 never-verified records.
-- npm package dry run: 66 files, 74.7 kB compressed, 267.4 kB unpacked.
+- 158 canonical manifest hashes verified.
+- 18 instruments, 35 obligations, 8 authorities, and 16 mappings passed cross-reference validation.
+- All 24 evals passed, including obligation lifecycle, local tarball installation, and MCP initialization.
+- 116 Obligation-First records passed adopter validation.
+- Verification reported 61 fresh records, 0 stale records, and 0 never-verified records.
 
 ## Residuals
 
 - `MANIFEST.yaml` proves source-to-current-manifest consistency; it is not an independent timestamp or immutable publication proof.
 - `us-ut-oaip-rma-2026-001` intentionally has no effective date yet and continues to produce a non-blocking schema recommendation.
+
+## Historical tag policy
+
+The `v0.1.2-pre` tag is retained only as an immutable historical reference. Consumers, documentation, release tooling, and dependency automation must not select it. Use `v0.1.2` or a later stable tag.
 
 See [CHANGELOG.md](CHANGELOG.md) for the complete change inventory.

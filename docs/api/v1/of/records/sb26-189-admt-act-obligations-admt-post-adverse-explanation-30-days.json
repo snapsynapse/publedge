@@ -10,6 +10,7 @@
   "publedge_primary_id": "admt-post-adverse-explanation-30-days",
   "publedge_group": "requirement",
   "publedge_status": "draft",
+  "publedge_lifecycle_status": "operative",
   "search_terms": [
     "admt",
     "adverse decision",

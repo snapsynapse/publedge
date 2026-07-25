@@ -52,6 +52,27 @@ The site renders status as a badge colored by semantic group:
 - **Past (gray family)**: `expired`, `superseded`
 - **Action-ended (red family)**: `withdrawn`, `terminated`
 
+## Obligation lifecycle vocabulary
+
+Obligation records separate editorial maturity from legal operability:
+
+- `status:` is PubLedge editorial maturity: `draft | reviewed | published`.
+- `lifecycle_status:` states whether the represented duty is legally operative.
+
+The lifecycle vocabulary is closed:
+
+| Lifecycle status | Definition |
+|------------------|------------|
+| `prospective` | The obligation is adopted or otherwise identified but has not reached its operative date or trigger. |
+| `operative` | The obligation currently has legal or contractual effect through at least one implementing instrument. |
+| `never-operative` | The obligation was enacted or executed but its implementing instrument was superseded or otherwise ended before the duty took effect. |
+| `expired` | The obligation ceased when its stated duration elapsed. |
+| `superseded` | The obligation operated but was later replaced by a successor duty. |
+| `withdrawn` | The issuing authority rescinded the obligation before its stated end. |
+| `terminated` | A bilateral or multilateral obligation ended early through party action. |
+
+`lifecycle_status` is currently a PubLedge-local field. Obligation First intentionally defers provision lifecycle standardization, so the Obligation-First export exposes this value as `publedge_lifecycle_status`, not as an `of:` predicate. The distinction prevents editorial `status: draft` from being mistaken for the legal state of a duty.
+
 ---
 
 ## Instrument types

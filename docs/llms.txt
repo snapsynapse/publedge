@@ -1,7 +1,7 @@
 # PubLedge
 
 > Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
-> Tracks 18 legal instruments, 32 obligations, and 9 provisions across 8 authorities.
+> Tracks 18 legal instruments, 35 obligations, and 9 provisions across 8 authorities.
 
 ## Legal Instruments
 
@@ -26,38 +26,41 @@
 
 ## Obligations
 
-- [ADMT Sixty-Day Cure Period Before Enforcement](https://publedge.org/primary/admt-60-day-cure-period/): 1 legal instruments support this
-- [ADMT Data Correction And Human Review Of Adverse Outcomes](https://publedge.org/primary/admt-correction-and-human-review/): 1 legal instruments support this
-- [ADMT Deployer Three-Year Record Retention](https://publedge.org/primary/admt-deployer-3-year-record-retention/): 1 legal instruments support this
-- [ADMT Deployer Notice Before Consequential Decision](https://publedge.org/primary/admt-deployer-pre-decision-notice/): 1 legal instruments support this
-- [ADMT Developer Documentation To Deployer](https://publedge.org/primary/admt-developer-documentation-to-deployer/): 1 legal instruments support this
-- [ADMT Post-Adverse Explanation Within 30 Days](https://publedge.org/primary/admt-post-adverse-explanation-30-days/): 1 legal instruments support this
-- [AI-Authorized Prescription Renewal (Utah Pilot)](https://publedge.org/primary/ai-authorized-rx-renewal/): 2 legal instruments support this
-- [GenAI Is Not A Defense — Civil And Criminal](https://publedge.org/primary/ai-defense-elimination/): 2 legal instruments support this
-- [Pay-To-Pay Fee Prohibited Without Express Authorization](https://publedge.org/primary/cfpb-pay-to-pay-fee-prohibited/): 1 legal instruments support this
-- [Unbundled Advice Fee Does Not Trigger CTA Registration](https://publedge.org/primary/cftc-unbundled-fee-not-cta-trigger/): 1 legal instruments support this
-- [Mental Health Chatbot — No Third-Party Data Sharing](https://publedge.org/primary/chatbot-data-no-third-party-sharing/): 1 legal instruments support this
-- [Mental Health Chatbot — File 15-Element Safety Policy](https://publedge.org/primary/chatbot-safety-policy-filing/): 1 legal instruments support this
-- [Dentacor — §58-69-5 Enforcement Forborne](https://publedge.org/primary/dentacor-58-69-5-enforcement-forborne/): 1 legal instruments support this
-- [Dentacor — Hygienist + AI Concurrence Diagnosis](https://publedge.org/primary/dentacor-hygienist-ai-concurrence-diagnosis/): 1 legal instruments support this
-- [Dentacor — Informed Consent Disclosing Absence Of Dentist](https://publedge.org/primary/dentacor-informed-consent-no-dentist/): 1 legal instruments support this
-- [Proactive GenAI Disclosure In High-Risk Interactions](https://publedge.org/primary/disclose-genai-high-risk-proactive/): 1 legal instruments support this
-- [Disclose GenAI on First Session](https://publedge.org/primary/disclose-genai-on-first-session/): 2 legal instruments support this
-- [Disclose GenAI On Consumer Request](https://publedge.org/primary/disclose-genai-on-request/): 1 legal instruments support this
-- [ElizaChat — Three-Phase Rollout Gate](https://publedge.org/primary/elizachat-phased-rollout/): 1 legal instruments support this
-- [ElizaChat — Pre-Access Disclosure Bundle](https://publedge.org/primary/elizachat-pre-access-disclosure-bundle/): 1 legal instruments support this
-- [§501(c)(3) Exemption Denied — Organizational And Operational Test Failure](https://publedge.org/primary/irs-501c3-dual-test-failure/): 1 legal instruments support this
-- [Incentive-Fee Management Contract Not A Share Of Net Profits](https://publedge.org/primary/irs-incentive-fee-not-net-profits-share/): 1 legal instruments support this
-- [Learning Lab Agreement — Eligibility and Participation](https://publedge.org/primary/learning-lab-agreement-participation/): 2 legal instruments support this
-- [Named-Prescriber Enforcement Forborne](https://publedge.org/primary/named-prescriber-enforcement-forborne/): 2 legal instruments support this
-- [RMA — Data Security Under §63A-19-102](https://publedge.org/primary/rma-data-security-63a-19-102/): 4 legal instruments support this
-- [RMA — 30-Day End-Of-Term Report](https://publedge.org/primary/rma-end-of-term-report/): 4 legal instruments support this
-- [RMA — Hold Harmless The State](https://publedge.org/primary/rma-hold-harmless-state/): 4 legal instruments support this
-- [RMA — 24-Hour Incident Notification](https://publedge.org/primary/rma-incident-notification-24hr/): 1 legal instruments support this
-- [RMA — Monthly Report To OAIP](https://publedge.org/primary/rma-monthly-report-to-oaip/): 4 legal instruments support this
-- [RMA — No Advertising Reference To Agreement](https://publedge.org/primary/rma-no-advertising-reference/): 4 legal instruments support this
-- [Rule 506(c) Verification Via High-Minimum + Representation](https://publedge.org/primary/sec-reg-d-506c-verification-safe-harbor/): 1 legal instruments support this
-- [Telehealth Compliance Anchored To Participant Proposal](https://publedge.org/primary/telehealth-compliance-per-proposal/): 2 legal instruments support this
+- [ADMT Sixty-Day Cure Period Before Enforcement](https://publedge.org/primary/admt-60-day-cure-period/): operative; 1 legal instruments support this
+- [ADMT Data Correction And Human Review Of Adverse Outcomes](https://publedge.org/primary/admt-correction-and-human-review/): operative; 1 legal instruments support this
+- [ADMT Deployer Three-Year Record Retention](https://publedge.org/primary/admt-deployer-3-year-record-retention/): operative; 1 legal instruments support this
+- [ADMT Deployer Notice Before Consequential Decision](https://publedge.org/primary/admt-deployer-pre-decision-notice/): operative; 1 legal instruments support this
+- [ADMT Developer Documentation To Deployer](https://publedge.org/primary/admt-developer-documentation-to-deployer/): operative; 1 legal instruments support this
+- [ADMT Post-Adverse Explanation Within 30 Days](https://publedge.org/primary/admt-post-adverse-explanation-30-days/): operative; 1 legal instruments support this
+- [AI-Authorized Prescription Renewal (Utah Pilot)](https://publedge.org/primary/ai-authorized-rx-renewal/): operative; 2 legal instruments support this
+- [GenAI Is Not A Defense — Civil And Criminal](https://publedge.org/primary/ai-defense-elimination/): operative; 2 legal instruments support this
+- [Pay-To-Pay Fee Prohibited Without Express Authorization](https://publedge.org/primary/cfpb-pay-to-pay-fee-prohibited/): operative; 1 legal instruments support this
+- [Unbundled Advice Fee Does Not Trigger CTA Registration](https://publedge.org/primary/cftc-unbundled-fee-not-cta-trigger/): operative; 1 legal instruments support this
+- [Mental Health Chatbot — No Third-Party Data Sharing](https://publedge.org/primary/chatbot-data-no-third-party-sharing/): operative; 1 legal instruments support this
+- [Mental Health Chatbot — File 15-Element Safety Policy](https://publedge.org/primary/chatbot-safety-policy-filing/): operative; 1 legal instruments support this
+- [Dentacor — §58-69-5 Enforcement Forborne](https://publedge.org/primary/dentacor-58-69-5-enforcement-forborne/): operative; 1 legal instruments support this
+- [Dentacor — Hygienist + AI Concurrence Diagnosis](https://publedge.org/primary/dentacor-hygienist-ai-concurrence-diagnosis/): operative; 1 legal instruments support this
+- [Dentacor — Informed Consent Disclosing Absence Of Dentist](https://publedge.org/primary/dentacor-informed-consent-no-dentist/): operative; 1 legal instruments support this
+- [Proactive GenAI Disclosure In High-Risk Interactions](https://publedge.org/primary/disclose-genai-high-risk-proactive/): operative; 1 legal instruments support this
+- [Disclose GenAI on First Session](https://publedge.org/primary/disclose-genai-on-first-session/): operative; 2 legal instruments support this
+- [Disclose GenAI On Consumer Request](https://publedge.org/primary/disclose-genai-on-request/): operative; 1 legal instruments support this
+- [ElizaChat — Three-Phase Rollout Gate](https://publedge.org/primary/elizachat-phased-rollout/): expired; 1 legal instruments support this
+- [ElizaChat — Pre-Access Disclosure Bundle](https://publedge.org/primary/elizachat-pre-access-disclosure-bundle/): expired; 1 legal instruments support this
+- [High-Risk AI Consumer Notice, Correction, And Appeal](https://publedge.org/primary/high-risk-ai-consumer-notice-correction-and-appeal/): never-operative; 1 legal instruments support this
+- [High-Risk AI Impact Assessment](https://publedge.org/primary/high-risk-ai-impact-assessment/): never-operative; 1 legal instruments support this
+- [High-Risk AI Reasonable Care Against Algorithmic Discrimination](https://publedge.org/primary/high-risk-ai-reasonable-care-against-algorithmic-discrimination/): never-operative; 1 legal instruments support this
+- [§501(c)(3) Exemption Denied — Organizational And Operational Test Failure](https://publedge.org/primary/irs-501c3-dual-test-failure/): operative; 1 legal instruments support this
+- [Incentive-Fee Management Contract Not A Share Of Net Profits](https://publedge.org/primary/irs-incentive-fee-not-net-profits-share/): operative; 1 legal instruments support this
+- [Learning Lab Agreement — Eligibility and Participation](https://publedge.org/primary/learning-lab-agreement-participation/): operative; 2 legal instruments support this
+- [Named-Prescriber Enforcement Forborne](https://publedge.org/primary/named-prescriber-enforcement-forborne/): operative; 2 legal instruments support this
+- [RMA — Data Security Under §63A-19-102](https://publedge.org/primary/rma-data-security-63a-19-102/): operative; 4 legal instruments support this
+- [RMA — 30-Day End-Of-Term Report](https://publedge.org/primary/rma-end-of-term-report/): operative; 4 legal instruments support this
+- [RMA — Hold Harmless The State](https://publedge.org/primary/rma-hold-harmless-state/): operative; 4 legal instruments support this
+- [RMA — 24-Hour Incident Notification](https://publedge.org/primary/rma-incident-notification-24hr/): expired; 1 legal instruments support this
+- [RMA — Monthly Report To OAIP](https://publedge.org/primary/rma-monthly-report-to-oaip/): operative; 4 legal instruments support this
+- [RMA — No Advertising Reference To Agreement](https://publedge.org/primary/rma-no-advertising-reference/): operative; 4 legal instruments support this
+- [Rule 506(c) Verification Via High-Minimum + Representation](https://publedge.org/primary/sec-reg-d-506c-verification-safe-harbor/): operative; 1 legal instruments support this
+- [Telehealth Compliance Anchored To Participant Proposal](https://publedge.org/primary/telehealth-compliance-per-proposal/): operative; 2 legal instruments support this
 
 ## Tools
 

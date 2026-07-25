@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/snapsynapse/publedge/actions/workflows/build.yml/badge.svg)](https://github.com/snapsynapse/publedge/actions/workflows/build.yml)
 [![Spec](https://img.shields.io/badge/spec-v0.1.3-blue)](PROTOCOL.md)
-[![Registry](https://img.shields.io/badge/registry-18%20instruments%20%C2%B7%2032%20obligations%20%C2%B7%208%20authorities-informational)](data/examples/instruments/)
+[![Registry](https://img.shields.io/badge/registry-18%20instruments%20%C2%B7%2035%20obligations%20%C2%B7%208%20authorities-informational)](data/examples/instruments/)
 [![Content license: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey)](LICENSE-CC-BY-4.0)
 [![Code license: Apache 2.0](https://img.shields.io/badge/code-Apache%202.0-lightgrey)](LICENSE-APACHE)
 [![Bound to gist](https://img.shields.io/badge/ontology-gist-green)](https://semanticarts.com/gist/)
@@ -34,7 +34,7 @@ PubLedge is one component of the PAICE legal graph (with EveryAILaw, AI Incident
 Three things in one place:
 
 1. **The protocol** — the [PROTOCOL.md](PROTOCOL.md) specification and the [PRIOR-ART.md](PRIOR-ART.md) survey that motivates it.
-2. **Utah-shaped reference content** — 5 JIA/RMA templates anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104), plus 18 demonstration instruments under `data/examples/instruments/` spanning 8 authorities (Utah OAIP, Utah Legislature, Colorado Legislature, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC) and 7 instrument types (JIA, RMA, no-action letter, advisory opinion, private letter ruling, interpretive letter, statute). 32 first-class obligation records under `data/examples/obligations/` are mapped to the instruments via `data/examples/mapping/index.yml`.
+2. **Utah-shaped reference content** — 5 JIA/RMA templates anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104), plus 18 demonstration instruments under `data/examples/instruments/` spanning 8 authorities (Utah OAIP, Utah Legislature, Colorado Legislature, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC) and 7 instrument types (JIA, RMA, no-action letter, advisory opinion, private letter ruling, interpretive letter, statute). 35 first-class obligation records under `data/examples/obligations/` are mapped to the instruments via `data/examples/mapping/index.yml`; legal lifecycle is tracked separately from editorial maturity.
 3. **The published site** — rendered HTML under `docs/`, served by GitHub Pages from `main /docs`. Regenerate with `node scripts/build.js && node scripts/build-extras.js` before committing; CI fails if `docs/` drifts from sources.
 
 ## Machine-readable endpoints

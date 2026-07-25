@@ -4,6 +4,7 @@ id: ai-defense-elimination
 name: GenAI Is Not A Defense — Civil And Criminal
 group: restriction
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - ai defense

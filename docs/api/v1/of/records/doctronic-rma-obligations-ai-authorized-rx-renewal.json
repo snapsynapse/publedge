@@ -10,6 +10,7 @@
   "publedge_primary_id": "ai-authorized-rx-renewal",
   "publedge_group": "permission",
   "publedge_status": "draft",
+  "publedge_lifecycle_status": "operative",
   "search_terms": [
     "prescription renewal",
     "ai rx",

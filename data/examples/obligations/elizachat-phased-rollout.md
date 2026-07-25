@@ -4,6 +4,7 @@ id: elizachat-phased-rollout
 name: ElizaChat — Three-Phase Rollout Gate
 group: requirement
 status: draft
+lifecycle_status: expired
 last_verified: 2026-04-21
 search_terms:
   - elizachat

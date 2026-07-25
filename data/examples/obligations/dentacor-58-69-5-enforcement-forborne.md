@@ -4,6 +4,7 @@ id: dentacor-58-69-5-enforcement-forborne
 name: Dentacor — §58-69-5 Enforcement Forborne
 group: permission
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - dentacor

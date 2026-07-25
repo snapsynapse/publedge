@@ -10,11 +10,13 @@ const project = loadProjectData();
 // or sunset-date-only. Operative statutes carry obligation mappings instead and
 // must not be listed here — SB 26-189 was removed when its ADMT obligations landed.
 const expectedAllowed = [
-    'us-co-legislature-statute-2024-sb24-205',
     'us-co-legislature-statute-2025-sb25b-004',
     'us-ut-legislature-statute-2025-sb332'
 ];
-const expectedNotAllowed = ['us-co-legislature-statute-2026-sb26-189'];
+const expectedNotAllowed = [
+    'us-co-legislature-statute-2024-sb24-205',
+    'us-co-legislature-statute-2026-sb26-189'
+];
 
 const allowedIds = getAllowedUnmappedInstrumentIds(project.config);
 for (const id of expectedAllowed) {

@@ -10,7 +10,7 @@
     {
       "id": "container-comparison",
       "name": "Legal Instrument Comparison",
-      "description": "Compare 18 legal instruments across 32 obligations",
+      "description": "Compare 18 legal instruments across 35 obligations",
       "url": "https://publedge.org/compare.html"
     },
     {
@@ -330,6 +330,24 @@
         "name": "ElizaChat — Pre-Access Disclosure Bundle",
         "group": "requirement",
         "url": "https://publedge.org/primary/elizachat-pre-access-disclosure-bundle/"
+      },
+      {
+        "id": "high-risk-ai-consumer-notice-correction-and-appeal",
+        "name": "High-Risk AI Consumer Notice, Correction, And Appeal",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/high-risk-ai-consumer-notice-correction-and-appeal/"
+      },
+      {
+        "id": "high-risk-ai-impact-assessment",
+        "name": "High-Risk AI Impact Assessment",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/high-risk-ai-impact-assessment/"
+      },
+      {
+        "id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "name": "High-Risk AI Reasonable Care Against Algorithmic Discrimination",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/high-risk-ai-reasonable-care-against-algorithmic-discrimination/"
       },
       {
         "id": "irs-501c3-dual-test-failure",

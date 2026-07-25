@@ -1,0 +1,27 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json",
+  "id": "sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+  "title": "High-Risk AI Reasonable Care Against Algorithmic Discrimination",
+  "content": "Developers and deployers of high-risk artificial intelligence systems would have been required to use reasonable care to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
+  "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "publedge_lifecycle_status": "never-operative",
+  "search_terms": [
+    "high-risk artificial intelligence",
+    "reasonable care",
+    "algorithmic discrimination",
+    "developer",
+    "deployer",
+    "colorado",
+    "sb24-205"
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  }
+}

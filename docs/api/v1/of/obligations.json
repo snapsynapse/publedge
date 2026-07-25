@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-25T20:43:24.254Z",
+  "generated": "2026-07-25T21:19:42.393Z",
   "obligations": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -16,6 +16,7 @@
       "publedge_primary_id": "disclose-genai-on-first-session",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "disclosure",
         "genai",
@@ -39,6 +40,7 @@
       "publedge_primary_id": "learning-lab-agreement-participation",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "learning lab",
         "regulatory mitigation",
@@ -65,6 +67,7 @@
       "publedge_primary_id": "ai-defense-elimination",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "ai defense",
         "liability",
@@ -90,6 +93,7 @@
       "publedge_primary_id": "disclose-genai-on-request",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "disclosure",
         "genai",
@@ -114,6 +118,7 @@
       "publedge_primary_id": "disclose-genai-high-risk-proactive",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "disclosure",
         "high-risk",
@@ -138,6 +143,7 @@
       "publedge_primary_id": "ai-defense-elimination",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "ai defense",
         "liability",
@@ -163,6 +169,7 @@
       "publedge_primary_id": "disclose-genai-on-first-session",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "disclosure",
         "genai",
@@ -186,6 +193,7 @@
       "publedge_primary_id": "chatbot-data-no-third-party-sharing",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "chatbot",
         "mental health",
@@ -210,6 +218,7 @@
       "publedge_primary_id": "chatbot-safety-policy-filing",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "chatbot",
         "mental health",
@@ -235,6 +244,7 @@
       "publedge_primary_id": "learning-lab-agreement-participation",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "learning lab",
         "regulatory mitigation",
@@ -261,6 +271,7 @@
       "publedge_primary_id": "rma-monthly-report-to-oaip",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "reporting",
@@ -285,6 +296,7 @@
       "publedge_primary_id": "rma-end-of-term-report",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "reporting",
@@ -308,6 +320,7 @@
       "publedge_primary_id": "rma-data-security-63a-19-102",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "data security",
@@ -331,6 +344,7 @@
       "publedge_primary_id": "rma-hold-harmless-state",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "indemnification",
@@ -353,6 +367,7 @@
       "publedge_primary_id": "rma-no-advertising-reference",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "advertising",
@@ -376,6 +391,7 @@
       "publedge_primary_id": "rma-incident-notification-24hr",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "expired",
       "search_terms": [
         "rma",
         "incident",
@@ -400,6 +416,7 @@
       "publedge_primary_id": "elizachat-pre-access-disclosure-bundle",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "expired",
       "search_terms": [
         "elizachat",
         "disclosure",
@@ -423,6 +440,7 @@
       "publedge_primary_id": "elizachat-phased-rollout",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "expired",
       "search_terms": [
         "elizachat",
         "phased rollout",
@@ -446,6 +464,7 @@
       "publedge_primary_id": "rma-monthly-report-to-oaip",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "reporting",
@@ -470,6 +489,7 @@
       "publedge_primary_id": "rma-end-of-term-report",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "reporting",
@@ -493,6 +513,7 @@
       "publedge_primary_id": "rma-data-security-63a-19-102",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "data security",
@@ -516,6 +537,7 @@
       "publedge_primary_id": "rma-hold-harmless-state",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "indemnification",
@@ -538,6 +560,7 @@
       "publedge_primary_id": "rma-no-advertising-reference",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "advertising",
@@ -561,6 +584,7 @@
       "publedge_primary_id": "dentacor-hygienist-ai-concurrence-diagnosis",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "dentacor",
         "hygienist",
@@ -585,6 +609,7 @@
       "publedge_primary_id": "dentacor-58-69-5-enforcement-forborne",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "dentacor",
         "enforcement",
@@ -609,6 +634,7 @@
       "publedge_primary_id": "dentacor-informed-consent-no-dentist",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "dentacor",
         "informed consent",
@@ -632,6 +658,7 @@
       "publedge_primary_id": "rma-monthly-report-to-oaip",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "reporting",
@@ -656,6 +683,7 @@
       "publedge_primary_id": "rma-end-of-term-report",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "reporting",
@@ -679,6 +707,7 @@
       "publedge_primary_id": "rma-data-security-63a-19-102",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "data security",
@@ -702,6 +731,7 @@
       "publedge_primary_id": "rma-hold-harmless-state",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "indemnification",
@@ -724,6 +754,7 @@
       "publedge_primary_id": "rma-no-advertising-reference",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "advertising",
@@ -747,6 +778,7 @@
       "publedge_primary_id": "ai-authorized-rx-renewal",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "prescription renewal",
         "ai rx",
@@ -772,6 +804,7 @@
       "publedge_primary_id": "named-prescriber-enforcement-forborne",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "named prescriber",
         "enforcement forbearance",
@@ -797,6 +830,7 @@
       "publedge_primary_id": "telehealth-compliance-per-proposal",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "telehealth",
         "26b-4-704",
@@ -821,6 +855,7 @@
       "publedge_primary_id": "rma-monthly-report-to-oaip",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "reporting",
@@ -845,6 +880,7 @@
       "publedge_primary_id": "rma-end-of-term-report",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "reporting",
@@ -868,6 +904,7 @@
       "publedge_primary_id": "rma-data-security-63a-19-102",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "data security",
@@ -891,6 +928,7 @@
       "publedge_primary_id": "rma-hold-harmless-state",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "indemnification",
@@ -913,6 +951,7 @@
       "publedge_primary_id": "rma-no-advertising-reference",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rma",
         "advertising",
@@ -936,6 +975,7 @@
       "publedge_primary_id": "ai-authorized-rx-renewal",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "prescription renewal",
         "ai rx",
@@ -961,6 +1001,7 @@
       "publedge_primary_id": "named-prescriber-enforcement-forborne",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "named prescriber",
         "enforcement forbearance",
@@ -986,6 +1027,7 @@
       "publedge_primary_id": "telehealth-compliance-per-proposal",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "telehealth",
         "26b-4-704",
@@ -1010,6 +1052,7 @@
       "publedge_primary_id": "cfpb-pay-to-pay-fee-prohibited",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "fdcpa",
         "pay-to-pay",
@@ -1034,6 +1077,7 @@
       "publedge_primary_id": "cftc-unbundled-fee-not-cta-trigger",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "cta registration",
         "mifid ii",
@@ -1059,6 +1103,7 @@
       "publedge_primary_id": "irs-incentive-fee-not-net-profits-share",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "private business use",
         "501c3 bonds",
@@ -1083,6 +1128,7 @@
       "publedge_primary_id": "irs-501c3-dual-test-failure",
       "publedge_group": "restriction",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "501c3",
         "organizational test",
@@ -1108,6 +1154,7 @@
       "publedge_primary_id": "sec-reg-d-506c-verification-safe-harbor",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "rule 506c",
         "accredited investor",
@@ -1123,6 +1170,88 @@
     {
       "@context": "https://obligationfirst.org/v1/",
       "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json",
+      "id": "sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+      "title": "High-Risk AI Reasonable Care Against Algorithmic Discrimination",
+      "content": "Developers and deployers of high-risk artificial intelligence systems would have been required to use reasonable care to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
+      "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "publedge_lifecycle_status": "never-operative",
+      "search_terms": [
+        "high-risk artificial intelligence",
+        "reasonable care",
+        "algorithmic discrimination",
+        "developer",
+        "deployer",
+        "colorado",
+        "sb24-205"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json",
+      "id": "sb24-205-never-operative-obligations-high-risk-ai-impact-assessment",
+      "title": "High-Risk AI Impact Assessment",
+      "content": "Deployers would have been required to complete an impact assessment for each covered high-risk artificial intelligence system, repeat it at least annually and after intentional and substantial modifications, and retain the assessment records. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
+      "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "high-risk-ai-impact-assessment",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "publedge_lifecycle_status": "never-operative",
+      "search_terms": [
+        "high-risk artificial intelligence",
+        "impact assessment",
+        "annual assessment",
+        "algorithmic discrimination",
+        "deployer",
+        "colorado",
+        "sb24-205"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json",
+      "id": "sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal",
+      "title": "High-Risk AI Consumer Notice, Correction, And Appeal",
+      "content": "Deployers would have been required to notify consumers before using a high-risk artificial intelligence system in a consequential decision and, after an adverse decision, provide the principal reasons, an opportunity to correct incorrect personal data, and an appeal with human review where technically feasible. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
+      "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "high-risk-ai-consumer-notice-correction-and-appeal",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "publedge_lifecycle_status": "never-operative",
+      "search_terms": [
+        "high-risk artificial intelligence",
+        "consumer notice",
+        "adverse consequential decision",
+        "data correction",
+        "appeal",
+        "human review",
+        "colorado",
+        "sb24-205"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
       "id": "sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer",
       "title": "ADMT Developer Documentation To Deployer",
@@ -1132,6 +1261,7 @@
       "publedge_primary_id": "admt-developer-documentation-to-deployer",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "admt",
         "developer documentation",
@@ -1157,6 +1287,7 @@
       "publedge_primary_id": "admt-deployer-pre-decision-notice",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "admt",
         "consumer notice",
@@ -1182,6 +1313,7 @@
       "publedge_primary_id": "admt-post-adverse-explanation-30-days",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "admt",
         "adverse decision",
@@ -1207,6 +1339,7 @@
       "publedge_primary_id": "admt-correction-and-human-review",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "admt",
         "human review",
@@ -1232,6 +1365,7 @@
       "publedge_primary_id": "admt-deployer-3-year-record-retention",
       "publedge_group": "requirement",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "admt",
         "record keeping",
@@ -1257,6 +1391,7 @@
       "publedge_primary_id": "admt-60-day-cure-period",
       "publedge_group": "permission",
       "publedge_status": "draft",
+      "publedge_lifecycle_status": "operative",
       "search_terms": [
         "admt",
         "cure period",

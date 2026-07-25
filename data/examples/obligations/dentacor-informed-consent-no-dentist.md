@@ -4,6 +4,7 @@ id: dentacor-informed-consent-no-dentist
 name: Dentacor — Informed Consent Disclosing Absence Of Dentist
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - dentacor

@@ -10,6 +10,7 @@
   "publedge_primary_id": "admt-60-day-cure-period",
   "publedge_group": "permission",
   "publedge_status": "draft",
+  "publedge_lifecycle_status": "operative",
   "search_terms": [
     "admt",
     "cure period",

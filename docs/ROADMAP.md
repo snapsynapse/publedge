@@ -151,6 +151,14 @@ Shipped 2026-07-24 (registry fidelity + parity gate):
 - `eval-generated-tree-parity` no longer fails with the passage of time. `normalizeGeneratedContent` now neutralises the remaining build-date fields (`last_updated`, `today`, `days_until`, and the homepage `upcoming-days` countdown) that recompute on every build, matching the normalisation `eval-clean-build` and `eval-deterministic-build` already applied.
 - Protocol version dropped its pre-release suffix: spec is `v0.1.2`, aligned with the stable MCP/npm package version. `RELEASE_NOTES-v0.1.2-pre.md` renamed accordingly.
 
+Shipped 2026-07-25 (obligation lifecycle fidelity + CI maintenance):
+
+- Separated obligation editorial `status` from legal `lifecycle_status`, with a closed PubLedge-local vocabulary, validation, schema, lifecycle badges, machine exports, and a prominent never-operative notice.
+- Extracted three SB 24-205 obligation records for reasonable care, impact assessments, and consumer notice/correction/appeal. Each is marked `lifecycle_status: never-operative`; SB 24-205 is now mapped and removed from `allowed_unmapped_instruments`. Obligations 32 → 35; mappings 15 → 16.
+- Kept the repo-local lifecycle field out of the Obligation First namespace pending its deferred provision-lifecycle standard; OF exports use `publedge_lifecycle_status`.
+- Upgraded `actions/checkout` and `actions/setup-node` to v5.
+- Recorded `v0.1.2-pre` as a historical tag that consumers and automation must not use.
+
 ## Maintenance lane
 
 | Item | Owner | Notes |

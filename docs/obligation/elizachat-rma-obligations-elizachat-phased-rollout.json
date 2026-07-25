@@ -10,6 +10,7 @@
   "publedge_primary_id": "elizachat-phased-rollout",
   "publedge_group": "requirement",
   "publedge_status": "draft",
+  "publedge_lifecycle_status": "expired",
   "search_terms": [
     "elizachat",
     "phased rollout",

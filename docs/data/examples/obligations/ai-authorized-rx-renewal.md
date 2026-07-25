@@ -4,6 +4,7 @@ id: ai-authorized-rx-renewal
 name: AI-Authorized Prescription Renewal (Utah Pilot)
 group: permission
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - prescription renewal

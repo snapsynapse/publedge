@@ -419,6 +419,7 @@ function extendDiscovery(templates) {
         'schema/jia.schema.json',
         'schema/rma.schema.json',
         'schema/instrument.schema.json',
+        'schema/obligation-record.schema.json',
         'schema/json/record.schema.json',
         'schema/context.jsonld'
     ];
@@ -725,6 +726,7 @@ function writeRecordSchema() {
 <p>Machine-readable contracts for PubLedge source records and generated representations.</p>
 <ul>
 <li><a href="/schema/instrument.schema.json"><code>instrument.schema.json</code></a>: polymorphic JSON Schema 2020-12 contract for instrument frontmatter.</li>
+<li><a href="/schema/obligation-record.schema.json"><code>obligation-record.schema.json</code></a>: contract for obligation editorial and lifecycle frontmatter.</li>
 <li><a href="/schema/json/record.schema.json"><code>record.schema.json</code></a>: contract for each generated <code>record.json</code>.</li>
 <li><a href="/schema/json/context.jsonld"><code>context.jsonld</code></a>: JSON-LD context binding PubLedge terms to gist.</li>
 <li><a href="/schema/jia.schema.json"><code>jia.schema.json</code></a> and <a href="/schema/rma.schema.json"><code>rma.schema.json</code></a>: compatibility schemas retained for existing references.</li>

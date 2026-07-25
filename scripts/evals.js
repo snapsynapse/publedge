@@ -7,6 +7,7 @@ const path = require('path');
 const scripts = [
     'eval-parser.js',
     'eval-instrument-schema.js',
+    'eval-obligation-schema.js',
     'eval-record-schema.js',
     'eval-schema-parity.js',
     'eval-authority-response.js',

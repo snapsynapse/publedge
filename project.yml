@@ -36,6 +36,17 @@ entities:
       - name: permission
         color: "#1f7a43"
         color_light: "#1f7a43"
+    # Obligation legal lifecycle is separate from editorial status
+    # (draft/reviewed/published). This is a PubLedge-local vocabulary until
+    # Obligation First standardizes provision lifecycle.
+    lifecycle_statuses:
+      - prospective
+      - operative
+      - never-operative
+      - expired
+      - superseded
+      - withdrawn
+      - terminated
     body_sections:
       - Summary
       - What Counts
@@ -204,8 +215,6 @@ verification:
   # when it imposed no operative duty: superseded before its effective date,
   # amendment-only, or sunset-date-only. Operative statutes get mappings.
   allowed_unmapped_instruments:
-    # Superseded by SB 26-189 before its delayed effective date; never operative.
-    - us-co-legislature-statute-2024-sb24-205
     # Amendment-only: moved SB 24-205's effective date, no substantive change.
     - us-co-legislature-statute-2025-sb25b-004
     # Sunset-date-only: extended Utah Code Title 13 Chapter 72 repeal date.

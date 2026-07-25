@@ -4,6 +4,7 @@ id: disclose-genai-high-risk-proactive
 name: Proactive GenAI Disclosure In High-Risk Interactions
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - disclosure

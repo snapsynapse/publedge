@@ -4,6 +4,7 @@ id: chatbot-safety-policy-filing
 name: Mental Health Chatbot — File 15-Element Safety Policy
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - chatbot

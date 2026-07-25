@@ -4,6 +4,7 @@ id: cfpb-pay-to-pay-fee-prohibited
 name: Pay-To-Pay Fee Prohibited Without Express Authorization
 group: restriction
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - fdcpa

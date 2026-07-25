@@ -4,6 +4,7 @@ id: admt-post-adverse-explanation-30-days
 name: ADMT Post-Adverse Explanation Within 30 Days
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-07-24
 search_terms:
   - admt

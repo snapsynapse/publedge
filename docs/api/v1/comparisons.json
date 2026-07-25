@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-07-25T20:43:24.253Z"
+    "generated": "2026-07-25T21:19:42.391Z"
   },
   "comparisons": [
     {
@@ -28,10 +28,14 @@
       "only_a": [
         "cfpb-pay-to-pay-fee-prohibited"
       ],
-      "only_b": [],
+      "only_b": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "shared_count": 0,
       "only_a_count": 1,
-      "only_b_count": 0
+      "only_b_count": 3
     },
     {
       "regulations": [
@@ -316,10 +320,14 @@
       "only_a": [
         "cftc-unbundled-fee-not-cta-trigger"
       ],
-      "only_b": [],
+      "only_b": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "shared_count": 0,
       "only_a_count": 1,
-      "only_b_count": 0
+      "only_b_count": 3
     },
     {
       "regulations": [
@@ -598,10 +606,30 @@
     {
       "regulations": [
         "us-co-legislature-statute-2024-sb24-205",
+        "us-co-legislature-statute-2025-sb25b-004"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 3,
+      "only_b_count": 0
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
         "us-co-legislature-statute-2026-sb26-189"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "admt-developer-documentation-to-deployer",
         "admt-deployer-pre-decision-notice",
@@ -611,7 +639,7 @@
         "admt-60-day-cure-period"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 6
     },
     {
@@ -620,12 +648,16 @@
         "us-irs-chief-counsel-plr-2025-001"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "irs-incentive-fee-not-net-profits-share"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 1
     },
     {
@@ -634,12 +666,16 @@
         "us-irs-tege-plr-2026-001"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "irs-501c3-dual-test-failure"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 1
     },
     {
@@ -648,12 +684,16 @@
         "us-sec-corpfin-nal-2025-001"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "sec-reg-d-506c-verification-safe-harbor"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 1
     },
     {
@@ -662,13 +702,17 @@
         "us-ut-legislature-statute-2024-sb149"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "learning-lab-agreement-participation",
         "ai-defense-elimination"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 2
     },
     {
@@ -677,14 +721,18 @@
         "us-ut-legislature-statute-2025-hb452"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "disclose-genai-on-first-session",
         "chatbot-data-no-third-party-sharing",
         "chatbot-safety-policy-filing"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 3
     },
     {
@@ -693,15 +741,35 @@
         "us-ut-legislature-statute-2025-sb226"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "disclose-genai-on-request",
         "disclose-genai-high-risk-proactive",
         "ai-defense-elimination"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 3
+    },
+    {
+      "regulations": [
+        "us-co-legislature-statute-2024-sb24-205",
+        "us-ut-legislature-statute-2025-sb332"
+      ],
+      "shared_obligations": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
+      "only_b": [],
+      "shared_count": 0,
+      "only_a_count": 3,
+      "only_b_count": 0
     },
     {
       "regulations": [
@@ -709,12 +777,16 @@
         "us-ut-legislature-statute-2026-hb320"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "learning-lab-agreement-participation"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 1
     },
     {
@@ -723,12 +795,16 @@
         "us-ut-oaip-jia-2026-001"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "disclose-genai-on-first-session"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 1
     },
     {
@@ -737,7 +813,11 @@
         "us-ut-oaip-rma-2024-001"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "rma-monthly-report-to-oaip",
         "rma-end-of-term-report",
@@ -749,7 +829,7 @@
         "elizachat-phased-rollout"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 8
     },
     {
@@ -758,7 +838,11 @@
         "us-ut-oaip-rma-2025-001"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "rma-monthly-report-to-oaip",
         "rma-end-of-term-report",
@@ -770,7 +854,7 @@
         "dentacor-informed-consent-no-dentist"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 8
     },
     {
@@ -779,7 +863,11 @@
         "us-ut-oaip-rma-2025-002"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "rma-monthly-report-to-oaip",
         "rma-end-of-term-report",
@@ -791,7 +879,7 @@
         "telehealth-compliance-per-proposal"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 8
     },
     {
@@ -800,7 +888,11 @@
         "us-ut-oaip-rma-2026-001"
       ],
       "shared_obligations": [],
-      "only_a": [],
+      "only_a": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
       "only_b": [
         "rma-monthly-report-to-oaip",
         "rma-end-of-term-report",
@@ -812,7 +904,7 @@
         "telehealth-compliance-per-proposal"
       ],
       "shared_count": 0,
-      "only_a_count": 0,
+      "only_a_count": 3,
       "only_b_count": 8
     },
     {

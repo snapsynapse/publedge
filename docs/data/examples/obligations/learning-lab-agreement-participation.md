@@ -4,6 +4,7 @@ id: learning-lab-agreement-participation
 name: Learning Lab Agreement — Eligibility and Participation
 group: permission
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - learning lab

@@ -4,6 +4,7 @@ id: rma-hold-harmless-state
 name: RMA — Hold Harmless The State
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - rma

@@ -90,6 +90,18 @@ function validate() {
     ]);
     const BLANK = v => v === undefined || v === null || /^(null|n\/a|tbd|)$/i.test(String(v).trim());
     const ISO_DATE = v => /^\d{4}-\d{2}-\d{2}$/.test(String(v || '').trim());
+    const OBLIGATION_EDITORIAL_STATUSES = new Set(['draft', 'reviewed', 'published']);
+    const OBLIGATION_LIFECYCLE_STATUSES = new Set(
+        config.entities?.primary?.lifecycle_statuses || [
+            'prospective',
+            'operative',
+            'never-operative',
+            'expired',
+            'superseded',
+            'withdrawn',
+            'terminated'
+        ]
+    );
     const HTTPS_URL = v => {
         if (BLANK(v)) return false;
         try {
@@ -99,6 +111,22 @@ function validate() {
             return false;
         }
     };
+
+    // Obligation editorial maturity and legal operability are independent.
+    // Obligation First intentionally has not standardized provision lifecycle,
+    // so lifecycle_status remains a closed PubLedge-local vocabulary.
+    for (const pId of primaryIds) {
+        const content = fs.readFileSync(path.join(primaryDir, `${pId}.md`), 'utf-8');
+        const { frontmatter: fm } = parseFrontmatter(content);
+        if (!OBLIGATION_EDITORIAL_STATUSES.has(String(fm.status || '').trim())) {
+            console.error(`  ERROR: Obligation "${pId}" has unknown editorial status "${fm.status}".`);
+            errors++;
+        }
+        if (!OBLIGATION_LIFECYCLE_STATUSES.has(String(fm.lifecycle_status || '').trim())) {
+            console.error(`  ERROR: Obligation "${pId}" has unknown or missing lifecycle_status "${fm.lifecycle_status}".`);
+            errors++;
+        }
+    }
 
     for (const cId of containerIds) {
         const content = fs.readFileSync(path.join(containerDir, `${cId}.md`), 'utf-8');

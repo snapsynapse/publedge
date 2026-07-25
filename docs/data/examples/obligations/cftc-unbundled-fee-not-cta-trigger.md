@@ -4,6 +4,7 @@ id: cftc-unbundled-fee-not-cta-trigger
 name: Unbundled Advice Fee Does Not Trigger CTA Registration
 group: permission
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - cta registration

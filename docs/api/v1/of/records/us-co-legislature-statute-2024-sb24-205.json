@@ -11,7 +11,9 @@
   "effective": "2026-06-30",
   "status": "superseded",
   "enforcement_status": "routine",
-  "hasTerm": [],
+  "hasTerm": [
+    "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+  ],
   "source": "https://leg.colorado.gov/bills/sb24-205",
   "jurisdiction": {
     "@type": "gist:Jurisdiction",

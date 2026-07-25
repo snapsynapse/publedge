@@ -4,6 +4,7 @@ id: admt-deployer-pre-decision-notice
 name: ADMT Deployer Notice Before Consequential Decision
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-07-24
 search_terms:
   - admt

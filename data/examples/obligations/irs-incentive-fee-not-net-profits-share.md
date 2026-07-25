@@ -4,6 +4,7 @@ id: irs-incentive-fee-not-net-profits-share
 name: Incentive-Fee Management Contract Not A Share Of Net Profits
 group: permission
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - private business use

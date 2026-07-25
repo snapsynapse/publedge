@@ -4,6 +4,7 @@ id: rma-end-of-term-report
 name: RMA — 30-Day End-Of-Term Report
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - rma

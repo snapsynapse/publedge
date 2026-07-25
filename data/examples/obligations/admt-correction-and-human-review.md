@@ -4,6 +4,7 @@ id: admt-correction-and-human-review
 name: ADMT Data Correction And Human Review Of Adverse Outcomes
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-07-24
 search_terms:
   - admt

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-07-25T20:43:24.252Z",
-    "count": 15
+    "generated": "2026-07-25T21:19:42.391Z",
+    "count": 16
   },
   "items": [
     {
@@ -176,6 +176,18 @@
       "authority": "sec-corpfin",
       "source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md",
       "source_heading": "Staff position"
+    },
+    {
+      "id": "sb24-205-never-operative-obligations",
+      "obligations": [
+        "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+        "high-risk-ai-impact-assessment",
+        "high-risk-ai-consumer-notice-correction-and-appeal"
+      ],
+      "regulation": "us-co-legislature-statute-2024-sb24-205",
+      "authority": "colorado-legislature",
+      "source_file": "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md",
+      "source_heading": "Summary"
     },
     {
       "id": "sb26-189-admt-act-obligations",

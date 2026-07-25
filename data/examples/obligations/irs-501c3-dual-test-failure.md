@@ -4,6 +4,7 @@ id: irs-501c3-dual-test-failure
 name: §501(c)(3) Exemption Denied — Organizational And Operational Test Failure
 group: restriction
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - 501c3

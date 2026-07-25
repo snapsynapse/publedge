@@ -4,6 +4,7 @@ id: disclose-genai-on-request
 name: Disclose GenAI On Consumer Request
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - disclosure

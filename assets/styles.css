@@ -449,7 +449,7 @@ footer a, .site-footer a { color: var(--link); }
 .stat-label { display: block; color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.3rem; }
 
 /* Badges */
-.group-badge, .status-badge {
+.group-badge, .status-badge, .lifecycle-badge {
   display: inline-block;
   padding: 0.1rem 0.55rem;
   font-size: 0.78rem;
@@ -463,6 +463,21 @@ footer a, .site-footer a { color: var(--link); }
 .group-badge.restriction { background: var(--crimson); }
 .group-badge.permission { background: #1f7a43; }
 .status-badge { border: 1px solid var(--border-strong); background: var(--panel); color: var(--text); }
+.lifecycle-badge { border: 1px solid var(--border-strong); background: var(--panel); color: var(--text); }
+.lifecycle-badge.operative { background: #e6f3ec; color: #0d4e2a; border-color: #1f7a43; }
+.lifecycle-badge.prospective { background: #e3f4fb; color: #0b4f6c; border-color: #2196c8; }
+.lifecycle-badge.never-operative,
+.lifecycle-badge.expired,
+.lifecycle-badge.superseded { background: var(--bg-alt); color: var(--muted); border-color: var(--border-strong); }
+.lifecycle-badge.withdrawn,
+.lifecycle-badge.terminated { background: #f8e5e5; color: #702626; border-color: #a64a4a; }
+.lifecycle-notice {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid #7a8599;
+  background: var(--bg-alt);
+  color: var(--text);
+}
 /* Override the per-page inline CSS that KaC emits from project.yml.
    Inline uses solid-color bg + white text that fails WCAG AA at gold.
    !important needed because inline specificity matches ours and

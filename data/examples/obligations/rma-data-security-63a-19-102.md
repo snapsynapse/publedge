@@ -4,6 +4,7 @@ id: rma-data-security-63a-19-102
 name: RMA — Data Security Under §63A-19-102
 group: requirement
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - rma

@@ -439,6 +439,10 @@ function renderStatusBadge(status) {
     return `<span class="status-badge ${escapeHTML(status || '')}">${escapeHTML((status || 'unknown').replace(/-/g, ' '))}</span>`;
 }
 
+function renderLifecycleBadge(status) {
+    return `<span class="lifecycle-badge ${escapeHTML(status || '')}">${escapeHTML((status || 'unknown').replace(/-/g, ' '))}</span>`;
+}
+
 function renderGroupBadge(group) {
     return `<span class="group-badge ${escapeHTML(group || '')}">${escapeHTML(group || '')}</span>`;
 }
@@ -1038,7 +1042,7 @@ function generatePrimariesPage(config, data, configCSS) {
                     const summary = p._body ? (p._body.match(/## Summary\n\n([^\n#]+)/) || [])[1]?.trim() || '' : '';
                     return `<div class="obligation-card">
                         <div class="card-title"><a href="/primary/${p.id}/" onclick="passTheme(this)">${escapeHTML(p.name || humanizeId(p.id))}</a></div>
-                        <div class="card-meta"><span class="meta-item">${regCount} ${cNameLower}${regCount !== 1 ? 's' : ''}</span></div>
+                        <div class="card-meta"><span class="meta-item">${regCount} ${cNameLower}${regCount !== 1 ? 's' : ''}</span>${renderLifecycleBadge(p.lifecycle_status)}</div>
                         ${summary ? `<div class="card-description">${escapeHTML(summary)}</div>` : ''}
                     </div>`;
                 }).join('\n')}
@@ -1065,7 +1069,12 @@ function generatePrimariesPage(config, data, configCSS) {
                 'name': p.name || humanizeId(p.id),
                 'inDefinedTermSet': `${siteUrl}obligations.html`,
                 'url': `${siteUrl}primary/${p.id}/`,
-                'termCode': p.group
+                'termCode': p.group,
+                'additionalProperty': {
+                    '@type': 'PropertyValue',
+                    'name': 'lifecycle_status',
+                    'value': p.lifecycle_status
+                }
             }
         }))
     };
@@ -1302,8 +1311,9 @@ function generatePrimaryDetail(config, primary, data, configCSS) {
         ${renderBreadcrumb([{ label: pPlural, href: '/obligations.html' }, { label: primary.name || humanizeId(primary.id) }])}
         <div class="detail-header">
             <h2>${escapeHTML(primary.name || humanizeId(primary.id))}</h2>
-            <div class="detail-meta">${renderGroupBadge(primary.group)} <span class="meta-item">${coveredContainers.length} ${cName}${coveredContainers.length !== 1 ? 's' : ''}</span></div>
-        </div>
+            <div class="detail-meta">${renderGroupBadge(primary.group)} ${renderLifecycleBadge(primary.lifecycle_status)} <span class="meta-item">${coveredContainers.length} ${cName}${coveredContainers.length !== 1 ? 's' : ''}</span></div>
+        </div>${primary.lifecycle_status === 'never-operative' ? `
+        <aside class="lifecycle-notice"><strong>Never operative.</strong> This obligation was enacted but superseded before its effective date. It is retained for historical and relationship fidelity, not as a current duty.</aside>` : ''}
         ${summary ? `<p style="font-size:1rem;line-height:1.6;margin:1rem 0;">${escapeHTML(summary)}</p>` : ''}
         ${whatCounts ? `<h3>What Counts</h3><ul>${parseBulletList(whatCounts).map(i => `<li>${escapeHTML(i)}</li>`).join('')}</ul>` : ''}
         ${whatDoesNot ? `<h3>What Does Not Count</h3><ul>${parseBulletList(whatDoesNot).map(i => `<li>${escapeHTML(i)}</li>`).join('')}</ul>` : ''}
@@ -2124,7 +2134,7 @@ function build() {
     const configCSS = generateConfigCSS(config);
 
     // --- JSON API ---
-    fs.writeFileSync(path.join(API_DIR, 'primaries.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: primaries.length }, items: primaries.map(p => ({ id: p.id, name: p.name || humanizeId(p.id), group: p.group || '', status: p.status || 'active' })) }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'primaries.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: primaries.length }, items: primaries.map(p => ({ id: p.id, name: p.name || humanizeId(p.id), group: p.group || '', status: p.status || 'draft', lifecycle_status: p.lifecycle_status })) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: containers.length }, items: containers.map(c => ({ id: c.id, name: c.title || c.name || c.id, status: c.status, effective: c.effective, provision_count: c.provisions.length })) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'authorities.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: authorities.length }, items: authorities.map(a => ({ id: a.id, name: a.name || humanizeId(a.id), jurisdiction: a.jurisdiction || '' })) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'mappings.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: mappingIndex.length }, items: mappingIndex }, null, 2));
@@ -2447,7 +2457,7 @@ function build() {
         '',
         ...primaries.map(p => {
             const regCount = Object.keys(matrix[p.id] || {}).length;
-            return `- [${p.name || humanizeId(p.id)}](${siteUrl}primary/${p.id}/): ${regCount} ${cPlural.toLowerCase()} support this`;
+            return `- [${p.name || humanizeId(p.id)}](${siteUrl}primary/${p.id}/): ${p.lifecycle_status || 'unknown'}; ${regCount} ${cPlural.toLowerCase()} support this`;
         }),
         '',
         '## Tools',

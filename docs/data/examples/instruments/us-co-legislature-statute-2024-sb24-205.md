@@ -25,9 +25,9 @@ statute_anchors:
     url: "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
   - cite: "C.R.S. §6-1-1702 (developer duty of reasonable care)"
     url: "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
-  - cite: "C.R.S. §6-1-1703 (deployer duty of reasonable care; impact assessments; consumer notice)"
+  - cite: "C.R.S. §6-1-1703 (deployer duty of reasonable care; impact assessments; consumer notice, correction, and appeal)"
     url: "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
-  - cite: "C.R.S. §6-1-1704 (consumer rights to explanation, correction, human review)"
+  - cite: "C.R.S. §6-1-1704 (disclosure when consumers interact with an AI system)"
     url: "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
   - cite: "C.R.S. §6-1-1706 (Attorney General enforcement; rulemaking authority)"
     url: "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf"
@@ -46,10 +46,10 @@ amended_by:
   - us-co-legislature-statute-2025-sb25b-004
 hash_chain_prev: null
 disclaimer: ""
-last_verified: 2026-05-21
+last_verified: 2026-07-25
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-05-21
-modified: 2026-05-21
+modified: 2026-07-25
 ---
 
 ## Timeline
@@ -78,7 +78,7 @@ SB 24-205 was the United States' first comprehensive state statute imposing duti
 
 - Imposed a duty of reasonable care on developers to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination (§6-1-1702).
 - Imposed parallel duties on deployers, including impact assessments, consumer notice at or before use of high-risk AI, and risk management programs (§6-1-1703).
-- Granted consumers rights to plain-language explanation of adverse consequential decisions, opportunity to correct incorrect personal data, and human review where technically feasible (§6-1-1704).
+- Granted consumers rights to plain-language explanation of adverse consequential decisions, opportunity to correct incorrect personal data, and human review where technically feasible (§6-1-1703(4)).
 - Reserved enforcement to the Colorado Attorney General; no private right of action (§6-1-1706).
 
 The act was signed with explicit reservations from Governor Polis, who urged the General Assembly to refine the statute before its effective date. It never took effect as enacted. A 2025 regular-session amendment bill (SB 25-318) was withdrawn by its sponsor; an August 2025 special session produced only SB 25B-004, which delayed the effective date from February 1, 2026 to June 30, 2026 without substantive change. Federal litigation followed — xAI v. Weiser (D. Colo. No. 1:26-cv-01515), filed April 2026, with the US Department of Justice intervening, and enforcement deadlines stayed by joint motion. The General Assembly then replaced the statute entirely with SB 26-189, signed May 14, 2026, before the delayed effective date arrived.

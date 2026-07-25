@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://publedge.org/schema/obligation-record.schema.json",
+  "title": "PubLedge obligation source record",
+  "description": "Frontmatter contract for PubLedge obligation records. Editorial maturity and legal lifecycle are intentionally separate.",
+  "type": "object",
+  "required": ["@type", "id", "name", "group", "status", "lifecycle_status", "last_verified"],
+  "properties": {
+    "@type": {
+      "type": "string",
+      "format": "uri"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "group": {
+      "type": "string",
+      "enum": ["requirement", "restriction", "permission"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "published"],
+      "description": "PubLedge editorial maturity. This field does not state whether the legal duty is operative."
+    },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": ["prospective", "operative", "never-operative", "expired", "superseded", "withdrawn", "terminated"],
+      "description": "Legal operability of the obligation represented by this record. Repo-local pending an Obligation-First provision-lifecycle standard."
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date"
+    },
+    "search_terms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -5,5 +5,13 @@
   "feed_url": "https://publedge.org/feed.json",
   "description": "Most recently changed records in the PubLedge registry.",
   "language": "en",
-  "items": []
+  "items": [
+    {
+      "id": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
+      "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
+      "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+      "content_text": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+      "date_modified": "2026-07-25T21:19:42.615Z"
+    }
+  ]
 }

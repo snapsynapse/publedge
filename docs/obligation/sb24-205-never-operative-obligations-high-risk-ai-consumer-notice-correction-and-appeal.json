@@ -1,0 +1,28 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json",
+  "id": "sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal",
+  "title": "High-Risk AI Consumer Notice, Correction, And Appeal",
+  "content": "Deployers would have been required to notify consumers before using a high-risk artificial intelligence system in a consequential decision and, after an adverse decision, provide the principal reasons, an opportunity to correct incorrect personal data, and an appeal with human review where technically feasible. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
+  "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "high-risk-ai-consumer-notice-correction-and-appeal",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "publedge_lifecycle_status": "never-operative",
+  "search_terms": [
+    "high-risk artificial intelligence",
+    "consumer notice",
+    "adverse consequential decision",
+    "data correction",
+    "appeal",
+    "human review",
+    "colorado",
+    "sb24-205"
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-25T20:43:24.254Z",
+  "generated": "2026-07-25T21:19:42.393Z",
   "terms": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -301,6 +301,27 @@
       "jurisdiction": {
         "@type": "gist:Jurisdiction",
         "ref": "us"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Term",
+      "@id": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+      "id": "sb24-205-never-operative-obligations",
+      "text": "Summary",
+      "section": "",
+      "parent_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
+      "creates": [
+        "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json",
+        "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json",
+        "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json"
+      ],
+      "anchors": [],
+      "source_heading": "Summary",
+      "source_file": "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
       }
     },
     {

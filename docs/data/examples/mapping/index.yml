@@ -155,6 +155,16 @@
 
 # --- Colorado statutes ---
 
+- id: sb24-205-never-operative-obligations
+  regulation: us-co-legislature-statute-2024-sb24-205
+  authority: colorado-legislature
+  source_file: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
+  source_heading: Summary
+  obligations:
+    - high-risk-ai-reasonable-care-against-algorithmic-discrimination
+    - high-risk-ai-impact-assessment
+    - high-risk-ai-consumer-notice-correction-and-appeal
+
 - id: sb26-189-admt-act-obligations
   regulation: us-co-legislature-statute-2026-sb26-189
   authority: colorado-legislature

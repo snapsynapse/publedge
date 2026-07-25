@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-07-25T20:43:24.252Z"
+    "generated": "2026-07-25T21:19:42.391Z"
   },
   "matrix": {
     "admt-60-day-cure-period": {
@@ -178,6 +178,30 @@
         "covered": true,
         "provisions": [
           "elizachat-rma-obligations"
+        ]
+      }
+    },
+    "high-risk-ai-consumer-notice-correction-and-appeal": {
+      "us-co-legislature-statute-2024-sb24-205": {
+        "covered": true,
+        "provisions": [
+          "sb24-205-never-operative-obligations"
+        ]
+      }
+    },
+    "high-risk-ai-impact-assessment": {
+      "us-co-legislature-statute-2024-sb24-205": {
+        "covered": true,
+        "provisions": [
+          "sb24-205-never-operative-obligations"
+        ]
+      }
+    },
+    "high-risk-ai-reasonable-care-against-algorithmic-discrimination": {
+      "us-co-legislature-statute-2024-sb24-205": {
+        "covered": true,
+        "provisions": [
+          "sb24-205-never-operative-obligations"
         ]
       }
     },

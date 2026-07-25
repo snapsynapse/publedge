@@ -4,6 +4,7 @@ id: elizachat-pre-access-disclosure-bundle
 name: ElizaChat — Pre-Access Disclosure Bundle
 group: requirement
 status: draft
+lifecycle_status: expired
 last_verified: 2026-04-21
 search_terms:
   - elizachat

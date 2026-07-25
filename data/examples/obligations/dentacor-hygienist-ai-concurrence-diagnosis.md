@@ -4,6 +4,7 @@ id: dentacor-hygienist-ai-concurrence-diagnosis
 name: Dentacor — Hygienist + AI Concurrence Diagnosis
 group: permission
 status: draft
+lifecycle_status: operative
 last_verified: 2026-04-21
 search_terms:
   - dentacor

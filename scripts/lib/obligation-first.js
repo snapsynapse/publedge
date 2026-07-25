@@ -219,6 +219,10 @@ function buildObligationRecords(config, data) {
                 publedge_primary_id: obligationId,
                 publedge_group: primary.group || undefined,
                 publedge_status: primary.status || undefined,
+                // Obligation First has not standardized provision lifecycle.
+                // Keep the adopter-local field explicitly namespaced instead
+                // of presenting it as an `of:` vocabulary term.
+                publedge_lifecycle_status: primary.lifecycle_status || undefined,
                 search_terms: primary.search_terms || []
             };
             if (jur) record.jurisdiction = typedJurisdiction(jur);

@@ -98,6 +98,19 @@ for (const term of recordsByKind.terms || []) {
     }
 }
 
+for (const obligation of recordsByKind.obligations || []) {
+    if (!obligation.publedge_lifecycle_status) {
+        failures.push(`${obligation.id} missing publedge_lifecycle_status`);
+    }
+}
+
+const neverOperative = (recordsByKind.obligations || []).filter(
+    obligation => obligation.publedge_lifecycle_status === 'never-operative'
+);
+if (neverOperative.length !== 3) {
+    failures.push(`expected 3 never-operative concrete obligations, found ${neverOperative.length}`);
+}
+
 const jiaTerm = recordsById.get('https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json');
 if (!jiaTerm) {
     failures.push('missing Utah mental-health chatbot JIA term');
