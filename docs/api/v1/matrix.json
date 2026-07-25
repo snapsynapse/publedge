@@ -1,8 +1,56 @@
 {
   "meta": {
-    "generated": "2026-07-22T01:16:18.661Z"
+    "generated": "2026-07-25T03:22:59.387Z"
   },
   "matrix": {
+    "admt-60-day-cure-period": {
+      "us-co-legislature-statute-2026-sb26-189": {
+        "covered": true,
+        "provisions": [
+          "sb26-189-admt-act-obligations"
+        ]
+      }
+    },
+    "admt-correction-and-human-review": {
+      "us-co-legislature-statute-2026-sb26-189": {
+        "covered": true,
+        "provisions": [
+          "sb26-189-admt-act-obligations"
+        ]
+      }
+    },
+    "admt-deployer-3-year-record-retention": {
+      "us-co-legislature-statute-2026-sb26-189": {
+        "covered": true,
+        "provisions": [
+          "sb26-189-admt-act-obligations"
+        ]
+      }
+    },
+    "admt-deployer-pre-decision-notice": {
+      "us-co-legislature-statute-2026-sb26-189": {
+        "covered": true,
+        "provisions": [
+          "sb26-189-admt-act-obligations"
+        ]
+      }
+    },
+    "admt-developer-documentation-to-deployer": {
+      "us-co-legislature-statute-2026-sb26-189": {
+        "covered": true,
+        "provisions": [
+          "sb26-189-admt-act-obligations"
+        ]
+      }
+    },
+    "admt-post-adverse-explanation-30-days": {
+      "us-co-legislature-statute-2026-sb26-189": {
+        "covered": true,
+        "provisions": [
+          "sb26-189-admt-act-obligations"
+        ]
+      }
+    },
     "ai-authorized-rx-renewal": {
       "us-ut-oaip-rma-2025-002": {
         "covered": true,

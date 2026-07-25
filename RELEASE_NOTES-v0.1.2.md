@@ -1,6 +1,6 @@
-# PubLedge v0.1.2-pre
+# PubLedge v0.1.2
 
-PubLedge `v0.1.2-pre` advances the protocol's maintenance and adoption posture while publishing MCP/npm package `0.1.2`.
+PubLedge `v0.1.2` advances the protocol's maintenance and adoption posture while publishing MCP/npm package `0.1.2`.
 
 ## Highlights
 

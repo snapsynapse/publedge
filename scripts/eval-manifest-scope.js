@@ -38,7 +38,7 @@ function canonicalSourcePaths() {
         'project.yml',
         'PROTOCOL.md',
         'README.md',
-        'RELEASE_NOTES-v0.1.2-pre.md',
+        'RELEASE_NOTES-v0.1.2.md',
         'ROADMAP.md',
         'SECURITY.md',
         'VERIFICATION.md'

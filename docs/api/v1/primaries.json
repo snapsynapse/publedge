@@ -1,9 +1,45 @@
 {
   "meta": {
-    "generated": "2026-07-22T01:16:18.659Z",
-    "count": 26
+    "generated": "2026-07-25T03:22:59.385Z",
+    "count": 32
   },
   "items": [
+    {
+      "id": "admt-60-day-cure-period",
+      "name": "ADMT Sixty-Day Cure Period Before Enforcement",
+      "group": "permission",
+      "status": "draft"
+    },
+    {
+      "id": "admt-correction-and-human-review",
+      "name": "ADMT Data Correction And Human Review Of Adverse Outcomes",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "admt-deployer-3-year-record-retention",
+      "name": "ADMT Deployer Three-Year Record Retention",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "admt-deployer-pre-decision-notice",
+      "name": "ADMT Deployer Notice Before Consequential Decision",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "admt-developer-documentation-to-deployer",
+      "name": "ADMT Developer Documentation To Deployer",
+      "group": "requirement",
+      "status": "draft"
+    },
+    {
+      "id": "admt-post-adverse-explanation-30-days",
+      "name": "ADMT Post-Adverse Explanation Within 30 Days",
+      "group": "requirement",
+      "status": "draft"
+    },
     {
       "id": "ai-authorized-rx-renewal",
       "name": "AI-Authorized Prescription Renewal (Utah Pilot)",

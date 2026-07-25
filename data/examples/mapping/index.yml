@@ -152,3 +152,18 @@
   source_heading: Staff position
   obligations:
     - sec-reg-d-506c-verification-safe-harbor
+
+# --- Colorado statutes ---
+
+- id: sb26-189-admt-act-obligations
+  regulation: us-co-legislature-statute-2026-sb26-189
+  authority: colorado-legislature
+  source_file: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
+  source_heading: Summary
+  obligations:
+    - admt-developer-documentation-to-deployer
+    - admt-deployer-pre-decision-notice
+    - admt-post-adverse-explanation-30-days
+    - admt-correction-and-human-review
+    - admt-deployer-3-year-record-retention
+    - admt-60-day-cure-period

@@ -8,9 +8,23 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 ## [Unreleased]
 
+### Added
+
+- Six Colorado ADMT obligation records extracted from SB 26-189 (C.R.S. §§6-1-1702 through 6-1-1706) and mapped to the statute: developer documentation to deployer, pre-decision consumer notice, 30-day post-adverse explanation, data correction and human review, three-year record retention, and the 60-day cure period. Registry obligations 26 → 32; mappings 14 → 15.
+
+### Changed
+
+- Dropped the pre-release suffix from the protocol version: the spec is now `v0.1.2`, aligned with the stable MCP/npm package version. `RELEASE_NOTES-v0.1.2-pre.md` renamed to `RELEASE_NOTES-v0.1.2.md`.
+- Removed SB 26-189 from `verification.allowed_unmapped_instruments`; it is the operative Colorado statute, not a relationship-only chain member. The allowlist now states its admission rule and a per-entry reason, and `eval-verification-allowlist` asserts that operative instruments stay out of it.
+- Recorded the 2026-05 Colorado ingestion, the 2026-06/07 authority-response and release work, and this session in `ROADMAP.md`; corrected the registry totals attributed to the 2026-04-21 session.
+
+### Fixed
+
+- `eval-generated-tree-parity` no longer fails purely with the passage of time. Build-date fields (`last_updated`, `today`, `days_until`, and the homepage `upcoming-days` countdown) are now normalised the way `eval-clean-build` and `eval-deterministic-build` already normalised their timestamps.
+
 ## [0.1.2] - 2026-07-21
 
-Maintenance, adoption, and delivery hardening release. The protocol release tag is `v0.1.2-pre`; the stable MCP/npm package version is `0.1.2`.
+Maintenance, adoption, and delivery hardening release. The protocol release tag is `v0.1.2`; the stable MCP/npm package version is `0.1.2`.
 
 ### Changed
 
@@ -130,8 +144,8 @@ Security hardening and release-readiness patch.
 - CI: pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap on every push and pull request; docs/ sync check; hash validation
 - `.gitignore` aligned to portfolio hygiene baseline (`.env.*` glob, `__pycache__/`, `*.pyc`, `dist/`, `build/`, `.venv/`, `venv/`)
 
-[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.2-pre...HEAD
-[0.1.2]: https://github.com/snapsynapse/publedge/compare/v0.1.1-pre...v0.1.2-pre
+[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/snapsynapse/publedge/compare/v0.1.1-pre...v0.1.2
 [0.1.1]: https://npmjs.com/package/publedge/v/0.1.1
 [0.1.1-pre]: https://github.com/snapsynapse/publedge/compare/v0.1.0-pre...v0.1.1-pre
 [0.1.0-pre]: https://github.com/snapsynapse/publedge/releases/tag/v0.1.0-pre

@@ -1,0 +1,25 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Requirement",
+  "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
+  "id": "sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer",
+  "title": "ADMT Developer Documentation To Deployer",
+  "content": "A developer of covered automated decision-making technology must disclose to deployers the technology's intended uses, the categories of data used to train it, its known limitations, and instructions for meaningful human review. The duty runs developer-to-deployer, not developer-to-consumer.",
+  "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "admt-developer-documentation-to-deployer",
+  "publedge_group": "requirement",
+  "publedge_status": "draft",
+  "search_terms": [
+    "admt",
+    "developer documentation",
+    "training data",
+    "known limitations",
+    "colorado",
+    "sb26-189"
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  }
+}

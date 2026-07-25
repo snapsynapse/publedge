@@ -6,15 +6,22 @@ const { classifyUnmappedContainers, getAllowedUnmappedInstrumentIds } = require(
 
 const failures = [];
 const project = loadProjectData();
+// Relationship-only records: superseded before taking effect, amendment-only,
+// or sunset-date-only. Operative statutes carry obligation mappings instead and
+// must not be listed here — SB 26-189 was removed when its ADMT obligations landed.
 const expectedAllowed = [
     'us-co-legislature-statute-2024-sb24-205',
     'us-co-legislature-statute-2025-sb25b-004',
-    'us-co-legislature-statute-2026-sb26-189'
+    'us-ut-legislature-statute-2025-sb332'
 ];
+const expectedNotAllowed = ['us-co-legislature-statute-2026-sb26-189'];
 
 const allowedIds = getAllowedUnmappedInstrumentIds(project.config);
 for (const id of expectedAllowed) {
     if (!allowedIds.has(id)) failures.push(`verification allowlist missing ${id}`);
+}
+for (const id of expectedNotAllowed) {
+    if (allowedIds.has(id)) failures.push(`operative instrument must not be allowlisted as unmapped: ${id}`);
 }
 
 const classified = classifyUnmappedContainers(project.containers, project.mappings, allowedIds);

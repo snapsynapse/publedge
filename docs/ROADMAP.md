@@ -11,7 +11,7 @@ Living housekeeping document. Tracks what shipped, what's pending, and what's de
 
 ## Current version
 
-Protocol specification `v0.1.2-pre`; stable MCP server `v0.1.2`, released 2026-07-21.
+Protocol specification `v0.1.2`; stable MCP server `v0.1.2`, released 2026-07-21.
 
 ## Current disposition
 
@@ -79,7 +79,7 @@ Shipped 2026-04-21 (canonical URL architecture + status vocabulary + EAL UI pari
 - Legacy `/container/{old-id}/` paths emit meta-refresh redirect stubs.
 - Jurisdiction index pages at every hierarchy level (`/us/`, `/us/utah/`, `/us/utah/oaip/`, etc.).
 - Utah landing at `/us/utah/` with narrative + 4-chapter statute map.
-- 5 Utah statutes ingested as first-class instrument records (`us-ut-legislature-statute-*`); `utah-legislature` authority added. Registry now 18 instruments, 8 authorities, 2 jurisdictions.
+- 5 Utah statutes ingested as first-class instrument records (`us-ut-legislature-statute-*`); `utah-legislature` authority added. Registry at the close of this session: 14 instruments, 7 authorities, 2 jurisdictions.
 - Status vocabulary expanded to 9 values; `DEFINITIONS.md` added; `/definitions/` page renders it.
 - PubLedge Disclaimer & Source Policy at `/reference/disclaimer/`; footer "Not legal advice" links there.
 - Source PDFs + OCR'd text linked from Utah RMA records; `scripts/ocr-pdf.sh` added.
@@ -131,6 +131,25 @@ Shipped 2026-04-22 (frontmatter spec v0.2 enforcement):
 - `schema/instrument.schema.json` — single JSON Schema 2020-12 file, polymorphic on `type` across all eight values currently in the registry (jia, rma, no-action-letter, advisory-opinion, private-letter-ruling, revenue-ruling, interpretive-letter, statute). `allOf` with `if`/`then` branches enforce type-specific requirements without the pain of per-type files. `schema/jia.schema.json` + `schema/rma.schema.json` retained so existing frontmatter `schema:` URLs continue to resolve.
 - `scripts/validate.js` — four v0.2 cross-field checks: (1) `source: publedge-original-draft` × published-like status → error; (2) `type: rma` requires `issuing_authority` / `enforcement_authority` / `parties` AND a `term_start` (or `commencement_date_trigger` for deferred-commencement RMAs); (3) `type: private-letter-ruling` / `revenue-ruling` requires `redaction_level`; (4) withdrawal triplet (`withdrawn_date` / `withdrawal_reason` / `withdrawn_by_instrument`) is all-or-nothing. Registry passes clean on current 14 instruments.
 - MANIFEST refreshed: all 25 hashes recomputed, stale `utah-mental-health-chatbot-disclosure-2026q2.md` path renamed to `us-ut-oaip-jia-2026-001.md` (ID-migration cleanup), new `schema/instrument.schema.json` added to provenance tracking.
+
+Shipped 2026-05-21 (Colorado jurisdiction + AI Act supersession chain):
+
+- Colorado added as the registry's third jurisdiction (`us-co`), with `colorado-legislature` as the eighth authority record (instruments 14 → 17). Three statute instruments ingested as a complete supersession chain: [SB 24-205](data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md) (first US comprehensive state AI act, superseded before its effective date), [SB 25B-004](data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md) (special-session effective-date delay), and [SB 26-189](data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md) (the ADMT Act, the operative successor effective 2027-01-01).
+- Colorado jurisdiction label + chip, jurisdiction index pages at `/us/colorado/`, and a full site rebuild.
+- `verification.allowed_unmapped_instruments` introduced in `project.yml` so relationship-only records (supersession/amendment chain members, sunset-date extensions) do not trip the completeness check.
+
+Shipped 2026-06-18 (authority-response path) and 2026-07-21 (v0.1.2 release):
+
+- Authority-response plumbing and public surfaces — see the "Regulator-trust track" section below for the full item list.
+- MCP server published stable to npm and the Official MCP Registry (`server.json`, package `0.1.2`).
+- Repo-standards baseline additions; `handoffs/` and `working/` ignored per the portfolio baseline.
+
+Shipped 2026-07-24 (registry fidelity + parity gate):
+
+- Six Colorado ADMT obligation records extracted from SB 26-189 (§§6-1-1702 through 6-1-1706): developer documentation to deployer, pre-decision consumer notice, 30-day post-adverse explanation, data correction + human review, three-year record retention, and the 60-day cure period. Mapped via `sb26-189-admt-act-obligations`; obligation count 26 → 32, mappings 14 → 15.
+- SB 26-189 removed from `allowed_unmapped_instruments` — it is the operative Colorado statute and was wrongly carried as relationship-only. The allowlist now carries a stated admission rule (superseded-before-effective, amendment-only, or sunset-date-only) plus a per-entry reason, and retains only SB 24-205, SB 25B-004, and Utah SB 332.
+- `eval-generated-tree-parity` no longer fails with the passage of time. `normalizeGeneratedContent` now neutralises the remaining build-date fields (`last_updated`, `today`, `days_until`, and the homepage `upcoming-days` countdown) that recompute on every build, matching the normalisation `eval-clean-build` and `eval-deterministic-build` already applied.
+- Protocol version dropped its pre-release suffix: spec is `v0.1.2`, aligned with the stable MCP/npm package version. `RELEASE_NOTES-v0.1.2-pre.md` renamed accordingly.
 
 ## Maintenance lane
 

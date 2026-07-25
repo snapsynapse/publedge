@@ -162,7 +162,8 @@ function normalizeGeneratedContent(relPath, raw) {
         .replace(/<updated>[^<]+<\/updated>/g, '<updated>__UPDATED__</updated>')
         .replace(/^DTSTAMP:\d{8}T\d{6}Z$/gm, 'DTSTAMP:__STAMP__')
         .replace(/^CREATED:\d{8}T\d{6}Z$/gm, 'CREATED:__STAMP__')
-        .replace(/^LAST-MODIFIED:\d{8}T\d{6}Z$/gm, 'LAST-MODIFIED:__STAMP__');
+        .replace(/^LAST-MODIFIED:\d{8}T\d{6}Z$/gm, 'LAST-MODIFIED:__STAMP__')
+        .replace(/<div class="upcoming-days">\d+d<\/div>/g, '<div class="upcoming-days">__DAYS_UNTIL__</div>');
 }
 
 function stripDynamicJson(value) {
@@ -178,6 +179,16 @@ function stripDynamicJson(value) {
         }
         if ((key === 'updated' || key === 'date_modified' || key === 'date_published') && typeof value[key] === 'string' && /T\d{2}:\d{2}:\d{2}/.test(value[key])) {
             value[key] = '__TIMESTAMP__';
+            continue;
+        }
+        // Build-date fields: recomputed on every build, so checked-in docs/ drift
+        // from a fresh build purely with the passage of time.
+        if ((key === 'last_updated' || key === 'today') && typeof value[key] === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value[key])) {
+            value[key] = '__BUILD_DATE__';
+            continue;
+        }
+        if (key === 'days_until' && typeof value[key] === 'number') {
+            value[key] = '__DAYS_UNTIL__';
             continue;
         }
         stripDynamicJson(value[key]);

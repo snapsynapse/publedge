@@ -10,7 +10,7 @@
     {
       "id": "container-comparison",
       "name": "Legal Instrument Comparison",
-      "description": "Compare 18 legal instruments across 26 obligations",
+      "description": "Compare 18 legal instruments across 32 obligations",
       "url": "https://publedge.org/compare.html"
     },
     {
@@ -211,6 +211,42 @@
       }
     ],
     "primaries": [
+      {
+        "id": "admt-60-day-cure-period",
+        "name": "ADMT Sixty-Day Cure Period Before Enforcement",
+        "group": "permission",
+        "url": "https://publedge.org/primary/admt-60-day-cure-period/"
+      },
+      {
+        "id": "admt-correction-and-human-review",
+        "name": "ADMT Data Correction And Human Review Of Adverse Outcomes",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/admt-correction-and-human-review/"
+      },
+      {
+        "id": "admt-deployer-3-year-record-retention",
+        "name": "ADMT Deployer Three-Year Record Retention",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/admt-deployer-3-year-record-retention/"
+      },
+      {
+        "id": "admt-deployer-pre-decision-notice",
+        "name": "ADMT Deployer Notice Before Consequential Decision",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/admt-deployer-pre-decision-notice/"
+      },
+      {
+        "id": "admt-developer-documentation-to-deployer",
+        "name": "ADMT Developer Documentation To Deployer",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/admt-developer-documentation-to-deployer/"
+      },
+      {
+        "id": "admt-post-adverse-explanation-30-days",
+        "name": "ADMT Post-Adverse Explanation Within 30 Days",
+        "group": "requirement",
+        "url": "https://publedge.org/primary/admt-post-adverse-explanation-30-days/"
+      },
       {
         "id": "ai-authorized-rx-renewal",
         "name": "AI-Authorized Prescription Renewal (Utah Pilot)",
@@ -471,7 +507,7 @@
     "protocol_authority_response": "https://publedge.org/about/#authority-response"
   },
   "meta": {
-    "last_updated": "2026-07-22",
+    "last_updated": "2026-07-25",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"

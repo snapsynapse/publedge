@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-22T01:16:18.663Z",
+  "generated": "2026-07-25T03:22:59.389Z",
   "obligations": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -1118,6 +1118,156 @@
       "jurisdiction": {
         "@type": "gist:Jurisdiction",
         "ref": "us"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
+      "id": "sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer",
+      "title": "ADMT Developer Documentation To Deployer",
+      "content": "A developer of covered automated decision-making technology must disclose to deployers the technology's intended uses, the categories of data used to train it, its known limitations, and instructions for meaningful human review. The duty runs developer-to-deployer, not developer-to-consumer.",
+      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "admt-developer-documentation-to-deployer",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "admt",
+        "developer documentation",
+        "training data",
+        "known limitations",
+        "colorado",
+        "sb26-189"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice.json",
+      "id": "sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice",
+      "title": "ADMT Deployer Notice Before Consequential Decision",
+      "content": "Before a consequential decision is made using covered automated decision-making technology, the deployer must notify the consumer that an automated system is in use and disclose the purpose and nature of the decision. The notice is pre-decision; a post-hoc disclosure does not satisfy it.",
+      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "admt-deployer-pre-decision-notice",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "admt",
+        "consumer notice",
+        "consequential decision",
+        "deployer",
+        "colorado",
+        "sb26-189"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days.json",
+      "id": "sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days",
+      "title": "ADMT Post-Adverse Explanation Within 30 Days",
+      "content": "Within 30 days of an adverse consequential decision made using covered automated decision-making technology, the deployer must give the consumer a plain-language explanation covering the AI's role in the decision, its degree of contribution, the types of data processed, and the sources of that data.",
+      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "admt-post-adverse-explanation-30-days",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "admt",
+        "adverse decision",
+        "explanation",
+        "30 days",
+        "colorado",
+        "sb26-189"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-correction-and-human-review.json",
+      "id": "sb26-189-admt-act-obligations-admt-correction-and-human-review",
+      "title": "ADMT Data Correction And Human Review Of Adverse Outcomes",
+      "content": "Consumers subject to an adverse consequential decision made using covered automated decision-making technology may correct inaccurate personal data used in that decision and may request meaningful human review and reconsideration of the outcome. The deployer must provide both paths.",
+      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "admt-correction-and-human-review",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "admt",
+        "human review",
+        "data correction",
+        "reconsideration",
+        "colorado",
+        "sb26-189"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Requirement",
+      "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json",
+      "id": "sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention",
+      "title": "ADMT Deployer Three-Year Record Retention",
+      "content": "A deployer of covered automated decision-making technology must retain its compliance documentation for at least three years. The retention floor is what makes the notice, explanation, and review duties auditable by the Attorney General after the fact.",
+      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "admt-deployer-3-year-record-retention",
+      "publedge_group": "requirement",
+      "publedge_status": "draft",
+      "search_terms": [
+        "admt",
+        "record keeping",
+        "retention",
+        "three years",
+        "colorado",
+        "sb26-189"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      }
+    },
+    {
+      "@context": "https://obligationfirst.org/v1/",
+      "@type": "of:Permission",
+      "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json",
+      "id": "sb26-189-admt-act-obligations-admt-60-day-cure-period",
+      "title": "ADMT Sixty-Day Cure Period Before Enforcement",
+      "content": "Violations of the Colorado ADMT Act are enforced by the Attorney General as deceptive trade practices, with no private right of action. A regulated party may cure an alleged violation within 60 days of notice; the cure route is available through January 1, 2030.",
+      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "anchors": [],
+      "publedge_primary_id": "admt-60-day-cure-period",
+      "publedge_group": "permission",
+      "publedge_status": "draft",
+      "search_terms": [
+        "admt",
+        "cure period",
+        "attorney general",
+        "deceptive trade practice",
+        "colorado",
+        "sb26-189"
+      ],
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
       }
     }
   ]

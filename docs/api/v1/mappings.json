@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-07-22T01:16:18.661Z",
-    "count": 14
+    "generated": "2026-07-25T03:22:59.387Z",
+    "count": 15
   },
   "items": [
     {
@@ -176,6 +176,21 @@
       "authority": "sec-corpfin",
       "source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md",
       "source_heading": "Staff position"
+    },
+    {
+      "id": "sb26-189-admt-act-obligations",
+      "obligations": [
+        "admt-developer-documentation-to-deployer",
+        "admt-deployer-pre-decision-notice",
+        "admt-post-adverse-explanation-30-days",
+        "admt-correction-and-human-review",
+        "admt-deployer-3-year-record-retention",
+        "admt-60-day-cure-period"
+      ],
+      "regulation": "us-co-legislature-statute-2026-sb26-189",
+      "authority": "colorado-legislature",
+      "source_file": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
+      "source_heading": "Summary"
     }
   ]
 }

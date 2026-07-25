@@ -1,0 +1,25 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Permission",
+  "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json",
+  "id": "sb26-189-admt-act-obligations-admt-60-day-cure-period",
+  "title": "ADMT Sixty-Day Cure Period Before Enforcement",
+  "content": "Violations of the Colorado ADMT Act are enforced by the Attorney General as deceptive trade practices, with no private right of action. A regulated party may cure an alleged violation within 60 days of notice; the cure route is available through January 1, 2030.",
+  "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+  "anchors": [],
+  "publedge_primary_id": "admt-60-day-cure-period",
+  "publedge_group": "permission",
+  "publedge_status": "draft",
+  "search_terms": [
+    "admt",
+    "cure period",
+    "attorney general",
+    "deceptive trade practice",
+    "colorado",
+    "sb26-189"
+  ],
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  }
+}

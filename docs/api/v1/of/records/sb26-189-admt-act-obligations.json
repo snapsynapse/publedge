@@ -1,0 +1,24 @@
+{
+  "@context": "https://obligationfirst.org/v1/",
+  "@type": "of:Term",
+  "@id": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+  "id": "sb26-189-admt-act-obligations",
+  "text": "Summary",
+  "section": "",
+  "parent_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+  "creates": [
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice.json",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days.json",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-correction-and-human-review.json",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json"
+  ],
+  "anchors": [],
+  "source_heading": "Summary",
+  "source_file": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  }
+}

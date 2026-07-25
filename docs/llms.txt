@@ -1,7 +1,7 @@
 # PubLedge
 
 > Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
-> Tracks 18 legal instruments, 26 obligations, and 9 provisions across 8 authorities.
+> Tracks 18 legal instruments, 32 obligations, and 9 provisions across 8 authorities.
 
 ## Legal Instruments
 
@@ -26,6 +26,12 @@
 
 ## Obligations
 
+- [ADMT Sixty-Day Cure Period Before Enforcement](https://publedge.org/primary/admt-60-day-cure-period/): 1 legal instruments support this
+- [ADMT Data Correction And Human Review Of Adverse Outcomes](https://publedge.org/primary/admt-correction-and-human-review/): 1 legal instruments support this
+- [ADMT Deployer Three-Year Record Retention](https://publedge.org/primary/admt-deployer-3-year-record-retention/): 1 legal instruments support this
+- [ADMT Deployer Notice Before Consequential Decision](https://publedge.org/primary/admt-deployer-pre-decision-notice/): 1 legal instruments support this
+- [ADMT Developer Documentation To Deployer](https://publedge.org/primary/admt-developer-documentation-to-deployer/): 1 legal instruments support this
+- [ADMT Post-Adverse Explanation Within 30 Days](https://publedge.org/primary/admt-post-adverse-explanation-30-days/): 1 legal instruments support this
 - [AI-Authorized Prescription Renewal (Utah Pilot)](https://publedge.org/primary/ai-authorized-rx-renewal/): 2 legal instruments support this
 - [GenAI Is Not A Defense — Civil And Criminal](https://publedge.org/primary/ai-defense-elimination/): 2 legal instruments support this
 - [Pay-To-Pay Fee Prohibited Without Express Authorization](https://publedge.org/primary/cfpb-pay-to-pay-fee-prohibited/): 1 legal instruments support this
