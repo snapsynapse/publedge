@@ -4,7 +4,7 @@
   "title": "PubLedge Joint Interpretation Agreement (JIA)",
   "description": "Frontmatter schema for a PubLedge JIA instrument — a written, jointly-authored interpretation between a regulator and a regulated party that constrains future behavior on identified facts. Binds to Semantic Arts gist via @type and w3id.org IRIs.",
   "type": "object",
-  "required": ["@type", "id", "name", "authority", "jurisdiction", "type", "status"],
+  "required": ["@type", "id", "name", "authority", "jurisdiction", "type", "status", "editorial_status"],
   "properties": {
     "@type": {
       "type": "string",
@@ -37,7 +37,11 @@
     },
     "status": {
       "type": "string",
-      "enum": ["draft", "reviewed", "published", "superseded"]
+      "enum": ["proposed", "enacted", "enforcing", "phased-enforcement", "pending-replacement", "expired", "superseded", "withdrawn", "terminated"]
+    },
+    "editorial_status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "published"]
     },
     "enacted": { "type": "string", "format": "date" },
     "effective": { "type": "string", "format": "date" },

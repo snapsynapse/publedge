@@ -30,6 +30,7 @@ publication_citations:
   - cite: "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)"
     url: "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/"
 status: enforcing
+editorial_status: published
 supersedes: null
 superseded_by: null
 withdrawn_date: null

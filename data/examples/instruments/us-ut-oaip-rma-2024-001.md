@@ -63,6 +63,7 @@ mitigations:
   - "GenAI disclosure per §13-2-12(4) before app access; user acknowledgment required"
   - "Monthly reporting to ai@utah.gov; 24-hour incident notification"
 status: expired
+editorial_status: published
 supersedes: null
 superseded_by: null
 withdrawn_date: null

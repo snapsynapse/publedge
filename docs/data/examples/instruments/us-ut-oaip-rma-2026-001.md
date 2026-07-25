@@ -73,6 +73,7 @@ mitigations:
   - "Monthly reporting to ai@utah.gov with acceptance/denial counts, AI-vs-clinician agreement rates, complaints, adverse outcomes"
   - "30-business-day cure period before termination for material breach (Section 6J)"
 status: enacted
+editorial_status: published
 supersedes: null
 superseded_by: null
 withdrawn_date: null

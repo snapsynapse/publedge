@@ -35,6 +35,7 @@ terms:
   - "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm"
     text: "Provider must display the standardized GenAI disclosure on first session and on session resumption after 30 minutes of inactivity."
 status: proposed
+editorial_status: draft
 supersedes: null
 superseded_by: null
 withdrawn_date: null

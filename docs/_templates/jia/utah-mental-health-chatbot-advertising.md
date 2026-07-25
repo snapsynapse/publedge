@@ -21,7 +21,8 @@ variables:
   - name: review_date
     description: "Date by which the parties will review the interpretation (YYYY-MM-DD)"
 source: publedge-original-draft
-status: draft
+status: proposed
+editorial_status: draft
 created: 2026-04-18
 modified: 2026-04-18
 ---

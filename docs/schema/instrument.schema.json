@@ -4,7 +4,7 @@
   "title": "PubLedge Instrument (polymorphic)",
   "description": "Polymorphic frontmatter schema for every interpretive-instrument record in the PubLedge registry. Discriminates on `type`. Supersedes schema/jia.schema.json and schema/rma.schema.json (retained for backward compatibility). See _workshop/CONTENT-GUIDE.md §'Interpretive-instrument core fields' for field semantics.",
   "type": "object",
-  "required": ["id", "type", "status", "source", "jurisdiction", "authority"],
+  "required": ["id", "type", "status", "editorial_status", "source", "jurisdiction", "authority"],
   "properties": {
     "@type": { "type": "string", "format": "uri" },
     "id": {
@@ -42,10 +42,7 @@
     "status": {
       "type": "string",
       "enum": [
-        "draft",
         "proposed",
-        "reviewed",
-        "published",
         "enacted",
         "enforcing",
         "phased-enforcement",
@@ -55,6 +52,11 @@
         "withdrawn",
         "terminated"
       ]
+    },
+    "editorial_status": {
+      "type": "string",
+      "description": "PubLedge editorial maturity. This field does not state whether the instrument is legally operative.",
+      "enum": ["draft", "reviewed", "published"]
     },
     "jurisdiction": {
       "type": "string",
@@ -191,7 +193,7 @@
       "if": {
         "properties": {
           "source": { "const": "publedge-original-draft" },
-          "status": { "enum": ["published", "enforcing", "enacted"] }
+          "status": { "not": { "const": "proposed" } }
         },
         "required": ["source", "status"]
       },

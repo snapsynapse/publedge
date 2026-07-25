@@ -143,7 +143,7 @@ The `_workshop/` directory documents the design decisions behind the layout abov
 1. Pick template under `_templates/jia/` or `_templates/rma/`.
 2. Replace every `{{variable_name}}` with applicable values.
 3. Set `id` to `{jurisdiction}-{authority}-{type}-{YYYY-NNN}` (e.g. `us-ut-oaip-rma-2025-003`). Filename must match: `us-ut-oaip-rma-2025-003.md`.
-4. Set `status: draft`. Add parties under `parties:`.
+4. Set legal `status: proposed` and `editorial_status: draft`. Add parties under `parties:`.
 5. Place file under `data/examples/instruments/`.
 6. Run `./scripts/validate-hashes.sh --update` to refresh `MANIFEST.yaml`.
 7. Run `node scripts/build.js && node scripts/build-extras.js` to verify site regenerates cleanly.

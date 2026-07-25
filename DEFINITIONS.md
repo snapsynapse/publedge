@@ -18,7 +18,10 @@ Terminology choices below reflect three concerns:
 
 ## Status vocabulary
 
-The `status:` frontmatter field on every instrument record takes one of the following values.
+Instrument records separate legal state from PubLedge editorial maturity:
+
+- `status:` takes one of the legal lifecycle values below.
+- `editorial_status:` takes `draft | reviewed | published` and never changes the instrument's legal effect.
 
 ### Lifecycle transitions
 
@@ -172,4 +175,4 @@ Cross-project vocabulary alignment: `proposed`, `enacted`, `enforcing`, `phased-
 
 ## Disclaimer
 
-PubLedge is a reference tool under development. This registry is not authoritative and does not constitute legal advice. Each record's `status:` field describes the underlying instrument's legal state based on public sources as of its `last_verified:` date. The registry's own editorial and review state is disclosed separately in the site-wide banner and in the project's [README](/README.md). For authoritative text, consult the issuing authority or the links in each record's `official_url:` and `publication_citations:` fields.
+PubLedge is a reference tool under development. This registry is not authoritative and does not constitute legal advice. Each record's `status:` field describes the underlying instrument's legal state based on public sources as of its `last_verified:` date. The separate `editorial_status:` field describes PubLedge maturity and never implies authority endorsement. For authoritative text, consult the issuing authority or the links in each record's `official_url:` and `publication_citations:` fields.

@@ -117,7 +117,8 @@
 <p>1. <strong>Precision</strong>: each term is a distinct legal term of art, not a synonym for its neighbors. 2. <strong>Interoperability</strong>: where the same concept appears in <a href="https://everyailaw.com/">EveryAILaw</a>, the vocabulary is identical so cross-registry joins work. 3. <strong>Disclosure</strong>: PubLedge itself is a reference project under development. The registry's <code>status</code> field describes the instrument's legal state, not the registry's editorial state. See the site-wide disclaimer banner.</p>
 <hr>
 <h2>Status vocabulary</h2>
-<p>The <code>status:</code> frontmatter field on every instrument record takes one of the following values.</p>
+<p>Instrument records separate legal state from PubLedge editorial maturity:</p>
+<ul><li><code>status:</code> takes one of the legal lifecycle values below.</li><li><code>editorial_status:</code> takes <code>draft | reviewed | published</code> and never changes the instrument's legal effect.</li></ul>
 <h3>Lifecycle transitions</h3>
 <pre tabindex="0"><code>proposed → enacted → enforcing → { expired, superseded, withdrawn, terminated }
                               ↘ pending-replacement → superseded
@@ -169,7 +170,7 @@
 <p>Cross-project vocabulary alignment: <code>proposed</code>, <code>enacted</code>, <code>enforcing</code>, <code>phased-enforcement</code>, and <code>pending-replacement</code> track <a href="https://everyailaw.com/">EveryAILaw</a>'s convention verbatim. Additions (<code>expired</code>, <code>superseded</code>, <code>withdrawn</code>, <code>terminated</code>) are PubLedge-specific because they describe dispositions that rarely apply to statutes but are routine for fact-specific instruments.</p>
 <hr>
 <h2>Disclaimer</h2>
-<p>PubLedge is a reference tool under development. This registry is not authoritative and does not constitute legal advice. Each record's <code>status:</code> field describes the underlying instrument's legal state based on public sources as of its <code>last_verified:</code> date. The registry's own editorial and review state is disclosed separately in the site-wide banner and in the project's <a href="/README.md">README</a>. For authoritative text, consult the issuing authority or the links in each record's <code>official_url:</code> and <code>publication_citations:</code> fields.</p>
+<p>PubLedge is a reference tool under development. This registry is not authoritative and does not constitute legal advice. Each record's <code>status:</code> field describes the underlying instrument's legal state based on public sources as of its <code>last_verified:</code> date. The separate <code>editorial_status:</code> field describes PubLedge maturity and never implies authority endorsement. For authoritative text, consult the issuing authority or the links in each record's <code>official_url:</code> and <code>publication_citations:</code> fields.</p>
         </div>
     
     </main>

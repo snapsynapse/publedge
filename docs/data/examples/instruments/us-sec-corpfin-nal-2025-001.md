@@ -30,6 +30,7 @@ publication_citations:
   - cite: "SEC Division of Corporation Finance No-Action Letter archive (2025)"
     url: "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225"
 status: enforcing
+editorial_status: published
 supersedes: null
 superseded_by: null
 withdrawn_date: null

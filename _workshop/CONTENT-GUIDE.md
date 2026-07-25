@@ -33,7 +33,7 @@ id: PL-<TYPE>-<NNNN>                # permanent identifier
 slug: <kebab-case-slug>
 title: "<Human-readable title>"
 type: <jia | rma | no-action-letter | advisory-opinion | private-letter-ruling | revenue-ruling | interpretive-letter>
-source: <authority-issued | demonstration-remap | publedge-original-draft>
+source: <authority-issued | demonstration-remap | publedge-original-draft | authoritative-reference>
 jurisdiction: <us | us-ut | us-ca | ...>   # bare country code for federal scope
 authority: <slug>                   # URL-routing slug, e.g. sec-corpfin, cfpb, utah-oaip, irs-chief-counsel
 issued_by:                          # typed block for semantic consumers
@@ -62,7 +62,8 @@ authority_response:                 # optional; authority annotation, not record
     statement: "<authority-supplied statement>"
     source: "<optional authority-hosted https URL; controls over statement>"
     signature: "<optional detached-signature or PGP fingerprint reference>"
-status: <draft | reviewed | published | superseded | withdrawn>
+status: <proposed | enacted | enforcing | phased-enforcement | pending-replacement | expired | superseded | withdrawn | terminated>
+editorial_status: <draft | reviewed | published>
 supersedes: null | <PL-id>
 superseded_by: null | <PL-id>
 withdrawn_date: null | YYYY-MM-DD
@@ -373,21 +374,22 @@ Every detail page exposes three machine views in the page header:
 | `requesting-party-only` | Only the named requesting party may rely; third parties cannot cite as authority. | IRS Private Letter Rulings |
 | `similarly-situated-third-parties` | Third parties matching the material facts may rely; reliance scope follows the facts, not the name. | SEC / CFTC No-Action Letters, CFPB Advisory Opinions |
 | `public` | The interpretation is intended as general guidance for any regulated party. | Revenue Rulings, CFPB interpretive rules |
-| `unspecified` | Source artifact does not address reliance scope; must be resolved before `status: reviewed`. | Bespoke sandbox agreements without explicit scope language |
+| `unspecified` | Source artifact does not address reliance scope; must be resolved before `editorial_status: reviewed`. | Bespoke sandbox agreements without explicit scope language |
 
 When remapping an external artifact, choose the value that matches the letter's own language. When drafting a new PubLedge instrument, the default is `requesting-party-only` unless the authority explicitly extends scope.
 
 ## Disclaimer composition
 
-Every interpretive instrument carries a `disclaimer:` field, but v0.2 moves the default text out of per-file YAML and into the renderer. Renderer keys off `source` + `status`:
+Every interpretive instrument carries a `disclaimer:` field, but v0.2 moves the default text out of per-file YAML and into the renderer. The renderer keys off `source` plus legal `status`; `editorial_status` is orthogonal:
 
 | `source` | `status` | Rendered disclaimer |
 |----------|----------|---------------------|
-| `authority-issued` | `published` | None (the authority's own reliance language in the body governs). |
-| `authority-issued` | `superseded` or `withdrawn` | "This instrument is no longer in effect. See `superseded_by` / `withdrawn_date`." |
+| `authority-issued` | active or pre-active | None (the authority's own reliance language in the body governs). |
+| `authority-issued` | `expired`, `superseded`, or `withdrawn` | "This instrument is no longer in effect. See `superseded_by` or `withdrawn_date`." |
 | `demonstration-remap` | any | "Demonstration remap of a publicly archived authority artifact. Not an authority-issued PubLedge instrument. The official source controls." |
-| `publedge-original-draft` | `draft` or `reviewed` | "Suggested prior art. Not authority-issued output. Awaiting lawyer review and authority sign-off before promotion." |
-| `publedge-original-draft` | `published` | Error — original drafts cannot reach `published` without authority sign-off, which changes `source` to `authority-issued`. |
+| `publedge-original-draft` | `proposed` | "Suggested prior art. Not authority-issued output. Awaiting lawyer review and authority sign-off before promotion." |
+| `publedge-original-draft` | any other legal status | Error. Authority sign-off changes `source` to `authority-issued` before legal activation. |
+| `authoritative-reference` | any | "Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law." |
 
 Override the `disclaimer:` field only when the source artifact carries authority-specific reliance language that must be preserved verbatim (e.g., an SEC no-action letter's exact staff caveat). Overrides are rendered in addition to, not in place of, the composed disclaimer.
 

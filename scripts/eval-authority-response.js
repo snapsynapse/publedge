@@ -37,7 +37,7 @@ try {
     const original = fs.readFileSync(fixtureSource, 'utf-8');
     const mutated = original.replace(
         /^status: .+$/m,
-        `status: draft
+        `status: proposed
 authority_response:
   - from: utah-oaip
     date: 2026-05-18

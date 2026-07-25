@@ -282,7 +282,8 @@ function renderTemplates() {
 <dt>Template ID</dt><dd><code>${escapeHTML(t.meta.id || '')}</code></dd>
 <dt>Kind</dt><dd>${escapeHTML((t.meta.kind || '').toUpperCase())}</dd>
 <dt>Jurisdiction</dt><dd>${escapeHTML(t.meta.jurisdiction || '')}</dd>
-<dt>Status</dt><dd>${escapeHTML(t.meta.status || '')}</dd>
+<dt>Legal status</dt><dd>${escapeHTML(t.meta.status || '')}</dd>
+<dt>Editorial status</dt><dd>${escapeHTML(t.meta.editorial_status || '')}</dd>
 ${(() => { const d = composeDisclaimer(t.meta.source, t.meta.status, t.meta.disclaimer); return d.text ? `<dt>Disclaimer</dt><dd>${escapeHTML(d.text)}</dd>` : ''; })()}
 </dl>
 ${varRows ? `<h2>Variables</h2><table class="template-vars"><thead><tr><th>Variable</th><th>Description</th></tr></thead><tbody>${varRows}</tbody></table>` : ''}
@@ -662,7 +663,7 @@ function writeRecordSchema() {
             },
             'record': {
                 'type': 'object',
-                'required': ['id', 'type', 'authority', 'jurisdiction', 'url'],
+                'required': ['id', 'type', 'authority', 'jurisdiction', 'url', 'status', 'editorial_status'],
                 'properties': {
                     'id': { 'type': 'string', 'description': 'Stable identifier matching the record frontmatter id.' },
                     'legacy_id': { 'type': ['string', 'null'] },
@@ -685,6 +686,7 @@ function writeRecordSchema() {
                     'publication_citations': { 'type': ['array', 'null'], 'items': { 'type': ['object', 'string'] } },
                     'terms': { 'type': ['array', 'string', 'null'] },
                     'status': { 'type': ['string', 'null'], 'enum': ['proposed', 'enacted', 'enforcing', 'phased-enforcement', 'pending-replacement', 'expired', 'superseded', 'withdrawn', 'terminated'] },
+                    'editorial_status': { 'type': ['string', 'null'], 'enum': ['draft', 'reviewed', 'published'] },
                     'supersedes': { 'type': ['string', 'null'] },
                     'superseded_by': { 'type': ['string', 'null'] },
                     'authority_response': {

@@ -1267,6 +1267,7 @@ function generateContainerDetail(config, container, data, configCSS) {
             ${renderRecordSummary(container, config)}
             <div class="detail-meta">
                 ${renderStatusBadge(container.status)}
+                <span><strong>Editorial:</strong> ${escapeHTML(humanizeId(container.editorial_status || 'unspecified'))}</span>
                 ${freshnessBadge(container.last_verified)}
                 ${container.effective ? `<span><strong>Effective:</strong> ${formatDate(container.effective)}</span>` : ''}
                 ${container.official_url ? `<span><a href="${escapeHTML(container.official_url)}" target="_blank" rel="noopener">Official source</a></span>` : ''}
@@ -1698,6 +1699,7 @@ function generateRecordJsonEndpoint(c, config) {
             publication_citations: c.publication_citations || null,
             terms: c.terms || null,
             status: c.status || null,
+            editorial_status: c.editorial_status || null,
             supersedes: c.supersedes || null,
             superseded_by: c.superseded_by || null,
             authority_response: c.authority_response || null,

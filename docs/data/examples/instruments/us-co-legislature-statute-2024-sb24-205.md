@@ -40,6 +40,7 @@ sponsors:
   - "Rep. Brianna Titone (House prime sponsor)"
   - "Rep. Manny Rutinel (House prime sponsor)"
 status: superseded
+editorial_status: published
 supersedes: null
 superseded_by: us-co-legislature-statute-2026-sb26-189
 amended_by:

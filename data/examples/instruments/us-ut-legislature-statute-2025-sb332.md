@@ -33,6 +33,7 @@ sponsors:
   - "Sen. Kirk A. Cullimore (Senate sponsor)"
   - "Rep. Jefferson Moss (House floor sponsor)"
 status: enforcing
+editorial_status: published
 amends: us-ut-legislature-statute-2024-sb149
 supersedes: null
 superseded_by: null

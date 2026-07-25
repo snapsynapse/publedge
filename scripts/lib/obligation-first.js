@@ -164,6 +164,7 @@ function buildInstrumentRecords(config, data) {
         jurisdiction: typedJurisdiction(container.jurisdiction),
         citation: instrumentCitation(container),
         publedge_status: container.status,
+        publedge_editorial_status: container.editorial_status,
         canonical_url: container._canonicalPath ? `${siteBase(config)}/${container._canonicalPath}` : undefined
     }));
 }

@@ -4,7 +4,7 @@
   "title": "PubLedge Regulatory Mitigation Agreement (RMA)",
   "description": "Frontmatter schema for a PubLedge RMA instrument — a formal contract between a regulator and a regulated party that specifies mitigations in exchange for reduced enforcement risk. Binds to Semantic Arts gist via @type and w3id.org IRIs.",
   "type": "object",
-  "required": ["@type", "id", "name", "authority", "jurisdiction", "type", "status"],
+  "required": ["@type", "id", "name", "authority", "jurisdiction", "type", "status", "editorial_status"],
   "properties": {
     "@type": {
       "type": "string",
@@ -22,7 +22,11 @@
     "type": { "const": "rma" },
     "status": {
       "type": "string",
-      "enum": ["draft", "reviewed", "published", "superseded"]
+      "enum": ["proposed", "enacted", "enforcing", "phased-enforcement", "pending-replacement", "expired", "superseded", "withdrawn", "terminated"]
+    },
+    "editorial_status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "published"]
     },
     "enacted": { "type": "string", "format": "date" },
     "effective": { "type": "string", "format": "date" },

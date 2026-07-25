@@ -471,7 +471,7 @@
         "title": "Utah JIA Template — Mental-Health Chatbot Advertising and Representations (§13-72a-202)",
         "kind": "jia",
         "jurisdiction": "us-ut",
-        "status": "draft",
+        "status": "proposed",
         "url": "https://publedge.org/template/utah-mental-health-chatbot-advertising/"
       },
       {
@@ -480,7 +480,7 @@
         "title": "Utah JIA Template — Mental-Health Chatbot Data Protection (§13-72a-201)",
         "kind": "jia",
         "jurisdiction": "us-ut",
-        "status": "draft",
+        "status": "proposed",
         "url": "https://publedge.org/template/utah-mental-health-chatbot-data-protection/"
       },
       {
@@ -489,7 +489,7 @@
         "title": "Utah JIA Template — Mental-Health Chatbot First-Session Disclosure (§13-72a-203)",
         "kind": "jia",
         "jurisdiction": "us-ut",
-        "status": "draft",
+        "status": "proposed",
         "url": "https://publedge.org/template/utah-mental-health-chatbot-first-session-disclosure/"
       },
       {
@@ -498,7 +498,7 @@
         "title": "Utah RMA Template — AI Sandbox Mitigation, Mental-Health Chatbot Cohort",
         "kind": "rma",
         "jurisdiction": "us-ut",
-        "status": "draft",
+        "status": "proposed",
         "url": "https://publedge.org/template/utah-ai-sandbox-mitigation-mental-health-chatbot/"
       },
       {
@@ -507,7 +507,7 @@
         "title": "Utah RMA Template — GenAI Safe-Harbor Enrollment (§13-75-104)",
         "kind": "rma",
         "jurisdiction": "us-ut",
-        "status": "draft",
+        "status": "proposed",
         "url": "https://publedge.org/template/utah-genai-safe-harbor-enrollment/"
       }
     ]

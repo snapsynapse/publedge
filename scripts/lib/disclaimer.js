@@ -5,22 +5,17 @@
  *
  * Spec: _workshop/CONTENT-GUIDE.md §"Disclaimer composition".
  *
- * Renderer keys off `source` + `status`. Per-file `disclaimer:` overrides
+ * Renderer keys off `source` + legal `status`. Editorial maturity is
+ * intentionally orthogonal. Per-file `disclaimer:` overrides
  * are appended to (not substituted for) the composed text, and are reserved
  * for authority-specific reliance language that must be preserved verbatim
  * (e.g. an SEC no-action letter's exact staff caveat).
  *
- * Extensions beyond the CONTENT-GUIDE table:
- * - `authoritative-reference` source (statute records) → public-source notice.
- * - `enforcing` / `enacted` / `proposed` statuses are treated as equivalents of
- *   `published` / `draft` for disclaimer purposes until DEFINITIONS.md and the
- *   CONTENT-GUIDE table are reconciled. Composition remains additive, not
- *   normative — the DEFINITIONS.md vocabulary still governs status meaning.
+ * `authoritative-reference` is a PubLedge extension for statute records and
+ * receives a public-source notice.
  */
 
-const PUBLISHED_LIKE = new Set(['published', 'enforcing', 'enacted']);
 const INACTIVE = new Set(['superseded', 'withdrawn', 'expired']);
-const PROPOSAL_LIKE = new Set(['draft', 'reviewed', 'proposed']);
 
 function composeDisclaimer(source, status, override) {
     const src = String(source || '').trim();
@@ -36,17 +31,15 @@ function composeDisclaimer(source, status, override) {
     } else if (src === 'demonstration-remap') {
         composed = 'Demonstration remap of a publicly archived authority artifact. Not an authority-issued PubLedge instrument. The official source controls.';
     } else if (src === 'publedge-original-draft') {
-        if (PUBLISHED_LIKE.has(st)) {
+        if (st && st !== 'proposed') {
             return {
                 composed: '',
                 override: ovr,
                 text: ovr,
-                error: `publedge-original-draft cannot have status '${st}' without authority sign-off (which would change source to authority-issued).`
+                error: `publedge-original-draft must have legal status 'proposed', not '${st}'.`
             };
         }
-        if (PROPOSAL_LIKE.has(st) || !st) {
-            composed = 'Suggested prior art. Not authority-issued output. Awaiting lawyer review and authority sign-off before promotion.';
-        }
+        composed = 'Suggested prior art. Not authority-issued output. Awaiting lawyer review and authority sign-off before promotion.';
     } else if (src === 'authoritative-reference') {
         composed = 'Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law.';
     }

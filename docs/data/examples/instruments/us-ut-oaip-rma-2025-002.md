@@ -68,6 +68,7 @@ mitigations:
   - "Data-security posture per §63A-19-102 applied as if Participant were a governmental entity"
   - "Monthly reporting to ai@utah.gov including acceptance/denial counts, physician-review agreement rates, complaints, adverse outcomes"
 status: enforcing
+editorial_status: published
 supersedes: null
 superseded_by: null
 withdrawn_date: null

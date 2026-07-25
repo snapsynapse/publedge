@@ -62,6 +62,7 @@ mitigations:
   - "Data security per §63A-19-102; State of Utah Enterprise Information Security Policy 5000-0002"
   - "Monthly reporting to ai@utah.gov (demographics, efficacy, complaints, adverse events, incidents)"
 status: expired
+editorial_status: published
 supersedes: null
 superseded_by: null
 withdrawn_date: null

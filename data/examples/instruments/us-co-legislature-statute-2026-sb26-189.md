@@ -38,6 +38,7 @@ full_text_reference: "https://everyailaw.com/regulation/colorado-sb26-189/"
 sponsors:
   - "Sen. Robert Rodriguez (Senate prime sponsor)"
 status: enacted
+editorial_status: published
 supersedes: us-co-legislature-statute-2024-sb24-205
 superseded_by: null
 amended_by: []

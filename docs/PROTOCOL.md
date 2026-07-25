@@ -73,7 +73,8 @@ statute_anchors:
 terms:
   - "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm"
     text: "Plain-language clause"
-status: draft | reviewed | published | superseded
+status: proposed | enacted | enforcing | phased-enforcement | pending-replacement | expired | superseded | withdrawn | terminated
+editorial_status: draft | reviewed | published
 disclaimer: "Default text or instrument-specific override"
 created: YYYY-MM-DD
 modified: YYYY-MM-DD
@@ -158,7 +159,7 @@ Every PubLedge instrument carries a `disclaimer` frontmatter field. The default 
 
 > Suggested prior art. Not official output of any authority.
 
-The disclaimer is rendered prominently in the page header until `status: published` is reached and the responsible authority has either signed off or expressly declined to do so. Records that move to `published` without authority sign-off must retain a softened disclaimer indicating that the interpretation is the requesting party's good-faith reading, not an official ruling.
+The disclaimer is composed from `source` and legal `status`, independently of `editorial_status`. A published demonstration remap remains non-authoritative, and a PubLedge-original draft remains suggested prior art unless authority sign-off changes `source` to `authority-issued`.
 
 This posture is non-optional. PubLedge exists in part to publish interpretations *before* an authority issues an official version, so that a public conversation has source material to work from.
 

@@ -32,6 +32,7 @@ publication_citations:
     url: "https://le.utah.gov/~2025/bills/static/SB0226.html"
 full_text_reference: "https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure"
 status: enforcing
+editorial_status: published
 amends: us-ut-legislature-statute-2024-sb149
 supersedes: null
 superseded_by: null

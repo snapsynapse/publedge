@@ -36,6 +36,7 @@ publication_citations:
     url: "https://irs.gov/pub/irs-wd/202614036.pdf"
 redaction_level: full
 status: enforcing
+editorial_status: published
 supersedes: null
 superseded_by: null
 withdrawn_date: null

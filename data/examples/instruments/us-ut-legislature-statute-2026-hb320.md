@@ -34,6 +34,7 @@ publication_citations:
     url: "https://le.utah.gov/~2026/bills/static/HB0320.html"
 full_text_reference: "https://everyailaw.com/regulation/utah-sb149/#regulatory-mitigation-and-joint-interpretation-agreements"
 status: enforcing
+editorial_status: published
 amends: us-ut-legislature-statute-2024-sb149
 supersedes: null
 superseded_by: null

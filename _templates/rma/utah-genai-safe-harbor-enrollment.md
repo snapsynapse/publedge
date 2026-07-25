@@ -25,7 +25,8 @@ variables:
   - name: termination_date
     description: "Term end date (YYYY-MM-DD) or 'indefinite'"
 source: publedge-original-draft
-status: draft
+status: proposed
+editorial_status: draft
 created: 2026-04-18
 modified: 2026-04-18
 ---

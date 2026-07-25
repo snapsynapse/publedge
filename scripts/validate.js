@@ -79,7 +79,6 @@ function validate() {
     }
 
     // Validate container authority references + v0.2 frontmatter-spec cross-field rules
-    const PUBLISHED_LIKE = new Set(['published', 'enforcing', 'enacted']);
     const WITHDRAWAL_FIELDS = ['withdrawn_date', 'withdrawal_reason', 'withdrawn_by_instrument'];
     const AUTHORITY_RESPONSE_POSITIONS = new Set([
         'concurs',
@@ -91,6 +90,12 @@ function validate() {
     const BLANK = v => v === undefined || v === null || /^(null|n\/a|tbd|)$/i.test(String(v).trim());
     const ISO_DATE = v => /^\d{4}-\d{2}-\d{2}$/.test(String(v || '').trim());
     const OBLIGATION_EDITORIAL_STATUSES = new Set(['draft', 'reviewed', 'published']);
+    const INSTRUMENT_EDITORIAL_STATUSES = new Set(
+        config.entities?.container?.editorial_statuses || ['draft', 'reviewed', 'published']
+    );
+    const INSTRUMENT_LEGAL_STATUSES = new Set(
+        (config.entities?.container?.statuses || []).map(entry => entry.name)
+    );
     const OBLIGATION_LIFECYCLE_STATUSES = new Set(
         config.entities?.primary?.lifecycle_statuses || [
             'prospective',
@@ -135,10 +140,18 @@ function validate() {
             console.error(`  ERROR: Container "${cId}" references unknown authority "${fm.authority}"`);
             errors++;
         }
+        if (!INSTRUMENT_LEGAL_STATUSES.has(String(fm.status || '').trim())) {
+            console.error(`  ERROR: Container "${cId}" has unknown legal status "${fm.status}".`);
+            errors++;
+        }
+        if (!INSTRUMENT_EDITORIAL_STATUSES.has(String(fm.editorial_status || '').trim())) {
+            console.error(`  ERROR: Container "${cId}" has unknown or missing editorial_status "${fm.editorial_status}".`);
+            errors++;
+        }
 
         // v0.2: source × status consistency
-        if (fm.source === 'publedge-original-draft' && PUBLISHED_LIKE.has(String(fm.status || '').trim())) {
-            console.error(`  ERROR: "${cId}" has source=publedge-original-draft with status=${fm.status} — originals cannot reach a published-like status without authority sign-off (which would change source to authority-issued).`);
+        if (fm.source === 'publedge-original-draft' && String(fm.status || '').trim() !== 'proposed') {
+            console.error(`  ERROR: "${cId}" has source=publedge-original-draft with legal status=${fm.status}; originals must remain proposed until authority sign-off changes the source.`);
             errors++;
         }
 

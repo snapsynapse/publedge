@@ -33,6 +33,7 @@ sponsors:
   - "Sen. Kirk A. Cullimore (Senate sponsor)"
   - "Rep. Jefferson Moss (House floor sponsor)"
 status: enforcing
+editorial_status: published
 supersedes: null
 superseded_by: null
 amended_by:

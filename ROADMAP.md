@@ -19,7 +19,7 @@ Standalone product expansion is parked. PubLedge is maintained as the thin recor
 
 The active lane is routine maintenance, existing-record fidelity, Obligation-First compatibility, authority responses, and integration demanded by an active legal-graph consumer. The v0.2 feature lists below are historical planning context, not an active work queue.
 
-## What shipped (as of 2026-04-21)
+## What shipped
 
 Inherited free from the Knowledge-as-Code template at bootstrap:
 
@@ -134,7 +134,7 @@ Shipped 2026-04-22 (frontmatter spec v0.2 enforcement):
 
 Shipped 2026-05-21 (Colorado jurisdiction + AI Act supersession chain):
 
-- Colorado added as the registry's third jurisdiction (`us-co`), with `colorado-legislature` as the eighth authority record (instruments 14 → 17). Three statute instruments ingested as a complete supersession chain: [SB 24-205](data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md) (first US comprehensive state AI act, superseded before its effective date), [SB 25B-004](data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md) (special-session effective-date delay), and [SB 26-189](data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md) (the ADMT Act, the operative successor effective 2027-01-01).
+- Colorado added as the registry's third jurisdiction (`us-co`), with `colorado-legislature` as the eighth authority record (instruments 14 → 17). Three statute instruments ingested as a complete supersession chain: [SB 24-205](data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md) (first US comprehensive state AI act, superseded before its effective date), [SB 25B-004](data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md) (special-session effective-date delay), and [SB 26-189](data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md) (the ADMT Act, the enacted successor effective 2027-01-01).
 - Colorado jurisdiction label + chip, jurisdiction index pages at `/us/colorado/`, and a full site rebuild.
 - `verification.allowed_unmapped_instruments` introduced in `project.yml` so relationship-only records (supersession/amendment chain members, sunset-date extensions) do not trip the completeness check.
 
@@ -160,6 +160,7 @@ Shipped 2026-07-25 (obligation lifecycle fidelity + CI maintenance):
 - Recorded `v0.1.2-pre` as a historical tag that consumers and automation must not use.
 - Designated the real Doctronic RMA remap as the regulator-trust exemplar: it links the OAIP agreement page and signed PDF, preserves the agreement's parties, scope, safeguards, limitations, and requesting-party-only reliance, and documents the source-to-schema mapping. This designation is PubLedge editorial treatment, not OAIP endorsement; no OAIP `authority_response` has been received.
 - Completed a date-sensitive fidelity audit against current official sources. Colorado SB 26-189 is `enacted` and its six substantive ADMT obligations are `prospective` until January 1, 2027; Dentacor's initial RMA term is `expired` as of May 31, 2026 because no public extension instrument was located. Added temporal-status and broader public-claim drift evals.
+- Separated instrument legal `status` from PubLedge `editorial_status`, reconciled the protocol and schemas, and added negative-path temporal contract coverage plus term and supersession invariants.
 
 ## Maintenance lane
 
@@ -182,7 +183,7 @@ These candidates require a revisit trigger from [INTENT.md](INTENT.md). They are
 
 **Content / editorial:**
 - More jurisdictions: California, EU, UK — leverage EveryAILaw's coverage.
-- Lawyer review + promote first batch of instruments from `status: enforcing` (editorial) to externally-reviewed.
+- Lawyer review + record the first batch of externally reviewed instruments through separate editorial-review metadata. Legal `status` remains unchanged by editorial review.
 - SB 271 (Utah personal-identity abuse) added as a first-class instrument record so the existing statute-level obligation has a home.
 
 **Agent surface (follow-ons, not blocking):**
@@ -203,7 +204,7 @@ These candidates require a revisit trigger from [INTENT.md](INTENT.md). They are
 
 Motivated by the question "what would a regulator value, and what smooths the initial approach." The posture constraint is load-bearing: with a regulator the risk is perceived neutrality, not missing features. Do not add anything ops-flavored here.
 
-Spec landed (this session):
+Spec landed 2026-06-18:
 - `## Authority response` section in [PROTOCOL.md](PROTOCOL.md) + `authority_response` frontmatter field; `position` vocabulary in [DEFINITIONS.md](DEFINITIONS.md). Operator-agnostic response path (PR / issue / signed field). This is the single biggest objection-smoother: converts "watchdog pointed at us" into "a microphone we can speak through."
 - Plain-language [/reference/verify/](reference/verify/index.html) page: non-engineer "confirm a record was not altered," no terminal required as the primary path. Linked from `/reference/`.
 
@@ -237,7 +238,7 @@ Each needs a forcing function — date, dependency, or explicit trigger.
 | Question | Forcing function | Default if unforced |
 |---|---|---|
 | Offer Nov 30 2026 annual-report section template as follow-on? | OAIP outreach response after v0.1 release | Defer to v0.2 conversation |
-| Retroactively ingest SEC no-action letters / IRS PLRs into PubLedge at scale? | Post-v0.1 editorial decision | Partially resolved: 14 demo instruments live (SEC, CFPB, IRS × 2, CFTC, Utah OAIP × 5, Utah Legislature × 4) with `source: demonstration-remap`. Full-corpus ingestion deferred. |
+| Retroactively ingest SEC no-action letters / IRS PLRs into PubLedge at scale? | Post-v0.1 editorial decision | Partially resolved: 18 demonstration instruments live (SEC, CFPB, IRS × 2, CFTC, Utah OAIP × 5, Utah Legislature × 5, Colorado Legislature × 3). Full-corpus ingestion deferred. |
 | paice.foundation attribution at foundation-protocol level vs personal/snapsynapse? | Public release prep | List under PAICE portfolio at paice.foundation |
 | PubLedge namespace at `publedge.org/ns/` minted? | First concept unexpressible in gist | Defer |
 | w3id.org/publedge/ns/ PR submitted? | ~6 months stable extensions | Defer long-term |

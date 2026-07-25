@@ -46,7 +46,9 @@
         "type",
         "authority",
         "jurisdiction",
-        "url"
+        "url",
+        "status",
+        "editorial_status"
       ],
       "properties": {
         "id": {
@@ -227,6 +229,17 @@
             "superseded",
             "withdrawn",
             "terminated"
+          ]
+        },
+        "editorial_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "draft",
+            "reviewed",
+            "published"
           ]
         },
         "supersedes": {

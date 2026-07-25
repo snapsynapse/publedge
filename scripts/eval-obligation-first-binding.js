@@ -104,6 +104,12 @@ for (const obligation of recordsByKind.obligations || []) {
     }
 }
 
+for (const instrument of recordsByKind.instruments || []) {
+    if (!instrument.publedge_editorial_status) {
+        failures.push(`${instrument.id} missing publedge_editorial_status`);
+    }
+}
+
 const neverOperative = (recordsByKind.obligations || []).filter(
     obligation => obligation.publedge_lifecycle_status === 'never-operative'
 );

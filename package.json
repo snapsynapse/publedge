@@ -66,6 +66,7 @@
     "eval:instrument-schema": "node scripts/eval-instrument-schema.js",
     "eval:obligation-schema": "node scripts/eval-obligation-schema.js",
     "eval:temporal-status": "node scripts/eval-temporal-status.js",
+    "eval:temporal-status-contract": "node scripts/eval-temporal-status-contract.js",
     "eval:record-schema": "node scripts/eval-record-schema.js",
     "eval:schema-parity": "node scripts/eval-schema-parity.js",
     "eval:authority-response": "node scripts/eval-authority-response.js",

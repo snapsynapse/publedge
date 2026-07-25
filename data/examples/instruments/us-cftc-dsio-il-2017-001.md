@@ -33,6 +33,7 @@ publication_citations:
   - cite: "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)"
     url: "https://cftc.gov/csl/17-65/download"
 status: enforcing
+editorial_status: published
 supersedes: null
 superseded_by: null
 withdrawn_date: null

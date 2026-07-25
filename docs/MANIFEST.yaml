@@ -123,7 +123,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:b13d618cde676b4cf74d61a73220b5a7fdacaadc46984419cd50e950b6d0cf01
+    hash: sha256:ee091f6c22a13a00a05498336622f83b999d69bbec7b7f0c822ff947cbc29dba
     note: package.json
 
   - path: package-lock.json
@@ -133,97 +133,97 @@ files:
 
   - path: project.yml
     role: config
-    hash: sha256:00131fe692299a8ceb64f11cfffdaae7fdd0a06e46e01a9d8f51dd1783f36115
+    hash: sha256:670e8d8cb4c700da01242a275b79e49591b5c8c45e69ed7e4a4f377faaa271c9
     note: project.yml
 
   - path: data/examples/instruments/us-cfpb-ao-2022-001.md
     role: instrument
-    hash: sha256:4b735a92e81aed9f16c5ab0ffd39ef8f8e731fb3b8667abee78e2ad340954703
+    hash: sha256:554698950a65f1295dbc1e9dee3fcb63a05ebf6e91817259672433a9e57d0d78
     note: data/examples/instruments/us-cfpb-ao-2022-001.md
 
   - path: data/examples/instruments/us-cftc-dsio-il-2017-001.md
     role: instrument
-    hash: sha256:8a63f3e4db25002af362d56f3336114a1f7cdd9ac56a34a194ad93058b4b47db
+    hash: sha256:5444aafef21202fef44ba70c565199429f855c5cae3b9ca76dea2fe60ad2716e
     note: data/examples/instruments/us-cftc-dsio-il-2017-001.md
 
   - path: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
     role: instrument
-    hash: sha256:937672734341cac789c24c44ca269046d10bf423722636e4aba1843e8f5a6eba
+    hash: sha256:10b736f834e46de7c3460da4636a96a0f7ca6bd4c2822c35a75cf54b3adc1a97
     note: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
 
   - path: data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md
     role: instrument
-    hash: sha256:147a5573b8e0535559c25257c59536b8b07af6952599234a9ca9fa978013bc16
+    hash: sha256:6c67819684efb6f302a4214d633fba7e70252fd3c3ee9eecdb18405245f465cc
     note: data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md
 
   - path: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
     role: instrument
-    hash: sha256:f33a4e57b99b83b2d8373c68e3eb2e5f45359defa2e9aa28baa3d152fe03cbdc
+    hash: sha256:ccd50a71a23a1a75a1b6dd47768d98ecc5fd9fe5a4a3e44cf08b3a120d47b759
     note: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
 
   - path: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
     role: instrument
-    hash: sha256:38ec505f96b0d2134cf5f4e94b464ccc3ea0cb7fb32691143236665fb5dd6ea5
+    hash: sha256:fdb1b3b30e3302f8dbb9251404c797e85c6e65afa0766e9cee688abd0b62ea8e
     note: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
 
   - path: data/examples/instruments/us-irs-tege-plr-2026-001.md
     role: instrument
-    hash: sha256:2de656a010238529e9162a86b218cbae10a6e803ba5c35630e67e1185bab774f
+    hash: sha256:69ec685c082f53120e5efa8614086b800ecc48be8cbb5a4cd4560390ac95823d
     note: data/examples/instruments/us-irs-tege-plr-2026-001.md
 
   - path: data/examples/instruments/us-sec-corpfin-nal-2025-001.md
     role: instrument
-    hash: sha256:ff27c1733d96fbd84d777e8484d2998e57b46f0f61d7206f835430006db0bba3
+    hash: sha256:f180079d030d1e75c7d3680e9e2b4cd0676e0a336d33e01a5b3c8701da734d23
     note: data/examples/instruments/us-sec-corpfin-nal-2025-001.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
     role: instrument
-    hash: sha256:5d22f79897a100d514d0aa255f0e7b43fea491850f5a0a8f3b83adbacf9fd363
+    hash: sha256:245dc17c39eb7f7cab01918286c67dfe1f8ba6c7b34a3800835ffd180c7ff941
     note: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
     role: instrument
-    hash: sha256:b6932ff3c6e974031955f24dbae97d856205700fdd29410eca5b1c034a5cb217
+    hash: sha256:3a793ef60b0746232aa436aaa4e5eccb5604dc716c314cd1045b5fa6578968b9
     note: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
     role: instrument
-    hash: sha256:f59331031629069b35023aaa0d3e2c274f82fd44af2eac770760114147730395
+    hash: sha256:518882b00ebe9515a3f4697a2da41a607c506c8d844a31895dcf1851d0f5dd3a
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
     role: instrument
-    hash: sha256:ff6e767695ef875bb16c099e74379b8df95a66ec0dc9e1e0d1e17112c5697e06
+    hash: sha256:97e8084f429a9565d1b7e2d4eeb6ab7cb0d16c63762838c30c18afde1f436a83
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
     role: instrument
-    hash: sha256:f3df443143a7a37cb159dd5133a6c7ef918d96d8f2b0f8dc4621875aeab32a2a
+    hash: sha256:111b246cf8bb2b1118face419aa81634e3eba290346e98be8e47761d2a8345d5
     note: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
 
   - path: data/examples/instruments/us-ut-oaip-jia-2026-001.md
     role: instrument
-    hash: sha256:2a50061be4e70561e75d194a5ce6fa970bd824c653f2ed6799e5a7967b531664
+    hash: sha256:687a4c81b9c8f4195ccf13bf54be940a24e0ed478b6b18959f569eb7c9c0dc31
     note: data/examples/instruments/us-ut-oaip-jia-2026-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2024-001.md
     role: instrument
-    hash: sha256:56fb44aee1554ef282d377c761a87d92fda0eda595526fa020ef492ea4f528e8
+    hash: sha256:a29675f7c74f702d213cb8002adfc5684d33ffa5137341c4db831441f129ef07
     note: data/examples/instruments/us-ut-oaip-rma-2024-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-001.md
     role: instrument
-    hash: sha256:213fc2c8ee6c64a1b292cdf00f4bb86862857e2332bb660f3c475c43ca5a4bf0
+    hash: sha256:c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617
     note: data/examples/instruments/us-ut-oaip-rma-2025-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
     role: instrument
-    hash: sha256:70718b9aa8a69eda8410dbcee468ba079d41b976c8ab522e55da169f43e3ae3d
+    hash: sha256:ffc809635be8cadbe5ffa2d6695ee36f9193a6bb90fc191d8ff3e96cd1586e14
     note: data/examples/instruments/us-ut-oaip-rma-2025-002.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2026-001.md
     role: instrument
-    hash: sha256:6f74a262908133e81e7803bfbc42bbfa10ace8da5ef6031a1015563c3d997f75
+    hash: sha256:d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a
     note: data/examples/instruments/us-ut-oaip-rma-2026-001.md
 
   - path: ATTRIBUTION.md
@@ -428,7 +428,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:3b66c28d2d6683c37992fab1fc233bcbbe3c3091b9f2ecfb29566ed7198c2a2a
+    hash: sha256:401c6c0567a295d7be3db2da8efa093bc8368f0829df003b4c1931f21d52a00f
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -438,7 +438,7 @@ files:
 
   - path: DEFINITIONS.md
     role: protocol
-    hash: sha256:ec72da6d5230e6ef1bb553a2d2a186d7db4cdb57fa01cf3648e61a98c83d78a7
+    hash: sha256:68907cf92cc224b13e6445a505e9432bf74103cd0c8cf6473c75d808776a675b
     note: DEFINITIONS.md
 
   - path: PRIOR-ART.md
@@ -448,12 +448,12 @@ files:
 
   - path: PROTOCOL.md
     role: protocol
-    hash: sha256:f36278b7f6be632363f5ea2610bc126759d5cd4529af8475cbe39fda1cce9147
+    hash: sha256:6488372559cc32b9b98454fe1935a5da1d12f621d70fefffc6ca9338aa952db0
     note: PROTOCOL.md
 
   - path: README.md
     role: protocol
-    hash: sha256:0aa283693b85d14dcd2d2a31bf99c7d93e244dfcf32752a250cb950988e5b7cf
+    hash: sha256:15a483e6702a768605d399e80a212102f0a61ed6307d78645ebbd08442340a86
     note: README.md
 
   - path: RELEASE_NOTES-v0.1.3.md
@@ -463,7 +463,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:dc79d2c41453abf4ad15ad4d6a85f1c5f0d12e3fdcce3e7d848e5396c938d8ec
+    hash: sha256:f5808718b67ac4257488cd29608325e4b7a654354782b86bb87a43784de6637f
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -488,7 +488,7 @@ files:
 
   - path: schema/instrument.schema.json
     role: schema
-    hash: sha256:57164d940c05a0fae72f0d21c54924ed79715e3795038d8abfa765e342483b64
+    hash: sha256:9d2411b4a4022bc1174f3b9f09df60297e3a40da51f279e173e6dcb20044f05a
     note: schema/instrument.schema.json
 
   - path: schema/obligation-record.schema.json
@@ -498,37 +498,37 @@ files:
 
   - path: schema/jia.schema.json
     role: schema
-    hash: sha256:830d02d999b8222f8d44da272d12ade81a00b7ed01d4ee69294116bd1eb32759
+    hash: sha256:317e47143a373e8ef5a984e55caeb3200b4ee6f69046be04542f663230b33985
     note: schema/jia.schema.json
 
   - path: schema/rma.schema.json
     role: schema
-    hash: sha256:3be4a222b99cbc6a6bc942794344e74fe948e1315b2c98cbc3f261dbffddb9f8
+    hash: sha256:d2f35ee20ff0321cb8ccaffeb26437921b1f0ca3a6c49332efa747ce0efe3b08
     note: schema/rma.schema.json
 
   - path: _templates/jia/utah-mental-health-chatbot-advertising.md
     role: template
-    hash: sha256:998702f6c8afccedc28c04edb7766833cb03f002e72f3fa5434ada743aeb19f5
+    hash: sha256:abdbbda3d7e27192c7b4fc56eeef2955b30ba3299d91e26427533fbdda5dd24a
     note: _templates/jia/utah-mental-health-chatbot-advertising.md
 
   - path: _templates/jia/utah-mental-health-chatbot-data-protection.md
     role: template
-    hash: sha256:8010ad4cd4002cb930aa4da2a14789ff29d577f66114cd8bf40e8fedbaa4aaa4
+    hash: sha256:0afbd845562e9c429b76405aed8aab8d0122cd49d31cfcbc788820e27d18d790
     note: _templates/jia/utah-mental-health-chatbot-data-protection.md
 
   - path: _templates/jia/utah-mental-health-chatbot-first-session-disclosure.md
     role: template
-    hash: sha256:a45b2202be8dcb79aaa239203dc20365c27b2fa29f091ae1fa694a7946e65475
+    hash: sha256:06c8af8195570988c51e8f5e375c5d2082a4957720e5a06b3e3c73e99ffdf141
     note: _templates/jia/utah-mental-health-chatbot-first-session-disclosure.md
 
   - path: _templates/rma/utah-ai-sandbox-mitigation-mental-health-chatbot.md
     role: template
-    hash: sha256:9736c19c052316e5d772d79ef8b49efb3e83a5db6a13468d40bac8886c472d40
+    hash: sha256:662ebe7515575d8fae1364614272fee3c60f3c9b06653f6b4d33ee22602ccbbb
     note: _templates/rma/utah-ai-sandbox-mitigation-mental-health-chatbot.md
 
   - path: _templates/rma/utah-genai-safe-harbor-enrollment.md
     role: template
-    hash: sha256:d4912e581ae809698455f6b8a251555853a64755f659a9c176a216714e810b1f
+    hash: sha256:5b7fe3e084251572f34d64df5325eb264098868cfc4c714dc714c9c849d96673
     note: _templates/rma/utah-genai-safe-harbor-enrollment.md
 
   - path: mcp-server.js
@@ -538,12 +538,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:9ac29dd1e876c7bd878428ccc48a095c4ac44a1900ea17e53f94d9565fb78c11
+    hash: sha256:ab207bf27951893012ac18a1300ed464e28978aceaba5b8e3f4a4a6e38db1884
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:3187bbcabda6325d8b6a06abdcc18dc7d5f2f5422569bae44d48c3750169dc63
+    hash: sha256:14e14c0bad9edad13161669270aa5c1629a132b26ba5008600d63ceee4869dc9
     note: scripts/build.js
 
   - path: scripts/check-links.js
@@ -558,7 +558,7 @@ files:
 
   - path: scripts/eval-authority-response.js
     role: tooling
-    hash: sha256:37f06d0c545ad3b1b49504ff67647debb66c6dafecf68143a4685d07cca0054d
+    hash: sha256:2ab5c581afe0b5acb8ceb8dc341ce0a926087f4953348e761747ae146a0d7fa6
     note: scripts/eval-authority-response.js
 
   - path: scripts/eval-clean-build.js
@@ -633,7 +633,7 @@ files:
 
   - path: scripts/eval-obligation-first-binding.js
     role: tooling
-    hash: sha256:f5abfc0a20592a229416fc2195c5f34896597bdf7e9fd7b40496c4c08c3270d1
+    hash: sha256:42296b4ee9b15ab003bf568a61419b8d4e575ec7f9c9a7a95e6d0849d994e9e5
     note: scripts/eval-obligation-first-binding.js
 
   - path: scripts/eval-parser.js
@@ -648,8 +648,13 @@ files:
 
   - path: scripts/eval-temporal-status.js
     role: tooling
-    hash: sha256:e9101825b3fc0285a89926e2110078980d3fd3b1dd6c43e3d6db25833dca1e99
+    hash: sha256:a7017986122a89262d34257387b5009aca45eb37704cbd59674161e4d1d438d0
     note: scripts/eval-temporal-status.js
+
+  - path: scripts/eval-temporal-status-contract.js
+    role: tooling
+    hash: sha256:32426636d48463564b6b3e52199517bb38de1460660020b16c5012abc05eba91
+    note: scripts/eval-temporal-status-contract.js
 
   - path: scripts/eval-record-schema.js
     role: tooling
@@ -668,7 +673,7 @@ files:
 
   - path: scripts/eval-schema-parity.js
     role: tooling
-    hash: sha256:bbec81f48e3f8a4e209e34db24dfe1246da8b74bb416ccc2d811823a52bb49b7
+    hash: sha256:f7780fb24cd6309f10469532f806ef0bd87d251a2f976f49a2c914f828a7ff84
     note: scripts/eval-schema-parity.js
 
   - path: scripts/eval-verification-allowlist.js
@@ -683,7 +688,7 @@ files:
 
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:6d0a03b9488b7e27f2d915e49b3b400baf682a91679475ddab948b7e416dfbf1
+    hash: sha256:82838536f7ecda73220d456268cca5b9bb172167a068ae49f3ee5b9858309717
     note: scripts/evals.js
 
   - path: scripts/lib/content.js
@@ -693,7 +698,7 @@ files:
 
   - path: scripts/lib/disclaimer.js
     role: tooling
-    hash: sha256:94e4450e176c8d4e9254f3cd2e4557b77c178902129b8b1137585a5766fd817a
+    hash: sha256:18f9785b06a92bdb0487256ea99bf7b1009846b0deff8ae2cca294617ac7e2eb
     note: scripts/lib/disclaimer.js
 
   - path: scripts/lib/eval-kit.js
@@ -708,8 +713,13 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:729aaa48c5c5cf979733aafb49141f3e76e194d124a7220bb132084c68155e29
+    hash: sha256:2a82b48dd6d3648f59f0721d533b53afd6fb4841270df8aa1d2b894df2671c7b
     note: scripts/lib/obligation-first.js
+
+  - path: scripts/lib/temporal-status.js
+    role: tooling
+    hash: sha256:203e3d8f26aa8d5a15c4d1271f8cd909fcf884f11ba313283fe39e378a3d1a1f
+    note: scripts/lib/temporal-status.js
 
   - path: scripts/lib/parse.js
     role: tooling
@@ -738,7 +748,7 @@ files:
 
   - path: scripts/validate.js
     role: tooling
-    hash: sha256:d93510fa7291adb764c2d055555e5faa57964cbde8f8c3f4404aa078e453c603
+    hash: sha256:582a5ca556acee832d4f318d4549cbb6bac5cc4a0dd540dec6a40ae55d959bf2
     note: scripts/validate.js
 
   - path: scripts/verify.js
@@ -763,7 +773,7 @@ files:
 
   - path: about/index.html
     role: site-source
-    hash: sha256:5da16e96da9938a183f567d074e2ccc04537ded4653ca82bf55b13135718772a
+    hash: sha256:b7ddbdfe3d078c8a5e8ca22d3b4cfd7fb286d99525e2e74ceb6b1d027186849f
     note: about/index.html
 
   - path: assets/search.js

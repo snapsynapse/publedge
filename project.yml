@@ -57,6 +57,10 @@ entities:
     name: Legal Instrument
     plural: Legal Instruments
     directory: instruments
+    editorial_statuses:
+      - draft
+      - reviewed
+      - published
     # Status vocabulary — see DEFINITIONS.md for semantics + lifecycle.
     # proposed/enacted/enforcing/phased-enforcement/pending-replacement
     # track EveryAILaw's convention verbatim for cross-registry joins.

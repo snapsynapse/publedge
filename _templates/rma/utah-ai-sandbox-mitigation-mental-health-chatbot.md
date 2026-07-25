@@ -25,7 +25,8 @@ variables:
   - name: incident_reporting_threshold
     description: "Event types and thresholds that trigger mandatory reporting to OAIP within 72 hours"
 source: publedge-original-draft
-status: draft
+status: proposed
+editorial_status: draft
 created: 2026-04-18
 modified: 2026-04-18
 ---
