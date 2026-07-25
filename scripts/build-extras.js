@@ -162,7 +162,7 @@ function renderFooterNav(relRoot) {
 function renderSiteFooter(relRoot) {
     return `<footer class="site-footer">
 <p class="footer-meta">&copy; ${new Date().getFullYear()} <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="${relRoot}reference/disclaimer/">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.2</p>
+<p class="footer-built">PubLedge v0.1.3</p>
 </footer>`;
 }
 
@@ -762,7 +762,11 @@ function writeMcpDiscovery() {
 // records, so `npm run validate:of` and this file cannot disagree silently.
 // PubLedge mints no Proceeding or Allegation records, so those types are absent.
 const OF_NAMING_PROFILE_VERSION = '1.0.0';
-const OF_SPEC_VERSION_RANGE = '>=0.4.0, <0.5.0';
+// PubLedge publishes no ObligationCategory records, so it has no reason to floor
+// at 0.5.0. A range spanning both minors rides obligation-first's additive
+// releases instead of going red in lockstep with them.
+const OF_SPEC_APPLIES_TO = 'obligation-first >=0.4.0 <0.6.0';
+const OF_SPEC_VERSION_RANGE = '>=0.4.0, <0.6.0';
 
 function ofEntityProfile(segment, crosswalks) {
     const space = `${SITE_URL}${segment}/`;
@@ -782,7 +786,7 @@ function writeNamingProfile() {
         '@context': 'https://obligationfirst.org/v1/',
         '@type': 'of:NamingProfile',
         profileVersion: OF_NAMING_PROFILE_VERSION,
-        appliesTo: 'obligation-first 0.4.x',
+        appliesTo: OF_SPEC_APPLIES_TO,
         adopter: SITE_URL,
         entities: {
             Authority: ofEntityProfile('authority', ['sameAs']),

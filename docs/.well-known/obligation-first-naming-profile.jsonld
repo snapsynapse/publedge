@@ -2,7 +2,7 @@
   "@context": "https://obligationfirst.org/v1/",
   "@type": "of:NamingProfile",
   "profileVersion": "1.0.0",
-  "appliesTo": "obligation-first 0.4.x",
+  "appliesTo": "obligation-first >=0.4.0 <0.6.0",
   "adopter": "https://publedge.org/",
   "entities": {
     "Authority": {

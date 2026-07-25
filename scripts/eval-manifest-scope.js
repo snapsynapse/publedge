@@ -5,6 +5,10 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT, walkFiles, reportFailures } = require('./lib/eval-kit');
 
+// Derived, not hardcoded: the release-notes filename tracks the package version,
+// so a version bump does not silently leave this eval asserting the old file.
+const PKG_VERSION = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf-8')).version;
+
 const failures = [];
 
 function rel(file) {
@@ -38,7 +42,7 @@ function canonicalSourcePaths() {
         'project.yml',
         'PROTOCOL.md',
         'README.md',
-        'RELEASE_NOTES-v0.1.2.md',
+        `RELEASE_NOTES-v${PKG_VERSION}.md`,
         'ROADMAP.md',
         'SECURITY.md',
         'VERIFICATION.md'
