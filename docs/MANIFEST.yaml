@@ -118,12 +118,12 @@ files:
 
   - path: server.json
     role: config
-    hash: sha256:3698c909e95ffbbb70241d1e95a82cfb0564b798d6839c84323b4a3501fcbd60
+    hash: sha256:4cddf89b7f62d1bf3b465f12a5d35e9ca41738ef9cfbd75fb1437d7d56fdf2f0
     note: server.json
 
   - path: package.json
     role: config
-    hash: sha256:b302af89e1876a34c59977b527f42eeec0aadfb444344f50598136af120dab1d
+    hash: sha256:2de16f11d7c171453132f2d663468c2e28b7d9ca225df8c607d7e51c3394b71b
     note: package.json
 
   - path: package-lock.json
@@ -413,7 +413,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:4b972451b32637635736f51d62c50d659e36f0c44a53455ad9e57980f21893c9
+    hash: sha256:6b30dd414bbe1a360c42384e31c472dcc6b04b1a1f67560ee0f68734c5acb2ff
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -433,12 +433,12 @@ files:
 
   - path: PROTOCOL.md
     role: protocol
-    hash: sha256:6105fb39fbf1a223a3d4a91b7c356086d4b9ee100da4aeaf1edbf042886e6330
+    hash: sha256:f36278b7f6be632363f5ea2610bc126759d5cd4529af8475cbe39fda1cce9147
     note: PROTOCOL.md
 
   - path: README.md
     role: protocol
-    hash: sha256:c2aff68749ef52c4ba9358014d6129633ed6b5735aa8a070ed577de845b538c6
+    hash: sha256:c3cf9aacf2e15d527e3707f69053f7e8bf052a0710ef444ba7958225e2070e29
     note: README.md
 
   - path: RELEASE_NOTES-v0.1.3.md
@@ -518,7 +518,7 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:dbdc8f24ab7aa0ff3c6a58bcff6f78506dca066b8569feb21273db00e509ace7
+    hash: sha256:0616e941907cf6fd8d63a6a4a0abd4e88904fd56a876e74af0a8514ed2fed26c
     note: scripts/build-extras.js
 
   - path: scripts/build.js
@@ -533,7 +533,7 @@ files:
 
   - path: scripts/check-of-version.js
     role: tooling
-    hash: sha256:db81b75c686a21c03dfa969b4c40458d707ec100a72012e3cf68140bde1f4b6c
+    hash: sha256:050ecafec52063c2aa7bf9995492f6d37a066cece15400b1b4586288a3d16a7d
     note: scripts/check-of-version.js
 
   - path: scripts/eval-authority-response.js
@@ -588,7 +588,7 @@ files:
 
   - path: scripts/eval-manifest-scope.js
     role: tooling
-    hash: sha256:1c1d77bd09c1757a0e4fa4f3f92a9af3e500d3960f584ee35f9f1baae5609494
+    hash: sha256:aa159569beddc01d6125226c809bbb556afbfc326c5644460ead68954a12dde6
     note: scripts/eval-manifest-scope.js
 
   - path: scripts/eval-mcp-contract.js
@@ -728,7 +728,7 @@ files:
 
   - path: PROJECT_CONTEXT.md
     role: agent-guidance
-    hash: sha256:2a65d9036f9458e8c59b74decbdb010746975770c15e137eeb5d057d16089697
+    hash: sha256:aa18f4b6ca18716d75726f8b9b45437bddc03edde42037c17dcddf95916ea1f8
     note: PROJECT_CONTEXT.md
 
   - path: about/index.html
