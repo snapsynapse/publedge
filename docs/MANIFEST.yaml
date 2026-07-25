@@ -26,7 +26,7 @@
 
 bundle: publedge
 bundle_version: 0.1.3
-bundle_date: 2026-07-21
+bundle_date: 2026-07-25
 description: >
   PubLedge open recordkeeping protocol for fact-specific written
   interpretations between two parties.
@@ -123,12 +123,12 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:627f36c426ff5e6bf6f7d3e8ec38882f5a50161bffdaf4062c5fb0bb75d972b7
+    hash: sha256:b13d618cde676b4cf74d61a73220b5a7fdacaadc46984419cd50e950b6d0cf01
     note: package.json
 
   - path: package-lock.json
     role: config
-    hash: sha256:2d77c46eb2b5f4cdcea562f5bc3677bfcf66b2253fb504ffc00a4ac60fb58695
+    hash: sha256:79e77929400a6d51575af60a9fbbc5a15943557f41b23fdc81046f8f90de2a41
     note: package-lock.json
 
   - path: project.yml
@@ -158,7 +158,7 @@ files:
 
   - path: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
     role: instrument
-    hash: sha256:f0f12d0dfe3c33d45b3c2c3fb3b745adcde173c534462f62ce2edd4de238a399
+    hash: sha256:f33a4e57b99b83b2d8373c68e3eb2e5f45359defa2e9aa28baa3d152fe03cbdc
     note: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
 
   - path: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
@@ -213,7 +213,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-001.md
     role: instrument
-    hash: sha256:74390c35bfd678a444cfea02b64bb7fa7fc3b85d843282e9e6a6c093a7c296aa
+    hash: sha256:213fc2c8ee6c64a1b292cdf00f4bb86862857e2332bb660f3c475c43ca5a4bf0
     note: data/examples/instruments/us-ut-oaip-rma-2025-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
@@ -253,32 +253,32 @@ files:
 
   - path: data/examples/obligations/admt-60-day-cure-period.md
     role: obligation
-    hash: sha256:913c3b086839cb238c1fec2e2827d3f0692f31e12974b6e6afde88751977851c
+    hash: sha256:3ae66773fe8227d53bc56ec437490fc69995b36fff76a07e61b185566b05d369
     note: data/examples/obligations/admt-60-day-cure-period.md
 
   - path: data/examples/obligations/admt-correction-and-human-review.md
     role: obligation
-    hash: sha256:6dfcdac110b8c32da7cb8df0f94abe9bd2efc263d13af3e9ebfb67bcf9c6e1c4
+    hash: sha256:f486f4a6477fb599d903b35b1f4126e250e987990c8adb9870d5daf33197da2d
     note: data/examples/obligations/admt-correction-and-human-review.md
 
   - path: data/examples/obligations/admt-deployer-3-year-record-retention.md
     role: obligation
-    hash: sha256:ded332cd1c32860ef93d9ecba5677aa9d94ed1845469ea5023936f863c6e7f60
+    hash: sha256:c6b1f8b63111fb7a32fbfa5ecafb32d4a1504b774ad614c79930e868883ed301
     note: data/examples/obligations/admt-deployer-3-year-record-retention.md
 
   - path: data/examples/obligations/admt-deployer-pre-decision-notice.md
     role: obligation
-    hash: sha256:51cf7f4c3d0fedf1b5a321a9925957704503aac6e938d34fc0b73a5250daa15c
+    hash: sha256:5c9b963aa84427ff4564a45d603d2c74ec305ab43819342d6e811e6f41e474bf
     note: data/examples/obligations/admt-deployer-pre-decision-notice.md
 
   - path: data/examples/obligations/admt-developer-documentation-to-deployer.md
     role: obligation
-    hash: sha256:c7eeb5169e2930579b1f5c516332a0f0bb3ec82f8091d7617ec16340000d882a
+    hash: sha256:94df66d03bc7071b6b764053a3c7e6f5ec0ac7d81beb072e2ee152a319e3e31c
     note: data/examples/obligations/admt-developer-documentation-to-deployer.md
 
   - path: data/examples/obligations/admt-post-adverse-explanation-30-days.md
     role: obligation
-    hash: sha256:a0eeac6a3efed4c3a1f813e6c88d8de1e8cae4230bdccc2bb140cee454f7bcce
+    hash: sha256:5a92a40bd35daf97ddedceee5e9d2f34109dccc5dd40fdcbc670c0d6ce3f1bdd
     note: data/examples/obligations/admt-post-adverse-explanation-30-days.md
 
   - path: data/examples/obligations/ai-authorized-rx-renewal.md
@@ -313,17 +313,17 @@ files:
 
   - path: data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md
     role: obligation
-    hash: sha256:06b0400de3ee7d47040627d1e5a4c7b4ccc63e800c9f183e8e39538d302bbd73
+    hash: sha256:cd1f03c55b4ca26b7327a692c2ff3652a7993f2e27dfc7f4f230a124b81088f7
     note: data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md
 
   - path: data/examples/obligations/dentacor-hygienist-ai-concurrence-diagnosis.md
     role: obligation
-    hash: sha256:601b3f09db1407f33fc7673db3cebe1e6d41aeacc827bf65164e9a3eb0cd405d
+    hash: sha256:2ae0e1613ccbcaf975fc31e4e87301c6cdc224f6cbe5c8f4647cffa056102005
     note: data/examples/obligations/dentacor-hygienist-ai-concurrence-diagnosis.md
 
   - path: data/examples/obligations/dentacor-informed-consent-no-dentist.md
     role: obligation
-    hash: sha256:09a99327bcd43ebc99df857031af31e83e04586a67aee0258e7a09e6a122b49b
+    hash: sha256:2d478f847c2099609c19cc36a03fb69e6a7c2402743221589a73e4440d984f34
     note: data/examples/obligations/dentacor-informed-consent-no-dentist.md
 
   - path: data/examples/obligations/disclose-genai-high-risk-proactive.md
@@ -428,7 +428,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:c46648b9a29d618206f56e8d2098c1f3e99caec34fce07621620d994c50d181d
+    hash: sha256:3b66c28d2d6683c37992fab1fc233bcbbe3c3091b9f2ecfb29566ed7198c2a2a
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -453,7 +453,7 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:b4af51a6f12875e09c8886dfcbf972fd72fca6ffafa1d1f94398ab85d5650710
+    hash: sha256:0aa283693b85d14dcd2d2a31bf99c7d93e244dfcf32752a250cb950988e5b7cf
     note: README.md
 
   - path: RELEASE_NOTES-v0.1.3.md
@@ -463,7 +463,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:aa161372c98b1c3b0b2171632098891ad7c97cd2a8429287e114b24957ae3865
+    hash: sha256:dc79d2c41453abf4ad15ad4d6a85f1c5f0d12e3fdcce3e7d848e5396c938d8ec
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -608,7 +608,7 @@ files:
 
   - path: scripts/eval-obligation-schema.js
     role: tooling
-    hash: sha256:ca1f816e8f7de27ef1d8167a3483ac692b596354c594c76580a974ec46459ace
+    hash: sha256:6b5148dd8c9c00fd22bd35ac8ede6eaf3ba23dbaaef204795cc85d4b6bd9ca17
     note: scripts/eval-obligation-schema.js
 
   - path: scripts/eval-manifest-scope.js
@@ -643,8 +643,13 @@ files:
 
   - path: scripts/eval-public-claims.js
     role: tooling
-    hash: sha256:99b61fa1927a4c80b59a50a71dbb8ee6a1047565a98a9f5e66217ec1abcb1da6
+    hash: sha256:24895ff9980fb57ab38effc7537ff39672254dd715c2e826c6bdb7c74b770660
     note: scripts/eval-public-claims.js
+
+  - path: scripts/eval-temporal-status.js
+    role: tooling
+    hash: sha256:e9101825b3fc0285a89926e2110078980d3fd3b1dd6c43e3d6db25833dca1e99
+    note: scripts/eval-temporal-status.js
 
   - path: scripts/eval-record-schema.js
     role: tooling
@@ -678,7 +683,7 @@ files:
 
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:1403f8df0e2b98f6b0736b97426e90c5f450b8c7ca7a3bbd111b4c5097f27ff9
+    hash: sha256:6d0a03b9488b7e27f2d915e49b3b400baf682a91679475ddab948b7e416dfbf1
     note: scripts/evals.js
 
   - path: scripts/lib/content.js
@@ -748,7 +753,7 @@ files:
 
   - path: CLAUDE.md
     role: agent-guidance
-    hash: sha256:b4e9e5de8d94db9135119004bcf3c7cd64cd5b9b2febdc60bff0a0a6cc3efdb9
+    hash: sha256:89df2a56ad1b1de45a123e090f0180a3850d3c00f9c01dd22d7b523ae8c5fb70
     note: CLAUDE.md
 
   - path: PROJECT_CONTEXT.md
@@ -758,7 +763,7 @@ files:
 
   - path: about/index.html
     role: site-source
-    hash: sha256:cf712e492fc6399dd18b5264913803158fc9adb9fd65222c30bfde7fff0ff9a8
+    hash: sha256:5da16e96da9938a183f567d074e2ccc04537ded4653ca82bf55b13135718772a
     note: about/index.html
 
   - path: assets/search.js
@@ -788,17 +793,17 @@ files:
 
   - path: reference/index.html
     role: site-source
-    hash: sha256:9489ace7298b7d025b7fd1a03199beb798cf5de279791678e8aabc5e50ad57f1
+    hash: sha256:55dac4b920bd7aa08acb171bc41aabe28e93c2e1896cd480e5cf7ba8bc0d4046
     note: reference/index.html
 
   - path: reference/prior-art/index.html
     role: site-source
-    hash: sha256:45270d3238204b2eae266e83de0e0b03d55b5f771b197ce0fc04d9732e884630
+    hash: sha256:e3830cebe137f52bad993999ab17996488c871106fb1c75a3b786aaf256a8495
     note: reference/prior-art/index.html
 
   - path: reference/registry/index.html
     role: site-source
-    hash: sha256:4c1e23d8332e54ec183cf502476da0f55a6561256be52d5621a58b53a7da9040
+    hash: sha256:ff723852c0dffdc9b67b7aee0b81fcbe660f795af3653fb98a3c82296356094b
     note: reference/registry/index.html
 
   - path: reference/verify/index.html
@@ -808,7 +813,7 @@ files:
 
   - path: reference/vocabulary/index.html
     role: site-source
-    hash: sha256:38537ae8aabcc9f84f599e5d40a269c526f802231f1244ab0d84b2175e8c03e8
+    hash: sha256:347ad8ce161ce5c1ce3de2cd1a735ec3d42058d4d885bc366803abf37f40e597
     note: reference/vocabulary/index.html
 
   - path: vendor/gist/gistCore.ttl

@@ -4,8 +4,8 @@ id: admt-developer-documentation-to-deployer
 name: ADMT Developer Documentation To Deployer
 group: requirement
 status: draft
-lifecycle_status: operative
-last_verified: 2026-07-24
+lifecycle_status: prospective
+last_verified: 2026-07-25
 search_terms:
   - admt
   - developer documentation
@@ -17,7 +17,7 @@ search_terms:
 
 ## Summary
 
-A developer of covered automated decision-making technology must disclose to deployers the technology's intended uses, the categories of data used to train it, its known limitations, and instructions for meaningful human review. The duty runs developer-to-deployer, not developer-to-consumer.
+Beginning January 1, 2027, a developer of covered automated decision-making technology must disclose to deployers the technology's intended uses, the categories of data used to train it, its known limitations, and instructions for meaningful human review. The duty runs developer-to-deployer, not developer-to-consumer.
 
 ## What Counts
 

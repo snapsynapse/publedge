@@ -37,8 +37,12 @@ for (const filename of fs.readdirSync(project.dirs.primaryDir).filter(name => na
     const activeImplementations = implementingStatuses.filter(status =>
         status === 'enforcing' || status === 'phased-enforcement'
     );
+    const prospectiveImplementations = implementingStatuses.filter(status => status === 'enacted');
     if (record.lifecycle_status === 'operative' && activeImplementations.length === 0) {
         failures.push(`${filename} is operative but has no enforcing implementation`);
+    }
+    if (record.lifecycle_status === 'prospective' && prospectiveImplementations.length === 0) {
+        failures.push(`${filename} is prospective but has no enacted implementation awaiting effect`);
     }
     if (record.lifecycle_status === 'expired' &&
         (implementingStatuses.length === 0 || implementingStatuses.some(status => status !== 'expired'))) {

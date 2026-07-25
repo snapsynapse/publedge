@@ -4,8 +4,8 @@ id: admt-deployer-3-year-record-retention
 name: ADMT Deployer Three-Year Record Retention
 group: requirement
 status: draft
-lifecycle_status: operative
-last_verified: 2026-07-24
+lifecycle_status: prospective
+last_verified: 2026-07-25
 search_terms:
   - admt
   - record keeping
@@ -17,7 +17,7 @@ search_terms:
 
 ## Summary
 
-A deployer of covered automated decision-making technology must retain its compliance documentation for at least three years. The retention floor is what makes the notice, explanation, and review duties auditable by the Attorney General after the fact.
+Beginning January 1, 2027, a deployer of covered automated decision-making technology must retain its compliance documentation for at least three years. The retention floor is what makes the notice, explanation, and review duties auditable by the Attorney General after the fact.
 
 ## What Counts
 

@@ -4,8 +4,8 @@ id: dentacor-hygienist-ai-concurrence-diagnosis
 name: Dentacor — Hygienist + AI Concurrence Diagnosis
 group: permission
 status: draft
-lifecycle_status: operative
-last_verified: 2026-04-21
+lifecycle_status: expired
+last_verified: 2026-07-25
 search_terms:
   - dentacor
   - hygienist
@@ -16,7 +16,7 @@ search_terms:
 
 ## Summary
 
-Licensed Utah dental hygienists employed by Dentacor may diagnose periodontal disease, complete edentulism, and complete anodontia using an AI-assisted radiograph diagnostic tool in place of general dentist supervision. Diagnosis requires concurrence of both the hygienist and the AI system, and is limited to the procedures authorized under the companion permission (scaling and root planing; fitting of full dentures).
+During the initial Dentacor RMA term, licensed Utah dental hygienists employed by Dentacor could diagnose periodontal disease, complete edentulism, and complete anodontia using an AI-assisted radiograph diagnostic tool in place of general dentist supervision. The permission required concurrence of both the hygienist and the AI system and expired with the initial mitigation period on May 31, 2026; no public extension instrument was located as of July 25, 2026.
 
 ## What Counts
 

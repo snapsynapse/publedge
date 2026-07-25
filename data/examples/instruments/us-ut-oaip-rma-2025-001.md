@@ -18,7 +18,7 @@ enacted: 2025-05-31
 effective: 2025-05-31
 term_start: 2025-05-31
 term_end: 2026-05-31
-official_url: https://commerce.utah.gov/ai/agreements/dentacor/
+official_url: https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/
 publication_citations:
   - "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
 source_documents:
@@ -61,7 +61,7 @@ mitigations:
   - "Testing plan approved by OAIP before any patient contact"
   - "Data security per §63A-19-102; State of Utah Enterprise Information Security Policy 5000-0002"
   - "Monthly reporting to ai@utah.gov (demographics, efficacy, complaints, adverse events, incidents)"
-status: enforcing
+status: expired
 supersedes: null
 superseded_by: null
 withdrawn_date: null
@@ -69,10 +69,10 @@ withdrawal_reason: null
 withdrawn_by_instrument: null
 hash_chain_prev: null
 disclaimer: ""
-last_verified: 2026-06-04
+last_verified: 2026-07-25
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-19
-modified: 2026-06-04
+modified: 2026-07-25
 ---
 
 ## Summary
@@ -81,7 +81,7 @@ A Regulatory Mitigation Agreement enrolling Dentacor, LLC in the Utah AI Learnin
 
 ## Background
 
-Dentacor operates mobile dental hygiene clinics serving shelters, recovery programs, and transitional housing. Executed 2025-05-29 (Dentacor CEO Nathan Wilson), 2025-05-30 (OAIP Director Zachary Boyd), and 2025-05-31 (DOPL Director Mark Steinagel). Effective date is the latter signature date. The Agreement is the first RMA directed at scope-of-practice for a non-prescribing health profession in Utah's AI Learning Laboratory.
+Dentacor operates mobile dental hygiene clinics serving shelters, recovery programs, and transitional housing. Executed 2025-05-29 (Dentacor CEO Nathan Wilson), 2025-05-30 (OAIP Director Zachary Boyd), and 2025-05-31 (DOPL Director Mark Steinagel). Effective date is the latter signature date. The initial 12-month mitigation period ended May 31, 2026. Section 13 allowed Dentacor to request one extension of up to 12 months, subject to OAIP approval before the initial term expired; no public signed extension instrument was located as of July 25, 2026. OAIP continues to list Dentacor among its authorized pilots, but the public pilot page does not itself amend the signed term. The Agreement is the first RMA directed at scope-of-practice for a non-prescribing health profession in Utah's AI Learning Laboratory.
 
 ## Question presented
 
@@ -129,10 +129,11 @@ Requesting-party-only. The Agreement confers mitigation only on Dentacor, LLC an
 - Does not supersede HIPAA, FDA requirements, or any other federal law.
 - Terminable at will by either party (§10A) under §13-72-302(7).
 - Failure to meet obligations may nullify the Agreement (§6J).
+- The initial mitigation period ended May 31, 2026. Any continued mitigation would require a separately approved extension under Section 13; none was publicly located as of July 25, 2026.
 
 ## Sources
 
-- [Agreement page — Utah OAIP](https://commerce.utah.gov/ai/agreements/dentacor/)
+- [Authorized pilot page — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/)
 - [Signed PDF](https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf)
 - [Utah Code §58-69 — Dental Practice Act](https://le.utah.gov/xcode/Title58/Chapter69/58-69.html)
 

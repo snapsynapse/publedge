@@ -9,7 +9,7 @@
 - [CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling](https://publedge.org/us/federal/cftc-dsio/il/2017-001/): enforcing
 - [Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems](https://publedge.org/us/colorado/legislature/statute/2024-001/): superseded
 - [Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)](https://publedge.org/us/colorado/legislature/statute/2025-001/): enforcing
-- [Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act](https://publedge.org/us/colorado/legislature/statute/2026-001/): enforcing
+- [Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act](https://publedge.org/us/colorado/legislature/statute/2026-001/): enacted
 - [IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)](https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/): enforcing
 - [IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility](https://publedge.org/us/federal/irs-tege/plr/2026-001/): enforcing
 - [SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)](https://publedge.org/us/federal/sec-corpfin/nal/2025-001/): enforcing
@@ -20,27 +20,27 @@
 - [Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements](https://publedge.org/us/utah/legislature/statute/2026-001/): enforcing
 - [Utah Mental Health Chatbot Disclosure — Joint Interpretation](https://publedge.org/us/utah/oaip/jia/2026-001/): proposed
 - [Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)](https://publedge.org/us/utah/oaip/rma/2024-001/): expired
-- [Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-001/): enforcing
+- [Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-001/): expired
 - [Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-002/): enforcing
 - [Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)](https://publedge.org/us/utah/oaip/rma/2026-001/): enacted
 
 ## Obligations
 
-- [ADMT Sixty-Day Cure Period Before Enforcement](https://publedge.org/primary/admt-60-day-cure-period/): operative; 1 legal instruments support this
-- [ADMT Data Correction And Human Review Of Adverse Outcomes](https://publedge.org/primary/admt-correction-and-human-review/): operative; 1 legal instruments support this
-- [ADMT Deployer Three-Year Record Retention](https://publedge.org/primary/admt-deployer-3-year-record-retention/): operative; 1 legal instruments support this
-- [ADMT Deployer Notice Before Consequential Decision](https://publedge.org/primary/admt-deployer-pre-decision-notice/): operative; 1 legal instruments support this
-- [ADMT Developer Documentation To Deployer](https://publedge.org/primary/admt-developer-documentation-to-deployer/): operative; 1 legal instruments support this
-- [ADMT Post-Adverse Explanation Within 30 Days](https://publedge.org/primary/admt-post-adverse-explanation-30-days/): operative; 1 legal instruments support this
+- [ADMT Sixty-Day Cure Period Before Enforcement](https://publedge.org/primary/admt-60-day-cure-period/): prospective; 1 legal instruments support this
+- [ADMT Data Correction And Human Review Of Adverse Outcomes](https://publedge.org/primary/admt-correction-and-human-review/): prospective; 1 legal instruments support this
+- [ADMT Deployer Three-Year Record Retention](https://publedge.org/primary/admt-deployer-3-year-record-retention/): prospective; 1 legal instruments support this
+- [ADMT Deployer Notice Before Consequential Decision](https://publedge.org/primary/admt-deployer-pre-decision-notice/): prospective; 1 legal instruments support this
+- [ADMT Developer Documentation To Deployer](https://publedge.org/primary/admt-developer-documentation-to-deployer/): prospective; 1 legal instruments support this
+- [ADMT Post-Adverse Explanation Within 30 Days](https://publedge.org/primary/admt-post-adverse-explanation-30-days/): prospective; 1 legal instruments support this
 - [AI-Authorized Prescription Renewal (Utah Pilot)](https://publedge.org/primary/ai-authorized-rx-renewal/): operative; 2 legal instruments support this
 - [GenAI Is Not A Defense — Civil And Criminal](https://publedge.org/primary/ai-defense-elimination/): operative; 2 legal instruments support this
 - [Pay-To-Pay Fee Prohibited Without Express Authorization](https://publedge.org/primary/cfpb-pay-to-pay-fee-prohibited/): operative; 1 legal instruments support this
 - [Unbundled Advice Fee Does Not Trigger CTA Registration](https://publedge.org/primary/cftc-unbundled-fee-not-cta-trigger/): operative; 1 legal instruments support this
 - [Mental Health Chatbot — No Third-Party Data Sharing](https://publedge.org/primary/chatbot-data-no-third-party-sharing/): operative; 1 legal instruments support this
 - [Mental Health Chatbot — File 15-Element Safety Policy](https://publedge.org/primary/chatbot-safety-policy-filing/): operative; 1 legal instruments support this
-- [Dentacor — §58-69-5 Enforcement Forborne](https://publedge.org/primary/dentacor-58-69-5-enforcement-forborne/): operative; 1 legal instruments support this
-- [Dentacor — Hygienist + AI Concurrence Diagnosis](https://publedge.org/primary/dentacor-hygienist-ai-concurrence-diagnosis/): operative; 1 legal instruments support this
-- [Dentacor — Informed Consent Disclosing Absence Of Dentist](https://publedge.org/primary/dentacor-informed-consent-no-dentist/): operative; 1 legal instruments support this
+- [Dentacor — §58-69-5 Enforcement Forborne](https://publedge.org/primary/dentacor-58-69-5-enforcement-forborne/): expired; 1 legal instruments support this
+- [Dentacor — Hygienist + AI Concurrence Diagnosis](https://publedge.org/primary/dentacor-hygienist-ai-concurrence-diagnosis/): expired; 1 legal instruments support this
+- [Dentacor — Informed Consent Disclosing Absence Of Dentist](https://publedge.org/primary/dentacor-informed-consent-no-dentist/): expired; 1 legal instruments support this
 - [Proactive GenAI Disclosure In High-Risk Interactions](https://publedge.org/primary/disclose-genai-high-risk-proactive/): operative; 1 legal instruments support this
 - [Disclose GenAI on First Session](https://publedge.org/primary/disclose-genai-on-first-session/): operative; 2 legal instruments support this
 - [Disclose GenAI On Consumer Request](https://publedge.org/primary/disclose-genai-on-request/): operative; 1 legal instruments support this

@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-25T21:19:42.393Z",
+  "generated": "2026-07-25T22:01:11.938Z",
   "instruments": [
     {
       "@context": "https://obligationfirst.org/v1/",
@@ -111,7 +111,7 @@
       "kind": "statute",
       "enacted": "2026-05-14",
       "effective": "2027-01-01",
-      "status": "in-force",
+      "status": "enacted",
       "enforcement_status": "routine",
       "hasTerm": [
         "https://publedge.org/term/sb26-189-admt-act-obligations.json"
@@ -122,7 +122,7 @@
         "ref": "us-co"
       },
       "citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
-      "publedge_status": "enforcing",
+      "publedge_status": "enacted",
       "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
     },
     {
@@ -382,17 +382,17 @@
       "kind": "rma",
       "enacted": "2025-05-31",
       "effective": "2025-05-31",
-      "status": "in-force",
+      "status": "sunset",
       "enforcement_status": "routine",
       "hasTerm": [
         "https://publedge.org/term/dentacor-rma-obligations.json"
       ],
-      "source": "https://commerce.utah.gov/ai/agreements/dentacor/",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
       "jurisdiction": {
         "@type": "gist:Jurisdiction",
         "ref": "us-ut"
       },
-      "publedge_status": "enforcing",
+      "publedge_status": "expired",
       "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-001/"
     },
     {

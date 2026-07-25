@@ -4,8 +4,8 @@ id: admt-deployer-pre-decision-notice
 name: ADMT Deployer Notice Before Consequential Decision
 group: requirement
 status: draft
-lifecycle_status: operative
-last_verified: 2026-07-24
+lifecycle_status: prospective
+last_verified: 2026-07-25
 search_terms:
   - admt
   - consumer notice
@@ -17,7 +17,7 @@ search_terms:
 
 ## Summary
 
-Before a consequential decision is made using covered automated decision-making technology, the deployer must notify the consumer that an automated system is in use and disclose the purpose and nature of the decision. The notice is pre-decision; a post-hoc disclosure does not satisfy it.
+Beginning January 1, 2027, before a consequential decision is made using covered automated decision-making technology, the deployer must notify the consumer that an automated system is in use and disclose the purpose and nature of the decision. The notice is pre-decision; a post-hoc disclosure does not satisfy it.
 
 ## What Counts
 

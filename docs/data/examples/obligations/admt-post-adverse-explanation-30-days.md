@@ -4,8 +4,8 @@ id: admt-post-adverse-explanation-30-days
 name: ADMT Post-Adverse Explanation Within 30 Days
 group: requirement
 status: draft
-lifecycle_status: operative
-last_verified: 2026-07-24
+lifecycle_status: prospective
+last_verified: 2026-07-25
 search_terms:
   - admt
   - adverse decision
@@ -17,7 +17,7 @@ search_terms:
 
 ## Summary
 
-Within 30 days of an adverse consequential decision made using covered automated decision-making technology, the deployer must give the consumer a plain-language explanation covering the AI's role in the decision, its degree of contribution, the types of data processed, and the sources of that data.
+Beginning January 1, 2027, within 30 days of an adverse consequential decision made using covered automated decision-making technology, the deployer must give the consumer a plain-language explanation covering the AI's role in the decision, its degree of contribution, the types of data processed, and the sources of that data.
 
 ## What Counts
 

@@ -4,8 +4,8 @@ id: admt-correction-and-human-review
 name: ADMT Data Correction And Human Review Of Adverse Outcomes
 group: requirement
 status: draft
-lifecycle_status: operative
-last_verified: 2026-07-24
+lifecycle_status: prospective
+last_verified: 2026-07-25
 search_terms:
   - admt
   - human review
@@ -17,7 +17,7 @@ search_terms:
 
 ## Summary
 
-Consumers subject to an adverse consequential decision made using covered automated decision-making technology may correct inaccurate personal data used in that decision and may request meaningful human review and reconsideration of the outcome. The deployer must provide both paths.
+Beginning January 1, 2027, consumers subject to an adverse consequential decision made using covered automated decision-making technology may correct inaccurate personal data used in that decision and may request meaningful human review and reconsideration of the outcome. The deployer must provide both paths.
 
 ## What Counts
 

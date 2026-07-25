@@ -37,16 +37,16 @@ publication_citations:
 full_text_reference: "https://everyailaw.com/regulation/colorado-sb26-189/"
 sponsors:
   - "Sen. Robert Rodriguez (Senate prime sponsor)"
-status: enforcing
+status: enacted
 supersedes: us-co-legislature-statute-2024-sb24-205
 superseded_by: null
 amended_by: []
 hash_chain_prev: null
 disclaimer: ""
-last_verified: 2026-05-21
+last_verified: 2026-07-25
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-05-21
-modified: 2026-05-21
+modified: 2026-07-25
 ---
 
 ## Timeline
@@ -55,8 +55,9 @@ modified: 2026-05-21
 |-----------|------|-------|
 | Introduced | 2026-Q1 | 2026 Regular Session |
 | Governor Signed | 2026-05-14 | Replaces SB 24-205 in full |
+| Rulemaking sections effective | 2026-05-14 | §§6-1-1704(4), 6-1-1705(3), and 6-1-1706(6) took effect on passage |
 | Challenge window | 2026-05-14 → 2026-06-11 | 28-day window for further litigation noted in public commentary |
-| Effective | 2027-01-01 | Compliance obligations take effect |
+| Substantive duties effective | 2027-01-01 | Developer, deployer, consumer-rights, recordkeeping, and cure obligations apply to consequential decisions on or after this date |
 | Record-retention horizon | 2030-01-01 | First 3-year retention cycle closes |
 | Cure-period sunset | 2030-01-01 | 60-day cure available until this date per transition provisions |
 
@@ -64,7 +65,7 @@ modified: 2026-05-21
 
 ## Summary
 
-SB 26-189 narrows and replaces the original Colorado AI Act (SB 24-205) before that statute ever took effect. Rebranded as the Automated Decision-Making Technology (ADMT) Act and codified at C.R.S. §§6-1-1702 through 6-1-1706, the replacement statute drops the duty of reasonable care, the impact-assessment requirement, and most of the developer-liability scheme. What survives is a much narrower disclosure-and-rights regime:
+SB 26-189 narrows and replaces the original Colorado AI Act (SB 24-205) before that statute ever took effect. Rebranded as the Automated Decision-Making Technology (ADMT) Act and codified at C.R.S. §§6-1-1702 through 6-1-1706, the replacement statute drops the duty of reasonable care, the impact-assessment requirement, and most of the developer-liability scheme. Its substantive duties apply beginning January 1, 2027; specified rulemaking and administrative provisions took effect on passage. What survives is a much narrower disclosure-and-rights regime:
 
 - **Developer documentation (§6-1-1702).** Developers must disclose intended uses, training-data categories, known limitations, and human-review instructions to deployers.
 - **Deployer consumer notice (§6-1-1704).** Before a consequential decision is made using covered ADMT, the deployer must notify the consumer that an automated system is being used and disclose the decision's purpose and nature.

@@ -11,7 +11,7 @@ Living housekeeping document. Tracks what shipped, what's pending, and what's de
 
 ## Current version
 
-Protocol specification `v0.1.2`; stable MCP server `v0.1.2`, released 2026-07-21.
+Protocol specification `v0.1.3`; stable MCP server `v0.1.3`, released 2026-07-25.
 
 ## Current disposition
 
@@ -159,6 +159,7 @@ Shipped 2026-07-25 (obligation lifecycle fidelity + CI maintenance):
 - Upgraded `actions/checkout` and `actions/setup-node` to v5.
 - Recorded `v0.1.2-pre` as a historical tag that consumers and automation must not use.
 - Designated the real Doctronic RMA remap as the regulator-trust exemplar: it links the OAIP agreement page and signed PDF, preserves the agreement's parties, scope, safeguards, limitations, and requesting-party-only reliance, and documents the source-to-schema mapping. This designation is PubLedge editorial treatment, not OAIP endorsement; no OAIP `authority_response` has been received.
+- Completed a date-sensitive fidelity audit against current official sources. Colorado SB 26-189 is `enacted` and its six substantive ADMT obligations are `prospective` until January 1, 2027; Dentacor's initial RMA term is `expired` as of May 31, 2026 because no public extension instrument was located. Added temporal-status and broader public-claim drift evals.
 
 ## Maintenance lane
 

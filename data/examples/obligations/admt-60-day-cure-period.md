@@ -4,8 +4,8 @@ id: admt-60-day-cure-period
 name: ADMT Sixty-Day Cure Period Before Enforcement
 group: permission
 status: draft
-lifecycle_status: operative
-last_verified: 2026-07-24
+lifecycle_status: prospective
+last_verified: 2026-07-25
 search_terms:
   - admt
   - cure period
@@ -17,7 +17,7 @@ search_terms:
 
 ## Summary
 
-Violations of the Colorado ADMT Act are enforced by the Attorney General as deceptive trade practices, with no private right of action. A regulated party may cure an alleged violation within 60 days of notice; the cure route is available through January 1, 2030.
+Beginning January 1, 2027, violations of the Colorado ADMT Act are enforced by the Attorney General as deceptive trade practices, with no private right of action. A regulated party may cure an alleged violation within 60 days of notice; the cure route is available through January 1, 2030.
 
 ## What Counts
 

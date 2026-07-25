@@ -191,7 +191,7 @@ See [LICENSE](LICENSE) for the split. Vendored snapshots retain their upstream l
 | Status vocabulary (9 values) + `DEFINITIONS.md` + `/definitions/` page | done |
 | `publedge-source-ingest` skill for authored ingestion | done |
 | Disclaimer & Source Policy at `/reference/disclaimer/` | done |
-| Obligations + mapping curation pass (26 obligations, 14 mappings) | done |
+| Obligations + mapping curation pass (35 obligations, 16 mappings) | done |
 | JSON-LD on top-level pages (home @graph, ItemList indexes, DefinedTermSet, Dataset) | done |
 | Split sitemap index + 7 section sitemaps | done |
 | JSON Feed 1.1 + Atom 1.0 feeds alongside RSS | done |

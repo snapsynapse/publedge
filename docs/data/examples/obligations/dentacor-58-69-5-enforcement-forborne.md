@@ -4,8 +4,8 @@ id: dentacor-58-69-5-enforcement-forborne
 name: Dentacor — §58-69-5 Enforcement Forborne
 group: permission
 status: draft
-lifecycle_status: operative
-last_verified: 2026-04-21
+lifecycle_status: expired
+last_verified: 2026-07-25
 search_terms:
   - dentacor
   - enforcement
@@ -16,7 +16,7 @@ search_terms:
 
 ## Summary
 
-During the Dentacor demonstration period, the Utah Division of Professional Licensing (DOPL) forgoes enforcement of unlawful and unprofessional-conduct actions under Utah Code §58-69-5 solely for conduct authorized by the RMA. Enforcement remains in full force for any conduct outside the mitigation scope.
+During the Dentacor demonstration period, the Utah Division of Professional Licensing (DOPL) forgave enforcement of unlawful and unprofessional-conduct actions under Utah Code §58-69-5 solely for conduct authorized by the RMA. The initial mitigation period ended May 31, 2026, and no public extension instrument was located as of July 25, 2026.
 
 ## What Counts
 

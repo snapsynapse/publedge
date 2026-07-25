@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Not all v0.1.0-pre history is versioned separately; early drafting work was compressed into a single prerelease entry below. Subsequent releases are tracked individually.
 
+## [Unreleased]
+
+### Changed
+
+- Reclassified Colorado SB 26-189 as `enacted` and its six substantive ADMT obligations as `prospective` after verifying that the duties apply to consequential decisions beginning January 1, 2027. Specified rulemaking and administrative provisions took effect on passage.
+- Reclassified the Dentacor RMA and its three agreement-specific obligations as `expired` after its initial mitigation term ended May 31, 2026. The public OAIP pilot page remains live, but no separately approved public extension instrument was located as of July 25, 2026.
+- Synchronized current version and registry-count claims across the roadmap, lockfile, README, About page, and hand-authored reference pages.
+
+### Added
+
+- Temporal-status evaluation for future effective dates, elapsed RMA terms, and enacted records that pass their effective date.
+- Expanded public-claims evaluation deriving release versions and registry totals from repository data.
+
 ## [0.1.3] - 2026-07-25
 
 Adopter-conformance release. Brings PubLedge to Obligation-First Level 2 by publishing the naming profile the spec has required since obligation-first 0.4.0, and picks up the Colorado ADMT obligation work.

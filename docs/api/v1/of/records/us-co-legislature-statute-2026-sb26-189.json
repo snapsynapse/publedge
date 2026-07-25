@@ -9,7 +9,7 @@
   "kind": "statute",
   "enacted": "2026-05-14",
   "effective": "2027-01-01",
-  "status": "in-force",
+  "status": "enacted",
   "enforcement_status": "routine",
   "hasTerm": [
     "https://publedge.org/term/sb26-189-admt-act-obligations.json"
@@ -20,6 +20,6 @@
     "ref": "us-co"
   },
   "citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
-  "publedge_status": "enforcing",
+  "publedge_status": "enacted",
   "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
 }

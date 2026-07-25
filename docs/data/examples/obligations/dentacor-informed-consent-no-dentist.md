@@ -4,8 +4,8 @@ id: dentacor-informed-consent-no-dentist
 name: Dentacor — Informed Consent Disclosing Absence Of Dentist
 group: requirement
 status: draft
-lifecycle_status: operative
-last_verified: 2026-04-21
+lifecycle_status: expired
+last_verified: 2026-07-25
 search_terms:
   - dentacor
   - informed consent
@@ -15,7 +15,7 @@ search_terms:
 
 ## Summary
 
-Before performing any RMA-authorized procedure, a Dentacor-employed hygienist must obtain patient informed consent that explicitly discloses the absence of dentist supervision and explains that a hygienist does not have the full training or scope of practice of a dentist.
+During the initial Dentacor RMA term, a Dentacor-employed hygienist had to obtain patient informed consent before any RMA-authorized procedure, explicitly disclosing the absence of dentist supervision and the hygienist's narrower training and scope. The requirement expired with the initial mitigation period on May 31, 2026; no public extension instrument was located as of July 25, 2026.
 
 ## What Counts
 

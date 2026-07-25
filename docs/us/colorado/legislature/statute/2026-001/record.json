@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",
-    "generated": "2026-07-25T21:19:42.447Z",
+    "generated": "2026-07-25T22:01:11.993Z",
     "schema": "https://publedge.org/schema/instrument.schema.json"
   },
   "record": {
@@ -63,11 +63,11 @@
       }
     ],
     "terms": null,
-    "status": "enforcing",
+    "status": "enacted",
     "supersedes": "us-co-legislature-statute-2024-sb24-205",
     "superseded_by": null,
     "authority_response": null,
-    "last_verified": "2026-05-21",
+    "last_verified": "2026-07-25",
     "timeline": [
       {
         "milestone": "Introduced",
@@ -80,14 +80,19 @@
         "notes": "Replaces SB 24-205 in full"
       },
       {
+        "milestone": "Rulemaking sections effective",
+        "date": "2026-05-14",
+        "notes": "§§6-1-1704(4), 6-1-1705(3), and 6-1-1706(6) took effect on passage"
+      },
+      {
         "milestone": "Challenge window",
         "date": "2026-05-14 → 2026-06-11",
         "notes": "28-day window for further litigation noted in public commentary"
       },
       {
-        "milestone": "Effective",
+        "milestone": "Substantive duties effective",
         "date": "2027-01-01",
-        "notes": "Compliance obligations take effect"
+        "notes": "Developer, deployer, consumer-rights, recordkeeping, and cure obligations apply to consequential decisions on or after this date"
       },
       {
         "milestone": "Record-retention horizon",
@@ -114,7 +119,7 @@
       "https://leg.colorado.gov/bills/sb26-189"
     ],
     "dateCreated": "2026-05-21",
-    "dateModified": "2026-05-21",
+    "dateModified": "2026-07-25",
     "datePublished": "2027-01-01",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
