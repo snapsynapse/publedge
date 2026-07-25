@@ -9,6 +9,7 @@
  * Zero dependencies.
  */
 
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const { composeDisclaimer } = require('./lib/disclaimer');
@@ -754,6 +755,64 @@ function writeMcpDiscovery() {
     console.log('  MCP discovery written at /.well-known/mcp.json');
 }
 
+// Obligation-First NamingProfile (obligation-first >= 0.4.0). Declares the IRI
+// scheme PubLedge actually mints for each entity type it publishes under
+// /api/v1/of/, plus the crosswalk fields it supplies. Descriptive, not
+// aspirational: the regex patterns below are derived from the published
+// records, so `npm run validate:of` and this file cannot disagree silently.
+// PubLedge mints no Proceeding or Allegation records, so those types are absent.
+const OF_NAMING_PROFILE_VERSION = '1.0.0';
+const OF_SPEC_VERSION_RANGE = '>=0.4.0, <0.5.0';
+
+function ofEntityProfile(segment, crosswalks) {
+    const space = `${SITE_URL}${segment}/`;
+    return {
+        'void:uriSpace': space,
+        'void:uriRegexPattern': `^${space.replace(/[.]/g, '\\$&')}[a-z0-9-]+\\.json$`,
+        uriTemplate: `${space}{slug}.json`,
+        crosswalks
+    };
+}
+
+function writeNamingProfile() {
+    const dir = path.join(DOCS_DIR, '.well-known');
+    ensureDir(dir);
+
+    const profile = {
+        '@context': 'https://obligationfirst.org/v1/',
+        '@type': 'of:NamingProfile',
+        profileVersion: OF_NAMING_PROFILE_VERSION,
+        appliesTo: 'obligation-first 0.4.x',
+        adopter: SITE_URL,
+        entities: {
+            Authority: ofEntityProfile('authority', ['sameAs']),
+            Instrument: ofEntityProfile('instrument', ['citation']),
+            Term: ofEntityProfile('term', ['section']),
+            Obligation: ofEntityProfile('obligation', []),
+            Determination: ofEntityProfile('determination', [])
+        }
+    };
+
+    const filename = 'obligation-first-naming-profile.jsonld';
+    const bytes = Buffer.from(`${JSON.stringify(profile, null, 2)}\n`, 'utf8');
+    fs.writeFileSync(path.join(dir, filename), bytes);
+
+    const manifest = [
+        `profile-path: /.well-known/${filename}`,
+        `profile-version: ${OF_NAMING_PROFILE_VERSION}`,
+        `profile-sha256: ${crypto.createHash('sha256').update(bytes).digest('hex')}`,
+        `profile-bytes: ${bytes.length}`,
+        `adopter: ${SITE_URL}`,
+        'spec: obligation-first',
+        `spec-version-range: ${OF_SPEC_VERSION_RANGE}`,
+        `canonical-url: ${SITE_URL}.well-known/${filename}`,
+        ''
+    ].join('\n');
+    fs.writeFileSync(path.join(dir, 'obligation-first-naming-profile-manifest.txt'), manifest);
+
+    console.log(`  Obligation-First naming profile written at /.well-known/${filename}`);
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -886,6 +945,7 @@ splitSitemap();
 emitAdditionalFeeds();
 writeRecordSchema();
 writeMcpDiscovery();
+writeNamingProfile();
 patchA11y();
 patchFooterNav();
 console.log('PubLedge extras complete.');

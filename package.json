@@ -60,6 +60,7 @@
     "build:kac": "node scripts/build.js",
     "validate": "node scripts/validate.js",
     "validate:of": "node scripts/validate-obligation-first.js",
+    "check:of": "node scripts/check-of-version.js",
     "verify": "node scripts/verify.js",
     "evals": "node scripts/evals.js",
     "eval:instrument-schema": "node scripts/eval-instrument-schema.js",
