@@ -19,7 +19,7 @@ Adopter-conformance release. Brings PubLedge to Obligation-First Level 2 by publ
 
 ### Changed
 
-- `RELEASE_NOTES-v0.1.2.md` renamed to `RELEASE_NOTES-v0.1.3.md`; version strings synced across `package.json`, `server.json`, `MANIFEST.yaml`, `PROTOCOL.md`, `README.md`, `PROJECT_CONTEXT.md`, and the generated site footer. The npm publish and MCP registry update for `0.1.3` are a separate manual step and have not been performed.
+- `RELEASE_NOTES-v0.1.2.md` renamed to `RELEASE_NOTES-v0.1.3.md`; version strings synced across `package.json`, `server.json`, `MANIFEST.yaml`, `PROTOCOL.md`, `README.md`, `PROJECT_CONTEXT.md`, and the generated site footer. Package `0.1.3` was published to npm and `io.github.snapsynapse/publedge` version `0.1.3` was published to the Official MCP Registry.
 - Dropped the pre-release suffix from the protocol version: the spec is now `v0.1.2`, aligned with the stable MCP/npm package version. `RELEASE_NOTES-v0.1.2-pre.md` renamed to `RELEASE_NOTES-v0.1.2.md`.
 - Removed SB 26-189 from `verification.allowed_unmapped_instruments`; it is the operative Colorado statute, not a relationship-only chain member. The allowlist now states its admission rule and a per-entry reason, and `eval-verification-allowlist` asserts that operative instruments stay out of it.
 - Recorded the 2026-05 Colorado ingestion, the 2026-06/07 authority-response and release work, and this session in `ROADMAP.md`; corrected the registry totals attributed to the 2026-04-21 session.
@@ -151,7 +151,8 @@ Security hardening and release-readiness patch.
 - CI: pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap on every push and pull request; docs/ sync check; hash validation
 - `.gitignore` aligned to portfolio hygiene baseline (`.env.*` glob, `__pycache__/`, `*.pyc`, `dist/`, `build/`, `.venv/`, `venv/`)
 
-[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/snapsynapse/publedge/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/snapsynapse/publedge/compare/v0.1.1-pre...v0.1.2
 [0.1.1]: https://npmjs.com/package/publedge/v/0.1.1
 [0.1.1-pre]: https://github.com/snapsynapse/publedge/compare/v0.1.0-pre...v0.1.1-pre
