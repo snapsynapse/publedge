@@ -158,6 +158,7 @@ Shipped 2026-07-25 (obligation lifecycle fidelity + CI maintenance):
 - Kept the repo-local lifecycle field out of the Obligation First namespace pending its deferred provision-lifecycle standard; OF exports use `publedge_lifecycle_status`.
 - Upgraded `actions/checkout` and `actions/setup-node` to v5.
 - Recorded `v0.1.2-pre` as a historical tag that consumers and automation must not use.
+- Designated the real Doctronic RMA remap as the regulator-trust exemplar: it links the OAIP agreement page and signed PDF, preserves the agreement's parties, scope, safeguards, limitations, and requesting-party-only reliance, and documents the source-to-schema mapping. This designation is PubLedge editorial treatment, not OAIP endorsement; no OAIP `authority_response` has been received.
 
 ## Maintenance lane
 
@@ -215,8 +216,9 @@ Wiring shipped 2026-07-21:
 - `/reference/verify/` is included in the reference sitemap, `llms.txt`, `agents.json`, and `/reference/` navigation.
 - The verification guide distinguishes current-manifest consistency from independent publication-time evidence and no longer promises an unimplemented per-record provenance panel.
 
-Content (highest trust-per-unit-effort):
-- One exemplary Utah OAIP record cited and labeled faithfully enough that the office recognizes its own thing. One strong record beats breadth. Accuracy is load-bearing; needs real source material or explicit hypothetical labeling.
+Content shipped 2026-07-25:
+- The [Doctronic RMA remap](data/examples/instruments/us-ut-oaip-rma-2025-002.md) is the regulator-trust exemplar. It is grounded in OAIP's agreement page and signed PDF and includes explicit regulatory-mitigation, obligation, reliance-scope, limitation, and source-to-schema sections.
+- No OAIP endorsement is claimed. The record remains `source: demonstration-remap`, and no `authority_response` entry will be added unless OAIP supplies one through an independently verifiable channel.
 
 ## Vocabulary / namespace evolution
 
