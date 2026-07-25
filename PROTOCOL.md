@@ -1,10 +1,10 @@
 ---
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Specification"
 title: "PubLedge Protocol"
-version: "0.1.2"
+version: "0.1.3"
 license: "CC-BY-4.0"
 created: 2026-04-18
-modified: 2026-04-18
+modified: 2026-07-25
 ---
 
 # PubLedge Protocol

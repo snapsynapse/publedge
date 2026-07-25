@@ -6,14 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Not all v0.1.0-pre history is versioned separately; early drafting work was compressed into a single prerelease entry below. Subsequent releases are tracked individually.
 
-## [Unreleased]
+## [0.1.3] - 2026-07-25
+
+Adopter-conformance release. Brings PubLedge to Obligation-First Level 2 by publishing the naming profile the spec has required since obligation-first 0.4.0, and picks up the Colorado ADMT obligation work.
 
 ### Added
+
+- **Obligation-First naming profile** at `/.well-known/obligation-first-naming-profile.jsonld`, with the tamper-evidence sidecar at `/.well-known/obligation-first-naming-profile-manifest.txt`. EveryAILaw and AI Incident Law have published one since obligation-first 0.4.0; PubLedge had not, despite being the adopter whose `@id` grammar diverges most from the spec's opacity guidance, so there was nothing to check that divergence against. Generated in `build-extras.js` rather than hand-placed, because `docs/` is build output. Declarations are descriptive: each `void:uriRegexPattern` is verified against all 112 published records, and `crosswalks` states what each entity type actually supplies (Obligation and Determination supply none today). Proceeding and Allegation are absent because PubLedge mints neither.
+- **`npm run check:of`** asserts the obligation-first checkout in use satisfies the profile's declared range, delegating to the spec's shared `check-adopter-of-version.mjs` so the rule is not reimplemented here. The profile declares `obligation-first >=0.4.0 <0.6.0`: PubLedge publishes no `ObligationCategory` records, so it has no reason to floor at 0.5.0 and rides that additive release unchanged.
 
 - Six Colorado ADMT obligation records extracted from SB 26-189 (C.R.S. §§6-1-1702 through 6-1-1706) and mapped to the statute: developer documentation to deployer, pre-decision consumer notice, 30-day post-adverse explanation, data correction and human review, three-year record retention, and the 60-day cure period. Registry obligations 26 → 32; mappings 14 → 15.
 
 ### Changed
 
+- `RELEASE_NOTES-v0.1.2.md` renamed to `RELEASE_NOTES-v0.1.3.md`; version strings synced across `package.json`, `server.json`, `MANIFEST.yaml`, `PROTOCOL.md`, `README.md`, `PROJECT_CONTEXT.md`, and the generated site footer. The npm publish and MCP registry update for `0.1.3` are a separate manual step and have not been performed.
 - Dropped the pre-release suffix from the protocol version: the spec is now `v0.1.2`, aligned with the stable MCP/npm package version. `RELEASE_NOTES-v0.1.2-pre.md` renamed to `RELEASE_NOTES-v0.1.2.md`.
 - Removed SB 26-189 from `verification.allowed_unmapped_instruments`; it is the operative Colorado statute, not a relationship-only chain member. The allowlist now states its admission rule and a per-entry reason, and `eval-verification-allowlist` asserts that operative instruments stay out of it.
 - Recorded the 2026-05 Colorado ingestion, the 2026-06/07 authority-response and release work, and this session in `ROADMAP.md`; corrected the registry totals attributed to the 2026-04-21 session.
