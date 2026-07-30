@@ -42,7 +42,7 @@ PubLedge inherits the Knowledge-as-Code four-role spine and binds each role to a
 | Secondary | Term | `gist:ContractTerm` | An individual clause within an instrument |
 | Primary | Obligation | `gist:Requirement` / `gist:Restriction` / `gist:Permission` | The behavior the instrument requires, prohibits, or permits |
 
-The act of issuance is itself typed `gist:Determination`. This separates the artifact (the agreement) from the event (the act of agreeing).
+The Obligation-First binding represents evidenced issuance as an administrative `of:Determination`. This separates the artifact from the authoritative act that created or published it. An issuance determination targets the instrument, decides no allegation, and is not a substitute for the adjudicative determinations published by AI Incident Law. Proposed or draft instruments do not receive an issuance determination until an official source and issuance date establish that the act occurred.
 
 The vocabulary mapping is published at `/reference/vocabulary/` and bound machine-readably in `/schema/json/context.jsonld`.
 

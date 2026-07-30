@@ -10,6 +10,11 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 ### Changed
 
+- Clarified that PubLedge `of:Determination` records represent evidenced administrative issuance, not adjudication. Issuance records now require an official source and enacted date, carry the target instrument's jurisdiction, decide no allegations, and are omitted for proposed or draft instruments.
+- Removed issuance, enacted, and effective assertions from the illustrative Utah chatbot JIA while it remains a proposed draft; its drafting date and underlying statutory effective date remain documented separately.
+- Metadata completeness warnings no longer recommend enacted or effective dates for proposed and draft instruments.
+- Migrated the JIA disclosure crosswalk from the legacy category-shaped EveryAILaw obligation path to the canonical transparency `of:ObligationCategory` IRI.
+- Generated Obligation-First records and the naming profile now use the canonical JSON-LD context document at `https://obligationfirst.org/v1/context.jsonld`.
 - Reclassified Colorado SB 26-189 as `enacted` and its six substantive ADMT obligations as `prospective` after verifying that the duties apply to consequential decisions beginning January 1, 2027. Specified rulemaking and administrative provisions took effect on passage.
 - Reclassified the Dentacor RMA and its three agreement-specific obligations as `expired` after its initial mitigation term ended May 31, 2026. The public OAIP pilot page remains live, but no separately approved public extension instrument was located as of July 25, 2026.
 - Synchronized current version and registry-count claims across the roadmap, lockfile, README, About page, and hand-authored reference pages.

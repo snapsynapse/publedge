@@ -787,7 +787,7 @@ function writeNamingProfile() {
     ensureDir(dir);
 
     const profile = {
-        '@context': 'https://obligationfirst.org/v1/',
+        '@context': 'https://obligationfirst.org/v1/context.jsonld',
         '@type': 'of:NamingProfile',
         profileVersion: OF_NAMING_PROFILE_VERSION,
         appliesTo: OF_SPEC_APPLIES_TO,

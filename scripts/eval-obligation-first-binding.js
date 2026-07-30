@@ -3,7 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { DOCS_DIR, readJson, reportFailures } = require('./lib/eval-kit');
+const { DOCS_DIR, loadProjectData, readJson, reportFailures } = require('./lib/eval-kit');
 
 const failures = [];
 const apiDir = path.join(DOCS_DIR, 'api', 'v1', 'of');
@@ -127,8 +127,62 @@ if (!jiaTerm) {
 const jiaObligation = recordsById.get('https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json');
 if (!jiaObligation) {
     failures.push('missing Utah mental-health chatbot concrete disclosure obligation');
-} else if (!jiaObligation.anchors?.includes('https://everyailaw.com/obligation/transparency.json')) {
-    failures.push('Utah mental-health chatbot disclosure obligation missing EveryAILaw transparency anchor');
+} else if (!jiaObligation.anchors?.includes('https://everyailaw.com/obligation-category/transparency.json')) {
+    failures.push('Utah mental-health chatbot disclosure obligation missing EveryAILaw transparency category anchor');
+}
+
+const { containers } = loadProjectData();
+const issuanceContainers = containers.filter(container =>
+    container.enacted &&
+    container.official_url &&
+    !['proposed', 'draft'].includes(container.status)
+);
+const expectedDeterminationIds = new Set(
+    issuanceContainers.map(container => `https://publedge.org/determination/${container.id}-issuance.json`)
+);
+
+if ((recordsByKind.determinations || []).length !== issuanceContainers.length) {
+    failures.push(`expected ${issuanceContainers.length} evidenced issuance determinations, found ${(recordsByKind.determinations || []).length}`);
+}
+
+for (const container of issuanceContainers) {
+    const determinationId = `https://publedge.org/determination/${container.id}-issuance.json`;
+    const instrumentId = `https://publedge.org/instrument/${container.id}.json`;
+    const determination = recordsById.get(determinationId);
+    const instrument = recordsById.get(instrumentId);
+    if (!determination) {
+        failures.push(`missing evidenced issuance determination for ${container.id}`);
+        continue;
+    }
+    if (determination.disposition !== 'issued') {
+        failures.push(`${determination.id} disposition must be issued`);
+    }
+    if ((determination.decides || []).length !== 0) {
+        failures.push(`${determination.id} administrative issuance must not decide allegations`);
+    }
+    if (determination.target_instrument !== instrumentId) {
+        failures.push(`${determination.id} target_instrument does not identify ${container.id}`);
+    }
+    if (determination.issued_date !== container.enacted) {
+        failures.push(`${determination.id} issued_date does not match enacted evidence`);
+    }
+    if (determination.source !== container.official_url) {
+        failures.push(`${determination.id} source does not match official issuance evidence`);
+    }
+    if (!instrument || stableJson(determination.jurisdiction) !== stableJson(instrument.jurisdiction)) {
+        failures.push(`${determination.id} jurisdiction does not match its target instrument`);
+    }
+}
+
+for (const determination of recordsByKind.determinations || []) {
+    if (!expectedDeterminationIds.has(determination['@id'])) {
+        failures.push(`${determination.id} has no evidenced, non-draft issuance source`);
+    }
+}
+
+const proposedJiaDetermination = recordsById.get('https://publedge.org/determination/us-ut-oaip-jia-2026-001-issuance.json');
+if (proposedJiaDetermination) {
+    failures.push('proposed Utah mental-health chatbot JIA must not publish an issuance determination');
 }
 
 reportFailures('eval-obligation-first-binding', failures);

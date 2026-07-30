@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const OF_CONTEXT = 'https://obligationfirst.org/v1/';
+const OF_CONTEXT = 'https://obligationfirst.org/v1/context.jsonld';
 
 function siteBase(config) {
     return String(config.url || 'https://publedge.org/').replace(/\/$/, '');
@@ -75,7 +75,7 @@ function everyAiLawAnchors(mapping) {
     if (mapping.id === 'utah-mental-health-chatbot-disclosure-2026q2-first-session') {
         return {
             termAnchors: ['https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json'],
-            obligationAnchors: ['https://everyailaw.com/obligation/transparency.json']
+            obligationAnchors: ['https://everyailaw.com/obligation-category/transparency.json']
         };
     }
     return { termAnchors: [], obligationAnchors: [] };
@@ -235,18 +235,25 @@ function buildObligationRecords(config, data) {
 }
 
 function buildDeterminationRecords(config, data) {
-    return data.containers.map(container => ({
+    return data.containers
+        .filter(container =>
+            container.enacted &&
+            container.official_url &&
+            !['proposed', 'draft'].includes(container.status)
+        )
+        .map(container => ({
         '@context': OF_CONTEXT,
         '@type': 'of:Determination',
         '@id': determinationUri(config, `${container.id}-issuance`),
         id: `${container.id}-issuance`,
-        issued_date: container.enacted || container.effective || undefined,
+        issued_date: container.enacted,
         issuedBy: authorityUri(config, container.authority),
+        jurisdiction: typedJurisdiction(container.jurisdiction),
         decides: [],
         disposition: 'issued',
         target_instrument: instrumentUri(config, container.id),
         notes: `Issuance record for ${container.title || container.name || container.id}.`,
-        source: container.official_url || undefined
+        source: container.official_url
     }));
 }
 

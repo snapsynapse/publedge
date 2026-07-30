@@ -661,11 +661,12 @@ function renderPrevNext(container, data) {
 
 // Schema-completeness check — returns warning banner + prints [warn] to stdout.
 const SCHEMA_REQUIRED = ['id', 'type', 'jurisdiction', 'authority', 'status', 'title'];
-const SCHEMA_DESIRABLE = ['enacted', 'effective', 'reliance_scope', 'obligation_kind', 'last_verified'];
+const SCHEMA_DESIRABLE = ['reliance_scope', 'obligation_kind', 'last_verified'];
 function renderIncompleteMetadataWarning(c) {
     const missing = [];
     for (const f of SCHEMA_REQUIRED) if (!c[f]) missing.push(f);
-    for (const f of SCHEMA_DESIRABLE) if (!c[f]) missing.push(f + ' (recommended)');
+    const lifecycleDates = ['proposed', 'draft'].includes(c.status) ? [] : ['enacted', 'effective'];
+    for (const f of [...lifecycleDates, ...SCHEMA_DESIRABLE]) if (!c[f]) missing.push(f + ' (recommended)');
     if (!missing.length) return '';
     if (process.env.KAC_HIDE_SCHEMA_WARN !== '1') {
         console.warn(`  [schema-warn] ${c.id}: missing ${missing.join(', ')}`);
@@ -1269,7 +1270,7 @@ function generateContainerDetail(config, container, data, configCSS) {
                 ${renderStatusBadge(container.status)}
                 <span><strong>Editorial:</strong> ${escapeHTML(humanizeId(container.editorial_status || 'unspecified'))}</span>
                 ${freshnessBadge(container.last_verified)}
-                ${container.effective ? `<span><strong>Effective:</strong> ${formatDate(container.effective)}</span>` : ''}
+                ${container.effective ? `<span><strong>Effective:</strong> ${formatDate(container.effective)}</span>` : '<!-- No effective date asserted. -->'}
                 ${container.official_url ? `<span><a href="${escapeHTML(container.official_url)}" target="_blank" rel="noopener">Official source</a></span>` : ''}
             </div>
             ${renderIncompleteMetadataWarning(container)}
@@ -2145,7 +2146,7 @@ function build() {
 
     const obligationFirstRecords = buildObligationFirstRecords(config, data);
     writeObligationFirstRecords(config, obligationFirstRecords, DOCS_DIR);
-    console.log('  of/*.json: Obligation-First v0.1 binding records');
+    console.log('  of/*.json: Obligation-First binding records');
 
     // upcoming.json — future effective + term-end dates, sorted by proximity.
     {
