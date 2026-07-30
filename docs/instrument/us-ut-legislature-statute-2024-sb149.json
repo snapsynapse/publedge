@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
   "id": "us-ut-legislature-statute-2024-sb149",

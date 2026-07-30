@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
   "id": "us-irs-tege-plr-2026-001",

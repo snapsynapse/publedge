@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Requirement",
   "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
   "id": "doctronic-rma-obligations-rma-monthly-report-to-oaip",

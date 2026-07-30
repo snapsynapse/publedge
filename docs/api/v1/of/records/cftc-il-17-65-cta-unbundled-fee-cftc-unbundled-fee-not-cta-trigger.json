@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json",
   "id": "cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger",

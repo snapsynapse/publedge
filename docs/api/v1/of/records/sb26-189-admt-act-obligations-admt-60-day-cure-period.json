@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json",
   "id": "sb26-189-admt-act-obligations-admt-60-day-cure-period",

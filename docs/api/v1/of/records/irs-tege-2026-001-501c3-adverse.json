@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Term",
   "@id": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
   "id": "irs-tege-2026-001-501c3-adverse",

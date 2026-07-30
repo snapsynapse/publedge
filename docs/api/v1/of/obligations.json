@@ -1,9 +1,9 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-25T22:16:00.281Z",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "generated": "2026-07-30T18:02:41.736Z",
   "obligations": [
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json",
       "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session",
@@ -11,7 +11,7 @@
       "content": "A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.",
       "created_by": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
       "anchors": [
-        "https://everyailaw.com/obligation/transparency.json"
+        "https://everyailaw.com/obligation-category/transparency.json"
       ],
       "publedge_primary_id": "disclose-genai-on-first-session",
       "publedge_group": "requirement",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
       "id": "sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation",
@@ -56,7 +56,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json",
       "id": "sb149-learning-lab-and-ai-defense-ai-defense-elimination",
@@ -82,7 +82,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
       "id": "sb226-disclosure-and-ai-defense-disclose-genai-on-request",
@@ -107,7 +107,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
       "id": "sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive",
@@ -132,7 +132,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json",
       "id": "sb226-disclosure-and-ai-defense-ai-defense-elimination",
@@ -158,7 +158,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
       "id": "hb452-mental-health-chatbot-stack-disclose-genai-on-first-session",
@@ -182,7 +182,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
       "id": "hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing",
@@ -207,7 +207,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json",
       "id": "hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing",
@@ -233,7 +233,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json",
       "id": "hb320-joint-interpretation-agreements-learning-lab-agreement-participation",
@@ -260,7 +260,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json",
       "id": "elizachat-rma-obligations-rma-monthly-report-to-oaip",
@@ -285,7 +285,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json",
       "id": "elizachat-rma-obligations-rma-end-of-term-report",
@@ -309,7 +309,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json",
       "id": "elizachat-rma-obligations-rma-data-security-63a-19-102",
@@ -333,7 +333,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json",
       "id": "elizachat-rma-obligations-rma-hold-harmless-state",
@@ -356,7 +356,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json",
       "id": "elizachat-rma-obligations-rma-no-advertising-reference",
@@ -380,7 +380,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json",
       "id": "elizachat-rma-obligations-rma-incident-notification-24hr",
@@ -405,7 +405,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
       "id": "elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle",
@@ -429,7 +429,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json",
       "id": "elizachat-rma-obligations-elizachat-phased-rollout",
@@ -453,7 +453,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json",
       "id": "dentacor-rma-obligations-rma-monthly-report-to-oaip",
@@ -478,7 +478,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json",
       "id": "dentacor-rma-obligations-rma-end-of-term-report",
@@ -502,7 +502,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json",
       "id": "dentacor-rma-obligations-rma-data-security-63a-19-102",
@@ -526,7 +526,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json",
       "id": "dentacor-rma-obligations-rma-hold-harmless-state",
@@ -549,7 +549,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
       "id": "dentacor-rma-obligations-rma-no-advertising-reference",
@@ -573,7 +573,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json",
       "id": "dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis",
@@ -598,7 +598,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
       "id": "dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne",
@@ -623,7 +623,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json",
       "id": "dentacor-rma-obligations-dentacor-informed-consent-no-dentist",
@@ -647,7 +647,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
       "id": "doctronic-rma-obligations-rma-monthly-report-to-oaip",
@@ -672,7 +672,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
       "id": "doctronic-rma-obligations-rma-end-of-term-report",
@@ -696,7 +696,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json",
       "id": "doctronic-rma-obligations-rma-data-security-63a-19-102",
@@ -720,7 +720,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json",
       "id": "doctronic-rma-obligations-rma-hold-harmless-state",
@@ -743,7 +743,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json",
       "id": "doctronic-rma-obligations-rma-no-advertising-reference",
@@ -767,7 +767,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json",
       "id": "doctronic-rma-obligations-ai-authorized-rx-renewal",
@@ -793,7 +793,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
       "id": "doctronic-rma-obligations-named-prescriber-enforcement-forborne",
@@ -819,7 +819,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json",
       "id": "doctronic-rma-obligations-telehealth-compliance-per-proposal",
@@ -844,7 +844,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json",
       "id": "legion-rma-obligations-rma-monthly-report-to-oaip",
@@ -869,7 +869,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json",
       "id": "legion-rma-obligations-rma-end-of-term-report",
@@ -893,7 +893,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json",
       "id": "legion-rma-obligations-rma-data-security-63a-19-102",
@@ -917,7 +917,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json",
       "id": "legion-rma-obligations-rma-hold-harmless-state",
@@ -940,7 +940,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json",
       "id": "legion-rma-obligations-rma-no-advertising-reference",
@@ -964,7 +964,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json",
       "id": "legion-rma-obligations-ai-authorized-rx-renewal",
@@ -990,7 +990,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
       "id": "legion-rma-obligations-named-prescriber-enforcement-forborne",
@@ -1016,7 +1016,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json",
       "id": "legion-rma-obligations-telehealth-compliance-per-proposal",
@@ -1041,7 +1041,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json",
       "id": "cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited",
@@ -1066,7 +1066,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json",
       "id": "cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger",
@@ -1092,7 +1092,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json",
       "id": "irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share",
@@ -1117,7 +1117,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json",
       "id": "irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure",
@@ -1143,7 +1143,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json",
       "id": "sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor",
@@ -1168,7 +1168,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json",
       "id": "sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination",
@@ -1195,7 +1195,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json",
       "id": "sb24-205-never-operative-obligations-high-risk-ai-impact-assessment",
@@ -1222,7 +1222,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json",
       "id": "sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal",
@@ -1250,7 +1250,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
       "id": "sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer",
@@ -1276,7 +1276,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice.json",
       "id": "sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice",
@@ -1302,7 +1302,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days.json",
       "id": "sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days",
@@ -1328,7 +1328,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-correction-and-human-review.json",
       "id": "sb26-189-admt-act-obligations-admt-correction-and-human-review",
@@ -1354,7 +1354,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json",
       "id": "sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention",
@@ -1380,7 +1380,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json",
       "id": "sb26-189-admt-act-obligations-admt-60-day-cure-period",

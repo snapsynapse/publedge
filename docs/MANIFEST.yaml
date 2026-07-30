@@ -203,7 +203,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-jia-2026-001.md
     role: instrument
-    hash: sha256:687a4c81b9c8f4195ccf13bf54be940a24e0ed478b6b18959f569eb7c9c0dc31
+    hash: sha256:1c73dcfdf1dc9dc14040426990fdd43ea4db8615ca0523c2914d7fda1e40d740
     note: data/examples/instruments/us-ut-oaip-jia-2026-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2024-001.md
@@ -428,7 +428,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:401c6c0567a295d7be3db2da8efa093bc8368f0829df003b4c1931f21d52a00f
+    hash: sha256:f196ea733a0aeab51287af7c9ef2aac62ff3f72f824490aa5815de728acf316b
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -448,12 +448,12 @@ files:
 
   - path: PROTOCOL.md
     role: protocol
-    hash: sha256:6488372559cc32b9b98454fe1935a5da1d12f621d70fefffc6ca9338aa952db0
+    hash: sha256:f71412dc40ad3488e19ae88bfeca9f848db239f8ee2d3b209adf4ae5483aaf4f
     note: PROTOCOL.md
 
   - path: README.md
     role: protocol
-    hash: sha256:15a483e6702a768605d399e80a212102f0a61ed6307d78645ebbd08442340a86
+    hash: sha256:c6c845789fab913560983e669e4d251a15cadd232cdc675bf69f4ba879022557
     note: README.md
 
   - path: RELEASE_NOTES-v0.1.3.md
@@ -468,7 +468,7 @@ files:
 
   - path: INTENT.md
     role: protocol
-    hash: sha256:e07b5b8d43be990fb367800e476474aacf1fb5a451c58ad063a888e9d17cd65a
+    hash: sha256:06f6acd5b53c12b8cb559f914ac75020ce154f6c0cb4d78d63df4285c85f009e
     note: INTENT.md
 
   - path: SECURITY.md
@@ -538,12 +538,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:ab207bf27951893012ac18a1300ed464e28978aceaba5b8e3f4a4a6e38db1884
+    hash: sha256:b7a6d5bfc117a4d1576c7820ea12c81fda587ef228b040362e07213e6eea40b9
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:14e14c0bad9edad13161669270aa5c1629a132b26ba5008600d63ceee4869dc9
+    hash: sha256:03d4384cb9b4476a926c4c045d2e322541b8ca4ca229b3a3002aa288019ba7c6
     note: scripts/build.js
 
   - path: scripts/check-links.js
@@ -633,7 +633,7 @@ files:
 
   - path: scripts/eval-obligation-first-binding.js
     role: tooling
-    hash: sha256:42296b4ee9b15ab003bf568a61419b8d4e575ec7f9c9a7a95e6d0849d994e9e5
+    hash: sha256:c976be7d7100f1bee7a61b7e3e4297b35dd6038f6574d094bacac53ee9340aab
     note: scripts/eval-obligation-first-binding.js
 
   - path: scripts/eval-parser.js
@@ -713,7 +713,7 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:2a82b48dd6d3648f59f0721d533b53afd6fb4841270df8aa1d2b894df2671c7b
+    hash: sha256:2b07beb1fbb006d4e00f9969d23c5d3960f7004e838d2257af5f0b2bf057089d
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/temporal-status.js

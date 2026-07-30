@@ -11,7 +11,7 @@ Open recordkeeping protocol for fact-specific written interpretations between tw
 
 Plain markdown with structured frontmatter. SHA-256 manifest checks provide source-to-manifest consistency. Bound to the [Semantic Arts gist](https://semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
 
-**Public and maintained. Protocol specification v0.1.3; stable MCP server v0.1.3. Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
+**Public and maintained. Protocol specification v0.1.3; stable MCP server v0.1.3. The MCP server is dual-era: MCP spec 2026-07-28 stateless core plus the legacy 2024-11-05 handshake. Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
 
 ## Who this is for
 
@@ -50,7 +50,7 @@ Every record and index is published in parallel HTML + structured form so agents
 | `/matrix.html` | `Dataset` JSON-LD + coverage matrix; `DataDownload` distribution at `/api/v1/matrix.json` |
 | `/definitions/` | `DefinedTermSet` with instrument types + statuses as `DefinedTerm`s |
 | `/api/v1/*.json` | Machine manifests: containers, primaries, authorities, mappings, matrix, upcoming, recently-changed |
-| `/api/v1/of/*.json` | Obligation-First v0.1 binding records for authorities, instruments, terms, obligations, and determinations |
+| `/api/v1/of/*.json` | Obligation-First binding records for authorities, instruments, terms, obligations, and administrative issuance determinations |
 | `/calendar.ics` | Enforcement calendar (iCal) |
 | `/feed.xml`, `/atom.xml`, `/feed.json` | RSS 2.0, Atom 1.0, JSON Feed 1.1 |
 | `/sitemap.xml` | Sitemap index → per-section sitemaps (`records`, `authorities`, `statutes`, `reference`, `templates`, `bridges`, `meta`) |

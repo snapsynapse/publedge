@@ -1,10 +1,14 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json",
   "id": "us-co-legislature-statute-2024-sb24-205-issuance",
   "issued_date": "2024-05-17",
   "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  },
   "decides": [],
   "disposition": "issued",
   "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",

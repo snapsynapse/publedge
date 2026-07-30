@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Restriction",
   "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json",
   "id": "elizachat-rma-obligations-rma-no-advertising-reference",

@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Term",
   "@id": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
   "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session",

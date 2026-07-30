@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Restriction",
   "@id": "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json",
   "id": "cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited",

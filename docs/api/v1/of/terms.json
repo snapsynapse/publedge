@@ -1,9 +1,9 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-25T22:16:00.281Z",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "generated": "2026-07-30T18:02:41.736Z",
   "terms": [
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
       "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
       "id": "sb149-learning-lab-and-ai-defense",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
       "id": "sb226-disclosure-and-ai-defense",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
       "id": "hb452-mental-health-chatbot-stack",
@@ -86,7 +86,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
       "id": "hb320-joint-interpretation-agreements",
@@ -105,7 +105,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/elizachat-rma-obligations.json",
       "id": "elizachat-rma-obligations",
@@ -131,7 +131,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/dentacor-rma-obligations.json",
       "id": "dentacor-rma-obligations",
@@ -157,7 +157,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/doctronic-rma-obligations.json",
       "id": "doctronic-rma-obligations",
@@ -183,7 +183,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/legion-rma-obligations.json",
       "id": "legion-rma-obligations",
@@ -209,7 +209,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
       "id": "cfpb-ao-2022-001-pay-to-pay",
@@ -228,7 +228,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
       "id": "cftc-il-17-65-cta-unbundled-fee",
@@ -247,7 +247,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
       "id": "irs-plr-202506001-incentive-fee",
@@ -266,7 +266,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
       "id": "irs-tege-2026-001-501c3-adverse",
@@ -285,7 +285,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
       "id": "sec-corpfin-nal-2025-001-rule-506c",
@@ -304,7 +304,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
       "id": "sb24-205-never-operative-obligations",
@@ -325,7 +325,7 @@
       }
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
       "id": "sb26-189-admt-act-obligations",

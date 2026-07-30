@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
   "id": "legion-rma-obligations-named-prescriber-enforcement-forborne",

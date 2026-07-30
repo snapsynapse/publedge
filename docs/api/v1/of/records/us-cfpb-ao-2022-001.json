@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
   "id": "us-cfpb-ao-2022-001",

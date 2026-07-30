@@ -1,10 +1,14 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-sec-corpfin-nal-2025-001-issuance.json",
   "id": "us-sec-corpfin-nal-2025-001-issuance",
   "issued_date": "2025-03-12",
   "issuedBy": "https://publedge.org/authority/sec-corpfin.json",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
   "decides": [],
   "disposition": "issued",
   "target_instrument": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",

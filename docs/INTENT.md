@@ -8,6 +8,8 @@ This file governs strategy for the PubLedge repository. Cross-portfolio strategy
 
 PubLedge is the thin recordkeeping convention of the PAICE legal graph. It defines how civic, legal, and regulatory publication records are structured, named, linked, and exposed to agents.
 
+Within the shared Obligation-First graph, PubLedge owns administrative issuance events for its instruments. These records target an instrument and do not decide an allegation. AI Incident Law remains the owner of adjudicative determinations about public matters.
+
 PubLedge does not compete with established timestamp or provenance infrastructure. SHA-256 and the current manifest provide file-to-manifest consistency. Independent publication-time evidence, when required, should be delegated to established mechanisms such as RFC 3161 or OpenTimestamps and represented as pluggable evidence.
 
 Standalone product ambitions are parked. The repository remains public and maintained, and its stable MCP server remains supported, but new product investment requires a concrete demand signal.
@@ -41,3 +43,4 @@ Reconsider parked work only when at least one of these occurs:
 
 - 2026-06-09: Repositioned PubLedge as a convention atop established timestamp infrastructure and parked standalone ambitions.
 - 2026-07-21: Promoted that disposition into the repository's authoritative intent and aligned maintenance priorities around it.
+- 2026-07-28: Clarified the administrative issuance boundary with AI Incident Law's adjudicative determinations.

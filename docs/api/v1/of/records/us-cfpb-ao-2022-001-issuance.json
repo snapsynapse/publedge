@@ -1,10 +1,14 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-cfpb-ao-2022-001-issuance.json",
   "id": "us-cfpb-ao-2022-001-issuance",
   "issued_date": "2022-06-29",
   "issuedBy": "https://publedge.org/authority/cfpb.json",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us"
+  },
   "decides": [],
   "disposition": "issued",
   "target_instrument": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",

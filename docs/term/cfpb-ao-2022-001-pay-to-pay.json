@@ -1,5 +1,5 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Term",
   "@id": "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
   "id": "cfpb-ao-2022-001-pay-to-pay",

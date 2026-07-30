@@ -1,14 +1,18 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-25T22:16:00.281Z",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "generated": "2026-07-30T18:02:41.736Z",
   "determinations": [
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-cfpb-ao-2022-001-issuance.json",
       "id": "us-cfpb-ao-2022-001-issuance",
       "issued_date": "2022-06-29",
       "issuedBy": "https://publedge.org/authority/cfpb.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
@@ -16,12 +20,16 @@
       "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-cftc-dsio-il-2017-001-issuance.json",
       "id": "us-cftc-dsio-il-2017-001-issuance",
       "issued_date": "2017-12-11",
       "issuedBy": "https://publedge.org/authority/cftc-dsio.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
@@ -29,12 +37,16 @@
       "source": "https://cftc.gov/csl/17-65/download"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json",
       "id": "us-co-legislature-statute-2024-sb24-205-issuance",
       "issued_date": "2024-05-17",
       "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
@@ -42,12 +54,16 @@
       "source": "https://leg.colorado.gov/bills/sb24-205"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json",
       "id": "us-co-legislature-statute-2025-sb25b-004-issuance",
       "issued_date": "2025-08-28",
       "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json",
@@ -55,12 +71,16 @@
       "source": "https://leg.colorado.gov/bills/sb25b-004"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json",
       "id": "us-co-legislature-statute-2026-sb26-189-issuance",
       "issued_date": "2026-05-14",
       "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-co"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
@@ -68,12 +88,16 @@
       "source": "https://leg.colorado.gov/bills/sb26-189"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-irs-chief-counsel-plr-2025-001-issuance.json",
       "id": "us-irs-chief-counsel-plr-2025-001-issuance",
       "issued_date": "2025-02-07",
       "issuedBy": "https://publedge.org/authority/irs-chief-counsel.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
@@ -81,12 +105,16 @@
       "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-irs-tege-plr-2026-001-issuance.json",
       "id": "us-irs-tege-plr-2026-001-issuance",
       "issued_date": "2026-01-12",
       "issuedBy": "https://publedge.org/authority/irs-tege.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
@@ -94,12 +122,16 @@
       "source": "https://irs.gov/pub/irs-wd/202614036.pdf"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-sec-corpfin-nal-2025-001-issuance.json",
       "id": "us-sec-corpfin-nal-2025-001-issuance",
       "issued_date": "2025-03-12",
       "issuedBy": "https://publedge.org/authority/sec-corpfin.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
@@ -107,12 +139,16 @@
       "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json",
       "id": "us-ut-legislature-statute-2024-sb149-issuance",
       "issued_date": "2024-03-13",
       "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
@@ -120,12 +156,16 @@
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-legislature-statute-2025-hb452-issuance.json",
       "id": "us-ut-legislature-statute-2025-hb452-issuance",
       "issued_date": "2025-03-26",
       "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
@@ -133,12 +173,16 @@
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-legislature-statute-2025-sb226-issuance.json",
       "id": "us-ut-legislature-statute-2025-sb226-issuance",
       "issued_date": "2025-03-25",
       "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
@@ -146,12 +190,16 @@
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-legislature-statute-2025-sb332-issuance.json",
       "id": "us-ut-legislature-statute-2025-sb332-issuance",
       "issued_date": "2025-03-25",
       "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json",
@@ -159,12 +207,16 @@
       "source": "https://le.utah.gov/~2025/bills/static/SB0332.html"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-legislature-statute-2026-hb320-issuance.json",
       "id": "us-ut-legislature-statute-2026-hb320-issuance",
       "issued_date": "2026-03-19",
       "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
@@ -172,25 +224,16 @@
       "source": "https://le.utah.gov/~2026/bills/static/HB0320.html"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
-      "@type": "of:Determination",
-      "@id": "https://publedge.org/determination/us-ut-oaip-jia-2026-001-issuance.json",
-      "id": "us-ut-oaip-jia-2026-001-issuance",
-      "issued_date": "2026-04-15",
-      "issuedBy": "https://publedge.org/authority/utah-oaip.json",
-      "decides": [],
-      "disposition": "issued",
-      "target_instrument": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
-      "notes": "Issuance record for Utah Mental Health Chatbot Disclosure — Joint Interpretation.",
-      "source": "https://commerce.utah.gov/ai/learning-lab/"
-    },
-    {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-oaip-rma-2024-001-issuance.json",
       "id": "us-ut-oaip-rma-2024-001-issuance",
       "issued_date": "2024-11-18",
       "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
@@ -198,12 +241,16 @@
       "source": "https://commerce.utah.gov/ai/agreements/elizachat/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-oaip-rma-2025-001-issuance.json",
       "id": "us-ut-oaip-rma-2025-001-issuance",
       "issued_date": "2025-05-31",
       "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
@@ -211,12 +258,16 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json",
       "id": "us-ut-oaip-rma-2025-002-issuance",
       "issued_date": "2025-10-24",
       "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
@@ -224,12 +275,16 @@
       "source": "https://commerce.utah.gov/ai/agreements/doctronic/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Determination",
       "@id": "https://publedge.org/determination/us-ut-oaip-rma-2026-001-issuance.json",
       "id": "us-ut-oaip-rma-2026-001-issuance",
       "issued_date": "2026-03-19",
       "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+      "jurisdiction": {
+        "@type": "gist:Jurisdiction",
+        "ref": "us-ut"
+      },
       "decides": [],
       "disposition": "issued",
       "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",

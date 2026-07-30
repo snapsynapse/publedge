@@ -1,9 +1,9 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-25T22:16:00.281Z",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "generated": "2026-07-30T18:02:41.736Z",
   "instruments": [
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
       "id": "us-cfpb-ao-2022-001",
@@ -29,7 +29,7 @@
       "canonical_url": "https://publedge.org/us/federal/cfpb/ao/2022-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
       "id": "us-cftc-dsio-il-2017-001",
@@ -55,7 +55,7 @@
       "canonical_url": "https://publedge.org/us/federal/cftc-dsio/il/2017-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
       "id": "us-co-legislature-statute-2024-sb24-205",
@@ -81,7 +81,7 @@
       "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json",
       "id": "us-co-legislature-statute-2025-sb25b-004",
@@ -105,7 +105,7 @@
       "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2025-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
       "id": "us-co-legislature-statute-2026-sb26-189",
@@ -131,7 +131,7 @@
       "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
       "id": "us-irs-chief-counsel-plr-2025-001",
@@ -157,7 +157,7 @@
       "canonical_url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
       "id": "us-irs-tege-plr-2026-001",
@@ -183,7 +183,7 @@
       "canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
       "id": "us-sec-corpfin-nal-2025-001",
@@ -209,7 +209,7 @@
       "canonical_url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
       "id": "us-ut-legislature-statute-2024-sb149",
@@ -235,7 +235,7 @@
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2024-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
       "id": "us-ut-legislature-statute-2025-hb452",
@@ -261,7 +261,7 @@
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-002/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
       "id": "us-ut-legislature-statute-2025-sb226",
@@ -287,7 +287,7 @@
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json",
       "id": "us-ut-legislature-statute-2025-sb332",
@@ -311,7 +311,7 @@
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-003/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
       "id": "us-ut-legislature-statute-2026-hb320",
@@ -337,7 +337,7 @@
       "canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
       "id": "us-ut-oaip-jia-2026-001",
@@ -345,8 +345,6 @@
       "short_title": "Utah Mental Health Chatbot Disclosure — Joint Interpretation",
       "issuedBy": "https://publedge.org/authority/utah-oaip.json",
       "kind": "jia",
-      "enacted": "2026-04-15",
-      "effective": "2026-04-15",
       "status": "proposed",
       "enforcement_status": "unsignaled",
       "hasTerm": [
@@ -362,7 +360,7 @@
       "canonical_url": "https://publedge.org/us/utah/oaip/jia/2026-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
       "id": "us-ut-oaip-rma-2024-001",
@@ -387,7 +385,7 @@
       "canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
       "id": "us-ut-oaip-rma-2025-001",
@@ -412,7 +410,7 @@
       "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-001/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
       "id": "us-ut-oaip-rma-2025-002",
@@ -437,7 +435,7 @@
       "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-002/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
       "id": "us-ut-oaip-rma-2026-001",

@@ -1,10 +1,14 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json",
   "id": "us-co-legislature-statute-2026-sb26-189-issuance",
   "issued_date": "2026-05-14",
   "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-co"
+  },
   "decides": [],
   "disposition": "issued",
   "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",

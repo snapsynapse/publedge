@@ -1,10 +1,14 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-ut-oaip-rma-2026-001-issuance.json",
   "id": "us-ut-oaip-rma-2026-001-issuance",
   "issued_date": "2026-03-19",
   "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "jurisdiction": {
+    "@type": "gist:Jurisdiction",
+    "ref": "us-ut"
+  },
   "decides": [],
   "disposition": "issued",
   "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",

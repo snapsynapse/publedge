@@ -1,9 +1,9 @@
 {
-  "@context": "https://obligationfirst.org/v1/",
-  "generated": "2026-07-25T22:16:00.281Z",
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "generated": "2026-07-30T18:02:41.736Z",
   "authorities": [
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/cfpb.json",
       "id": "cfpb",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/cftc-dsio.json",
       "id": "cftc-dsio",
@@ -46,7 +46,7 @@
       "url_segment": "cftc-dsio"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/colorado-legislature.json",
       "id": "colorado-legislature",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/irs-chief-counsel.json",
       "id": "irs-chief-counsel",
@@ -89,7 +89,7 @@
       "url_segment": "irs-chief-counsel"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/irs-tege.json",
       "id": "irs-tege",
@@ -109,7 +109,7 @@
       "url_segment": "irs-tege"
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/sec-corpfin.json",
       "id": "sec-corpfin",
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/utah-legislature.json",
       "id": "utah-legislature",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/",
+      "@context": "https://obligationfirst.org/v1/context.jsonld",
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/utah-oaip.json",
       "id": "utah-oaip",
