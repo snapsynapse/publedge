@@ -90,6 +90,24 @@ function parseToolPayload(response) {
             if (!rejected.result?.isError) failures.push(`fetch_by_url accepted non-canonical URL: ${url}`);
         }
 
+        const modernMeta = {
+            'io.modelcontextprotocol/protocolVersion': '2026-07-28',
+            'io.modelcontextprotocol/clientInfo': { name: 'eval', version: '1.0.0' },
+            'io.modelcontextprotocol/clientCapabilities': {}
+        };
+        const discover = await rpc(proc, id++, 'server/discover', { _meta: modernMeta });
+        if (discover.result?.resultType !== 'complete') failures.push('server/discover response missing resultType "complete"');
+        if (!discover.result?.supportedVersions?.includes('2026-07-28')) failures.push('server/discover supportedVersions missing 2026-07-28');
+        if (!discover.result?.capabilities?.tools) failures.push('server/discover response missing tools capability');
+
+        const modernList = await rpc(proc, id++, 'tools/list', { _meta: modernMeta });
+        if (typeof modernList.result?.ttlMs !== 'number') failures.push('tools/list response missing numeric ttlMs');
+        if (!modernList.result?.cacheScope) failures.push('tools/list response missing cacheScope');
+
+        const unsupported = await rpc(proc, id++, 'tools/list', { _meta: { 'io.modelcontextprotocol/protocolVersion': '1900-01-01' } });
+        if (unsupported.error?.code !== -32022) failures.push(`unsupported protocol version should return -32022, got ${JSON.stringify(unsupported.error || unsupported.result)}`);
+        if (!Array.isArray(unsupported.error?.data?.supported)) failures.push('unsupported protocol version error missing data.supported array');
+
         if (failures.length) {
             console.error(`eval-mcp-contract: FAILED (${failures.length})`);
             failures.forEach(item => console.error(`- ${item}`));

@@ -751,7 +751,8 @@ function writeMcpDiscovery() {
             publedge: {
                 command: 'npx',
                 args: ['-y', 'publedge'],
-                description: 'Read-only access to the PubLedge legal-instrument registry.'
+                description: 'Read-only access to the PubLedge legal-instrument registry.',
+                protocol_versions: ['2026-07-28', '2024-11-05']
             }
         }
     };
