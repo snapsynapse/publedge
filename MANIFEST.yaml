@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:4d20b960869b4c0dfd25c69ee576729d2225f31d1d1cf97757f38897e72a6052
+    hash: sha256:e77a3fdecb796c0f3cdd1fb87345e65afbb5afdad44b12340f5af0634e54e6df
     note: package.json
 
   - path: package-lock.json
@@ -566,6 +566,11 @@ files:
     hash: sha256:158614b6fe6404a68065080becb52fcd0acf1f3320de9a5dc8e702f11b30120c
     note: scripts/check-of-fingerprint.js
 
+  - path: scripts/check-of-continuity.js
+    role: tooling
+    hash: sha256:464d8dfa897f0ae64165bb5e9f4065e32e1e839cf3e3e0e8c578cd5a0727f49f
+    note: scripts/check-of-continuity.js
+
   - path: scripts/eval-authority-response.js
     role: tooling
     hash: sha256:2ab5c581afe0b5acb8ceb8dc341ce0a926087f4953348e761747ae146a0d7fa6
@@ -703,7 +708,7 @@ files:
 
   - path: scripts/eval-workflow-invariants.js
     role: tooling
-    hash: sha256:e6046bb3539195a97a51845aafc0e96d50296640d3addadc350eb6cc1d56e61c
+    hash: sha256:6df4623787101c13d3adeae13a2483985edd84f1f425c3071fed5e84d5e591f4
     note: scripts/eval-workflow-invariants.js
 
   - path: scripts/evals.js
@@ -783,7 +788,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:abd4ca8fa44f6084623a942117f474f275725fbe23fe0bbb7c956f224017e357
+    hash: sha256:953769545a22c2532bf0966bc074afa534549a0e44c68528645592fc36f9c820
     note: scripts/verify-ci.js
 
   - path: AGENTS.md

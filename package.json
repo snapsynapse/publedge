@@ -62,6 +62,7 @@
     "validate:of": "node scripts/validate-obligation-first.js",
     "check:of": "node scripts/check-of-version.js",
     "check:of-fingerprint": "node scripts/check-of-fingerprint.js",
+    "check:of-continuity": "node scripts/check-of-continuity.js",
     "verify:ci": "node scripts/verify-ci.js",
     "verify": "node scripts/verify.js",
     "evals": "node scripts/evals.js",

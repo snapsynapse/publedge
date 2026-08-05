@@ -12,6 +12,7 @@ const gates = [
     [npm, ['run', 'build']],
     [npm, ['run', 'check:of']],
     [npm, ['run', 'validate:of']],
+    [npm, ['run', 'check:of-continuity']],
     [npm, ['run', 'evals']],
     ['git', ['diff', '--check']],
     ['git', ['diff', '--exit-code', '--', 'docs/']]

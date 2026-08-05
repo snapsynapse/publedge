@@ -15,7 +15,7 @@ if (!workflow.includes('run: npm ci')) failures.push('build workflow must instal
 if (/run: npm install(?:\s|$)/m.test(workflow)) failures.push('build workflow must not use npm install');
 if (!workflow.includes('run: npm run verify:ci')) failures.push('build workflow must invoke npm run verify:ci');
 if (!workflow.includes('CHECK_OF_REQUIRED: "1"')) failures.push('build workflow must make Obligation-First discovery fail closed');
-for (const gate of ['check:of', 'validate:of', 'evals', "'diff', '--check'", "'diff', '--exit-code'"]) {
+for (const gate of ['check:of', 'validate:of', 'check:of-continuity', 'evals', "'diff', '--check'", "'diff', '--exit-code'"]) {
     if (!verifier.includes(gate)) failures.push(`verify-ci.js omits ${gate}`);
 }
 if (!verifier.includes("['bash', ['scripts/validate-hashes.sh']]")) {
