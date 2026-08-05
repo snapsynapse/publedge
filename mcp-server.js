@@ -18,6 +18,9 @@ const { loadMarkdownDir } = require('./scripts/lib/content');
 const { loadMappingIndex } = require('./scripts/lib/mapping');
 
 const ROOT = __dirname;
+const PACKAGE_VERSION = JSON.parse(
+    fs.readFileSync(path.join(ROOT, 'package.json'), 'utf-8')
+).version;
 
 // ---------------------------------------------------------------------------
 // Shared helpers (from scripts/build.js)
@@ -567,7 +570,7 @@ function handleMessage(msg) {
             capabilities: { tools: {} },
             serverInfo: {
                 name: config.name || 'Knowledge Base MCP',
-                version: '1.0.0'
+                version: PACKAGE_VERSION
             }
         });
     }
@@ -584,7 +587,7 @@ function handleMessage(msg) {
             _meta: {
                 'io.modelcontextprotocol/serverInfo': {
                     name: config.name || 'Knowledge Base MCP',
-                    version: '1.0.0'
+                    version: PACKAGE_VERSION
                 }
             },
             ttlMs: CACHE_TTL_MS,

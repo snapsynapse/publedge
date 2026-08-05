@@ -25,7 +25,7 @@
 #   - Workshop scratchpad (_workshop/)
 
 bundle: publedge
-bundle_version: 0.2.0
+bundle_version: 0.2.1
 bundle_date: 2026-08-04
 description: >
   PubLedge open recordkeeping protocol for fact-specific written
@@ -123,17 +123,17 @@ files:
 
   - path: server.json
     role: config
-    hash: sha256:dda92e284029432337bd1cf2902deb82f3de23bbc05407cfada81a7d8f7346f2
+    hash: sha256:12123e0ad99900628a8ea95da8aedeb7bc24a5507d429553410d2e3a9e11a60b
     note: server.json
 
   - path: package.json
     role: config
-    hash: sha256:558737986959c5f0067f828274411848e61344c3bc8ab58234d8e0bb50d4dcd6
+    hash: sha256:4d20b960869b4c0dfd25c69ee576729d2225f31d1d1cf97757f38897e72a6052
     note: package.json
 
   - path: package-lock.json
     role: config
-    hash: sha256:3bf22e12eb7c1fbea6b48465ac95799c9e6b45045d76edda9507dfb364360d74
+    hash: sha256:012ebe8338a006f4f4e3552d8b061074ec34840b25e4ef309519df51f22f2156
     note: package-lock.json
 
   - path: project.yml
@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:2d76e6ecd230472c76703da629766124961076fac9243d6af400042b725f88ec
+    hash: sha256:f684011ef270286aaf911b03ebd3d44237471feb0f78e1c7c5b79ab4f0573bd4
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -458,17 +458,17 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:aa8b2dedec0b5e9d618c1384ce9824b6e23624b3c29dd87c9ce1258e7bb2a824
+    hash: sha256:cb543402a56ca10331556e5c0096864363f0187a0363fd2a3613344693bec752
     note: README.md
 
-  - path: RELEASE_NOTES-v0.2.0.md
+  - path: RELEASE_NOTES-v0.2.1.md
     role: release-notes
-    hash: sha256:cf4d49c45890f66a781f269414ffa629cb1d6b9fb6d32c2e244b8bfd27aeab7c
-    note: RELEASE_NOTES-v0.2.0.md
+    hash: sha256:39d4cb973ff70b86324e6d39050709236a385023eedd831731eeee84b6acc2fc
+    note: RELEASE_NOTES-v0.2.1.md
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:d4f4b3d075ce9332a1be1bcdfc99353d34df96aca3d98ced5ef46be6116aa5a7
+    hash: sha256:22e6821afc9ecefec407dd500ddc21cd2ee4c14d9f2d82e00183701f6bbd9a3e
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -538,12 +538,12 @@ files:
 
   - path: mcp-server.js
     role: tooling
-    hash: sha256:0698113a8bab9c88a7f3dce73f2bb5aa6786afcffa1b9d931c43b9a2e0aec9c6
+    hash: sha256:31253104f9a377d7e150c5866296e7e41b0f144b42db10b012bd973577a6f689
     note: mcp-server.js
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:f022f4f1a11e20658b04acd4d6913fdc84d6481149e6a3f4b7698046c857d932
+    hash: sha256:9831c1612d51f36ba9862bb03122d05e47ae8fe63242a76e50d58354a9bcb27a
     note: scripts/build-extras.js
 
   - path: scripts/build.js
@@ -628,7 +628,7 @@ files:
 
   - path: scripts/eval-mcp-contract.js
     role: tooling
-    hash: sha256:e1d7ff49acfa641a91c2675429b890ad979340a1ef46b1a7cbf0158dcfb24e38
+    hash: sha256:f8a430d8b84a23ea8a09c54cf972f7e03f32635bca2dfa775b0220c7ed3f05c0
     note: scripts/eval-mcp-contract.js
 
   - path: scripts/eval-mcp-parser-lockstep.js
@@ -638,7 +638,7 @@ files:
 
   - path: scripts/eval-package-smoke.js
     role: tooling
-    hash: sha256:872305cdfdcac442a7ab8f4797bfdb3ac56128aaf4cb78ce77594a7fc99b3437
+    hash: sha256:c127a73ffc33f80dc037a768e3a9675d50f7912219f6f7440b5280d5fc1a962e
     note: scripts/eval-package-smoke.js
 
   - path: scripts/eval-obligation-first-binding.js
@@ -653,7 +653,7 @@ files:
 
   - path: scripts/eval-public-claims.js
     role: tooling
-    hash: sha256:24895ff9980fb57ab38effc7537ff39672254dd715c2e826c6bdb7c74b770660
+    hash: sha256:ffb799ebe017ebc9408d5a859c7c8b493d693af9f5ec06c13016e381d8631061
     note: scripts/eval-public-claims.js
 
   - path: scripts/eval-temporal-status.js
@@ -798,12 +798,12 @@ files:
 
   - path: PROJECT_CONTEXT.md
     role: agent-guidance
-    hash: sha256:1df0e86f1537700c3710fa659d603c0858eb90303d5dde469089d8b7389b2c26
+    hash: sha256:daad3b13ca898e60fc04ad75b6dba66a03947b392ca90a7c9dc6a9656236a8f7
     note: PROJECT_CONTEXT.md
 
   - path: about/index.html
     role: site-source
-    hash: sha256:258e4bb7d9314a35dea70c5e880c5f1b4564be6920e231b61b34cd4cf87c4eb6
+    hash: sha256:4b3a2ad76459ac161da1aecf0d39bc179442eeb76eb584d012ccb081f91c72ea
     note: about/index.html
 
   - path: assets/search.js
@@ -833,7 +833,7 @@ files:
 
   - path: reference/index.html
     role: site-source
-    hash: sha256:dd9d842aa9f1ef87be7ee09544a50d9c3ad6f6c2c92c620ed7e5f55bed99575a
+    hash: sha256:976beb2bc3fa00d7426f33379c50061ea9ee82f36ea5e0698ec703fb139fafce
     note: reference/index.html
 
   - path: reference/prior-art/index.html
@@ -843,7 +843,7 @@ files:
 
   - path: reference/registry/index.html
     role: site-source
-    hash: sha256:370b3f31f8bbf7f378730fa677f4e5e5e4e646ff66d2d81c973914970893c33a
+    hash: sha256:24fceeda4859ab71f8dd107b625c0f3dc74528257fd0b89a8c4a6898755a1f96
     note: reference/registry/index.html
 
   - path: reference/verify/index.html

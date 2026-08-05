@@ -1,6 +1,6 @@
 {
   "name": "publedge",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "mcpName": "io.github.snapsynapse/publedge",
   "description": "MCP server and recordkeeping protocol for fact-specific written interpretations between two parties: JIAs, RMAs, no-action letters, advisory opinions, private letter rulings. Plain markdown, manifest-checked, gist-bound. The verifiable-records layer of the PAICE legal graph.",
   "homepage": "https://publedge.org/",

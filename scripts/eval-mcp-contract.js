@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
+const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
 const { ROOT, loadProjectData } = require('./lib/eval-kit');
@@ -32,11 +33,15 @@ function parseToolPayload(response) {
 
 (async () => {
     const project = loadProjectData();
+    const packageVersion = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf-8')).version;
     const proc = spawn(process.execPath, ['mcp-server.js'], { cwd: ROOT, stdio: ['pipe', 'pipe', 'inherit'] });
     const failures = [];
     try {
         const init = await rpc(proc, 1, 'initialize', {});
         if (!init.result?.capabilities?.tools) failures.push('initialize response missing tools capability');
+        if (init.result?.serverInfo?.version !== packageVersion) {
+            failures.push(`initialize serverInfo.version ${init.result?.serverInfo?.version} does not match package version ${packageVersion}`);
+        }
 
         const list = await rpc(proc, 2, 'tools/list', {});
         const tools = list.result?.tools || [];
@@ -99,6 +104,10 @@ function parseToolPayload(response) {
         if (discover.result?.resultType !== 'complete') failures.push('server/discover response missing resultType "complete"');
         if (!discover.result?.supportedVersions?.includes('2026-07-28')) failures.push('server/discover supportedVersions missing 2026-07-28');
         if (!discover.result?.capabilities?.tools) failures.push('server/discover response missing tools capability');
+        const discoveredVersion = discover.result?._meta?.['io.modelcontextprotocol/serverInfo']?.version;
+        if (discoveredVersion !== packageVersion) {
+            failures.push(`server/discover serverInfo.version ${discoveredVersion} does not match package version ${packageVersion}`);
+        }
 
         const modernList = await rpc(proc, id++, 'tools/list', { _meta: modernMeta });
         if (typeof modernList.result?.ttlMs !== 'number') failures.push('tools/list response missing numeric ttlMs');

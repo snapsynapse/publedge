@@ -8,6 +8,16 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-08-04
+
+MCP release-identity correction following exact-tarball consumer verification.
+
+### Fixed
+
+- MCP `initialize` and `server/discover` now derive `serverInfo.version` from `package.json` instead of reporting the stale literal `1.0.0`.
+- Source and installed-package evals now fail when either MCP handshake version diverges from the npm and MCP Registry package version.
+- Public-claim evaluation now models the protocol specification and MCP package as separately versioned surfaces, preserving protocol `v0.2.0` while releasing MCP server `v0.2.1`.
+
 ## [0.2.0] - 2026-08-04
 
 Obligation-First v0.6 adopter and drift-prevention release. This is a minor release because the pre-1.0 public projection contract changes materially.

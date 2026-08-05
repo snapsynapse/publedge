@@ -37,6 +37,7 @@ function rpc(proc, id, method, params) {
 
 (async () => {
     const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'publedge-package-smoke-'));
+    const packageVersion = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf-8')).version;
     const failures = [];
     let proc;
     try {
@@ -56,6 +57,9 @@ function rpc(proc, id, method, params) {
         proc = spawn(executable, [], { cwd: tempDir, stdio: ['pipe', 'pipe', 'pipe'] });
         const init = await rpc(proc, 1, 'initialize', {});
         if (!init.result?.capabilities?.tools) failures.push('installed package initialize response is missing tools capability');
+        if (init.result?.serverInfo?.version !== packageVersion) {
+            failures.push(`installed package serverInfo.version ${init.result?.serverInfo?.version} does not match package version ${packageVersion}`);
+        }
         const list = await rpc(proc, 2, 'tools/list', {});
         const names = new Set((list.result?.tools || []).map(tool => tool.name));
         for (const required of ['search', 'fetch_by_url', 'get_matrix', 'get_mappings']) {

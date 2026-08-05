@@ -15,6 +15,9 @@ const readme = read('README.md');
 const obligationCount = fs.readdirSync(path.join(project.dataDir, 'obligations')).filter(file => file.endsWith('.md')).length;
 const mappingCount = project.mappings.length;
 const version = pkg.version;
+const protocolVersion = read('PROTOCOL.md').match(/^version:\s*["']?([^"'\s]+)["']?\s*$/m)?.[1];
+
+if (!protocolVersion) failures.push('PROTOCOL.md is missing a parseable frontmatter version');
 
 function requireText(source, needle, reason) {
     if (!read(source).includes(needle)) failures.push(`${source} missing ${reason}: ${needle}`);
@@ -29,13 +32,13 @@ for (const [label, expected] of [
     if (!badgePattern.test(readme)) failures.push(`README registry badge does not report ${expected} ${label}`);
 }
 
-requireText('README.md', `Protocol specification v${version}; stable MCP server v${version}.`, 'current release claim');
+requireText('README.md', `Protocol specification v${protocolVersion}; stable MCP server v${version}.`, 'current release claim');
 requireText('README.md', `Obligations + mapping curation pass (${obligationCount} obligations, ${mappingCount} mappings)`, 'current curation totals');
-requireText('ROADMAP.md', `Protocol specification \`v${version}\`; stable MCP server \`v${version}\``, 'current-version summary');
-requireText('about/index.html', `Protocol v${version} · MCP server v${version}`, 'current protocol and MCP versions');
+requireText('ROADMAP.md', `Protocol specification \`v${protocolVersion}\`; stable MCP server \`v${version}\``, 'current-version summary');
+requireText('about/index.html', `Protocol v${protocolVersion} · MCP server v${version}`, 'current protocol and MCP versions');
 requireText('reference/index.html', `PubLedge v${version}`, 'current version');
-requireText('reference/prior-art/index.html', `PubLedge Prior Art v${version}`, 'current version');
-requireText('reference/vocabulary/index.html', `v${version}`, 'current version');
+requireText('reference/prior-art/index.html', `PubLedge Prior Art v${protocolVersion}`, 'current protocol version');
+requireText('reference/vocabulary/index.html', `v${protocolVersion}`, 'current protocol version');
 requireText(
     'reference/registry/index.html',
     `${project.containers.length} instruments · ${obligationCount} obligations · ${project.authorities.length} authorities · v${version}`,
