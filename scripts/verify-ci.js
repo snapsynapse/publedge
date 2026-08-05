@@ -5,7 +5,7 @@ const { spawnSync } = require('child_process');
 
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 const gates = [
-    ['sh', ['scripts/validate-hashes.sh']],
+    ['bash', ['scripts/validate-hashes.sh']],
     [npm, ['run', 'validate']],
     [npm, ['run', 'eval:instrument-schema']],
     [npm, ['run', 'eval:obligation-schema']],

@@ -703,7 +703,7 @@ files:
 
   - path: scripts/eval-workflow-invariants.js
     role: tooling
-    hash: sha256:6a7bafa33a415c44d8669ec4efbae5e26695224746600b6adcc3b81d1d1ac87f
+    hash: sha256:e6046bb3539195a97a51845aafc0e96d50296640d3addadc350eb6cc1d56e61c
     note: scripts/eval-workflow-invariants.js
 
   - path: scripts/evals.js
@@ -783,7 +783,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:99fdd91754d97106b476500f484e6588673a2840b91d484d152bfbc49ccb3b2d
+    hash: sha256:abd4ca8fa44f6084623a942117f474f275725fbe23fe0bbb7c956f224017e357
     note: scripts/verify-ci.js
 
   - path: AGENTS.md

@@ -18,6 +18,12 @@ if (!workflow.includes('CHECK_OF_REQUIRED: "1"')) failures.push('build workflow 
 for (const gate of ['check:of', 'validate:of', 'evals', "'diff', '--check'", "'diff', '--exit-code'"]) {
     if (!verifier.includes(gate)) failures.push(`verify-ci.js omits ${gate}`);
 }
+if (!verifier.includes("['bash', ['scripts/validate-hashes.sh']]")) {
+    failures.push('verify-ci.js must invoke the Bash-only hash validator with bash');
+}
+if (verifier.includes("['sh', ['scripts/validate-hashes.sh']]")) {
+    failures.push('verify-ci.js must not invoke the Bash-only hash validator with POSIX sh');
+}
 if (!attributes.includes('docs/calendar.ics') || !attributes.includes('cr-at-eol')) {
     failures.push('.gitattributes must preserve strict whitespace checking while accepting calendar CRLF');
 }
