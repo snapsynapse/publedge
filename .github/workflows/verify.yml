@@ -18,12 +18,34 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Run verifier
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run scheduled verification
         id: verify
         run: |
           set +e
-          node scripts/verify.js | tee verify-output.txt
-          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          {
+            echo "## Knowledge verification"
+            echo
+            npm run verify
+          } > verify-output.txt 2>&1
+          verify_exit=$?
+
+          {
+            echo
+            echo "## Temporal status"
+            echo
+            npm run eval:temporal-status
+          } >> verify-output.txt 2>&1
+          temporal_exit=$?
+
+          cat verify-output.txt
+          if [ "$verify_exit" -ne 0 ] || [ "$temporal_exit" -ne 0 ]; then
+            echo "exit_code=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "exit_code=0" >> "$GITHUB_OUTPUT"
+          fi
           set -e
 
       - name: Ensure 'knowledge-drift' label exists
@@ -42,11 +64,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
-          TITLE="Knowledge drift detected — $(date +%Y-%m-%d)"
+          TITLE="Knowledge drift detected: $(date +%Y-%m-%d)"
 
           # Build the body from the verifier output.
           {
-            echo "Automated weekly verification flagged one or more stale or missing entities."
+            echo "Automated weekly verification flagged knowledge staleness, missing entities, or a temporal lifecycle mismatch."
             echo ""
             echo "## Report"
             echo ""
@@ -60,7 +82,7 @@ jobs:
             echo "2. For each, either:"
             echo "   - Re-verify the underlying source and bump the \`last_verified\` date in its frontmatter, **or**"
             echo "   - Update the entity with corrected information."
-            echo "3. Run \`node scripts/verify.js\` locally to confirm the issue clears."
+            echo "3. Run \`npm run verify\` and \`npm run eval:temporal-status\` locally to confirm the issue clears."
             echo "4. Commit and push. This issue can be closed once verification passes."
             echo ""
             echo "---"

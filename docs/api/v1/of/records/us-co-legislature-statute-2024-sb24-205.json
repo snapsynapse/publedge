@@ -1,26 +1,47 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
-  "id": "us-co-legislature-statute-2024-sb24-205",
+  "pub:id": "us-co-legislature-statute-2024-sb24-205",
   "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
   "short_title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
-  "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/colorado-legislature.json"
+  ],
   "kind": "statute",
+  "normative_force": "binding",
   "enacted": "2024-05-17",
   "effective": "2026-06-30",
-  "status": "superseded",
-  "enforcement_status": "routine",
+  "lifecycle_status": "superseded",
+  "operative_status": "inactive",
+  "enforcement_status": "not-enforceable",
   "hasTerm": [
     "https://publedge.org/term/sb24-205-never-operative-obligations.json"
   ],
-  "source": "https://leg.colorado.gov/bills/sb24-205",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
   },
+  "territorial_scope": [
+    "us-co"
+  ],
   "citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
-  "publedge_status": "superseded",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/"
+  "source": "https://leg.colorado.gov/bills/sb24-205",
+  "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "superseded",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/"
 }

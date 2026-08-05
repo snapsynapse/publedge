@@ -1,26 +1,47 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
-  "id": "us-sec-corpfin-nal-2025-001",
+  "pub:id": "us-sec-corpfin-nal-2025-001",
   "title": "SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)",
   "short_title": "SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)",
-  "issuedBy": "https://publedge.org/authority/sec-corpfin.json",
+  "issuedBy": [
+    "https://publedge.org/authority/sec-corpfin.json"
+  ],
   "kind": "no-action-letter",
+  "normative_force": "nonbinding",
   "enacted": "2025-03-12",
   "effective": "2025-03-12",
-  "status": "in-force",
-  "enforcement_status": "routine",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "not-enforceable",
   "hasTerm": [
     "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json"
   ],
-  "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-sec-corpfin-nal-2025-001-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
   },
+  "territorial_scope": [
+    "us"
+  ],
   "citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
-  "publedge_status": "enforcing",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/"
+  "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+  "source_citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enforcing",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/"
 }

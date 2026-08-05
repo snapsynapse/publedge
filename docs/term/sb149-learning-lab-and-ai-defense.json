@@ -1,20 +1,35 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Term",
   "@id": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
-  "id": "sb149-learning-lab-and-ai-defense",
-  "text": "Summary",
-  "section": "",
+  "pub:id": "sb149-learning-lab-and-ai-defense",
+  "summary": "Summary",
+  "section": "Summary",
   "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
   "creates": [
     "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
     "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json"
   ],
-  "anchors": [],
-  "source_heading": "Summary",
-  "source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+  "source_locator": "Summary",
+  "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Summary",
+  "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md"
 }

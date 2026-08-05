@@ -1,24 +1,41 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Requirement",
   "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
-  "id": "doctronic-rma-obligations-rma-end-of-term-report",
+  "pub:id": "doctronic-rma-obligations-rma-end-of-term-report",
   "title": "RMA — 30-Day End-Of-Term Report",
   "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
-  "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "rma-end-of-term-report",
-  "publedge_group": "requirement",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/doctronic-rma-obligations.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+  "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "rma-end-of-term-report",
+  "pub:group": "requirement",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "rma",
     "reporting",
     "termination",
     "end of term"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

@@ -17,8 +17,10 @@ const { parseYaml } = require('./lib/parse');
 const { loadMappingIndex } = require('./lib/mapping');
 const { loadMarkdownDir } = require('./lib/content');
 const { buildObligationFirstRecords, writeObligationFirstRecords } = require('./lib/obligation-first');
+const { deriveBuildClock } = require('./lib/build-clock');
 
 const ROOT = path.join(__dirname, '..');
+const BUILD_CLOCK = deriveBuildClock(ROOT);
 // Output directory for the generated site.
 // Override with KAC_OUTPUT_DIR=demo (or any folder name) to write elsewhere.
 // Default is 'docs' so GitHub Pages can serve from main/docs with no config.
@@ -80,9 +82,9 @@ function formatDate(dateStr) {
     if (!dateStr) return '';
     const s = String(dateStr).trim();
     if (!s || /^(null|undefined|tbd|n\/a)$/i.test(s)) return '';
-    const d = new Date(s + 'T00:00:00');
+    const d = new Date(s + 'T00:00:00Z');
     if (isNaN(d.getTime())) return escapeHTML(s);
-    return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 }
 
 // Hierarchy / canonical path helpers --------------------------------------
@@ -332,7 +334,7 @@ function renderFooter(config) {
     const repo = config.repo || '#';
     return `<footer>
         <p>Maintained with <a href="${escapeHTML(repo)}">version control</a>. This is a reference tool, not professional advice.</p>
-        <p>&copy; ${new Date().getFullYear()} | Built with <a href="https://knowledge-as-code.com">Knowledge-as-Code</a>, a pattern by <a href="https://paice.work">PAICE.work</a></p>
+        <p>&copy; ${BUILD_CLOCK.year} | Built with <a href="https://knowledge-as-code.com">Knowledge-as-Code</a>, a pattern by <a href="https://paice.work">PAICE.work</a></p>
     </footer>`;
 }
 
@@ -617,8 +619,8 @@ function renderRecordSummary(c, config) {
     if (c.authority) items.push(`<strong>Authority:</strong> ${escapeHTML(c.authority)}`);
     if (typeLabel) items.push(`<strong>Type:</strong> ${escapeHTML(typeLabel)}`);
     if (!isBlank(c.term_start) && !isBlank(c.term_end)) {
-        const start = new Date(String(c.term_start) + 'T00:00:00');
-        const end = new Date(String(c.term_end) + 'T00:00:00');
+        const start = new Date(String(c.term_start) + 'T00:00:00Z');
+        const end = new Date(String(c.term_end) + 'T00:00:00Z');
         if (!isNaN(start.getTime()) && !isNaN(end.getTime())) {
             const months = Math.round((end - start) / (30 * 86400000));
             items.push(`<strong>Term:</strong> ${months} mo`);
@@ -686,7 +688,7 @@ function renderAuthorityLinkPanel(auth) {
 
 // Upcoming-milestones widget for the homepage.
 function renderUpcomingWidget(containers, config) {
-    const today = new Date().toISOString().slice(0, 10);
+    const today = BUILD_CLOCK.date;
     const events = [];
     const isValidDate = (s) => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s);
     for (const c of containers) {
@@ -694,7 +696,7 @@ function renderUpcomingWidget(containers, config) {
             if (!isValidDate(date) || date < today) return;
             events.push({
                 kind, date, container: c,
-                daysUntil: Math.ceil((new Date(date) - new Date(today)) / 86400000)
+                daysUntil: Math.ceil((new Date(date + 'T00:00:00Z') - new Date(today + 'T00:00:00Z')) / 86400000)
             });
         };
         push('Effective', c.effective);
@@ -782,14 +784,14 @@ function generateHomepage(config, data, configCSS) {
         </div>
 
         ${(() => {
-            const today = new Date().toISOString().slice(0, 10);
-            const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+            const today = BUILD_CLOCK.date;
+            const thirtyDaysAgo = BUILD_CLOCK.daysBefore(30);
             // Sort by proximity to today using effective → enacted → last_verified fallback.
             const sorted = [...containers].sort((a, b) => {
                 const aD = a.effective || a.enacted || a.last_verified || '9999-12-31';
                 const bD = b.effective || b.enacted || b.last_verified || '9999-12-31';
-                const aDist = Math.abs(new Date(aD) - new Date(today));
-                const bDist = Math.abs(new Date(bD) - new Date(today));
+                const aDist = Math.abs(new Date(aD + 'T00:00:00Z') - new Date(today + 'T00:00:00Z'));
+                const bDist = Math.abs(new Date(bD + 'T00:00:00Z') - new Date(today + 'T00:00:00Z'));
                 return aDist - bDist;
             });
             const recent = sorted.slice(0, 10);
@@ -1133,7 +1135,7 @@ function generateMatrixPage(config, data, configCSS) {
 
 function generateTimelinePage(config, data, configCSS) {
     const { containers } = data;
-    const today = new Date().toISOString().split('T')[0];
+    const today = BUILD_CLOCK.date;
     const scopeField = config.entities?.container?.scope_field || 'jurisdiction';
     const events = [];
 
@@ -1141,7 +1143,7 @@ function generateTimelinePage(config, data, configCSS) {
         if (!s) return false;
         const str = String(s).trim();
         if (!str || /^(null|undefined|tbd|n\/a)$/i.test(str)) return false;
-        return !isNaN(new Date(str + 'T00:00:00').getTime());
+        return !isNaN(new Date(str + 'T00:00:00Z').getTime());
     };
 
     for (const c of containers) {
@@ -1452,7 +1454,7 @@ function buildSearchIndex(config, data) {
 
 function generateSitemap(config, pages) {
     const base = config.url || '';
-    const lastmod = new Date().toISOString().split('T')[0];
+    const lastmod = BUILD_CLOCK.date;
     return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(p => `  <url><loc>${base}${p}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n')}\n</urlset>`;
 }
 
@@ -1675,7 +1677,7 @@ function generateRecordJsonEndpoint(c, config) {
         '@context': 'https://schema.org',
         meta: {
             canonical_url: (config.url || '').replace(/\/+$/, '') + containerHref(c),
-            generated: new Date().toISOString(),
+            generated: BUILD_CLOCK.instant,
             schema: c.schema || null
         },
         record: {
@@ -2071,6 +2073,7 @@ function build() {
     if (process.env.KAC_SITE_URL) config.url = process.env.KAC_SITE_URL;
 
     console.log(`Building ${config.name || 'project'}...\n`);
+    console.log(`  Reproducible build clock: ${BUILD_CLOCK.instant} from ${BUILD_CLOCK.source}`);
 
     cleanGeneratedOutputs();
 
@@ -2137,20 +2140,20 @@ function build() {
     const configCSS = generateConfigCSS(config);
 
     // --- JSON API ---
-    fs.writeFileSync(path.join(API_DIR, 'primaries.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: primaries.length }, items: primaries.map(p => ({ id: p.id, name: p.name || humanizeId(p.id), group: p.group || '', status: p.status || 'draft', lifecycle_status: p.lifecycle_status })) }, null, 2));
-    fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: containers.length }, items: containers.map(c => ({ id: c.id, name: c.title || c.name || c.id, status: c.status, effective: c.effective, provision_count: c.provisions.length })) }, null, 2));
-    fs.writeFileSync(path.join(API_DIR, 'authorities.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: authorities.length }, items: authorities.map(a => ({ id: a.id, name: a.name || humanizeId(a.id), jurisdiction: a.jurisdiction || '' })) }, null, 2));
-    fs.writeFileSync(path.join(API_DIR, 'mappings.json'), JSON.stringify({ meta: { generated: new Date().toISOString(), count: mappingIndex.length }, items: mappingIndex }, null, 2));
-    fs.writeFileSync(path.join(API_DIR, 'matrix.json'), JSON.stringify({ meta: { generated: new Date().toISOString() }, matrix }, null, 2));
-    fs.writeFileSync(path.join(API_DIR, 'comparisons.json'), JSON.stringify({ meta: { generated: new Date().toISOString() }, comparisons }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'primaries.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: primaries.length }, items: primaries.map(p => ({ id: p.id, name: p.name || humanizeId(p.id), group: p.group || '', status: p.status || 'draft', lifecycle_status: p.lifecycle_status })) }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: containers.length }, items: containers.map(c => ({ id: c.id, name: c.title || c.name || c.id, status: c.status, effective: c.effective, provision_count: c.provisions.length })) }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'authorities.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: authorities.length }, items: authorities.map(a => ({ id: a.id, name: a.name || humanizeId(a.id), jurisdiction: a.jurisdiction || '' })) }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'mappings.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: mappingIndex.length }, items: mappingIndex }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'matrix.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant }, matrix }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'comparisons.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant }, comparisons }, null, 2));
 
     const obligationFirstRecords = buildObligationFirstRecords(config, data);
-    writeObligationFirstRecords(config, obligationFirstRecords, DOCS_DIR);
+    writeObligationFirstRecords(config, obligationFirstRecords, DOCS_DIR, BUILD_CLOCK.instant);
     console.log('  of/*.json: Obligation-First binding records');
 
     // upcoming.json — future effective + term-end dates, sorted by proximity.
     {
-        const today = new Date().toISOString().slice(0, 10);
+        const today = BUILD_CLOCK.date;
         const items = [];
         for (const c of containers) {
             const push = (kind, date) => {
@@ -2158,7 +2161,7 @@ function build() {
                 items.push({
                     kind,
                     date,
-                    days_until: Math.ceil((new Date(date) - new Date(today)) / 86400000),
+                    days_until: Math.ceil((new Date(date + 'T00:00:00Z') - new Date(today + 'T00:00:00Z')) / 86400000),
                     record_id: c.id,
                     title: c.title || c.name || c.id,
                     url: (config.url || '').replace(/\/$/, '') + containerHref(c),
@@ -2172,14 +2175,14 @@ function build() {
         }
         items.sort((a, b) => a.date.localeCompare(b.date));
         fs.writeFileSync(path.join(API_DIR, 'upcoming.json'), JSON.stringify({
-            meta: { generated: new Date().toISOString(), count: items.length, today },
+            meta: { generated: BUILD_CLOCK.instant, count: items.length, today },
             items
         }, null, 2));
     }
 
     // recently_changed.json — records modified / verified within 30 days.
     {
-        const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+        const thirtyDaysAgo = BUILD_CLOCK.daysBefore(30);
         const items = containers
             .filter(c => (c.last_verified && c.last_verified >= thirtyDaysAgo) ||
                          (c.modified && c.modified >= thirtyDaysAgo) ||
@@ -2202,12 +2205,12 @@ function build() {
             })
             .sort((a, b) => (b.last_verified || b.modified || '').localeCompare(a.last_verified || a.modified || ''));
         fs.writeFileSync(path.join(API_DIR, 'recently_changed.json'), JSON.stringify({
-            meta: { generated: new Date().toISOString(), count: items.length, window_days: 30 },
+            meta: { generated: BUILD_CLOCK.instant, count: items.length, window_days: 30 },
             items
         }, null, 2));
     }
     fs.writeFileSync(path.join(API_DIR, 'index.json'), JSON.stringify({
-        meta: { generated: new Date().toISOString(), version: '1.0', project: config.short_name || 'kac' },
+        meta: { generated: BUILD_CLOCK.instant, version: '1.0', project: config.short_name || 'kac' },
         files: {
             primaries: { path: 'primaries.json', media_type: 'application/json' },
             containers: { path: 'containers.json', media_type: 'application/json' },
@@ -2549,7 +2552,7 @@ function build() {
             protocol_authority_response: `${siteUrl}about/#authority-response`
         },
         meta: {
-            last_updated: new Date().toISOString().split('T')[0],
+            last_updated: BUILD_CLOCK.date,
             built_with: 'Knowledge as Code',
             pattern_url: 'https://knowledge-as-code.com',
             template_url: 'https://github.com/snapsynapse/knowledge-as-code-template'
@@ -2585,7 +2588,7 @@ function build() {
         `    <link>${siteUrl}</link>`,
         `    <description>${escapeHTML(config.description || '')}</description>`,
         `    <atom:link href="${siteUrl}index.xml" rel="self" type="application/rss+xml"/>`,
-        `    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>`,
+        `    <lastBuildDate>${BUILD_CLOCK.dateObject().toUTCString()}</lastBuildDate>`,
         rssItems,
         '  </channel>',
         '</rss>',
@@ -2618,7 +2621,7 @@ function build() {
         icsLines.push(
             'BEGIN:VEVENT',
             `UID:${uid}`,
-            `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
+            `DTSTAMP:${BUILD_CLOCK.icsStamp}`,
             `DTSTART;VALUE=DATE:${dt}`,
             `DTEND;VALUE=DATE:${dt}`,
             `SUMMARY:${icsEscape(summary)}`,

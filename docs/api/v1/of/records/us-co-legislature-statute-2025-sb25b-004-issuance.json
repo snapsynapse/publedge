@@ -1,17 +1,32 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json",
-  "id": "us-co-legislature-statute-2025-sb25b-004-issuance",
+  "pub:id": "us-co-legislature-statute-2025-sb25b-004-issuance",
   "issued_date": "2025-08-28",
-  "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/colorado-legislature.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
   },
   "decides": [],
   "disposition": "issued",
-  "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json",
+  "resulting_instrument": [
+    "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json"
+  ],
   "notes": "Issuance record for Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay).",
-  "source": "https://leg.colorado.gov/bills/sb25b-004"
+  "source": "https://leg.colorado.gov/bills/sb25b-004",
+  "source_citation": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025",
+  "evidence_type": "published-source",
+  "verified": "2026-05-21",
+  "asserted_by_adopter": "https://publedge.org/"
 }

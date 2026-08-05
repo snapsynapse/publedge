@@ -1,17 +1,38 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Requirement",
   "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json",
-  "id": "sb24-205-never-operative-obligations-high-risk-ai-impact-assessment",
+  "pub:id": "sb24-205-never-operative-obligations-high-risk-ai-impact-assessment",
   "title": "High-Risk AI Impact Assessment",
   "content": "Deployers would have been required to complete an impact assessment for each covered high-risk artificial intelligence system, repeat it at least annually and after intentional and substantial modifications, and retain the assessment records. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
-  "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "high-risk-ai-impact-assessment",
-  "publedge_group": "requirement",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "never-operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+  ],
+  "lifecycle_status": "inactive",
+  "operative_status": "inactive",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
+  },
+  "source": "https://leg.colorado.gov/bills/sb24-205",
+  "source_locator": "Summary",
+  "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "high-risk-ai-impact-assessment",
+  "pub:group": "requirement",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "never-operative",
+  "pub:search_terms": [
     "high-risk artificial intelligence",
     "impact assessment",
     "annual assessment",
@@ -19,9 +40,5 @@
     "deployer",
     "colorado",
     "sb24-205"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
-  }
+  ]
 }

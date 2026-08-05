@@ -35,7 +35,7 @@ published static site under `docs/` (served by GitHub Pages from `main /docs`).
 
 | Path | Purpose |
 |---|---|
-| `PROTOCOL.md` | The specification (spec version `v0.1.3`, decoupled from npm version) |
+| `PROTOCOL.md` | The specification (spec version `v0.2.0`, decoupled from npm version) |
 | `PRIOR-ART.md`, `DEFINITIONS.md` | Prior-art survey; canonical vocabulary |
 | `MANIFEST.yaml` | SHA-256 hashes for every canonical file |
 | `_templates/jia/`, `_templates/rma/` | Fill-in templates with `{{variable}}` placeholders |

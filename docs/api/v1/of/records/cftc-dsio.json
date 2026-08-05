@@ -1,20 +1,28 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Authority",
   "@id": "https://publedge.org/authority/cftc-dsio.json",
-  "id": "cftc-dsio",
+  "pub:id": "cftc-dsio",
   "organization": {
     "@type": "gist:GovernmentOrganization",
     "name": "CFTC Division of Swap Dealer and Intermediary Oversight"
   },
-  "authority_basis": {
-    "kind": "statutory",
-    "instrument_ref": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json"
-  },
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
   },
-  "website": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
-  "url_segment": "cftc-dsio"
+  "territorial_scope": [
+    "us"
+  ],
+  "source": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/"
 }

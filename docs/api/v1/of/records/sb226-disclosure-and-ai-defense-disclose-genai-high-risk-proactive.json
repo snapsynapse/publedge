@@ -1,25 +1,42 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Requirement",
   "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
-  "id": "sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive",
+  "pub:id": "sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive",
   "title": "Proactive GenAI Disclosure In High-Risk Interactions",
   "content": "A supplier engaged in a \"high-risk AI interaction\" in a regulated occupation must proactively disclose GenAI use before the interaction begins — verbally at the start of an oral exchange, and in writing before a written exchange. The high-risk tier is statutorily defined and narrower than general consumer interactions.",
-  "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
-  "anchors": [],
-  "publedge_primary_id": "disclose-genai-high-risk-proactive",
-  "publedge_group": "requirement",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+  "source_locator": "Summary",
+  "source_citation": "Utah SB 226 (2025 General Session)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "disclose-genai-high-risk-proactive",
+  "pub:group": "requirement",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "disclosure",
     "high-risk",
     "regulated occupation",
     "proactive",
     "sb226"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

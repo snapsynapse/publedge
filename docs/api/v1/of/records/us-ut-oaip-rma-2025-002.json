@@ -1,25 +1,66 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
-  "id": "us-ut-oaip-rma-2025-002",
+  "pub:id": "us-ut-oaip-rma-2025-002",
   "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
   "short_title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
-  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "issuedBy": [
+    "https://publedge.org/authority/utah-oaip.json"
+  ],
+  "parties": [
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-office-of-artificial-intelligence-policy.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-division-of-professional-licensing.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-doctronic-llc.json"
+  ],
+  "actor_roles": [
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-office-of-artificial-intelligence-policy.json",
+      "role": "issuing_authority"
+    },
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-division-of-professional-licensing.json",
+      "role": "co_signatory_authority"
+    },
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2025-002-doctronic-llc.json",
+      "role": "participant"
+    }
+  ],
   "kind": "rma",
+  "normative_force": "contractual",
   "enacted": "2025-10-24",
   "effective": "2025-10-24",
-  "status": "in-force",
-  "enforcement_status": "routine",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "hasTerm": [
     "https://publedge.org/term/doctronic-rma-obligations.json"
   ],
-  "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
-  "publedge_status": "enforcing",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-002/"
+  "territorial_scope": [
+    "us-ut"
+  ],
+  "citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+  "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enforcing",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-002/"
 }

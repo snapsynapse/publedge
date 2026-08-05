@@ -1,13 +1,21 @@
 {
   "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "generated": "2026-07-30T18:02:41.736Z",
+  "generated": "2026-07-25T00:00:00.000Z",
   "terms": [
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
-      "@type": "of:Term",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": [
+        "of:Term",
+        "gist:ContractTerm"
+      ],
       "@id": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
-      "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session",
-      "text": "Display disclosure: On first session, plainly identify the service as an AI chatbot Re-display on resumption: After 30 minutes of inactivity, re-display the disclosure",
+      "pub:id": "utah-mental-health-chatbot-disclosure-2026q2-first-session",
+      "text": "Provider must display the standardized GenAI disclosure on first session and on session resumption after 30 minutes of inactivity.",
       "section": "Utah Code §13-72a-203",
       "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
       "creates": [
@@ -16,101 +24,180 @@
       "anchors": [
         "https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json"
       ],
-      "source_heading": "First-Session Disclosure (§13-72a-203)",
-      "source_file": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+      "lifecycle_status": "draft",
+      "operative_status": "future",
+      "enforcement_status": "unsignaled",
+      "effective": "2026-04-15",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/learning-lab/",
+      "source_locator": "Utah Code §13-72a-203",
+      "evidence_type": "published-source",
+      "verified": "2026-04-18",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "First-Session Disclosure (§13-72a-203)",
+      "pub:source_file": "data/examples/instruments/us-ut-oaip-jia-2026-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
-      "id": "sb149-learning-lab-and-ai-defense",
-      "text": "Summary",
-      "section": "",
+      "pub:id": "sb149-learning-lab-and-ai-defense",
+      "summary": "Summary",
+      "section": "Summary",
       "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
       "creates": [
         "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
         "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json"
       ],
-      "anchors": [],
-      "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Summary",
+      "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
-      "id": "sb226-disclosure-and-ai-defense",
-      "text": "Summary",
-      "section": "",
+      "pub:id": "sb226-disclosure-and-ai-defense",
+      "summary": "Summary",
+      "section": "Summary",
       "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
       "creates": [
         "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
         "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
         "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json"
       ],
-      "anchors": [],
-      "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah SB 226 (2025 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Summary",
+      "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
-      "id": "hb452-mental-health-chatbot-stack",
-      "text": "Summary",
-      "section": "",
+      "pub:id": "hb452-mental-health-chatbot-stack",
+      "summary": "Summary",
+      "section": "Summary",
       "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
       "creates": [
         "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
         "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
         "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json"
       ],
-      "anchors": [],
-      "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah HB 452 (2025 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Summary",
+      "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
-      "id": "hb320-joint-interpretation-agreements",
-      "text": "Summary",
-      "section": "",
+      "pub:id": "hb320-joint-interpretation-agreements",
+      "summary": "Summary",
+      "section": "Summary",
       "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
       "creates": [
         "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json"
       ],
-      "anchors": [],
-      "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah HB 320 (2026 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Summary",
+      "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
-      "@type": "of:Term",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": [
+        "of:Term",
+        "gist:ContractTerm"
+      ],
       "@id": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "id": "elizachat-rma-obligations",
-      "text": "Obligations summary (Section VI and Schedule A §XV–XVI)",
-      "section": "",
+      "pub:id": "elizachat-rma-obligations",
+      "summary": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "section": "Obligations summary (Section VI and Schedule A §XV–XVI)",
       "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
       "creates": [
         "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json",
@@ -122,21 +209,39 @@
         "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
         "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json"
       ],
-      "anchors": [],
-      "source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)",
-      "source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+      "lifecycle_status": "sunset",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
-      "@type": "of:Term",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": [
+        "of:Term",
+        "gist:ContractTerm"
+      ],
       "@id": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "id": "dentacor-rma-obligations",
-      "text": "Obligations summary (Section 6 and Schedule A §15C–D)",
-      "section": "",
+      "pub:id": "dentacor-rma-obligations",
+      "summary": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "section": "Obligations summary (Section 6 and Schedule A §15C–D)",
       "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
       "creates": [
         "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json",
@@ -148,21 +253,39 @@
         "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
         "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json"
       ],
-      "anchors": [],
-      "source_heading": "Obligations summary (Section 6 and Schedule A §15C–D)",
-      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
+      "lifecycle_status": "sunset",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2025-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
-      "@type": "of:Term",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": [
+        "of:Term",
+        "gist:ContractTerm"
+      ],
       "@id": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "id": "doctronic-rma-obligations",
-      "text": "Obligations summary (Section 6 and Schedule A §16)",
-      "section": "",
+      "pub:id": "doctronic-rma-obligations",
+      "summary": "Obligations summary (Section 6 and Schedule A §16)",
+      "section": "Obligations summary (Section 6 and Schedule A §16)",
       "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
       "creates": [
         "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
@@ -174,21 +297,39 @@
         "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
         "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json"
       ],
-      "anchors": [],
-      "source_heading": "Obligations summary (Section 6 and Schedule A §16)",
-      "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Obligations summary (Section 6 and Schedule A §16)",
+      "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
-      "@type": "of:Term",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": [
+        "of:Term",
+        "gist:ContractTerm"
+      ],
       "@id": "https://publedge.org/term/legion-rma-obligations.json",
-      "id": "legion-rma-obligations",
-      "text": "Obligations summary (Section 6 and Schedule A §17)",
-      "section": "",
+      "pub:id": "legion-rma-obligations",
+      "summary": "Obligations summary (Section 6 and Schedule A §17)",
+      "section": "Obligations summary (Section 6 and Schedule A §17)",
       "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
       "creates": [
         "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json",
@@ -200,137 +341,242 @@
         "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
         "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json"
       ],
-      "anchors": [],
-      "source_heading": "Obligations summary (Section 6 and Schedule A §17)",
-      "source_file": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+      "lifecycle_status": "enacted",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Obligations summary (Section 6 and Schedule A §17)",
+      "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2026-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
-      "id": "cfpb-ao-2022-001-pay-to-pay",
-      "text": "Interpretive position",
-      "section": "",
+      "pub:id": "cfpb-ao-2022-001-pay-to-pay",
+      "summary": "Interpretive position",
+      "section": "Interpretive position",
       "parent_instrument": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
       "creates": [
         "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json"
       ],
-      "anchors": [],
-      "source_heading": "Interpretive position",
-      "source_file": "data/examples/instruments/us-cfpb-ao-2022-001.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "not-enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+      "source_locator": "Interpretive position",
+      "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Interpretive position",
+      "pub:source_file": "data/examples/instruments/us-cfpb-ao-2022-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
-      "id": "cftc-il-17-65-cta-unbundled-fee",
-      "text": "Interpretive position",
-      "section": "",
+      "pub:id": "cftc-il-17-65-cta-unbundled-fee",
+      "summary": "Interpretive position",
+      "section": "Interpretive position",
       "parent_instrument": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
       "creates": [
         "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json"
       ],
-      "anchors": [],
-      "source_heading": "Interpretive position",
-      "source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "not-enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://cftc.gov/csl/17-65/download",
+      "source_locator": "Interpretive position",
+      "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Interpretive position",
+      "pub:source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
-      "id": "irs-plr-202506001-incentive-fee",
-      "text": "Holding",
-      "section": "",
+      "pub:id": "irs-plr-202506001-incentive-fee",
+      "summary": "Holding",
+      "section": "Holding",
       "parent_instrument": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
       "creates": [
         "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json"
       ],
-      "anchors": [],
-      "source_heading": "Holding",
-      "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+      "source_locator": "Holding",
+      "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Holding",
+      "pub:source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
-      "id": "irs-tege-2026-001-501c3-adverse",
-      "text": "Holding",
-      "section": "",
+      "pub:id": "irs-tege-2026-001-501c3-adverse",
+      "summary": "Holding",
+      "section": "Holding",
       "parent_instrument": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
       "creates": [
         "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json"
       ],
-      "anchors": [],
-      "source_heading": "Holding",
-      "source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+      "source_locator": "Holding",
+      "source_citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Holding",
+      "pub:source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
-      "id": "sec-corpfin-nal-2025-001-rule-506c",
-      "text": "Staff position",
-      "section": "",
+      "pub:id": "sec-corpfin-nal-2025-001-rule-506c",
+      "summary": "Staff position",
+      "section": "Staff position",
       "parent_instrument": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
       "creates": [
         "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json"
       ],
-      "anchors": [],
-      "source_heading": "Staff position",
-      "source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md",
+      "lifecycle_status": "in-force",
+      "operative_status": "operative",
+      "enforcement_status": "not-enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+      "source_locator": "Staff position",
+      "source_citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Staff position",
+      "pub:source_file": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
-      "id": "sb24-205-never-operative-obligations",
-      "text": "Summary",
-      "section": "",
+      "pub:id": "sb24-205-never-operative-obligations",
+      "summary": "Summary",
+      "section": "Summary",
       "parent_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
       "creates": [
         "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json",
         "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json",
         "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json"
       ],
-      "anchors": [],
-      "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md",
+      "lifecycle_status": "superseded",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Summary",
+      "pub:source_file": "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Term",
       "@id": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-      "id": "sb26-189-admt-act-obligations",
-      "text": "Summary",
-      "section": "",
+      "pub:id": "sb26-189-admt-act-obligations",
+      "summary": "Summary",
+      "section": "Summary",
       "parent_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
       "creates": [
         "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
@@ -340,13 +586,23 @@
         "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json",
         "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json"
       ],
-      "anchors": [],
-      "source_heading": "Summary",
-      "source_file": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
+      "lifecycle_status": "enacted",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:source_heading": "Summary",
+      "pub:source_file": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md"
     }
   ]
 }

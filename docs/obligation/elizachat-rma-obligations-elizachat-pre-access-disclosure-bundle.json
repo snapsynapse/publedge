@@ -1,24 +1,41 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Requirement",
   "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
-  "id": "elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle",
+  "pub:id": "elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle",
   "title": "ElizaChat — Pre-Access Disclosure Bundle",
   "content": "Before granting any user access to ElizaChat app functionality, the participant must present a five-element disclosure — participant identity, GenAI use notice, testing-risk notice, data use and sharing practices, and OAIP complaint channel — in clear and conspicuous form, and must secure user acknowledgment before access is granted.",
-  "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "elizachat-pre-access-disclosure-bundle",
-  "publedge_group": "requirement",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "expired",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/elizachat-rma-obligations.json"
+  ],
+  "lifecycle_status": "sunset",
+  "operative_status": "inactive",
+  "enforcement_status": "not-enforceable",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+  "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "elizachat-pre-access-disclosure-bundle",
+  "pub:group": "requirement",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "expired",
+  "pub:search_terms": [
     "elizachat",
     "disclosure",
     "pre-access",
     "disclosure bundle"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

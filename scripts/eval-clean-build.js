@@ -7,7 +7,6 @@ const {
     DOCS_DIR,
     withTempBuild,
     collectManagedHtml,
-    normalizeGeneratedContent,
     reportFailures
 } = require('./lib/eval-kit');
 
@@ -22,9 +21,9 @@ withTempBuild(tempDir => {
             failures.push(`checked-in docs missing generated file ${relPath}`);
             continue;
         }
-        const current = normalizeGeneratedContent(relPath, fs.readFileSync(currentPath, 'utf-8'));
-        const fresh = normalizeGeneratedContent(relPath, fs.readFileSync(freshPath, 'utf-8'));
-        if (current !== fresh) failures.push(`checked-in docs differ from fresh build for ${relPath}`);
+        const current = fs.readFileSync(currentPath);
+        const fresh = fs.readFileSync(freshPath);
+        if (!current.equals(fresh)) failures.push(`checked-in docs differ from fresh build for ${relPath}`);
     }
 });
 

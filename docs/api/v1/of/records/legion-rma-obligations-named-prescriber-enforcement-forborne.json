@@ -1,26 +1,43 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
-  "id": "legion-rma-obligations-named-prescriber-enforcement-forborne",
+  "pub:id": "legion-rma-obligations-named-prescriber-enforcement-forborne",
   "title": "Named-Prescriber Enforcement Forborne",
   "content": "DOPL forgoes unlawful-conduct and unprofessional-conduct enforcement under §58-1-501(1)-(2) and related professional-licensing provisions against any provider who (1) acts solely as the named prescriber for AI-authorized renewals, (2) does not interact directly with a patient or other provider, and (3) complies with the RMA terms. Forbearance applies only to conduct authorized by the agreement.",
-  "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "named-prescriber-enforcement-forborne",
-  "publedge_group": "permission",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/legion-rma-obligations.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+  "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "named-prescriber-enforcement-forborne",
+  "pub:group": "permission",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "named prescriber",
     "enforcement forbearance",
     "unprofessional conduct",
     "58-1-501",
     "doctronic",
     "legion"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

@@ -1,19 +1,34 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Term",
   "@id": "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
-  "id": "irs-plr-202506001-incentive-fee",
-  "text": "Holding",
-  "section": "",
+  "pub:id": "irs-plr-202506001-incentive-fee",
+  "summary": "Holding",
+  "section": "Holding",
   "parent_instrument": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
   "creates": [
     "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json"
   ],
-  "anchors": [],
-  "source_heading": "Holding",
-  "source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
+  },
+  "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+  "source_locator": "Holding",
+  "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Holding",
+  "pub:source_file": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md"
 }

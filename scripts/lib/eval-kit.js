@@ -145,58 +145,15 @@ function resolveDocsPath(urlOrPath, docsDir = DOCS_DIR) {
 }
 
 function normalizeGeneratedContent(relPath, raw) {
-    if (relPath.endsWith('.json')) {
-        try {
-            const json = JSON.parse(raw);
-            stripDynamicJson(json);
-            return JSON.stringify(json, null, 2);
-        } catch (_) {
-            return raw;
-        }
-    }
-    return raw
-        .replace(/"generated":\s*"[^"]+"/g, '"generated":"__GENERATED__"')
-        .replace(/<lastmod>[^<]+<\/lastmod>/g, '<lastmod>__LASTMOD__</lastmod>')
-        .replace(/<lastBuildDate>[^<]+<\/lastBuildDate>/g, '<lastBuildDate>__LAST_BUILD_DATE__</lastBuildDate>')
-        .replace(/<pubDate>[^<]+<\/pubDate>/g, '<pubDate>__PUB_DATE__</pubDate>')
-        .replace(/<updated>[^<]+<\/updated>/g, '<updated>__UPDATED__</updated>')
-        .replace(/^DTSTAMP:\d{8}T\d{6}Z$/gm, 'DTSTAMP:__STAMP__')
-        .replace(/^CREATED:\d{8}T\d{6}Z$/gm, 'CREATED:__STAMP__')
-        .replace(/^LAST-MODIFIED:\d{8}T\d{6}Z$/gm, 'LAST-MODIFIED:__STAMP__')
-        .replace(/<div class="upcoming-days">\d+d<\/div>/g, '<div class="upcoming-days">__DAYS_UNTIL__</div>');
+    // Kept as the comparison seam for existing eval callers. It is deliberately
+    // an identity function: generated files claimed as deterministic are compared
+    // byte for byte, including timestamps and relative-date fields.
+    void relPath;
+    return raw;
 }
 
-function stripDynamicJson(value) {
-    if (!value || typeof value !== 'object') return;
-    if (Array.isArray(value)) {
-        value.forEach(stripDynamicJson);
-        return;
-    }
-    for (const key of Object.keys(value)) {
-        if (key === 'generated') {
-            value[key] = '__GENERATED__';
-            continue;
-        }
-        if ((key === 'updated' || key === 'date_modified' || key === 'date_published') && typeof value[key] === 'string' && /T\d{2}:\d{2}:\d{2}/.test(value[key])) {
-            value[key] = '__TIMESTAMP__';
-            continue;
-        }
-        // Build-date fields: recomputed on every build, so checked-in docs/ drift
-        // from a fresh build purely with the passage of time.
-        if ((key === 'last_updated' || key === 'today') && typeof value[key] === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value[key])) {
-            value[key] = '__BUILD_DATE__';
-            continue;
-        }
-        if (key === 'days_until' && typeof value[key] === 'number') {
-            value[key] = '__DAYS_UNTIL__';
-            continue;
-        }
-        stripDynamicJson(value[key]);
-    }
-}
-
-function runBuild(outputDir) {
-    const env = { ...process.env, KAC_OUTPUT_DIR: outputDir };
+function runBuild(outputDir, envOverrides = {}) {
+    const env = { ...process.env, ...envOverrides, KAC_OUTPUT_DIR: outputDir };
     const steps = [
         { label: 'build.js', args: ['scripts/build.js'] },
         { label: 'build-extras.js', args: ['scripts/build-extras.js'] }
@@ -213,12 +170,12 @@ function runBuild(outputDir) {
     }
 }
 
-function withTempBuild(fn) {
+function withTempBuild(fn, envOverrides = {}) {
     const tempName = `.publedge-eval-${Date.now()}-${Math.random().toString(16).slice(2)}`;
     const tempDir = path.join(ROOT, tempName);
     fs.mkdirSync(tempDir, { recursive: true });
     try {
-        runBuild(tempName);
+        runBuild(tempName, envOverrides);
         return fn(tempDir);
     } finally {
         fs.rmSync(tempDir, { recursive: true, force: true });

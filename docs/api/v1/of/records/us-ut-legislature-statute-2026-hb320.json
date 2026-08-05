@@ -1,26 +1,47 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
-  "id": "us-ut-legislature-statute-2026-hb320",
+  "pub:id": "us-ut-legislature-statute-2026-hb320",
   "title": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
   "short_title": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
-  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/utah-legislature.json"
+  ],
   "kind": "statute",
+  "normative_force": "binding",
   "enacted": "2026-03-19",
   "effective": "2026-05-06",
-  "status": "in-force",
-  "enforcement_status": "routine",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "hasTerm": [
     "https://publedge.org/term/hb320-joint-interpretation-agreements.json"
   ],
-  "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-ut-legislature-statute-2026-hb320-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
+  "territorial_scope": [
+    "us-ut"
+  ],
   "citation": "Utah HB 320 (2026 General Session)",
-  "publedge_status": "enforcing",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/"
+  "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+  "source_citation": "Utah HB 320 (2026 General Session)",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enforcing",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/"
 }

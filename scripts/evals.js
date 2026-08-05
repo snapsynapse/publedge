@@ -21,6 +21,7 @@ const scripts = [
     'eval-content-source.js',
     'eval-verification-allowlist.js',
     'eval-obligation-first-binding.js',
+    'check-of-fingerprint.js',
     'eval-redirects.js',
     'eval-deterministic-build.js',
     'eval-generated-tree-parity.js',
@@ -30,7 +31,9 @@ const scripts = [
     'eval-format-contracts.js',
     'eval-manifest-scope.js',
     'eval-links.js',
-    'eval-verification-exit.js'
+    'eval-verification-exit.js',
+    'eval-scheduled-verification.js',
+    'eval-workflow-invariants.js'
 ];
 
 let failed = false;

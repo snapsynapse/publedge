@@ -1,25 +1,42 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
-  "id": "dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne",
+  "pub:id": "dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne",
   "title": "Dentacor — §58-69-5 Enforcement Forborne",
   "content": "During the Dentacor demonstration period, the Utah Division of Professional Licensing (DOPL) forgave enforcement of unlawful and unprofessional-conduct actions under Utah Code §58-69-5 solely for conduct authorized by the RMA. The initial mitigation period ended May 31, 2026, and no public extension instrument was located as of July 25, 2026.",
-  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "dentacor-58-69-5-enforcement-forborne",
-  "publedge_group": "permission",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "expired",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/dentacor-rma-obligations.json"
+  ],
+  "lifecycle_status": "sunset",
+  "operative_status": "inactive",
+  "enforcement_status": "not-enforceable",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+  "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "dentacor-58-69-5-enforcement-forborne",
+  "pub:group": "permission",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "expired",
+  "pub:search_terms": [
     "dentacor",
     "enforcement",
     "58-69-5",
     "unlawful conduct",
     "forbearance"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

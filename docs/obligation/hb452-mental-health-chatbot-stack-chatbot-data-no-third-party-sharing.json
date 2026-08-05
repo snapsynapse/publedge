@@ -1,25 +1,42 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Restriction",
   "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
-  "id": "hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing",
+  "pub:id": "hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing",
   "title": "Mental Health Chatbot — No Third-Party Data Sharing",
   "content": "A mental health chatbot supplier may not sell or share identifiable health information or user inputs with third parties. Narrow exceptions exist for user-consented or user-requested transfers to a health care provider or plan. Third-party sharing for functionality requires HIPAA-equivalent controls (45 CFR Parts 160 and 164, Subparts A and E) as if the supplier were a covered entity.",
-  "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
-  "anchors": [],
-  "publedge_primary_id": "chatbot-data-no-third-party-sharing",
-  "publedge_group": "restriction",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+  "source_locator": "Summary",
+  "source_citation": "Utah HB 452 (2025 General Session)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "chatbot-data-no-third-party-sharing",
+  "pub:group": "restriction",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "chatbot",
     "mental health",
     "data protection",
     "hipaa",
     "hb452"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

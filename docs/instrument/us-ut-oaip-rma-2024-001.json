@@ -1,25 +1,66 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
-  "id": "us-ut-oaip-rma-2024-001",
+  "pub:id": "us-ut-oaip-rma-2024-001",
   "title": "Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)",
   "short_title": "Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)",
-  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "issuedBy": [
+    "https://publedge.org/authority/utah-oaip.json"
+  ],
+  "parties": [
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-office-of-artificial-intelligence-policy.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-division-of-professional-licensing.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-elizachat-inc.json"
+  ],
+  "actor_roles": [
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-office-of-artificial-intelligence-policy.json",
+      "role": "issuing_authority"
+    },
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-division-of-professional-licensing.json",
+      "role": "co_signatory_authority"
+    },
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2024-001-elizachat-inc.json",
+      "role": "participant"
+    }
+  ],
   "kind": "rma",
+  "normative_force": "contractual",
   "enacted": "2024-11-18",
   "effective": "2024-11-18",
-  "status": "sunset",
-  "enforcement_status": "routine",
+  "lifecycle_status": "sunset",
+  "operative_status": "inactive",
+  "enforcement_status": "not-enforceable",
   "hasTerm": [
     "https://publedge.org/term/elizachat-rma-obligations.json"
   ],
-  "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-ut-oaip-rma-2024-001-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
-  "publedge_status": "expired",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/"
+  "territorial_scope": [
+    "us-ut"
+  ],
+  "citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+  "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "expired",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/"
 }

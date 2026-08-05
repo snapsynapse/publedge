@@ -1,8 +1,8 @@
 profile-path: /.well-known/obligation-first-naming-profile.jsonld
-profile-version: 1.0.0
-profile-sha256: d1537bdb18cdf2d2323363ff6b6632a96152c9546d5a539af86f824cdbbbd127
-profile-bytes: 1613
+profile-version: 2.0.0
+profile-sha256: 09aadca5a04584b746e13242dc405b2b079b8454c4f21090c84848155d7c9de7
+profile-bytes: 1857
 adopter: https://publedge.org/
 spec: obligation-first
-spec-version-range: >=0.4.0, <0.6.0
+spec-version-range: >=0.6.0, <0.7.0
 canonical-url: https://publedge.org/.well-known/obligation-first-naming-profile.jsonld

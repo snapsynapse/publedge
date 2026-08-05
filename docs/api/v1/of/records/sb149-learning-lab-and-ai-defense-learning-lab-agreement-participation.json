@@ -1,17 +1,38 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
-  "id": "sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation",
+  "pub:id": "sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation",
   "title": "Learning Lab Agreement — Eligibility and Participation",
   "content": "A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or judiciary, higher-ed, or political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
-  "created_by": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
-  "anchors": [],
-  "publedge_primary_id": "learning-lab-agreement-participation",
-  "publedge_group": "permission",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+  "source_locator": "Summary",
+  "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "learning-lab-agreement-participation",
+  "pub:group": "permission",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "learning lab",
     "regulatory mitigation",
     "joint interpretation",
@@ -19,9 +40,5 @@
     "sandbox",
     "sb149",
     "hb320"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

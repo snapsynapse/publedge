@@ -22,6 +22,7 @@ function listedManifestPaths() {
 
 function canonicalSourcePaths() {
     const paths = new Set([
+        '.gitattributes',
         'AGENTS.md',
         'CLAUDE.md',
         'PROJECT_CONTEXT.md',

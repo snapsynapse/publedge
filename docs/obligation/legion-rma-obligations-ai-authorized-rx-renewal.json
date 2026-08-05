@@ -1,26 +1,43 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json",
-  "id": "legion-rma-obligations-ai-authorized-rx-renewal",
+  "pub:id": "legion-rma-obligations-ai-authorized-rx-renewal",
   "title": "AI-Authorized Prescription Renewal (Utah Pilot)",
   "content": "During the mitigation period, a participant may use its AI technology to authorize the renewal of a verified prescription for a Utah resident and issue such prescriptions to a pharmacist licensed under Utah Code §58-17b. Mitigation applies solely to the renewal workflow described in the Proposal; it does not extend to new prescriptions, other services, or products outside the authorized scope.",
-  "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "ai-authorized-rx-renewal",
-  "publedge_group": "permission",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/legion-rma-obligations.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+  "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "ai-authorized-rx-renewal",
+  "pub:group": "permission",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "prescription renewal",
     "ai rx",
     "telehealth",
     "doctronic",
     "legion",
     "58-17b"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

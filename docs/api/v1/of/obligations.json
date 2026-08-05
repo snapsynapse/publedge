@@ -1,47 +1,85 @@
 {
   "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "generated": "2026-07-30T18:02:41.736Z",
+  "generated": "2026-07-25T00:00:00.000Z",
   "obligations": [
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json",
-      "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session",
+      "pub:id": "utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session",
       "title": "Disclose GenAI on First Session",
       "content": "A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.",
-      "created_by": "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
+      "created_by": [
+        "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json"
+      ],
       "anchors": [
         "https://everyailaw.com/obligation-category/transparency.json"
       ],
-      "publedge_primary_id": "disclose-genai-on-first-session",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/learning-lab/",
+      "source_locator": "Utah Code §13-72a-203",
+      "evidence_type": "published-source",
+      "verified": "2026-04-18",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "disclose-genai-on-first-session",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "disclosure",
         "genai",
         "first session",
         "chatbot"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
-      "id": "sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation",
+      "pub:id": "sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation",
       "title": "Learning Lab Agreement — Eligibility and Participation",
       "content": "A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or judiciary, higher-ed, or political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
-      "created_by": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
-      "anchors": [],
-      "publedge_primary_id": "learning-lab-agreement-participation",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "learning-lab-agreement-participation",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "learning lab",
         "regulatory mitigation",
         "joint interpretation",
@@ -49,203 +87,339 @@
         "sandbox",
         "sb149",
         "hb320"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json",
-      "id": "sb149-learning-lab-and-ai-defense-ai-defense-elimination",
+      "pub:id": "sb149-learning-lab-and-ai-defense-ai-defense-elimination",
       "title": "GenAI Is Not A Defense — Civil And Criminal",
       "content": "Utah removed \"the AI did it\" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror (§13-75-102, SB 226, effective 2025-05-07) together eliminate the doctrine across Utah consumer-protection and criminal law.",
-      "created_by": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
-      "anchors": [],
-      "publedge_primary_id": "ai-defense-elimination",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "ai-defense-elimination",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "ai defense",
         "liability",
         "civil",
         "criminal",
         "sb149",
         "sb226"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
-      "id": "sb226-disclosure-and-ai-defense-disclose-genai-on-request",
+      "pub:id": "sb226-disclosure-and-ai-defense-disclose-genai-on-request",
       "title": "Disclose GenAI On Consumer Request",
       "content": "A supplier using generative AI in a consumer transaction must disclose that fact when the consumer makes a clear and unambiguous request. A safe harbor is available: a clear and conspicuous disclosure at the outset and throughout the interaction eliminates enforcement exposure, regardless of whether a request is made.",
-      "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
-      "anchors": [],
-      "publedge_primary_id": "disclose-genai-on-request",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah SB 226 (2025 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "disclose-genai-on-request",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "disclosure",
         "genai",
         "consumer request",
         "safe harbor",
         "sb226"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
-      "id": "sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive",
+      "pub:id": "sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive",
       "title": "Proactive GenAI Disclosure In High-Risk Interactions",
       "content": "A supplier engaged in a \"high-risk AI interaction\" in a regulated occupation must proactively disclose GenAI use before the interaction begins — verbally at the start of an oral exchange, and in writing before a written exchange. The high-risk tier is statutorily defined and narrower than general consumer interactions.",
-      "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
-      "anchors": [],
-      "publedge_primary_id": "disclose-genai-high-risk-proactive",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah SB 226 (2025 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "disclose-genai-high-risk-proactive",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "disclosure",
         "high-risk",
         "regulated occupation",
         "proactive",
         "sb226"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json",
-      "id": "sb226-disclosure-and-ai-defense-ai-defense-elimination",
+      "pub:id": "sb226-disclosure-and-ai-defense-ai-defense-elimination",
       "title": "GenAI Is Not A Defense — Civil And Criminal",
       "content": "Utah removed \"the AI did it\" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror (§13-75-102, SB 226, effective 2025-05-07) together eliminate the doctrine across Utah consumer-protection and criminal law.",
-      "created_by": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
-      "anchors": [],
-      "publedge_primary_id": "ai-defense-elimination",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah SB 226 (2025 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "ai-defense-elimination",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "ai defense",
         "liability",
         "civil",
         "criminal",
         "sb149",
         "sb226"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
-      "id": "hb452-mental-health-chatbot-stack-disclose-genai-on-first-session",
+      "pub:id": "hb452-mental-health-chatbot-stack-disclose-genai-on-first-session",
       "title": "Disclose GenAI on First Session",
       "content": "A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.",
-      "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
-      "anchors": [],
-      "publedge_primary_id": "disclose-genai-on-first-session",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah HB 452 (2025 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-18",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "disclose-genai-on-first-session",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "disclosure",
         "genai",
         "first session",
         "chatbot"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
-      "id": "hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing",
+      "pub:id": "hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing",
       "title": "Mental Health Chatbot — No Third-Party Data Sharing",
       "content": "A mental health chatbot supplier may not sell or share identifiable health information or user inputs with third parties. Narrow exceptions exist for user-consented or user-requested transfers to a health care provider or plan. Third-party sharing for functionality requires HIPAA-equivalent controls (45 CFR Parts 160 and 164, Subparts A and E) as if the supplier were a covered entity.",
-      "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
-      "anchors": [],
-      "publedge_primary_id": "chatbot-data-no-third-party-sharing",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah HB 452 (2025 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "chatbot-data-no-third-party-sharing",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "chatbot",
         "mental health",
         "data protection",
         "hipaa",
         "hb452"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json",
-      "id": "hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing",
+      "pub:id": "hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing",
       "title": "Mental Health Chatbot — File 15-Element Safety Policy",
       "content": "A mental health chatbot supplier must draft, file with Utah's Division of Consumer Protection, and operationally comply with a fifteen-element written safety policy covering purposes, clinical practices, testing, risk protocols, user reporting, HIPAA posture, and more. Compliance with the filed policy at the time of an alleged violation provides an affirmative defense against §58-1-501(1)-(2) unauthorized-practice actions.",
-      "created_by": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
-      "anchors": [],
-      "publedge_primary_id": "chatbot-safety-policy-filing",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah HB 452 (2025 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "chatbot-safety-policy-filing",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "chatbot",
         "mental health",
         "safety policy",
         "safe harbor",
         "filing",
         "hb452"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json",
-      "id": "hb320-joint-interpretation-agreements-learning-lab-agreement-participation",
+      "pub:id": "hb320-joint-interpretation-agreements-learning-lab-agreement-participation",
       "title": "Learning Lab Agreement — Eligibility and Participation",
       "content": "A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or judiciary, higher-ed, or political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
-      "created_by": "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
-      "anchors": [],
-      "publedge_primary_id": "learning-lab-agreement-participation",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/hb320-joint-interpretation-agreements.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+      "source_locator": "Summary",
+      "source_citation": "Utah HB 320 (2026 General Session)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "learning-lab-agreement-participation",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "learning lab",
         "regulatory mitigation",
         "joint interpretation",
@@ -253,934 +427,1580 @@
         "sandbox",
         "sb149",
         "hb320"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json",
-      "id": "elizachat-rma-obligations-rma-monthly-report-to-oaip",
+      "pub:id": "elizachat-rma-obligations-rma-monthly-report-to-oaip",
       "title": "RMA — Monthly Report To OAIP",
       "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
-      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-monthly-report-to-oaip",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/elizachat-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-monthly-report-to-oaip",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "reporting",
         "monthly",
         "oaip",
         "learning lab"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json",
-      "id": "elizachat-rma-obligations-rma-end-of-term-report",
+      "pub:id": "elizachat-rma-obligations-rma-end-of-term-report",
       "title": "RMA — 30-Day End-Of-Term Report",
       "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
-      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-end-of-term-report",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/elizachat-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-end-of-term-report",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "reporting",
         "termination",
         "end of term"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json",
-      "id": "elizachat-rma-obligations-rma-data-security-63a-19-102",
+      "pub:id": "elizachat-rma-obligations-rma-data-security-63a-19-102",
       "title": "RMA — Data Security Under §63A-19-102",
       "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
-      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-data-security-63a-19-102",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/elizachat-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-data-security-63a-19-102",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "data security",
         "cybersecurity",
         "63a-19-102"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json",
-      "id": "elizachat-rma-obligations-rma-hold-harmless-state",
+      "pub:id": "elizachat-rma-obligations-rma-hold-harmless-state",
       "title": "RMA — Hold Harmless The State",
       "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
-      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-hold-harmless-state",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/elizachat-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-hold-harmless-state",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "indemnification",
         "hold harmless"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json",
-      "id": "elizachat-rma-obligations-rma-no-advertising-reference",
+      "pub:id": "elizachat-rma-obligations-rma-no-advertising-reference",
       "title": "RMA — No Advertising Reference To Agreement",
       "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
-      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-no-advertising-reference",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/elizachat-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-no-advertising-reference",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "advertising",
         "promotion",
         "marketing"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json",
-      "id": "elizachat-rma-obligations-rma-incident-notification-24hr",
+      "pub:id": "elizachat-rma-obligations-rma-incident-notification-24hr",
       "title": "RMA — 24-Hour Incident Notification",
       "content": "An RMA participant must notify OAIP within 24 hours of any incident that results in harm to the health, safety, or financial well-being of a user of the mitigated technology.",
-      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-incident-notification-24hr",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "expired",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/elizachat-rma-obligations.json"
+      ],
+      "lifecycle_status": "sunset",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-incident-notification-24hr",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "expired",
+      "pub:search_terms": [
         "rma",
         "incident",
         "notification",
         "harm",
         "24 hours"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
-      "id": "elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle",
+      "pub:id": "elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle",
       "title": "ElizaChat — Pre-Access Disclosure Bundle",
       "content": "Before granting any user access to ElizaChat app functionality, the participant must present a five-element disclosure — participant identity, GenAI use notice, testing-risk notice, data use and sharing practices, and OAIP complaint channel — in clear and conspicuous form, and must secure user acknowledgment before access is granted.",
-      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "elizachat-pre-access-disclosure-bundle",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "expired",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/elizachat-rma-obligations.json"
+      ],
+      "lifecycle_status": "sunset",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "elizachat-pre-access-disclosure-bundle",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "expired",
+      "pub:search_terms": [
         "elizachat",
         "disclosure",
         "pre-access",
         "disclosure bundle"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json",
-      "id": "elizachat-rma-obligations-elizachat-phased-rollout",
+      "pub:id": "elizachat-rma-obligations-elizachat-phased-rollout",
       "title": "ElizaChat — Three-Phase Rollout Gate",
       "content": "ElizaChat must be released in three sequential phases — OAIP trusted-tester cohort, OAIP-reviewed limited student cohort, and full Utah-district student availability — with written OAIP approval required before advancing to each subsequent phase.",
-      "created_by": "https://publedge.org/term/elizachat-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "elizachat-phased-rollout",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "expired",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/elizachat-rma-obligations.json"
+      ],
+      "lifecycle_status": "sunset",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "elizachat-phased-rollout",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "expired",
+      "pub:search_terms": [
         "elizachat",
         "phased rollout",
         "trusted tester",
         "phase gate"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json",
-      "id": "dentacor-rma-obligations-rma-monthly-report-to-oaip",
+      "pub:id": "dentacor-rma-obligations-rma-monthly-report-to-oaip",
       "title": "RMA — Monthly Report To OAIP",
       "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
-      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-monthly-report-to-oaip",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/dentacor-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-monthly-report-to-oaip",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "reporting",
         "monthly",
         "oaip",
         "learning lab"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json",
-      "id": "dentacor-rma-obligations-rma-end-of-term-report",
+      "pub:id": "dentacor-rma-obligations-rma-end-of-term-report",
       "title": "RMA — 30-Day End-Of-Term Report",
       "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
-      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-end-of-term-report",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/dentacor-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-end-of-term-report",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "reporting",
         "termination",
         "end of term"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json",
-      "id": "dentacor-rma-obligations-rma-data-security-63a-19-102",
+      "pub:id": "dentacor-rma-obligations-rma-data-security-63a-19-102",
       "title": "RMA — Data Security Under §63A-19-102",
       "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
-      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-data-security-63a-19-102",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/dentacor-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-data-security-63a-19-102",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "data security",
         "cybersecurity",
         "63a-19-102"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json",
-      "id": "dentacor-rma-obligations-rma-hold-harmless-state",
+      "pub:id": "dentacor-rma-obligations-rma-hold-harmless-state",
       "title": "RMA — Hold Harmless The State",
       "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
-      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-hold-harmless-state",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/dentacor-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-hold-harmless-state",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "indemnification",
         "hold harmless"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
-      "id": "dentacor-rma-obligations-rma-no-advertising-reference",
+      "pub:id": "dentacor-rma-obligations-rma-no-advertising-reference",
       "title": "RMA — No Advertising Reference To Agreement",
       "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
-      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-no-advertising-reference",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/dentacor-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-no-advertising-reference",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "advertising",
         "promotion",
         "marketing"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json",
-      "id": "dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis",
+      "pub:id": "dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis",
       "title": "Dentacor — Hygienist + AI Concurrence Diagnosis",
       "content": "During the initial Dentacor RMA term, licensed Utah dental hygienists employed by Dentacor could diagnose periodontal disease, complete edentulism, and complete anodontia using an AI-assisted radiograph diagnostic tool in place of general dentist supervision. The permission required concurrence of both the hygienist and the AI system and expired with the initial mitigation period on May 31, 2026; no public extension instrument was located as of July 25, 2026.",
-      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "dentacor-hygienist-ai-concurrence-diagnosis",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "expired",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/dentacor-rma-obligations.json"
+      ],
+      "lifecycle_status": "sunset",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "dentacor-hygienist-ai-concurrence-diagnosis",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "expired",
+      "pub:search_terms": [
         "dentacor",
         "hygienist",
         "radiograph",
         "diagnosis",
         "ai concurrence"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
-      "id": "dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne",
+      "pub:id": "dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne",
       "title": "Dentacor — §58-69-5 Enforcement Forborne",
       "content": "During the Dentacor demonstration period, the Utah Division of Professional Licensing (DOPL) forgave enforcement of unlawful and unprofessional-conduct actions under Utah Code §58-69-5 solely for conduct authorized by the RMA. The initial mitigation period ended May 31, 2026, and no public extension instrument was located as of July 25, 2026.",
-      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "dentacor-58-69-5-enforcement-forborne",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "expired",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/dentacor-rma-obligations.json"
+      ],
+      "lifecycle_status": "sunset",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "dentacor-58-69-5-enforcement-forborne",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "expired",
+      "pub:search_terms": [
         "dentacor",
         "enforcement",
         "58-69-5",
         "unlawful conduct",
         "forbearance"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json",
-      "id": "dentacor-rma-obligations-dentacor-informed-consent-no-dentist",
+      "pub:id": "dentacor-rma-obligations-dentacor-informed-consent-no-dentist",
       "title": "Dentacor — Informed Consent Disclosing Absence Of Dentist",
       "content": "During the initial Dentacor RMA term, a Dentacor-employed hygienist had to obtain patient informed consent before any RMA-authorized procedure, explicitly disclosing the absence of dentist supervision and the hygienist's narrower training and scope. The requirement expired with the initial mitigation period on May 31, 2026; no public extension instrument was located as of July 25, 2026.",
-      "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "dentacor-informed-consent-no-dentist",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "expired",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/dentacor-rma-obligations.json"
+      ],
+      "lifecycle_status": "sunset",
+      "operative_status": "inactive",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "dentacor-informed-consent-no-dentist",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "expired",
+      "pub:search_terms": [
         "dentacor",
         "informed consent",
         "dentist supervision",
         "patient disclosure"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
-      "id": "doctronic-rma-obligations-rma-monthly-report-to-oaip",
+      "pub:id": "doctronic-rma-obligations-rma-monthly-report-to-oaip",
       "title": "RMA — Monthly Report To OAIP",
       "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
-      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-monthly-report-to-oaip",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/doctronic-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-monthly-report-to-oaip",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "reporting",
         "monthly",
         "oaip",
         "learning lab"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
-      "id": "doctronic-rma-obligations-rma-end-of-term-report",
+      "pub:id": "doctronic-rma-obligations-rma-end-of-term-report",
       "title": "RMA — 30-Day End-Of-Term Report",
       "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
-      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-end-of-term-report",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/doctronic-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-end-of-term-report",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "reporting",
         "termination",
         "end of term"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json",
-      "id": "doctronic-rma-obligations-rma-data-security-63a-19-102",
+      "pub:id": "doctronic-rma-obligations-rma-data-security-63a-19-102",
       "title": "RMA — Data Security Under §63A-19-102",
       "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
-      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-data-security-63a-19-102",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/doctronic-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-data-security-63a-19-102",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "data security",
         "cybersecurity",
         "63a-19-102"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json",
-      "id": "doctronic-rma-obligations-rma-hold-harmless-state",
+      "pub:id": "doctronic-rma-obligations-rma-hold-harmless-state",
       "title": "RMA — Hold Harmless The State",
       "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
-      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-hold-harmless-state",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/doctronic-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-hold-harmless-state",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "indemnification",
         "hold harmless"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json",
-      "id": "doctronic-rma-obligations-rma-no-advertising-reference",
+      "pub:id": "doctronic-rma-obligations-rma-no-advertising-reference",
       "title": "RMA — No Advertising Reference To Agreement",
       "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
-      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-no-advertising-reference",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/doctronic-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-no-advertising-reference",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "advertising",
         "promotion",
         "marketing"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json",
-      "id": "doctronic-rma-obligations-ai-authorized-rx-renewal",
+      "pub:id": "doctronic-rma-obligations-ai-authorized-rx-renewal",
       "title": "AI-Authorized Prescription Renewal (Utah Pilot)",
       "content": "During the mitigation period, a participant may use its AI technology to authorize the renewal of a verified prescription for a Utah resident and issue such prescriptions to a pharmacist licensed under Utah Code §58-17b. Mitigation applies solely to the renewal workflow described in the Proposal; it does not extend to new prescriptions, other services, or products outside the authorized scope.",
-      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "ai-authorized-rx-renewal",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/doctronic-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "ai-authorized-rx-renewal",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "prescription renewal",
         "ai rx",
         "telehealth",
         "doctronic",
         "legion",
         "58-17b"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
-      "id": "doctronic-rma-obligations-named-prescriber-enforcement-forborne",
+      "pub:id": "doctronic-rma-obligations-named-prescriber-enforcement-forborne",
       "title": "Named-Prescriber Enforcement Forborne",
       "content": "DOPL forgoes unlawful-conduct and unprofessional-conduct enforcement under §58-1-501(1)-(2) and related professional-licensing provisions against any provider who (1) acts solely as the named prescriber for AI-authorized renewals, (2) does not interact directly with a patient or other provider, and (3) complies with the RMA terms. Forbearance applies only to conduct authorized by the agreement.",
-      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "named-prescriber-enforcement-forborne",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/doctronic-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "named-prescriber-enforcement-forborne",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "named prescriber",
         "enforcement forbearance",
         "unprofessional conduct",
         "58-1-501",
         "doctronic",
         "legion"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json",
-      "id": "doctronic-rma-obligations-telehealth-compliance-per-proposal",
+      "pub:id": "doctronic-rma-obligations-telehealth-compliance-per-proposal",
       "title": "Telehealth Compliance Anchored To Participant Proposal",
       "content": "A participant operating AI-assisted prescription renewal must adhere to Utah's telehealth provider requirements in §26B-4-704, with specific subsections deemed satisfied by following the patient-journey and escalation protocols described in the participant's Proposal (Schedule B). Certain subsections (e.g., the patient-records portability default) are inapplicable; others are substituted by Proposal-section conformance.",
-      "created_by": "https://publedge.org/term/doctronic-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "telehealth-compliance-per-proposal",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/doctronic-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "telehealth-compliance-per-proposal",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "telehealth",
         "26b-4-704",
         "proposal compliance",
         "doctronic",
         "legion"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json",
-      "id": "legion-rma-obligations-rma-monthly-report-to-oaip",
+      "pub:id": "legion-rma-obligations-rma-monthly-report-to-oaip",
       "title": "RMA — Monthly Report To OAIP",
       "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
-      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-monthly-report-to-oaip",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/legion-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-monthly-report-to-oaip",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "reporting",
         "monthly",
         "oaip",
         "learning lab"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json",
-      "id": "legion-rma-obligations-rma-end-of-term-report",
+      "pub:id": "legion-rma-obligations-rma-end-of-term-report",
       "title": "RMA — 30-Day End-Of-Term Report",
       "content": "Within thirty days after the end date of an RMA, the participant must file a written report with OAIP summarizing the demonstration, any incidents of harm, any legal actions, and any complaints filed against the participant in connection with the mitigation period.",
-      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-end-of-term-report",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/legion-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-end-of-term-report",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "reporting",
         "termination",
         "end of term"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json",
-      "id": "legion-rma-obligations-rma-data-security-63a-19-102",
+      "pub:id": "legion-rma-obligations-rma-data-security-63a-19-102",
       "title": "RMA — Data Security Under §63A-19-102",
       "content": "An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.",
-      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-data-security-63a-19-102",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/legion-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-data-security-63a-19-102",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "data security",
         "cybersecurity",
         "63a-19-102"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json",
-      "id": "legion-rma-obligations-rma-hold-harmless-state",
+      "pub:id": "legion-rma-obligations-rma-hold-harmless-state",
       "title": "RMA — Hold Harmless The State",
       "content": "An RMA participant agrees to hold OAIP, the relevant Division, and their agents, officers, and employees harmless from any claims, liabilities, damages, losses, or expenses arising from the participant's work performed under the mitigation.",
-      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-hold-harmless-state",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/legion-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-hold-harmless-state",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "indemnification",
         "hold harmless"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json",
-      "id": "legion-rma-obligations-rma-no-advertising-reference",
+      "pub:id": "legion-rma-obligations-rma-no-advertising-reference",
       "title": "RMA — No Advertising Reference To Agreement",
       "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
-      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "rma-no-advertising-reference",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/legion-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "rma-no-advertising-reference",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rma",
         "advertising",
         "promotion",
         "marketing"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json",
-      "id": "legion-rma-obligations-ai-authorized-rx-renewal",
+      "pub:id": "legion-rma-obligations-ai-authorized-rx-renewal",
       "title": "AI-Authorized Prescription Renewal (Utah Pilot)",
       "content": "During the mitigation period, a participant may use its AI technology to authorize the renewal of a verified prescription for a Utah resident and issue such prescriptions to a pharmacist licensed under Utah Code §58-17b. Mitigation applies solely to the renewal workflow described in the Proposal; it does not extend to new prescriptions, other services, or products outside the authorized scope.",
-      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "ai-authorized-rx-renewal",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/legion-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "ai-authorized-rx-renewal",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "prescription renewal",
         "ai rx",
         "telehealth",
         "doctronic",
         "legion",
         "58-17b"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
-      "id": "legion-rma-obligations-named-prescriber-enforcement-forborne",
+      "pub:id": "legion-rma-obligations-named-prescriber-enforcement-forborne",
       "title": "Named-Prescriber Enforcement Forborne",
       "content": "DOPL forgoes unlawful-conduct and unprofessional-conduct enforcement under §58-1-501(1)-(2) and related professional-licensing provisions against any provider who (1) acts solely as the named prescriber for AI-authorized renewals, (2) does not interact directly with a patient or other provider, and (3) complies with the RMA terms. Forbearance applies only to conduct authorized by the agreement.",
-      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "named-prescriber-enforcement-forborne",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/legion-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "named-prescriber-enforcement-forborne",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "named prescriber",
         "enforcement forbearance",
         "unprofessional conduct",
         "58-1-501",
         "doctronic",
         "legion"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json",
-      "id": "legion-rma-obligations-telehealth-compliance-per-proposal",
+      "pub:id": "legion-rma-obligations-telehealth-compliance-per-proposal",
       "title": "Telehealth Compliance Anchored To Participant Proposal",
       "content": "A participant operating AI-assisted prescription renewal must adhere to Utah's telehealth provider requirements in §26B-4-704, with specific subsections deemed satisfied by following the patient-journey and escalation protocols described in the participant's Proposal (Schedule B). Certain subsections (e.g., the patient-records portability default) are inapplicable; others are substituted by Proposal-section conformance.",
-      "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "telehealth-compliance-per-proposal",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/legion-rma-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
+      },
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "telehealth-compliance-per-proposal",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "telehealth",
         "26b-4-704",
         "proposal compliance",
         "doctronic",
         "legion"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json",
-      "id": "cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited",
+      "pub:id": "cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited",
       "title": "Pay-To-Pay Fee Prohibited Without Express Authorization",
       "content": "A debt collector subject to the Fair Debt Collection Practices Act may not charge a pay-to-pay convenience fee for online or phone payments unless the fee is either expressly authorized by the agreement creating the debt or affirmatively permitted by a specific law. Silence, absence of prohibition, and third-party payment-processor routing do not cure the violation.",
-      "created_by": "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
-      "anchors": [],
-      "publedge_primary_id": "cfpb-pay-to-pay-fee-prohibited",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "not-applicable",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+      "source_locator": "Interpretive position",
+      "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "cfpb-pay-to-pay-fee-prohibited",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "fdcpa",
         "pay-to-pay",
         "convenience fee",
         "debt collection",
         "regulation f"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json",
-      "id": "cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger",
+      "pub:id": "cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger",
       "title": "Unbundled Advice Fee Does Not Trigger CTA Registration",
       "content": "A registered FCM, swap dealer, or introducing broker that qualifies for the CTA exclusion or exemption does not lose that status solely because it begins receiving a separate unbundled fee for commodity trading advice. The \"solely incidental\" or \"solely in connection with\" test continues to govern under a facts-and-circumstances analysis; separate compensation is one factor but is not dispositive.",
-      "created_by": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
-      "anchors": [],
-      "publedge_primary_id": "cftc-unbundled-fee-not-cta-trigger",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "not-applicable",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://cftc.gov/csl/17-65/download",
+      "source_locator": "Interpretive position",
+      "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "cftc-unbundled-fee-not-cta-trigger",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "cta registration",
         "mifid ii",
         "fcm",
         "swap dealer",
         "introducing broker",
         "unbundled fee"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json",
-      "id": "irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share",
+      "pub:id": "irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share",
       "title": "Incentive-Fee Management Contract Not A Share Of Net Profits",
       "content": "On the facts represented, an incentive-fee management contract between a §501(c)(3) bond issuer and a hotel manager — where the incentive fee is calculated on gross revenue subject to an adjustment contingent on a net-profit-variant metric — does not constitute sharing of net profits under Rev. Proc. 2017-13 §5.02(2) and therefore does not cause private business use under IRC §141. The ruling applies only to the requesting taxpayer on the specific facts presented.",
-      "created_by": "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
-      "anchors": [],
-      "publedge_primary_id": "irs-incentive-fee-not-net-profits-share",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/irs-plr-202506001-incentive-fee.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+      "source_locator": "Holding",
+      "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "irs-incentive-fee-not-net-profits-share",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "private business use",
         "501c3 bonds",
         "rev proc 2017-13",
         "safe harbor",
         "incentive fee"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Restriction",
       "@id": "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json",
-      "id": "irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure",
+      "pub:id": "irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure",
       "title": "§501(c)(3) Exemption Denied — Organizational And Operational Test Failure",
       "content": "An organization fails §501(c)(3) exemption where its Articles of Incorporation neither limit purposes to exempt activities nor dedicate assets to exempt purposes on dissolution, and where a substantial portion of its activities consists of unrestricted commercial leasing coupled with fundraising that benefits a for-profit entity controlled by one of its own Directors. Bylaws containing the required provisions do not cure deficient Articles; a single substantial non-exempt purpose is disqualifying regardless of any exempt purposes present.",
-      "created_by": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
-      "anchors": [],
-      "publedge_primary_id": "irs-501c3-dual-test-failure",
-      "publedge_group": "restriction",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+      "source_locator": "Holding",
+      "source_citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "irs-501c3-dual-test-failure",
+      "pub:group": "restriction",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "501c3",
         "organizational test",
         "operational test",
         "private inurement",
         "commercial leasing",
         "adverse determination"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json",
-      "id": "sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor",
+      "pub:id": "sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor",
       "title": "Rule 506(c) Verification Via High-Minimum + Representation",
       "content": "An issuer conducting a Rule 506(c) offering satisfies the \"reasonable steps to verify\" accredited-investor requirement when it (1) imposes a minimum investment amount high enough that only accredited investors would reasonably be expected to meet it, (2) obtains written representations of accredited status and that the investment is not financed by a third party for purposes of the investment, and (3) has no actual knowledge of contradictory facts. The position restates the principles-based standard; it does not create an exclusive verification method.",
-      "created_by": "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
-      "anchors": [],
-      "publedge_primary_id": "sec-reg-d-506c-verification-safe-harbor",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "not-applicable",
+      "enforcement_status": "not-enforceable",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
+      },
+      "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+      "source_locator": "Staff position",
+      "source_citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "sec-reg-d-506c-verification-safe-harbor",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "operative",
+      "pub:search_terms": [
         "rule 506c",
         "accredited investor",
         "reasonable steps to verify",
         "regulation d",
         "private placement"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json",
-      "id": "sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+      "pub:id": "sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination",
       "title": "High-Risk AI Reasonable Care Against Algorithmic Discrimination",
       "content": "Developers and deployers of high-risk artificial intelligence systems would have been required to use reasonable care to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
-      "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "never-operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+      ],
+      "lifecycle_status": "inactive",
+      "operative_status": "inactive",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "never-operative",
+      "pub:search_terms": [
         "high-risk artificial intelligence",
         "reasonable care",
         "algorithmic discrimination",
@@ -1188,26 +2008,43 @@
         "deployer",
         "colorado",
         "sb24-205"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json",
-      "id": "sb24-205-never-operative-obligations-high-risk-ai-impact-assessment",
+      "pub:id": "sb24-205-never-operative-obligations-high-risk-ai-impact-assessment",
       "title": "High-Risk AI Impact Assessment",
       "content": "Deployers would have been required to complete an impact assessment for each covered high-risk artificial intelligence system, repeat it at least annually and after intentional and substantial modifications, and retain the assessment records. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
-      "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "high-risk-ai-impact-assessment",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "never-operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+      ],
+      "lifecycle_status": "inactive",
+      "operative_status": "inactive",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "high-risk-ai-impact-assessment",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "never-operative",
+      "pub:search_terms": [
         "high-risk artificial intelligence",
         "impact assessment",
         "annual assessment",
@@ -1215,26 +2052,43 @@
         "deployer",
         "colorado",
         "sb24-205"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json",
-      "id": "sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal",
+      "pub:id": "sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal",
       "title": "High-Risk AI Consumer Notice, Correction, And Appeal",
       "content": "Deployers would have been required to notify consumers before using a high-risk artificial intelligence system in a consequential decision and, after an adverse decision, provide the principal reasons, an opportunity to correct incorrect personal data, and an appeal with human review where technically feasible. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
-      "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "high-risk-ai-consumer-notice-correction-and-appeal",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "never-operative",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+      ],
+      "lifecycle_status": "inactive",
+      "operative_status": "inactive",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "high-risk-ai-consumer-notice-correction-and-appeal",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "never-operative",
+      "pub:search_terms": [
         "high-risk artificial intelligence",
         "consumer notice",
         "adverse consequential decision",
@@ -1243,167 +2097,265 @@
         "human review",
         "colorado",
         "sb24-205"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
-      "id": "sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer",
+      "pub:id": "sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer",
       "title": "ADMT Developer Documentation To Deployer",
       "content": "Beginning January 1, 2027, a developer of covered automated decision-making technology must disclose to deployers the technology's intended uses, the categories of data used to train it, its known limitations, and instructions for meaningful human review. The duty runs developer-to-deployer, not developer-to-consumer.",
-      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "admt-developer-documentation-to-deployer",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "prospective",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "admt-developer-documentation-to-deployer",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "prospective",
+      "pub:search_terms": [
         "admt",
         "developer documentation",
         "training data",
         "known limitations",
         "colorado",
         "sb26-189"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice.json",
-      "id": "sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice",
+      "pub:id": "sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice",
       "title": "ADMT Deployer Notice Before Consequential Decision",
       "content": "Beginning January 1, 2027, before a consequential decision is made using covered automated decision-making technology, the deployer must notify the consumer that an automated system is in use and disclose the purpose and nature of the decision. The notice is pre-decision; a post-hoc disclosure does not satisfy it.",
-      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "admt-deployer-pre-decision-notice",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "prospective",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "admt-deployer-pre-decision-notice",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "prospective",
+      "pub:search_terms": [
         "admt",
         "consumer notice",
         "consequential decision",
         "deployer",
         "colorado",
         "sb26-189"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days.json",
-      "id": "sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days",
+      "pub:id": "sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days",
       "title": "ADMT Post-Adverse Explanation Within 30 Days",
       "content": "Beginning January 1, 2027, within 30 days of an adverse consequential decision made using covered automated decision-making technology, the deployer must give the consumer a plain-language explanation covering the AI's role in the decision, its degree of contribution, the types of data processed, and the sources of that data.",
-      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "admt-post-adverse-explanation-30-days",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "prospective",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "admt-post-adverse-explanation-30-days",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "prospective",
+      "pub:search_terms": [
         "admt",
         "adverse decision",
         "explanation",
         "30 days",
         "colorado",
         "sb26-189"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-correction-and-human-review.json",
-      "id": "sb26-189-admt-act-obligations-admt-correction-and-human-review",
+      "pub:id": "sb26-189-admt-act-obligations-admt-correction-and-human-review",
       "title": "ADMT Data Correction And Human Review Of Adverse Outcomes",
       "content": "Beginning January 1, 2027, consumers subject to an adverse consequential decision made using covered automated decision-making technology may correct inaccurate personal data used in that decision and may request meaningful human review and reconsideration of the outcome. The deployer must provide both paths.",
-      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "admt-correction-and-human-review",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "prospective",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "admt-correction-and-human-review",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "prospective",
+      "pub:search_terms": [
         "admt",
         "human review",
         "data correction",
         "reconsideration",
         "colorado",
         "sb26-189"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Requirement",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json",
-      "id": "sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention",
+      "pub:id": "sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention",
       "title": "ADMT Deployer Three-Year Record Retention",
       "content": "Beginning January 1, 2027, a deployer of covered automated decision-making technology must retain its compliance documentation for at least three years. The retention floor is what makes the notice, explanation, and review duties auditable by the Attorney General after the fact.",
-      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "admt-deployer-3-year-record-retention",
-      "publedge_group": "requirement",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "prospective",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "admt-deployer-3-year-record-retention",
+      "pub:group": "requirement",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "prospective",
+      "pub:search_terms": [
         "admt",
         "record keeping",
         "retention",
         "three years",
         "colorado",
         "sb26-189"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Permission",
       "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json",
-      "id": "sb26-189-admt-act-obligations-admt-60-day-cure-period",
+      "pub:id": "sb26-189-admt-act-obligations-admt-60-day-cure-period",
       "title": "ADMT Sixty-Day Cure Period Before Enforcement",
       "content": "Beginning January 1, 2027, violations of the Colorado ADMT Act are enforced by the Attorney General as deceptive trade practices, with no private right of action. A regulated party may cure an alleged violation within 60 days of notice; the cure route is available through January 1, 2030.",
-      "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-      "anchors": [],
-      "publedge_primary_id": "admt-60-day-cure-period",
-      "publedge_group": "permission",
-      "publedge_status": "draft",
-      "publedge_lifecycle_status": "prospective",
-      "search_terms": [
+      "created_by": [
+        "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+      ],
+      "lifecycle_status": "unknown",
+      "operative_status": "unknown",
+      "enforcement_status": "unknown",
+      "jurisdiction": {
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
+      },
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_locator": "Summary",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/",
+      "pub:primary_id": "admt-60-day-cure-period",
+      "pub:group": "permission",
+      "pub:status": "draft",
+      "pub:lifecycle_status": "prospective",
+      "pub:search_terms": [
         "admt",
         "cure period",
         "attorney general",
         "deceptive trade practice",
         "colorado",
         "sb26-189"
-      ],
-      "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
-      }
+      ]
     }
   ]
 }

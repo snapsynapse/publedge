@@ -1,20 +1,28 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Authority",
   "@id": "https://publedge.org/authority/irs-tege.json",
-  "id": "irs-tege",
+  "pub:id": "irs-tege",
   "organization": {
     "@type": "gist:GovernmentOrganization",
     "name": "IRS Tax Exempt and Government Entities Division"
   },
-  "authority_basis": {
-    "kind": "statutory",
-    "instrument_ref": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json"
-  },
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
   },
-  "website": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
-  "url_segment": "irs-tege"
+  "territorial_scope": [
+    "us"
+  ],
+  "source": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/"
 }

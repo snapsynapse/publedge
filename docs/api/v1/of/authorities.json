@@ -1,178 +1,242 @@
 {
   "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "generated": "2026-07-30T18:02:41.736Z",
+  "generated": "2026-07-25T00:00:00.000Z",
   "authorities": [
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/cfpb.json",
-      "id": "cfpb",
+      "pub:id": "cfpb",
       "organization": {
         "@type": "gist:GovernmentOrganization",
         "name": "Consumer Financial Protection Bureau"
       },
-      "authority_basis": {
-        "kind": "statutory",
-        "instrument_ref": "https://publedge.org/instrument/us-cfpb-ao-2022-001.json"
-      },
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
       },
-      "website": "https://www.consumerfinance.gov/",
-      "url_segment": "cfpb",
+      "territorial_scope": [
+        "us"
+      ],
       "sameAs": [
-        "https://www.wikidata.org/wiki/Q3078237"
-      ]
+        "https://wikidata.org/wiki/Q3078237"
+      ],
+      "source": "https://www.consumerfinance.gov/",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/cftc-dsio.json",
-      "id": "cftc-dsio",
+      "pub:id": "cftc-dsio",
       "organization": {
         "@type": "gist:GovernmentOrganization",
         "name": "CFTC Division of Swap Dealer and Intermediary Oversight"
       },
-      "authority_basis": {
-        "kind": "statutory",
-        "instrument_ref": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json"
-      },
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
       },
-      "website": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
-      "url_segment": "cftc-dsio"
+      "territorial_scope": [
+        "us"
+      ],
+      "source": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/colorado-legislature.json",
-      "id": "colorado-legislature",
+      "pub:id": "colorado-legislature",
       "organization": {
         "@type": "gist:GovernmentOrganization",
         "name": "Colorado General Assembly"
       },
-      "authority_basis": {
-        "kind": "statutory",
-        "instrument_ref": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json"
-      },
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-co"
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-co"
+        ]
       },
-      "website": "https://leg.colorado.gov/",
-      "url_segment": "legislature",
+      "territorial_scope": [
+        "us-co"
+      ],
       "sameAs": [
-        "https://www.wikidata.org/wiki/Q515231"
-      ]
+        "https://wikidata.org/wiki/Q515231"
+      ],
+      "source": "https://leg.colorado.gov/",
+      "evidence_type": "published-source",
+      "verified": "2026-05-21",
+      "asserted_by_adopter": "https://publedge.org/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/irs-chief-counsel.json",
-      "id": "irs-chief-counsel",
+      "pub:id": "irs-chief-counsel",
       "organization": {
         "@type": "gist:GovernmentOrganization",
         "name": "IRS Office of Chief Counsel"
       },
-      "authority_basis": {
-        "kind": "statutory",
-        "instrument_ref": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json"
-      },
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
       },
-      "website": "https://www.irs.gov/privacy-disclosure/written-determinations",
-      "url_segment": "irs-chief-counsel"
+      "territorial_scope": [
+        "us"
+      ],
+      "source": "https://www.irs.gov/privacy-disclosure/written-determinations",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/irs-tege.json",
-      "id": "irs-tege",
+      "pub:id": "irs-tege",
       "organization": {
         "@type": "gist:GovernmentOrganization",
         "name": "IRS Tax Exempt and Government Entities Division"
       },
-      "authority_basis": {
-        "kind": "statutory",
-        "instrument_ref": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json"
-      },
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
       },
-      "website": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
-      "url_segment": "irs-tege"
+      "territorial_scope": [
+        "us"
+      ],
+      "source": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/sec-corpfin.json",
-      "id": "sec-corpfin",
+      "pub:id": "sec-corpfin",
       "organization": {
         "@type": "gist:GovernmentOrganization",
         "name": "SEC Division of Corporation Finance"
       },
-      "authority_basis": {
-        "kind": "statutory",
-        "instrument_ref": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json"
-      },
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us"
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us"
+        ]
       },
-      "website": "https://www.sec.gov/divisions/corpfin",
-      "url_segment": "sec-corpfin",
+      "territorial_scope": [
+        "us"
+      ],
       "sameAs": [
-        "https://www.wikidata.org/wiki/Q28945713"
-      ]
+        "https://wikidata.org/wiki/Q28945713"
+      ],
+      "source": "https://www.sec.gov/divisions/corpfin",
+      "evidence_type": "published-source",
+      "verified": "2026-04-19",
+      "asserted_by_adopter": "https://publedge.org/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/utah-legislature.json",
-      "id": "utah-legislature",
+      "pub:id": "utah-legislature",
       "organization": {
         "@type": "gist:GovernmentOrganization",
         "name": "Utah State Legislature"
       },
-      "authority_basis": {
-        "kind": "statutory",
-        "instrument_ref": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json"
-      },
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
       },
-      "website": "https://le.utah.gov/",
-      "url_segment": "legislature",
+      "territorial_scope": [
+        "us-ut"
+      ],
       "sameAs": [
-        "https://www.wikidata.org/wiki/Q7892726"
-      ]
+        "https://wikidata.org/wiki/Q7892726"
+      ],
+      "source": "https://le.utah.gov/",
+      "evidence_type": "published-source",
+      "verified": "2026-04-21",
+      "asserted_by_adopter": "https://publedge.org/"
     },
     {
-      "@context": "https://obligationfirst.org/v1/context.jsonld",
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
       "@type": "of:Authority",
       "@id": "https://publedge.org/authority/utah-oaip.json",
-      "id": "utah-oaip",
+      "pub:id": "utah-oaip",
       "organization": {
         "@type": "gist:GovernmentOrganization",
         "name": "Utah Office of Artificial Intelligence Policy"
       },
-      "authority_basis": {
-        "kind": "statutory",
-        "instrument_ref": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json"
-      },
       "jurisdiction": {
-        "@type": "gist:Jurisdiction",
-        "ref": "us-ut"
+        "@type": "of:Jurisdiction",
+        "territorial_scope": [
+          "us-ut"
+        ]
       },
-      "website": "https://commerce.utah.gov/ai/learning-lab/",
-      "url_segment": "oaip"
+      "territorial_scope": [
+        "us-ut"
+      ],
+      "source": "https://commerce.utah.gov/ai/learning-lab/",
+      "evidence_type": "published-source",
+      "verified": "2026-04-18",
+      "asserted_by_adopter": "https://publedge.org/"
     }
   ]
 }

@@ -1,23 +1,31 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Authority",
   "@id": "https://publedge.org/authority/colorado-legislature.json",
-  "id": "colorado-legislature",
+  "pub:id": "colorado-legislature",
   "organization": {
     "@type": "gist:GovernmentOrganization",
     "name": "Colorado General Assembly"
   },
-  "authority_basis": {
-    "kind": "statutory",
-    "instrument_ref": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json"
-  },
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
   },
-  "website": "https://leg.colorado.gov/",
-  "url_segment": "legislature",
+  "territorial_scope": [
+    "us-co"
+  ],
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q515231"
-  ]
+    "https://wikidata.org/wiki/Q515231"
+  ],
+  "source": "https://leg.colorado.gov/",
+  "evidence_type": "published-source",
+  "verified": "2026-05-21",
+  "asserted_by_adopter": "https://publedge.org/"
 }

@@ -6,14 +6,12 @@ const path = require('path');
 const {
     DOCS_DIR,
     collectAllFiles,
-    normalizeGeneratedContent,
     withTempBuild,
     reportFailures
 } = require('./lib/eval-kit');
 
 const failures = [];
 const preserved = new Set(['CNAME', '.nojekyll']);
-const textExtensions = new Set(['.css', '.html', '.ics', '.js', '.json', '.jsonld', '.md', '.txt', '.ttl', '.xml', '.yaml', '.yml']);
 
 withTempBuild(expectedDir => {
     const expected = new Set(collectAllFiles(expectedDir).filter(file => !preserved.has(file)));
@@ -29,14 +27,7 @@ withTempBuild(expectedDir => {
         if (!actual.has(file)) continue;
         const expectedPath = path.join(expectedDir, file);
         const actualPath = path.join(DOCS_DIR, file);
-        let same;
-        if (textExtensions.has(path.extname(file))) {
-            const expectedText = normalizeGeneratedContent(file, fs.readFileSync(expectedPath, 'utf-8'));
-            const actualText = normalizeGeneratedContent(file, fs.readFileSync(actualPath, 'utf-8'));
-            same = expectedText === actualText;
-        } else {
-            same = fs.readFileSync(expectedPath).equals(fs.readFileSync(actualPath));
-        }
+        const same = fs.readFileSync(expectedPath).equals(fs.readFileSync(actualPath));
         if (!same) failures.push(`docs/ differs from a clean build: ${file}`);
     }
 });

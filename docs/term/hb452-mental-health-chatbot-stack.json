@@ -1,21 +1,36 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Term",
   "@id": "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
-  "id": "hb452-mental-health-chatbot-stack",
-  "text": "Summary",
-  "section": "",
+  "pub:id": "hb452-mental-health-chatbot-stack",
+  "summary": "Summary",
+  "section": "Summary",
   "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
   "creates": [
     "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
     "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
     "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json"
   ],
-  "anchors": [],
-  "source_heading": "Summary",
-  "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+  "source_locator": "Summary",
+  "source_citation": "Utah HB 452 (2025 General Session)",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Summary",
+  "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md"
 }

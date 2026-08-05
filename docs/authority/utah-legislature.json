@@ -1,23 +1,31 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Authority",
   "@id": "https://publedge.org/authority/utah-legislature.json",
-  "id": "utah-legislature",
+  "pub:id": "utah-legislature",
   "organization": {
     "@type": "gist:GovernmentOrganization",
     "name": "Utah State Legislature"
   },
-  "authority_basis": {
-    "kind": "statutory",
-    "instrument_ref": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json"
-  },
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
-  "website": "https://le.utah.gov/",
-  "url_segment": "legislature",
+  "territorial_scope": [
+    "us-ut"
+  ],
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q7892726"
-  ]
+    "https://wikidata.org/wiki/Q7892726"
+  ],
+  "source": "https://le.utah.gov/",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/"
 }

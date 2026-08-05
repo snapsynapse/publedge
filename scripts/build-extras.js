@@ -14,10 +14,12 @@ const fs = require('fs');
 const path = require('path');
 const { composeDisclaimer } = require('./lib/disclaimer');
 const { parseFrontmatter } = require('./lib/parse');
+const { deriveBuildClock } = require('./lib/build-clock');
 
 const ROOT = path.join(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, process.env.KAC_OUTPUT_DIR || 'docs');
 const SITE_URL = 'https://publedge.org/';
+const BUILD_CLOCK = deriveBuildClock(ROOT);
 
 function ensureDir(d) { fs.mkdirSync(d, { recursive: true }); }
 
@@ -161,8 +163,8 @@ function renderFooterNav(relRoot) {
 
 function renderSiteFooter(relRoot) {
     return `<footer class="site-footer">
-<p class="footer-meta">&copy; ${new Date().getFullYear()} <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="${relRoot}reference/disclaimer/">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v0.1.3</p>
+<p class="footer-meta">&copy; ${BUILD_CLOCK.year} <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="${relRoot}reference/disclaimer/">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
+<p class="footer-built">PubLedge v0.2.0</p>
 </footer>`;
 }
 
@@ -430,7 +432,7 @@ function extendDiscovery(templates) {
     const smPath = path.join(DOCS_DIR, 'sitemap.xml');
     if (fs.existsSync(smPath)) {
         let sm = fs.readFileSync(smPath, 'utf8');
-        const today = new Date().toISOString().split('T')[0];
+        const today = BUILD_CLOCK.date;
         const inserts = newPaths.map(p => `  <url><loc>${SITE_URL}${p}</loc><lastmod>${today}</lastmod></url>`).join('\n');
         sm = sm.replace('</urlset>', inserts + '\n</urlset>');
         fs.writeFileSync(smPath, sm);
@@ -527,7 +529,7 @@ function splitSitemap() {
     while ((m = urlRe.exec(xml)) !== null) entries.push({ loc: m[1], lastmod: m[2] });
     if (!entries.length) return;
 
-    const today = new Date().toISOString().split('T')[0];
+    const today = BUILD_CLOCK.date;
     const baseUrl = SITE_URL.replace(/\/$/, '') + '/';
     const stripBase = (loc) => loc.replace(baseUrl, '').replace(/^https?:\/\/[^/]+\//, '');
 
@@ -583,7 +585,7 @@ function emitAdditionalFeeds() {
 
     const baseUrl = SITE_URL.replace(/\/$/, '') + '/';
     const siteName = 'PubLedge';
-    const updated = new Date().toISOString();
+    const updated = BUILD_CLOCK.instant;
 
     // JSON Feed 1.1
     const jf = {
@@ -760,18 +762,15 @@ function writeMcpDiscovery() {
     console.log('  MCP discovery written at /.well-known/mcp.json');
 }
 
-// Obligation-First NamingProfile (obligation-first >= 0.4.0). Declares the IRI
+// Obligation-First NamingProfile (obligation-first >= 0.6.0). Declares the IRI
 // scheme PubLedge actually mints for each entity type it publishes under
 // /api/v1/of/, plus the crosswalk fields it supplies. Descriptive, not
 // aspirational: the regex patterns below are derived from the published
 // records, so `npm run validate:of` and this file cannot disagree silently.
 // PubLedge mints no Proceeding or Allegation records, so those types are absent.
-const OF_NAMING_PROFILE_VERSION = '1.0.0';
-// PubLedge publishes no ObligationCategory records, so it has no reason to floor
-// at 0.5.0. A range spanning both minors rides obligation-first's additive
-// releases instead of going red in lockstep with them.
-const OF_SPEC_APPLIES_TO = 'obligation-first >=0.4.0 <0.6.0';
-const OF_SPEC_VERSION_RANGE = '>=0.4.0, <0.6.0';
+const OF_NAMING_PROFILE_VERSION = '2.0.0';
+const OF_SPEC_APPLIES_TO = 'obligation-first >=0.6.0 <0.7.0';
+const OF_SPEC_VERSION_RANGE = '>=0.6.0, <0.7.0';
 
 function ofEntityProfile(segment, crosswalks) {
     const space = `${SITE_URL}${segment}/`;
@@ -795,6 +794,7 @@ function writeNamingProfile() {
         adopter: SITE_URL,
         entities: {
             Authority: ofEntityProfile('authority', ['sameAs']),
+            Party: ofEntityProfile('party', []),
             Instrument: ofEntityProfile('instrument', ['citation']),
             Term: ofEntityProfile('term', ['section']),
             Obligation: ofEntityProfile('obligation', []),

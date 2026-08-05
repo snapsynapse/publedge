@@ -1,17 +1,32 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-ut-legislature-statute-2025-sb332-issuance.json",
-  "id": "us-ut-legislature-statute-2025-sb332-issuance",
+  "pub:id": "us-ut-legislature-statute-2025-sb332-issuance",
   "issued_date": "2025-03-25",
-  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/utah-legislature.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
   "decides": [],
   "disposition": "issued",
-  "target_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json",
+  "resulting_instrument": [
+    "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json"
+  ],
   "notes": "Issuance record for Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension).",
-  "source": "https://le.utah.gov/~2025/bills/static/SB0332.html"
+  "source": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+  "source_citation": "Utah SB 332 (2025 General Session), Governor Signed March 25, 2025",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/"
 }

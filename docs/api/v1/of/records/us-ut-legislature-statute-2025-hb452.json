@@ -1,26 +1,47 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
-  "id": "us-ut-legislature-statute-2025-hb452",
+  "pub:id": "us-ut-legislature-statute-2025-hb452",
   "title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
   "short_title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
-  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/utah-legislature.json"
+  ],
   "kind": "statute",
+  "normative_force": "binding",
   "enacted": "2025-03-26",
   "effective": "2025-05-07",
-  "status": "in-force",
-  "enforcement_status": "routine",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "hasTerm": [
     "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
   ],
-  "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-ut-legislature-statute-2025-hb452-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
+  "territorial_scope": [
+    "us-ut"
+  ],
   "citation": "Utah HB 452 (2025 General Session)",
-  "publedge_status": "enforcing",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-002/"
+  "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+  "source_citation": "Utah HB 452 (2025 General Session)",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enforcing",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-002/"
 }

@@ -1,0 +1,379 @@
+{
+  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "generated": "2026-07-25T00:00:00.000Z",
+  "parties": [
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-jia-2026-001-publedge-illustrative-requesting-party.json",
+      "pub:id": "us-ut-oaip-jia-2026-001-publedge-illustrative-requesting-party",
+      "name": "PubLedge (illustrative requesting party)",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "PubLedge (illustrative requesting party)"
+      },
+      "roles": [
+        "requesting_party"
+      ],
+      "source": "https://commerce.utah.gov/ai/learning-lab/",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-jia-2026-001-utah-oaip.json",
+      "pub:id": "us-ut-oaip-jia-2026-001-utah-oaip",
+      "name": "Utah OAIP",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah OAIP"
+      },
+      "roles": [
+        "interpreting_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/learning-lab/",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-office-of-artificial-intelligence-policy.json",
+      "pub:id": "us-ut-oaip-rma-2024-001-utah-office-of-artificial-intelligence-policy",
+      "name": "Utah Office of Artificial Intelligence Policy",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah Office of Artificial Intelligence Policy"
+      },
+      "roles": [
+        "issuing_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-division-of-professional-licensing.json",
+      "pub:id": "us-ut-oaip-rma-2024-001-utah-division-of-professional-licensing",
+      "name": "Utah Division of Professional Licensing",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah Division of Professional Licensing"
+      },
+      "roles": [
+        "co_signatory_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2024-001-elizachat-inc.json",
+      "pub:id": "us-ut-oaip-rma-2024-001-elizachat-inc",
+      "name": "ElizaChat, Inc.",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "ElizaChat, Inc."
+      },
+      "roles": [
+        "participant"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2025-001-utah-office-of-artificial-intelligence-policy.json",
+      "pub:id": "us-ut-oaip-rma-2025-001-utah-office-of-artificial-intelligence-policy",
+      "name": "Utah Office of Artificial Intelligence Policy",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah Office of Artificial Intelligence Policy"
+      },
+      "roles": [
+        "issuing_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2025-001-utah-division-of-professional-licensing.json",
+      "pub:id": "us-ut-oaip-rma-2025-001-utah-division-of-professional-licensing",
+      "name": "Utah Division of Professional Licensing",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah Division of Professional Licensing"
+      },
+      "roles": [
+        "co_signatory_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2025-001-dentacor-llc.json",
+      "pub:id": "us-ut-oaip-rma-2025-001-dentacor-llc",
+      "name": "Dentacor, LLC",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Dentacor, LLC"
+      },
+      "roles": [
+        "participant"
+      ],
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-07-25",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-office-of-artificial-intelligence-policy.json",
+      "pub:id": "us-ut-oaip-rma-2025-002-utah-office-of-artificial-intelligence-policy",
+      "name": "Utah Office of Artificial Intelligence Policy",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah Office of Artificial Intelligence Policy"
+      },
+      "roles": [
+        "issuing_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-division-of-professional-licensing.json",
+      "pub:id": "us-ut-oaip-rma-2025-002-utah-division-of-professional-licensing",
+      "name": "Utah Division of Professional Licensing",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah Division of Professional Licensing"
+      },
+      "roles": [
+        "co_signatory_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2025-002-doctronic-llc.json",
+      "pub:id": "us-ut-oaip-rma-2025-002-doctronic-llc",
+      "name": "Doctronic, LLC",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Doctronic, LLC"
+      },
+      "roles": [
+        "participant"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-office-of-artificial-intelligence-policy.json",
+      "pub:id": "us-ut-oaip-rma-2026-001-utah-office-of-artificial-intelligence-policy",
+      "name": "Utah Office of Artificial Intelligence Policy",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah Office of Artificial Intelligence Policy"
+      },
+      "roles": [
+        "issuing_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-division-of-professional-licensing.json",
+      "pub:id": "us-ut-oaip-rma-2026-001-utah-division-of-professional-licensing",
+      "name": "Utah Division of Professional Licensing",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Utah Division of Professional Licensing"
+      },
+      "roles": [
+        "co_signatory_authority"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-pa.json",
+      "pub:id": "us-ut-oaip-rma-2026-001-legion-health-pa",
+      "name": "Legion Health PA",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Legion Health PA"
+      },
+      "roles": [
+        "participant"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    },
+    {
+      "@context": [
+        "https://obligationfirst.org/v1/context.jsonld",
+        {
+          "pub": "https://publedge.org/vocab/"
+        }
+      ],
+      "@type": "of:Party",
+      "@id": "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-inc.json",
+      "pub:id": "us-ut-oaip-rma-2026-001-legion-health-inc",
+      "name": "Legion Health, Inc.",
+      "party_kind": "organization",
+      "entity": {
+        "@type": "gist:Organization",
+        "name": "Legion Health, Inc."
+      },
+      "roles": [
+        "participant"
+      ],
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "evidence_type": "published-source",
+      "verified": "2026-06-04",
+      "asserted_by_adopter": "https://publedge.org/"
+    }
+  ]
+}

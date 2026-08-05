@@ -1,26 +1,43 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json",
-  "id": "cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger",
+  "pub:id": "cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger",
   "title": "Unbundled Advice Fee Does Not Trigger CTA Registration",
   "content": "A registered FCM, swap dealer, or introducing broker that qualifies for the CTA exclusion or exemption does not lose that status solely because it begins receiving a separate unbundled fee for commodity trading advice. The \"solely incidental\" or \"solely in connection with\" test continues to govern under a facts-and-circumstances analysis; separate compensation is one factor but is not dispositive.",
-  "created_by": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
-  "anchors": [],
-  "publedge_primary_id": "cftc-unbundled-fee-not-cta-trigger",
-  "publedge_group": "permission",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "not-applicable",
+  "enforcement_status": "not-enforceable",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
+  },
+  "source": "https://cftc.gov/csl/17-65/download",
+  "source_locator": "Interpretive position",
+  "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "cftc-unbundled-fee-not-cta-trigger",
+  "pub:group": "permission",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "cta registration",
     "mifid ii",
     "fcm",
     "swap dealer",
     "introducing broker",
     "unbundled fee"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
-  }
+  ]
 }

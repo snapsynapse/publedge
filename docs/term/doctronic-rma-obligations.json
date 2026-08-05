@@ -1,10 +1,18 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "@type": "of:Term",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
+  "@type": [
+    "of:Term",
+    "gist:ContractTerm"
+  ],
   "@id": "https://publedge.org/term/doctronic-rma-obligations.json",
-  "id": "doctronic-rma-obligations",
-  "text": "Obligations summary (Section 6 and Schedule A §16)",
-  "section": "",
+  "pub:id": "doctronic-rma-obligations",
+  "summary": "Obligations summary (Section 6 and Schedule A §16)",
+  "section": "Obligations summary (Section 6 and Schedule A §16)",
   "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
   "creates": [
     "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
@@ -16,11 +24,21 @@
     "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
     "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json"
   ],
-  "anchors": [],
-  "source_heading": "Obligations summary (Section 6 and Schedule A §16)",
-  "source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+  "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Obligations summary (Section 6 and Schedule A §16)",
+  "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md"
 }

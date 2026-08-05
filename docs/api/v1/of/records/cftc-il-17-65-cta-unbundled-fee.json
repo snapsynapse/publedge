@@ -1,19 +1,34 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Term",
   "@id": "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
-  "id": "cftc-il-17-65-cta-unbundled-fee",
-  "text": "Interpretive position",
-  "section": "",
+  "pub:id": "cftc-il-17-65-cta-unbundled-fee",
+  "summary": "Interpretive position",
+  "section": "Interpretive position",
   "parent_instrument": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
   "creates": [
     "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json"
   ],
-  "anchors": [],
-  "source_heading": "Interpretive position",
-  "source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "not-enforceable",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
+  },
+  "source": "https://cftc.gov/csl/17-65/download",
+  "source_locator": "Interpretive position",
+  "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Interpretive position",
+  "pub:source_file": "data/examples/instruments/us-cftc-dsio-il-2017-001.md"
 }

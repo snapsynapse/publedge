@@ -1,26 +1,47 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
-  "id": "us-irs-chief-counsel-plr-2025-001",
+  "pub:id": "us-irs-chief-counsel-plr-2025-001",
   "title": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
   "short_title": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
-  "issuedBy": "https://publedge.org/authority/irs-chief-counsel.json",
+  "issuedBy": [
+    "https://publedge.org/authority/irs-chief-counsel.json"
+  ],
   "kind": "private-letter-ruling",
+  "normative_force": "unknown",
   "enacted": "2025-02-07",
   "effective": "2025-02-07",
-  "status": "in-force",
-  "enforcement_status": "routine",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "hasTerm": [
     "https://publedge.org/term/irs-plr-202506001-incentive-fee.json"
   ],
-  "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-irs-chief-counsel-plr-2025-001-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
   },
+  "territorial_scope": [
+    "us"
+  ],
   "citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
-  "publedge_status": "enforcing",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/"
+  "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+  "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enforcing",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/"
 }

@@ -1,24 +1,41 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Restriction",
   "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
-  "id": "dentacor-rma-obligations-rma-no-advertising-reference",
+  "pub:id": "dentacor-rma-obligations-rma-no-advertising-reference",
   "title": "RMA — No Advertising Reference To Agreement",
   "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
-  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "rma-no-advertising-reference",
-  "publedge_group": "restriction",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/dentacor-rma-obligations.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+  "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "rma-no-advertising-reference",
+  "pub:group": "restriction",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "rma",
     "advertising",
     "promotion",
     "marketing"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

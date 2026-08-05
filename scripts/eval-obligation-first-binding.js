@@ -10,11 +10,16 @@ const apiDir = path.join(DOCS_DIR, 'api', 'v1', 'of');
 const recordsDir = path.join(apiDir, 'records');
 const companionDirs = {
     authorities: 'authority',
+    parties: 'party',
     instruments: 'instrument',
     terms: 'term',
     obligations: 'obligation',
     determinations: 'determination'
 };
+
+function localId(record) {
+    return record && record['pub:id'];
+}
 
 function requireJson(file, label) {
     if (!fs.existsSync(file)) {
@@ -43,7 +48,7 @@ if (index) {
         }
 
         for (const record of records) {
-            if (!record.id) {
+            if (!localId(record)) {
                 failures.push(`${kind} aggregate record missing local id for ${record['@id'] || '(missing @id)'}`);
                 continue;
             }
@@ -51,18 +56,18 @@ if (index) {
                 failures.push(`duplicate @id in aggregate records: ${record['@id']}`);
             }
             recordsById.set(record['@id'], record);
-            expectedFlatFiles.add(`${record.id}.json`);
+            expectedFlatFiles.add(`${localId(record)}.json`);
 
-            const flatFile = path.join(recordsDir, `${record.id}.json`);
-            const flatRecord = requireJson(flatFile, `flat record for ${record.id}`);
+            const flatFile = path.join(recordsDir, `${localId(record)}.json`);
+            const flatRecord = requireJson(flatFile, `flat record for ${localId(record)}`);
             if (flatRecord && stableJson(flatRecord) !== stableJson(record)) {
                 failures.push(`flat record differs from aggregate record: ${path.relative(DOCS_DIR, flatFile)}`);
             }
 
             const companionDir = companionDirs[kind];
             if (companionDir) {
-                const companionFile = path.join(DOCS_DIR, companionDir, `${record.id}.json`);
-                const companionRecord = requireJson(companionFile, `companion record for ${record.id}`);
+                const companionFile = path.join(DOCS_DIR, companionDir, `${localId(record)}.json`);
+                const companionRecord = requireJson(companionFile, `companion record for ${localId(record)}`);
                 if (companionRecord && stableJson(companionRecord) !== stableJson(record)) {
                     failures.push(`companion record differs from aggregate record: ${path.relative(DOCS_DIR, companionFile)}`);
                 }
@@ -83,35 +88,35 @@ for (const term of recordsByKind.terms || []) {
     for (const obligationId of term.creates || []) {
         const obligation = recordsById.get(obligationId);
         if (!obligation) {
-            failures.push(`${term.id} creates missing obligation ${obligationId}`);
+            failures.push(`${localId(term)} creates missing obligation ${obligationId}`);
             continue;
         }
-        if (obligation.created_by !== term['@id']) {
-            failures.push(`${term.id} creates ${obligation.id}, but created_by does not point back`);
+        if (!(obligation.created_by || []).includes(term['@id'])) {
+            failures.push(`${localId(term)} creates ${localId(obligation)}, but created_by does not point back`);
         }
-        if (!obligation.publedge_primary_id) {
-            failures.push(`${obligation.id} missing publedge_primary_id`);
+        if (!obligation['pub:primary_id']) {
+            failures.push(`${localId(obligation)} missing pub:primary_id`);
         }
-        if (!obligation.id.startsWith(`${term.id}-`)) {
-            failures.push(`${obligation.id} is not concrete to creating term ${term.id}`);
+        if (!localId(obligation).startsWith(`${localId(term)}-`)) {
+            failures.push(`${localId(obligation)} is not concrete to creating term ${localId(term)}`);
         }
     }
 }
 
 for (const obligation of recordsByKind.obligations || []) {
-    if (!obligation.publedge_lifecycle_status) {
-        failures.push(`${obligation.id} missing publedge_lifecycle_status`);
+    if (!obligation['pub:lifecycle_status']) {
+        failures.push(`${localId(obligation)} missing pub:lifecycle_status`);
     }
 }
 
 for (const instrument of recordsByKind.instruments || []) {
-    if (!instrument.publedge_editorial_status) {
-        failures.push(`${instrument.id} missing publedge_editorial_status`);
+    if (!instrument['pub:editorial_status']) {
+        failures.push(`${localId(instrument)} missing pub:editorial_status`);
     }
 }
 
 const neverOperative = (recordsByKind.obligations || []).filter(
-    obligation => obligation.publedge_lifecycle_status === 'never-operative'
+    obligation => obligation['pub:lifecycle_status'] === 'never-operative'
 );
 if (neverOperative.length !== 3) {
     failures.push(`expected 3 never-operative concrete obligations, found ${neverOperative.length}`);
@@ -122,6 +127,19 @@ if (!jiaTerm) {
     failures.push('missing Utah mental-health chatbot JIA term');
 } else if (!jiaTerm.anchors?.includes('https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json')) {
     failures.push('Utah mental-health chatbot JIA term missing EveryAILaw term anchor');
+} else if (!Array.isArray(jiaTerm['@type']) || !jiaTerm['@type'].includes('of:Term') || !jiaTerm['@type'].includes('gist:ContractTerm')) {
+    failures.push('Utah mental-health chatbot JIA term must assert both of:Term and gist:ContractTerm');
+}
+
+for (const term of recordsByKind.terms || []) {
+    const parent = recordsById.get(term.parent_instrument);
+    const types = Array.isArray(term['@type']) ? term['@type'] : [term['@type']];
+    if (['jia', 'rma'].includes(parent?.kind) && !types.includes('gist:ContractTerm')) {
+        failures.push(`${localId(term)} is contractual but lacks gist:ContractTerm`);
+    }
+    if (!['jia', 'rma'].includes(parent?.kind) && types.includes('gist:ContractTerm')) {
+        failures.push(`${localId(term)} is not contractual but asserts gist:ContractTerm`);
+    }
 }
 
 const jiaObligation = recordsById.get('https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json');
@@ -135,6 +153,7 @@ const { containers } = loadProjectData();
 const issuanceContainers = containers.filter(container =>
     container.enacted &&
     container.official_url &&
+    container.issuance_event &&
     !['proposed', 'draft'].includes(container.status)
 );
 const expectedDeterminationIds = new Set(
@@ -155,28 +174,28 @@ for (const container of issuanceContainers) {
         continue;
     }
     if (determination.disposition !== 'issued') {
-        failures.push(`${determination.id} disposition must be issued`);
+        failures.push(`${localId(determination)} disposition must be issued`);
     }
     if ((determination.decides || []).length !== 0) {
-        failures.push(`${determination.id} administrative issuance must not decide allegations`);
+        failures.push(`${localId(determination)} administrative issuance must not decide allegations`);
     }
-    if (determination.target_instrument !== instrumentId) {
-        failures.push(`${determination.id} target_instrument does not identify ${container.id}`);
+    if (!determination.resulting_instrument?.includes(instrumentId)) {
+        failures.push(`${localId(determination)} resulting_instrument does not identify ${container.id}`);
     }
     if (determination.issued_date !== container.enacted) {
-        failures.push(`${determination.id} issued_date does not match enacted evidence`);
+        failures.push(`${localId(determination)} issued_date does not match enacted evidence`);
     }
     if (determination.source !== container.official_url) {
-        failures.push(`${determination.id} source does not match official issuance evidence`);
+        failures.push(`${localId(determination)} source does not match official issuance evidence`);
     }
     if (!instrument || stableJson(determination.jurisdiction) !== stableJson(instrument.jurisdiction)) {
-        failures.push(`${determination.id} jurisdiction does not match its target instrument`);
+        failures.push(`${localId(determination)} jurisdiction does not match its resulting instrument`);
     }
 }
 
 for (const determination of recordsByKind.determinations || []) {
     if (!expectedDeterminationIds.has(determination['@id'])) {
-        failures.push(`${determination.id} has no evidenced, non-draft issuance source`);
+        failures.push(`${localId(determination)} has no evidenced, non-draft issuance source`);
     }
 }
 

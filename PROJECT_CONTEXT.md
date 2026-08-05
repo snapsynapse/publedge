@@ -51,9 +51,9 @@ registry through structured endpoints and the MCP server.
 - Ontology: https://semanticarts.com/gist/
 - Related: https://everyailaw.com · https://knowledge-as-code.com
 
-## Current status (2026-07)
+## Current status (2026-08)
 
-Public and maintained. Spec at `v0.1.3`; MCP server published stable (npm +
+Public and maintained. Spec at `v0.2.0`; MCP server published stable (npm +
 Official MCP Registry). PubLedge is the thin recordkeeping convention of the
 PAICE legal graph. Standalone product expansion is parked pending a concrete
 legal-graph, regulator, court, civic-body, or adopter demand signal. See

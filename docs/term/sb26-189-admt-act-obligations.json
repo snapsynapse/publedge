@@ -1,10 +1,15 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Term",
   "@id": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-  "id": "sb26-189-admt-act-obligations",
-  "text": "Summary",
-  "section": "",
+  "pub:id": "sb26-189-admt-act-obligations",
+  "summary": "Summary",
+  "section": "Summary",
   "parent_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
   "creates": [
     "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
@@ -14,11 +19,21 @@
     "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json",
     "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json"
   ],
-  "anchors": [],
-  "source_heading": "Summary",
-  "source_file": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
+  "lifecycle_status": "enacted",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
+  },
+  "source": "https://leg.colorado.gov/bills/sb26-189",
+  "source_locator": "Summary",
+  "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Summary",
+  "pub:source_file": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md"
 }

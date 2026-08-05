@@ -1,17 +1,32 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-ut-oaip-rma-2025-001-issuance.json",
-  "id": "us-ut-oaip-rma-2025-001-issuance",
+  "pub:id": "us-ut-oaip-rma-2025-001-issuance",
   "issued_date": "2025-05-31",
-  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "issuedBy": [
+    "https://publedge.org/authority/utah-oaip.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
   "decides": [],
   "disposition": "issued",
-  "target_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+  "resulting_instrument": [
+    "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json"
+  ],
   "notes": "Issuance record for Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025).",
-  "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/"
+  "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/"
 }

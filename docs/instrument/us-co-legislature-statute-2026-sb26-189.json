@@ -1,26 +1,47 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
-  "id": "us-co-legislature-statute-2026-sb26-189",
+  "pub:id": "us-co-legislature-statute-2026-sb26-189",
   "title": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
   "short_title": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
-  "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/colorado-legislature.json"
+  ],
   "kind": "statute",
+  "normative_force": "binding",
   "enacted": "2026-05-14",
   "effective": "2027-01-01",
-  "status": "enacted",
-  "enforcement_status": "routine",
+  "lifecycle_status": "enacted",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
   "hasTerm": [
     "https://publedge.org/term/sb26-189-admt-act-obligations.json"
   ],
-  "source": "https://leg.colorado.gov/bills/sb26-189",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
   },
+  "territorial_scope": [
+    "us-co"
+  ],
   "citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
-  "publedge_status": "enacted",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
+  "source": "https://leg.colorado.gov/bills/sb26-189",
+  "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enacted",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/colorado/legislature/statute/2026-001/"
 }

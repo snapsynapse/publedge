@@ -1,26 +1,43 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Requirement",
   "@id": "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
-  "id": "sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer",
+  "pub:id": "sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer",
   "title": "ADMT Developer Documentation To Deployer",
   "content": "Beginning January 1, 2027, a developer of covered automated decision-making technology must disclose to deployers the technology's intended uses, the categories of data used to train it, its known limitations, and instructions for meaningful human review. The duty runs developer-to-deployer, not developer-to-consumer.",
-  "created_by": "https://publedge.org/term/sb26-189-admt-act-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "admt-developer-documentation-to-deployer",
-  "publedge_group": "requirement",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "prospective",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
+  },
+  "source": "https://leg.colorado.gov/bills/sb26-189",
+  "source_locator": "Summary",
+  "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "admt-developer-documentation-to-deployer",
+  "pub:group": "requirement",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "prospective",
+  "pub:search_terms": [
     "admt",
     "developer documentation",
     "training data",
     "known limitations",
     "colorado",
     "sb26-189"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
-  }
+  ]
 }

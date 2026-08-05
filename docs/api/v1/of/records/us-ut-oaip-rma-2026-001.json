@@ -1,24 +1,70 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
-  "id": "us-ut-oaip-rma-2026-001",
+  "pub:id": "us-ut-oaip-rma-2026-001",
   "title": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
   "short_title": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
-  "issuedBy": "https://publedge.org/authority/utah-oaip.json",
+  "issuedBy": [
+    "https://publedge.org/authority/utah-oaip.json"
+  ],
+  "parties": [
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-office-of-artificial-intelligence-policy.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-division-of-professional-licensing.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-pa.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-inc.json"
+  ],
+  "actor_roles": [
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-office-of-artificial-intelligence-policy.json",
+      "role": "issuing_authority"
+    },
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-division-of-professional-licensing.json",
+      "role": "co_signatory_authority"
+    },
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-pa.json",
+      "role": "participant"
+    },
+    {
+      "party": "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-inc.json",
+      "role": "participant"
+    }
+  ],
   "kind": "rma",
+  "normative_force": "contractual",
   "enacted": "2026-03-19",
-  "status": "enacted",
-  "enforcement_status": "routine",
+  "lifecycle_status": "enacted",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
   "hasTerm": [
     "https://publedge.org/term/legion-rma-obligations.json"
   ],
-  "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-ut-oaip-rma-2026-001-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
-  "publedge_status": "enacted",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/utah/oaip/rma/2026-001/"
+  "territorial_scope": [
+    "us-ut"
+  ],
+  "citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+  "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enacted",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/utah/oaip/rma/2026-001/"
 }

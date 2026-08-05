@@ -1,26 +1,47 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
-  "id": "us-ut-legislature-statute-2024-sb149",
+  "pub:id": "us-ut-legislature-statute-2024-sb149",
   "title": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
   "short_title": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
-  "issuedBy": "https://publedge.org/authority/utah-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/utah-legislature.json"
+  ],
   "kind": "statute",
+  "normative_force": "binding",
   "enacted": "2024-03-13",
   "effective": "2024-05-01",
-  "status": "in-force",
-  "enforcement_status": "routine",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "hasTerm": [
     "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
   ],
-  "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
   },
+  "territorial_scope": [
+    "us-ut"
+  ],
   "citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
-  "publedge_status": "enforcing",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/utah/legislature/statute/2024-001/"
+  "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+  "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enforcing",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/utah/legislature/statute/2024-001/"
 }

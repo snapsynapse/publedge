@@ -1,24 +1,45 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json",
-  "id": "us-co-legislature-statute-2025-sb25b-004",
+  "pub:id": "us-co-legislature-statute-2025-sb25b-004",
   "title": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
   "short_title": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
-  "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/colorado-legislature.json"
+  ],
   "kind": "statute",
+  "normative_force": "binding",
   "enacted": "2025-08-28",
   "effective": "2025-08-28",
-  "status": "in-force",
-  "enforcement_status": "routine",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "hasTerm": [],
-  "source": "https://leg.colorado.gov/bills/sb25b-004",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
   },
+  "territorial_scope": [
+    "us-co"
+  ],
   "citation": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025",
-  "publedge_status": "enforcing",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/colorado/legislature/statute/2025-001/"
+  "source": "https://leg.colorado.gov/bills/sb25b-004",
+  "source_citation": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025",
+  "evidence_type": "published-source",
+  "verified": "2026-05-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enforcing",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/colorado/legislature/statute/2025-001/"
 }

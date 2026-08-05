@@ -25,8 +25,8 @@
 #   - Workshop scratchpad (_workshop/)
 
 bundle: publedge
-bundle_version: 0.1.3
-bundle_date: 2026-07-25
+bundle_version: 0.2.0
+bundle_date: 2026-08-04
 description: >
   PubLedge open recordkeeping protocol for fact-specific written
   interpretations between two parties.
@@ -41,6 +41,11 @@ upstream:
     pinned_at: vendor/gist/gistCore.ttl
 
 files:
+  - path: .gitattributes
+    role: config
+    hash: sha256:fbf70ef7fa70580dceb6fcf506e8ae5d43008a8f7f07782939318ab230d23be1
+    note: .gitattributes
+
   - path: data/examples/authorities/cfpb.md
     role: authority
     hash: sha256:65d858460f28a4228125b92d6f62fcb3f11bf12de93e1c2be2a43ac5fe3f867c
@@ -83,12 +88,12 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:aacaf57f844b67cc3c5c44a051a2b2bfa3dc0f1f5c556063b5c439b6b11eea54
+    hash: sha256:24d810bc3e6f9810611b9dbb8d5f69f505c1ff801f4bd13178e0bb28974f2a16
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
     role: ci
-    hash: sha256:203b0218b076e32d7a00459f2818941ff19cb6f8070c9d4b9967a52a7114cd73
+    hash: sha256:b025a1f5d72f270034380cbf181a0782b9b8a9a81cd94d43414b589677cf0079
     note: .github/workflows/verify.yml
 
   - path: .github/ISSUE_TEMPLATE/authority_response.md
@@ -118,17 +123,17 @@ files:
 
   - path: server.json
     role: config
-    hash: sha256:4cddf89b7f62d1bf3b465f12a5d35e9ca41738ef9cfbd75fb1437d7d56fdf2f0
+    hash: sha256:dda92e284029432337bd1cf2902deb82f3de23bbc05407cfada81a7d8f7346f2
     note: server.json
 
   - path: package.json
     role: config
-    hash: sha256:ee091f6c22a13a00a05498336622f83b999d69bbec7b7f0c822ff947cbc29dba
+    hash: sha256:558737986959c5f0067f828274411848e61344c3bc8ab58234d8e0bb50d4dcd6
     note: package.json
 
   - path: package-lock.json
     role: config
-    hash: sha256:79e77929400a6d51575af60a9fbbc5a15943557f41b23fdc81046f8f90de2a41
+    hash: sha256:3bf22e12eb7c1fbea6b48465ac95799c9e6b45045d76edda9507dfb364360d74
     note: package-lock.json
 
   - path: project.yml
@@ -428,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:f196ea733a0aeab51287af7c9ef2aac62ff3f72f824490aa5815de728acf316b
+    hash: sha256:2d76e6ecd230472c76703da629766124961076fac9243d6af400042b725f88ec
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -448,22 +453,22 @@ files:
 
   - path: PROTOCOL.md
     role: protocol
-    hash: sha256:f71412dc40ad3488e19ae88bfeca9f848db239f8ee2d3b209adf4ae5483aaf4f
+    hash: sha256:9a49e7a3ea098c5fa5c1d9f82e00fb16831ed2d8535fb36a3bff850de2c822f0
     note: PROTOCOL.md
 
   - path: README.md
     role: protocol
-    hash: sha256:c6c845789fab913560983e669e4d251a15cadd232cdc675bf69f4ba879022557
+    hash: sha256:aa8b2dedec0b5e9d618c1384ce9824b6e23624b3c29dd87c9ce1258e7bb2a824
     note: README.md
 
-  - path: RELEASE_NOTES-v0.1.3.md
+  - path: RELEASE_NOTES-v0.2.0.md
     role: release-notes
-    hash: sha256:9ce8bee62419df0fa6e9dc51d0c0b26669a520953abcd018fe8ee23e9339bb6c
-    note: RELEASE_NOTES-v0.1.3.md
+    hash: sha256:cf4d49c45890f66a781f269414ffa629cb1d6b9fb6d32c2e244b8bfd27aeab7c
+    note: RELEASE_NOTES-v0.2.0.md
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:f5808718b67ac4257488cd29608325e4b7a654354782b86bb87a43784de6637f
+    hash: sha256:d4f4b3d075ce9332a1be1bcdfc99353d34df96aca3d98ced5ef46be6116aa5a7
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -533,17 +538,17 @@ files:
 
   - path: mcp-server.js
     role: tooling
-    hash: sha256:018e1c33f44728c681ae2a07454d417748d7721321a0944dcacf75f2fe6db392
+    hash: sha256:0698113a8bab9c88a7f3dce73f2bb5aa6786afcffa1b9d931c43b9a2e0aec9c6
     note: mcp-server.js
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:b7a6d5bfc117a4d1576c7820ea12c81fda587ef228b040362e07213e6eea40b9
+    hash: sha256:f022f4f1a11e20658b04acd4d6913fdc84d6481149e6a3f4b7698046c857d932
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:03d4384cb9b4476a926c4c045d2e322541b8ca4ca229b3a3002aa288019ba7c6
+    hash: sha256:88890269d41d9d9a1710ac2e52f33fc7a8ad6d9f537b725525f3c52eeb897bfc
     note: scripts/build.js
 
   - path: scripts/check-links.js
@@ -556,6 +561,11 @@ files:
     hash: sha256:050ecafec52063c2aa7bf9995492f6d37a066cece15400b1b4586288a3d16a7d
     note: scripts/check-of-version.js
 
+  - path: scripts/check-of-fingerprint.js
+    role: tooling
+    hash: sha256:158614b6fe6404a68065080becb52fcd0acf1f3320de9a5dc8e702f11b30120c
+    note: scripts/check-of-fingerprint.js
+
   - path: scripts/eval-authority-response.js
     role: tooling
     hash: sha256:2ab5c581afe0b5acb8ceb8dc341ce0a926087f4953348e761747ae146a0d7fa6
@@ -563,7 +573,7 @@ files:
 
   - path: scripts/eval-clean-build.js
     role: tooling
-    hash: sha256:d8b21ca8372ca63eb1e1d6936fe4a168d72211b9325d0625810fc99858c795b0
+    hash: sha256:2264a39deece78a8d03f21a0dd4445cef9fb00ed0a8fb10ffeb9a4f467b59fdc
     note: scripts/eval-clean-build.js
 
   - path: scripts/eval-content-source.js
@@ -573,7 +583,7 @@ files:
 
   - path: scripts/eval-deterministic-build.js
     role: tooling
-    hash: sha256:df4da7e41e0ccdf1d216214bb90cb20e14bdccf3643d6c144e891572c4119265
+    hash: sha256:b88175b24a60a4bf6ef1c37fa5591b03c080a4444992aa35a9a8e6e462aca067
     note: scripts/eval-deterministic-build.js
 
   - path: scripts/eval-discovery-contract.js
@@ -588,7 +598,7 @@ files:
 
   - path: scripts/eval-generated-tree-parity.js
     role: tooling
-    hash: sha256:6830a97060d360c49f0c81dd5768b7261ffd75684b7dd3360397722dc0bd0de9
+    hash: sha256:9ba17e07af0b26c32ebbe23e1ee04ee2c0b69be9374764bee8d3d535356220dd
     note: scripts/eval-generated-tree-parity.js
 
   - path: scripts/eval-discovery.js
@@ -613,12 +623,12 @@ files:
 
   - path: scripts/eval-manifest-scope.js
     role: tooling
-    hash: sha256:aa159569beddc01d6125226c809bbb556afbfc326c5644460ead68954a12dde6
+    hash: sha256:80a27414ad4d3d74d9f9cf865eb7e37c7813e3c68c70a23548e8b54ad9ea5fb0
     note: scripts/eval-manifest-scope.js
 
   - path: scripts/eval-mcp-contract.js
     role: tooling
-    hash: sha256:ee6cdf34b362265e92dea12b2b744eae38f11ae2abdf6539b5be637f682b3b19
+    hash: sha256:e1d7ff49acfa641a91c2675429b890ad979340a1ef46b1a7cbf0158dcfb24e38
     note: scripts/eval-mcp-contract.js
 
   - path: scripts/eval-mcp-parser-lockstep.js
@@ -633,7 +643,7 @@ files:
 
   - path: scripts/eval-obligation-first-binding.js
     role: tooling
-    hash: sha256:c976be7d7100f1bee7a61b7e3e4297b35dd6038f6574d094bacac53ee9340aab
+    hash: sha256:7b2c80c741afc7ac5c7b97dc732697f6b74813b22eef0a89c5533020d973ddee
     note: scripts/eval-obligation-first-binding.js
 
   - path: scripts/eval-parser.js
@@ -686,10 +696,25 @@ files:
     hash: sha256:dacbffab5a3dd3da3be5a6a38ac4a7636dc3f884d31e753f37260cc7ea85d599
     note: scripts/eval-verification-exit.js
 
+  - path: scripts/eval-scheduled-verification.js
+    role: tooling
+    hash: sha256:4a8b4259927fd567114ae8ec18aed1678100e9e1bfef1b990eb72942505f8f0a
+    note: scripts/eval-scheduled-verification.js
+
+  - path: scripts/eval-workflow-invariants.js
+    role: tooling
+    hash: sha256:6a7bafa33a415c44d8669ec4efbae5e26695224746600b6adcc3b81d1d1ac87f
+    note: scripts/eval-workflow-invariants.js
+
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:82838536f7ecda73220d456268cca5b9bb172167a068ae49f3ee5b9858309717
+    hash: sha256:245ba68a80e079ede31358c212efc2e803c0d7a638e7fb1cc79d39e4bd0a8bc3
     note: scripts/evals.js
+
+  - path: scripts/lib/build-clock.js
+    role: tooling
+    hash: sha256:8dc8582146958ee6a69c66253c2f3a82cacfec3215aaad91c07755b0c5d22ecc
+    note: scripts/lib/build-clock.js
 
   - path: scripts/lib/content.js
     role: tooling
@@ -703,7 +728,7 @@ files:
 
   - path: scripts/lib/eval-kit.js
     role: tooling
-    hash: sha256:3ffca2d4206c628f7bc89b02fd7529492b214af321b6db178a0afc099ed00ab1
+    hash: sha256:33b76ef8d04ebcd8aa084a816aebc753d9ed1d75e0ed28c2a98d45153009098a
     note: scripts/lib/eval-kit.js
 
   - path: scripts/lib/mapping.js
@@ -713,7 +738,7 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:2b07beb1fbb006d4e00f9969d23c5d3960f7004e838d2257af5f0b2bf057089d
+    hash: sha256:d32cabc7a2cf64392384e82271e51987bc2afe0e383843e8c6326faa5d1289f3
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/temporal-status.js
@@ -756,6 +781,11 @@ files:
     hash: sha256:6cd9bb385cde05652feb395b495d00a6ecf2faa8195c58742dba19fa346aae53
     note: scripts/verify.js
 
+  - path: scripts/verify-ci.js
+    role: tooling
+    hash: sha256:99fdd91754d97106b476500f484e6588673a2840b91d484d152bfbc49ccb3b2d
+    note: scripts/verify-ci.js
+
   - path: AGENTS.md
     role: agent-guidance
     hash: sha256:a0d37e6e49812e342c9016a9759fb6b36698372d195a36a976e01ee1f0a6e19b
@@ -763,17 +793,17 @@ files:
 
   - path: CLAUDE.md
     role: agent-guidance
-    hash: sha256:89df2a56ad1b1de45a123e090f0180a3850d3c00f9c01dd22d7b523ae8c5fb70
+    hash: sha256:fd22ce9692b922369d28ded92c71f20fcc5541422d0a579dab06301315440366
     note: CLAUDE.md
 
   - path: PROJECT_CONTEXT.md
     role: agent-guidance
-    hash: sha256:aa18f4b6ca18716d75726f8b9b45437bddc03edde42037c17dcddf95916ea1f8
+    hash: sha256:1df0e86f1537700c3710fa659d603c0858eb90303d5dde469089d8b7389b2c26
     note: PROJECT_CONTEXT.md
 
   - path: about/index.html
     role: site-source
-    hash: sha256:b7ddbdfe3d078c8a5e8ca22d3b4cfd7fb286d99525e2e74ceb6b1d027186849f
+    hash: sha256:258e4bb7d9314a35dea70c5e880c5f1b4564be6920e231b61b34cd4cf87c4eb6
     note: about/index.html
 
   - path: assets/search.js
@@ -803,17 +833,17 @@ files:
 
   - path: reference/index.html
     role: site-source
-    hash: sha256:55dac4b920bd7aa08acb171bc41aabe28e93c2e1896cd480e5cf7ba8bc0d4046
+    hash: sha256:dd9d842aa9f1ef87be7ee09544a50d9c3ad6f6c2c92c620ed7e5f55bed99575a
     note: reference/index.html
 
   - path: reference/prior-art/index.html
     role: site-source
-    hash: sha256:e3830cebe137f52bad993999ab17996488c871106fb1c75a3b786aaf256a8495
+    hash: sha256:a46dd0e90b0e27d24b962f5bb7e70abf1da7cdcbc7bee3a648d39f3698c497ab
     note: reference/prior-art/index.html
 
   - path: reference/registry/index.html
     role: site-source
-    hash: sha256:ff723852c0dffdc9b67b7aee0b81fcbe660f795af3653fb98a3c82296356094b
+    hash: sha256:370b3f31f8bbf7f378730fa677f4e5e5e4e646ff66d2d81c973914970893c33a
     note: reference/registry/index.html
 
   - path: reference/verify/index.html
@@ -823,7 +853,7 @@ files:
 
   - path: reference/vocabulary/index.html
     role: site-source
-    hash: sha256:347ad8ce161ce5c1ce3de2cd1a735ec3d42058d4d885bc366803abf37f40e597
+    hash: sha256:258613f3461a78b3eb2005c64408c4cc92655e8594304c88634be5e9cef58d4e
     note: reference/vocabulary/index.html
 
   - path: vendor/gist/gistCore.ttl

@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
+  "@type": "of:Party",
+  "@id": "https://publedge.org/party/us-ut-oaip-rma-2024-001-elizachat-inc.json",
+  "pub:id": "us-ut-oaip-rma-2024-001-elizachat-inc",
+  "name": "ElizaChat, Inc.",
+  "party_kind": "organization",
+  "entity": {
+    "@type": "gist:Organization",
+    "name": "ElizaChat, Inc."
+  },
+  "roles": [
+    "participant"
+  ],
+  "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/"
+}

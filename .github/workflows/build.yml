@@ -13,9 +13,17 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      CHECK_OF_REQUIRED: "1"
+      OBLIGATION_FIRST_DIR: ${{ github.workspace }}/obligation-first
 
     steps:
       - uses: actions/checkout@v5
+
+      - uses: actions/checkout@v5
+        with:
+          repository: snapsynapse/obligation-first
+          path: obligation-first
 
       - uses: actions/setup-node@v5
         with:
@@ -24,34 +32,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Verify content hashes
-        run: ./scripts/validate-hashes.sh
-
-      - name: Validate cross-references
-        run: node scripts/validate.js
-
-      - name: Validate instrument frontmatter schema
-        run: npm run eval:instrument-schema
-
-      - name: Validate obligation frontmatter schema
-        run: npm run eval:obligation-schema
-
-      - name: Build site
-        run: npm run build
-
-      - uses: actions/checkout@v5
-        with:
-          repository: snapsynapse/obligation-first
-          path: obligation-first
-
       - name: Install Obligation-First dependencies
         run: npm ci --prefix obligation-first
 
-      - name: Validate Obligation-First binding
-        run: OBLIGATION_FIRST_DIR="$PWD/obligation-first" npm run validate:of
-
-      - name: Run conformance eval suite
-        run: npm run evals
+      - name: Run canonical CI verification
+        run: npm run verify:ci
 
   a11y:
     runs-on: ubuntu-latest

@@ -1,25 +1,42 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Permission",
   "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json",
-  "id": "dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis",
+  "pub:id": "dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis",
   "title": "Dentacor — Hygienist + AI Concurrence Diagnosis",
   "content": "During the initial Dentacor RMA term, licensed Utah dental hygienists employed by Dentacor could diagnose periodontal disease, complete edentulism, and complete anodontia using an AI-assisted radiograph diagnostic tool in place of general dentist supervision. The permission required concurrence of both the hygienist and the AI system and expired with the initial mitigation period on May 31, 2026; no public extension instrument was located as of July 25, 2026.",
-  "created_by": "https://publedge.org/term/dentacor-rma-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "dentacor-hygienist-ai-concurrence-diagnosis",
-  "publedge_group": "permission",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "expired",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/dentacor-rma-obligations.json"
+  ],
+  "lifecycle_status": "sunset",
+  "operative_status": "inactive",
+  "enforcement_status": "not-enforceable",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+  "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "dentacor-hygienist-ai-concurrence-diagnosis",
+  "pub:group": "permission",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "expired",
+  "pub:search_terms": [
     "dentacor",
     "hygienist",
     "radiograph",
     "diagnosis",
     "ai concurrence"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

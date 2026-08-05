@@ -5,7 +5,6 @@ const fs = require('fs');
 const path = require('path');
 const {
     collectAllFiles,
-    normalizeGeneratedContent,
     withTempBuild,
     reportFailures
 } = require('./lib/eval-kit');
@@ -26,11 +25,11 @@ withTempBuild(firstDir => {
         }
         for (const relPath of firstSet) {
             if (!secondSet.has(relPath)) continue;
-            const first = normalizeGeneratedContent(relPath, fs.readFileSync(path.join(firstDir, relPath), 'utf-8'));
-            const second = normalizeGeneratedContent(relPath, fs.readFileSync(path.join(secondDir, relPath), 'utf-8'));
-            if (first !== second) failures.push(`non-deterministic output for ${relPath}`);
+            const first = fs.readFileSync(path.join(firstDir, relPath));
+            const second = fs.readFileSync(path.join(secondDir, relPath));
+            if (!first.equals(second)) failures.push(`non-deterministic output for ${relPath}`);
         }
-    });
-});
+    }, { TZ: 'America/Denver' });
+}, { TZ: 'UTC' });
 
 reportFailures('eval-deterministic-build', failures);

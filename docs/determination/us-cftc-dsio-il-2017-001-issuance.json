@@ -1,17 +1,32 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-cftc-dsio-il-2017-001-issuance.json",
-  "id": "us-cftc-dsio-il-2017-001-issuance",
+  "pub:id": "us-cftc-dsio-il-2017-001-issuance",
   "issued_date": "2017-12-11",
-  "issuedBy": "https://publedge.org/authority/cftc-dsio.json",
+  "issuedBy": [
+    "https://publedge.org/authority/cftc-dsio.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
   },
   "decides": [],
   "disposition": "issued",
-  "target_instrument": "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
+  "resulting_instrument": [
+    "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json"
+  ],
   "notes": "Issuance record for CFTC Letter 17-65 — CTA Registration Exemption Survives MiFID II Fee Unbundling.",
-  "source": "https://cftc.gov/csl/17-65/download"
+  "source": "https://cftc.gov/csl/17-65/download",
+  "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/"
 }

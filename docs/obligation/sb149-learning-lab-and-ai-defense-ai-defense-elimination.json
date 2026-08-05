@@ -1,26 +1,43 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Restriction",
   "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json",
-  "id": "sb149-learning-lab-and-ai-defense-ai-defense-elimination",
+  "pub:id": "sb149-learning-lab-and-ai-defense-ai-defense-elimination",
   "title": "GenAI Is Not A Defense — Civil And Criminal",
   "content": "Utah removed \"the AI did it\" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror (§13-75-102, SB 226, effective 2025-05-07) together eliminate the doctrine across Utah consumer-protection and criminal law.",
-  "created_by": "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
-  "anchors": [],
-  "publedge_primary_id": "ai-defense-elimination",
-  "publedge_group": "restriction",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+  "source_locator": "Summary",
+  "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "ai-defense-elimination",
+  "pub:group": "restriction",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "ai defense",
     "liability",
     "civil",
     "criminal",
     "sb149",
     "sb226"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

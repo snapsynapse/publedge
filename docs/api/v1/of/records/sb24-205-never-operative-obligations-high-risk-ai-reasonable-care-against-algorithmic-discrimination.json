@@ -1,17 +1,38 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Requirement",
   "@id": "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json",
-  "id": "sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+  "pub:id": "sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination",
   "title": "High-Risk AI Reasonable Care Against Algorithmic Discrimination",
   "content": "Developers and deployers of high-risk artificial intelligence systems would have been required to use reasonable care to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.",
-  "created_by": "https://publedge.org/term/sb24-205-never-operative-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
-  "publedge_group": "requirement",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "never-operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+  ],
+  "lifecycle_status": "inactive",
+  "operative_status": "inactive",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
+  },
+  "source": "https://leg.colorado.gov/bills/sb24-205",
+  "source_locator": "Summary",
+  "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+  "pub:group": "requirement",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "never-operative",
+  "pub:search_terms": [
     "high-risk artificial intelligence",
     "reasonable care",
     "algorithmic discrimination",
@@ -19,9 +40,5 @@
     "deployer",
     "colorado",
     "sb24-205"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
-  }
+  ]
 }

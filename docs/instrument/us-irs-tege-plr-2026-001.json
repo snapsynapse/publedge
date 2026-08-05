@@ -1,26 +1,47 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
-  "id": "us-irs-tege-plr-2026-001",
+  "pub:id": "us-irs-tege-plr-2026-001",
   "title": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
   "short_title": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
-  "issuedBy": "https://publedge.org/authority/irs-tege.json",
+  "issuedBy": [
+    "https://publedge.org/authority/irs-tege.json"
+  ],
   "kind": "private-letter-ruling",
+  "normative_force": "unknown",
   "enacted": "2026-01-12",
   "effective": "2026-01-12",
-  "status": "in-force",
-  "enforcement_status": "routine",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "hasTerm": [
     "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json"
   ],
-  "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+  "embodies_determination": [
+    "https://publedge.org/determination/us-irs-tege-plr-2026-001-issuance.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
   },
+  "territorial_scope": [
+    "us"
+  ],
   "citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
-  "publedge_status": "enforcing",
-  "publedge_editorial_status": "published",
-  "canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/"
+  "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+  "source_citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:status": "enforcing",
+  "pub:editorial_status": "published",
+  "pub:canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/"
 }

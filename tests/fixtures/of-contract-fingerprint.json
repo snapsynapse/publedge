@@ -1,0 +1,1006 @@
+{
+  "actor_roles": {
+    "roles": {
+      "co_signatory_authority": 4,
+      "interpreting_authority": 1,
+      "issuing_authority": 4,
+      "participant": 5,
+      "requesting_party": 1
+    }
+  },
+  "adopter": "https://publedge.org/",
+  "applies_to": "obligation-first >=0.6.0 <0.7.0",
+  "contexts": {
+    "[\"https://obligationfirst.org/v1/context.jsonld\",{\"pub\":\"https://publedge.org/vocab/\"}]": 130
+  },
+  "field_coverage": {
+    "of:Authority": {
+      "@context": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "@id": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "@type": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "asserted_by_adopter": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "evidence_type": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "jurisdiction": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "organization": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "pub:id": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "sameAs": {
+        "missing": 4,
+        "populated": 4,
+        "present": 4
+      },
+      "source": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "territorial_scope": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      },
+      "verified": {
+        "missing": 0,
+        "populated": 8,
+        "present": 8
+      }
+    },
+    "of:Determination": {
+      "@context": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "@id": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "@type": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "asserted_by_adopter": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "decides": {
+        "empty_array": 17,
+        "missing": 0,
+        "present": 17
+      },
+      "disposition": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "evidence_type": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "issued_date": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "issuedBy": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "jurisdiction": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "notes": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "pub:id": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "resulting_instrument": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "source": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "source_citation": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      },
+      "verified": {
+        "missing": 0,
+        "populated": 17,
+        "present": 17
+      }
+    },
+    "of:Instrument": {
+      "@context": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "@id": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "@type": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "actor_roles": {
+        "missing": 13,
+        "populated": 5,
+        "present": 5
+      },
+      "asserted_by_adopter": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "citation": {
+        "missing": 1,
+        "populated": 17,
+        "present": 17
+      },
+      "effective": {
+        "missing": 2,
+        "populated": 16,
+        "present": 16
+      },
+      "embodies_determination": {
+        "missing": 1,
+        "populated": 17,
+        "present": 17
+      },
+      "enacted": {
+        "missing": 1,
+        "populated": 17,
+        "present": 17
+      },
+      "enforcement_status": {
+        "explicit_unknown": 2,
+        "missing": 0,
+        "populated": 16,
+        "present": 18
+      },
+      "evidence_type": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "hasTerm": {
+        "empty_array": 2,
+        "missing": 0,
+        "populated": 16,
+        "present": 18
+      },
+      "issuedBy": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "jurisdiction": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "kind": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "lifecycle_status": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "normative_force": {
+        "explicit_unknown": 2,
+        "missing": 0,
+        "populated": 16,
+        "present": 18
+      },
+      "operative_status": {
+        "explicit_unknown": 2,
+        "missing": 0,
+        "populated": 16,
+        "present": 18
+      },
+      "parties": {
+        "missing": 13,
+        "populated": 5,
+        "present": 5
+      },
+      "pub:canonical_url": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "pub:editorial_status": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "pub:id": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "pub:status": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "short_title": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "source": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "source_citation": {
+        "missing": 1,
+        "populated": 17,
+        "present": 17
+      },
+      "territorial_scope": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "title": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      },
+      "verified": {
+        "missing": 0,
+        "populated": 18,
+        "present": 18
+      }
+    },
+    "of:Party": {
+      "@context": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "@id": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "@type": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "asserted_by_adopter": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "entity": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "evidence_type": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "name": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "party_kind": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "pub:id": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "roles": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "source": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      },
+      "source_citation": {
+        "missing": 2,
+        "populated": 13,
+        "present": 13
+      },
+      "verified": {
+        "missing": 0,
+        "populated": 15,
+        "present": 15
+      }
+    },
+    "of:Permission": {
+      "@context": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "@id": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "@type": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "asserted_by_adopter": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "content": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "created_by": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "enforcement_status": {
+        "explicit_unknown": 8,
+        "missing": 0,
+        "populated": 4,
+        "present": 12
+      },
+      "evidence_type": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "jurisdiction": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "lifecycle_status": {
+        "explicit_unknown": 10,
+        "missing": 0,
+        "populated": 2,
+        "present": 12
+      },
+      "operative_status": {
+        "explicit_unknown": 10,
+        "missing": 0,
+        "populated": 2,
+        "present": 12
+      },
+      "pub:group": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "pub:id": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "pub:lifecycle_status": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "pub:primary_id": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "pub:search_terms": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "pub:status": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "source": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "source_citation": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "source_locator": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "title": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      },
+      "verified": {
+        "missing": 0,
+        "populated": 12,
+        "present": 12
+      }
+    },
+    "of:Requirement": {
+      "@context": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "@id": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "@type": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "anchors": {
+        "missing": 34,
+        "populated": 1,
+        "present": 1
+      },
+      "asserted_by_adopter": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "content": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "created_by": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "enforcement_status": {
+        "explicit_unknown": 31,
+        "missing": 0,
+        "populated": 4,
+        "present": 35
+      },
+      "evidence_type": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "jurisdiction": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "lifecycle_status": {
+        "explicit_unknown": 28,
+        "missing": 0,
+        "populated": 7,
+        "present": 35
+      },
+      "operative_status": {
+        "explicit_unknown": 28,
+        "missing": 0,
+        "populated": 7,
+        "present": 35
+      },
+      "pub:group": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "pub:id": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "pub:lifecycle_status": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "pub:primary_id": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "pub:search_terms": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "pub:status": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "source": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "source_citation": {
+        "missing": 1,
+        "populated": 34,
+        "present": 34
+      },
+      "source_locator": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "title": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      },
+      "verified": {
+        "missing": 0,
+        "populated": 35,
+        "present": 35
+      }
+    },
+    "of:Restriction": {
+      "@context": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "@id": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "@type": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "asserted_by_adopter": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "content": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "created_by": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "enforcement_status": {
+        "explicit_unknown": 8,
+        "missing": 0,
+        "populated": 1,
+        "present": 9
+      },
+      "evidence_type": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "jurisdiction": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "lifecycle_status": {
+        "explicit_unknown": 9,
+        "missing": 0,
+        "present": 9
+      },
+      "operative_status": {
+        "explicit_unknown": 9,
+        "missing": 0,
+        "present": 9
+      },
+      "pub:group": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "pub:id": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "pub:lifecycle_status": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "pub:primary_id": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "pub:search_terms": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "pub:status": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "source": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "source_citation": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "source_locator": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "title": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      },
+      "verified": {
+        "missing": 0,
+        "populated": 9,
+        "present": 9
+      }
+    },
+    "of:Term": {
+      "@context": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "@id": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "@type": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "anchors": {
+        "missing": 15,
+        "populated": 1,
+        "present": 1
+      },
+      "asserted_by_adopter": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "creates": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "effective": {
+        "missing": 15,
+        "populated": 1,
+        "present": 1
+      },
+      "enforcement_status": {
+        "explicit_unknown": 2,
+        "missing": 0,
+        "populated": 14,
+        "present": 16
+      },
+      "evidence_type": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "jurisdiction": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "lifecycle_status": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "operative_status": {
+        "explicit_unknown": 2,
+        "missing": 0,
+        "populated": 14,
+        "present": 16
+      },
+      "parent_instrument": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "pub:id": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "pub:source_file": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "pub:source_heading": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "section": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "source": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "source_citation": {
+        "missing": 1,
+        "populated": 15,
+        "present": 15
+      },
+      "source_locator": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      },
+      "summary": {
+        "missing": 1,
+        "populated": 15,
+        "present": 15
+      },
+      "text": {
+        "missing": 15,
+        "populated": 1,
+        "present": 1
+      },
+      "verified": {
+        "missing": 0,
+        "populated": 16,
+        "present": 16
+      }
+    }
+  },
+  "fingerprint_version": 1,
+  "id_inventory": {
+    "of:Authority": {
+      "count": 8,
+      "file_names_sha256": "2da3163d0431879719efdf7eda3844d9c696bbc4d67c01c96e79516d3d4582e0",
+      "ids_sha256": "729307e6735c0bfde4bfc089f57051420279e9a1062505e43188f3ae37ec8ced"
+    },
+    "of:Determination": {
+      "count": 17,
+      "file_names_sha256": "e11d1be40efc57b4abba2d1d8e84914bb57056a8269e4d0859ab4a4d8e9cb63f",
+      "ids_sha256": "3b35783563053cb8bede16fc98cdb125c87fd560d8b2f89d2293ec2aa6d6a3bc"
+    },
+    "of:Instrument": {
+      "count": 18,
+      "file_names_sha256": "196423d5a5e02e3006156f4439a05a138a7b4ba56e346bfff35c35cd21461dca",
+      "ids_sha256": "fb35b3d51e946d456b41edce771e2febcda19e821426234ec4eb323bd79c4ea5"
+    },
+    "of:Party": {
+      "count": 15,
+      "file_names_sha256": "85ee23f0337672fa30086f7e027a48633b22f2f82b5bf05c01fa2e55e0df75f0",
+      "ids_sha256": "111415c71db1ec23f499f9378b4029015e8580fa231497729c99b6180186b1a1"
+    },
+    "of:Permission": {
+      "count": 12,
+      "file_names_sha256": "7aa2645736dfd4c8ddc1de8da8bec3d7b2d0954d9005a5a71c720e836560c218",
+      "ids_sha256": "4d8f92389261b37e9c95072f94c3573cac0114963e6ee093b84af4ad031ebbd6"
+    },
+    "of:Requirement": {
+      "count": 35,
+      "file_names_sha256": "22c87410fcd85ef7b1940a776d4f9b77536fd5c182b4edbd33889f26307613a6",
+      "ids_sha256": "8e9d68973d46be284248f838ecd2527d39d7225b5dbcf6906a3df77a46f2f493"
+    },
+    "of:Restriction": {
+      "count": 9,
+      "file_names_sha256": "0b7b033379858c3092efa4da71ea55b194e62f9aeb4e82f7325e2d6bfedb8848",
+      "ids_sha256": "4c0edb94fe599e15b563e0c5c3629ceac9e6e11a3ddcbb5aa4d1e3c3bf36b771"
+    },
+    "of:Term": {
+      "count": 16,
+      "file_names_sha256": "83dee3d8402d6981e1fc3a9428ab3dae42f902ffe144170e5f7fa5446cc206ee",
+      "ids_sha256": "aaa1e75a17970930b7952e6bf83bfafbd6881e32c23d2d654afdfe33be340feb"
+    }
+  },
+  "jurisdiction_shapes": {
+    "missing": 15,
+    "object:of:Jurisdiction": 115
+  },
+  "naming_profile_entities": [
+    "Authority",
+    "Determination",
+    "Instrument",
+    "Obligation",
+    "Party",
+    "Term"
+  ],
+  "naming_profile_version": "2.0.0",
+  "records": {
+    "by_type": {
+      "of:Authority": 8,
+      "of:Determination": 17,
+      "of:Instrument": 18,
+      "of:Party": 15,
+      "of:Permission": 12,
+      "of:Requirement": 35,
+      "of:Restriction": 9,
+      "of:Term": 16
+    },
+    "total": 130
+  },
+  "relations": {
+    "anchors": {
+      "edges": 2,
+      "sources": 2,
+      "target_hosts": {
+        "everyailaw.com": 2
+      }
+    },
+    "created_by": {
+      "edges": 56,
+      "sources": 56,
+      "target_hosts": {
+        "publedge.org": 56
+      }
+    },
+    "creates": {
+      "edges": 56,
+      "sources": 16,
+      "target_hosts": {
+        "publedge.org": 56
+      }
+    },
+    "embodies_determination": {
+      "edges": 17,
+      "sources": 17,
+      "target_hosts": {
+        "publedge.org": 17
+      }
+    },
+    "hasTerm": {
+      "edges": 16,
+      "sources": 16,
+      "target_hosts": {
+        "publedge.org": 16
+      }
+    },
+    "issuedBy": {
+      "edges": 35,
+      "sources": 35,
+      "target_hosts": {
+        "publedge.org": 35
+      }
+    },
+    "parent_instrument": {
+      "edges": 16,
+      "sources": 16,
+      "target_hosts": {
+        "publedge.org": 16
+      }
+    },
+    "parties": {
+      "edges": 15,
+      "sources": 5,
+      "target_hosts": {
+        "publedge.org": 15
+      }
+    },
+    "resulting_instrument": {
+      "edges": 17,
+      "sources": 17,
+      "target_hosts": {
+        "publedge.org": 17
+      }
+    },
+    "sameAs": {
+      "edges": 4,
+      "sources": 4,
+      "target_hosts": {
+        "wikidata.org": 4
+      }
+    }
+  },
+  "source_identity": {
+    "pub:id": {
+      "records": 130,
+      "unique_values": 130,
+      "values_sha256": "f192987327c581a973d70a26a11bdc4e226037775447b6415b0a5ecec91a4c60"
+    },
+    "pub:primary_id": {
+      "records": 56,
+      "unique_values": 35,
+      "values_sha256": "1041bbf741d6797b2f007af7f2112ab82d6efc4bc038df62dceacee91221f535"
+    }
+  },
+  "tombstones": {
+    "count": 0,
+    "former_types": {},
+    "replacement_edges": 0,
+    "replacements_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+}

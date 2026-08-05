@@ -1,17 +1,32 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Determination",
   "@id": "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json",
-  "id": "us-co-legislature-statute-2024-sb24-205-issuance",
+  "pub:id": "us-co-legislature-statute-2024-sb24-205-issuance",
   "issued_date": "2024-05-17",
-  "issuedBy": "https://publedge.org/authority/colorado-legislature.json",
+  "issuedBy": [
+    "https://publedge.org/authority/colorado-legislature.json"
+  ],
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-co"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
   },
   "decides": [],
   "disposition": "issued",
-  "target_instrument": "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
+  "resulting_instrument": [
+    "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json"
+  ],
   "notes": "Issuance record for Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems.",
-  "source": "https://leg.colorado.gov/bills/sb24-205"
+  "source": "https://leg.colorado.gov/bills/sb24-205",
+  "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+  "evidence_type": "published-source",
+  "verified": "2026-07-25",
+  "asserted_by_adopter": "https://publedge.org/"
 }

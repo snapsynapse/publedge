@@ -1,10 +1,18 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "@type": "of:Term",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
+  "@type": [
+    "of:Term",
+    "gist:ContractTerm"
+  ],
   "@id": "https://publedge.org/term/elizachat-rma-obligations.json",
-  "id": "elizachat-rma-obligations",
-  "text": "Obligations summary (Section VI and Schedule A §XV–XVI)",
-  "section": "",
+  "pub:id": "elizachat-rma-obligations",
+  "summary": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+  "section": "Obligations summary (Section VI and Schedule A §XV–XVI)",
   "parent_instrument": "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
   "creates": [
     "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json",
@@ -16,11 +24,21 @@
     "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
     "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json"
   ],
-  "anchors": [],
-  "source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)",
-  "source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+  "lifecycle_status": "sunset",
+  "operative_status": "inactive",
+  "enforcement_status": "not-enforceable",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+  "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)",
+  "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md"
 }

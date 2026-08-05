@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
+  "@type": "of:Party",
+  "@id": "https://publedge.org/party/us-ut-oaip-jia-2026-001-utah-oaip.json",
+  "pub:id": "us-ut-oaip-jia-2026-001-utah-oaip",
+  "name": "Utah OAIP",
+  "party_kind": "organization",
+  "entity": {
+    "@type": "gist:Organization",
+    "name": "Utah OAIP"
+  },
+  "roles": [
+    "interpreting_authority"
+  ],
+  "source": "https://commerce.utah.gov/ai/learning-lab/",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/"
+}

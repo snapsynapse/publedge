@@ -1,19 +1,34 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Term",
   "@id": "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
-  "id": "irs-tege-2026-001-501c3-adverse",
-  "text": "Holding",
-  "section": "",
+  "pub:id": "irs-tege-2026-001-501c3-adverse",
+  "summary": "Holding",
+  "section": "Holding",
   "parent_instrument": "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
   "creates": [
     "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json"
   ],
-  "anchors": [],
-  "source_heading": "Holding",
-  "source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
+  },
+  "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+  "source_locator": "Holding",
+  "source_citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Holding",
+  "pub:source_file": "data/examples/instruments/us-irs-tege-plr-2026-001.md"
 }

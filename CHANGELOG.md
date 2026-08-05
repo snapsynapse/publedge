@@ -8,8 +8,15 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-08-04
+
+Obligation-First v0.6 adopter and drift-prevention release. This is a minor release because the pre-1.0 public projection contract changes materially.
+
 ### Changed
 
+- Migrated all 130 published Obligation-First records to the released v0.6.0 schema and naming profile, including explicit authority roles, lifecycle and enforcement posture, editorial-versus-source text, jurisdiction shapes, stable native identifiers, and relation semantics.
+- Added explicit `of:Party` records for agreement participants and kept those identities distinct from government Authorities.
+- Corrected superseded and sunset content so it no longer claims routine enforcement without a separately modeled residual obligation.
 - Clarified that PubLedge `of:Determination` records represent evidenced administrative issuance, not adjudication. Issuance records now require an official source and enacted date, carry the target instrument's jurisdiction, decide no allegations, and are omitted for proposed or draft instruments.
 - Removed issuance, enacted, and effective assertions from the illustrative Utah chatbot JIA while it remains a proposed draft; its drafting date and underlying statutory effective date remain documented separately.
 - Metadata completeness warnings no longer recommend enacted or effective dates for proposed and draft instruments.
@@ -23,6 +30,9 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 ### Added
 
+- A canonical fail-closed CI entrypoint covering source validation, build output, Obligation-First validation, reviewed contract fingerprints, manifest scope, and patch cleanliness.
+- Raw byte-determinism and generated-tree parity checks across UTC and America/Denver, backed by a shared build clock.
+- Scheduled-verification and workflow-invariant evals that prevent partial CI paths from bypassing the canonical gate.
 - Temporal-status evaluation for future effective dates, elapsed RMA terms, and enacted records that pass their effective date.
 - Temporal-status contract fixtures plus term-order, expiration-evidence, and supersession-link invariants.
 - Expanded public-claims evaluation deriving release versions and registry totals from repository data.
@@ -172,7 +182,8 @@ Security hardening and release-readiness patch.
 - CI: pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap on every push and pull request; docs/ sync check; hash validation
 - `.gitignore` aligned to portfolio hygiene baseline (`.env.*` glob, `__pycache__/`, `*.pyc`, `dist/`, `build/`, `.venv/`, `venv/`)
 
-[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/snapsynapse/publedge/compare/v0.1.3...v0.2.0
 [0.1.3]: https://github.com/snapsynapse/publedge/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/snapsynapse/publedge/compare/v0.1.1-pre...v0.1.2
 [0.1.1]: https://npmjs.com/package/publedge/v/0.1.1

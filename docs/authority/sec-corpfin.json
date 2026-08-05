@@ -1,23 +1,31 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Authority",
   "@id": "https://publedge.org/authority/sec-corpfin.json",
-  "id": "sec-corpfin",
+  "pub:id": "sec-corpfin",
   "organization": {
     "@type": "gist:GovernmentOrganization",
     "name": "SEC Division of Corporation Finance"
   },
-  "authority_basis": {
-    "kind": "statutory",
-    "instrument_ref": "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json"
-  },
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us"
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us"
+    ]
   },
-  "website": "https://www.sec.gov/divisions/corpfin",
-  "url_segment": "sec-corpfin",
+  "territorial_scope": [
+    "us"
+  ],
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q28945713"
-  ]
+    "https://wikidata.org/wiki/Q28945713"
+  ],
+  "source": "https://www.sec.gov/divisions/corpfin",
+  "evidence_type": "published-source",
+  "verified": "2026-04-19",
+  "asserted_by_adopter": "https://publedge.org/"
 }

@@ -1,21 +1,36 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Term",
   "@id": "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
-  "id": "sb226-disclosure-and-ai-defense",
-  "text": "Summary",
-  "section": "",
+  "pub:id": "sb226-disclosure-and-ai-defense",
+  "summary": "Summary",
+  "section": "Summary",
   "parent_instrument": "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
   "creates": [
     "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
     "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
     "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json"
   ],
-  "anchors": [],
-  "source_heading": "Summary",
-  "source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+  "lifecycle_status": "in-force",
+  "operative_status": "operative",
+  "enforcement_status": "enforceable",
   "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+  "source_locator": "Summary",
+  "source_citation": "Utah SB 226 (2025 General Session)",
+  "evidence_type": "published-source",
+  "verified": "2026-06-04",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:source_heading": "Summary",
+  "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md"
 }

@@ -1,25 +1,42 @@
 {
-  "@context": "https://obligationfirst.org/v1/context.jsonld",
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "pub": "https://publedge.org/vocab/"
+    }
+  ],
   "@type": "of:Requirement",
   "@id": "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json",
-  "id": "legion-rma-obligations-telehealth-compliance-per-proposal",
+  "pub:id": "legion-rma-obligations-telehealth-compliance-per-proposal",
   "title": "Telehealth Compliance Anchored To Participant Proposal",
   "content": "A participant operating AI-assisted prescription renewal must adhere to Utah's telehealth provider requirements in §26B-4-704, with specific subsections deemed satisfied by following the patient-journey and escalation protocols described in the participant's Proposal (Schedule B). Certain subsections (e.g., the patient-records portability default) are inapplicable; others are substituted by Proposal-section conformance.",
-  "created_by": "https://publedge.org/term/legion-rma-obligations.json",
-  "anchors": [],
-  "publedge_primary_id": "telehealth-compliance-per-proposal",
-  "publedge_group": "requirement",
-  "publedge_status": "draft",
-  "publedge_lifecycle_status": "operative",
-  "search_terms": [
+  "created_by": [
+    "https://publedge.org/term/legion-rma-obligations.json"
+  ],
+  "lifecycle_status": "unknown",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-ut"
+    ]
+  },
+  "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+  "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
+  "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+  "evidence_type": "published-source",
+  "verified": "2026-04-21",
+  "asserted_by_adopter": "https://publedge.org/",
+  "pub:primary_id": "telehealth-compliance-per-proposal",
+  "pub:group": "requirement",
+  "pub:status": "draft",
+  "pub:lifecycle_status": "operative",
+  "pub:search_terms": [
     "telehealth",
     "26b-4-704",
     "proposal compliance",
     "doctronic",
     "legion"
-  ],
-  "jurisdiction": {
-    "@type": "gist:Jurisdiction",
-    "ref": "us-ut"
-  }
+  ]
 }

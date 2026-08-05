@@ -1,8 +1,8 @@
 {
   "@context": "https://obligationfirst.org/v1/context.jsonld",
   "@type": "of:NamingProfile",
-  "profileVersion": "1.0.0",
-  "appliesTo": "obligation-first >=0.4.0 <0.6.0",
+  "profileVersion": "2.0.0",
+  "appliesTo": "obligation-first >=0.6.0 <0.7.0",
   "adopter": "https://publedge.org/",
   "entities": {
     "Authority": {
@@ -12,6 +12,12 @@
       "crosswalks": [
         "sameAs"
       ]
+    },
+    "Party": {
+      "void:uriSpace": "https://publedge.org/party/",
+      "void:uriRegexPattern": "^https://publedge\\.org/party/[a-z0-9-]+\\.json$",
+      "uriTemplate": "https://publedge.org/party/{slug}.json",
+      "crosswalks": []
     },
     "Instrument": {
       "void:uriSpace": "https://publedge.org/instrument/",
