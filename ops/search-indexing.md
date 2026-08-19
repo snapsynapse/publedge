@@ -64,7 +64,9 @@ For a creator-profile or external-platform property, replace the website validat
 
 Initial evidence: [Google Search Console audit, 2026-08-18](search/GoogleSearchConsole/2026-08-18/audit.md).
 
-At the initial console inspection, the property was processing data and had no submitted sitemap. The homepage URL inspection reported indexed and HTTPS-valid. Search appearance detected three invalid Dataset items on the homepage because each lacked a description; license and creator were also recommended. Console mutation remains gated on a clean production deployment.
+At the initial console inspection, the property was processing data and had no submitted sitemap. The homepage URL inspection reported indexed and HTTPS-valid. Search appearance detected three invalid Dataset items on the homepage because each lacked a description; license and creator were also recommended.
+
+After deployment, Google's live test detected all three Dataset items as valid. The sitemap index processed successfully; six child sitemaps reported `Success` with 150 discovered URLs, while the 10-URL statutes child remained in transient `Couldn't fetch` state despite passing independent production validation. The property-level Dataset report is still processing and exposes no issue row or validation control.
 
 ## Console action ledger
 
@@ -72,5 +74,9 @@ Read this table before opening the console. Add only observed actions and confir
 
 | Provider and property | Action and target | Accepted at | Confirmation | Result class | Repeat policy | Next review |
 |---|---|---|---|---|---|---|
+| Google Search Console, `sc-domain:publedge.org` | Submit `https://publedge.org/sitemap.xml` | 2026-08-18 | Sitemap index processed successfully; six child sitemaps `Success`; 150 URLs discovered; statutes child pending fetch | Accepted and partially processed | Do not repeat while accepted | Review statutes child after provider refresh |
+| Google Search Console, `sc-domain:publedge.org` | Live-test homepage Dataset markup | 2026-08-18 | Three valid items detected | Confirmed live | Do not repeat without a material change | Review indexed report after recrawl |
+| Google Search Console, `sc-domain:publedge.org` | Request recrawl of `https://publedge.org/` | Rejected 2026-08-18 | Daily quota exceeded | Rejected, not accepted | Do not retry the same day | Retry once after quota resets if the indexed copy is still stale |
+| Google Search Console, `sc-domain:publedge.org` | Start Dataset issue validation | Not available 2026-08-18 | Report still processing; no issue row or validation control | Provider-lagged | Do not invent or repeat an unavailable action | Review when report populates |
 
 Keep rejected attempts and unknown outcomes distinct from accepted actions. Do not repeat an accepted action merely because the provider report remains stale.

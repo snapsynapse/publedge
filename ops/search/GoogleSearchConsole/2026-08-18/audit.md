@@ -36,11 +36,33 @@ The homepage exposed three invalid `Dataset` items:
 
 The authoritative generator was repaired to emit all three fields for every Dataset. Validation must start only after that output is deployed.
 
+After deployment, the Search Console live test completed at 2026-08-18 21:11 local time and reported `3 valid items detected`. The indexed copy still showed the earlier three invalid items, which is expected until Google recrawls it.
+
+The property-level Dataset report remained in `Processing data, please check again in a day or so` state. It exposed no issue row or `Validate fix` control, so issue-group validation could not be started.
+
+## Sitemap processing
+
+The sitemap index was accepted and processed successfully on 2026-08-18.
+
+| Child sitemap | Status | Discovered URLs |
+|---|---|---:|
+| `sitemap-authorities.xml` | Success | 1 |
+| `sitemap-bridges.xml` | Success | 65 |
+| `sitemap-meta.xml` | Success | 62 |
+| `sitemap-records.xml` | Success | 10 |
+| `sitemap-reference.xml` | Success | 6 |
+| `sitemap-templates.xml` | Success | 6 |
+| `sitemap-statutes.xml` | Couldn't fetch | 0 reported; 10 URLs independently validated live |
+
+The remaining child status is treated as provider processing latency, not a site defect. The full sitemap inventory passed the repository and production contracts before submission.
+
 ## Console action ledger
 
 | Action and target | Accepted at | Confirmation | Result class | Repeat policy |
 |---|---|---|---|---|
-| Submit `https://publedge.org/sitemap.xml` | Pending production gate | Not yet submitted | Pending | Submit once after production validation passes |
-| Validate Dataset issue group | Pending production gate | Not yet started | Pending | Start once after corrected JSON-LD is live |
+| Submit `https://publedge.org/sitemap.xml` | 2026-08-18 | Sitemap index processed successfully; six child sitemaps `Success`; 150 URLs discovered; statutes child pending fetch | Accepted and partially processed | Do not repeat while accepted |
+| Live-test corrected Dataset markup | 2026-08-18 | Three valid items detected | Confirmed live | Do not repeat without a material change |
+| Request recrawl of `https://publedge.org/` | Rejected 2026-08-18 | Daily quota exceeded | Rejected, not accepted | Do not retry the same day |
+| Validate Dataset issue group | Not available 2026-08-18 | Report still processing; no issue row or validation control | Provider-lagged | Review when the report populates |
 
 Provider processing latency is not classified as a site defect. Later observations must be added without replacing this dated baseline.
