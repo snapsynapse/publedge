@@ -10,6 +10,8 @@ const gates = [
     [npm, ['run', 'eval:instrument-schema']],
     [npm, ['run', 'eval:obligation-schema']],
     [npm, ['run', 'build']],
+    [npm, ['run', 'check:search']],
+    [npm, ['run', 'eval:search-structured-data']],
     [npm, ['run', 'check:of']],
     [npm, ['run', 'validate:of']],
     [npm, ['run', 'check:of-continuity']],

@@ -1,0 +1,166 @@
+{
+  "$schema": "portfolio-search-indexing-audit/v4",
+  "contractVersion": 4,
+  "canonicalOrigin": "https://publedge.org/",
+  "outputDir": "docs",
+  "sitemaps": [
+    "sitemap.xml"
+  ],
+  "minimumWords": 30,
+  "thinPageExemptions": [],
+  "expectedNoindex": [
+    "/404.html"
+  ],
+  "requireJsonLd": false,
+  "jsonLdRequiredPaths": [
+    "/",
+    "/instruments.html",
+    "/obligations.html",
+    "/authorities.html",
+    "/matrix.html"
+  ],
+  "lastmodAgreementPaths": [],
+  "compareRepositorySitemaps": true,
+  "internalSourceRules": [],
+  "requiredFiles": [
+    {
+      "path": "robots.txt",
+      "contentTypes": [
+        "text/plain"
+      ],
+      "contains": [
+        "Sitemap: https://publedge.org/sitemap.xml"
+      ]
+    },
+    {
+      "path": "sitemap.xml",
+      "contentTypes": [
+        "xml"
+      ],
+      "contains": []
+    },
+    {
+      "path": "favicon.svg",
+      "contentTypes": [
+        "image/svg+xml",
+        "svg"
+      ],
+      "contains": []
+    },
+    {
+      "path": ".well-known/mcp.json",
+      "contentTypes": [
+        "application/json",
+        "json"
+      ],
+      "contains": [
+        "Read-only access to the PubLedge legal-instrument registry."
+      ]
+    },
+    {
+      "path": ".well-known/obligation-first-naming-profile-manifest.txt",
+      "contentTypes": [
+        "text/plain"
+      ],
+      "contains": [
+        "canonical-url: https://publedge.org/.well-known/obligation-first-naming-profile.jsonld"
+      ]
+    },
+    {
+      "path": ".well-known/obligation-first-naming-profile.jsonld",
+      "contentTypes": [
+        "application/ld+json",
+        "application/json",
+        "application/octet-stream",
+        "json"
+      ],
+      "contains": [
+        "https://obligationfirst.org/v1/context.jsonld"
+      ]
+    },
+    {
+      "path": "llms.txt",
+      "contentTypes": [
+        "text/plain"
+      ],
+      "contains": [
+        "https://publedge.org/matrix.html"
+      ]
+    },
+    {
+      "path": "agents.json",
+      "contentTypes": [
+        "application/json",
+        "json"
+      ],
+      "contains": [
+        "https://publedge.org/matrix.html"
+      ]
+    },
+    {
+      "path": "api/v1/index.json",
+      "contentTypes": [
+        "application/json",
+        "json"
+      ],
+      "contains": [
+        "comparisons.json"
+      ]
+    },
+    {
+      "path": "feed.xml",
+      "contentTypes": [
+        "application/rss+xml",
+        "application/xml",
+        "xml"
+      ],
+      "contains": [
+        "https://publedge.org/"
+      ]
+    },
+    {
+      "path": "atom.xml",
+      "contentTypes": [
+        "application/atom+xml",
+        "application/xml",
+        "xml"
+      ],
+      "contains": [
+        "https://publedge.org/"
+      ]
+    },
+    {
+      "path": "calendar.ics",
+      "contentTypes": [
+        "text/calendar",
+        "text/plain"
+      ],
+      "contains": [
+        "PRODID:-//PubLedge"
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "from": "http://publedge.org/",
+      "to": "https://publedge.org/"
+    },
+    {
+      "from": "https://www.publedge.org/",
+      "to": "https://publedge.org/"
+    },
+    {
+      "from": "http://www.publedge.org/",
+      "to": "https://publedge.org/"
+    }
+  ],
+  "hosted404Patterns": [
+    "There isn't a GitHub Pages site here",
+    "<title>Page not found",
+    "404 File not found",
+    "<title>Page Not Found - PubLedge</title>"
+  ],
+  "expectedNotFoundPaths": [
+    "/__search-audit-404__"
+  ]
+}

@@ -405,27 +405,14 @@ function renameFeed() {
 // ---------------------------------------------------------------------------
 function extendDiscovery(templates) {
     const newPaths = [
+        'about/',
         'reference/',
-        'reference/protocol/',
         'reference/prior-art/',
         'reference/registry/',
         'reference/vocabulary/',
         'reference/verify/',
-        '.well-known/mcp.json',
         'schema/json/',
-        'templates/',
-        'PROTOCOL.md',
-        'PRIOR-ART.md',
-        'ROADMAP.md',
-        'INTENT.md',
-        'ATTRIBUTION.md',
-        'MANIFEST.yaml',
-        'schema/jia.schema.json',
-        'schema/rma.schema.json',
-        'schema/instrument.schema.json',
-        'schema/obligation-record.schema.json',
-        'schema/json/record.schema.json',
-        'schema/context.jsonld'
+        'templates/'
     ];
     for (const t of templates) newPaths.push(`template/${t.meta.slug}/`);
 

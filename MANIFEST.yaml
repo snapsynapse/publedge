@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:e77a3fdecb796c0f3cdd1fb87345e65afbb5afdad44b12340f5af0634e54e6df
+    hash: sha256:982020a70a23305369f00efabe06173635b1ca349e6e65c6c8fee2abb9e2f565
     note: package.json
 
   - path: package-lock.json
@@ -543,13 +543,23 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:9831c1612d51f36ba9862bb03122d05e47ae8fe63242a76e50d58354a9bcb27a
+    hash: sha256:bd7a191a4dc9e0306c40ad907cd04c84c0b6af085afd5542a9091566517d4be8
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:88890269d41d9d9a1710ac2e52f33fc7a8ad6d9f537b725525f3c52eeb897bfc
+    hash: sha256:dd3a7f21026c3deac7690928b3d15ebf0d4b4c3dc8b240f8c993465c4fde193b
     note: scripts/build.js
+
+  - path: scripts/check-production-search.mjs
+    role: script
+    hash: sha256:62597c5812201d38fb9c367f1365ec76c5cbe18c2c8ec6cc89275341e69d8319
+    note: scripts/check-production-search.mjs
+
+  - path: scripts/check-search.mjs
+    role: script
+    hash: sha256:89c0f44722cb24b3b4747b5cd10a2a892977f3761d4b5a63c7da1afd60b53ae1
+    note: scripts/check-search.mjs
 
   - path: scripts/check-links.js
     role: tooling
@@ -701,6 +711,11 @@ files:
     hash: sha256:dacbffab5a3dd3da3be5a6a38ac4a7636dc3f884d31e753f37260cc7ea85d599
     note: scripts/eval-verification-exit.js
 
+  - path: scripts/eval-search-structured-data.js
+    role: script
+    hash: sha256:b37c979d768f5e821df8b1a5bad8fe8fdcc5b2e2619286de3375ad930b73854f
+    note: scripts/eval-search-structured-data.js
+
   - path: scripts/eval-scheduled-verification.js
     role: tooling
     hash: sha256:4a8b4259927fd567114ae8ec18aed1678100e9e1bfef1b990eb72942505f8f0a
@@ -788,7 +803,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:953769545a22c2532bf0966bc074afa534549a0e44c68528645592fc36f9c820
+    hash: sha256:6deac709fe136747784893df791193de28e59e55f7d413b29b57fd4c272b415b
     note: scripts/verify-ci.js
 
   - path: AGENTS.md

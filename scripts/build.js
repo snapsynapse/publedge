@@ -343,7 +343,7 @@ function renderPageShell(config, { title, activePage, prefix, content, descripti
     const siteName = config.name || 'Knowledge Base';
     const siteUrl = config.url || '';
     const desc = description || config.description || '';
-    const canonical = canonicalPath ? `<link rel="canonical" href="${siteUrl}${canonicalPath}">` : '';
+    const canonical = canonicalPath !== undefined ? `<link rel="canonical" href="${siteUrl}${canonicalPath}">` : '';
     const jsonLd = structuredData ? `\n    <script type="application/ld+json">${JSON.stringify(structuredData)}</script>` : '';
     // Normalize URL joins: strip trailing slash from siteUrl before appending absolute paths
     const urlBase = siteUrl.replace(/\/$/, '');
@@ -909,9 +909,33 @@ function generateHomepage(config, data, configCSS) {
                 'publisher': { '@id': `${siteUrl}#organization` },
                 'license': 'https://creativecommons.org/licenses/by/4.0/',
                 'dataset': [
-                    { '@type': 'Dataset', 'name': 'Legal Instruments', 'url': `${siteUrl}instruments.html`, 'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/containers.json` }] },
-                    { '@type': 'Dataset', 'name': 'Obligations', 'url': `${siteUrl}obligations.html`, 'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/primaries.json` }] },
-                    { '@type': 'Dataset', 'name': 'Coverage Matrix', 'url': `${siteUrl}matrix.html`, 'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/matrix.json` }] }
+                    {
+                        '@type': 'Dataset',
+                        'name': 'Legal Instruments',
+                        'description': 'Fact-specific written interpretations and related legal instruments tracked by PubLedge.',
+                        'url': `${siteUrl}instruments.html`,
+                        'license': 'https://creativecommons.org/licenses/by/4.0/',
+                        'creator': { '@id': `${siteUrl}#organization` },
+                        'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/containers.json` }]
+                    },
+                    {
+                        '@type': 'Dataset',
+                        'name': 'Obligations',
+                        'description': 'Stable obligation anchors implemented by the legal instruments tracked by PubLedge.',
+                        'url': `${siteUrl}obligations.html`,
+                        'license': 'https://creativecommons.org/licenses/by/4.0/',
+                        'creator': { '@id': `${siteUrl}#organization` },
+                        'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/primaries.json` }]
+                    },
+                    {
+                        '@type': 'Dataset',
+                        'name': 'Coverage Matrix',
+                        'description': 'Mapping between PubLedge legal instruments and the obligations they implement.',
+                        'url': `${siteUrl}matrix.html`,
+                        'license': 'https://creativecommons.org/licenses/by/4.0/',
+                        'creator': { '@id': `${siteUrl}#organization` },
+                        'distribution': [{ '@type': 'DataDownload', 'encodingFormat': 'application/json', 'contentUrl': `${siteUrl}api/v1/matrix.json` }]
+                    }
                 ]
             }
         ]
@@ -967,7 +991,15 @@ function generateContainersPage(config, data, configCSS) {
         }))
     };
 
-    return renderPageShell(config, { title: cPlural, activePage: 'containers', content, canonicalPath: 'instruments.html', configCSS, structuredData });
+    return renderPageShell(config, {
+        title: cPlural,
+        activePage: 'containers',
+        content,
+        canonicalPath: 'instruments.html',
+        description: `Browse all ${containers.length} fact-specific written interpretations and related legal instruments tracked by PubLedge.`,
+        configCSS,
+        structuredData
+    });
 }
 
 function generateAuthoritiesPage(config, data, configCSS) {
@@ -1021,6 +1053,7 @@ function generateAuthoritiesPage(config, data, configCSS) {
         activePage: 'none',
         content,
         canonicalPath: 'authorities.html',
+        description: `Browse the ${authorities.length} public authorities represented in the PubLedge legal-instrument registry.`,
         configCSS,
         structuredData: authStructuredData
     });
@@ -1082,7 +1115,15 @@ function generatePrimariesPage(config, data, configCSS) {
         }))
     };
 
-    return renderPageShell(config, { title: pPlural, activePage: 'primaries', content, canonicalPath: 'obligations.html', configCSS, structuredData: primStructuredData });
+    return renderPageShell(config, {
+        title: pPlural,
+        activePage: 'primaries',
+        content,
+        canonicalPath: 'obligations.html',
+        description: `Browse ${primaries.length} stable obligation anchors and the PubLedge legal instruments that implement them.`,
+        configCSS,
+        structuredData: primStructuredData
+    });
 }
 
 function generateMatrixPage(config, data, configCSS) {
@@ -1130,7 +1171,15 @@ function generateMatrixPage(config, data, configCSS) {
             { '@type': 'DataDownload', 'encodingFormat': 'text/html', 'contentUrl': `${siteUrl}matrix.html` }
         ]
     };
-    return renderPageShell(config, { title: 'Coverage Matrix', activePage: 'matrix', content, canonicalPath: 'matrix.html', configCSS, structuredData: matrixStructuredData });
+    return renderPageShell(config, {
+        title: 'Coverage Matrix',
+        activePage: 'matrix',
+        content,
+        canonicalPath: 'matrix.html',
+        description: `Compare coverage of ${primaries.length} obligations across ${containers.length} PubLedge legal instruments.`,
+        configCSS,
+        structuredData: matrixStructuredData
+    });
 }
 
 function generateTimelinePage(config, data, configCSS) {
@@ -1181,22 +1230,43 @@ function generateTimelinePage(config, data, configCSS) {
         <p style="color: var(--text-secondary); margin-bottom: 1rem;">Key dates. Solid dots are past; hollow dots are future.</p>
         <div class="timeline">${html}</div>`;
 
-    return renderPageShell(config, { title: 'Timeline', activePage: 'timeline', content, canonicalPath: 'timeline.html', configCSS });
+    return renderPageShell(config, {
+        title: 'Timeline',
+        activePage: 'timeline',
+        content,
+        canonicalPath: 'timeline.html',
+        description: 'Chronological effective dates, term endings, and other milestones for legal instruments tracked by PubLedge.',
+        configCSS
+    });
 }
 
 function generateComparePage(config, data, configCSS) {
-    const { containers, primaries, mappingIndex } = data;
+    const { containers, primaries, mappingIndex, comparisons } = data;
     const cName = config.entities?.container?.name || 'Container';
     const cPlural = config.entities?.container?.plural || 'Containers';
 
     const checkboxes = containers.map(c => `<label><input type="checkbox" name="cmp" value="${escapeHTML(c.id)}" onchange="updateComparison()"> <span>${escapeHTML(c.title || c.name || c.id)}</span></label>`).join('\n');
     const namesById = JSON.stringify(Object.fromEntries(containers.map(c => [c.id, c.title || c.name || c.id])));
+    const comparisonLinks = comparisons
+        .filter(comparison => comparison.shared_count > 0)
+        .map(comparison => {
+            const [aId, bId] = comparison.regulations;
+            const cA = containers.find(c => c.id === aId);
+            const cB = containers.find(c => c.id === bId);
+            if (!cA || !cB) return '';
+            const aLabel = cA.title || cA.name || cA.id;
+            const bLabel = cB.title || cB.name || cB.id;
+            return `<li><a href="/compare/${aId}-vs-${bId}/">${escapeHTML(aLabel)} vs ${escapeHTML(bLabel)}</a> <span style="color:var(--text-secondary);">(${comparison.shared_count} shared)</span></li>`;
+        })
+        .filter(Boolean)
+        .join('');
 
     const content = `
         <h2 style="margin-top: 0.5rem;">Compare ${escapeHTML(cPlural)}</h2>
         <p style="color: var(--text-secondary); margin-bottom: 1rem;">Select 2 or 3 to compare coverage.</p>
         <div class="compare-selector" id="compareSelector">${checkboxes}</div>
         <div id="compareResult" class="compare-result"></div>
+        ${comparisonLinks ? `<h3>Comparisons with shared obligations</h3><ul>${comparisonLinks}</ul>` : ''}
         <script>
         var cmpData = ${JSON.stringify(containers.map(c => ({ id: c.id, name: c.title || c.name || c.id, primaries: [...new Set(mappingIndex.filter(m => m.regulation === c.id).flatMap(m => m.obligations))] })))};
         var pNames = ${JSON.stringify(Object.fromEntries(primaries.map(p => [p.id, p.name || humanizeId(p.id)])))};
@@ -1229,7 +1299,14 @@ function generateComparePage(config, data, configCSS) {
         </script>
     `;
 
-    return renderPageShell(config, { title: 'Compare', activePage: 'compare', content, canonicalPath: 'compare.html', configCSS });
+    return renderPageShell(config, {
+        title: 'Compare',
+        activePage: 'compare',
+        content,
+        canonicalPath: 'compare.html',
+        description: 'Compare the obligation coverage of two or three PubLedge legal instruments.',
+        configCSS
+    });
 }
 
 // ---------------------------------------------------------------------------
@@ -1411,7 +1488,15 @@ function generateCompareBridge(config, cA, cB, comparison, data, configCSS) {
         </div>
     `;
 
-    return renderBridgeShell(config, { title: `${cA.name} vs ${cB.name}`, depth: 2, content, canonicalPath: `compare/${cA.id}-vs-${cB.id}/`, configCSS, noindex: comparison.shared_count === 0 });
+    return renderBridgeShell(config, {
+        title: `${aLabel} vs ${bLabel}`,
+        depth: 2,
+        content,
+        canonicalPath: `compare/${cA.id}-vs-${cB.id}/`,
+        description: `Compare shared and distinct PubLedge obligations for ${aLabel} and ${bLabel}.`,
+        configCSS,
+        noindex: comparison.shared_count === 0
+    });
 }
 
 function generateAppliesToBridge(config, scopeValue, data, configCSS) {
@@ -1753,7 +1838,7 @@ function generateJurisdictionsIndex(config, data, configCSS) {
     const content = `
         ${renderBreadcrumb([{ label: 'Registry' }])}
         <h2 style="margin-top:0.5rem;">Registry by Jurisdiction</h2>
-        <p style="color:var(--text-secondary);">Browse PubLedge records by country and jurisdiction.</p>
+        <p style="color:var(--text-secondary);">Browse PubLedge records by country and jurisdiction. Each jurisdiction leads to its issuing authorities, instrument types, and canonical legal-instrument records.</p>
         ${Object.entries(countries).map(([country, data]) => `
             <h3>${country.toUpperCase()}</h3>
             <table class="data-table">
@@ -2255,7 +2340,6 @@ function build() {
     let patternPageCount = 0;
     if (config.pattern?.enabled !== false) {
         fs.writeFileSync(path.join(DOCS_DIR, 'pattern.html'), generatePatternPage(config, data, configCSS));
-        sitemapPages.push('pattern.html');
         patternPageCount = 1;
         console.log('  Pattern page: 1');
     }
@@ -2366,7 +2450,17 @@ function build() {
     for (const p of primaries) { const dir = path.join(DOCS_DIR, 'primary', p.id); ensureDir(dir); fs.writeFileSync(path.join(dir, 'index.html'), generatePrimaryDetail(config, p, data, configCSS)); sitemapPages.push(`primary/${p.id}/`); }
     console.log(`  Primary detail pages: ${primaries.length}`);
 
-    for (const a of authorities) { const dir = path.join(DOCS_DIR, 'authority', a.id); ensureDir(dir); fs.writeFileSync(path.join(dir, 'index.html'), generateAuthorityDetail(config, a, data, configCSS)); sitemapPages.push(`authority/${a.id}/`); }
+    for (const a of authorities) {
+        const legacyPath = `authority/${a.id}/`;
+        const dir = path.join(DOCS_DIR, 'authority', a.id);
+        ensureDir(dir);
+        if (a._canonicalPath && a._canonicalPath !== legacyPath) {
+            fs.writeFileSync(path.join(dir, 'index.html'), generateRedirectStub('/' + a._canonicalPath, a.name || a.id));
+        } else {
+            fs.writeFileSync(path.join(dir, 'index.html'), generateAuthorityDetail(config, a, data, configCSS));
+            sitemapPages.push(legacyPath);
+        }
+    }
     console.log(`  Authority detail pages: ${authorities.length}`);
 
     // Bridge pages
@@ -2399,8 +2493,13 @@ function build() {
         for (const s of scopes) {
             const dir = path.join(DOCS_DIR, 'applies-to', slugify(s)); ensureDir(dir);
             const scopeContainerCount = containers.filter(c => c[scopeField] === s).length;
-            fs.writeFileSync(path.join(dir, 'index.html'), generateAppliesToBridge(config, s, data, configCSS));
-            if (scopeContainerCount > 0) sitemapPages.push(`applies-to/${slugify(s)}/`);
+            const jur = config.hierarchy?.jurisdictions?.[s];
+            if (jur?.country && jur?.region) {
+                fs.writeFileSync(path.join(dir, 'index.html'), generateRedirectStub(`/${jur.country}/${jur.region}/`, jur.label || s));
+            } else {
+                fs.writeFileSync(path.join(dir, 'index.html'), generateAppliesToBridge(config, s, data, configCSS));
+                if (scopeContainerCount > 0) sitemapPages.push(`applies-to/${slugify(s)}/`);
+            }
             appCount++;
         }
     }
