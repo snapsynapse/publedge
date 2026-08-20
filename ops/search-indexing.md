@@ -3,7 +3,7 @@
 title: "Search indexing"
 purpose: "Property-specific index policy, validation commands, deployment gate, and console follow-up."
 status: active
-updated: 2026-08-18
+updated: 2026-08-19
 owner: "PAICE.work PBC"
 open_tasks: []
 ---
@@ -64,9 +64,13 @@ For a creator-profile or external-platform property, replace the website validat
 
 Initial evidence: [Google Search Console audit, 2026-08-18](search/GoogleSearchConsole/2026-08-18/audit.md).
 
+Latest follow-up: [Google Search Console follow-up, 2026-08-19](search/GoogleSearchConsole/2026-08-19/audit.md).
+
 At the initial console inspection, the property was processing data and had no submitted sitemap. The homepage URL inspection reported indexed and HTTPS-valid. Search appearance detected three invalid Dataset items on the homepage because each lacked a description; license and creator were also recommended.
 
 After deployment, Google's live test detected all three Dataset items as valid. The sitemap index processed successfully; six child sitemaps reported `Success` with 150 discovered URLs, while the 10-URL statutes child remained in transient `Couldn't fetch` state despite passing independent production validation. The property-level Dataset report is still processing and exposes no issue row or validation control.
+
+On 2026-08-19, the statutes child resolved to `Success` with 10 discovered URLs without resubmission. All seven child sitemaps now account for the full 160-URL inventory. The Dataset and Page indexing reports remain provider-lagged and have no populated rows. Because Google's indexed homepage copy still reported the three repaired Dataset errors, one recrawl request was submitted and accepted into the priority crawl queue. Do not repeat it while pending.
 
 ## Console action ledger
 
@@ -78,5 +82,8 @@ Read this table before opening the console. Add only observed actions and confir
 | Google Search Console, `sc-domain:publedge.org` | Live-test homepage Dataset markup | 2026-08-18 | Three valid items detected | Confirmed live | Do not repeat without a material change | Review indexed report after recrawl |
 | Google Search Console, `sc-domain:publedge.org` | Request recrawl of `https://publedge.org/` | Rejected 2026-08-18 | Daily quota exceeded | Rejected, not accepted | Do not retry the same day | Retry once after quota resets if the indexed copy is still stale |
 | Google Search Console, `sc-domain:publedge.org` | Start Dataset issue validation | Not available 2026-08-18 | Report still processing; no issue row or validation control | Provider-lagged | Do not invent or repeat an unavailable action | Review when report populates |
+| Google Search Console, `sc-domain:publedge.org` | Observe `https://publedge.org/sitemap-statutes.xml` | 2026-08-19 | `Success`; 10 discovered URLs | Completed | Do not resubmit | None |
+| Google Search Console, `sc-domain:publedge.org` | Request recrawl of `https://publedge.org/` | 2026-08-19 19:37 MDT | `Indexing requested`; URL added to a priority crawl queue | Accepted and pending | Never repeat while pending | Review indexed Dataset state after recrawl |
+| Google Search Console, `sc-domain:publedge.org` | Start Dataset issue validation | Not available 2026-08-19 | Report still processing; no issue row or validation control | Provider-lagged | Do not invent or repeat an unavailable action | Review when report populates |
 
 Keep rejected attempts and unknown outcomes distinct from accepted actions. Do not repeat an accepted action merely because the provider report remains stale.
