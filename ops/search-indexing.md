@@ -3,7 +3,7 @@
 title: "Search indexing"
 purpose: "Property-specific index policy, validation commands, deployment gate, and console follow-up."
 status: active
-updated: 2026-08-19
+updated: 2026-08-20
 owner: "PAICE.work PBC"
 open_tasks: []
 ---
@@ -19,6 +19,13 @@ Generated output: `docs`
 
 If deployment assembles a separate staging directory, this path must name that exact deployable artifact, not its source directory.
 
+## Source and deployment boundary
+
+- Maintained source lives in `data/`, `about/`, `reference/`, and the generators under `scripts/`.
+- `npm run build` writes the public site and machine surfaces to the committed `docs/` tree. Generated HTML and discovery files under `docs/` are not source.
+- GitHub Pages serves the `main` branch `/docs` directory at `https://publedge.org/`. The repository search contract therefore validates `docs` as the exact deployable artifact.
+- Normal CI runs the canonical repository verification, including the offline search contract. The production validator is a post-deployment gate and is not ordinary pull-request CI.
+
 ## Index policy
 
 | Surface | Policy | Reason |
@@ -27,6 +34,8 @@ If deployment assembles a separate staging directory, this path must name that e
 | Legacy `/container/`, `/authority/`, `/applies-to/`, `/utah/`, moved filenames, and zero-overlap comparison pages | Redirect or `noindex`; omit from sitemaps | Compatibility aliases or non-substantive combinations |
 | APIs, JSON-LD, schemas, feeds, calendar, robots, and agent surfaces | Crawlable machine surfaces, omit from sitemaps | Machine consumption or discovery, not canonical HTML |
 | `/404.html` | `noindex` and omit from sitemaps | Error route, not a content destination |
+
+PubLedge currently publishes English-language canonical pages only. Generated and hand-authored HTML declares `lang="en"`; no translated route family or `hreflang` contract exists, so a multilingual indexing policy is not applicable. Any future translated route family requires an explicit canonical and `hreflang` policy before publication.
 
 ## Validation lanes
 
@@ -38,6 +47,15 @@ If deployment assembles a separate staging directory, this path must name that e
 Exit code `0` is pass, `1` is a site defect, and `2` is configuration or infrastructure failure.
 
 For a creator-profile or external-platform property, replace the website validation lanes with the reports and controls the property actually exposes. Do not invent repository, production, sitemap, or indexing work.
+
+## Evidence governance
+
+- Store concise, sanitized observations at `ops/search/<provider>/YYYY-MM-DD/audit.md`. Preserve each dated observation; record later provider state in a new dated file rather than rewriting history.
+- Repository truth, production truth, and provider observation are separate lanes. A provider report cannot override a repository or production contradiction, and console mutation is gated on passing production evidence.
+- Record provider report dates, data ranges, visible confirmations, action acceptance times, and next-review conditions when observed. A click alone is not proof that an action was accepted.
+- Treat missing, stale, insufficient, unknown, and zero as different states. Do not convert an unpopulated report into a zero count.
+- Keep raw exports, account identity, private queries, authenticated URLs, screenshots, traces, cookies, profiles, and browser state outside Git. Local raw evidence may exist only under ignored `.search-evidence-private/` or outside the repository. `.playwright-mcp/` is also ignored.
+- Never place private evidence under `docs/`, which is the public deployment directory.
 
 ## Deployment and console sequence
 
@@ -72,6 +90,20 @@ After deployment, Google's live test detected all three Dataset items as valid. 
 
 On 2026-08-19, the statutes child resolved to `Success` with 10 discovered URLs without resubmission. All seven child sitemaps now account for the full 160-URL inventory. The Dataset and Page indexing reports remain provider-lagged and have no populated rows. Because Google's indexed homepage copy still reported the three repaired Dataset errors, one recrawl request was submitted and accepted into the priority crawl queue. Do not repeat it while pending.
 
+## Current classified state
+
+| Surface | State | Classification |
+|---|---|---|
+| Repository and generated artifact | 2026-08-20 offline contract passed all 160 sitemap pages with zero defects and zero infrastructure failures | No known defect |
+| Production | 2026-08-19 production contract passed all 160 sitemap pages with zero defects and zero infrastructure failures | No known defect |
+| Sitemap processing | Sitemap index and all seven children succeeded, covering 160 discovered canonical HTML URLs | Completed provider processing |
+| Homepage Dataset markup | Live test found three valid items; Google's stored indexed copy still showed the pre-repair errors | Pending recrawl |
+| Homepage recrawl request | Accepted 2026-08-19 at 19:37 MDT into the priority crawl queue | Accepted and pending |
+| Dataset report | Still processing with no issue row or validation control | Provider-lagged; counts unknown |
+| Page indexing report | Still processing with no category rows | Provider-lagged; indexed and excluded counts unknown |
+| Dataset issue-group validation | No batch could be started because the control was unavailable | No active validation batch |
+| Manual actions, security issues, Core Web Vitals, and other enhancements | Not captured in the sanitized dated evidence | Unknown, not zero |
+
 ## Console action ledger
 
 Read this table before opening the console. Add only observed actions and confirmations. An accepted request remains pending until a later report proves completion.
@@ -87,3 +119,22 @@ Read this table before opening the console. Add only observed actions and confir
 | Google Search Console, `sc-domain:publedge.org` | Start Dataset issue validation | Not available 2026-08-19 | Report still processing; no issue row or validation control | Provider-lagged | Do not invent or repeat an unavailable action | Review when report populates |
 
 Keep rejected attempts and unknown outcomes distinct from accepted actions. Do not repeat an accepted action merely because the provider report remains stale.
+
+## Do-not-repeat list
+
+- Do not resubmit `https://publedge.org/sitemap.xml`; its accepted submission and all seven child results are recorded.
+- Do not repeat the accepted homepage indexing request while it remains pending.
+- Do not repeat the homepage live test without a material markup or deployment change.
+- Do not attempt Dataset issue validation until the provider exposes an issue row and validation control. No Dataset validation batch is active.
+- Do not infer completion of the recrawl or Dataset repair from the accepted request.
+
+## Next review conditions
+
+Review the property only when at least one of these occurs:
+
+- Google refreshes the stored homepage inspection after the accepted 2026-08-19 recrawl request.
+- The Dataset or Page indexing report populates, exposing a report date, counts, categories, or a validation control.
+- A material sitemap or structured-data deployment occurs.
+- A repository or production search gate reports a contradiction.
+
+No GSC export was available in either dated observation. Indexed and excluded counts, representative Page indexing reason groups, manual-actions state, security-issues state, Core Web Vitals state, and non-Dataset enhancement state remain absent from the sanitized evidence and therefore unknown.
