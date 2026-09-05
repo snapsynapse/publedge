@@ -1,4 +1,5 @@
 ---
+describesSameEntityAs: ["https://everyailaw.com/instrument/colorado-sb26-189.json"]
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Statute"
 id: us-co-legislature-statute-2026-sb26-189
 instance: 2026-001

@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const { DOCS_DIR, loadProjectData, readJson, reportFailures } = require('./lib/eval-kit');
+const { buildObligationFirstRecords } = require('./lib/obligation-first');
 
 const failures = [];
 const apiDir = path.join(DOCS_DIR, 'api', 'v1', 'of');
@@ -202,6 +203,47 @@ for (const determination of recordsByKind.determinations || []) {
 const proposedJiaDetermination = recordsById.get('https://publedge.org/determination/us-ut-oaip-jia-2026-001-issuance.json');
 if (proposedJiaDetermination) {
     failures.push('proposed Utah mental-health chatbot JIA must not publish an issuance determination');
+}
+
+// Synthetic records check the binding independently of approved corpus baselines.
+// These statuses exercise serialization only and make no legal-history assertion.
+const fixtureInstruments = buildObligationFirstRecords({ url: 'https://publedge.org/' }, {
+    containers: [
+        {
+            id: 'fixture-successor', type: 'statute', status: 'enacted',
+            supersedes: 'fixture-predecessor',
+            describesSameEntityAs: ['https://example.com/instrument/successor.json'],
+            of_notes: 'Explicit source qualification.'
+        },
+        {
+            id: 'fixture-predecessor', type: 'statute', status: 'superseded',
+            lifecycle_status: 'repealed', operative_status: 'unknown'
+        },
+        { id: 'fixture-default', type: 'statute', status: 'enforcing' }
+    ],
+    authorities: [], primaries: [], mappingIndex: []
+}).instruments;
+const [successorFixture, predecessorFixture, defaultFixture] = fixtureInstruments;
+if (stableJson(successorFixture.supersedes) !== stableJson(['https://publedge.org/instrument/fixture-predecessor.json'])) {
+    failures.push('source supersedes must identify the predecessor with its canonical Instrument URI');
+}
+if (stableJson(successorFixture.describesSameEntityAs) !== stableJson(['https://example.com/instrument/successor.json']) ||
+    Object.hasOwn(successorFixture, 'sameAs')) {
+    failures.push('source correspondence must survive as describesSameEntityAs without becoming sameAs');
+}
+if (successorFixture.notes !== 'Explicit source qualification.') {
+    failures.push('source OF notes must survive projection');
+}
+if (predecessorFixture.lifecycle_status !== 'repealed' || predecessorFixture.operative_status !== 'unknown' ||
+    predecessorFixture['pub:status'] !== 'superseded') {
+    failures.push('explicit OF lifecycle and operative statuses must preserve the independent native status');
+}
+if (defaultFixture.lifecycle_status !== 'in-force' || defaultFixture.operative_status !== 'operative' ||
+    defaultFixture['pub:status'] !== 'enforcing') {
+    failures.push('instruments without OF status overrides must retain existing native-status mapping');
+}
+if (['supersedes', 'describesSameEntityAs', 'notes'].some(field => Object.hasOwn(defaultFixture, field))) {
+    failures.push('instruments without explicit source relations or notes must not acquire them');
 }
 
 reportFailures('eval-obligation-first-binding', failures);

@@ -1,4 +1,8 @@
 ---
+describesSameEntityAs: ["https://everyailaw.com/instrument/colorado-sb24-205.json"]
+lifecycle_status: repealed
+operative_status: inactive
+of_notes: "Historical predecessor replaced by enacted SB 26-189, section 1. The retained scheduled effective date is not evidence that the predecessor duties became operative. Replacement timing remains subject to section 5; lifecycle and operative history are distinct."
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Statute"
 id: us-co-legislature-statute-2024-sb24-205
 instance: 2024-001

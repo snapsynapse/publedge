@@ -13,6 +13,1194 @@
   "contexts": {
     "[\"https://obligationfirst.org/v1/context.jsonld\",{\"pub\":\"https://publedge.org/vocab/\"}]": 130
   },
+  "exact_edges": [
+    [
+      "https://publedge.org/authority/cfpb.json",
+      "sameAs",
+      "https://wikidata.org/wiki/Q3078237"
+    ],
+    [
+      "https://publedge.org/authority/colorado-legislature.json",
+      "sameAs",
+      "https://wikidata.org/wiki/Q515231"
+    ],
+    [
+      "https://publedge.org/authority/sec-corpfin.json",
+      "sameAs",
+      "https://wikidata.org/wiki/Q28945713"
+    ],
+    [
+      "https://publedge.org/authority/utah-legislature.json",
+      "sameAs",
+      "https://wikidata.org/wiki/Q7892726"
+    ],
+    [
+      "https://publedge.org/determination/us-cfpb-ao-2022-001-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/cfpb.json"
+    ],
+    [
+      "https://publedge.org/determination/us-cfpb-ao-2022-001-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-cfpb-ao-2022-001.json"
+    ],
+    [
+      "https://publedge.org/determination/us-cftc-dsio-il-2017-001-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/cftc-dsio.json"
+    ],
+    [
+      "https://publedge.org/determination/us-cftc-dsio-il-2017-001-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json"
+    ],
+    [
+      "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/colorado-legislature.json"
+    ],
+    [
+      "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json"
+    ],
+    [
+      "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/colorado-legislature.json"
+    ],
+    [
+      "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json"
+    ],
+    [
+      "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/colorado-legislature.json"
+    ],
+    [
+      "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json"
+    ],
+    [
+      "https://publedge.org/determination/us-irs-chief-counsel-plr-2025-001-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/irs-chief-counsel.json"
+    ],
+    [
+      "https://publedge.org/determination/us-irs-chief-counsel-plr-2025-001-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json"
+    ],
+    [
+      "https://publedge.org/determination/us-irs-tege-plr-2026-001-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/irs-tege.json"
+    ],
+    [
+      "https://publedge.org/determination/us-irs-tege-plr-2026-001-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json"
+    ],
+    [
+      "https://publedge.org/determination/us-sec-corpfin-nal-2025-001-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/sec-corpfin.json"
+    ],
+    [
+      "https://publedge.org/determination/us-sec-corpfin-nal-2025-001-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-hb452-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-hb452-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-sb226-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-sb226-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-sb332-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-sb332-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2026-hb320-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-legislature-statute-2026-hb320-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-oaip-rma-2024-001-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-oaip-rma-2024-001-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-oaip-rma-2025-001-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-oaip-rma-2025-001-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-oaip-rma-2026-001-issuance.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/determination/us-ut-oaip-rma-2026-001-issuance.json",
+      "resulting_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-cfpb-ao-2022-001-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
+      "hasTerm",
+      "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-cfpb-ao-2022-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/cfpb.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-cftc-dsio-il-2017-001-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
+      "hasTerm",
+      "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/cftc-dsio.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
+      "describesSameEntityAs",
+      "https://everyailaw.com/instrument/colorado-sb24-205.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
+      "hasTerm",
+      "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json",
+      "issuedBy",
+      "https://publedge.org/authority/colorado-legislature.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json",
+      "issuedBy",
+      "https://publedge.org/authority/colorado-legislature.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+      "describesSameEntityAs",
+      "https://everyailaw.com/instrument/colorado-sb26-189.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+      "hasTerm",
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+      "issuedBy",
+      "https://publedge.org/authority/colorado-legislature.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+      "supersedes",
+      "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-irs-chief-counsel-plr-2025-001-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
+      "hasTerm",
+      "https://publedge.org/term/irs-plr-202506001-incentive-fee.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/irs-chief-counsel.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-irs-tege-plr-2026-001-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
+      "hasTerm",
+      "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/irs-tege.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-sec-corpfin-nal-2025-001-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
+      "hasTerm",
+      "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/sec-corpfin.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
+      "hasTerm",
+      "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-hb452-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
+      "hasTerm",
+      "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-sb226-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
+      "hasTerm",
+      "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-legislature-statute-2025-sb332-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-legislature-statute-2026-hb320-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
+      "hasTerm",
+      "https://publedge.org/term/hb320-joint-interpretation-agreements.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-legislature.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
+      "hasTerm",
+      "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-jia-2026-001-publedge-illustrative-requesting-party.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-jia-2026-001-utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-oaip-rma-2024-001-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+      "hasTerm",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2024-001-elizachat-inc.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-division-of-professional-licensing.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-office-of-artificial-intelligence-policy.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-oaip-rma-2025-001-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+      "hasTerm",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2025-001-dentacor-llc.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2025-001-utah-division-of-professional-licensing.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2025-001-utah-office-of-artificial-intelligence-policy.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+      "hasTerm",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2025-002-doctronic-llc.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-division-of-professional-licensing.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-office-of-artificial-intelligence-policy.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+      "embodies_determination",
+      "https://publedge.org/determination/us-ut-oaip-rma-2026-001-issuance.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+      "hasTerm",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+      "issuedBy",
+      "https://publedge.org/authority/utah-oaip.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-inc.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-pa.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-division-of-professional-licensing.json"
+    ],
+    [
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json",
+      "parties",
+      "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-office-of-artificial-intelligence-policy.json"
+    ],
+    [
+      "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json",
+      "created_by",
+      "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json"
+    ],
+    [
+      "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json",
+      "created_by",
+      "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json"
+    ],
+    [
+      "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
+      "created_by",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json",
+      "created_by",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json",
+      "created_by",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json",
+      "created_by",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json",
+      "created_by",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json",
+      "created_by",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json",
+      "created_by",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
+      "created_by",
+      "https://publedge.org/term/dentacor-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json",
+      "created_by",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
+      "created_by",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json",
+      "created_by",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
+      "created_by",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json",
+      "created_by",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
+      "created_by",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json",
+      "created_by",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json",
+      "created_by",
+      "https://publedge.org/term/doctronic-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json",
+      "created_by",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json",
+      "created_by",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json",
+      "created_by",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json",
+      "created_by",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json",
+      "created_by",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json",
+      "created_by",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json",
+      "created_by",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json",
+      "created_by",
+      "https://publedge.org/term/elizachat-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json",
+      "created_by",
+      "https://publedge.org/term/hb320-joint-interpretation-agreements.json"
+    ],
+    [
+      "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
+      "created_by",
+      "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+    ],
+    [
+      "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json",
+      "created_by",
+      "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+    ],
+    [
+      "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
+      "created_by",
+      "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
+    ],
+    [
+      "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json",
+      "created_by",
+      "https://publedge.org/term/irs-plr-202506001-incentive-fee.json"
+    ],
+    [
+      "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json",
+      "created_by",
+      "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json"
+    ],
+    [
+      "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json",
+      "created_by",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json",
+      "created_by",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json",
+      "created_by",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json",
+      "created_by",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json",
+      "created_by",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json",
+      "created_by",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json",
+      "created_by",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json",
+      "created_by",
+      "https://publedge.org/term/legion-rma-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json",
+      "created_by",
+      "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
+      "created_by",
+      "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json",
+      "created_by",
+      "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
+      "created_by",
+      "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json",
+      "created_by",
+      "https://publedge.org/term/sb226-disclosure-and-ai-defense.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json",
+      "created_by",
+      "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json",
+      "created_by",
+      "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json",
+      "created_by",
+      "https://publedge.org/term/sb24-205-never-operative-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json",
+      "created_by",
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-correction-and-human-review.json",
+      "created_by",
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json",
+      "created_by",
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice.json",
+      "created_by",
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json",
+      "created_by",
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days.json",
+      "created_by",
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json"
+    ],
+    [
+      "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json",
+      "created_by",
+      "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json"
+    ],
+    [
+      "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json",
+      "anchors",
+      "https://everyailaw.com/obligation-category/transparency.json"
+    ],
+    [
+      "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json",
+      "created_by",
+      "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json"
+    ],
+    [
+      "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
+      "creates",
+      "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json"
+    ],
+    [
+      "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-cfpb-ao-2022-001.json"
+    ],
+    [
+      "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
+      "creates",
+      "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json"
+    ],
+    [
+      "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json"
+    ],
+    [
+      "https://publedge.org/term/dentacor-rma-obligations.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json"
+    ],
+    [
+      "https://publedge.org/term/doctronic-rma-obligations.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json"
+    ],
+    [
+      "https://publedge.org/term/elizachat-rma-obligations.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json"
+    ],
+    [
+      "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
+      "creates",
+      "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json"
+    ],
+    [
+      "https://publedge.org/term/hb320-joint-interpretation-agreements.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json"
+    ],
+    [
+      "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+      "creates",
+      "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json"
+    ],
+    [
+      "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+      "creates",
+      "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json"
+    ],
+    [
+      "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+      "creates",
+      "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json"
+    ],
+    [
+      "https://publedge.org/term/hb452-mental-health-chatbot-stack.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json"
+    ],
+    [
+      "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
+      "creates",
+      "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json"
+    ],
+    [
+      "https://publedge.org/term/irs-plr-202506001-incentive-fee.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json"
+    ],
+    [
+      "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
+      "creates",
+      "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json"
+    ],
+    [
+      "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json"
+    ],
+    [
+      "https://publedge.org/term/legion-rma-obligations.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json"
+    ],
+    [
+      "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
+      "creates",
+      "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json"
+    ],
+    [
+      "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
+      "creates",
+      "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json"
+    ],
+    [
+      "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json"
+    ],
+    [
+      "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+      "creates",
+      "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json"
+    ],
+    [
+      "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+      "creates",
+      "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json"
+    ],
+    [
+      "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+      "creates",
+      "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json"
+    ],
+    [
+      "https://publedge.org/term/sb226-disclosure-and-ai-defense.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json"
+    ],
+    [
+      "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json"
+    ],
+    [
+      "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json"
+    ],
+    [
+      "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json"
+    ],
+    [
+      "https://publedge.org/term/sb24-205-never-operative-obligations.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json"
+    ],
+    [
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json"
+    ],
+    [
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-correction-and-human-review.json"
+    ],
+    [
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json"
+    ],
+    [
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice.json"
+    ],
+    [
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json"
+    ],
+    [
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "creates",
+      "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days.json"
+    ],
+    [
+      "https://publedge.org/term/sb26-189-admt-act-obligations.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json"
+    ],
+    [
+      "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
+      "creates",
+      "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json"
+    ],
+    [
+      "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json"
+    ],
+    [
+      "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
+      "anchors",
+      "https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json"
+    ],
+    [
+      "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
+      "creates",
+      "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json"
+    ],
+    [
+      "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json",
+      "parent_instrument",
+      "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json"
+    ]
+  ],
+  "exact_edges_sha256": "d514d9b60fb4feb9439ed15cafe3e8ead620191d079c5ed65dceb910a748968c",
   "field_coverage": {
     "of:Authority": {
       "@context": {
@@ -189,6 +1377,11 @@
         "populated": 17,
         "present": 17
       },
+      "describesSameEntityAs": {
+        "missing": 16,
+        "populated": 2,
+        "present": 2
+      },
       "effective": {
         "missing": 2,
         "populated": 16,
@@ -247,6 +1440,11 @@
         "populated": 16,
         "present": 18
       },
+      "notes": {
+        "missing": 17,
+        "populated": 1,
+        "present": 1
+      },
       "operative_status": {
         "explicit_unknown": 2,
         "missing": 0,
@@ -292,6 +1490,11 @@
         "missing": 1,
         "populated": 17,
         "present": 17
+      },
+      "supersedes": {
+        "missing": 17,
+        "populated": 1,
+        "present": 1
       },
       "territorial_scope": {
         "missing": 0,
@@ -844,7 +2047,7 @@
       }
     }
   },
-  "fingerprint_version": 1,
+  "fingerprint_version": 2,
   "id_inventory": {
     "of:Authority": {
       "count": 8,
@@ -900,6 +2103,979 @@
     "Term"
   ],
   "naming_profile_version": "2.0.0",
+  "provenance_claims": {
+    "https://publedge.org/authority/cfpb.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.consumerfinance.gov/"
+    },
+    "https://publedge.org/authority/cftc-dsio.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm"
+    },
+    "https://publedge.org/authority/colorado-legislature.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/"
+    },
+    "https://publedge.org/authority/irs-chief-counsel.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.irs.gov/privacy-disclosure/written-determinations"
+    },
+    "https://publedge.org/authority/irs-tege.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance"
+    },
+    "https://publedge.org/authority/sec-corpfin.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.sec.gov/divisions/corpfin"
+    },
+    "https://publedge.org/authority/utah-legislature.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/"
+    },
+    "https://publedge.org/authority/utah-oaip.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/learning-lab/"
+    },
+    "https://publedge.org/determination/us-cfpb-ao-2022-001-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+      "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)"
+    },
+    "https://publedge.org/determination/us-cftc-dsio-il-2017-001-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://cftc.gov/csl/17-65/download",
+      "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)"
+    },
+    "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024"
+    },
+    "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb25b-004",
+      "source_citation": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025"
+    },
+    "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026"
+    },
+    "https://publedge.org/determination/us-irs-chief-counsel-plr-2025-001-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+      "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)"
+    },
+    "https://publedge.org/determination/us-irs-tege-plr-2026-001-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+      "source_citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)"
+    },
+    "https://publedge.org/determination/us-sec-corpfin-nal-2025-001-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+      "source_citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)"
+    },
+    "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+      "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024"
+    },
+    "https://publedge.org/determination/us-ut-legislature-statute-2025-hb452-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_citation": "Utah HB 452 (2025 General Session)"
+    },
+    "https://publedge.org/determination/us-ut-legislature-statute-2025-sb226-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_citation": "Utah SB 226 (2025 General Session)"
+    },
+    "https://publedge.org/determination/us-ut-legislature-statute-2025-sb332-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+      "source_citation": "Utah SB 332 (2025 General Session), Governor Signed March 25, 2025"
+    },
+    "https://publedge.org/determination/us-ut-legislature-statute-2026-hb320-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+      "source_citation": "Utah HB 320 (2026 General Session)"
+    },
+    "https://publedge.org/determination/us-ut-oaip-rma-2024-001-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
+    },
+    "https://publedge.org/determination/us-ut-oaip-rma-2025-001-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
+    },
+    "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf"
+    },
+    "https://publedge.org/determination/us-ut-oaip-rma-2026-001-issuance.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf"
+    },
+    "https://publedge.org/instrument/us-cfpb-ao-2022-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+      "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)"
+    },
+    "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://cftc.gov/csl/17-65/download",
+      "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)"
+    },
+    "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024"
+    },
+    "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb25b-004",
+      "source_citation": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025"
+    },
+    "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026"
+    },
+    "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+      "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)"
+    },
+    "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+      "source_citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)"
+    },
+    "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+      "source_citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)"
+    },
+    "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+      "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024"
+    },
+    "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_citation": "Utah HB 452 (2025 General Session)"
+    },
+    "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_citation": "Utah SB 226 (2025 General Session)"
+    },
+    "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+      "source_citation": "Utah SB 332 (2025 General Session), Governor Signed March 25, 2025"
+    },
+    "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+      "source_citation": "Utah HB 320 (2026 General Session)"
+    },
+    "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/learning-lab/"
+    },
+    "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
+    },
+    "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
+    },
+    "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf"
+    },
+    "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf"
+    },
+    "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+      "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
+      "source_locator": "Interpretive position"
+    },
+    "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://cftc.gov/csl/17-65/download",
+      "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
+      "source_locator": "Interpretive position"
+    },
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+      "source_citation": "Utah HB 320 (2026 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_citation": "Utah HB 452 (2025 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_citation": "Utah HB 452 (2025 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_citation": "Utah HB 452 (2025 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+      "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
+      "source_locator": "Holding"
+    },
+    "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+      "source_citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
+      "source_locator": "Holding"
+    },
+    "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+      "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+      "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_citation": "Utah SB 226 (2025 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_citation": "Utah SB 226 (2025 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_citation": "Utah SB 226 (2025 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-correction-and-human-review.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+      "source_citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
+      "source_locator": "Staff position"
+    },
+    "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/learning-lab/",
+      "source_locator": "Utah Code §13-72a-203"
+    },
+    "https://publedge.org/party/us-ut-oaip-jia-2026-001-publedge-illustrative-requesting-party.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/learning-lab/"
+    },
+    "https://publedge.org/party/us-ut-oaip-jia-2026-001-utah-oaip.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/learning-lab/"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-elizachat-inc.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-division-of-professional-licensing.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-office-of-artificial-intelligence-policy.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2025-001-dentacor-llc.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2025-001-utah-division-of-professional-licensing.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2025-001-utah-office-of-artificial-intelligence-policy.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-doctronic-llc.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-division-of-professional-licensing.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-office-of-artificial-intelligence-policy.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-inc.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-pa.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-division-of-professional-licensing.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf"
+    },
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-office-of-artificial-intelligence-policy.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf"
+    },
+    "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+      "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
+      "source_locator": "Interpretive position"
+    },
+    "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://cftc.gov/csl/17-65/download",
+      "source_citation": "CFTC Letter No. 17-65, Interpretation (Dec. 11, 2017)",
+      "source_locator": "Interpretive position"
+    },
+    "https://publedge.org/term/dentacor-rma-obligations.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §15C–D)"
+    },
+    "https://publedge.org/term/doctronic-rma-obligations.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §16)"
+    },
+    "https://publedge.org/term/elizachat-rma-obligations.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+      "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)"
+    },
+    "https://publedge.org/term/hb320-joint-interpretation-agreements.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+      "source_citation": "Utah HB 320 (2026 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/term/hb452-mental-health-chatbot-stack.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+      "source_citation": "Utah HB 452 (2025 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/term/irs-plr-202506001-incentive-fee.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+      "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
+      "source_locator": "Holding"
+    },
+    "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://irs.gov/pub/irs-wd/202614036.pdf",
+      "source_citation": "IRS Written Determinations, PLR 202614036 (Jan. 12, 2026; released Apr. 3, 2026)",
+      "source_locator": "Holding"
+    },
+    "https://publedge.org/term/legion-rma-obligations.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+      "source_locator": "Obligations summary (Section 6 and Schedule A §17)"
+    },
+    "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+      "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/term/sb226-disclosure-and-ai-defense.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+      "source_citation": "Utah SB 226 (2025 General Session)",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/term/sb24-205-never-operative-obligations.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb24-205",
+      "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/term/sb26-189-admt-act-obligations.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://leg.colorado.gov/bills/sb26-189",
+      "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
+      "source_locator": "Summary"
+    },
+    "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+      "source_citation": "SEC Division of Corporation Finance No-Action Letter archive (2025)",
+      "source_locator": "Staff position"
+    },
+    "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json": {
+      "asserted_by_adopter": "https://publedge.org/",
+      "evidence_type": "published-source",
+      "source": "https://commerce.utah.gov/ai/learning-lab/",
+      "source_locator": "Utah Code §13-72a-203"
+    }
+  },
+  "provenance_dates": {
+    "https://publedge.org/authority/cfpb.json|verified": "2026-04-19",
+    "https://publedge.org/authority/cftc-dsio.json|verified": "2026-04-19",
+    "https://publedge.org/authority/colorado-legislature.json|verified": "2026-05-21",
+    "https://publedge.org/authority/irs-chief-counsel.json|verified": "2026-04-19",
+    "https://publedge.org/authority/irs-tege.json|verified": "2026-04-19",
+    "https://publedge.org/authority/sec-corpfin.json|verified": "2026-04-19",
+    "https://publedge.org/authority/utah-legislature.json|verified": "2026-04-21",
+    "https://publedge.org/authority/utah-oaip.json|verified": "2026-04-18",
+    "https://publedge.org/determination/us-cfpb-ao-2022-001-issuance.json|verified": "2026-04-19",
+    "https://publedge.org/determination/us-cftc-dsio-il-2017-001-issuance.json|verified": "2026-04-19",
+    "https://publedge.org/determination/us-co-legislature-statute-2024-sb24-205-issuance.json|verified": "2026-07-25",
+    "https://publedge.org/determination/us-co-legislature-statute-2025-sb25b-004-issuance.json|verified": "2026-05-21",
+    "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json|verified": "2026-07-25",
+    "https://publedge.org/determination/us-irs-chief-counsel-plr-2025-001-issuance.json|verified": "2026-04-19",
+    "https://publedge.org/determination/us-irs-tege-plr-2026-001-issuance.json|verified": "2026-04-19",
+    "https://publedge.org/determination/us-sec-corpfin-nal-2025-001-issuance.json|verified": "2026-04-19",
+    "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json|verified": "2026-06-04",
+    "https://publedge.org/determination/us-ut-legislature-statute-2025-hb452-issuance.json|verified": "2026-06-04",
+    "https://publedge.org/determination/us-ut-legislature-statute-2025-sb226-issuance.json|verified": "2026-06-04",
+    "https://publedge.org/determination/us-ut-legislature-statute-2025-sb332-issuance.json|verified": "2026-06-04",
+    "https://publedge.org/determination/us-ut-legislature-statute-2026-hb320-issuance.json|verified": "2026-06-04",
+    "https://publedge.org/determination/us-ut-oaip-rma-2024-001-issuance.json|verified": "2026-06-04",
+    "https://publedge.org/determination/us-ut-oaip-rma-2025-001-issuance.json|verified": "2026-07-25",
+    "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json|verified": "2026-06-04",
+    "https://publedge.org/determination/us-ut-oaip-rma-2026-001-issuance.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-cfpb-ao-2022-001.json|verified": "2026-04-19",
+    "https://publedge.org/instrument/us-cftc-dsio-il-2017-001.json|verified": "2026-04-19",
+    "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json|verified": "2026-07-25",
+    "https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json|verified": "2026-05-21",
+    "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json|verified": "2026-07-25",
+    "https://publedge.org/instrument/us-irs-chief-counsel-plr-2025-001.json|verified": "2026-04-19",
+    "https://publedge.org/instrument/us-irs-tege-plr-2026-001.json|verified": "2026-04-19",
+    "https://publedge.org/instrument/us-sec-corpfin-nal-2025-001.json|verified": "2026-04-19",
+    "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb226.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-ut-legislature-statute-2025-sb332.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-ut-oaip-rma-2025-001.json|verified": "2026-07-25",
+    "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json|verified": "2026-06-04",
+    "https://publedge.org/instrument/us-ut-oaip-rma-2026-001.json|verified": "2026-06-04",
+    "https://publedge.org/obligation/cfpb-ao-2022-001-pay-to-pay-cfpb-pay-to-pay-fee-prohibited.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/cftc-il-17-65-cta-unbundled-fee-cftc-unbundled-fee-not-cta-trigger.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-hygienist-ai-concurrence-diagnosis.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-informed-consent-no-dentist.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-data-security-63a-19-102.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-end-of-term-report.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-hold-harmless-state.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-monthly-report-to-oaip.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-phased-rollout.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/elizachat-rma-obligations-elizachat-pre-access-disclosure-bundle.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-data-security-63a-19-102.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-end-of-term-report.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-hold-harmless-state.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-incident-notification-24hr.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-monthly-report-to-oaip.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-safety-policy-filing.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json|verified": "2026-04-18",
+    "https://publedge.org/obligation/irs-plr-202506001-incentive-fee-irs-incentive-fee-not-net-profits-share.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/irs-tege-2026-001-501c3-adverse-irs-501c3-dual-test-failure.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/legion-rma-obligations-ai-authorized-rx-renewal.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/legion-rma-obligations-named-prescriber-enforcement-forborne.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-data-security-63a-19-102.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-end-of-term-report.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-hold-harmless-state.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/legion-rma-obligations-rma-no-advertising-reference.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/legion-rma-obligations-telehealth-compliance-per-proposal.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-ai-defense-elimination.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-consumer-notice-correction-and-appeal.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-impact-assessment.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sb24-205-never-operative-obligations-high-risk-ai-reasonable-care-against-algorithmic-discrimination.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-60-day-cure-period.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-correction-and-human-review.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-3-year-record-retention.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-deployer-pre-decision-notice.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-developer-documentation-to-deployer.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sb26-189-admt-act-obligations-admt-post-adverse-explanation-30-days.json|verified": "2026-07-25",
+    "https://publedge.org/obligation/sec-corpfin-nal-2025-001-rule-506c-sec-reg-d-506c-verification-safe-harbor.json|verified": "2026-04-21",
+    "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json|verified": "2026-04-18",
+    "https://publedge.org/party/us-ut-oaip-jia-2026-001-publedge-illustrative-requesting-party.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-jia-2026-001-utah-oaip.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-elizachat-inc.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-division-of-professional-licensing.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2024-001-utah-office-of-artificial-intelligence-policy.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-001-dentacor-llc.json|verified": "2026-07-25",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-001-utah-division-of-professional-licensing.json|verified": "2026-07-25",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-001-utah-office-of-artificial-intelligence-policy.json|verified": "2026-07-25",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-doctronic-llc.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-division-of-professional-licensing.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-office-of-artificial-intelligence-policy.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-inc.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-legion-health-pa.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-division-of-professional-licensing.json|verified": "2026-06-04",
+    "https://publedge.org/party/us-ut-oaip-rma-2026-001-utah-office-of-artificial-intelligence-policy.json|verified": "2026-06-04",
+    "https://publedge.org/term/cfpb-ao-2022-001-pay-to-pay.json|verified": "2026-04-19",
+    "https://publedge.org/term/cftc-il-17-65-cta-unbundled-fee.json|verified": "2026-04-19",
+    "https://publedge.org/term/dentacor-rma-obligations.json|verified": "2026-07-25",
+    "https://publedge.org/term/doctronic-rma-obligations.json|verified": "2026-06-04",
+    "https://publedge.org/term/elizachat-rma-obligations.json|verified": "2026-06-04",
+    "https://publedge.org/term/hb320-joint-interpretation-agreements.json|verified": "2026-06-04",
+    "https://publedge.org/term/hb452-mental-health-chatbot-stack.json|verified": "2026-06-04",
+    "https://publedge.org/term/irs-plr-202506001-incentive-fee.json|verified": "2026-04-19",
+    "https://publedge.org/term/irs-tege-2026-001-501c3-adverse.json|verified": "2026-04-19",
+    "https://publedge.org/term/legion-rma-obligations.json|verified": "2026-06-04",
+    "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json|verified": "2026-06-04",
+    "https://publedge.org/term/sb226-disclosure-and-ai-defense.json|verified": "2026-06-04",
+    "https://publedge.org/term/sb24-205-never-operative-obligations.json|verified": "2026-07-25",
+    "https://publedge.org/term/sb26-189-admt-act-obligations.json|verified": "2026-07-25",
+    "https://publedge.org/term/sec-corpfin-nal-2025-001-rule-506c.json|verified": "2026-04-19",
+    "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json|verified": "2026-04-18"
+  },
   "records": {
     "by_type": {
       "of:Authority": 8,
@@ -933,6 +3109,13 @@
       "sources": 16,
       "target_hosts": {
         "publedge.org": 56
+      }
+    },
+    "describesSameEntityAs": {
+      "edges": 2,
+      "sources": 2,
+      "target_hosts": {
+        "everyailaw.com": 2
       }
     },
     "embodies_determination": {
@@ -982,6 +3165,13 @@
       "sources": 4,
       "target_hosts": {
         "wikidata.org": 4
+      }
+    },
+    "supersedes": {
+      "edges": 1,
+      "sources": 1,
+      "target_hosts": {
+        "publedge.org": 1
       }
     }
   },

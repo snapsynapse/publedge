@@ -16,6 +16,7 @@ const scripts = [
     'eval-clean-build.js',
     'eval-route-inventory.js',
     'eval-discovery.js',
+    'eval-mcp-rpc-framing.js',
     'eval-mcp-contract.js',
     'eval-mcp-parser-lockstep.js',
     'eval-content-source.js',

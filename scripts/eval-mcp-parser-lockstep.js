@@ -8,26 +8,7 @@ function slugify(str) {
     return String(str || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-function rpc(proc, id, method, params) {
-    return new Promise((resolve, reject) => {
-        const onData = (chunk) => {
-            for (const line of chunk.toString('utf-8').split('\n').filter(Boolean)) {
-                try {
-                    const msg = JSON.parse(line);
-                    if (msg.id === id) {
-                        proc.stdout.off('data', onData);
-                        resolve(msg);
-                    }
-                } catch (err) {
-                    proc.stdout.off('data', onData);
-                    reject(err);
-                }
-            }
-        };
-        proc.stdout.on('data', onData);
-        proc.stdin.write(JSON.stringify({ jsonrpc: '2.0', id, method, params }) + '\n');
-    });
-}
+const { rpc } = require('./lib/eval-mcp-rpc');
 
 function stable(value) {
     if (Array.isArray(value)) return value.map(stable);

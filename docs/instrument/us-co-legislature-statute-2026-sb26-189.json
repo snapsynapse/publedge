@@ -10,6 +10,12 @@
   "pub:id": "us-co-legislature-statute-2026-sb26-189",
   "title": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
   "short_title": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
+  "supersedes": [
+    "https://publedge.org/instrument/us-co-legislature-statute-2024-sb24-205.json"
+  ],
+  "describesSameEntityAs": [
+    "https://everyailaw.com/instrument/colorado-sb26-189.json"
+  ],
   "issuedBy": [
     "https://publedge.org/authority/colorado-legislature.json"
   ],

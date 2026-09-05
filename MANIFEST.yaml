@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:24d810bc3e6f9810611b9dbb8d5f69f505c1ff801f4bd13178e0bb28974f2a16
+    hash: sha256:fab5712aec938e167b7c9ba19d66e6abbc1b20a1044bf4bb0b85570319f79fdf
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -153,7 +153,7 @@ files:
 
   - path: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
     role: instrument
-    hash: sha256:10b736f834e46de7c3460da4636a96a0f7ca6bd4c2822c35a75cf54b3adc1a97
+    hash: sha256:e2202b450c8a0671bfbf0c4f040fa721ce730488e239b147c6e77edb04ac88c6
     note: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
 
   - path: data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md
@@ -163,7 +163,7 @@ files:
 
   - path: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
     role: instrument
-    hash: sha256:ccd50a71a23a1a75a1b6dd47768d98ecc5fd9fe5a4a3e44cf08b3a120d47b759
+    hash: sha256:6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e
     note: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
 
   - path: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
@@ -541,6 +541,16 @@ files:
     hash: sha256:31253104f9a377d7e150c5866296e7e41b0f144b42db10b012bd973577a6f689
     note: mcp-server.js
 
+  - path: scripts/eval-mcp-rpc-framing.js
+    role: tooling
+    hash: sha256:0b7ab3c6365410fd36f3620579d24f4d0d678cdf8ba3344bf9bb3303f446d816
+    note: Split-frame regression for the sequential MCP eval client
+
+  - path: scripts/lib/eval-mcp-rpc.js
+    role: tooling
+    hash: sha256:7a8af6ac86cefc29bdfa19212cb097135de744cc0ef69abfa3935dbe6913b558
+    note: Line-buffered UTF-8 MCP eval client
+
   - path: scripts/build-extras.js
     role: tooling
     hash: sha256:bd7a191a4dc9e0306c40ad907cd04c84c0b6af085afd5542a9091566517d4be8
@@ -643,12 +653,12 @@ files:
 
   - path: scripts/eval-mcp-contract.js
     role: tooling
-    hash: sha256:f8a430d8b84a23ea8a09c54cf972f7e03f32635bca2dfa775b0220c7ed3f05c0
+    hash: sha256:3e143606e2bf447530b3226eb6aa10a244fed81f111011dd8f32ca7dbc588c6a
     note: scripts/eval-mcp-contract.js
 
   - path: scripts/eval-mcp-parser-lockstep.js
     role: tooling
-    hash: sha256:2d21cef5788ddd545a5e4ee4965132ee6cb00b991e00ab3ef08a3118faf70779
+    hash: sha256:35000e46b7f9d66c5b2057e12087cacb6b18cecb94ba04b347c84917aa5519de
     note: scripts/eval-mcp-parser-lockstep.js
 
   - path: scripts/eval-package-smoke.js
@@ -658,7 +668,7 @@ files:
 
   - path: scripts/eval-obligation-first-binding.js
     role: tooling
-    hash: sha256:7b2c80c741afc7ac5c7b97dc732697f6b74813b22eef0a89c5533020d973ddee
+    hash: sha256:369c33cd8e838a06571db4f6e4c5c7c38be5d9b33ec16d221d6e3dd9a95b6b6e
     note: scripts/eval-obligation-first-binding.js
 
   - path: scripts/eval-parser.js
@@ -728,7 +738,7 @@ files:
 
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:245ba68a80e079ede31358c212efc2e803c0d7a638e7fb1cc79d39e4bd0a8bc3
+    hash: sha256:8a12d2174c2b7aa8d40ae3edced0c54aae1eaa03e1be87fad6408bfa687994fc
     note: scripts/evals.js
 
   - path: scripts/lib/build-clock.js
@@ -758,7 +768,7 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:d32cabc7a2cf64392384e82271e51987bc2afe0e383843e8c6326faa5d1289f3
+    hash: sha256:8e7d4e8740e45ea7d175c83eeb9354c2d02853d7409efda6d79ba7767587c4e8
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/temporal-status.js
@@ -895,3 +905,8 @@ files:
     role: vendor
     hash: sha256:1bd18183661c4b62b6e0134380d0559460d419c8eff36d1def309dd194426363
     note: vendor/gist/VERSION.md
+
+  - path: reference/P1-mitigation-2026-09-04.md
+    role: documentation
+    hash: sha256:a54dbc8ef83d446ef02fe652c23f3a9ca20906d3d3ec143a0a904541f5e4ba9d
+    note: Source-grounded P1 mitigation and verification scope
