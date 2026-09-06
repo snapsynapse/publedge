@@ -26,7 +26,7 @@
 
 bundle: publedge
 bundle_version: 0.2.2
-bundle_date: 2026-08-04
+bundle_date: 2026-09-06
 description: >
   PubLedge open recordkeeping protocol for fact-specific written
   interpretations between two parties.
@@ -468,7 +468,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:fff99951b1434ae9b86ba1a050d9c4f1a33a705a811b3a8908f8d86082c8b8a1
+    hash: sha256:5e06f10e42cf71236e44257a4aacddb23af8a62d3c78840e76ef0fdae5a7b9ff
     note: ROADMAP.md
 
   - path: INTENT.md
