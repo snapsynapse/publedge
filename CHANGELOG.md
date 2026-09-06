@@ -8,6 +8,11 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 ## [Unreleased]
 
+### Scope verification
+- Add adopter-owned scope inventories and exact continuity baselines before fingerprint verification or rewrite. Recognition remains independent from coverage; unknown does not mean zero.
+- Require the OF v0.6.4 evaluator through an exact checker revision when adopting this change in CI. These repository checks do not change the published MCP runtime or package version.
+
+
 ## [0.2.1] - 2026-08-04
 
 MCP release-identity correction following exact-tarball consumer verification.

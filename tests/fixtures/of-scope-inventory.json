@@ -1,0 +1,29 @@
+{
+  "contract_version": 1,
+  "inventory_version": "1.0.0",
+  "owner": "https://publedge.org/",
+  "source": "Initial inventory reviewed against accepted P1 projection; see reference/SCOPE-CONTRACT.md",
+  "entries": [
+    {
+      "id": "us",
+      "kind": "territorial",
+      "source": "data/; scripts/lib/obligation-first.js",
+      "extension": false
+    },
+    {
+      "id": "us-co",
+      "kind": "territorial",
+      "source": "data/; scripts/lib/obligation-first.js",
+      "extension": false,
+      "parent": "us"
+    },
+    {
+      "id": "us-ut",
+      "kind": "territorial",
+      "source": "data/; scripts/lib/obligation-first.js",
+      "extension": false,
+      "parent": "us"
+    }
+  ],
+  "coverage": []
+}

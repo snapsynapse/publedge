@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:fab5712aec938e167b7c9ba19d66e6abbc1b20a1044bf4bb0b85570319f79fdf
+    hash: sha256:afd7452342a7071f220a32684641803ccacf3c95a06bdb2a617ae585d10f94fc
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:f684011ef270286aaf911b03ebd3d44237471feb0f78e1c7c5b79ab4f0573bd4
+    hash: sha256:60955a1ca4b8eb4883d1843d49151f51f572bb904c3fe01e6e34be315f04f102
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -583,7 +583,7 @@ files:
 
   - path: scripts/check-of-fingerprint.js
     role: tooling
-    hash: sha256:158614b6fe6404a68065080becb52fcd0acf1f3320de9a5dc8e702f11b30120c
+    hash: sha256:144fb4ba15c09f100a546df09e78aa7a503c69637ec554fc5774b7688617dd79
     note: scripts/check-of-fingerprint.js
 
   - path: scripts/check-of-continuity.js
@@ -910,3 +910,8 @@ files:
     role: documentation
     hash: sha256:a54dbc8ef83d446ef02fe652c23f3a9ca20906d3d3ec143a0a904541f5e4ba9d
     note: Source-grounded P1 mitigation and verification scope
+
+  - path: reference/SCOPE-CONTRACT.md
+    role: documentation
+    hash: sha256:1b923d862ed53de5a93e0dbbfaca78791f9d865178c499c8431d5bd772b58515
+    note: Adopter-owned scope inventory, coverage and continuity contract
