@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://publedge.org/reference/</loc><lastmod>2026-07-25</lastmod></url>
-  <url><loc>https://publedge.org/reference/prior-art/</loc><lastmod>2026-07-25</lastmod></url>
-  <url><loc>https://publedge.org/reference/registry/</loc><lastmod>2026-07-25</lastmod></url>
-  <url><loc>https://publedge.org/reference/vocabulary/</loc><lastmod>2026-07-25</lastmod></url>
-  <url><loc>https://publedge.org/reference/verify/</loc><lastmod>2026-07-25</lastmod></url>
-  <url><loc>https://publedge.org/schema/json/</loc><lastmod>2026-07-25</lastmod></url>
+  <url><loc>https://publedge.org/reference/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://publedge.org/reference/prior-art/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://publedge.org/reference/registry/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://publedge.org/reference/vocabulary/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://publedge.org/reference/verify/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://publedge.org/schema/json/</loc><lastmod>2026-09-05</lastmod></url>
 </urlset>

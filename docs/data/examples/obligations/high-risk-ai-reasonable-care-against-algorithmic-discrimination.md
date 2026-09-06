@@ -4,7 +4,8 @@ id: high-risk-ai-reasonable-care-against-algorithmic-discrimination
 name: High-Risk AI Reasonable Care Against Algorithmic Discrimination
 group: requirement
 status: draft
-lifecycle_status: never-operative
+lifecycle_status: superseded
+enforcement_status: unknown
 last_verified: 2026-07-25
 search_terms:
   - high-risk artificial intelligence
@@ -18,7 +19,7 @@ search_terms:
 
 ## Summary
 
-Developers and deployers of high-risk artificial intelligence systems would have been required to use reasonable care to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.
+Developers and deployers of high-risk artificial intelligence systems would have been required to use reasonable care to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination. The obligation is retained from the predecessor Colorado SB 24-205 framework. Predecessor operative history remains unresolved; SB 26-189 section 5 qualifies replacement timing, and signature alone does not establish when predecessor duties ceased or whether they operated.
 
 ## What Counts
 

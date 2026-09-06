@@ -155,6 +155,7 @@
 
 # --- Colorado statutes ---
 
+# Legacy identifier preserved for continuity; operative history is unresolved.
 - id: sb24-205-never-operative-obligations
   regulation: us-co-legislature-statute-2024-sb24-205
   authority: colorado-legislature

@@ -307,7 +307,7 @@ function buildObligationRecords(config, data) {
                 anchors: everyAiLawAnchors(mapping).obligationAnchors.length ? everyAiLawAnchors(mapping).obligationAnchors : undefined,
                 lifecycle_status: normalizeStatus(lifecycle),
                 operative_status: operativeStatus(lifecycle, force),
-                enforcement_status: enforcementStatus({ status: lifecycle, type: container?.type }, force),
+                enforcement_status: primary.enforcement_status || enforcementStatus({ status: lifecycle, type: container?.type }, force),
                 jurisdiction: typedJurisdiction(container?.jurisdiction),
                 ...provenance(config, container?.official_url, provision.sections || mapping.source_heading, primary.last_verified || provision.verified || container?.last_verified, instrumentCitation(container || {})),
                 'pub:primary_id': obligationId,

@@ -5,7 +5,14 @@
     <link>https://publedge.org/</link>
     <description>Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.</description>
     <atom:link href="https://publedge.org/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 25 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)</title>
+      <link>https://publedge.org/us/colorado/legislature/statute/2025-001/</link>
+      <guid>https://publedge.org/us/colorado/legislature/statute/2025-001/</guid>
+      <description>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay): enforcing. 1 provisions.</description>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems</title>
       <link>https://publedge.org/us/colorado/legislature/statute/2024-001/</link>
@@ -89,13 +96,6 @@
       <guid>https://publedge.org/us/utah/oaip/rma/2026-001/</guid>
       <description>Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026): enacted. 0 provisions.</description>
       <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)</title>
-      <link>https://publedge.org/us/colorado/legislature/statute/2025-001/</link>
-      <guid>https://publedge.org/us/colorado/legislature/statute/2025-001/</guid>
-      <description>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay): enforcing. 1 provisions.</description>
-      <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)</title>

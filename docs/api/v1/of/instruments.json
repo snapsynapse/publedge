@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "generated": "2026-07-25T00:00:00.000Z",
+  "generated": "2026-09-05T00:00:00.000Z",
   "instruments": [
     {
       "@context": [
@@ -165,7 +165,7 @@
       "kind": "statute",
       "normative_force": "binding",
       "enacted": "2025-08-28",
-      "effective": "2025-08-28",
+      "effective": "2025-11-25",
       "lifecycle_status": "in-force",
       "operative_status": "operative",
       "enforcement_status": "enforceable",
@@ -186,7 +186,7 @@
       "source": "https://leg.colorado.gov/bills/sb25b-004",
       "source_citation": "Colorado SB 25B-004 (2025 First Extraordinary Session), Governor Signed August 28, 2025",
       "evidence_type": "published-source",
-      "verified": "2026-05-21",
+      "verified": "2026-09-05",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:status": "enforcing",
       "pub:editorial_status": "published",

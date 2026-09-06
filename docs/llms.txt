@@ -46,9 +46,9 @@
 - [Disclose GenAI On Consumer Request](https://publedge.org/primary/disclose-genai-on-request/): operative; 1 legal instruments support this
 - [ElizaChat — Three-Phase Rollout Gate](https://publedge.org/primary/elizachat-phased-rollout/): expired; 1 legal instruments support this
 - [ElizaChat — Pre-Access Disclosure Bundle](https://publedge.org/primary/elizachat-pre-access-disclosure-bundle/): expired; 1 legal instruments support this
-- [High-Risk AI Consumer Notice, Correction, And Appeal](https://publedge.org/primary/high-risk-ai-consumer-notice-correction-and-appeal/): never-operative; 1 legal instruments support this
-- [High-Risk AI Impact Assessment](https://publedge.org/primary/high-risk-ai-impact-assessment/): never-operative; 1 legal instruments support this
-- [High-Risk AI Reasonable Care Against Algorithmic Discrimination](https://publedge.org/primary/high-risk-ai-reasonable-care-against-algorithmic-discrimination/): never-operative; 1 legal instruments support this
+- [High-Risk AI Consumer Notice, Correction, And Appeal](https://publedge.org/primary/high-risk-ai-consumer-notice-correction-and-appeal/): superseded; 1 legal instruments support this
+- [High-Risk AI Impact Assessment](https://publedge.org/primary/high-risk-ai-impact-assessment/): superseded; 1 legal instruments support this
+- [High-Risk AI Reasonable Care Against Algorithmic Discrimination](https://publedge.org/primary/high-risk-ai-reasonable-care-against-algorithmic-discrimination/): superseded; 1 legal instruments support this
 - [§501(c)(3) Exemption Denied — Organizational And Operational Test Failure](https://publedge.org/primary/irs-501c3-dual-test-failure/): operative; 1 legal instruments support this
 - [Incentive-Fee Management Contract Not A Share Of Net Profits](https://publedge.org/primary/irs-incentive-fee-not-net-profits-share/): operative; 1 legal instruments support this
 - [Learning Lab Agreement — Eligibility and Participation](https://publedge.org/primary/learning-lab-agreement-participation/): operative; 2 legal instruments support this

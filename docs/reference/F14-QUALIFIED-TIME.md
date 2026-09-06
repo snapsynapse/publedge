@@ -18,3 +18,11 @@ The official [signed act](https://leg.colorado.gov/bill_files/116489/download), 
 ## Remaining source-review work
 
 The predecessor instrument's existing prose contains unqualified statements that its duties never took effect. The exporter notes already flag the historical limitation. Reconcile those statements using official commencement, subsequent legislation, and relevant judicial-order evidence before changing native historical status. The current fixture intentionally establishes neither that the predecessor operated nor that it never operated. Preserve the separate HB 26-1263 interaction question.
+
+## Source reconciliation follow-up (2026-09-05)
+
+The signed SB25B-004 and official enacted summary distinguish signature (2025-08-28), act commencement (2025-11-25), and amended requirement dates (2026-06-30). Corrected the native act effective date and current predecessor prose. The three predecessor obligations use the existing `superseded` lifecycle; their legacy identifiers remain stable. Exact-identity evals replace earlier count assertions that incorrectly required three `never-operative` records. The shared predecessor-history fixture remains unknown.
+
+Sources: https://leg.colorado.gov/bills/sb25b-004 and https://leg.colorado.gov/bill_files/90530/download; SB26-189 section 5 at https://leg.colorado.gov/bill_files/116489/download. The EveryAILaw-owned source-review checkpoint records the unresolved original court-order/current-docket and codification checks. These corrections withdraw unsupported certainty without asserting the opposite history.
+
+A local optional `enforcement_status` source field and exporter override preserve explicit unknown for these three obligations. The schema validates the existing OF enforcement-state vocabulary; this is not a shared OF schema change. The reviewed fingerprint delta is only the two SB25B-004 provenance verification dates.

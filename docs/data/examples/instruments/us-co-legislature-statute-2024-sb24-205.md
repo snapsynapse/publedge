@@ -73,7 +73,7 @@ modified: 2026-07-25
 | DOJ intervenes | 2026-04-24 | Federal government joins challenge |
 | Enforcement stayed | 2026-05 | Joint motion stayed enforcement deadlines pending injunction ruling |
 | Superseded by SB 26-189 | 2026-05-14 | Replacement statute signed |
-| Scheduled effective date | 2026-06-30 | Never took effect; replaced before this date |
+| Scheduled effective date | 2026-06-30 | Scheduled requirement date; operative history unresolved |
 
 ---
 
@@ -86,11 +86,11 @@ SB 24-205 was the United States' first comprehensive state statute imposing duti
 - Granted consumers rights to plain-language explanation of adverse consequential decisions, opportunity to correct incorrect personal data, and human review where technically feasible (§6-1-1703(4)).
 - Reserved enforcement to the Colorado Attorney General; no private right of action (§6-1-1706).
 
-The act was signed with explicit reservations from Governor Polis, who urged the General Assembly to refine the statute before its effective date. It never took effect as enacted. A 2025 regular-session amendment bill (SB 25-318) was withdrawn by its sponsor; an August 2025 special session produced only SB 25B-004, which delayed the effective date from February 1, 2026 to June 30, 2026 without substantive change. Federal litigation followed — xAI v. Weiser (D. Colo. No. 1:26-cv-01515), filed April 2026, with the US Department of Justice intervening, and enforcement deadlines stayed by joint motion. The General Assembly then replaced the statute entirely with SB 26-189, signed May 14, 2026, before the delayed effective date arrived.
+The act was signed with explicit reservations from Governor Polis, who urged the General Assembly to refine the statute before its effective date. A 2025 regular-session amendment bill (SB 25-318) was withdrawn by its sponsor; an August 2025 special session produced only SB 25B-004, which delayed the effective date from February 1, 2026 to June 30, 2026 without substantive change. Federal litigation followed — xAI v. Weiser (D. Colo. No. 1:26-cv-01515), filed April 2026, with the US Department of Justice intervening and a reported April 27 court order concerning enforcement. The original order and subsequent docket history have not been verified in this reference; a motion alone does not establish a stay. The General Assembly enacted replacement legislation in SB 26-189, signed May 14, 2026. Predecessor operative history remains unresolved; SB 26-189 section 5 qualifies replacement timing, and signature alone does not establish when predecessor duties ceased or whether they operated.
 
 ### Talking Point
 
-> "Colorado SB 24-205 (2024) was the first US comprehensive state AI act and the first to be replaced by successor legislation before its own effective date — an entire enactment-to-supersession cycle inside 24 months."
+> "Colorado SB 24-205 (2024) was the first US comprehensive state AI act and the subject of replacement legislation enacted in 2026. Enactment, commencement and enforcement require separate evidence."
 
 ### Sources
 

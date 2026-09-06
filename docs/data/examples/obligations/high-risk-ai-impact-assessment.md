@@ -4,7 +4,8 @@ id: high-risk-ai-impact-assessment
 name: High-Risk AI Impact Assessment
 group: requirement
 status: draft
-lifecycle_status: never-operative
+lifecycle_status: superseded
+enforcement_status: unknown
 last_verified: 2026-07-25
 search_terms:
   - high-risk artificial intelligence
@@ -18,7 +19,7 @@ search_terms:
 
 ## Summary
 
-Deployers would have been required to complete an impact assessment for each covered high-risk artificial intelligence system, repeat it at least annually and after intentional and substantial modifications, and retain the assessment records. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.
+Deployers would have been required to complete an impact assessment for each covered high-risk artificial intelligence system, repeat it at least annually and after intentional and substantial modifications, and retain the assessment records. The obligation is retained from the predecessor Colorado SB 24-205 framework. Predecessor operative history remains unresolved; SB 26-189 section 5 qualifies replacement timing, and signature alone does not establish when predecessor duties ceased or whether they operated.
 
 ## What Counts
 

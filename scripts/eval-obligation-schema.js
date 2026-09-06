@@ -66,9 +66,12 @@ for (const status of observedLifecycleStatuses) {
     if (!configStatuses.has(status)) failures.push(`record uses unconfigured lifecycle status "${status}"`);
 }
 
-const neverOperative = project.primaries.filter(record => record.lifecycle_status === 'never-operative');
-if (neverOperative.length !== 3) {
-    failures.push(`expected 3 never-operative source obligations, found ${neverOperative.length}`);
+// F14: exact predecessor identities replace a count that baked in unverified history.
+for (const id of ['high-risk-ai-impact-assessment', 'high-risk-ai-consumer-notice-correction-and-appeal', 'high-risk-ai-reasonable-care-against-algorithmic-discrimination']) {
+    const record = project.primaries.find(item => item.id === id);
+    if (!record || record.lifecycle_status !== 'superseded' || !record._body.includes('operative history remains unresolved')) {
+        failures.push(`${id}: expected superseded lifecycle with unresolved operative history`);
+    }
 }
 
 reportFailures('eval-obligation-schema', failures);

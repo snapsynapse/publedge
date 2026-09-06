@@ -58,7 +58,7 @@ files:
 
   - path: data/examples/authorities/colorado-legislature.md
     role: authority
-    hash: sha256:0d68ee947e991028afc28e4f4defd6578d991204b693bb04bd0b14579174da32
+    hash: sha256:47978720282f317a7e9e3bc8442e483b80b11b9e9c8da0afbbc162c5b7fcdd28
     note: data/examples/authorities/colorado-legislature.md
 
   - path: data/examples/authorities/irs-chief-counsel.md
@@ -153,12 +153,12 @@ files:
 
   - path: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
     role: instrument
-    hash: sha256:e2202b450c8a0671bfbf0c4f040fa721ce730488e239b147c6e77edb04ac88c6
+    hash: sha256:2bdb192d730cacbac3c50b05f65cc5834288f1a5284f219d8d4287fafad16558
     note: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
 
   - path: data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md
     role: instrument
-    hash: sha256:6c67819684efb6f302a4214d633fba7e70252fd3c3ee9eecdb18405245f465cc
+    hash: sha256:2b88fd7dc1521bfbfd8f7f302955cfaaee379fe43074f0d5d90b865c39ad38cf
     note: data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md
 
   - path: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
@@ -253,7 +253,7 @@ files:
 
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:5639fdae1b293eba261b165c4ba8c0ecc68c3d81e7c594ebc1601ec397ad6cf3
+    hash: sha256:addac899a4c0c994fa59848b39a7952964bdc712ffe33caac4ee2b1b3738d437
     note: data/examples/mapping/index.yml
 
   - path: data/examples/obligations/admt-60-day-cure-period.md
@@ -358,17 +358,17 @@ files:
 
   - path: data/examples/obligations/high-risk-ai-consumer-notice-correction-and-appeal.md
     role: obligation
-    hash: sha256:f5e4044bc0cb4df6b0557ca4ddd590b3e54ab7ad17a335199546de540766595b
+    hash: sha256:ad7d644a24b4bdcd665e5df31244cc1938343a962941d29e8e7b91aadd81b4d4
     note: data/examples/obligations/high-risk-ai-consumer-notice-correction-and-appeal.md
 
   - path: data/examples/obligations/high-risk-ai-impact-assessment.md
     role: obligation
-    hash: sha256:b8c140fb89d6af8d41bc7fee6eab97604dfbd96e59115157e0f7853c07461f8d
+    hash: sha256:9d2e51dd3660bda05a70f6b4e7820750ef7323e684f0a7d82ebc4a378a84df96
     note: data/examples/obligations/high-risk-ai-impact-assessment.md
 
   - path: data/examples/obligations/high-risk-ai-reasonable-care-against-algorithmic-discrimination.md
     role: obligation
-    hash: sha256:abbebe1c291c7e7f138f65789b8b1049a3b12358744ff5c096dfc5f18ea4d32a
+    hash: sha256:6b61e3a2851878f0d0a3b64c85287af94bf3e05cf145dcdfffca032e4da64a31
     note: data/examples/obligations/high-risk-ai-reasonable-care-against-algorithmic-discrimination.md
 
   - path: data/examples/obligations/irs-501c3-dual-test-failure.md
@@ -498,7 +498,7 @@ files:
 
   - path: schema/obligation-record.schema.json
     role: schema
-    hash: sha256:81e02ac35b121985b75e95f290d53b2b356d5a4231bafd39e12b8f09f54bf98c
+    hash: sha256:b73d5a1ccd801b406c7f060dcf9d1d64ae5a7e4b289917e89bc703d977b566e4
     note: schema/obligation-record.schema.json
 
   - path: schema/jia.schema.json
@@ -643,7 +643,7 @@ files:
 
   - path: scripts/eval-obligation-schema.js
     role: tooling
-    hash: sha256:6b5148dd8c9c00fd22bd35ac8ede6eaf3ba23dbaaef204795cc85d4b6bd9ca17
+    hash: sha256:5d0ad27f1585d983ff4e3583089c62c92937ec272cf763c33a6ebff222f9d4e0
     note: scripts/eval-obligation-schema.js
 
   - path: scripts/eval-manifest-scope.js
@@ -668,7 +668,7 @@ files:
 
   - path: scripts/eval-obligation-first-binding.js
     role: tooling
-    hash: sha256:369c33cd8e838a06571db4f6e4c5c7c38be5d9b33ec16d221d6e3dd9a95b6b6e
+    hash: sha256:103eace74e11ae7baa69b69eb8ef7e677828e00d1034b9b43a626cfd2204c52b
     note: scripts/eval-obligation-first-binding.js
 
   - path: scripts/eval-parser.js
@@ -768,7 +768,7 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:8e7d4e8740e45ea7d175c83eeb9354c2d02853d7409efda6d79ba7767587c4e8
+    hash: sha256:f49b7852ed39aa49529fce5fc34eca6fc68d4dd4d0ffe8dee3f28b0589c87892
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/temporal-status.js
@@ -918,5 +918,5 @@ files:
 
   - path: reference/F14-QUALIFIED-TIME.md
     role: documentation
-    hash: sha256:5c5b2f620a00455601726e0992f8f4f322b8a8997b2efefc07223ebb5a373674
+    hash: sha256:8aedc847991f8e6982ff220f253236bebbc68b0c2868cdb568a6c85da40f7944
     note: Offline qualified-time acceptance and remaining source-history boundary

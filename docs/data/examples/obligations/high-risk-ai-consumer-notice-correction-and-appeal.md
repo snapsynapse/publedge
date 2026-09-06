@@ -4,7 +4,8 @@ id: high-risk-ai-consumer-notice-correction-and-appeal
 name: High-Risk AI Consumer Notice, Correction, And Appeal
 group: requirement
 status: draft
-lifecycle_status: never-operative
+lifecycle_status: superseded
+enforcement_status: unknown
 last_verified: 2026-07-25
 search_terms:
   - high-risk artificial intelligence
@@ -19,7 +20,7 @@ search_terms:
 
 ## Summary
 
-Deployers would have been required to notify consumers before using a high-risk artificial intelligence system in a consequential decision and, after an adverse decision, provide the principal reasons, an opportunity to correct incorrect personal data, and an appeal with human review where technically feasible. The obligation was enacted in Colorado SB 24-205 but never became operative because the statute was superseded before its delayed effective date.
+Deployers would have been required to notify consumers before using a high-risk artificial intelligence system in a consequential decision and, after an adverse decision, provide the principal reasons, an opportunity to correct incorrect personal data, and an appeal with human review where technically feasible. The obligation is retained from the predecessor Colorado SB 24-205 framework. Predecessor operative history remains unresolved; SB 26-189 section 5 qualifies replacement timing, and signature alone does not establish when predecessor duties ceased or whether they operated.
 
 ## What Counts
 

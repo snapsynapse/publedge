@@ -116,11 +116,16 @@ for (const instrument of recordsByKind.instruments || []) {
     }
 }
 
-const neverOperative = (recordsByKind.obligations || []).filter(
-    obligation => obligation['pub:lifecycle_status'] === 'never-operative'
-);
-if (neverOperative.length !== 3) {
-    failures.push(`expected 3 never-operative concrete obligations, found ${neverOperative.length}`);
+// Stable identifiers survive the editorial correction of their historical labels.
+for (const id of ['high-risk-ai-impact-assessment', 'high-risk-ai-consumer-notice-correction-and-appeal', 'high-risk-ai-reasonable-care-against-algorithmic-discrimination']) {
+    const record = recordsById.get(`https://publedge.org/obligation/sb24-205-never-operative-obligations-${id}.json`);
+    if (!record || record['pub:lifecycle_status'] !== 'superseded' || record.enforcement_status !== 'unknown' || !record.content?.includes('operative history remains unresolved')) {
+        failures.push(`${id}: projected lifecycle/history qualification missing`);
+    }
+}
+const delayAct = recordsById.get('https://publedge.org/instrument/us-co-legislature-statute-2025-sb25b-004.json');
+if (delayAct?.enacted !== '2025-08-28' || delayAct?.effective !== '2025-11-25') {
+    failures.push('SB25B-004: signature must not replace the evidenced act commencement date');
 }
 
 const jiaTerm = recordsById.get('https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json');

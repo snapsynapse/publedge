@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-07-25T00:00:00.000Z",
+    "generated": "2026-09-05T00:00:00.000Z",
     "count": 35
   },
   "items": [
@@ -149,21 +149,21 @@
       "name": "High-Risk AI Consumer Notice, Correction, And Appeal",
       "group": "requirement",
       "status": "draft",
-      "lifecycle_status": "never-operative"
+      "lifecycle_status": "superseded"
     },
     {
       "id": "high-risk-ai-impact-assessment",
       "name": "High-Risk AI Impact Assessment",
       "group": "requirement",
       "status": "draft",
-      "lifecycle_status": "never-operative"
+      "lifecycle_status": "superseded"
     },
     {
       "id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
       "name": "High-Risk AI Reasonable Care Against Algorithmic Discrimination",
       "group": "requirement",
       "status": "draft",
-      "lifecycle_status": "never-operative"
+      "lifecycle_status": "superseded"
     },
     {
       "id": "irs-501c3-dual-test-failure",

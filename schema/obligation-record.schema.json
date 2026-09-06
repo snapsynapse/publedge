@@ -32,6 +32,11 @@
       "enum": ["prospective", "operative", "never-operative", "expired", "superseded", "withdrawn", "terminated"],
       "description": "Legal operability of the obligation represented by this record. Repo-local pending an Obligation-First provision-lifecycle standard."
     },
+    "enforcement_status": {
+      "type": "string",
+      "enum": ["enforceable", "not-enforceable", "unsignaled", "unknown"],
+      "description": "Optional explicit enforcement evidence state; unknown prevents lifecycle inference from asserting enforceability."
+    },
     "last_verified": {
       "type": "string",
       "format": "date"
