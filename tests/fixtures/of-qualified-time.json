@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "scope": "Offline F14 acceptance sidecar; does not change published record semantics",
+  "record": "docs/api/v1/of/records/us-co-legislature-statute-2026-sb26-189.json",
+  "record_expectations": {
+    "@id": "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json",
+    "enacted": "2026-05-14",
+    "effective": "2027-01-01",
+    "operative_status": "unknown"
+  },
+  "date_bindings": [
+    {
+      "case": "general-commencement",
+      "field": "effective"
+    },
+    {
+      "case": "upon-passage-exceptions",
+      "field": "enacted"
+    },
+    {
+      "case": "consequential-decision-cutoff",
+      "field": "effective"
+    }
+  ],
+  "cases": [
+    {
+      "version": 1,
+      "id": "general-commencement",
+      "subject": "Section 5(1), excluding section 5(2) provisions",
+      "as_of": "2026-09-05",
+      "condition": {
+        "description": "The signed act has been enacted; this selects only the cited section-specific date, not whole-act operative status.",
+        "status": "satisfied",
+        "observed_on": "2026-05-14",
+        "source": {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "locator": "Governor Signed 05/14/2026; signed act approval page 24"
+        }
+      },
+      "expected": {
+        "date": "2027-01-01",
+        "source": {
+          "url": "https://leg.colorado.gov/bill_files/116489/download",
+          "locator": "Section 5(1), page 23"
+        }
+      },
+      "fallback": {
+        "date": null,
+        "source": null
+      },
+      "assertion": {
+        "branch": "expected",
+        "date": "2027-01-01",
+        "state": "before"
+      }
+    },
+    {
+      "version": 1,
+      "id": "upon-passage-exceptions",
+      "subject": "Only provisions enumerated in section 5(2)",
+      "as_of": "2026-09-05",
+      "condition": {
+        "description": "The signed act has been enacted; this selects only the cited section-specific date, not whole-act operative status.",
+        "status": "satisfied",
+        "observed_on": "2026-05-14",
+        "source": {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "locator": "Governor Signed 05/14/2026; signed act approval page 24"
+        }
+      },
+      "expected": {
+        "date": "2026-05-14",
+        "source": {
+          "url": "https://leg.colorado.gov/bill_files/116489/download",
+          "locator": "Section 5(2), page 23; signed approval, page 24"
+        }
+      },
+      "fallback": {
+        "date": null,
+        "source": null
+      },
+      "assertion": {
+        "branch": "expected",
+        "date": "2026-05-14",
+        "state": "on-or-after"
+      }
+    },
+    {
+      "version": 1,
+      "id": "consequential-decision-cutoff",
+      "subject": "Section 5(3) decision-date cutoff, not a full applicability test",
+      "as_of": "2026-09-05",
+      "condition": {
+        "description": "The signed act has been enacted; this selects only the cited section-specific date, not whole-act operative status.",
+        "status": "satisfied",
+        "observed_on": "2026-05-14",
+        "source": {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "locator": "Governor Signed 05/14/2026; signed act approval page 24"
+        }
+      },
+      "expected": {
+        "date": "2027-01-01",
+        "source": {
+          "url": "https://leg.colorado.gov/bill_files/116489/download",
+          "locator": "Section 5(3), pages 23-24"
+        }
+      },
+      "fallback": {
+        "date": null,
+        "source": null
+      },
+      "assertion": {
+        "branch": "expected",
+        "date": "2027-01-01",
+        "state": "before"
+      }
+    },
+    {
+      "version": 1,
+      "id": "predecessor-operative-history",
+      "subject": "Whether predecessor duties operated before replacement; not settled by successor signature alone",
+      "as_of": "2026-09-05",
+      "condition": {
+        "description": "Independent evidence establishes predecessor operative history, accounting for commencement and any judicial orders.",
+        "status": "unknown",
+        "observed_on": null,
+        "source": null
+      },
+      "expected": {
+        "date": null,
+        "source": null
+      },
+      "fallback": {
+        "date": null,
+        "source": null
+      },
+      "assertion": {
+        "branch": "unknown",
+        "date": null,
+        "state": "unknown"
+      }
+    }
+  ]
+}

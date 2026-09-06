@@ -468,7 +468,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:22e6821afc9ecefec407dd500ddc21cd2ee4c14d9f2d82e00183701f6bbd9a3e
+    hash: sha256:01a514f317188e6389efd22a75667cf5defce5c8064a90b9318a3130dbdd48a2
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -915,3 +915,8 @@ files:
     role: documentation
     hash: sha256:1b923d862ed53de5a93e0dbbfaca78791f9d865178c499c8431d5bd772b58515
     note: Adopter-owned scope inventory, coverage and continuity contract
+
+  - path: reference/F14-QUALIFIED-TIME.md
+    role: documentation
+    hash: sha256:5c5b2f620a00455601726e0992f8f4f322b8a8997b2efefc07223ebb5a373674
+    note: Offline qualified-time acceptance and remaining source-history boundary

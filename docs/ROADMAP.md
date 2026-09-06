@@ -162,6 +162,10 @@ Shipped 2026-07-25 (obligation lifecycle fidelity + CI maintenance):
 - Completed a date-sensitive fidelity audit against current official sources. Colorado SB 26-189 is `enacted` and its six substantive ADMT obligations are `prospective` until January 1, 2027; Dentacor's initial RMA term is `expired` as of May 31, 2026 because no public extension instrument was located. Added temporal-status and broader public-claim drift evals.
 - Separated instrument legal `status` from PubLedge `editorial_status`, reconciled the protocol and schemas, and added negative-path temporal contract coverage plus term and supersession invariants.
 
+## Local F14 fixture tranche (2026-09-05)
+
+The local [qualified-time acceptance sidecar](reference/F14-QUALIFIED-TIME.md) separates Colorado general commencement, upon-passage exceptions, and decision-date cutoff against the existing OF export. This tranche is not yet published. Predecessor operative history remains unknown in the fixture. No protocol/MCP version or production graph shape changes. F15 curated mappings/traversals and source-history review remain pending; broad ingestion stays demand-gated.
+
 ## Maintenance lane
 
 | Item | Owner | Notes |
