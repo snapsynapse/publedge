@@ -11,7 +11,7 @@ Open recordkeeping protocol for fact-specific written interpretations between tw
 
 Plain markdown with structured frontmatter. SHA-256 manifest checks provide source-to-manifest consistency. Bound to the [Semantic Arts gist](https://semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
 
-**Public and maintained. Protocol specification v0.2.0; stable MCP server v0.2.1. The MCP server is dual-era: MCP spec 2026-07-28 stateless core plus the legacy 2024-11-05 handshake. Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
+**Public and maintained. Protocol specification v0.2.0; stable MCP server v0.2.2. The MCP server is dual-era: MCP spec 2026-07-28 stateless core plus the legacy 2024-11-05 handshake. Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
 
 ## Who this is for
 

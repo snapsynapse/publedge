@@ -25,7 +25,7 @@
 #   - Workshop scratchpad (_workshop/)
 
 bundle: publedge
-bundle_version: 0.2.1
+bundle_version: 0.2.2
 bundle_date: 2026-08-04
 description: >
   PubLedge open recordkeeping protocol for fact-specific written
@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:afd7452342a7071f220a32684641803ccacf3c95a06bdb2a617ae585d10f94fc
+    hash: sha256:902f6b939c98cc826e4f86b34a30747875033454765fc710feeaaec186559b41
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -123,17 +123,17 @@ files:
 
   - path: server.json
     role: config
-    hash: sha256:12123e0ad99900628a8ea95da8aedeb7bc24a5507d429553410d2e3a9e11a60b
+    hash: sha256:f6c5c7f906851f5d64f97910c9a836df1d1bc13cdaab95ac9f1e15b5544b76c2
     note: server.json
 
   - path: package.json
     role: config
-    hash: sha256:982020a70a23305369f00efabe06173635b1ca349e6e65c6c8fee2abb9e2f565
+    hash: sha256:8c8e9771202178c7b5bd43e362b8a10a7e6ece6a1ca5e3a3115f00de6010fa47
     note: package.json
 
   - path: package-lock.json
     role: config
-    hash: sha256:012ebe8338a006f4f4e3552d8b061074ec34840b25e4ef309519df51f22f2156
+    hash: sha256:0056c2c4e573052d1f20dfa1115df793455efa9da5af5ee904b6fd1256314070
     note: package-lock.json
 
   - path: project.yml
@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:60955a1ca4b8eb4883d1843d49151f51f572bb904c3fe01e6e34be315f04f102
+    hash: sha256:eb5cb162f3902ca83bc3dcb8f5e61aa15a1f6bdf6bf4d35a1af06fbc6e8697f1
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -458,17 +458,17 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:cb543402a56ca10331556e5c0096864363f0187a0363fd2a3613344693bec752
+    hash: sha256:c6a61490062838c87bd479abcced0dfa7c965d6485488a3314b90092d9e1774d
     note: README.md
 
-  - path: RELEASE_NOTES-v0.2.1.md
+  - path: RELEASE_NOTES-v0.2.2.md
     role: release-notes
-    hash: sha256:39d4cb973ff70b86324e6d39050709236a385023eedd831731eeee84b6acc2fc
-    note: RELEASE_NOTES-v0.2.1.md
+    hash: sha256:c45e001488ef378375d7cb395a5d059356484130309e4d4c1037bd1ad16b6502
+    note: RELEASE_NOTES-v0.2.2.md
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:01a514f317188e6389efd22a75667cf5defce5c8064a90b9318a3130dbdd48a2
+    hash: sha256:fff99951b1434ae9b86ba1a050d9c4f1a33a705a811b3a8908f8d86082c8b8a1
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -828,12 +828,12 @@ files:
 
   - path: PROJECT_CONTEXT.md
     role: agent-guidance
-    hash: sha256:daad3b13ca898e60fc04ad75b6dba66a03947b392ca90a7c9dc6a9656236a8f7
+    hash: sha256:73ae35788d780db2e692f5a2b4fab8ad3bb2b060dea8488d34a2ea7a88a293a4
     note: PROJECT_CONTEXT.md
 
   - path: about/index.html
     role: site-source
-    hash: sha256:4b3a2ad76459ac161da1aecf0d39bc179442eeb76eb584d012ccb081f91c72ea
+    hash: sha256:1568621d62182f3b985631b2b85e8ade08eee0ac7123c6a36d6e91ffac217af2
     note: about/index.html
 
   - path: assets/search.js
@@ -863,7 +863,7 @@ files:
 
   - path: reference/index.html
     role: site-source
-    hash: sha256:976beb2bc3fa00d7426f33379c50061ea9ee82f36ea5e0698ec703fb139fafce
+    hash: sha256:c9da2918396e9626f0239df74a550204eb302598098d1345bf48d547fdec02dd
     note: reference/index.html
 
   - path: reference/prior-art/index.html
@@ -873,7 +873,7 @@ files:
 
   - path: reference/registry/index.html
     role: site-source
-    hash: sha256:24fceeda4859ab71f8dd107b625c0f3dc74528257fd0b89a8c4a6898755a1f96
+    hash: sha256:c1d2be12e2b87fb59154d46d1e095b2b60913c65ad69bd2d7a12f7f9011d722b
     note: reference/registry/index.html
 
   - path: reference/verify/index.html

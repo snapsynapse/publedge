@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Not all v0.1.0-pre history is versioned separately; early drafting work was compressed into a single prerelease entry below. Subsequent releases are tracked individually.
 
+## v0.2.2 - 2026-09-06
+
+- Correct SB25B-004 commencement independently of signature and requirement dates.
+- Qualify predecessor history and preserve explicit unknown enforcement evidence.
+- Add exact-record F14 regression checks; protocol specification remains v0.2.0.
+
 ## [Unreleased]
 
 ### Scope verification
