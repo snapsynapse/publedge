@@ -458,7 +458,7 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:c6a61490062838c87bd479abcced0dfa7c965d6485488a3314b90092d9e1774d
+    hash: sha256:79461a06418e58719d3ad423aa2b79612ee7fe001464a26f355863dfaa64d0c4
     note: README.md
 
   - path: RELEASE_NOTES-v0.2.2.md
@@ -558,7 +558,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:dd3a7f21026c3deac7690928b3d15ebf0d4b4c3dc8b240f8c993465c4fde193b
+    hash: sha256:76b698a8a726946b6709deb0a92a4a8d6e03b250fd514f87f3a27c61610fb681
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -828,12 +828,12 @@ files:
 
   - path: PROJECT_CONTEXT.md
     role: agent-guidance
-    hash: sha256:73ae35788d780db2e692f5a2b4fab8ad3bb2b060dea8488d34a2ea7a88a293a4
+    hash: sha256:232c705dac0f07d1aa7ad7d35d77cf50a073fed0b83a292af6e1cae0a3b33200
     note: PROJECT_CONTEXT.md
 
   - path: about/index.html
     role: site-source
-    hash: sha256:1568621d62182f3b985631b2b85e8ade08eee0ac7123c6a36d6e91ffac217af2
+    hash: sha256:a01a17c9dc4c4735e8920eb7b4c3a94048e462012e86cf8ebeaf6ad0af23cee1
     note: about/index.html
 
   - path: assets/search.js
@@ -923,7 +923,7 @@ files:
 
   - path: ops/MAINTENANCE-PILOT.md
     role: documentation
-    hash: sha256:e0c48e2cceb68ca0e1b0a1016c7b5cb5a88f8efdd7a8893ced3b5e413134fd6c
+    hash: sha256:fe3aef831624dd3b0bcc413965603009d6a271ca0f91320fa558b2706acd2049
     note: T10 bounded maintenance pilot
 
   - path: ops/evidence/maintenance-pilot-2026-09-06.json

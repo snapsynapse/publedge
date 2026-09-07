@@ -38,7 +38,7 @@ registry through structured endpoints and the MCP server.
 - **Hedged and non-advisory.** Templates are labeled prior art, not legal
   advice; a renderer-composed disclaimer is keyed off `source` + `status`.
 - **Provenance-first.** Everything is hash-pinned, dated, and attributed;
-  `last_verified` freshness is tracked and drift is surfaced automatically.
+  `last_verified` age and temporal inconsistencies are checked; source currentness still requires human evidence review.
 - Markdown-native, git-as-CMS. Lowercase-hyphen identifiers and stable ids.
 
 ## Key URLs
@@ -58,6 +58,14 @@ Official MCP Registry). PubLedge is the thin recordkeeping convention of the
 PAICE legal graph. Standalone product expansion is parked pending a concrete
 legal-graph, regulator, court, civic-body, or adopter demand signal. See
 `INTENT.md` for authoritative strategy and `ROADMAP.md` for maintenance work.
+
+## Maintenance scope
+
+Weekly checks flag overdue records and temporal inconsistencies for human review. A separate manual pilot observes three selected official sources and retains inaccessible sources and unresolved findings. It does not renew verification dates, legal statuses, or the wider corpus. Independent missing-run monitoring and recovery email acceptance remain open. The September 6 pilot left all nine overdue record reviews open; its retained receipt is historical evidence, not a new verification.
+
+## Documentation audit map
+
+README.md indexes usage; ROADMAP.md indexes future work; INTENT.md owns maintained-protocol scope. about/ and reference/ are authored site sources. scripts/build.js and scripts/build-extras.js produce docs/ HTML, llms.txt, agents.json and API surfaces. ops/MAINTENANCE-PILOT.md owns the bounded maintenance procedure; ops/evidence/ holds dated receipts. Release notes and upstream vendor documents retain their historical scope.
 
 ## Editing notes for content skills
 

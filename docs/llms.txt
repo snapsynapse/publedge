@@ -3,6 +3,10 @@
 > Transparent recordkeeping protocol for fact-specific written interpretations between two parties — JIAs, RMAs, no-action letters, private letter rulings, and analogous instruments.
 > Tracks 18 legal instruments, 35 obligations, and 9 provisions across 8 authorities.
 
+## Maintenance scope
+
+Weekly checks flag overdue records and temporal inconsistencies for human review. A separate manual pilot observes three selected official sources and retains inaccessible sources and unresolved findings. It does not renew verification dates, legal statuses, or the wider corpus. Independent missing-run monitoring and recovery email acceptance remain open.
+
 ## Legal Instruments
 
 - [CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)](https://publedge.org/us/federal/cfpb/ao/2022-001/): enforcing

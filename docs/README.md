@@ -37,6 +37,10 @@ Three things in one place:
 2. **Utah-shaped reference content** — 5 JIA/RMA templates anchored to Utah's AI Policy Act (Utah Code §13-72a) and GenAI safe-harbor (§13-75-104), plus 18 demonstration instruments under `data/examples/instruments/` spanning 8 authorities (Utah OAIP, Utah Legislature, Colorado Legislature, SEC, CFPB, IRS Chief Counsel, IRS TEGE, CFTC) and 7 instrument types (JIA, RMA, no-action letter, advisory opinion, private letter ruling, interpretive letter, statute). 35 first-class obligation records under `data/examples/obligations/` are mapped to the instruments via `data/examples/mapping/index.yml`; legal lifecycle is tracked separately from editorial maturity.
 3. **The published site** — rendered HTML under `docs/`, served by GitHub Pages from `main /docs`. Regenerate with `node scripts/build.js && node scripts/build-extras.js` before committing; CI fails if `docs/` drifts from sources.
 
+## Maintenance scope
+
+Weekly checks flag overdue records and temporal inconsistencies for human review. A separate manual pilot observes three selected official sources and retains inaccessible sources and unresolved findings. It does not renew verification dates, legal statuses, or the wider corpus. Independent missing-run monitoring and recovery email acceptance remain open. See [the maintenance pilot](ops/MAINTENANCE-PILOT.md) for dated evidence and review boundaries.
+
 ## Machine-readable endpoints
 
 Every record and index is published in parallel HTML + structured form so agents can walk the registry without scraping:

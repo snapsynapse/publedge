@@ -1,4 +1,5 @@
 {
+  "maintenance_scope": "Weekly checks flag overdue records and temporal inconsistencies for human review. A separate manual pilot observes three selected official sources and retains inaccessible sources and unresolved findings. It does not renew verification dates, legal statuses, or the wider corpus. Independent missing-run monitoring and recovery email acceptance remain open.",
   "schema_version": "1.0",
   "site": {
     "name": "PubLedge",

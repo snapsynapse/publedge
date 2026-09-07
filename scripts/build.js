@@ -1599,14 +1599,14 @@ function generatePatternPage(config, data, configCSS) {
         ${canonicalUrl ? `<p>Canonical pattern definition: <a href="${escapeHTML(canonicalUrl)}">${escapeHTML(canonicalUrl)}</a></p>` : ''}
 
         <h2>The Pattern</h2>
-        <p>Knowledge as Code applies software engineering practices to knowledge management. The knowledge lives in version-controlled plain text files. It is validated by automated processes. It produces multiple outputs from a single source. And it actively resists becoming outdated.</p>
+        <p>Knowledge as Code applies software engineering practices to knowledge management. The knowledge lives in version-controlled plain text files. It is validated by automated processes. It produces multiple outputs from a single source. It surfaces structural errors and review work; currentness still depends on source evidence and human review.</p>
 
         <h2>Six Properties</h2>
         <table class="data-table">
             <thead><tr><th>Property</th><th>What It Means</th><th>In This Project</th></tr></thead>
             <tbody>
                 <tr><td><strong>Plain text canonical</strong></td><td>Knowledge in human-readable, version-controlled files. No database, no CMS, no vendor lock-in.</td><td>Markdown and YAML files in <code>data/</code></td></tr>
-                <tr><td><strong>Self-healing</strong></td><td>Automated verification detects when knowledge drifts from reality. Flags decay before humans notice.</td><td>Verification scripts and AI-assisted freshness checks</td></tr>
+                <tr><td><strong>Maintenance checks</strong></td><td>Age and consistency checks surface review work. Source monitoring has bounded coverage and does not automatically verify records.</td><td>Weekly diagnostics and a manual official-source pilot</td></tr>
                 <tr><td><strong>Multi-output</strong></td><td>One source produces every format needed — human-readable, machine-readable, agent-queryable.</td><td>HTML site, JSON API, MCP server, SEO bridge pages, sitemap, <code>llms.txt</code></td></tr>
                 <tr><td><strong>Zero-dependency</strong></td><td>No external packages. Nothing breaks when you come back in a year.</td><td>One Node.js script, no <code>package.json</code>, no <code>node_modules</code></td></tr>
                 <tr><td><strong>Git-native</strong></td><td>Git is the collaboration layer, audit trail, and deployment trigger.</td><td>Issues, PRs, CI/CD, version history — all through Git</td></tr>
@@ -1666,7 +1666,7 @@ open docs/index.html</code></pre>
         </div>
     `;
 
-    return renderPageShell(config, { title: 'Knowledge as Code', activePage: 'pattern', content, description: 'A pattern for building knowledge bases that verify themselves.', canonicalPath: 'pattern.html', configCSS });
+    return renderPageShell(config, { title: 'Knowledge as Code', activePage: 'pattern', content, description: 'A pattern for building knowledge bases with reproducible validation and evidence-backed review.', canonicalPath: 'pattern.html', configCSS });
 }
 
 // ---------------------------------------------------------------------------
@@ -2554,6 +2554,10 @@ function build() {
         `> ${config.description || ''}`,
         `> Tracks ${containers.length} ${cPlural.toLowerCase()}, ${primaries.length} ${pPlural.toLowerCase()}, and ${totalProvisions} provisions across ${authorities.length} ${aPlural.toLowerCase()}.`,
         '',
+        '## Maintenance scope',
+        '',
+        "Weekly checks flag overdue records and temporal inconsistencies for human review. A separate manual pilot observes three selected official sources and retains inaccessible sources and unresolved findings. It does not renew verification dates, legal statuses, or the wider corpus. Independent missing-run monitoring and recovery email acceptance remain open.",
+        '',
         `## ${cPlural}`,
         '',
         ...containers.map(c => `- [${c.title || c.name || c.id}](${siteUrl.replace(/\/$/, '')}${containerHref(c)}): ${c.status || 'unknown'}`),
@@ -2588,6 +2592,7 @@ function build() {
 
     // agents.json — agent-readable site metadata
     const agentsJson = {
+        maintenance_scope: "Weekly checks flag overdue records and temporal inconsistencies for human review. A separate manual pilot observes three selected official sources and retains inaccessible sources and unresolved findings. It does not renew verification dates, legal statuses, or the wider corpus. Independent missing-run monitoring and recovery email acceptance remain open.",
         schema_version: '1.0',
         site: {
             name: config.name || 'Knowledge Base',
