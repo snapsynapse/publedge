@@ -93,7 +93,9 @@
     "eval:links": "node scripts/eval-links.js",
     "eval:verification-exit": "node scripts/eval-verification-exit.js",
     "eval:scheduled-verification": "node scripts/eval-scheduled-verification.js",
-    "eval:search-structured-data": "node scripts/eval-search-structured-data.js"
+    "eval:search-structured-data": "node scripts/eval-search-structured-data.js",
+    "observe:maintenance": "node scripts/observe-maintenance.js",
+    "test:maintenance": "node --test tests/maintenance*.test.js"
   },
   "devDependencies": {
     "ajv": "^8.17.1",

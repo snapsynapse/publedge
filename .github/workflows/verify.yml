@@ -9,11 +9,18 @@ permissions:
   contents: read
   issues: write
 
+concurrency:
+  group: scheduled-verification
+  cancel-in-progress: false
+
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v5
         with:
           node-version: '20'
@@ -48,8 +55,17 @@ jobs:
           fi
           set -e
 
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scheduled-verification-evidence
+          path: verify-output.txt
+          retention-days: 14
+          if-no-files-found: warn
+
       - name: Ensure 'knowledge-drift' label exists
-        if: steps.verify.outputs.exit_code != '0'
+        if: always() && steps.verify.outputs.exit_code != '0'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -59,15 +75,31 @@ jobs:
             --force
 
       - name: Open or update drift issue
-        if: steps.verify.outputs.exit_code != '0'
+        id: drift_issue
+        if: always() && steps.verify.outputs.exit_code != '0'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
-          TITLE="Knowledge drift detected: $(date +%Y-%m-%d)"
+          TITLE="Knowledge drift detected"
+          REPORT_HASH="$(node - <<'NODE'
+          const crypto = require('crypto');
+          const fs = require('fs');
+          const normalized = fs.readFileSync('verify-output.txt', 'utf8')
+            // Keep IDs, last_verified dates, cadence, and every temporal
+            // failure. Only elapsed age counters vary as time passes.
+            .replace(/(last verified )\d+( days ago \(\d{4}-\d{2}-\d{2}\); cadence \d+ days)/g, '$1<elapsed-days>$2')
+            // npm runner timing/verbosity is not verifier evidence.
+            .replace(/^npm (?:timing|verbose|notice) .*$/gm, '<npm-runner-metadata>')
+            .replace(/^(?:real|user|sys)\s+\d+(?::\d+)?(?:\.\d+)?s?$/gm, '<runner-timing>');
+          process.stdout.write(crypto.createHash('sha256').update(normalized).digest('hex'));
+          NODE
+          )"
+          REPORT_MARKER="<!-- scheduled-verification-report:${REPORT_HASH} -->"
 
           # Build the body from the verifier output.
           {
+            echo "$REPORT_MARKER"
             echo "Automated weekly verification flagged knowledge staleness, missing entities, or a temporal lifecycle mismatch."
             echo ""
             echo "## Report"
@@ -82,26 +114,72 @@ jobs:
             echo "2. For each, either:"
             echo "   - Re-verify the underlying source and bump the \`last_verified\` date in its frontmatter, **or**"
             echo "   - Update the entity with corrected information."
-            echo "3. Run \`npm run verify\` and \`npm run eval:temporal-status\` locally to confirm the issue clears."
-            echo "4. Commit and push. This issue can be closed once verification passes."
+            echo "3. After actual source review, run \`npm run verify\` and \`npm run eval:temporal-status\` locally."
+            echo "4. Commit and push. Keep this issue open until human review confirms resolution."
             echo ""
             echo "---"
             echo "_This issue was opened automatically by [.github/workflows/verify.yml](../blob/main/.github/workflows/verify.yml)._"
           } > issue-body.md
 
-          # Reuse an open issue with the 'knowledge-drift' label if one exists,
-          # otherwise create a new one. This prevents a new issue every Monday
-          # when drift persists across runs.
-          EXISTING=$(gh issue list --label knowledge-drift --state open --json number --jq '.[0].number // empty')
+          # Reuse legacy date-titled issues during migration. Prefer a stable
+          # title; within either group use the oldest open issue.
+          EXISTING=$(gh issue list --label knowledge-drift --state open --json number,title,createdAt --jq 'sort_by(.createdAt) | (map(select(.title == "Knowledge drift detected")) + map(select(.title != "Knowledge drift detected")) | .[0].number // empty)')
 
           if [ -n "$EXISTING" ]; then
-            echo "Updating existing drift issue #$EXISTING"
-            gh issue comment "$EXISTING" --body-file issue-body.md
+            # Query failures are fatal under set -e; never treat an unavailable
+            # issue/comment lookup as evidence that the marker is absent.
+            gh api "repos/${GITHUB_REPOSITORY}/issues/${EXISTING}" --jq '.body' > existing-issue-body.txt
+            gh api --paginate "repos/${GITHUB_REPOSITORY}/issues/${EXISTING}/comments" --jq '.[].body' > issue-comments.txt
+            cat existing-issue-body.txt issue-comments.txt > issue-evidence.txt
+            if grep -Fqx "$REPORT_MARKER" issue-evidence.txt; then
+              ACTION="deduplicated"
+            else
+              gh issue comment "$EXISTING" --body-file issue-body.md
+              ACTION="commented"
+            fi
             gh issue edit "$EXISTING" --title "$TITLE"
+            ISSUE="$EXISTING"
           else
             echo "Opening new drift issue"
-            gh issue create \
+            ISSUE_URL=$(gh issue create \
               --title "$TITLE" \
               --body-file issue-body.md \
-              --label knowledge-drift
+              --label knowledge-drift)
+            ISSUE="${ISSUE_URL##*/}"
+            if ! [[ "$ISSUE" =~ ^[0-9]+$ ]]; then
+              echo "Issue creation did not return an issue URL: $ISSUE_URL" >&2
+              exit 1
+            fi
+            ACTION="created"
+          fi
+
+          printf 'issue=%s\naction=%s\nmarker=%s\n' "$ISSUE" "$ACTION" "$REPORT_MARKER" >> "$GITHUB_OUTPUT"
+
+      - name: Summarize issue receipt
+        if: always()
+        env:
+          ISSUE: ${{ steps.drift_issue.outputs.issue }}
+          ACTION: ${{ steps.drift_issue.outputs.action }}
+        run: |
+          {
+            echo "## Scheduled verification receipt"
+            echo "Artifact upload was attempted before issue reporting. Inspect the artifact step for its outcome."
+            echo "Email: not_configured. Human receipt: unconfirmed."
+            if [ -n "$ISSUE" ]; then
+              echo "Stable issue #$ISSUE: $ACTION."
+            elif [ "${{ steps.verify.outputs.exit_code }}" != "0" ]; then
+              echo "The verification failed and the issue-reporting step did not complete. See the failed step and retained artifact."
+            else
+              echo "Verification passed; no drift issue action was needed."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Fail scheduled verification when checks failed
+        if: always()
+        env:
+          VERIFY_EXIT: ${{ steps.verify.outputs.exit_code }}
+        run: |
+          if [ "$VERIFY_EXIT" != "0" ]; then
+            echo "Verification checks failed; retained evidence and issue receipt are above." >&2
+            exit 1
           fi

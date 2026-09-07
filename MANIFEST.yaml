@@ -93,7 +93,7 @@ files:
 
   - path: .github/workflows/verify.yml
     role: ci
-    hash: sha256:b025a1f5d72f270034380cbf181a0782b9b8a9a81cd94d43414b589677cf0079
+    hash: sha256:b08c418823845e6f5c31ac1b52b583b31c2e744d1f4db34224598c70f81898db
     note: .github/workflows/verify.yml
 
   - path: .github/ISSUE_TEMPLATE/authority_response.md
@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:8c8e9771202178c7b5bd43e362b8a10a7e6ece6a1ca5e3a3115f00de6010fa47
+    hash: sha256:0c1bf4b6b55b3f5dcc98dfda927b74f4bdc96f207470f0686e44ef0899a503c5
     note: package.json
 
   - path: package-lock.json
@@ -718,7 +718,7 @@ files:
 
   - path: scripts/eval-verification-exit.js
     role: tooling
-    hash: sha256:dacbffab5a3dd3da3be5a6a38ac4a7636dc3f884d31e753f37260cc7ea85d599
+    hash: sha256:0608d9b333453c0527894a5106574c9bc1dc3c44aca2169523624f69ccb91a20
     note: scripts/eval-verification-exit.js
 
   - path: scripts/eval-search-structured-data.js
@@ -728,7 +728,7 @@ files:
 
   - path: scripts/eval-scheduled-verification.js
     role: tooling
-    hash: sha256:4a8b4259927fd567114ae8ec18aed1678100e9e1bfef1b990eb72942505f8f0a
+    hash: sha256:73a71f06dc67321344e46fdd7fa14dfc3dc86fcc958d15201fb35daefdeb65f8
     note: scripts/eval-scheduled-verification.js
 
   - path: scripts/eval-workflow-invariants.js
@@ -808,12 +808,12 @@ files:
 
   - path: scripts/verify.js
     role: tooling
-    hash: sha256:6cd9bb385cde05652feb395b495d00a6ecf2faa8195c58742dba19fa346aae53
+    hash: sha256:dfd3690ef2b8ed18271ba9b8ac2efa24f4015af8f7b69c332c34d94afe77fcd7
     note: scripts/verify.js
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:6deac709fe136747784893df791193de28e59e55f7d413b29b57fd4c272b415b
+    hash: sha256:fd839d2fa85b0f5f3f8a07d3647c65286feacc69b69d37d85d8c4f9fcbb4aaef
     note: scripts/verify-ci.js
 
   - path: AGENTS.md
@@ -920,3 +920,58 @@ files:
     role: documentation
     hash: sha256:8aedc847991f8e6982ff220f253236bebbc68b0c2868cdb568a6c85da40f7944
     note: Offline qualified-time acceptance and remaining source-history boundary
+
+  - path: ops/MAINTENANCE-PILOT.md
+    role: documentation
+    hash: sha256:e0c48e2cceb68ca0e1b0a1016c7b5cb5a88f8efdd7a8893ced3b5e413134fd6c
+    note: T10 bounded maintenance pilot
+
+  - path: ops/evidence/maintenance-pilot-2026-09-06.json
+    role: documentation
+    hash: sha256:b0ac0e815120e6be66be3f0b56e40a357cc3ebb0b797b021ece0ef04b8593a1a
+    note: T10 bounded maintenance pilot
+
+  - path: scripts/lib/freshness-contract.js
+    role: code
+    hash: sha256:df27fe4ca8be68fbacfa3e00d8b874d8687d87ffbc97874a9f84dc7e3a943cc8
+    note: T10 bounded maintenance pilot
+
+  - path: scripts/lib/maintenance/collector.js
+    role: code
+    hash: sha256:f79bc32cc42d6ecbfbc64b52ebfc377cabb818e5def02cf427b4a13c416f9a80
+    note: T10 bounded maintenance pilot
+
+  - path: scripts/lib/maintenance/config.js
+    role: code
+    hash: sha256:0d6e336e397f4d37646ddd64dea298be492a951a4cefd325baf06f2436f6529d
+    note: T10 bounded maintenance pilot
+
+  - path: scripts/lib/maintenance/fetch.js
+    role: code
+    hash: sha256:1e0897b0e7371a532e9c34bf201f3832a7089938a38163e48363aa00bcf281d9
+    note: T10 bounded maintenance pilot
+
+  - path: scripts/lib/maintenance/text.js
+    role: code
+    hash: sha256:995eee743036890765d893eca2bda19af18d378f0b0927985e083a592c6464c2
+    note: T10 bounded maintenance pilot
+
+  - path: scripts/observe-maintenance.js
+    role: code
+    hash: sha256:5349da6fa492b29a7999b095e295cde3429a344e0c3adc1e83d107222e4e8db2
+    note: T10 bounded maintenance pilot
+
+  - path: tests/maintenance-source-pages.test.js
+    role: code
+    hash: sha256:d7386c47b254c13dacd01f8ff23840d3996ef145ab9589a7c84dd49951c4763e
+    note: T10 bounded maintenance pilot
+
+  - path: tests/maintenance-workflow.test.js
+    role: code
+    hash: sha256:1fc8b31b960ed46bf795f71b7a7be2cef171cf9b3f3504c5cada2973bfee0fc4
+    note: T10 bounded maintenance pilot
+
+  - path: tests/maintenance.test.js
+    role: code
+    hash: sha256:e79c6acf32b51c8203e8284f574c612b21984d8c5ebddabd42ba6f9e69495cda
+    note: T10 bounded maintenance pilot

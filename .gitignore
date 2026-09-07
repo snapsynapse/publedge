@@ -48,3 +48,6 @@ venv/
 # --- portfolio baseline (2026-07-04): transient dirs ---
 handoffs/
 working/
+
+# Local maintenance source receipts
+.verification-reports/

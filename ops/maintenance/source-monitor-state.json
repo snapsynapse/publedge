@@ -1,0 +1,590 @@
+{
+  "version": 1,
+  "revision": 9,
+  "reviewPolicy": {
+    "owner": "Sam Rogers",
+    "capacityMinutesPerWeek": null,
+    "scope": "six-repo-portfolio"
+  },
+  "sources": {
+    "publedge-record:us-ut-legislature-statute-2024-sb149": {
+      "id": "publedge-record:us-ut-legislature-statute-2024-sb149",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-legislature-statute-2024-sb149"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-record:us-ut-legislature-statute-2025-hb452": {
+      "id": "publedge-record:us-ut-legislature-statute-2025-hb452",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-legislature-statute-2025-hb452"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-record:us-ut-legislature-statute-2025-sb226": {
+      "id": "publedge-record:us-ut-legislature-statute-2025-sb226",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-legislature-statute-2025-sb226"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-record:us-ut-legislature-statute-2025-sb332": {
+      "id": "publedge-record:us-ut-legislature-statute-2025-sb332",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-legislature-statute-2025-sb332.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-legislature-statute-2025-sb332"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-record:us-ut-legislature-statute-2026-hb320": {
+      "id": "publedge-record:us-ut-legislature-statute-2026-hb320",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-legislature-statute-2026-hb320"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-record:us-ut-oaip-jia-2026-001": {
+      "id": "publedge-record:us-ut-oaip-jia-2026-001",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-record:us-ut-oaip-rma-2024-001": {
+      "id": "publedge-record:us-ut-oaip-rma-2024-001",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-oaip-rma-2024-001"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-record:us-ut-oaip-rma-2025-002": {
+      "id": "publedge-record:us-ut-oaip-rma-2025-002",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-oaip-rma-2025-002"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-record:us-ut-oaip-rma-2026-001": {
+      "id": "publedge-record:us-ut-oaip-rma-2026-001",
+      "owner": "publedge",
+      "authoritativeUrl": "https://github.com/snapsynapse/publedge/blob/main/data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+      "sourceType": "official_secondary",
+      "subjectIds": [
+        "us-ut-oaip-rma-2026-001"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-record-age-v1",
+      "contentValidation": "required",
+      "collectionMode": "manual",
+      "coverageState": "unknown"
+    },
+    "publedge-source:utah-oaip-doctronic-rma": {
+      "id": "publedge-source:utah-oaip-doctronic-rma",
+      "owner": "publedge",
+      "authoritativeUrl": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "sourceType": "official_primary",
+      "subjectIds": [
+        "us-ut-oaip-rma-2025-002"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-source-v1",
+      "contentValidation": "required",
+      "collectionMode": "automated",
+      "coverageState": "covered",
+      "lastSuccessfulObservationAt": "2026-09-07T05:25:58.080Z",
+      "dueAt": "2026-12-06T05:25:58.080Z"
+    },
+    "publedge-source:utah-oaip-legion-rma": {
+      "id": "publedge-source:utah-oaip-legion-rma",
+      "owner": "publedge",
+      "authoritativeUrl": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "sourceType": "official_primary",
+      "subjectIds": [
+        "us-ut-oaip-rma-2026-001"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-source-v1",
+      "contentValidation": "required",
+      "collectionMode": "automated",
+      "coverageState": "covered",
+      "lastSuccessfulObservationAt": "2026-09-07T05:25:58.080Z",
+      "dueAt": "2026-12-06T05:25:58.080Z"
+    },
+    "publedge-source:utah-code-title-13-chapter-72": {
+      "id": "publedge-source:utah-code-title-13-chapter-72",
+      "owner": "publedge",
+      "authoritativeUrl": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+      "sourceType": "official_primary",
+      "subjectIds": [
+        "us-ut-legislature-statute-2024-sb149",
+        "us-ut-legislature-statute-2025-sb332",
+        "us-ut-legislature-statute-2026-hb320"
+      ],
+      "cadenceDays": 90,
+      "criticality": "standard",
+      "parserVersion": "publedge-source-v1",
+      "contentValidation": "required",
+      "collectionMode": "automated",
+      "coverageState": "degraded"
+    }
+  },
+  "observations": {
+    "obs_2a0be998316b3e09b6704ef2e64e78defa75a36b145921e94413c1a6edf9ff6c": {
+      "sourceId": "publedge-source:utah-oaip-doctronic-rma",
+      "retrievedAt": "2026-09-07T05:25:58.080Z",
+      "retrievalStatus": "succeeded",
+      "assessmentKind": "primary_retrieval",
+      "parserVersion": "publedge-source-v1",
+      "coverageQualified": true,
+      "evidenceLinks": [
+        "https://commerce.utah.gov/ai/agreements/doctronic/"
+      ],
+      "rawContentHash": "3193cb76b78847880fd6f7e15363e1e5737d513e0a65069fbc1777d713fdf679",
+      "normalizedContentHash": "8a9e225e118d251e7273fc6932ae9a5f1b0cd25aab5c090e6135eb1a3b2dd65e",
+      "excerpt": "Office of AI Policy: Doctronic RMA - commerce.utah.gov Doctronic AI Regulatory Mitigation Agreement Utah’s First AI Prescription Renewal Regulatory Mitigation Agreement Doctronic AI Mitigation Agreement The Utah Office of Artificial Intelligence Policy (OAIP) has approved a new p",
+      "locator": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "contentValidation": "valid",
+      "id": "obs_2a0be998316b3e09b6704ef2e64e78defa75a36b145921e94413c1a6edf9ff6c"
+    },
+    "obs_9976f83439dbbd95f55408adbd5defcbcc683624acb501ea3438ec39736d59ba": {
+      "sourceId": "publedge-source:utah-oaip-legion-rma",
+      "retrievedAt": "2026-09-07T05:25:58.080Z",
+      "retrievalStatus": "succeeded",
+      "assessmentKind": "primary_retrieval",
+      "parserVersion": "publedge-source-v1",
+      "coverageQualified": true,
+      "evidenceLinks": [
+        "https://commerce.utah.gov/ai/agreements/ai-legion-health/"
+      ],
+      "rawContentHash": "01ce0104c4d4baa529911ee6c1328a256b21aa09f5a314fde7a27d8851e96819",
+      "normalizedContentHash": "57f7184af273b288e44c11aa52a07b6c39c35be21c5c5be1fcdb597f460c4a4b",
+      "excerpt": "AI Legion Health - commerce.utah.gov Legion Health AI Legion Health AI Mitigation Agreement Smarter Psychiatry. Faster Refills. Safer Care. Legion Health is an AI-enabled psychiatry clinic that combines licensed clinicians with advanced technology to improve access to care. Their",
+      "locator": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "contentValidation": "valid",
+      "id": "obs_9976f83439dbbd95f55408adbd5defcbcc683624acb501ea3438ec39736d59ba"
+    },
+    "obs_584df3b2250f896f551154d19c9977c0fe0455ebe01e44bed15d45cc56000626": {
+      "sourceId": "publedge-source:utah-code-title-13-chapter-72",
+      "retrievedAt": "2026-09-07T05:25:58.080Z",
+      "retrievalStatus": "succeeded",
+      "assessmentKind": "primary_retrieval",
+      "parserVersion": "publedge-source-v1",
+      "coverageQualified": false,
+      "evidenceLinks": [
+        "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html"
+      ],
+      "rawContentHash": "511233fc77ec9e3d2a1e7ffc77a1323c80ac1570aa1afbfcc6c93469ae4d7319",
+      "normalizedContentHash": "49a9bb65380a783a78072e76e433efb957263f83a3a1920c768e85bb96d7149d",
+      "excerpt": "Utah Code Chapter 13-72 Accessibility Use the Settings Button to view other accessibility Settings Skip to Content Search Settings Login Search Legislators All Legislators All Legislators Find Legislators By Session (1896-Current) Alphabetical (Historical) Find by Address/Map Ses",
+      "locator": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+      "failureReason": "Document identity not established",
+      "contentValidation": "invalid",
+      "id": "obs_584df3b2250f896f551154d19c9977c0fe0455ebe01e44bed15d45cc56000626"
+    }
+  },
+  "findings": {
+    "finding_ab7e7bf868922f4f2a7544dfe311707abdd86a7efba5d0688b1b9cc70b85597f": {
+      "id": "finding_ab7e7bf868922f4f2a7544dfe311707abdd86a7efba5d0688b1b9cc70b85597f",
+      "subjectIds": [
+        "us-ut-legislature-statute-2024-sb149"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-legislature-statute-2024-sb149"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_42e7f83d7151fc895a519c44a4b4732e3fce2de3c3fb35666503bc80dc16b0b1": {
+      "id": "finding_42e7f83d7151fc895a519c44a4b4732e3fce2de3c3fb35666503bc80dc16b0b1",
+      "subjectIds": [
+        "us-ut-legislature-statute-2025-hb452"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-legislature-statute-2025-hb452"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_9db706cc58b2dd4ba50de36612e5b634f15c9a92e673e27295fc62dacc8a6b3e": {
+      "id": "finding_9db706cc58b2dd4ba50de36612e5b634f15c9a92e673e27295fc62dacc8a6b3e",
+      "subjectIds": [
+        "us-ut-legislature-statute-2025-sb226"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-legislature-statute-2025-sb226"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_0362e628b3ea663240b172a3e811e740a4b9db5bdc06658fdee4be9a374df2f2": {
+      "id": "finding_0362e628b3ea663240b172a3e811e740a4b9db5bdc06658fdee4be9a374df2f2",
+      "subjectIds": [
+        "us-ut-legislature-statute-2025-sb332"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-legislature-statute-2025-sb332.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-legislature-statute-2025-sb332"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-legislature-statute-2025-sb332.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_8088e1e044a33163b94d46d2d7b8a0306572e25dcf509f3fa58e9e6d0be9c280": {
+      "id": "finding_8088e1e044a33163b94d46d2d7b8a0306572e25dcf509f3fa58e9e6d0be9c280",
+      "subjectIds": [
+        "us-ut-legislature-statute-2026-hb320"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-legislature-statute-2026-hb320"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_51e3480c900ea0da180850262c350b8eece820aa295d17dfb780b9bb72fbe4be": {
+      "id": "finding_51e3480c900ea0da180850262c350b8eece820aa295d17dfb780b9bb72fbe4be",
+      "subjectIds": [
+        "us-ut-oaip-jia-2026-001"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-oaip-jia-2026-001"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-oaip-jia-2026-001.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_8d70c36631121aced95a7114319fb0bc4647ee72d1e8ba101af350e2c6c518aa": {
+      "id": "finding_8d70c36631121aced95a7114319fb0bc4647ee72d1e8ba101af350e2c6c518aa",
+      "subjectIds": [
+        "us-ut-oaip-rma-2024-001"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-oaip-rma-2024-001"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-oaip-rma-2024-001.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_49f7481ef4d3c8a33d45e89fc073166a83083d3104036585dc24158a8372e906": {
+      "id": "finding_49f7481ef4d3c8a33d45e89fc073166a83083d3104036585dc24158a8372e906",
+      "subjectIds": [
+        "us-ut-oaip-rma-2025-002"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-oaip-rma-2025-002"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-oaip-rma-2025-002.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_95295f134e20ef41868156e91f11b6572e45788137c93ed5d599296df9f35e65": {
+      "id": "finding_95295f134e20ef41868156e91f11b6572e45788137c93ed5d599296df9f35e65",
+      "subjectIds": [
+        "us-ut-oaip-rma-2026-001"
+      ],
+      "claim": "Review record verification age",
+      "evidence": {
+        "locator": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+        "normalizedContentHash": "760d489e015b9623b5805af1aff88ede43c7e7a25d192a45928cea8f29d07d55",
+        "sourceId": "publedge-record:us-ut-oaip-rma-2026-001"
+      },
+      "oldValue": null,
+      "newValue": {
+        "lastVerified": "2026-06-04",
+        "cadenceDays": 90,
+        "dateStatus": "overdue"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-oaip-rma-2026-001.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-03T00:00:00.000Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_97c6f8f40ddbc5711c3d9ac7664a4346b27e8e74d715575dca162575a96e8350": {
+      "id": "finding_97c6f8f40ddbc5711c3d9ac7664a4346b27e8e74d715575dca162575a96e8350",
+      "subjectIds": [
+        "us-ut-oaip-rma-2025-002"
+      ],
+      "claim": "Review authority source snapshot",
+      "evidence": {
+        "locator": "https://commerce.utah.gov/ai/agreements/doctronic/",
+        "normalizedContentHash": "8a9e225e118d251e7273fc6932ae9a5f1b0cd25aab5c090e6135eb1a3b2dd65e",
+        "sourceId": "publedge-source:utah-oaip-doctronic-rma"
+      },
+      "oldValue": null,
+      "newValue": {
+        "qualification": "Authority page for the existing Doctronic demonstration. The page does not itself renew the signed term or establish compliance.",
+        "assessment": "baseline_review",
+        "reason": null
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-oaip-rma-2025-002.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-14T05:25:58.080Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_eb24f3b7d6e31b7ea918e65050f0669f0ec4cfdb061c817b29bf0a0dbb6a8857": {
+      "id": "finding_eb24f3b7d6e31b7ea918e65050f0669f0ec4cfdb061c817b29bf0a0dbb6a8857",
+      "subjectIds": [
+        "us-ut-oaip-rma-2026-001"
+      ],
+      "claim": "Review authority source snapshot",
+      "evidence": {
+        "locator": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+        "normalizedContentHash": "57f7184af273b288e44c11aa52a07b6c39c35be21c5c5be1fcdb597f460c4a4b",
+        "sourceId": "publedge-source:utah-oaip-legion-rma"
+      },
+      "oldValue": null,
+      "newValue": {
+        "qualification": "Authority page for the existing Legion demonstration. Commencement requires explicit evidence; absence of a notice is not a status finding.",
+        "assessment": "baseline_review",
+        "reason": null
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-oaip-rma-2026-001.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-14T05:25:58.080Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    },
+    "finding_99dc0d190ab8a95af365d19f4486c20bb516814996227bffdb3166c79817a777": {
+      "id": "finding_99dc0d190ab8a95af365d19f4486c20bb516814996227bffdb3166c79817a777",
+      "subjectIds": [
+        "us-ut-legislature-statute-2024-sb149"
+      ],
+      "claim": "Repair authority source coverage",
+      "evidence": {
+        "locator": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+        "normalizedContentHash": "1a7b733808bc55f8d451bf1c2f34676cbcf528ffd4c47e06e136a09b62abcc73",
+        "sourceId": "publedge-source:utah-code-title-13-chapter-72"
+      },
+      "oldValue": null,
+      "newValue": {
+        "qualification": "Current-code snapshot for context only. Statutory interpretation and updates belong to EveryAILaw; the chapter is not proof of every historical bill or PubLedge mapping.",
+        "assessment": "inaccessible",
+        "reason": "Document identity not established"
+      },
+      "affectedRecords": [
+        "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md"
+      ],
+      "reviewOwner": "Sam Rogers",
+      "reviewDueAt": "2026-09-14T05:25:58.080Z",
+      "status": "pending",
+      "firstSeenAt": "2026-09-07T05:25:58.080Z"
+    }
+  },
+  "runs": {
+    "publedge-monitor-bc6a6248-5466-435c-9532-14b5e231b3e3": {
+      "id": "publedge-monitor-bc6a6248-5466-435c-9532-14b5e231b3e3",
+      "selectionKeys": [
+        "utah-code-title-13-chapter-72",
+        "utah-oaip-doctronic-rma",
+        "utah-oaip-legion-rma"
+      ],
+      "inputFingerprint": "df6fe06b0c9f703638cfe7e11085d52ac2060cb2544bb9594cbc36d73e446281",
+      "status": "completed",
+      "startedAt": "2026-09-07T05:25:58.080Z",
+      "results": {
+        "utah-oaip-doctronic-rma": {
+          "kind": "publedge-source",
+          "sourceId": "utah-oaip-doctronic-rma",
+          "qualified": true,
+          "contentHash": "8a9e225e118d251e7273fc6932ae9a5f1b0cd25aab5c090e6135eb1a3b2dd65e",
+          "observedAt": "2026-09-07T05:25:58.080Z"
+        },
+        "utah-oaip-legion-rma": {
+          "kind": "publedge-source",
+          "sourceId": "utah-oaip-legion-rma",
+          "qualified": true,
+          "contentHash": "57f7184af273b288e44c11aa52a07b6c39c35be21c5c5be1fcdb597f460c4a4b",
+          "observedAt": "2026-09-07T05:25:58.080Z"
+        },
+        "utah-code-title-13-chapter-72": {
+          "kind": "publedge-source",
+          "sourceId": "utah-code-title-13-chapter-72",
+          "qualified": false,
+          "contentHash": "49a9bb65380a783a78072e76e433efb957263f83a3a1920c768e85bb96d7149d",
+          "observedAt": "2026-09-07T05:25:58.080Z"
+        }
+      },
+      "finishedAt": "2026-09-07T05:25:58.080Z"
+    }
+  }
+}

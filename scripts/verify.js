@@ -20,6 +20,21 @@ const { classifyUnmappedContainers, getAllowedUnmappedInstrumentIds } = require(
 
 const ROOT = path.join(__dirname, '..');
 
+function positiveWholeDays(value, name, fallback) {
+    const configured = value === undefined || value === null ? fallback : value;
+    const text = String(configured).trim();
+    if (!/^[1-9]\d*$/.test(text)) throw new Error(`Invalid verification.${name}: expected a positive whole-day threshold`);
+    const days = Number(text);
+    if (!Number.isSafeInteger(days)) throw new Error(`Invalid verification.${name}: expected a safe whole-day threshold`);
+    return days;
+}
+
+function parseVerifiedDate(value) {
+    if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
+    const date = new Date(`${value}T00:00:00.000Z`);
+    return Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value ? date : null;
+}
+
 // ---------------------------------------------------------------------------
 // Verification
 // ---------------------------------------------------------------------------
@@ -32,10 +47,16 @@ function verify() {
     }
 
     const config = parseYaml(fs.readFileSync(configPath, 'utf-8'));
-    const stalenessDays = parseInt(config.verification?.staleness_days || '90', 10);
-    const authorityStalenessDays = parseInt(config.verification?.authority_staleness_days || stalenessDays, 10);
-    const obligationStalenessDays = parseInt(config.verification?.obligation_staleness_days || stalenessDays, 10);
-    const historicalDemonstrationStalenessDays = parseInt(config.verification?.historical_demonstration_staleness_days || stalenessDays, 10);
+    let stalenessDays, authorityStalenessDays, obligationStalenessDays, historicalDemonstrationStalenessDays;
+    try {
+        stalenessDays = positiveWholeDays(config.verification?.staleness_days, 'staleness_days', 90);
+        authorityStalenessDays = positiveWholeDays(config.verification?.authority_staleness_days, 'authority_staleness_days', stalenessDays);
+        obligationStalenessDays = positiveWholeDays(config.verification?.obligation_staleness_days, 'obligation_staleness_days', stalenessDays);
+        historicalDemonstrationStalenessDays = positiveWholeDays(config.verification?.historical_demonstration_staleness_days, 'historical_demonstration_staleness_days', stalenessDays);
+    } catch (error) {
+        console.error(`Configuration error: ${error.message}`);
+        process.exit(1);
+    }
     const now = new Date();
 
     console.log('Knowledge Base Verification Report');
@@ -89,13 +110,23 @@ function verify() {
     console.log('--- Staleness Check ---\n');
     const staleEntities = [];
     const neverVerified = [];
+    const invalidVerified = [];
+    const futureVerified = [];
 
     for (const entity of allEntities) {
-        if (!entity.last_verified) {
+        if (entity.last_verified === undefined || entity.last_verified === null || String(entity.last_verified).trim() === '') {
             neverVerified.push(entity);
             continue;
         }
-        const verifiedDate = new Date(entity.last_verified + 'T00:00:00');
+        const verifiedDate = parseVerifiedDate(entity.last_verified);
+        if (!verifiedDate) {
+            invalidVerified.push(entity);
+            continue;
+        }
+        if (verifiedDate.getTime() > now.getTime()) {
+            futureVerified.push(entity);
+            continue;
+        }
         const daysSince = Math.floor((now - verifiedDate) / (1000 * 60 * 60 * 24));
         const threshold = thresholdFor(entity);
         if (daysSince > threshold) {
@@ -119,8 +150,24 @@ function verify() {
         console.log();
     }
 
-    const freshCount = allEntities.length - staleEntities.length - neverVerified.length;
-    console.log(`Fresh: ${freshCount}  |  Stale: ${staleEntities.length}  |  Never verified: ${neverVerified.length}\n`);
+    if (invalidVerified.length > 0) {
+        console.log(`INVALID LAST VERIFIED (${invalidVerified.length}):`);
+        for (const e of invalidVerified) {
+            console.log(`  [${e.role}] ${e.id} — invalid last_verified value (${JSON.stringify(e.last_verified)})`);
+        }
+        console.log();
+    }
+
+    if (futureVerified.length > 0) {
+        console.log(`FUTURE LAST VERIFIED (${futureVerified.length}):`);
+        for (const e of futureVerified) {
+            console.log(`  [${e.role}] ${e.id} — last_verified is in the future (${e.last_verified})`);
+        }
+        console.log();
+    }
+
+    const freshCount = allEntities.length - staleEntities.length - neverVerified.length - invalidVerified.length - futureVerified.length;
+    console.log(`Fresh: ${freshCount}  |  Stale: ${staleEntities.length}  |  Never verified: ${neverVerified.length}  |  Invalid: ${invalidVerified.length}  |  Future: ${futureVerified.length}\n`);
 
     // -----------------------------------------------------------------------
     // 2. Completeness check
@@ -228,10 +275,12 @@ function verify() {
     // }
 
     // Exit code
-    if (staleEntities.length > 0 || neverVerified.length > 0 || completenessErrors > 0) {
+    if (staleEntities.length > 0 || neverVerified.length > 0 || invalidVerified.length > 0 || futureVerified.length > 0 || completenessErrors > 0) {
         const reasons = [];
         if (staleEntities.length > 0) reasons.push('stale entities');
         if (neverVerified.length > 0) reasons.push('entities missing last_verified');
+        if (invalidVerified.length > 0) reasons.push('entities with invalid last_verified');
+        if (futureVerified.length > 0) reasons.push('entities with future last_verified');
         if (completenessErrors > 0) reasons.push('completeness errors');
         console.log(`Result: REVIEW NEEDED — ${reasons.join(', ')}.`);
         process.exit(1);
