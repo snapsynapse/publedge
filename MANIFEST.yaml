@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:902f6b939c98cc826e4f86b34a30747875033454765fc710feeaaec186559b41
+    hash: sha256:c6925fca84028c50583fbeae474156f7a21b4740548c559ded075ad83ede4c90
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -468,7 +468,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:5e06f10e42cf71236e44257a4aacddb23af8a62d3c78840e76ef0fdae5a7b9ff
+    hash: sha256:03a8f5aee537778659e3699d62d37ecb94bd4428a26e30844218a3231ed213df
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -558,7 +558,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:76b698a8a726946b6709deb0a92a4a8d6e03b250fd514f87f3a27c61610fb681
+    hash: sha256:362bc9b748e99295868a4f5a57465cfbafb8f97f12de5f056532ec1e730d4b07
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -843,7 +843,7 @@ files:
 
   - path: assets/styles.css
     role: site-source
-    hash: sha256:3035d5ac8c92921bccdaee2f786b5e6f7aa8548fdc9645110bdc2070376b8e2f
+    hash: sha256:c28ecddaf277f2345ee4688441412054647bfa7adf2038e6260c3f54ba58c515
     note: assets/styles.css
 
   - path: assets/tables.js

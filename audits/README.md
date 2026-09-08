@@ -15,6 +15,7 @@ When a new audit runs, append a row to the table and commit the report.
 | Date | Scope | Standard / Rubric | Report | Outcome |
 |---|---|---|---|---|
 | 2026-04-19 | Web frontend (17 pages) | WCAG 2.1 AA | [a11y-2026-04-19.md](a11y-2026-04-19.md) | 0 violations; 4 violation classes found and fixed during the audit |
+| 2026-09-07 | Generated sitemap tree (160 HTML routes) | WCAG 2.1 AA, major-findings gate | [a11y-2026-09-07.md](a11y-2026-09-07.md) | Pass: 0 violations, 0 incomplete candidates, 0 route errors |
 | 2026-04-19 | Repository + MCP server + build pipeline | OWASP Top 10:2021 | [security-2026-04-19.md](security-2026-04-19.md) | 0 critical/high/medium; 3 low (1 fixed inline, 2 deferred); 2 informational |
 | 2026-04-19 | https://publedge.org/ | Siteline SNAP rubric | pending (see note) | Cache-stale result — Grade F because HTTPS was still provisioning at scan time. Re-run next session after Siteline's daily cache clears |
 

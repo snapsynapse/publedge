@@ -69,6 +69,9 @@
   :root:not(.light-mode) .prevnext-next:hover {
     color: var(--link-hover);
   }
+  :root:not(.light-mode) .matrix-cell.covered {
+    background: var(--panel);
+  }
 }
 
 * { box-sizing: border-box; }
@@ -126,7 +129,7 @@ main a:hover, footer a:hover, .prose a:hover, article a:hover {
 /* Suppress underline for links that wrap cards, buttons, nav, or badges. */
 .site-nav-link, .bridge-cta, .card-title a, .skip-link,
 .stat-card a, .obligation-card > a, .search-results a,
-.compare-list a, .breadcrumb a { text-decoration: none !important; }
+.compare-list a { text-decoration: none !important; }
 
 code {
   font-family: var(--font-mono);
@@ -817,8 +820,7 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
    Timeline (adapted from EveryAILaw).
 -------------------------------------------------------------------------- */
 .timeline { margin: 1.5rem 0; position: relative; }
-.timeline::before {
-    content: '';
+.timeline-line {
     position: absolute;
     left: 20px;
     top: 0;
@@ -840,8 +842,7 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
     margin: 0.25rem 0;
     scroll-margin-top: 72px;
 }
-.timeline-entry::before {
-    content: '';
+.timeline-marker {
     position: absolute;
     left: 14px;
     top: 18px;
@@ -852,11 +853,11 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
     background: var(--panel);
     box-sizing: border-box;
 }
-.timeline-entry.past::before {
+.timeline-entry.past .timeline-marker {
     background: #2a8a54;
     border-color: #2a8a54;
 }
-.timeline-entry.future::before {
+.timeline-entry.future .timeline-marker {
     background: transparent;
     border-color: var(--navy);
 }
