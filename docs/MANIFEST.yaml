@@ -558,7 +558,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:362bc9b748e99295868a4f5a57465cfbafb8f97f12de5f056532ec1e730d4b07
+    hash: sha256:c203eb239d1a6493bfd8bf1bbc9ef3baae2e5f34cec661c6d21febeb9dd14ced
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -843,7 +843,7 @@ files:
 
   - path: assets/styles.css
     role: site-source
-    hash: sha256:c28ecddaf277f2345ee4688441412054647bfa7adf2038e6260c3f54ba58c515
+    hash: sha256:31d923cd05ea71babb105e4f539e752e8052f2cb0caef31b90fd130abd09a7a1
     note: assets/styles.css
 
   - path: assets/tables.js

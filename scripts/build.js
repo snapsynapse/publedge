@@ -1138,7 +1138,7 @@ function generateMatrixPage(config, data, configCSS) {
             const entry = (matrix[p.id] || {})[c.id];
             if (entry && entry.covered) {
                 const n = entry.provisions.length;
-                const linkLabel = `${n} ${n === 1 ? 'link' : 'links'}`;
+                const linkLabel = `${n} ${n === 1 ? 'provision' : 'provisions'}`;
                 return `<td class="matrix-cell covered" title="${escapeHTML(pLabel)} — ${escapeHTML(c.title || c.name || c.id)}: ${n}"><a href="/requires/${c.id}/${p.id}/" onclick="passTheme(this)" style="color:inherit;text-decoration:none;">${linkLabel}</a></td>`;
             }
             return `<td class="matrix-cell empty">&mdash;</td>`;

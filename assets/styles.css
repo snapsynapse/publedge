@@ -646,6 +646,7 @@ tbody tr:hover { background: var(--bg-alt); }
 :root.dark-mode .card-title a:hover { color: #f6c6ce; }
 :root.dark-mode .stat-number { color: #e9ecf2; }
 :root.dark-mode th { color: #e9ecf2; }
+:root.dark-mode .matrix-cell.covered { background: var(--panel); }
 
 /* --------------------------------------------------------------------------
    Site-wide disclaimer banner — same amber signal in both modes.
