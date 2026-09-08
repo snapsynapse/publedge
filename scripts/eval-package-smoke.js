@@ -61,9 +61,28 @@ function rpc(proc, id, method, params) {
             failures.push(`installed package serverInfo.version ${init.result?.serverInfo?.version} does not match package version ${packageVersion}`);
         }
         const list = await rpc(proc, 2, 'tools/list', {});
+        if (list.result?.tools?.length !== 13) failures.push('installed package does not expose exactly 13 tools');
         const names = new Set((list.result?.tools || []).map(tool => tool.name));
         for (const required of ['search', 'fetch_by_url', 'get_matrix', 'get_mappings']) {
             if (!names.has(required)) failures.push(`installed package tools/list is missing ${required}`);
+        }
+        const discover = await rpc(proc, 3, 'server/discover', {});
+        for (const required of ['https://publedge.org/', 'https://obligationfirst.org/v1/context.jsonld', 'demonstration', 'draft', 'last_verified', 'native PubLedge records']) {
+            if (!init.result?.instructions?.includes(required)) failures.push(`installed package guidance missing ${required}`);
+        }
+        if (discover.result?.instructions !== init.result?.instructions) failures.push('installed discovery paths expose different guidance');
+        let id = 4;
+        for (const [recordId, source] of [
+            ['us-ut-oaip-jia-2026-001', 'publedge-original-draft'],
+            ['us-ut-oaip-rma-2025-002', 'demonstration-remap']
+        ]) {
+            const response = await rpc(proc, id++, 'tools/call', { name: 'get_legal-instrument', arguments: { id: recordId } });
+            const record = JSON.parse(response.result.content[0].text);
+            if (record.source !== source) failures.push(`installed ${recordId} lost its source label`);
+            if (!record.official_url || !record.last_verified || !record.body) failures.push(`installed ${recordId} is missing provenance or body`);
+            if (source === 'publedge-original-draft' && (record.editorial_status !== 'draft' || record.status !== 'proposed')) {
+                failures.push('installed original draft lost its draft/proposed limits');
+            }
         }
     } catch (error) {
         failures.push(error.message);

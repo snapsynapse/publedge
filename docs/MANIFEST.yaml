@@ -538,7 +538,7 @@ files:
 
   - path: mcp-server.js
     role: tooling
-    hash: sha256:31253104f9a377d7e150c5866296e7e41b0f144b42db10b012bd973577a6f689
+    hash: sha256:63442714c9ba8b39f1c41f7355bf031319265a6245c3d67080ce00b830645429
     note: mcp-server.js
 
   - path: scripts/eval-mcp-rpc-framing.js
@@ -653,7 +653,7 @@ files:
 
   - path: scripts/eval-mcp-contract.js
     role: tooling
-    hash: sha256:3e143606e2bf447530b3226eb6aa10a244fed81f111011dd8f32ca7dbc588c6a
+    hash: sha256:20340097afbfb8aca27bafa1d567d75501aff9ce25dab76b081c23b73d50fb8a
     note: scripts/eval-mcp-contract.js
 
   - path: scripts/eval-mcp-parser-lockstep.js
@@ -663,7 +663,7 @@ files:
 
   - path: scripts/eval-package-smoke.js
     role: tooling
-    hash: sha256:c127a73ffc33f80dc037a768e3a9675d50f7912219f6f7440b5280d5fc1a962e
+    hash: sha256:5edb21af8de085f7a92bcb2a5e976b3821e8219b8f07c2af4e55a5bd5349a4b6
     note: scripts/eval-package-smoke.js
 
   - path: scripts/eval-obligation-first-binding.js

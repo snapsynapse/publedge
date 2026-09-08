@@ -89,6 +89,15 @@ const containerPlural = slugify(config.entities?.container?.plural || 'container
 const authorityName = slugify(config.entities?.authority?.name || 'authority');
 const authorityPlural = slugify(config.entities?.authority?.plural || 'authorities');
 
+const SERVER_INSTRUCTIONS = [
+    'PubLedge (https://publedge.org/) is a recordkeeping convention for civic, legal, and regulatory publication records.',
+    'These read-only tools query the records bundled with the installed package, including demonstration remaps of source instruments and a proposed PubLedge original draft. They do not fetch current authority documents.',
+    `Use get_${containerName} or fetch_by_url to inspect the complete record before interpreting a list, search, matrix, or mapping result. Summaries omit source and editorial fields.`,
+    'Check source, editorial_status, status, last_verified, official_url, reliance_scope, and the body where present. Missing fields remain unknown. last_verified is a recorded review date, not evidence of a live check or current legal effect.',
+    'A demonstration remap is an editorial representation of its source; a proposed original draft is not an issued authority instrument. Administrative issuance and negotiated terms do not decide an allegation or establish general applicability. Preserve party, jurisdiction, and reliance limits.',
+    'Tools return native PubLedge records. Related graph exports use Obligation First (https://obligationfirst.org/; context https://obligationfirst.org/v1/context.jsonld). That shared context is not an output schema for these tool payloads.'
+].join('\n\n');
+
 // ---------------------------------------------------------------------------
 // Boundary helper
 // ---------------------------------------------------------------------------
@@ -186,7 +195,7 @@ function getToolDefinitions() {
         },
         {
             name: `list_${containerPlural}`,
-            description: `List ${cPlural.toLowerCase()} in the knowledge base. Optional filters: jurisdiction, authority, type, status. Returns id, title, status, authority, type, jurisdiction, and canonical url for each match.`,
+            description: `List bundled ${cPlural.toLowerCase()}. Optional filters: jurisdiction, authority, type, status. Returns id, title, status, authority, type, jurisdiction, and canonical url for each match. Summaries omit source and editorial fields; use get_${containerName} before interpreting legal effect.`,
             inputSchema: {
                 type: 'object',
                 properties: {
@@ -200,7 +209,7 @@ function getToolDefinitions() {
         },
         {
             name: `get_${containerName}`,
-            description: `Get a single ${cName.toLowerCase()} by its ID. Returns frontmatter, timeline, and provisions.`,
+            description: `Get a bundled ${cName.toLowerCase()} by its ID. Returns frontmatter, timeline, provisions, and body, including source, draft or demonstration labels, provenance, and reliance limits where recorded. This is not a live authority lookup.`,
             inputSchema: {
                 type: 'object',
                 properties: { id: { type: 'string', description: `The ${cName.toLowerCase()} ID (filename without .md)` } },
@@ -242,7 +251,7 @@ function getToolDefinitions() {
         },
         {
             name: 'fetch_by_url',
-            description: `Fetch a ${cName.toLowerCase()} by its canonical URL (e.g. https://publedge.org/us/utah/oaip/rma/2025-001/ or /us/utah/oaip/rma/2025-001/). Returns the same payload as get_${containerName}.`,
+            description: `Look up a bundled ${cName.toLowerCase()} by its canonical URL (e.g. https://publedge.org/us/utah/oaip/rma/2025-001/ or /us/utah/oaip/rma/2025-001/). Returns the same complete record as get_${containerName}, including source and editorial fields where recorded. Does not fetch the URL over the network.`,
             inputSchema: {
                 type: 'object',
                 properties: { url: { type: 'string', description: 'Canonical hierarchical URL or path.' } },
@@ -568,6 +577,7 @@ function handleMessage(msg) {
             resultType: 'complete',
             protocolVersion: SUPPORTED_PROTOCOL_VERSIONS.includes(clientVersion) ? clientVersion : '2024-11-05',
             capabilities: { tools: {} },
+            instructions: SERVER_INSTRUCTIONS,
             serverInfo: {
                 name: config.name || 'Knowledge Base MCP',
                 version: PACKAGE_VERSION
@@ -584,6 +594,7 @@ function handleMessage(msg) {
             resultType: 'complete',
             supportedVersions: SUPPORTED_PROTOCOL_VERSIONS,
             capabilities: { tools: {} },
+            instructions: SERVER_INSTRUCTIONS,
             _meta: {
                 'io.modelcontextprotocol/serverInfo': {
                     name: config.name || 'Knowledge Base MCP',
@@ -593,7 +604,6 @@ function handleMessage(msg) {
             ttlMs: CACHE_TTL_MS,
             cacheScope: CACHE_SCOPE
         };
-        if (config.description) result.instructions = config.description;
         return makeResponse(id, result);
     }
 
