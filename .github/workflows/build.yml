@@ -52,15 +52,16 @@ jobs:
         run: npm run build
 
       - name: Run skill-a11y-audit (WCAG 2.1 AA)
-        uses: snapsynapse/skill-a11y-audit/.github/actions/scan@main
+        uses: snapsynapse/skill-a11y-audit/.github/actions/scan@6af2c95a56ff058cddf0c6febc71512db1d6d19b # v3.1.0
         with:
+          node-version: '22'
           serve-path: ./docs
           sitemap: http://localhost:8088/sitemap.xml
           sitemap-find: https://publedge.org
           sitemap-replace: http://localhost:8088
           sitemap-exclude: '\.(md|yaml|json|jsonld|ttl|xml|txt)$'
-          fail-on: errors
+          fail-on: major
 
 # GitHub Pages serves from main /docs. The build job ensures docs/ stays
-# in sync with sources; the a11y job runs a WCAG 2.1 AA pass on every
-# push and pull request against every URL in sitemap.xml.
+# in sync with sources; the a11y job scans every HTML URL in the generated
+# sitemap tree and blocks confirmed major findings or inconclusive major evidence.

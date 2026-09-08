@@ -288,7 +288,7 @@ function renderThemeScript() {
             var btn = document.createElement('button');
             btn.className = 'back-to-top';
             btn.setAttribute('aria-label', 'Back to top');
-            btn.textContent = '\\u2191';
+            btn.textContent = 'Top';
             document.body.appendChild(btn);
             window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 400); });
             btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
@@ -1138,7 +1138,8 @@ function generateMatrixPage(config, data, configCSS) {
             const entry = (matrix[p.id] || {})[c.id];
             if (entry && entry.covered) {
                 const n = entry.provisions.length;
-                return `<td class="matrix-cell covered" title="${escapeHTML(pLabel)} — ${escapeHTML(c.title || c.name || c.id)}: ${n}"><a href="/requires/${c.id}/${p.id}/" onclick="passTheme(this)" style="color:inherit;text-decoration:none;">${n}</a></td>`;
+                const linkLabel = `${n} ${n === 1 ? 'provision' : 'provisions'}`;
+                return `<td class="matrix-cell covered" title="${escapeHTML(pLabel)} — ${escapeHTML(c.title || c.name || c.id)}: ${n}"><a href="/requires/${c.id}/${p.id}/" onclick="passTheme(this)" style="color:inherit;text-decoration:none;">${linkLabel}</a></td>`;
             }
             return `<td class="matrix-cell empty">&mdash;</td>`;
         }).join('');
@@ -1217,6 +1218,7 @@ function generateTimelinePage(config, data, configCSS) {
     const html = Object.keys(byYear).sort().reverse().map(year =>
         `<div class="timeline-year">${year}</div>\n` +
         byYear[year].map(ev => `<div class="timeline-entry ${ev.date <= today ? 'past' : 'future'}">
+            <span class="timeline-marker" aria-hidden="true"></span>
             <div class="timeline-date">${formatDate(ev.date)}</div>
             <div class="timeline-content">
                 <a href="${containerHrefById(ev.containerId, data.containerById)}" onclick="passTheme(this)" class="timeline-regulation">${escapeHTML(ev.container)}</a>
@@ -1228,7 +1230,7 @@ function generateTimelinePage(config, data, configCSS) {
 
     const content = `<h2 style="margin-top: 0.5rem;">Timeline</h2>
         <p style="color: var(--text-secondary); margin-bottom: 1rem;">Key dates. Solid dots are past; hollow dots are future.</p>
-        <div class="timeline">${html}</div>`;
+        <div class="timeline"><span class="timeline-line" aria-hidden="true"></span>${html}</div>`;
 
     return renderPageShell(config, {
         title: 'Timeline',

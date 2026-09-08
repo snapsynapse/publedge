@@ -194,7 +194,7 @@
             var btn = document.createElement('button');
             btn.className = 'back-to-top';
             btn.setAttribute('aria-label', 'Back to top');
-            btn.textContent = '\u2191';
+            btn.textContent = 'Top';
             document.body.appendChild(btn);
             window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 400); });
             btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
