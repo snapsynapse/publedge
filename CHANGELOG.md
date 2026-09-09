@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Not all v0.1.0-pre history is versioned separately; early drafting work was compressed into a single prerelease entry below. Subsequent releases are tracked individually.
 
+## v0.2.3 - 2026-09-08
+
+Maintenance patch for MCP consumer guidance and source fidelity. The protocol specification remains v0.2.0 and the Obligation-First record contract remains v0.6.
+
+### Changed
+
+- MCP `initialize` and `server/discover` now return the same guidance for bundled snapshot limits, provenance fields, unknown values, draft and demonstration records, reliance scope, and native PubLedge record shapes.
+- The package includes the neutral ElizaChat source-review receipt alongside the corrected demonstration remap.
+
+### Fixed
+
+- Correct the ElizaChat cure procedure to keep immediate Schedule A incident reporting separate from the 24-hour harm-reporting rule, start Phase One without an added approval condition, require written approval for subsequent phases, and retain the agreement's good-faith cure qualifications.
+- Add source-specific regressions for the reporting trigger and clock, phase condition, cure qualifications, and review receipt. Final-section extraction now handles `Sources` at end of input.
+
 ## v0.2.2 - 2026-09-06
 
 - Correct SB25B-004 commencement independently of signature and requirement dates.
@@ -203,7 +217,10 @@ Security hardening and release-readiness patch.
 - CI: pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap on every push and pull request; docs/ sync check; hash validation
 - `.gitignore` aligned to portfolio hygiene baseline (`.env.*` glob, `__pycache__/`, `*.pyc`, `dist/`, `build/`, `.venv/`, `venv/`)
 
-[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.2.3...HEAD
+[0.2.3]: https://github.com/snapsynapse/publedge/compare/v0.2.2...v0.2.3
+[0.2.2]: https://github.com/snapsynapse/publedge/compare/v0.2.1...v0.2.2
+[0.2.1]: https://github.com/snapsynapse/publedge/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/snapsynapse/publedge/compare/v0.1.3...v0.2.0
 [0.1.3]: https://github.com/snapsynapse/publedge/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/snapsynapse/publedge/compare/v0.1.1-pre...v0.1.2

@@ -11,7 +11,7 @@ Living housekeeping document. Tracks what shipped, what's pending, and what's de
 
 ## Current version
 
-Protocol specification `v0.2.0`; stable MCP server `v0.2.2`, released 2026-09-06.
+Protocol specification `v0.2.0`; stable MCP server `v0.2.3`, prepared 2026-09-08 for a separately authorized release.
 
 ## Current disposition
 

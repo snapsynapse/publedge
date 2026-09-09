@@ -53,6 +53,24 @@ function rpc(proc, id, method, params) {
             env: { ...process.env, npm_config_cache: cache }
         });
 
+        const reviewReceiptPath = path.join(
+            tempDir,
+            'node_modules',
+            'publedge',
+            'ops',
+            'evidence',
+            'elizachat-source-review-2026-09-08.json'
+        );
+        if (!fs.existsSync(reviewReceiptPath)) {
+            failures.push('installed package is missing the ElizaChat source review receipt');
+        } else {
+            const receipt = JSON.parse(fs.readFileSync(reviewReceiptPath, 'utf-8'));
+            if (receipt.instrument_id !== 'us-ut-oaip-rma-2024-001' ||
+                receipt.source_sha256 !== '3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c') {
+                failures.push('installed ElizaChat source review receipt lost its source binding');
+            }
+        }
+
         const executable = path.join(tempDir, 'node_modules', '.bin', 'publedge');
         proc = spawn(executable, [], { cwd: tempDir, stdio: ['pipe', 'pipe', 'pipe'] });
         const init = await rpc(proc, 1, 'initialize', {});
