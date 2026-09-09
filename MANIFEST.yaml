@@ -713,7 +713,7 @@ files:
 
   - path: scripts/eval-elizachat-source-fidelity.js
     role: tooling
-    hash: sha256:d213852c5eb19f1ddae0cb2bc793ce7c2db44db005cfc23024798c0c40ad544f
+    hash: sha256:99c322f6654c2ac9346962ec5a489762d48efe52852c47196b6258a1e2a612e1
     note: scripts/eval-elizachat-source-fidelity.js
 
   - path: scripts/eval-verification-allowlist.js

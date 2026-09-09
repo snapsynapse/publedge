@@ -14,9 +14,12 @@ const receiptPath = 'ops/evidence/elizachat-source-review-2026-09-08.json';
 const read = relativePath => fs.readFileSync(path.join(ROOT, relativePath), 'utf8');
 
 function extractSection(markdown, heading) {
-    const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const match = markdown.match(new RegExp(`^## ${escaped}\\s*$([\\s\\S]*?)(?=^## |\\Z)`, 'm'));
-    return match ? match[1].trim() : '';
+    const lines = markdown.split('\n');
+    const start = lines.findIndex(line => line.trim() === `## ${heading}`);
+    if (start === -1) return '';
+    const nextHeading = lines.slice(start + 1).findIndex(line => /^##\s+/.test(line));
+    const end = nextHeading === -1 ? lines.length : start + 1 + nextHeading;
+    return lines.slice(start + 1, end).join('\n').trim();
 }
 
 function matchingLine(section, label) {
@@ -97,6 +100,12 @@ function run() {
     const failures = [];
 
     requireNoIssues(failures, 'instrument source-fidelity claim', validateInstrumentClaims(instrument));
+    const sourcesAsLastSection = instrument.replace(/\n## Notes on this demonstration remap[\s\S]*$/, '');
+    requireNoIssues(
+        failures,
+        'last-section extraction',
+        validateInstrumentClaims(sourcesAsLastSection)
+    );
 
     requireMutationCaught(
         failures,
