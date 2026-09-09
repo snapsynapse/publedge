@@ -20,6 +20,7 @@ const scripts = [
     'eval-mcp-contract.js',
     'eval-mcp-parser-lockstep.js',
     'eval-content-source.js',
+    'eval-elizachat-source-fidelity.js',
     'eval-verification-allowlist.js',
     'eval-obligation-first-binding.js',
     'check-of-fingerprint.js',

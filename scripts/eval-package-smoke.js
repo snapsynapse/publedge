@@ -53,6 +53,24 @@ function rpc(proc, id, method, params) {
             env: { ...process.env, npm_config_cache: cache }
         });
 
+        const reviewReceiptPath = path.join(
+            tempDir,
+            'node_modules',
+            'publedge',
+            'ops',
+            'evidence',
+            'elizachat-source-review-2026-09-08.json'
+        );
+        if (!fs.existsSync(reviewReceiptPath)) {
+            failures.push('installed package is missing the ElizaChat source review receipt');
+        } else {
+            const receipt = JSON.parse(fs.readFileSync(reviewReceiptPath, 'utf-8'));
+            if (receipt.instrument_id !== 'us-ut-oaip-rma-2024-001' ||
+                receipt.source_sha256 !== '3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c') {
+                failures.push('installed ElizaChat source review receipt lost its source binding');
+            }
+        }
+
         const executable = path.join(tempDir, 'node_modules', '.bin', 'publedge');
         proc = spawn(executable, [], { cwd: tempDir, stdio: ['pipe', 'pipe', 'pipe'] });
         const init = await rpc(proc, 1, 'initialize', {});
@@ -61,9 +79,28 @@ function rpc(proc, id, method, params) {
             failures.push(`installed package serverInfo.version ${init.result?.serverInfo?.version} does not match package version ${packageVersion}`);
         }
         const list = await rpc(proc, 2, 'tools/list', {});
+        if (list.result?.tools?.length !== 13) failures.push('installed package does not expose exactly 13 tools');
         const names = new Set((list.result?.tools || []).map(tool => tool.name));
         for (const required of ['search', 'fetch_by_url', 'get_matrix', 'get_mappings']) {
             if (!names.has(required)) failures.push(`installed package tools/list is missing ${required}`);
+        }
+        const discover = await rpc(proc, 3, 'server/discover', {});
+        for (const required of ['https://publedge.org/', 'https://obligationfirst.org/v1/context.jsonld', 'demonstration', 'draft', 'last_verified', 'native PubLedge records']) {
+            if (!init.result?.instructions?.includes(required)) failures.push(`installed package guidance missing ${required}`);
+        }
+        if (discover.result?.instructions !== init.result?.instructions) failures.push('installed discovery paths expose different guidance');
+        let id = 4;
+        for (const [recordId, source] of [
+            ['us-ut-oaip-jia-2026-001', 'publedge-original-draft'],
+            ['us-ut-oaip-rma-2025-002', 'demonstration-remap']
+        ]) {
+            const response = await rpc(proc, id++, 'tools/call', { name: 'get_legal-instrument', arguments: { id: recordId } });
+            const record = JSON.parse(response.result.content[0].text);
+            if (record.source !== source) failures.push(`installed ${recordId} lost its source label`);
+            if (!record.official_url || !record.last_verified || !record.body) failures.push(`installed ${recordId} is missing provenance or body`);
+            if (source === 'publedge-original-draft' && (record.editorial_status !== 'draft' || record.status !== 'proposed')) {
+                failures.push('installed original draft lost its draft/proposed limits');
+            }
         }
     } catch (error) {
         failures.push(error.message);

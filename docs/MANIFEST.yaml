@@ -25,8 +25,8 @@
 #   - Workshop scratchpad (_workshop/)
 
 bundle: publedge
-bundle_version: 0.2.2
-bundle_date: 2026-09-06
+bundle_version: 0.2.3
+bundle_date: 2026-09-08
 description: >
   PubLedge open recordkeeping protocol for fact-specific written
   interpretations between two parties.
@@ -123,17 +123,17 @@ files:
 
   - path: server.json
     role: config
-    hash: sha256:f6c5c7f906851f5d64f97910c9a836df1d1bc13cdaab95ac9f1e15b5544b76c2
+    hash: sha256:28724b1299cb29df8381932b92a2227284fcda98c32117bd60042bde28ba7245
     note: server.json
 
   - path: package.json
     role: config
-    hash: sha256:0c1bf4b6b55b3f5dcc98dfda927b74f4bdc96f207470f0686e44ef0899a503c5
+    hash: sha256:2c279d6f20c0e0f282c441d4f2df97df00e5026eca637f1b55054bb02abbc5be
     note: package.json
 
   - path: package-lock.json
     role: config
-    hash: sha256:0056c2c4e573052d1f20dfa1115df793455efa9da5af5ee904b6fd1256314070
+    hash: sha256:51ec2b8e0225fdcb9dd5a9c5b4aa769d222df8da342d21411074b0889935a125
     note: package-lock.json
 
   - path: project.yml
@@ -213,7 +213,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2024-001.md
     role: instrument
-    hash: sha256:a29675f7c74f702d213cb8002adfc5684d33ffa5137341c4db831441f129ef07
+    hash: sha256:68266cdbb989ed85f06c0b2dc6a96f0007462ce569d77816590a479da020a7d7
     note: data/examples/instruments/us-ut-oaip-rma-2024-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-001.md
@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:eb5cb162f3902ca83bc3dcb8f5e61aa15a1f6bdf6bf4d35a1af06fbc6e8697f1
+    hash: sha256:95ad2b4db6724139678242e9b71dd8ac5b35023c74100fbcdbceea4e5c643b29
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -458,7 +458,7 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:79461a06418e58719d3ad423aa2b79612ee7fe001464a26f355863dfaa64d0c4
+    hash: sha256:50b3246b876ccacf6de2ea6d8fc598cf8cba69aabf0991e0ab2863d2b391e2e5
     note: README.md
 
   - path: RELEASE_NOTES-v0.2.2.md
@@ -466,9 +466,14 @@ files:
     hash: sha256:c45e001488ef378375d7cb395a5d059356484130309e4d4c1037bd1ad16b6502
     note: RELEASE_NOTES-v0.2.2.md
 
+  - path: RELEASE_NOTES-v0.2.3.md
+    role: release-notes
+    hash: sha256:fae982b4e109c810afac0d80e261fc1fd542106a099297b67d7bf1a09b0bfb31
+    note: RELEASE_NOTES-v0.2.3.md
+
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:03a8f5aee537778659e3699d62d37ecb94bd4428a26e30844218a3231ed213df
+    hash: sha256:de38e6dbea69e9731713c3ef130afa3457a64dd156ead0ad5c05539aeb0f27df
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -538,7 +543,7 @@ files:
 
   - path: mcp-server.js
     role: tooling
-    hash: sha256:31253104f9a377d7e150c5866296e7e41b0f144b42db10b012bd973577a6f689
+    hash: sha256:63442714c9ba8b39f1c41f7355bf031319265a6245c3d67080ce00b830645429
     note: mcp-server.js
 
   - path: scripts/eval-mcp-rpc-framing.js
@@ -653,7 +658,7 @@ files:
 
   - path: scripts/eval-mcp-contract.js
     role: tooling
-    hash: sha256:3e143606e2bf447530b3226eb6aa10a244fed81f111011dd8f32ca7dbc588c6a
+    hash: sha256:20340097afbfb8aca27bafa1d567d75501aff9ce25dab76b081c23b73d50fb8a
     note: scripts/eval-mcp-contract.js
 
   - path: scripts/eval-mcp-parser-lockstep.js
@@ -663,7 +668,7 @@ files:
 
   - path: scripts/eval-package-smoke.js
     role: tooling
-    hash: sha256:c127a73ffc33f80dc037a768e3a9675d50f7912219f6f7440b5280d5fc1a962e
+    hash: sha256:6cf56ac604d5cc21e85c13439379e258376e45c9b83f9bb38b6cb54061400ec8
     note: scripts/eval-package-smoke.js
 
   - path: scripts/eval-obligation-first-binding.js
@@ -711,6 +716,11 @@ files:
     hash: sha256:f7780fb24cd6309f10469532f806ef0bd87d251a2f976f49a2c914f828a7ff84
     note: scripts/eval-schema-parity.js
 
+  - path: scripts/eval-elizachat-source-fidelity.js
+    role: tooling
+    hash: sha256:99c322f6654c2ac9346962ec5a489762d48efe52852c47196b6258a1e2a612e1
+    note: scripts/eval-elizachat-source-fidelity.js
+
   - path: scripts/eval-verification-allowlist.js
     role: tooling
     hash: sha256:74e52203bef779b577263c952e7efc145bdb64fcb72eb8be2848e6e80716c4c2
@@ -738,7 +748,7 @@ files:
 
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:8a12d2174c2b7aa8d40ae3edced0c54aae1eaa03e1be87fad6408bfa687994fc
+    hash: sha256:0357330c1494402604d8b4c3ec0d7c0abeffdb9d137f623600b018251a6f13c0
     note: scripts/evals.js
 
   - path: scripts/lib/build-clock.js
@@ -828,12 +838,12 @@ files:
 
   - path: PROJECT_CONTEXT.md
     role: agent-guidance
-    hash: sha256:232c705dac0f07d1aa7ad7d35d77cf50a073fed0b83a292af6e1cae0a3b33200
+    hash: sha256:7d336e4abff629e5a92c349c04285ee7b3cb8323147b6c60013050bd44b30ccb
     note: PROJECT_CONTEXT.md
 
   - path: about/index.html
     role: site-source
-    hash: sha256:a01a17c9dc4c4735e8920eb7b4c3a94048e462012e86cf8ebeaf6ad0af23cee1
+    hash: sha256:4921b0adf61e763e97434f494679a56359f4628d711cfe381eca9316b1f22c6a
     note: about/index.html
 
   - path: assets/search.js
@@ -863,7 +873,7 @@ files:
 
   - path: reference/index.html
     role: site-source
-    hash: sha256:c9da2918396e9626f0239df74a550204eb302598098d1345bf48d547fdec02dd
+    hash: sha256:00ae00a59417a88b850a415e30b4f7422f612f75443aa96f4830a2727f85896e
     note: reference/index.html
 
   - path: reference/prior-art/index.html
@@ -873,7 +883,7 @@ files:
 
   - path: reference/registry/index.html
     role: site-source
-    hash: sha256:c1d2be12e2b87fb59154d46d1e095b2b60913c65ad69bd2d7a12f7f9011d722b
+    hash: sha256:c8ffaf79975c0430a36dac8599321a085fdb3cb4e77b157c81f76683497da3fa
     note: reference/registry/index.html
 
   - path: reference/verify/index.html
@@ -930,6 +940,11 @@ files:
     role: documentation
     hash: sha256:b0ac0e815120e6be66be3f0b56e40a357cc3ebb0b797b021ece0ef04b8593a1a
     note: T10 bounded maintenance pilot
+
+  - path: ops/evidence/elizachat-source-review-2026-09-08.json
+    role: evidence
+    hash: sha256:a1b0c0bd67c30c9fa82b2ab45fd3ace3dee00067f11f2f3f7211c08aa9c7f342
+    note: ElizaChat source review receipt
 
   - path: scripts/lib/freshness-contract.js
     role: code

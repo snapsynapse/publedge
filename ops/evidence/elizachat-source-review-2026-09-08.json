@@ -1,0 +1,46 @@
+{
+  "receipt_version": 1,
+  "reviewed_at": "2026-09-08",
+  "instrument_id": "us-ut-oaip-rma-2024-001",
+  "record_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+  "record_source": "demonstration-remap",
+  "record_editorial_status": "published",
+  "record_last_verified": "2026-06-04",
+  "source_url": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+  "source_sha256": "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
+  "source_pages": 12,
+  "review_scope": "Bounded source-to-record review of reporting triggers and clocks, phased-rollout approval conditions, and cure qualifications.",
+  "clauses_reviewed": [
+    {
+      "locator": "VI.H",
+      "pdf_page": 4,
+      "record_rule": "The agreement commences with Phase One. Each subsequent phase occurs only upon written Office approval. The Office reviews the size and location of the Phase Two student group."
+    },
+    {
+      "locator": "VI.I.3",
+      "pdf_page": 5,
+      "record_rule": "The participant notifies the Office within 24 hours of an incident that results in harm to a user's health, safety, or financial well-being."
+    },
+    {
+      "locator": "Schedule A XV.D-E",
+      "pdf_page": 8,
+      "record_rule": "Cure-period forbearance depends on a good-faith effort to follow the curing procedure. The procedure requires immediate reporting of activity constituting an incident and good-faith efforts to remediate the incident and resulting harm and to avoid repeat incidents."
+    }
+  ],
+  "linked_obligations_reviewed": [
+    {
+      "path": "data/examples/obligations/elizachat-phased-rollout.md",
+      "result": "No correction required; it already limits written approval to advancement to each subsequent phase."
+    },
+    {
+      "path": "data/examples/obligations/rma-incident-notification-24hr.md",
+      "result": "No correction required; it already limits the 24-hour rule to incidents resulting in harm."
+    }
+  ],
+  "limits": [
+    "This receipt reviews only the listed clauses and record claims; it is not a complete legal review of the agreement or incorporated law.",
+    "The record remains a demonstration remap with requesting-party-only reliance limits.",
+    "The signed agreement and this review do not establish a later extension, termination, replacement, or present legal effect.",
+    "The source review date does not replace the record's existing last_verified date."
+  ]
+}

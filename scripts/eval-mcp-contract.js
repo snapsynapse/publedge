@@ -20,12 +20,17 @@ function parseToolPayload(response) {
     try {
         const init = await rpc(proc, 1, 'initialize', {});
         if (!init.result?.capabilities?.tools) failures.push('initialize response missing tools capability');
+        for (const required of ['https://publedge.org/', 'https://obligationfirst.org/', 'https://obligationfirst.org/v1/context.jsonld', 'demonstration', 'draft', 'last_verified', 'native PubLedge records']) {
+            if (!init.result?.instructions?.includes(required)) failures.push(`initialize guidance missing ${required}`);
+        }
         if (init.result?.serverInfo?.version !== packageVersion) {
             failures.push(`initialize serverInfo.version ${init.result?.serverInfo?.version} does not match package version ${packageVersion}`);
         }
 
         const list = await rpc(proc, 2, 'tools/list', {});
         const tools = list.result?.tools || [];
+        if (tools.length !== 13) failures.push(`expected 13 native-record tools, got ${tools.length}`);
+        if (tools.some(tool => tool.outputSchema)) failures.push('native-record tools unexpectedly advertise an output schema');
         const toolNames = new Set(tools.map(t => t.name));
         for (const required of ['search', 'get_matrix', 'get_mappings', 'fetch_by_url', 'search_obligations', 'get_upcoming', 'get_recently_changed']) {
             if (!toolNames.has(required)) failures.push(`tools/list missing ${required}`);
@@ -82,6 +87,7 @@ function parseToolPayload(response) {
             'io.modelcontextprotocol/clientCapabilities': {}
         };
         const discover = await rpc(proc, id++, 'server/discover', { _meta: modernMeta });
+        if (discover.result?.instructions !== init.result?.instructions) failures.push('discovery paths expose different server guidance');
         if (discover.result?.resultType !== 'complete') failures.push('server/discover response missing resultType "complete"');
         if (!discover.result?.supportedVersions?.includes('2026-07-28')) failures.push('server/discover supportedVersions missing 2026-07-28');
         if (!discover.result?.capabilities?.tools) failures.push('server/discover response missing tools capability');
@@ -97,6 +103,20 @@ function parseToolPayload(response) {
         const unsupported = await rpc(proc, id++, 'tools/list', { _meta: { 'io.modelcontextprotocol/protocolVersion': '1900-01-01' } });
         if (unsupported.error?.code !== -32022) failures.push(`unsupported protocol version should return -32022, got ${JSON.stringify(unsupported.error || unsupported.result)}`);
         if (!Array.isArray(unsupported.error?.data?.supported)) failures.push('unsupported protocol version error missing data.supported array');
+
+        for (const [recordId, source] of [
+            ['us-ut-oaip-jia-2026-001', 'publedge-original-draft'],
+            ['us-ut-oaip-rma-2025-002', 'demonstration-remap']
+        ]) {
+            const expected = project.containers.find(record => record.id === recordId);
+            const response = await rpc(proc, id++, 'tools/call', { name: 'get_legal-instrument', arguments: { id: recordId } });
+            const record = parseToolPayload(response);
+            if (record.source !== source) failures.push(`${recordId} lost its source label`);
+            for (const field of ['editorial_status', 'status', 'last_verified', 'official_url', 'reliance_scope']) {
+                if (record[field] !== expected[field]) failures.push(`${recordId} changed ${field}`);
+            }
+            if (record.body !== expected._body) failures.push(`${recordId} lost its source body`);
+        }
 
         if (failures.length) {
             console.error(`eval-mcp-contract: FAILED (${failures.length})`);
