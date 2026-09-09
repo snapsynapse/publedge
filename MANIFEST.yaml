@@ -213,7 +213,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2024-001.md
     role: instrument
-    hash: sha256:a29675f7c74f702d213cb8002adfc5684d33ffa5137341c4db831441f129ef07
+    hash: sha256:68266cdbb989ed85f06c0b2dc6a96f0007462ce569d77816590a479da020a7d7
     note: data/examples/instruments/us-ut-oaip-rma-2024-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-001.md
@@ -711,6 +711,11 @@ files:
     hash: sha256:f7780fb24cd6309f10469532f806ef0bd87d251a2f976f49a2c914f828a7ff84
     note: scripts/eval-schema-parity.js
 
+  - path: scripts/eval-elizachat-source-fidelity.js
+    role: tooling
+    hash: sha256:d213852c5eb19f1ddae0cb2bc793ce7c2db44db005cfc23024798c0c40ad544f
+    note: scripts/eval-elizachat-source-fidelity.js
+
   - path: scripts/eval-verification-allowlist.js
     role: tooling
     hash: sha256:74e52203bef779b577263c952e7efc145bdb64fcb72eb8be2848e6e80716c4c2
@@ -738,7 +743,7 @@ files:
 
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:8a12d2174c2b7aa8d40ae3edced0c54aae1eaa03e1be87fad6408bfa687994fc
+    hash: sha256:0357330c1494402604d8b4c3ec0d7c0abeffdb9d137f623600b018251a6f13c0
     note: scripts/evals.js
 
   - path: scripts/lib/build-clock.js
@@ -930,6 +935,11 @@ files:
     role: documentation
     hash: sha256:b0ac0e815120e6be66be3f0b56e40a357cc3ebb0b797b021ece0ef04b8593a1a
     note: T10 bounded maintenance pilot
+
+  - path: ops/evidence/elizachat-source-review-2026-09-08.json
+    role: evidence
+    hash: sha256:a1b0c0bd67c30c9fa82b2ab45fd3ace3dee00067f11f2f3f7211c08aa9c7f342
+    note: ElizaChat source review receipt
 
   - path: scripts/lib/freshness-contract.js
     role: code

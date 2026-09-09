@@ -54,14 +54,14 @@ statute_anchors:
 rules_mitigated:
   - "§58-1-501(1) and (2) — unlawful/unprofessional conduct and administrative penalties, to the extent ElizaChat app engages in 'practice of mental health therapy' as defined in §§58-60-102(17) and 58-61-102(8), during a 30-day cure period after an incident"
 mitigations:
-  - "Three-phased rollout: (1) OAIP 'trusted tester' Phase One, (2) limited student-user Phase Two (size/location approved by OAIP), (3) Phase Three broad Utah school-district availability — each phase requires OAIP written approval"
+  - "Three-phased rollout: agreement commences with OAIP 'trusted tester' Phase One; each subsequent phase requires OAIP written approval; Phase Two group size/location reviewed by OAIP; Phase Three permits broad Utah school-district availability"
   - "Approved testing plan to identify and prevent the app from engaging in mental-health therapy or other licensed practice"
-  - "Incident-cure procedure: report within 24 hours; identify user(s) and harm; remediate; avoid repeat; 30-day cure window"
+  - "Incident-cure procedure: immediately report any activity constituting an incident; identify the action, involved user(s), and any harm; make good-faith efforts to remediate the incident and resulting harm and to avoid repeat incidents; 30-day cure window"
   - "Risk-assessment and escalation: high-risk users connected to licensed psychologist/therapist for real-time intervention"
   - "Written parental consent before regular use by users under 18"
   - "HIPAA-compliant anonymization and storage of user data; State of Utah Enterprise Information Security Policy 5000-0002"
   - "GenAI disclosure per §13-2-12(4) before app access; user acknowledgment required"
-  - "Monthly reporting to ai@utah.gov; 24-hour incident notification"
+  - "Monthly reporting to ai@utah.gov; notify OAIP within 24 hours of any incident that results in harm to user health, safety, or financial well-being"
 status: expired
 editorial_status: published
 supersedes: null
@@ -79,7 +79,7 @@ modified: 2026-06-04
 
 ## Summary
 
-A Regulatory Mitigation Agreement enrolling ElizaChat, Inc. — a Utah teen mental-health app developer — in the AI Learning Laboratory for a 12-month demonstration period with a three-phased rollout to Utah school districts. The Agreement structures a narrow, incident-triggered forbearance: if the ElizaChat app is determined to have engaged in the "practice of mental health therapy" (as defined in §§58-60-102(17), 58-61-102(8)), DOPL will forgo enforcement under §58-1-501(1)-(2) for a 30-day cure window during which ElizaChat must report, remediate, and avoid repeat incidents. Mitigation is conditioned on approved rollout phases, testing plans, escalation protocols, parental consent, and monthly reporting.
+A Regulatory Mitigation Agreement enrolling ElizaChat, Inc. — a Utah teen mental-health app developer — in the AI Learning Laboratory for a 12-month demonstration period with a three-phased rollout to Utah school districts. The Agreement structures a narrow, incident-triggered forbearance: if the ElizaChat app is determined to have engaged in the "practice of mental health therapy" (as defined in §§58-60-102(17), 58-61-102(8)), DOPL will forgo enforcement under §58-1-501(1)-(2) for a 30-day cure window, so long as ElizaChat makes a good-faith effort to follow the curing procedure. That procedure requires ElizaChat to immediately report the activity and make good-faith efforts to remediate the incident and resulting harm and to avoid repeat incidents. A separate reporting clause requires notice within 24 hours of any incident that results in harm to a user's health, safety, or financial well-being. The Agreement commences with Phase One; each subsequent phase requires OAIP written approval. Other conditions include testing plans, escalation protocols, parental consent, and monthly reporting.
 
 ## Background
 
@@ -87,19 +87,20 @@ Executed 2024-11-14 (OAIP Director Zachary Boyd), 2024-11-15 (ElizaChat CEO Dave
 
 ## Question presented
 
-May ElizaChat, Inc. offer its AI-supported mental-health app to Utah minors through a phased rollout in participating school districts — when the app's interactions could be construed as the "practice of mental health therapy" reserved to licensed clinicians — under a narrow 30-day incident-cure forbearance from §58-1-501(1)-(2), subject to approved testing plans, escalation protocols, parental consent, and monthly reporting?
+May ElizaChat, Inc. offer its AI-supported mental-health app to Utah minors through a phased rollout in participating school districts — when the app's interactions could be construed as the "practice of mental health therapy" reserved to licensed clinicians — under a narrow 30-day incident-cure forbearance from §58-1-501(1)-(2), subject to the Phase One testing start, written approval for subsequent phases, testing plans, escalation protocols, parental consent, and monthly reporting?
 
 ## Regulatory mitigation granted (Schedule A, §XV)
 
 | Scope | Provision |
 |---|---|
-| Rollout permission | Phased availability to Utah school-district students, each phase requiring OAIP written approval (§VI.H) |
-| Incident-cure forbearance | If ElizaChat engages in unlicensed mental-health-therapy practice, DOPL forgoes §58-1-501(1)-(2) enforcement for a 30-day cure period during which Participant reports, remediates, and avoids repeat |
+| Rollout permission | Agreement commences with Phase One; each subsequent phase requires OAIP written approval (§VI.H) |
+| Incident-cure forbearance | If ElizaChat engages in unlicensed mental-health-therapy practice, DOPL forgoes §58-1-501(1)-(2) enforcement for a 30-day cure period so long as Participant makes a good-faith effort to follow the curing procedure, including immediate reporting and good-faith efforts to remediate the incident and resulting harm and avoid repeat incidents |
 | Out-of-scope | Mitigation does not apply to claims by users, parents, guardians, or any other State entity besides DOPL |
 
 ## Obligations summary (Section VI and Schedule A §XV–XVI)
 
 - Approved testing plan designed to prevent the app from engaging in therapy or other licensed practice.
+- Immediate reporting to OAIP of any activity constituting a Schedule A incident, including the action, involved user(s), and any resulting harm.
 - 24-hour incident notification to OAIP for any harm to health, safety, or financial well-being.
 - High-risk users auto-shared with ElizaChat clinical team and emergency contacts; real-time connection to licensed psychologist/therapist.
 - School-district-specific limitations respected.
@@ -119,8 +120,8 @@ Requesting-party-only. Mitigation runs to ElizaChat, Inc. It expressly does not 
 | "Agreement between OAIP, ElizaChat Inc., and DOPL" | `title`, `name` |
 | Section I parties | `parties[]` |
 | Section II (12-month from execution) | `term_start`, `term_end` |
-| Schedule A §XV incident-cure structure | `rules_mitigated[]` (note narrow, cure-window design), `obligation_kind: permission` |
-| Section VI.H phased rollout | `mitigations[]`, `obligation_kind: requirement` |
+| Schedule A §XV incident-cure structure | `rules_mitigated[]` and `mitigations[]` (narrow cure window; immediate reporting; good-faith remediation and nonrecurrence efforts), `obligation_kind: permission` |
+| Section VI.H phased rollout | `mitigations[]` (Phase One commencement; written approval for subsequent phases), `obligation_kind: requirement` |
 | Section XVI.E parental consent | `mitigations[]`, `obligation_kind: requirement` |
 | Latter signature 2024-11-18 | `enacted`, `effective` |
 
@@ -130,12 +131,16 @@ Requesting-party-only. Mitigation runs to ElizaChat, Inc. It expressly does not 
 - Pre-§13-72a instrument: predates Utah's dedicated Mental Health Chatbot chapter; scope of the app vs. "mental-health chatbot" as later defined is not addressed here.
 - Pre-§13-72-401 renumbering: the Agreement cites only §13-72-302 (not the later §13-72-401 transitioning 2026-05-06).
 - Mitigation is event-triggered and time-bounded (30-day cure), not a blanket pre-authorization.
+- The Schedule A cure procedure's immediate incident report and Section VI.I.3's 24-hour harm report have different triggers and clocks.
+- Cure-period forbearance depends on good-faith efforts to follow the curing procedure; remediation and nonrecurrence are also good-faith-effort duties.
+- `status: expired` records the initial 12-month term end. The cited signed agreement and authority page do not establish a later extension, termination, replacement, or present legal effect.
 - Does not bar individual user, parent/guardian, or third-party claims.
 
 ## Sources
 
 - [Agreement page — Utah OAIP](https://commerce.utah.gov/ai/agreements/elizachat/)
 - [Signed PDF](https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf)
+- [Source review receipt](https://github.com/snapsynapse/publedge/blob/main/ops/evidence/elizachat-source-review-2026-09-08.json)
 - [Utah Code Title 13, Chapter 72](https://le.utah.gov/xcode/Title13/Chapter72/13-72.html)
 - [Utah Code §58-60 — Mental Health Professional Practice Act](https://le.utah.gov/xcode/Title58/Chapter60/58-60.html)
 
