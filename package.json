@@ -66,6 +66,9 @@
     "check:of": "node scripts/check-of-version.js",
     "check:of-fingerprint": "node scripts/check-of-fingerprint.js",
     "check:of-continuity": "node scripts/check-of-continuity.js",
+    "check:admission": "node scripts/check-source-admission.js",
+    "prepack": "node scripts/check-source-admission.js --quiet",
+    "prepare:admission": "node scripts/prepare-source-admission.js",
     "verify:ci": "node scripts/verify-ci.js",
     "verify": "node scripts/verify.js",
     "evals": "node scripts/evals.js",
@@ -96,7 +99,13 @@
     "eval:scheduled-verification": "node scripts/eval-scheduled-verification.js",
     "eval:search-structured-data": "node scripts/eval-search-structured-data.js",
     "observe:maintenance": "node scripts/observe-maintenance.js",
-    "test:maintenance": "node --test tests/maintenance*.test.js"
+    "test:maintenance": "node --test tests/maintenance*.test.js",
+    "test:admission": "node --test tests/source-admission.test.js tests/generated-record-schema.test.js",
+    "test:doctronic-observation": "node --test tests/doctronic-observation.test.js",
+    "test:colorado-order24": "node --test tests/colorado-order24.test.js",
+    "test:source-mapping": "node --test tests/source-owned-mapping.test.js",
+    "test:of-evidence-inputs": "node --test tests/of-evidence-inputs.test.js",
+    "test:publication-state": "node --test tests/publication-state.test.js"
   },
   "devDependencies": {
     "ajv": "^8.17.1",

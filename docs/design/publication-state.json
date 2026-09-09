@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "document_updated": "2026-09-09",
+  "package": {
+    "name": "publedge",
+    "registry_server_name": "io.github.snapsynapse/publedge"
+  },
+  "source_candidate": {
+    "version": "0.2.3",
+    "status": "unpublished-source",
+    "base_commit": "3a07bba0b9f2b51c298a84fc50a42b66b341ad43",
+    "working_tree": true
+  },
+  "observations": {
+    "npm": {
+      "status": "published",
+      "version": "0.2.2",
+      "observed_at": "2026-09-09T16:18:33.674Z",
+      "evidence_url": "https://registry.npmjs.org/publedge/0.2.2",
+      "evidence_path": "design/PUBLICATION-PROVIDERS-2026-09-09.snapshot.json",
+      "evidence_sha256": "dd65163f596049c5cb1bdfdb0d89afffce3c76f4e165058425d1be197499eec0",
+      "integrity": "sha512-fERUpnJQ4iki0Me25lUrGYJjzwjquREFD04y9bFOpJ1Kp/kPcgv49d8Z4XHGsQnbpSAMbYSx/dUH/yKPFo/f5w==",
+      "tarball_sha256": "e7997f02ac43ba894c83bfa1c5f41b57205f2b37485160f62f7dd6beb2b6d820",
+      "artifact_snapshot_path": "design/PUBLISHED-MCP-0.2.2.snapshot.json",
+      "artifact_snapshot_sha256": "b10d2b1641c6bcf458dbf9853dd525d5afa88aa47665ab4091ecba90953c4345",
+      "error": null
+    },
+    "mcp_registry": {
+      "status": "published",
+      "version": "0.2.2",
+      "observed_at": "2026-09-09T16:18:33.674Z",
+      "evidence_url": "https://registry.modelcontextprotocol.io/v0/servers?search=publedge&version=latest",
+      "evidence_path": "design/PUBLICATION-PROVIDERS-2026-09-09.snapshot.json",
+      "evidence_sha256": "dd65163f596049c5cb1bdfdb0d89afffce3c76f4e165058425d1be197499eec0",
+      "error": null
+    },
+    "github_tag": {
+      "status": "published",
+      "version": "0.2.2",
+      "tag": "v0.2.2",
+      "observed_at": "2026-09-09T16:18:56.062Z",
+      "evidence_url": "https://api.github.com/repos/snapsynapse/publedge/git/refs/tags/v0.2.2",
+      "evidence_path": "design/PUBLICATION-PROVIDERS-2026-09-09.snapshot.json",
+      "evidence_sha256": "dd65163f596049c5cb1bdfdb0d89afffce3c76f4e165058425d1be197499eec0",
+      "error": null
+    },
+    "github_release": {
+      "status": "published",
+      "version": "0.2.2",
+      "tag": "v0.2.2",
+      "observed_at": "2026-09-09T16:18:56.585Z",
+      "evidence_url": "https://github.com/snapsynapse/publedge/releases/tag/v0.2.2",
+      "evidence_path": "design/PUBLICATION-PROVIDERS-2026-09-09.snapshot.json",
+      "evidence_sha256": "dd65163f596049c5cb1bdfdb0d89afffce3c76f4e165058425d1be197499eec0",
+      "error": null
+    }
+  },
+  "hosted_policy": {
+    "install_source": "npm",
+    "install_version_from": "observations.npm.version",
+    "capabilities_from": "observations.npm.artifact_snapshot_path"
+  },
+  "limitations": [
+    "Provider observations are independent and may report different versions; a Git tag is not a GitHub Release.",
+    "Null and error states are unknown, not evidence of absence.",
+    "The hosted install identity and capability catalog come from the verified npm artifact, not the working source candidate.",
+    "This file does not authorize or record publication of the source candidate."
+  ]
+}

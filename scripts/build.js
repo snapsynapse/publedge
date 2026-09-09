@@ -13,11 +13,13 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { parseYaml } = require('./lib/parse');
 const { loadMappingIndex } = require('./lib/mapping');
 const { loadMarkdownDir } = require('./lib/content');
 const { buildObligationFirstRecords, writeObligationFirstRecords } = require('./lib/obligation-first');
 const { deriveBuildClock } = require('./lib/build-clock');
+const { assertForEmission: assertSourceAdmission } = require('./check-source-admission');
 
 const ROOT = path.join(__dirname, '..');
 const BUILD_CLOCK = deriveBuildClock(ROOT);
@@ -1368,6 +1370,7 @@ function generateContainerDetail(config, container, data, configCSS) {
             ${cPrimaries.map(pId => { const p = primaries.find(pr => pr.id === pId); return `<a href="/primary/${pId}/" onclick="passTheme(this)" class="group-badge ${p?.group || ''}" style="text-decoration:none;">${escapeHTML(p?.name || humanizeId(pId))}</a>`; }).join(' ')}
         </div>` : ''}
         ${timelineRows ? `<h3>Timeline</h3><table class="data-table"><thead><tr><th>Milestone</th><th>Date</th><th>Notes</th></tr></thead><tbody>${timelineRows}</tbody></table>` : ''}
+${renderOperationalObservation(container)}
         ${renderSourceDocuments(container)}
         ${renderExtractedText(container)}
         ${container.provisions.length > 0 ? `<h3>Provisions (${container.provisions.length})</h3>
@@ -1378,6 +1381,13 @@ function generateContainerDetail(config, container, data, configCSS) {
 
     const displayName = container.title || container.name || container.id;
     return renderBridgeShell(config, { title: displayName, depth: 2, content, canonicalPath: container._canonicalPath || `container/${container.id}/`, description: `${displayName} — ${container.provisions.length} provisions.`, configCSS, structuredData: generateLegalDocumentJsonLd(container, config) });
+}
+
+function renderOperationalObservation(container) {
+    const match = container._body?.match(/(?:^|\n)## Operational observation \(not an issued term\)\n\n([\s\S]*?)(?=\n## |$)/);
+    if (!match) return '';
+    const paragraphs = match[1].trim().split(/\n\s*\n/).map(paragraph => `<p>${escapeHTML(paragraph.replace(/\s*\n\s*/g, ' '))}</p>`).join('\n');
+    return `<section class="about-content" aria-labelledby="operational-observation"><h3 id="operational-observation">Operational observation (not an issued term)</h3>${paragraphs}</section>`;
 }
 
 function generatePrimaryDetail(config, primary, data, configCSS) {
@@ -1765,7 +1775,8 @@ function generateRecordJsonEndpoint(c, config) {
         meta: {
             canonical_url: (config.url || '').replace(/\/+$/, '') + containerHref(c),
             generated: BUILD_CLOCK.instant,
-            schema: c.schema || null
+            schema: c.schema || null,
+            admission: c._admission
         },
         record: {
             id: c.id,
@@ -1775,10 +1786,12 @@ function generateRecordJsonEndpoint(c, config) {
             slug: c.slug || null,
             title: c.title || c.name || null,
             type: c.type || null,
+            source: c.source || null,
             jurisdiction: c.jurisdiction || null,
             authority: c.authority || null,
             url: (config.url || '').replace(/\/+$/, '') + containerHref(c),
             issued_by: c.issued_by || null,
+            issuance_event: c.issuance_event || null,
             enacted: c.enacted || null,
             effective: c.effective || null,
             official_url: c.official_url || null,
@@ -2153,6 +2166,7 @@ function cleanGeneratedOutputs() {
 
 function build() {
     const startTime = Date.now();
+    const admission = assertSourceAdmission({ root: ROOT });
     const config = loadConfig();
 
     // Env-var overrides for the rare case where you need to build the same
@@ -2161,6 +2175,7 @@ function build() {
 
     console.log(`Building ${config.name || 'project'}...\n`);
     console.log(`  Reproducible build clock: ${BUILD_CLOCK.instant} from ${BUILD_CLOCK.source}`);
+    console.log(`  Source admission: ${admission.legacy_unreviewed_records} legacy-unreviewed, ${admission.records_with_reviewed_changes} reviewed changes`);
 
     cleanGeneratedOutputs();
 
@@ -2181,6 +2196,52 @@ function build() {
     const containers = loadContainers(containerDir);
     const authorities = loadDir(authorityDir);
     const mappingIndex = loadMappingIndex(mappingPath);
+    const admissionReceipts = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/admission/receipts.json'), 'utf8'));
+    const evidenceInput = (filename, kind, unitKey = null) => {
+        const bytes = fs.readFileSync(path.join(ROOT, filename));
+        const snapshot = require('./lib/source-admission').nativeSnapshot(filename, bytes);
+        const state = admission.emitted[filename];
+        if (!state) throw new Error(`Missing source admission state for ${filename}`);
+        const receipt = admissionReceipts.records[filename];
+        const unitReview = unitKey ? receipt?.units?.[unitKey] : null;
+        const reviewed = unitKey ? Boolean(unitReview) : state.admission_status === 'reviewed-changes';
+        const evidenceRefs = unitKey ? (unitReview?.evidence || []) : Object.values(receipt?.units || {}).flatMap(unit => unit.evidence || []);
+        const retainedPrimary = reviewed ? [...new Set(evidenceRefs.flatMap(reference => {
+            const evidence = typeof reference === 'string' ? receipt?.evidence?.[reference] : reference;
+            return evidence?.original?.sha256 ? [evidence.original.sha256] : [];
+        }))].sort() : null;
+        return {
+            kind,
+            native_path: filename,
+            native_file_sha256: crypto.createHash('sha256').update(bytes).digest('hex'),
+            canonical_unit: unitKey,
+            canonical_sha256: unitKey ? snapshot.units[unitKey]?.sha256 || null : snapshot.sha256,
+            admission_status: reviewed ? 'reviewed-changes' : 'legacy-unreviewed',
+            review_packet_sha256: reviewed ? receipt?.review?.packet_sha256 || null : null,
+            retained_primary_sha256: reviewed && retainedPrimary.length ? retainedPrimary : null,
+            unresolved_review_state: reviewed ? (receipt.unresolved?.length ? 'declared' : 'none-declared') : 'unknown',
+            unresolved: reviewed ? [...(receipt.unresolved || [])] : null
+        };
+    };
+    for (const primary of primaries) {
+        const filename = path.relative(ROOT, path.join(primaryDir, primary._file)).replace(/\\/g, '/');
+        primary._evidence_input = evidenceInput(filename, 'obligation-definition');
+    }
+    for (const c of containers) {
+        const filename = path.relative(ROOT, path.join(containerDir, c._file)).replace(/\\/g, '/');
+        const state = admission.emitted[filename];
+        if (!state) throw new Error(`Missing source admission state for ${filename}`);
+        c._admission = { status: state.admission_status, limits: admission.limits };
+        c._evidence_input = evidenceInput(filename, 'instrument');
+    }
+    for (const authority of authorities) {
+        const filename = path.relative(ROOT, path.join(authorityDir, authority._file)).replace(/\\/g, '/');
+        authority._evidence_input = evidenceInput(filename, 'authority');
+    }
+    const mappingFilename = path.relative(ROOT, mappingPath).replace(/\\/g, '/');
+    for (const mapping of mappingIndex) {
+        mapping._evidence_input = evidenceInput(mappingFilename, 'mapping-entry', `entry:${mapping.id}`);
+    }
 
     // Attach canonical hierarchy paths to every container + authority
     attachCanonicalPaths(containers, authorities, config);

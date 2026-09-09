@@ -2,8 +2,12 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/",
-    "generated": "2026-09-05T00:00:00.000Z",
-    "schema": "https://publedge.org/schema/instrument.schema.json"
+    "generated": "2026-09-09T00:00:00.000Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json",
+    "admission": {
+      "status": "legacy-unreviewed",
+      "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
+    }
   },
   "record": {
     "id": "us-irs-tege-plr-2026-001",
@@ -13,6 +17,7 @@
     "slug": "irs-plr-202614036",
     "title": "IRS PLR 202614036 — Adverse Determination: §501(c)(3) Exemption Denied, Mixed-Use Facility",
     "type": "private-letter-ruling",
+    "source": "demonstration-remap",
     "jurisdiction": "us",
     "authority": "irs-tege",
     "url": "https://publedge.org/us/federal/irs-tege/plr/2026-001/",
@@ -21,6 +26,7 @@
       "name": "Internal Revenue Service, Tax Exempt and Government Entities",
       "ref": "https://irs.gov/privacy-disclosure/written-determinations"
     },
+    "issuance_event": "gist:Determination",
     "enacted": "2026-01-12",
     "effective": "2026-01-12",
     "official_url": "https://irs.gov/pub/irs-wd/202614036.pdf",

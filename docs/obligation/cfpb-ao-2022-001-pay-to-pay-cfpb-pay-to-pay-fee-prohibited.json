@@ -25,7 +25,7 @@
   "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
   "source_locator": "Interpretive position",
   "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-04-21",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:primary_id": "cfpb-pay-to-pay-fee-prohibited",
@@ -38,5 +38,48 @@
     "convenience fee",
     "debt collection",
     "regulation f"
+  ],
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "instrument",
+      "native_path": "data/examples/instruments/us-cfpb-ao-2022-001.md",
+      "native_file_sha256": "554698950a65f1295dbc1e9dee3fcb63a05ebf6e91817259672433a9e57d0d78",
+      "canonical_unit": null,
+      "canonical_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    },
+    {
+      "kind": "mapping-entry",
+      "native_path": "data/examples/mapping/index.yml",
+      "native_file_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+      "canonical_unit": "entry:cfpb-ao-2022-001-pay-to-pay",
+      "canonical_sha256": "e20e0bcb6fa5c62776f77e650f41e715b8d0ce8458a1f56e75a3a91709f998e5",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    },
+    {
+      "kind": "obligation-definition",
+      "native_path": "data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md",
+      "native_file_sha256": "51d12024f6a0736ed3f5d56ca24c94b133cc657f0a1ebdffca8ce77a185252d0",
+      "canonical_unit": null,
+      "canonical_sha256": "ba4fb468cbef7318935054ebcf8da946b2fb32f4e64124bdfba2bf54a1559532",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
   ]
 }

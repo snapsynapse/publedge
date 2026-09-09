@@ -6,6 +6,21 @@ const path = require('path');
 const { DOCS_DIR, loadProjectData, readJson, reportFailures } = require('./lib/eval-kit');
 const { buildObligationFirstRecords } = require('./lib/obligation-first');
 
+function fixtureEvidence(id) {
+    return {
+        kind: 'instrument',
+        native_path: `tests/fixtures/${id}.json`,
+        native_file_sha256: '1'.repeat(64),
+        canonical_unit: null,
+        canonical_sha256: '2'.repeat(64),
+        admission_status: 'legacy-unreviewed',
+        review_packet_sha256: null,
+        retained_primary_sha256: null,
+        unresolved_review_state: 'unknown',
+        unresolved: null
+    };
+}
+
 const failures = [];
 const apiDir = path.join(DOCS_DIR, 'api', 'v1', 'of');
 const recordsDir = path.join(apiDir, 'records');
@@ -218,13 +233,15 @@ const fixtureInstruments = buildObligationFirstRecords({ url: 'https://publedge.
             id: 'fixture-successor', type: 'statute', status: 'enacted',
             supersedes: 'fixture-predecessor',
             describesSameEntityAs: ['https://example.com/instrument/successor.json'],
-            of_notes: 'Explicit source qualification.'
+            of_notes: 'Explicit source qualification.',
+            _evidence_input: fixtureEvidence('fixture-successor')
         },
         {
             id: 'fixture-predecessor', type: 'statute', status: 'superseded',
-            lifecycle_status: 'repealed', operative_status: 'unknown'
+            lifecycle_status: 'repealed', operative_status: 'unknown',
+            _evidence_input: fixtureEvidence('fixture-predecessor')
         },
-        { id: 'fixture-default', type: 'statute', status: 'enforcing' }
+        { id: 'fixture-default', type: 'statute', status: 'enforcing', _evidence_input: fixtureEvidence('fixture-default') }
     ],
     authorities: [], primaries: [], mappingIndex: []
 }).instruments;

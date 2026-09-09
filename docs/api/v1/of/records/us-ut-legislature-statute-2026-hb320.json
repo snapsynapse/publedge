@@ -38,10 +38,29 @@
   "citation": "Utah HB 320 (2026 General Session)",
   "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
   "source_citation": "Utah HB 320 (2026 General Session)",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-06-04",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:status": "enforcing",
   "pub:editorial_status": "published",
-  "pub:canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/"
+  "pub:canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/",
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "instrument",
+      "native_path": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+      "native_file_sha256": "111b246cf8bb2b1118face419aa81634e3eba290346e98be8e47761d2a8345d5",
+      "canonical_unit": null,
+      "canonical_sha256": "8c4fba21742f0b6e177e6c4789075c6851acbcd3359335a24162d7f007393692",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
+  ]
 }

@@ -18,6 +18,10 @@ const { loadMarkdownDir } = require('./scripts/lib/content');
 const { loadMappingIndex } = require('./scripts/lib/mapping');
 
 const ROOT = __dirname;
+const admissionInventory = path.join(ROOT, 'data', 'admission', 'legacy.json');
+if (fs.existsSync(admissionInventory)) {
+    require('./scripts/check-source-admission').assertCurrent({ root: ROOT });
+}
 const PACKAGE_VERSION = JSON.parse(
     fs.readFileSync(path.join(ROOT, 'package.json'), 'utf-8')
 ).version;

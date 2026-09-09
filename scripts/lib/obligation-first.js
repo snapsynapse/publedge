@@ -28,6 +28,42 @@ function compact(value) {
     return Object.fromEntries(Object.entries(value).filter(([, item]) => item !== undefined && item !== null));
 }
 
+function validEvidenceInput(input) {
+    const digest = value => typeof value === 'string' && /^[a-f0-9]{64}$/.test(value);
+    const kinds = new Set(['authority', 'instrument', 'mapping-entry', 'obligation-definition']);
+    const required = ['kind', 'native_path', 'native_file_sha256', 'canonical_unit', 'canonical_sha256', 'admission_status', 'review_packet_sha256', 'retained_primary_sha256', 'unresolved_review_state', 'unresolved'];
+    if (!input || required.some(field => !Object.hasOwn(input, field))) return false;
+    if (!input || !kinds.has(input.kind) || typeof input.native_path !== 'string' || !input.native_path.trim() || !digest(input.native_file_sha256) || !digest(input.canonical_sha256)) return false;
+    if (!(input.canonical_unit === null || (typeof input.canonical_unit === 'string' && input.canonical_unit.length))) return false;
+    if (input.admission_status === 'legacy-unreviewed') {
+        return input.review_packet_sha256 === null && input.retained_primary_sha256 === null && input.unresolved_review_state === 'unknown' && input.unresolved === null;
+    }
+    if (input.admission_status !== 'reviewed-changes' || !digest(input.review_packet_sha256)) return false;
+    if (!(input.retained_primary_sha256 === null || (Array.isArray(input.retained_primary_sha256) && input.retained_primary_sha256.length && input.retained_primary_sha256.every(digest)))) return false;
+    if (!Array.isArray(input.unresolved) || input.unresolved.some(item => typeof item !== 'string' || !item.trim())) return false;
+    return input.unresolved.length ? input.unresolved_review_state === 'declared' : input.unresolved_review_state === 'none-declared';
+}
+
+function withEvidenceBoundary(record, inputs) {
+    if (!Array.isArray(inputs) || !inputs.length || inputs.some(input => !validEvidenceInput(input))) {
+        throw new Error(`Missing exact native evidence input for ${record['@id'] || record['pub:id'] || 'record'}`);
+    }
+    const hasLegacy = inputs.some(input => input.admission_status === 'legacy-unreviewed');
+    const unresolved = [...new Set(inputs.flatMap(input => input.unresolved || []))];
+    const hasDeclaredUnresolved = inputs.some(input => input.unresolved_review_state === 'declared');
+    const hasUnknown = inputs.some(input => input.unresolved_review_state === 'unknown');
+    return {
+        ...record,
+        evidence_type: hasLegacy ? 'legacy-unreviewed-source-reference' : 'reviewed-source-reference',
+        projection_basis: 'native-record-projection',
+        admission_status: hasLegacy ? 'legacy-unreviewed' : 'source-consistency-reviewed-changes',
+        source_review_conflicts: null,
+        'pub:source_review_unresolved': unresolved.length ? unresolved : null,
+        'pub:source_review_state': hasUnknown && hasDeclaredUnresolved ? 'known-and-unknown' : hasDeclaredUnresolved ? 'declared' : hasUnknown ? 'unknown' : 'none-declared',
+        'pub:evidence_inputs': inputs
+    };
+}
+
 function slugify(value) {
     return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
@@ -94,14 +130,31 @@ function provisionSummary(provision) {
     return requirements.length ? requirements.join(' ') : provision.name || provision.source_heading || provision.id;
 }
 
-function everyAiLawAnchors(mapping) {
-    if (mapping.id === 'utah-mental-health-chatbot-disclosure-2026q2-first-session') {
-        return {
-            termAnchors: ['https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json'],
-            obligationAnchors: ['https://everyailaw.com/obligation-category/transparency.json']
-        };
+function sourceOwnedAnchors(mapping) {
+    const hasTermAnchors = Object.hasOwn(mapping, 'term_anchors');
+    const hasObligationAnchors = Object.hasOwn(mapping, 'obligation_anchors');
+    if ((hasTermAnchors && !Array.isArray(mapping.term_anchors)) || (hasObligationAnchors && !Array.isArray(mapping.obligation_anchors))) {
+        throw new Error(`Mapping ${mapping.id} anchors must be lists`);
     }
-    return { termAnchors: [], obligationAnchors: [] };
+    const termAnchors = hasTermAnchors ? mapping.term_anchors : [];
+    const obligationAnchors = hasObligationAnchors ? mapping.obligation_anchors : [];
+    const all = [...termAnchors, ...obligationAnchors];
+    if (!all.length) return { termAnchors: [], obligationAnchors: [] };
+    if (mapping.anchor_relation !== 'related-not-equivalent') throw new Error(`Mapping ${mapping.id} anchor relation must preserve relatedness without equivalence`);
+    let sourceUrl;
+    try { sourceUrl = new URL(mapping.anchor_source_url); } catch { throw new Error(`Mapping ${mapping.id} anchor source must be an absolute URL`); }
+    if (sourceUrl.protocol !== 'https:' || sourceUrl.username || sourceUrl.password || sourceUrl.hostname.startsWith('www.') || !String(mapping.anchor_source_locator || '').trim() || !String(mapping.anchor_qualification || '').trim()) {
+        throw new Error(`Mapping ${mapping.id} anchors require a qualified source URL, locator, and qualification; source admission owns primary-source eligibility`);
+    }
+    for (const [kind, targets] of [['term', termAnchors], ['obligation', obligationAnchors]]) for (const target of targets) {
+        let url;
+        try { url = new URL(target); } catch { throw new Error(`Mapping ${mapping.id} anchor is not an absolute URL`); }
+        const typedPath = kind === 'term' ? /^\/term\/[a-z0-9-]+\.json$/ : /^\/(?:obligation|obligation-category)\/[a-z0-9-]+\.json$/;
+        if (url.origin !== 'https://everyailaw.com' || url.username || url.password || url.search || url.hash || !typedPath.test(url.pathname)) {
+            throw new Error(`Mapping ${mapping.id} ${kind} anchor target is not an exact typed EveryAILaw JSON record`);
+        }
+    }
+    return { termAnchors: [...new Set(termAnchors)], obligationAnchors: [...new Set(obligationAnchors)] };
 }
 
 function buildLookups(data) {
@@ -157,7 +210,7 @@ function buildPartyRecords(config, data) {
         for (const [index, party] of (container.parties || []).entries()) {
             const id = partyId(container, party, index);
             const kind = partyKind(party.name);
-            byId.set(id, compact({
+            byId.set(id, withEvidenceBoundary(compact({
                 '@context': recordContext(config),
                 '@type': 'of:Party',
                 '@id': partyUri(config, id),
@@ -167,7 +220,7 @@ function buildPartyRecords(config, data) {
                 entity: kind === 'organization' ? { '@type': 'gist:Organization', name: party.name } : undefined,
                 roles: party.role ? [party.role] : undefined,
                 ...provenance(config, container.official_url, undefined, container.last_verified, instrumentCitation(container))
-            }));
+            }), [container._evidence_input]));
         }
     }
     return [...byId.values()];
@@ -190,7 +243,7 @@ function termTypes(container) {
 }
 
 function buildAuthorityRecords(config, data) {
-    return data.authorities.map(authority => compact({
+    return data.authorities.map(authority => withEvidenceBoundary(compact({
         '@context': recordContext(config),
         '@type': 'of:Authority',
         '@id': authorityUri(config, authority.id),
@@ -203,7 +256,7 @@ function buildAuthorityRecords(config, data) {
         territorial_scope: authority.jurisdiction ? [authority.jurisdiction] : undefined,
         sameAs: authority.wikidata_qid ? [`https://wikidata.org/wiki/${authority.wikidata_qid}`] : undefined,
         ...provenance(config, authority.website, undefined, authority.last_verified)
-    }));
+    }), [authority._evidence_input]));
 }
 
 function buildInstrumentRecords(config, data, determinations) {
@@ -216,7 +269,7 @@ function buildInstrumentRecords(config, data, determinations) {
     return data.containers.map(container => {
         const force = normativeForce(container);
         const instrumentId = instrumentUri(config, container.id);
-        return compact({
+        return withEvidenceBoundary(compact({
             '@context': recordContext(config),
             '@type': 'of:Instrument',
             '@id': instrumentId,
@@ -235,7 +288,7 @@ function buildInstrumentRecords(config, data, determinations) {
             effective: container.effective || undefined,
             lifecycle_status: container.lifecycle_status || normalizeStatus(container.status),
             operative_status: container.operative_status || operativeStatus(container.status, force),
-            enforcement_status: enforcementStatus(container, force),
+            enforcement_status: container.enforcement_status || enforcementStatus(container, force),
             hasTerm: termsByInstrument.get(container.id) || [],
             resulting_instrument: undefined,
             embodies_determination: determinationByInstrument.has(instrumentId) ? [determinationByInstrument.get(instrumentId)] : undefined,
@@ -246,7 +299,7 @@ function buildInstrumentRecords(config, data, determinations) {
             'pub:status': container.status,
             'pub:editorial_status': container.editorial_status,
             'pub:canonical_url': container._canonicalPath ? `${siteBase(config)}/${container._canonicalPath}` : undefined
-        });
+        }), [container._evidence_input]);
     });
 }
 
@@ -256,11 +309,11 @@ function buildTermRecords(config, data) {
         const detail = provisionDetails.get(mapping.id);
         const provision = detail ? detail.provision : mapping;
         const container = containersById.get(mapping.regulation);
-        const anchors = everyAiLawAnchors(mapping).termAnchors;
+        const anchors = sourceOwnedAnchors(mapping).termAnchors;
         const exactTerms = container?.terms || [];
         const force = container ? normativeForce(container) : 'unknown';
         const sourceStatus = provision.status || container?.status;
-        return compact({
+        return withEvidenceBoundary(compact({
             '@context': recordContext(config),
             '@type': termTypes(container),
             '@id': termUri(config, mapping.id),
@@ -272,14 +325,14 @@ function buildTermRecords(config, data) {
             creates: (mapping.obligations || []).map(id => obligationUri(config, concreteObligationId(mapping.id, id))),
             anchors: anchors.length ? anchors : undefined,
             lifecycle_status: normalizeStatus(sourceStatus),
-            operative_status: operativeStatus(sourceStatus, force),
-            enforcement_status: enforcementStatus({ status: sourceStatus, type: container?.type }, force),
+            operative_status: container?.operative_status || operativeStatus(sourceStatus, force),
+            enforcement_status: container?.enforcement_status || enforcementStatus({ status: sourceStatus, type: container?.type }, force),
             effective: /^\d{4}-\d{2}-\d{2}$/.test(provision.effective || '') ? provision.effective : undefined,
             jurisdiction: typedJurisdiction(container?.jurisdiction),
             ...provenance(config, container?.official_url, provision.sections || mapping.source_heading, provision.verified || container?.last_verified, instrumentCitation(container || {})),
             'pub:source_heading': mapping.source_heading,
             'pub:source_file': mapping.source_file
-        });
+        }), [container._evidence_input, mapping._evidence_input]);
     });
 }
 
@@ -295,7 +348,7 @@ function buildObligationRecords(config, data) {
             const provision = detail ? detail.provision : {};
             const recordId = concreteObligationId(mapping.id, obligationId);
             const lifecycle = primary.lifecycle_status || provision.status || container?.status;
-            records.push(compact({
+            records.push(withEvidenceBoundary(compact({
                 '@context': recordContext(config),
                 '@type': obligationType(primary.group),
                 '@id': obligationUri(config, recordId),
@@ -304,10 +357,10 @@ function buildObligationRecords(config, data) {
                 content: firstSection(primary._body, 'Summary'),
                 created_by: [termUri(config, mapping.id)],
                 applicability: provision.scope ? [`scope:${provision.scope}`] : undefined,
-                anchors: everyAiLawAnchors(mapping).obligationAnchors.length ? everyAiLawAnchors(mapping).obligationAnchors : undefined,
+                anchors: sourceOwnedAnchors(mapping).obligationAnchors.length ? sourceOwnedAnchors(mapping).obligationAnchors : undefined,
                 lifecycle_status: normalizeStatus(lifecycle),
-                operative_status: operativeStatus(lifecycle, force),
-                enforcement_status: primary.enforcement_status || enforcementStatus({ status: lifecycle, type: container?.type }, force),
+                operative_status: primary.operative_status || container?.operative_status || operativeStatus(lifecycle, force),
+                enforcement_status: primary.enforcement_status || container?.enforcement_status || enforcementStatus({ status: lifecycle, type: container?.type }, force),
                 jurisdiction: typedJurisdiction(container?.jurisdiction),
                 ...provenance(config, container?.official_url, provision.sections || mapping.source_heading, primary.last_verified || provision.verified || container?.last_verified, instrumentCitation(container || {})),
                 'pub:primary_id': obligationId,
@@ -315,7 +368,7 @@ function buildObligationRecords(config, data) {
                 'pub:status': primary.status || undefined,
                 'pub:lifecycle_status': primary.lifecycle_status || undefined,
                 'pub:search_terms': primary.search_terms || []
-            }));
+            }), [container._evidence_input, mapping._evidence_input, primary._evidence_input]));
         }
     }
     return records;
@@ -324,7 +377,7 @@ function buildObligationRecords(config, data) {
 function buildDeterminationRecords(config, data) {
     return data.containers
         .filter(container => container.enacted && container.official_url && container.issuance_event && !['proposed', 'draft'].includes(container.status))
-        .map(container => ({
+        .map(container => withEvidenceBoundary({
             '@context': recordContext(config),
             '@type': 'of:Determination',
             '@id': determinationUri(config, `${container.id}-issuance`),
@@ -337,7 +390,7 @@ function buildDeterminationRecords(config, data) {
             resulting_instrument: [instrumentUri(config, container.id)],
             notes: `Issuance record for ${container.title || container.name || container.id}.`,
             ...provenance(config, container.official_url, undefined, container.last_verified, instrumentCitation(container))
-        }));
+        }, [container._evidence_input]));
 }
 
 function buildObligationFirstRecords(config, data) {
@@ -395,5 +448,7 @@ module.exports = {
     termUri,
     obligationUri,
     determinationUri,
-    partyUri
+    partyUri,
+    sourceOwnedAnchors,
+    withEvidenceBoundary
 };

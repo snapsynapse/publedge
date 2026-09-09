@@ -1,0 +1,410 @@
+{
+  "version": 1,
+  "records": {
+    "data/examples/instruments/us-ut-oaip-rma-2025-002.md": {
+      "record_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc",
+      "baseline_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
+      "whole_record": {
+        "before_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
+        "after_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex source-consistency review",
+        "reviewed_at": "2026-09-09T17:16:04Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "Doctronic agreement permission wording, May 2026 operational outcomes, the September 2026 FAQ source conflict, official source links, and the record modified date only; no legal-status or currentness renewal.",
+        "packet_sha256": "5e3c426d9dbdfa30f065801d88ed39cd3355f7e1b23bed008fbd4c70a48fe299"
+      },
+      "unresolved": [
+        "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+        "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+        "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+        "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+        "This agent review does not renew last_verified or authenticate human review."
+      ],
+      "evidence": {
+        "agreement": {
+          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+          "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+          "original": {
+            "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+            "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+          "document_id": "Doctronic Regulatory Mitigation Agreement",
+          "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+          "document_type": "signed agreement",
+          "version": "signed October 23-24, 2025",
+          "locator": "Sections 2 and 4; Schedule A sections 15-16",
+          "excerpt": "The period of this Agreement is for 12 months, beginning on the date this agreement is executed.",
+          "identity_excerpts": [
+            "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
+          ]
+        },
+        "outcomes": {
+          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Outcomes-May-2026-2026-09-09.txt",
+          "snapshot_sha256": "17c6aa35803126e6611d33575e1bb3543f8af7e319d3991a6e8445abb2042067",
+          "original": {
+            "path": "data/admission/sources/doctronic/Doctronic-Outcomes-May-2026-2026-09-09.pdf",
+            "sha256": "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf",
+          "document_id": "Doctronic Outcomes May 2026",
+          "document_title": "Key Statistics on the Doctronic Pilot Program: Assessment of the First Five Months from January Through April",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy",
+          "document_type": "official outcomes report",
+          "version": "May 19, 2026",
+          "locator": "Background Information for Consideration; Outcomes; pages 1-2",
+          "excerpt": "In 72% of cases, Doctronic's AI recommended prescription renewal, which then",
+          "identity_excerpts": [
+            "Assessment of the First Five Months from January Through April",
+            "5/19/26"
+          ]
+        },
+        "faq": {
+          "snapshot_path": "data/admission/sources/doctronic/OAIP-AI-FAQ-2026-09-09.html",
+          "snapshot_sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
+          "original": {
+            "path": "data/admission/sources/doctronic/OAIP-AI-FAQ-2026-09-09.html",
+            "sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://commerce.utah.gov/ai/ai-faq/",
+          "document_id": "Utah OAIP AI FAQ",
+          "document_title": "AI FAQ",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy",
+          "document_type": "official agency FAQ",
+          "version": "observed September 9, 2026",
+          "locator": "What changes have been made to the contract?",
+          "excerpt": "The Phase 2 transition criteria in the contract has been updated.",
+          "identity_excerpts": [
+            "<title>AI FAQ - commerce.utah.gov</title>"
+          ]
+        },
+        "pilot_page": {
+          "snapshot_path": "data/admission/sources/doctronic/OAIP-Doctronic-Pilot-2026-09-09.html",
+          "snapshot_sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+          "original": {
+            "path": "data/admission/sources/doctronic/OAIP-Doctronic-Pilot-2026-09-09.html",
+            "sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+          "document_id": "Utah OAIP Doctronic RMA pilot page",
+          "document_title": "Office of AI Policy: Doctronic RMA",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy",
+          "document_type": "official agency pilot page",
+          "version": "observed September 9, 2026",
+          "locator": "Page canonical URL and Doctronic AI Regulatory Mitigation Agreement section",
+          "excerpt": "Doctronic AI Regulatory Mitigation Agreement",
+          "identity_excerpts": [
+            "<title>Office of AI Policy: Doctronic RMA - commerce.utah.gov</title>"
+          ]
+        }
+      },
+      "units": {
+        "metadata:modified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "candidate_content": "2026-09-09",
+          "reason": "Record the date of this bounded source-backed content correction without renewing legal currentness.",
+          "qualifications": {
+            "scope": "This record edit only.",
+            "exceptions": "last_verified, status, effective date, and term dates remain unchanged.",
+            "time": "Edit date 2026-09-09; source observation dated May 19, 2026."
+          },
+          "evidence": [
+            "outcomes"
+          ]
+        },
+        "section:Summary/text": {
+          "before_sha256": "c17b5eb680cf5339f9f8539480b96390fe9e1abf15e4744365d0ee61c9126607",
+          "after_sha256": "59b1f926eba4f01abc375794f7d2bbb1c27014532b919369c4cbf44d4ab0c7bc",
+          "candidate_content": "A Regulatory Mitigation Agreement between the Utah Office of Artificial Intelligence Policy (OAIP), the Utah Division of Professional Licensing (DOPL), and Doctronic, LLC, enrolling Doctronic's AI prescription-renewal system in the Utah AI Learning Laboratory for a 12-month demonstration period. The Agreement permits AI-authored renewals of previously prescribed, non-controlled medications on the formulary, subject to its phased human-review controls. The Division's enforcement forbearance applies only while Doctronic and its affiliated prescribers comply with the Agreement's safeguards, disclosures, reporting obligations, and incorporated Proposal.",
+          "reason": "State the source-bounded permission and conditional enforcement forbearance rather than implying unconstrained system operation.",
+          "qualifications": {
+            "scope": "Previously prescribed, non-controlled formulary medications under the agreement.",
+            "exceptions": "Only Doctronic and affiliated prescribers while complying with agreement controls; no unrelated reliance.",
+            "time": "Agreement term stated as 12 months from execution; current continued operation is unresolved."
+          },
+          "evidence": [
+            "agreement"
+          ]
+        },
+        "section:Sources/text": {
+          "before_sha256": "0190b045b6bd1f233f41b04cc4209d180231f5b0a971f2430442d2ca25503944",
+          "after_sha256": "70cf8d68f6b3d3d73c146805b7050d048f405f173050c9017dc8ff0fd39959e2",
+          "candidate_content": "- [Agreement page — Utah OAIP](https://commerce.utah.gov/ai/agreements/doctronic/)\n- [Signed PDF](https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf)\n- [OAIP outcomes report — May 19, 2026](https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf)\n- [OAIP AI FAQ — Phase 2 criteria and formulary changes observed September 9, 2026](https://commerce.utah.gov/ai/ai-faq/)\n- [Utah AI Learning Laboratory](https://commerce.utah.gov/ai/learning-lab/)\n- [Utah Code Title 13, Chapter 72](https://le.utah.gov/xcode/Title13/Chapter72/13-72.html)",
+          "reason": "Link the official May 19, 2026 outcomes report and the official FAQ statement describing later criteria and formulary changes.",
+          "qualifications": {
+            "scope": "Adds official OAIP report and FAQ URLs.",
+            "exceptions": "The link is not evidence of a later phase or current legal status.",
+            "time": "Report dated May 19, 2026."
+          },
+          "evidence": [
+            "outcomes",
+            "faq"
+          ]
+        },
+        "section:Operational observation (not an issued term)/text": {
+          "before_sha256": null,
+          "after_sha256": "c1b71c4caa492a406f101ed77632514dbed9573ba7640d5897b0af0ddb915cba",
+          "candidate_content": "OAIP's May 19, 2026 outcomes report describes January-April activity while the pilot was still in Phase One. It says the AI recommended renewal in 72% of cases, and each recommendation then went to human physician review. Within that 72% subset, the first reviewing physician agreed renewal was appropriate in 91% of cases. When the first physician requested more information, a second physician also reviewed the case; OAIP reports that either the first or second physician found renewal appropriate in 97% of that recommendation subset based on the information the AI gathered. In the remaining 28% of all cases, the AI escalated without recommending renewal; physicians agreed the escalation was appropriate in 69% of that escalation subset.\n\nThe report says the sample was limited, based on reports from Doctronic physicians, and subject to a separate OAIP review. It is an operational observation, not an amendment or issued term. It does not establish a later phase, compliance, extension, termination, or the pilot's current phase or status after the reporting period.\n\nOAIP's AI FAQ, observed September 9, 2026, says the Phase 2 transition criteria were updated from 250 prescriptions total to 250 medications in each medication group, still subject to OAIP approval, and that Butalbital and Flecainide were removed from the formulary. The retained signed agreement instead describes the first 250 patients as Phase One and includes both medications in its formulary. OAIP's current Doctronic page links the signed agreement, outcomes report, medical-board correspondence, and a policy memorandum, but no signed amendment. The FAQ is therefore retained as an official dated observation and explicit source conflict; it does not establish the amendment mechanism or effective date, OAIP approval to enter Phase Two, or the pilot's current phase.",
+          "reason": "Preserve the official outcome observations with their actual denominators and distinguish them from issued legal terms.",
+          "qualifications": {
+            "scope": "January-April 2026 activity reported by OAIP, including first-physician, first-or-second-physician, and escalation subsets.",
+            "exceptions": "Limited participant-reported outcome sample; independent OAIP review was initiated; the FAQ conflicts with the signed agreement and no signed amendment was linked; statistics and FAQ changes are not obligations or proof of compliance.",
+            "time": "Report dated May 19, 2026 and describes January-April activity while Phase One was ongoing."
+          },
+          "evidence": [
+            "agreement",
+            "outcomes",
+            "faq"
+          ]
+        },
+        "metadata:official_url": {
+          "reason": "Replace the retired OAIP path with the current canonical official pilot page.",
+          "qualifications": {
+            "scope": "Official source landing-page URL only.",
+            "exceptions": "The landing page does not establish amendment effectiveness, Phase Two approval, compliance, extension, termination, or current status.",
+            "time": "Current OAIP page observed September 9, 2026."
+          },
+          "evidence": [
+            "pilot_page"
+          ],
+          "before_sha256": "8b14146b3d481e5b64e9a27d01797e200d9b12ce9642ca403637aa7d5852c797",
+          "after_sha256": "0178d3468419aa1c35ebfa5392b557c439025b892291344f72ccb7b2972df0bf",
+          "candidate_content": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/"
+        }
+      }
+    },
+    "data/examples/mapping/index.yml": {
+      "record_sha256": "bccad470cd138126ddc670288920d16837b0475c5588429205ad0e7d56a5c970",
+      "baseline_sha256": "d072c09fd6fdb6d05da6ca7d1e784baac7b59c1e040e9f5b44b2fa7c7c5b3c62",
+      "whole_record": {
+        "before_sha256": "d072c09fd6fdb6d05da6ca7d1e784baac7b59c1e040e9f5b44b2fa7c7c5b3c62",
+        "after_sha256": "bccad470cd138126ddc670288920d16837b0475c5588429205ad0e7d56a5c970"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex source-consistency review",
+        "reviewed_at": "2026-09-09T17:31:34Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "Move the existing PubLedge draft-term and concrete-obligation EveryAILaw anchors from exporter code into one source-owned mapping entry, retaining exact targets and explicit non-equivalence.",
+        "packet_sha256": "476523ef2974b11f96c887c77c8135e1b4e835d70264833e80b5204eccc4d75f"
+      },
+      "unresolved": [
+        "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+        "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+        "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law."
+      ],
+      "evidence": {
+        "hb452": {
+          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+          "original": {
+            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+          "document_id": "Utah HB 452 (2025)",
+          "document_title": "Artificial Intelligence Amendments, Enrolled Copy",
+          "issuing_body": "Utah Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 enrolled HB 452",
+          "locator": "Section 5 enacting Utah Code §13-72a-203(1)-(2), lines 174-184",
+          "excerpt": "13-72a-203 . Disclosure requirements.",
+          "identity_excerpts": [
+            "H.B. 452                                                                                Enrolled Copy"
+          ]
+        }
+      },
+      "units": {
+        "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session": {
+          "before_sha256": "648b558040eb87d14bc739ecb64b90be1566ec84a69efe99c92f5f8bdb289cd3",
+          "after_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
+          "candidate_content": {
+            "id": "utah-mental-health-chatbot-disclosure-2026q2-first-session",
+            "regulation": "us-ut-oaip-jia-2026-001",
+            "authority": "utah-oaip",
+            "source_file": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+            "source_heading": "First-Session Disclosure (§13-72a-203)",
+            "term_anchors": [
+              "https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json"
+            ],
+            "obligation_anchors": [
+              "https://everyailaw.com/obligation-category/transparency.json"
+            ],
+            "anchor_relation": "related-not-equivalent",
+            "anchor_source_url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+            "anchor_source_locator": "HB 452 §5, Utah Code §13-72a-203(1)-(2)",
+            "anchor_qualification": "The draft JIA's 30-minute re-display term is not the statutory seven-day interaction rule; the anchor records related disclosure subject matter, not equivalence or statutory force for the draft.",
+            "obligations": [
+              "disclose-genai-on-first-session"
+            ]
+          },
+          "reason": "Make the existing related statutory term and transparency-category targets explicit reviewed mapping data instead of selecting them from a hardcoded record ID heuristic.",
+          "qualifications": {
+            "scope": "Exact existing EveryAILaw term and obligation-category IRIs for related Utah mental-health-chatbot disclosure subject matter.",
+            "exceptions": "The anchor is related-not-equivalent: the PubLedge JIA remains a draft and its 30-minute term is not Utah Code §13-72a-203's seven-day condition.",
+            "time": "HB 452 enrolled in 2025; no freshness, current-law, JIA issuance, or present applicability determination is made."
+          },
+          "evidence": [
+            "hb452"
+          ]
+        }
+      }
+    },
+    "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md": {
+      "record_sha256": "c190b192a6d028f6679e8bedc32cde8d881ce6d6e67b8183e22ac0a6a6fc7516",
+      "baseline_sha256": "d2c599d0f52d4cc4d0deda128edaf56c85f0a79cf305efb11b3919d23d6c914a",
+      "whole_record": {
+        "before_sha256": "d2c599d0f52d4cc4d0deda128edaf56c85f0a79cf305efb11b3919d23d6c914a",
+        "after_sha256": "c190b192a6d028f6679e8bedc32cde8d881ce6d6e67b8183e22ac0a6a6fc7516"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex source-consistency review",
+        "reviewed_at": "2026-09-09T18:20:47Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "Recover D. Colo. ECF 24 and precisely qualify its historical alleged-violation cutoff; correct unsupported inactive operative and not-enforceable states to explicit unknown. No lifecycle, effective-date, last-verified, current docket, rule-finality, or preliminary-injunction determination.",
+        "packet_sha256": "378cdf6a5a5d13db015de62dd41e66ec90bb7202ebd3b818b5bcb8bc78965823"
+      },
+      "unresolved": [
+        "The public Clearinghouse mirror displayed no docket entry after ECF 24 as of its September 9, 2026 update, but the canonical CourtListener docket returned HTTP 403 and the issuing-court public-document endpoint returned HTTP 404; current PACER completeness is not established.",
+        "No retained source establishes final implementing rulemaking, a preliminary-injunction filing or ruling, modification or dissolution of ECF 24, or the order current continued effect.",
+        "ECF 24 does not establish whether SB 24-205 duties became operative, the complete predecessor enforcement history, or the timing consequences of SB 26-189 section 5.",
+        "This agent source-consistency review does not renew last_verified or authenticate human review."
+      ],
+      "evidence": {
+        "order_24": {
+          "snapshot_path": "data/admission/sources/colorado-sb24-205/xai-weiser-ecf-24-2026-04-27.txt",
+          "snapshot_sha256": "6f56f3e6af1d1a084b46da86d1bbc75436394ce3f829a7be6720ee94daad530e",
+          "original": {
+            "path": "data/admission/sources/colorado-sb24-205/xai-weiser-ecf-24-2026-04-27.pdf",
+            "sha256": "59fc68432753abc356065683a23379d0378fbecb811ec30105ca7d28a293587d"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf",
+          "document_id": "D. Colo. 1:26-cv-01515-DDD-CYC, ECF No. 24",
+          "document_title": "Minute Order",
+          "issuing_body": "United States District Court for the District of Colorado",
+          "document_type": "official order",
+          "version": "entered and filed April 27, 2026",
+          "locator": "pages 1-2, ordered paragraphs 1-4",
+          "excerpt": "1. The defendant shall not initiate enforcement, including but not limited to the initiation of\n        an investigation, for alleged violations of SB24-205 (or any legislation replacing or\n        amending SB24-205 enacted during this legislative session) that occurred or may occur\n        on or before 14 days after the date the Court issues a ruling on xAI’s forthcoming motion\n        for a preliminary injunction in this case.",
+          "identity_excerpts": [
+            "Case No. 1:26-cv-01515-DDD-CYC              Document 24        filed 04/27/26     USDC Colorado",
+            "MINUTE ORDER",
+            "Entered by Cyrus Y. Chung, United States Magistrate Judge, on April 27, 2026."
+          ]
+        }
+      },
+      "units": {
+        "metadata:modified": {
+          "before_sha256": "8e18de836e5967d51d525e55887ec40bf5063789970538e5679093f6254011e9",
+          "after_sha256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "candidate_content": "2026-09-09",
+          "reason": "Record the bounded source-backed correction date without renewing legal currentness.",
+          "qualifications": {
+            "scope": "D. Colo. ECF 24 historical order scope and the corresponding PubLedge source text only.",
+            "exceptions": "No lifecycle, effective, operative, status, last_verified, current docket, final-rule, preliminary-injunction, or universal enforcement conclusion.",
+            "time": "Order entered April 27, 2026; source recovered September 9, 2026; current continued effect remains unknown."
+          },
+          "evidence": [
+            "order_24"
+          ]
+        },
+        "metadata:of_notes": {
+          "before_sha256": "1b29590f7bc4b29cb626ba49f3d3850009afeed14d7aa1b40722f06b925bfeb0",
+          "after_sha256": "2d6c93a0160818b2a62461a94af1cfc0e6d5143fee896cf016427f8e0a09e01e",
+          "candidate_content": "Historical predecessor replaced by enacted SB 26-189, section 1. The retained scheduled effective date is not evidence that the predecessor duties became operative. D. Colo. ECF 24, entered April 27, 2026, bars defendant Colorado Attorney General Philip J. Weiser from initiating enforcement, including investigation, for alleged violations of SB 24-205 or a 2026-session replacement or amendment that occurred or may occur on or before 14 days after a future preliminary-injunction ruling. The cutoff concerns when the alleged violation occurred, not merely when enforcement begins. It requires xAI to submit its motion within 28 days after final adoption of rulemaking implementing SB 24-205 or legislation that may replace or amend it. Public docket completeness, final rulemaking, any preliminary-injunction filing or ruling, and the order's current continued effect remain unknown.",
+          "reason": "Expose the exact historical order cutoff and explicit current-status unknowns to Obligation-First consumers.",
+          "qualifications": {
+            "scope": "D. Colo. ECF 24 historical order scope and the corresponding PubLedge source text only.",
+            "exceptions": "No lifecycle, effective, operative, status, last_verified, current docket, final-rule, preliminary-injunction, or universal enforcement conclusion.",
+            "time": "Order entered April 27, 2026; source recovered September 9, 2026; current continued effect remains unknown."
+          },
+          "evidence": [
+            "order_24"
+          ]
+        },
+        "metadata:operative_status": {
+          "before_sha256": "a5714161636f7e049d98b6c439bc4db449d1aa6636e6f8e86154d052c55bfd2e",
+          "after_sha256": "eb8bf0d80db323992f6b634aab492b1e6d9e96a8e87a511c2a0db75ab929452c",
+          "candidate_content": "unknown",
+          "reason": "Replacement lifecycle does not prove whether the predecessor duties operated; preserve the unresolved history as explicit unknown in native and derived records.",
+          "qualifications": {
+            "scope": "SB 24-205 operative_status and derived PubLedge OF records only.",
+            "exceptions": "Lifecycle remains repealed/superseded; effective, last_verified, and historical dates remain unchanged; unknown is not evidence of operation or nonoperation.",
+            "time": "Historical operation and current effect remain unresolved as of the September 9, 2026 source review."
+          },
+          "evidence": [
+            "order_24"
+          ]
+        },
+        "section:Timeline/text": {
+          "before_sha256": "f0e5c64f080e9ca7a19fafbdaf6026b9eb4bc90280ce70a0472217820f9e250f",
+          "after_sha256": "0e27c5190b635a69029038056c04d79528205f1d862382ea6902e9fc4fd6a779",
+          "candidate_content": "| Milestone | Date | Notes |\n|-----------|------|-------|\n| Introduced | 2024-04-10 | Senate |\n| Senate passed | 2024-05-03 | |\n| House passed | 2024-05-08 | |\n| Governor Signed | 2024-05-17 | Gov. Jared Polis; signing letter expressed reservations and called for revision before effective date |\n| Original effective date set | 2026-02-01 | As enacted, before any delay |\n| SB 25-318 fails | 2025-05 | Regular-session substantive-amendment bill postponed indefinitely / withdrawn by sponsor |\n| Special session | 2025-08-21 | First Extraordinary Session convened to amend the Act |\n| Amended by SB 25B-004 | 2025-08-28 | Effective date pushed from 2026-02-01 to 2026-06-30; no substantive change |\n| xAI v. Weiser filed | 2026-04-09 | xAI challenge in D. Colo. (No. 1:26-cv-01515) |\n| DOJ intervenes | 2026-04-24 | Federal government joins challenge |\n| Conditional enforcement restraint (ECF 24) | 2026-04-27 | Bars the Colorado Attorney General from initiating enforcement, including investigation, for alleged violations occurring through 14 days after a future preliminary-injunction ruling; xAI's motion is due within 28 days after final rulemaking implementing SB 24-205 or legislation that may replace or amend it; whether those future triggers occurred remains unverified |\n| Superseded by SB 26-189 | 2026-05-14 | Replacement statute signed |\n| Scheduled effective date | 2026-06-30 | Scheduled requirement date; operative history unresolved |\n\n---",
+          "reason": "Replace the inaccurate month and generic stayed-enforcement shorthand with the order date, affected defendant, conduct-based cutoff, and conditional motion deadline.",
+          "qualifications": {
+            "scope": "D. Colo. ECF 24 historical order scope and the corresponding PubLedge source text only.",
+            "exceptions": "No lifecycle, effective, operative, status, last_verified, current docket, final-rule, preliminary-injunction, or universal enforcement conclusion.",
+            "time": "Order entered April 27, 2026; source recovered September 9, 2026; current continued effect remains unknown."
+          },
+          "evidence": [
+            "order_24"
+          ]
+        },
+        "section:Summary/text": {
+          "before_sha256": "8f95a2646044a4162ccaac541aa85226274e6d85186da1721a71064ba5cec116",
+          "after_sha256": "c878d0dc0e949a20b162522fead3d7489171fedf1bbf3f7965253aded7ad23d1",
+          "candidate_content": "SB 24-205 was the United States' first comprehensive state statute imposing duties of reasonable care on both developers and deployers of \"high-risk artificial intelligence systems\" — systems used to make, or that are a substantial factor in making, consequential decisions affecting consumers. Codified as C.R.S. Title 6, Article 1, Part 17, the act:\n\n- Imposed a duty of reasonable care on developers to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination (§6-1-1702).\n- Imposed parallel duties on deployers, including impact assessments, consumer notice at or before use of high-risk AI, and risk management programs (§6-1-1703).\n- Granted consumers rights to plain-language explanation of adverse consequential decisions, opportunity to correct incorrect personal data, and human review where technically feasible (§6-1-1703(4)).\n- Reserved enforcement to the Colorado Attorney General; no private right of action (§6-1-1706).\n\nThe act was signed with explicit reservations from Governor Polis, who urged the General Assembly to refine the statute before its effective date. A 2025 regular-session amendment bill (SB 25-318) was withdrawn by its sponsor; an August 2025 special session produced only SB 25B-004, which delayed the effective date from February 1, 2026 to June 30, 2026 without substantive change. Federal litigation followed in xAI v. Weiser (D. Colo. No. 1:26-cv-01515), with the United States intervening. The retained original ECF 24, entered April 27, 2026, bars defendant Colorado Attorney General Philip J. Weiser from initiating enforcement, including investigation, for alleged violations of SB 24-205 or 2026-session replacement or amendment legislation that occurred or may occur on or before 14 days after the court rules on xAI's forthcoming preliminary-injunction motion. That cutoff concerns the occurrence of the alleged violation, not merely the initiation date of enforcement. The order requires xAI to submit its motion within 28 days after final adoption of rulemaking implementing SB 24-205 or legislation that may replace or amend it. Public docket completeness, final implementing rules, any preliminary-injunction filing or ruling, and the order's current continued effect remain unknown. The General Assembly enacted replacement legislation in SB 26-189, signed May 14, 2026. Predecessor operative history remains unresolved; SB 26-189 section 5 qualifies replacement timing, and signature alone does not establish when predecessor duties ceased or whether they operated.",
+          "reason": "Replace the prior unavailable-order caveat with the recovered order exact scope while retaining all current-docket and operative-history unknowns.",
+          "qualifications": {
+            "scope": "D. Colo. ECF 24 historical order scope and the corresponding PubLedge source text only.",
+            "exceptions": "No lifecycle, effective, operative, status, last_verified, current docket, final-rule, preliminary-injunction, or universal enforcement conclusion.",
+            "time": "Order entered April 27, 2026; source recovered September 9, 2026; current continued effect remains unknown."
+          },
+          "evidence": [
+            "order_24"
+          ]
+        },
+        "section:Summary/subsection:Sources/text": {
+          "before_sha256": "3f6a8c36d6526d1d1240802e3dc596f7577e5bb8914ec576600393dc3aca3700",
+          "after_sha256": "c38c2a1fd278922b35bce549df6fecad198617d7e890d87045dc82e6e5435a62",
+          "candidate_content": "- [SB 24-205 Bill Text (leg.colorado.gov)](https://leg.colorado.gov/bills/sb24-205)\n- [SB 24-205 Signed Act PDF](https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf)\n- [xAI v. Weiser, ECF 24 Minute Order (D. Colo. Apr. 27, 2026)](https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf)\n- [EveryAILaw — Colorado SB 24-205](https://everyailaw.com/regulation/colorado-sb24-205/)\n- [EveryAILaw — Colorado SB 26-189 (successor)](https://everyailaw.com/regulation/colorado-sb26-189/)",
+          "reason": "Link the retained public RECAP copy of the original court-stamped order.",
+          "qualifications": {
+            "scope": "D. Colo. ECF 24 historical order scope and the corresponding PubLedge source text only.",
+            "exceptions": "No lifecycle, effective, operative, status, last_verified, current docket, final-rule, preliminary-injunction, or universal enforcement conclusion.",
+            "time": "Order entered April 27, 2026; source recovered September 9, 2026; current continued effect remains unknown."
+          },
+          "evidence": [
+            "order_24"
+          ]
+        },
+        "metadata:enforcement_status": {
+          "before_sha256": null,
+          "after_sha256": "eb8bf0d80db323992f6b634aab492b1e6d9e96a8e87a511c2a0db75ab929452c",
+          "candidate_content": "unknown",
+          "reason": "The conditional conduct-window restraint and unknown continuing effect do not establish a universal not-enforceable state; preserve enforcement history as explicit unknown in native and derived records.",
+          "qualifications": {
+            "scope": "SB 24-205 enforcement_status and derived PubLedge OF records only.",
+            "exceptions": "Lifecycle remains repealed/superseded; effective, last_verified, and historical dates remain unchanged; unknown is not evidence of enforceability or non-enforceability.",
+            "time": "ECF 24 entered April 27, 2026; later triggers and current continued effect remain unresolved as of September 9, 2026."
+          },
+          "evidence": [
+            "order_24"
+          ]
+        }
+      }
+    }
+  }
+}

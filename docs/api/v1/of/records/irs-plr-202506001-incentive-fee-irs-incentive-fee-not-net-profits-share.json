@@ -25,7 +25,7 @@
   "source": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
   "source_locator": "Holding",
   "source_citation": "IRS Written Determinations, PLR 202506001 (Feb. 7, 2025)",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-04-21",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:primary_id": "irs-incentive-fee-not-net-profits-share",
@@ -38,5 +38,48 @@
     "rev proc 2017-13",
     "safe harbor",
     "incentive fee"
+  ],
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "instrument",
+      "native_path": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md",
+      "native_file_sha256": "fdb1b3b30e3302f8dbb9251404c797e85c6e65afa0766e9cee688abd0b62ea8e",
+      "canonical_unit": null,
+      "canonical_sha256": "62b3258937a91b7aac5945a9d109989d1c52a45c0984c4ee1344e0bb55a7a743",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    },
+    {
+      "kind": "mapping-entry",
+      "native_path": "data/examples/mapping/index.yml",
+      "native_file_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+      "canonical_unit": "entry:irs-plr-202506001-incentive-fee",
+      "canonical_sha256": "c2145852b85e818957983272334c5f4d57d23b7aecb92fa4ab317cb205d88489",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    },
+    {
+      "kind": "obligation-definition",
+      "native_path": "data/examples/obligations/irs-incentive-fee-not-net-profits-share.md",
+      "native_file_sha256": "1c9983092b7376d8b5cd77875258ba481868733260f4f2fe737793cd840a9f81",
+      "canonical_unit": null,
+      "canonical_sha256": "207e0c196c1cd0bc24c089f37449a3b16d29fa880a4194d5c397c2e8e8d89058",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
   ]
 }

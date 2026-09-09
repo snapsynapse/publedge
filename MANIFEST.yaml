@@ -43,7 +43,7 @@ upstream:
 files:
   - path: .gitattributes
     role: config
-    hash: sha256:fbf70ef7fa70580dceb6fcf506e8ae5d43008a8f7f07782939318ab230d23be1
+    hash: sha256:d1521968dbca09ade61ebec31709d6324fc2832dcdf5d247c8c795bce3e60d66
     note: .gitattributes
 
   - path: data/examples/authorities/cfpb.md
@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:c6925fca84028c50583fbeae474156f7a21b4740548c559ded075ad83ede4c90
+    hash: sha256:5da966d376111b9236fb5a1ff4f2181d5d08d118131843c3464d7a00df6bba01
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:2c279d6f20c0e0f282c441d4f2df97df00e5026eca637f1b55054bb02abbc5be
+    hash: sha256:ca568019056ac670628506c1eae4bc99e7230679a378ff275355860f269760a0
     note: package.json
 
   - path: package-lock.json
@@ -153,7 +153,7 @@ files:
 
   - path: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
     role: instrument
-    hash: sha256:2bdb192d730cacbac3c50b05f65cc5834288f1a5284f219d8d4287fafad16558
+    hash: sha256:966b1049b6af34703bf0cfc282fdef01a36dfc0e50ed2676761f4fc7e63fbf96
     note: data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md
 
   - path: data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md
@@ -223,7 +223,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
     role: instrument
-    hash: sha256:ffc809635be8cadbe5ffa2d6695ee36f9193a6bb90fc191d8ff3e96cd1586e14
+    hash: sha256:79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984
     note: data/examples/instruments/us-ut-oaip-rma-2025-002.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2026-001.md
@@ -253,7 +253,7 @@ files:
 
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:addac899a4c0c994fa59848b39a7952964bdc712ffe33caac4ee2b1b3738d437
+    hash: sha256:3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592
     note: data/examples/mapping/index.yml
 
   - path: data/examples/obligations/admt-60-day-cure-period.md
@@ -458,7 +458,7 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:50b3246b876ccacf6de2ea6d8fc598cf8cba69aabf0991e0ab2863d2b391e2e5
+    hash: sha256:c3cb140ea210b01ca429db284f8bef5fea515dc8db27d406df4c3a56b8a34d4d
     note: README.md
 
   - path: RELEASE_NOTES-v0.2.2.md
@@ -473,7 +473,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:de38e6dbea69e9731713c3ef130afa3457a64dd156ead0ad5c05539aeb0f27df
+    hash: sha256:16224c1cbab1264ca8ec6bffc5f54456dc7863657b4698876de1a51d45dffa80
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -498,7 +498,7 @@ files:
 
   - path: schema/instrument.schema.json
     role: schema
-    hash: sha256:9d2411b4a4022bc1174f3b9f09df60297e3a40da51f279e173e6dcb20044f05a
+    hash: sha256:0718b566c3232770e189347fb1014c2fa535326742dd1a9e58d519d169c73239
     note: schema/instrument.schema.json
 
   - path: schema/obligation-record.schema.json
@@ -543,8 +543,28 @@ files:
 
   - path: mcp-server.js
     role: tooling
-    hash: sha256:63442714c9ba8b39f1c41f7355bf031319265a6245c3d67080ce00b830645429
+    hash: sha256:67296fc87d73c079e5f88aa2e073523da29e9d52f61d2e904c71f7c7679d7355
     note: mcp-server.js
+
+  - path: scripts/check-source-admission.js
+    role: tooling
+    hash: sha256:72aff0b1b51b4f90062298dd3a0e055f8ab1128c775478941d90b540239b4221
+    note: Source admission gate and EAL-compatible report
+
+  - path: scripts/lib/source-admission.js
+    role: tooling
+    hash: sha256:0ba5483ea93910d80198d7921d2404d355bc46417dc0a4f0431c7fea92f7e268
+    note: Source admission digest and evidence policy
+
+  - path: scripts/lib/publication-state.js
+    role: tooling
+    hash: sha256:2f9164db1c02f40838cbb7566fa73b41af093c0ecb8ac939d7188451f86ac830
+    note: Published artifact and source-candidate identity boundary
+
+  - path: scripts/prepare-source-admission.js
+    role: tooling
+    hash: sha256:f1287f2196bac855ae2b84c6f939e64e4e786ccadab16e69e23c01f436711dc6
+    note: Pending admission packet generator
 
   - path: scripts/eval-mcp-rpc-framing.js
     role: tooling
@@ -558,12 +578,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:bd7a191a4dc9e0306c40ad907cd04c84c0b6af085afd5542a9091566517d4be8
+    hash: sha256:6edf424570bdb454987a2e6754383b8da0ec10df87aefcb290de32621b1a0a1e
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:c203eb239d1a6493bfd8bf1bbc9ef3baae2e5f34cec661c6d21febeb9dd14ced
+    hash: sha256:7fb836e596d17d001ffb75ae78d86796d0ea9b4173b762a6f5dfb98a5ff0d7fc
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -618,7 +638,7 @@ files:
 
   - path: scripts/eval-discovery-contract.js
     role: tooling
-    hash: sha256:5953962d8243588d407f939c5c5886ff9463bf2ea7afb999989df4285d476dc3
+    hash: sha256:72b6413af3ad0fccdd77e2493b6ea851f758c20a79072da14e07d47d6829bc48
     note: scripts/eval-discovery-contract.js
 
   - path: scripts/eval-format-contracts.js
@@ -673,7 +693,7 @@ files:
 
   - path: scripts/eval-obligation-first-binding.js
     role: tooling
-    hash: sha256:103eace74e11ae7baa69b69eb8ef7e677828e00d1034b9b43a626cfd2204c52b
+    hash: sha256:14ade77ffc17a08900fa6f3a113f7686019651c537cc32b5705ecbbacdd8178c
     note: scripts/eval-obligation-first-binding.js
 
   - path: scripts/eval-parser.js
@@ -683,7 +703,7 @@ files:
 
   - path: scripts/eval-public-claims.js
     role: tooling
-    hash: sha256:ffb799ebe017ebc9408d5a859c7c8b493d693af9f5ec06c13016e381d8631061
+    hash: sha256:94cf2b48a8633dd43b94e5739b1f7ab5e4104fee1e6c58bb8def0901505943ac
     note: scripts/eval-public-claims.js
 
   - path: scripts/eval-temporal-status.js
@@ -698,7 +718,7 @@ files:
 
   - path: scripts/eval-record-schema.js
     role: tooling
-    hash: sha256:7dabd8be1b39f4b8a9cdd2d51f6668cfa00837a4a5c1745f186f12eeabb258bf
+    hash: sha256:3084f259d41767c57319c8438b803014a0ad6670fa7ece0a099b35c2293c3147
     note: scripts/eval-record-schema.js
 
   - path: scripts/eval-redirects.js
@@ -743,7 +763,7 @@ files:
 
   - path: scripts/eval-workflow-invariants.js
     role: tooling
-    hash: sha256:6df4623787101c13d3adeae13a2483985edd84f1f425c3071fed5e84d5e591f4
+    hash: sha256:3e67c1dd6e8cae4f3dffcec835fae4c358be9ad78d3d8030aec9149b78cda998
     note: scripts/eval-workflow-invariants.js
 
   - path: scripts/evals.js
@@ -773,12 +793,12 @@ files:
 
   - path: scripts/lib/mapping.js
     role: tooling
-    hash: sha256:e14015638256cb5cc37da42665304a70ef8360e65e7e1a8c339874f7302c6c15
+    hash: sha256:4f4e559983c60790b8604c01a579cddecae6d471c88b347f013657c0f2d6f988
     note: scripts/lib/mapping.js
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:f49b7852ed39aa49529fce5fc34eca6fc68d4dd4d0ffe8dee3f28b0589c87892
+    hash: sha256:fa18d2aadf3d8974cd87f336e6751ffc8e0cc9d995d9c4050c905e5a0b20774c
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/temporal-status.js
@@ -823,7 +843,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:fd839d2fa85b0f5f3f8a07d3647c65286feacc69b69d37d85d8c4f9fcbb4aaef
+    hash: sha256:8c002e38525f6701b778c61e59dbe08d9aa03637df19cb07afeceff8cf6723ec
     note: scripts/verify-ci.js
 
   - path: AGENTS.md
@@ -843,7 +863,7 @@ files:
 
   - path: about/index.html
     role: site-source
-    hash: sha256:4921b0adf61e763e97434f494679a56359f4628d711cfe381eca9316b1f22c6a
+    hash: sha256:0dd4a6b58e61a9507e509c677b7ad46325e179cd20101a84e63abf1f7f7674c1
     note: about/index.html
 
   - path: assets/search.js
@@ -873,7 +893,7 @@ files:
 
   - path: reference/index.html
     role: site-source
-    hash: sha256:00ae00a59417a88b850a415e30b4f7422f612f75443aa96f4830a2727f85896e
+    hash: sha256:d7272d0fc651d366e3f8933d5364efc1b95023bcab33303e8c2bada050a4eb87
     note: reference/index.html
 
   - path: reference/prior-art/index.html
@@ -883,7 +903,7 @@ files:
 
   - path: reference/registry/index.html
     role: site-source
-    hash: sha256:c8ffaf79975c0430a36dac8599321a085fdb3cb4e77b157c81f76683497da3fa
+    hash: sha256:e2c74ffee32ac659522b2714e5f488fcaf09a35a8ac214a8952c885609150363
     note: reference/registry/index.html
 
   - path: reference/verify/index.html
@@ -990,3 +1010,83 @@ files:
     role: code
     hash: sha256:e79c6acf32b51c8203e8284f574c612b21984d8c5ebddabd42ba6f9e69495cda
     note: T10 bounded maintenance pilot
+
+  - path: tests/generated-record-schema.test.js
+    role: code
+    hash: sha256:b675bf0404d571412c90aaa18be25d245b36a495e7ba360b6461cc256f5cdd0b
+    note: Full generated-record JSON Schema regression
+
+  - path: tests/source-admission.test.js
+    role: code
+    hash: sha256:c9aa54905b3c930cba7d99f03287a8857d77f2397eac1eb9a78564a69d47b317
+    note: Source admission policy and producer-gate regressions
+
+  - path: tests/publication-state.test.js
+    role: code
+    hash: sha256:0713bea884f0e3dce13baa70e3e3d6e2e3c022f7d63530a417b7193d986ae792
+    note: Published artifact identity and discovery regressions
+
+  - path: tests/doctronic-observation.test.js
+    role: code
+    hash: sha256:9185ead5745b5a7de55c228ec30e6bd9b80746503516864786e949c7577fdb4d
+    note: Dated outcomes versus issued-term boundary regression
+
+  - path: tests/source-owned-mapping.test.js
+    role: code
+    hash: sha256:e6d397b35cd5ea691bee3dca7b2a3e6eb7cd0c6830989bd08f7a68f4afca047e
+    note: Source-owned relationship mapping and parser regressions
+
+  - path: tests/of-evidence-inputs.test.js
+    role: code
+    hash: sha256:d5163e7e8fd5ab7f611d4e0eaa8dba678f1b82efd79c167c959eac76f6db607e
+    note: Per-kind native evidence input and review-boundary regressions
+
+  - path: tests/colorado-order24.test.js
+    role: code
+    hash: sha256:6e71917593eb2771483c3ef40c9089d69e4129679ebfe77735c8e32a30c7a95e
+    note: Colorado ECF 24 scope and explicit-unknown projection regressions
+
+  - path: design/publication-state.json
+    role: evidence
+    hash: sha256:0cb5dc6d59be9e8198041ab78388f7c1648ddfea2b43f09dbf667aa649d0ef63
+    note: Independent provider observations and hosted selection policy
+
+  - path: design/PUBLISHED-MCP-0.2.2.snapshot.json
+    role: evidence
+    hash: sha256:b10d2b1641c6bcf458dbf9853dd525d5afa88aa47665ab4091ecba90953c4345
+    note: Verified published npm artifact capability snapshot
+
+  - path: design/PUBLICATION-PROVIDERS-2026-09-09.snapshot.json
+    role: evidence
+    hash: sha256:dd65163f596049c5cb1bdfdb0d89afffce3c76f4e165058425d1be197499eec0
+    note: Independent npm MCP Registry Git tag and GitHub Release observations
+
+  - path: ops/evidence/publication-state-2026-09-09.json
+    role: evidence
+    hash: sha256:4e7a77c8f8edcabd4cd37a6d22b85d0f4224f94cfafc6820f1096c1c1b3cfd3a
+    note: Publication identity implementation receipt
+
+  - path: ops/evidence/source-admission-tranche-2026-09-09.json
+    role: evidence
+    hash: sha256:657f927e0445633cfef927f390ab8fceb309cde6af1d9437a429b46a0523845f
+    note: Source admission implementation receipt
+
+  - path: ops/evidence/doctronic-source-review-2026-09-09.json
+    role: evidence
+    hash: sha256:493c3ba45f6b293490d71f2e1e319e0dbee6de20868265e83dd99753f2815f57
+    note: Doctronic source review and observation-boundary receipt
+
+  - path: ops/evidence/source-owned-mapping-2026-09-09.json
+    role: evidence
+    hash: sha256:4a2aafcb87e0cf5cbc7f709780a74059d24d48e82cf73bbbc9dddc4ff0917fd0
+    note: Source-owned mapping and exact-base reconstruction receipt
+
+  - path: ops/evidence/of-evidence-boundaries-2026-09-09.json
+    role: evidence
+    hash: sha256:c8908ddccf367b45abb1f07a41fb8db4e44c8bc5e3a3d2e54e2295bf5b04c87c
+    note: Per-kind native evidence input and review-boundary receipt
+
+  - path: ops/evidence/colorado-order24-source-review-2026-09-09.json
+    role: evidence
+    hash: sha256:60f44d6fd850e61d68885b8510bf211c07fba2f2440f9b2a1a765a414459445c
+    note: Colorado ECF 24 source recovery and explicit uncertainty receipt

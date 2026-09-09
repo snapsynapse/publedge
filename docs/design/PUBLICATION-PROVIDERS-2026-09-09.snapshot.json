@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-09",
+  "npm": {
+    "observation_status": "published",
+    "evidence_url": "https://registry.npmjs.org/publedge/0.2.2",
+    "name": "publedge",
+    "version": "0.2.2",
+    "observed_at": "2026-09-09T16:18:33.674Z",
+    "unretained_response_sha256": "ca2548f62fc0cb9945b33544255fc54481ea2bc438b27b5fe35096871e36ad3c",
+    "integrity": "sha512-fERUpnJQ4iki0Me25lUrGYJjzwjquREFD04y9bFOpJ1Kp/kPcgv49d8Z4XHGsQnbpSAMbYSx/dUH/yKPFo/f5w==",
+    "tarball_sha256": "e7997f02ac43ba894c83bfa1c5f41b57205f2b37485160f62f7dd6beb2b6d820"
+  },
+  "mcp_registry": {
+    "observation_status": "published",
+    "evidence_url": "https://registry.modelcontextprotocol.io/v0/servers?search=publedge&version=latest",
+    "name": "io.github.snapsynapse/publedge",
+    "version": "0.2.2",
+    "status": "active",
+    "is_latest": true,
+    "published_at": "2026-09-06T03:08:31.84186Z",
+    "observed_at": "2026-09-09T16:18:33.674Z",
+    "unretained_response_sha256": "dc102f34d927c2bee7f9c196e718a1d8bba523ef1929d6ba5693746662ad0be1"
+  },
+  "github_tag": {
+    "observation_status": "published",
+    "evidence_url": "https://api.github.com/repos/snapsynapse/publedge/git/refs/tags/v0.2.2",
+    "tag": "v0.2.2",
+    "object_type": "tag",
+    "object_sha": "8b2b74c0914e316f210b45b1d9f60641dc06dd88",
+    "observed_at": "2026-09-09T16:18:56.062Z",
+    "unretained_response_sha256": "20df67af8954fe418733ed0c2c2b66937205296b8a74fe068b45ae5f48bfb6a0"
+  },
+  "github_release": {
+    "observation_status": "published",
+    "evidence_url": "https://github.com/snapsynapse/publedge/releases/tag/v0.2.2",
+    "release_id": 383447207,
+    "tag": "v0.2.2",
+    "name": "PubLedge v0.2.2",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-09-06T02:58:10Z",
+    "observed_at": "2026-09-09T16:18:56.585Z",
+    "unretained_response_sha256": "78e4d8eb8eecf475571b57307368a69330e0ad299b18ca12aeb76049f313896a"
+  },
+  "limits": "The normalized provider fields are retained evidence. unretained_response_sha256 records the digest observed during retrieval but cannot revalidate response bytes because those raw responses are not retained here. Provider endpoints can change after observation."
+}

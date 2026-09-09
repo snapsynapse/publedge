@@ -1,0 +1,42 @@
+{
+  "receipt_version": 1,
+  "recorded_at": "2026-09-09T15:56:13Z",
+  "branch": "codex/known-corrections-2026-09-09",
+  "baseline_commit": "3a07bba0b9f2b51c298a84fc50a42b66b341ad43",
+  "baseline_tree": "0bd0438d6f9b54975b5f6e9d0b54f98fdb7b0294",
+  "scope": "PubLedge owner-level source admission and generated-record JSON Schema enforcement",
+  "admission": {
+    "status": "passed",
+    "total_records": 62,
+    "legacy_unreviewed_records": 62,
+    "records_with_reviewed_changes": 0,
+    "changed_units_reviewed": 0,
+    "legacy_inventory_sha256": "6389960cc991b32c08519e30339924a39b2590438fe47721b4d34e247ca663ca",
+    "receipts_sha256": "16494f2fc122b8d7b15f07da57cd2cc94a77193b411b49ac044b498210fc000f"
+  },
+  "emitted_counts": {
+    "instruments": 18,
+    "obligations": 35,
+    "authorities": 8,
+    "mapping_entries": 16,
+    "obligation_first_records": 130
+  },
+  "verification": [
+    "npm run test:admission: 13 passed, 0 failed",
+    "npm run check:admission: passed",
+    "node scripts/eval-record-schema.js: passed",
+    "npm run eval:schema-parity: passed",
+    "npm run eval:mcp-contract: passed",
+    "npm run eval:package-smoke: passed in disposable test location",
+    "npm run validate:of: 130 records passed",
+    "npm run build: passed; docs/data/admission absent"
+  ],
+  "limits": [
+    "The frozen baseline is explicit legacy-unreviewed debt and is not certified as reviewed.",
+    "Agent review establishes source consistency only and cannot authenticate a human or renew Verified.",
+    "Admission evidence and retained source bytes are excluded from generated public data copying.",
+    "Generated record metadata exposes only admission status and limits; it does not expose receipts or source bytes.",
+    "CI checks compare receipt retention to the pull-request base or prior push head with full Git history.",
+    "No release package was retained and no release, deployment, provider mutation, commit, or push was performed."
+  ]
+}

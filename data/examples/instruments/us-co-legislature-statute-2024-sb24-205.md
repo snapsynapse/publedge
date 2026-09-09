@@ -1,8 +1,9 @@
 ---
 describesSameEntityAs: ["https://everyailaw.com/instrument/colorado-sb24-205.json"]
 lifecycle_status: repealed
-operative_status: inactive
-of_notes: "Historical predecessor replaced by enacted SB 26-189, section 1. The retained scheduled effective date is not evidence that the predecessor duties became operative. Replacement timing remains subject to section 5; lifecycle and operative history are distinct."
+operative_status: unknown
+enforcement_status: unknown
+of_notes: "Historical predecessor replaced by enacted SB 26-189, section 1. The retained scheduled effective date is not evidence that the predecessor duties became operative. D. Colo. ECF 24, entered April 27, 2026, bars defendant Colorado Attorney General Philip J. Weiser from initiating enforcement, including investigation, for alleged violations of SB 24-205 or a 2026-session replacement or amendment that occurred or may occur on or before 14 days after a future preliminary-injunction ruling. The cutoff concerns when the alleged violation occurred, not merely when enforcement begins. It requires xAI to submit its motion within 28 days after final adoption of rulemaking implementing SB 24-205 or legislation that may replace or amend it. Public docket completeness, final rulemaking, any preliminary-injunction filing or ruling, and the order's current continued effect remain unknown."
 "@type": "https://w3id.org/semanticarts/ns/ontology/gist/Statute"
 id: us-co-legislature-statute-2024-sb24-205
 instance: 2024-001
@@ -54,7 +55,7 @@ disclaimer: ""
 last_verified: 2026-07-25
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-05-21
-modified: 2026-07-25
+modified: 2026-09-09
 ---
 
 ## Timeline
@@ -71,7 +72,7 @@ modified: 2026-07-25
 | Amended by SB 25B-004 | 2025-08-28 | Effective date pushed from 2026-02-01 to 2026-06-30; no substantive change |
 | xAI v. Weiser filed | 2026-04-09 | xAI challenge in D. Colo. (No. 1:26-cv-01515) |
 | DOJ intervenes | 2026-04-24 | Federal government joins challenge |
-| Enforcement stayed | 2026-05 | Joint motion stayed enforcement deadlines pending injunction ruling |
+| Conditional enforcement restraint (ECF 24) | 2026-04-27 | Bars the Colorado Attorney General from initiating enforcement, including investigation, for alleged violations occurring through 14 days after a future preliminary-injunction ruling; xAI's motion is due within 28 days after final rulemaking implementing SB 24-205 or legislation that may replace or amend it; whether those future triggers occurred remains unverified |
 | Superseded by SB 26-189 | 2026-05-14 | Replacement statute signed |
 | Scheduled effective date | 2026-06-30 | Scheduled requirement date; operative history unresolved |
 
@@ -86,7 +87,7 @@ SB 24-205 was the United States' first comprehensive state statute imposing duti
 - Granted consumers rights to plain-language explanation of adverse consequential decisions, opportunity to correct incorrect personal data, and human review where technically feasible (§6-1-1703(4)).
 - Reserved enforcement to the Colorado Attorney General; no private right of action (§6-1-1706).
 
-The act was signed with explicit reservations from Governor Polis, who urged the General Assembly to refine the statute before its effective date. A 2025 regular-session amendment bill (SB 25-318) was withdrawn by its sponsor; an August 2025 special session produced only SB 25B-004, which delayed the effective date from February 1, 2026 to June 30, 2026 without substantive change. Federal litigation followed — xAI v. Weiser (D. Colo. No. 1:26-cv-01515), filed April 2026, with the US Department of Justice intervening and a reported April 27 court order concerning enforcement. The original order and subsequent docket history have not been verified in this reference; a motion alone does not establish a stay. The General Assembly enacted replacement legislation in SB 26-189, signed May 14, 2026. Predecessor operative history remains unresolved; SB 26-189 section 5 qualifies replacement timing, and signature alone does not establish when predecessor duties ceased or whether they operated.
+The act was signed with explicit reservations from Governor Polis, who urged the General Assembly to refine the statute before its effective date. A 2025 regular-session amendment bill (SB 25-318) was withdrawn by its sponsor; an August 2025 special session produced only SB 25B-004, which delayed the effective date from February 1, 2026 to June 30, 2026 without substantive change. Federal litigation followed in xAI v. Weiser (D. Colo. No. 1:26-cv-01515), with the United States intervening. The retained original ECF 24, entered April 27, 2026, bars defendant Colorado Attorney General Philip J. Weiser from initiating enforcement, including investigation, for alleged violations of SB 24-205 or 2026-session replacement or amendment legislation that occurred or may occur on or before 14 days after the court rules on xAI's forthcoming preliminary-injunction motion. That cutoff concerns the occurrence of the alleged violation, not merely the initiation date of enforcement. The order requires xAI to submit its motion within 28 days after final adoption of rulemaking implementing SB 24-205 or legislation that may replace or amend it. Public docket completeness, final implementing rules, any preliminary-injunction filing or ruling, and the order's current continued effect remain unknown. The General Assembly enacted replacement legislation in SB 26-189, signed May 14, 2026. Predecessor operative history remains unresolved; SB 26-189 section 5 qualifies replacement timing, and signature alone does not establish when predecessor duties ceased or whether they operated.
 
 ### Talking Point
 
@@ -96,5 +97,6 @@ The act was signed with explicit reservations from Governor Polis, who urged the
 
 - [SB 24-205 Bill Text (leg.colorado.gov)](https://leg.colorado.gov/bills/sb24-205)
 - [SB 24-205 Signed Act PDF](https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf)
+- [xAI v. Weiser, ECF 24 Minute Order (D. Colo. Apr. 27, 2026)](https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf)
 - [EveryAILaw — Colorado SB 24-205](https://everyailaw.com/regulation/colorado-sb24-205/)
 - [EveryAILaw — Colorado SB 26-189 (successor)](https://everyailaw.com/regulation/colorado-sb26-189/)

@@ -7,6 +7,14 @@
   authority: utah-oaip
   source_file: data/examples/instruments/us-ut-oaip-jia-2026-001.md
   source_heading: First-Session Disclosure (§13-72a-203)
+  term_anchors:
+    - https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json
+  obligation_anchors:
+    - https://everyailaw.com/obligation-category/transparency.json
+  anchor_relation: related-not-equivalent
+  anchor_source_url: https://le.utah.gov/~2025/bills/static/HB0452.html
+  anchor_source_locator: HB 452 §5, Utah Code §13-72a-203(1)-(2)
+  anchor_qualification: The draft JIA's 30-minute re-display term is not the statutory seven-day interaction rule; the anchor records related disclosure subject matter, not equivalence or statutory force for the draft.
   obligations:
     - disclose-genai-on-first-session
 

@@ -16,9 +16,12 @@ jobs:
     env:
       CHECK_OF_REQUIRED: "1"
       OBLIGATION_FIRST_DIR: ${{ github.workspace }}/obligation-first
+      SOURCE_ADMISSION_BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before || github.sha }}
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - uses: actions/checkout@v5
         with:
@@ -42,8 +45,12 @@ jobs:
   a11y:
     runs-on: ubuntu-latest
     needs: build
+    env:
+      SOURCE_ADMISSION_BASE: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before || github.sha }}
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v5
         with:
           node-version: '20'

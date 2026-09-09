@@ -1,0 +1,60 @@
+{
+  "receipt_version": 1,
+  "recorded_at": "2026-09-09T17:16:04Z",
+  "branch": "codex/known-corrections-2026-09-09",
+  "baseline_commit": "3a07bba0b9f2b51c298a84fc50a42b66b341ad43",
+  "scope": "Doctronic agreement permission wording, dated May 2026 outcomes, and September 2026 FAQ source conflict",
+  "source_record": {
+    "path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+    "before_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
+    "after_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc",
+    "admission_packet_sha256": "5e3c426d9dbdfa30f065801d88ed39cd3355f7e1b23bed008fbd4c70a48fe299",
+    "changed_units": 5
+  },
+  "retained_sources": [
+    {
+      "kind": "signed agreement",
+      "original_sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+      "reviewed_utf8_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044"
+    },
+    {
+      "kind": "official outcomes report",
+      "original_sha256": "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940",
+      "reviewed_utf8_sha256": "17c6aa35803126e6611d33575e1bb3543f8af7e319d3991a6e8445abb2042067"
+    },
+    {
+      "kind": "official agency FAQ observation",
+      "original_sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
+      "reviewed_utf8_sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f"
+    },
+    {
+      "kind": "official agency pilot page",
+      "original_sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+      "reviewed_utf8_sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75"
+    }
+  ],
+  "admission": {
+    "status": "passed",
+    "total_records": 62,
+    "legacy_unreviewed_records": 61,
+    "records_with_reviewed_changes": 1,
+    "changed_units_reviewed": 5,
+    "receipts_sha256": "e8048fab515775573a4bf02d303da107c8487098ea0192abdeeb7dc8ba31e43f"
+  },
+  "boundaries": {
+    "last_verified": "2026-06-04",
+    "status": "enforcing",
+    "effective": "2025-10-24",
+    "term_start": "2025-10-24",
+    "term_end": "2026-10-24",
+    "outcome_statistics_are_obligations": false
+  },
+  "limits": [
+    "The signed PDF body retains a DRAFT AGREEMENT title despite its official final presentation and signatures.",
+    "The outcomes are a limited, participant-reported January-April 2026 observation; OAIP said a separate independent review had begun.",
+    "The September 2026 FAQ describes changed Phase 2 criteria and formulary removals that conflict with the signed agreement, but the current OAIP pilot page links no signed amendment.",
+    "No source reviewed here establishes a later phase, compliance, extension, termination, or current status.",
+    "The separate Legion commencement evidence and Utah Chapter 72 official-source access remain unresolved.",
+    "No publication, deployment, package version change, commit, push, or provider mutation was performed."
+  ]
+}

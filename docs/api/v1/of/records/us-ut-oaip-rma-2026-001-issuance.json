@@ -26,7 +26,26 @@
   "notes": "Issuance record for Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026).",
   "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
   "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-06-04",
-  "asserted_by_adopter": "https://publedge.org/"
+  "asserted_by_adopter": "https://publedge.org/",
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "instrument",
+      "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+      "native_file_sha256": "d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a",
+      "canonical_unit": null,
+      "canonical_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
+  ]
 }

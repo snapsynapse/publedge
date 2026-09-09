@@ -1,0 +1,118 @@
+{
+  "receipt_version": 1,
+  "recorded_at": "2026-09-09T18:20:47Z",
+  "branch": "codex/known-corrections-2026-09-09",
+  "baseline_commit": "3a07bba0b9f2b51c298a84fc50a42b66b341ad43",
+  "scope": "D. Colo. ECF 24 historical cutoff recovery and explicit SB 24-205 operation/enforcement uncertainty",
+  "source_record": {
+    "path": "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md",
+    "native_file_sha256": "966b1049b6af34703bf0cfc282fdef01a36dfc0e50ed2676761f4fc7e63fbf96",
+    "baseline_canonical_sha256": "d2c599d0f52d4cc4d0deda128edaf56c85f0a79cf305efb11b3919d23d6c914a",
+    "after_canonical_sha256": "c190b192a6d028f6679e8bedc32cde8d881ce6d6e67b8183e22ac0a6a6fc7516",
+    "admission_packet_sha256": "378cdf6a5a5d13db015de62dd41e66ec90bb7202ebd3b818b5bcb8bc78965823",
+    "changed_units": 7
+  },
+  "retained_source": {
+    "document": "D. Colo. 1:26-cv-01515-DDD-CYC, ECF 24, Minute Order entered April 27, 2026",
+    "official_url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf",
+    "original_path": "data/admission/sources/colorado-sb24-205/xai-weiser-ecf-24-2026-04-27.pdf",
+    "original_sha256": "59fc68432753abc356065683a23379d0378fbecb811ec30105ca7d28a293587d",
+    "reviewed_utf8_path": "data/admission/sources/colorado-sb24-205/xai-weiser-ecf-24-2026-04-27.txt",
+    "reviewed_utf8_sha256": "6f56f3e6af1d1a084b46da86d1bbc75436394ce3f829a7be6720ee94daad530e"
+  },
+  "meaning": {
+    "defendant": "Colorado Attorney General Philip J. Weiser",
+    "restrained_action": "initiating enforcement, including investigation",
+    "alleged_violation_cutoff": "violations of SB 24-205 or 2026-session replacement/amendment legislation that occurred or may occur on or before 14 days after a future preliminary-injunction ruling",
+    "motion_deadline": "within 28 days after final adoption of rulemaking implementing SB 24-205 or legislation that may replace or amend it",
+    "not_established": [
+      "statutory nonoperation or historical operation",
+      "current universal enforcement status",
+      "final implementing rulemaking",
+      "a preliminary-injunction filing or ruling",
+      "modification, dissolution, or current continued effect of ECF 24",
+      "complete current PACER docket"
+    ]
+  },
+  "preserved": {
+    "status": "superseded",
+    "lifecycle_status": "repealed",
+    "effective": "2026-06-30",
+    "last_verified": "2026-07-25"
+  },
+  "corrected_uncertainty": {
+    "operative_status": "unknown",
+    "enforcement_status": "unknown",
+    "derived_records": "Instrument, Term, and three Requirements preserve both unknown values"
+  },
+  "admission": {
+    "status": "passed",
+    "total_records": 62,
+    "legacy_unreviewed_records": 59,
+    "records_with_reviewed_changes": 3,
+    "changed_units_reviewed": 13
+  },
+  "validation": [
+    {
+      "command": "npm run test:colorado-order24",
+      "result": "passed",
+      "tests": 2
+    },
+    {
+      "command": "npm run test:admission",
+      "result": "passed",
+      "tests": 13
+    },
+    {
+      "command": "npm run test:of-evidence-inputs",
+      "result": "passed",
+      "tests": 3
+    },
+    {
+      "command": "npm run eval:generated-tree-parity",
+      "result": "passed"
+    },
+    {
+      "command": "OBLIGATION_FIRST_DIR=/Users/snap/Git/obligation-first npm run validate:of",
+      "result": "passed",
+      "records": 130
+    },
+    {
+      "command": "npm run check:of-fingerprint",
+      "result": "expected-failed-pending-root-review",
+      "evidence": "/private/tmp/legal-graph-implementation-2026-09-09/publedge/colorado-order24-fingerprint-diff.txt"
+    },
+    {
+      "command": "npm run check:of-fingerprint",
+      "result": "passed-after-independent-review-and-root-refresh",
+      "records": 130,
+      "scope_claims": 141
+    }
+  ],
+  "expected_fingerprint_delta": {
+    "record_count": 130,
+    "scope_claim_count": 141,
+    "semantic_status_changes": "SB 24-205 Instrument, one derived Term, and three derived Requirements change operative_status and enforcement_status to unknown",
+    "source_provenance_changes": "SB 24-205 Instrument and issuance Determination become fully reviewed; their source-review evidence fields bind the recovered order. The mixed Term and Requirements retain legacy dominance while adding the reviewed instrument input.",
+    "unchanged_expected": [
+      "identifiers",
+      "relationships",
+      "dates",
+      "nested semantics",
+      "lifecycle status"
+    ]
+  },
+  "review": {
+    "independent_status": "accepted",
+    "independent_reviewer": "AI Incident Law owner agent",
+    "fingerprint_status": "accepted-and-refreshed by Obligation-First coordinator",
+    "fingerprint_scope": "six-node source provenance/coverage delta plus five-node explicit operative/enforcement unknown correction; identifiers, relationships, dates, nested semantics, and lifecycle unchanged",
+    "fingerprint_sha256": "1d561d86b1d3152a3707b907667ad2067ce7f74160727a000944faa8172d4633"
+  },
+  "limits": [
+    "The public Clearinghouse mirror displayed no entry after ECF 24 on September 9, 2026, but CourtListener docket access returned HTTP 403 and the issuing-court public-document endpoint returned HTTP 404; PACER completeness is unknown.",
+    "This agent review does not renew last_verified or authenticate human review.",
+    "Retained original and reviewed bytes are private admission evidence and are not copied into docs or the npm package.",
+    "No release, publication, deployment, commit, push, or paid source access occurred."
+  ]
+}

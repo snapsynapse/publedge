@@ -13,7 +13,7 @@
   "describesSameEntityAs": [
     "https://everyailaw.com/instrument/colorado-sb24-205.json"
   ],
-  "notes": "Historical predecessor replaced by enacted SB 26-189, section 1. The retained scheduled effective date is not evidence that the predecessor duties became operative. Replacement timing remains subject to section 5; lifecycle and operative history are distinct.",
+  "notes": "Historical predecessor replaced by enacted SB 26-189, section 1. The retained scheduled effective date is not evidence that the predecessor duties became operative. D. Colo. ECF 24, entered April 27, 2026, bars defendant Colorado Attorney General Philip J. Weiser from initiating enforcement, including investigation, for alleged violations of SB 24-205 or a 2026-session replacement or amendment that occurred or may occur on or before 14 days after a future preliminary-injunction ruling. The cutoff concerns when the alleged violation occurred, not merely when enforcement begins. It requires xAI to submit its motion within 28 days after final adoption of rulemaking implementing SB 24-205 or legislation that may replace or amend it. Public docket completeness, final rulemaking, any preliminary-injunction filing or ruling, and the order's current continued effect remain unknown.",
   "issuedBy": [
     "https://publedge.org/authority/colorado-legislature.json"
   ],
@@ -22,8 +22,8 @@
   "enacted": "2024-05-17",
   "effective": "2026-06-30",
   "lifecycle_status": "repealed",
-  "operative_status": "inactive",
-  "enforcement_status": "not-enforceable",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
   "hasTerm": [
     "https://publedge.org/term/sb24-205-never-operative-obligations.json"
   ],
@@ -42,10 +42,41 @@
   "citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
   "source": "https://leg.colorado.gov/bills/sb24-205",
   "source_citation": "Colorado SB 24-205 (2024 Regular Session), Governor Signed May 17, 2024",
-  "evidence_type": "published-source",
+  "evidence_type": "reviewed-source-reference",
   "verified": "2026-07-25",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:status": "superseded",
   "pub:editorial_status": "published",
-  "pub:canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/"
+  "pub:canonical_url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
+  "projection_basis": "native-record-projection",
+  "admission_status": "source-consistency-reviewed-changes",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": [
+    "The public Clearinghouse mirror displayed no docket entry after ECF 24 as of its September 9, 2026 update, but the canonical CourtListener docket returned HTTP 403 and the issuing-court public-document endpoint returned HTTP 404; current PACER completeness is not established.",
+    "No retained source establishes final implementing rulemaking, a preliminary-injunction filing or ruling, modification or dissolution of ECF 24, or the order current continued effect.",
+    "ECF 24 does not establish whether SB 24-205 duties became operative, the complete predecessor enforcement history, or the timing consequences of SB 26-189 section 5.",
+    "This agent source-consistency review does not renew last_verified or authenticate human review."
+  ],
+  "pub:source_review_state": "declared",
+  "pub:evidence_inputs": [
+    {
+      "kind": "instrument",
+      "native_path": "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md",
+      "native_file_sha256": "966b1049b6af34703bf0cfc282fdef01a36dfc0e50ed2676761f4fc7e63fbf96",
+      "canonical_unit": null,
+      "canonical_sha256": "c190b192a6d028f6679e8bedc32cde8d881ce6d6e67b8183e22ac0a6a6fc7516",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "378cdf6a5a5d13db015de62dd41e66ec90bb7202ebd3b818b5bcb8bc78965823",
+      "retained_primary_sha256": [
+        "59fc68432753abc356065683a23379d0378fbecb811ec30105ca7d28a293587d"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "The public Clearinghouse mirror displayed no docket entry after ECF 24 as of its September 9, 2026 update, but the canonical CourtListener docket returned HTTP 403 and the issuing-court public-document endpoint returned HTTP 404; current PACER completeness is not established.",
+        "No retained source establishes final implementing rulemaking, a preliminary-injunction filing or ruling, modification or dissolution of ECF 24, or the order current continued effect.",
+        "ECF 24 does not establish whether SB 24-205 duties became operative, the complete predecessor enforcement history, or the timing consequences of SB 26-189 section 5.",
+        "This agent source-consistency review does not renew last_verified or authenticate human review."
+      ]
+    }
+  ]
 }

@@ -2,8 +2,12 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/",
-    "generated": "2026-09-05T00:00:00.000Z",
-    "schema": "https://publedge.org/schema/instrument.schema.json"
+    "generated": "2026-09-09T00:00:00.000Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json",
+    "admission": {
+      "status": "legacy-unreviewed",
+      "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
+    }
   },
   "record": {
     "id": "us-irs-chief-counsel-plr-2025-001",
@@ -13,6 +17,7 @@
     "slug": "irs-plr-202506001",
     "title": "IRS Private Letter Ruling 202506001 — Management Contract Private Business Use (§141)",
     "type": "private-letter-ruling",
+    "source": "demonstration-remap",
     "jurisdiction": "us",
     "authority": "irs-chief-counsel",
     "url": "https://publedge.org/us/federal/irs-chief-counsel/plr/2025-001/",
@@ -21,6 +26,7 @@
       "name": "Internal Revenue Service, Office of Chief Counsel",
       "ref": "https://www.irs.gov/privacy-disclosure/written-determinations"
     },
+    "issuance_event": "gist:Determination",
     "enacted": "2025-02-07",
     "effective": "2025-02-07",
     "official_url": "https://www.irs.gov/pub/irs-wd/202506001.pdf",

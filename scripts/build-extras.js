@@ -15,23 +15,27 @@ const path = require('path');
 const { composeDisclaimer } = require('./lib/disclaimer');
 const { parseFrontmatter } = require('./lib/parse');
 const { deriveBuildClock } = require('./lib/build-clock');
+const { loadPublicationState } = require('./lib/publication-state');
 
 const ROOT = path.join(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, process.env.KAC_OUTPUT_DIR || 'docs');
 const SITE_URL = 'https://publedge.org/';
 const BUILD_CLOCK = deriveBuildClock(ROOT);
 const PACKAGE_VERSION = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf-8')).version;
+const PUBLICATION = loadPublicationState(ROOT, { checkHosted: false });
+const PUBLIC_MCP = PUBLICATION.publicIdentity;
 
 function ensureDir(d) { fs.mkdirSync(d, { recursive: true }); }
 
-function copyRecursive(src, dst) {
+function copyRecursive(src, dst, shouldSkip = () => false) {
+    if (shouldSkip(src)) return 0;
     if (!fs.existsSync(src)) return 0;
     const stat = fs.statSync(src);
     if (stat.isDirectory()) {
         ensureDir(dst);
         let n = 0;
         for (const entry of fs.readdirSync(src)) {
-            n += copyRecursive(path.join(src, entry), path.join(dst, entry));
+            n += copyRecursive(path.join(src, entry), path.join(dst, entry), shouldSkip);
         }
         return n;
     }
@@ -165,7 +169,7 @@ function renderFooterNav(relRoot) {
 function renderSiteFooter(relRoot) {
     return `<footer class="site-footer">
 <p class="footer-meta">&copy; ${BUILD_CLOCK.year} <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="${relRoot}reference/disclaimer/">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge v${PACKAGE_VERSION}</p>
+<p class="footer-built">PubLedge source candidate v${PACKAGE_VERSION} · published MCP v${PUBLIC_MCP.version}</p>
 </footer>`;
 }
 
@@ -359,10 +363,22 @@ function copyStatics() {
     if (fs.existsSync(faviconSrc)) fs.copyFileSync(faviconSrc, path.join(DOCS_DIR, 'favicon.svg'));
     // Expose raw template + data directories for citation integrity
     const tplN = copyRecursive(path.join(ROOT, '_templates'), path.join(DOCS_DIR, '_templates'));
-    const dataN = copyRecursive(path.join(ROOT, 'data'), path.join(DOCS_DIR, 'data'));
+    const admissionRoot = path.join(ROOT, 'data', 'admission');
+    const dataN = copyRecursive(
+        path.join(ROOT, 'data'),
+        path.join(DOCS_DIR, 'data'),
+        (src) => src === admissionRoot || src.startsWith(`${admissionRoot}${path.sep}`),
+    );
     const schemaN = copyRecursive(path.join(ROOT, 'schema'), path.join(DOCS_DIR, 'schema'));
     const vendorN = copyRecursive(path.join(ROOT, 'vendor'), path.join(DOCS_DIR, 'vendor'));
     const assetsN = copyRecursive(path.join(ROOT, 'assets'), path.join(DOCS_DIR, 'assets'));
+    const publicationFiles = ['publication-state.json', 'PUBLISHED-MCP-0.2.2.snapshot.json', 'PUBLICATION-PROVIDERS-2026-09-09.snapshot.json'];
+    for (const filename of publicationFiles) {
+        const src = path.join(ROOT, 'design', filename);
+        const dst = path.join(DOCS_DIR, 'design', filename);
+        ensureDir(path.dirname(dst));
+        fs.copyFileSync(src, dst);
+    }
     const jsonContextSrc = path.join(ROOT, 'schema', 'context.jsonld');
     const jsonContextDst = path.join(DOCS_DIR, 'schema', 'json', 'context.jsonld');
     if (fs.existsSync(jsonContextSrc)) {
@@ -481,9 +497,12 @@ function extendDiscovery(templates) {
         j.capabilities.push({
             id: 'mcp-server',
             name: 'MCP Server',
-            description: 'Read-only MCP server exposing the PubLedge knowledge base. Run: npx -y publedge',
+            description: `Published read-only MCP ${PUBLIC_MCP.version} with ${PUBLIC_MCP.tools.count} tools. Run: npx -y ${PUBLIC_MCP.package}`,
             url: `${SITE_URL}.well-known/mcp.json`,
-            source: `https://github.com/snapsynapse/publedge/blob/main/mcp-server.js`
+            published_artifact: `https://registry.npmjs.org/publedge/-/publedge-${PUBLIC_MCP.version}.tgz`,
+            source_candidate: `https://github.com/snapsynapse/publedge/blob/main/mcp-server.js`,
+            publication_state: `${SITE_URL}design/publication-state.json`,
+            published_tools: PUBLIC_MCP.tools.names
         });
         j.content = j.content || {};
         j.content.templates = templates.map(t => ({
@@ -643,17 +662,26 @@ function writeRecordSchema() {
             '@context': { 'type': 'string', 'format': 'uri' },
             'meta': {
                 'type': 'object',
-                'required': ['canonical_url', 'generated'],
+                'required': ['canonical_url', 'generated', 'admission'],
                 'properties': {
                     'canonical_url': { 'type': 'string', 'format': 'uri' },
                     'generated': { 'type': 'string', 'format': 'date-time' },
-                    'schema': { 'type': ['string', 'null'] }
+                    'schema': { 'type': ['string', 'null'] },
+                    'admission': {
+                        'type': 'object',
+                        'required': ['status', 'limits'],
+                        'properties': {
+                            'status': { 'type': 'string', 'enum': ['legacy-unreviewed', 'reviewed-changes'] },
+                            'limits': { 'type': 'string', 'minLength': 1 }
+                        },
+                        'additionalProperties': false
+                    }
                 },
                 'additionalProperties': true
             },
             'record': {
                 'type': 'object',
-                'required': ['id', 'type', 'authority', 'jurisdiction', 'url', 'status', 'editorial_status'],
+                'required': ['id', 'type', 'source', 'authority', 'jurisdiction', 'url', 'status', 'editorial_status'],
                 'properties': {
                     'id': { 'type': 'string', 'description': 'Stable identifier matching the record frontmatter id.' },
                     'legacy_id': { 'type': ['string', 'null'] },
@@ -662,10 +690,12 @@ function writeRecordSchema() {
                     'slug': { 'type': ['string', 'null'] },
                     'title': { 'type': ['string', 'null'] },
                     'type': { 'type': ['string', 'null'], 'enum': ['rma', 'jia', 'statute', 'advisory-opinion', 'interpretive-letter', 'private-letter-ruling', 'no-action-letter'] },
+                    'source': { 'type': 'string', 'enum': ['authority-issued', 'demonstration-remap', 'publedge-original-draft', 'authoritative-reference'] },
                     'jurisdiction': { 'type': ['string', 'null'], 'description': 'ISO-like jurisdiction (e.g. us-ut, us).' },
                     'authority': { 'type': ['string', 'null'], 'description': 'Authority slug (e.g. utah-oaip, cfpb, irs-chief-counsel).' },
                     'url': { 'type': ['string', 'null'], 'format': 'uri' },
                     'issued_by': { 'type': ['object', 'string', 'array', 'null'] },
+                    'issuance_event': { 'type': ['string', 'null'] },
                     'enacted': { 'type': ['string', 'null'], 'format': 'date' },
                     'effective': { 'type': ['string', 'null'], 'format': 'date' },
                     'official_url': { 'type': ['string', 'null'], 'format': 'uri' },
@@ -703,7 +733,32 @@ function writeRecordSchema() {
                     'timeline': { 'type': 'array', 'items': { 'type': 'object' } },
                     'source_documents': { 'type': 'array', 'items': { 'type': 'object' } }
                 },
-                'additionalProperties': true
+                'additionalProperties': true,
+                'allOf': [
+                    {
+                        'if': {
+                            'allOf': [
+                                { 'properties': { 'source': { 'const': 'authority-issued' } }, 'required': ['source'] },
+                                {
+                                    'anyOf': [
+                                        { 'properties': { 'editorial_status': { 'const': 'published' } }, 'required': ['editorial_status'] },
+                                        { 'properties': { 'status': { 'const': 'enforcing' } }, 'required': ['status'] }
+                                    ]
+                                }
+                            ]
+                        },
+                        'then': {
+                            'required': ['official_url', 'publication_citations', 'source_documents', 'issuance_event', 'enacted'],
+                            'properties': {
+                                'official_url': { 'type': 'string', 'format': 'uri' },
+                                'publication_citations': { 'type': 'array', 'minItems': 1 },
+                                'source_documents': { 'type': 'array', 'minItems': 1 },
+                                'issuance_event': { 'type': 'string', 'minLength': 1 },
+                                'enacted': { 'type': 'string', 'format': 'date' }
+                            }
+                        }
+                    }
+                ]
             },
             'jsonld': {
                 'type': 'object',
@@ -737,12 +792,16 @@ function writeMcpDiscovery() {
     const dir = path.join(DOCS_DIR, '.well-known');
     ensureDir(dir);
     const discovery = {
+        publication_state: `${SITE_URL}design/publication-state.json`,
         mcpServers: {
             publedge: {
                 command: 'npx',
-                args: ['-y', 'publedge'],
-                description: 'Read-only access to the PubLedge legal-instrument registry.',
-                protocol_versions: ['2026-07-28', '2024-11-05']
+                args: ['-y', PUBLIC_MCP.package],
+                description: `Published read-only PubLedge ${PUBLIC_MCP.version} with ${PUBLIC_MCP.tools.count} tools.`,
+                published_version: PUBLIC_MCP.version,
+                source_candidate: { version: PACKAGE_VERSION, status: 'unpublished-source' },
+                protocol_versions: PUBLICATION.snapshot.runtime.protocol_versions,
+                tools: PUBLIC_MCP.tools.names
             }
         }
     };
