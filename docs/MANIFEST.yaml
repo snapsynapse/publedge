@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:a461add5599ace3fa106a05803089b729847563159ea9b978690aa335fc36ea2
+    hash: sha256:95ad2b4db6724139678242e9b71dd8ac5b35023c74100fbcdbceea4e5c643b29
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -468,7 +468,7 @@ files:
 
   - path: RELEASE_NOTES-v0.2.3.md
     role: release-notes
-    hash: sha256:f754d07f486661f87b89d7df2e7d8d0bb14eb49469e81d7eb6e2912c4180ba79
+    hash: sha256:fae982b4e109c810afac0d80e261fc1fd542106a099297b67d7bf1a09b0bfb31
     note: RELEASE_NOTES-v0.2.3.md
 
   - path: ROADMAP.md
