@@ -1,0 +1,116 @@
+{
+  "receipt_version": 1,
+  "recorded_at": "2026-09-10T00:23:24Z",
+  "branch": "worktree-agent-a4fa4546ddc978969 (isolated worktree fast-forwarded to codex/known-corrections-2026-09-09)",
+  "baseline_commit": "ed0a121d9c449d53ee289d44b178123474ea82d6",
+  "scope": "Bounded, dated evidence pass on the open owner item 'Colorado later-event evidence remains open': whether any docket event in D. Colo. 1:26-cv-01515-DDD-CYC after ECF 24 (Minute Order, 2026-04-27), or any final Colorado Attorney General rulemaking implementing SB 24-205 or SB 26-189, is publicly retrievable without paid or authenticated access. Report only; no record change.",
+  "subject_record": {
+    "path": "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md",
+    "prior_receipt": "ops/evidence/colorado-order24-source-review-2026-09-09.json"
+  },
+  "attempts": [
+    {
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/?docket_number=1:26-cv-01515&court=cod",
+      "method": "GET",
+      "auth": "none",
+      "http_status": 401,
+      "observed_at": "2026-09-10T00:21:35Z",
+      "result": "Body: {\"detail\":\"Authentication credentials were not provided.\"}. Anonymous access to the dockets endpoint is refused."
+    },
+    {
+      "url": "https://www.courtlistener.com/api/rest/v4/search/?type=r&q=docketNumber%3A%221%3A26-cv-01515%22&court=cod&order_by=dateFiled+desc",
+      "method": "GET",
+      "auth": "none",
+      "http_status": 200,
+      "observed_at": "2026-09-10T00:22:20Z",
+      "result": "One docket matched: X. AI LLC v. Weiser, docket_id 73171074, pacer_case_id 253513, dateFiled 2026-04-09, dateTerminated null, assigned to Daniel Desmond Domenico, referred to Cyrus Y. Chung, document_count 33. The search index metadata timestamp is 2026-04-14T20:51:59Z and the three RECAP documents returned inline are entries 2, 3, and an unnumbered 2026-04-14 magistrate referral. The response does not enumerate entries after ECF 24 and the index timestamp predates ECF 24, so document_count 33 cannot be read as evidence of later entries."
+    },
+    {
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=253513&order_by=-entry_number",
+      "method": "GET",
+      "auth": "none",
+      "http_status": 401,
+      "observed_at": "2026-09-10T00:22:20Z",
+      "result": "Body: {\"detail\":\"Authentication credentials were not provided.\"}. Anonymous access to the docket-entries endpoint is refused. Three-request budget for courtlistener.com exhausted."
+    },
+    {
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.<N>.0.pdf for N = 25 through 40",
+      "method": "HEAD",
+      "auth": "none",
+      "http_status": 404,
+      "observed_at": "2026-09-10T00:21:37Z to 2026-09-10T00:21:40Z",
+      "result": "All sixteen probes (N = 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40) returned HTTP 404. No public RECAP PDF exists at the main-document path for any entry number in that range."
+    },
+    {
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf and ...253513.1.0.pdf",
+      "method": "HEAD",
+      "auth": "none",
+      "http_status": 200,
+      "observed_at": "2026-09-10T00:21:51Z",
+      "result": "Control probes. ECF 24 and ECF 1 both return HTTP 200 at the same path pattern, confirming the probe pattern is valid and that the 404s for 25 through 40 reflect absence from public RECAP storage, not a malformed URL."
+    },
+    {
+      "url": "https://api.perplexity.ai/chat/completions",
+      "method": "POST",
+      "auth": "PERPLEXITY_API_KEY from ~/.claude/settings.json (value not recorded)",
+      "http_status": 200,
+      "observed_at": "2026-09-10T00:22:48Z to 2026-09-10T00:23:24Z",
+      "result": "Single sonar-pro query (response id f45e8e58-e423-42a9-828f-fba7b14a2597, created 1788999804, 215 prompt tokens, 4032 completion tokens). Output treated as leads only; see leads."
+    }
+  ],
+  "leads": {
+    "status": "UNVERIFIED. Perplexity output is a lead generator, not evidence. Nothing below has been retrieved, hashed, or reviewed as a source in this pass.",
+    "summary_as_reported": [
+      "Perplexity reported no publicly described docket activity after ECF 24: no preliminary-injunction motion with an ECF number, no ruling on such a motion, and no order modifying or dissolving ECF 24. It labelled this an inference from the absence of reporting in secondary sources, not a docket inspection.",
+      "Perplexity reported that the Colorado Attorney General had not completed final rulemaking implementing SB 24-205 or SB 26-189 as of the latest source it cited, describing informal comment collection through 2026-07-13 and a statement that formal rulemaking details would be posted when that process begins (attributed to a page verified 2026-07-31).",
+      "Perplexity reported a statutory rulemaking deadline and effective date of 2027-01-01 under SB 26-189, attributed to secondary commentary. This is not confirmed against the enrolled bill in this pass.",
+      "Perplexity reported that the Civil Rights Litigation Clearinghouse entry (timestamped 2026-09-09) shows no orders beyond the stay and initial filings, which is consistent with the prior receipt's Clearinghouse observation."
+    ],
+    "citation_urls_as_returned": [
+      "https://www.justice.gov/crt/media/1437846/dl",
+      "https://www.gibsondunn.com/dei-task-force-update-may-6-2026/",
+      "https://www.troutmanprivacy.com/wp-content/uploads/sites/941/2026/04/US_DIS_COD_1_26cv1515_d8891528e364_MINUTE_ORDER_The_parties_Motion_ECF_No_22_is_GRANT.pdf",
+      "https://aicomplianceatlas.com/law/colorado-ai-act",
+      "https://www.theleveragedyears.com/ai-regulation-news/doj-xai-colorado-ai-law-stayed-federal-test",
+      "https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2026/usa-colorado/trends-and-developments/O25632",
+      "https://www.troutmanprivacy.com/wp-content/uploads/sites/941/2026/04/US_DIS_COD_1_26cv1515_Joint_MOTION_to_Vacate_Scheduling_Conference_and_S.pdf",
+      "https://www.ebglaw.com/workforce-bulletin/inside-colorados-senate-bill-26-189-impacts-and-implications-for-employers",
+      "https://clearinghouse.net/case/48129/",
+      "https://leg.colorado.gov/bill_files/115717/download",
+      "https://www.littler.com/news-analysis/asap/colorados-artificial-intelligence-law-could-be-chopping-block",
+      "https://www.courthousenews.com/wp-content/uploads/2026/04/grok-ai-bill-colorado-complaint.pdf",
+      "https://ppc.land/u-s-joins-xais-fight-against-colorados-ai-bias-law/",
+      "https://www.hrdive.com/news/colorado-ai-bias-law-unconstitutional-elon-musks-xai/817258/",
+      "https://leg.colorado.gov/bills/sb26-189"
+    ],
+    "follow_up_candidates_for_a_human_editor": [
+      "The Colorado Attorney General rulemaking docket (SB 26-189 implementing rules) is the trigger for xAI's 28-day motion clock under ECF 24 paragraph 2; a primary-source check of the AG's rulemaking page would resolve the rulemaking half of the open item.",
+      "The SB 26-189 bill file (https://leg.colorado.gov/bill_files/115717/download) reportedly describes ECF 24 in present tense; if retained it would be a legislative-record characterisation, not docket evidence.",
+      "The Troutman-hosted PDF of ECF 22 (the revised joint motion) is a candidate secondary copy of a pre-ECF-24 filing; it adds context but not later-event evidence."
+    ]
+  },
+  "retained_sources": [],
+  "established": [
+    "As of 2026-09-10T00:21:40Z, no public RECAP main-document PDF exists for D. Colo. 1:26-cv-01515 entries 25 through 40 at the storage.courtlistener.com path pattern that serves ECF 1 and ECF 24.",
+    "The CourtListener search index record for the docket (docket_id 73171074) shows dateTerminated null and an index timestamp of 2026-04-14, so CourtListener's public search view had not been refreshed past ECF 24 at observation time.",
+    "Anonymous CourtListener REST access to the dockets and docket-entries endpoints returns HTTP 401; docket-level enumeration requires an API token this pass did not use.",
+    "The Perplexity lead, on its own terms, reports no publicly described preliminary-injunction filing or ruling, no modification or dissolution of ECF 24, and no completed final rulemaking, while stating that it could not inspect the live docket."
+  ],
+  "not_established": [
+    "Absence of docket entries after ECF 24 on PACER. RECAP storage only holds documents a RECAP user has purchased; a 404 shows absence from the public mirror, not absence from the court docket.",
+    "Existence, date, or content of any preliminary-injunction motion or ruling.",
+    "Modification, dissolution, or current continued effect of ECF 24.",
+    "Whether final rulemaking implementing SB 24-205 or SB 26-189 has been adopted, and on what date.",
+    "The 2027-01-01 deadline and effective date reported by Perplexity for SB 26-189 (not checked against the enrolled bill here).",
+    "Any change to operative_status or enforcement_status for the SB 24-205 record; both remain unknown and this pass supplies no basis to change either."
+  ],
+  "recommendation": "Leave the owner item open. The public-mirror evidence is consistent with no later docket activity but cannot prove it. Closing the item requires either an authenticated CourtListener docket-entries pull, a PACER docket report, or a primary-source check of the Colorado Attorney General rulemaking record.",
+  "limits": [
+    "no record change, no publication, no push",
+    "Report only: the instrument record, obligations, admission receipts, and legacy.json were not edited.",
+    "Bounded request budget: three requests to courtlistener.com, eighteen HEAD requests to storage.courtlistener.com (sixteen probes plus two controls), one Perplexity query.",
+    "No API key, account, or paid source (PACER) was used for court data; CourtListener endpoints requiring authentication were not retried with credentials.",
+    "Perplexity output is recorded as leads only and confers no evidentiary weight.",
+    "This pass does not renew last_verified or authenticate human review."
+  ]
+}

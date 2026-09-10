@@ -1095,3 +1095,8 @@ files:
     role: evidence
     hash: sha256:75713a9fa67977eec8d3a139080d2f0f576213d096635e35d8d485df1e3cdcb5
     note: Superseded 0.2.3 R1 preparation receipt migrated from the local handoff queue
+
+  - path: ops/evidence/colorado-later-events-2026-09-09.json
+    role: evidence
+    hash: sha256:dfbd30bd1e4cbdf81143162cd1136e4656a5fb1fea78bb11bbae1e1323666cd8
+    note: Colorado later-event evidence pass receipt (report only)
