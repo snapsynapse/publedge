@@ -20,6 +20,7 @@ const { loadMarkdownDir } = require('./lib/content');
 const { buildObligationFirstRecords, writeObligationFirstRecords } = require('./lib/obligation-first');
 const { deriveBuildClock } = require('./lib/build-clock');
 const { assertForEmission: assertSourceAdmission } = require('./check-source-admission');
+const { containerSummary, upcomingItems, recentlyChangedItems } = require('./lib/api-projection');
 
 const ROOT = path.join(__dirname, '..');
 const BUILD_CLOCK = deriveBuildClock(ROOT);
@@ -2289,7 +2290,7 @@ function build() {
 
     // --- JSON API ---
     fs.writeFileSync(path.join(API_DIR, 'primaries.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: primaries.length }, items: primaries.map(p => ({ id: p.id, name: p.name || humanizeId(p.id), group: p.group || '', status: p.status || 'draft', lifecycle_status: p.lifecycle_status })) }, null, 2));
-    fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: containers.length }, items: containers.map(c => ({ id: c.id, name: c.title || c.name || c.id, status: c.status, effective: c.effective, provision_count: c.provisions.length })) }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: containers.length }, items: containers.map(containerSummary) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'authorities.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: authorities.length }, items: authorities.map(a => ({ id: a.id, name: a.name || humanizeId(a.id), jurisdiction: a.jurisdiction || '' })) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'mappings.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: mappingIndex.length }, items: mappingIndex }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'matrix.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant }, matrix }, null, 2));
@@ -2302,26 +2303,7 @@ function build() {
     // upcoming.json — future effective + term-end dates, sorted by proximity.
     {
         const today = BUILD_CLOCK.date;
-        const items = [];
-        for (const c of containers) {
-            const push = (kind, date) => {
-                if (!date || date < today) return;
-                items.push({
-                    kind,
-                    date,
-                    days_until: Math.ceil((new Date(date + 'T00:00:00Z') - new Date(today + 'T00:00:00Z')) / 86400000),
-                    record_id: c.id,
-                    title: c.title || c.name || c.id,
-                    url: (config.url || '').replace(/\/$/, '') + containerHref(c),
-                    jurisdiction: c.jurisdiction,
-                    authority: c.authority,
-                    type: c.type
-                });
-            };
-            push('effective', c.effective);
-            push('term-end', c.term_end);
-        }
-        items.sort((a, b) => a.date.localeCompare(b.date));
+        const items = upcomingItems(containers, { today, siteUrl: (config.url || '').replace(/\/$/, ''), href: containerHref });
         fs.writeFileSync(path.join(API_DIR, 'upcoming.json'), JSON.stringify({
             meta: { generated: BUILD_CLOCK.instant, count: items.length, today },
             items
@@ -2330,28 +2312,7 @@ function build() {
 
     // recently_changed.json — records modified / verified within 30 days.
     {
-        const thirtyDaysAgo = BUILD_CLOCK.daysBefore(30);
-        const items = containers
-            .filter(c => (c.last_verified && c.last_verified >= thirtyDaysAgo) ||
-                         (c.modified && c.modified >= thirtyDaysAgo) ||
-                         (c.created && c.created >= thirtyDaysAgo))
-            .map(c => {
-                const isNew = c.created && c.created >= thirtyDaysAgo;
-                return {
-                    record_id: c.id,
-                    title: c.title || c.name || c.id,
-                    url: (config.url || '').replace(/\/$/, '') + containerHref(c),
-                    change_type: isNew ? 'added' : 'updated',
-                    created: c.created || null,
-                    modified: c.modified || null,
-                    last_verified: c.last_verified || null,
-                    jurisdiction: c.jurisdiction,
-                    authority: c.authority,
-                    type: c.type,
-                    status: c.status
-                };
-            })
-            .sort((a, b) => (b.last_verified || b.modified || '').localeCompare(a.last_verified || a.modified || ''));
+        const items = recentlyChangedItems(containers, { since: BUILD_CLOCK.daysBefore(30), siteUrl: (config.url || '').replace(/\/$/, ''), href: containerHref });
         fs.writeFileSync(path.join(API_DIR, 'recently_changed.json'), JSON.stringify({
             meta: { generated: BUILD_CLOCK.instant, count: items.length, window_days: 30 },
             items

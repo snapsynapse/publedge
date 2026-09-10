@@ -376,7 +376,7 @@ function buildObligationRecords(config, data) {
 
 function buildDeterminationRecords(config, data) {
     return data.containers
-        .filter(container => container.enacted && container.official_url && container.issuance_event && !['proposed', 'draft'].includes(container.status))
+        .filter(container => container.source !== 'publedge-original-draft' && container.enacted && container.official_url && container.issuance_event && !['proposed', 'draft'].includes(container.status))
         .map(container => withEvidenceBoundary({
             '@context': recordContext(config),
             '@type': 'of:Determination',

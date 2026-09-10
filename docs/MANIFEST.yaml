@@ -498,7 +498,7 @@ files:
 
   - path: schema/instrument.schema.json
     role: schema
-    hash: sha256:0718b566c3232770e189347fb1014c2fa535326742dd1a9e58d519d169c73239
+    hash: sha256:0208dce36b68bdd47a149ce7f7d1616dc44bed8cffbf7806e7eda86d91ebd62b
     note: schema/instrument.schema.json
 
   - path: schema/obligation-record.schema.json
@@ -553,8 +553,13 @@ files:
 
   - path: scripts/lib/source-admission.js
     role: tooling
-    hash: sha256:0ba5483ea93910d80198d7921d2404d355bc46417dc0a4f0431c7fea92f7e268
+    hash: sha256:a58ce91920f115db9b69e7e47eaf497385e622e855de535455852b51c73b1b4f
     note: Source admission digest and evidence policy
+
+  - path: scripts/lib/api-projection.js
+    role: tooling
+    hash: sha256:6cdb63b5b7e140208ec99a284336d94bf8c0567cc6f68a53a381a048902af03b
+    note: Pure docs/api/v1 aggregate projections carrying source and editorial labelling
 
   - path: scripts/lib/publication-state.js
     role: tooling
@@ -578,12 +583,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:6edf424570bdb454987a2e6754383b8da0ec10df87aefcb290de32621b1a0a1e
+    hash: sha256:2ecaddb058faef55296220c0898f20e75595cced6334606f7f6cf1655986106a
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:7fb836e596d17d001ffb75ae78d86796d0ea9b4173b762a6f5dfb98a5ff0d7fc
+    hash: sha256:12e43a8be8b10149d6bd3ea4891c65289b50112c0bd7c7b5e44b53142d59e2e5
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -798,7 +803,7 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:fa18d2aadf3d8974cd87f336e6751ffc8e0cc9d995d9c4050c905e5a0b20774c
+    hash: sha256:8ea2c5010e3ff91c3cda8e9398a40c4c2ac83baa712337b1b88250c32f11c041
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/temporal-status.js
@@ -1013,12 +1018,12 @@ files:
 
   - path: tests/generated-record-schema.test.js
     role: code
-    hash: sha256:b675bf0404d571412c90aaa18be25d245b36a495e7ba360b6461cc256f5cdd0b
+    hash: sha256:7d4f46c965afdd09cff0179b4886de901132a8b234d4c63af613f2a1c42e8e67
     note: Full generated-record JSON Schema regression
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:c9aa54905b3c930cba7d99f03287a8857d77f2397eac1eb9a78564a69d47b317
+    hash: sha256:2d71224498c5cf9dfa90a382aafe59eb9230415034efbf86a55fc584644a3b14
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js

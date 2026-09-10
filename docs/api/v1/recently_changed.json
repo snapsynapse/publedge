@@ -16,7 +16,9 @@
       "jurisdiction": "us-co",
       "authority": "colorado-legislature",
       "type": "statute",
-      "status": "enforcing"
+      "source": "authoritative-reference",
+      "status": "enforcing",
+      "editorial_status": "published"
     },
     {
       "record_id": "us-co-legislature-statute-2024-sb24-205",
@@ -29,7 +31,9 @@
       "jurisdiction": "us-co",
       "authority": "colorado-legislature",
       "type": "statute",
-      "status": "superseded"
+      "source": "authoritative-reference",
+      "status": "superseded",
+      "editorial_status": "published"
     },
     {
       "record_id": "us-ut-oaip-rma-2025-002",
@@ -42,7 +46,9 @@
       "jurisdiction": "us-ut",
       "authority": "utah-oaip",
       "type": "rma",
-      "status": "enforcing"
+      "source": "demonstration-remap",
+      "status": "enforcing",
+      "editorial_status": "published"
     }
   ]
 }

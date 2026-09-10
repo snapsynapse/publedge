@@ -233,6 +233,18 @@
     },
     {
       "if": {
+        "properties": { "source": { "const": "publedge-original-draft" } },
+        "required": ["source"]
+      },
+      "then": {
+        "properties": {
+          "issuance_event": { "type": "null" },
+          "enacted": { "type": "null" }
+        }
+      }
+    },
+    {
+      "if": {
         "anyOf": [
           { "required": ["withdrawn_date"] },
           { "required": ["withdrawal_reason"] },

@@ -14,7 +14,10 @@
       "url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
       "jurisdiction": "us-ut",
       "authority": "utah-oaip",
-      "type": "rma"
+      "type": "rma",
+      "source": "demonstration-remap",
+      "status": "enforcing",
+      "editorial_status": "published"
     },
     {
       "kind": "effective",
@@ -25,7 +28,10 @@
       "url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",
       "jurisdiction": "us-co",
       "authority": "colorado-legislature",
-      "type": "statute"
+      "type": "statute",
+      "source": "authoritative-reference",
+      "status": "enacted",
+      "editorial_status": "published"
     }
   ]
 }

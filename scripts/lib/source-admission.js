@@ -217,6 +217,9 @@ function validateAdmission({ current, legacy, admissions, read, now = new Date()
         if (issuanceClaimChanged && claimsCurrentIssuance) {
             requireValue(reviewedEvidence.some(isIssuanceEvidence), 'Authority-issued publication/enforcement claims require an issued agreement, enactment, official order, or official authority instrument; proposals, drafts, complaints, and press coverage are insufficient');
         }
+        if (issuanceClaimChanged && snapshot.metadata.source === 'publedge-original-draft') {
+            requireValue(snapshot.metadata.status === 'proposed' && !snapshot.metadata.issuance_event && !snapshot.metadata.enacted, 'PubLedge original drafts must remain proposed without issuance_event or enacted until authority sign-off changes the source');
+        }
         requireValue(!receipt.review.human_approved || receipt.review.actor_type === 'human', 'Agent cannot assert human approval');
         reviewedCount++;
         emitted[filename] = { record_sha256: snapshot.sha256, admission_status: 'reviewed-changes', review_packet_sha256: receipt.review.packet_sha256 };

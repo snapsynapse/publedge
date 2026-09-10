@@ -266,3 +266,151 @@ test('authority-issued promotion requires an actual issuance instrument', () => 
     receipt.review.packet_sha256 = admission.packetDigest(receipt);
     assert.match(admission.validateAdmission(data).errors.join('\n'), /proposals, drafts, complaints, and press coverage are insufficient/);
 });
+
+const { parseFrontmatter } = require('../scripts/lib/parse');
+const { loadMarkdownDir } = require('../scripts/lib/content');
+const projection = require('../scripts/lib/api-projection');
+const obligationFirst = require('../scripts/lib/obligation-first');
+
+const JIA_FILE = 'data/examples/instruments/us-ut-oaip-jia-2026-001.md';
+const DRAFT_BEFORE = BEFORE
+    .replace('source: authority-issued', 'source: publedge-original-draft')
+    .replace('status: enacted', 'status: proposed')
+    .replace('editorial_status: reviewed', 'editorial_status: draft');
+
+// Rebind the fixture receipt to a before/after pair whose changed metadata units are
+// all reviewed against the fixture notice, then return the admission result.
+function admitMetadataChange(before, after, documentType = 'official authority instrument') {
+    const data = fixture();
+    const previous = admission.markdownSnapshot(before);
+    const current = admission.markdownSnapshot(after);
+    const receipt = data.admissions.records[FILE];
+    receipt.baseline_sha256 = previous.sha256;
+    receipt.record_sha256 = current.sha256;
+    receipt.whole_record = { before_sha256: previous.sha256, after_sha256: current.sha256 };
+    receipt.evidence.notice.document_type = documentType;
+    receipt.units = {};
+    const changed = [...new Set([...Object.keys(previous.units), ...Object.keys(current.units)])]
+        .filter(key => previous.units[key]?.sha256 !== current.units[key]?.sha256);
+    for (const key of changed) {
+        receipt.units[key] = {
+            before_sha256: previous.units[key]?.sha256 || null,
+            after_sha256: current.units[key]?.sha256 || null,
+            candidate_content: current.units[key]?.content ?? null,
+            reason: 'Fixture metadata change',
+            qualifications: { scope: 'Fixture record', exceptions: 'No wider applicability', time: 'As stated in the instrument' },
+            evidence: ['notice']
+        };
+    }
+    data.current[FILE] = current;
+    data.legacy.records[FILE] = { sha256: previous.sha256, units: admission.unitHashes(previous) };
+    receipt.review.packet_sha256 = admission.packetDigest(receipt);
+    return admission.validateAdmission(data);
+}
+
+test('native instrument schema rejects a promoted or issued-looking PubLedge original draft', () => {
+    const validate = compileSchema('schema/instrument.schema.json');
+    const jia = parseFrontmatter(fs.readFileSync(path.join(ROOT, JIA_FILE), 'utf8')).frontmatter;
+    assert.equal(jia.source, 'publedge-original-draft');
+    assert.equal(jia.status, 'proposed');
+    assert.equal(jia.editorial_status, 'draft');
+    assert.equal(validate(jia), true, JSON.stringify(validate.errors));
+    const mutations = {
+        'status enforcing': record => { record.status = 'enforcing'; },
+        'status enacted and editorial published': record => { record.status = 'enacted'; record.editorial_status = 'published'; },
+        'proposed but carrying issuance fields': record => { record.issuance_event = 'Signed by OAIP'; record.enacted = '2026-09-01'; },
+        'relabelled authority-issued and enforcing without evidence': record => { record.source = 'authority-issued'; record.status = 'enforcing'; record.editorial_status = 'published'; }
+    };
+    for (const [name, mutate] of Object.entries(mutations)) {
+        const mutated = structuredClone(jia);
+        mutate(mutated);
+        assert.equal(validate(mutated), false, `${name} must fail the native schema`);
+    }
+});
+
+test('admission rejects an original draft promoted to a published-like status even with a reviewed receipt', () => {
+    const promoted = DRAFT_BEFORE
+        .replace('status: proposed', 'status: enforcing')
+        .replace('editorial_status: draft', 'editorial_status: published');
+    assert.match(admitMetadataChange(DRAFT_BEFORE, promoted).errors.join('\n'), /original drafts must remain proposed/);
+
+    const issuedLooking = DRAFT_BEFORE.replace('editorial_status: draft\n', 'editorial_status: draft\nissuance_event: Signed by Example Office\nenacted: 2026-09-01\n');
+    assert.match(admitMetadataChange(DRAFT_BEFORE, issuedLooking).errors.join('\n'), /original drafts must remain proposed/);
+
+    const editorialOnly = DRAFT_BEFORE.replace('editorial_status: draft', 'editorial_status: reviewed');
+    assert.equal(admitMetadataChange(DRAFT_BEFORE, editorialOnly).status, 'passed');
+});
+
+test('a draft JIA may only become issued through an authority instrument that changes its source', () => {
+    const signedOff = DRAFT_BEFORE
+        .replace('source: publedge-original-draft', 'source: authority-issued')
+        .replace('status: proposed', 'status: enforcing')
+        .replace('editorial_status: draft', 'editorial_status: published');
+    assert.equal(admitMetadataChange(DRAFT_BEFORE, signedOff).status, 'passed');
+    assert.match(admitMetadataChange(DRAFT_BEFORE, signedOff, 'draft proposal').errors.join('\n'), /proposals, drafts, complaints, and press coverage are insufficient/);
+    assert.match(admitMetadataChange(DRAFT_BEFORE, signedOff, 'press release').errors.join('\n'), /proposals, drafts, complaints, and press coverage are insufficient/);
+});
+
+test('aggregate exports and derived counts keep draft and demonstration labelling and never count a promoted draft as issued', () => {
+    const containers = loadMarkdownDir(path.join(ROOT, 'data/examples/instruments'), { includeFile: true, parseContainer: true });
+    const href = c => `/${c.id}/`;
+    const options = { today: '2026-09-09', since: '2026-08-10', siteUrl: 'https://publedge.org', href };
+    const summaries = containers.map(projection.containerSummary);
+    const jia = summaries.find(item => item.id === 'us-ut-oaip-jia-2026-001');
+    assert.deepEqual({ source: jia.source, status: jia.status, editorial_status: jia.editorial_status }, { source: 'publedge-original-draft', status: 'proposed', editorial_status: 'draft' });
+    assert.equal(summaries.find(item => item.id === 'us-ut-oaip-rma-2025-002').source, 'demonstration-remap');
+    const counts = projection.countByStatus(summaries);
+    assert.equal(counts.enforcing, 12);
+    assert.equal(counts.proposed, 1);
+    for (const item of summaries) assert.ok(item.source && item.editorial_status, `${item.id} lost its source labelling`);
+
+    // A promoted clone keeps its draft labelling on every aggregate surface even when status is tampered.
+    const promoted = containers.map(c => structuredClone(c));
+    const draft = promoted.find(c => c.id === 'us-ut-oaip-jia-2026-001');
+    draft.status = 'enforcing';
+    draft.effective = '2026-12-01';
+    draft.modified = '2026-09-09';
+    for (const item of [
+        projection.containerSummary(draft),
+        projection.upcomingItems(promoted, options).find(item => item.record_id === draft.id),
+        projection.recentlyChangedItems(promoted, options).find(item => item.record_id === draft.id)
+    ]) {
+        assert.equal(item.source, 'publedge-original-draft');
+        assert.equal(item.editorial_status, 'draft');
+    }
+    // The promoted clone is not admissible, so the enforcing count stays fixed at admitted records.
+    const validate = compileSchema('schema/instrument.schema.json');
+    const frontmatterOf = c => Object.fromEntries(Object.entries(c).filter(([key]) => !key.startsWith('_') && !['provisions', 'timeline'].includes(key)));
+    const admitted = promoted.filter(c => validate(frontmatterOf(c)));
+    assert.equal(admitted.length, containers.length - 1);
+    assert.equal(projection.countByStatus(admitted.map(projection.containerSummary)).enforcing, 12);
+
+    // Emitted docs agree with the projection.
+    const emitted = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/containers.json'), 'utf8'));
+    assert.deepEqual(projection.countByStatus(emitted.items), counts);
+    assert.deepEqual(emitted.items.find(item => item.id === jia.id), JSON.parse(JSON.stringify(jia)));
+    for (const name of ['upcoming.json', 'recently_changed.json']) {
+        const payload = JSON.parse(fs.readFileSync(path.join(ROOT, `docs/api/v1/${name}`), 'utf8'));
+        for (const item of payload.items) assert.ok(item.source && item.editorial_status, `${name} ${item.record_id} lost its source labelling`);
+    }
+});
+
+test('Obligation-First issuance determinations exclude original drafts even when they carry issuance fields', () => {
+    const config = { url: 'https://publedge.org/' };
+    const evidence = { kind: 'instrument', native_path: JIA_FILE, native_file_sha256: '1'.repeat(64), canonical_unit: null, canonical_sha256: '2'.repeat(64), admission_status: 'legacy-unreviewed', review_packet_sha256: null, retained_primary_sha256: null, unresolved_review_state: 'unknown', unresolved: null };
+    const jia = { ...parseFrontmatter(fs.readFileSync(path.join(ROOT, JIA_FILE), 'utf8')).frontmatter, _evidence_input: evidence };
+    const determinations = containers => obligationFirst.buildObligationFirstRecords(config, { containers, primaries: [], authorities: [], mappingIndex: [] }).determinations;
+    assert.deepEqual(determinations([jia]), []);
+    const promoted = { ...structuredClone(jia), status: 'enforcing', editorial_status: 'published', enacted: '2026-09-01', issuance_event: 'Signed by OAIP' };
+    assert.deepEqual(determinations([promoted]), []);
+    const instrument = obligationFirst.buildObligationFirstRecords(config, { containers: [promoted], primaries: [], authorities: [], mappingIndex: [] }).instruments[0];
+    assert.equal(instrument.embodies_determination, undefined);
+    assert.equal(instrument['pub:editorial_status'], 'published');
+    const remap = { ...promoted, source: 'demonstration-remap' };
+    assert.equal(determinations([remap]).length, 1);
+
+    const emitted = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/of/index.json'), 'utf8'));
+    assert.equal(emitted.counts.determinations, 17);
+    const ids = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/of/determinations.json'), 'utf8')).determinations.map(record => record['pub:id']);
+    assert.equal(ids.includes('us-ut-oaip-jia-2026-001-issuance'), false);
+});

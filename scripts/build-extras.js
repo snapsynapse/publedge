@@ -757,6 +757,28 @@ function writeRecordSchema() {
                                 'enacted': { 'type': 'string', 'format': 'date' }
                             }
                         }
+                    },
+                    {
+                        'if': {
+                            'properties': {
+                                'source': { 'const': 'publedge-original-draft' },
+                                'status': { 'not': { 'const': 'proposed' } }
+                            },
+                            'required': ['source', 'status']
+                        },
+                        'then': { 'not': {} }
+                    },
+                    {
+                        'if': {
+                            'properties': { 'source': { 'const': 'publedge-original-draft' } },
+                            'required': ['source']
+                        },
+                        'then': {
+                            'properties': {
+                                'issuance_event': { 'type': 'null' },
+                                'enacted': { 'type': 'null' }
+                            }
+                        }
                     }
                 ]
             },
