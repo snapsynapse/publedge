@@ -43,7 +43,7 @@ upstream:
 files:
   - path: .gitattributes
     role: config
-    hash: sha256:d1521968dbca09ade61ebec31709d6324fc2832dcdf5d247c8c795bce3e60d66
+    hash: sha256:4af6c3b7596b822acff7cae284b254924619a2a08e3175b18b762367855305f5
     note: .gitattributes
 
   - path: data/examples/authorities/cfpb.md
