@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:5da966d376111b9236fb5a1ff4f2181d5d08d118131843c3464d7a00df6bba01
+    hash: sha256:36fa587e15d0fe49b6dabe4fde0b278239800837469fe3eaa248267fb30fd36a
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -1090,3 +1090,8 @@ files:
     role: evidence
     hash: sha256:60f44d6fd850e61d68885b8510bf211c07fba2f2440f9b2a1a765a414459445c
     note: Colorado ECF 24 source recovery and explicit uncertainty receipt
+
+  - path: ops/evidence/release-preparation-v0.2.3-2026-09-09.json
+    role: evidence
+    hash: sha256:75713a9fa67977eec8d3a139080d2f0f576213d096635e35d8d485df1e3cdcb5
+    note: Superseded 0.2.3 R1 preparation receipt migrated from the local handoff queue
