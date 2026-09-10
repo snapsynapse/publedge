@@ -1,0 +1,559 @@
+{
+  "receipt_version": 1,
+  "recorded_at": "2026-09-10T05:40:00Z",
+  "branch": "worktree-agent-a1a46d465b49b1031 (based on codex/known-corrections-2026-09-09)",
+  "baseline_commit": "ed0a121d9c449d53ee289d44b178123474ea82d6",
+  "scope": "Bounded primary-source consistency review of four overdue Utah statute records (SB 149 2024, SB 226 2025, SB 332 2025, HB 320 2026) against retained enrolled-copy PDFs from le.utah.gov. Owner queue item from the maintenance pilot. No record edits.",
+  "method": {
+    "retrieval": "Each enrolled PDF was first downloaded on 2026-09-09 (local) without HTTP metadata being recorded. On 2026-09-10T05:34:50Z all four URLs were re-retrieved with curl -sS -L --max-redirs 3 --max-time 60 -A publedge-source-review/1.0 -w '%{http_code}|%{content_type}|%{url_effective}|%{num_redirects}|%{size_download}'. Every response was HTTP 200, content-type application/pdf, zero redirects, and byte-identical (sha256) to the retained file; the http_status, content_type, final_url, server_last_modified and retrieved_at values below are from that re-retrieval, which is the basis for acquisition primary_retrieval.",
+    "review_snapshot": "pdftotext -layout <pdf> <txt> (poppler 26.08.0), raw output without trimming. On 2026-09-10 a fresh -layout extraction of each retained PDF reproduced the retained .txt byte-for-byte (sha256 equal for all four). SB0332-enrolled.txt is 2679 bytes because the enrolled bill is two pages (pdfinfo Pages: 2); extraction did not fail. Every snapshot begins with an 'Enrolled Copy' header naming the expected bill number. The pre-existing data/admission/sources/utah-hb452/HB0452-enrolled.txt (already tracked) differs from raw -layout output only by stripped leading whitespace on line 1 and the trailing form-feed/newline; it was not modified.",
+    "url_checks": "One HTTP HEAD request per unique https URL appearing in the four records (frontmatter and body), run 2026-09-10T05:35:35Z to 05:35:40Z with curl -sS -I --max-time 30; no retries, no GET fallback. Schema and w3id ontology URLs (200 and 303 respectively) are not source documents and are omitted from the per-record lists.",
+    "locators": "Line references are the enrolled bill's own left-margin line numbers as printed in the reviewed UTF-8 snapshot; page references are the enrolled PDF's printed page numbers.",
+    "effective_date_basis": "All four enrolled bills carry their own effective-date section (SB 149 Section 13; SB 226 Section 9; SB 332 Section 2; HB 320 Section 8), so the Utah default of 60 days after sine die was not needed for any record."
+  },
+  "records": [
+    {
+      "record_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+      "record_id": "us-ut-legislature-statute-2024-sb149",
+      "retained_sources": [
+        {
+          "kind": "enrolled bill",
+          "document_id": "Utah SB 149 (2024)",
+          "document_title": "Artificial Intelligence Amendments, Enrolled Copy",
+          "issuing_body": "Utah Legislature",
+          "official_url": "https://le.utah.gov/~2024/bills/sbillenr/SB0149.pdf",
+          "original_path": "data/admission/sources/utah-sb149/SB0149-enrolled.pdf",
+          "original_sha256": "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+          "original_bytes": 68617,
+          "reviewed_utf8_path": "data/admission/sources/utah-sb149/SB0149-enrolled.txt",
+          "reviewed_utf8_sha256": "0a85408fb06d18d8a6fd3ce2db74c19e86c17c84d9c375daecb5a0b3eece8d86",
+          "acquisition": "primary_retrieval",
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "final_url": "https://le.utah.gov/~2024/bills/sbillenr/SB0149.pdf",
+          "server_last_modified": "Fri, 08 Mar 2024 18:32:38 GMT",
+          "retrieved_at": "2026-09-10T05:34:50Z",
+          "pages": 18,
+          "redirects": 0,
+          "byte_identical_to_first_download": true
+        }
+      ],
+      "consistency": {
+        "confirmed": [
+          "Title 'Artificial Intelligence Amendments' and '2024 GENERAL SESSION' match the record title and session (page 1, lines 1-3).",
+          "Effective date: Section 13 'This bill takes effect on May 1, 2024.' matches effective 2024-05-01 (page 18, line 593).",
+          "Section 1 enacts 13-2-12 (generative AI disclosure; on-request trigger 'if asked or prompted', regulated-occupation 'prominently disclose'), matching the record's §13-2-12 anchor and Summary (lines 39-41, 73-76).",
+          "Section 12 enacts 76-2-107 'Commission of offense with aid of generative artificial intelligence', matching the §76-2-107 anchor and the ai-defense-elimination obligation's criminal prong (lines 584-591).",
+          "Office of Artificial Intelligence Policy, Learning Laboratory Program, and regulatory mitigation agreements are enacted (lines 446-448, 472, 505), matching the Summary.",
+          "Annual report before November 30 to the Business and Labor Interim Committee (line 465) supports the report milestones used in the SB 226 and HB 320 records.",
+          "Sponsors: Chief Sponsor Kirk A. Cullimore, House Sponsor Jefferson Moss (page 1, lines 5-6) agree with the record's sponsor list."
+        ],
+        "findings": [
+          {
+            "field": "statute_anchors[0].cite and body (Chapter 72 references)",
+            "record_value": "Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act)",
+            "source_value": "The enrolled bill enacts 13-70-101 through 13-70-305 and its sunset clause names 'Title 13, Chapter 70, Artificial Intelligence Act' (Sections Affected lines 29-35; Section 11 line 583). The long title calls the act the 'Artificial Intelligence Policy Act' (line 5). The Chapter 72 numbering is the codified location (HB 320 cites '13-72-101, as enacted by Laws of Utah 2024, Chapter 186').",
+            "locator": "page 1-2 lines 5, 29-35; page 18 line 583",
+            "assessment": "Locator note, not a falsity. The record cites the codified chapter, which is correct for current Utah Code, but the enrolled text uses Chapter 70. A human editor may want a note that the enrolled bill numbered the chapter 13-70 before codification."
+          },
+          {
+            "field": "body Summary bullet 'SB 332 extended the Chapter 72 sunset from 2025-07-01 to 2027-07-01'",
+            "record_value": "from 2025-07-01",
+            "source_value": "SB 149 Section 11 sets the repeal date at May 1, 2025 (line 583); SB 332 Section 1 strikes 'May' and '2025' and inserts 'July 1, 2027' (SB 332 lines 30-31).",
+            "locator": "SB 149 page 18 line 583; SB 332 page 2 lines 30-31",
+            "assessment": "Discrepancy. The original sunset was 2025-05-01, not 2025-07-01. The record's own Timeline row for SB 332 and the SB 332 record both use 2025-05-01 correctly; only this Summary bullet is wrong."
+          },
+          {
+            "field": "body Summary bullet 'HB 320 (2026) ... extended the maximum agreement term from 12 to 36 months'",
+            "record_value": "from 12 to 36 months",
+            "source_value": "SB 149 Section 10 (13-70-305) allowed an initial 12-month agreement plus 'a single 12-month extension' (lines 572-575), so the pre-HB 320 maximum was 24 months.",
+            "locator": "page 18 lines 572-575",
+            "assessment": "Discrepancy in the starting figure. The 36-month ceiling after HB 320 is confirmed by HB 320 Section 6; the prior ceiling was 24 months, not 12."
+          },
+          {
+            "field": "enacted (2024-03-13) and Timeline vote rows",
+            "record_value": "2024-03-13; Senate 22-0-7; House 73-0-2; Boyd appointed 2024-04-30",
+            "source_value": "Not present in the enrolled copy.",
+            "locator": "n/a",
+            "assessment": "Not verifiable from this source; no conflict observed."
+          }
+        ],
+        "url_checks": [
+          {
+            "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+            "field": "official_url / publication_citations / statute_anchors[2] / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+            "field": "statute_anchors[0]",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title76/Chapter2/76-2-S107.html",
+            "field": "statute_anchors[1]",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://everyailaw.com/regulation/utah-sb149/",
+            "field": "full_text_reference / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://commerce.utah.gov/ai/learning-lab/",
+            "field": "Sources (Utah OAIP Learning Lab)",
+            "http_status": 404,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window",
+            "note": "HEAD returned 404; link appears dead or moved."
+          }
+        ],
+        "mapped_obligations": {
+          "mapping_ids": [
+            "sb149-learning-lab-and-ai-defense"
+          ],
+          "obligations": [
+            "learning-lab-agreement-participation",
+            "ai-defense-elimination"
+          ],
+          "notes": [
+            "ai-defense-elimination anchors §76-2-107 to SB 149 (2024) with effective 2024-05-01: consistent with Section 12 and Section 13.",
+            "learning-lab-agreement-participation lists 'Utah Code §13-72-301 — Joint Interpretation Agreements (added by HB 320, 2026)'. In both SB 149 (as 13-70-301) and HB 320, section 301 is the Artificial Intelligence Learning Laboratory Program; joint interpretation agreements are in 13-72-401 (HB 320 Part 4). See the HB 320 entry."
+          ]
+        }
+      },
+      "boundaries": {
+        "last_verified": "2026-06-04",
+        "status": "enforcing",
+        "editorial_status": "published",
+        "effective": "2024-05-01",
+        "modified": "2026-06-04"
+      }
+    },
+    {
+      "record_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+      "record_id": "us-ut-legislature-statute-2025-sb226",
+      "retained_sources": [
+        {
+          "kind": "enrolled bill",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Artificial Intelligence Consumer Protection Amendments, Enrolled Copy",
+          "issuing_body": "Utah Legislature",
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "original_path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+          "original_sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+          "original_bytes": 35666,
+          "reviewed_utf8_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "reviewed_utf8_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "acquisition": "primary_retrieval",
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "final_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "server_last_modified": "Thu, 13 Mar 2025 22:54:12 GMT",
+          "retrieved_at": "2026-09-10T05:34:50Z",
+          "pages": 6,
+          "redirects": 0,
+          "byte_identical_to_first_download": true
+        }
+      ],
+      "consistency": {
+        "confirmed": [
+          "Title 'Artificial Intelligence Consumer Protection Amendments' and '2025 GENERAL SESSION' match (page 1, lines 1-3).",
+          "Effective date: Section 9(1) 'this bill takes effect on May 7, 2025' and every enacted 13-75 section is marked '(Effective 05/07/25)', matching effective 2025-05-07 (page 6, line 188; lines 27-34).",
+          "Enacts 13-75-101 through 13-75-106 and repeals 13-2-12 'as enacted by Laws of Utah 2024, Chapter 186' (lines 26-34, 183-186), matching the record's Chapter 75 anchors and the SB 149 record's 'repealed by SB 226' note.",
+          "§13-75-103(1)(b) 'clear and unambiguous request' trigger (lines 103-105); §13-75-103(2)-(3) proactive verbal/written disclosure for high-risk interactions in regulated occupations (lines 106-115); §13-75-104 outset-and-throughout safe harbor (lines 117-126); §13-75-101(5) high-risk definition covering health, financial, biometric data and financial, legal, medical, mental health advice (lines 54-67); §13-75-102 'not a defense' civil rule (lines 90-95). All match the Summary and the mapped obligations disclose-genai-on-request, disclose-genai-high-risk-proactive, and ai-defense-elimination.",
+          "Amends relationship to SB 149 is supported by the repeal of 13-2-12 and the definitional cross-reference to 13-72-101 (line 40-41)."
+        ],
+        "findings": [
+          {
+            "field": "body Summary (omission) and the SB 332 record's exclusivity claim",
+            "record_value": "The SB 226 record does not mention that SB 226 also amends 63I-2-213.",
+            "source_value": "SB 226 Section 7 amends 63I-2-213(5) to read 'Title 13, Chapter 72, Artificial Intelligence Policy Act, is repealed [May 1, 2025] July 1, 2027', effective upon governor's approval if passed by two-thirds of each house, otherwise May 7, 2025 (lines 17, 24-25, 169-182, 187-195).",
+            "locator": "page 1 line 17; page 5 lines 169-182; page 6 lines 187-195",
+            "assessment": "Omission, not an error, in this record. It bears on the SB 332 record, which states SB 332 is 'the statutory reason' the chapter survived; SB 226 made the identical sunset amendment in the same session."
+          },
+          {
+            "field": "Timeline 'First annual report 2025-11-30 To Business & Labor Interim Committee' and 'Four-bill single-day AI package (with SB 271, SB 332, HB 452)'",
+            "record_value": "as stated",
+            "source_value": "Not present in SB 226; the November 30 report duty comes from SB 149 13-70-201(3)(d).",
+            "locator": "n/a",
+            "assessment": "Not established by this enrolled text; no conflict observed."
+          },
+          {
+            "field": "enacted (2025-03-25)",
+            "record_value": "2025-03-25",
+            "source_value": "Governor signing date is not printed in the enrolled copy.",
+            "locator": "n/a",
+            "assessment": "Not verifiable from this source."
+          }
+        ],
+        "url_checks": [
+          {
+            "url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+            "field": "official_url / publication_citations / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html",
+            "field": "statute_anchors[0]",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S102.html",
+            "field": "statute_anchors[1]",
+            "http_status": 404,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window",
+            "note": "HEAD returned 404. Chapter 72 section URLs with the same pattern returned 200, so this is not a generic HEAD refusal."
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S103.html",
+            "field": "statute_anchors[2]",
+            "http_status": 404,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S104.html",
+            "field": "statute_anchors[3]",
+            "http_status": 404,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure",
+            "field": "full_text_reference / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://everyailaw.com/regulation/utah-sb149/#high-risk-genai-disclosure-in-regulated-occupations",
+            "field": "Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          }
+        ],
+        "mapped_obligations": {
+          "mapping_ids": [
+            "sb226-disclosure-and-ai-defense"
+          ],
+          "obligations": [
+            "disclose-genai-on-request",
+            "disclose-genai-high-risk-proactive",
+            "ai-defense-elimination"
+          ],
+          "notes": [
+            "All statute anchors in the three obligations (§13-75-103(1), §13-75-104, §13-75-103(2)-(3), §13-75-101(5), §13-75-102) correspond to enacted sections and subsections in the enrolled text."
+          ]
+        }
+      },
+      "boundaries": {
+        "last_verified": "2026-06-04",
+        "status": "enforcing",
+        "editorial_status": "published",
+        "effective": "2025-05-07",
+        "modified": "2026-06-04"
+      }
+    },
+    {
+      "record_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb332.md",
+      "record_id": "us-ut-legislature-statute-2025-sb332",
+      "retained_sources": [
+        {
+          "kind": "enrolled bill",
+          "document_id": "Utah SB 332 (2025)",
+          "document_title": "Artificial Intelligence Revisions, Enrolled Copy",
+          "issuing_body": "Utah Legislature",
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+          "original_path": "data/admission/sources/utah-sb332/SB0332-enrolled.pdf",
+          "original_sha256": "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
+          "original_bytes": 21954,
+          "reviewed_utf8_path": "data/admission/sources/utah-sb332/SB0332-enrolled.txt",
+          "reviewed_utf8_sha256": "2db8a28ce75c50fd5e19b4db5453a1d7b61e6c515243466ff4927e17c0d5cc0a",
+          "acquisition": "primary_retrieval",
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "final_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+          "server_last_modified": "Fri, 07 Mar 2025 17:05:02 GMT",
+          "retrieved_at": "2026-09-10T05:34:50Z",
+          "pages": 2,
+          "redirects": 0,
+          "byte_identical_to_first_download": true
+        }
+      ],
+      "consistency": {
+        "confirmed": [
+          "Title 'Artificial Intelligence Revisions' and '2025 GENERAL SESSION' match (page 1, lines 1-3).",
+          "Sole substantive section amends 63I-2-213(5): 'Title 13, Chapter 72, Artificial Intelligence Policy Act, is repealed [May] July 1, [2025] 2027' (page 2, lines 30-31), matching the statute_anchors, the 2025-05-01 to 2027-07-01 extension in the Summary and Timeline, and the 'no new substantive obligations' characterization (obligation_kind is empty and no mapping points at this record).",
+          "Sponsors: Chief Sponsor Kirk A. Cullimore, House Sponsor Jefferson Moss (page 1, lines 5-6) agree with the record's sponsor list.",
+          "publication_citations[1] points at the same enrolled PDF retained here (HEAD 200)."
+        ],
+        "findings": [
+          {
+            "field": "effective and Timeline note 'Default 2025 session effective date'",
+            "record_value": "2025-05-07 (described as the default session effective date)",
+            "source_value": "Line 12: 'This bill provides a special effective date.' Section 2: 'This bill takes effect: (1) except as provided in Subsection (2), May 7, 2025; or (2) if approved by two-thirds of all members elected to each house: (a) upon approval by the governor; ...' (page 2, lines 32-39).",
+            "locator": "page 1 line 12; page 2 lines 32-39",
+            "assessment": "Discrepancy to resolve. The bill carries a two-thirds trigger, not a plain default date. The record's own Timeline reports Senate 24-0-5 and House 74-0-1; if those vote counts are accurate they exceed two-thirds of each house (29 and 75 members), which would make the bill effective on governor approval (record enacted 2025-03-25) rather than 2025-05-07. Vote counts are not in the enrolled copy, so a human editor must confirm the passage votes on le.utah.gov before changing the effective date. Left unchanged."
+          },
+          {
+            "field": "body Summary and Talking Point exclusivity ('Its sole AI-relevant effect', 'the statutory reason ... still exist', 'Without SB 332 ... would have sunset on May 1, 2025')",
+            "record_value": "SB 332 presented as the sole extension of the Chapter 72 sunset",
+            "source_value": "SB 226 (2025) Section 7 makes the identical amendment to 63I-2-213(5) (SB 226 lines 169-182, 187-195). SB 332's own text is consistent with the record, but the exclusivity framing is not supported once SB 226 is read.",
+            "locator": "SB 226 page 5 lines 169-182",
+            "assessment": "Overstatement for a human editor to weigh. The extension itself (to 2027-07-01) is correctly recorded."
+          },
+          {
+            "field": "enacted (2025-03-25) and committee/floor vote rows",
+            "record_value": "as stated",
+            "source_value": "Not present in the enrolled copy.",
+            "locator": "n/a",
+            "assessment": "Not verifiable from this source."
+          }
+        ],
+        "url_checks": [
+          {
+            "url": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+            "field": "official_url / publication_citations[0] / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title63I/Chapter2/63I-2-S213.html",
+            "field": "statute_anchors[0] / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+            "field": "statute_anchors[1] / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+            "field": "publication_citations[1] / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://everyailaw.com/regulation/utah-sb149/index.html",
+            "field": "full_text_reference / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          }
+        ],
+        "mapped_obligations": {
+          "mapping_ids": [],
+          "obligations": [],
+          "notes": [
+            "No mapping or obligation references this record, consistent with obligation_kind: []."
+          ]
+        }
+      },
+      "boundaries": {
+        "last_verified": "2026-06-04",
+        "status": "enforcing",
+        "editorial_status": "published",
+        "effective": "2025-05-07",
+        "modified": "2026-06-04"
+      }
+    },
+    {
+      "record_path": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+      "record_id": "us-ut-legislature-statute-2026-hb320",
+      "retained_sources": [
+        {
+          "kind": "enrolled bill",
+          "document_id": "Utah HB 320 (2026)",
+          "document_title": "Office of Artificial Intelligence Policy Amendments, Enrolled Copy",
+          "issuing_body": "Utah Legislature",
+          "official_url": "https://le.utah.gov/Session/2026/bills/enrolled/HB0320.pdf",
+          "original_path": "data/admission/sources/utah-hb320/HB0320-enrolled.pdf",
+          "original_sha256": "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211",
+          "original_bytes": 43203,
+          "reviewed_utf8_path": "data/admission/sources/utah-hb320/HB0320-enrolled.txt",
+          "reviewed_utf8_sha256": "5887b8a936ee0f8c13ceafc678cf0467464b7609841870c0cf3f613f0b5b8310",
+          "acquisition": "primary_retrieval",
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "final_url": "https://le.utah.gov/Session/2026/bills/enrolled/HB0320.pdf",
+          "server_last_modified": "Fri, 06 Mar 2026 19:26:29 GMT",
+          "retrieved_at": "2026-09-10T05:34:50Z",
+          "pages": 8,
+          "redirects": 0,
+          "byte_identical_to_first_download": true
+        }
+      ],
+      "consistency": {
+        "confirmed": [
+          "Bill number H.B. 320 and '2026 GENERAL SESSION' match (page 1, lines 1-3).",
+          "Effective date: Section 8 'This bill takes effect on May 6, 2026.' matches effective 2026-05-06 (page 8, line 250). 'Other Special Clauses: None' (line 17).",
+          "Amends 13-72-101, 13-72-201, 13-72-301; renumbers and amends 13-72-401 (from 302), 13-72-402 (from 303), 13-72-403 (from 305); repeals 13-72-304 (lines 19-31), matching the statute_anchors for §13-72-201, §13-72-401, §13-72-402, §13-72-403.",
+          "Joint interpretation agreement defined at 13-72-101(12) and governed by 13-72-401 (Part 4, lines 164-212); participant 'remains subject to all legal and regulatory requirements not expressly waived ... or clarified in a joint interpretation agreement' (lines 193-195), matching the no-waiver characterization.",
+          "'Governmental entity' means the judiciary, state-funded higher or public education institutions, or a political subdivision (13-72-101(10), lines 54-57), matching the expanded-counterparties bullet.",
+          "13-72-401(6) 'The office shall perform regular audits' (lines 190-192) matches the mandatory-audits bullet.",
+          "13-72-402(1)(a)-(e) five eligibility prongs (lines 217-228) match the five-prong bullet and the learning-lab-agreement-participation obligation's What Counts list.",
+          "13-72-403: initial demonstration period may not exceed 12 months, 12-month extensions, 'up to two extensions' (lines 236-245), matching the 36-month ceiling.",
+          "13-72-201(3)(d) annual report before November 30 now includes executed regulatory mitigation or joint interpretation agreements (lines 111-117), supporting the 'Second annual report 2026-11-30' milestone.",
+          "HB 320 does not touch 63I-2-213, consistent with the SB 332 record's statement that HB 320 did not alter the sunset date."
+        ],
+        "findings": [
+          {
+            "field": "title",
+            "record_value": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+            "source_value": "Enrolled short title: 'Office of Artificial Intelligence Policy Amendments' (page 1, line 1).",
+            "locator": "page 1 line 1",
+            "assessment": "Editorial title differs from the enrolled short title. The SB 149, SB 226, and SB 332 records use the enrolled short title; this one does not. Not a factual error, but inconsistent with sibling records."
+          },
+          {
+            "field": "body Summary bullet 'The maximum agreement term was extended from 12 months (with no renewal) to 12 months plus two 12-month extensions'",
+            "record_value": "from 12 months (with no renewal)",
+            "source_value": "Prior 13-72-305 text, shown struck in Section 6: 'A participant may request a [single ]12-month [extension ...]' (lines 236-241), i.e. one renewal was already allowed (24-month maximum). SB 149 lines 572-575 confirm the original single extension.",
+            "locator": "page 8 lines 236-241; SB 149 page 18 lines 572-575",
+            "assessment": "Discrepancy. The prior ceiling was 12 months plus one 12-month extension, not 'no renewal'."
+          },
+          {
+            "field": "obligation learning-lab-agreement-participation, Statute Anchors: 'Utah Code §13-72-301 — Joint Interpretation Agreements (added by HB 320, 2026)'",
+            "record_value": "§13-72-301 described as the JIA section",
+            "source_value": "Section 3 amends 13-72-301 'Artificial Intelligence Learning Laboratory Program' (lines 120-121); joint interpretation agreements are in 13-72-401 (Part 4, lines 164-166) and defined at 13-72-101(12).",
+            "locator": "page 4 lines 120-121; page 6 lines 164-166",
+            "assessment": "Discrepancy in the obligation record's anchor label (data/examples/obligations/learning-lab-agreement-participation.md). The mapping hb320-joint-interpretation-agreements points this obligation at the HB 320 record."
+          },
+          {
+            "field": "sponsors",
+            "record_value": "none listed",
+            "source_value": "Chief Sponsor: Paul A. Cutler; Senate Sponsor: Kirk A. Cullimore (page 1, lines 5-6).",
+            "locator": "page 1 lines 5-6",
+            "assessment": "Omission only; sibling SB 149 and SB 332 records carry sponsors."
+          },
+          {
+            "field": "enacted (2026-03-19)",
+            "record_value": "2026-03-19",
+            "source_value": "Governor signing date is not printed in the enrolled copy.",
+            "locator": "n/a",
+            "assessment": "Not verifiable from this source."
+          }
+        ],
+        "url_checks": [
+          {
+            "url": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+            "field": "official_url / publication_citations / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+            "field": "statute_anchors[0]",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+            "field": "statute_anchors[1]",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S401.html",
+            "field": "statute_anchors[2]",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S402.html",
+            "field": "statute_anchors[3]",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S403.html",
+            "field": "statute_anchors[4]",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://everyailaw.com/regulation/utah-sb149/#regulatory-mitigation-and-joint-interpretation-agreements",
+            "field": "full_text_reference / Sources",
+            "http_status": 200,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window"
+          },
+          {
+            "url": "https://commerce.utah.gov/ai/learning-lab/",
+            "field": "Sources (Utah OAIP Learning Lab)",
+            "http_status": 404,
+            "checked_at": "2026-09-10T05:35:35Z/05:35:40Z window",
+            "note": "Same dead link as in the SB 149 record; checked once."
+          }
+        ],
+        "mapped_obligations": {
+          "mapping_ids": [
+            "hb320-joint-interpretation-agreements"
+          ],
+          "obligations": [
+            "learning-lab-agreement-participation"
+          ],
+          "notes": [
+            "See the §13-72-301 anchor finding above. The obligation's §13-72-201, §13-72-401, §13-72-402, §13-72-403 anchors and its 36-month ceiling are consistent with the enrolled text."
+          ]
+        }
+      },
+      "boundaries": {
+        "last_verified": "2026-06-04",
+        "status": "enforcing",
+        "editorial_status": "published",
+        "effective": "2026-05-06",
+        "modified": "2026-06-04"
+      }
+    }
+  ],
+  "unresolved": [
+    "SB 332 effective date: record says 2025-05-07 as a default date; the bill carries a two-thirds trigger and the record's own vote counts suggest it was met, which would move effect to governor approval. Needs human confirmation of passage votes.",
+    "SB 149 record Summary: original Chapter 72 sunset was 2025-05-01 (enrolled §11), not 2025-07-01.",
+    "SB 149 and HB 320 records: pre-HB 320 agreement ceiling was 12 months plus one 12-month extension (24 months), not 12 months with no renewal.",
+    "learning-lab-agreement-participation obligation: §13-72-301 is the Learning Laboratory Program, not the JIA section (which is §13-72-401).",
+    "SB 332 record overstates exclusivity: SB 226 §7 made the same 63I-2-213(5) amendment.",
+    "Dead links: https://commerce.utah.gov/ai/learning-lab/ (404, SB 149 and HB 320 Sources) and the three Chapter 75 section URLs 13-75-S102/S103/S104.html (404, SB 226 statute_anchors).",
+    "HB 320 record title is editorial rather than the enrolled short title; sponsors omitted.",
+    "Governor signing dates (enacted) and passage votes are not in enrolled copies and were not checked against any other source."
+  ],
+  "admission": {
+    "status": "passed",
+    "total_records": 62,
+    "legacy_unreviewed_records": 59,
+    "records_with_reviewed_changes": 3,
+    "changed_units_reviewed": 13,
+    "note": "Unchanged from baseline. Retained sources were added under data/admission/sources without any record change, so no admission receipt was created or altered; the four records remain legacy-unreviewed.",
+    "checked_at": "2026-09-10T05:36:00Z"
+  },
+  "limits": [
+    "Statutory interpretation and the Utah statutory spine are owned by EveryAILaw (https://everyailaw.com/regulation/utah-sb149/); this review checks PubLedge record text against enrolled bill text only and makes no legal conclusion.",
+    "This is an agent source-consistency review. It does not renew last_verified, status, editorial_status, modified, or any legal-status field on any record; all four records keep last_verified 2026-06-04 and remain overdue under the 90-day cadence.",
+    "Overdue is not proof of a false record. The findings above are candidate corrections for a human editor, recorded with locators; none has been applied.",
+    "Enrolled copies do not show governor signing dates, passage votes, or later codification; those record fields were neither confirmed nor contradicted.",
+    "Codified Utah Code text was not retrieved; section URLs were only HEAD-checked once each, and a 404 on HEAD was not retried with GET.",
+    "No publication, deployment, push, pull request, package version change, or provider mutation was performed. Only public le.utah.gov, everyailaw.com, and commerce.utah.gov endpoints were contacted; no paid provider was used."
+  ],
+  "boundaries": {
+    "preserved_fields": [
+      "last_verified",
+      "status",
+      "editorial_status",
+      "modified",
+      "effective",
+      "enacted"
+    ],
+    "last_verified_all_records": "2026-06-04",
+    "status_all_records": "enforcing",
+    "effective": {
+      "us-ut-legislature-statute-2024-sb149": "2024-05-01",
+      "us-ut-legislature-statute-2025-sb226": "2025-05-07",
+      "us-ut-legislature-statute-2025-sb332": "2025-05-07",
+      "us-ut-legislature-statute-2026-hb320": "2026-05-06"
+    },
+    "record_bodies_edited": false,
+    "obligation_or_mapping_files_edited": false
+  }
+}
