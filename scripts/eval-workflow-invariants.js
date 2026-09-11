@@ -10,6 +10,7 @@ const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'build.
 const verifier = fs.readFileSync(path.join(root, 'scripts', 'verify-ci.js'), 'utf8');
 const attributes = fs.readFileSync(path.join(root, '.gitattributes'), 'utf8');
 const failures = [];
+if (/^\s+env:\s*\n\s*(?:steps|runs-on|needs):/m.test(workflow)) failures.push('job env must not be empty; GitHub rejects a null environment map');
 
 if (!workflow.includes('run: npm ci')) failures.push('build workflow must install the project with npm ci');
 if (/run: npm install(?:\s|$)/m.test(workflow)) failures.push('build workflow must not use npm install');

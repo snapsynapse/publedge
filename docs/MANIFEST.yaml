@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:ae429d26dfd8bce253da5b4e2a9b6a6fa12dff2ff6132b4d992df6a6bfe5dc20
+    hash: sha256:2a9706f9f6c312c277335f4b93e1a9e6f65c3c5775309767e26469960f843105
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -768,7 +768,7 @@ files:
 
   - path: scripts/eval-workflow-invariants.js
     role: tooling
-    hash: sha256:7cc824502906b0c9c4c9e445c0948870d25f4aafd97122a1dd95b91ad2816920
+    hash: sha256:2ee79a6d9d3c2e7d8a3a95df909bad8c64948bbc8b8b92ae33b4ca8856919de2
     note: scripts/eval-workflow-invariants.js
 
   - path: scripts/evals.js
