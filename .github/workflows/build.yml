@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           repository: snapsynapse/obligation-first
-          ref: 7e6a410a6e6ff5be55ee0c2b0c3e4d868a8ebbee
+          ref: 9445845d9cc7c13146b2bd53b875fe7ee7736d2a
           path: obligation-first
 
       - uses: actions/setup-node@v5
