@@ -15,9 +15,11 @@ if (!workflow.includes('run: npm ci')) failures.push('build workflow must instal
 if (/run: npm install(?:\s|$)/m.test(workflow)) failures.push('build workflow must not use npm install');
 if (!workflow.includes('run: npm run verify:ci')) failures.push('build workflow must invoke npm run verify:ci');
 if (!workflow.includes('CHECK_OF_REQUIRED: "1"')) failures.push('build workflow must make Obligation-First discovery fail closed');
-if (!workflow.includes('SOURCE_ADMISSION_BASE:')) failures.push('build workflow must bind admission history to the PR base or prior push head');
+if (!workflow.includes('resolve-admission-base.mjs --root . --github-env')) failures.push('build workflow must bind admission history to the PR base or prior push head');
 if ((workflow.match(/fetch-depth: 0/g) || []).length < 2) failures.push('build and a11y jobs must fetch admission history');
-if (!workflow.includes("github.event.pull_request.base.sha") || !workflow.includes("github.event.before")) failures.push('admission base must cover pull requests and pushes');
+if (!workflow.includes('  pull_request:') || !workflow.includes('  push:')) failures.push('admission validation must cover pull requests and pushes');
+if (!workflow.includes('comparison_base:') || !workflow.includes('        required: true')) failures.push('manual admission validation must require a comparison base');
+if (/SOURCE_ADMISSION_BASE:.*github\.sha/.test(workflow)) failures.push('admission validation must not fall back to its own HEAD');
 for (const gate of ['check:of', 'validate:of', 'check:of-continuity', 'evals', "'diff', '--check'", "'diff', '--exit-code'"]) {
     if (!verifier.includes(gate)) failures.push(`verify-ci.js omits ${gate}`);
 }

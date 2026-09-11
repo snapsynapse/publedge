@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:36fa587e15d0fe49b6dabe4fde0b278239800837469fe3eaa248267fb30fd36a
+    hash: sha256:ae429d26dfd8bce253da5b4e2a9b6a6fa12dff2ff6132b4d992df6a6bfe5dc20
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -693,7 +693,7 @@ files:
 
   - path: scripts/eval-package-smoke.js
     role: tooling
-    hash: sha256:6cf56ac604d5cc21e85c13439379e258376e45c9b83f9bb38b6cb54061400ec8
+    hash: sha256:71b3642cab8c9b6cf04e76e867f73bd501db54faac0e4055e0081c5ca2e6af92
     note: scripts/eval-package-smoke.js
 
   - path: scripts/eval-obligation-first-binding.js
@@ -768,7 +768,7 @@ files:
 
   - path: scripts/eval-workflow-invariants.js
     role: tooling
-    hash: sha256:3e67c1dd6e8cae4f3dffcec835fae4c358be9ad78d3d8030aec9149b78cda998
+    hash: sha256:7cc824502906b0c9c4c9e445c0948870d25f4aafd97122a1dd95b91ad2816920
     note: scripts/eval-workflow-invariants.js
 
   - path: scripts/evals.js
@@ -1023,7 +1023,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:2d71224498c5cf9dfa90a382aafe59eb9230415034efbf86a55fc584644a3b14
+    hash: sha256:ff446d30c80ebf4bea0c410c472847221446d05c6d4231c9523f27a350159590
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js

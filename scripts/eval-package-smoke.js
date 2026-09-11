@@ -72,7 +72,8 @@ function rpc(proc, id, method, params) {
         }
 
         const executable = path.join(tempDir, 'node_modules', '.bin', 'publedge');
-        proc = spawn(executable, [], { cwd: tempDir, stdio: ['pipe', 'pipe', 'pipe'] });
+        // Installed packages have snapshot admission evidence, not owner Git history.
+        proc = spawn(executable, [], { cwd: tempDir, env: { ...process.env, SOURCE_ADMISSION_BASE: '' }, stdio: ['pipe', 'pipe', 'pipe'] });
         const init = await rpc(proc, 1, 'initialize', {});
         if (!init.result?.capabilities?.tools) failures.push('installed package initialize response is missing tools capability');
         if (init.result?.serverInfo?.version !== packageVersion) {

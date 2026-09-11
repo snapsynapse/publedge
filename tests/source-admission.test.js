@@ -209,12 +209,15 @@ test('an unreviewed source change blocks the build and local MCP before output',
     }
     fs.appendFileSync(path.join(root, 'data/examples/instruments/us-ut-oaip-jia-2026-001.md'), '\nUnreviewed claim.\n');
 
-    const build = spawnSync(process.execPath, ['scripts/build.js'], { cwd: root, encoding: 'utf8' });
+    // This copied fixture has no owner Git history. Its receipt snapshot still
+    // rejects unreviewed content; a production CI base cannot resolve here.
+    const fixtureEnv = { ...process.env, SOURCE_ADMISSION_BASE: '' };
+    const build = spawnSync(process.execPath, ['scripts/build.js'], { cwd: root, encoding: 'utf8', env: fixtureEnv });
     assert.notEqual(build.status, 0);
     assert.match(`${build.stdout}\n${build.stderr}`, /Changed\/new source information requires an admission receipt/);
     assert.equal(fs.existsSync(path.join(root, 'docs/api/v1/containers.json')), false);
 
-    const mcp = spawnSync(process.execPath, ['mcp-server.js'], { cwd: root, encoding: 'utf8' });
+    const mcp = spawnSync(process.execPath, ['mcp-server.js'], { cwd: root, encoding: 'utf8', env: fixtureEnv });
     assert.notEqual(mcp.status, 0);
     assert.match(`${mcp.stdout}\n${mcp.stderr}`, /Changed\/new source information requires an admission receipt/);
 });
