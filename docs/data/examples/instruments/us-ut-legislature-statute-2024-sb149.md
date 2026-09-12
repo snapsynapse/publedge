@@ -46,7 +46,7 @@ disclaimer: ""
 last_verified: 2026-06-04
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-21
-modified: 2026-06-04
+modified: 2026-09-12
 ---
 
 ## Timeline
@@ -68,13 +68,11 @@ modified: 2026-06-04
 
 ## Summary
 
-SB 149 established Utah's first-in-the-nation AI policy architecture: the Office of Artificial Intelligence Policy (OAIP), the Artificial Intelligence Learning Laboratory (regulatory mitigation program), a generative AI disclosure requirement for consumer transactions (§13-2-12), and statutory elimination of the "AI did it" defense in both civil and criminal contexts (§76-2-107).
-
-The bill made Utah the first US state to establish a dedicated AI regulator, and the first to codify that GenAI cannot function as an affirmative defense to an otherwise unlawful act.
+SB 149 established Utah's AI policy architecture: the Office of Artificial Intelligence Policy (OAIP), the Artificial Intelligence Learning Laboratory (regulatory mitigation program), a generative AI disclosure requirement for consumer transactions (§13-2-12), and statutory treatment of AI-assisted violations in civil and criminal contexts (§76-2-107).
 
 Key provisions have been substantially amended by subsequent legislation:
 - **SB 226 (2025)** repealed §13-2-12 and re-enacted the disclosure framework as Chapter 75 with a narrower "clear and unambiguous request" trigger and a safe-harbor for outset+throughout disclosure.
-- **HB 452 (2025)** added Chapter 72a for mental health chatbot suppliers — the most aggressive disclosure and data-protection tier.
+- **HB 452 (2025)** added Chapter 72a for mental health chatbot suppliers, including disclosure and data-protection requirements.
 - **HB 320 (2026)** restructured Chapter 72, added the Joint Interpretation Agreement instrument, and extended the maximum agreement term from 12 to 36 months.
 - **SB 332** extended the Chapter 72 sunset from 2025-07-01 to 2027-07-01.
 
@@ -82,7 +80,7 @@ For the consolidated obligations matrix across the full Utah AI stack, see [ever
 
 ### Talking Point
 
-> "Utah SB 149 (2024) created both the regulator (OAIP) and the sandbox (Learning Lab) that makes Utah the only US jurisdiction operating a functioning AI regulatory mitigation program as of 2026."
+> "Utah SB 149 (2024) created OAIP and the Learning Lab. Later legislation moved the disclosure framework, added mental-health-chatbot rules and Joint Interpretation Agreements, and expanded potential agreement duration through extensions."
 
 ### Sources
 

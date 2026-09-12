@@ -29,6 +29,14 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 - Record the Doctronic RMA's permission wording and forbearance condition as written, keep OAIP's May 2026 outcomes report as an operational observation rather than an issued term, and retain the September 2026 FAQ as a dated source conflict rather than an amendment. Legal status, term dates, and `last_verified` are unchanged.
 - Replace the asserted SB 24-205 enforcement stay with the ECF 24 conditional restraint and set `operative_status` and `enforcement_status` to explicit `unknown` on the instrument and its derived Obligation-First records; lifecycle, dates, and identifiers are unchanged.
 
+## v0.2.5 - 2026-09-12
+
+### Fixed
+
+- Remove unsupported nationwide uniqueness and comparative-comprehensiveness claims from the Utah SB 149 and HB 452 reference records while retaining source-supported descriptions of their Utah provisions.
+- Bind both wording corrections to the retained enrolled Utah Legislature source bytes through per-unit source-admission receipts. Legal status, effective dates, and `last_verified` remain unchanged pending human currentness review.
+- Bind deterministic admission and Obligation-First evidence tests to the current accepted receipt inventory without weakening the dedicated future-date rejection boundary.
+
 ## v0.2.4 - 2026-09-12
 
 ### Fixed
@@ -255,7 +263,8 @@ Security hardening and release-readiness patch.
 - CI: pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap on every push and pull request; docs/ sync check; hash validation
 - `.gitignore` aligned to portfolio hygiene baseline (`.env.*` glob, `__pycache__/`, `*.pyc`, `dist/`, `build/`, `.venv/`, `venv/`)
 
-[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.2.4...HEAD
+[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.2.5...HEAD
+[0.2.5]: https://github.com/snapsynapse/publedge/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/snapsynapse/publedge/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/snapsynapse/publedge/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/snapsynapse/publedge/compare/v0.2.1...v0.2.2

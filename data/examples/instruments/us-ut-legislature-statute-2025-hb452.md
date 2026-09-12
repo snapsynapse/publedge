@@ -43,7 +43,7 @@ disclaimer: ""
 last_verified: 2026-06-04
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-21
-modified: 2026-06-04
+modified: 2026-09-12
 ---
 
 ## Timeline
@@ -58,7 +58,7 @@ modified: 2026-06-04
 
 ## Summary
 
-HB 452 established Chapter 72a of the Utah Code, the nation's most comprehensive statutory framework governing AI-powered mental health chatbots. The bill imposes disclosure, data protection, and safety-policy requirements on suppliers of such services:
+HB 452 established Chapter 72a of the Utah Code, a statutory framework governing AI-powered mental health chatbots. The bill imposes disclosure, data protection, and safety-policy requirements on suppliers of such services:
 
 - **Pre-access + post-gap + on-prompt disclosure** (§13-72a-203). Disclosure must appear before user access, again at the start of any interaction following a 7-day gap, and any time the user asks whether AI is involved. Scripted-only outputs (meditations, mindfulness) and referral-to-human-therapist bots are carved out (§13-72a-101(10)(b)).
 - **Data protection** (§13-72a-201). Suppliers may not sell or share identifiable health information or user input with third parties. Limited exceptions for user-consented or user-requested disclosure to health care providers; third-party functional sharing requires HIPAA Parts 160+164 Subparts A/E compliance as if the supplier were a covered entity.
@@ -68,7 +68,7 @@ Penalties: $2,500 per violation (administrative or court), $5,000 per violation 
 
 ### Talking Point
 
-> "Utah HB 452 (2025) is the only US statute that imposes pre-access, post-gap, and on-prompt disclosure obligations on mental health chatbots, while offering an affirmative defense to unauthorized-practice claims for suppliers who file a 15-element safety policy with the Division of Consumer Protection."
+> "Utah HB 452 (2025) requires mental health chatbots to disclose AI use before access, after a seven-day gap, and on prompt, and provides a policy-based affirmative defense to specified unauthorized-practice actions."
 
 ### Sources
 

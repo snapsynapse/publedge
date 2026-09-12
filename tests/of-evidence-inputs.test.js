@@ -54,9 +54,9 @@ test('per-kind input chains preserve mixed legacy and reviewed status', () => {
     assert.equal(instrument.source_review_conflicts, null);
     assert.ok(instrument['pub:source_review_unresolved'].some(item => /conflict/i.test(item)));
 
-    const unrelatedTerm = byId.get('https://publedge.org/term/sb149-learning-lab-and-ai-defense.json');
-    assert.deepEqual(unrelatedTerm['pub:evidence_inputs'].map(input => input.admission_status), ['legacy-unreviewed', 'legacy-unreviewed']);
-    assert.equal(unrelatedTerm.admission_status, 'legacy-unreviewed');
+    const sb149Term = byId.get('https://publedge.org/term/sb149-learning-lab-and-ai-defense.json');
+    assert.deepEqual(sb149Term['pub:evidence_inputs'].map(input => input.admission_status), ['reviewed-changes', 'legacy-unreviewed']);
+    assert.equal(sb149Term.admission_status, 'legacy-unreviewed');
 });
 
 test('invalid or absent evidence input digests fail before projection', () => {

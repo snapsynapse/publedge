@@ -123,17 +123,17 @@ files:
 
   - path: server.json
     role: config
-    hash: sha256:0d4b3d71a36600869223c89c08a7c6fc1dff0c65524a0979f4a92d05fa4e6ea4
+    hash: sha256:bd894c77c334b85e83a29550cfd07092868d2ed13665f9582f0766ed0cf4d9a0
     note: server.json
 
   - path: package.json
     role: config
-    hash: sha256:2fb23ae851a779909c755a2ce2c8e9076227ec69441f8b4facdfde973400c8a4
+    hash: sha256:45d3460c2f22d32ff645353a145c93783cd6a6152398ca85f45a862d3d1bcede
     note: package.json
 
   - path: package-lock.json
     role: config
-    hash: sha256:aa269b353942ab6f6af3f5ecf85cec96563a90fbb5f91fc6a74d2496cf25abc5
+    hash: sha256:d0e10a10f31d5ca96ffb1338795e40bcfa7eac72ae4f0a41bf83cc9ca7dd2a25
     note: package-lock.json
 
   - path: project.yml
@@ -183,12 +183,12 @@ files:
 
   - path: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
     role: instrument
-    hash: sha256:245dc17c39eb7f7cab01918286c67dfe1f8ba6c7b34a3800835ffd180c7ff941
+    hash: sha256:372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2
     note: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
     role: instrument
-    hash: sha256:3a793ef60b0746232aa436aaa4e5eccb5604dc716c314cd1045b5fa6578968b9
+    hash: sha256:fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7
     note: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:926d492e8fd7b49797aa4b819f8ebaf6289a49476e78216dfc61a2206584cc7c
+    hash: sha256:850926cc973c09d2c295a9edf0134b2a3e2827272e974fee8e25477a0c152bcb
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -458,7 +458,7 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:446e2d2287a7fa8f37bd1558d38227fd0d4e7262cdeb1c1b8ff2270a34be29f1
+    hash: sha256:ec8f13b6e85ba6dfef026de63bb13f715119324c641f392e40dcf89e8a437607
     note: README.md
 
   - path: RELEASE_NOTES-v0.2.2.md
@@ -476,9 +476,14 @@ files:
     hash: sha256:db0b3f87e8c5f030687a51d52086bd3e815e2f7bbc37476d0702712a248f219d
     note: RELEASE_NOTES-v0.2.4.md
 
+  - path: RELEASE_NOTES-v0.2.5.md
+    role: release-notes
+    hash: sha256:103efd529e4dc45935bdc448d6c67bcb08a3c4fc489b9c841436cd12a342dbeb
+    note: RELEASE_NOTES-v0.2.5.md
+
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:8ae2aaa31e2ba27ae14bf210806f2feae67856062570b7cdb98f469f931c22ee
+    hash: sha256:f0c3b1b25a911ddf943ee145fd64fc482dc6d427cae4671c2a91c232baa046c3
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -868,12 +873,12 @@ files:
 
   - path: PROJECT_CONTEXT.md
     role: agent-guidance
-    hash: sha256:7d336e4abff629e5a92c349c04285ee7b3cb8323147b6c60013050bd44b30ccb
+    hash: sha256:cd6efc5346d81bd72d7f6685854f2b8f3956cb9e075004f0ba0872ba0c4e0d3b
     note: PROJECT_CONTEXT.md
 
   - path: about/index.html
     role: site-source
-    hash: sha256:0218eb1ae544c265f3702d7bbb1b776c58151fc7586f56db930aadfe3a51baa7
+    hash: sha256:2520d82c8a2a58fe4079135487f3ea002ff16014991d6be522b0ff88d7626f81
     note: about/index.html
 
   - path: assets/search.js
@@ -1028,12 +1033,12 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:ff446d30c80ebf4bea0c410c472847221446d05c6d4231c9523f27a350159590
+    hash: sha256:1b47af7b67056a838e3b19e9ed06f5f9a8bfc7cc11bdab8d5c096fde7fcc20bc
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js
     role: code
-    hash: sha256:081327a9a0bc42f3efa1b4fde6487f34d51e8e7cab3a49ae2bef89b7a8e83481
+    hash: sha256:87dbbd8750e3a9560ba57d91bf53ff19043a170f67ff094b14847a4ec6e904f3
     note: Published artifact identity and discovery regressions
 
   - path: tests/doctronic-observation.test.js
@@ -1048,7 +1053,7 @@ files:
 
   - path: tests/of-evidence-inputs.test.js
     role: code
-    hash: sha256:d5163e7e8fd5ab7f611d4e0eaa8dba678f1b82efd79c167c959eac76f6db607e
+    hash: sha256:d9a179498a065b70f94d2bd81a951106da5a33cca12f72759774ce9b2d0e5423
     note: Per-kind native evidence input and review-boundary regressions
 
   - path: tests/colorado-order24.test.js
@@ -1058,7 +1063,7 @@ files:
 
   - path: design/publication-state.json
     role: evidence
-    hash: sha256:751cf655f92930d40bc911d9a97728e58a96da4e82909152b027128b64957303
+    hash: sha256:d086005260d49e7bb2ec63be7c3fc38f57d746a02882f9c2ec83940f1e4146c5
     note: Independent provider observations and hosted selection policy
 
   - path: design/PUBLISHED-MCP-0.2.2.snapshot.json

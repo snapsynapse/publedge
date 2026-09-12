@@ -9,6 +9,10 @@
       ],
       "description": "Published read-only PubLedge 0.2.4 with 13 tools.",
       "published_version": "0.2.4",
+      "source_candidate": {
+        "version": "0.2.5",
+        "status": "unpublished-source"
+      },
       "protocol_versions": [
         "2026-07-28",
         "2024-11-05"

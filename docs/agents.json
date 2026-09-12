@@ -98,6 +98,7 @@
       "description": "Published read-only MCP 0.2.4 with 13 tools. Run: npx -y publedge@0.2.4",
       "url": "https://publedge.org/.well-known/mcp.json",
       "published_artifact": "https://registry.npmjs.org/publedge/-/publedge-0.2.4.tgz",
+      "source_candidate": "https://github.com/snapsynapse/publedge/blob/main/mcp-server.js",
       "publication_state": "https://publedge.org/design/publication-state.json",
       "published_tools": [
         "list_obligations",
@@ -542,7 +543,7 @@
     "protocol_authority_response": "https://publedge.org/about/#authority-response"
   },
   "meta": {
-    "last_updated": "2026-09-09",
+    "last_updated": "2026-09-12",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"

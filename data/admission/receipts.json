@@ -405,6 +405,270 @@
           ]
         }
       }
+    },
+    "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md": {
+      "record_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202",
+      "baseline_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
+      "whole_record": {
+        "before_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
+        "after_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex source-consistency review",
+        "reviewed_at": "2026-09-12T20:15:00Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "Utah SB 149 comparative-superlative removal and record modified date only; no legal-status or currentness renewal.",
+        "packet_sha256": "4f6f7ab0b94560d1e81548a417d56e0026eee2e21799079f7baa04f2b448aa7e"
+      },
+      "unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
+      "evidence": {
+        "sb149": {
+          "snapshot_path": "data/admission/sources/utah-sb149/SB0149-enrolled.txt",
+          "snapshot_sha256": "0a85408fb06d18d8a6fd3ce2db74c19e86c17c84d9c375daecb5a0b3eece8d86",
+          "original": {
+            "path": "data/admission/sources/utah-sb149/SB0149-enrolled.pdf",
+            "sha256": "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://le.utah.gov/Session/2024/bills/enrolled/SB0149.pdf",
+          "document_id": "Utah SB 149 (2024)",
+          "document_title": "Enrolled Copy S.B. 149 Artificial Intelligence Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2024 General Session enrolled copy",
+          "locator": "Long title and enacted Artificial Intelligence Policy Act provisions",
+          "excerpt": "creates the Office of Artificial Intelligence Policy (office) and a regulatory AI analysis",
+          "identity_excerpts": [
+            "ARTIFICIAL INTELLIGENCE AMENDMENTS"
+          ]
+        },
+        "sb226": {
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "Sections 13-75-103 and 13-75-104",
+          "excerpt": "13-75-103 (Effective 05/07/25). Required disclosures.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "hb452": {
+          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+          "original": {
+            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+          "document_id": "Utah HB 452 (2025)",
+          "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "Chapter 72a enactment",
+          "excerpt": "13-72a-203 . Disclosure requirements.",
+          "identity_excerpts": [
+            "Artificial Intelligence Amendments"
+          ]
+        },
+        "sb332": {
+          "snapshot_path": "data/admission/sources/utah-sb332/SB0332-enrolled.txt",
+          "snapshot_sha256": "2db8a28ce75c50fd5e19b4db5453a1d7b61e6c515243466ff4927e17c0d5cc0a",
+          "original": {
+            "path": "data/admission/sources/utah-sb332/SB0332-enrolled.pdf",
+            "sha256": "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+          "document_id": "Utah SB 332 (2025)",
+          "document_title": "Enrolled Copy S.B. 332 Artificial Intelligence Revisions",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "Section 63I-2-213 repeal date",
+          "excerpt": "extends the repeal date of the Artificial Intelligence Policy Act to July 1, 2027.",
+          "identity_excerpts": [
+            "Artificial Intelligence Revisions"
+          ]
+        },
+        "hb320": {
+          "snapshot_path": "data/admission/sources/utah-hb320/HB0320-enrolled.txt",
+          "snapshot_sha256": "5887b8a936ee0f8c13ceafc678cf0467464b7609841870c0cf3f613f0b5b8310",
+          "original": {
+            "path": "data/admission/sources/utah-hb320/HB0320-enrolled.pdf",
+            "sha256": "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://le.utah.gov/Session/2026/bills/enrolled/HB0320.pdf",
+          "document_id": "Utah HB 320 (2026)",
+          "document_title": "Enrolled Copy H.B. 320 Office of Artificial Intelligence Policy Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2026 General Session enrolled copy",
+          "locator": "Sections 13-72-401 through 13-72-403",
+          "excerpt": "The office may grant up to two extensions for any regulatory mitigation or joint",
+          "identity_excerpts": [
+            "Office of Artificial Intelligence Policy Amendments"
+          ]
+        }
+      },
+      "units": {
+        "metadata:modified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "966e72cc301b962a096d19cfa5e46aef704e98ffc7a935616324a430eed63cd8",
+          "candidate_content": "2026-09-12",
+          "reason": "Record the date of this bounded source-backed wording correction without renewing legal currentness.",
+          "qualifications": {
+            "scope": "This record edit only.",
+            "exceptions": "No last_verified, legal status, effective date, relationship, obligation, or nationwide comparison is accepted by this review.",
+            "time": "Historical enactment source retained; wording correction reviewed September 12, 2026."
+          },
+          "evidence": [
+            "sb149",
+            "sb226",
+            "hb452",
+            "sb332",
+            "hb320"
+          ]
+        },
+        "section:Summary/text": {
+          "before_sha256": "9cbacc9bc0c0aa57f1b51e35681438b656bf75866c47ead90be39bc781e0a0ac",
+          "after_sha256": "24cf22c778479422c92734659e37ef77abbfd672ca0ca60bb6fe946567654d72",
+          "candidate_content": "SB 149 established Utah's AI policy architecture: the Office of Artificial Intelligence Policy (OAIP), the Artificial Intelligence Learning Laboratory (regulatory mitigation program), a generative AI disclosure requirement for consumer transactions (§13-2-12), and statutory treatment of AI-assisted violations in civil and criminal contexts (§76-2-107).\n\nKey provisions have been substantially amended by subsequent legislation:\n- **SB 226 (2025)** repealed §13-2-12 and re-enacted the disclosure framework as Chapter 75 with a narrower \"clear and unambiguous request\" trigger and a safe-harbor for outset+throughout disclosure.\n- **HB 452 (2025)** added Chapter 72a for mental health chatbot suppliers, including disclosure and data-protection requirements.\n- **HB 320 (2026)** restructured Chapter 72, added the Joint Interpretation Agreement instrument, and extended the maximum agreement term from 12 to 36 months.\n- **SB 332** extended the Chapter 72 sunset from 2025-07-01 to 2027-07-01.\n\nFor the consolidated obligations matrix across the full Utah AI stack, see [everyailaw.com/regulation/utah-sb149](https://everyailaw.com/regulation/utah-sb149/).",
+          "reason": "Remove unsupported nationwide comparative language while retaining the source-supported Utah statutory description.",
+          "qualifications": {
+            "scope": "Utah SB 149 source-supported Utah provisions only.",
+            "exceptions": "No last_verified, legal status, effective date, relationship, obligation, or nationwide comparison is accepted by this review.",
+            "time": "Historical enactment source retained; wording correction reviewed September 12, 2026."
+          },
+          "evidence": [
+            "sb149",
+            "sb226",
+            "hb452",
+            "sb332",
+            "hb320"
+          ]
+        },
+        "section:Summary/subsection:Talking Point/text": {
+          "before_sha256": "73f6e739312aa2039325dbf78c9ad2a0cbca500f8e03d3570617fc1054caaebf",
+          "after_sha256": "e7ded560198e8883a990626e89efb7a18f50575f4549e58db5c2819aad1ce7fd",
+          "candidate_content": "> \"Utah SB 149 (2024) created OAIP and the Learning Lab. Later legislation moved the disclosure framework, added mental-health-chatbot rules and Joint Interpretation Agreements, and expanded potential agreement duration through extensions.\"",
+          "reason": "Remove unsupported nationwide comparative language while retaining the source-supported Utah statutory description.",
+          "qualifications": {
+            "scope": "Utah SB 149 source-supported Utah provisions only.",
+            "exceptions": "No last_verified, legal status, effective date, relationship, obligation, or nationwide comparison is accepted by this review.",
+            "time": "Historical enactment source retained; wording correction reviewed September 12, 2026."
+          },
+          "evidence": [
+            "sb149",
+            "sb226",
+            "hb452",
+            "sb332",
+            "hb320"
+          ]
+        }
+      }
+    },
+    "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md": {
+      "record_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
+      "baseline_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
+      "whole_record": {
+        "before_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
+        "after_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex source-consistency review",
+        "reviewed_at": "2026-09-12T20:15:00Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "Utah HB 452 comparative-superlative removal and record modified date only; no legal-status or currentness renewal.",
+        "packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705"
+      },
+      "unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
+      "evidence": {
+        "enrolled": {
+          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+          "original": {
+            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+          "document_id": "Utah HB 452 (2025)",
+          "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "Sections 13-72a-203 and 58-60-118",
+          "excerpt": "13-72a-203 . Disclosure requirements.",
+          "identity_excerpts": [
+            "Artificial Intelligence Amendments"
+          ]
+        }
+      },
+      "units": {
+        "metadata:modified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "966e72cc301b962a096d19cfa5e46aef704e98ffc7a935616324a430eed63cd8",
+          "candidate_content": "2026-09-12",
+          "reason": "Record the date of this bounded source-backed wording correction without renewing legal currentness.",
+          "qualifications": {
+            "scope": "This record edit only.",
+            "exceptions": "No last_verified, legal status, effective date, relationship, obligation, or nationwide comparison is accepted by this review.",
+            "time": "Historical enactment source retained; wording correction reviewed September 12, 2026."
+          },
+          "evidence": [
+            "enrolled"
+          ]
+        },
+        "section:Summary/text": {
+          "before_sha256": "b02fe39029476bcc76ec67e5278fccc7eb6ef14cdc816fa8117ca2caa8dcfca4",
+          "after_sha256": "1817161c5281e6d4f2036992eb649d255cd77b624a879cdb1b1383251c2dff33",
+          "candidate_content": "HB 452 established Chapter 72a of the Utah Code, a statutory framework governing AI-powered mental health chatbots. The bill imposes disclosure, data protection, and safety-policy requirements on suppliers of such services:\n\n- **Pre-access + post-gap + on-prompt disclosure** (§13-72a-203). Disclosure must appear before user access, again at the start of any interaction following a 7-day gap, and any time the user asks whether AI is involved. Scripted-only outputs (meditations, mindfulness) and referral-to-human-therapist bots are carved out (§13-72a-101(10)(b)).\n- **Data protection** (§13-72a-201). Suppliers may not sell or share identifiable health information or user input with third parties. Limited exceptions for user-consented or user-requested disclosure to health care providers; third-party functional sharing requires HIPAA Parts 160+164 Subparts A/E compliance as if the supplier were a covered entity.\n- **15-element safety policy** (§58-60-118). Suppliers who file a statutorily specified written policy with the Division of Consumer Protection (and comply with it at the time of alleged violation) gain an affirmative defense against §58-1-501(1)-(2) unauthorized-practice actions — a sector-specific safe harbor via documented policy.\n\nPenalties: $2,500 per violation (administrative or court), $5,000 per violation of a cease-and-desist order.",
+          "reason": "Remove unsupported nationwide comparative language while retaining the source-supported Utah statutory description.",
+          "qualifications": {
+            "scope": "Utah HB 452 source-supported Utah provisions only.",
+            "exceptions": "No last_verified, legal status, effective date, relationship, obligation, or nationwide comparison is accepted by this review.",
+            "time": "Historical enactment source retained; wording correction reviewed September 12, 2026."
+          },
+          "evidence": [
+            "enrolled"
+          ]
+        },
+        "section:Summary/subsection:Talking Point/text": {
+          "before_sha256": "0019f536fba9489c28479b401deea81edcbd2eeae77a779b3664a491dde41c34",
+          "after_sha256": "5379d41802db7c0f0a75dd1b11ebf05ad5194f4f15a2f29ca3e8c2968b442b1c",
+          "candidate_content": "> \"Utah HB 452 (2025) requires mental health chatbots to disclose AI use before access, after a seven-day gap, and on prompt, and provides a policy-based affirmative defense to specified unauthorized-practice actions.\"",
+          "reason": "Remove unsupported nationwide comparative language while retaining the source-supported Utah statutory description.",
+          "qualifications": {
+            "scope": "Utah HB 452 source-supported Utah provisions only.",
+            "exceptions": "No last_verified, legal status, effective date, relationship, obligation, or nationwide comparison is accepted by this review.",
+            "time": "Historical enactment source retained; wording correction reviewed September 12, 2026."
+          },
+          "evidence": [
+            "enrolled"
+          ]
+        }
+      }
     }
   }
 }

@@ -11,7 +11,7 @@ Open recordkeeping protocol for fact-specific written interpretations between tw
 
 Plain markdown with structured frontmatter. SHA-256 manifest checks provide source-to-manifest consistency. Bound to the [Semantic Arts gist](https://semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
 
-**Public and maintained. Package v0.2.4; protocol specification v0.2.0. The MCP server supports the MCP 2026-07-28 stateless core plus the legacy 2024-11-05 handshake. Current npm, MCP Registry, GitHub tag, and GitHub Release observations are recorded in the [publication state](https://publedge.org/design/publication-state.json). Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
+**Public and maintained. Package v0.2.5; protocol specification v0.2.0. The MCP server supports the MCP 2026-07-28 stateless core plus the legacy 2024-11-05 handshake. Current npm, MCP Registry, GitHub tag, and GitHub Release observations are recorded in the [publication state](https://publedge.org/design/publication-state.json). Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
 
 ## Who this is for
 
@@ -110,7 +110,7 @@ curl -sS https://publedge.org/us/federal/sec-corpfin/nal/2025-001/record.json | 
   "mcpServers": {
     "publedge": {
       "command": "npx",
-      "args": ["-y", "publedge@0.2.4"]
+      "args": ["-y", "publedge@0.2.5"]
     }
   }
 }

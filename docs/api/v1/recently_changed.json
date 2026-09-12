@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-09-09T00:00:00.000Z",
-    "count": 3,
+    "generated": "2026-09-12T00:00:00.000Z",
+    "count": 5,
     "window_days": 30
   },
   "items": [
@@ -33,6 +33,36 @@
       "type": "statute",
       "source": "authoritative-reference",
       "status": "superseded",
+      "editorial_status": "published"
+    },
+    {
+      "record_id": "us-ut-legislature-statute-2024-sb149",
+      "title": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+      "url": "https://publedge.org/us/utah/legislature/statute/2024-001/",
+      "change_type": "updated",
+      "created": "2026-04-21",
+      "modified": "2026-09-12",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-legislature",
+      "type": "statute",
+      "source": "authoritative-reference",
+      "status": "enforcing",
+      "editorial_status": "published"
+    },
+    {
+      "record_id": "us-ut-legislature-statute-2025-hb452",
+      "title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+      "url": "https://publedge.org/us/utah/legislature/statute/2025-002/",
+      "change_type": "updated",
+      "created": "2026-04-21",
+      "modified": "2026-09-12",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-legislature",
+      "type": "statute",
+      "source": "authoritative-reference",
+      "status": "enforcing",
       "editorial_status": "published"
     },
     {
