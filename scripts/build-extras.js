@@ -379,9 +379,11 @@ function copyStatics() {
         'PUBLISHED-MCP-0.2.2.snapshot.json',
         'PUBLISHED-MCP-0.2.3.snapshot.json',
         'PUBLISHED-MCP-0.2.4.snapshot.json',
+        'PUBLISHED-MCP-0.2.5.snapshot.json',
         'PUBLICATION-PROVIDERS-2026-09-09.snapshot.json',
         'PUBLICATION-PROVIDERS-2026-09-12.snapshot.json',
-        'PUBLICATION-PROVIDERS-2026-09-12-v0.2.4.snapshot.json'
+        'PUBLICATION-PROVIDERS-2026-09-12-v0.2.4.snapshot.json',
+        'PUBLICATION-PROVIDERS-2026-09-12-v0.2.5.snapshot.json'
     ];
     for (const filename of publicationFiles) {
         const src = path.join(ROOT, 'design', filename);

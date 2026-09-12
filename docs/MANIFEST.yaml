@@ -593,7 +593,7 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:d69c3dd3f3780182c769266c0fe60a806144d46263575843979c8c9f74b1741e
+    hash: sha256:08fb442fc6d4c0b996cfcc5dcbc5275c6c3c181408abc3f332c2b2dc4fa615a2
     note: scripts/build-extras.js
 
   - path: scripts/build.js
@@ -1038,7 +1038,7 @@ files:
 
   - path: tests/publication-state.test.js
     role: code
-    hash: sha256:87dbbd8750e3a9560ba57d91bf53ff19043a170f67ff094b14847a4ec6e904f3
+    hash: sha256:3b37be822ad795fc63718d2b59cc83445fd7a34f0799738666b67a67cc7fdccd
     note: Published artifact identity and discovery regressions
 
   - path: tests/doctronic-observation.test.js
@@ -1063,7 +1063,7 @@ files:
 
   - path: design/publication-state.json
     role: evidence
-    hash: sha256:d086005260d49e7bb2ec63be7c3fc38f57d746a02882f9c2ec83940f1e4146c5
+    hash: sha256:4964683951ced0ba2a73909cbc561138fe1f9ce19a4ad3bb30e79ccb755bc4fb
     note: Independent provider observations and hosted selection policy
 
   - path: design/PUBLISHED-MCP-0.2.2.snapshot.json
@@ -1081,6 +1081,11 @@ files:
     hash: sha256:c6b8eef204abb1c2aa86e95ee9859f122ec91fb371d45b82ba49cd827839c930
     note: Verified published npm artifact capability snapshot
 
+  - path: design/PUBLISHED-MCP-0.2.5.snapshot.json
+    role: evidence
+    hash: sha256:9261f60702cbd603a3deabe0d8180a6441f8e601e683e50ecce92bc09d416876
+    note: Verified published npm artifact capability snapshot
+
   - path: design/PUBLICATION-PROVIDERS-2026-09-09.snapshot.json
     role: evidence
     hash: sha256:dd65163f596049c5cb1bdfdb0d89afffce3c76f4e165058425d1be197499eec0
@@ -1096,6 +1101,11 @@ files:
     hash: sha256:24dfea4ce4b2beafee4abd7f4837009f3e15c59bd5f3e087169f870167639ad7
     note: Independent npm MCP Registry Git tag and GitHub Release observations
 
+  - path: design/PUBLICATION-PROVIDERS-2026-09-12-v0.2.5.snapshot.json
+    role: evidence
+    hash: sha256:ec1f7f2c529fbd10eec02fe79ff5646554124fbe9787cdbd855642cd8374f71d
+    note: Independent npm MCP Registry Git tag and GitHub Release observations
+
   - path: ops/evidence/publication-state-2026-09-09.json
     role: evidence
     hash: sha256:4e7a77c8f8edcabd4cd37a6d22b85d0f4224f94cfafc6820f1096c1c1b3cfd3a
@@ -1105,6 +1115,11 @@ files:
     role: evidence
     hash: sha256:a371d706f3afd092652331b15fa28b7583be4234a144f5fe4abd5941e71fc5fb
     note: PubLedge v0.2.4 publication identity receipt
+
+  - path: ops/evidence/publication-state-2026-09-12-v0.2.5.json
+    role: evidence
+    hash: sha256:9dd9642163e854b9d7f256cc78dd2fb1dca04e1551be3077f7c044328ea13913
+    note: PubLedge v0.2.5 publication identity receipt
 
   - path: ops/evidence/source-admission-tranche-2026-09-09.json
     role: evidence

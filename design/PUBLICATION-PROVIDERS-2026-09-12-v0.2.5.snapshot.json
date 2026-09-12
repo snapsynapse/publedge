@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-12",
+  "npm": {
+    "observation_status": "published",
+    "evidence_url": "https://registry.npmjs.org/publedge/0.2.5",
+    "time_evidence_url": "https://registry.npmjs.org/publedge",
+    "name": "publedge",
+    "version": "0.2.5",
+    "published_at": "2026-09-12T20:37:20.927Z",
+    "observed_at": "2026-09-12T20:39:41.859Z",
+    "unretained_response_sha256": "be587c4f709f65c07ba7bc06c72e630777500ec907c4a455be6ebf3e0725c9e2",
+    "time_response_sha256": "e09b6134b3baedcb92a56c19f237156155ee09ed1a29eb1e6f5dda13c2e319a6",
+    "integrity": "sha512-lW4/dL65pt0d6KuQ1qmZsOILHsTfoWLTyebc9vPyDCZYGI5ZprOV3grlyvyWqL+h7f412aqdumZ7GcN0nLJ0GA==",
+    "shasum": "f0ad8e53eddd0057238651cafef61ef37bd93905",
+    "tarball_sha256": "7eaea341b2d399cad25ec7d6e0314741a650d84773814cd039ae95d1674c6851",
+    "file_count": 76,
+    "unpacked_size": 303713
+  },
+  "mcp_registry": {
+    "observation_status": "published",
+    "evidence_url": "https://registry.modelcontextprotocol.io/v0/servers?search=publedge&version=latest",
+    "name": "io.github.snapsynapse/publedge",
+    "version": "0.2.5",
+    "status": "active",
+    "is_latest": true,
+    "published_at": "2026-09-12T20:38:52.82947Z",
+    "observed_at": "2026-09-12T20:39:41.859Z",
+    "unretained_response_sha256": "a3f30a838109985265d197859eb571ba62c89cdc4b7bced3b40ca00855b7531f",
+    "prior_publish_attempt": {
+      "outcome": "error",
+      "error": "Official MCP Registry returned HTTP 401 because the registry JWT had expired.",
+      "resolution": "A fresh authenticated publisher session published v0.2.5; this final observation is the provider evidence."
+    }
+  },
+  "github_tag": {
+    "observation_status": "published",
+    "evidence_url": "https://api.github.com/repos/snapsynapse/publedge/git/refs/tags/v0.2.5",
+    "tag": "v0.2.5",
+    "object_type": "tag",
+    "object_sha": "ffc0a6dec99d333a31c846cb9385c6f37a5a12ac",
+    "target_commit": "0105c7b38f650f1640fe6f14132ce8da479bc7de",
+    "observed_at": "2026-09-12T20:39:41.859Z",
+    "unretained_response_sha256": "ffe704018f33997c435c09ac3e2a0a5d7af20498fd747e274c1a3278b70b67f1"
+  },
+  "github_release": {
+    "observation_status": "published",
+    "evidence_url": "https://github.com/snapsynapse/publedge/releases/tag/v0.2.5",
+    "release_id": 387696927,
+    "tag": "v0.2.5",
+    "name": "PubLedge v0.2.5",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-09-12T20:36:39Z",
+    "target_commit": "0105c7b38f650f1640fe6f14132ce8da479bc7de",
+    "observed_at": "2026-09-12T20:39:41.859Z",
+    "unretained_response_sha256": "f23fb18c8c49c28ddf7c5644f1472dde433ee9f11fc4695a493c221a19240273"
+  },
+  "limits": "The normalized provider fields are retained evidence. unretained_response_sha256 records the digest observed during retrieval but cannot revalidate response bytes because raw responses are not retained here. Provider endpoints can change after observation. The channels are independent, even when this checkpoint observed all four at v0.2.5."
+}

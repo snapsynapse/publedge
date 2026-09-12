@@ -95,10 +95,9 @@
     {
       "id": "mcp-server",
       "name": "MCP Server",
-      "description": "Published read-only MCP 0.2.4 with 13 tools. Run: npx -y publedge@0.2.4",
+      "description": "Published read-only MCP 0.2.5 with 13 tools. Run: npx -y publedge@0.2.5",
       "url": "https://publedge.org/.well-known/mcp.json",
-      "published_artifact": "https://registry.npmjs.org/publedge/-/publedge-0.2.4.tgz",
-      "source_candidate": "https://github.com/snapsynapse/publedge/blob/main/mcp-server.js",
+      "published_artifact": "https://registry.npmjs.org/publedge/-/publedge-0.2.5.tgz",
       "publication_state": "https://publedge.org/design/publication-state.json",
       "published_tools": [
         "list_obligations",
@@ -108,9 +107,9 @@
         "list_authorities",
         "get_authority",
         "search",
+        "fetch_by_url",
         "get_matrix",
         "get_mappings",
-        "fetch_by_url",
         "search_obligations",
         "get_upcoming",
         "get_recently_changed"
