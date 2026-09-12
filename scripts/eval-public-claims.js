@@ -38,7 +38,7 @@ requireText('README.md', `"args": ["-y", "${pkg.name}@${version}"]`, 'package MC
 requireText('README.md', `Obligations + mapping curation pass (${obligationCount} obligations, ${mappingCount} mappings)`, 'current curation totals');
 requireText('ROADMAP.md', `Package \`v${version}\`; protocol specification \`v${protocolVersion}\`.`, 'package and protocol roadmap summary');
 requireText('about/index.html', `Package v${version} · Protocol v${protocolVersion} · <a href="/design/publication-state.json">Provider observations</a>`, 'provider-observation link');
-requireText('reference/index.html', 'PubLedge recordkeeping protocol · <a href="/design/publication-state.json">Provider observations</a>', 'provider-observation footer');
+requireText('reference/index.html', '<p><a href="/design/publication-state.json">Provider observations</a></p>', 'provider-observation footer');
 requireText('reference/prior-art/index.html', `PubLedge Prior Art v${protocolVersion}`, 'current protocol version');
 requireText('reference/vocabulary/index.html', `v${protocolVersion}`, 'current protocol version');
 requireText(

@@ -22,7 +22,7 @@
       "integrity": "sha512-tCNIo4OCBQCGrQ00u7NQ19+msLC+I18h2SIEuljhXHwThY57AVvCbBcHVifrSz5Jrl/IR2cxoVp7+4COsF5GcA==",
       "tarball_sha256": "f1d53ce509c7490092a62921c7bd12ac68399390ba1c216f3b6bee41f333c747",
       "artifact_snapshot_path": "design/PUBLISHED-MCP-0.2.3.snapshot.json",
-      "artifact_snapshot_sha256": "087c1a802f903cb6d15a6c16eb3a5cfafd91159f23917a6f25e43cb9a51ad8f9",
+      "artifact_snapshot_sha256": "e28ae5b06ef1b23af287e6b3a47651ca46ab6a83b76cad7358073522e99104fb",
       "error": null
     },
     "mcp_registry": {

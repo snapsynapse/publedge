@@ -43,7 +43,7 @@
     "source_candidate_path": "reference/verify/index.html",
     "source_candidate_sha256": "84eba64b88b72a028b0c869785ea1da09b8114ad1b12b93b5917b09457ad8d30",
     "hosted_url": "https://publedge.org/reference/verify/",
-    "hosted_sha256": "116a9cf7ac2fe58cfef9d6ba81773f6cbef3f0f880665bc07718ac75765a5b4f"
+    "hosted_sha256": "aa043faaa7c2a79e046262c8a49d155d0844c49365669f51f8032c816847e299"
   },
   "verification": {
     "observed_at": "2026-09-12T17:57:10.759Z",

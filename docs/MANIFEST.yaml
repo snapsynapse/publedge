@@ -588,7 +588,7 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:5927069efddadea5cd8bfb6eb69fcf4709c408feacc92944f5b2bc3129d55af8
+    hash: sha256:106e229c636dd62f0329cea450fdf009d084d27bc03f59bf979ebec0db512f50
     note: scripts/build-extras.js
 
   - path: scripts/build.js
@@ -713,7 +713,7 @@ files:
 
   - path: scripts/eval-public-claims.js
     role: tooling
-    hash: sha256:006f4cc5625f12ca9fb2ebdfb3e4ea0c6ab205d10c74dbe9113da50cfb23ac7f
+    hash: sha256:39077447aba3d58750b20231577c6174b85e5050b3f4653cc301eb5570ebee3b
     note: scripts/eval-public-claims.js
 
   - path: scripts/eval-temporal-status.js
@@ -903,7 +903,7 @@ files:
 
   - path: reference/index.html
     role: site-source
-    hash: sha256:3346add3cdebb1d9410183eb1ec22b849186e723cae09e42333d5cd28fd134a0
+    hash: sha256:0ba96eb62cd4f212abaeebf7f3713e3ff103c796c10b7096cc55b0d42b212ed0
     note: reference/index.html
 
   - path: reference/prior-art/index.html
@@ -913,7 +913,7 @@ files:
 
   - path: reference/registry/index.html
     role: site-source
-    hash: sha256:7942fde68686ab7d8d3fb96ec768e3d305467f7496db7f01d8bc55fbbb7dec9e
+    hash: sha256:bd49b438359cb6959560c2954a0908762b3b75bc1902816df52989417847a5cb
     note: reference/registry/index.html
 
   - path: reference/verify/index.html
@@ -1058,7 +1058,7 @@ files:
 
   - path: design/publication-state.json
     role: evidence
-    hash: sha256:1979829ce8f7984cc395eab5cbbf741c8b568c84dba72e4e86361adeff5e8e41
+    hash: sha256:5b0f6a4b396f56513d2d32c058c5a7d207d4502f6d486d19edde5765f30cc18f
     note: Independent provider observations and hosted selection policy
 
   - path: design/PUBLISHED-MCP-0.2.2.snapshot.json
@@ -1068,7 +1068,7 @@ files:
 
   - path: design/PUBLISHED-MCP-0.2.3.snapshot.json
     role: evidence
-    hash: sha256:087c1a802f903cb6d15a6c16eb3a5cfafd91159f23917a6f25e43cb9a51ad8f9
+    hash: sha256:e28ae5b06ef1b23af287e6b3a47651ca46ab6a83b76cad7358073522e99104fb
     note: Verified published npm artifact capability snapshot
 
   - path: design/PUBLICATION-PROVIDERS-2026-09-09.snapshot.json
