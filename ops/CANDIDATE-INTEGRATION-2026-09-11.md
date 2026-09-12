@@ -1,6 +1,6 @@
 # Candidate integration preparation, 2026-09-11
 
-Session 1 retains the source/admission corrections through pushed commit 397f5d29 and pins OF checker 9445845d9cc7c13146b2bd53b875fe7ee7736d2a. The earlier handoff's claim that those commits were unpushed was stale. The comparison base for this correction candidate is main 3a07bba0b9f2b51c298a84fc50a42b66b341ad43.
+The publication candidate retains the source/admission corrections through commit 397f5d29 and pins the final reviewed Obligation-First candidate 7f032fc5482b34359770bc50ca6fa94c6606e6fb. That candidate preserves the accepted migration-boundary checks and isolated projection validation with pinned owner history. The comparison base remains main 3a07bba0b9f2b51c298a84fc50a42b66b341ad43.
 
 PR and push validation use their explicit event bases. Manual validation requires comparison_base; the shared resolver validates full owner SHA, ancestry and inequality to HEAD before canonical CI. This avoids passing the current commit as its own migration baseline. The separate accessibility build does not claim migration acceptance.
 
