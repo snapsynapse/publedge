@@ -11,7 +11,7 @@ Living housekeeping document. Tracks what shipped, what's pending, and what's de
 
 ## Current version
 
-Protocol specification `v0.2.0`; stable MCP server `v0.2.3`, prepared 2026-09-08 for a separately authorized release.
+Protocol specification `v0.2.0`; published MCP server `v0.2.2`; source candidate `v0.2.3` remains unpublished pending separately authorized release work.
 
 ## Current disposition
 
@@ -168,9 +168,20 @@ Shipped locally 2026-09-07 (accessibility action adoption):
 - Built and scanned all 160 generated sitemap HTML routes. Shared source fixes reduced the initial 495 serious incomplete candidates and an intermediate 56 serious contrast violations to zero confirmed violations, zero incomplete candidates, and zero route errors. The [dated audit record](audits/a11y-2026-09-07.md) preserves dependency identity, coverage, findings, fixes, and the final exit-0 result.
 - Push, hosted Actions execution, public deployment verification, and issue closure remain separate delivery work.
 
+Shipped locally 2026-09-09 (source admission, per-kind evidence, qualified uncertainty):
+
+- Froze the historical corpus as an explicit legacy-unreviewed inventory (`data/admission/legacy.json`, 62 inventoried records) with admission receipts (`data/admission/receipts.json`) that bind each reviewed change to retained primary source bytes under `data/admission/sources/`. After the Doctronic, mapping, and Colorado reviews, 59 inputs remain legacy-unreviewed and 3 carry reviewed changes. `npm run check:admission` runs in `verify:ci`, `prepack`, and MCP server startup, and CI checks out full history so receipt retention is compared against the base. Admission evidence and retained bytes are excluded from the generated site and the npm package. No legacy record is certified as reviewed.
+- Replaced the hand-rolled generated-record checker with Ajv (JSON Schema 2020-12) enforcement of `record.schema.json`. Generated records now carry `source` and an `admission` block limited to status and limits.
+- Moved the EveryAILaw anchor mapping into `data/examples/mapping/index.yml` as source-owned fields (`term_anchors`, `obligation_anchors`, `anchor_relation: related-not-equivalent`, source URL, locator, and qualification) backed by the retained HB 452 enrolled bill, replacing the hardcoded special case in the Obligation-First export. This consumes finding F15 for the curated mapping; the 130-record OF projection digest is identical before and after, and the mapping parser now fails on malformed or duplicate entries.
+- Bound per-kind evidence boundaries into the OF projection: every record carries `pub:evidence_inputs` in a fixed order per kind (authority, instrument, mapping-entry, obligation-definition) plus `admission_status`, `evidence_type`, and `pub:source_review_state`. A reviewed mapping input cannot promote a record whose native instrument or obligation definition remains legacy-unreviewed. The shared fingerprint baseline was refreshed after independent review at 130 records and 141 scope claims.
+- Doctronic RMA: recorded the agreement's permission wording and forbearance condition as written, kept OAIP's May 2026 outcomes report as an operational observation and not an issued term, and retained the September 2026 FAQ as a dated official observation and explicit source conflict rather than an amendment. Legal status, term dates, and `last_verified` are unchanged.
+- Colorado SB 24-205: recovered D. Colo. ECF 24 (entered April 27, 2026) as a retained source and replaced the asserted enforcement stay with the order's conditional restraint. `operative_status` and `enforcement_status` are now explicitly `unknown` on the Instrument, its Term, and three derived Requirements. Lifecycle, dates, and identifiers are unchanged; docket completeness, final rulemaking, and any preliminary-injunction ruling remain unknown.
+- Separated published identity from source: `design/publication-state.json` and dated snapshots record npm, the Official MCP Registry, the Git tag, and the GitHub Release at 0.2.2 (13 tools, hashed tarball). README, about, reference, the site footer, `agents.json`, and `/.well-known/mcp.json` pin `publedge@0.2.2` and identify 0.2.3 as an unpublished source candidate; evals enforce the boundary.
+- Push of this branch to main, CI on main, release, and publication remain separate held work.
+
 ## Local F14 fixture tranche (2026-09-05)
 
-The local [qualified-time acceptance sidecar](reference/F14-QUALIFIED-TIME.md) separates Colorado general commencement, upon-passage exceptions, and decision-date cutoff against the existing OF export. This tranche is not yet published. Predecessor operative history remains unknown in the fixture. No protocol/MCP version or production graph shape changes. F15 curated mappings/traversals and source-history review remain pending; broad ingestion stays demand-gated.
+The local [qualified-time acceptance sidecar](reference/F14-QUALIFIED-TIME.md) separates Colorado general commencement, upon-passage exceptions, and decision-date cutoff against the existing OF export. This tranche is not yet published. Predecessor operative history remains unknown in the fixture. No protocol/MCP version or production graph shape changes. F15 curated mappings are now delivered by the reviewed mapping receipt (see the 2026-09-09 entry above); predecessor-history source review remains pending, and broad ingestion stays demand-gated.
 
 ## Maintenance lane
 

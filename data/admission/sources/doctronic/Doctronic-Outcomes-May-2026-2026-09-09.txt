@@ -1,0 +1,86 @@
+         Key Statistics on the Doctronic Pilot Program: ​
+     Assessment of the First Five Months from January Through April
+
+
+Background Information for Consideration
+
+  ●​ The number of patients so far is limited because the pilot is still in Phase One, so we
+     should expect these numbers to change over the coming months.
+
+  ●​ The data is based on reports from Doctronic physicians reviewing interactions. The
+     Office of AI Policy has initiated a separate, independent review of the interactions.
+
+Outcomes
+
+  ●​ Overall Approval Rates
+
+         o​ In 72% of cases, Doctronic's AI recommended prescription renewal, which then
+            went to a human physician for review.
+
+                 ▪​   The other 28% of users had their case escalated to a physician due to
+                      case characteristics.
+
+                         ●​ Case characteristic examples include the patient needing new lab
+                             work, presenting complications, or having gone too long since
+                             their last healthcare visit.​
+
+
+  ●​ In the 72% of Cases Where the AI Recommended Renewal
+
+         o​ In 91% of cases, the reviewing physician agreed that a renewal was appropriate
+            based on the AI’s gathered information.
+
+                 ▪​   In the other 9% of cases, the reviewing physician wanted additional
+                      information, such as a confirmatory lab or more details about symptoms.
+                      A follow-up telehealth appointment was held before sending the renewal
+                      authorization to the pharmacy.
+
+                 ▪​   Additionally, when the supervising physician requested more information,
+                      a second physician provided an opinion. In most cases, the second
+                      physician disagreed with the first physician's concern, feeling the
+                      additional information was unnecessary.
+
+                                                                                         5/19/26
+                     ●​ In 97% of cases, either the first or second reviewing physician
+                        found the renewal authorization appropriate based on the
+                        information the AI had gathered. This reflects expected
+                        inter-reviewer disagreement.
+
+                     ●​ For reference, some related studies suggest a roughly 5-12%
+                        human clinician error rate for this task, with disagreement rates
+                        between human prescribers being described as moderate. The
+                        Office also cautions that clearly analyzing the applicability of the
+                        existing academic literature to the patient population Doctronic is
+                        serving will require more work.
+
+                     ●​ Additional analysis is needed to clearly determine whether any of
+                        the AI's approval recommendations fell outside the norm for
+                        reasonable prescription renewal behavior, or whether the 9%
+                        disagreement stems solely from inter-reviewer disagreement.
+
+                         ​
+
+
+●​ In the 28% of Cases Where the AI Escalated to a Physician Without
+   Recommending Renewal
+
+      o​ When the AI declined to recommend renewal without further information, a
+         human telehealth appointment was arranged.
+
+             ▪​   For these patients, 69% of physician reviews agreed that the escalation
+                  was appropriate, and more information was needed to authorize a
+                  renewal.
+
+             ▪​   In the other 31% of cases, the physician determined the escalation was
+                  overly cautious.
+
+                     ●​ For a new system like this, overcaution is appropriate and
+                        welcome. In the long term, reducing overcaution without
+                        compromising safety would improve patient access to care, but we
+                        aren't rushing to see that happen.
+
+
+
+
+                                                                                      5/19/26
+

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-09-05T00:00:00.000Z",
-    "count": 1,
+    "generated": "2026-09-09T00:00:00.000Z",
+    "count": 3,
     "window_days": 30
   },
   "items": [
@@ -16,7 +16,39 @@
       "jurisdiction": "us-co",
       "authority": "colorado-legislature",
       "type": "statute",
-      "status": "enforcing"
+      "source": "authoritative-reference",
+      "status": "enforcing",
+      "editorial_status": "published"
+    },
+    {
+      "record_id": "us-co-legislature-statute-2024-sb24-205",
+      "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+      "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
+      "change_type": "updated",
+      "created": "2026-05-21",
+      "modified": "2026-09-09",
+      "last_verified": "2026-07-25",
+      "jurisdiction": "us-co",
+      "authority": "colorado-legislature",
+      "type": "statute",
+      "source": "authoritative-reference",
+      "status": "superseded",
+      "editorial_status": "published"
+    },
+    {
+      "record_id": "us-ut-oaip-rma-2025-002",
+      "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+      "url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
+      "change_type": "updated",
+      "created": "2026-04-19",
+      "modified": "2026-09-09",
+      "last_verified": "2026-06-04",
+      "jurisdiction": "us-ut",
+      "authority": "utah-oaip",
+      "type": "rma",
+      "source": "demonstration-remap",
+      "status": "enforcing",
+      "editorial_status": "published"
     }
   ]
 }

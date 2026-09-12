@@ -22,7 +22,26 @@
     "us"
   ],
   "source": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-04-19",
-  "asserted_by_adopter": "https://publedge.org/"
+  "asserted_by_adopter": "https://publedge.org/",
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "authority",
+      "native_path": "data/examples/authorities/irs-tege.md",
+      "native_file_sha256": "cb3dbe7a81caab15581f97a431c72a4263bf1153fe72893eca2a062e8452ea03",
+      "canonical_unit": null,
+      "canonical_sha256": "14810026ee3543cfaa05202015da2fcbd2e92bdd907275430e81899e8cfc3d91",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
+  ]
 }

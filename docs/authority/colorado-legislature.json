@@ -25,7 +25,26 @@
     "https://wikidata.org/wiki/Q515231"
   ],
   "source": "https://leg.colorado.gov/",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-05-21",
-  "asserted_by_adopter": "https://publedge.org/"
+  "asserted_by_adopter": "https://publedge.org/",
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "authority",
+      "native_path": "data/examples/authorities/colorado-legislature.md",
+      "native_file_sha256": "47978720282f317a7e9e3bc8442e483b80b11b9e9c8da0afbbc162c5b7fcdd28",
+      "canonical_unit": null,
+      "canonical_sha256": "c4678d0971c4c40061c5dbb4283730def7b8af4069154b5f9d13f84b4335c33d",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
+  ]
 }

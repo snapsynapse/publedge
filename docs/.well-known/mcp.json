@@ -1,15 +1,36 @@
 {
+  "publication_state": "https://publedge.org/design/publication-state.json",
   "mcpServers": {
     "publedge": {
       "command": "npx",
       "args": [
         "-y",
-        "publedge"
+        "publedge@0.2.2"
       ],
-      "description": "Read-only access to the PubLedge legal-instrument registry.",
+      "description": "Published read-only PubLedge 0.2.2 with 13 tools.",
+      "published_version": "0.2.2",
+      "source_candidate": {
+        "version": "0.2.3",
+        "status": "unpublished-source"
+      },
       "protocol_versions": [
         "2026-07-28",
         "2024-11-05"
+      ],
+      "tools": [
+        "list_obligations",
+        "get_obligation",
+        "list_legal-instruments",
+        "get_legal-instrument",
+        "list_authorities",
+        "get_authority",
+        "search",
+        "get_matrix",
+        "get_mappings",
+        "fetch_by_url",
+        "search_obligations",
+        "get_upcoming",
+        "get_recently_changed"
       ]
     }
   }

@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "repository": "https://github.com/snapsynapse/publedge",
+  "profile": "package",
+  "authority": "R1",
+  "start_head": "5ec53a7ae60576f51a87e614202959e67028046a",
+  "candidate_head": "3b4d02b887211b8d7f4c7d0c9315b9cf25592b54",
+  "candidate_version": "0.2.3",
+  "updated_at": "2026-09-09T02:53:54Z",
+  "steps": [
+    {
+      "id": "version_and_release_surfaces",
+      "status": "completed",
+      "evidence": "Package and MCP surfaces are 0.2.3; protocol remains v0.2.0 and the Obligation-First record contract remains v0.6. Changelog, release notes, generated docs, and manifest hashes agree.",
+      "head": "3b4d02b887211b8d7f4c7d0c9315b9cf25592b54"
+    },
+    {
+      "id": "exact_head_local_gate",
+      "status": "completed",
+      "evidence": "npm run verify:ci passed after the final release-accounting commit, including deterministic build, generated-tree, package, MCP, source-fidelity, search, record, and maintenance checks.",
+      "head": "3b4d02b887211b8d7f4c7d0c9315b9cf25592b54"
+    },
+    {
+      "id": "packed_artifact",
+      "status": "completed",
+      "evidence": "publedge-0.2.3.tgz contains 76 files; SHA-256 937525873ea8ee2f9dd6beb49ed522a69b16b1f390e43985300f6ae730ce309b. It includes the source-review receipt and preserves the code and content license files.",
+      "head": "3b4d02b887211b8d7f4c7d0c9315b9cf25592b54"
+    },
+    {
+      "id": "frozen_consumer_replay",
+      "status": "completed",
+      "evidence": "All eight frozen normal and draft requests passed against the exact archive with zero runtime network attempts; frozen plan SHA-256 e1652ea7c8dc9db9b717061c191747897269c8c4187db49ebf1b6e0b385f04b7 and request packet SHA-256 4d2f9059ceea7f8ec9548b4e9e846b7e96a31569c697358d58076d68b786bd27.",
+      "head": "3b4d02b887211b8d7f4c7d0c9315b9cf25592b54"
+    },
+    {
+      "id": "public_conflict_reconciliation",
+      "status": "completed",
+      "evidence": "Read-only reconciliation at 2026-09-09T02:35:00Z found npm 0.2.3 absent, no remote v0.2.3 tag, and the Official MCP Registry still at 0.2.2.",
+      "head": null,
+      "completed_at": "2026-09-09T02:35:00Z"
+    },
+    {
+      "id": "push",
+      "status": "not_started",
+      "evidence": "No push is authorized in the current R1 preparation scope.",
+      "head": null
+    },
+    {
+      "id": "pull_request_or_merge",
+      "status": "not_started",
+      "evidence": "No pull request or merge is authorized in the current R1 preparation scope.",
+      "head": null
+    },
+    {
+      "id": "exact_head_hosted_ci",
+      "status": "not_started",
+      "evidence": "The candidate has not been pushed; hosted CI for this exact commit has not run.",
+      "head": null
+    },
+    {
+      "id": "tag_and_github_release",
+      "status": "not_started",
+      "evidence": "No tag or GitHub Release is authorized in the current R1 preparation scope.",
+      "head": null
+    },
+    {
+      "id": "npm_publication",
+      "status": "not_started",
+      "evidence": "The public npm version remains 0.2.2.",
+      "head": null
+    },
+    {
+      "id": "mcp_registry_publication",
+      "status": "not_started",
+      "evidence": "The Official MCP Registry version remains 0.2.2.",
+      "head": null
+    },
+    {
+      "id": "deployment_and_live_verification",
+      "status": "not_started",
+      "evidence": "No deployment or live 0.2.3 verification is authorized in the current R1 preparation scope.",
+      "head": null
+    }
+  ],
+  "superseded_note": "Historical R1 preparation receipt for candidate head 3b4d02b8. That head was later merged to main as 3a07bba0 (PR #6) with passing exact-main CI, accessibility and Pages runs, so push, pull_request_or_merge and exact_head_hosted_ci are stale here. The 0.2.3 source candidate then moved on codex/known-corrections-2026-09-09; the packed archive and frozen replay evidence bind only 3b4d02b8. Tag, GitHub Release, npm and MCP Registry publication remain not started; current published identity is in ops/evidence/publication-state-2026-09-09.json.",
+  "migrated_from": "handoffs/release-state-v0.2.3.json (ignored local queue), 2026-09-09"
+}

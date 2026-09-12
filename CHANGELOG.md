@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Not all v0.1.0-pre history is versioned separately; early drafting work was compressed into a single prerelease entry below. Subsequent releases are tracked individually.
 
+## Unreleased
+
+Source admission, per-kind evidence, and qualified legal uncertainty. The protocol specification remains v0.2.0, the Obligation-First record contract remains v0.6, and the published MCP package remains 0.2.2; the 0.2.3 source candidate is unpublished.
+
+### Added
+
+- Add a frozen legacy-unreviewed admission inventory, per-change admission receipts bound to retained primary source bytes, a `check:admission` gate in `verify:ci`, `prepack`, and MCP server startup, and admission tests. No legacy record is certified as reviewed; admission evidence and retained bytes stay out of the generated site and the npm package.
+- Add source-controlled publication state with dated npm, MCP Registry, tag, and release snapshots, plus tests and evals that keep the published 0.2.2 identity separate from the unpublished source candidate.
+- Add per-kind evidence inputs (`pub:evidence_inputs`, `admission_status`, `evidence_type`, `pub:source_review_state`) to every Obligation-First record, with regression coverage for the evidence boundary. A reviewed mapping input cannot promote a record whose native instrument or obligation definition remains legacy-unreviewed.
+- Retain D. Colo. ECF 24, the Utah HB 452 enrolled bill, and the Doctronic signed agreement, outcomes report, FAQ, and pilot page as admission sources, with source-specific regressions.
+
+### Changed
+
+- Enforce the generated `record.schema.json` with Ajv (JSON Schema 2020-12); generated records now carry `source` and an `admission` block limited to status and limits.
+- Move EveryAILaw term and obligation anchors into the mapping index as source-owned fields with a related-not-equivalent relation, source URL, locator, and qualification, replacing the hardcoded special case in the Obligation-First export. The mapping parser now fails on malformed or duplicate entries.
+- README, about, reference, the site footer, `agents.json`, and `/.well-known/mcp.json` pin the published `publedge@0.2.2` package and identify 0.2.3 as an unpublished source candidate.
+- CI checks out full history so receipt retention is compared against the pull-request base or prior push head.
+
+### Fixed
+
+- Record the Doctronic RMA's permission wording and forbearance condition as written, keep OAIP's May 2026 outcomes report as an operational observation rather than an issued term, and retain the September 2026 FAQ as a dated source conflict rather than an amendment. Legal status, term dates, and `last_verified` are unchanged.
+- Replace the asserted SB 24-205 enforcement stay with the ECF 24 conditional restraint and set `operative_status` and `enforcement_status` to explicit `unknown` on the instrument and its derived Obligation-First records; lifecycle, dates, and identifiers are unchanged.
+
 ## v0.2.3 - 2026-09-08
 
 Maintenance patch for MCP consumer guidance and source fidelity. The protocol specification remains v0.2.0 and the Obligation-First record contract remains v0.6.

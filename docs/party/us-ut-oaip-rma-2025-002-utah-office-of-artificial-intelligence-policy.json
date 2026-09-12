@@ -17,9 +17,45 @@
   "roles": [
     "issuing_authority"
   ],
-  "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+  "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
   "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-  "evidence_type": "published-source",
+  "evidence_type": "reviewed-source-reference",
   "verified": "2026-06-04",
-  "asserted_by_adopter": "https://publedge.org/"
+  "asserted_by_adopter": "https://publedge.org/",
+  "projection_basis": "native-record-projection",
+  "admission_status": "source-consistency-reviewed-changes",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": [
+    "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+    "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+    "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+    "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+    "This agent review does not renew last_verified or authenticate human review."
+  ],
+  "pub:source_review_state": "declared",
+  "pub:evidence_inputs": [
+    {
+      "kind": "instrument",
+      "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+      "native_file_sha256": "79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984",
+      "canonical_unit": null,
+      "canonical_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "5e3c426d9dbdfa30f065801d88ed39cd3355f7e1b23bed008fbd4c70a48fe299",
+      "retained_primary_sha256": [
+        "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
+        "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+        "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+        "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+        "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+        "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+        "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+        "This agent review does not renew last_verified or authenticate human review."
+      ]
+    }
+  ]
 }

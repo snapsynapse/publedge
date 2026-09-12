@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "generated": "2026-09-05T00:00:00.000Z",
+  "generated": "2026-09-09T00:00:00.000Z",
   "authorities": [
     {
       "@context": [
@@ -29,9 +29,28 @@
         "https://wikidata.org/wiki/Q3078237"
       ],
       "source": "https://www.consumerfinance.gov/",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-04-19",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "authority",
+          "native_path": "data/examples/authorities/cfpb.md",
+          "native_file_sha256": "65d858460f28a4228125b92d6f62fcb3f11bf12de93e1c2be2a43ac5fe3f867c",
+          "canonical_unit": null,
+          "canonical_sha256": "4e1615d94069ac57da1e65ffb7b201f8b02a29759a88d42f511ab0b607aa19ab",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -57,9 +76,28 @@
         "us"
       ],
       "source": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-04-19",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "authority",
+          "native_path": "data/examples/authorities/cftc-dsio.md",
+          "native_file_sha256": "126e57d5bf9d9bfea26c9e786e8a94c7fa10192266ee370520296d82f1ffc38c",
+          "canonical_unit": null,
+          "canonical_sha256": "d9f92ce392013c959c670ddee7bb907de9e3af8c4ce53728d3011c90b88b79af",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -88,9 +126,28 @@
         "https://wikidata.org/wiki/Q515231"
       ],
       "source": "https://leg.colorado.gov/",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-05-21",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "authority",
+          "native_path": "data/examples/authorities/colorado-legislature.md",
+          "native_file_sha256": "47978720282f317a7e9e3bc8442e483b80b11b9e9c8da0afbbc162c5b7fcdd28",
+          "canonical_unit": null,
+          "canonical_sha256": "c4678d0971c4c40061c5dbb4283730def7b8af4069154b5f9d13f84b4335c33d",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -116,9 +173,28 @@
         "us"
       ],
       "source": "https://www.irs.gov/privacy-disclosure/written-determinations",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-04-19",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "authority",
+          "native_path": "data/examples/authorities/irs-chief-counsel.md",
+          "native_file_sha256": "140ce6fb936c2a1680bc861e8f2a35648a37a6e5d3a362526b1ff72616e1cab9",
+          "canonical_unit": null,
+          "canonical_sha256": "15f4deda1cff5f9109dff32e5a755de1cdf983afe6a964973948bc8f0f802a39",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -144,9 +220,28 @@
         "us"
       ],
       "source": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-04-19",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "authority",
+          "native_path": "data/examples/authorities/irs-tege.md",
+          "native_file_sha256": "cb3dbe7a81caab15581f97a431c72a4263bf1153fe72893eca2a062e8452ea03",
+          "canonical_unit": null,
+          "canonical_sha256": "14810026ee3543cfaa05202015da2fcbd2e92bdd907275430e81899e8cfc3d91",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -175,9 +270,28 @@
         "https://wikidata.org/wiki/Q28945713"
       ],
       "source": "https://www.sec.gov/divisions/corpfin",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-04-19",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "authority",
+          "native_path": "data/examples/authorities/sec-corpfin.md",
+          "native_file_sha256": "a607fa1dc00920969072a3d12b038ff41f7c2e3b077182a4488ef31a93ead586",
+          "canonical_unit": null,
+          "canonical_sha256": "d23c71772b40e27a16fc8227d372343f39b5e59d59e6cb68d8c871486af71655",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -206,9 +320,28 @@
         "https://wikidata.org/wiki/Q7892726"
       ],
       "source": "https://le.utah.gov/",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-04-21",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "authority",
+          "native_path": "data/examples/authorities/utah-legislature.md",
+          "native_file_sha256": "627652d3301589e33a0dc71818f096fc34679c08c65b671882c68e1698dff148",
+          "canonical_unit": null,
+          "canonical_sha256": "67c04516fbf4431565d927e42400eacdbc7f6317001392bc58423c889bb5600c",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -234,9 +367,28 @@
         "us-ut"
       ],
       "source": "https://commerce.utah.gov/ai/learning-lab/",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-04-18",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "authority",
+          "native_path": "data/examples/authorities/utah-oaip.md",
+          "native_file_sha256": "e3f8e81c7f83fff77637ea432e5c3e4830515ed35b860d4055f69879e15308ed",
+          "canonical_unit": null,
+          "canonical_sha256": "31401909fe5d0ef6d6f2154dc6e8c68c554b45b6d1e7dae905acb8e8cb13dffb",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     }
   ]
 }

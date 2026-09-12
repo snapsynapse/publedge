@@ -95,9 +95,26 @@
     {
       "id": "mcp-server",
       "name": "MCP Server",
-      "description": "Read-only MCP server exposing the PubLedge knowledge base. Run: npx -y publedge",
+      "description": "Published read-only MCP 0.2.2 with 13 tools. Run: npx -y publedge@0.2.2",
       "url": "https://publedge.org/.well-known/mcp.json",
-      "source": "https://github.com/snapsynapse/publedge/blob/main/mcp-server.js"
+      "published_artifact": "https://registry.npmjs.org/publedge/-/publedge-0.2.2.tgz",
+      "source_candidate": "https://github.com/snapsynapse/publedge/blob/main/mcp-server.js",
+      "publication_state": "https://publedge.org/design/publication-state.json",
+      "published_tools": [
+        "list_obligations",
+        "get_obligation",
+        "list_legal-instruments",
+        "get_legal-instrument",
+        "list_authorities",
+        "get_authority",
+        "search",
+        "get_matrix",
+        "get_mappings",
+        "fetch_by_url",
+        "search_obligations",
+        "get_upcoming",
+        "get_recently_changed"
+      ]
     }
   ],
   "content": {
@@ -526,7 +543,7 @@
     "protocol_authority_response": "https://publedge.org/about/#authority-response"
   },
   "meta": {
-    "last_updated": "2026-09-05",
+    "last_updated": "2026-09-09",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"

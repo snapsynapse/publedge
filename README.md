@@ -11,7 +11,7 @@ Open recordkeeping protocol for fact-specific written interpretations between tw
 
 Plain markdown with structured frontmatter. SHA-256 manifest checks provide source-to-manifest consistency. Bound to the [Semantic Arts gist](https://semanticarts.com/gist/) upper ontology so records from different authorities can be queried together.
 
-**Public and maintained. Protocol specification v0.2.0; stable MCP server v0.2.3. The MCP server is dual-era: MCP spec 2026-07-28 stateless core plus the legacy 2024-11-05 handshake. Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
+**Public and maintained. Protocol specification v0.2.0; published MCP server v0.2.2; source candidate v0.2.3 is unpublished. The published MCP server supports the MCP 2026-07-28 stateless core plus the legacy 2024-11-05 handshake. Standalone product expansion is parked pending a concrete legal-graph or adopter demand signal.**
 
 ## Who this is for
 
@@ -59,7 +59,7 @@ Every record and index is published in parallel HTML + structured form so agents
 | `/feed.xml`, `/atom.xml`, `/feed.json` | RSS 2.0, Atom 1.0, JSON Feed 1.1 |
 | `/sitemap.xml` | Sitemap index → per-section sitemaps (`records`, `authorities`, `statutes`, `reference`, `templates`, `bridges`, `meta`) |
 | `/llms.txt`, `/agents.json` | Agent-discovery briefing + capabilities |
-| `/.well-known/mcp.json` | Installable MCP server discovery for `npx -y publedge` |
+| `/.well-known/mcp.json` | Installable MCP server discovery pinned to verified package `publedge@0.2.2`; the source candidate is identified separately |
 | `/robots.txt` | Explicit allow for 17 AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, etc.) |
 | `mcp-server.js` | MCP server exposing 13 read-only tools: `list_<legal-instruments>` (with jurisdiction/authority/type/status filters), `get_<legal-instrument>`, `list_obligations`, `get_obligation`, `list_authorities`, `get_authority`, `search`, `search_obligations`, `get_matrix`, `get_mappings`, `fetch_by_url`, `get_upcoming`, `get_recently_changed` |
 
@@ -110,14 +110,14 @@ curl -sS https://publedge.org/us/federal/sec-corpfin/nal/2025-001/record.json | 
   "mcpServers": {
     "publedge": {
       "command": "npx",
-      "args": ["-y", "publedge"]
+      "args": ["-y", "publedge@0.2.2"]
     }
   }
 }
 ```
-5. Use `search` to discover records and `fetch_by_url` when you already have a canonical PubLedge URL. The complete endpoint and capability inventories are at [api/v1/index.json](https://publedge.org/api/v1/index.json) and [agents.json](https://publedge.org/agents.json).
+5. Use `search` to discover records and `fetch_by_url` when you already have a canonical PubLedge URL. The published 0.2.2 package exposes the 13 tools listed above. The complete endpoint and published capability inventories are at [api/v1/index.json](https://publedge.org/api/v1/index.json), [agents.json](https://publedge.org/agents.json), and [the source-controlled publication state](design/publication-state.json).
 
-Canonical markdown under `data/examples/` is the maintained source. Published HTML, API indexes, and each `record.json` are generated representations and should not be edited directly.
+Canonical markdown under `data/examples/` is the maintained source. Published HTML, API indexes, and each `record.json` are generated representations and should not be edited directly. Repository checkout instructions operate the unpublished 0.2.3 source candidate; they are not an install claim for the published package.
 
 ## Repository layout
 

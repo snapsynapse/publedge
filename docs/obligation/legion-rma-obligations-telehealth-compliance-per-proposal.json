@@ -25,7 +25,7 @@
   "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
   "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
   "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-04-21",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:primary_id": "telehealth-compliance-per-proposal",
@@ -38,5 +38,48 @@
     "proposal compliance",
     "doctronic",
     "legion"
+  ],
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "instrument",
+      "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+      "native_file_sha256": "d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a",
+      "canonical_unit": null,
+      "canonical_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    },
+    {
+      "kind": "mapping-entry",
+      "native_path": "data/examples/mapping/index.yml",
+      "native_file_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+      "canonical_unit": "entry:legion-rma-obligations",
+      "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    },
+    {
+      "kind": "obligation-definition",
+      "native_path": "data/examples/obligations/telehealth-compliance-per-proposal.md",
+      "native_file_sha256": "7fc842d907a39f82bfca7bf5380ba6887404ff5693e1b473d807b424ffe49af0",
+      "canonical_unit": null,
+      "canonical_sha256": "9c48efe15d307aef5d471ed3f519cb58af70e2dcadfaa81b98f8ec49f3eb73a5",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
   ]
 }

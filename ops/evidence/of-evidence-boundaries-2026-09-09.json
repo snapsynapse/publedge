@@ -1,0 +1,192 @@
+{
+  "receipt_version": 1,
+  "scope": "PUB-0908-017 owner evidence-tier and raw-input binding",
+  "recorded_at": "2026-09-09",
+  "projection": {
+    "record_count": 130,
+    "aggregate_canonical_sha256": "349aeba7839be6a2022e4304c57b62708453aa557e047375a29ca38d1e686a6a",
+    "projection_basis": "native-record-projection",
+    "standard_admission_status_counts": {
+      "legacy-unreviewed": 125,
+      "source-consistency-reviewed-changes": 5
+    },
+    "evidence_type_counts": {
+      "legacy-unreviewed-source-reference": 125,
+      "reviewed-source-reference": 5
+    },
+    "review_state_counts": {
+      "unknown": 114,
+      "declared": 5,
+      "known-and-unknown": 11
+    },
+    "per_record_input_counts": {
+      "1": 58,
+      "2": 16,
+      "3": 56
+    }
+  },
+  "extension_contract": {
+    "record_fields": [
+      "projection_basis",
+      "admission_status",
+      "source_review_conflicts",
+      "pub:source_review_unresolved",
+      "pub:source_review_state",
+      "pub:evidence_inputs"
+    ],
+    "input_fields": [
+      "kind",
+      "native_path",
+      "native_file_sha256",
+      "canonical_unit",
+      "canonical_sha256",
+      "admission_status",
+      "review_packet_sha256",
+      "retained_primary_sha256",
+      "unresolved_review_state",
+      "unresolved"
+    ],
+    "input_order": {
+      "of:Authority": [
+        "authority"
+      ],
+      "of:Party": [
+        "instrument"
+      ],
+      "of:Instrument": [
+        "instrument"
+      ],
+      "of:Determination": [
+        "instrument"
+      ],
+      "of:Term": [
+        "instrument",
+        "mapping-entry"
+      ],
+      "of:Permission|of:Requirement|of:Restriction": [
+        "instrument",
+        "mapping-entry",
+        "obligation-definition"
+      ]
+    },
+    "conflict_semantics": "source_review_conflicts is null because owner receipts do not structurally classify conflicts; pub:source_review_unresolved retains exact deduplicated unresolved strings without keyword inference"
+  },
+  "admission_boundary": {
+    "mapping_source_uri": "credential-free bare HTTPS; source eligibility belongs to owner source-admission review",
+    "term_target": "exact https://everyailaw.com/term/<slug>.json without query, fragment, or credentials",
+    "obligation_target": "exact https://everyailaw.com/(obligation|obligation-category)/<slug>.json without query, fragment, or credentials"
+  },
+  "validation": [
+    {
+      "command": "npm run test:of-evidence-inputs",
+      "result": "passed",
+      "tests": 3
+    },
+    {
+      "command": "npm run test:source-mapping",
+      "result": "passed",
+      "tests": 3
+    },
+    {
+      "command": "npm run test:admission",
+      "result": "passed",
+      "tests": 13
+    },
+    {
+      "command": "node scripts/eval-obligation-first-binding.js",
+      "result": "passed"
+    },
+    {
+      "command": "npm run eval:generated-tree-parity",
+      "result": "passed"
+    },
+    {
+      "command": "OBLIGATION_FIRST_DIR=/Users/snap/Git/obligation-first npm run validate:of",
+      "result": "passed",
+      "records": 130,
+      "validator": "0.6.5 eefe360226b8 dirty"
+    },
+    {
+      "command": "npm run check:of-fingerprint",
+      "result": "expected-failed-pending-owner-review",
+      "evidence": "/private/tmp/legal-graph-implementation-2026-09-09/publedge/pub017-fingerprint-diff.txt"
+    },
+    {
+      "command": "npm run check:of-fingerprint",
+      "result": "passed-after-independent-review-and-baseline-refresh",
+      "records": 130,
+      "scope_claims": 141
+    }
+  ],
+  "intended_fingerprint_delta": [
+    "exact admission_status and projection_basis coverage",
+    "exact pub:evidence_inputs including native and canonical digests",
+    "exact pub:source_review_unresolved and review state",
+    "evidence_type correction for legacy-first mixed inputs"
+  ],
+  "limits": [
+    "No legacy record is certified as reviewed.",
+    "A reviewed mapping input cannot promote a record whose native instrument or obligation definition remains legacy-unreviewed.",
+    "Retained primary bytes remain private admission inputs and are not copied into public docs.",
+    "No generic actual-conflict classifier is asserted.",
+    "Fingerprint baseline remains unchanged pending independent owner review."
+  ],
+  "review": {
+    "independent_owner_review": {
+      "reviewer": "AI Incident Law owner agent",
+      "status": "accepted",
+      "finding_resolved": "fail-open malformed admission input validation",
+      "remaining_blockers": []
+    },
+    "shared_baseline_review": {
+      "reviewer": "Obligation-First coordinator",
+      "status": "accepted-and-refreshed",
+      "fingerprint_sha256": "a53e31db7a330a22306095bd873cd31c61357d66519b9ca3b46883e045974c9c",
+      "records": 130,
+      "scope_claims": 141,
+      "changed": [
+        "exact provenance claims",
+        "field coverage"
+      ],
+      "unchanged": [
+        "record identifiers",
+        "relationships",
+        "provenance dates",
+        "nested semantics"
+      ]
+    }
+  },
+  "final_validation": {
+    "canonical_command": "OBLIGATION_FIRST_DIR=/Users/snap/Git/obligation-first npm run verify:ci",
+    "functional_gates": "passed through all hashes, schemas, admission, build, search, OF validation/continuity/fingerprint, evals, package smoke, and maintenance tests",
+    "clean_tree_assertion": "pending until authorized commit because tracked generated docs intentionally differ from base",
+    "disposable_package_install_smoke": "passed; temporary tarball/install directory removed by harness",
+    "log": "/private/tmp/legal-graph-implementation-2026-09-09/publedge/final-verify-ci.log"
+  },
+  "remaining_publedge_findings": {
+    "overdue_as_of_2026_09_09": [
+      "us-ut-legislature-statute-2024-sb149",
+      "us-ut-legislature-statute-2025-hb452",
+      "us-ut-legislature-statute-2025-sb226",
+      "us-ut-legislature-statute-2025-sb332",
+      "us-ut-legislature-statute-2026-hb320",
+      "us-ut-oaip-jia-2026-001",
+      "us-ut-oaip-rma-2024-001",
+      "us-ut-oaip-rma-2025-002",
+      "us-ut-oaip-rma-2026-001"
+    ],
+    "qualification": "Overdue dates are review-queue state, not proof that record facts are wrong. The wider corpus has not been reverified.",
+    "utah_chapter_72": "Current chapter endpoint remained an HTML/JavaScript shell whose document identity and statutory text were not established; statutory ownership stays with EveryAILaw.",
+    "legion": "Authority page baseline is covered, but commencement, effective date, and current legal status require explicit authority evidence; absence of a notice proves none of them.",
+    "doctronic": "Signed agreement and dated outcomes are retained. The September FAQ conflicts with signed Phase 1 denominator/formulary terms, but no signed amendment, effective date, Phase 2 approval, extension, termination, compliance, or current phase was established.",
+    "jia": "PubLedge JIA remains an original draft/proposed record and is not authority-issued.",
+    "elizachat": "Source fidelity is fixed and the example remains expired; its overdue review is not automatically renewed."
+  },
+  "colorado_correspondence": {
+    "status": "bounded and explicit",
+    "sb24_205": "describesSameEntityAs points to the typed EveryAILaw instrument; predecessor operative/enforcement history remains unknown.",
+    "sb25b_004": "Recorded as an amendment/effective-date instrument with no invented EveryAILaw identity correspondence; commencement and requirement dates remain qualified.",
+    "sb26_189": "describesSameEntityAs points to the typed EveryAILaw instrument and supersedes the PubLedge SB24-205 predecessor; section-specific effective exceptions prevent scalar-date inference.",
+    "limits": "No record asserts identity merely from a related URL, and no correspondence resolves the original court-order/current-docket or full predecessor-history questions."
+  }
+}

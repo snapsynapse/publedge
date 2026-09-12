@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "generated": "2026-09-05T00:00:00.000Z",
+  "generated": "2026-09-09T00:00:00.000Z",
   "parties": [
     {
       "@context": [
@@ -22,9 +22,28 @@
         "requesting_party"
       ],
       "source": "https://commerce.utah.gov/ai/learning-lab/",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+          "native_file_sha256": "1c73dcfdf1dc9dc14040426990fdd43ea4db8615ca0523c2914d7fda1e40d740",
+          "canonical_unit": null,
+          "canonical_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -46,9 +65,28 @@
         "interpreting_authority"
       ],
       "source": "https://commerce.utah.gov/ai/learning-lab/",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+          "native_file_sha256": "1c73dcfdf1dc9dc14040426990fdd43ea4db8615ca0523c2914d7fda1e40d740",
+          "canonical_unit": null,
+          "canonical_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -71,9 +109,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+          "native_file_sha256": "68266cdbb989ed85f06c0b2dc6a96f0007462ce569d77816590a479da020a7d7",
+          "canonical_unit": null,
+          "canonical_sha256": "57ffb3356c78bfb68741fdbedba549d2ca8bcc62841b5dc53fb55691d0f12de7",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -96,9 +153,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+          "native_file_sha256": "68266cdbb989ed85f06c0b2dc6a96f0007462ce569d77816590a479da020a7d7",
+          "canonical_unit": null,
+          "canonical_sha256": "57ffb3356c78bfb68741fdbedba549d2ca8bcc62841b5dc53fb55691d0f12de7",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -121,9 +197,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+          "native_file_sha256": "68266cdbb989ed85f06c0b2dc6a96f0007462ce569d77816590a479da020a7d7",
+          "canonical_unit": null,
+          "canonical_sha256": "57ffb3356c78bfb68741fdbedba549d2ca8bcc62841b5dc53fb55691d0f12de7",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -146,9 +241,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-07-25",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
+          "native_file_sha256": "c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617",
+          "canonical_unit": null,
+          "canonical_sha256": "06ed1564673a32d12dc4a11a10be932242363e4ff5d46e80cf88dfbe30ff54a8",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -171,9 +285,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-07-25",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
+          "native_file_sha256": "c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617",
+          "canonical_unit": null,
+          "canonical_sha256": "06ed1564673a32d12dc4a11a10be932242363e4ff5d46e80cf88dfbe30ff54a8",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -196,9 +329,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-07-25",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
+          "native_file_sha256": "c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617",
+          "canonical_unit": null,
+          "canonical_sha256": "06ed1564673a32d12dc4a11a10be932242363e4ff5d46e80cf88dfbe30ff54a8",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -219,11 +371,47 @@
       "roles": [
         "issuing_authority"
       ],
-      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "source-consistency-reviewed-changes",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": [
+        "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+        "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+        "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+        "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+        "This agent review does not renew last_verified or authenticate human review."
+      ],
+      "pub:source_review_state": "declared",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+          "native_file_sha256": "79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984",
+          "canonical_unit": null,
+          "canonical_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "5e3c426d9dbdfa30f065801d88ed39cd3355f7e1b23bed008fbd4c70a48fe299",
+          "retained_primary_sha256": [
+            "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
+            "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+            "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+            "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+            "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+            "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+            "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+            "This agent review does not renew last_verified or authenticate human review."
+          ]
+        }
+      ]
     },
     {
       "@context": [
@@ -244,11 +432,47 @@
       "roles": [
         "co_signatory_authority"
       ],
-      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "source-consistency-reviewed-changes",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": [
+        "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+        "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+        "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+        "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+        "This agent review does not renew last_verified or authenticate human review."
+      ],
+      "pub:source_review_state": "declared",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+          "native_file_sha256": "79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984",
+          "canonical_unit": null,
+          "canonical_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "5e3c426d9dbdfa30f065801d88ed39cd3355f7e1b23bed008fbd4c70a48fe299",
+          "retained_primary_sha256": [
+            "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
+            "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+            "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+            "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+            "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+            "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+            "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+            "This agent review does not renew last_verified or authenticate human review."
+          ]
+        }
+      ]
     },
     {
       "@context": [
@@ -269,11 +493,47 @@
       "roles": [
         "participant"
       ],
-      "source": "https://commerce.utah.gov/ai/agreements/doctronic/",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "source-consistency-reviewed-changes",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": [
+        "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+        "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+        "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+        "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+        "This agent review does not renew last_verified or authenticate human review."
+      ],
+      "pub:source_review_state": "declared",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+          "native_file_sha256": "79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984",
+          "canonical_unit": null,
+          "canonical_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "5e3c426d9dbdfa30f065801d88ed39cd3355f7e1b23bed008fbd4c70a48fe299",
+          "retained_primary_sha256": [
+            "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
+            "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+            "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+            "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+            "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+            "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
+            "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+            "This agent review does not renew last_verified or authenticate human review."
+          ]
+        }
+      ]
     },
     {
       "@context": [
@@ -296,9 +556,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+          "native_file_sha256": "d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a",
+          "canonical_unit": null,
+          "canonical_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -321,9 +600,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+          "native_file_sha256": "d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a",
+          "canonical_unit": null,
+          "canonical_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -346,9 +644,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+          "native_file_sha256": "d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a",
+          "canonical_unit": null,
+          "canonical_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     },
     {
       "@context": [
@@ -371,9 +688,28 @@
       ],
       "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-      "evidence_type": "published-source",
+      "evidence_type": "legacy-unreviewed-source-reference",
       "verified": "2026-06-04",
-      "asserted_by_adopter": "https://publedge.org/"
+      "asserted_by_adopter": "https://publedge.org/",
+      "projection_basis": "native-record-projection",
+      "admission_status": "legacy-unreviewed",
+      "source_review_conflicts": null,
+      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "unknown",
+      "pub:evidence_inputs": [
+        {
+          "kind": "instrument",
+          "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+          "native_file_sha256": "d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a",
+          "canonical_unit": null,
+          "canonical_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
+          "admission_status": "legacy-unreviewed",
+          "review_packet_sha256": null,
+          "retained_primary_sha256": null,
+          "unresolved_review_state": "unknown",
+          "unresolved": null
+        }
+      ]
     }
   ]
 }

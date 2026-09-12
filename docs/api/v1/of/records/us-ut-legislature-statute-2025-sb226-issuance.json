@@ -26,7 +26,26 @@
   "notes": "Issuance record for Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments.",
   "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
   "source_citation": "Utah SB 226 (2025 General Session)",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-06-04",
-  "asserted_by_adopter": "https://publedge.org/"
+  "asserted_by_adopter": "https://publedge.org/",
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "instrument",
+      "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+      "native_file_sha256": "518882b00ebe9515a3f4697a2da41a607c506c8d844a31895dcf1851d0f5dd3a",
+      "canonical_unit": null,
+      "canonical_sha256": "7e4a5fbb8f032549b461c3d8840b09b6dfe91587e3b95cde0269b6a9bd69ac2c",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
+  ]
 }

@@ -2,8 +2,12 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/",
-    "generated": "2026-09-05T00:00:00.000Z",
-    "schema": "https://publedge.org/schema/instrument.schema.json"
+    "generated": "2026-09-09T00:00:00.000Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json",
+    "admission": {
+      "status": "legacy-unreviewed",
+      "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
+    }
   },
   "record": {
     "id": "us-sec-corpfin-nal-2025-001",
@@ -13,6 +17,7 @@
     "slug": "sec-latham-watkins-rule-506c-2025",
     "title": "SEC No-Action Letter — Latham & Watkins (Rule 506(c) Verification)",
     "type": "no-action-letter",
+    "source": "demonstration-remap",
     "jurisdiction": "us",
     "authority": "sec-corpfin",
     "url": "https://publedge.org/us/federal/sec-corpfin/nal/2025-001/",
@@ -21,6 +26,7 @@
       "name": "U.S. Securities and Exchange Commission, Division of Corporation Finance (Office of Small Business Policy)",
       "ref": "https://www.sec.gov/divisions/corpfin"
     },
+    "issuance_event": "gist:Determination",
     "enacted": "2025-03-12",
     "effective": "2025-03-12",
     "official_url": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",

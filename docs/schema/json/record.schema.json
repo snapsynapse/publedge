@@ -19,7 +19,8 @@
       "type": "object",
       "required": [
         "canonical_url",
-        "generated"
+        "generated",
+        "admission"
       ],
       "properties": {
         "canonical_url": {
@@ -35,6 +36,27 @@
             "string",
             "null"
           ]
+        },
+        "admission": {
+          "type": "object",
+          "required": [
+            "status",
+            "limits"
+          ],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "legacy-unreviewed",
+                "reviewed-changes"
+              ]
+            },
+            "limits": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": true
@@ -44,6 +66,7 @@
       "required": [
         "id",
         "type",
+        "source",
         "authority",
         "jurisdiction",
         "url",
@@ -100,6 +123,15 @@
             "no-action-letter"
           ]
         },
+        "source": {
+          "type": "string",
+          "enum": [
+            "authority-issued",
+            "demonstration-remap",
+            "publedge-original-draft",
+            "authoritative-reference"
+          ]
+        },
         "jurisdiction": {
           "type": [
             "string",
@@ -126,6 +158,12 @@
             "object",
             "string",
             "array",
+            "null"
+          ]
+        },
+        "issuance_event": {
+          "type": [
+            "string",
             "null"
           ]
         },
@@ -339,7 +377,123 @@
           }
         }
       },
-      "additionalProperties": true
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "allOf": [
+              {
+                "properties": {
+                  "source": {
+                    "const": "authority-issued"
+                  }
+                },
+                "required": [
+                  "source"
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "properties": {
+                      "editorial_status": {
+                        "const": "published"
+                      }
+                    },
+                    "required": [
+                      "editorial_status"
+                    ]
+                  },
+                  {
+                    "properties": {
+                      "status": {
+                        "const": "enforcing"
+                      }
+                    },
+                    "required": [
+                      "status"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "then": {
+            "required": [
+              "official_url",
+              "publication_citations",
+              "source_documents",
+              "issuance_event",
+              "enacted"
+            ],
+            "properties": {
+              "official_url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "publication_citations": {
+                "type": "array",
+                "minItems": 1
+              },
+              "source_documents": {
+                "type": "array",
+                "minItems": 1
+              },
+              "issuance_event": {
+                "type": "string",
+                "minLength": 1
+              },
+              "enacted": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "source": {
+                "const": "publedge-original-draft"
+              },
+              "status": {
+                "not": {
+                  "const": "proposed"
+                }
+              }
+            },
+            "required": [
+              "source",
+              "status"
+            ]
+          },
+          "then": {
+            "not": {}
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "source": {
+                "const": "publedge-original-draft"
+              }
+            },
+            "required": [
+              "source"
+            ]
+          },
+          "then": {
+            "properties": {
+              "issuance_event": {
+                "type": "null"
+              },
+              "enacted": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
     },
     "jsonld": {
       "type": "object",

@@ -1,0 +1,43 @@
+{
+  "receipt_version": 1,
+  "recorded_at": "2026-09-09T17:31:34Z",
+  "branch": "codex/known-corrections-2026-09-09",
+  "base_commit": "3a07bba0b9f2b51c298a84fc50a42b66b341ad43",
+  "scope": "PUB-0908-016 source-owned EveryAILaw anchor mapping and mapping-admission parser repair",
+  "legacy_inventory_reconstruction": {
+    "old_inventory_sha256": "6389960cc991b32c08519e30339924a39b2590438fe47721b4d34e247ca663ca",
+    "new_inventory_sha256": "ee10ed6991196eb74d899818920a8b00e6759e68bf55d179d01eb759d0328694",
+    "old_mapping_digest_from_blind_parser": "06305feced35f560f9affb566c8780a094fee80aaf1245737a7a7b0c10c5c453",
+    "corrected_mapping_digest_from_exact_base_bytes": "d072c09fd6fdb6d05da6ca7d1e784baac7b59c1e040e9f5b44b2fa7c7c5b3c62",
+    "base_mapping_entries": 16,
+    "other_legacy_records_unchanged": 61,
+    "reconstructed_old_inventory_matches_prior_sha256": true
+  },
+  "reviewed_mapping": {
+    "path": "data/examples/mapping/index.yml",
+    "raw_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+    "canonical_after_digest": "bccad470cd138126ddc670288920d16837b0475c5588429205ad0e7d56a5c970",
+    "receipt_packet_sha256": "476523ef2974b11f96c887c77c8135e1b4e835d70264833e80b5204eccc4d75f",
+    "receipts_sha256": "9f5e8da4c9ba7d9197fdc335e063a5a6922f493037a1d576dac86ce645b20403",
+    "changed_units": 1
+  },
+  "source": {
+    "official_url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+    "locator": "HB 452 section 5, Utah Code section 13-72a-203(1)-(2)",
+    "reviewed_utf8_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+    "original_pdf_sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+  },
+  "generated_parity": {
+    "before_of_records_digest": "ac389fbfe00efd630d6ffda2536f6082cb591be184df7f98896b43df51442191",
+    "after_of_records_digest": "ac389fbfe00efd630d6ffda2536f6082cb591be184df7f98896b43df51442191",
+    "records": 130,
+    "claims": 141,
+    "edge_or_count_change": false
+  },
+  "limits": [
+    "The anchors assert related subject matter, not equivalent terms, statutory force for the PubLedge draft, or legal applicability.",
+    "The draft JIA 30-minute condition differs from the enacted statute's seven-day interaction condition.",
+    "The EveryAILaw target identity and continued existence remain cross-owner federation assertions.",
+    "No legacy record other than the mapping inventory entry was reconstructed; 60 records remain legacy-unreviewed after the Doctronic and mapping reviews."
+  ]
+}

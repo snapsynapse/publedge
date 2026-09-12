@@ -1,0 +1,33 @@
+{
+  "receipt_version": 1,
+  "recorded_at": "2026-09-09T16:18:56.585Z",
+  "scope": "PubLedge published MCP identity and source-candidate separation",
+  "source_candidate": {
+    "version": "0.2.3",
+    "status": "unpublished-source",
+    "base_commit": "3a07bba0b9f2b51c298a84fc50a42b66b341ad43",
+    "working_tree": true
+  },
+  "published": {
+    "npm_version": "0.2.2",
+    "mcp_registry_version": "0.2.2",
+    "github_tag": "v0.2.2",
+    "github_release": "v0.2.2",
+    "tarball_sha256": "e7997f02ac43ba894c83bfa1c5f41b57205f2b37485160f62f7dd6beb2b6d820",
+    "integrity": "sha512-fERUpnJQ4iki0Me25lUrGYJjzwjquREFD04y9bFOpJ1Kp/kPcgv49d8Z4XHGsQnbpSAMbYSx/dUH/yKPFo/f5w==",
+    "tool_count": 13,
+    "install": "npx -y publedge@0.2.2"
+  },
+  "verification": [
+    "Downloaded and hashed the published npm tarball.",
+    "Executed initialize and tools/list from the extracted package with PATH as the only inherited environment value.",
+    "Observed the Official MCP Registry, annotated Git tag, and GitHub Release independently.",
+    "Validated source/generated publication state, discovery, tool catalog, guide anchors, and public claims."
+  ],
+  "limits": [
+    "The Git tag and GitHub Release are independent observations.",
+    "The retained provider file is a normalized observation snapshot; raw provider response bodies were not retained, and their recorded response digests cannot be recomputed from that snapshot.",
+    "Provider state can change after the recorded observation times.",
+    "No publication, tag, release, deployment, or provider mutation was performed."
+  ]
+}

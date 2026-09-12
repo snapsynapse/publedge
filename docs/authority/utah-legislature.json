@@ -25,7 +25,26 @@
     "https://wikidata.org/wiki/Q7892726"
   ],
   "source": "https://le.utah.gov/",
-  "evidence_type": "published-source",
+  "evidence_type": "legacy-unreviewed-source-reference",
   "verified": "2026-04-21",
-  "asserted_by_adopter": "https://publedge.org/"
+  "asserted_by_adopter": "https://publedge.org/",
+  "projection_basis": "native-record-projection",
+  "admission_status": "legacy-unreviewed",
+  "source_review_conflicts": null,
+  "pub:source_review_unresolved": null,
+  "pub:source_review_state": "unknown",
+  "pub:evidence_inputs": [
+    {
+      "kind": "authority",
+      "native_path": "data/examples/authorities/utah-legislature.md",
+      "native_file_sha256": "627652d3301589e33a0dc71818f096fc34679c08c65b671882c68e1698dff148",
+      "canonical_unit": null,
+      "canonical_sha256": "67c04516fbf4431565d927e42400eacdbc7f6317001392bc58423c889bb5600c",
+      "admission_status": "legacy-unreviewed",
+      "review_packet_sha256": null,
+      "retained_primary_sha256": null,
+      "unresolved_review_state": "unknown",
+      "unresolved": null
+    }
+  ]
 }

@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      comparison_base:
+        description: Full owner commit SHA to compare against (must precede HEAD)
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -19,11 +24,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - uses: actions/checkout@v5
         with:
           repository: snapsynapse/obligation-first
-          ref: a848817d9331bb3aa17cb0d6c5cd059d3ca53c1c
+          ref: 7f032fc5482b34359770bc50ca6fa94c6606e6fb
           path: obligation-first
 
       - uses: actions/setup-node@v5
@@ -36,6 +43,9 @@ jobs:
       - name: Install Obligation-First dependencies
         run: npm ci --prefix obligation-first
 
+      - name: Resolve owner admission comparison
+        run: node obligation-first/scripts/resolve-admission-base.mjs --root . --github-env
+
       - name: Run canonical CI verification
         run: npm run verify:ci
 
@@ -44,6 +54,8 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v5
         with:
           node-version: '20'

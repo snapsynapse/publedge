@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "package": {
+    "name": "publedge",
+    "version": "0.2.2",
+    "integrity": "sha512-fERUpnJQ4iki0Me25lUrGYJjzwjquREFD04y9bFOpJ1Kp/kPcgv49d8Z4XHGsQnbpSAMbYSx/dUH/yKPFo/f5w==",
+    "tarball_sha256": "e7997f02ac43ba894c83bfa1c5f41b57205f2b37485160f62f7dd6beb2b6d820",
+    "file_count": 75,
+    "unpacked_size": 290366
+  },
+  "runtime": {
+    "server_name": "PubLedge",
+    "server_version": "0.2.2",
+    "protocol_versions": ["2026-07-28", "2024-11-05"],
+    "network_during_replay": false
+  },
+  "tools": {
+    "count": 13,
+    "free_count": 13,
+    "authenticated": [],
+    "names": [
+      "list_obligations",
+      "get_obligation",
+      "list_legal-instruments",
+      "get_legal-instrument",
+      "list_authorities",
+      "get_authority",
+      "search",
+      "get_matrix",
+      "get_mappings",
+      "fetch_by_url",
+      "search_obligations",
+      "get_upcoming",
+      "get_recently_changed"
+    ]
+  },
+  "embedded_discovery": {
+    "mcp_json_sha256": "c4eeab49387e1bf3a17687bb0eaa2d50ba54aa79c4125ca01a0a2895b1b0d2b4",
+    "readme_sha256": "c6a61490062838c87bd479abcced0dfa7c965d6485488a3314b90092d9e1774d"
+  },
+  "guide": {
+    "packaged": false,
+    "source_candidate_path": "reference/verify/index.html",
+    "source_candidate_sha256": "84eba64b88b72a028b0c869785ea1da09b8114ad1b12b93b5917b09457ad8d30",
+    "hosted_url": "https://publedge.org/reference/verify/",
+    "hosted_sha256": "4052e4ab57daaa6cceb662078227866497703ae3fdae4e1e3344f898efaee7b5"
+  },
+  "verification": {
+    "observed_at": "2026-09-09T16:18:33.674Z",
+    "method": "Downloaded the npm registry tarball, verified SHA-256, extracted it, and executed initialize plus tools/list with PATH as the only inherited environment value."
+  }
+}

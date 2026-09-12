@@ -2,8 +2,12 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/",
-    "generated": "2026-09-05T00:00:00.000Z",
-    "schema": "https://publedge.org/schema/instrument.schema.json"
+    "generated": "2026-09-09T00:00:00.000Z",
+    "schema": "https://publedge.org/schema/instrument.schema.json",
+    "admission": {
+      "status": "legacy-unreviewed",
+      "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
+    }
   },
   "record": {
     "id": "us-ut-oaip-rma-2024-001",
@@ -13,6 +17,7 @@
     "slug": "utah-elizachat-teen-mental-health-2024",
     "title": "Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)",
     "type": "rma",
+    "source": "demonstration-remap",
     "jurisdiction": "us-ut",
     "authority": "utah-oaip",
     "url": "https://publedge.org/us/utah/oaip/rma/2024-001/",
@@ -21,6 +26,7 @@
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
       "ref": "https://commerce.utah.gov/ai/learning-lab/"
     },
+    "issuance_event": "gist:Determination",
     "enacted": "2024-11-18",
     "effective": "2024-11-18",
     "official_url": "https://commerce.utah.gov/ai/agreements/elizachat/",
