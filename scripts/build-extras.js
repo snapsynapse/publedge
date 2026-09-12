@@ -24,6 +24,7 @@ const BUILD_CLOCK = deriveBuildClock(ROOT);
 const PACKAGE_VERSION = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf-8')).version;
 const PUBLICATION = loadPublicationState(ROOT, { checkHosted: false });
 const PUBLIC_MCP = PUBLICATION.publicIdentity;
+const SOURCE_CANDIDATE = PUBLICATION.state.source_candidate;
 
 function ensureDir(d) { fs.mkdirSync(d, { recursive: true }); }
 
@@ -169,7 +170,8 @@ function renderFooterNav(relRoot) {
 function renderSiteFooter(relRoot) {
     return `<footer class="site-footer">
 <p class="footer-meta">&copy; ${BUILD_CLOCK.year} <a href="https://paice.foundation">PAICE.work PBC</a> · <a href="${relRoot}reference/disclaimer/">Not legal advice</a> · <a href="${relRoot}MANIFEST.yaml">MANIFEST.yaml</a> · <a href="https://github.com/snapsynapse/publedge">GitHub</a></p>
-<p class="footer-built">PubLedge source candidate v${PACKAGE_VERSION} · published MCP v${PUBLIC_MCP.version}</p>
+<p class="footer-built">PubLedge recordkeeping protocol</p>
+<p class="footer-built"><a href="${relRoot}design/publication-state.json">Provider observations</a></p>
 </footer>`;
 }
 
@@ -372,7 +374,13 @@ function copyStatics() {
     const schemaN = copyRecursive(path.join(ROOT, 'schema'), path.join(DOCS_DIR, 'schema'));
     const vendorN = copyRecursive(path.join(ROOT, 'vendor'), path.join(DOCS_DIR, 'vendor'));
     const assetsN = copyRecursive(path.join(ROOT, 'assets'), path.join(DOCS_DIR, 'assets'));
-    const publicationFiles = ['publication-state.json', 'PUBLISHED-MCP-0.2.2.snapshot.json', 'PUBLICATION-PROVIDERS-2026-09-09.snapshot.json'];
+    const publicationFiles = [
+        'publication-state.json',
+        'PUBLISHED-MCP-0.2.2.snapshot.json',
+        'PUBLISHED-MCP-0.2.3.snapshot.json',
+        'PUBLICATION-PROVIDERS-2026-09-09.snapshot.json',
+        'PUBLICATION-PROVIDERS-2026-09-12.snapshot.json'
+    ];
     for (const filename of publicationFiles) {
         const src = path.join(ROOT, 'design', filename);
         const dst = path.join(DOCS_DIR, 'design', filename);
@@ -500,7 +508,7 @@ function extendDiscovery(templates) {
             description: `Published read-only MCP ${PUBLIC_MCP.version} with ${PUBLIC_MCP.tools.count} tools. Run: npx -y ${PUBLIC_MCP.package}`,
             url: `${SITE_URL}.well-known/mcp.json`,
             published_artifact: `https://registry.npmjs.org/publedge/-/publedge-${PUBLIC_MCP.version}.tgz`,
-            source_candidate: `https://github.com/snapsynapse/publedge/blob/main/mcp-server.js`,
+            ...(SOURCE_CANDIDATE ? { source_candidate: `https://github.com/snapsynapse/publedge/blob/main/mcp-server.js` } : {}),
             publication_state: `${SITE_URL}design/publication-state.json`,
             published_tools: PUBLIC_MCP.tools.names
         });
@@ -821,7 +829,7 @@ function writeMcpDiscovery() {
                 args: ['-y', PUBLIC_MCP.package],
                 description: `Published read-only PubLedge ${PUBLIC_MCP.version} with ${PUBLIC_MCP.tools.count} tools.`,
                 published_version: PUBLIC_MCP.version,
-                source_candidate: { version: PACKAGE_VERSION, status: 'unpublished-source' },
+                ...(SOURCE_CANDIDATE ? { source_candidate: { version: SOURCE_CANDIDATE.version, status: SOURCE_CANDIDATE.status } } : {}),
                 protocol_versions: PUBLICATION.snapshot.runtime.protocol_versions,
                 tools: PUBLIC_MCP.tools.names
             }

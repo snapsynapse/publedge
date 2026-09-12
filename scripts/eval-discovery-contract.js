@@ -28,7 +28,11 @@ if (install?.command !== 'npx' || JSON.stringify(install?.args) !== JSON.stringi
     failures.push(`/.well-known/mcp.json must install exact published package ${published.package}`);
 }
 if (install?.published_version !== published.version) failures.push('/.well-known/mcp.json published version drift');
-if (install?.source_candidate?.version !== pkg.version || install?.source_candidate?.status !== 'unpublished-source') failures.push('/.well-known/mcp.json source candidate boundary drift');
+if (publication.state.source_candidate) {
+    if (install?.source_candidate?.version !== pkg.version || install?.source_candidate?.status !== 'unpublished-source') failures.push('/.well-known/mcp.json source candidate boundary drift');
+} else if ('source_candidate' in (install || {})) {
+    failures.push('/.well-known/mcp.json must omit source candidate when npm matches source package');
+}
 if (JSON.stringify(install?.tools) !== JSON.stringify(published.tools.names)) failures.push('/.well-known/mcp.json published tool catalog drift');
 
 const ids = (agents.capabilities || []).map(capability => capability.id);
@@ -38,7 +42,10 @@ for (const id of new Set(ids)) {
 const agentMcp = (agents.capabilities || []).find(capability => capability.id === 'mcp-server');
 if (!agentMcp?.description?.includes(`npx -y ${published.package}`)) failures.push('agents.json MCP install is not exact-pinned');
 if (JSON.stringify(agentMcp?.published_tools) !== JSON.stringify(published.tools.names)) failures.push('agents.json published tool catalog drift');
-if (!agentMcp?.source_candidate || !agentMcp?.published_artifact) failures.push('agents.json does not distinguish source candidate from published artifact');
+if (!agentMcp?.published_artifact) failures.push('agents.json is missing published artifact evidence');
+if (publication.state.source_candidate ? !agentMcp?.source_candidate : 'source_candidate' in (agentMcp || {})) {
+    failures.push('agents.json source-candidate lifecycle drift');
+}
 requireLocal('agents MCP publication state', agentMcp?.publication_state);
 
 function requireLocal(label, url) {

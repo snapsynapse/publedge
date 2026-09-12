@@ -10,15 +10,15 @@ const { validatePublicationState, publicMcpIdentity, loadPublicationState } = re
 function fixtures() {
     return {
         state: JSON.parse(fs.readFileSync(path.join(ROOT, 'design/publication-state.json'), 'utf8')),
-        snapshot: JSON.parse(fs.readFileSync(path.join(ROOT, 'design/PUBLISHED-MCP-0.2.2.snapshot.json'), 'utf8'))
+        snapshot: JSON.parse(fs.readFileSync(path.join(ROOT, 'design/PUBLISHED-MCP-0.2.3.snapshot.json'), 'utf8'))
     };
 }
 
 test('candidate ahead selects the evidenced npm artifact without auto-promotion', () => {
     const { state, snapshot } = fixtures();
     const result = publicMcpIdentity(state, snapshot, ROOT);
-    assert.equal(state.source_candidate.version, '0.2.3');
-    assert.equal(result.package, 'publedge@0.2.2');
+    assert.equal(state.source_candidate.version, '0.2.4');
+    assert.equal(result.package, 'publedge@0.2.3');
     const mutated = structuredClone(state);
     mutated.source_candidate.version = '0.2.9';
     const after = publicMcpIdentity(mutated, snapshot);
@@ -36,8 +36,40 @@ test('candidate-only capabilities cannot leak into published discovery', () => {
 
 test('version-only changes cannot move publication state', () => {
     const { state, snapshot } = fixtures();
-    state.observations.npm.version = '0.2.3';
+    state.observations.npm.version = '0.2.4';
     assert.throws(() => publicMcpIdentity(state, snapshot, ROOT), /evidence URL drift|snapshot version/);
+});
+
+test('fabricated provider publication cannot erase partial-channel evidence', () => {
+    const { state, snapshot } = fixtures();
+    assert.equal(state.observations.npm.version, '0.2.3');
+    assert.equal(state.observations.mcp_registry.version, '0.2.2');
+    const fabricated = structuredClone(state);
+    fabricated.observations.mcp_registry.version = '0.2.3';
+    assert.throws(() => validatePublicationState(fabricated, snapshot, ROOT), /MCP Registry provider version drift/);
+    fabricated.observations.mcp_registry.version = '0.2.2';
+    fabricated.source_candidate.status = 'published-source';
+    assert.throws(() => validatePublicationState(fabricated, snapshot, ROOT), /unpublished-source/);
+});
+
+test('candidate lifecycle permits structurally valid partial and complete publication states', () => {
+    const { state, snapshot } = fixtures();
+    assert.equal(publicMcpIdentity(state, snapshot).version, '0.2.3');
+
+    const npmPublishedMcpOlder = structuredClone(state);
+    npmPublishedMcpOlder.source_candidate = null;
+    // Retained provider evidence is bound when a repository root is supplied.
+    // These fixtures isolate lifecycle structure because their provider files remain immutable.
+    assert.equal(publicMcpIdentity(npmPublishedMcpOlder, snapshot).version, '0.2.3');
+    assert.equal(npmPublishedMcpOlder.observations.mcp_registry.version, '0.2.2');
+
+    const allPublished = structuredClone(npmPublishedMcpOlder);
+    allPublished.observations.mcp_registry.version = '0.2.3';
+    assert.equal(publicMcpIdentity(allPublished, snapshot).version, '0.2.3');
+
+    const tooSoon = structuredClone(state);
+    tooSoon.source_candidate = null;
+    assert.throws(() => validatePublicationState(tooSoon, snapshot, ROOT), /Absent source candidate requires published npm version/);
 });
 
 test('missing or wrong immutable artifact evidence fails', () => {
@@ -117,7 +149,7 @@ test('independent unavailable provider states retain null version and explicit r
     assert.equal(validatePublicationState(state, snapshot), true);
     state.observations.github_tag = {
         status: 'error', version: null, observed_at: '2026-09-09T16:18:56.062Z',
-        evidence_url: 'https://api.github.com/repos/snapsynapse/publedge/git/refs/tags/v0.2.2', error: 'HTTP 500'
+        evidence_url: 'https://api.github.com/repos/snapsynapse/publedge/git/refs/tags/v0.2.3', error: 'HTTP 500'
     };
     assert.equal(validatePublicationState(state, snapshot), true);
 });
@@ -126,7 +158,7 @@ test('provider errors remain unknown and cannot select an install identity', () 
     const { state, snapshot } = fixtures();
     state.observations.npm = {
         status: 'error', version: null, observed_at: '2026-09-09T16:18:33.674Z',
-        evidence_url: 'https://registry.npmjs.org/publedge/0.2.2', error: 'HTTP 500'
+        evidence_url: 'https://registry.npmjs.org/publedge/0.2.3', error: 'HTTP 500'
     };
     assert.throws(() => publicMcpIdentity(state, snapshot, ROOT), /published npm evidence/);
     assert.equal(state.observations.npm.status, 'error');
@@ -144,7 +176,7 @@ test('guide anchor exists, is hash-bound, and remains outside the published pack
 });
 
 test('generated publication state and evidence snapshots match source bytes', () => {
-    for (const filename of ['publication-state.json', 'PUBLISHED-MCP-0.2.2.snapshot.json', 'PUBLICATION-PROVIDERS-2026-09-09.snapshot.json']) {
+    for (const filename of ['publication-state.json', 'PUBLISHED-MCP-0.2.3.snapshot.json', 'PUBLICATION-PROVIDERS-2026-09-12.snapshot.json']) {
         assert.deepEqual(
             fs.readFileSync(path.join(ROOT, 'docs/design', filename)),
             fs.readFileSync(path.join(ROOT, 'design', filename)),

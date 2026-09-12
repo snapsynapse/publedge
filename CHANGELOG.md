@@ -8,12 +8,12 @@ Not all v0.1.0-pre history is versioned separately; early drafting work was comp
 
 ## Unreleased
 
-Source admission, per-kind evidence, and qualified legal uncertainty. The protocol specification remains v0.2.0, the Obligation-First record contract remains v0.6, and the published MCP package remains 0.2.2; the 0.2.3 source candidate is unpublished.
+Source admission, per-kind evidence, and qualified legal uncertainty. The protocol specification remains v0.2.0 and the Obligation-First record contract remains v0.6. Current provider-specific package, MCP Registry, Git tag, and GitHub Release observations are recorded in `design/publication-state.json`.
 
 ### Added
 
 - Add a frozen legacy-unreviewed admission inventory, per-change admission receipts bound to retained primary source bytes, a `check:admission` gate in `verify:ci`, `prepack`, and MCP server startup, and admission tests. No legacy record is certified as reviewed; admission evidence and retained bytes stay out of the generated site and the npm package.
-- Add source-controlled publication state with dated npm, MCP Registry, tag, and release snapshots, plus tests and evals that keep the published 0.2.2 identity separate from the unpublished source candidate.
+- Add source-controlled publication state with dated npm, MCP Registry, tag, and release snapshots, plus tests and evals that retain independent provider evidence through partial publication.
 - Add per-kind evidence inputs (`pub:evidence_inputs`, `admission_status`, `evidence_type`, `pub:source_review_state`) to every Obligation-First record, with regression coverage for the evidence boundary. A reviewed mapping input cannot promote a record whose native instrument or obligation definition remains legacy-unreviewed.
 - Retain D. Colo. ECF 24, the Utah HB 452 enrolled bill, and the Doctronic signed agreement, outcomes report, FAQ, and pilot page as admission sources, with source-specific regressions.
 
@@ -21,13 +21,20 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 
 - Enforce the generated `record.schema.json` with Ajv (JSON Schema 2020-12); generated records now carry `source` and an `admission` block limited to status and limits.
 - Move EveryAILaw term and obligation anchors into the mapping index as source-owned fields with a related-not-equivalent relation, source URL, locator, and qualification, replacing the hardcoded special case in the Obligation-First export. The mapping parser now fails on malformed or duplicate entries.
-- README, about, reference, the site footer, `agents.json`, and `/.well-known/mcp.json` pin the published `publedge@0.2.2` package and identify 0.2.3 as an unpublished source candidate.
+- README and current guides link to provider observations; `agents.json` and `/.well-known/mcp.json` render the independently evidenced install identity and any actual source candidate.
 - CI checks out full history so receipt retention is compared against the pull-request base or prior push head.
 
 ### Fixed
 
 - Record the Doctronic RMA's permission wording and forbearance condition as written, keep OAIP's May 2026 outcomes report as an operational observation rather than an issued term, and retain the September 2026 FAQ as a dated source conflict rather than an amendment. Legal status, term dates, and `last_verified` are unchanged.
 - Replace the asserted SB 24-205 enforcement stay with the ECF 24 conditional restraint and set `operative_status` and `enforcement_status` to explicit `unknown` on the instrument and its derived Obligation-First records; lifecycle, dates, and identifiers are unchanged.
+
+## v0.2.4 - 2026-09-12
+
+### Fixed
+
+- Keep packaged README guidance and current public guides free of mutable publication-status labels. Package and protocol versions remain explicit; provider-specific npm, MCP Registry, Git tag, and GitHub Release observations live in the independently validated publication state and can differ by channel.
+- Bind the current npm 0.2.3 artifact, Git tag, and GitHub Release to dated provider evidence while retaining the MCP Registry's verified 0.2.2 state. Regression tests reject fabricated provider publication and mutable packaged labels.
 
 ## v0.2.3 - 2026-09-08
 
@@ -248,7 +255,8 @@ Security hardening and release-readiness patch.
 - CI: pa11y-ci WCAG 2.1 AA pass across every URL in the sitemap on every push and pull request; docs/ sync check; hash validation
 - `.gitignore` aligned to portfolio hygiene baseline (`.env.*` glob, `__pycache__/`, `*.pyc`, `dist/`, `build/`, `.venv/`, `venv/`)
 
-[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.2.3...HEAD
+[Unreleased]: https://github.com/snapsynapse/publedge/compare/v0.2.4...HEAD
+[0.2.4]: https://github.com/snapsynapse/publedge/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/snapsynapse/publedge/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/snapsynapse/publedge/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/snapsynapse/publedge/compare/v0.2.0...v0.2.1

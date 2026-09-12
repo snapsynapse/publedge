@@ -123,17 +123,17 @@ files:
 
   - path: server.json
     role: config
-    hash: sha256:28724b1299cb29df8381932b92a2227284fcda98c32117bd60042bde28ba7245
+    hash: sha256:0d4b3d71a36600869223c89c08a7c6fc1dff0c65524a0979f4a92d05fa4e6ea4
     note: server.json
 
   - path: package.json
     role: config
-    hash: sha256:ca568019056ac670628506c1eae4bc99e7230679a378ff275355860f269760a0
+    hash: sha256:2fb23ae851a779909c755a2ce2c8e9076227ec69441f8b4facdfde973400c8a4
     note: package.json
 
   - path: package-lock.json
     role: config
-    hash: sha256:51ec2b8e0225fdcb9dd5a9c5b4aa769d222df8da342d21411074b0889935a125
+    hash: sha256:aa269b353942ab6f6af3f5ecf85cec96563a90fbb5f91fc6a74d2496cf25abc5
     note: package-lock.json
 
   - path: project.yml
@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:086e0beb246c64b04f95a253bfcd9c85058d7e186065788c9acc19d577705206
+    hash: sha256:926d492e8fd7b49797aa4b819f8ebaf6289a49476e78216dfc61a2206584cc7c
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -458,7 +458,7 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:c3cb140ea210b01ca429db284f8bef5fea515dc8db27d406df4c3a56b8a34d4d
+    hash: sha256:446e2d2287a7fa8f37bd1558d38227fd0d4e7262cdeb1c1b8ff2270a34be29f1
     note: README.md
 
   - path: RELEASE_NOTES-v0.2.2.md
@@ -471,9 +471,14 @@ files:
     hash: sha256:fae982b4e109c810afac0d80e261fc1fd542106a099297b67d7bf1a09b0bfb31
     note: RELEASE_NOTES-v0.2.3.md
 
+  - path: RELEASE_NOTES-v0.2.4.md
+    role: release-notes
+    hash: sha256:db0b3f87e8c5f030687a51d52086bd3e815e2f7bbc37476d0702712a248f219d
+    note: RELEASE_NOTES-v0.2.4.md
+
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:8b57b515c71b5189ffb9ff9389b1167c6b0f9fc971988b0fab02df1b70d15d12
+    hash: sha256:8ae2aaa31e2ba27ae14bf210806f2feae67856062570b7cdb98f469f931c22ee
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -563,7 +568,7 @@ files:
 
   - path: scripts/lib/publication-state.js
     role: tooling
-    hash: sha256:2f9164db1c02f40838cbb7566fa73b41af093c0ecb8ac939d7188451f86ac830
+    hash: sha256:04d1043030631e8b14a2f86d2bf563ef881891ae5c3de90f4b877c9fa06e05d9
     note: Published artifact and source-candidate identity boundary
 
   - path: scripts/prepare-source-admission.js
@@ -583,7 +588,7 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:2ecaddb058faef55296220c0898f20e75595cced6334606f7f6cf1655986106a
+    hash: sha256:106e229c636dd62f0329cea450fdf009d084d27bc03f59bf979ebec0db512f50
     note: scripts/build-extras.js
 
   - path: scripts/build.js
@@ -643,7 +648,7 @@ files:
 
   - path: scripts/eval-discovery-contract.js
     role: tooling
-    hash: sha256:72b6413af3ad0fccdd77e2493b6ea851f758c20a79072da14e07d47d6829bc48
+    hash: sha256:47ef8b862c242bc49d5794557916d726b2326814c31f48efcf03554b7815dcd7
     note: scripts/eval-discovery-contract.js
 
   - path: scripts/eval-format-contracts.js
@@ -693,7 +698,7 @@ files:
 
   - path: scripts/eval-package-smoke.js
     role: tooling
-    hash: sha256:71b3642cab8c9b6cf04e76e867f73bd501db54faac0e4055e0081c5ca2e6af92
+    hash: sha256:9d400b585387c3de6efd37d09eccefc6b6cf71e29dcd9408fc1d9a1ff3b8e46d
     note: scripts/eval-package-smoke.js
 
   - path: scripts/eval-obligation-first-binding.js
@@ -708,7 +713,7 @@ files:
 
   - path: scripts/eval-public-claims.js
     role: tooling
-    hash: sha256:94cf2b48a8633dd43b94e5739b1f7ab5e4104fee1e6c58bb8def0901505943ac
+    hash: sha256:39077447aba3d58750b20231577c6174b85e5050b3f4653cc301eb5570ebee3b
     note: scripts/eval-public-claims.js
 
   - path: scripts/eval-temporal-status.js
@@ -868,7 +873,7 @@ files:
 
   - path: about/index.html
     role: site-source
-    hash: sha256:0dd4a6b58e61a9507e509c677b7ad46325e179cd20101a84e63abf1f7f7674c1
+    hash: sha256:0218eb1ae544c265f3702d7bbb1b776c58151fc7586f56db930aadfe3a51baa7
     note: about/index.html
 
   - path: assets/search.js
@@ -898,7 +903,7 @@ files:
 
   - path: reference/index.html
     role: site-source
-    hash: sha256:d7272d0fc651d366e3f8933d5364efc1b95023bcab33303e8c2bada050a4eb87
+    hash: sha256:0ba96eb62cd4f212abaeebf7f3713e3ff103c796c10b7096cc55b0d42b212ed0
     note: reference/index.html
 
   - path: reference/prior-art/index.html
@@ -908,7 +913,7 @@ files:
 
   - path: reference/registry/index.html
     role: site-source
-    hash: sha256:e2c74ffee32ac659522b2714e5f488fcaf09a35a8ac214a8952c885609150363
+    hash: sha256:bd49b438359cb6959560c2954a0908762b3b75bc1902816df52989417847a5cb
     note: reference/registry/index.html
 
   - path: reference/verify/index.html
@@ -1028,7 +1033,7 @@ files:
 
   - path: tests/publication-state.test.js
     role: code
-    hash: sha256:0713bea884f0e3dce13baa70e3e3d6e2e3c022f7d63530a417b7193d986ae792
+    hash: sha256:bae9b46a1cca773de20bc3af24875d3c179cfe117a86028f7028d9c10841715d
     note: Published artifact identity and discovery regressions
 
   - path: tests/doctronic-observation.test.js
@@ -1053,7 +1058,7 @@ files:
 
   - path: design/publication-state.json
     role: evidence
-    hash: sha256:0cb5dc6d59be9e8198041ab78388f7c1648ddfea2b43f09dbf667aa649d0ef63
+    hash: sha256:5b0f6a4b396f56513d2d32c058c5a7d207d4502f6d486d19edde5765f30cc18f
     note: Independent provider observations and hosted selection policy
 
   - path: design/PUBLISHED-MCP-0.2.2.snapshot.json
@@ -1061,9 +1066,19 @@ files:
     hash: sha256:b10d2b1641c6bcf458dbf9853dd525d5afa88aa47665ab4091ecba90953c4345
     note: Verified published npm artifact capability snapshot
 
+  - path: design/PUBLISHED-MCP-0.2.3.snapshot.json
+    role: evidence
+    hash: sha256:e28ae5b06ef1b23af287e6b3a47651ca46ab6a83b76cad7358073522e99104fb
+    note: Verified published npm artifact capability snapshot
+
   - path: design/PUBLICATION-PROVIDERS-2026-09-09.snapshot.json
     role: evidence
     hash: sha256:dd65163f596049c5cb1bdfdb0d89afffce3c76f4e165058425d1be197499eec0
+    note: Independent npm MCP Registry Git tag and GitHub Release observations
+
+  - path: design/PUBLICATION-PROVIDERS-2026-09-12.snapshot.json
+    role: evidence
+    hash: sha256:3a774fd54d6e1acde5bd41592087d6be1895aa21c2088088b801443d49590acc
     note: Independent npm MCP Registry Git tag and GitHub Release observations
 
   - path: ops/evidence/publication-state-2026-09-09.json

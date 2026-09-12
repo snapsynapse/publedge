@@ -66,10 +66,14 @@ function validatePublicationState(state, snapshot, root, now = new Date(), check
     assert.match(state?.document_updated || '', /^\d{4}-\d{2}-\d{2}$/);
     assert.match(state?.package?.name || '', /^[a-z0-9-]+$/);
     assert.match(state?.package?.registry_server_name || '', /^[a-z0-9._-]+\/[a-z0-9._-]+$/);
-    assert.ok(semver(state?.source_candidate?.version), 'Source candidate version missing');
-    assert.equal(state.source_candidate.status, 'unpublished-source');
-    assert.match(state.source_candidate.base_commit || '', /^[a-f0-9]{40}$/);
-    assert.equal(typeof state.source_candidate.working_tree, 'boolean');
+    const candidate = state?.source_candidate;
+    assert.ok(candidate === null || (candidate && typeof candidate === 'object' && !Array.isArray(candidate)), 'Source candidate must be an object or null');
+    if (candidate) {
+        assert.ok(semver(candidate.version), 'Source candidate version missing');
+        assert.equal(candidate.status, 'unpublished-source');
+        assert.match(candidate.base_commit || '', /^[a-f0-9]{40}$/);
+        assert.equal(typeof candidate.working_tree, 'boolean');
+    }
     for (const name of ['npm', 'mcp_registry', 'github_tag', 'github_release']) validateObservation(name, state.observations?.[name], now);
     const npm = state.observations.npm;
     assert.equal(npm.status, 'published', 'Hosted install requires published npm evidence');
@@ -108,7 +112,11 @@ function validatePublicationState(state, snapshot, root, now = new Date(), check
         const server = JSON.parse(fs.readFileSync(path.join(root, 'server.json'), 'utf8'));
         assert.equal(state.package.name, pkg.name, 'Publication package name differs from source package');
         assert.equal(state.package.registry_server_name, pkg.mcpName, 'Publication registry name differs from source package');
-        assert.equal(state.source_candidate.version, pkg.version, 'Source candidate version differs from package');
+        if (candidate) {
+            assert.equal(candidate.version, pkg.version, 'Source candidate version differs from package');
+        } else {
+            assert.equal(npm.version, pkg.version, 'Absent source candidate requires published npm version to match source package');
+        }
         assert.equal(server.version, pkg.version, 'Candidate server manifest version differs from package');
         assert.equal(server.name, pkg.mcpName, 'Candidate server manifest name differs from package');
         const evidenceFiles = {};

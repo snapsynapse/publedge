@@ -53,6 +53,22 @@ function rpc(proc, id, method, params) {
             env: { ...process.env, npm_config_cache: cache }
         });
 
+        const packagedReadme = fs.readFileSync(path.join(tempDir, 'node_modules', 'publedge', 'README.md'), 'utf8');
+        if (!packagedReadme.includes(`Package v${packageVersion}; protocol specification v0.2.0.`)) {
+            failures.push('installed package README is missing its package and protocol version contract');
+        }
+        for (const [pattern, label] of [
+            [/\bpublished MCP(?: server)?\b/i, 'published-MCP label'],
+            [/\bsource candidate v\d+\.\d+\.\d+\b/i, 'source-candidate version label'],
+            [/\bunpublished(?:[-\s]source)?\b/i, 'unpublished-source label']
+        ]) {
+            if (pattern.test(packagedReadme)) failures.push(`installed package README retains mutable publication label: ${label}`);
+        }
+        const packagePin = new RegExp(`\\bpubledge@(?!${packageVersion.replaceAll('.', '\\.')}\\b)\\d+\\.\\d+\\.\\d+\\b`);
+        if (packagePin.test(packagedReadme)) {
+            failures.push('installed package README pins a different package version');
+        }
+
         const reviewReceiptPath = path.join(
             tempDir,
             'node_modules',
