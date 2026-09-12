@@ -5,12 +5,12 @@
       "command": "npx",
       "args": [
         "-y",
-        "publedge@0.2.2"
+        "publedge@0.2.3"
       ],
-      "description": "Published read-only PubLedge 0.2.2 with 13 tools.",
-      "published_version": "0.2.2",
+      "description": "Published read-only PubLedge 0.2.3 with 13 tools.",
+      "published_version": "0.2.3",
       "source_candidate": {
-        "version": "0.2.3",
+        "version": "0.2.4",
         "status": "unpublished-source"
       },
       "protocol_versions": [
