@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "repository": "https://github.com/snapsynapse/publedge",
+  "profile": "package",
+  "authority": "R1",
+  "start_head": "96ee83ea592d8348793e88d4847861a97611dff8",
+  "candidate_head": "96ee83ea592d8348793e88d4847861a97611dff8",
+  "candidate_version": "0.2.3",
+  "updated_at": "2026-09-12T15:07:47Z",
+  "steps": [
+    {
+      "id": "release_surfaces",
+      "status": "ready",
+      "evidence": "package.json, package-lock.json, server.json, RELEASE_NOTES-v0.2.3.md, and source/generated publication boundaries are coherent at 96ee83ea; protocol remains v0.2.0.",
+      "head": "96ee83ea592d8348793e88d4847861a97611dff8",
+      "completed_at": "2026-09-12T15:10:00Z"
+    },
+    {
+      "id": "local_full_gate_and_consumer_smoke",
+      "status": "ready",
+      "evidence": "CHECK_OF_REQUIRED=1 with the prepared Obligation-First 0.6.6 candidate passed npm run verify:ci, including the packed installed-consumer smoke. See ops/PREPARATION-v0.2.3-2026-09-12.md.",
+      "head": "96ee83ea592d8348793e88d4847861a97611dff8",
+      "completed_at": "2026-09-12T15:10:00Z"
+    },
+    {
+      "id": "artifacts",
+      "status": "ready",
+      "evidence": "76-file npm archive and 1,464-entry source tar/zip archives were generated from clean 96ee83ea with recorded SHA-256 values in ops/PREPARATION-v0.2.3-2026-09-12.md.",
+      "head": "96ee83ea592d8348793e88d4847861a97611dff8",
+      "completed_at": "2026-09-12T15:10:00Z"
+    },
+    {
+      "id": "provider_conflict_check",
+      "status": "ready",
+      "evidence": "Read-only checks found GitHub tag/release, npm, and Official MCP Registry at 0.2.2; v0.2.3 is absent and available for one publication attempt.",
+      "head": "96ee83ea592d8348793e88d4847861a97611dff8",
+      "completed_at": "2026-09-12T15:10:00Z"
+    },
+    {
+      "id": "tag_and_github_release",
+      "status": "not_started",
+      "evidence": "Requires R2 authority.",
+      "head": null,
+      "completed_at": null
+    },
+    {
+      "id": "npm_publication",
+      "status": "not_started",
+      "evidence": "Requires R2 authority.",
+      "head": null,
+      "completed_at": null
+    },
+    {
+      "id": "mcp_registry_publication",
+      "status": "not_started",
+      "evidence": "Requires R2 authority.",
+      "head": null,
+      "completed_at": null
+    },
+    {
+      "id": "post_publication_live_receipt",
+      "status": "not_started",
+      "evidence": "Requires provider confirmations followed by a separately validated documentation receipt.",
+      "head": null,
+      "completed_at": null
+    }
+  ]
+}
