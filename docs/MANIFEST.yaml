@@ -1118,7 +1118,7 @@ files:
 
   - path: ops/evidence/publication-state-2026-09-12-v0.2.5.json
     role: evidence
-    hash: sha256:c8589f8fcfcd861a6335e9edd2b2fd4b92084bb7f50a8d14cde8cf9971236eb1
+    hash: sha256:9dd9642163e854b9d7f256cc78dd2fb1dca04e1551be3077f7c044328ea13913
     note: PubLedge v0.2.5 publication identity receipt
 
   - path: ops/evidence/source-admission-tranche-2026-09-09.json

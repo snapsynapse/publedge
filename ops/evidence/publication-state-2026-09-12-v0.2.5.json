@@ -16,7 +16,7 @@
   "verification": [
     "Downloaded the npm registry tarball, matched its SHA-256 to the tested and GitHub Release artifacts, installed it in a clean consumer, and exercised initialize and tools/list.",
     "Observed npm, the Official MCP Registry, the annotated Git tag, and the GitHub Release independently.",
-    "Resolved the signed annotated tag to the exact tested release commit 0105c7b38f650f1640fe6f14132ce8da479bc7de.",
+    "Resolved the annotated tag to the exact tested release commit 0105c7b38f650f1640fe6f14132ce8da479bc7de; GitHub's tag-object response reported signature verification as valid.",
     "MCP publication initially returned HTTP 401 because the registry JWT expired; a fresh authenticated publisher session then published v0.2.5 and the final active/latest provider record was observed."
   ],
   "limits": [
