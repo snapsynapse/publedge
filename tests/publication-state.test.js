@@ -8,19 +8,28 @@ const ROOT = path.join(__dirname, '..');
 const { validatePublicationState, publicMcpIdentity, loadPublicationState } = require('../scripts/lib/publication-state');
 
 function fixtures() {
-    return {
-        state: JSON.parse(fs.readFileSync(path.join(ROOT, 'design/publication-state.json'), 'utf8')),
-        snapshot: JSON.parse(fs.readFileSync(path.join(ROOT, 'design/PUBLISHED-MCP-0.2.3.snapshot.json'), 'utf8'))
+    const state = JSON.parse(fs.readFileSync(path.join(ROOT, 'design/publication-state.json'), 'utf8'));
+    return { state, snapshot: JSON.parse(fs.readFileSync(path.join(ROOT, state.observations.npm.artifact_snapshot_path), 'utf8')) };
+}
+
+function sourceAhead(state, version = '0.2.5') {
+    const candidate = structuredClone(state);
+    candidate.source_candidate = {
+        version,
+        status: 'unpublished-source',
+        base_commit: '0'.repeat(40),
+        working_tree: true
     };
+    return candidate;
 }
 
 test('candidate ahead selects the evidenced npm artifact without auto-promotion', () => {
     const { state, snapshot } = fixtures();
-    const result = publicMcpIdentity(state, snapshot, ROOT);
-    assert.equal(state.source_candidate.version, '0.2.4');
-    assert.equal(result.package, 'publedge@0.2.3');
-    const mutated = structuredClone(state);
-    mutated.source_candidate.version = '0.2.9';
+    const candidate = sourceAhead(state);
+    const result = publicMcpIdentity(candidate, snapshot);
+    assert.equal(candidate.source_candidate.version, '0.2.5');
+    assert.equal(result.package, `publedge@${state.observations.npm.version}`);
+    const mutated = sourceAhead(state, '0.2.9');
     const after = publicMcpIdentity(mutated, snapshot);
     assert.equal(after.package, result.package);
     assert.equal(after.version, result.version);
@@ -36,40 +45,51 @@ test('candidate-only capabilities cannot leak into published discovery', () => {
 
 test('version-only changes cannot move publication state', () => {
     const { state, snapshot } = fixtures();
-    state.observations.npm.version = '0.2.4';
+    state.observations.npm.version = '0.2.5';
     assert.throws(() => publicMcpIdentity(state, snapshot, ROOT), /evidence URL drift|snapshot version/);
 });
 
 test('fabricated provider publication cannot erase partial-channel evidence', () => {
     const { state, snapshot } = fixtures();
-    assert.equal(state.observations.npm.version, '0.2.3');
-    assert.equal(state.observations.mcp_registry.version, '0.2.2');
     const fabricated = structuredClone(state);
-    fabricated.observations.mcp_registry.version = '0.2.3';
+    fabricated.observations.mcp_registry.version = '0.2.5';
     assert.throws(() => validatePublicationState(fabricated, snapshot, ROOT), /MCP Registry provider version drift/);
-    fabricated.observations.mcp_registry.version = '0.2.2';
+    fabricated.observations.mcp_registry.version = state.observations.mcp_registry.version;
+    fabricated.source_candidate = sourceAhead(state).source_candidate;
     fabricated.source_candidate.status = 'published-source';
     assert.throws(() => validatePublicationState(fabricated, snapshot, ROOT), /unpublished-source/);
 });
 
 test('candidate lifecycle permits structurally valid partial and complete publication states', () => {
     const { state, snapshot } = fixtures();
-    assert.equal(publicMcpIdentity(state, snapshot).version, '0.2.3');
+    const candidate = sourceAhead(state);
+    assert.equal(publicMcpIdentity(candidate, snapshot).version, state.observations.npm.version);
 
-    const npmPublishedMcpOlder = structuredClone(state);
+    const npmPublishedMcpOlder = structuredClone(candidate);
     npmPublishedMcpOlder.source_candidate = null;
     // Retained provider evidence is bound when a repository root is supplied.
     // These fixtures isolate lifecycle structure because their provider files remain immutable.
-    assert.equal(publicMcpIdentity(npmPublishedMcpOlder, snapshot).version, '0.2.3');
-    assert.equal(npmPublishedMcpOlder.observations.mcp_registry.version, '0.2.2');
+    npmPublishedMcpOlder.observations.mcp_registry.version = '0.2.3';
+    assert.equal(publicMcpIdentity(npmPublishedMcpOlder, snapshot).version, state.observations.npm.version);
+    assert.equal(npmPublishedMcpOlder.observations.mcp_registry.version, '0.2.3');
 
     const allPublished = structuredClone(npmPublishedMcpOlder);
-    allPublished.observations.mcp_registry.version = '0.2.3';
-    assert.equal(publicMcpIdentity(allPublished, snapshot).version, '0.2.3');
+    allPublished.observations.mcp_registry.version = state.observations.npm.version;
+    assert.equal(publicMcpIdentity(allPublished, snapshot).version, state.observations.npm.version);
 
-    const tooSoon = structuredClone(state);
-    tooSoon.source_candidate = null;
-    assert.throws(() => validatePublicationState(tooSoon, snapshot, ROOT), /Absent source candidate requires published npm version/);
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'publedge-state-lifecycle-'));
+    try {
+        fs.mkdirSync(path.join(root, 'reference', 'verify'), { recursive: true });
+        fs.cpSync(path.join(ROOT, 'design'), path.join(root, 'design'), { recursive: true });
+        fs.copyFileSync(path.join(ROOT, 'reference', 'verify', 'index.html'), path.join(root, 'reference', 'verify', 'index.html'));
+        const packageJson = { ...JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')), version: '0.2.5' };
+        const serverJson = { ...JSON.parse(fs.readFileSync(path.join(ROOT, 'server.json'), 'utf8')), version: '0.2.5' };
+        fs.writeFileSync(path.join(root, 'package.json'), JSON.stringify(packageJson));
+        fs.writeFileSync(path.join(root, 'server.json'), JSON.stringify(serverJson));
+        assert.throws(() => validatePublicationState(state, snapshot, root, new Date(), false), /Absent source candidate requires published npm version/);
+    } finally {
+        fs.rmSync(root, { recursive: true, force: true });
+    }
 });
 
 test('missing or wrong immutable artifact evidence fails', () => {
@@ -176,7 +196,12 @@ test('guide anchor exists, is hash-bound, and remains outside the published pack
 });
 
 test('generated publication state and evidence snapshots match source bytes', () => {
-    for (const filename of ['publication-state.json', 'PUBLISHED-MCP-0.2.3.snapshot.json', 'PUBLICATION-PROVIDERS-2026-09-12.snapshot.json']) {
+    const { state } = fixtures();
+    for (const filename of [
+        'publication-state.json',
+        path.basename(state.observations.npm.artifact_snapshot_path),
+        path.basename(state.observations.npm.evidence_path)
+    ]) {
         assert.deepEqual(
             fs.readFileSync(path.join(ROOT, 'docs/design', filename)),
             fs.readFileSync(path.join(ROOT, 'design', filename)),
