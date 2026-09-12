@@ -1371,15 +1371,15 @@
         "present": 17
       },
       "pub:source_review_state": {
-        "explicit_unknown": 15,
+        "explicit_unknown": 13,
         "missing": 0,
-        "populated": 2,
+        "populated": 4,
         "present": 17
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 15,
-        "populated": 2,
+        "null": 13,
+        "populated": 4,
         "present": 17
       },
       "resulting_instrument": {
@@ -1549,15 +1549,15 @@
         "present": 18
       },
       "pub:source_review_state": {
-        "explicit_unknown": 16,
+        "explicit_unknown": 14,
         "missing": 0,
-        "populated": 2,
+        "populated": 4,
         "present": 18
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 16,
-        "populated": 2,
+        "null": 14,
+        "populated": 4,
         "present": 18
       },
       "pub:status": {
@@ -1805,15 +1805,15 @@
         "present": 12
       },
       "pub:source_review_state": {
-        "explicit_unknown": 10,
+        "explicit_unknown": 9,
         "missing": 0,
-        "populated": 2,
+        "populated": 3,
         "present": 12
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 10,
-        "populated": 2,
+        "null": 9,
+        "populated": 3,
         "present": 12
       },
       "pub:status": {
@@ -1957,15 +1957,15 @@
         "present": 35
       },
       "pub:source_review_state": {
-        "explicit_unknown": 26,
+        "explicit_unknown": 24,
         "missing": 0,
-        "populated": 9,
+        "populated": 11,
         "present": 35
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 26,
-        "populated": 9,
+        "null": 24,
+        "populated": 11,
         "present": 35
       },
       "pub:status": {
@@ -2102,15 +2102,15 @@
         "present": 9
       },
       "pub:source_review_state": {
-        "explicit_unknown": 8,
+        "explicit_unknown": 6,
         "missing": 0,
-        "populated": 1,
+        "populated": 3,
         "present": 9
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 8,
-        "populated": 1,
+        "null": 6,
+        "populated": 3,
         "present": 9
       },
       "pub:status": {
@@ -2248,15 +2248,15 @@
         "present": 16
       },
       "pub:source_review_state": {
-        "explicit_unknown": 13,
+        "explicit_unknown": 11,
         "missing": 0,
-        "populated": 3,
+        "populated": 5,
         "present": 16
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 13,
-        "populated": 3,
+        "null": 11,
+        "populated": 5,
         "present": 16
       },
       "section": {
@@ -2923,51 +2923,71 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/determination/us-ut-legislature-statute-2024-sb149-issuance.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "245dc17c39eb7f7cab01918286c67dfe1f8ba6c7b34a3800835ffd180c7ff941",
+          "native_file_sha256": "372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+          ],
+          "review_packet_sha256": "4f6f7ab0b94560d1e81548a417d56e0026eee2e21799079f7baa04f2b448aa7e",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "declared",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
       "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
       "source_review_conflicts": null
     },
     "https://publedge.org/determination/us-ut-legislature-statute-2025-hb452-issuance.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "3a793ef60b0746232aa436aaa4e5eccb5604dc716c314cd1045b5fa6578968b9",
+          "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          ],
+          "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "declared",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
       "source_citation": "Utah HB 452 (2025 General Session)",
       "source_review_conflicts": null
@@ -3377,51 +3397,71 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/instrument/us-ut-legislature-statute-2024-sb149.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "245dc17c39eb7f7cab01918286c67dfe1f8ba6c7b34a3800835ffd180c7ff941",
+          "native_file_sha256": "372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+          ],
+          "review_packet_sha256": "4f6f7ab0b94560d1e81548a417d56e0026eee2e21799079f7baa04f2b448aa7e",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "declared",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
       "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
       "source_review_conflicts": null
     },
     "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "3a793ef60b0746232aa436aaa4e5eccb5604dc716c314cd1045b5fa6578968b9",
+          "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          ],
+          "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "declared",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
       "source_citation": "Utah HB 452 (2025 General Session)",
       "source_review_conflicts": null
@@ -5135,16 +5175,21 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "3a793ef60b0746232aa436aaa4e5eccb5604dc716c314cd1045b5fa6578968b9",
+          "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          ],
+          "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -5171,8 +5216,11 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
       "source_citation": "Utah HB 452 (2025 General Session)",
       "source_locator": "Summary",
@@ -5185,16 +5233,21 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "3a793ef60b0746232aa436aaa4e5eccb5604dc716c314cd1045b5fa6578968b9",
+          "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          ],
+          "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -5221,8 +5274,11 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
       "source_citation": "Utah HB 452 (2025 General Session)",
       "source_locator": "Summary",
@@ -5235,16 +5291,21 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "3a793ef60b0746232aa436aaa4e5eccb5604dc716c314cd1045b5fa6578968b9",
+          "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          ],
+          "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -5271,8 +5332,11 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
       "source_citation": "Utah HB 452 (2025 General Session)",
       "source_locator": "Summary",
@@ -5785,16 +5849,25 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "245dc17c39eb7f7cab01918286c67dfe1f8ba6c7b34a3800835ffd180c7ff941",
+          "native_file_sha256": "372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+          ],
+          "review_packet_sha256": "4f6f7ab0b94560d1e81548a417d56e0026eee2e21799079f7baa04f2b448aa7e",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -5821,8 +5894,11 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
       "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
       "source_locator": "Summary",
@@ -5835,16 +5911,25 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "245dc17c39eb7f7cab01918286c67dfe1f8ba6c7b34a3800835ffd180c7ff941",
+          "native_file_sha256": "372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+          ],
+          "review_packet_sha256": "4f6f7ab0b94560d1e81548a417d56e0026eee2e21799079f7baa04f2b448aa7e",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -5871,8 +5956,11 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
       "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
       "source_locator": "Summary",
@@ -7299,16 +7387,21 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "3a793ef60b0746232aa436aaa4e5eccb5604dc716c314cd1045b5fa6578968b9",
+          "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+          ],
+          "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -7323,8 +7416,11 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
       "source_citation": "Utah HB 452 (2025 General Session)",
       "source_locator": "Summary",
@@ -7451,16 +7547,25 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "245dc17c39eb7f7cab01918286c67dfe1f8ba6c7b34a3800835ffd180c7ff941",
+          "native_file_sha256": "372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+          ],
+          "review_packet_sha256": "4f6f7ab0b94560d1e81548a417d56e0026eee2e21799079f7baa04f2b448aa7e",
+          "unresolved": [
+            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -7475,8 +7580,11 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
+        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+      ],
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
       "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
       "source_locator": "Summary",

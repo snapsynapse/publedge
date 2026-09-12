@@ -11,7 +11,7 @@ Living housekeeping document. Tracks what shipped, what's pending, and what's de
 
 ## Current version
 
-Package `v0.2.4`; protocol specification `v0.2.0`. Current npm, MCP Registry, GitHub tag, and GitHub Release observations are recorded in the [publication state](design/publication-state.json).
+Package `v0.2.5`; protocol specification `v0.2.0`. Current npm, MCP Registry, GitHub tag, and GitHub Release observations are recorded in the [publication state](design/publication-state.json).
 
 ## Current disposition
 

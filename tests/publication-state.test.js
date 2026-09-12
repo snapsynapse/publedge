@@ -12,7 +12,12 @@ function fixtures() {
     return { state, snapshot: JSON.parse(fs.readFileSync(path.join(ROOT, state.observations.npm.artifact_snapshot_path), 'utf8')) };
 }
 
-function sourceAhead(state, version = '0.2.5') {
+function nextPatch(version) {
+    const [major, minor, patch] = version.split('.').map(Number);
+    return `${major}.${minor}.${patch + 1}`;
+}
+
+function sourceAhead(state, version = nextPatch(state.observations.npm.version)) {
     const candidate = structuredClone(state);
     candidate.source_candidate = {
         version,
@@ -27,7 +32,7 @@ test('candidate ahead selects the evidenced npm artifact without auto-promotion'
     const { state, snapshot } = fixtures();
     const candidate = sourceAhead(state);
     const result = publicMcpIdentity(candidate, snapshot);
-    assert.equal(candidate.source_candidate.version, '0.2.5');
+    assert.equal(candidate.source_candidate.version, nextPatch(state.observations.npm.version));
     assert.equal(result.package, `publedge@${state.observations.npm.version}`);
     const mutated = sourceAhead(state, '0.2.9');
     const after = publicMcpIdentity(mutated, snapshot);
@@ -82,11 +87,14 @@ test('candidate lifecycle permits structurally valid partial and complete public
         fs.mkdirSync(path.join(root, 'reference', 'verify'), { recursive: true });
         fs.cpSync(path.join(ROOT, 'design'), path.join(root, 'design'), { recursive: true });
         fs.copyFileSync(path.join(ROOT, 'reference', 'verify', 'index.html'), path.join(root, 'reference', 'verify', 'index.html'));
-        const packageJson = { ...JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')), version: '0.2.5' };
-        const serverJson = { ...JSON.parse(fs.readFileSync(path.join(ROOT, 'server.json'), 'utf8')), version: '0.2.5' };
+        const unpublishedVersion = nextPatch(state.observations.npm.version);
+        const packageJson = { ...JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')), version: unpublishedVersion };
+        const serverJson = { ...JSON.parse(fs.readFileSync(path.join(ROOT, 'server.json'), 'utf8')), version: unpublishedVersion };
         fs.writeFileSync(path.join(root, 'package.json'), JSON.stringify(packageJson));
         fs.writeFileSync(path.join(root, 'server.json'), JSON.stringify(serverJson));
-        assert.throws(() => validatePublicationState(state, snapshot, root, new Date(), false), /Absent source candidate requires published npm version/);
+        const missingCandidate = structuredClone(state);
+        missingCandidate.source_candidate = null;
+        assert.throws(() => validatePublicationState(missingCandidate, snapshot, root, new Date(), false), /Absent source candidate requires published npm version/);
     } finally {
         fs.rmSync(root, { recursive: true, force: true });
     }

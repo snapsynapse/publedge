@@ -5,7 +5,12 @@
     "name": "publedge",
     "registry_server_name": "io.github.snapsynapse/publedge"
   },
-  "source_candidate": null,
+  "source_candidate": {
+    "version": "0.2.5",
+    "status": "unpublished-source",
+    "base_commit": "b02e521aad179845c4210a419b8d1fba729f2783",
+    "working_tree": true
+  },
   "observations": {
     "npm": {
       "status": "published",

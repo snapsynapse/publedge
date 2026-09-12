@@ -5,27 +5,41 @@
   <link href="https://publedge.org/" rel="alternate"/>
   <link href="https://publedge.org/atom.xml" rel="self"/>
   <id>https://publedge.org/</id>
-  <updated>2026-09-09T00:00:00.000Z</updated>
+  <updated>2026-09-12T00:00:00.000Z</updated>
   <author><name>PubLedge</name></author>
   <entry>
     <id>https://publedge.org/us/colorado/legislature/statute/2025-001/</id>
     <title>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)</title>
     <link href="https://publedge.org/us/colorado/legislature/statute/2025-001/"/>
-    <updated>2026-09-09T00:00:00.000Z</updated>
+    <updated>2026-09-12T00:00:00.000Z</updated>
     <summary>Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)</summary>
   </entry>
   <entry>
     <id>https://publedge.org/us/colorado/legislature/statute/2024-001/</id>
     <title>Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems</title>
     <link href="https://publedge.org/us/colorado/legislature/statute/2024-001/"/>
-    <updated>2026-09-09T00:00:00.000Z</updated>
+    <updated>2026-09-12T00:00:00.000Z</updated>
     <summary>Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/legislature/statute/2024-001/</id>
+    <title>Utah SB 149 (2024) — Artificial Intelligence Amendments</title>
+    <link href="https://publedge.org/us/utah/legislature/statute/2024-001/"/>
+    <updated>2026-09-12T00:00:00.000Z</updated>
+    <summary>Utah SB 149 (2024) — Artificial Intelligence Amendments</summary>
+  </entry>
+  <entry>
+    <id>https://publedge.org/us/utah/legislature/statute/2025-002/</id>
+    <title>Utah HB 452 (2025) — Mental Health Chatbot Regulations</title>
+    <link href="https://publedge.org/us/utah/legislature/statute/2025-002/"/>
+    <updated>2026-09-12T00:00:00.000Z</updated>
+    <summary>Utah HB 452 (2025) — Mental Health Chatbot Regulations</summary>
   </entry>
   <entry>
     <id>https://publedge.org/us/utah/oaip/rma/2025-002/</id>
     <title>Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)</title>
     <link href="https://publedge.org/us/utah/oaip/rma/2025-002/"/>
-    <updated>2026-09-09T00:00:00.000Z</updated>
+    <updated>2026-09-12T00:00:00.000Z</updated>
     <summary>Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)</summary>
   </entry>
 </feed>
