@@ -1,0 +1,27 @@
+{
+  "receipt_version": 1,
+  "recorded_at": "2026-09-12T20:39:41.859Z",
+  "scope": "PubLedge v0.2.5 independent provider observations",
+  "source_candidate": null,
+  "published": {
+    "npm_version": "0.2.5",
+    "mcp_registry_version": "0.2.5",
+    "github_tag": "v0.2.5",
+    "github_release": "v0.2.5",
+    "tarball_sha256": "7eaea341b2d399cad25ec7d6e0314741a650d84773814cd039ae95d1674c6851",
+    "integrity": "sha512-lW4/dL65pt0d6KuQ1qmZsOILHsTfoWLTyebc9vPyDCZYGI5ZprOV3grlyvyWqL+h7f412aqdumZ7GcN0nLJ0GA==",
+    "tool_count": 13,
+    "install": "npx -y publedge@0.2.5"
+  },
+  "verification": [
+    "Downloaded the npm registry tarball, matched its SHA-256 to the tested and GitHub Release artifacts, installed it in a clean consumer, and exercised initialize and tools/list.",
+    "Observed npm, the Official MCP Registry, the annotated Git tag, and the GitHub Release independently.",
+    "Resolved the signed annotated tag to the exact tested release commit 0105c7b38f650f1640fe6f14132ce8da479bc7de.",
+    "MCP publication initially returned HTTP 401 because the registry JWT expired; a fresh authenticated publisher session then published v0.2.5 and the final active/latest provider record was observed."
+  ],
+  "limits": [
+    "The Git tag and GitHub Release remain independent observations.",
+    "The retained provider file is a normalized observation snapshot; raw provider response bodies were not retained, and their recorded response digests cannot be recomputed from that snapshot.",
+    "Provider state can change after the recorded observation times."
+  ]
+}

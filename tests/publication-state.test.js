@@ -50,14 +50,14 @@ test('candidate-only capabilities cannot leak into published discovery', () => {
 
 test('version-only changes cannot move publication state', () => {
     const { state, snapshot } = fixtures();
-    state.observations.npm.version = '0.2.5';
+    state.observations.npm.version = nextPatch(state.observations.npm.version);
     assert.throws(() => publicMcpIdentity(state, snapshot, ROOT), /evidence URL drift|snapshot version/);
 });
 
 test('fabricated provider publication cannot erase partial-channel evidence', () => {
     const { state, snapshot } = fixtures();
     const fabricated = structuredClone(state);
-    fabricated.observations.mcp_registry.version = '0.2.5';
+    fabricated.observations.mcp_registry.version = nextPatch(state.observations.mcp_registry.version);
     assert.throws(() => validatePublicationState(fabricated, snapshot, ROOT), /MCP Registry provider version drift/);
     fabricated.observations.mcp_registry.version = state.observations.mcp_registry.version;
     fabricated.source_candidate = sourceAhead(state).source_candidate;
