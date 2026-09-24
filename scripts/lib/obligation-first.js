@@ -347,7 +347,12 @@ function buildObligationRecords(config, data) {
             const detail = provisionDetails.get(mapping.id);
             const provision = detail ? detail.provision : {};
             const recordId = concreteObligationId(mapping.id, obligationId);
-            const lifecycle = primary.lifecycle_status || provision.status || container?.status;
+            // A concrete obligation created only by a draft or proposed term is
+            // itself unissued: the term's state overrides the definition's
+            // generic lifecycle so a draft-derived duty never reads as operative.
+            const termStatus = provision.status || container?.status;
+            const draftCreated = ['draft', 'proposed'].includes(normalizeStatus(termStatus));
+            const lifecycle = draftCreated ? termStatus : primary.lifecycle_status || termStatus;
             records.push(withEvidenceBoundary(compact({
                 '@context': recordContext(config),
                 '@type': obligationType(primary.group),
@@ -359,8 +364,8 @@ function buildObligationRecords(config, data) {
                 applicability: provision.scope ? [`scope:${provision.scope}`] : undefined,
                 anchors: sourceOwnedAnchors(mapping).obligationAnchors.length ? sourceOwnedAnchors(mapping).obligationAnchors : undefined,
                 lifecycle_status: normalizeStatus(lifecycle),
-                operative_status: primary.operative_status || container?.operative_status || operativeStatus(lifecycle, force),
-                enforcement_status: primary.enforcement_status || container?.enforcement_status || enforcementStatus({ status: lifecycle, type: container?.type }, force),
+                operative_status: (draftCreated ? undefined : primary.operative_status) || container?.operative_status || operativeStatus(lifecycle, force),
+                enforcement_status: (draftCreated ? undefined : primary.enforcement_status) || container?.enforcement_status || enforcementStatus({ status: lifecycle, type: container?.type }, force),
                 jurisdiction: typedJurisdiction(container?.jurisdiction),
                 ...provenance(config, container?.official_url, provision.sections || mapping.source_heading, primary.last_verified || provision.verified || container?.last_verified, instrumentCitation(container || {})),
                 'pub:primary_id': obligationId,
