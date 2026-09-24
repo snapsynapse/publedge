@@ -1,0 +1,281 @@
+AI Authorized Pilots - commerce.utah.gov
+block, paste it
+into .oaip-register in date order, newest first, and change nine things:
+1. and the id on it company name, and a matching slug id
+2. the badge word plus one of the classes above
+3. Signed the execution date, in full
+4. Term the date range, "Month D, YYYY - Month
+D, YYYY", or a plain sentence where no
+period has begun
+5. Regulator the agency that co-signed
+6. "What it does" two sentences, no marketing language
+7. "Relief granted" the specific relief, then the sections
+8. "What the company agreed to" three to five conditions, shortest first
+9. the "Learn more" button href to that pilot's page, and the
+aria-label, which must name the pilot so
+the buttons stay distinguishable to a
+screen reader listing links out of order
+The intro deliberately carries no count ("The following organizations..."),
+so adding a pilot needs no edit there. Nothing else on the page is per-pilot
+and the register reflows on its own, so a fifth and sixth entry need no CSS
+change.
+Each entry carries ONE control, a "Learn more" button to that pilot's own
+page, so the signed agreement and the outcome reports are reached one click
+further in. That makes the pilot pages load-bearing: if a pilot page does not
+link its own signed agreement, fix the pilot page rather than adding a second
+link back into this card.
+Open items before publish: the live index links all four pilots through
+/ai/regulatory-mitigation/agreements/ /, which 301-redirects, while this
+block links the canonical /ai/regulatory-relief/authorized-ai-pilots/ paths;
+confirm those redirects stay in place for anyone holding an old link. A human
+screen-reader pass and a keyboard-only pass are still owed.
+---------------------------------------------------------------------------
+BAND ORDER
+---------------------------------------------------------------------------
+1 hero, 2 intro, 3 the register, 4 limits, 5 oversight (one full-width
+column; published documents live on the individual pilot pages), 6 raise a
+concern, 7 apply. There is no contact band: the site footer already carries the
+address, phone, and hours, and the RAISE A CONCERN band already carries
+ai@utah.gov in context. If one is ever added, it goes after the apply band.
+COPY STANDARD: this office uses the Oxford comma. Every list of three or
+more items on this page carries a comma before the final "and" or "or".
+Dates are written "Month D, YYYY" throughout, never "D Month YYYY".
+---------------------------------------------------------------------------
+COLOUR - every value is an official Utah brand token
+---------------------------------------------------------------------------
+--teal #165857 = --utah-brand-secondary-color-teal-04, the Department of
+Commerce colour: headings, links, filled surfaces
+--teal-dark #0D262E = --utah-brand-secondary-color-teal-05: link hover,
+focus ring, hero fallback, card-button hover
+--gold #FFB81D = --utah-brand-primary-color-gold-light
+--gold-ink #633D11 = --utah-brand-secondary-color-orange-05
+--hover #A6C4CA = --utah-brand-secondary-color-teal-00, hover flash only
+--panel #F1F1F1 = the design system's --gray-light-color
+--ink #474747 = the design system default body colour
+--green #007000 = the Active badge, and nothing else. NOT a Utah brand
+token; the brand greens are lighter and would not hold
+white label text. Confining it to one badge keeps it
+reading as a status colour rather than a second brand
+colour competing with the teal.
+--navy #093692 = --utah-brand-primary-color-blue-medium, the Approved
+badge and nothing else. It exists so Approved and Active
+are distinguishable from each other at a glance.
+The whole palette swaps from the token block; no rule below hard-codes a
+colour.
+Contrast, computed with the WCAG relative-luminance formula, not eyeballed.
+Text: body ink 9.29:1 on white and 8.23:1 on band grey; teal 8.18:1 on white
+and 7.24:1 on band grey; white on teal 8.18:1; the hero title over the teal
+band at its worst case, a pure white photo pixel behind it, 5.92:1.
+Badges, label and fill edge alike: Active white on #007000 6.33:1; Approved
+white on teal 8.18:1; Expired #633D11 on gold 5.50:1 with a 9.52:1 outline;
+Completed #474747 outline and label 9.29:1.
+Buttons: gold label 5.50:1 at rest and 5.15:1 on the hover flash. On the teal
+apply band the gold fill is 4.72:1 against the band. On a white pilot card the
+gold fill is only 1.73:1, so that button's 1px #633D11 border carries the
+control boundary at 9.52:1 against the card, in every state including hover.
+Focus ring #0D262E: 15.74:1 on white, 13.94:1 on band grey; white on teal
+8.18:1. All clear AA. Most clear AAA.
+A gold fill on white is a 1.73:1 edge, under the 3:1 that WCAG 1.4.11 wants
+for a control boundary. Every gold surface on white here therefore carries a
+1px #633D11 outline that supplies the boundary instead: the "Learn more"
+buttons on the pilot cards, and the gold Expired badge, which is not a control
+but is outlined for the same reason.
+A focus ring inside a filled card must be light: --teal-dark on a --teal fill
+is 1.93:1 and effectively invisible. The apply band overrides it to white,
+which is 8.18:1. Any new control placed on a teal fill needs the same
+override.
+TYPE
+- The scale is declared in PX on purpose. The Commerce child theme sets
+html{font-size:14px}, so a rem-based scale would silently ship 14px body
+copy. These px values are the design system's own rem steps at a 16px root.
+- h1, h2, h3 and the pilot names are UT Industry; body and UI are Source
+Sans 3. Headings are semi-bold 600, never 700.
+- Body copy is 16px everywhere, in one regular weight, including the citation
+lines and the opening paragraph. An opening paragraph is distinguished by
+position, never by size or weight.
+- The only 14px text is non-prose UI chrome: the uppercase field labels
+inside a pilot entry, the sector line, and the badges. The guide allows
+uppercase for short labels, which is what those are. Nothing else on the
+page is uppercase.
+- Left-aligned throughout. Nothing is justified. Underline is links only.
+SPACING paragraphs 24px below, headings 16px below, bands 72-80px.
+SHAPE cards and panels 6px; buttons, badges, and pills 999px.
+ELEVATION the UDS borderless set. A white card on #F1F1F1 is only 1.13:1
+against the band, so the small upward shadow is what defines its
+edge. Borders return only in Windows High Contrast mode.
+IMAGES The hero photograph is the one already in the Commerce media
+library. It is a decorative CSS background and the teal band
+supplies the message, so it takes no alt text. There are no other
+images, deliberately: a register is read, not browsed.
+NOTES FOR WHOEVER EDITS THIS LATER
+- All CSS is scoped under .oaip-pilots so it cannot leak into other pages.
+- font-family / font-size / font-weight carry !important because the Commerce
+child theme sets h2, h3 and p site-wide with !important.
+- Exactly one (the hero). Sections are h2, pilot names are h3, and the
+labels inside an entry are not headings and must not become headings.
+- Every external link and every PDF says so in its accessible name. A PDF
+link also says PDF in its visible text, because a screen-reader-only note
+does not help a sighted user on a metered connection.
+- The hero band takes no side margin. It is width:100% inside .oaip-wrap,
+which already supplies the page gutters; adding margins on top of that
+pushes it past the viewport between roughly 900px and 1100px.
+- No hairline rules, with one deliberate exception: a 1px #F1F1F1 line inside
+a pilot card separating its navigation from its content.
+============================================================================
+-->
+Authorized AI Pilots
+The following organizations have been authorized to test an artificial intelligence product in Utah under an agreement with this office and the agency that regulates them. This page is the public record of those agreements.
+Each entry below lists the participating organizations, what their product does, which Utah regulations the state agreed to set aside while the test runs, what the company had to promise in exchange, when the agreement was signed, and whether it is still in force. The page for each pilot contains the full details and the signed agreement itself.
+An agreement is not permission to do whatever the company likes. It is a narrow, time limited, written change to how one rule applies, and the company remains bound by everything else in Utah law.
+block, paste
+it in date order (newest first) and change the nine items listed in the
+header comment. -->
+The Agreements
+Legion Health
+Approved
+Psychiatry
+Signed March 19, 2026
+Term The demonstration period has not started yet.
+Co-signed with Division of Professional Licensing
+What the pilot does
+Legion Health runs an AI supported psychiatry practice. The pilot lets its system authorize a refill of a prescription a Utah patient is already taking, for stable patients on non controlled medication such as common anxiety and depression treatments. The system does not diagnose, does not start a new medication, and does not change a dose.
+Relief granted
+The Division of Professional Licensing agreed not to bring an enforcement action for unlicensed or unprofessional conduct, or under the state telehealth requirements, where the AI authorizes a renewal that a licensed prescriber would otherwise have had to authorize personally. The relief runs to the specific sections named in Schedule A of the agreement and to nothing else.
+What the company agreed to
+A licensed clinician reviews the first 250 requests before any of them completes.
+The next 1,000 requests go through intensive retrospective review, then monthly random sampling and audit continues for the rest of the term.
+Any sign of suicidality, severe side effects, mania, or pregnancy stops the process and sends the case to a clinician. A patient can ask for a human at any point.
+Patients are told AI is part of the process, and identity and prescription are verified before anything is issued.
+Monthly reporting to this office, including agreement rates between the AI and the reviewing clinician.
+Malpractice insurance that covers AI related liability.
+Learn more
+Doctronic
+Active
+Prescription renewals
+Signed October 24, 2025
+Term October 24, 2025 – October 24, 2026
+Co-signed with Division of Professional Licensing
+What the pilot does
+Doctronic uses AI to process 30, 60, and 90 day renewals of medication a licensed provider has already prescribed. It does not write a new prescription, touch controlled or addictive substances, or change a treatment plan. The pilot covers a fixed list of medications set out in the agreement and no others.
+Relief granted
+The same narrow relief as the Legion Health pilot: the Division of Professional Licensing agreed not to enforce the unlicensed conduct and telehealth provisions named in Schedule A against a renewal the AI authorizes under the agreed protocol. The relief covers the renewal function only and expressly reaches nothing else Doctronic offers.
+Where it stands
+The pilot is still in Phase 1, which means a licensed medical practitioner authorizes every request. Moving to Phase 2 requires this office to approve it, group of medications by group of medications, and it has not been approved. The 2026 amendment tightened that threshold and removed two medications from the list.
+What the company agreed to
+A three phase review, with this office deciding whether each phase advances.
+Identity and prescription verification before any renewal is processed.
+Telling the user, before the conversation starts, that they are interacting with generative AI, how their data will be used, and that they can file a complaint with this office.
+Monthly reporting, including how often the AI and the reviewing physician agreed.
+No selling user data and no advertising against it, deidentified or otherwise.
+Third party adversarial testing of the system.
+Learn more
+Dentacor
+Expired
+Mobile dental hygiene
+Signed May 31, 2025
+Term May 31, 2025 – May 31, 2026
+Co-signed with Division of Professional Licensing
+What the pilot does
+Dentacor brings dental hygiene care directly to shelters, recovery programs, and transitional housing, where a supervising dentist is rarely on site. The pilot lets a licensed dental hygienist use an AI radiograph tool to identify three specific conditions, and to perform two specific procedures that follow from them.
+Relief granted
+Utah normally requires a dentist to supervise a hygienist making those calls. Under the agreement, a hygienist finding and the AI tool reaching the same conclusion stands in place of that supervision, for periodontal disease, complete edentulism, and complete anodontia only, and for scaling and root planing and the fitting of full dentures only. Every other requirement on a dental hygienist still applies.
+What the company agreed to
+The hygienist and the AI must reach the same conclusion. If they disagree, the case goes to a licensed dentist.
+Patients consent in writing, and the consent says plainly that no dentist is supervising the procedure and what a hygienist is and is not trained to do.
+No claims to patients about the AI tool beyond what it actually does.
+A testing plan this office has accepted before any patient is seen.
+Monthly reporting covering patients seen, results, incidents, and complaints.
+HIPAA compliant systems, no sale of patient data, and no advertising against it.
+Learn more
+ElizaChat
+Expired
+Student emotional support
+Signed November 18, 2024
+Term November 18, 2024 – November 18, 2025
+Co-signed with Division of Professional Licensing
+What the pilot does
+ElizaChat is a Utah company whose app holds guided conversations with students, encourages coping strategies, and is built to recognize when a person needs a human instead. It is not therapy and it does not replace a clinician. The pilot is a phased rollout in school districts that agree to take part.
+Relief granted
+The concern is that a conversation like this could cross into the practice of mental health therapy, which in Utah requires a license. The agreement does not permit that. What it grants is a 30 day period to fix the problem: if the app does cross the line, ElizaChat must report it, tell the affected users, and remedy it, and the Division holds off on enforcement during that window. The protection stops there. It does not cover a claim by a student, a parent, an injured third party, or any other part of the state.
+What the company agreed to
+Written parental consent before any regular use by a student under 18.
+Risk assessment built into the conversation, with high risk users passed to ElizaChat's clinical team and emergency contacts and connected to a licensed therapist in real time.
+Clear disclosure to users that they are talking to AI and what it cannot do.
+Any incident harming a user's health, safety, or finances reported to this office within 24 hours.
+Anonymized storage on HIPAA compliant terms, with the district told how data is used, encrypted, and deleted.
+Whatever additional limits a participating district sets.
+Learn more
+How We Scope Our Agreement
+Three statutory limits apply to every agreement we sign with sandbox participants.
+It does not last
+A demonstration period runs no longer than 12 months. A participant may ask for a 12 month extension, no later than 30 days before the current period ends, and the office may grant at most two. There is no permanent version of this. The office may also end an agreement at any time and for any reason, and a participant has no property right or license to stay in the program.
+It is not a blank check
+An agreement changes how one identified requirement applies to one identified product. The participant remains subject to every other legal and regulatory requirement the agreement does not expressly waive or modify. A company that breaks the law, or breaks the terms of its own agreement, can be removed immediately and faces the full civil and criminal penalties it would otherwise have faced.
+It is not an endorsement
+Taking part in our AI sandbox does not mean the State of Utah has approved, endorsed, certified, or vouched for the product. It means the product is being tested under conditions the state can see and stop. Sandbox participants are also responsible for actions covered by their agreements.
+Where these limits come from. Term and extensions: Utah Code § 13-72-403 . Scope, termination, endorsement, and state liability: § 13-72-401(7) through (10). What an applicant must prove before an agreement is possible: § 13-72-402 . The program itself: § 13-72-301 .
+How Active Pilots Are Monitored
+Signing an agreement is the start of the oversight, not the end of it. Every AI sandbox participant reports to us monthly for as long as its agreement is in force, and those reports carry numbers, not assurances: how many requests the system handled, how often a reviewing clinician agreed with it, and every adverse outcome. The office is required by statute to audit a participant's use of its AI while an agreement remains in effect.
+We also report to the Legislature. Before November 30 each year the office reports to the Business and Labor Interim Committee on the learning agenda, on what the laboratory has found, on participation and outcomes, and on every agreement it has executed.
+We publish what we can. Where a pilot generates a public outcomes report, it is published on that pilot's own page. Where a regulator or a professional board has raised an objection to a pilot, we publish the objection and our answer to it, side by side, so a reader can weigh both.
+Audit duty: Utah Code § 13-72-401(6) . Annual report: § 13-72-201(3)(d) .
+Tell Us What You Are Seeing
+If you have used one of these products, or you work in a field one of them touches, what you know is valuable to our learning. You do not need to be a lawyer, a clinician, or a Utah resident to write to us, and you certainly do not need to wait for something to go wrong.
+A concern about a pilot
+Email [email protected] and name the pilot. We read everything that arrives and we take it into the next monthly review of that agreement.
+A licensed professional's conduct
+Complaints about a licensee, including one working with an AI system, go to the Division of Professional Licensing , which co-signed every agreement on this page.
+A business practice
+Misleading claims, unfair practices, and consumer harm go to the Division of Consumer Protection . An agreement with this office is no defense to a consumer protection violation.
+Thinking About Applying?
+Before an agreement is possible you have to show us four things: that you can build and supervise the technology responsibly, that you can pay for your obligations through the test, that the benefit to Utah consumers plausibly outweighs the risk of setting a rule aside, and that your plan to find and limit that risk is real. The scale and length of what you propose has to match the risk you are asking us to accept.
+If you are interested in applying, start with the process page, and read the evidence standards before reaching out to us. That is where most first drafts fall short.
+How to apply
+Read the evidence standards
+Follow us online
+Office of Artificial Intelligence Policy
+Mailing Address : P.O. Box 146741, Salt Lake City, UT 84114-6741
+Physical Address: Heber M. Wells Building 160 East 300 South Salt Lake City, Utah 84111
+Contact Info
+Phone: (801) 530-6648
+Email : [email protected]
+Hours : 8:00 AM to 5:00 PM
+Monday - Friday
+Closed for State and Federal Holidays
+Services
+Regulatory Relief
+Learning Lab
+Resources
+GRAMA Record Request
+Privacy Policy
+The Utah Department of Commerce will be closed on Wednesday, July 24, in observance of the Pioneer Day holiday. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, Sep 02, in observance of the Labor Day holiday. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, Oct 14, in observance of the Columbus Day. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Thursday, Nov 28, in observance of the Thanksgiving Day. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, Feb 17, in observance of the President's Day. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, May 26, in observance of Memorial Day. However, online services will remain available.
+Powered by Convert Plus
+The Heber Wells Building will close at 4 p.m. today. All in-person services will resume at normal business hours on Friday, June 13, and all online services will remain available today.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, June 16, in observance of the Juneteenth holiday. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Thursday, July 24, in observance of Pioneer Day. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, September 1, in observance of Labor Day. However, online services will remain available.
+Powered by Convert Plus
+Translate »
+<
+<
+<
+<
+<
+<
+<
+<
+<
+<

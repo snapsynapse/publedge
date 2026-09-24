@@ -69,8 +69,10 @@
   "pub:source_review_unresolved": [
     "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
     "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-    "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
-    "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+    "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+    "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
+    "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
+    "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
     "This agent review does not renew last_verified or authenticate human review."
   ],
   "pub:source_review_state": "declared",
@@ -78,23 +80,28 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-      "native_file_sha256": "79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984",
+      "native_file_sha256": "7a3811d21348a6fd57d5435741f0485ed7a1755fad394e40d899daf85591314e",
       "canonical_unit": null,
-      "canonical_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc",
+      "canonical_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "5e3c426d9dbdfa30f065801d88ed39cd3355f7e1b23bed008fbd4c70a48fe299",
+      "review_packet_sha256": "b1a74dfaf34b4470755e7f598d7f72cb6ae2b1efa1e94b7ae8ec5bb9af5b2371",
       "retained_primary_sha256": [
         "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
         "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+        "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
+        "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
         "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+        "cd39386fe85beb33c49e4ab63ec82dc76212171be1bb16cef403dc7483a2cd37",
         "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
         "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-        "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
-        "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+        "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
+        "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
         "This agent review does not renew last_verified or authenticate human review."
       ]
     }

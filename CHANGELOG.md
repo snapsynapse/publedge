@@ -16,6 +16,7 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 - Add source-controlled publication state with dated npm, MCP Registry, tag, and release snapshots, plus tests and evals that retain independent provider evidence through partial publication.
 - Add per-kind evidence inputs (`pub:evidence_inputs`, `admission_status`, `evidence_type`, `pub:source_review_state`) to every Obligation-First record, with regression coverage for the evidence boundary. A reviewed mapping input cannot promote a record whose native instrument or obligation definition remains legacy-unreviewed.
 - Retain D. Colo. ECF 24, the Utah HB 452 enrolled bill, and the Doctronic signed agreement, outcomes report, FAQ, and pilot page as admission sources, with source-specific regressions.
+- Retain the Legion and ElizaChat signed agreements (with OCR review snapshots), the OAIP authorized-pilots register and pilot pages, the OAIP home page, and the Utah SB 149 bill-status page as admission sources.
 
 ### Changed
 
@@ -23,6 +24,8 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 - Move EveryAILaw term and obligation anchors into the mapping index as source-owned fields with a related-not-equivalent relation, source URL, locator, and qualification, replacing the hardcoded special case in the Obligation-First export. The mapping parser now fails on malformed or duplicate entries.
 - README and current guides link to provider observations; `agents.json` and `/.well-known/mcp.json` render the independently evidenced install identity and any actual source candidate.
 - CI checks out full history so receipt retention is compared against the pull-request base or prior push head.
+- Correct the nine overdue Utah records (issue #3) and six linked obligation files against retained sources, under agent source-consistency receipts: enacting-bill citations, sunset and term-ceiling history, vote and introduction rows, sponsors and titles, statutory versus proposed disclosure triggers, RMA cure periods, phase thresholds, reporting clocks, forbearance scope, and dead official URLs. Unconfirmed facts are qualified rather than asserted. `last_verified` is unchanged.
+- Add an `obligation_qualification` field to two mapping entries; it appears in `api/v1/mappings.json`.
 
 ### Fixed
 

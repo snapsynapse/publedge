@@ -12,14 +12,14 @@ authority: utah-oaip
 issued_by:
   "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
   name: "Utah Office of Artificial Intelligence Policy (OAIP)"
-  ref: "https://commerce.utah.gov/ai/learning-lab/"
+  ref: "https://commerce.utah.gov/ai/"
 issuance_event: gist:Determination
 enacted: 2026-03-19
 effective: null
 commencement_date_trigger: "Participant's written notice to OAIP that project is ready to proceed (Section 2.B)"
 term_start: null
 term_end: null
-official_url: https://commerce.utah.gov/ai/agreements/ai-legion-health/
+official_url: https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/
 publication_citations:
   - "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf"
 source_documents:
@@ -55,11 +55,10 @@ statute_anchors:
   - cite: "Utah Code §26B-4-704 (Telehealth)"
     url: "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html"
   - cite: "UAC R156-1-501 / R156-1-602"
-    url: "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules"
 rules_mitigated:
   - "§58-1-501(1) and UAC R156-1-501(2)(b) — unlawful/unprofessional conduct for AI-authored psychiatric Rx renewal"
   - "§26B-4-704(6) and UAC R156-1-602 — telehealth-provider requirements"
-  - "Unprofessional-conduct provisions across prescriber chapters: §§58-31b-501-503, 58-60-109-111, 58-61-501-503, 58-67-501-503, 58-68-501-503, 58-70a-502-504"
+  - "Unprofessional-conduct provisions across prescriber chapters: §16E (supporting services) covers §§58-31b-501-503, 58-60-109-111, 58-61-501-503, 58-67-501-503, 58-68-501-503, 58-70a-502-504; §16D (named prescribers) is limited to §§58-31b-501-503, 58-67-501-503, 58-68-501-503"
 mitigations:
   - "Refills only for non-controlled, maintenance psychiatric medications on the Schedule B formulary (SSRIs, SNRIs, bupropion, trazodone ≤150mg, mirtazapine with metabolic monitoring, buspirone, hydroxyzine)"
   - "No new prescriptions, no dose changes, no switching or cross-taper"
@@ -68,10 +67,10 @@ mitigations:
   - "Max 10 automated refills between provider reviews, or 6 months, whichever is sooner"
   - "Identity verification via government ID + biometric/selfie matching"
   - "Escalation triggers: suicidality, severe adverse effects, mania indicators, pregnancy, human-review requests"
-  - "Phased auditing: ≥98% agreement on 250 pre-pharmacy reviews; ≥99% on 1,000 retrospective reviews; ongoing monthly sampling"
+  - "Phased auditing: 250 pre-issuance reviews, advance if concordance >98%; 1,000 retrospective reviews, advance if concordance >99%; then ongoing periodic sampling (e.g., 5-10% monthly)"
   - "GenAI disclosure (§13-77-103 and §13-72a-203) + pharmacist disclosure that the renewal was AI-generated"
   - "Monthly reporting to ai@utah.gov with acceptance/denial counts, AI-vs-clinician agreement rates, complaints, adverse outcomes"
-  - "30-business-day cure period before termination for material breach (Section 6J)"
+  - "At least 30 business days (longer if reasonably required) to propose and implement a cure for failure to meet a Section 6 obligation, before the Office may elect to terminate (Section 6J)"
 status: enacted
 editorial_status: published
 supersedes: null
@@ -84,7 +83,7 @@ disclaimer: ""
 last_verified: 2026-06-04
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-19
-modified: 2026-06-04
+modified: 2026-09-23
 ---
 
 ## Summary
@@ -93,7 +92,7 @@ A Regulatory Mitigation Agreement between the Utah Office of Artificial Intellig
 
 ## Background
 
-Utah reports mental-health-provider shortages across all 29 counties, affecting up to 500,000 residents. Legion Health, an AI-native psychiatry clinic, applied to the AI Learning Lab to automate refill authorization for maintenance psychiatric medications. Executed 2026-03-18 (OAIP Director Zachary Boyd) and 2026-03-19 (DOPL Director Mark Steinagel; Legion Health PA CEO Jonathan Kole M.D.; Legion Health, Inc. CEO Yash Patel). Effective date depends on Participant's written commencement notice (Section 2.B); term is 12 months from that commencement. The Agreement explicitly tracks the Utah Code §13-72-302 → §13-72-401 transition effective 2026-05-06.
+Legion's proposal states that all 29 Utah counties have designated mental-health shortages and that up to 500,000 residents receive no behavioral health care. Legion Health, an AI-native psychiatry clinic, applied to the AI Learning Lab to automate refill authorization for maintenance psychiatric medications. Executed 2026-03-18 (OAIP Director Zachary Boyd) and 2026-03-19 (DOPL Director Mark Steinagel; Legion Health PA CEO Jonathan Kole M.D.; Legion Health, Inc. CEO Yash Patel). Effective date depends on Participant's written commencement notice (Section 2.B); term is 12 months from that commencement. The Agreement explicitly tracks the Utah Code §13-72-302 → §13-72-401 transition effective 2026-05-06.
 
 ## Question presented
 
@@ -113,12 +112,13 @@ May Legion Health's AI technology authorize refills of non-controlled maintenanc
 ## Obligations summary (Section 6 and Schedule A §17)
 
 - Proposal-conforming methodology and protocols; amendments require signatures of all parties.
-- AI deemed compliant with §26B-4-704(2)(b)-(c) and (4) when refill protocols followed; §26B-4-704(2)(e) when escalation protocols followed; §26B-4-704(5) does not apply.
+- AI deemed compliant with §26B-4-704(2)(b)-(c) and (2)(e), and not in violation of (4), when it follows the protocols in Proposal section 4 (§17A.1-2); §26B-4-704(5) does not apply.
 - Portable electronic health records per §17B.
 - Compliance with Utah Code §13-72a (mental-health-chatbot requirements).
 - Disclosures per §13-77-103 and §13-72a-203 to users; additional disclosures to pharmacists that renewal was AI-generated.
 - Monthly reports with phased-audit benchmarks and adverse-event detail.
-- 30-business-day cure period prior to termination for material breach.
+- Proposal section 5 commits Legion to notify OAIP of defined pilot incidents within a bounded window after confirmation (target of 72 hours or less); the Agreement itself sets no incident-notification clock.
+- At least 30 business days (longer if reasonably required) to propose and implement a cure for failure to meet a Section 6 obligation, before the Office may elect to terminate (§6J).
 
 ## Reliance scope
 
@@ -140,6 +140,8 @@ Requesting-party-only. Mitigation runs to Legion Health PA, Legion Health, Inc.,
 ## Limitations
 
 - Effective date depends on Participant's commencement notice; `term_start`/`term_end` not computable from the signed document alone.
+- OAIP's Authorized AI Pilots page, retrieved 2026-09-24 (UTC), lists Legion Health as Approved and says "The demonstration period has not started yet." No retained source gives a Commencement Date or publishes the commencement notice, so `effective`, `term_start` and `term_end` remain null.
+- OAIP's register lists malpractice insurance covering AI-related liability among Legion's commitments. No insurance term appears in the retained signed agreement text; where that term is set out is unverified.
 - Does not cover new prescriptions, dose changes, switching, or cross-taper.
 - Does not cover controlled substances, benzodiazepines, antipsychotics, lithium/valproate, clozapine, or any medication requiring new labs or ECG for safe renewal.
 - Section 9 preserves IP; no transfer between parties.
@@ -147,11 +149,12 @@ Requesting-party-only. Mitigation runs to Legion Health PA, Legion Health, Inc.,
 
 ## Sources
 
-- [Agreement page — Utah OAIP](https://commerce.utah.gov/ai/agreements/ai-legion-health/)
+- [Pilot page — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/)
+- [Authorized AI Pilots — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/)
 - [Signed PDF](https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf)
 - [Utah Code Title 13, Chapter 72](https://le.utah.gov/xcode/Title13/Chapter72/13-72.html)
 - [Utah Code Title 13, Chapter 72a — Mental Health Chatbot](https://le.utah.gov/xcode/Title13/Chapter72A/13-72a.html)
 
 ## Notes on this demonstration remap
 
-Fourth RMA (`us-ut-oaip-rma-0004`). Exercises schema features not covered by earlier RMAs: (1) participant is a pair of affiliated legal entities; (2) effective date is a deferred Commencement Date not fixed at signature — the registry must represent `term_start: null`; (3) the agreement straddles a statute renumbering (§13-72-302 → §13-72-401 effective 2026-05-06) and carries both citations; (4) two-tier affiliated-provider forbearance (direct-prescriber vs. supporting-services) under one instrument.
+Fourth RMA (`us-ut-oaip-rma-2026-001`). Exercises schema features not covered by earlier RMAs: (1) participant is a pair of affiliated legal entities; (2) effective date is a deferred Commencement Date not fixed at signature — the registry must represent `term_start: null`; (3) the agreement straddles a statute renumbering (§13-72-302 → §13-72-401 effective 2026-05-06) and carries both citations; (4) two-tier affiliated-provider forbearance (direct-prescriber vs. supporting-services) under one instrument.

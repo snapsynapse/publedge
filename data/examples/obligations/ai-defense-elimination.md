@@ -6,6 +6,7 @@ group: restriction
 status: draft
 lifecycle_status: operative
 last_verified: 2026-04-21
+modified: 2026-09-23
 search_terms:
   - ai defense
   - liability
@@ -17,7 +18,7 @@ search_terms:
 
 ## Summary
 
-Utah removed "the AI did it" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror (§13-75-102, SB 226, effective 2025-05-07) together eliminate the doctrine across Utah consumer-protection and criminal law.
+Utah removed "the AI did it" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror together eliminate the doctrine across Utah consumer-protection and criminal law. The civil rule was first enacted at §13-2-12(2) (SB 149, effective 2024-05-01) and re-sited at §13-75-102 (SB 226, effective 2025-05-07).
 
 ## What Counts
 
@@ -33,5 +34,5 @@ Utah removed "the AI did it" as a defense in both civil and criminal contexts. A
 
 ## Statute Anchors
 
-- Utah Code §13-75-102 — Civil AI-as-defense elimination (SB 226, 2025)
+- Utah Code §13-75-102 — Civil AI-as-defense elimination (SB 226, 2025; formerly §13-2-12(2), SB 149, 2024)
 - Utah Code §76-2-107 — Criminal AI-as-defense / intentional prompting (SB 149, 2024)

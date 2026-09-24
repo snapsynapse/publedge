@@ -58,7 +58,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
       "canonical_unit": "entry:dentacor-rma-obligations",
       "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
       "admission_status": "legacy-unreviewed",

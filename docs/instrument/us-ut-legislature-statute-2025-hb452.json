@@ -8,8 +8,8 @@
   "@type": "of:Instrument",
   "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
   "pub:id": "us-ut-legislature-statute-2025-hb452",
-  "title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
-  "short_title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+  "title": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)",
+  "short_title": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)",
   "issuedBy": [
     "https://publedge.org/authority/utah-legislature.json"
   ],
@@ -48,26 +48,30 @@
   "admission_status": "source-consistency-reviewed-changes",
   "source_review_conflicts": null,
   "pub:source_review_unresolved": [
-    "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-    "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+    "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
+    "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
+    "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+    "This agent review does not renew last_verified or authenticate human currentness review."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-      "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
+      "native_file_sha256": "33665f35029ed4e951323842e676b3afd1ec7dd7b2374bcabca9f8fd9f70e3df",
       "canonical_unit": null,
-      "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
+      "canonical_sha256": "4108fe6da99d090b629ab786d6a416f4e502ddda000eafd431c21c08a5eef874",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+      "review_packet_sha256": "7c95cf5d2b471ad3a60828bfb12179d3f6b57f7b09597906f1d01ce8690afa10",
       "retained_primary_sha256": [
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
-        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+        "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
+        "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
+        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+        "This agent review does not renew last_verified or authenticate human currentness review."
       ]
     }
   ]

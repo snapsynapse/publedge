@@ -12,13 +12,13 @@ authority: utah-oaip
 issued_by:
   "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
   name: "Utah Office of Artificial Intelligence Policy (OAIP)"
-  ref: "https://commerce.utah.gov/ai/learning-lab/"
+  ref: "https://commerce.utah.gov/ai/"
 issuance_event: gist:Determination
 enacted: 2024-11-18
 effective: 2024-11-18
 term_start: 2024-11-18
 term_end: 2025-11-18
-official_url: https://commerce.utah.gov/ai/agreements/elizachat/
+official_url: https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/
 publication_citations:
   - "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf"
 source_documents:
@@ -74,7 +74,7 @@ disclaimer: ""
 last_verified: 2026-06-04
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-19
-modified: 2026-06-04
+modified: 2026-09-23
 ---
 
 ## Summary
@@ -102,7 +102,7 @@ May ElizaChat, Inc. offer its AI-supported mental-health app to Utah minors thro
 - Approved testing plan designed to prevent the app from engaging in therapy or other licensed practice.
 - Immediate reporting to OAIP of any activity constituting a Schedule A incident, including the action, involved user(s), and any resulting harm.
 - 24-hour incident notification to OAIP for any harm to health, safety, or financial well-being.
-- High-risk users auto-shared with ElizaChat clinical team and emergency contacts; real-time connection to licensed psychologist/therapist.
+- High-risk users, as determined by the participant, promptly shared with ElizaChat's clinical team and emergency contacts; promptly connected to a licensed psychologist or therapist for real-time intervention (Schedule A §XVI.A).
 - School-district-specific limitations respected.
 - HIPAA-compliant anonymization and storage of user data.
 - Written parental consent before regular use by minors.
@@ -119,7 +119,7 @@ Requesting-party-only. Mitigation runs to ElizaChat, Inc. It expressly does not 
 |---|---|
 | "Agreement between OAIP, ElizaChat Inc., and DOPL" | `title`, `name` |
 | Section I parties | `parties[]` |
-| Section II (12-month from execution) | `term_start`, `term_end` |
+| Section II (12 months beginning on execution; no end date stated) and OAIP register term November 18, 2024 – November 18, 2025 | `term_start`, `term_end` |
 | Schedule A §XV incident-cure structure | `rules_mitigated[]` and `mitigations[]` (narrow cure window; immediate reporting; good-faith remediation and nonrecurrence efforts), `obligation_kind: permission` |
 | Section VI.H phased rollout | `mitigations[]` (Phase One commencement; written approval for subsequent phases), `obligation_kind: requirement` |
 | Section XVI.E parental consent | `mitigations[]`, `obligation_kind: requirement` |
@@ -133,12 +133,13 @@ Requesting-party-only. Mitigation runs to ElizaChat, Inc. It expressly does not 
 - Mitigation is event-triggered and time-bounded (30-day cure), not a blanket pre-authorization.
 - The Schedule A cure procedure's immediate incident report and Section VI.I.3's 24-hour harm report have different triggers and clocks.
 - Cure-period forbearance depends on good-faith efforts to follow the curing procedure; remediation and nonrecurrence are also good-faith-effort duties.
-- `status: expired` records the initial 12-month term end. The cited signed agreement and authority page do not establish a later extension, termination, replacement, or present legal effect.
+- `status: expired` records the initial 12-month term end. OAIP's Authorized AI Pilots page, retrieved 2026-09-24 (UTC), lists ElizaChat as Expired with term November 18, 2024 – November 18, 2025. No retained source shows an extension request or decision under the Agreement Extension section, a termination, a replacement, or which rollout phases OAIP approved.
 - Does not bar individual user, parent/guardian, or third-party claims.
 
 ## Sources
 
-- [Agreement page — Utah OAIP](https://commerce.utah.gov/ai/agreements/elizachat/)
+- [Pilot page — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/)
+- [Authorized AI Pilots — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/)
 - [Signed PDF](https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf)
 - [Source review receipt](https://github.com/snapsynapse/publedge/blob/main/ops/evidence/elizachat-source-review-2026-09-08.json)
 - [Utah Code Title 13, Chapter 72](https://le.utah.gov/xcode/Title13/Chapter72/13-72.html)
@@ -146,4 +147,4 @@ Requesting-party-only. Mitigation runs to ElizaChat, Inc. It expressly does not 
 
 ## Notes on this demonstration remap
 
-First RMA (`us-ut-oaip-rma-0001`), earliest in the registry by `effective` date. Exercises schema features not covered by prior RMAs: (1) incident-triggered, time-bounded (30-day cure) mitigation rather than blanket pre-authorization; (2) phased-rollout structure as an explicit obligation; (3) reliance on the predecessor GenAI disclosure statute (§13-2-12(4)) rather than §13-77-103; (4) predates the §13-72a mental-health-chatbot chapter entirely — useful for demonstrating how earlier RMAs sit alongside later sector-specific rules in the same registry.
+First RMA (`us-ut-oaip-rma-2024-001`), earliest in the registry by `effective` date. Exercises schema features not covered by prior RMAs: (1) incident-triggered, time-bounded (30-day cure) mitigation rather than blanket pre-authorization; (2) phased-rollout structure as an explicit obligation; (3) reliance on the predecessor GenAI disclosure statute (§13-2-12(4)) rather than §13-77-103; (4) predates the §13-72a mental-health-chatbot chapter entirely — useful for demonstrating how earlier RMAs sit alongside later sector-specific rules in the same registry.

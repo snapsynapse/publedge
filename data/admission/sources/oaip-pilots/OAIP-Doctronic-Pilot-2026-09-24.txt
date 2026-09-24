@@ -1,0 +1,99 @@
+Office of AI Policy: Doctronic RMA - commerce.utah.gov
+Doctronic AI Regulatory Mitigation Agreement
+Utah’s First AI Prescription Renewal Regulatory Mitigation Agreement
+Doctronic AI Mitigation Agreement
+The Utah Office of Artificial Intelligence Policy (OAIP) has approved a new pilot program with Doctronic a health technology company using AI to simplify the prescription refill process.
+Through this initiative, Doctronic’s AI will strive to automate routine, guideline-based prescription renewals—the kind of administrative work that often slows down clinics. By safely delegating these repetitive tasks to AI, the system could lighten clinician workload, improve refill continuity, and expand patient access—all while maintaining the same safety and quality standards patients expect.
+How the Program Works
+Under Utah’s new regulatory relief agreement, Doctronic’s AI will operate within strict parameters and with physician oversight. The system can process 30-, 60-, or 90-day renewals for medications that have already been prescribed by a licensed provider.
+Safety and Guardrails
+Doctronic will roll out their AI tool in a three-phased comprehensive review process. During each phase there will be extensive identity and prescription verification protocols to prevent misuse as well as patient privacy protocols to prevent incidental disclosures. Licensed professionals will oversee the implementation of AI tools. The AI will not issue new prescriptions, handle controlled or addictive substances, or make changes to treatment plans. Doctronic doctors will follow up with individual patients as needed.
+Why It Matters
+Prescription renewals make up a large portion of healthcare’s daily administrative load. By automating these safe, routine requests, Doctronic hopes to help doctors focus more on patient care, reduce delays, and make it easier for patients to stay on track with their medications.
+Status of the Doctronic Pilot
+The Doctronic prescription tool has been live in Utah for approximately three months. While the state does not endorse or promote any particular product, given the significant public attention on this pilot, the Office of AI Policy is providing the following update from a regulatory oversight and evaluation perspective.
+Data received — To date, the Office has received two monthly reports from Doctronic, which are in substantial compliance with the contractual agreement. The scope of data collection has been adjusted by mutual agreement as the pilot has progressed -- initially prioritizing core safety metrics, with planned expansion to economic and public health outcomes, including effects across specific patient populations. This remains aligned with the intent of the original contract.
+Safety — To date, no serious safety incidents have been reported to the Office by either Doctronic or the public. Doctronic has provided analyses of cases where its system and supervising clinicians disagreed, using a previously published medical risk rating framework; reported cases have been categorized as “no risk,” “minor risk,” or “minor-to-moderate risk.” A third-party red teaming report identified potential vulnerabilities under adversarial usage. The Office’s review indicates that the pilot’s guardrails substantially limit the likelihood of harm to typical users, and hard stops are in place to prevent unauthorized dispensing of controlled substances. The Office has also received non-safety-related customer support inquiries, which have been referred to Doctronic.
+Pilot progress — The pilot remains in Phase 1, in which all prescription requests require authorization by a licensed medical practitioner. As the pilot is in its early stage, additional time is needed before drawing firm conclusions about overall performance.
+Measurements of benefit — The Office does not yet have robust evidence on benefits, as most outcome measures are scheduled for later phases once safety is further established. The Office has received anecdotal feedback describing potential benefits, including multilingual support, 24/7 availability, immediate feedback on requests, and more thorough collection of medical history where applicable. Some pharmacists have noted operational convenience in cases where patients require prescription reauthorization.
+The Office continues to monitor the pilot under its statutory authority and may require modifications if warranted by observed risks.
+Feedback
+We want to hear your thoughts on this pilot program. If you have opinions or experiences related to this pilot, please share them with us:
+Share your Feedback
+Prescription Renewals FAQs
+What changes have been made to the Doctronic contract? The Phase 2 transition criteria in the contract has been updated. Previously, the pilot progressed after 250 total prescriptions were filled. Now, each medication group will be eligible to move on to Phase 2 as a group once Doctronic has filled 250 medications in that group. Moving from phase 1 to phase 2 is still subject to OAIP approval.
+Additionally, Butalbital and Flecainide have been removed from Doctronic’s formulary.
+How do AI prescriptions work in these pilots? For the entirety of these pilots, these AI tools are only permitted to renew existing prescriptions ordered by a licensed physician. New prescriptions or changes in dose or frequency must be ordered by a licensed physician.
+During the first phase, a licensed physician must review the prescription renewal recommended by the AI tool before it is sent to a pharmacist. If companies meet agreed upon benchmarks and perform well in the first phase, they will move on to the second phase.
+During the second phase, the AI tool may submit the prescription renewal directly to the pharmacist. Pharmacists will retain authority to escalate any AI-generated renewals to a licensed physician within the prescribing company and pharmacists will be provided a method to directly communicate escalations with each company.
+Prescription renewal pilots authorized by our office are designed to minimize impacts on pharmacist workflow.
+What medications can be prescribed? OAIP has worked with regulators, pharmacists, clinicians, and regulatory mitigation recipients to come up with a unique formulary for each company pilot, ranging from a list of about 20 to about 200 approved medications. These formularies are designed to address common medications used for chronic conditions and mental health management, and do not include any controlled substances.
+Formularies for each pilot can be found within the signed agreement.
+If it’s generated by AI, then whose name is on the prescription? All prescription refills are signed and approved by a licensed physician, either directly or vicariously through the AI system’s protocol. Thus, orders are still being issued by a licensed practitioner.
+What if a pharmacist needs additional information, clinical clarification, or documentation? Our regulatory mitigation recipients are required to provide a direct line for pharmacists to communicate escalations with licensed professionals employed by the prescribing company.
+During these pilots, an AI tool will never prescribe new medications. Patients must go through identity and prescription verification processes in order to qualify for AI-generated prescription renewals. Through that process, the AI-enabled prescription service will have information about the original prescribing physician and can relay necessary information to a pharmacist upon request. Additionally, there is always a physician’s name attached to a prescription authorization.
+What mechanisms exist to ensure alignment between provider intent and the system-generated prescriptions? There are several relevant safeguards in place in these agreements. Controlled substances are specifically excluded from the renewal process, focusing on medications with established safety profiles for routine renewal.
+Additionally, patients participating in the program will only be permitted a limited number refills per prescribed medication without a subsequent in person or telehealth visit with a clinician licensed to practice medicine in the State of Utah.
+Finally, The AI system includes built-in escalation protocols that automatically refer cases to human physicians when clinical complexity exceeds predetermined safety thresholds, when conflicting information is detected, or when the patient's clinical status suggests potential medication-related complications.
+What oversight can the public expect? OAIP receives monthly reports from regulatory mitigation recipients to monitor their work. The details of metrics to be shared in these reports are detailed in their contracts (agreements can be found on the OAIP website). OAIP carefully vets and confirms key metrics, the most important being safety.
+If an AI tool approves a refill and an adverse event occurs, how is liability determined? Our office structures these pilots in a way that makes the risk of adverse events like this low, yet we recognize the possibility of such an event. Recipients of regulatory mitigation employ a licensed physician whose name appears on AI-generated prescription renewals. As a part of our agreement, we expect companies in the regulatory mitigation program to maintain medical malpractice insurance that covers AI liabilities and risk.
+Is this program permanent? These pilots are a part of the Office of AI Policy’s statutory authority to authorize AI use cases requiring regulatory relief for a limited time.
+For example, the Doctronic pilot will run for 1 year (Oct 2025 - Oct 2026) with the option for the office to review and renew the contract for another year.
+Does this mean any AI can practice medicine in Utah? No. Agreements are temporary and conditional on adherence to the agreement.
+What changes have been made to the contract?
+The Phase 2 transition criteria in the contract has been updated. Previously, the pilot progressed after 250 total prescriptions were filled. Now, each medication group will be eligible to move on to Phase 2 as a group once Doctronic has filled 250 medications in that group. Moving from phase 1 to phase 2 is still subject to OAIP approval. Additionally, Butalbital and Flecainide have been removed from Doctronic’s formulary.
+Report Summaries
+In this section, you will find important documents regarding the Doctronic's ongoing data reports to the Office.
+Doctronic Public Report 1 (May 19, 2026)
+Additional Information
+In this section, you will find important documents regarding the Doctronic mitigation agreement and pilot program. This disclosure supports the Office of AI Policy’s commitment to transparency and accountability. We encourage you to review these documents for further insight into our actions and decisions.
+Utah Medical Licensing Board Doctronic Letter (April 20, 2026)
+Commerce Doctronic Response Letter (April 21, 2026)
+Policy Memorandum (2026)
+Follow us online
+Office of Artificial Intelligence Policy
+Mailing Address : P.O. Box 146741, Salt Lake City, UT 84114-6741
+Physical Address: Heber M. Wells Building 160 East 300 South Salt Lake City, Utah 84111
+Contact Info
+Phone: (801) 530-6648
+Email : [email protected]
+Hours : 8:00 AM to 5:00 PM
+Monday - Friday
+Closed for State and Federal Holidays
+Services
+Regulatory Relief
+Learning Lab
+Resources
+GRAMA Record Request
+Privacy Policy
+The Utah Department of Commerce will be closed on Wednesday, July 24, in observance of the Pioneer Day holiday. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, Sep 02, in observance of the Labor Day holiday. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, Oct 14, in observance of the Columbus Day. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Thursday, Nov 28, in observance of the Thanksgiving Day. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, Feb 17, in observance of the President's Day. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, May 26, in observance of Memorial Day. However, online services will remain available.
+Powered by Convert Plus
+The Heber Wells Building will close at 4 p.m. today. All in-person services will resume at normal business hours on Friday, June 13, and all online services will remain available today.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, June 16, in observance of the Juneteenth holiday. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Thursday, July 24, in observance of Pioneer Day. However, online services will remain available.
+Powered by Convert Plus
+The Utah Department of Commerce will be closed on Monday, September 1, in observance of Labor Day. However, online services will remain available.
+Powered by Convert Plus
+Translate »
+<
+<
+<
+<
+<
+<
+<
+<
+<
+<

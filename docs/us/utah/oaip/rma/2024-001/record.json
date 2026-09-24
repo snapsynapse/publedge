@@ -2,10 +2,10 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/",
-    "generated": "2026-09-12T00:00:00.000Z",
+    "generated": "2026-09-23T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
-      "status": "legacy-unreviewed",
+      "status": "reviewed-changes",
       "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
     }
   },
@@ -24,12 +24,12 @@
     "issued_by": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-      "ref": "https://commerce.utah.gov/ai/learning-lab/"
+      "ref": "https://commerce.utah.gov/ai/"
     },
     "issuance_event": "gist:Determination",
     "enacted": "2024-11-18",
     "effective": "2024-11-18",
-    "official_url": "https://commerce.utah.gov/ai/agreements/elizachat/",
+    "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
     "obligation_kind": [
       "permission",
       "requirement",
@@ -119,15 +119,15 @@
     "description": "Regulatory Mitigation Agreement (us-ut)",
     "url": "https://publedge.org/us/utah/oaip/rma/2024-001/",
     "sameAs": [
-      "https://commerce.utah.gov/ai/agreements/elizachat/"
+      "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/"
     ],
     "dateCreated": "2026-04-19",
-    "dateModified": "2026-06-04",
+    "dateModified": "2026-09-23",
     "datePublished": "2024-11-18",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-      "url": "https://commerce.utah.gov/ai/learning-lab/"
+      "url": "https://commerce.utah.gov/ai/"
     },
     "about": [
       {

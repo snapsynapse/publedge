@@ -2,10 +2,10 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-001/",
-    "generated": "2026-09-12T00:00:00.000Z",
+    "generated": "2026-09-23T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
-      "status": "legacy-unreviewed",
+      "status": "reviewed-changes",
       "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
     }
   },
@@ -43,15 +43,15 @@
       },
       {
         "cite": "Utah Code §13-75-102 (civil AI-assisted-violation liability)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S102.html"
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
       },
       {
         "cite": "Utah Code §13-75-103 (disclosure requirements)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S103.html"
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
       },
       {
         "cite": "Utah Code §13-75-104 (disclosure safe harbor)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S104.html"
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
       }
     ],
     "publication_citations": [
@@ -71,22 +71,22 @@
       {
         "milestone": "Introduced",
         "date": "2025-02",
-        "notes": "2025 General Session"
+        "notes": "2025 General Session (month unconfirmed: not in the enrolled copy)"
       },
       {
         "milestone": "Governor Signed",
         "date": "2025-03-25",
-        "notes": ""
+        "notes": "Unconfirmed: not in the enrolled copy; bill status page not retained"
       },
       {
         "milestone": "Effective",
         "date": "2025-05-07",
-        "notes": "Four-bill single-day AI package (with SB 271, SB 332, HB 452)"
+        "notes": "Chapter 75 and §13-2-12 repeal; the §63I-2-213 amendment took effect this date or on governor approval if passed by two-thirds of each house (vote not confirmed)"
       },
       {
-        "milestone": "First annual report",
+        "milestone": "Annual OAIP report due",
         "date": "2025-11-30",
-        "notes": "To Business & Labor Interim Committee"
+        "notes": "Before Nov 30, to Business & Labor Interim Committee; duty set by SB 149 (§13-70-201(3)(d)), not SB 226; filing history unverified"
       }
     ],
     "source_documents": []
@@ -103,7 +103,7 @@
       "https://le.utah.gov/~2025/bills/static/SB0226.html"
     ],
     "dateCreated": "2026-04-21",
-    "dateModified": "2026-06-04",
+    "dateModified": "2026-09-23",
     "datePublished": "2025-05-07",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
@@ -119,17 +119,17 @@
       {
         "@type": "Legislation",
         "name": "Utah Code §13-75-102 (civil AI-assisted-violation liability)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S102.html"
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
       },
       {
         "@type": "Legislation",
         "name": "Utah Code §13-75-103 (disclosure requirements)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S103.html"
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
       },
       {
         "@type": "Legislation",
         "name": "Utah Code §13-75-104 (disclosure safe harbor)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S104.html"
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
       }
     ],
     "license": "Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law."

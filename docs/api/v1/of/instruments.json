@@ -1,6 +1,6 @@
 {
   "@context": "https://obligationfirst.org/v1/context.jsonld",
-  "generated": "2026-09-12T00:00:00.000Z",
+  "generated": "2026-09-23T00:00:00.000Z",
   "instruments": [
     {
       "@context": [
@@ -600,30 +600,38 @@
       "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
-        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+        "Boyd appointment date (2024-04-30) is not in the SB 149 enrolled copy or the retained bill status page; the row is kept but marked unconfirmed.",
+        "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
+        "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
+        "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy.",
+        "This agent review does not renew last_verified or authenticate human currentness review."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-          "native_file_sha256": "372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2",
+          "native_file_sha256": "a27d100361e34d75e90a06a62e498b697303b81c76d2f77fed2239b778eb98f5",
           "canonical_unit": null,
-          "canonical_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202",
+          "canonical_sha256": "eb3c02b293fcee051c785a4084efbbcbc81ea95d0e1f7d1e18a1e2a1c982b373",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "4f6f7ab0b94560d1e81548a417d56e0026eee2e21799079f7baa04f2b448aa7e",
+          "review_packet_sha256": "ff503350fc567592d7ca7efd74a0bb88640b4bbdd635e9a5ad6520fcacadfc8a",
           "retained_primary_sha256": [
+            "02db4dfb7fcc9c536f4aa7e006458da3ed0ba3567a7cc4478db9e3d5c3195514",
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
             "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
             "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
-            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+            "Boyd appointment date (2024-04-30) is not in the SB 149 enrolled copy or the retained bill status page; the row is kept but marked unconfirmed.",
+            "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
+            "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
+            "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy.",
+            "This agent review does not renew last_verified or authenticate human currentness review."
           ]
         }
       ]
@@ -638,8 +646,8 @@
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2025-hb452.json",
       "pub:id": "us-ut-legislature-statute-2025-hb452",
-      "title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
-      "short_title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+      "title": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)",
+      "short_title": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)",
       "issuedBy": [
         "https://publedge.org/authority/utah-legislature.json"
       ],
@@ -678,26 +686,30 @@
       "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
-        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+        "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
+        "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
+        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+        "This agent review does not renew last_verified or authenticate human currentness review."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
+          "native_file_sha256": "33665f35029ed4e951323842e676b3afd1ec7dd7b2374bcabca9f8fd9f70e3df",
           "canonical_unit": null,
-          "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
+          "canonical_sha256": "4108fe6da99d090b629ab786d6a416f4e502ddda000eafd431c21c08a5eef874",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+          "review_packet_sha256": "7c95cf5d2b471ad3a60828bfb12179d3f6b57f7b09597906f1d01ce8690afa10",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
-            "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-            "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+            "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
+            "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
+            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+            "This agent review does not renew last_verified or authenticate human currentness review."
           ]
         }
       ]
@@ -742,29 +754,46 @@
       "citation": "Utah SB 226 (2025 General Session)",
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
       "source_citation": "Utah SB 226 (2025 General Session)",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:status": "enforcing",
       "pub:editorial_status": "published",
       "pub:canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-001/",
       "projection_basis": "native-record-projection",
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
-      "pub:source_review_unresolved": null,
-      "pub:source_review_state": "unknown",
+      "pub:source_review_unresolved": [
+        "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
+        "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
+        "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
+        "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+        "This agent review does not renew last_verified or authenticate human currentness review."
+      ],
+      "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
-          "native_file_sha256": "518882b00ebe9515a3f4697a2da41a607c506c8d844a31895dcf1851d0f5dd3a",
+          "native_file_sha256": "fbafb68ba31f029b5e243ae64e362144bec9f914e092bcf7a5969db240ab5258",
           "canonical_unit": null,
-          "canonical_sha256": "7e4a5fbb8f032549b461c3d8840b09b6dfe91587e3b95cde0269b6a9bd69ac2c",
-          "admission_status": "legacy-unreviewed",
-          "review_packet_sha256": null,
-          "retained_primary_sha256": null,
-          "unresolved_review_state": "unknown",
-          "unresolved": null
+          "canonical_sha256": "12afb6e749bcb423127c6a7ec713ea7e69c05c497c1eb6c96f10d36843918398",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "41331f0e63287b81cc373868a0d9305c2744f5f43631fd24b6245f7748901588",
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
+            "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
+            "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
+            "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
+            "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+            "This agent review does not renew last_verified or authenticate human currentness review."
+          ]
         }
       ]
     },
@@ -806,29 +835,42 @@
       "citation": "Utah SB 332 (2025 General Session), Governor Signed March 25, 2025",
       "source": "https://le.utah.gov/~2025/bills/static/SB0332.html",
       "source_citation": "Utah SB 332 (2025 General Session), Governor Signed March 25, 2025",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:status": "enforcing",
       "pub:editorial_status": "published",
       "pub:canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-003/",
       "projection_basis": "native-record-projection",
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
-      "pub:source_review_unresolved": null,
-      "pub:source_review_state": "unknown",
+      "pub:source_review_unresolved": [
+        "The effective field stays 2025-05-07. SB 332 took effect May 7, 2025, or on governor approval if passed by two-thirds of each house; the record votes (24-0-5, 74-0-1) would exceed two-thirds but are not confirmed against a retained status page.",
+        "enacted (2025-03-25) and all introduction, committee and floor-vote rows are not in the enrolled copy and the le.utah.gov SB0332 status table is not retained; rows are marked unconfirmed.",
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 332 amends 63I-2-213(5), the repeal date SB 149 set, so the source does not contradict it.",
+        "This agent review does not renew last_verified or authenticate human currentness review."
+      ],
+      "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb332.md",
-          "native_file_sha256": "97e8084f429a9565d1b7e2d4eeb6ab7cb0d16c63762838c30c18afde1f436a83",
+          "native_file_sha256": "d8009c067a008482ff096e8bdd862d0caddb598ab7a056fe6601118683e029e6",
           "canonical_unit": null,
-          "canonical_sha256": "9a1f758c218403901c5d9dcd442ebd4dff0118a7c713feeb24efdc0656e853d9",
-          "admission_status": "legacy-unreviewed",
-          "review_packet_sha256": null,
-          "retained_primary_sha256": null,
-          "unresolved_review_state": "unknown",
-          "unresolved": null
+          "canonical_sha256": "a1129e388ecd58f7c7fa72e220851945d947b15f7fa0cab6d204d053c9dbda86",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "ddd00a03f2877cb703808ca1ebf1226f2573d8dec02345ad6ae4a686fc52d7d3",
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "The effective field stays 2025-05-07. SB 332 took effect May 7, 2025, or on governor approval if passed by two-thirds of each house; the record votes (24-0-5, 74-0-1) would exceed two-thirds but are not confirmed against a retained status page.",
+            "enacted (2025-03-25) and all introduction, committee and floor-vote rows are not in the enrolled copy and the le.utah.gov SB0332 status table is not retained; rows are marked unconfirmed.",
+            "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 332 amends 63I-2-213(5), the repeal date SB 149 set, so the source does not contradict it.",
+            "This agent review does not renew last_verified or authenticate human currentness review."
+          ]
         }
       ]
     },
@@ -842,8 +884,8 @@
       "@type": "of:Instrument",
       "@id": "https://publedge.org/instrument/us-ut-legislature-statute-2026-hb320.json",
       "pub:id": "us-ut-legislature-statute-2026-hb320",
-      "title": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
-      "short_title": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+      "title": "Utah HB 320 (2026) — Office of Artificial Intelligence Policy Amendments (Learning Lab Restructure + Joint Interpretation Agreements)",
+      "short_title": "Utah HB 320 (2026) — Office of Artificial Intelligence Policy Amendments (Learning Lab Restructure + Joint Interpretation Agreements)",
       "issuedBy": [
         "https://publedge.org/authority/utah-legislature.json"
       ],
@@ -872,29 +914,47 @@
       "citation": "Utah HB 320 (2026 General Session)",
       "source": "https://le.utah.gov/~2026/bills/static/HB0320.html",
       "source_citation": "Utah HB 320 (2026 General Session)",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:status": "enforcing",
       "pub:editorial_status": "published",
       "pub:canonical_url": "https://publedge.org/us/utah/legislature/statute/2026-001/",
       "projection_basis": "native-record-projection",
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
-      "pub:source_review_unresolved": null,
-      "pub:source_review_state": "unknown",
+      "pub:source_review_unresolved": [
+        "enacted (2026-03-19) and the Introduced month (2026-01) are not in the enrolled copy; the le.utah.gov HB0320 static page renders no status table. Rows are marked unconfirmed and the enacted field is unchanged.",
+        "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
+        "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
+        "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it.",
+        "This agent review does not renew last_verified or authenticate human currentness review."
+      ],
+      "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
-          "native_file_sha256": "111b246cf8bb2b1118face419aa81634e3eba290346e98be8e47761d2a8345d5",
+          "native_file_sha256": "c57b0acb4dad1832fd56e3bf5beac60ebbb4f9593542f877e5909356f903ffd3",
           "canonical_unit": null,
-          "canonical_sha256": "8c4fba21742f0b6e177e6c4789075c6851acbcd3359335a24162d7f007393692",
-          "admission_status": "legacy-unreviewed",
-          "review_packet_sha256": null,
-          "retained_primary_sha256": null,
-          "unresolved_review_state": "unknown",
-          "unresolved": null
+          "canonical_sha256": "8c0213da1df472548151dc5eb475e77ae9c3c11f577b403d03a9064133b5dd65",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "c5af70510156fdd9f90b49aabe04e67c90f6c73c20c5ae24aa9abd86e3a8fe4f",
+          "retained_primary_sha256": [
+            "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "enacted (2026-03-19) and the Introduced month (2026-01) are not in the enrolled copy; the le.utah.gov HB0320 static page renders no status table. Rows are marked unconfirmed and the enacted field is unchanged.",
+            "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
+            "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
+            "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
+            "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it.",
+            "This agent review does not renew last_verified or authenticate human currentness review."
+          ]
         }
       ]
     },
@@ -944,30 +1004,41 @@
       "territorial_scope": [
         "us-ut"
       ],
-      "source": "https://commerce.utah.gov/ai/learning-lab/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "source": "https://commerce.utah.gov/ai/",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:status": "proposed",
       "pub:editorial_status": "draft",
       "pub:canonical_url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
       "projection_basis": "native-record-projection",
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
-      "pub:source_review_unresolved": null,
-      "pub:source_review_state": "unknown",
+      "pub:source_review_unresolved": [
+        "Lawyer review and authority sign-off remain pending; the draft is not issued.",
+        "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
+        "last_verified renewal requires a separate human review receipt."
+      ],
+      "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
-          "native_file_sha256": "1c73dcfdf1dc9dc14040426990fdd43ea4db8615ca0523c2914d7fda1e40d740",
+          "native_file_sha256": "ae4554e37436da813ea8261a2b35b80458e24581da6ce9b52fb64b1b74f19c32",
           "canonical_unit": null,
-          "canonical_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
-          "admission_status": "legacy-unreviewed",
-          "review_packet_sha256": null,
-          "retained_primary_sha256": null,
-          "unresolved_review_state": "unknown",
-          "unresolved": null
+          "canonical_sha256": "555d9cb6c67731fdf8818d7c84aa7994c1d70e5e7d934257eb813efc2c0d32ca",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "23f683d93fb150f13c6e4a20ad4e3a66655db8546b2710289003c98079524330",
+          "retained_primary_sha256": [
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "Lawyer review and authority sign-off remain pending; the draft is not issued.",
+            "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
+            "last_verified renewal requires a separate human review receipt."
+          ]
         }
       ]
     },
@@ -1028,31 +1099,44 @@
         "us-ut"
       ],
       "citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
-      "source": "https://commerce.utah.gov/ai/agreements/elizachat/",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:status": "expired",
       "pub:editorial_status": "published",
       "pub:canonical_url": "https://publedge.org/us/utah/oaip/rma/2024-001/",
       "projection_basis": "native-record-projection",
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
-      "pub:source_review_unresolved": null,
-      "pub:source_review_state": "unknown",
+      "pub:source_review_unresolved": [
+        "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
+        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
+        "This agent review does not renew last_verified or authenticate human review."
+      ],
+      "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
-          "native_file_sha256": "68266cdbb989ed85f06c0b2dc6a96f0007462ce569d77816590a479da020a7d7",
+          "native_file_sha256": "c629e08397cfb6ce9f6f2cfaf5874c0b90eb6694cf8c3d82afe14bcdd4529706",
           "canonical_unit": null,
-          "canonical_sha256": "57ffb3356c78bfb68741fdbedba549d2ca8bcc62841b5dc53fb55691d0f12de7",
-          "admission_status": "legacy-unreviewed",
-          "review_packet_sha256": null,
-          "retained_primary_sha256": null,
-          "unresolved_review_state": "unknown",
-          "unresolved": null
+          "canonical_sha256": "d1b877082b7fc3b20ec7fd8ec429a14e694e9882d6a50c8777bf8125907db549",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "8ab319967124243fe784704d39cf5599c90a609621589a21137858bd0f7c10b3",
+          "retained_primary_sha256": [
+            "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
+            "602cdd9fd4fcfb3770543bda79f99cb42f02ebc67377345e88a2206105ded8e6",
+            "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
+            "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
+            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
+            "This agent review does not renew last_verified or authenticate human review."
+          ]
         }
       ]
     },
@@ -1212,8 +1296,10 @@
       "pub:source_review_unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
         "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-        "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
-        "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+        "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
+        "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
         "This agent review does not renew last_verified or authenticate human review."
       ],
       "pub:source_review_state": "declared",
@@ -1221,23 +1307,28 @@
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-          "native_file_sha256": "79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984",
+          "native_file_sha256": "7a3811d21348a6fd57d5435741f0485ed7a1755fad394e40d899daf85591314e",
           "canonical_unit": null,
-          "canonical_sha256": "1759e1674fbadb47cba1b551681ec11249cc20c5749a0564bb3138ef472ebcbc",
+          "canonical_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "5e3c426d9dbdfa30f065801d88ed39cd3355f7e1b23bed008fbd4c70a48fe299",
+          "review_packet_sha256": "b1a74dfaf34b4470755e7f598d7f72cb6ae2b1efa1e94b7ae8ec5bb9af5b2371",
           "retained_primary_sha256": [
             "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
             "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+            "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
+            "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
             "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+            "cd39386fe85beb33c49e4ab63ec82dc76212171be1bb16cef403dc7483a2cd37",
             "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
             "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
             "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-            "The September 9, 2026 OAIP FAQ describes changed Phase 2 criteria and formulary removals that conflict with the retained signed agreement, but the current pilot page links no signed amendment establishing the mechanism or effective date.",
-            "No retained source establishes OAIP approval to enter Phase Two, compliance, extension, termination, or the pilot current phase or status.",
+            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+            "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
+            "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
             "This agent review does not renew last_verified or authenticate human review."
           ]
         }
@@ -1304,31 +1395,46 @@
         "us-ut"
       ],
       "citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-      "source": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+      "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-06-04",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:status": "enacted",
       "pub:editorial_status": "published",
       "pub:canonical_url": "https://publedge.org/us/utah/oaip/rma/2026-001/",
       "projection_basis": "native-record-projection",
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
-      "pub:source_review_unresolved": null,
-      "pub:source_review_state": "unknown",
+      "pub:source_review_unresolved": [
+        "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
+        "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
+        "This agent review does not renew last_verified or authenticate human review."
+      ],
+      "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
-          "native_file_sha256": "d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a",
+          "native_file_sha256": "5e4d89fc188a3aa43dc50ba9c7e6eba494b9f632d1953b9a7e14fba05c5fdad1",
           "canonical_unit": null,
-          "canonical_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
-          "admission_status": "legacy-unreviewed",
-          "review_packet_sha256": null,
-          "retained_primary_sha256": null,
-          "unresolved_review_state": "unknown",
-          "unresolved": null
+          "canonical_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "b6e32be97f686831f9a2885c3ece7f85af869e0bb26a3f6ef7d0c1698bb23d54",
+          "retained_primary_sha256": [
+            "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
+            "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
+            "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
+            "c6ad09dd7b25a91cb3e141289850b8d46a63a0b7efe39f48d7ce1fa6572e890e"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
+            "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
+            "This agent review does not renew last_verified or authenticate human review."
+          ]
         }
       ]
     }
