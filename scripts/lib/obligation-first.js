@@ -194,6 +194,23 @@ function provenance(config, source, locator, verified, citation) {
     });
 }
 
+// A PubLedge original draft is published by PubLedge, not by the authority it
+// names. Its text's provenance is the draft record itself; the statute it
+// interprets stays linked through source-owned anchors, and the locator names
+// the draft's own section rather than a statutory section.
+function isOriginalDraft(container) {
+    return container?.source === 'publedge-original-draft';
+}
+
+function recordSource(config, container) {
+    if (!isOriginalDraft(container)) return container?.official_url;
+    return container._canonicalPath ? `${siteBase(config)}/${container._canonicalPath}` : undefined;
+}
+
+function recordLocator(container, provision, mapping) {
+    return isOriginalDraft(container) ? mapping.source_heading : provision.sections || mapping.source_heading;
+}
+
 function partyId(container, party, index) {
     return `${container.id}-${slugify(party.name || party.role || `party-${index + 1}`)}`;
 }
@@ -219,7 +236,7 @@ function buildPartyRecords(config, data) {
                 party_kind: kind,
                 entity: kind === 'organization' ? { '@type': 'gist:Organization', name: party.name } : undefined,
                 roles: party.role ? [party.role] : undefined,
-                ...provenance(config, container.official_url, undefined, container.last_verified, instrumentCitation(container))
+                ...provenance(config, recordSource(config, container), undefined, container.last_verified, instrumentCitation(container))
             }), [container._evidence_input]));
         }
     }
@@ -295,7 +312,7 @@ function buildInstrumentRecords(config, data, determinations) {
             jurisdiction: typedJurisdiction(container.jurisdiction),
             territorial_scope: container.jurisdiction ? [container.jurisdiction] : undefined,
             citation: instrumentCitation(container),
-            ...provenance(config, container.official_url, undefined, container.last_verified, instrumentCitation(container)),
+            ...provenance(config, recordSource(config, container), undefined, container.last_verified, instrumentCitation(container)),
             'pub:status': container.status,
             'pub:editorial_status': container.editorial_status,
             'pub:canonical_url': container._canonicalPath ? `${siteBase(config)}/${container._canonicalPath}` : undefined
@@ -329,7 +346,7 @@ function buildTermRecords(config, data) {
             enforcement_status: container?.enforcement_status || enforcementStatus({ status: sourceStatus, type: container?.type }, force),
             effective: /^\d{4}-\d{2}-\d{2}$/.test(provision.effective || '') ? provision.effective : undefined,
             jurisdiction: typedJurisdiction(container?.jurisdiction),
-            ...provenance(config, container?.official_url, provision.sections || mapping.source_heading, provision.verified || container?.last_verified, instrumentCitation(container || {})),
+            ...provenance(config, recordSource(config, container), recordLocator(container, provision, mapping), provision.verified || container?.last_verified, instrumentCitation(container || {})),
             'pub:source_heading': mapping.source_heading,
             'pub:source_file': mapping.source_file
         }), [container._evidence_input, mapping._evidence_input]);
@@ -367,7 +384,7 @@ function buildObligationRecords(config, data) {
                 operative_status: (draftCreated ? undefined : primary.operative_status) || container?.operative_status || operativeStatus(lifecycle, force),
                 enforcement_status: (draftCreated ? undefined : primary.enforcement_status) || container?.enforcement_status || enforcementStatus({ status: lifecycle, type: container?.type }, force),
                 jurisdiction: typedJurisdiction(container?.jurisdiction),
-                ...provenance(config, container?.official_url, provision.sections || mapping.source_heading, primary.last_verified || provision.verified || container?.last_verified, instrumentCitation(container || {})),
+                ...provenance(config, recordSource(config, container), recordLocator(container, provision, mapping), primary.last_verified || provision.verified || container?.last_verified, instrumentCitation(container || {})),
                 'pub:primary_id': obligationId,
                 'pub:group': primary.group || undefined,
                 'pub:status': primary.status || undefined,

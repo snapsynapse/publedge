@@ -3695,7 +3695,7 @@
         "Lawyer review and authority sign-off remain pending; the draft is not issued.",
         "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
       ],
-      "source": "https://commerce.utah.gov/ai/",
+      "source": "https://publedge.org/us/utah/oaip/jia/2026-001/",
       "source_review_conflicts": null
     },
     "https://publedge.org/instrument/us-ut-oaip-rma-2024-001.json": {
@@ -7346,8 +7346,8 @@
         "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
         "last_verified renewal requires a separate human review receipt."
       ],
-      "source": "https://commerce.utah.gov/ai/",
-      "source_locator": "Utah Code §13-72a-203",
+      "source": "https://publedge.org/us/utah/oaip/jia/2026-001/",
+      "source_locator": "First-Session Disclosure (§13-72a-203)",
       "source_review_conflicts": null
     },
     "https://publedge.org/party/us-ut-oaip-jia-2026-001-publedge-illustrative-requesting-party.json": {
@@ -7380,7 +7380,7 @@
         "Lawyer review and authority sign-off remain pending; the draft is not issued.",
         "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
       ],
-      "source": "https://commerce.utah.gov/ai/",
+      "source": "https://publedge.org/us/utah/oaip/jia/2026-001/",
       "source_review_conflicts": null
     },
     "https://publedge.org/party/us-ut-oaip-jia-2026-001-utah-oaip.json": {
@@ -7413,7 +7413,7 @@
         "Lawyer review and authority sign-off remain pending; the draft is not issued.",
         "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
       ],
-      "source": "https://commerce.utah.gov/ai/",
+      "source": "https://publedge.org/us/utah/oaip/jia/2026-001/",
       "source_review_conflicts": null
     },
     "https://publedge.org/party/us-ut-oaip-rma-2024-001-elizachat-inc.json": {
@@ -8662,8 +8662,8 @@
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
       ],
-      "source": "https://commerce.utah.gov/ai/",
-      "source_locator": "Utah Code §13-72a-203",
+      "source": "https://publedge.org/us/utah/oaip/jia/2026-001/",
+      "source_locator": "First-Session Disclosure (§13-72a-203)",
       "source_review_conflicts": null
     }
   },
