@@ -39,8 +39,13 @@ Reconsider parked work only when at least one of these occurs:
 - A regulator, court, or civic body signals interest in machine-verifiable publication records.
 - A real adopter requests a reusable protocol distribution or additional jurisdiction coverage.
 
+## Exceptions to Repo Standards
+
+- `agents.json` is served only, at `docs/agents.json` (https://publedge.org/agents.json), with no repository-root copy. Repo Standards categorize `agents.json` as travels-with-code at the repository root. Here it is build output of `scripts/build-extras.js`, is fetched over HTTP by `server.json`, `llms.txt` and the README, and is committed under `docs/`, so a clone already carries it. A root copy would add a second file that can drift without serving a consumer the committed `docs/` copy does not.
+
 ## Decision history
 
 - 2026-06-09: Repositioned PubLedge as a convention atop established timestamp infrastructure and parked standalone ambitions.
 - 2026-07-21: Promoted that disposition into the repository's authoritative intent and aligned maintenance priorities around it.
 - 2026-07-28: Clarified the administrative issuance boundary with AI Incident Law's adjudicative determinations.
+- 2026-09-24: Recorded the served-only `agents.json` exception to Repo Standards.

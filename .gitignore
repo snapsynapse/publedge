@@ -32,6 +32,7 @@ _private/
 # Environment
 .env
 .env.*
+.vercel
 
 # Eval scratch runs and local agent config — not for the public repo
 publedge-eval-*/
