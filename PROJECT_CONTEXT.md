@@ -53,9 +53,9 @@ registry through structured endpoints and the MCP server.
 
 ## Current status (2026-09)
 
-Public and maintained. Spec at `v0.2.0`; package `v0.2.5` is prepared
-locally, while `v0.2.4` remains the published npm and Official MCP Registry
-version until release work completes. PubLedge is the
+Public and maintained. Spec at `v0.2.0`; package `v0.2.5` is published to npm
+and the Official MCP Registry. Current npm, MCP Registry, Git tag, and GitHub
+Release observations are recorded in `design/publication-state.json`. PubLedge is the
 thin recordkeeping convention of the PAICE legal graph. Standalone product expansion is parked pending a concrete
 legal-graph, regulator, court, civic-body, or adopter demand signal. See
 `INTENT.md` for authoritative strategy and `ROADMAP.md` for maintenance work.

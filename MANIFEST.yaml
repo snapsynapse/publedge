@@ -873,7 +873,7 @@ files:
 
   - path: PROJECT_CONTEXT.md
     role: agent-guidance
-    hash: sha256:cd6efc5346d81bd72d7f6685854f2b8f3956cb9e075004f0ba0872ba0c4e0d3b
+    hash: sha256:273ac3473924c9d98f2399f15f553b8cae8f6eb8bd431e660963f634a6b197d6
     note: PROJECT_CONTEXT.md
 
   - path: about/index.html
