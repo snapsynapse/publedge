@@ -21,6 +21,7 @@ const { buildObligationFirstRecords, writeObligationFirstRecords } = require('./
 const { deriveBuildClock } = require('./lib/build-clock');
 const { assertForEmission: assertSourceAdmission } = require('./check-source-admission');
 const { containerSummary, upcomingItems, recentlyChangedItems } = require('./lib/api-projection');
+const { containerCadenceDays, getReviewCadence } = require('./lib/verify-policy');
 
 const ROOT = path.join(__dirname, '..');
 const BUILD_CLOCK = deriveBuildClock(ROOT);
@@ -541,13 +542,17 @@ function th(label, opts = {}) {
 
 // --- Freshness helpers ---
 // Keep generated HTML deterministic. assets/tables.js enhances this absolute
-// date into an age label and color in the browser.
-function freshnessBadge(lastVerified) {
+// date into an age label and color in the browser, judged against the
+// record's review cadence (the same policy scripts/verify.js enforces).
+function freshnessBadge(lastVerified, cadenceDays) {
     const value = String(lastVerified || '').trim();
     if (!value || /^(null|undefined|tbd|n\/a)$/i.test(value)) return '';
     const parsed = new Date(value + 'T00:00:00Z');
     if (isNaN(parsed.getTime())) return '';
-    return `<span class="freshness-badge" data-last-verified="${escapeHTML(value)}" title="Last verified ${escapeHTML(value)}">Verified ${escapeHTML(value)}</span>`;
+    const cadence = Number.isSafeInteger(cadenceDays) && cadenceDays > 0 ? cadenceDays : null;
+    const cadenceAttr = cadence ? ` data-review-days="${cadence}"` : '';
+    const title = cadence ? `Last verified ${value}; review cadence ${cadence} days` : `Last verified ${value}`;
+    return `<span class="freshness-badge" data-last-verified="${escapeHTML(value)}"${cadenceAttr} title="${escapeHTML(title)}">Verified ${escapeHTML(value)}</span>`;
 }
 
 function tdDate(dateStr) {
@@ -710,7 +715,7 @@ function renderUpcomingWidget(containers, config) {
     if (!top.length) return '';
     const cards = top.map(e => `
         <a class="upcoming-card" href="${containerIndexHref(e.container)}">
-            <div class="upcoming-days">${e.daysUntil}d</div>
+            <div class="upcoming-days" data-date="${e.date}">${e.daysUntil}d</div>
             <div class="upcoming-kind">${escapeHTML(e.kind)}</div>
             <div class="upcoming-title">${escapeHTML(e.container.title || e.container.name || e.container.id)}</div>
             <div class="upcoming-date">${formatDate(e.date)}</div>
@@ -1353,7 +1358,7 @@ function generateContainerDetail(config, container, data, configCSS) {
             <div class="detail-meta">
                 ${renderStatusBadge(container.status)}
                 <span><strong>Editorial:</strong> ${escapeHTML(humanizeId(container.editorial_status || 'unspecified'))}</span>
-                ${freshnessBadge(container.last_verified)}
+                ${freshnessBadge(container.last_verified, containerCadenceDays(container, getReviewCadence(config)))}
                 ${container.effective ? `<span><strong>Effective:</strong> ${formatDate(container.effective)}</span>` : '<!-- No effective date asserted. -->'}
                 ${container.official_url ? `<span><a href="${escapeHTML(container.official_url)}" target="_blank" rel="noopener">Official source</a></span>` : ''}
             </div>

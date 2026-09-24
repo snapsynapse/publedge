@@ -16,18 +16,9 @@ const fs = require('fs');
 const path = require('path');
 const { parseYaml, parseFrontmatter } = require('./lib/parse');
 const { loadMappingIndex } = require('./lib/mapping');
-const { classifyUnmappedContainers, getAllowedUnmappedInstrumentIds } = require('./lib/verify-policy');
+const { classifyUnmappedContainers, containerCadenceDays, getAllowedUnmappedInstrumentIds, getReviewCadence } = require('./lib/verify-policy');
 
 const ROOT = path.join(__dirname, '..');
-
-function positiveWholeDays(value, name, fallback) {
-    const configured = value === undefined || value === null ? fallback : value;
-    const text = String(configured).trim();
-    if (!/^[1-9]\d*$/.test(text)) throw new Error(`Invalid verification.${name}: expected a positive whole-day threshold`);
-    const days = Number(text);
-    if (!Number.isSafeInteger(days)) throw new Error(`Invalid verification.${name}: expected a safe whole-day threshold`);
-    return days;
-}
 
 function parseVerifiedDate(value) {
     if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
@@ -47,12 +38,9 @@ function verify() {
     }
 
     const config = parseYaml(fs.readFileSync(configPath, 'utf-8'));
-    let stalenessDays, authorityStalenessDays, obligationStalenessDays, historicalDemonstrationStalenessDays;
+    let cadence;
     try {
-        stalenessDays = positiveWholeDays(config.verification?.staleness_days, 'staleness_days', 90);
-        authorityStalenessDays = positiveWholeDays(config.verification?.authority_staleness_days, 'authority_staleness_days', stalenessDays);
-        obligationStalenessDays = positiveWholeDays(config.verification?.obligation_staleness_days, 'obligation_staleness_days', stalenessDays);
-        historicalDemonstrationStalenessDays = positiveWholeDays(config.verification?.historical_demonstration_staleness_days, 'historical_demonstration_staleness_days', stalenessDays);
+        cadence = getReviewCadence(config);
     } catch (error) {
         console.error(`Configuration error: ${error.message}`);
         process.exit(1);
@@ -61,14 +49,12 @@ function verify() {
 
     console.log('Knowledge Base Verification Report');
     console.log('==================================\n');
-    console.log(`Staleness policy: active instruments ${stalenessDays}d; authorities ${authorityStalenessDays}d; obligations ${obligationStalenessDays}d; historical demonstrations ${historicalDemonstrationStalenessDays}d\n`);
+    console.log(`Staleness policy: active instruments ${cadence.active}d; authorities ${cadence.authority}d; obligations ${cadence.obligation}d; historical demonstrations ${cadence.historicalDemonstration}d\n`);
 
     function thresholdFor(entity) {
-        if (entity.role === (config.entities?.authority?.name || 'Authority')) return authorityStalenessDays;
-        if (entity.role === (config.entities?.primary?.name || 'Primary')) return obligationStalenessDays;
-        const isHistoricalDemonstration = entity.source === 'demonstration-remap' &&
-            !['jia', 'rma', 'statute'].includes(entity.type);
-        return isHistoricalDemonstration ? historicalDemonstrationStalenessDays : stalenessDays;
+        if (entity.role === (config.entities?.authority?.name || 'Authority')) return cadence.authority;
+        if (entity.role === (config.entities?.primary?.name || 'Primary')) return cadence.obligation;
+        return containerCadenceDays(entity, cadence);
     }
 
     // Find data directory

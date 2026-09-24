@@ -598,7 +598,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:12e43a8be8b10149d6bd3ea4891c65289b50112c0bd7c7b5e44b53142d59e2e5
+    hash: sha256:0ea9b3d271f36829c75e01943da3956143aa47fb581083894b171ae4067bcf96
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -828,7 +828,7 @@ files:
 
   - path: scripts/lib/verify-policy.js
     role: tooling
-    hash: sha256:647e61a061137ab9ab14d1fd1c856f5defa008427c87302e5744ea04fc2b7adb
+    hash: sha256:160300832c7319eab1ad67a4809eebcb1a81963c79a12f4e46be0081df47602e
     note: scripts/lib/verify-policy.js
 
   - path: scripts/ocr-pdf.sh
@@ -853,7 +853,7 @@ files:
 
   - path: scripts/verify.js
     role: tooling
-    hash: sha256:dfd3690ef2b8ed18271ba9b8ac2efa24f4015af8f7b69c332c34d94afe77fcd7
+    hash: sha256:661d837aec73b8cce20f40ecbcb6c169f1969654a3796c4e1a7906f4acc6aaf5
     note: scripts/verify.js
 
   - path: scripts/verify-ci.js
@@ -893,7 +893,7 @@ files:
 
   - path: assets/tables.js
     role: site-source
-    hash: sha256:4ea130b337a1696c85f9c98ebb3b8d391a1e00db690566f24bdcbf1433f39819
+    hash: sha256:44aeb59b32113a06d418b6ce42cded11e1dc36197b883a82f05616d4ea3d0717
     note: assets/tables.js
 
   - path: assets/theme.js
