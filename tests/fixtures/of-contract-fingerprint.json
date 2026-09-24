@@ -1894,9 +1894,9 @@
         "present": 35
       },
       "enforcement_status": {
-        "explicit_unknown": 31,
+        "explicit_unknown": 30,
         "missing": 0,
-        "populated": 4,
+        "populated": 5,
         "present": 35
       },
       "evidence_type": {
@@ -1910,15 +1910,15 @@
         "present": 35
       },
       "lifecycle_status": {
-        "explicit_unknown": 28,
+        "explicit_unknown": 27,
         "missing": 0,
-        "populated": 7,
+        "populated": 8,
         "present": 35
       },
       "operative_status": {
-        "explicit_unknown": 31,
+        "explicit_unknown": 30,
         "missing": 0,
-        "populated": 4,
+        "populated": 5,
         "present": 35
       },
       "projection_basis": {

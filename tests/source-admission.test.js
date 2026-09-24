@@ -421,3 +421,32 @@ test('Obligation-First issuance determinations exclude original drafts even when
     const ids = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/of/determinations.json'), 'utf8')).determinations.map(record => record['pub:id']);
     assert.equal(ids.includes('us-ut-oaip-jia-2026-001-issuance'), false);
 });
+
+test('an obligation created only by a draft or proposed term keeps the draft state', () => {
+    const config = { url: 'https://publedge.org/' };
+    const evidence = path => ({ kind: 'instrument', native_path: path, native_file_sha256: '1'.repeat(64), canonical_unit: null, canonical_sha256: '2'.repeat(64), admission_status: 'legacy-unreviewed', review_packet_sha256: null, retained_primary_sha256: null, unresolved_review_state: 'unknown', unresolved: null });
+    // The shared definition declares an operative lifecycle; only the creating term decides whether this concrete duty is issued.
+    const primary = { id: 'example-duty', name: 'Example duty', group: 'requirement', lifecycle_status: 'operative', operative_status: 'operative', enforcement_status: 'enforced', _body: '## Summary\n\nExample.\n', _evidence_input: { ...evidence('data/examples/obligations/example-duty.md'), kind: 'obligation-definition' } };
+    const project = container => {
+        const mapping = { id: 'example-mapping', regulation: container.id, obligations: ['example-duty'], source_heading: 'Summary', _evidence_input: { ...evidence('data/examples/mapping/index.yml'), kind: 'mapping-entry' } };
+        return obligationFirst.buildObligationFirstRecords(config, { containers: [container], primaries: [primary], authorities: [], mappingIndex: [mapping] }).obligations[0];
+    };
+    const base = { id: 'us-ut-oaip-jia-2099-001', type: 'jia', jurisdiction: 'us-ut', authority: 'utah-oaip', _evidence_input: evidence(JIA_FILE) };
+
+    for (const status of ['draft', 'proposed']) {
+        const duty = project({ ...base, status });
+        assert.equal(duty.lifecycle_status, status, `${status} creator must keep the duty ${status}`);
+        assert.notEqual(duty.operative_status, 'operative');
+        assert.notEqual(duty.enforcement_status, 'enforced');
+    }
+
+    // Negative control: an issued creator leaves the definition's own state in place.
+    const issued = project({ ...base, type: 'rma', status: 'enforcing' });
+    assert.ok(!['draft', 'proposed'].includes(issued.lifecycle_status));
+    assert.equal(issued.operative_status, 'operative');
+    assert.equal(issued.enforcement_status, 'enforced');
+
+    // The emitted JIA duty matches its draft term.
+    const emitted = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/of/records/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json'), 'utf8'));
+    assert.deepEqual([emitted.lifecycle_status, emitted.operative_status, emitted.enforcement_status], ['draft', 'future', 'unsignaled']);
+});

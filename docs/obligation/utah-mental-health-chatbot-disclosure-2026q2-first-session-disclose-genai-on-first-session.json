@@ -16,9 +16,9 @@
   "anchors": [
     "https://everyailaw.com/obligation-category/transparency.json"
   ],
-  "lifecycle_status": "unknown",
-  "operative_status": "unknown",
-  "enforcement_status": "unknown",
+  "lifecycle_status": "draft",
+  "operative_status": "future",
+  "enforcement_status": "unsignaled",
   "jurisdiction": {
     "@type": "of:Jurisdiction",
     "territorial_scope": [
