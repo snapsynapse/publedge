@@ -349,6 +349,7 @@
 
     // Enhance deterministic absolute verification dates with a relative age.
     // The source HTML remains stable across builds; only the browser view ages.
+    // data-review-days carries the record's review cadence from project.yml.
     function initFreshnessBadges() {
         var badges = document.querySelectorAll('.freshness-badge[data-last-verified]');
         var now = new Date();
@@ -358,9 +359,29 @@
             var verified = new Date(value + 'T00:00:00Z');
             if (isNaN(verified.getTime())) continue;
             var days = Math.max(0, Math.floor((now.getTime() - verified.getTime()) / 86400000));
-            var state = days < 90 ? 'fresh' : days < 180 ? 'aging' : 'stale';
+            var cadence = parseInt(badge.getAttribute('data-review-days'), 10);
+            var state;
+            if (cadence > 0) {
+                state = days > cadence ? 'stale' : 'fresh';
+                badge.textContent = state === 'fresh' ? 'verified ' + days + 'd ago' : 'review overdue (verified ' + days + 'd ago)';
+            } else {
+                state = days < 90 ? 'fresh' : days < 180 ? 'aging' : 'stale';
+                badge.textContent = state === 'fresh' ? 'verified ' + days + 'd ago' : state + ' (' + days + 'd)';
+            }
             badge.classList.add(state);
-            badge.textContent = state === 'fresh' ? 'verified ' + days + 'd ago' : state + ' (' + days + 'd)';
+        }
+    }
+
+    // Recompute build-time countdowns against the reader's current date.
+    function initCountdowns() {
+        var cells = document.querySelectorAll('.upcoming-days[data-date]');
+        var now = new Date();
+        var today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+        for (var i = 0; i < cells.length; i++) {
+            var target = new Date(cells[i].getAttribute('data-date') + 'T00:00:00Z').getTime();
+            if (isNaN(target)) continue;
+            var days = Math.round((target - today) / 86400000);
+            cells[i].textContent = days < 0 ? 'passed' : days === 0 ? 'today' : days + 'd';
         }
     }
 
@@ -369,6 +390,7 @@
         initKeyboardAndDismiss();
         initAnchors();
         initFreshnessBadges();
+        initCountdowns();
     }
 
     if (document.readyState === 'loading') {
