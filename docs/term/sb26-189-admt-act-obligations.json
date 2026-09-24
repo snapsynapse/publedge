@@ -57,7 +57,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
       "canonical_unit": "entry:sb26-189-admt-act-obligations",
       "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
       "admission_status": "legacy-unreviewed",

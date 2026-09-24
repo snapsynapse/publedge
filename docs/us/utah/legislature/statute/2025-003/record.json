@@ -2,10 +2,10 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-003/",
-    "generated": "2026-09-12T00:00:00.000Z",
+    "generated": "2026-09-23T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
-      "status": "legacy-unreviewed",
+      "status": "reviewed-changes",
       "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
     }
   },
@@ -59,47 +59,47 @@
     "supersedes": null,
     "superseded_by": null,
     "authority_response": null,
-    "last_verified": "2026-06-04",
+    "last_verified": "2026-09-23",
     "timeline": [
       {
         "milestone": "Introduced",
         "date": "2025-02-24",
-        "notes": "Senate Rules Committee"
+        "notes": "Senate Rules Committee (unconfirmed)"
       },
       {
         "milestone": "Senate Business and Labor — favorable",
         "date": "2025-02-26",
-        "notes": "7-0-1"
+        "notes": "7-0-1 (unconfirmed)"
       },
       {
         "milestone": "Senate passed 3rd reading",
         "date": "2025-03-03",
-        "notes": "24-0-5"
+        "notes": "24-0-5 (unconfirmed)"
       },
       {
         "milestone": "House Law Enforcement and Criminal Justice — favorable",
         "date": "2025-03-04",
-        "notes": "8-0-3"
+        "notes": "8-0-3 (unconfirmed)"
       },
       {
         "milestone": "House passed",
         "date": "2025-03-05",
-        "notes": "74-0-1"
+        "notes": "74-0-1 (unconfirmed)"
       },
       {
         "milestone": "Governor Signed",
         "date": "2025-03-25",
-        "notes": "Gov. Cox"
+        "notes": "Gov. Cox (unconfirmed)"
       },
       {
         "milestone": "Effective",
         "date": "2025-05-07",
-        "notes": "Default 2025 session effective date"
+        "notes": "Special effective date (§2): May 7, 2025, or on governor approval if passed by two-thirds of each house; two-thirds vote not confirmed"
       },
       {
         "milestone": "Chapter 72 sunset (post-amendment)",
         "date": "2027-07-01",
-        "notes": "Extended from 2025-05-01"
+        "notes": "Extended from 2025-05-01 (SB 226 §7 made the same amendment)"
       }
     ],
     "source_documents": []
@@ -116,7 +116,7 @@
       "https://le.utah.gov/~2025/bills/static/SB0332.html"
     ],
     "dateCreated": "2026-06-04",
-    "dateModified": "2026-06-04",
+    "dateModified": "2026-09-23",
     "datePublished": "2025-05-07",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",

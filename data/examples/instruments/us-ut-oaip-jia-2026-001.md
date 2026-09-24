@@ -11,8 +11,8 @@ authority: utah-oaip
 issued_by:
   "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
   name: "Utah Office of Artificial Intelligence Policy (OAIP)"
-  ref: "https://commerce.utah.gov/ai/learning-lab/"
-official_url: https://commerce.utah.gov/ai/learning-lab/
+  ref: "https://commerce.utah.gov/ai/"
+official_url: https://commerce.utah.gov/ai/
 obligation_kind: [requirement, permission]
 reliance_scope: requesting-party-only
 requesting_party: "PubLedge (illustrative — suggested prior art, not party-specific)"
@@ -25,12 +25,12 @@ parties:
 statute_anchors:
   - cite: "Utah Code §13-72a-203"
     url: "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure"
-  - cite: "Utah SB0149 (2024)"
-    url: "https://le.utah.gov/~2024/bills/static/SB0149.html"
+  - cite: "Utah HB0452 (2025)"
+    url: "https://le.utah.gov/~2025/bills/static/HB0452.html"
 publication_citations: []
 terms:
   - "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm"
-    text: "Provider must display the standardized GenAI disclosure on first session and on session resumption after 30 minutes of inactivity."
+    text: "Proposed interpretation: provider displays the standardized GenAI disclosure before first access and again on session resumption after 30 minutes of inactivity. The 30-minute re-display is a proposed term stricter than the statute's seven-day trigger, not a statutory requirement."
 status: proposed
 editorial_status: draft
 supersedes: null
@@ -40,10 +40,10 @@ withdrawal_reason: null
 withdrawn_by_instrument: null
 hash_chain_prev: null
 disclaimer: ""
-last_verified: 2026-06-04
+last_verified: 2026-09-23
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-15
-modified: 2026-06-04
+modified: 2026-09-23
 ---
 
 ## Timeline
@@ -52,7 +52,7 @@ modified: 2026-06-04
 |-----------|------|-------|
 | Drafted | 2026-04-15 | Initial PubLedge draft, suggested prior art |
 | Reviewed | TBD | Lawyer review pending |
-| Published | TBD | Awaiting v0.1 release |
+| Published | TBD | Not issued; remains a PubLedge draft pending lawyer review and authority sign-off |
 
 ---
 
@@ -63,22 +63,24 @@ modified: 2026-06-04
 | Obligation | disclose-genai-on-first-session |
 | Sections | Utah Code §13-72a-203 |
 | Status | draft |
-| Effective | 2026-04-15 |
-| Verified | 2026-04-18 |
-| Checked | 2026-04-18 |
+| Drafted | 2026-04-15 |
+| Verified | 2026-09-23 |
+| Checked | 2026-09-23 |
 
 ### Requirements
 
 | Requirement | Details |
 |-------------|---------|
-| Display disclosure | On first session, plainly identify the service as an AI chatbot |
-| Re-display on resumption | After 30 minutes of inactivity, re-display the disclosure |
+| Display disclosure (statute) | Clearly and conspicuously disclose that the chatbot is AI and not a human, before the user may access its features |
+| Re-display after absence (statute) | Disclose again at the start of an interaction if the user hasn't accessed the chatbot within the previous seven days |
+| Disclose on request (statute) | Disclose whenever the user asks or prompts the chatbot about whether AI is being used |
+| Re-display on resumption (proposed JIA term) | After 30 minutes of inactivity, re-display the disclosure. Stricter than the statute; not a statutory requirement |
 
 ### Talking Point
 
-> "A mental-health chatbot must tell the user it is an AI on first session and again after extended inactivity — not buried in a privacy policy."
+> "A mental-health chatbot must tell the user it is an AI before first access, again after seven days away, and whenever asked. This draft proposes re-displaying it after 30 minutes of inactivity."
 
 ### Sources
 
 - [EveryAILaw — Mental Health Chatbot Disclosure](https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure)
-- [Utah Code §13-72a-203](https://le.utah.gov/~2024/bills/static/SB0149.html)
+- [Utah Code §13-72a-203](https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html), enacted by [Utah HB 452 (2025)](https://le.utah.gov/~2025/bills/static/HB0452.html)

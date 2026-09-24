@@ -6,6 +6,7 @@ group: requirement
 status: draft
 lifecycle_status: operative
 last_verified: 2026-04-21
+modified: 2026-09-23
 search_terms:
   - chatbot
   - mental health
@@ -17,12 +18,13 @@ search_terms:
 
 ## Summary
 
-A mental health chatbot supplier must draft, file with Utah's Division of Consumer Protection, and operationally comply with a fifteen-element written safety policy covering purposes, clinical practices, testing, risk protocols, user reporting, HIPAA posture, and more. Compliance with the filed policy at the time of an alleged violation provides an affirmative defense against §58-1-501(1)-(2) unauthorized-practice actions.
+Filing is a condition of an affirmative defense, not a free-standing mandate. A mental health chatbot supplier has an affirmative defense against §58-1-501(1)-(2) unauthorized-practice actions if it shows that it created, maintained, and implemented a written policy meeting §58-60-118(3), including the fifteen procedure elements in (3)(c)(i)-(xv); maintains the development and implementation documentation required by (2)(b); filed the policy with Utah's Division of Consumer Protection; and complied with the filed policy at the time of the alleged violation.
 
 ## What Counts
 
-- Written policy addressing all fifteen statutory elements (intended purposes, therapist involvement, clinical best practices, testing, risk identification, user reporting, acute-risk protocols, safety reviews, safe-use instructions, AI-awareness disclosure, engagement-over-safety prohibition, non-discrimination, HIPAA compliance, and foundation-model/training-data/accuracy documentation)
-- Policy filed with the Utah Division of Consumer Protection along with the annual fee
+- Written policy stating the chatbot's intended purposes, abilities, and limitations and describing all fifteen procedure elements in §58-60-118(3)(c) (therapist involvement, clinical best practices, pre-release and ongoing testing, foreseeable-harm identification, user reporting, risk-of-harm protocols, mitigation actions, real-time acute-risk protocols, regular safety reviews, safe-use instructions, AI-awareness, purpose and limitation awareness, safety over engagement or profit, non-discrimination, and HIPAA and consumer-protection compliance)
+- Separate documentation of foundation models, training data, federal health privacy compliance, user data practices, and accuracy, reliability, fairness, and safety efforts (§58-60-118(2)(b))
+- Policy filed with the Utah Division of Consumer Protection along with the required fee (the division may also impose an annual filing fee)
 - Operational conformance to the filed policy at the time of the challenged conduct
 
 ## What Does Not Count

@@ -33,11 +33,19 @@ test('every OF record declares exact native evidence inputs and explicit review 
 });
 
 test('per-kind input chains preserve mixed legacy and reviewed status', () => {
+    // A reviewed instrument cannot promote a term whose mapping entry remains legacy-unreviewed.
+    const mixed = byId.get('https://publedge.org/term/doctronic-rma-obligations.json');
+    assert.deepEqual(mixed['pub:evidence_inputs'].map(input => input.kind), ['instrument', 'mapping-entry']);
+    assert.deepEqual(mixed['pub:evidence_inputs'].map(input => input.admission_status), ['reviewed-changes', 'legacy-unreviewed']);
+    assert.equal(mixed.admission_status, 'legacy-unreviewed');
+    assert.equal(mixed.evidence_type, 'legacy-unreviewed-source-reference');
+
+    // Reviewing every input of the draft JIA term must not promote the draft.
     const term = byId.get('https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json');
     assert.deepEqual(term['pub:evidence_inputs'].map(input => input.kind), ['instrument', 'mapping-entry']);
-    assert.deepEqual(term['pub:evidence_inputs'].map(input => input.admission_status), ['legacy-unreviewed', 'reviewed-changes']);
-    assert.equal(term.admission_status, 'legacy-unreviewed');
-    assert.equal(term.evidence_type, 'legacy-unreviewed-source-reference');
+    assert.deepEqual(term['pub:evidence_inputs'].map(input => input.admission_status), ['reviewed-changes', 'reviewed-changes']);
+    assert.equal(term.admission_status, 'source-consistency-reviewed-changes');
+    assert.equal(term.evidence_type, 'reviewed-source-reference');
     assert.equal(term.source_review_conflicts, null);
     assert.ok(term['pub:source_review_unresolved'].some(item => /30-minute/i.test(item)));
     assert.equal(term.lifecycle_status, 'draft');
@@ -45,7 +53,8 @@ test('per-kind input chains preserve mixed legacy and reviewed status', () => {
 
     const obligation = byId.get('https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json');
     assert.deepEqual(obligation['pub:evidence_inputs'].map(input => input.kind), ['instrument', 'mapping-entry', 'obligation-definition']);
-    assert.equal(obligation.admission_status, 'legacy-unreviewed');
+    assert.equal(obligation.admission_status, 'source-consistency-reviewed-changes');
+    assert.notEqual(obligation.lifecycle_status, 'in-force');
 
     const instrument = byId.get('https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json');
     assert.deepEqual(instrument['pub:evidence_inputs'].map(input => input.kind), ['instrument']);
@@ -55,8 +64,9 @@ test('per-kind input chains preserve mixed legacy and reviewed status', () => {
     assert.ok(instrument['pub:source_review_unresolved'].some(item => /conflict/i.test(item)));
 
     const sb149Term = byId.get('https://publedge.org/term/sb149-learning-lab-and-ai-defense.json');
-    assert.deepEqual(sb149Term['pub:evidence_inputs'].map(input => input.admission_status), ['reviewed-changes', 'legacy-unreviewed']);
-    assert.equal(sb149Term.admission_status, 'legacy-unreviewed');
+    assert.deepEqual(sb149Term['pub:evidence_inputs'].map(input => input.admission_status), ['reviewed-changes', 'reviewed-changes']);
+    assert.equal(sb149Term.admission_status, 'source-consistency-reviewed-changes');
+    assert.equal(sb149Term.evidence_type, 'reviewed-source-reference');
 });
 
 test('invalid or absent evidence input digests fail before projection', () => {

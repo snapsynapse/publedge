@@ -183,37 +183,37 @@ files:
 
   - path: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
     role: instrument
-    hash: sha256:372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2
+    hash: sha256:6fb9a910496ef034a5b8b241d8859688cb39d2370fd3321b07649b32e3f49e2e
     note: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
     role: instrument
-    hash: sha256:fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7
+    hash: sha256:c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb
     note: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
     role: instrument
-    hash: sha256:518882b00ebe9515a3f4697a2da41a607c506c8d844a31895dcf1851d0f5dd3a
+    hash: sha256:9cb602b984427da4e4f0bdc1ba9f56458de93a54911769c20584ce105b1c6cf0
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
     role: instrument
-    hash: sha256:97e8084f429a9565d1b7e2d4eeb6ab7cb0d16c63762838c30c18afde1f436a83
+    hash: sha256:6de7ddf6525087ffe3f1e32b40dac48954dc0cfe7eceabd5e5717f24307a9a36
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
     role: instrument
-    hash: sha256:111b246cf8bb2b1118face419aa81634e3eba290346e98be8e47761d2a8345d5
+    hash: sha256:01797df3b03a8a6d33869d8a1ed4a0575acea137ea8b84598087d3a0fca8008d
     note: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
 
   - path: data/examples/instruments/us-ut-oaip-jia-2026-001.md
     role: instrument
-    hash: sha256:1c73dcfdf1dc9dc14040426990fdd43ea4db8615ca0523c2914d7fda1e40d740
+    hash: sha256:639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad
     note: data/examples/instruments/us-ut-oaip-jia-2026-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2024-001.md
     role: instrument
-    hash: sha256:68266cdbb989ed85f06c0b2dc6a96f0007462ce569d77816590a479da020a7d7
+    hash: sha256:c623da93f7b652f8273c9fbfc5cec5da27e2e21939f25df14955b397dbaaba18
     note: data/examples/instruments/us-ut-oaip-rma-2024-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-001.md
@@ -223,12 +223,12 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
     role: instrument
-    hash: sha256:79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984
+    hash: sha256:8793088d93de032d8f5b2ed3a50e9441d911ece3d01083ad61cd01d8c8672724
     note: data/examples/instruments/us-ut-oaip-rma-2025-002.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2026-001.md
     role: instrument
-    hash: sha256:d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a
+    hash: sha256:3ebe2f0525a6e5fcf469b3f5c09afff35b357a3624445d3acd40065a91217788
     note: data/examples/instruments/us-ut-oaip-rma-2026-001.md
 
   - path: ATTRIBUTION.md
@@ -253,7 +253,7 @@ files:
 
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592
+    hash: sha256:b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f
     note: data/examples/mapping/index.yml
 
   - path: data/examples/obligations/admt-60-day-cure-period.md
@@ -293,7 +293,7 @@ files:
 
   - path: data/examples/obligations/ai-defense-elimination.md
     role: obligation
-    hash: sha256:ecda85918d33c2ebe2345f5cdef1e78e25f533d645c3efa2d7402022cf2bba33
+    hash: sha256:a55e45923f6c446174676808c25e74c677631fb8550f520ee92ba2786eb08151
     note: data/examples/obligations/ai-defense-elimination.md
 
   - path: data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md
@@ -313,7 +313,7 @@ files:
 
   - path: data/examples/obligations/chatbot-safety-policy-filing.md
     role: obligation
-    hash: sha256:64d1121bd3ffbe629f4ea714deee5bd9ac05371f8492487128fbe4a8de8f0b2e
+    hash: sha256:926ce7f92c39b4613ccaea98594d2a43f06982309402d41d5b1a4571842a3066
     note: data/examples/obligations/chatbot-safety-policy-filing.md
 
   - path: data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md
@@ -338,7 +338,7 @@ files:
 
   - path: data/examples/obligations/disclose-genai-on-first-session.md
     role: obligation
-    hash: sha256:964a825c8ad92c8e5a59ceda27d05433bd145b2b381af9edb7f6309681a55b71
+    hash: sha256:785f11886a59611ca6458facf971ef6bcf088085a4c12675492498d88380fc8d
     note: data/examples/obligations/disclose-genai-on-first-session.md
 
   - path: data/examples/obligations/disclose-genai-on-request.md
@@ -353,7 +353,7 @@ files:
 
   - path: data/examples/obligations/elizachat-pre-access-disclosure-bundle.md
     role: obligation
-    hash: sha256:44ccb58a19ec9ebb04c917de3e9b65ecb0cf3fdccad3464e3309f8818ff254b1
+    hash: sha256:4caf489311fac12b33ead6ccea5e1765d489d4991aed57e4b2d174922b542d4e
     note: data/examples/obligations/elizachat-pre-access-disclosure-bundle.md
 
   - path: data/examples/obligations/high-risk-ai-consumer-notice-correction-and-appeal.md
@@ -383,12 +383,12 @@ files:
 
   - path: data/examples/obligations/learning-lab-agreement-participation.md
     role: obligation
-    hash: sha256:efeebe2f9d9c60fcfc09d9cdddc438f311e27a5064b2d999d490d1835f67b45b
+    hash: sha256:c7f07d610d5c3bb5aa942d5d80fb3dad563ed73529770ed89888a4fca1d537eb
     note: data/examples/obligations/learning-lab-agreement-participation.md
 
   - path: data/examples/obligations/named-prescriber-enforcement-forborne.md
     role: obligation
-    hash: sha256:9bc50212ab23b5d835c423f3639e384f25ada45855f2c438e27f80bfef616083
+    hash: sha256:a387cda4d9c8ae0c04a890f5cb8f665334ded7bf384cdab2048006bcd0818164
     note: data/examples/obligations/named-prescriber-enforcement-forborne.md
 
   - path: data/examples/obligations/rma-data-security-63a-19-102.md
@@ -428,12 +428,12 @@ files:
 
   - path: data/examples/obligations/telehealth-compliance-per-proposal.md
     role: obligation
-    hash: sha256:7fc842d907a39f82bfca7bf5380ba6887404ff5693e1b473d807b424ffe49af0
+    hash: sha256:ee6e7f615e88f8defb62bb6c58442887c9f13e51afd01a63249deff01c8e9bda
     note: data/examples/obligations/telehealth-compliance-per-proposal.md
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:850926cc973c09d2c295a9edf0134b2a3e2827272e974fee8e25477a0c152bcb
+    hash: sha256:0b46bc1d7717b1413fb3c8d23f183771a973e042c9c3ff7e9293c895976bc3a3
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -1028,7 +1028,7 @@ files:
 
   - path: tests/maintenance.test.js
     role: code
-    hash: sha256:e79c6acf32b51c8203e8284f574c612b21984d8c5ebddabd42ba6f9e69495cda
+    hash: sha256:73a1456f27b4bacbd8aea385046f0ae29daef62df427091160766224ee462a40
     note: T10 bounded maintenance pilot
 
   - path: tests/generated-record-schema.test.js
@@ -1038,7 +1038,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:1b47af7b67056a838e3b19e9ed06f5f9a8bfc7cc11bdab8d5c096fde7fcc20bc
+    hash: sha256:d2ec25e0a18c9c83b9ec505fedecf776f2b5971b4f4de24102273681467f45b2
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js
@@ -1048,7 +1048,7 @@ files:
 
   - path: tests/doctronic-observation.test.js
     role: code
-    hash: sha256:9185ead5745b5a7de55c228ec30e6bd9b80746503516864786e949c7577fdb4d
+    hash: sha256:d9964bfaeb126d4111b4f7c7363b085567c3713ed68cbcff5e75d2b4003b5089
     note: Dated outcomes versus issued-term boundary regression
 
   - path: tests/source-owned-mapping.test.js
@@ -1058,7 +1058,7 @@ files:
 
   - path: tests/of-evidence-inputs.test.js
     role: code
-    hash: sha256:d9a179498a065b70f94d2bd81a951106da5a33cca12f72759774ce9b2d0e5423
+    hash: sha256:1e604a0fb0f847f796d655245a431333e412da9f94e1f01e96c38818323b084c
     note: Per-kind native evidence input and review-boundary regressions
 
   - path: tests/colorado-order24.test.js

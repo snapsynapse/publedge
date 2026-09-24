@@ -39,7 +39,7 @@
   "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
   "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
   "evidence_type": "reviewed-source-reference",
-  "verified": "2026-06-04",
+  "verified": "2026-09-23",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:status": "enforcing",
   "pub:editorial_status": "published",
@@ -48,30 +48,36 @@
   "admission_status": "source-consistency-reviewed-changes",
   "source_review_conflicts": null,
   "pub:source_review_unresolved": [
-    "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-    "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+    "Boyd appointment date (2024-04-30) is not in the SB 149 enrolled copy or the retained bill status page; the row is kept but marked unconfirmed.",
+    "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
+    "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
+    "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-      "native_file_sha256": "372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2",
+      "native_file_sha256": "6fb9a910496ef034a5b8b241d8859688cb39d2370fd3321b07649b32e3f49e2e",
       "canonical_unit": null,
-      "canonical_sha256": "53b0d1aff53dcae4e0bd8e34ee2021069340673c56b979bf6a639b1ca589c202",
+      "canonical_sha256": "c1aca07ba833a22c5029c1afa612bd5aff05a91c2a2e3d30309c12a4ba792235",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "4f6f7ab0b94560d1e81548a417d56e0026eee2e21799079f7baa04f2b448aa7e",
+      "review_packet_sha256": "4638f21fae0dfa0223ba78a611e37ad1d1c900807b53ff46a89832c0ba759e74",
       "retained_primary_sha256": [
+        "02db4dfb7fcc9c536f4aa7e006458da3ed0ba3567a7cc4478db9e3d5c3195514",
         "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
         "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+        "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
         "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
         "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
-        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+        "Boyd appointment date (2024-04-30) is not in the SB 149 enrolled copy or the retained bill status page; the row is kept but marked unconfirmed.",
+        "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
+        "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
+        "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy."
       ]
     }
   ]

@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
   "pub:id": "hb452-mental-health-chatbot-stack-disclose-genai-on-first-session",
   "title": "Disclose GenAI on First Session",
-  "content": "A consumer-facing GenAI service must display a clear, prominent disclosure that the consumer is interacting with an AI system at the start of each session.",
+  "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before access, again after seven days without access, and whenever asked (§13-72a-203(2)). No Utah provision anchored here requires re-display at every session or after a fixed inactivity period.",
   "created_by": [
     "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
   ],
@@ -25,7 +25,7 @@
   "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
   "source_locator": "Summary",
   "source_citation": "Utah HB 452 (2025 General Session)",
-  "evidence_type": "legacy-unreviewed-source-reference",
+  "evidence_type": "reviewed-source-reference",
   "verified": "2026-04-18",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:primary_id": "disclose-genai-on-first-session",
@@ -39,54 +39,78 @@
     "chatbot"
   ],
   "projection_basis": "native-record-projection",
-  "admission_status": "legacy-unreviewed",
+  "admission_status": "source-consistency-reviewed-changes",
   "source_review_conflicts": null,
   "pub:source_review_unresolved": [
-    "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-    "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+    "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
+    "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
+    "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+    "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+    "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+    "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+    "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+    "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+    "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
+    "last_verified renewal requires a separate human review receipt."
   ],
-  "pub:source_review_state": "known-and-unknown",
+  "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-      "native_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
+      "native_file_sha256": "c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb",
       "canonical_unit": null,
-      "canonical_sha256": "8deea5bfdfb67ecb23276907a46d7d76dbe492525a4b401dfcad8a1933fbbea5",
+      "canonical_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "38ad104b571b171500e69a42c94ef01bbc1f85d57335af6e7ec67f0c6bb43705",
+      "review_packet_sha256": "be382469d216fa204a551bbd826747b34bbc49fc2e9581723266bd05df6a9690",
       "retained_primary_sha256": [
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
-        "The retained Utah source establishes the described Utah enactment but does not establish nationwide uniqueness or comparative comprehensiveness.",
-        "This agent review removes unsupported comparative language and does not renew last_verified or authenticate human currentness review."
+        "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
+        "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
+        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
       ]
     },
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
       "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
-      "canonical_sha256": "0efa1a9d629192ea94613364015b159f0297afd09676a5633788f81b626ed675",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "66bc4b8a16d6100604ecc6c10e8fd489aed581208679ce6a3c847cb44b7b3d7c",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+      "retained_primary_sha256": [
+        "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+        "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+        "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+        "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+      ]
     },
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/disclose-genai-on-first-session.md",
-      "native_file_sha256": "964a825c8ad92c8e5a59ceda27d05433bd145b2b381af9edb7f6309681a55b71",
+      "native_file_sha256": "785f11886a59611ca6458facf971ef6bcf088085a4c12675492498d88380fc8d",
       "canonical_unit": null,
-      "canonical_sha256": "416ca3ea40e4681bf3f0ccb9a00cd890d94214d1e9c0ffd262fbb6a8a17da163",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "c87615a8fc2a979ae02b7d3c833c2b2cfcb476b6b61bdfae0d86d17343eb787d",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "8086134b9fedbd88d7dd4e183a80419860da6b3e77dd75151942f662cdfca44c",
+      "retained_primary_sha256": [
+        "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
+        "last_verified renewal requires a separate human review receipt."
+      ]
     }
   ]
 }

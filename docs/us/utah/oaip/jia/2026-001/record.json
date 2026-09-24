@@ -2,10 +2,10 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
-    "generated": "2026-09-12T00:00:00.000Z",
+    "generated": "2026-09-23T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
-      "status": "legacy-unreviewed",
+      "status": "reviewed-changes",
       "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
     }
   },
@@ -24,12 +24,12 @@
     "issued_by": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-      "ref": "https://commerce.utah.gov/ai/learning-lab/"
+      "ref": "https://commerce.utah.gov/ai/"
     },
     "issuance_event": null,
     "enacted": null,
     "effective": null,
-    "official_url": "https://commerce.utah.gov/ai/learning-lab/",
+    "official_url": "https://commerce.utah.gov/ai/",
     "obligation_kind": [
       "requirement",
       "permission"
@@ -51,15 +51,15 @@
         "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure"
       },
       {
-        "cite": "Utah SB0149 (2024)",
-        "url": "https://le.utah.gov/~2024/bills/static/SB0149.html"
+        "cite": "Utah HB0452 (2025)",
+        "url": "https://le.utah.gov/~2025/bills/static/HB0452.html"
       }
     ],
     "publication_citations": [],
     "terms": [
       {
         "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm",
-        "text": "Provider must display the standardized GenAI disclosure on first session and on session resumption after 30 minutes of inactivity."
+        "text": "Proposed interpretation: provider displays the standardized GenAI disclosure before first access and again on session resumption after 30 minutes of inactivity. The 30-minute re-display is a proposed term stricter than the statute's seven-day trigger, not a statutory requirement."
       }
     ],
     "status": "proposed",
@@ -67,7 +67,7 @@
     "supersedes": null,
     "superseded_by": null,
     "authority_response": null,
-    "last_verified": "2026-06-04",
+    "last_verified": "2026-09-23",
     "timeline": [
       {
         "milestone": "Drafted",
@@ -82,7 +82,7 @@
       {
         "milestone": "Published",
         "date": "TBD",
-        "notes": "Awaiting v0.1 release"
+        "notes": "Not issued; remains a PubLedge draft pending lawyer review and authority sign-off"
       }
     ],
     "source_documents": []
@@ -96,14 +96,14 @@
     "description": "Joint Interpretation Agreement (us-ut)",
     "url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
     "sameAs": [
-      "https://commerce.utah.gov/ai/learning-lab/"
+      "https://commerce.utah.gov/ai/"
     ],
     "dateCreated": "2026-04-15",
-    "dateModified": "2026-06-04",
+    "dateModified": "2026-09-23",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-      "url": "https://commerce.utah.gov/ai/learning-lab/"
+      "url": "https://commerce.utah.gov/ai/"
     },
     "about": [
       {
@@ -113,8 +113,8 @@
       },
       {
         "@type": "Legislation",
-        "name": "Utah SB0149 (2024)",
-        "url": "https://le.utah.gov/~2024/bills/static/SB0149.html"
+        "name": "Utah HB0452 (2025)",
+        "url": "https://le.utah.gov/~2025/bills/static/HB0452.html"
       }
     ],
     "license": "Suggested prior art. Not authority-issued output. Awaiting lawyer review and authority sign-off before promotion."

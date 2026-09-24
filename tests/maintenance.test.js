@@ -86,10 +86,13 @@ function priorQualifiedObservation(currentState, recordValue) {
     }, { now: BEFORE }).observation;
 }
 
-test('inventory reports all nine overdue instruments under the active 90-day cadence', () => {
-    const records = inventory(ROOT, NOW);
+test('inventory reports overdue instruments under the active 90-day cadence', () => {
+    // The nine Utah records were renewed on 2026-09-23 by a human review receipt.
+    // Evaluate 94 days later so the cadence boundary is exercised on real data.
+    const CADENCE_NOW = '2026-12-26T12:00:00.000Z';
+    const records = inventory(ROOT, CADENCE_NOW);
     const overdue = records.filter(item => item.kind === 'instruments' && item.status === 'overdue');
-    assert.deepEqual(overdue.map(item => item.id), [
+    const renewed = [
         'us-ut-legislature-statute-2024-sb149',
         'us-ut-legislature-statute-2025-hb452',
         'us-ut-legislature-statute-2025-sb226',
@@ -99,15 +102,26 @@ test('inventory reports all nine overdue instruments under the active 90-day cad
         'us-ut-oaip-rma-2024-001',
         'us-ut-oaip-rma-2025-002',
         'us-ut-oaip-rma-2026-001'
+    ];
+    assert.deepEqual(overdue.map(item => item.id), [
+        'us-co-legislature-statute-2024-sb24-205',
+        'us-co-legislature-statute-2025-sb25b-004',
+        'us-co-legislature-statute-2026-sb26-189',
+        ...renewed.slice(0, 7),
+        'us-ut-oaip-rma-2025-001',
+        ...renewed.slice(7)
     ]);
-    assert.ok(overdue.every(item => item.lastVerified === '2026-06-04' && item.ageDays === 94 && item.cadenceDays === 90));
-    assert.ok(overdue.every(item => item.dueAt === '2026-09-03T00:00:00.000Z'));
+    const renewedItems = overdue.filter(item => renewed.includes(item.id));
+    assert.equal(renewedItems.length, 9);
+    assert.ok(renewedItems.every(item => item.lastVerified === '2026-09-23' && item.ageDays === 94 && item.cadenceDays === 90));
+    assert.ok(renewedItems.every(item => item.dueAt === '2026-12-23T00:00:00.000Z'));
+    assert.ok(overdue.every(item => item.cadenceDays === 90));
     assert.equal(overdue.find(item => item.id === 'us-ut-oaip-rma-2025-002').historicalDemonstration, false);
 
     const currentState = state();
-    seedDrift(currentState, overdue, NOW);
-    const reviewQueue = queue(currentState, NOW);
-    assert.equal(reviewQueue.overdue.length, 9);
+    seedDrift(currentState, overdue, CADENCE_NOW);
+    const reviewQueue = queue(currentState, CADENCE_NOW);
+    assert.equal(reviewQueue.overdue.length, overdue.length);
     assert.equal(reviewQueue.escalation, 'owner_action_required');
     assert.equal(reviewQueue.notification, 'not_configured');
     assert.equal(reviewQueue.humanReceipt, 'unconfirmed');

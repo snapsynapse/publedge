@@ -27,32 +27,48 @@
   "source_locator": "Summary",
   "source_citation": "Utah HB 320 (2026 General Session)",
   "evidence_type": "legacy-unreviewed-source-reference",
-  "verified": "2026-06-04",
+  "verified": "2026-09-23",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:source_heading": "Summary",
   "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
   "projection_basis": "native-record-projection",
   "admission_status": "legacy-unreviewed",
   "source_review_conflicts": null,
-  "pub:source_review_unresolved": null,
-  "pub:source_review_state": "unknown",
+  "pub:source_review_unresolved": [
+    "enacted (2026-03-19) and the Introduced month (2026-01) are not in the enrolled copy; the le.utah.gov HB0320 static page renders no status table. Rows are marked unconfirmed and the enacted field is unchanged.",
+    "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
+    "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
+    "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
+    "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it."
+  ],
+  "pub:source_review_state": "known-and-unknown",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
-      "native_file_sha256": "111b246cf8bb2b1118face419aa81634e3eba290346e98be8e47761d2a8345d5",
+      "native_file_sha256": "01797df3b03a8a6d33869d8a1ed4a0575acea137ea8b84598087d3a0fca8008d",
       "canonical_unit": null,
-      "canonical_sha256": "8c4fba21742f0b6e177e6c4789075c6851acbcd3359335a24162d7f007393692",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "0602d5a250b66e24ed6f13779a1c055cc90a4f97b27249ef54d099a3e9eb9ad7",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "b140f99a901d8f1e6f4bf389765fa85c72c5b7972a9ddf3f63132f56646e5da3",
+      "retained_primary_sha256": [
+        "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
+        "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+        "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "enacted (2026-03-19) and the Introduced month (2026-01) are not in the enrolled copy; the le.utah.gov HB0320 static page renders no status table. Rows are marked unconfirmed and the enacted field is unchanged.",
+        "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
+        "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
+        "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it."
+      ]
     },
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
       "canonical_unit": "entry:hb320-joint-interpretation-agreements",
       "canonical_sha256": "b85f1f2ef1628ab2a223640d36314be87543371986c0cb7fdd43099d48765c2e",
       "admission_status": "legacy-unreviewed",

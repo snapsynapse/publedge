@@ -6,6 +6,7 @@ group: requirement
 status: draft
 lifecycle_status: expired
 last_verified: 2026-04-21
+modified: 2026-09-23
 search_terms:
   - elizachat
   - disclosure
@@ -20,7 +21,7 @@ Before granting any user access to ElizaChat app functionality, the participant 
 ## What Counts
 
 - Participant name and contact information
-- Notice that the user is interacting with generative AI pursuant to Utah Code §13-2-12(4) (now Chapter 75 post-SB 226)
+- Notice that the user is interacting with generative AI pursuant to Utah Code §13-2-12(4), as cited in the agreement
 - Notice that the app is in testing, may not function as intended, and may expose users to risks identified in the Testing Plan
 - Description of how user data and correspondence will be used and shared
 - OAIP complaint channel — phone number and/or website address provided by the Office
@@ -35,5 +36,5 @@ Before granting any user access to ElizaChat app functionality, the participant 
 
 ## Statute Anchors
 
-- Utah Code §13-2-12(4) (historical reference, superseded by Chapter 75 post-SB 226)
+- Utah Code §13-2-12(4) (as cited in Section VI.G; later statutory succession not verified here)
 - Utah RMA 2024-001 Section VI.G — Disclosures to Users

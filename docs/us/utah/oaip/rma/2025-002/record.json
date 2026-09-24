@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
-    "generated": "2026-09-12T00:00:00.000Z",
+    "generated": "2026-09-23T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
       "status": "reviewed-changes",
@@ -24,7 +24,7 @@
     "issued_by": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-      "ref": "https://commerce.utah.gov/ai/learning-lab/"
+      "ref": "https://commerce.utah.gov/ai/"
     },
     "issuance_event": "gist:Determination",
     "enacted": "2025-10-24",
@@ -84,8 +84,7 @@
         "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html"
       },
       {
-        "cite": "UAC R156-1-501 / R156-1-602",
-        "url": "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules"
+        "cite": "UAC R156-1-501 / R156-1-602"
       }
     ],
     "publication_citations": [
@@ -97,7 +96,7 @@
     "supersedes": null,
     "superseded_by": null,
     "authority_response": null,
-    "last_verified": "2026-06-04",
+    "last_verified": "2026-09-23",
     "timeline": [],
     "source_documents": [
       {
@@ -130,12 +129,12 @@
       "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/"
     ],
     "dateCreated": "2026-04-19",
-    "dateModified": "2026-09-09",
+    "dateModified": "2026-09-23",
     "datePublished": "2025-10-24",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-      "url": "https://commerce.utah.gov/ai/learning-lab/"
+      "url": "https://commerce.utah.gov/ai/"
     },
     "about": [
       {
@@ -180,8 +179,7 @@
       },
       {
         "@type": "Legislation",
-        "name": "UAC R156-1-501 / R156-1-602",
-        "url": "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules"
+        "name": "UAC R156-1-501 / R156-1-602"
       }
     ],
     "isPartOf": {

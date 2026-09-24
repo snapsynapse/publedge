@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/legislature/statute/2025-002/",
-    "generated": "2026-09-12T00:00:00.000Z",
+    "generated": "2026-09-23T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
       "status": "reviewed-changes",
@@ -15,7 +15,7 @@
     "official_ref": null,
     "instance": "2025-002",
     "slug": "utah-hb452-mental-health-chatbots",
-    "title": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+    "title": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)",
     "type": "statute",
     "source": "authoritative-reference",
     "jurisdiction": "us-ut",
@@ -70,17 +70,17 @@
     "supersedes": null,
     "superseded_by": null,
     "authority_response": null,
-    "last_verified": "2026-06-04",
+    "last_verified": "2026-09-23",
     "timeline": [
       {
         "milestone": "Introduced",
         "date": "2025-02",
-        "notes": "2025 General Session"
+        "notes": "2025 General Session (month unconfirmed: not in the enrolled copy)"
       },
       {
         "milestone": "Governor Signed",
         "date": "2025-03-26",
-        "notes": ""
+        "notes": "Unconfirmed: not in the enrolled copy; bill status page not retained"
       },
       {
         "milestone": "Effective",
@@ -94,15 +94,15 @@
     "@context": "https://schema.org",
     "@type": "LegalDocument",
     "identifier": "us-ut-legislature-statute-2025-hb452",
-    "name": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
-    "headline": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+    "name": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)",
+    "headline": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)",
     "description": "Statute (us-ut)",
     "url": "https://publedge.org/us/utah/legislature/statute/2025-002/",
     "sameAs": [
       "https://le.utah.gov/~2025/bills/static/HB0452.html"
     ],
     "dateCreated": "2026-04-21",
-    "dateModified": "2026-09-12",
+    "dateModified": "2026-09-23",
     "datePublished": "2025-05-07",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",

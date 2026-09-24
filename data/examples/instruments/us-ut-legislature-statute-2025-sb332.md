@@ -39,24 +39,24 @@ supersedes: null
 superseded_by: null
 hash_chain_prev: null
 disclaimer: ""
-last_verified: 2026-06-04
+last_verified: 2026-09-23
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-06-04
-modified: 2026-06-04
+modified: 2026-09-23
 ---
 
 ## Timeline
 
 | Milestone | Date | Notes |
 |-----------|------|-------|
-| Introduced | 2025-02-24 | Senate Rules Committee |
-| Senate Business and Labor — favorable | 2025-02-26 | 7-0-1 |
-| Senate passed 3rd reading | 2025-03-03 | 24-0-5 |
-| House Law Enforcement and Criminal Justice — favorable | 2025-03-04 | 8-0-3 |
-| House passed | 2025-03-05 | 74-0-1 |
-| Governor Signed | 2025-03-25 | Gov. Cox |
-| Effective | 2025-05-07 | Default 2025 session effective date |
-| Chapter 72 sunset (post-amendment) | 2027-07-01 | Extended from 2025-05-01 |
+| Introduced | 2025-02-24 | Senate Rules Committee (unconfirmed) |
+| Senate Business and Labor — favorable | 2025-02-26 | 7-0-1 (unconfirmed) |
+| Senate passed 3rd reading | 2025-03-03 | 24-0-5 (unconfirmed) |
+| House Law Enforcement and Criminal Justice — favorable | 2025-03-04 | 8-0-3 (unconfirmed) |
+| House passed | 2025-03-05 | 74-0-1 (unconfirmed) |
+| Governor Signed | 2025-03-25 | Gov. Cox (unconfirmed) |
+| Effective | 2025-05-07 | Special effective date (§2): May 7, 2025, or on governor approval if passed by two-thirds of each house; two-thirds vote not confirmed |
+| Chapter 72 sunset (post-amendment) | 2027-07-01 | Extended from 2025-05-01 (SB 226 §7 made the same amendment) |
 
 ---
 
@@ -64,13 +64,15 @@ modified: 2026-06-04
 
 SB 332 is a structural amendment to Utah Code §63I-2-213 (the state's legislative sunset registry). Its sole AI-relevant effect is to extend the repeal date of Title 13, Chapter 72 (the Artificial Intelligence Policy Act) from May 1, 2025 to July 1, 2027 — a 26-month extension of OAIP's statutory existence, the Artificial Intelligence Learning Laboratory, and the Regulatory Mitigation Agreement instrument as originally authorized by SB 149 (2024).
 
-The bill introduced no new substantive obligations, no new disclosure duties, no new agency powers, and no new penalties. It is included in the PubLedge registry because it materially affects the reliance period of every Regulatory Mitigation Agreement, Joint Interpretation Agreement, and related authority artifact issued under Chapter 72: without SB 332, the entire chapter — and every instrument issued under it — would have expired on 2025-05-01.
+The bill introduced no new substantive obligations, no new disclosure duties, no new agency powers, and no new penalties. It is included in the PubLedge registry because it materially affects the reliance period of every Regulatory Mitigation Agreement, Joint Interpretation Agreement, and related authority artifact issued under Chapter 72. SB 226 (2025) §7 made the identical §63I-2-213(5) amendment in the same session, so SB 332 was one of two bills that moved the chapter's repeal date past 2025-05-01.
 
-Subsequent amendments by HB 320 (2026) further restructured Chapter 72 (Learning Lab redesign, JIA instrument formalization, 36-month term ceiling) but did not further alter the sunset date set by SB 332.
+The bill took effect May 7, 2025, or, if approved by two-thirds of all members elected to each house, on governor approval (§2). The introduction, committee, floor-vote and signing entries in the Timeline are not shown in the enrolled copy and are not confirmed against a retained bill status page, so which effective date applied is not confirmed here.
+
+Subsequent amendments by HB 320 (2026) further restructured Chapter 72 (Learning Lab redesign, JIA instrument formalization, 36-month term ceiling) but did not further alter the sunset date set by SB 332 and SB 226.
 
 ### Talking Point
 
-> "Utah SB 332 (2025) is the statutory reason the Office of AI Policy, the Learning Laboratory, and every Regulatory Mitigation Agreement currently in force still exist. Without this 26-month extension, the entire AIPA framework would have sunset on May 1, 2025."
+> "Utah SB 332 (2025), together with the identical amendment in SB 226 (2025), moved the Artificial Intelligence Policy Act's repeal date from May 1, 2025 to July 1, 2027, a 26-month extension of the Office of AI Policy, the Learning Laboratory, and the Regulatory Mitigation Agreement framework."
 
 ### Strict-line note (scaffolding-only stub)
 

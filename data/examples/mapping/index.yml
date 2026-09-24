@@ -25,6 +25,7 @@
   authority: utah-legislature
   source_file: data/examples/instruments/us-ut-legislature-statute-2024-sb149.md
   source_heading: Summary
+  obligation_qualification: The learning-lab-agreement-participation text describes the regime as amended by HB 320 (2026), including joint interpretation agreements, a 36-month maximum, and governmental-entity counterparties; SB 149 as enacted provided regulatory mitigation agreements only, a 24-month maximum (12 months plus a single 12-month extension), and agency counterparties.
   obligations:
     - learning-lab-agreement-participation
     - ai-defense-elimination
@@ -44,6 +45,7 @@
   authority: utah-legislature
   source_file: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
   source_heading: Summary
+  obligation_qualification: The disclose-genai-on-first-session mapping is related, not equivalent. HB 452 section 13-72a-203(2) requires disclosure before access, at the start of an interaction after seven days without access, and whenever the user asks or prompts; the obligation's per-session and 30-minute re-display terms are not statutory, and section 13-75-103(1) is the separate SB 226 on-request rule.
   obligations:
     - disclose-genai-on-first-session
     - chatbot-data-no-third-party-sharing

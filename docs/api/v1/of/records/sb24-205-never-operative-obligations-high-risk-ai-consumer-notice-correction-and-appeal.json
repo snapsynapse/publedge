@@ -75,7 +75,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "3d3aa26d49f430fdaee16e1e423fa59b6a28cddc26721072ce5a860041a1b592",
+      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
       "canonical_unit": "entry:sb24-205-never-operative-obligations",
       "canonical_sha256": "4849304cb37f40f5cb292b4ab29c1230e89a3dbce9c3f16ba17c1d63f50f8e1b",
       "admission_status": "legacy-unreviewed",

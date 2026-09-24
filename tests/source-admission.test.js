@@ -175,7 +175,9 @@ test('generated record schema preserves the same issued-evidence boundary', () =
     const validate = compileSchema('docs/schema/json/record.schema.json');
     const sample = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/us/utah/oaip/jia/2026-001/record.json'), 'utf8'));
     assert.deepEqual(Object.keys(sample.meta.admission).sort(), ['limits', 'status']);
-    assert.equal(sample.meta.admission.status, 'legacy-unreviewed');
+    // The JIA draft now carries reviewed source-consistency changes; the
+    // issued-evidence boundary must hold for a reviewed draft too.
+    assert.equal(sample.meta.admission.status, 'reviewed-changes');
     sample.record.source = 'authority-issued';
     sample.record.status = 'enforcing';
     sample.record.editorial_status = 'published';
@@ -188,7 +190,7 @@ test('generated record schema preserves the same issued-evidence boundary', () =
 test('current admission accounting matches every emitted source collection exactly', () => {
     // Bind the deterministic inventory check to the latest accepted receipt day.
     // The dedicated future-date test separately exercises the rejection boundary.
-    const result = admissionCheck.runCurrent({ root: ROOT, now: new Date('2026-09-12T23:59:59Z') });
+    const result = admissionCheck.runCurrent({ root: ROOT, now: new Date('2026-09-24T23:59:59Z') });
     assert.deepEqual(result.errors, []);
     assert.equal(result.total_records, 62);
     assert.equal(result.legacy_unreviewed_records + result.records_with_reviewed_changes, result.total_records);
@@ -209,7 +211,7 @@ test('an unreviewed source change blocks the build and local MCP before output',
     for (const entry of ['scripts', 'data', 'mcp-server.js', 'package.json', 'project.yml']) {
         fs.cpSync(path.join(ROOT, entry), path.join(root, entry), { recursive: true });
     }
-    fs.appendFileSync(path.join(root, 'data/examples/instruments/us-ut-oaip-jia-2026-001.md'), '\nUnreviewed claim.\n');
+    fs.appendFileSync(path.join(root, 'data/examples/instruments/us-sec-corpfin-nal-2025-001.md'), '\nUnreviewed claim.\n');
 
     // This copied fixture has no owner Git history. Its receipt snapshot still
     // rejects unreviewed content; a production CI base cannot resolve here.

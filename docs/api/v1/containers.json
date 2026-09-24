@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-09-12T00:00:00.000Z",
+    "generated": "2026-09-23T00:00:00.000Z",
     "count": 18
   },
   "items": [
@@ -87,7 +87,7 @@
     },
     {
       "id": "us-ut-legislature-statute-2025-hb452",
-      "name": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+      "name": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)",
       "source": "authoritative-reference",
       "status": "enforcing",
       "editorial_status": "published",
@@ -114,7 +114,7 @@
     },
     {
       "id": "us-ut-legislature-statute-2026-hb320",
-      "name": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+      "name": "Utah HB 320 (2026) — Office of Artificial Intelligence Policy Amendments (Learning Lab Restructure + Joint Interpretation Agreements)",
       "source": "authoritative-reference",
       "status": "enforcing",
       "editorial_status": "published",
