@@ -981,6 +981,11 @@ files:
     hash: sha256:a1b0c0bd67c30c9fa82b2ab45fd3ace3dee00067f11f2f3f7211c08aa9c7f342
     note: ElizaChat source review receipt
 
+  - path: ops/evidence/utah-overdue-dispositions-2026-09-23.json
+    role: evidence
+    hash: sha256:90c25a4874701966486eba0f1405dc4e7680e66173bf7130580a641020821945
+    note: Agent source-consistency dispositions for the nine overdue Utah records (issue 3)
+
   - path: scripts/lib/freshness-contract.js
     role: code
     hash: sha256:df27fe4ca8be68fbacfa3e00d8b874d8687d87ffbc97874a9f84dc7e3a943cc8

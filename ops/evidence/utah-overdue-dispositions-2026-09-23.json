@@ -1,0 +1,2584 @@
+{
+ "receipt_version": 1,
+ "recorded_at": "2026-09-24T02:10:00Z",
+ "scope": "PUB-1 / issue #3: agent source-consistency dispositions for the nine Utah records overdue against the 90-day cadence (last_verified 2026-06-04). Prepared for human review. No record edits and no last_verified renewal.",
+ "reviewer": "agent (Claude) source-consistency review; not human verification",
+ "baseline_commit": "ffe63c564ce990fd3db88767e9d94bc8d10dbd8d",
+ "method": "Statutes: retained enrolled copies under data/admission/sources (hashes checked against receipts) plus le.utah.gov status pages. JIA: HB 452 retained enrolled copy. RMAs: signed ElizaChat agreement (byte-identical to the 2026-09-08 review copy) and Legion agreement retrieved 2026-09-24T01:56Z from commerce.utah.gov and OCR'd with tesseract (not retained in the repo), retained Doctronic snapshots, and the OAIP authorized-pilots pages. URL checks used a browser user agent because commerce.utah.gov returns 403 to default curl.",
+ "source_retrievals": [
+  {
+   "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+   "sha256": "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
+   "bytes": 5735483,
+   "server_last_modified": "Thu, 26 Mar 2026 12:56:21 GMT",
+   "retrieved_at": "2026-09-24T01:56:36Z",
+   "retained": false
+  },
+  {
+   "official_url": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+   "sha256": "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
+   "bytes": 546143,
+   "server_last_modified": "Tue, 03 Feb 2026 14:19:43 GMT",
+   "retrieved_at": "2026-09-24T01:56:36Z",
+   "retained": false
+  }
+ ],
+ "summary": [
+  {
+   "id": "us-ut-legislature-statute-2024-sb149",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 6,
+   "findings_total": 9,
+   "next_action": "Human editor: correct the sunset from-date and prior term ceiling (both still present at HEAD), fix the Senate vote and introduced rows, decide the HB 452 relation, replace the dead commerce.utah.gov link; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-legislature-statute-2025-hb452",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 5,
+   "findings_total": 10,
+   "next_action": "Human editor: add sponsors, decide title form and the amends relation, tighten the data-protection exception wording; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-legislature-statute-2025-sb226",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 2,
+   "findings_total": 8,
+   "next_action": "Human editor: add the 63I-2-213 sunset amendment, fix the three 404 anchor URLs, relabel the report milestone; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-legislature-statute-2025-sb332",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 2,
+   "findings_total": 3,
+   "next_action": "Human editor: confirm SB 332 passage votes and signing date on le.utah.gov (JS-rendered page or journals), then fix effective date and exclusivity framing; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-legislature-statute-2026-hb320",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 7,
+   "findings_total": 13,
+   "next_action": "Human editor: fix prior-term wording, title, sponsors, five-prong framing; fix the learning-lab-agreement-participation obligation anchor and unsupported terms; replace dead link; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-oaip-jia-2026-001",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 5,
+   "findings_total": 5,
+   "next_action": "Not eligible for a Verified renewal as an authority record: it's an unissued draft. Correct the anchor bill, separate the proposed 30-minute term from the statutory triggers, fix the dead official URL and the timeline row in one receipted change using the HB 452 retained evidence; then a human decides on last_verified."
+  },
+  {
+   "id": "us-ut-oaip-rma-2024-001",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 3,
+   "findings_total": 7,
+   "next_action": "Sam: confirm `expired` against the register (dateModified 2026-09-03), fix the stale legacy id, the auto-shared wording and the dead learning-lab link, then decide on last_verified renewal. No extension or phase-history claim should be added without a source."
+  },
+  {
+   "id": "us-ut-oaip-rma-2025-002",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 5,
+   "findings_total": 13,
+   "next_action": "Sam: fix the 59-68-502 citation and the disclosure trigger wording; add the register's dated Phase 1 statement; keep the amendment unverified until a signed amendment is published. Recheck the register after 2026-10-24 for extension or expiry before touching status or term_end."
+  },
+  {
+   "id": "us-ut-oaip-rma-2026-001",
+   "disposition": "source-consistent with open editorial findings",
+   "open_discrepancies": 7,
+   "findings_total": 13,
+   "next_action": "Sam: correct the cure-period and >98%/>99% wording and the shortage attribution; qualify rules_mitigated[2]; add the register's dated 'not started' observation. Keep term_start null and status enacted until a source gives a Commencement Date."
+  }
+ ],
+ "records": [
+  {
+   "id": "us-ut-legislature-statute-2024-sb149",
+   "record_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+   "record_file_sha256": "372a62e39b49fc961482974100e5f04e22b1a922fadce391e66c68dc3d4993f2",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://le.utah.gov/Session/2024/bills/enrolled/SB0149.pdf",
+     "retained_path": "data/admission/sources/utah-sb149/SB0149-enrolled.pdf",
+     "sha256": "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+     "document_title": "Enrolled Copy S.B. 149 Artificial Intelligence Amendments",
+     "version": "2024 General Session enrolled copy",
+     "reviewed_txt": "data/admission/sources/utah-sb149/SB0149-enrolled.txt",
+     "reviewed_txt_sha256": "0a85408fb06d18d8a6fd3ce2db74c19e86c17c84d9c375daecb5a0b3eece8d86",
+     "txt_hash_matches": "receipts.json and ops/evidence/utah-statute-source-review-2026-09-09.json",
+     "url_note": "receipts.json cites /Session/2024/bills/enrolled/SB0149.pdf; the 2026-09-09 review cites /~2024/bills/sbillenr/SB0149.pdf for the same bytes. Not re-fetched (no PDF download)."
+    },
+    {
+     "official_url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+     "retained_path": null,
+     "sha256": null,
+     "document_title": "S.B. 149 Artificial Intelligence Amendments, bill status page",
+     "version": "live page read 2026-09-24T01:50:18Z",
+     "note": "Used only for signing date, vote and introduction facts; not retained."
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "title",
+     "record_value": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
+     "locator": "enrolled p1 line 1",
+     "excerpt": "ARTIFICIAL INTELLIGENCE AMENDMENTS"
+    },
+    {
+     "field": "effective",
+     "record_value": "2024-05-01",
+     "locator": "enrolled p18 line 593 (Section 13)",
+     "excerpt": "This bill takes effect on May 1, 2024."
+    },
+    {
+     "field": "sponsors",
+     "record_value": "Sen. Kirk A. Cullimore; Rep. Jefferson Moss",
+     "locator": "enrolled p1 header",
+     "excerpt": "Chief Sponsor: Kirk A. Cullimore ... House Sponsor: Jefferson Moss"
+    },
+    {
+     "field": "enacted / Timeline Governor Signed",
+     "record_value": "2024-03-13",
+     "locator": "le.utah.gov SB0149 status page, last row",
+     "excerpt": "3/13/2024 Governor Signed"
+    },
+    {
+     "field": "Timeline House passed",
+     "record_value": "2024-02-28, 73-0-2",
+     "locator": "le.utah.gov SB0149 status page",
+     "excerpt": "2/28/2024 (10:14:31 AM) House/ passed 3rd reading House Speaker 73 0 2"
+    },
+    {
+     "field": "statute_anchors[1] §76-2-107",
+     "record_value": "criminal liability for AI-assisted offenses",
+     "locator": "enrolled p18 lines 584-591 (Section 12)",
+     "excerpt": "76-2-107 . Commission of offense with aid of generative artificial intelligence."
+    },
+    {
+     "field": "statute_anchors[2] / Summary §13-2-12",
+     "record_value": "original GenAI disclosure, repealed by SB 226",
+     "locator": "enrolled p3 lines 70-75; SB 226 enrolled p6 lines 183-186",
+     "excerpt": "shall clearly and conspicuously disclose ... if asked or prompted by the person, that the person is interacting with generative artificial intelligence"
+    },
+    {
+     "field": "Summary: OAIP, Learning Laboratory, regulatory mitigation",
+     "record_value": "created",
+     "locator": "enrolled p1 lines 11-15; Sections 5-7",
+     "excerpt": "creates the Office of Artificial Intelligence Policy (office) and a regulatory AI analysis program"
+    },
+    {
+     "field": "Timeline Chapter 72 sunset",
+     "record_value": "2027-07-01",
+     "locator": "SB 332 enrolled p2 lines 30-31; SB 226 enrolled p6 lines 181-182",
+     "excerpt": "Title 13, Chapter 72, Artificial Intelligence Policy Act, is repealed [May] July 1, [2025] 2027."
+    },
+    {
+     "field": "Timeline Amended by HB 320",
+     "record_value": "2026-05-06",
+     "locator": "HB 320 enrolled p8 line 250",
+     "excerpt": "This bill takes effect on May 6, 2026."
+    },
+    {
+     "field": "Talking Point (rewritten by 0105c7b3)",
+     "record_value": "expanded potential agreement duration through extensions",
+     "locator": "HB 320 enrolled p8 lines 244-245",
+     "excerpt": "The office may grant up to two extensions for any regulatory mitigation or joint interpretation agreement."
+    }
+   ],
+   "findings": [
+    {
+     "id": "sb149-sunset-from-date",
+     "field": "body Summary bullet (SB 332)",
+     "record_value": "SB 332 extended the Chapter 72 sunset from 2025-07-01 to 2027-07-01.",
+     "source_value": "SB 149 set repeal at May 1, 2025; SB 332 (and SB 226 §7) struck May 1, 2025 and inserted July 1, 2027.",
+     "locator": "SB 149 p18 line 583; SB 332 p2 lines 30-31; SB 226 p6 lines 181-182",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "SB 332 (and SB 226 §7, same session) extended the Chapter 72 sunset from 2025-05-01 to 2027-07-01."
+    },
+    {
+     "id": "sb149-prior-term-ceiling",
+     "field": "body Summary bullet (HB 320)",
+     "record_value": "extended the maximum agreement term from 12 to 36 months",
+     "source_value": "SB 149 §13-70-305 allowed a 12-month initial agreement plus a single 12-month extension (24 months); HB 320 allows up to two extensions (36 months).",
+     "locator": "SB 149 p18 lines 572-575; HB 320 p8 lines 236-245",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "extended the maximum agreement term from 24 months (12 plus one 12-month extension) to 36 months (12 plus up to two extensions)."
+    },
+    {
+     "id": "sb149-senate-vote-row",
+     "field": "Timeline row \"Senate passed\"",
+     "record_value": "2024-02-12, 22-0-7",
+     "source_value": "22-0-7 on 2024-02-12 was the 2nd-reading vote; the Senate passed 3rd reading on 2024-02-13, 26-0-3.",
+     "locator": "le.utah.gov SB0149 status page rows 2/12/2024 and 2/13/2024",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Senate passed | 2024-02-13 | 26-0-3 (2nd reading 2024-02-12, 22-0-7)."
+    },
+    {
+     "id": "sb149-introduced-date",
+     "field": "Timeline row \"Introduced\"",
+     "record_value": "2024-01-25, Senate Rules Committee",
+     "source_value": "Numbered and publicly distributed 2024-01-25; Senate 1st reading (Introduced) to Senate Rules Committee on 2024-01-26.",
+     "locator": "le.utah.gov SB0149 status page rows 1/25/2024 and 1/26/2024",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Introduced | 2024-01-26 | Senate Rules Committee (numbered 2024-01-25)."
+    },
+    {
+     "id": "sb149-chapter-numbering",
+     "field": "statute_anchors[0] and body Chapter 72 references",
+     "record_value": "Utah Code Title 13, Chapter 72 (Artificial Intelligence Policy Act)",
+     "source_value": "Enrolled bill enacts 13-70-101 to 13-70-305 and its sunset clause names Title 13, Chapter 70; HB 320 cites the codified 13-72 sections as enacted by Laws of Utah 2024, Chapter 186.",
+     "locator": "SB 149 p1-2 lines 29-35, p18 line 583; HB 320 p1 lines 20-22",
+     "kind": "locator-note",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Optional note: enacted as Title 13, Chapter 70 and codified as Chapter 72."
+    },
+    {
+     "id": "sb149-civil-criminal-locator",
+     "field": "body Summary first paragraph",
+     "record_value": "statutory treatment of AI-assisted violations in civil and criminal contexts (§76-2-107)",
+     "source_value": "Civil not-a-defense rule is §13-2-12(2); §76-2-107 is the criminal provision only.",
+     "locator": "SB 149 p3 lines 65-69; p18 lines 584-591",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "cite §13-2-12(2) (civil) and §76-2-107 (criminal)."
+    },
+    {
+     "id": "sb149-boyd-appointment",
+     "field": "Timeline row \"Boyd appointed\"",
+     "record_value": "2024-04-30",
+     "source_value": "Not in the enrolled bill or the bill status page.",
+     "locator": "n/a",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": null
+    },
+    {
+     "id": "sb149-commerce-dead-link",
+     "field": "Sources: Utah OAIP Learning Lab",
+     "record_value": "https://commerce.utah.gov/ai/learning-lab/",
+     "source_value": "HTTP 404, page title \"Page not found\".",
+     "locator": "url_checks",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Replace with a current OAIP Learning Lab URL confirmed by a human, or remove the link."
+    },
+    {
+     "id": "sb149-hb452-amends-relation",
+     "field": "amended_by (us-ut-legislature-statute-2025-hb452) and Timeline \"Amended by HB 452\"",
+     "record_value": "HB 452 listed as amending SB 149",
+     "source_value": "HB 452 amends only 13-2-1 and enacts Chapter 72a and 58-60-118; it amends no section SB 149 enacted. Chapter 72a only cross-references 13-72-101 definitions.",
+     "locator": "HB 452 p1-2 lines 22-32",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Human decision: keep HB 452 as a related (non-amending) Utah AI-stack statute rather than an amendment, or qualify the relation."
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+     "field": "official_url / publication_citations / statute_anchors[2] / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+     "checked_at": "2026-09-24T01:50:18Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "field": "statute_anchors[0]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "checked_at": "2026-09-24T01:50:16Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title76/Chapter2/76-2-S107.html",
+     "field": "statute_anchors[1]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title76/Chapter2/76-2-S107.html",
+     "checked_at": "2026-09-24T01:50:18Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/",
+     "field": "issued_by.ref",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/",
+     "checked_at": "2026-09-24T01:50:15Z"
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/",
+     "field": "full_text_reference / Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/",
+     "checked_at": "2026-09-24T01:50:15Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/learning-lab/",
+     "field": "Sources (Utah OAIP Learning Lab)",
+     "http_status": 404,
+     "final_url": "https://commerce.utah.gov/ai/learning-lab/",
+     "checked_at": "2026-09-24T01:50:15Z",
+     "note": "404; page title \"Page not found - commerce.utah.gov\". Same result as 2026-09-10 review."
+    }
+   ],
+   "prior_work_reconciliation": "Commit 0105c7b3 changed only comparative/superlative wording in the first Summary paragraph, the HB 452 bullet, the Talking Point and modified date. None of the 2026-09-09 findings were fixed. The 2026-09-09 review referred to an SB 332 Timeline row in this record; no such row exists at HEAD (only the Chapter 72 sunset row). Receipt record_sha256 53b0d1af... matches the current markdownSnapshot digest.",
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Human editor: correct the sunset from-date and prior term ceiling (both still present at HEAD), fix the Senate vote and introduced rows, decide the HB 452 relation, replace the dead commerce.utah.gov link; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-legislature-statute-2025-hb452",
+   "record_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
+   "record_file_sha256": "fe72c5b4cc375bf679bc8f03edd4ccd7b7cddafad47ece6439f8a5449fd967e7",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+     "retained_path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+     "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+     "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+     "version": "2025 General Session enrolled copy",
+     "reviewed_txt": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+     "reviewed_txt_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+     "txt_hash_matches": "receipts.json (hb452 record receipt, sb149 receipt, mapping/index.yml receipt)"
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "effective",
+     "record_value": "2025-05-07",
+     "locator": "enrolled p10 line 303 (Section 9)",
+     "excerpt": "This bill takes effect on May 7, 2025."
+    },
+    {
+     "field": "statute_anchors Chapter 72a / §13-72a-101",
+     "record_value": "definitions; scripted-output and referral carve-outs",
+     "locator": "enrolled p4 lines 111-120",
+     "excerpt": "\"Mental health chatbot\" does not include artificial intelligence technology that only: (i) provides scripted output, such as guided meditations or mindfulness exercises"
+    },
+    {
+     "field": "Summary disclosure bullet §13-72a-203",
+     "record_value": "before access, after 7-day gap, on prompt",
+     "locator": "enrolled p6 lines 179-184",
+     "excerpt": "at the beginning of any interaction with the Utah user if the Utah user has not accessed the mental health chatbot within the previous seven days"
+    },
+    {
+     "field": "Summary data protection bullet §13-72a-201",
+     "record_value": "no sale or sharing; HIPAA Parts 160/164 Subparts A and E for functional sharing",
+     "locator": "enrolled p5 lines 139-153",
+     "excerpt": "may not sell to or share with any third party any: (a) individually identifiable health information of a Utah user; or (b) user input"
+    },
+    {
+     "field": "Summary safety policy bullet §58-60-118",
+     "record_value": "15-element policy filed with Division; affirmative defense to 58-1-501(1)-(2) actions",
+     "locator": "enrolled p8-9 lines 230-278",
+     "excerpt": "It is an affirmative defense to liability in an action brought under Subsection 58-1-501(1) or Subsection 58-1-501(2)"
+    },
+    {
+     "field": "Summary penalties",
+     "record_value": "$2,500 per violation; $5,000 per order violation",
+     "locator": "enrolled p6-7 lines 195, 204, 211-212",
+     "excerpt": "A court may impose a civil penalty of no more than $5,000 for each violation of an administrative or court order"
+    }
+   ],
+   "findings": [
+    {
+     "id": "hb452-title-editorial",
+     "field": "title",
+     "record_value": "Utah HB 452 (2025) — Mental Health Chatbot Regulations",
+     "source_value": "Enrolled short title is \"Artificial Intelligence Amendments\".",
+     "locator": "enrolled p1 line 1",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots), or record the enrolled short title alongside the editorial one."
+    },
+    {
+     "id": "hb452-sponsors-missing",
+     "field": "sponsors",
+     "record_value": "none listed",
+     "source_value": "Chief Sponsor: Jefferson Moss; Senate Sponsor: Kirk A. Cullimore.",
+     "locator": "enrolled p1 header",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Add sponsors: Rep. Jefferson Moss (House sponsor); Sen. Kirk A. Cullimore (Senate floor sponsor)."
+    },
+    {
+     "id": "hb452-amends-relation",
+     "field": "amends",
+     "record_value": "us-ut-legislature-statute-2024-sb149",
+     "source_value": "HB 452 amends 13-2-1 and enacts 13-72a-101 to 13-72a-301 and 58-60-118; no SB 149-enacted section is amended.",
+     "locator": "enrolled p1-2 lines 22-32",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Human decision: replace with a non-amending relation to SB 149, or qualify."
+    },
+    {
+     "id": "hb452-exception-wording",
+     "field": "Summary data protection bullet",
+     "record_value": "Limited exceptions for user-consented or user-requested disclosure to health care providers",
+     "source_value": "Exceptions: information requested by a health care provider with user consent; provided to the user's health plan on user request; or shared for functionality under (3).",
+     "locator": "enrolled p5 lines 142-145",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Limited exceptions for disclosure requested by a health care provider with the user's consent, or provided to the user's health plan at the user's request."
+    },
+    {
+     "id": "hb452-order-penalty-wording",
+     "field": "Summary penalties",
+     "record_value": "$5,000 per violation of a cease-and-desist order",
+     "source_value": "$5,000 per violation of an administrative or court order issued for a violation of the chapter.",
+     "locator": "enrolled p7 lines 211-212",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "$5,000 per violation of an administrative or court order."
+    },
+    {
+     "id": "hb452-defense-documentation",
+     "field": "Summary safety policy bullet",
+     "record_value": "file policy and comply with it",
+     "source_value": "The defense also requires documentation of foundation models, training data, privacy compliance, data practices and accuracy efforts (58-60-118(2)(b)).",
+     "locator": "enrolled p8 lines 234-240",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Optional: mention the (2)(b) documentation condition."
+    },
+    {
+     "id": "hb452-advertising-omitted",
+     "field": "Summary",
+     "record_value": "no mention of §13-72a-202",
+     "source_value": "HB 452 also enacts advertising restrictions for mental health chatbots.",
+     "locator": "enrolled p5-6 lines 155-173",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Optional: add a bullet for §13-72a-202 advertising restrictions."
+    },
+    {
+     "id": "hb452-signing-and-intro",
+     "field": "enacted 2025-03-26; Timeline Introduced 2025-02",
+     "record_value": "as stated",
+     "source_value": "Not in enrolled copy; le.utah.gov HB0452 static page does not render status or votes without JavaScript.",
+     "locator": "n/a",
+     "kind": "unverifiable",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": null
+    },
+    {
+     "id": "obl-safety-policy-must",
+     "field": "data/examples/obligations/chatbot-safety-policy-filing.md Summary",
+     "record_value": "supplier \"must draft, file ... and operationally comply\"",
+     "source_value": "58-60-118 makes the policy a condition of an affirmative defense, not a mandatory filing; the 15 elements are 3(c)(i)-(xv), while model/training-data documentation is a separate 2(b) condition.",
+     "locator": "HB 452 p8-9 lines 230-278",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Frame as conditions for the affirmative defense; separate the (2)(b) documentation condition from the 15 policy elements."
+    },
+    {
+     "id": "obl-first-session-mapping",
+     "field": "mapping hb452-mental-health-chatbot-stack -> disclose-genai-on-first-session",
+     "record_value": "obligation requires disclosure at start of each session with e.g. 30-minute re-display, anchored to §13-75-103(1) and §13-72a-203",
+     "source_value": "HB 452 requires disclosure before access, after seven days without access, and on prompt; §13-75-103(1) is SB 226 on-request only.",
+     "locator": "HB 452 p6 lines 179-184",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Already recorded as unresolved in receipts.json (mapping/index.yml receipt); human decision on qualifying this mapping."
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+     "field": "official_url / publication_citations / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+     "checked_at": "2026-09-24T01:50:18Z",
+     "note": "Static HTML shows no status table (JS-rendered)."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a.html",
+     "field": "statute_anchors[0]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a.html",
+     "checked_at": "2026-09-24T01:50:17Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S101.html",
+     "field": "statute_anchors[1]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S101.html",
+     "checked_at": "2026-09-24T01:50:16Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S201.html",
+     "field": "statute_anchors[2]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S201.html",
+     "checked_at": "2026-09-24T01:50:17Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S203.html",
+     "field": "statute_anchors[3]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S203.html",
+     "checked_at": "2026-09-24T01:50:17Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60-S118.html",
+     "field": "statute_anchors[4]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60-S118.html",
+     "checked_at": "2026-09-24T01:50:18Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/",
+     "field": "issued_by.ref",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/",
+     "checked_at": "2026-09-24T01:50:15Z"
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+     "field": "full_text_reference / Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/",
+     "checked_at": "2026-09-24T01:50:15Z",
+     "fragment_present_in_page": true
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-data-protection",
+     "field": "Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/",
+     "checked_at": "2026-09-24T01:50:15Z",
+     "fragment_present_in_page": true
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-safety-policy",
+     "field": "Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/",
+     "checked_at": "2026-09-24T01:50:15Z",
+     "fragment_present_in_page": true
+    }
+   ],
+   "prior_work_reconciliation": "Not in the 2026-09-09 review. Commit 0105c7b3 removed nationwide comparative language from Summary and Talking Point; receipt record_sha256 8deea5bf... matches the current markdownSnapshot digest. Receipt unresolved item (draft JIA 30-minute term vs statutory seven-day rule) concerns the mapping, not this record.",
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Human editor: add sponsors, decide title form and the amends relation, tighten the data-protection exception wording; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-legislature-statute-2025-sb226",
+   "record_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+   "record_file_sha256": "518882b00ebe9515a3f4697a2da41a607c506c8d844a31895dcf1851d0f5dd3a",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+     "retained_path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+     "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+     "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+     "version": "2025 General Session enrolled copy",
+     "reviewed_txt": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+     "reviewed_txt_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+     "txt_hash_matches": "receipts.json (sb149 receipt) and ops/evidence/utah-statute-source-review-2026-09-09.json"
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "title",
+     "record_value": "Artificial Intelligence Consumer Protection Amendments",
+     "locator": "enrolled p1 line 1",
+     "excerpt": "Artificial Intelligence Consumer Protection Amendments"
+    },
+    {
+     "field": "effective",
+     "record_value": "2025-05-07",
+     "locator": "enrolled p6 line 188 (Section 9(1))",
+     "excerpt": "Except as provided in Subsection (2), this bill takes effect on May 7, 2025."
+    },
+    {
+     "field": "Summary: repeal of §13-2-12 and Chapter 75",
+     "record_value": "repealed and re-enacted as Chapter 75",
+     "locator": "enrolled p2 lines 26-34; p6 lines 183-186",
+     "excerpt": "REPEALS: 13-2-12 (Effective 05/07/25), as enacted by Laws of Utah 2024, Chapter 186"
+    },
+    {
+     "field": "Summary narrower trigger §13-75-103(1)",
+     "record_value": "clear and unambiguous request",
+     "locator": "enrolled p4 lines 103-105",
+     "excerpt": "must be a clear and unambiguous request to determine whether the interaction is with a human or with artificial intelligence."
+    },
+    {
+     "field": "Summary safe harbor §13-75-104",
+     "record_value": "outset and throughout",
+     "locator": "enrolled p4 lines 118-126",
+     "excerpt": "A person is not subject to an enforcement action for violating Section 13-75-103 if the person's generative artificial intelligence clearly and conspicuously discloses"
+    },
+    {
+     "field": "Summary high-risk tier §13-75-101(5), §13-75-103(2)-(3)",
+     "record_value": "sensitive data or personalized advice; verbal at start, written before",
+     "locator": "enrolled p2-3 lines 54-67; p4 lines 106-115",
+     "excerpt": "A disclosure required under Subsection (2) shall be provided: (a) verbally at the start of a verbal interaction; and (b) in writing before the start of a written interaction."
+    },
+    {
+     "field": "Summary civil liability §13-75-102",
+     "record_value": "not a defense",
+     "locator": "enrolled p3 lines 89-95",
+     "excerpt": "It is not a defense to the violation of any statute administered and enforced by the division under Section 13-2-1 that generative artificial intelligence"
+    }
+   ],
+   "findings": [
+    {
+     "id": "sb226-sunset-omission",
+     "field": "Summary (omission)",
+     "record_value": "no mention that SB 226 amends 63I-2-213",
+     "source_value": "SB 226 §7 amends 63I-2-213(5) to repeal Chapter 72 on July 1, 2027, effective on governor approval if passed by two-thirds of each house, else May 7, 2025.",
+     "locator": "enrolled p1 line 17; p6 lines 169-182, 187-195",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Add a bullet: SB 226 also extended the Chapter 72 repeal date from 2025-05-01 to 2027-07-01 (same amendment as SB 332)."
+    },
+    {
+     "id": "sb226-dead-section-urls",
+     "field": "statute_anchors[1..3] URLs",
+     "record_value": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S102.html, -S103.html, -S104.html",
+     "source_value": "All three return HTTP 404 with a browser User-Agent; the chapter URL 13-75.html returns 200.",
+     "locator": "url_checks",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Point anchors at the chapter page or at the section URL pattern le.utah.gov currently serves, confirmed by a human."
+    },
+    {
+     "id": "sb226-safe-harbor-scope",
+     "field": "Summary safe harbor bullet",
+     "record_value": "eliminates enforcement exposure under §13-75-104",
+     "source_value": "The safe harbor covers enforcement for violating §13-75-103 only, not §13-75-102 or other law.",
+     "locator": "enrolled p4 lines 118-119",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "eliminates enforcement exposure for §13-75-103 disclosure violations (§13-75-104)."
+    },
+    {
+     "id": "sb226-sponsors-missing",
+     "field": "sponsors",
+     "record_value": "none listed",
+     "source_value": "Chief Sponsor: Kirk A. Cullimore; House Sponsor: Jefferson Moss.",
+     "locator": "enrolled p1 header",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Add sponsors for parity with SB 149 and SB 332 records."
+    },
+    {
+     "id": "sb226-first-report-ordinal",
+     "field": "Timeline row \"First annual report 2025-11-30\"",
+     "record_value": "First annual report, To Business & Labor Interim Committee",
+     "source_value": "The Nov 30 annual report duty comes from SB 149 13-70-201(3)(d), effective 2024-05-01, so the first statutory deadline was before 2024-11-30; SB 226 creates no report duty.",
+     "locator": "SB 149 line 465 (13-70-201(3)(d)); SB 226 none",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Relabel as \"Annual OAIP report due (before Nov 30)\" or move to SB 149/HB 320; whether a 2024 report was filed is unverified."
+    },
+    {
+     "id": "sb226-package-note",
+     "field": "Timeline Effective note",
+     "record_value": "Four-bill single-day AI package (with SB 271, SB 332, HB 452)",
+     "source_value": "SB 271 not retained; SB 332 may have taken effect on governor approval under its two-thirds clause (see SB 332 finding).",
+     "locator": "n/a",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": null
+    },
+    {
+     "id": "sb226-signing-intro",
+     "field": "enacted 2025-03-25; Timeline Introduced 2025-02",
+     "record_value": "as stated",
+     "source_value": "Not in enrolled copy; le.utah.gov SB0226 static page does not render status without JavaScript.",
+     "locator": "n/a",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": null
+    },
+    {
+     "id": "obl-ai-defense-civil-origin",
+     "field": "data/examples/obligations/ai-defense-elimination.md Summary",
+     "record_value": "civil mirror is §13-75-102 (SB 226, effective 2025-05-07)",
+     "source_value": "The civil not-a-defense rule first existed at §13-2-12(2) (SB 149, effective 2024-05-01); SB 226 re-sited it at §13-75-102.",
+     "locator": "SB 149 p3 lines 65-69; SB 226 p3 lines 89-95",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Note the civil rule originated at §13-2-12(2) in 2024 and moved to §13-75-102 in 2025."
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+     "field": "official_url / publication_citations / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+     "checked_at": "2026-09-24T01:50:19Z",
+     "note": "Static HTML shows no status table (JS-rendered)."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html",
+     "field": "statute_anchors[0]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html",
+     "checked_at": "2026-09-24T01:50:18Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S102.html",
+     "field": "statute_anchors[1]",
+     "http_status": 404,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S102.html",
+     "checked_at": "2026-09-24T01:50:17Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S103.html",
+     "field": "statute_anchors[2]",
+     "http_status": 404,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S103.html",
+     "checked_at": "2026-09-24T01:50:17Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S104.html",
+     "field": "statute_anchors[3]",
+     "http_status": 404,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75-S104.html",
+     "checked_at": "2026-09-24T01:50:17Z"
+    },
+    {
+     "url": "https://le.utah.gov/",
+     "field": "issued_by.ref",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/",
+     "checked_at": "2026-09-24T01:50:15Z"
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure",
+     "field": "full_text_reference / Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/",
+     "checked_at": "2026-09-24T01:50:15Z",
+     "fragment_present_in_page": true
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/#high-risk-genai-disclosure-in-regulated-occupations",
+     "field": "Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/",
+     "checked_at": "2026-09-24T01:50:15Z",
+     "fragment_present_in_page": true
+    }
+   ],
+   "prior_work_reconciliation": "Record unchanged since 2026-06-04 (modified 2026-06-04; not touched by 0105c7b3). All 2026-09-09 findings remain as stated. No admission receipt exists for this record.",
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Human editor: add the 63I-2-213 sunset amendment, fix the three 404 anchor URLs, relabel the report milestone; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-legislature-statute-2025-sb332",
+   "record_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb332.md",
+   "record_file_sha256": "97e8084f429a9565d1b7e2d4eeb6ab7cb0d16c63762838c30c18afde1f436a83",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+     "retained_path": "data/admission/sources/utah-sb332/SB0332-enrolled.pdf",
+     "sha256": "40fc7c8eb86e26fe4c8529dec31ee94c740ab9bb221640fb1ee7dab0d7301884",
+     "document_title": "Enrolled Copy S.B. 332 Artificial Intelligence Revisions",
+     "version": "2025 General Session enrolled copy",
+     "reviewed_txt": "data/admission/sources/utah-sb332/SB0332-enrolled.txt",
+     "reviewed_txt_sha256": "2db8a28ce75c50fd5e19b4db5453a1d7b61e6c515243466ff4927e17c0d5cc0a",
+     "txt_hash_matches": "receipts.json (sb149 receipt) and ops/evidence/utah-statute-source-review-2026-09-09.json"
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "title",
+     "record_value": "Artificial Intelligence Revisions",
+     "locator": "enrolled p1 line 1",
+     "excerpt": "Artificial Intelligence Revisions"
+    },
+    {
+     "field": "sponsors",
+     "record_value": "Sen. Kirk A. Cullimore; Rep. Jefferson Moss",
+     "locator": "enrolled p1 header",
+     "excerpt": "Chief Sponsor: Kirk A. Cullimore ... House Sponsor: Jefferson Moss"
+    },
+    {
+     "field": "statute_anchors[0] / Summary / Timeline sunset",
+     "record_value": "63I-2-213; May 1, 2025 to July 1, 2027 (26 months)",
+     "locator": "enrolled p2 lines 30-31",
+     "excerpt": "Title 13, Chapter 72, Artificial Intelligence Policy Act, is repealed [May] July 1, [2025] 2027."
+    },
+    {
+     "field": "obligation_kind []",
+     "record_value": "no new substantive obligations",
+     "locator": "enrolled p1 lines 5-8, 14-15",
+     "excerpt": "This bill extends the repeal date of the Artificial Intelligence Policy Act."
+    },
+    {
+     "field": "Summary: HB 320 did not alter the sunset",
+     "record_value": "not altered",
+     "locator": "HB 320 p1 lines 18-31 (63I-2-213 not among sections affected)",
+     "excerpt": "AMENDS: 13-72-101 ... 13-72-201 ... 13-72-301"
+    },
+    {
+     "field": "publication_citations[1]",
+     "record_value": "enrolled PDF URL",
+     "locator": "HEAD 200 application/pdf",
+     "excerpt": "n/a"
+    }
+   ],
+   "findings": [
+    {
+     "id": "sb332-effective-two-thirds",
+     "field": "effective and Timeline note \"Default 2025 session effective date\"",
+     "record_value": "2025-05-07",
+     "source_value": "Bill provides a special effective date: May 7, 2025 unless approved by two-thirds of each house, then on governor approval. Record's own votes (24-0-5 of 29; 74-0-1 of 75) would exceed two-thirds, implying effect on governor approval.",
+     "locator": "enrolled p1 line 12; p2 lines 32-39",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "After a human confirms the passage votes on le.utah.gov, set effective to the governor approval date (record enacted 2025-03-25) and replace the \"Default\" note with the two-thirds clause."
+    },
+    {
+     "id": "sb332-exclusivity",
+     "field": "Summary, Talking Point, strict-line note",
+     "record_value": "sole reason Chapter 72 survived; without SB 332 the chapter would have expired 2025-05-01",
+     "source_value": "SB 226 §7 made the identical 63I-2-213(5) amendment in the same session.",
+     "locator": "SB 226 p6 lines 169-182, 187-195",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Qualify: SB 332 and SB 226 each amended 63I-2-213(5) to July 1, 2027; remove \"the statutory reason\" and \"without SB 332\" framing."
+    },
+    {
+     "id": "sb332-votes-signing",
+     "field": "enacted 2025-03-25; all Timeline committee and floor rows",
+     "record_value": "as stated",
+     "source_value": "Not in enrolled copy; le.utah.gov SB0332 static page shows empty status table without JavaScript.",
+     "locator": "n/a",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": null
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+     "field": "official_url / publication_citations[0] / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+     "checked_at": "2026-09-24T01:50:19Z",
+     "note": "Static HTML shows an empty status table (JS-rendered)."
+    },
+    {
+     "url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+     "field": "publication_citations[1] / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+     "checked_at": "2026-09-24T01:50:19Z",
+     "note": "HEAD only; body not downloaded."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title63I/Chapter2/63I-2-S213.html",
+     "field": "statute_anchors[0] / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title63I/Chapter2/63I-2-S213.html",
+     "checked_at": "2026-09-24T01:50:18Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "field": "statute_anchors[1] / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "checked_at": "2026-09-24T01:50:16Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/",
+     "field": "issued_by.ref",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/",
+     "checked_at": "2026-09-24T01:50:15Z"
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/index.html",
+     "field": "full_text_reference / Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/index.html",
+     "checked_at": "2026-09-24T01:50:15Z"
+    }
+   ],
+   "prior_work_reconciliation": "Record unchanged since 2026-06-04; not touched by 0105c7b3. Both 2026-09-09 discrepancies remain. No admission receipt exists for this record.",
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Human editor: confirm SB 332 passage votes and signing date on le.utah.gov (JS-rendered page or journals), then fix effective date and exclusivity framing; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-legislature-statute-2026-hb320",
+   "record_path": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+   "record_file_sha256": "111b246cf8bb2b1118face419aa81634e3eba290346e98be8e47761d2a8345d5",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://le.utah.gov/Session/2026/bills/enrolled/HB0320.pdf",
+     "retained_path": "data/admission/sources/utah-hb320/HB0320-enrolled.pdf",
+     "sha256": "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211",
+     "document_title": "Enrolled Copy H.B. 320 Office of Artificial Intelligence Policy Amendments",
+     "version": "2026 General Session enrolled copy",
+     "reviewed_txt": "data/admission/sources/utah-hb320/HB0320-enrolled.txt",
+     "reviewed_txt_sha256": "5887b8a936ee0f8c13ceafc678cf0467464b7609841870c0cf3f613f0b5b8310",
+     "txt_hash_matches": "receipts.json (sb149 receipt) and ops/evidence/utah-statute-source-review-2026-09-09.json"
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "effective",
+     "record_value": "2026-05-06",
+     "locator": "enrolled p8 line 250 (Section 8)",
+     "excerpt": "This bill takes effect on May 6, 2026."
+    },
+    {
+     "field": "statute_anchors 13-72-201/401/402/403",
+     "record_value": "amended and renumbered sections",
+     "locator": "enrolled p1-2 lines 19-31",
+     "excerpt": "RENUMBERS AND AMENDS: 13-72-401, (Renumbered from 13-72-302"
+    },
+    {
+     "field": "Summary JIA instrument",
+     "record_value": "interprets, no waiver",
+     "locator": "enrolled p2-3 lines 60-62; p6 lines 193-195",
+     "excerpt": "\"Joint interpretation agreement\" means an agreement ... that clarifies the application of a provision of state law or rule to artificial intelligence technology."
+    },
+    {
+     "field": "Summary expanded counterparties",
+     "record_value": "judiciary, higher education, political subdivisions",
+     "locator": "enrolled p2 lines 54-57",
+     "excerpt": "\"Governmental entity\" means: (a) the judiciary; (b) a state-funded institution of higher education or public education; or (c) a political subdivision"
+    },
+    {
+     "field": "Summary extended term (ceiling)",
+     "record_value": "12 months plus two 12-month extensions, 36 months",
+     "locator": "enrolled p8 lines 236-245",
+     "excerpt": "The office may grant up to two extensions for any regulatory mitigation or joint interpretation agreement."
+    },
+    {
+     "field": "Summary mandatory audits §13-72-401(6)",
+     "record_value": "shall perform regular audits",
+     "locator": "enrolled p6 lines 190-192",
+     "excerpt": "The office shall perform regular audits of a participant's application of artificial intelligence technology"
+    },
+    {
+     "field": "Timeline Second annual report (content)",
+     "record_value": "report includes executed agreements",
+     "locator": "enrolled p4 lines 111-117",
+     "excerpt": "any regulatory mitigation or joint interpretation agreements executed by the office"
+    }
+   ],
+   "findings": [
+    {
+     "id": "hb320-prior-term",
+     "field": "Summary \"Extended term\" bullet",
+     "record_value": "from 12 months (with no renewal)",
+     "source_value": "Prior 13-72-305 allowed a single 12-month extension (24-month maximum); HB 320 strikes \"single\" and allows up to two.",
+     "locator": "HB 320 p8 lines 236-245; SB 149 p18 lines 572-575",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "from 12 months plus a single 12-month extension (24 months) to 12 months plus up to two 12-month extensions (36 months)."
+    },
+    {
+     "id": "hb320-title-editorial",
+     "field": "title",
+     "record_value": "Utah HB 320 (2026) — AI Learning Lab Restructure + Joint Interpretation Agreements",
+     "source_value": "Enrolled short title: \"Office of Artificial Intelligence Policy Amendments\" (also shown on le.utah.gov HB0320 page).",
+     "locator": "enrolled p1 line 1",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Utah HB 320 (2026) — Office of Artificial Intelligence Policy Amendments (optionally keep the descriptive subtitle)."
+    },
+    {
+     "id": "hb320-sponsors-missing",
+     "field": "sponsors",
+     "record_value": "none listed",
+     "source_value": "Chief Sponsor: Paul A. Cutler; Senate Sponsor: Kirk A. Cullimore.",
+     "locator": "enrolled p1 header",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Add sponsors: Rep. Paul A. Cutler (House sponsor); Sen. Kirk A. Cullimore (Senate floor sponsor)."
+    },
+    {
+     "id": "hb320-five-prong-not-new",
+     "field": "Summary \"Five-prong eligibility\" bullet (listed under Key changes)",
+     "record_value": "Five-prong eligibility presented as an HB 320 change",
+     "source_value": "The same five prongs were enacted by SB 149 13-70-303(1)(a)-(e); HB 320 renumbered them to 13-72-402 and extended them to JIAs, with minor wording changes to prong (a).",
+     "locator": "SB 149 p17 lines 540-549; HB 320 p7 lines 215-228",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Reword: eligibility prongs carried over from SB 149 and now also apply to JIAs (§13-72-402)."
+    },
+    {
+     "id": "hb320-prong-c-wording",
+     "field": "Summary \"Five-prong eligibility\" bullet",
+     "record_value": "substantial consumer benefits outweighing risks",
+     "source_value": "Source: potential substantial consumer benefits that may outweigh identified risks.",
+     "locator": "HB 320 p7 lines 223-224",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "potential substantial consumer benefits that may outweigh identified risks"
+    },
+    {
+     "id": "hb320-jia-reliance-gloss",
+     "field": "Summary JIA bullet and Talking Point",
+     "record_value": "a written interpretive position that parties can rely upon while OAIP exercises regulatory discretion",
+     "source_value": "Source defines JIA as clarifying application of law and says clarified requirements still apply; it does not use reliance or regulatory-discretion language, and 401(2) frames both RMA and JIA as means of granting temporary regulatory mitigation.",
+     "locator": "HB 320 p2-3 lines 60-62; p6 lines 171-173, 193-195",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Human editor to decide whether to keep the reliance gloss as PubLedge interpretation or align wording to \"clarifies the application of state law or rule\"."
+    },
+    {
+     "id": "hb320-counterparty-public-ed",
+     "field": "Summary expanded counterparties bullet",
+     "record_value": "judiciary, higher education institutions, and political subdivisions",
+     "source_value": "Definition also includes state-funded public education institutions; defined at 13-72-101(10), used in 13-72-401.",
+     "locator": "HB 320 p2 lines 54-57",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "judiciary, state-funded higher or public education institutions, and political subdivisions (§13-72-101(10), §13-72-401)."
+    },
+    {
+     "id": "hb320-report-ordinal",
+     "field": "Timeline row \"Second annual report 2026-11-30\"",
+     "record_value": "Second annual report; first under restructured Chapter 72",
+     "source_value": "Annual Nov 30 duty began under SB 149 (effective 2024-05-01), so 2026 would be at least the third statutory deadline; filing history unverified.",
+     "locator": "SB 149 line 465; HB 320 p4 lines 111-117",
+     "kind": "unverifiable",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Relabel as \"Annual report due (before Nov 30, 2026); first to include executed RMA/JIA list\"."
+    },
+    {
+     "id": "hb320-commerce-dead-link",
+     "field": "Sources: Utah OAIP Learning Lab",
+     "record_value": "https://commerce.utah.gov/ai/learning-lab/",
+     "source_value": "HTTP 404, page title \"Page not found\".",
+     "locator": "url_checks",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Replace with a current OAIP URL confirmed by a human, or remove."
+    },
+    {
+     "id": "hb320-signing-intro",
+     "field": "enacted 2026-03-19; Timeline Introduced 2026-01",
+     "record_value": "as stated",
+     "source_value": "Not in enrolled copy; le.utah.gov HB0320 static page renders no HB 320 status (only leftover commented template content from an unrelated 2024 bill).",
+     "locator": "n/a",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": null
+    },
+    {
+     "id": "obl-lla-301-anchor",
+     "field": "data/examples/obligations/learning-lab-agreement-participation.md Statute Anchors",
+     "record_value": "Utah Code §13-72-301 — Joint Interpretation Agreements (added by HB 320, 2026)",
+     "source_value": "13-72-301 is the Artificial Intelligence Learning Laboratory Program; JIAs are in 13-72-401 and defined at 13-72-101(12).",
+     "locator": "HB 320 p4 lines 120-121; p6 lines 164-166",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Utah Code §13-72-301 — Artificial Intelligence Learning Laboratory Program; JIAs are covered by the existing §13-72-401 anchor."
+    },
+    {
+     "id": "obl-lla-unsupported-terms",
+     "field": "learning-lab-agreement-participation.md What Counts / What Does Not Count",
+     "record_value": "financial resources for \"indemnification\"; \"retroactive enforcement\"; participant \"annual Nov 30 reporting\"",
+     "source_value": "Source: financial resources \"to meet obligations during testing\"; removal and \"all applicable civil and criminal penalties\" (no retroactivity); Nov 30 report is an OAIP duty to the Legislature, not a participant duty.",
+     "locator": "HB 320 p7 line 222; p7 lines 200-204; p4 lines 111-117",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Align the three items to statutory wording; move Nov 30 reporting out of participant obligations."
+    },
+    {
+     "id": "map-sb149-lla",
+     "field": "data/examples/mapping/index.yml sb149-learning-lab-and-ai-defense",
+     "record_value": "maps learning-lab-agreement-participation (JIA, 36-month, HB 320 counterparties) to SB 149",
+     "source_value": "SB 149 had RMAs only, 24-month maximum, agency counterparties only.",
+     "locator": "SB 149 p16-18 lines 505-577",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "fixed_by": null,
+     "proposed_correction": "Human decision: keep mapping but note the obligation text reflects the post-HB 320 regime."
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+     "field": "official_url / publication_citations / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+     "checked_at": "2026-09-24T01:50:19Z",
+     "note": "Page title confirms \"Office of Artificial Intelligence Policy Amendments\"; status table not in static HTML."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "field": "statute_anchors[0]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "checked_at": "2026-09-24T01:50:16Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+     "field": "statute_anchors[1]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+     "checked_at": "2026-09-24T01:50:16Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S401.html",
+     "field": "statute_anchors[2]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S401.html",
+     "checked_at": "2026-09-24T01:50:16Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S402.html",
+     "field": "statute_anchors[3]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S402.html",
+     "checked_at": "2026-09-24T01:50:16Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S403.html",
+     "field": "statute_anchors[4]",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S403.html",
+     "checked_at": "2026-09-24T01:50:16Z",
+     "note": "xcode section pages are a shared JS shell (identical byte size); HTTP 200 shows the URL resolves, not that the codified section text was read."
+    },
+    {
+     "url": "https://le.utah.gov/",
+     "field": "issued_by.ref",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/",
+     "checked_at": "2026-09-24T01:50:15Z"
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/#regulatory-mitigation-and-joint-interpretation-agreements",
+     "field": "full_text_reference / Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/",
+     "checked_at": "2026-09-24T01:50:15Z",
+     "fragment_present_in_page": true
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/learning-lab/",
+     "field": "Sources (Utah OAIP Learning Lab)",
+     "http_status": 404,
+     "final_url": "https://commerce.utah.gov/ai/learning-lab/",
+     "checked_at": "2026-09-24T01:50:15Z",
+     "note": "404; same as SB 149."
+    }
+   ],
+   "prior_work_reconciliation": "Record unchanged since 2026-06-04; not touched by 0105c7b3. All 2026-09-09 HB 320 findings (prior term, title, sponsors, §13-72-301 obligation anchor) remain open. No admission receipt exists for this record.",
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Human editor: fix prior-term wording, title, sponsors, five-prong framing; fix the learning-lab-agreement-participation obligation anchor and unsupported terms; replace dead link; then renew last_verified by human review."
+  },
+  {
+   "id": "us-ut-oaip-jia-2026-001",
+   "record_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+   "record_file_sha256": "1c73dcfdf1dc9dc14040426990fdd43ea4db8615ca0523c2914d7fda1e40d740",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+     "retained_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+     "document_title": "H.B. 452 Artificial Intelligence Amendments, Enrolled Copy (2025)",
+     "version": "enrolled; effective May 7, 2025 (line 303)"
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "status / editorial_status / source",
+     "record_value": "proposed / draft / publedge-original-draft",
+     "locator": "record frontmatter; no authority issuance exists",
+     "excerpt": "Correctly represented as unissued PubLedge prior art."
+    },
+    {
+     "field": "statute_anchors[0].cite",
+     "record_value": "Utah Code §13-72a-203",
+     "locator": "HB 452 Section 5, lines 174-184",
+     "excerpt": "13-72a-203 . Disclosure requirements."
+    },
+    {
+     "field": "Requirements: Display disclosure",
+     "record_value": "On first session, plainly identify the service as an AI chatbot",
+     "locator": "HB 452 lines 176-180",
+     "excerpt": "clearly and conspicuously disclose ... that the mental health chatbot is an artificial intelligence technology and not a human ... before the Utah user may access the features"
+    }
+   ],
+   "findings": [
+    {
+     "id": "jia-wrong-enacting-bill",
+     "field": "statute_anchors[1] and Sources link 'Utah Code §13-72a-203'",
+     "record_value": "Utah SB0149 (2024), https://le.utah.gov/~2024/bills/static/SB0149.html",
+     "source_value": "§13-72a-203 is enacted by HB 452 (2025) Section 5; SB 149 enrolled text contains no 13-72a section",
+     "locator": "HB 452 lines 29, 174-175; SB0149-enrolled.txt (0 matches for 13-72a)",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Cite 'Utah HB0452 (2025)' with https://le.utah.gov/~2025/bills/static/HB0452.html, and point the §13-72a-203 Sources link at https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html (HTTP 200)."
+    },
+    {
+     "id": "jia-inactivity-trigger-framing",
+     "field": "terms[0], Requirements 'Re-display on resumption', Talking Point",
+     "record_value": "re-display after 30 minutes of inactivity; presented under the §13-72a-203 provision",
+     "source_value": "statute requires disclosure before access, at the start of an interaction if not accessed within the previous seven days, and whenever the user asks whether AI is used",
+     "locator": "HB 452 lines 179-184",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "proposed_correction": "Label the 30-minute re-display as a proposed JIA term that goes beyond the statute, list the statutory triggers (before access; seven-day re-display; on request) separately, and add the missing on-request trigger. Do not merge the two conditions."
+    },
+    {
+     "id": "jia-provision-effective-date",
+     "field": "provision table Effective",
+     "record_value": "2026-04-15",
+     "source_value": "draft has no effect; 2026-04-15 is the drafting date. Statute effective May 7, 2025",
+     "locator": "record Timeline; HB 452 line 303",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Remove Effective from the draft provision, or relabel as 'Drafted'."
+    },
+    {
+     "id": "jia-official-url-404",
+     "field": "official_url, issued_by.ref",
+     "record_value": "https://commerce.utah.gov/ai/learning-lab/",
+     "source_value": "HTTP 404 at 2026-09-24T01:58Z with browser user agent",
+     "locator": "n/a",
+     "kind": "discrepancy",
+     "prior_finding": true,
+     "status": "open",
+     "proposed_correction": "Point to the current OAIP page https://commerce.utah.gov/ai/ (HTTP 200) or another current page an editor confirms."
+    },
+    {
+     "id": "jia-timeline-release",
+     "field": "Timeline 'Published' row",
+     "record_value": "Awaiting v0.1 release",
+     "source_value": "Package is 0.2.5; the draft is unissued",
+     "locator": "record Timeline",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "'Not issued; remains a PubLedge draft pending lawyer review and authority sign-off'. The admission gate needs a receipt with retained official evidence for this edit, so bundle it with the anchor correction (HB 452 evidence)."
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://commerce.utah.gov/ai/learning-lab/",
+     "field": "official_url / issued_by.ref",
+     "http_status": 404,
+     "final_url": "https://commerce.utah.gov/ai/learning-lab/",
+     "checked_at": "2026-09-24T01:58:07Z"
+    },
+    {
+     "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+     "field": "statute_anchors[0] / Sources",
+     "http_status": 200,
+     "final_url": "https://everyailaw.com/regulation/utah-sb149/",
+     "checked_at": "2026-09-24T01:58:07Z",
+     "note": "anchor id present; EAL models the amended stack under the SB149 slug"
+    },
+    {
+     "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+     "field": "statute_anchors[1] / Sources",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+     "checked_at": "2026-09-24T01:58:07Z",
+     "note": "resolves, but it's the wrong bill for §13-72a-203"
+    }
+   ],
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Not eligible for a Verified renewal as an authority record: it's an unissued draft. Correct the anchor bill, separate the proposed 30-minute term from the statutory triggers, fix the dead official URL and the timeline row in one receipted change using the HB 452 retained evidence; then a human decides on last_verified."
+  },
+  {
+   "id": "us-ut-oaip-rma-2024-001",
+   "record_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+   "record_file_sha256": "68266cdbb989ed85f06c0b2dc6a96f0007462ce569d77816590a479da020a7d7",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/sources/Signed-Elizachat-Agreement-November-2024.pdf",
+     "sha256": "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
+     "document_title": "Agreement between the Office of Artificial Intelligence Policy, ElizaChat Inc., and the Division of Professional Licensing (signed, scanned, 12 pp.)",
+     "version_or_date": "signed 2024-11-14/15/18; server last-modified 2026-02-03T14:19:43Z; content-length 546143 matches local copy; byte-identical to copy reviewed 2026-09-08"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/current/ai_regulatory-relief-4_authorized-pilots_elizachat_.html",
+     "sha256": "39895417aa2a25c72cf7f3c32ed056a949e55289a3b112a6fe24ec7c6a143e1e",
+     "document_title": "OAIP ElizaChat pilot page",
+     "version_or_date": "page dateModified 2026-05-15T18:52:25Z; fetched 2026-09-24T02:00:08Z"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/current/ai_regulatory-relief-4_authorized-pilots_.html",
+     "sha256": "d3bd7f25cf0f75f9537c5692e06496b6f62a3317e8145a5386dff0a05b15df31",
+     "document_title": "OAIP Authorized AI Pilots (register page)",
+     "version_or_date": "page dateModified 2026-09-03T23:35:34Z; fetched 2026-09-24T02:00:08Z"
+    },
+    {
+     "official_url": null,
+     "local_path": "ops/evidence/elizachat-source-review-2026-09-08.json",
+     "sha256": null,
+     "document_title": "Prior ElizaChat source review receipt",
+     "version_or_date": "2026-09-08"
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "parties[]",
+     "record_value": "OAIP (issuing_authority); DOPL (co_signatory_authority); ElizaChat, Inc. (participant)",
+     "locator": "PDF p.1, Section I.A-C",
+     "excerpt": "Elizachat Inc., a participant in the Learning Laboratory (hereinafter \"Participant\")."
+    },
+    {
+     "field": "enacted / effective / term_start",
+     "record_value": "2024-11-18",
+     "locator": "PDF p.6 Section XIV; p.7 DOPL signature (date verified from page image p-07.png, OCR garbled)",
+     "excerpt": "the Parties have executed this Agreement as of the latter of the dates written below. [DOPL date: 11/18/2024]"
+    },
+    {
+     "field": "body: Background signature dates",
+     "record_value": "2024-11-14 Boyd; 2024-11-15 Barney; 2024-11-18 Steinagal",
+     "locator": "PDF p.6-7 (page images p-06.png, p-07.png)",
+     "excerpt": "Zach Boyd (Nov 14, 2024 14:25 MST) ... David Barney (Nov 15, 2024 12:43 MST) ... 11/18/2024"
+    },
+    {
+     "field": "term_end",
+     "record_value": "2025-11-18",
+     "locator": "PDF p.1 Section II; Authorized AI Pilots register (dateModified 2026-09-03)",
+     "excerpt": "The demonstration period of this Agreement is for 12 months, beginning on the date this agreement is executed. / Term November 18, 2024 – November 18, 2025"
+    },
+    {
+     "field": "status",
+     "record_value": "expired",
+     "locator": "Authorized AI Pilots register, ElizaChat entry (dateModified 2026-09-03); PDF p.6 Section XIII (single extension, request due 30 days before end)",
+     "excerpt": "ElizaChat Expired Student emotional support Signed November 18, 2024 Term November 18, 2024 – November 18, 2025"
+    },
+    {
+     "field": "mitigations[0] phased rollout",
+     "record_value": "Phase One commencement; written approval for each subsequent phase; Phase Two group reviewed",
+     "locator": "PDF p.4 Section VI.H",
+     "excerpt": "This agreement shall commence with Phase One and each subsequent phase shall occur only upon written approval from the Office."
+    },
+    {
+     "field": "mitigations[] monthly reporting",
+     "record_value": "Monthly reporting to ai@utah.gov",
+     "locator": "PDF p.4 Section VI.I.1",
+     "excerpt": "Participant shall submit a monthly report to the Office at ai@utah.gov."
+    },
+    {
+     "field": "mitigations[] 24-hour harm notice",
+     "record_value": "notify OAIP within 24 hours of any incident that results in harm",
+     "locator": "PDF p.5 Section VI.I.3",
+     "excerpt": "notify the Office of any incidents that result in harm to the health, safety or financial well-being of a user within 24 hours"
+    },
+    {
+     "field": "rules_mitigated[0] / 30-day cure",
+     "record_value": "§58-1-501(1)-(2) forbearance during 30-day cure period",
+     "locator": "PDF p.8 Schedule A XV.C-E",
+     "excerpt": "Participant shall have 30 days to cure any incidents ... so long as Participant makes a good faith effort to follow the curing procedure"
+    },
+    {
+     "field": "mitigations[] immediate incident report",
+     "record_value": "immediately report any activity constituting an incident",
+     "locator": "PDF p.8 Schedule A XV.E.1",
+     "excerpt": "Participant shall immediately report any activity constituting an incident to the Office."
+    },
+    {
+     "field": "reliance_scope / out-of-scope",
+     "record_value": "no bar to user, parent/guardian, third-party or other-State claims",
+     "locator": "PDF p.8-9 Schedule A XV.F",
+     "excerpt": "this mitigation does not extend to any claim brought by individual users or their parent/legal guardian, injured third parties"
+    },
+    {
+     "field": "mitigations[] parental consent",
+     "record_value": "Written parental consent before regular use by users under 18",
+     "locator": "PDF p.9 Section XVI.E",
+     "excerpt": "obtain parental consent in writing prior to engaging in regular activity with users under the age of 18"
+    },
+    {
+     "field": "mitigations[] GenAI disclosure",
+     "record_value": "§13-2-12(4) disclosure before access; acknowledgment",
+     "locator": "PDF p.4 Section VI.G.1-2",
+     "excerpt": "That the user is interacting with generative artificial intelligence pursuant to Utah Code § 13-2-12(4)"
+    },
+    {
+     "field": "cure/termination (not a record field; context)",
+     "record_value": "n/a",
+     "locator": "PDF p.5 VI.J; p.5-6 X.A; p.2 IV.D",
+     "excerpt": "The Office or Participant may terminate this Agreement at any time, and for any reason, prior to the completion of the 12-month mitigation period."
+    }
+   ],
+   "findings": [
+    {
+     "id": "high-risk-auto-shared-wording",
+     "field": "body: Obligations summary (high-risk users)",
+     "record_value": "High-risk users auto-shared with ElizaChat clinical team and emergency contacts",
+     "source_value": "high-risk behavior \"as determined by Participant\" shall be \"promptly shared\" (no automatic sharing term)",
+     "locator": "PDF p.9 Section XVI.A",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "High-risk users, as determined by the participant, promptly shared with ElizaChat's clinical team and emergency contacts; promptly connected to a licensed psychologist or therapist."
+    },
+    {
+     "id": "stale-legacy-id-in-notes",
+     "field": "body: Notes on this demonstration remap",
+     "record_value": "`us-ut-oaip-rma-0001`",
+     "source_value": "Record id is us-ut-oaip-rma-2024-001",
+     "locator": "record body, final section",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Replace the legacy id with `us-ut-oaip-rma-2024-001` or remove the parenthetical."
+    },
+    {
+     "id": "term-end-day-count",
+     "field": "term_end",
+     "record_value": "2025-11-18",
+     "source_value": "12 months beginning on the execution date (2024-11-18); the agreement does not state an end date. The official register states Nov 18, 2025.",
+     "locator": "PDF p.1 Section II; register page",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": null
+    },
+    {
+     "id": "extension-or-phase-history-unverified",
+     "field": "status / phase history",
+     "record_value": "status: expired; no phase claim",
+     "source_value": "Register lists Expired; no source shows an extension request, grant, termination, or which phases were approved.",
+     "locator": "register page; PDF p.6 Section XIII",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "proposed_correction": null
+    },
+    {
+     "id": "obligation-disclosure-bundle-ch75-claim",
+     "field": "data/examples/obligations/elizachat-pre-access-disclosure-bundle.md: statute anchor note",
+     "record_value": "§13-2-12(4) \"now Chapter 75 post-SB 226\"",
+     "source_value": "Not addressed by the agreement; statutory succession not verified in this review.",
+     "locator": "obligation file; agreement VI.G cites only §13-2-12(4)",
+     "kind": "unverifiable",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": null
+    },
+    {
+     "id": "learning-lab-link-404",
+     "field": "issued_by.ref; Sources section",
+     "record_value": "https://commerce.utah.gov/ai/learning-lab/",
+     "source_value": "HTTP 404 at 2026-09-24T02:01Z (also 404 at 2026-09-24T01:50Z in this session's urls.tsv)",
+     "locator": "url_checks",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Replace with a live official OAIP program URL, e.g. https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ (200), or mark the link as dead with an archive pointer."
+    },
+    {
+     "id": "agreement-page-url-redirects",
+     "field": "official_url / Sources section",
+     "record_value": "https://commerce.utah.gov/ai/agreements/elizachat/",
+     "source_value": "Redirects to https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
+     "locator": "url_checks",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Use the final URL https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/ to avoid dependence on the redirect."
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://commerce.utah.gov/ai/agreements/elizachat/",
+     "field": "official_url; Sources section",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
+     "checked_at": "2026-09-24T02:01:04Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/learning-lab/",
+     "field": "issued_by.ref; Sources section",
+     "http_status": 404,
+     "final_url": "https://commerce.utah.gov/ai/learning-lab/",
+     "checked_at": "2026-09-24T02:01:05Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+     "field": "publication_citations; Sources section",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+     "checked_at": "2026-09-24T02:01:05Z"
+    },
+    {
+     "url": "https://github.com/snapsynapse/publedge/blob/main/ops/evidence/elizachat-source-review-2026-09-08.json",
+     "field": "Sources section (source review receipt)",
+     "http_status": 200,
+     "final_url": "https://github.com/snapsynapse/publedge/blob/main/ops/evidence/elizachat-source-review-2026-09-08.json",
+     "checked_at": "2026-09-24T02:01:20Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter2/13-2-S12.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter2/13-2-S12.html",
+     "checked_at": "2026-09-24T02:01:05Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+     "checked_at": "2026-09-24T02:01:05Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+     "checked_at": "2026-09-24T02:01:05Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "checked_at": "2026-09-24T02:01:06Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+     "checked_at": "2026-09-24T02:01:06Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60-S102.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60-S102.html",
+     "checked_at": "2026-09-24T02:01:06Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60.html",
+     "checked_at": "2026-09-24T02:01:06Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter61/58-61-S102.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter61/58-61-S102.html",
+     "checked_at": "2026-09-24T02:01:06Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html",
+     "checked_at": "2026-09-24T02:01:06Z"
+    },
+    {
+     "url": "https://publedge.org/schema/instrument.schema.json",
+     "field": "schema",
+     "http_status": 200,
+     "final_url": "https://publedge.org/schema/instrument.schema.json",
+     "checked_at": "2026-09-24T02:01:06Z"
+    },
+    {
+     "url": "https://w3id.org/semanticarts/ns/ontology/gist/Contract",
+     "field": "@type / issued_by.@type",
+     "http_status": 200,
+     "final_url": "https://semanticarts.github.io/gist-doc/terms/Contract.ttl",
+     "checked_at": "2026-09-24T02:01:07Z"
+    },
+    {
+     "url": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+     "field": "@type / issued_by.@type",
+     "http_status": 200,
+     "final_url": "https://semanticarts.github.io/gist-doc/terms/SubCountryGovernment.ttl",
+     "checked_at": "2026-09-24T02:01:07Z"
+    }
+   ],
+   "leads": [],
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Sam: confirm `expired` against the register (dateModified 2026-09-03), fix the stale legacy id, the auto-shared wording and the dead learning-lab link, then decide on last_verified renewal. No extension or phase-history claim should be added without a source."
+  },
+  {
+   "id": "us-ut-oaip-rma-2025-002",
+   "record_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+   "record_file_sha256": "79d84f0bd41f212f1f727d46b4d16f59a3d307e3e4d59e347a5e500e9f3d3984",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+     "local_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+     "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+     "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING (signed)",
+     "version_or_date": "signed 2025-10-23/24; retained 2026-09-09; server last-modified 2026-02-03T14:19:18Z, content-length 625095 matches retained copy (HEAD only)"
+    },
+    {
+     "official_url": null,
+     "local_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+     "sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+     "document_title": "Retained text extraction of the signed agreement",
+     "version_or_date": "2026-09-09"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf",
+     "local_path": "data/admission/sources/doctronic/Doctronic-Outcomes-May-2026-2026-09-09.pdf",
+     "sha256": "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940",
+     "document_title": "Key Statistics on the Doctronic Pilot Program (outcomes report)",
+     "version_or_date": "dated 5/19/26; content-length matches retained copy"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/ai-faq/",
+     "local_path": "data/admission/sources/doctronic/OAIP-AI-FAQ-2026-09-09.html",
+     "sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
+     "document_title": "OAIP AI FAQ (retained)",
+     "version_or_date": "observed 2026-09-09"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/ai-faq/",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/current/ai_ai-faq_.html",
+     "sha256": "ef533d7dfc798a742659480e35133c4b8dece80c9325396483d3a3fe93fcd010",
+     "document_title": "OAIP AI FAQ",
+     "version_or_date": "page dateModified 2026-09-16T02:07:29Z; fetched 2026-09-24T02:00:08Z"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+     "local_path": "data/admission/sources/doctronic/OAIP-Doctronic-Pilot-2026-09-09.html",
+     "sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+     "document_title": "OAIP Doctronic pilot page (retained)",
+     "version_or_date": "observed 2026-09-09"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/current/ai_regulatory-relief-4_authorized-pilots_doctronic_.html",
+     "sha256": "ef1e7069fc65b2bab98900b13522dd5b21ef0b8dd9b9426e9ee54421ac1ed223",
+     "document_title": "OAIP Doctronic pilot page (current)",
+     "version_or_date": "page dateModified 2026-06-18T00:40:50Z; visible text unchanged from 2026-09-09 snapshot; fetched 2026-09-24T02:00:08Z"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/current/ai_regulatory-relief-4_authorized-pilots_.html",
+     "sha256": "d3bd7f25cf0f75f9537c5692e06496b6f62a3317e8145a5386dff0a05b15df31",
+     "document_title": "OAIP Authorized AI Pilots (register page)",
+     "version_or_date": "page dateModified 2026-09-03T23:35:34Z; fetched 2026-09-24T02:00:08Z"
+    },
+    {
+     "official_url": null,
+     "local_path": "ops/evidence/doctronic-source-review-2026-09-09.json; data/admission/receipts.json",
+     "sha256": null,
+     "document_title": "Prior Doctronic source review and admission receipt",
+     "version_or_date": "2026-09-09"
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "parties[]",
+     "record_value": "OAIP; DOPL; Doctronic, LLC",
+     "locator": "Agreement Section 1.A-C",
+     "excerpt": "B. Doctronic, LLC (hereinafter \"Participant\")."
+    },
+    {
+     "field": "enacted / effective / term_start",
+     "record_value": "2025-10-24",
+     "locator": "Agreement Section 2; Section 14 signatures",
+     "excerpt": "The period of this Agreement is for 12 months, beginning on the date this agreement is executed. [DOPL signature 10/24/2025; Boyd and Pavelle 10/23/2025]"
+    },
+    {
+     "field": "term_end (and homepage 'Term ends Oct 24, 2026' countdown, built from term_end in scripts/build.js)",
+     "record_value": "2026-10-24",
+     "locator": "Authorized AI Pilots register, Doctronic entry (dateModified 2026-09-03); FAQ (dateModified 2026-09-16)",
+     "excerpt": "Doctronic Active Prescription renewals Signed October 24, 2025 Term October 24, 2025 – October 24, 2026"
+    },
+    {
+     "field": "status",
+     "record_value": "enforcing",
+     "locator": "register page, Doctronic entry",
+     "excerpt": "Doctronic Active Prescription renewals"
+    },
+    {
+     "field": "rules_mitigated[0]",
+     "record_value": "§58-1-501(1) and R156-1-501(2)(b)",
+     "locator": "Schedule A Section 15.B",
+     "excerpt": "The Division will forgo any enforcement action for unlawful conduct, as defined in Utah Code § 58-1-501(1) and administrative rule UAC R156-1-501(2)(b)"
+    },
+    {
+     "field": "rules_mitigated[1]",
+     "record_value": "§26B-4-704(6) and R156-1-602",
+     "locator": "Schedule A Section 15.C",
+     "excerpt": "forgo any enforcement action under Utah Code § 26B-4-704(6) and administrative rule UAC R156-1-602"
+    },
+    {
+     "field": "mitigations[] three-phase review",
+     "record_value": "pre-pharmacy review, retrospective review, ongoing sampling",
+     "locator": "Schedule B Part 3C",
+     "excerpt": "Phase One – Pre-Issuance Review Period: For the first 250 patients processed through the system, every AI-generated renewal decision will undergo review"
+    },
+    {
+     "field": "mitigations[] no new Rx / controlled substances",
+     "record_value": "AI may not issue new prescriptions ... controlled substances ... treatment plans",
+     "locator": "Schedule B Part 2 (Core Functionality) and Part 2C (Scope Limitations)",
+     "excerpt": "No new prescriptions or modification of prior treatment plans will be initiated through the platform."
+    },
+    {
+     "field": "mitigations[] formulary",
+     "record_value": "Schedule C",
+     "locator": "Section 16.B.2",
+     "excerpt": "Participant does not utilize its artificial intelligence technology to authorize renewals of any medications not listed on the formulary and attached below as Schedule C."
+    },
+    {
+     "field": "mitigations[] data security",
+     "record_value": "§63A-19-102 as if a governmental entity",
+     "locator": "Section 6.E.1",
+     "excerpt": "in accordance with the policies set forth in Utah Code § 63A-19-102, as if Participant were a governmental entity under such section."
+    },
+    {
+     "field": "mitigations[] monthly reporting",
+     "record_value": "monthly to ai@utah.gov with acceptance/denial counts and agreement rates",
+     "locator": "Section 6.H.1",
+     "excerpt": "Participant shall submit a monthly report to the Office at ai@utah.gov."
+    },
+    {
+     "field": "body: 30-day post-term report",
+     "record_value": "30-day post-term written report",
+     "locator": "Section 6.H.3",
+     "excerpt": "Not later than 30 days after the end date of this Agreement, Participant will submit a written report to the Office"
+    },
+    {
+     "field": "body: Limitations (terminable at will)",
+     "record_value": "§10A",
+     "locator": "Section 10.A",
+     "excerpt": "The Office or Participant may terminate this Agreement at any time, and for any reason, prior to the completion of the 12-month mitigation period."
+    },
+    {
+     "field": "body: Operational observation (current phase)",
+     "record_value": "still in Phase One during Jan-Apr; later phase not established",
+     "locator": "Outcomes report p.1; register page 'Where it stands'",
+     "excerpt": "The pilot is still in Phase 1 ... Moving to Phase 2 requires this office to approve it ... and it has not been approved."
+    }
+   ],
+   "findings": [
+    {
+     "id": "prescriber-chapter-cite-59-68",
+     "field": "rules_mitigated[2]",
+     "record_value": "§§58-31b-502, 58-60-110, 58-61-502, 59-67-502, 59-68-502, 59-70a-503, 58-71-502",
+     "source_value": "58-31b-502, 58-60-110, 58-61-502, 59-67-502, 58-68-502, 59-70a-503, and 58-71-502 (source itself appears to mistype 58-67 and 58-70a as 59-)",
+     "locator": "Schedule A Section 15.D.2",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Reproduce the source list verbatim (58-68-502, not 59-68-502) and add a note that the signed text cites 59-67-502 and 59-70a-503 as written [sic]; do not silently correct the source."
+    },
+    {
+     "id": "disclosure-trigger-first-session",
+     "field": "mitigations[] and Obligations summary (GenAI disclosure)",
+     "record_value": "First-session GenAI disclosure (§13-77-103) with acknowledgment before access",
+     "source_value": "Disclosure is triggered when a user indicates a renewal request and before the AI engages further on it; acknowledgment before access to any functions. No 'first session' term.",
+     "locator": "Section 6.G.1-2",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "GenAI disclosure (§13-77-103) when a user requests a renewal and before the AI engages further; user acknowledgment before access to any function."
+    },
+    {
+     "id": "adverse-outcome-report-not-monthly",
+     "field": "mitigations[] monthly reporting; Obligations summary",
+     "record_value": "Monthly reporting ... including ... complaints, adverse outcomes",
+     "source_value": "Monthly report covers user-complaint information; complaint and adverse-health-outcome reporting is a separate duty in 6.H.2(b) with no stated clock. There is no incident-notification clock in this agreement.",
+     "locator": "Section 6.H.1-2",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Split: monthly report (counts, agreement rates, complaints information); separate duty to report user complaints and adverse health outcomes of which Participant becomes aware (no clock stated)."
+    },
+    {
+     "id": "amendment-2026-unlinked",
+     "field": "body: Operational observation; mitigations[] formulary (Schedule C)",
+     "record_value": "FAQ conflict retained; amendment mechanism and date not established",
+     "source_value": "Register (2026-09-03) now says 'The 2026 amendment tightened that threshold and removed two medications'; FAQ (2026-09-16) repeats the changes. No amendment document is linked; the signed PDF is unchanged in length.",
+     "locator": "register page Doctronic 'Where it stands'; FAQ 'What changes have been made to the contract?'",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "proposed_correction": "Keep the conflict disclosure. Optionally add the register's dated statement that OAIP calls it a 2026 amendment, while keeping the amendment date, signatories and exact text marked unverified."
+    },
+    {
+     "id": "current-phase-official-statement",
+     "field": "body: Operational observation (current phase)",
+     "record_value": "'does not establish ... the pilot's current phase'",
+     "source_value": "Register (dateModified 2026-09-03) states the pilot is still in Phase 1 and Phase 2 has not been approved.",
+     "locator": "register page, Doctronic 'Where it stands'",
+     "kind": "locator-note",
+     "prior_finding": true,
+     "status": "open",
+     "proposed_correction": "Add a dated observation: OAIP's Authorized AI Pilots page (modified 2026-09-03) says the pilot remains in Phase 1 and Phase 2 has not been approved."
+    },
+    {
+     "id": "extension-after-2026-10-24-unknown",
+     "field": "status / term_end",
+     "record_value": "enforcing / 2026-10-24",
+     "source_value": "The agreement allows one extension request no later than 30 days before term end (about 2026-09-24). No source shows a request or decision. FAQ says continuation is an office decision.",
+     "locator": "Section 13; FAQ 'Is this program permanent?'",
+     "kind": "unverifiable",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": null
+    },
+    {
+     "id": "term-end-day-count",
+     "field": "term_end",
+     "record_value": "2026-10-24",
+     "source_value": "Agreement states 12 months from execution, not an end date; the official register states October 24, 2026, which supports the homepage countdown date.",
+     "locator": "Section 2; register page",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": null
+    },
+    {
+     "id": "pdf-title-draft",
+     "field": "source_documents",
+     "record_value": "Doctronic-Final-Agreement.pdf",
+     "source_value": "Signed PDF body is titled 'DRAFT AGREEMENT'",
+     "locator": "Agreement p.1 title",
+     "kind": "locator-note",
+     "prior_finding": true,
+     "status": "open",
+     "proposed_correction": null
+    },
+    {
+     "id": "register-terms-not-in-agreement",
+     "field": "mitigations[] (completeness)",
+     "record_value": "no insurance or adversarial-testing term",
+     "source_value": "Register lists 'Third party adversarial testing of the system'; FAQ says agreements require malpractice insurance or self-insurance. Neither term found in the signed agreement text.",
+     "locator": "register page Doctronic 'What the company agreed to'; FAQ liability answer; agreement text grep",
+     "kind": "unverifiable",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": null
+    },
+    {
+     "id": "stale-legacy-id-in-notes",
+     "field": "body: Notes on this demonstration remap",
+     "record_value": "`us-ut-oaip-rma-0003`",
+     "source_value": "Record id is us-ut-oaip-rma-2025-002",
+     "locator": "record body, final section",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Replace the legacy id with `us-ut-oaip-rma-2025-002` or remove the parenthetical."
+    },
+    {
+     "id": "learning-lab-link-404",
+     "field": "issued_by.ref; Sources section",
+     "record_value": "https://commerce.utah.gov/ai/learning-lab/",
+     "source_value": "HTTP 404 at 2026-09-24T02:01Z (also 404 at 2026-09-24T01:50Z in this session's urls.tsv)",
+     "locator": "url_checks",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Replace with a live official OAIP program URL, e.g. https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ (200), or mark the link as dead with an archive pointer."
+    },
+    {
+     "id": "adminrules-link-404",
+     "field": "statute_anchors[] (UAC R156-1-501 / R156-1-602).url",
+     "record_value": "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules",
+     "source_value": "HTTP 404 at 2026-09-24T02:01Z",
+     "locator": "url_checks",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Replace with a working Utah Office of Administrative Rules URL for R156-1 after human verification."
+    },
+    {
+     "id": "agreement-page-url-redirects",
+     "field": "official_url / Sources section",
+     "record_value": "https://commerce.utah.gov/ai/agreements/doctronic/",
+     "source_value": "Redirects to https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+     "locator": "url_checks",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Use the final URL https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/ to avoid dependence on the redirect."
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules",
+     "field": "statute_anchors[].url (UAC R156-1)",
+     "http_status": 404,
+     "final_url": "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules",
+     "checked_at": "2026-09-24T02:01:07Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/agreements/doctronic/",
+     "field": "Sources section (agreement page link)",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+     "checked_at": "2026-09-24T02:01:08Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/ai-faq/",
+     "field": "Sources section",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/ai/ai-faq/",
+     "checked_at": "2026-09-24T02:01:08Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/learning-lab/",
+     "field": "issued_by.ref; Sources section",
+     "http_status": 404,
+     "final_url": "https://commerce.utah.gov/ai/learning-lab/",
+     "checked_at": "2026-09-24T02:01:08Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+     "field": "official_url",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+     "checked_at": "2026-09-24T02:01:08Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+     "field": "publication_citations; Sources section",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+     "checked_at": "2026-09-24T02:01:09Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf",
+     "field": "publication_citations; Sources section",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf",
+     "checked_at": "2026-09-24T02:01:09Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+     "checked_at": "2026-09-24T02:01:09Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S301.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S301.html",
+     "checked_at": "2026-09-24T02:01:09Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+     "checked_at": "2026-09-24T02:01:09Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "checked_at": "2026-09-24T02:01:09Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html",
+     "checked_at": "2026-09-24T02:01:09Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html",
+     "checked_at": "2026-09-24T02:01:10Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+     "checked_at": "2026-09-24T02:01:10Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter17B/58-17b.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter17B/58-17b.html",
+     "checked_at": "2026-09-24T02:01:10Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html",
+     "checked_at": "2026-09-24T02:01:10Z"
+    },
+    {
+     "url": "https://publedge.org/schema/instrument.schema.json",
+     "field": "schema",
+     "http_status": 200,
+     "final_url": "https://publedge.org/schema/instrument.schema.json",
+     "checked_at": "2026-09-24T02:01:10Z"
+    },
+    {
+     "url": "https://w3id.org/semanticarts/ns/ontology/gist/Contract",
+     "field": "@type / issued_by.@type",
+     "http_status": 200,
+     "final_url": "https://semanticarts.github.io/gist-doc/terms/Contract.ttl",
+     "checked_at": "2026-09-24T02:01:10Z"
+    },
+    {
+     "url": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+     "field": "@type / issued_by.@type",
+     "http_status": 200,
+     "final_url": "https://semanticarts.github.io/gist-doc/terms/SubCountryGovernment.ttl",
+     "checked_at": "2026-09-24T02:01:10Z"
+    }
+   ],
+   "leads": [
+    {
+     "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+     "link_text": "(no link) 'The 2026 amendment tightened that threshold and removed two medications from the list.'",
+     "why": "Official statement of a 2026 amendment with no linked document; amendment date, text and signatories are unverifiable."
+    },
+    {
+     "url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Policy-Memorandum-.pdf",
+     "link_text": "Policy Memorandum (2026)",
+     "why": "Linked from the Doctronic page; not downloaded under this review's rules. May bear on amendment, phase or oversight terms."
+    },
+    {
+     "url": "https://commerce.utah.gov/wp-content/uploads/2026/04/doctronic-letter-from-medical-board.pdf",
+     "link_text": "Utah Medical Licensing Board Doctronic Letter (April 20, 2026)",
+     "why": "Not downloaded; may bear on oversight changes."
+    },
+    {
+     "url": "https://commerce.utah.gov/wp-content/uploads/2026/04/Medical-Board-Doctronic-Response.pdf",
+     "link_text": "Commerce Doctronic Response Letter (April 21, 2026)",
+     "why": "Not downloaded; may describe contract changes."
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/ai-faq/",
+     "link_text": "If an AI tool approves a refill and an adverse event occurs, how is liability determined?",
+     "why": "States agreements require malpractice insurance or self-insurance; not found in the signed agreement."
+    }
+   ],
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Sam: fix the 59-68-502 citation and the disclosure trigger wording; add the register's dated Phase 1 statement; keep the amendment unverified until a signed amendment is published. Recheck the register after 2026-10-24 for extension or expiry before touching status or term_end."
+  },
+  {
+   "id": "us-ut-oaip-rma-2026-001",
+   "record_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+   "record_file_sha256": "d9942ac7d573be8ea95f9bcba5f06d058b827ca69624601dba9a30990581fa2a",
+   "last_verified": "2026-06-04",
+   "sources": [
+    {
+     "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/sources/Legion-Agreement.pdf",
+     "sha256": "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
+     "document_title": "Agreement between the Office of Artificial Intelligence Policy, Legion Health PA, Legion Health, Inc., and the Division of Professional Licensing (21 pp.)",
+     "version_or_date": "signed 2026-03-18/19; server last-modified 2026-03-26T12:56:21Z; downloaded 2026-09-24T01:56Z"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/current/ai_regulatory-relief-4_authorized-pilots_ai-legion-health_.html",
+     "sha256": "723882d7271bbb55739061cef094c505d884480d22f4308048422cd1ea9e422e",
+     "document_title": "OAIP Legion Health pilot page",
+     "version_or_date": "page dateModified 2026-05-15T18:36:49Z; fetched 2026-09-24T02:00:08Z"
+    },
+    {
+     "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+     "local_path": "/private/tmp/claude-501/-Users-snap-Git-publedge/5de153de-b5cd-49ad-a893-d1c4ec743b38/scratchpad/review/current/ai_regulatory-relief-4_authorized-pilots_.html",
+     "sha256": "d3bd7f25cf0f75f9537c5692e06496b6f62a3317e8145a5386dff0a05b15df31",
+     "document_title": "OAIP Authorized AI Pilots (register page)",
+     "version_or_date": "page dateModified 2026-09-03T23:35:34Z; fetched 2026-09-24T02:00:08Z"
+    }
+   ],
+   "supported_fields": [
+    {
+     "field": "parties[] / participating_party",
+     "record_value": "OAIP; DOPL; Legion Health PA; Legion Health, Inc.",
+     "locator": "PDF p.1 Section 1.A-C",
+     "excerpt": "Legion Health PA and Legion Health, Inc. (jointly hereinafter \"Participant\")."
+    },
+    {
+     "field": "commencement_date_trigger / effective: null / term_start: null / term_end: null",
+     "record_value": "commencement on Participant's written notice; 12 months from commencement",
+     "locator": "PDF p.1 Section 2.A-B; p.9 Section 15",
+     "excerpt": "The Commencement Date shall be the date on which Participant delivers written notice to the Office that the project is ready to proceed."
+    },
+    {
+     "field": "term_start: null (currentness)",
+     "record_value": "null",
+     "locator": "Authorized AI Pilots register, Legion entry (dateModified 2026-09-03)",
+     "excerpt": "Legion Health Approved Psychiatry Signed March 19, 2026 Term The demonstration period has not started yet."
+    },
+    {
+     "field": "enacted",
+     "record_value": "2026-03-19",
+     "locator": "PDF p.9 Section 15 (page image p-09.png)",
+     "excerpt": "executed this Agreement as of the latter of the dates written below and the Agreement will be effective as of the Commencement Date"
+    },
+    {
+     "field": "body: Background signature dates",
+     "record_value": "2026-03-18 Boyd; 2026-03-19 Steinagel, Kole, Patel",
+     "locator": "PDF p.9 (page image p-09.png)",
+     "excerpt": "Zach Boyd (Mar 18, 2026 15:33:55 MDT) ... 3/19/2026 ... Jon Kole (Mar 19, 2026 08:11:38 EDT) ... 03/19/2026"
+    },
+    {
+     "field": "mitigation binding condition",
+     "record_value": "effective null pending commencement",
+     "locator": "PDF p.2 Section 4.B",
+     "excerpt": "not binding until this document has been signed by all parties and Participant has communicated the Commencement Date to the Office."
+    },
+    {
+     "field": "statute_anchors §13-72-302 → §13-72-401",
+     "record_value": "effective 2026-05-06",
+     "locator": "PDF p.1 Section 3.B",
+     "excerpt": "Utah Code § 13-72-302, transitioning to Utah Code § 13-72-401 effective May 6, 2026"
+    },
+    {
+     "field": "mitigations[] formulary",
+     "record_value": "SSRIs, SNRIs, bupropion, trazodone ≤150mg, mirtazapine with metabolic monitoring, buspirone, hydroxyzine",
+     "locator": "Schedule B Proposal 2.2 (page image p-14.png; OCR misread ≤ as $)",
+     "excerpt": "Trazodone (Desyrel) ... Insomnia Renew only if ≤150 mg nightly"
+    },
+    {
+     "field": "mitigations[] exclusions and stability gates",
+     "record_value": "controlled substances, benzodiazepines, antipsychotics ...; no hospitalization or acute-safety events within 1 year",
+     "locator": "Schedule B Proposal 2.2-2.3 (page image p-15.png)",
+     "excerpt": "no recent psychiatric hospitalization or acute safety escalation signals within 1yr"
+    },
+    {
+     "field": "mitigations[] refill cap",
+     "record_value": "Max 10 automated refills between provider reviews, or 6 months",
+     "locator": "Schedule B Proposal 2.3",
+     "excerpt": "maximum of 10 automated refills between provider reviews, or 6 mo, whichever is sooner"
+    },
+    {
+     "field": "mitigations[] disclosures",
+     "record_value": "§13-77-103 and §13-72a-203 + pharmacist disclosure",
+     "locator": "PDF p.4-5 Section 6.G.1(b), 6.G.3(a)",
+     "excerpt": "That the prescription renewal was generated by artificial intelligence technology;"
+    },
+    {
+     "field": "Regulatory mitigation table §16D / §16E",
+     "record_value": "two-tier affiliated-provider forbearance",
+     "locator": "PDF p.10-11 Schedule A Section 16.D-E",
+     "excerpt": "Provisions relating to unlawful or unprofessional conduct in Utah Code §§ 58-31b-501-503, 58-67-501-503, and 58-68-501-503"
+    },
+    {
+     "field": "body: Limitations (terminable at will)",
+     "record_value": "§11 under §13-72-302(7) / §13-72-401(8)",
+     "locator": "PDF p.8 Section 11",
+     "excerpt": "The Office or Participant may terminate this Agreement at any time, and for any reason, prior to the completion of the 12-month mitigation period"
+    },
+    {
+     "field": "status",
+     "record_value": "enacted",
+     "locator": "register page (Approved; not started) and Section 4.B",
+     "excerpt": "Term The demonstration period has not started yet."
+    }
+   ],
+   "findings": [
+    {
+     "id": "cure-period-material-breach",
+     "field": "mitigations[] (cure) and Obligations summary",
+     "record_value": "30-business-day cure period before termination for material breach (Section 6J)",
+     "source_value": "At least 30 business days (or longer if reasonably required) to propose and implement a cure after failure to meet any Section 6 obligation; the Office then 'may elect to terminate'. No 'material breach' term.",
+     "locator": "PDF p.7 Section 6.J",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "At least 30 business days (longer if reasonably required) to propose and implement a cure for failure to meet a Section 6 obligation, before the Office may elect to terminate (Section 6.J)."
+    },
+    {
+     "id": "phase-gate-threshold-strict",
+     "field": "mitigations[] phased auditing",
+     "record_value": "≥98% agreement on 250 ...; ≥99% on 1,000 ...",
+     "source_value": "Proceed to Phase B if concordance >98%; to Phase C if >99% (strictly greater; verified on page image)",
+     "locator": "Schedule B Proposal 4.3 (PDF p.18, page image p-18.png)",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Phased auditing: 250 pre-issuance reviews, advance if concordance >98%; 1,000 retrospective reviews, advance if >99%; then ongoing periodic sampling (e.g. 5-10% monthly)."
+    },
+    {
+     "id": "shortage-claim-attribution",
+     "field": "body: Background",
+     "record_value": "Utah reports mental-health-provider shortages across all 29 counties, affecting up to 500,000 residents.",
+     "source_value": "This is the participant's proposal claim: all 29 counties have designated shortages and up to 500k residents are not receiving any behavioral health care.",
+     "locator": "Schedule B Proposal 1.1 (PDF p.13)",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Legion's proposal states that all 29 Utah counties have designated mental-health shortages and that up to 500,000 residents receive no behavioral health care."
+    },
+    {
+     "id": "rules-mitigated-conflates-16D-16E",
+     "field": "rules_mitigated[2]",
+     "record_value": "§§58-31b-501-503, 58-60-109-111, 58-61-501-503, 58-67-501-503, 58-68-501-503, 58-70a-502-504",
+     "source_value": "The full list applies only to §16E supporting-services providers; §16D named prescribers get 58-31b, 58-67 and 58-68 only. The body table distinguishes them correctly.",
+     "locator": "Schedule A Section 16.D.2, 16.E.2",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Qualify rules_mitigated[2] as '§16E (supporting services); §16D is limited to 58-31b, 58-67, 58-68'."
+    },
+    {
+     "id": "telehealth-protocol-locator",
+     "field": "body: Obligations summary (telehealth); obligations/telehealth-compliance-per-proposal.md",
+     "record_value": "(2)(b)-(c)/(4) via refill protocols; (2)(e) via escalation protocols",
+     "source_value": "Both 17.A.1 and 17.A.2 key compliance to 'the protocols outlined in section 4 of the Proposal' (safety plan); (4) is 'not in violation', not compliance.",
+     "locator": "Schedule A Section 17.A.1-2",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "AI deemed compliant with §26B-4-704(2)(b)-(c) and (2)(e), and not in violation of (4), when it follows Proposal section 4 protocols."
+    },
+    {
+     "id": "named-prescriber-obligation-overstates-legion",
+     "field": "data/examples/obligations/named-prescriber-enforcement-forborne.md",
+     "record_value": "covers 58-31b/58-60/58-61/58-67/58-68/58-70a; condition 'complies with the RMA terms'",
+     "source_value": "Legion §16D named-prescriber list omits 58-60, 58-61 and 58-70a (those are §16E, supporting services). Doctronic §15D has no 'abides by the terms' condition and cites 58-60-110, 58-61-502 and the source's 59-67/58-68/59-70a.",
+     "locator": "Legion Schedule A 16.D-E; Doctronic Schedule A 15.D",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "State the per-agreement lists and conditions separately rather than one merged list."
+    },
+    {
+     "id": "incident-notice-proposal-only",
+     "field": "mitigations[] / Obligations summary (incident notification)",
+     "record_value": "not stated",
+     "source_value": "Agreement sets no incident clock; Proposal 5 commits to notify OAIP of defined pilot incidents within a bounded window (target <= 72 hours) after confirmation; 6.H.2(b) adverse-outcome reporting has no clock.",
+     "locator": "Schedule B Proposal 5 (PDF p.19); Section 6.H.2(b)",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Optionally add: incident notice to OAIP per Proposal target of 72 hours or less after confirmation; do not map the 24-hour ElizaChat obligation."
+    },
+    {
+     "id": "commencement-unverified-after-register",
+     "field": "effective / term_start / term_end / status",
+     "record_value": "null / null / null / enacted",
+     "source_value": "Register (dateModified 2026-09-03) says the demonstration period has not started. No later source; the commencement notice is not published.",
+     "locator": "register page Legion entry; Section 2.B",
+     "kind": "unverifiable",
+     "prior_finding": true,
+     "status": "open",
+     "proposed_correction": "Add a dated observation citing the register (not started as of the 2026-09-03 page version); keep dates null."
+    },
+    {
+     "id": "register-insurance-term-not-in-agreement",
+     "field": "mitigations[] (completeness)",
+     "record_value": "no insurance term",
+     "source_value": "Register lists 'Malpractice insurance that covers AI related liability' for Legion; no insurance term found in the signed agreement OCR.",
+     "locator": "register page Legion 'What the company agreed to'; agreement OCR grep",
+     "kind": "unverifiable",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": null
+    },
+    {
+     "id": "stale-legacy-id-in-notes",
+     "field": "body: Notes on this demonstration remap",
+     "record_value": "`us-ut-oaip-rma-0004`",
+     "source_value": "Record id is us-ut-oaip-rma-2026-001",
+     "locator": "record body, final section",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Replace the legacy id with `us-ut-oaip-rma-2026-001` or remove the parenthetical."
+    },
+    {
+     "id": "learning-lab-link-404",
+     "field": "issued_by.ref; Sources section",
+     "record_value": "https://commerce.utah.gov/ai/learning-lab/",
+     "source_value": "HTTP 404 at 2026-09-24T02:01Z (also 404 at 2026-09-24T01:50Z in this session's urls.tsv)",
+     "locator": "url_checks",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Replace with a live official OAIP program URL, e.g. https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ (200), or mark the link as dead with an archive pointer."
+    },
+    {
+     "id": "adminrules-link-404",
+     "field": "statute_anchors[] (UAC R156-1-501 / R156-1-602).url",
+     "record_value": "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules",
+     "source_value": "HTTP 404 at 2026-09-24T02:01Z",
+     "locator": "url_checks",
+     "kind": "discrepancy",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Replace with a working Utah Office of Administrative Rules URL for R156-1 after human verification."
+    },
+    {
+     "id": "agreement-page-url-redirects",
+     "field": "official_url / Sources section",
+     "record_value": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+     "source_value": "Redirects to https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
+     "locator": "url_checks",
+     "kind": "locator-note",
+     "prior_finding": false,
+     "status": "open",
+     "proposed_correction": "Use the final URL https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/ to avoid dependence on the redirect."
+    }
+   ],
+   "url_checks": [
+    {
+     "url": "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules",
+     "field": "statute_anchors[].url (UAC R156-1)",
+     "http_status": 404,
+     "final_url": "https://adminrules.utah.gov/public/rule/R156-1/Current%20Rules",
+     "checked_at": "2026-09-24T02:01:11Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/agreements/ai-legion-health/",
+     "field": "official_url; Sources section",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
+     "checked_at": "2026-09-24T02:01:11Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/learning-lab/",
+     "field": "issued_by.ref; Sources section",
+     "http_status": 404,
+     "final_url": "https://commerce.utah.gov/ai/learning-lab/",
+     "checked_at": "2026-09-24T02:01:12Z"
+    },
+    {
+     "url": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+     "field": "publication_citations; Sources section",
+     "http_status": 200,
+     "final_url": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+     "checked_at": "2026-09-24T02:01:12Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+     "checked_at": "2026-09-24T02:01:12Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+     "checked_at": "2026-09-24T02:01:12Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+     "checked_at": "2026-09-24T02:01:12Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a.html",
+     "checked_at": "2026-09-24T02:01:13Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html",
+     "checked_at": "2026-09-24T02:01:13Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html",
+     "checked_at": "2026-09-24T02:01:13Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+     "checked_at": "2026-09-24T02:01:13Z"
+    },
+    {
+     "url": "https://le.utah.gov/xcode/Title58/Chapter17B/58-17b.html",
+     "field": "statute_anchors[].url / Sources section",
+     "http_status": 200,
+     "final_url": "https://le.utah.gov/xcode/Title58/Chapter17B/58-17b.html",
+     "checked_at": "2026-09-24T02:01:13Z"
+    },
+    {
+     "url": "https://publedge.org/schema/instrument.schema.json",
+     "field": "schema",
+     "http_status": 200,
+     "final_url": "https://publedge.org/schema/instrument.schema.json",
+     "checked_at": "2026-09-24T02:01:13Z"
+    },
+    {
+     "url": "https://w3id.org/semanticarts/ns/ontology/gist/Contract",
+     "field": "@type / issued_by.@type",
+     "http_status": 200,
+     "final_url": "https://semanticarts.github.io/gist-doc/terms/Contract.ttl",
+     "checked_at": "2026-09-24T02:01:13Z"
+    },
+    {
+     "url": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+     "field": "@type / issued_by.@type",
+     "http_status": 200,
+     "final_url": "https://semanticarts.github.io/gist-doc/terms/SubCountryGovernment.ttl",
+     "checked_at": "2026-09-24T02:01:13Z"
+    }
+   ],
+   "leads": [
+    {
+     "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+     "link_text": "(no link) 'Malpractice insurance that covers AI related liability.'",
+     "why": "Register term absent from the signed agreement; may reflect an unpublished amendment or side term. Unverifiable."
+    },
+    {
+     "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
+     "link_text": "(none) Participant commencement notice under Section 2.B",
+     "why": "Commencement Date depends on an unpublished notice; watch the register and pilot page for a start date."
+    }
+   ],
+   "disposition": "source-consistent with open editorial findings",
+   "next_action": "Sam: correct the cure-period and >98%/>99% wording and the shortage attribution; qualify rules_mitigated[2]; add the register's dated 'not started' observation. Keep term_start null and status enacted until a source gives a Commencement Date."
+  }
+ ],
+ "limits": [
+  "Agent review only. No repo file was edited; last_verified, status, editorial_status, effective and enacted are not renewed or changed on any record.",
+  "Agent review; no human verification.",
+  "Besides the four named pages, the Authorized AI Pilots register (https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/) was fetched as HTML because it is the official status source. It supplies the term, status and phase statements cited here. Its last dateModified is 2026-09-03, so it cannot show changes after that date.",
+  "Current FAQ and register HTML contain many developer/CMS comments (layout and vocabulary notes). They were stripped and treated as data only; none were acted on.",
+  "Doctronic text is the retained 2026-09-09 extraction. The live PDF was HEAD-checked only (content-length matches), not re-downloaded or re-hashed.",
+  "ElizaChat and Legion figures come from tesseract OCR. Signature dates, the Legion >98%/>99% gates, trazodone ≤150 mg and the 1-year stability window were confirmed on page images. Other OCR text was not checked against page images.",
+  "Enrolled copies do not show signing dates or votes. Only the 2024 SB 149 bill status page renders its status table in static HTML; the 2025 and 2026 pages (SB 226, SB 332, HB 452, HB 320) are JavaScript-rendered, so those enacted dates, introduction dates and votes stay unverifiable.",
+  "Line locators are the enrolled bills' printed left-margin line numbers; page numbers are the printed page markers.",
+  "No legal conclusion is made; statutory interpretation for the Utah stack is owned by EveryAILaw.",
+  "No linked amendment, policy memorandum or medical-board letter was downloaded. Facts that depend on them are marked unverifiable and listed as leads.",
+  "Obligation and mapping files were checked only where they cite these statutes; obligation-file findings are attached to the most closely mapped statute record.",
+  "Obligation files and mapping entries were reviewed only where they tie to these three ids. Mapping entries in data/examples/mapping/index.yml resolve to the correct records and headings; no discrepancy was found there.",
+  "Primary evidence is the retained enrolled PDFs via their reviewed UTF-8 .txt snapshots; all five .txt and .pdf sha256 values match data/admission/receipts.json and/or ops/evidence/utah-statute-source-review-2026-09-09.json.",
+  "Read-only review: no repo file edited, no last_verified renewed, no git write or push.",
+  "The EveryAILaw amended-stack correspondence was not compared field by field.",
+  "This is not legal advice or a complete legal review of the agreements or incorporated law.",
+  "Today is 2026-09-23 local (America/Denver); timestamps are UTC, so they read 2026-09-24.",
+  "URL checks were single GET requests with a browser User-Agent (HEAD for the one PDF); no retries. commerce.utah.gov was checked because the task named it as a host requiring a browser User-Agent.",
+  "le.utah.gov returns 200 for its JavaScript shell, so a 200 does not prove the cited section text exists. Statutory content, including the 2026-05-06 renumbering and Chapter 75 succession claims, was not verified.",
+  "record_file_sha256 is the raw file digest. receipts.json record_sha256 is a markdownSnapshot unit digest; for SB 149 and HB 452 it matches the current record. SB 226, SB 332 and HB 320 have no receipt.",
+  "xcode codified-section URLs return a shared JavaScript shell; HTTP 200 shows the URL resolves, not that the codified text was read or matches the enrolled text. Codified current Utah Code was not reviewed.",
+  "Agent review cannot renew Verified; last_verified renewal remains a human decision.",
+  "Corrections require prepare:admission receipts backed by retained official evidence."
+ ]
+}
