@@ -488,7 +488,7 @@ files:
 
   - path: INTENT.md
     role: protocol
-    hash: sha256:06f6acd5b53c12b8cb559f914ac75020ce154f6c0cb4d78d63df4285c85f009e
+    hash: sha256:0a7b8c7fa0c5f8248a751f58cafe64fc3c03b58b2c81f267b63e3e37a4ba0e8e
     note: INTENT.md
 
   - path: SECURITY.md
