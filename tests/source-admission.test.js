@@ -450,3 +450,28 @@ test('an obligation created only by a draft or proposed term keeps the draft sta
     const emitted = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/of/records/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json'), 'utf8'));
     assert.deepEqual([emitted.lifecycle_status, emitted.operative_status, emitted.enforcement_status], ['draft', 'future', 'unsignaled']);
 });
+
+test('a PubLedge original draft cites itself as source and its own section as locator', () => {
+    const config = { url: 'https://publedge.org/' };
+    const evidence = path => ({ kind: 'instrument', native_path: path, native_file_sha256: '1'.repeat(64), canonical_unit: null, canonical_sha256: '2'.repeat(64), admission_status: 'legacy-unreviewed', review_packet_sha256: null, retained_primary_sha256: null, unresolved_review_state: 'unknown', unresolved: null });
+    const primary = { id: 'example-duty', name: 'Example duty', group: 'requirement', _body: '## Summary\n\nExample.\n', _evidence_input: { ...evidence('data/examples/obligations/example-duty.md'), kind: 'obligation-definition' } };
+    const project = container => {
+        const mapping = { id: 'example-mapping', regulation: container.id, obligations: ['example-duty'], source_heading: 'Example Section (§1-2-3)', _evidence_input: { ...evidence('data/examples/mapping/index.yml'), kind: 'mapping-entry' } };
+        const records = obligationFirst.buildObligationFirstRecords(config, { containers: [container], primaries: [primary], authorities: [], mappingIndex: [mapping] });
+        return { instrument: records.instruments[0], term: records.terms[0], duty: records.obligations[0] };
+    };
+    const base = { id: 'us-ut-oaip-jia-2099-001', type: 'jia', status: 'proposed', jurisdiction: 'us-ut', authority: 'utah-oaip', official_url: 'https://authority.example/ai/', _canonicalPath: 'us/utah/oaip/jia/2099-001/', parties: [{ name: 'Utah OAIP', role: 'interpreting_authority' }], _evidence_input: evidence(JIA_FILE) };
+
+    const draft = project({ ...base, source: 'publedge-original-draft' });
+    for (const record of [draft.instrument, draft.term, draft.duty]) assert.equal(record.source, 'https://publedge.org/us/utah/oaip/jia/2099-001/');
+    for (const record of [draft.term, draft.duty]) assert.equal(record.source_locator, 'Example Section (§1-2-3)');
+
+    // Negative control: an authority-published record keeps the authority's source.
+    const remap = project({ ...base, source: 'demonstration-remap', status: 'enforcing' });
+    for (const record of [remap.instrument, remap.term, remap.duty]) assert.equal(record.source, 'https://authority.example/ai/');
+
+    const emitted = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/of/records/utah-mental-health-chatbot-disclosure-2026q2-first-session.json'), 'utf8'));
+    assert.equal(emitted.source, 'https://publedge.org/us/utah/oaip/jia/2026-001/');
+    assert.equal(emitted.source_locator, 'First-Session Disclosure (§13-72a-203)');
+    assert.deepEqual(emitted.anchors, ['https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json'], 'the interpreted statute stays linked through the anchor');
+});

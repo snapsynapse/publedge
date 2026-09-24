@@ -813,7 +813,7 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:868310c404cbd0eab87e045541de95c23a2b9e67194495bc0efa130c1e3319fd
+    hash: sha256:a29612a4039a612edbcfc0a55c70a6cb7668645b87a2b64b9d1d49cadb3a9b0d
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/temporal-status.js
@@ -1038,7 +1038,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:0d13f401800e2b95eea010905c6eea6c1c8081ed10d518dc8836931b5c4a6106
+    hash: sha256:10be9419f4d32940c9988fed0e13edd48fdb0d81b456989b80794d89b6b0c163
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js
