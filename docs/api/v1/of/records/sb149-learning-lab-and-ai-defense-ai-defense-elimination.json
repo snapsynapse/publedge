@@ -48,23 +48,23 @@
     "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
     "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
     "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy.",
-    "This agent review does not renew last_verified or authenticate human currentness review.",
     "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
     "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
     "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
     "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-    "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+    "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+    "This agent review does not renew last_verified or authenticate human currentness review."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-      "native_file_sha256": "a27d100361e34d75e90a06a62e498b697303b81c76d2f77fed2239b778eb98f5",
+      "native_file_sha256": "6fb9a910496ef034a5b8b241d8859688cb39d2370fd3321b07649b32e3f49e2e",
       "canonical_unit": null,
-      "canonical_sha256": "eb3c02b293fcee051c785a4084efbbcbc81ea95d0e1f7d1e18a1e2a1c982b373",
+      "canonical_sha256": "c1aca07ba833a22c5029c1afa612bd5aff05a91c2a2e3d30309c12a4ba792235",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "ff503350fc567592d7ca7efd74a0bb88640b4bbdd635e9a5ad6520fcacadfc8a",
+      "review_packet_sha256": "4638f21fae0dfa0223ba78a611e37ad1d1c900807b53ff46a89832c0ba759e74",
       "retained_primary_sha256": [
         "02db4dfb7fcc9c536f4aa7e006458da3ed0ba3567a7cc4478db9e3d5c3195514",
         "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
@@ -79,8 +79,7 @@
         "Boyd appointment date (2024-04-30) is not in the SB 149 enrolled copy or the retained bill status page; the row is kept but marked unconfirmed.",
         "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
         "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
-        "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy."
       ]
     },
     {
@@ -90,7 +89,7 @@
       "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
       "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "4ade6cb38ea47f4267cf9bef0d4592bacea6988f7945f4b96a2e5c85157b1230",
+      "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
       "retained_primary_sha256": [
         "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
         "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
@@ -101,7 +100,7 @@
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
       ]
     },
     {

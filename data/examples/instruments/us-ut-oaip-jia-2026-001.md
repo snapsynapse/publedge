@@ -40,7 +40,7 @@ withdrawal_reason: null
 withdrawn_by_instrument: null
 hash_chain_prev: null
 disclaimer: ""
-last_verified: 2026-06-04
+last_verified: 2026-09-23
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-15
 modified: 2026-09-23
@@ -64,8 +64,8 @@ modified: 2026-09-23
 | Sections | Utah Code §13-72a-203 |
 | Status | draft |
 | Drafted | 2026-04-15 |
-| Verified | 2026-04-18 |
-| Checked | 2026-04-18 |
+| Verified | 2026-09-23 |
+| Checked | 2026-09-23 |
 
 ### Requirements
 

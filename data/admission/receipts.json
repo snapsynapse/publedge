@@ -2,28 +2,28 @@
   "version": 1,
   "records": {
     "data/examples/instruments/us-ut-oaip-rma-2025-002.md": {
-      "record_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2",
+      "record_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
       "baseline_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
       "whole_record": {
         "before_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
-        "after_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2"
+        "after_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:17:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Corrected open findings from ops/evidence/utah-overdue-dispositions-2026-09-23.json for the Doctronic RMA: Schedule A 15.D.2 chapter citations reproduced as written, disclosure trigger, monthly versus separate adverse-outcome reporting, dated register observation on Phase 1 and the unlinked 2026 amendment, extension note, term-end and DRAFT-title locator notes, register terms absent from the agreement, stale legacy id, dead learning-lab and admin-rules links, and redirecting agreement-page link, plus the modified date. Carries forward the 2026-09-09 Codex unit reviews for Summary and official_url. Does not renew last_verified or legal currentness.",
-        "packet_sha256": "b1a74dfaf34b4470755e7f598d7f72cb6ae2b1efa1e94b7ae8ec5bb9af5b2371"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Corrected open findings from ops/evidence/utah-overdue-dispositions-2026-09-23.json for the Doctronic RMA: Schedule A 15.D.2 chapter citations reproduced as written, disclosure trigger, monthly versus separate adverse-outcome reporting, dated register observation on Phase 1 and the unlinked 2026 amendment, extension note, term-end and DRAFT-title locator notes, register terms absent from the agreement, stale legacy id, dead learning-lab and admin-rules links, and redirecting agreement-page link, plus the modified date. Carries forward the 2026-09-09 Codex unit reviews for Summary and official_url. Does not renew last_verified or legal currentness.",
+        "packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165"
       },
       "unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
         "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
         "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "evidence": {
         "agreement": {
@@ -407,6 +407,20 @@
             "home"
           ]
         },
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
+          },
+          "evidence": [
+            "agreement"
+          ]
+        },
         "metadata:mitigations": {
           "before_sha256": "da39c991478d4d2e62a0ad8772055325e39206b9dc1825dbd5b5f2a9a713e6e2",
           "after_sha256": "c8bb73f12e51f840e3807ef9d2403c3584a79839382cc2d4372d513a6fb967e7",
@@ -654,14 +668,14 @@
         "reviewed_at": "2026-09-24T02:20:00Z",
         "decision": "source-consistency-reviewed",
         "scope": "Add obligation_qualification notes to the sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack entries: the learning-lab obligation reflects the post-HB 320 regime, and the first-session obligation is related to, not equivalent to, HB 452 13-72a-203. Earlier first-session JIA entry review carried forward unchanged. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
-        "packet_sha256": "4ade6cb38ea47f4267cf9bef0d4592bacea6988f7945f4b96a2e5c85157b1230"
+        "packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4"
       },
       "unresolved": [
         "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
       ],
       "evidence": {
         "hb452": {
@@ -1064,26 +1078,26 @@
       }
     },
     "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md": {
-      "record_sha256": "eb3c02b293fcee051c785a4084efbbcbc81ea95d0e1f7d1e18a1e2a1c982b373",
+      "record_sha256": "c1aca07ba833a22c5029c1afa612bd5aff05a91c2a2e3d30309c12a4ba792235",
       "baseline_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
       "whole_record": {
         "before_sha256": "0fe5646a650e116e792630ba398902c7d089dffd51cbea531b6d2370fbb02cef",
-        "after_sha256": "eb3c02b293fcee051c785a4084efbbcbc81ea95d0e1f7d1e18a1e2a1c982b373"
+        "after_sha256": "c1aca07ba833a22c5029c1afa612bd5aff05a91c2a2e3d30309c12a4ba792235"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:20:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Correct SB 149 Timeline introduction and Senate vote rows from the retained bill status page; mark the Boyd appointment row unconfirmed; recast the HB 452 row and bullet as a related, non-amending chapter; fix the civil/criminal locators, add the Chapter 70/72 numbering note, correct the prior 24-month term ceiling and the 2025-05-01 sunset from-date; replace the dead OAIP Learning Lab link with the retrieved OAIP home page; set modified. Earlier Talking Point review carried forward unchanged. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
-        "packet_sha256": "ff503350fc567592d7ca7efd74a0bb88640b4bbdd635e9a5ad6520fcacadfc8a"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Correct SB 149 Timeline introduction and Senate vote rows from the retained bill status page; mark the Boyd appointment row unconfirmed; recast the HB 452 row and bullet as a related, non-amending chapter; fix the civil/criminal locators, add the Chapter 70/72 numbering note, correct the prior 24-month term ceiling and the 2025-05-01 sunset from-date; replace the dead OAIP Learning Lab link with the retrieved OAIP home page; set modified. Earlier Talking Point review carried forward unchanged. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
+        "packet_sha256": "4638f21fae0dfa0223ba78a611e37ad1d1c900807b53ff46a89832c0ba759e74"
       },
       "unresolved": [
         "Boyd appointment date (2024-04-30) is not in the SB 149 enrolled copy or the retained bill status page; the row is kept but marked unconfirmed.",
         "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
         "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
-        "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy."
       ],
       "evidence": {
         "sb149": {
@@ -1517,6 +1531,20 @@
         }
       },
       "units": {
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
+          },
+          "evidence": [
+            "sb149"
+          ]
+        },
         "metadata:modified": {
           "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
           "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
@@ -1611,25 +1639,25 @@
       }
     },
     "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md": {
-      "record_sha256": "4108fe6da99d090b629ab786d6a416f4e502ddda000eafd431c21c08a5eef874",
+      "record_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde",
       "baseline_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
       "whole_record": {
         "before_sha256": "901c5fb7838b83ab095029aaa3095bf6011302523d4a727d6b0f753518f3e226",
-        "after_sha256": "4108fe6da99d090b629ab786d6a416f4e502ddda000eafd431c21c08a5eef874"
+        "after_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:20:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Add the enrolled short title and sponsors; qualify Timeline introduction and signing rows as unconfirmed; tighten the data-protection exceptions, add the (2)(b) documentation condition, the 13-72a-202 advertising bullet, the order-penalty wording and a non-amending note on SB 149; set modified. Earlier Talking Point review carried forward unchanged. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
-        "packet_sha256": "7c95cf5d2b471ad3a60828bfb12179d3f6b57f7b09597906f1d01ce8690afa10"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Add the enrolled short title and sponsors; qualify Timeline introduction and signing rows as unconfirmed; tighten the data-protection exceptions, add the (2)(b) documentation condition, the 13-72a-202 advertising bullet, the order-penalty wording and a non-amending note on SB 149; set modified. Earlier Talking Point review carried forward unchanged. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
+        "packet_sha256": "be382469d216fa204a551bbd826747b34bbc49fc2e9581723266bd05df6a9690"
       },
       "unresolved": [
         "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
         "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
-        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
       ],
       "evidence": {
         "enrolled": {
@@ -1854,6 +1882,20 @@
         }
       },
       "units": {
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
+          },
+          "evidence": [
+            "hb452_title"
+          ]
+        },
         "metadata:modified": {
           "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
           "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
@@ -1951,24 +1993,24 @@
       }
     },
     "data/examples/instruments/us-ut-oaip-jia-2026-001.md": {
-      "record_sha256": "555d9cb6c67731fdf8818d7c84aa7994c1d70e5e7d934257eb813efc2c0d32ca",
+      "record_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
       "baseline_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
       "whole_record": {
         "before_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
-        "after_sha256": "555d9cb6c67731fdf8818d7c84aa7994c1d70e5e7d934257eb813efc2c0d32ca"
+        "after_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:13:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Corrects the JIA draft's enacting-bill citation, dead authority URL, statutory versus proposed disclosure triggers, provision date label and publication-state timeline against the retained HB 452 enrolled copy and the retained OAIP home page. Does not renew last_verified, promote the draft or assert issuance.",
-        "packet_sha256": "23f683d93fb150f13c6e4a20ad4e3a66655db8546b2710289003c98079524330"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Corrects the JIA draft's enacting-bill citation, dead authority URL, statutory versus proposed disclosure triggers, provision date label and publication-state timeline against the retained HB 452 enrolled copy and the retained OAIP home page. Does not renew last_verified, promote the draft or assert issuance.",
+        "packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329"
       },
       "unresolved": [
         "Lawyer review and authority sign-off remain pending; the draft is not issued.",
-        "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
-        "last_verified renewal requires a separate human review receipt."
+        "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
       ],
       "evidence": {
         "hb452-section": {
@@ -2143,6 +2185,20 @@
             "oaip-home"
           ]
         },
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
+          },
+          "evidence": [
+            "oaip-home"
+          ]
+        },
         "metadata:modified": {
           "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
           "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
@@ -2241,6 +2297,20 @@
           },
           "evidence": [
             "hb452-effective"
+          ]
+        },
+        "section:First-Session Disclosure (§13-72a-203)/property:Verified": {
+          "before_sha256": "6f237c58c76c7629ba051c47a5a59579fcbb7ccea17e8abccdde6d130ef37c34",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews the provision's verification against the retained HB 452 enrolled text.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
+          },
+          "evidence": [
+            "hb452-section"
           ]
         },
         "section:First-Session Disclosure (§13-72a-203)/subsection:Requirements/text": {
@@ -2629,24 +2699,24 @@
       }
     },
     "data/examples/instruments/us-ut-oaip-rma-2024-001.md": {
-      "record_sha256": "d1b877082b7fc3b20ec7fd8ec429a14e694e9882d6a50c8777bf8125907db549",
+      "record_sha256": "dc16f4911a1457d822c7b30f08257abbfd613fa398912ef18a8b25f3d750bdaf",
       "baseline_sha256": "57ffb3356c78bfb68741fdbedba549d2ca8bcc62841b5dc53fb55691d0f12de7",
       "whole_record": {
         "before_sha256": "57ffb3356c78bfb68741fdbedba549d2ca8bcc62841b5dc53fb55691d0f12de7",
-        "after_sha256": "d1b877082b7fc3b20ec7fd8ec429a14e694e9882d6a50c8777bf8125907db549"
+        "after_sha256": "dc16f4911a1457d822c7b30f08257abbfd613fa398912ef18a8b25f3d750bdaf"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:17:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Corrected open findings from ops/evidence/utah-overdue-dispositions-2026-09-23.json for the ElizaChat RMA: high-risk sharing wording, stale legacy id, term-end locator note, extension and phase-history note, dead learning-lab link, and redirecting agreement-page URL, plus the modified date. Does not renew last_verified or legal currentness.",
-        "packet_sha256": "8ab319967124243fe784704d39cf5599c90a609621589a21137858bd0f7c10b3"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Corrected open findings from ops/evidence/utah-overdue-dispositions-2026-09-23.json for the ElizaChat RMA: high-risk sharing wording, stale legacy id, term-end locator note, extension and phase-history note, dead learning-lab link, and redirecting agreement-page URL, plus the modified date. Does not renew last_verified or legal currentness.",
+        "packet_sha256": "3cfcfa15a7248efe0fa5a379df4447eeeb143b72bca2d37102a664188a3de623"
       },
       "unresolved": [
         "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
       ],
       "evidence": {
         "home": {
@@ -2824,6 +2894,20 @@
             "scope": "issued_by.ref URL only.",
             "exceptions": "The home page does not establish any term of this agreement.",
             "time": "Home page retrieved 2026-09-24."
+          },
+          "evidence": [
+            "home"
+          ]
+        },
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
           },
           "evidence": [
             "home"
@@ -3026,25 +3110,25 @@
       }
     },
     "data/examples/instruments/us-ut-oaip-rma-2026-001.md": {
-      "record_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151",
+      "record_sha256": "7c95e7f547b4cf0c4592491e74bef6c9c30e45b4a307dc03be5b4fd0cec0b3d0",
       "baseline_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
       "whole_record": {
         "before_sha256": "21b64100d29aee93b3dded419790b3a9b43869849be85a714de251d8282ebc10",
-        "after_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151"
+        "after_sha256": "7c95e7f547b4cf0c4592491e74bef6c9c30e45b4a307dc03be5b4fd0cec0b3d0"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:17:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Corrected open findings from ops/evidence/utah-overdue-dispositions-2026-09-23.json for the Legion Health RMA: cure-period wording, strict >98%/>99% phase gates, shortage-claim attribution, 16D versus 16E chapter lists, telehealth protocol locator, Proposal incident-notice target, dated register not-started observation, register insurance term absent from the agreement, stale legacy id, dead learning-lab and admin-rules links, and redirecting agreement-page URL, plus the modified date. Dates stay null and status stays enacted. Does not renew last_verified or legal currentness.",
-        "packet_sha256": "b6e32be97f686831f9a2885c3ece7f85af869e0bb26a3f6ef7d0c1698bb23d54"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Corrected open findings from ops/evidence/utah-overdue-dispositions-2026-09-23.json for the Legion Health RMA: cure-period wording, strict >98%/>99% phase gates, shortage-claim attribution, 16D versus 16E chapter lists, telehealth protocol locator, Proposal incident-notice target, dated register not-started observation, register insurance term absent from the agreement, stale legacy id, dead learning-lab and admin-rules links, and redirecting agreement-page URL, plus the modified date. Dates stay null and status stays enacted. Does not renew last_verified or legal currentness.",
+        "packet_sha256": "96c3ecc5b7baa5e3e85256a2b6662f29042fc2a7267586bb883da0f69dfd37ea"
       },
       "unresolved": [
         "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
         "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "evidence": {
         "home": {
@@ -3376,6 +3460,20 @@
             "scope": "issued_by.ref URL only.",
             "exceptions": "The home page does not establish any term of this agreement.",
             "time": "Home page retrieved 2026-09-24."
+          },
+          "evidence": [
+            "home"
+          ]
+        },
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
           },
           "evidence": [
             "home"
@@ -3895,27 +3993,27 @@
       }
     },
     "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md": {
-      "record_sha256": "12afb6e749bcb423127c6a7ec713ea7e69c05c497c1eb6c96f10d36843918398",
+      "record_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530",
       "baseline_sha256": "7e4a5fbb8f032549b461c3d8840b09b6dfe91587e3b95cde0269b6a9bd69ac2c",
       "whole_record": {
         "before_sha256": "7e4a5fbb8f032549b461c3d8840b09b6dfe91587e3b95cde0269b6a9bd69ac2c",
-        "after_sha256": "12afb6e749bcb423127c6a7ec713ea7e69c05c497c1eb6c96f10d36843918398"
+        "after_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:20:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Add SB 226 sponsors and its 63I-2-213 repeal-date amendment with the two-thirds effective-date alternative; narrow the safe-harbor scope to 13-75-103; replace the three 404 section anchor URLs with the chapter URL; relabel the report row as the SB 149 annual OAIP duty; drop the unsupported four-bill package note; mark introduction and signing rows unconfirmed; set modified. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
-        "packet_sha256": "41331f0e63287b81cc373868a0d9305c2744f5f43631fd24b6245f7748901588"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Add SB 226 sponsors and its 63I-2-213 repeal-date amendment with the two-thirds effective-date alternative; narrow the safe-harbor scope to 13-75-103; replace the three 404 section anchor URLs with the chapter URL; relabel the report row as the SB 149 annual OAIP duty; drop the unsupported four-bill package note; mark introduction and signing rows unconfirmed; set modified. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
+        "packet_sha256": "4ac77cfcca432ea01bcba7273922a36be25970b9c78729c8cd6241f6c3ee1733"
       },
       "unresolved": [
         "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
         "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
       ],
       "evidence": {
         "sb226_sponsors": {
@@ -4060,6 +4158,20 @@
         }
       },
       "units": {
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
+          },
+          "evidence": [
+            "sb226_sponsors"
+          ]
+        },
         "metadata:modified": {
           "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
           "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
@@ -4157,25 +4269,25 @@
       }
     },
     "data/examples/instruments/us-ut-legislature-statute-2025-sb332.md": {
-      "record_sha256": "a1129e388ecd58f7c7fa72e220851945d947b15f7fa0cab6d204d053c9dbda86",
+      "record_sha256": "bd4aa91c270b8033ecea8ff2cd6a4b7396df9b9e9ffdc9950d3bc69f10fe59b9",
       "baseline_sha256": "9a1f758c218403901c5d9dcd442ebd4dff0118a7c713feeb24efdc0656e853d9",
       "whole_record": {
         "before_sha256": "9a1f758c218403901c5d9dcd442ebd4dff0118a7c713feeb24efdc0656e853d9",
-        "after_sha256": "a1129e388ecd58f7c7fa72e220851945d947b15f7fa0cab6d204d053c9dbda86"
+        "after_sha256": "bd4aa91c270b8033ecea8ff2cd6a4b7396df9b9e9ffdc9950d3bc69f10fe59b9"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:20:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Replace the \"default\" effective-date note with the special effective-date clause and state that the two-thirds vote is not confirmed; mark legislative-history rows unconfirmed; qualify the exclusivity framing because SB 226 made the identical 63I-2-213(5) amendment; set modified. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
-        "packet_sha256": "ddd00a03f2877cb703808ca1ebf1226f2573d8dec02345ad6ae4a686fc52d7d3"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Replace the \"default\" effective-date note with the special effective-date clause and state that the two-thirds vote is not confirmed; mark legislative-history rows unconfirmed; qualify the exclusivity framing because SB 226 made the identical 63I-2-213(5) amendment; set modified. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
+        "packet_sha256": "ad3c5755c52e64c6fba5d00117de2b57dba0291757f7084cc28f0b5641a1f09d"
       },
       "unresolved": [
         "The effective field stays 2025-05-07. SB 332 took effect May 7, 2025, or on governor approval if passed by two-thirds of each house; the record votes (24-0-5, 74-0-1) would exceed two-thirds but are not confirmed against a retained status page.",
         "enacted (2025-03-25) and all introduction, committee and floor-vote rows are not in the enrolled copy and the le.utah.gov SB0332 status table is not retained; rows are marked unconfirmed.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 332 amends 63I-2-213(5), the repeal date SB 149 set, so the source does not contradict it.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 332 amends 63I-2-213(5), the repeal date SB 149 set, so the source does not contradict it."
       ],
       "evidence": {
         "sb332_repeal": {
@@ -4240,6 +4352,20 @@
         }
       },
       "units": {
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
+          },
+          "evidence": [
+            "sb332_repeal"
+          ]
+        },
         "metadata:modified": {
           "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
           "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
@@ -4304,27 +4430,27 @@
       }
     },
     "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md": {
-      "record_sha256": "8c0213da1df472548151dc5eb475e77ae9c3c11f577b403d03a9064133b5dd65",
+      "record_sha256": "0602d5a250b66e24ed6f13779a1c055cc90a4f97b27249ef54d099a3e9eb9ad7",
       "baseline_sha256": "8c4fba21742f0b6e177e6c4789075c6851acbcd3359335a24162d7f007393692",
       "whole_record": {
         "before_sha256": "8c4fba21742f0b6e177e6c4789075c6851acbcd3359335a24162d7f007393692",
-        "after_sha256": "8c0213da1df472548151dc5eb475e77ae9c3c11f577b403d03a9064133b5dd65"
+        "after_sha256": "0602d5a250b66e24ed6f13779a1c055cc90a4f97b27249ef54d099a3e9eb9ad7"
       },
       "review": {
-        "actor_type": "agent",
-        "actor": "Claude source-consistency correction review",
-        "reviewed_at": "2026-09-24T02:20:00Z",
+        "actor_type": "human",
+        "actor": "Sam Rogers",
+        "reviewed_at": "2026-09-24T02:36:37Z",
         "decision": "source-consistency-reviewed",
-        "scope": "Add the enrolled short title and sponsors; correct the prior term (12 months plus a single extension); reword the JIA bullet and Talking Point to the statutory \"clarifies the application\" definition without reliance language; add public education to counterparties; present eligibility prongs as carried over from SB 149 with source prong (c) wording; relabel the report row; mark introduction and signing rows unconfirmed; replace the dead OAIP Learning Lab link; set modified. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
-        "packet_sha256": "c5af70510156fdd9f90b49aabe04e67c90f6c73c20c5ae24aa9abd86e3a8fe4f"
+        "human_approved": true,
+        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Add the enrolled short title and sponsors; correct the prior term (12 months plus a single extension); reword the JIA bullet and Talking Point to the statutory \"clarifies the application\" definition without reliance language; add public education to counterparties; present eligibility prongs as carried over from SB 149 with source prong (c) wording; relabel the report row; mark introduction and signing rows unconfirmed; replace the dead OAIP Learning Lab link; set modified. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
+        "packet_sha256": "b140f99a901d8f1e6f4bf389765fa85c72c5b7972a9ddf3f63132f56646e5da3"
       },
       "unresolved": [
         "enacted (2026-03-19) and the Introduced month (2026-01) are not in the enrolled copy; the le.utah.gov HB0320 static page renders no status table. Rows are marked unconfirmed and the enacted field is unchanged.",
         "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
         "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
         "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it."
       ],
       "evidence": {
         "hb320_title": {
@@ -4638,6 +4764,20 @@
         }
       },
       "units": {
+        "metadata:last_verified": {
+          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+          "candidate_content": "2026-09-23",
+          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+          "qualifications": {
+            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+            "time": "Reviewed 2026-09-23."
+          },
+          "evidence": [
+            "hb320_title"
+          ]
+        },
         "metadata:modified": {
           "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
           "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",

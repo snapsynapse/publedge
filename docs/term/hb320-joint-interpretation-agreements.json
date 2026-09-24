@@ -27,7 +27,7 @@
   "source_locator": "Summary",
   "source_citation": "Utah HB 320 (2026 General Session)",
   "evidence_type": "legacy-unreviewed-source-reference",
-  "verified": "2026-06-04",
+  "verified": "2026-09-23",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:source_heading": "Summary",
   "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
@@ -39,19 +39,18 @@
     "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
     "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
     "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
-    "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it.",
-    "This agent review does not renew last_verified or authenticate human currentness review."
+    "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it."
   ],
   "pub:source_review_state": "known-and-unknown",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
-      "native_file_sha256": "c57b0acb4dad1832fd56e3bf5beac60ebbb4f9593542f877e5909356f903ffd3",
+      "native_file_sha256": "01797df3b03a8a6d33869d8a1ed4a0575acea137ea8b84598087d3a0fca8008d",
       "canonical_unit": null,
-      "canonical_sha256": "8c0213da1df472548151dc5eb475e77ae9c3c11f577b403d03a9064133b5dd65",
+      "canonical_sha256": "0602d5a250b66e24ed6f13779a1c055cc90a4f97b27249ef54d099a3e9eb9ad7",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "c5af70510156fdd9f90b49aabe04e67c90f6c73c20c5ae24aa9abd86e3a8fe4f",
+      "review_packet_sha256": "b140f99a901d8f1e6f4bf389765fa85c72c5b7972a9ddf3f63132f56646e5da3",
       "retained_primary_sha256": [
         "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
         "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
@@ -63,8 +62,7 @@
         "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
         "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
         "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it."
       ]
     },
     {

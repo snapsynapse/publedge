@@ -23,26 +23,25 @@
       ],
       "source": "https://commerce.utah.gov/ai/",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
         "Lawyer review and authority sign-off remain pending; the draft is not issued.",
-        "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
-        "last_verified renewal requires a separate human review receipt."
+        "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
-          "native_file_sha256": "ae4554e37436da813ea8261a2b35b80458e24581da6ce9b52fb64b1b74f19c32",
+          "native_file_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
           "canonical_unit": null,
-          "canonical_sha256": "555d9cb6c67731fdf8818d7c84aa7994c1d70e5e7d934257eb813efc2c0d32ca",
+          "canonical_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "23f683d93fb150f13c6e4a20ad4e3a66655db8546b2710289003c98079524330",
+          "review_packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
@@ -50,8 +49,7 @@
           "unresolved_review_state": "declared",
           "unresolved": [
             "Lawyer review and authority sign-off remain pending; the draft is not issued.",
-            "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
-            "last_verified renewal requires a separate human review receipt."
+            "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
           ]
         }
       ]
@@ -77,26 +75,25 @@
       ],
       "source": "https://commerce.utah.gov/ai/",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
         "Lawyer review and authority sign-off remain pending; the draft is not issued.",
-        "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
-        "last_verified renewal requires a separate human review receipt."
+        "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
-          "native_file_sha256": "ae4554e37436da813ea8261a2b35b80458e24581da6ce9b52fb64b1b74f19c32",
+          "native_file_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
           "canonical_unit": null,
-          "canonical_sha256": "555d9cb6c67731fdf8818d7c84aa7994c1d70e5e7d934257eb813efc2c0d32ca",
+          "canonical_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "23f683d93fb150f13c6e4a20ad4e3a66655db8546b2710289003c98079524330",
+          "review_packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
@@ -104,8 +101,7 @@
           "unresolved_review_state": "declared",
           "unresolved": [
             "Lawyer review and authority sign-off remain pending; the draft is not issued.",
-            "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
-            "last_verified renewal requires a separate human review receipt."
+            "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
           ]
         }
       ]
@@ -132,26 +128,25 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
         "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
-          "native_file_sha256": "c629e08397cfb6ce9f6f2cfaf5874c0b90eb6694cf8c3d82afe14bcdd4529706",
+          "native_file_sha256": "c623da93f7b652f8273c9fbfc5cec5da27e2e21939f25df14955b397dbaaba18",
           "canonical_unit": null,
-          "canonical_sha256": "d1b877082b7fc3b20ec7fd8ec429a14e694e9882d6a50c8777bf8125907db549",
+          "canonical_sha256": "dc16f4911a1457d822c7b30f08257abbfd613fa398912ef18a8b25f3d750bdaf",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "8ab319967124243fe784704d39cf5599c90a609621589a21137858bd0f7c10b3",
+          "review_packet_sha256": "3cfcfa15a7248efe0fa5a379df4447eeeb143b72bca2d37102a664188a3de623",
           "retained_primary_sha256": [
             "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
             "602cdd9fd4fcfb3770543bda79f99cb42f02ebc67377345e88a2206105ded8e6",
@@ -161,8 +156,7 @@
           "unresolved_review_state": "declared",
           "unresolved": [
             "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
           ]
         }
       ]
@@ -189,26 +183,25 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
         "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
-          "native_file_sha256": "c629e08397cfb6ce9f6f2cfaf5874c0b90eb6694cf8c3d82afe14bcdd4529706",
+          "native_file_sha256": "c623da93f7b652f8273c9fbfc5cec5da27e2e21939f25df14955b397dbaaba18",
           "canonical_unit": null,
-          "canonical_sha256": "d1b877082b7fc3b20ec7fd8ec429a14e694e9882d6a50c8777bf8125907db549",
+          "canonical_sha256": "dc16f4911a1457d822c7b30f08257abbfd613fa398912ef18a8b25f3d750bdaf",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "8ab319967124243fe784704d39cf5599c90a609621589a21137858bd0f7c10b3",
+          "review_packet_sha256": "3cfcfa15a7248efe0fa5a379df4447eeeb143b72bca2d37102a664188a3de623",
           "retained_primary_sha256": [
             "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
             "602cdd9fd4fcfb3770543bda79f99cb42f02ebc67377345e88a2206105ded8e6",
@@ -218,8 +211,7 @@
           "unresolved_review_state": "declared",
           "unresolved": [
             "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
           ]
         }
       ]
@@ -246,26 +238,25 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
         "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
-          "native_file_sha256": "c629e08397cfb6ce9f6f2cfaf5874c0b90eb6694cf8c3d82afe14bcdd4529706",
+          "native_file_sha256": "c623da93f7b652f8273c9fbfc5cec5da27e2e21939f25df14955b397dbaaba18",
           "canonical_unit": null,
-          "canonical_sha256": "d1b877082b7fc3b20ec7fd8ec429a14e694e9882d6a50c8777bf8125907db549",
+          "canonical_sha256": "dc16f4911a1457d822c7b30f08257abbfd613fa398912ef18a8b25f3d750bdaf",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "8ab319967124243fe784704d39cf5599c90a609621589a21137858bd0f7c10b3",
+          "review_packet_sha256": "3cfcfa15a7248efe0fa5a379df4447eeeb143b72bca2d37102a664188a3de623",
           "retained_primary_sha256": [
             "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
             "602cdd9fd4fcfb3770543bda79f99cb42f02ebc67377345e88a2206105ded8e6",
@@ -275,8 +266,7 @@
           "unresolved_review_state": "declared",
           "unresolved": [
             "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
           ]
         }
       ]
@@ -435,7 +425,7 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
@@ -443,22 +433,21 @@
       "pub:source_review_unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
         "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
         "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-          "native_file_sha256": "7a3811d21348a6fd57d5435741f0485ed7a1755fad394e40d899daf85591314e",
+          "native_file_sha256": "8793088d93de032d8f5b2ed3a50e9441d911ece3d01083ad61cd01d8c8672724",
           "canonical_unit": null,
-          "canonical_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2",
+          "canonical_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b1a74dfaf34b4470755e7f598d7f72cb6ae2b1efa1e94b7ae8ec5bb9af5b2371",
+          "review_packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165",
           "retained_primary_sha256": [
             "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
             "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
@@ -472,11 +461,10 @@
           "unresolved": [
             "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
             "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
             "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
             "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         }
       ]
@@ -503,7 +491,7 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
@@ -511,22 +499,21 @@
       "pub:source_review_unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
         "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
         "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-          "native_file_sha256": "7a3811d21348a6fd57d5435741f0485ed7a1755fad394e40d899daf85591314e",
+          "native_file_sha256": "8793088d93de032d8f5b2ed3a50e9441d911ece3d01083ad61cd01d8c8672724",
           "canonical_unit": null,
-          "canonical_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2",
+          "canonical_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b1a74dfaf34b4470755e7f598d7f72cb6ae2b1efa1e94b7ae8ec5bb9af5b2371",
+          "review_packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165",
           "retained_primary_sha256": [
             "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
             "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
@@ -540,11 +527,10 @@
           "unresolved": [
             "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
             "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
             "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
             "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         }
       ]
@@ -571,7 +557,7 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
@@ -579,22 +565,21 @@
       "pub:source_review_unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
         "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
         "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-          "native_file_sha256": "7a3811d21348a6fd57d5435741f0485ed7a1755fad394e40d899daf85591314e",
+          "native_file_sha256": "8793088d93de032d8f5b2ed3a50e9441d911ece3d01083ad61cd01d8c8672724",
           "canonical_unit": null,
-          "canonical_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2",
+          "canonical_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b1a74dfaf34b4470755e7f598d7f72cb6ae2b1efa1e94b7ae8ec5bb9af5b2371",
+          "review_packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165",
           "retained_primary_sha256": [
             "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
             "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
@@ -608,11 +593,10 @@
           "unresolved": [
             "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
             "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
             "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
             "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         }
       ]
@@ -639,7 +623,7 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
@@ -647,19 +631,18 @@
       "pub:source_review_unresolved": [
         "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
         "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
-          "native_file_sha256": "5e4d89fc188a3aa43dc50ba9c7e6eba494b9f632d1953b9a7e14fba05c5fdad1",
+          "native_file_sha256": "3ebe2f0525a6e5fcf469b3f5c09afff35b357a3624445d3acd40065a91217788",
           "canonical_unit": null,
-          "canonical_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151",
+          "canonical_sha256": "7c95e7f547b4cf0c4592491e74bef6c9c30e45b4a307dc03be5b4fd0cec0b3d0",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b6e32be97f686831f9a2885c3ece7f85af869e0bb26a3f6ef7d0c1698bb23d54",
+          "review_packet_sha256": "96c3ecc5b7baa5e3e85256a2b6662f29042fc2a7267586bb883da0f69dfd37ea",
           "retained_primary_sha256": [
             "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
             "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
@@ -670,8 +653,7 @@
           "unresolved": [
             "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
             "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         }
       ]
@@ -698,7 +680,7 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
@@ -706,19 +688,18 @@
       "pub:source_review_unresolved": [
         "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
         "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
-          "native_file_sha256": "5e4d89fc188a3aa43dc50ba9c7e6eba494b9f632d1953b9a7e14fba05c5fdad1",
+          "native_file_sha256": "3ebe2f0525a6e5fcf469b3f5c09afff35b357a3624445d3acd40065a91217788",
           "canonical_unit": null,
-          "canonical_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151",
+          "canonical_sha256": "7c95e7f547b4cf0c4592491e74bef6c9c30e45b4a307dc03be5b4fd0cec0b3d0",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b6e32be97f686831f9a2885c3ece7f85af869e0bb26a3f6ef7d0c1698bb23d54",
+          "review_packet_sha256": "96c3ecc5b7baa5e3e85256a2b6662f29042fc2a7267586bb883da0f69dfd37ea",
           "retained_primary_sha256": [
             "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
             "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
@@ -729,8 +710,7 @@
           "unresolved": [
             "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
             "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         }
       ]
@@ -757,7 +737,7 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
@@ -765,19 +745,18 @@
       "pub:source_review_unresolved": [
         "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
         "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
-          "native_file_sha256": "5e4d89fc188a3aa43dc50ba9c7e6eba494b9f632d1953b9a7e14fba05c5fdad1",
+          "native_file_sha256": "3ebe2f0525a6e5fcf469b3f5c09afff35b357a3624445d3acd40065a91217788",
           "canonical_unit": null,
-          "canonical_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151",
+          "canonical_sha256": "7c95e7f547b4cf0c4592491e74bef6c9c30e45b4a307dc03be5b4fd0cec0b3d0",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b6e32be97f686831f9a2885c3ece7f85af869e0bb26a3f6ef7d0c1698bb23d54",
+          "review_packet_sha256": "96c3ecc5b7baa5e3e85256a2b6662f29042fc2a7267586bb883da0f69dfd37ea",
           "retained_primary_sha256": [
             "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
             "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
@@ -788,8 +767,7 @@
           "unresolved": [
             "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
             "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         }
       ]
@@ -816,7 +794,7 @@
       "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "projection_basis": "native-record-projection",
       "admission_status": "source-consistency-reviewed-changes",
@@ -824,19 +802,18 @@
       "pub:source_review_unresolved": [
         "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
         "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
-          "native_file_sha256": "5e4d89fc188a3aa43dc50ba9c7e6eba494b9f632d1953b9a7e14fba05c5fdad1",
+          "native_file_sha256": "3ebe2f0525a6e5fcf469b3f5c09afff35b357a3624445d3acd40065a91217788",
           "canonical_unit": null,
-          "canonical_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151",
+          "canonical_sha256": "7c95e7f547b4cf0c4592491e74bef6c9c30e45b4a307dc03be5b4fd0cec0b3d0",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b6e32be97f686831f9a2885c3ece7f85af869e0bb26a3f6ef7d0c1698bb23d54",
+          "review_packet_sha256": "96c3ecc5b7baa5e3e85256a2b6662f29042fc2a7267586bb883da0f69dfd37ea",
           "retained_primary_sha256": [
             "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
             "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
@@ -847,8 +824,7 @@
           "unresolved": [
             "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
             "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         }
       ]

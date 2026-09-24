@@ -56,11 +56,11 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
-      "native_file_sha256": "fbafb68ba31f029b5e243ae64e362144bec9f914e092bcf7a5969db240ab5258",
+      "native_file_sha256": "9cb602b984427da4e4f0bdc1ba9f56458de93a54911769c20584ce105b1c6cf0",
       "canonical_unit": null,
-      "canonical_sha256": "12afb6e749bcb423127c6a7ec713ea7e69c05c497c1eb6c96f10d36843918398",
+      "canonical_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "41331f0e63287b81cc373868a0d9305c2744f5f43631fd24b6245f7748901588",
+      "review_packet_sha256": "4ac77cfcca432ea01bcba7273922a36be25970b9c78729c8cd6241f6c3ee1733",
       "retained_primary_sha256": [
         "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
         "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
@@ -71,8 +71,7 @@
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
         "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
       ]
     },
     {

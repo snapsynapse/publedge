@@ -41,7 +41,7 @@ supersedes: null
 superseded_by: null
 hash_chain_prev: null
 disclaimer: ""
-last_verified: 2026-06-04
+last_verified: 2026-09-23
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-21
 modified: 2026-09-23

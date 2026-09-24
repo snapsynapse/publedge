@@ -30,7 +30,7 @@
         "canonical_unit": "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session",
         "canonical_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
         "admission_status": "reviewed-changes",
-        "review_packet_sha256": "4ade6cb38ea47f4267cf9bef0d4592bacea6988f7945f4b96a2e5c85157b1230",
+        "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
         "retained_primary_sha256": [
           "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
         ],
@@ -40,7 +40,7 @@
           "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
           "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
           "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-          "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+          "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
         ]
       }
     },
@@ -62,7 +62,7 @@
         "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
         "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
         "admission_status": "reviewed-changes",
-        "review_packet_sha256": "4ade6cb38ea47f4267cf9bef0d4592bacea6988f7945f4b96a2e5c85157b1230",
+        "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
         "retained_primary_sha256": [
           "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
           "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
@@ -73,7 +73,7 @@
           "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
           "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
           "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-          "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+          "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
         ]
       }
     },
@@ -120,7 +120,7 @@
         "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
         "canonical_sha256": "66bc4b8a16d6100604ecc6c10e8fd489aed581208679ce6a3c847cb44b7b3d7c",
         "admission_status": "reviewed-changes",
-        "review_packet_sha256": "4ade6cb38ea47f4267cf9bef0d4592bacea6988f7945f4b96a2e5c85157b1230",
+        "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
         "retained_primary_sha256": [
           "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
           "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
@@ -131,7 +131,7 @@
           "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
           "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
           "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-          "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+          "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
         ]
       }
     },

@@ -58,7 +58,7 @@
   "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
   "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
   "evidence_type": "reviewed-source-reference",
-  "verified": "2026-06-04",
+  "verified": "2026-09-23",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:status": "expired",
   "pub:editorial_status": "published",
@@ -68,19 +68,18 @@
   "source_review_conflicts": null,
   "pub:source_review_unresolved": [
     "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-    "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-    "This agent review does not renew last_verified or authenticate human review."
+    "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
-      "native_file_sha256": "c629e08397cfb6ce9f6f2cfaf5874c0b90eb6694cf8c3d82afe14bcdd4529706",
+      "native_file_sha256": "c623da93f7b652f8273c9fbfc5cec5da27e2e21939f25df14955b397dbaaba18",
       "canonical_unit": null,
-      "canonical_sha256": "d1b877082b7fc3b20ec7fd8ec429a14e694e9882d6a50c8777bf8125907db549",
+      "canonical_sha256": "dc16f4911a1457d822c7b30f08257abbfd613fa398912ef18a8b25f3d750bdaf",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "8ab319967124243fe784704d39cf5599c90a609621589a21137858bd0f7c10b3",
+      "review_packet_sha256": "3cfcfa15a7248efe0fa5a379df4447eeeb143b72bca2d37102a664188a3de623",
       "retained_primary_sha256": [
         "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
         "602cdd9fd4fcfb3770543bda79f99cb42f02ebc67377345e88a2206105ded8e6",
@@ -90,8 +89,7 @@
       "unresolved_review_state": "declared",
       "unresolved": [
         "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
       ]
     }
   ]

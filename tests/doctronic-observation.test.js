@@ -13,7 +13,7 @@ test('Doctronic outcome statistics remain a dated observation outside issued ter
     const markdown = fs.readFileSync(SOURCE, 'utf8');
     const { frontmatter, body } = parseFrontmatter(markdown);
     assert.equal(frontmatter.status, 'enforcing');
-    assert.equal(frontmatter.last_verified, '2026-06-04');
+    assert.equal(frontmatter.last_verified, '2026-09-23');
     assert.equal(frontmatter.effective, '2025-10-24');
     assert.equal(frontmatter.term_start, '2025-10-24');
     assert.equal(frontmatter.term_end, '2026-10-24');
@@ -39,7 +39,7 @@ test('Doctronic outcome statistics remain a dated observation outside issued ter
 test('generated Doctronic record preserves the source status and dated observation boundary', () => {
     const record = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/us/utah/oaip/rma/2025-002/record.json'), 'utf8'));
     assert.equal(record.record.status, 'enforcing');
-    assert.equal(record.record.last_verified, '2026-06-04');
+    assert.equal(record.record.last_verified, '2026-09-23');
     assert.equal(record.record.effective, '2025-10-24');
     assert.equal(record.meta.admission.status, 'reviewed-changes');
     const page = fs.readFileSync(path.join(ROOT, 'docs/us/utah/oaip/rma/2025-002/index.html'), 'utf8');

@@ -7,20 +7,6 @@
   "language": "en",
   "items": [
     {
-      "id": "https://publedge.org/us/colorado/legislature/statute/2025-001/",
-      "url": "https://publedge.org/us/colorado/legislature/statute/2025-001/",
-      "title": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
-      "content_text": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
-      "date_modified": "2026-09-23T00:00:00.000Z"
-    },
-    {
-      "id": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
-      "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
-      "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
-      "content_text": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
-      "date_modified": "2026-09-23T00:00:00.000Z"
-    },
-    {
       "id": "https://publedge.org/us/utah/legislature/statute/2024-001/",
       "url": "https://publedge.org/us/utah/legislature/statute/2024-001/",
       "title": "Utah SB 149 (2024) — Artificial Intelligence Amendments",
@@ -81,6 +67,20 @@
       "url": "https://publedge.org/us/utah/oaip/rma/2026-001/",
       "title": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
       "content_text": "Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)",
+      "date_modified": "2026-09-23T00:00:00.000Z"
+    },
+    {
+      "id": "https://publedge.org/us/colorado/legislature/statute/2025-001/",
+      "url": "https://publedge.org/us/colorado/legislature/statute/2025-001/",
+      "title": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+      "content_text": "Colorado SB 25B-004 (2025) — Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+      "date_modified": "2026-09-23T00:00:00.000Z"
+    },
+    {
+      "id": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
+      "url": "https://publedge.org/us/colorado/legislature/statute/2024-001/",
+      "title": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
+      "content_text": "Colorado SB 24-205 (2024) — Consumer Protections for Interactions with Artificial Intelligence Systems",
       "date_modified": "2026-09-23T00:00:00.000Z"
     }
   ]

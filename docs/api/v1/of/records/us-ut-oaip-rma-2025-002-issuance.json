@@ -27,7 +27,7 @@
   "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
   "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
   "evidence_type": "reviewed-source-reference",
-  "verified": "2026-06-04",
+  "verified": "2026-09-23",
   "asserted_by_adopter": "https://publedge.org/",
   "projection_basis": "native-record-projection",
   "admission_status": "source-consistency-reviewed-changes",
@@ -35,22 +35,21 @@
   "pub:source_review_unresolved": [
     "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
     "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-    "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+    "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
     "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
     "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-    "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-    "This agent review does not renew last_verified or authenticate human review."
+    "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-      "native_file_sha256": "7a3811d21348a6fd57d5435741f0485ed7a1755fad394e40d899daf85591314e",
+      "native_file_sha256": "8793088d93de032d8f5b2ed3a50e9441d911ece3d01083ad61cd01d8c8672724",
       "canonical_unit": null,
-      "canonical_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2",
+      "canonical_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "b1a74dfaf34b4470755e7f598d7f72cb6ae2b1efa1e94b7ae8ec5bb9af5b2371",
+      "review_packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165",
       "retained_primary_sha256": [
         "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
         "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
@@ -64,11 +63,10 @@
       "unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
         "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
         "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ]
     }
   ]

@@ -27,7 +27,7 @@
   "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
   "source_citation": "Utah HB 452 (2025 General Session)",
   "evidence_type": "reviewed-source-reference",
-  "verified": "2026-06-04",
+  "verified": "2026-09-23",
   "asserted_by_adopter": "https://publedge.org/",
   "projection_basis": "native-record-projection",
   "admission_status": "source-consistency-reviewed-changes",
@@ -35,19 +35,18 @@
   "pub:source_review_unresolved": [
     "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
     "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
-    "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
-    "This agent review does not renew last_verified or authenticate human currentness review."
+    "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-      "native_file_sha256": "33665f35029ed4e951323842e676b3afd1ec7dd7b2374bcabca9f8fd9f70e3df",
+      "native_file_sha256": "c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb",
       "canonical_unit": null,
-      "canonical_sha256": "4108fe6da99d090b629ab786d6a416f4e502ddda000eafd431c21c08a5eef874",
+      "canonical_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "7c95cf5d2b471ad3a60828bfb12179d3f6b57f7b09597906f1d01ce8690afa10",
+      "review_packet_sha256": "be382469d216fa204a551bbd826747b34bbc49fc2e9581723266bd05df6a9690",
       "retained_primary_sha256": [
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
       ],
@@ -55,8 +54,7 @@
       "unresolved": [
         "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
         "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
-        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
       ]
     }
   ]

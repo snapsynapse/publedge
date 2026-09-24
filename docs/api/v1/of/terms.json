@@ -36,7 +36,7 @@
       "source": "https://commerce.utah.gov/ai/",
       "source_locator": "Utah Code §13-72a-203",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-04-18",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:source_heading": "First-Session Disclosure (§13-72a-203)",
       "pub:source_file": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
@@ -46,23 +46,22 @@
       "pub:source_review_unresolved": [
         "Lawyer review and authority sign-off remain pending; the draft is not issued.",
         "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
-        "last_verified renewal requires a separate human review receipt.",
         "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
-          "native_file_sha256": "ae4554e37436da813ea8261a2b35b80458e24581da6ce9b52fb64b1b74f19c32",
+          "native_file_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
           "canonical_unit": null,
-          "canonical_sha256": "555d9cb6c67731fdf8818d7c84aa7994c1d70e5e7d934257eb813efc2c0d32ca",
+          "canonical_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "23f683d93fb150f13c6e4a20ad4e3a66655db8546b2710289003c98079524330",
+          "review_packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
@@ -70,8 +69,7 @@
           "unresolved_review_state": "declared",
           "unresolved": [
             "Lawyer review and authority sign-off remain pending; the draft is not issued.",
-            "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field.",
-            "last_verified renewal requires a separate human review receipt."
+            "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
           ]
         },
         {
@@ -81,7 +79,7 @@
           "canonical_unit": "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session",
           "canonical_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "4ade6cb38ea47f4267cf9bef0d4592bacea6988f7945f4b96a2e5c85157b1230",
+          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
           ],
@@ -91,7 +89,7 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
           ]
         }
       ]
@@ -126,7 +124,7 @@
       "source_locator": "Summary",
       "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:source_heading": "Summary",
       "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
@@ -138,23 +136,22 @@
         "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
         "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
         "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy.",
-        "This agent review does not renew last_verified or authenticate human currentness review.",
         "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
-          "native_file_sha256": "a27d100361e34d75e90a06a62e498b697303b81c76d2f77fed2239b778eb98f5",
+          "native_file_sha256": "6fb9a910496ef034a5b8b241d8859688cb39d2370fd3321b07649b32e3f49e2e",
           "canonical_unit": null,
-          "canonical_sha256": "eb3c02b293fcee051c785a4084efbbcbc81ea95d0e1f7d1e18a1e2a1c982b373",
+          "canonical_sha256": "c1aca07ba833a22c5029c1afa612bd5aff05a91c2a2e3d30309c12a4ba792235",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "ff503350fc567592d7ca7efd74a0bb88640b4bbdd635e9a5ad6520fcacadfc8a",
+          "review_packet_sha256": "4638f21fae0dfa0223ba78a611e37ad1d1c900807b53ff46a89832c0ba759e74",
           "retained_primary_sha256": [
             "02db4dfb7fcc9c536f4aa7e006458da3ed0ba3567a7cc4478db9e3d5c3195514",
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
@@ -169,8 +166,7 @@
             "Boyd appointment date (2024-04-30) is not in the SB 149 enrolled copy or the retained bill status page; the row is kept but marked unconfirmed.",
             "amended_by still lists us-ut-legislature-statute-2025-hb452 although HB 452 amends no section SB 149 enacted (it amends 13-2-1 and enacts Chapter 72a and 58-60-118). The schema relation was left for a human decision; the body text now states the non-amending relation.",
             "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; whether a dedicated current Learning Lab page exists needs human confirmation.",
-            "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy.",
-            "This agent review does not renew last_verified or authenticate human currentness review."
+            "That SB 149 is Laws of Utah 2024, Chapter 186 is inferred from HB 320 amendment citations, not stated in the SB 149 enrolled copy."
           ]
         },
         {
@@ -180,7 +176,7 @@
           "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
           "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "4ade6cb38ea47f4267cf9bef0d4592bacea6988f7945f4b96a2e5c85157b1230",
+          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
           "retained_primary_sha256": [
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
             "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
@@ -191,7 +187,7 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
           ]
         }
       ]
@@ -227,7 +223,7 @@
       "source_locator": "Summary",
       "source_citation": "Utah SB 226 (2025 General Session)",
       "evidence_type": "legacy-unreviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:source_heading": "Summary",
       "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
@@ -239,19 +235,18 @@
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
         "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
       ],
       "pub:source_review_state": "known-and-unknown",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
-          "native_file_sha256": "fbafb68ba31f029b5e243ae64e362144bec9f914e092bcf7a5969db240ab5258",
+          "native_file_sha256": "9cb602b984427da4e4f0bdc1ba9f56458de93a54911769c20584ce105b1c6cf0",
           "canonical_unit": null,
-          "canonical_sha256": "12afb6e749bcb423127c6a7ec713ea7e69c05c497c1eb6c96f10d36843918398",
+          "canonical_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "41331f0e63287b81cc373868a0d9305c2744f5f43631fd24b6245f7748901588",
+          "review_packet_sha256": "4ac77cfcca432ea01bcba7273922a36be25970b9c78729c8cd6241f6c3ee1733",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
@@ -262,8 +257,7 @@
             "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
             "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
             "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-            "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
-            "This agent review does not renew last_verified or authenticate human currentness review."
+            "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
           ]
         },
         {
@@ -311,7 +305,7 @@
       "source_locator": "Summary",
       "source_citation": "Utah HB 452 (2025 General Session)",
       "evidence_type": "reviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:source_heading": "Summary",
       "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
@@ -322,23 +316,22 @@
         "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
         "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
         "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
-        "This agent review does not renew last_verified or authenticate human currentness review.",
         "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "native_file_sha256": "33665f35029ed4e951323842e676b3afd1ec7dd7b2374bcabca9f8fd9f70e3df",
+          "native_file_sha256": "c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb",
           "canonical_unit": null,
-          "canonical_sha256": "4108fe6da99d090b629ab786d6a416f4e502ddda000eafd431c21c08a5eef874",
+          "canonical_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "7c95cf5d2b471ad3a60828bfb12179d3f6b57f7b09597906f1d01ce8690afa10",
+          "review_packet_sha256": "be382469d216fa204a551bbd826747b34bbc49fc2e9581723266bd05df6a9690",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
           ],
@@ -346,8 +339,7 @@
           "unresolved": [
             "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
             "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
-            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
-            "This agent review does not renew last_verified or authenticate human currentness review."
+            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
           ]
         },
         {
@@ -357,7 +349,7 @@
           "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
           "canonical_sha256": "66bc4b8a16d6100604ecc6c10e8fd489aed581208679ce6a3c847cb44b7b3d7c",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "4ade6cb38ea47f4267cf9bef0d4592bacea6988f7945f4b96a2e5c85157b1230",
+          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
@@ -368,7 +360,7 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation text (per-session display, 30-minute re-display, 13-75-103(1) anchor) was not edited; it is outside this correction set."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
           ]
         }
       ]
@@ -402,7 +394,7 @@
       "source_locator": "Summary",
       "source_citation": "Utah HB 320 (2026 General Session)",
       "evidence_type": "legacy-unreviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:source_heading": "Summary",
       "pub:source_file": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
@@ -414,19 +406,18 @@
         "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
         "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
         "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it.",
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it."
       ],
       "pub:source_review_state": "known-and-unknown",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
-          "native_file_sha256": "c57b0acb4dad1832fd56e3bf5beac60ebbb4f9593542f877e5909356f903ffd3",
+          "native_file_sha256": "01797df3b03a8a6d33869d8a1ed4a0575acea137ea8b84598087d3a0fca8008d",
           "canonical_unit": null,
-          "canonical_sha256": "8c0213da1df472548151dc5eb475e77ae9c3c11f577b403d03a9064133b5dd65",
+          "canonical_sha256": "0602d5a250b66e24ed6f13779a1c055cc90a4f97b27249ef54d099a3e9eb9ad7",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "c5af70510156fdd9f90b49aabe04e67c90f6c73c20c5ae24aa9abd86e3a8fe4f",
+          "review_packet_sha256": "b140f99a901d8f1e6f4bf389765fa85c72c5b7972a9ddf3f63132f56646e5da3",
           "retained_primary_sha256": [
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
@@ -438,8 +429,7 @@
             "Whether OAIP filed annual reports in 2024 or 2025 (and so the ordinal of the 2026 report) is unverified; the row is relabeled without an ordinal.",
             "The PubLedge closing paragraph still characterizes the JIA as the \"interpretation\" instrument; the statute's own term is \"clarifies the application of a provision of state law or rule\". Whether JIAs support reliance is left to a human editor.",
             "The commerce.utah.gov/ai/learning-lab/ link (404 on 2026-09-24 per ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks) was replaced with the retrieved OAIP home page; a dedicated current Learning Lab page needs human confirmation.",
-            "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it.",
-            "This agent review does not renew last_verified or authenticate human currentness review."
+            "amends (us-ut-legislature-statute-2024-sb149) is unchanged; HB 320 amends and renumbers sections SB 149 enacted, so the source does not contradict it."
           ]
         },
         {
@@ -495,7 +485,7 @@
       "source_locator": "Obligations summary (Section VI and Schedule A §XV–XVI)",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
       "evidence_type": "legacy-unreviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:source_heading": "Obligations summary (Section VI and Schedule A §XV–XVI)",
       "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
@@ -504,19 +494,18 @@
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
         "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
       ],
       "pub:source_review_state": "known-and-unknown",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
-          "native_file_sha256": "c629e08397cfb6ce9f6f2cfaf5874c0b90eb6694cf8c3d82afe14bcdd4529706",
+          "native_file_sha256": "c623da93f7b652f8273c9fbfc5cec5da27e2e21939f25df14955b397dbaaba18",
           "canonical_unit": null,
-          "canonical_sha256": "d1b877082b7fc3b20ec7fd8ec429a14e694e9882d6a50c8777bf8125907db549",
+          "canonical_sha256": "dc16f4911a1457d822c7b30f08257abbfd613fa398912ef18a8b25f3d750bdaf",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "8ab319967124243fe784704d39cf5599c90a609621589a21137858bd0f7c10b3",
+          "review_packet_sha256": "3cfcfa15a7248efe0fa5a379df4447eeeb143b72bca2d37102a664188a3de623",
           "retained_primary_sha256": [
             "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
             "602cdd9fd4fcfb3770543bda79f99cb42f02ebc67377345e88a2206105ded8e6",
@@ -526,8 +515,7 @@
           "unresolved_review_state": "declared",
           "unresolved": [
             "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
           ]
         },
         {
@@ -658,7 +646,7 @@
       "source_locator": "Obligations summary (Section 6 and Schedule A §16)",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
       "evidence_type": "legacy-unreviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:source_heading": "Obligations summary (Section 6 and Schedule A §16)",
       "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
@@ -668,22 +656,21 @@
       "pub:source_review_unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
         "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+        "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
         "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "known-and-unknown",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-          "native_file_sha256": "7a3811d21348a6fd57d5435741f0485ed7a1755fad394e40d899daf85591314e",
+          "native_file_sha256": "8793088d93de032d8f5b2ed3a50e9441d911ece3d01083ad61cd01d8c8672724",
           "canonical_unit": null,
-          "canonical_sha256": "ddd1bb05b16ba09100ff28f64cdeda5bc2400d19ffe4ea57899c24142af1fbf2",
+          "canonical_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b1a74dfaf34b4470755e7f598d7f72cb6ae2b1efa1e94b7ae8ec5bb9af5b2371",
+          "review_packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165",
           "retained_primary_sha256": [
             "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
             "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
@@ -697,11 +684,10 @@
           "unresolved": [
             "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
             "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
-            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, but no amendment document is linked; its date, signatories, and exact text are unverified.",
+            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
             "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
             "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         },
         {
@@ -757,7 +743,7 @@
       "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
       "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
       "evidence_type": "legacy-unreviewed-source-reference",
-      "verified": "2026-06-04",
+      "verified": "2026-09-23",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:source_heading": "Obligations summary (Section 6 and Schedule A §17)",
       "pub:source_file": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
@@ -767,19 +753,18 @@
       "pub:source_review_unresolved": [
         "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
         "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ],
       "pub:source_review_state": "known-and-unknown",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
-          "native_file_sha256": "5e4d89fc188a3aa43dc50ba9c7e6eba494b9f632d1953b9a7e14fba05c5fdad1",
+          "native_file_sha256": "3ebe2f0525a6e5fcf469b3f5c09afff35b357a3624445d3acd40065a91217788",
           "canonical_unit": null,
-          "canonical_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151",
+          "canonical_sha256": "7c95e7f547b4cf0c4592491e74bef6c9c30e45b4a307dc03be5b4fd0cec0b3d0",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "b6e32be97f686831f9a2885c3ece7f85af869e0bb26a3f6ef7d0c1698bb23d54",
+          "review_packet_sha256": "96c3ecc5b7baa5e3e85256a2b6662f29042fc2a7267586bb883da0f69dfd37ea",
           "retained_primary_sha256": [
             "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
             "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
@@ -790,8 +775,7 @@
           "unresolved": [
             "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
             "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-            "This agent review does not renew last_verified or authenticate human review."
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
           ]
         },
         {

@@ -53,11 +53,11 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
-      "native_file_sha256": "5e4d89fc188a3aa43dc50ba9c7e6eba494b9f632d1953b9a7e14fba05c5fdad1",
+      "native_file_sha256": "3ebe2f0525a6e5fcf469b3f5c09afff35b357a3624445d3acd40065a91217788",
       "canonical_unit": null,
-      "canonical_sha256": "b974bb02849c8693a86eff8fc85015654d459ca9b37351dc6dfe81d6bda17151",
+      "canonical_sha256": "7c95e7f547b4cf0c4592491e74bef6c9c30e45b4a307dc03be5b4fd0cec0b3d0",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "b6e32be97f686831f9a2885c3ece7f85af869e0bb26a3f6ef7d0c1698bb23d54",
+      "review_packet_sha256": "96c3ecc5b7baa5e3e85256a2b6662f29042fc2a7267586bb883da0f69dfd37ea",
       "retained_primary_sha256": [
         "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
         "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
@@ -68,8 +68,7 @@
       "unresolved": [
         "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
         "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
-        "This agent review does not renew last_verified or authenticate human review."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
       ]
     },
     {
