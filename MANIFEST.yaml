@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:0b46bc1d7717b1413fb3c8d23f183771a973e042c9c3ff7e9293c895976bc3a3
+    hash: sha256:98f17b9e5d32be9ce450dc2ea08aaae0896474cd2902df914d82d036d8ef90cf
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -483,7 +483,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:1a81ea460e00140c80a724fd76f1d038f68b1dff507baddba53fdfc8ae17f19b
+    hash: sha256:74aa77f1b01e57668015b9ceb58cad57a531749b49994f6816925d1160ab20f5
     note: ROADMAP.md
 
   - path: INTENT.md

@@ -166,7 +166,7 @@ Shipped locally 2026-09-07 (accessibility action adoption):
 
 - Pinned the accessibility action to the independently verified `v3.1.0` commit and selected its fail-closed `major` policy with an explicit Node 22 scanner runtime.
 - Built and scanned all 160 generated sitemap HTML routes. Shared source fixes reduced the initial 495 serious incomplete candidates and an intermediate 56 serious contrast violations to zero confirmed violations, zero incomplete candidates, and zero route errors. The [dated audit record](audits/a11y-2026-09-07.md) preserves dependency identity, coverage, findings, fixes, and the final exit-0 result.
-- Push, hosted Actions execution, public deployment verification, and issue closure remain separate delivery work.
+- Delivered to main with the 2026-09-11 correction merge (PR #7); the pinned a11y pass now runs in `build.yml` on every push and pull request.
 
 Shipped locally 2026-09-09 (source admission, per-kind evidence, qualified uncertainty):
 
@@ -176,8 +176,27 @@ Shipped locally 2026-09-09 (source admission, per-kind evidence, qualified uncer
 - Bound per-kind evidence boundaries into the OF projection: every record carries `pub:evidence_inputs` in a fixed order per kind (authority, instrument, mapping-entry, obligation-definition) plus `admission_status`, `evidence_type`, and `pub:source_review_state`. A reviewed mapping input cannot promote a record whose native instrument or obligation definition remains legacy-unreviewed. The shared fingerprint baseline was refreshed after independent review at 130 records and 141 scope claims.
 - Doctronic RMA: recorded the agreement's permission wording and forbearance condition as written, kept OAIP's May 2026 outcomes report as an operational observation and not an issued term, and retained the September 2026 FAQ as a dated official observation and explicit source conflict rather than an amendment. Legal status, term dates, and `last_verified` are unchanged.
 - Colorado SB 24-205: recovered D. Colo. ECF 24 (entered April 27, 2026) as a retained source and replaced the asserted enforcement stay with the order's conditional restraint. `operative_status` and `enforcement_status` are now explicitly `unknown` on the Instrument, its Term, and three derived Requirements. Lifecycle, dates, and identifiers are unchanged; docket completeness, final rulemaking, and any preliminary-injunction ruling remain unknown.
-- Separated published identity from source: `design/publication-state.json` and dated snapshots record npm, the Official MCP Registry, the Git tag, and the GitHub Release at 0.2.2 (13 tools, hashed tarball). README, about, reference, the site footer, `agents.json`, and `/.well-known/mcp.json` pin `publedge@0.2.2` and identify 0.2.3 as an unpublished source candidate; evals enforce the boundary.
-- Push of this branch to main, CI on main, release, and publication remain separate held work.
+- Separated published identity from source: `design/publication-state.json` and dated snapshots record npm, the Official MCP Registry, the Git tag, and the GitHub Release per channel, and evals enforce the boundary between published identity and any source candidate. (At the time of this tranche all four channels were at 0.2.2; see the 2026-09-12 entry below for the current line.)
+- Delivered to main with the 2026-09-11 correction merge (PR #7).
+
+Shipped 2026-09-11 to 2026-09-12 (correction merge + 0.2.3 to 0.2.5 releases):
+
+- Merged the September 9 correction branch (PR #7), including the original-draft promotion gate across admission, schemas, exports, and Obligation-First, and the pinned, CI-verified Obligation-First publication checker.
+- Released 0.2.3 (MCP consumer guidance and source fidelity), 0.2.4 (mutable publication labels removed from packaged guidance), and 0.2.5 (unsupported uniqueness and comparative claims removed from the Utah SB 149 and HB 452 records under source-admission receipts). npm, the Official MCP Registry, the Git tag, and the GitHub Release all carry 0.2.5, recorded in [publication state](design/publication-state.json).
+
+Shipped 2026-09-23 (freshness cadence + Utah record review, issue #3):
+
+- Record-page freshness badges and homepage countdowns now judge age against the risk-based review cadence (shared `scripts/lib/verify-policy.js`), so overdue records read "review overdue" and generated HTML stays deterministic (PR #13).
+- Agent source-consistency dispositions for the nine overdue Utah records (five statutes, the OAIP JIA draft, three RMAs) are recorded in `ops/evidence/utah-overdue-dispositions-2026-09-23.json` (PR #13).
+- The nine records, six linked obligation files, and two mapping entries were corrected against retained sources under admission receipts; after human review by Sam Rogers, `last_verified` renewed to 2026-09-23 (PR #14). Issue #3 closed. Unresolved facts stay qualified in `data/admission/receipts.json` (see "Open maintenance items" below).
+- Repo hygiene: `.vercel` ignored and the served-only `agents.json` exception recorded in [INTENT.md](INTENT.md) (PR #16).
+
+Shipped 2026-09-23 (legal-graph eval EV02 support, PUB-EVAL-2):
+
+- Obligations created by a draft or proposed Term now take that Term's lifecycle in the Obligation-First projection, so a draft JIA duty can no longer read as binding (PR #17).
+- Records projected from a `publedge-original-draft` instrument cite the draft's own canonical PubLedge URL and section headings as source and locator, instead of the OAIP page and the interpreted statute (PR #18).
+- The Utah chatbot-disclosure consumer question now produces a source-backed answer through the shared Obligation-First evaluator; draft-to-law, partial-to-whole-review, role-borrowing, dropped-duty, and provenance mutations fail.
+- The deferred duty-holder role decision is recorded under "Open decisions" below (PR #19).
 
 ## Local F14 fixture tranche (2026-09-05)
 
@@ -193,6 +212,33 @@ The local [qualified-time acceptance sidecar](reference/F14-QUALIFIED-TIME.md) s
 | Public promotion | Sam | Parked pending an INTENT.md revisit trigger |
 
 Verification cadence is risk-based: active statutes and agreements use 90 days, authorities and obligation definitions use 180 days, and historical federal demonstration remaps use 365 days. A changed source or explicit authority response always triggers immediate review regardless of cadence.
+
+## Open maintenance items
+
+Each item stays open until its evidence or trigger arrives. None is resolved by changing dates.
+
+| Item | Blocked on | Notes |
+|---|---|---|
+| Utah Code Title 13 Chapter 72 official-source access | Retained official chapter snapshot | The chapter HTML shell remains unqualified statutory text; interpretation updates route to EveryAILaw (see `ops/MAINTENANCE-PILOT.md`) |
+| Colorado SB 24-205 later-event evidence | Authenticated CourtListener docket pull, a PACER report, or a primary-source check of the Colorado AG rulemaking record | Docket completeness, final rulemaking, and any preliminary-injunction ruling remain `unknown` |
+| F14 predecessor operative history | Obligation-First coordination (OF issue 4) | Needed before any production qualified-time representation; see the F14 section above |
+| Receipt unknowns from the 2026-09-23 Utah review | New primary evidence | Two-thirds votes for SB 226 and SB 332, 2025-26 signing dates, the unlinked Doctronic 2026 amendment and its conflict with the signed agreement, Doctronic extension after 2026-10-24, and Legion commencement. Recorded in `data/admission/receipts.json` |
+| Search governance | A trigger in `ops/search-indexing.md` | No trigger has fired |
+
+Resolved 2026-09-29:
+
+- Term-to-Term deterministic checks (territorial intersections, compatible locators, derivative versus anchored effective dates) are delivered by the shared Obligation-First comparator (`scripts/lib/term-boundaries.mjs`, 2026-09-09). PubLedge's only Term-to-Term edge, the HB 452 JIA term anchor, is asserted against an exact expected report in OF `reference/fixtures/consumer-traversals-2026-09-24.json`. Reopen when PubLedge adds another Term anchor.
+- The additive `source` and `editorial_status` fields on `api/v1` aggregate items (added in `397f5d29`) were reviewed by Sam Rogers and kept.
+
+## Legal-graph eval contributions
+
+The shared eval design, inputs, controls, and acceptance limits are owned by the PAICE Foundation cross-repo eval plan (private coordination record). PubLedge's remaining contributions:
+
+| Eval | PubLedge contribution | Status |
+|---|---|---|
+| EV01 (PUB-EVAL-1) | Finite input declarations for the selected shared slice: IDs, original or amending act identity, source/version/locator evidence, declared correspondent or explicit different granularity, comparable fields, expected unknowns, relationship targets. Positive control: a reviewed Colorado pair. Negative controls: opposite enforcement assertions, wrong amendment direction, absent required target, unjustified whole-record identity. Do not equate EveryAILaw's amended Utah stack to individual PubLedge acts | Not started |
+| EV02 (PUB-EVAL-2) | Source-grounded Utah chatbot-disclosure fixture and projection fixes | Delivered 2026-09-23 (see above) |
+| EV03/EV06/EV07 (PUB-EVAL-3) | Supply EveryAILaw's candidate runner with an exact PubLedge commit and its own admission base; keep source/build and `docs/` parity; keep release and route metadata current for EV06; verify owned record routes after authorized publication | Waiting on the EveryAILaw candidate runner |
 
 ## Frontmatter spec v0.2 — follow-ups
 
