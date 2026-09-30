@@ -222,11 +222,13 @@ Each item stays open until its evidence or trigger arrives. None is resolved by 
 | Utah Code Title 13 Chapter 72 official-source access | Retained official chapter snapshot | The chapter HTML shell remains unqualified statutory text; interpretation updates route to EveryAILaw (see `ops/MAINTENANCE-PILOT.md`) |
 | Colorado SB 24-205 later-event evidence | Authenticated CourtListener docket pull, a PACER report, or a primary-source check of the Colorado AG rulemaking record | Docket completeness, final rulemaking, and any preliminary-injunction ruling remain `unknown` |
 | F14 predecessor operative history | Obligation-First coordination (OF issue 4) | Needed before any production qualified-time representation; see the F14 section above |
-| Term-to-Term deterministic checks | Maintainer implementation | Territorial intersections, compatible locators, and derivative effective dates versus anchored statutory Terms. The Utah consumer traversal itself is delivered in OF `reference/fixtures/consumer-traversals-2026-09-24.json` |
 | Receipt unknowns from the 2026-09-23 Utah review | New primary evidence | Two-thirds votes for SB 226 and SB 332, 2025-26 signing dates, the unlinked Doctronic 2026 amendment and its conflict with the signed agreement, Doctronic extension after 2026-10-24, and Legion commencement. Recorded in `data/admission/receipts.json` |
 | Search governance | A trigger in `ops/search-indexing.md` | No trigger has fired |
 
-Resolved 2026-09-29: the additive `source` and `editorial_status` fields on `api/v1` aggregate items (added in `397f5d29`) were reviewed by Sam Rogers and kept.
+Resolved 2026-09-29:
+
+- Term-to-Term deterministic checks (territorial intersections, compatible locators, derivative versus anchored effective dates) are delivered by the shared Obligation-First comparator (`scripts/lib/term-boundaries.mjs`, 2026-09-09). PubLedge's only Term-to-Term edge, the HB 452 JIA term anchor, is asserted against an exact expected report in OF `reference/fixtures/consumer-traversals-2026-09-24.json`. Reopen when PubLedge adds another Term anchor.
+- The additive `source` and `editorial_status` fields on `api/v1` aggregate items (added in `397f5d29`) were reviewed by Sam Rogers and kept.
 
 ## Legal-graph eval contributions
 
