@@ -29,6 +29,9 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 
 ### Fixed
 
+- Judge record-page freshness badges and homepage countdowns against the risk-based review cadence, shared with `verify.js` through `scripts/lib/verify-policy.js`; records past cadence read "review overdue" and generated HTML stays deterministic.
+- In the Obligation-First projection, an obligation created by a draft or proposed Term takes that Term's lifecycle instead of the shared obligation definition's generic values, so a draft JIA duty no longer projects as potentially binding.
+- Records projected from a `publedge-original-draft` instrument cite the draft's canonical PubLedge URL and section headings as source and locator, instead of the authority page and the interpreted statute.
 - Record the Doctronic RMA's permission wording and forbearance condition as written, keep OAIP's May 2026 outcomes report as an operational observation rather than an issued term, and retain the September 2026 FAQ as a dated source conflict rather than an amendment. Legal status, term dates, and `last_verified` are unchanged.
 - Replace the asserted SB 24-205 enforcement stay with the ECF 24 conditional restraint and set `operative_status` and `enforcement_status` to explicit `unknown` on the instrument and its derived Obligation-First records; lifecycle, dates, and identifiers are unchanged.
 
