@@ -265,6 +265,7 @@ Each needs a forcing function — date, dependency, or explicit trigger.
 | w3id.org/publedge/ns/ PR submitted? | ~6 months stable extensions | Defer long-term |
 | Reverse linking everyailaw.com → publedge.org? | Editorial decision after v0.1 release | One-way only (PubLedge → EveryAILaw) |
 | Does MCP server expose hash-verified responses? | First client that needs integrity guarantees | Current server returns raw content |
+| Structured duty-holder roles on OF obligations (`duty_holder_roles`)? Utah's "supplier" is defined by reference to Utah Code §13-11-3 (consumer-transaction sellers) and does not match EveryAILaw's `provider` (AI developer or market placer), so no EveryAILaw role is borrowed. Options: PubLedge-owned role IRIs or a shared Obligation-First role vocabulary; §13-11-3 must be retained as an admission source first. | A consumer question that needs a structured actor, or an Obligation-First role-vocabulary proposal | Actor stays `unknown` in OF projections and the EV02 consumer answer; the statutory term remains in record text and receipts |
 
 ## Cross-project dependencies
 
