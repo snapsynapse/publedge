@@ -1,0 +1,202 @@
+{
+  "kind": "PubLedge SB226 R1 fingerprint comparison",
+  "status": "parent-accepted-two-record-provenance-only-delta",
+  "actual_fingerprint_sha256": "3a879c07ad4361d07809162369379aa871abcfa7b730e490c61e2343b0e1d3d1",
+  "validator_commit": "23f493cdf6ee50e8f32f060f2b44593a61ad2d2d",
+  "record_count": 130,
+  "changed_record_ids": [
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json",
+    "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json"
+  ],
+  "unchanged_top_level_fields": [
+    "actor_roles",
+    "adopter",
+    "applies_to",
+    "contexts",
+    "exact_edges",
+    "exact_edges_sha256",
+    "field_coverage",
+    "fingerprint_version",
+    "id_inventory",
+    "jurisdiction_shapes",
+    "naming_profile_entities",
+    "naming_profile_version",
+    "nested_edges",
+    "nested_edges_sha256",
+    "nested_semantics",
+    "provenance_dates",
+    "records",
+    "relations",
+    "source_identity",
+    "tombstones"
+  ],
+  "unchanged_provenance_record_count": 128,
+  "differences_reported_by_checker": [
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].admission_status: expected \"legacy-unreviewed\", got \"reviewed-changes\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].canonical_sha256: expected \"16769df863c540985bf05faefbfab94efb1882a1398d65eca9a16ec41f313ba2\", got \"189f4253b204692369145bf206f26cb66d414488405e0d4509edee0e4c57a9d3\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].native_file_sha256: expected \"894ec6c5333740656a3f50a3dec3cdb95ceeb60642a95c225a2fe9d8e51823f5\", got \"f1ee01115a55072a4a046b49af6a81c109b4f0ffba49e6e6df58d775b25ca302\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].retained_primary_sha256: expected null, got [\"279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8\"]",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].review_packet_sha256: expected null, got \"53dc6fff3ee933e85a8596578c3985f836252418b30dc6025349ed3ebdb586bb\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].unresolved: expected null, got [\"These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.\",\"Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.\",\"The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.\",\"The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.\",\"Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate.\"]",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].unresolved_review_state: expected \"unknown\", got \"declared\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:source_review_unresolved.length: expected 5, got 10",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].admission_status: expected \"legacy-unreviewed\", got \"reviewed-changes\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].canonical_sha256: expected \"2255b8372e20bccbf1f6b054201add8cda3e519dd4aded5ac492e91cc7c56d0c\", got \"df3231b4a2111975e8de105d84a2fa0d4f5d1b8b32ffb3f0aab9ee12622931a5\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].native_file_sha256: expected \"975530c0feb4bacd2989f3e1494c8f9cbe61dd4bbb1569c866490c6de88d514a\", got \"24d7c8e63e37d24678f5225b2d0c97b16f2bbea97e2fda7df8c9deeda1ef8c92\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].retained_primary_sha256: expected null, got [\"279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8\"]",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].review_packet_sha256: expected null, got \"ae850f903e66d27eac95d560533460f50cea40532afb8f15ab6d5c6c41e9b98a\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].unresolved: expected null, got [\"These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.\",\"Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.\",\"The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.\",\"The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.\",\"Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate.\"]",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].unresolved_review_state: expected \"unknown\", got \"declared\"",
+    "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:source_review_unresolved.length: expected 5, got 10"
+  ],
+  "exact_compared_fields": [
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].admission_status",
+      "expected": "legacy-unreviewed",
+      "actual": "reviewed-changes"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].canonical_sha256",
+      "expected": "16769df863c540985bf05faefbfab94efb1882a1398d65eca9a16ec41f313ba2",
+      "actual": "189f4253b204692369145bf206f26cb66d414488405e0d4509edee0e4c57a9d3"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].native_file_sha256",
+      "expected": "894ec6c5333740656a3f50a3dec3cdb95ceeb60642a95c225a2fe9d8e51823f5",
+      "actual": "f1ee01115a55072a4a046b49af6a81c109b4f0ffba49e6e6df58d775b25ca302"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].retained_primary_sha256",
+      "expected": null,
+      "actual": [
+        "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+      ]
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].review_packet_sha256",
+      "expected": null,
+      "actual": "53dc6fff3ee933e85a8596578c3985f836252418b30dc6025349ed3ebdb586bb"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].unresolved",
+      "expected": null,
+      "actual": [
+        "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+        "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+        "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+        "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+        "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+      ]
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:evidence_inputs[2].unresolved_review_state",
+      "expected": "unknown",
+      "actual": "declared"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json.pub:source_review_unresolved.length",
+      "expected": 5,
+      "actual": 10,
+      "expected_values": [
+        "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
+        "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
+        "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
+        "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
+      ],
+      "actual_values": [
+        "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
+        "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
+        "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
+        "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+        "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+        "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+        "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+        "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+        "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+      ]
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].admission_status",
+      "expected": "legacy-unreviewed",
+      "actual": "reviewed-changes"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].canonical_sha256",
+      "expected": "2255b8372e20bccbf1f6b054201add8cda3e519dd4aded5ac492e91cc7c56d0c",
+      "actual": "df3231b4a2111975e8de105d84a2fa0d4f5d1b8b32ffb3f0aab9ee12622931a5"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].native_file_sha256",
+      "expected": "975530c0feb4bacd2989f3e1494c8f9cbe61dd4bbb1569c866490c6de88d514a",
+      "actual": "24d7c8e63e37d24678f5225b2d0c97b16f2bbea97e2fda7df8c9deeda1ef8c92"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].retained_primary_sha256",
+      "expected": null,
+      "actual": [
+        "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+      ]
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].review_packet_sha256",
+      "expected": null,
+      "actual": "ae850f903e66d27eac95d560533460f50cea40532afb8f15ab6d5c6c41e9b98a"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].unresolved",
+      "expected": null,
+      "actual": [
+        "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+        "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+        "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+        "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+        "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+      ]
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:evidence_inputs[2].unresolved_review_state",
+      "expected": "unknown",
+      "actual": "declared"
+    },
+    {
+      "field": "provenance_claims.https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json.pub:source_review_unresolved.length",
+      "expected": 5,
+      "actual": 10,
+      "expected_values": [
+        "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
+        "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
+        "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
+        "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
+      ],
+      "actual_values": [
+        "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
+        "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
+        "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
+        "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+        "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+        "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+        "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+        "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+        "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+      ]
+    }
+  ],
+  "limits": [
+    "Retained comparison and parent acceptance evidence for this exact two-record provenance-only delta. The fixture was updated through the existing guarded owner writer, not by hand.",
+    "Native definition source deltas were independently reviewed by parent with no substantive finding, as reported in the task. This does not independently validate current law or renew dates.",
+    "Chapter77 remains an unverified candidate with no retained index evidence or validated codification bridge. Whole-R1 instrument Summary and receipt succession remain separately gated."
+  ],
+  "fixture_path": "tests/fixtures/of-contract-fingerprint.json",
+  "comparison_base_fixture_sha256": "81ea335015c069d0e01b64db28804eba28227ea9b945d3c98568e01e02e34347",
+  "accepted_fixture_sha256": "3a879c07ad4361d07809162369379aa871abcfa7b730e490c61e2343b0e1d3d1",
+  "acceptance": {
+    "authority": "Parent independently recomputed and explicitly accepted exactly this intentional provenance delta in the task",
+    "scope": "ONLY provenance_claims for the two listed SB226 disclosure obligation records; all other fields and all other provenance entries unchanged",
+    "writer": "npm run check:of-fingerprint -- --write, with the existing owner scope and relationship-migration guards",
+    "no_other_baseline_changes": true
+  }
+}

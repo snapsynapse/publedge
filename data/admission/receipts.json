@@ -5490,6 +5490,356 @@
           ]
         }
       }
+    },
+    "data/examples/obligations/disclose-genai-on-request.md": {
+      "record_sha256": "df3231b4a2111975e8de105d84a2fa0d4f5d1b8b32ffb3f0aab9ee12622931a5",
+      "baseline_sha256": "2255b8372e20bccbf1f6b054201add8cda3e519dd4aded5ac492e91cc7c56d0c",
+      "whole_record": {
+        "before_sha256": "2255b8372e20bccbf1f6b054201add8cda3e519dd4aded5ac492e91cc7c56d0c",
+        "after_sha256": "df3231b4a2111975e8de105d84a2fa0d4f5d1b8b32ffb3f0aab9ee12622931a5"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex (PubLedge isolated SB226 R1 local repair)",
+        "reviewed_at": "2026-10-02T02:25:24Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "R1 on-request disclosure definition only, against immutable retained 2025 enrolled SB 226. Exact changed-unit agent self-review, not independent or human acceptance. No current-law, acquisition-date, human verification, stable-ID, controlled-role or effective-date renewal.",
+        "packet_sha256": "ae850f903e66d27eac95d560533460f50cea40532afb8f15ab6d5c6c41e9b98a"
+      },
+      "unresolved": [
+        "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+        "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+        "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+        "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+        "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+      ],
+      "evidence": {
+        "request": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "2025 enrolled SB 226, section3, 13-75-103(1), printed lines98-105",
+          "excerpt": " 98     (1)(a) A supplier that uses generative artificial intelligence to interact with an individual\n 99         in connection with a consumer transaction shall disclose to the individual that the\n100         individual is interacting with generative artificial intelligence and not a human, if the\n101         individual asks or otherwise prompts the supplier about whether artificial intelligence\n102         is being used.\n103         (b) The individual's prompt or question under Subsection (1)(a) must be a clear and\n104                unambiguous request to determine whether the interaction is with a human or with\n105                artificial intelligence.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "safe_harbor": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "2025 enrolled SB 226, section4, 13-75-104(1)-(2), printed lines118-131",
+          "excerpt": "118     (1) A person is not subject to an enforcement action for violating Section 13-75-103 if the\n119         person's generative artificial intelligence clearly and conspicuously discloses:\n120         (a) at the outset of any interaction with an individual in connection with:\n121                (i) a consumer transaction; or\n122                (ii) the provision of regulated services; and\n123         (b) throughout the interaction that it:\n124                (i) is generative artificial intelligence;\n125                (ii) is not human; or\n126                (iii) is an artificial intelligence assistant.\n127     (2) In accordance with Title 63G, Chapter 3, Utah Administrative Rulemaking Act, the\n128         division in consultation with the office, may make rules specifying forms and methods\n129         of disclosure that:\n\n                                                            -4-\n\f      Enrolled Copy                                                                                     S.B. 226\n\n\n130        (a) satisfy the requirements of Subsection (1); or\n131        (b) do not satisfy the requirements of Subsection (1).",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "other_remedies": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "2025 enrolled SB 226, section6, 13-75-106, printed lines164-168",
+          "excerpt": "164              Section 6. Section 13-75-106 is enacted to read:\n165              13-75-106 (Effective 05/07/25). Scope.\n166         This chapter does not displace any other remedy or right authorized under:\n167     (1) the laws of this state; or\n168     (2) federal law.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        }
+      },
+      "units": {
+        "section:Summary/text": {
+          "before_sha256": "6e76466ade1af9e1a58ffd826b71be002f75a33af355f935c8761f6b42d1131d",
+          "after_sha256": "99252ac805966d2f651f4383a49a5e90cfe759f5d3dd0e47d9d5a517f14943b3",
+          "candidate_content": "A supplier that uses generative artificial intelligence to interact with an individual in connection with a consumer transaction must disclose that the individual is interacting with generative artificial intelligence and not a human if the individual asks or otherwise prompts the supplier about whether artificial intelligence is being used. The prompt or question must be a clear and unambiguous request to determine whether the interaction is with a human or with artificial intelligence (§13-75-103(1)).\n\nThe separate §13-75-104(1) safe harbor concerns enforcement actions for violating §13-75-103 only. It applies if the person's generative artificial intelligence clearly and conspicuously discloses, at the outset and throughout any interaction with an individual in connection with a consumer transaction or the provision of regulated services, that it is generative artificial intelligence, is not human, or is an artificial intelligence assistant. These are alternative safe-harbor forms, not substitutes for the conjunctive on-request content in §13-75-103(1). The safe harbor has no request prerequisite and does not eliminate other state or federal remedies (§13-75-106).\n\nThese locators and requirements describe the retained 2025 enrolled SB 226 only, not independently validated current codification. The incorporated supplier and consumer-transaction definitions (§13-11-3) and current disclosure rules under §13-75-104(2) are outside this retained-source review.",
+          "reason": "Preserve supplier, transaction and qualifying-request scope; distinguish conjunctive GenAI-and-not-human disclosure from the alternative safe-harbor forms, section103-only relief and preserved other remedies; qualify enrolled-version locators.",
+          "qualifications": {
+            "scope": "13-75-103(1), 13-75-104 and 13-75-106 in the retained 2025 enrolled act; consumer transaction for the request duty, consumer transaction or regulated services for safe harbor.",
+            "exceptions": "Safe-harbor alternatives and conditions remain distinct from the request conjunction. Current rules, imported definitions and live codification are unvalidated; other remedies and R3 civil/criminal content are unchanged.",
+            "time": "Retained 2025 enrolled version only. Existing human review, last_verified and effective dates and actual raw acquisition dates are unchanged; the agent review timestamp is not a new retrieval or currentness date."
+          },
+          "evidence": [
+            "request",
+            "safe_harbor",
+            "other_remedies"
+          ]
+        },
+        "section:What Counts/text": {
+          "before_sha256": "ba02fd1adb67f091584789370c7cf6e03fcb25776079cc86174ae5aa752586a4",
+          "after_sha256": "ec08b19cec7c97b8af218f624fb3ecf0bb3d25c99bbef14b5e7788f70dd633a8",
+          "candidate_content": "- For the on-request duty, the supplier discloses both generative artificial intelligence and not a human in response to the qualifying question or prompt in a consumer transaction\n- For the separate safe harbor, the person's GenAI clearly and conspicuously discloses any one of the three statutory alternatives at the outset and throughout the qualifying interaction: generative artificial intelligence, not human, or an artificial intelligence assistant\n- The safe-harbor not-human alternative does not require the literal word \"AI\"; the statutory clarity, conspicuousness, context and timing conditions still apply",
+          "reason": "Preserve supplier, transaction and qualifying-request scope; distinguish conjunctive GenAI-and-not-human disclosure from the alternative safe-harbor forms, section103-only relief and preserved other remedies; qualify enrolled-version locators.",
+          "qualifications": {
+            "scope": "13-75-103(1), 13-75-104 and 13-75-106 in the retained 2025 enrolled act; consumer transaction for the request duty, consumer transaction or regulated services for safe harbor.",
+            "exceptions": "Safe-harbor alternatives and conditions remain distinct from the request conjunction. Current rules, imported definitions and live codification are unvalidated; other remedies and R3 civil/criminal content are unchanged.",
+            "time": "Retained 2025 enrolled version only. Existing human review, last_verified and effective dates and actual raw acquisition dates are unchanged; the agent review timestamp is not a new retrieval or currentness date."
+          },
+          "evidence": [
+            "request",
+            "safe_harbor",
+            "other_remedies"
+          ]
+        },
+        "section:What Does Not Count/text": {
+          "before_sha256": "4aabc90e66c01db310b5860b51d3a9913426cc8ca15a0b59d9bdcedd39d16805",
+          "after_sha256": "8413c29cadf59328ed20609ac9d212aa78dbfe2b7585bd32b808df17b18b82c8",
+          "candidate_content": "- Requiring the individual to infer GenAI use from context instead of responding to the qualifying request\n- Treating a not-human-only response as the complete §13-75-103(1) disclosure, rather than distinguishing the separate safe-harbor alternative\n- Treating a buried notice or an ambiguous label such as \"smart assistant\" or \"automated helper\" as sufficient without establishing the safe harbor's clear-and-conspicuous disclosure conditions\n- Providing a safe-harbor notice only at the outset without disclosure throughout the interaction\n- Requiring a specific magic phrase when the individual has already made a clear and unambiguous qualifying request\n- Treating the safe harbor as immunity from violations or remedies outside §13-75-103",
+          "reason": "Preserve supplier, transaction and qualifying-request scope; distinguish conjunctive GenAI-and-not-human disclosure from the alternative safe-harbor forms, section103-only relief and preserved other remedies; qualify enrolled-version locators.",
+          "qualifications": {
+            "scope": "13-75-103(1), 13-75-104 and 13-75-106 in the retained 2025 enrolled act; consumer transaction for the request duty, consumer transaction or regulated services for safe harbor.",
+            "exceptions": "Safe-harbor alternatives and conditions remain distinct from the request conjunction. Current rules, imported definitions and live codification are unvalidated; other remedies and R3 civil/criminal content are unchanged.",
+            "time": "Retained 2025 enrolled version only. Existing human review, last_verified and effective dates and actual raw acquisition dates are unchanged; the agent review timestamp is not a new retrieval or currentness date."
+          },
+          "evidence": [
+            "request",
+            "safe_harbor",
+            "other_remedies"
+          ]
+        },
+        "section:Statute Anchors/text": {
+          "before_sha256": "dc0cd6e1b860d566aa7887597bf8bad323d50532fcc3355863fde3d22acf2d2d",
+          "after_sha256": "09353ce679ad2a29128fe12ea44651d816429279151ce8dc70588beb7d40a60d",
+          "candidate_content": "- Retained 2025 enrolled SB 226, §13-75-103(1), printed lines 98-105: supplier, transaction, request and conjunctive disclosure content\n- Retained 2025 enrolled SB 226, §13-75-104(1)-(2), printed lines 118-131: separate section103-only safe harbor and disclosure-rule authority\n- Retained 2025 enrolled SB 226, §13-75-106, printed lines 164-168: other state and federal remedies preserved",
+          "reason": "Preserve supplier, transaction and qualifying-request scope; distinguish conjunctive GenAI-and-not-human disclosure from the alternative safe-harbor forms, section103-only relief and preserved other remedies; qualify enrolled-version locators.",
+          "qualifications": {
+            "scope": "13-75-103(1), 13-75-104 and 13-75-106 in the retained 2025 enrolled act; consumer transaction for the request duty, consumer transaction or regulated services for safe harbor.",
+            "exceptions": "Safe-harbor alternatives and conditions remain distinct from the request conjunction. Current rules, imported definitions and live codification are unvalidated; other remedies and R3 civil/criminal content are unchanged.",
+            "time": "Retained 2025 enrolled version only. Existing human review, last_verified and effective dates and actual raw acquisition dates are unchanged; the agent review timestamp is not a new retrieval or currentness date."
+          },
+          "evidence": [
+            "request",
+            "safe_harbor",
+            "other_remedies"
+          ]
+        }
+      }
+    },
+    "data/examples/obligations/disclose-genai-high-risk-proactive.md": {
+      "record_sha256": "189f4253b204692369145bf206f26cb66d414488405e0d4509edee0e4c57a9d3",
+      "baseline_sha256": "16769df863c540985bf05faefbfab94efb1882a1398d65eca9a16ec41f313ba2",
+      "whole_record": {
+        "before_sha256": "16769df863c540985bf05faefbfab94efb1882a1398d65eca9a16ec41f313ba2",
+        "after_sha256": "189f4253b204692369145bf206f26cb66d414488405e0d4509edee0e4c57a9d3"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex (PubLedge isolated SB226 R1 local repair)",
+        "reviewed_at": "2026-10-02T02:25:24Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "R1 high-risk regulated-services disclosure definition only, against immutable retained 2025 enrolled SB 226. Exact changed-unit agent self-review, not independent or human acceptance. No current-law, acquisition-date, human verification, stable-ID, controlled-role or effective-date renewal.",
+        "packet_sha256": "53dc6fff3ee933e85a8596578c3985f836252418b30dc6025349ed3ebdb586bb"
+      },
+      "unresolved": [
+        "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+        "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+        "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+        "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+        "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+      ],
+      "evidence": {
+        "high_risk": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "2025 enrolled SB 226, section1, 13-75-101(5), printed lines54-67",
+          "excerpt": "54     (5) \"High-risk artificial intelligence interaction\" means an interaction with generative\n55         artificial intelligence that involves:\n56         (a) the collection of sensitive personal information, including:\n57                (i) health data;\n58                (ii) financial data; or\n59                (iii) biometric data;\n60         (b) the provision of personalized recommendations, advice, or information that could\n61                reasonably be relied upon to make significant personal decisions, including the\n\n                                                       -2-\n\f     Enrolled Copy                                                                                    S.B. 226\n\n\n62            provision of:\n63            (i) financial advice or services;\n64            (ii) legal advice or services;\n65            (iii) medical advice or services; or\n66            (iv) mental health advice or services; or\n67        (c) other applications as defined by division rule.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "occupation": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "2025 enrolled SB 226, section1, 13-75-101(8), printed lines75-78",
+          "excerpt": "75    (8) \"Regulated occupation\" means an occupation that:\n76        (a) is regulated by the Department of Commerce; and\n77        (b) requires an individual to obtain a license or state certification to practice the\n78            occupation.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "regulated_disclosure": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "2025 enrolled SB 226, section3, 13-75-103(2)-(3), printed lines106-115",
+          "excerpt": "106     (2) An individual providing services in a regulated occupation shall:\n107         (a) prominently disclose when an individual receiving services is interacting with\n108                generative artificial intelligence in the provision of regulated services if the use of\n109                generative artificial intelligence constitutes a high-risk artificial intelligence\n110                interaction; and\n111         (b) comply with all requirements of the regulated occupation when providing services\n112                through generative artificial intelligence.\n113     (3) A disclosure required under Subsection (2) shall be provided:\n114         (a) verbally at the start of a verbal interaction; and\n115         (b) in writing before the start of a written interaction.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "safe_harbor": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "2025 enrolled SB 226, section4, 13-75-104(1)-(2), printed lines118-131",
+          "excerpt": "118     (1) A person is not subject to an enforcement action for violating Section 13-75-103 if the\n119         person's generative artificial intelligence clearly and conspicuously discloses:\n120         (a) at the outset of any interaction with an individual in connection with:\n121                (i) a consumer transaction; or\n122                (ii) the provision of regulated services; and\n123         (b) throughout the interaction that it:\n124                (i) is generative artificial intelligence;\n125                (ii) is not human; or\n126                (iii) is an artificial intelligence assistant.\n127     (2) In accordance with Title 63G, Chapter 3, Utah Administrative Rulemaking Act, the\n128         division in consultation with the office, may make rules specifying forms and methods\n129         of disclosure that:\n\n                                                            -4-\n\f      Enrolled Copy                                                                                     S.B. 226\n\n\n130        (a) satisfy the requirements of Subsection (1); or\n131        (b) do not satisfy the requirements of Subsection (1).",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "other_remedies": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "2025 enrolled SB 226, section6, 13-75-106, printed lines164-168",
+          "excerpt": "164              Section 6. Section 13-75-106 is enacted to read:\n165              13-75-106 (Effective 05/07/25). Scope.\n166         This chapter does not displace any other remedy or right authorized under:\n167     (1) the laws of this state; or\n168     (2) federal law.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        }
+      },
+      "units": {
+        "section:Summary/text": {
+          "before_sha256": "fa10e73a849afc95192b258413da45c074875b621ac3f738a634958fd7f08881",
+          "after_sha256": "f3d51e64453687aa98c197b2d82c82a6c98e38aa15d01a2db3e354d5af0b3492",
+          "candidate_content": "An individual providing services in a regulated occupation must prominently disclose when an individual receiving services is interacting with generative artificial intelligence in the provision of regulated services if that use constitutes a high-risk artificial intelligence interaction (§13-75-103(2)(a)). The statutory actor is the individual providing those services, without a supplier condition. A regulated occupation is regulated by the Department of Commerce and requires an individual to obtain a license or state certification to practice (§13-75-101(8)).\n\nThe required disclosure is provided verbally at the start of a verbal interaction, and in writing before the start of a written interaction (§13-75-103(3)). Written interactions are not limited to electronic messaging. The individual must also comply with all requirements of the regulated occupation when providing services through GenAI (§13-75-103(2)(b)); that requirement is not confined to high-risk interactions.\n\nA high-risk artificial intelligence interaction is an interaction with GenAI involving any of the following (§13-75-101(5)):\n- Collection of sensitive personal information, including health, financial or biometric data\n- Provision of personalized recommendations, advice or information that could reasonably be relied upon to make significant personal decisions, including financial, legal, medical or mental health advice or services\n- Other applications as defined by division rule\n\nThe listed data and advice or service categories are inclusive examples, not exhaustive lists. The separate §13-75-104(1) safe harbor also covers the provision of regulated services: it concerns enforcement actions for violating §13-75-103 only and requires the person's GenAI to clearly and conspicuously disclose at the outset and throughout the interaction that it is generative artificial intelligence, is not human, or is an artificial intelligence assistant. These are alternative safe-harbor forms; other state and federal remedies remain available (§13-75-106).\n\nThese locators and requirements describe the retained 2025 enrolled SB 226 only, not independently validated current codification. Current division rules defining other high-risk applications or disclosure forms and methods have not been retained or reviewed here.",
+          "reason": "Preserve the individual regulated-services actor, complete high-risk definition, prominence, all occupational requirements, verbal-at-start versus written-before-start timing, and the separate limited safe harbor; qualify enrolled-version locators.",
+          "qualifications": {
+            "scope": "13-75-103(2)-(3), 13-75-101(5),(8), 13-75-104 and 13-75-106 in the retained 2025 enrolled act; the occupational-compliance duty is not confined to high-risk use.",
+            "exceptions": "Safe-harbor alternatives and conditions remain distinct from the request conjunction. Current rules, imported definitions and live codification are unvalidated; other remedies and R3 civil/criminal content are unchanged.",
+            "time": "Retained 2025 enrolled version only. Existing human review, last_verified and effective dates and actual raw acquisition dates are unchanged; the agent review timestamp is not a new retrieval or currentness date."
+          },
+          "evidence": [
+            "high_risk",
+            "occupation",
+            "regulated_disclosure",
+            "safe_harbor",
+            "other_remedies"
+          ]
+        },
+        "section:What Counts/text": {
+          "before_sha256": "c8ad7d1826987c0b1cce330d74891cf2bebc268f9975f1be3197638e95f19c9a",
+          "after_sha256": "dfc4a8c6fcd4ae07b4e7d97fb2ab6aeb2c1e2cbe5809a1fc8a765e7cca7ab1d7",
+          "candidate_content": "- Prominent GenAI disclosure to the individual receiving regulated services in a qualifying high-risk interaction\n- Verbal disclosure at the start of a verbal interaction, not a universal before-start requirement\n- Written disclosure before the start of a written interaction, including but not limited to electronic messaging\n- Disclosure for collection of sensitive personal information within the regulated-services context, including health, financial or biometric data\n- Disclosure for personalized recommendations, advice or information reasonably relied upon for significant personal decisions within that context, including financial, legal, medical or mental health advice or services\n- Disclosure for another application defined as high-risk by division rule, subject to separately retained rule evidence\n- Compliance with all requirements of the regulated occupation when providing services through GenAI, even where the interaction is not high-risk",
+          "reason": "Preserve the individual regulated-services actor, complete high-risk definition, prominence, all occupational requirements, verbal-at-start versus written-before-start timing, and the separate limited safe harbor; qualify enrolled-version locators.",
+          "qualifications": {
+            "scope": "13-75-103(2)-(3), 13-75-101(5),(8), 13-75-104 and 13-75-106 in the retained 2025 enrolled act; the occupational-compliance duty is not confined to high-risk use.",
+            "exceptions": "Safe-harbor alternatives and conditions remain distinct from the request conjunction. Current rules, imported definitions and live codification are unvalidated; other remedies and R3 civil/criminal content are unchanged.",
+            "time": "Retained 2025 enrolled version only. Existing human review, last_verified and effective dates and actual raw acquisition dates are unchanged; the agent review timestamp is not a new retrieval or currentness date."
+          },
+          "evidence": [
+            "high_risk",
+            "occupation",
+            "regulated_disclosure",
+            "safe_harbor",
+            "other_remedies"
+          ]
+        },
+        "section:What Does Not Count/text": {
+          "before_sha256": "116e452c70e105bb9ed58a54679b92b3d4808c14cf69992a3f5404b6207eb316",
+          "after_sha256": "54294199437809c8bb2d4c2b360e52cde36efcdd0c23313be17618f3bfc7f758",
+          "candidate_content": "- Disclosure delayed until the individual receiving services asks, absent the separate statutory safe harbor\n- A disclosure that lacks prominence, is delayed beyond the start of a verbal interaction, or appears only after a written interaction has started\n- General branding or marketing that mentions AI without the required disclosure to the recipient in the qualifying interaction\n- Adding a supplier condition to the individual regulated-services actor\n- Treating all personalized information as high-risk without the significant-personal-decisions criterion or another statutory branch\n- Treating the statutory examples as exhaustive or omitting the division-rule branch\n- Treating disclosure or the safe harbor as a waiver of other occupational requirements or of remedies outside §13-75-103",
+          "reason": "Preserve the individual regulated-services actor, complete high-risk definition, prominence, all occupational requirements, verbal-at-start versus written-before-start timing, and the separate limited safe harbor; qualify enrolled-version locators.",
+          "qualifications": {
+            "scope": "13-75-103(2)-(3), 13-75-101(5),(8), 13-75-104 and 13-75-106 in the retained 2025 enrolled act; the occupational-compliance duty is not confined to high-risk use.",
+            "exceptions": "Safe-harbor alternatives and conditions remain distinct from the request conjunction. Current rules, imported definitions and live codification are unvalidated; other remedies and R3 civil/criminal content are unchanged.",
+            "time": "Retained 2025 enrolled version only. Existing human review, last_verified and effective dates and actual raw acquisition dates are unchanged; the agent review timestamp is not a new retrieval or currentness date."
+          },
+          "evidence": [
+            "high_risk",
+            "occupation",
+            "regulated_disclosure",
+            "safe_harbor",
+            "other_remedies"
+          ]
+        },
+        "section:Statute Anchors/text": {
+          "before_sha256": "35d9aa674f77156d205932884cfb512a666358363bdc631e74c5eb19436ef633",
+          "after_sha256": "2f93d904364a666ddc2489bdd3020d07a909956675aa83cf009e6cd2a3551383",
+          "candidate_content": "- Retained 2025 enrolled SB 226, §13-75-103(2)-(3), printed lines 106-115: statutory actor, prominence, occupational requirements and channel-specific timing\n- Retained 2025 enrolled SB 226, §13-75-101(5), printed lines 54-67: complete high-risk interaction definition\n- Retained 2025 enrolled SB 226, §13-75-101(8), printed lines 75-78: regulated occupation definition\n- Retained 2025 enrolled SB 226, §13-75-104(1)-(2), printed lines 118-131: separate section103-only safe harbor and disclosure-rule authority\n- Retained 2025 enrolled SB 226, §13-75-106, printed lines 164-168: other state and federal remedies preserved",
+          "reason": "Preserve the individual regulated-services actor, complete high-risk definition, prominence, all occupational requirements, verbal-at-start versus written-before-start timing, and the separate limited safe harbor; qualify enrolled-version locators.",
+          "qualifications": {
+            "scope": "13-75-103(2)-(3), 13-75-101(5),(8), 13-75-104 and 13-75-106 in the retained 2025 enrolled act; the occupational-compliance duty is not confined to high-risk use.",
+            "exceptions": "Safe-harbor alternatives and conditions remain distinct from the request conjunction. Current rules, imported definitions and live codification are unvalidated; other remedies and R3 civil/criminal content are unchanged.",
+            "time": "Retained 2025 enrolled version only. Existing human review, last_verified and effective dates and actual raw acquisition dates are unchanged; the agent review timestamp is not a new retrieval or currentness date."
+          },
+          "evidence": [
+            "high_risk",
+            "occupation",
+            "regulated_disclosure",
+            "safe_harbor",
+            "other_remedies"
+          ]
+        }
+      }
     }
   }
 }

@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:45d3460c2f22d32ff645353a145c93783cd6a6152398ca85f45a862d3d1bcede
+    hash: sha256:b22e0dcdcd2e45a3f232b450795cb65c32c4a58723423f456071bfb288c009b7
     note: package.json
 
   - path: package-lock.json
@@ -333,7 +333,7 @@ files:
 
   - path: data/examples/obligations/disclose-genai-high-risk-proactive.md
     role: obligation
-    hash: sha256:894ec6c5333740656a3f50a3dec3cdb95ceeb60642a95c225a2fe9d8e51823f5
+    hash: sha256:f1ee01115a55072a4a046b49af6a81c109b4f0ffba49e6e6df58d775b25ca302
     note: data/examples/obligations/disclose-genai-high-risk-proactive.md
 
   - path: data/examples/obligations/disclose-genai-on-first-session.md
@@ -343,7 +343,7 @@ files:
 
   - path: data/examples/obligations/disclose-genai-on-request.md
     role: obligation
-    hash: sha256:975530c0feb4bacd2989f3e1494c8f9cbe61dd4bbb1569c866490c6de88d514a
+    hash: sha256:24d7c8e63e37d24678f5225b2d0c97b16f2bbea97e2fda7df8c9deeda1ef8c92
     note: data/examples/obligations/disclose-genai-on-request.md
 
   - path: data/examples/obligations/elizachat-phased-rollout.md
@@ -1038,7 +1038,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:10be9419f4d32940c9988fed0e13edd48fdb0d81b456989b80794d89b6b0c163
+    hash: sha256:e4fcbb61cf703c1dbcaf9b10c01feb50f548dfc3ac797b5ec3c717aeec3af5aa
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js
@@ -1058,7 +1058,7 @@ files:
 
   - path: tests/of-evidence-inputs.test.js
     role: code
-    hash: sha256:1e604a0fb0f847f796d655245a431333e412da9f94e1f01e96c38818323b084c
+    hash: sha256:1321a92efb7d004456d7190ff24b5600c444d7df7b49d2b4b08d28ef70bf84f4
     note: Per-kind native evidence input and review-boundary regressions
 
   - path: tests/colorado-order24.test.js
@@ -1165,3 +1165,23 @@ files:
     role: evidence
     hash: sha256:d1a7ac6297492ffc889ad5cb611d3dd6e087161d29e4763a19ea884983fb1fc6
     note: Utah statute enrolled-copy source review receipt (SB 149, SB 226, SB 332, HB 320)
+
+  - path: tests/sb226-r1.test.js
+    role: code
+    hash: sha256:ba4f4636bad329be363c84d09c840cfe62a3fd89ec107025bddff21056a41c38
+    note: SB226 R1 retained-source and admission regressions
+
+  - path: ops/evidence/sb226-r1-native-delta-2026-10-02.diff
+    role: evidence
+    hash: sha256:526f22e19f1f05130c16f8cc057849c245a481e88bb5ce5019e1e850b6000e59
+    note: Independently reviewed SB226 R1 native definition delta
+
+  - path: ops/evidence/sb226-r1-fingerprint-comparison-2026-10-02.json
+    role: evidence
+    hash: sha256:5160025a28388f121161cac0c7d8c8b208a99872d5710d6bb85f37ef618c1d23
+    note: Parent-accepted exact two-record provenance-only fingerprint comparison
+
+  - path: ops/evidence/sb226-r1-local-repair-2026-10-02.md
+    role: evidence
+    hash: sha256:6d6bbc43b88d1ca9510466460e092bd6fd9484d3344919e810fc5d8259f09322
+    note: Scoped SB226 R1 owner repair receipt; instrument Summary remains gated

@@ -100,7 +100,7 @@
     "eval:search-structured-data": "node scripts/eval-search-structured-data.js",
     "observe:maintenance": "node scripts/observe-maintenance.js",
     "test:maintenance": "node --test tests/maintenance*.test.js",
-    "test:admission": "node --test tests/source-admission.test.js tests/generated-record-schema.test.js",
+    "test:admission": "node --test tests/source-admission.test.js tests/generated-record-schema.test.js tests/sb226-r1.test.js",
     "test:doctronic-observation": "node --test tests/doctronic-observation.test.js",
     "test:colorado-order24": "node --test tests/colorado-order24.test.js",
     "test:source-mapping": "node --test tests/source-owned-mapping.test.js",

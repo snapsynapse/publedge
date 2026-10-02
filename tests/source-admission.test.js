@@ -188,9 +188,7 @@ test('generated record schema preserves the same issued-evidence boundary', () =
 });
 
 test('current admission accounting matches every emitted source collection exactly', () => {
-    // Bind the deterministic inventory check to the latest accepted receipt day.
-    // The dedicated future-date test separately exercises the rejection boundary.
-    const result = admissionCheck.runCurrent({ root: ROOT, now: new Date('2026-09-24T23:59:59Z') });
+    const result = admissionCheck.runCurrent({ root: ROOT });
     assert.deepEqual(result.errors, []);
     assert.equal(result.total_records, 62);
     assert.equal(result.legacy_unreviewed_records + result.records_with_reviewed_changes, result.total_records);
