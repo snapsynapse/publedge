@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.ecfr.gov/current/title-17/chapter-II/part-230/subject-group-ECFRfdd94b1cf5a5091/section-230.506",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.866797+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.ecfr.gov/current/title-17/chapter-II/part-230/subject-group-ECFRfdd94b1cf5a5091/section-230.506",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/4860c3de3cbb0c8db7b9a13b.body"
+}

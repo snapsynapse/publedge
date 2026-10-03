@@ -1,0 +1,28 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://cftc.gov/LawRegulation/CFTCStaffLetters/index.htm",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [
+    {
+      "id": "b0b019d2db104d5e99ce1dfe13d196d0",
+      "url": "https://cftc.gov/robots.txt",
+      "kind": "robots",
+      "host": "cftc.gov",
+      "status": null,
+      "headers": {},
+      "complete": false,
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "retrieved_at": "2026-10-03T03:01:40.045561+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "body_path": "/workspace/freshness-control/transport-evidence/b0b019d2db104d5e99ce1dfe13d196d0.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T03:01:50.059994+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://cftc.gov/LawRegulation/CFTCStaffLetters/index.htm",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/f3ace698dd4f1fb46c081689.body"
+}

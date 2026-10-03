@@ -1,0 +1,30 @@
+{
+  "id": "ddd2222bb6f643019b94d0d8d498aaf5",
+  "url": "https://github.com/robots.txt",
+  "kind": "robots",
+  "host": "github.com",
+  "status": 200,
+  "headers": {
+    "date": "Sat, 03 Oct 2026 03:03:45 GMT",
+    "content-type": "text/plain",
+    "last-modified": "Sat, 03 Oct 2026 01:31:23 GMT",
+    "etag": "W/\"6ac05aeb-4163\"",
+    "vary": "Accept-Encoding, Accept, X-Requested-With",
+    "server": "envoy",
+    "x-frame-options": "DENY",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "accept-ranges": "bytes",
+    "set-cookie": "logged_in=no; expires=Sun, 03 Oct 2027 03:03:47 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax",
+    "content-length": "16739",
+    "x-github-request-id": "BA7C:2C567B:720039:958016:6AC07093",
+    "x-github-edge-region": "iad",
+    "x-envoy-upstream-service-time": "110",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T03:03:47.705181+00:00",
+  "sha256": "12bc55582b1ddb8eb3300d9cb26b0421c9fc80193fc77e5f04862e934f8097db",
+  "bytes": 16739,
+  "body_path": "/workspace/freshness-control/transport-evidence/ddd2222bb6f643019b94d0d8d498aaf5.body"
+}

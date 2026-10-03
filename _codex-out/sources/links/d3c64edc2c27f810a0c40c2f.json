@@ -1,0 +1,45 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://everyailaw.com/instrument/colorado-sb24-205.json",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [
+    {
+      "id": "f3395e9a79a641758850113edc703f89",
+      "url": "https://everyailaw.com/robots.txt",
+      "kind": "robots",
+      "host": "everyailaw.com",
+      "status": null,
+      "headers": {},
+      "complete": false,
+      "error": "Tunnel connection failed: 403 Forbidden",
+      "retrieved_at": "2026-10-03T03:03:47.678896+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "body_path": "/workspace/freshness-control/transport-evidence/f3395e9a79a641758850113edc703f89.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T03:03:47.690416+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://everyailaw.com/instrument/colorado-sb24-205.json",
+  "prior_route_attempts": [
+    {
+      "id": "14429261e6684841aae43cacd3e9dd11",
+      "url": "https://everyailaw.com/robots.txt",
+      "kind": "robots",
+      "host": "everyailaw.com",
+      "status": null,
+      "headers": {},
+      "complete": false,
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "retrieved_at": "2026-10-03T03:01:50.067693+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "body_path": "/workspace/freshness-control/transport-evidence/14429261e6684841aae43cacd3e9dd11.body"
+    }
+  ],
+  "prior_route_error": "BLOCKED: robots transport failed; policy unknown",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/d3c64edc2c27f810a0c40c2f.body"
+}

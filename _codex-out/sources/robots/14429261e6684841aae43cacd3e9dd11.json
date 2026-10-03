@@ -1,0 +1,14 @@
+{
+  "id": "14429261e6684841aae43cacd3e9dd11",
+  "url": "https://everyailaw.com/robots.txt",
+  "kind": "robots",
+  "host": "everyailaw.com",
+  "status": null,
+  "headers": {},
+  "complete": false,
+  "error": "[Errno -3] Temporary failure in name resolution",
+  "retrieved_at": "2026-10-03T03:01:50.067693+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/14429261e6684841aae43cacd3e9dd11.body"
+}

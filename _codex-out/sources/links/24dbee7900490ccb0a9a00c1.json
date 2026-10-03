@@ -1,0 +1,28 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.ecfr.gov/current/title-12/chapter-X/part-1006/subpart-B/section-1006.22",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [
+    {
+      "id": "fbdc4fccbdcf4805a605a40019f1a998",
+      "url": "https://www.ecfr.gov/robots.txt",
+      "kind": "robots",
+      "host": "www.ecfr.gov",
+      "status": null,
+      "headers": {},
+      "complete": false,
+      "error": "Tunnel connection failed: 403 Forbidden",
+      "retrieved_at": "2026-10-03T03:03:47.808648+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "body_path": "/workspace/freshness-control/transport-evidence/fbdc4fccbdcf4805a605a40019f1a998.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T03:03:47.824706+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1006/subpart-B/section-1006.22",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/24dbee7900490ccb0a9a00c1.body"
+}

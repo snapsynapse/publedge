@@ -1,0 +1,1012 @@
+{
+  "page_count": 117,
+  "pages": [
+    {
+      "page": "docs/primary/admt-60-day-cure-period/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/admt-correction-and-human-review/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/admt-deployer-3-year-record-retention/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/admt-deployer-pre-decision-notice/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/admt-developer-documentation-to-deployer/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/admt-post-adverse-explanation-30-days/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/ai-authorized-rx-renewal/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/ai-defense-elimination/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/cfpb-pay-to-pay-fee-prohibited/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/cftc-unbundled-fee-not-cta-trigger/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/chatbot-data-no-third-party-sharing/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/chatbot-safety-policy-filing/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/dentacor-58-69-5-enforcement-forborne/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/dentacor-hygienist-ai-concurrence-diagnosis/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/dentacor-informed-consent-no-dentist/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/disclose-genai-high-risk-proactive/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/disclose-genai-on-first-session/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/disclose-genai-on-request/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/elizachat-phased-rollout/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/elizachat-pre-access-disclosure-bundle/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/high-risk-ai-consumer-notice-correction-and-appeal/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/high-risk-ai-impact-assessment/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/high-risk-ai-reasonable-care-against-algorithmic-discrimination/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/irs-501c3-dual-test-failure/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/irs-incentive-fee-not-net-profits-share/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/learning-lab-agreement-participation/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/named-prescriber-enforcement-forborne/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/rma-data-security-63a-19-102/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/rma-end-of-term-report/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/rma-hold-harmless-state/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/rma-incident-notification-24hr/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/rma-monthly-report-to-oaip/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/rma-no-advertising-reference/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/sec-reg-d-506c-verification-safe-harbor/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/primary/telehealth-compliance-per-proposal/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-cfpb-ao-2022-001/cfpb-pay-to-pay-fee-prohibited/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-cftc-dsio-il-2017-001/cftc-unbundled-fee-not-cta-trigger/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2024-sb24-205/high-risk-ai-consumer-notice-correction-and-appeal/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb24-205",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2024-sb24-205/high-risk-ai-impact-assessment/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb24-205",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2024-sb24-205/high-risk-ai-reasonable-care-against-algorithmic-discrimination/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb24-205",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2026-sb26-189/admt-60-day-cure-period/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://paice.work/blog/modeling-colorado-ai-act-obligationfirst",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2026-sb26-189/admt-correction-and-human-review/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://paice.work/blog/modeling-colorado-ai-act-obligationfirst",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2026-sb26-189/admt-deployer-3-year-record-retention/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://paice.work/blog/modeling-colorado-ai-act-obligationfirst",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2026-sb26-189/admt-deployer-pre-decision-notice/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://paice.work/blog/modeling-colorado-ai-act-obligationfirst",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2026-sb26-189/admt-developer-documentation-to-deployer/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://paice.work/blog/modeling-colorado-ai-act-obligationfirst",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-co-legislature-statute-2026-sb26-189/admt-post-adverse-explanation-30-days/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://paice.work/blog/modeling-colorado-ai-act-obligationfirst",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-irs-chief-counsel-plr-2025-001/irs-incentive-fee-not-net-profits-share/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-irs-tege-plr-2026-001/irs-501c3-dual-test-failure/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-sec-corpfin-nal-2025-001/sec-reg-d-506c-verification-safe-harbor/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2024-sb149/ai-defense-elimination/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2024-sb149/learning-lab-agreement-participation/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2025-hb452/chatbot-data-no-third-party-sharing/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-data-protection",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-safety-policy",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2025-hb452/chatbot-safety-policy-filing/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-data-protection",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-safety-policy",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2025-hb452/disclose-genai-on-first-session/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-data-protection",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-safety-policy",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2025-sb226/ai-defense-elimination/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#high-risk-genai-disclosure-in-regulated-occupations",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2025-sb226/disclose-genai-high-risk-proactive/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#high-risk-genai-disclosure-in-regulated-occupations",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2025-sb226/disclose-genai-on-request/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#high-risk-genai-disclosure-in-regulated-occupations",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-legislature-statute-2026-hb320/learning-lab-agreement-participation/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#regulatory-mitigation-and-joint-interpretation-agreements",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-jia-2026-001/disclose-genai-on-first-session/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2024-001/elizachat-phased-rollout/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2024-001/elizachat-pre-access-disclosure-bundle/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2024-001/rma-data-security-63a-19-102/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2024-001/rma-end-of-term-report/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2024-001/rma-hold-harmless-state/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2024-001/rma-incident-notification-24hr/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2024-001/rma-monthly-report-to-oaip/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2024-001/rma-no-advertising-reference/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-001/dentacor-58-69-5-enforcement-forborne/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-001/dentacor-hygienist-ai-concurrence-diagnosis/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-001/dentacor-informed-consent-no-dentist/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-001/rma-data-security-63a-19-102/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-001/rma-end-of-term-report/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-001/rma-hold-harmless-state/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-001/rma-monthly-report-to-oaip/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-001/rma-no-advertising-reference/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-002/ai-authorized-rx-renewal/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-002/named-prescriber-enforcement-forborne/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-002/rma-data-security-63a-19-102/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-002/rma-end-of-term-report/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-002/rma-hold-harmless-state/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-002/rma-monthly-report-to-oaip/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-002/rma-no-advertising-reference/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2025-002/telehealth-compliance-per-proposal/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2026-001/ai-authorized-rx-renewal/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2026-001/named-prescriber-enforcement-forborne/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2026-001/rma-data-security-63a-19-102/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2026-001/rma-end-of-term-report/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2026-001/rma-hold-harmless-state/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2026-001/rma-monthly-report-to-oaip/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2026-001/rma-no-advertising-reference/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/requires/us-ut-oaip-rma-2026-001/telehealth-compliance-per-proposal/index.html",
+      "source_urls": []
+    },
+    {
+      "page": "docs/us/colorado/legislature/index.html",
+      "source_urls": [
+        {
+          "url": "https://leg.colorado.gov/",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/colorado/legislature/statute/2024-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb24-205",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/colorado/legislature/statute/2025-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb25b-004",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://www.gtlaw.com/en/insights/2025/9/colorado-delays-comprehensive-ai-law-with-further-changes-anticipated",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/colorado/legislature/statute/2026-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://leg.colorado.gov/bills/sb26-189",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://paice.work/blog/modeling-colorado-ai-act-obligationfirst",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/cfpb/ao/2022-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/cfpb/index.html",
+      "source_urls": [
+        {
+          "url": "https://www.consumerfinance.gov/",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/cftc-dsio/il/2017-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://cftc.gov/csl/17-65/download",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/cftc-dsio/index.html",
+      "source_urls": [
+        {
+          "url": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/irs-chief-counsel/index.html",
+      "source_urls": [
+        {
+          "url": "https://www.irs.gov/privacy-disclosure/written-determinations",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/irs-chief-counsel/plr/2025-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/irs-tege/index.html",
+      "source_urls": [
+        {
+          "url": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/irs-tege/plr/2026-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://irs.gov/pub/irs-wd/202614036.pdf",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/sec-corpfin/index.html",
+      "source_urls": [
+        {
+          "url": "https://www.sec.gov/divisions/corpfin",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/federal/sec-corpfin/nal/2025-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/legislature/index.html",
+      "source_urls": [
+        {
+          "url": "https://le.utah.gov/",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/legislature/statute/2024-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/legislature/statute/2025-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#high-risk-genai-disclosure-in-regulated-occupations",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/legislature/statute/2025-002/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-data-protection",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-safety-policy",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/legislature/statute/2025-003/index.html",
+      "source_urls": [
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/index.html",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/xcode/Title63I/Chapter2/63I-2-S213.html",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/legislature/statute/2026-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#regulatory-mitigation-and-joint-interpretation-agreements",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/oaip/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/learning-lab/",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/oaip/jia/2026-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html",
+          "inventory_covered": true
+        },
+        {
+          "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/oaip/rma/2024-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/oaip/rma/2025-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/oaip/rma/2025-002/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+          "inventory_covered": true
+        }
+      ]
+    },
+    {
+      "page": "docs/us/utah/oaip/rma/2026-001/index.html",
+      "source_urls": [
+        {
+          "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
+          "inventory_covered": true
+        }
+      ]
+    }
+  ],
+  "uncovered_source_urls": [],
+  "scope": "Generated record pages:35 obligation,18 instrument,8 authority,56 provision requires pages. Excludes jurisdiction/type collection indexes and global footers/navigation."
+}
