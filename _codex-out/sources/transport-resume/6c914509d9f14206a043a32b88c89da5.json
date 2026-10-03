@@ -1,0 +1,23 @@
+{
+  "id": "6c914509d9f14206a043a32b88c89da5",
+  "url": "https://irs.gov/privacy-disclosure/written-determinations",
+  "kind": "fetch",
+  "host": "irs.gov",
+  "status": 301,
+  "headers": {
+    "location": "https://www.irs.gov/privacy-disclosure/written-determinations",
+    "strict-transport-security": "max-age=31536000",
+    "server": "envoy",
+    "content-length": "0",
+    "x-envoy-upstream-service-time": "24",
+    "date": "Sat, 03 Oct 2026 18:37:37 GMT",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:37.385344+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/6c914509d9f14206a043a32b88c89da5.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/6c914509d9f14206a043a32b88c89da5.body"
+}

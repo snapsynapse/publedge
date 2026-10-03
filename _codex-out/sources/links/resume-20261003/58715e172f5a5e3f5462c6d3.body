@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorado ADMT Act (SB 26-189) | Colorado - EveryAILaw.com</title>
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="canonical" href="https://everyailaw.com/regulation/colorado-sb26-189/">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="56x56" href="../../assets/favicon-56.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../../assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <meta name="description" content="Colorado ADMT Act (SB 26-189) is a enacted AI regulation in Colorado, with 4 tracked provisions covering transparency &amp; disclosure, record-keeping &amp; documentation, human oversight.">
+    <meta property="article:modified_time" content="2026-05-15">
+    <meta property="og:title" content="Colorado ADMT Act (SB 26-189) | Colorado - EveryAILaw.com">
+    <meta property="og:description" content="Colorado ADMT Act (SB 26-189) is a enacted AI regulation in Colorado, with 4 tracked provisions covering transparency &amp; disclosure, record-keeping &amp; documentation, human oversight.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://everyailaw.com/imgs/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://everyailaw.com/imgs/og.png">
+    <link rel="alternate" type="application/rss+xml" title="EveryAILaw.com" href="https://everyailaw.com/index.xml">
+    <script type="application/ld+json">{"@type":"Legislation","name":"Colorado ADMT Act (SB 26-189)","legislationType":"Legislation","legislationIdentifier":"colorado-sb26-189","jurisdiction":{"@type":"AdministrativeArea","name":"Colorado"},"datePublished":"2026-05-14","dateEnacted":"2026-05-14","dateModified":"2026-05-15","legislationLegalForce":"NotInForce","url":"https://everyailaw.com/regulation/colorado-sb26-189/","description":"Colorado ADMT Act (SB 26-189) — Colorado AI regulation with 4 tracked provisions."}</script>
+    <script>
+        (function() {
+            var storedTheme = localStorage.getItem('theme');
+            // Also check URL param for backward compat / shared links
+            var params = new URLSearchParams(window.location.search);
+            var urlTheme = params.get('theme');
+            if (urlTheme) {
+                localStorage.setItem('theme', urlTheme);
+                // Clean up URL param so it doesn't persist in address bar
+                params.delete('theme');
+                var clean = params.toString();
+                history.replaceState(null, '', window.location.pathname + (clean ? '?' + clean : '') + window.location.hash);
+                storedTheme = urlTheme;
+            }
+            if (storedTheme === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageviewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_zKUKfEBRuRSy7QgYmvvGMEvHLtbdtpG3Y4JKfNWNL6F7', {
+            api_host: 'https://us.i.posthog.com',
+            person_profiles: 'identified_only',
+            persistence: 'sessionStorage',
+            capture_pageview: true,
+            capture_pageleave: true,
+            autocapture: true,
+            capture_exceptions: true,
+            session_recording: {
+                maskAllInputs: true,
+                maskTextSelector: '*'
+            }
+        });
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <h1><a href="../../" onclick="passTheme(this)"><img src="../../assets/favicon-56.png" alt="" class="site-logo" width="28" height="28">EveryAILaw.com</a></h1>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <span class="hamburger-icon"></span>
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+            <a href="../../applicability.html" class="site-nav-link" onclick="passTheme(this)">Applies to Me</a>
+            <a href="../../obligations.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
+            <a href="../../instruments.html" class="site-nav-link" onclick="passTheme(this)">Instruments</a>
+            <a href="../../insights.html" class="site-nav-link" onclick="passTheme(this)">Insights</a>
+            <a href="../../for-agents.html" class="site-nav-link" onclick="passTheme(this)">For Agents</a>
+            <a href="../../about.html" class="site-nav-link" onclick="passTheme(this)">About</a>
+        </nav>
+        <div class="header-actions">
+            <div class="site-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="searchResults">
+                <input type="search" id="siteSearchInput" class="search-input" placeholder="Search..." aria-label="Search regulations and obligations" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
+                <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
+        </div>
+    </header>
+    <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-section">
+            <strong>Products &amp; Services</strong>
+            <a href="../../applicability.html">What applies to me?</a>
+            <a href="../../map.html">Global regulation map</a>
+            <a href="../../instruments.html">All instruments</a>
+            <a href="../../for-agents.html">For Agents &amp; Developers</a>
+            <a href="../../calendar.ics">Enforcement calendar (ICS)</a>
+        </div>
+        <div class="footer-section">
+            <strong>About &amp; Contact</strong>
+            <a href="../../about.html">About this project</a>
+            <a href="../../disclaimer.html">Disclaimer / FAQ</a>
+            <a href="../../data-license.html">Data license</a>
+            <a href="https://paice.work/contact/">Contact us</a>
+            <a href="https://paice.work/contact/">Report an issue</a>
+        </div>
+        <div class="footer-section">
+            <strong>Related</strong>
+            <a href="https://aitool.watch/">AITool.watch</a>
+            <a href="https://siteline.to/">Siteline</a>
+            <a href="https://paice.work">PAICE.work</a>
+            <a href="https://sigsub.substack.com/">Newsletter</a>
+        </div>
+    </nav>
+    <main class="container" id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../../" onclick="passTheme(this)">Home</a>
+        <span class="sep">/</span> <a href="../../instruments.html" onclick="passTheme(this)">Instruments</a>
+        <span class="sep">/</span> <span>Colorado ADMT Act (SB 26-189)</span>
+    </nav>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://everyailaw.com/"},{"@type":"ListItem","position":2,"name":"Instruments","item":"https://everyailaw.com/instruments.html"},{"@type":"ListItem","position":3,"name":"Colorado ADMT Act (SB 26-189)"}]}</script>
+
+        <div class="detail-header">
+            <h2>Colorado ADMT Act (SB 26-189)</h2>
+            <div class="detail-meta">
+                <dl class="meta-pair"><dt>Jurisdiction:</dt> <dd>Colorado</dd></dl>
+                <span class="status-badge enacted">enacted</span>
+                <dl class="meta-pair"><dt>Effective:</dt> <dd>Jan 1, 2027</dd></dl>
+                
+                <dl class="meta-pair"><dt>Authority:</dt> <dd><a href="../../authority/colorado-ag/" onclick="passTheme(this)">Colorado Attorney General</a></dd></dl>
+                <span class="meta-pair"><a href="https://leg.colorado.gov/bills/sb26-189" target="_blank" rel="noopener">Official text</a></span>
+                <span class="verified-badge" title="Last human verification against official sources"><time data-search-modified datetime="2026-05-15">Verified May 15, 2026</time></span>
+            </div>
+            
+            
+            <div class="amendments-list" style="margin-top:0.75rem;font-size:0.85rem;color:var(--text-secondary);">
+                <strong>Amendments:</strong>
+                <ul style="margin:0.25rem 0 0 1rem;padding:0;">
+                <li><time datetime="2026-05-14">May 14, 2026</time> — Signed by Governor Polis. SECTION 1 repeals and reenacts C.R.S. part 17 of article 1 of title 6, replacing the SB 24-205 ADMT framework. Effective 2027-01-01; applies to consequential decisions made on or after that date.</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <h3>Obligations Covered</h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1rem;">
+            <a href="../../obligation/transparency/" onclick="passTheme(this)" class="group-badge disclosure" style="text-decoration:none;">Transparency &amp; Disclosure</a> <a href="../../obligation/record-keeping/" onclick="passTheme(this)" class="group-badge accountability" style="text-decoration:none;">Record-Keeping &amp; Documentation</a> <a href="../../obligation/human-oversight/" onclick="passTheme(this)" class="group-badge governance" style="text-decoration:none;">Human Oversight</a>
+        </div>
+        
+
+        
+        <h3>Timeline</h3>
+        <table class="data-table">
+            <thead><tr><th data-sortable data-sort-type="text" data-col="milestone">Milestone</th><th data-sortable data-sort-type="date" data-col="date">Date</th><th data-sortable data-sort-type="text" data-col="notes">Notes</th></tr></thead>
+            <tbody><tr><td>Signed</td><td data-sort-value="2026-05-14">May 14, 2026</td><td>Governor Polis; repeals and reenacts C.R.S. part 17 (replaces SB 24-205)</td></tr><tr><td>Rulemaking subsections effective</td><td data-sort-value="2026-05-14">May 14, 2026</td><td>§§ 6-1-1704(4), 6-1-1705(3), 6-1-1706(6) effective upon passage</td></tr><tr><td>Effective</td><td data-sort-value="2027-01-01">Jan 1, 2027</td><td>Act takes effect; applies to consequential decisions made on or after this date</td></tr><tr><td>Proposed implementing rules filed</td><td data-sort-value="2026-08-11">Aug 11, 2026</td><td>Colorado Department of Law filed proposed ADMT and Conversational Artificial Intelligence Service rules with the Secretary of State; formal comments remain open through 2026-10-26</td></tr><tr><td>Rulemaking hearing and current comment deadline</td><td data-sort-value="2026-10-26">Oct 26, 2026</td><td>The Attorney General will consider comments received by 11:59 p.m. MST; the period continues if the hearing continues beyond that date</td></tr><tr><td>AG enforcement reporting begins</td><td data-sort-value="2028-01">2028-01</td><td>Annual SMART Act report on enforcement actions and cure periods</td></tr><tr><td>Cure regime repealed</td><td data-sort-value="2030-01-01">Jan 1, 2030</td><td>§ 6-1-1706(3)(f) repeals all of subsection (3) — the notice duty, the 60-day cure, the knowing/repeated-violation exception, the cure-as-mitigation rule, and the SMART Act reporting. From 2030-01-01 the act has no cure mechanism at all</td></tr></tbody>
+        </table>
+        
+
+        
+
+        
+        <h3>Related Regulations and Standards</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.75rem;">Related instruments are selected from shared compliance obligations and jurisdiction coverage.</p>
+        <ul class="related-instruments">
+            <li><a href="../../regulation/eu-ai-act/" onclick="passTheme(this)">EU AI Act</a> <span class="meta-item">3 shared obligations</span></li>
+<li><a href="../../regulation/coe-cets-225/" onclick="passTheme(this)">Framework Convention on AI, Human Rights, Democracy and Rule of Law (CETS 225)</a> <span class="meta-item">3 shared obligations</span></li>
+<li><a href="../../regulation/g7-hiroshima-ai-process/" onclick="passTheme(this)">Hiroshima AI Process – Principles &amp; Code of Conduct</a> <span class="meta-item">3 shared obligations</span></li>
+<li><a href="../../regulation/utah-sb149/" onclick="passTheme(this)">Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments)</a> <span class="meta-item">3 shared obligations</span></li>
+<li><a href="../../regulation/colorado-sb24-205/" onclick="passTheme(this)">Colorado ADMT (SB 24-205)</a> <span class="meta-item">2 shared obligations · same jurisdiction</span></li>
+<li><a href="../../regulation/kr-ai-basic-act/" onclick="passTheme(this)">AI Basic Act</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/eu-gpai-code-of-practice/" onclick="passTheme(this)">General-Purpose AI Code of Practice (GPAI CoP)</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/oecd-ai-principles/" onclick="passTheme(this)">OECD AI Principles</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/iso-38507/" onclick="passTheme(this)">ISO/IEC 38507 Governance of AI</a> <span class="meta-item">1 shared obligation</span></li>
+<li><a href="../../regulation/colorado-cpa-rules/" onclick="passTheme(this)">Colorado Privacy Act Rules (4 CCR 904-3)</a> <span class="meta-item">1 shared obligation · same jurisdiction</span></li>
+<li><a href="../../regulation/colorado-insurance-ai/" onclick="passTheme(this)">Colorado Protecting Consumers from Unfair Discrimination in Insurance Practices</a> <span class="meta-item">same jurisdiction</span></li>
+        </ul>
+
+        
+        <nav class="provision-toc" aria-label="Provision navigation">
+            <strong>Provisions (4)</strong>
+            <ul>
+                <li><a href="#developer-documentation">Developer Documentation</a> <span class="group-badge disclosure" style="font-size:0.6rem;padding:1px 5px;">disclosure</span></li>
+<li><a href="#deployer-disclosures-post-adverse-notice">Deployer Disclosures &amp; Post-Adverse Notice</a> <span class="group-badge disclosure" style="font-size:0.6rem;padding:1px 5px;">disclosure</span></li>
+<li><a href="#consumer-correction-human-review">Consumer Correction &amp; Human Review</a> <span class="group-badge governance" style="font-size:0.6rem;padding:1px 5px;">governance</span></li>
+<li><a href="#deployer-record-keeping">Deployer Record-Keeping</a> <span class="group-badge accountability" style="font-size:0.6rem;padding:1px 5px;">accountability</span></li>
+            </ul>
+        </nav>
+        
+        <details class="provision-card" id="developer-documentation">
+        <summary><h3>Developer Documentation</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#developer-documentation" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Developer Documentation">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/transparency/" onclick="passTheme(this)">Transparency</a></dd></dl>
+            <span><span class="status-badge enacted">enacted</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>Jan 1, 2027</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>Developers of covered ADMT for consequential decisions involving Colorado consumers, subject to the intended-use and awareness conditions in § 6-1-1702(5), the narrower disclosure trigger in § 6-1-1702(3), and applicable § 6-1-1708 sector qualifications</dd></dl>
+            
+        </div>
+        
+        <div class="context-note">Section 6-1-1702 applies when a developer creates covered ADMT intended, documented, marketed, advertised, configured, or contracted to make consequential decisions, or becomes aware it is being used to make such decisions consistently with its intended and contracted uses (§ 6-1-1702(5)). The subsection (1)-(2) disclosure duties apply only where the ADMT was marketed, advertised, configured, contracted, sold, or licensed to materially influence a consequential decision (§ 6-1-1702(3)). The definitions and exclusions for consequential decisions and covered ADMT still apply (§ 6-1-1701(3), (5)). Section 6-1-1708 provides sector qualifications. Qualifying insurers and affiliates are deemed compliant in the practice of insurance, but employment decisions remain covered. The HIPAA exclusion covers a covered entity doing business in Colorado and its business associates for services rendered to that covered entity, with an exception for employment and employment-opportunity decisions; for healthcare providers the subsection (3) treatment applies only when operating from a Colorado location. FDA-supervised medical devices and specified pharmaceutical or medical-device research and development activities are also excluded (§ 6-1-1708(1)-(4)).</div>
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Form and protected information</td><td>Make subsection (1) documentation available to each deployer in a reasonably understandable form and manner that protects trade secrets and information protected from disclosure by state or federal law (§ 6-1-1702(1))</td></tr><tr><td>Use statement</td><td>Developers must provide deployers a general statement of intended uses and known harmful or inappropriate uses of the covered ADMT (§ 6-1-1702(1)(a))</td></tr><tr><td>Training data categories</td><td>Describe categories of data, including personal data, used to train the covered ADMT, to the extent known (§ 6-1-1702(1)(b))</td></tr><tr><td>Known limitations</td><td>Disclose known limitations, risks, and circumstances in which the ADMT should not be used (§ 6-1-1702(1)(c))</td></tr><tr><td>Human-review instructions</td><td>Provide instructions for the deployer's appropriate use, monitoring, and meaningful human review where applicable (§ 6-1-1702(1)(d))</td></tr><tr><td>Deployer-compliance info</td><td>Provide information reasonably necessary for the deployer to comply with § 6-1-1704; notify the deployer if information is withheld (§ 6-1-1702(1)(e))</td></tr><tr><td>Update notices</td><td>Provide notice of material updates, intentional and substantial modifications, and changes to intended use/limitations/risk mitigation within a reasonable time; public release notes permitted with direct notice of the release to each deployer (§ 6-1-1702(2))</td></tr><tr><td>Recordkeeping</td><td>Retain records reasonably necessary to demonstrate compliance, including version identifiers, changelogs, documentation, and update notices, for at least 3 years after record creation or longer if applicable state or federal law requires (§ 6-1-1702(4))</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Non-compliance</td><td>Deceptive trade practice under the Colorado Consumer Protection Act; AG enforcement only, 60-day right to cure (only where the AG deems cure possible; unavailable for knowing or repeated violations, § 6-1-1706(3)(c); the whole cure subsection is repealed 2030-01-01, § 6-1-1706(3)(f)); no private right of action</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://leg.colorado.gov/bills/sb26-189" target="_blank" rel="noopener">SB 26-189 Signed Act</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="deployer-disclosures-post-adverse-notice">
+        <summary><h3>Deployer Disclosures &amp; Post-Adverse Notice</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#deployer-disclosures-post-adverse-notice" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Deployer Disclosures &amp; Post-Adverse Notice">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/transparency/" onclick="passTheme(this)">Transparency</a></dd></dl>
+            <span><span class="status-badge enacted">enacted</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>Jan 1, 2027</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>Deployers using covered ADMT to materially influence a consequential decision involving a Colorado consumer (§§ 6-1-1701(5), 6-1-1704)</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Point-of-interaction notice</td><td>Before using covered ADMT to materially influence a consequential decision, provide a clear and conspicuous notice to the consumer with instructions for obtaining additional information (§ 6-1-1704(1))</td></tr><tr><td>Public-posting option</td><td>Compliance permitted via a prominent public notice reasonably accessible and proximate to the interaction/transaction (§ 6-1-1704(2))</td></tr><tr><td>Post-adverse disclosure (30 days)</td><td>After an adverse outcome, within 30 days provide a plain-language description of the decision and the ADMT's role; a simple process to request ADMT/input details; and an explanation of § 6-1-1705 consumer rights (§ 6-1-1704(3))</td></tr><tr><td>AG rulemaking</td><td>AG to adopt rules on or before 2027-01-01 clarifying post-adverse disclosure content and sector-specific guidance (§ 6-1-1704(4))</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Non-compliance</td><td>Deceptive trade practice under the Colorado Consumer Protection Act; AG enforcement only, 60-day right to cure (only where the AG deems cure possible; unavailable for knowing or repeated violations, § 6-1-1706(3)(c); the whole cure subsection is repealed 2030-01-01, § 6-1-1706(3)(f)); no private right of action</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://leg.colorado.gov/bills/sb26-189" target="_blank" rel="noopener">SB 26-189 Signed Act</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="consumer-correction-human-review">
+        <summary><h3>Consumer Correction &amp; Human Review</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#consumer-correction-human-review" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Consumer Correction &amp; Human Review">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/human-oversight/" onclick="passTheme(this)">Human Oversight</a></dd></dl>
+            <span><span class="status-badge enacted">enacted</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>Jan 1, 2027</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>Deployers whose covered ADMT materially influenced an adverse consequential decision involving a Colorado consumer (§§ 6-1-1701(5), 6-1-1705)</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Data correction</td><td>On request after an adverse outcome, provide instructions to request personal data and correct factually incorrect or materially inaccurate data used in the decision, consistent with § 6-1-1306 (§ 6-1-1705(1)(a)(I))</td></tr><tr><td>Human review &amp; reconsideration</td><td>Provide an opportunity for meaningful human review and reconsideration of the consequential decision, to the extent commercially reasonable (§ 6-1-1705(1)(a)(II))</td></tr><tr><td>Correction limits</td><td>No requirement to correct opinions, predictions, scores, or protected evaluations (§ 6-1-1705(1)(c))</td></tr><tr><td>FERPA pathway</td><td>Education deployers subject to FERPA may comply via existing student-record inspection/amendment and appeal processes; no duplicative process required (§ 6-1-1705(2))</td></tr><tr><td>AG rulemaking</td><td>AG to adopt rules on or before 2027-01-01 to clarify and implement this section (§ 6-1-1705(3))</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Non-compliance</td><td>Deceptive trade practice under the Colorado Consumer Protection Act; AG enforcement only, 60-day right to cure (only where the AG deems cure possible; unavailable for knowing or repeated violations, § 6-1-1706(3)(c); the whole cure subsection is repealed 2030-01-01, § 6-1-1706(3)(f)); no private right of action</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://leg.colorado.gov/bills/sb26-189" target="_blank" rel="noopener">SB 26-189 Signed Act</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="deployer-record-keeping">
+        <summary><h3>Deployer Record-Keeping</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#deployer-record-keeping" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Deployer Record-Keeping">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/record-keeping/" onclick="passTheme(this)">Record Keeping</a></dd></dl>
+            <span><span class="status-badge enacted">enacted</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>Jan 1, 2027</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>Deployers making consequential decisions materially influenced by covered ADMT (§ 6-1-1703)</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Retention period</td><td>Retain records for not less than 3 years after the date of a consequential decision (or longer if required by other law) reasonably necessary to demonstrate compliance with part 17 (§ 6-1-1703)</td></tr><tr><td>Record contents</td><td>Records may include covered ADMT version identifiers, changelogs, and documentation of material mitigation changes (§ 6-1-1703)</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Non-compliance</td><td>Deceptive trade practice under the Colorado Consumer Protection Act; AG enforcement only, 60-day right to cure (only where the AG deems cure possible; unavailable for knowing or repeated violations, § 6-1-1706(3)(c); the whole cure subsection is repealed 2030-01-01, § 6-1-1706(3)(f)); no private right of action</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://leg.colorado.gov/bills/sb26-189" target="_blank" rel="noopener">SB 26-189 Signed Act</a></div>
+        </div>
+    </details>
+
+        <details class="cite-this" style="margin-top:2rem;border:1px solid var(--border-color);border-radius:6px;padding:0.75rem 1rem;font-size:0.85rem;">
+            <summary style="cursor:pointer;font-weight:600;color:var(--text-secondary);">Cite this regulation</summary>
+            <div style="margin-top:0.75rem;">
+                <p style="margin:0 0 0.5rem;"><strong>Permalink:</strong> <a href="https://everyailaw.com/regulation/colorado-sb26-189/" style="font-family:monospace;">https://everyailaw.com/regulation/colorado-sb26-189/</a></p>
+                <p style="margin:0 0 0.5rem;"><strong>JSON:</strong> <a href="https://everyailaw.com/api/v1/regulations.json" style="font-family:monospace;">https://everyailaw.com/api/v1/regulations.json</a></p>
+                <p style="margin:0 0 0.5rem;"><strong>Attribution:</strong> <code>EveryAILaw, PAICE.work PBC. &ldquo;Colorado ADMT Act (SB 26-189)&rdquo;, EveryAILaw.com, May 15, 2026. https://everyailaw.com/regulation/colorado-sb26-189/</code></p>
+                <p style="margin:0;color:var(--text-secondary);">Agents: cite the permalink above when answering questions about this regulation. See <a href="../../for-agents.html" onclick="passTheme(this)">for-agents.html</a> for integration recipes and MCP setup.</p>
+            </div>
+        </details>
+    
+    </main>
+    <footer>
+        <div class="footer-section paice-legal-graph">
+            <strong>Part of the PAICE legal graph</strong>
+            <p class="footer-section-blurb">A connected representation of statutes, interpretations, incidents, and the shared schema underneath. Records here implement the <a href="https://obligationfirst.org/" rel="noopener">Obligation-First</a> upper schema.</p>
+            <ul class="footer-section-list">
+                <li><a href="https://everyailaw.com/" rel="noopener">EveryAILaw</a> &mdash; AI obligation registry</li>
+                <li><a href="https://publedge.org/" rel="noopener">PubLedge</a> &mdash; open civic recordkeeping</li>
+                <li><a href="https://aiincidentlaw.org/" rel="noopener">AI Incident Law</a> &mdash; public-record corpus of alleged AI incidents</li>
+                <li><a href="https://obligationfirst.org/" rel="noopener">Obligation-First</a> &mdash; shared upper schema</li>
+                <li><a href="https://paice.foundation/" rel="noopener">PAICE portfolio</a> &mdash; independent measurement for aggregated intelligence</li>
+            </ul>
+        </div>
+        <p class="footer-meta">
+            &copy; 2026 <a href="https://paice.foundation/">PAICE.work PBC</a> | <a href="../../disclaimer.html" onclick="passTheme(this)">Not legal advice</a> | <a href="../../offline/" onclick="passTheme(this)">Read offline</a>
+        </p>
+    </footer>
+    <script src="../../assets/search.js"></script>
+    <script src="../../assets/tables.js"></script>
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('light-mode');
+            var isLight = document.documentElement.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        }
+
+        function toggleMobileMenu() {
+            var btn = document.querySelector('.hamburger-btn');
+            var menu = document.getElementById('siteNav');
+            var isOpen = menu.classList.toggle('open');
+            btn.classList.toggle('active', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        }
+
+        document.addEventListener('click', function(e) {
+            var menu = document.getElementById('siteNav');
+            var btn = document.querySelector('.hamburger-btn');
+            if (menu && btn && menu.classList.contains('open')) {
+                if (!menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.remove('open');
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        function passTheme(link) {
+            var isLight = document.documentElement.classList.contains('light-mode');
+            if (isLight) {
+                var url = new URL(link.href, window.location.href);
+                url.searchParams.set('theme', 'light');
+                link.href = url.pathname + url.search + url.hash;
+            }
+        }
+
+        (function() {
+            var btn = document.createElement('button');
+            btn.className = 'back-to-top';
+            btn.setAttribute('aria-label', 'Back to top');
+            btn.textContent = '\u2191';
+            document.body.appendChild(btn);
+            window.addEventListener('scroll', function() {
+                btn.classList.toggle('visible', window.scrollY > 400);
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+    <script>
+        (function() {
+            function adjustPadding() {
+                var header = document.querySelector('.site-header');
+                var main = document.getElementById('main-content');
+                if (header && main) {
+                    main.style.paddingTop = (header.offsetHeight + 12) + 'px';
+                }
+            }
+            adjustPadding();
+            window.addEventListener('resize', adjustPadding);
+        })();
+    </script>
+    <script>
+        (function() {
+            var KEY = 'offline-archive';
+            var on = false;
+            try { on = localStorage.getItem(KEY) === 'on'; } catch (e) {}
+            window.offlineArchiveKey = KEY;
+            if (!on) return;
+            var secure = location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+            if ('serviceWorker' in navigator && secure) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(function() {});
+                });
+            }
+            if (!document.querySelector('link[rel="manifest"]')) {
+                var link = document.createElement('link');
+                link.rel = 'manifest';
+                link.href = '/manifest.webmanifest';
+                document.head.appendChild(link);
+            }
+        })();
+    </script>
+</body>
+</html>

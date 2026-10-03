@@ -1,0 +1,28 @@
+{
+  "id": "b1171d2b9b3d431da8ec123b19efbb61",
+  "url": "https://www.sec.gov/divisions/corpfin",
+  "kind": "fetch",
+  "host": "www.sec.gov",
+  "status": 301,
+  "headers": {
+    "content-type": "text/html; charset=iso-8859-1",
+    "content-length": "326",
+    "server": "envoy",
+    "strict-transport-security": "max-age=31556952; includeSubDomains; preload",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "permissions-policy": "geolocation=(), microphone=(), camera=()",
+    "content-security-policy": "frame-ancestors 'self'",
+    "x-frame-options": "SAMEORIGIN",
+    "location": "http://dc.aws-sec.akadns.net/divisions/corpfin/",
+    "date": "Sat, 03 Oct 2026 18:37:49 GMT",
+    "x-envoy-upstream-service-time": "235",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:49.469565+00:00",
+  "sha256": "24b8b427482bf21b76dbfc57e616c41a27d3317c5c13dca9fb0125903aa2d138",
+  "bytes": 326,
+  "body_path": "/workspace/freshness-control/transport-evidence/b1171d2b9b3d431da8ec123b19efbb61.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/b1171d2b9b3d431da8ec123b19efbb61.body"
+}

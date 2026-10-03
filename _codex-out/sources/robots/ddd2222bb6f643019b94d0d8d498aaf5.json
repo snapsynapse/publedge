@@ -14,7 +14,7 @@
     "x-frame-options": "DENY",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
     "accept-ranges": "bytes",
-    "set-cookie": "logged_in=no; expires=Sun, 03 Oct 2027 03:03:47 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax",
+    "set-cookie": "[REDACTED]",
     "content-length": "16739",
     "x-github-request-id": "BA7C:2C567B:720039:958016:6AC07093",
     "x-github-edge-region": "iad",

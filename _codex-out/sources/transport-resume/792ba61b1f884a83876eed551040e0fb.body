@@ -1,0 +1,33 @@
+# Allow public content but keep privileged Rails and admin tooling endpoints out of search indexes.
+User-agent: *
+Disallow: /admin/
+Disallow: /rails/
+Disallow: /active_storage/
+Disallow: /system/
+Disallow: /console/
+Disallow: /internal/
+Disallow: /sidekiq/
+Disallow: /cable/
+# Keep crawlers/scrapers off direct file downloads. These are large binary
+# responses with no indexable content of their own, and this traffic has been
+# a source of load on the app; revisit only if there's a specific, valid
+# reason to grant a particular crawler access. Blank lines are deliberately
+# avoided inside this block: legacy robots.txt parsers treat a blank line as
+# the end of the User-agent record and would ignore every rule after it.
+Disallow: /bill_amendments/*/download
+Disallow: /bill_files/*/download
+Disallow: /committee_report_files/*/download
+Disallow: /initiative_files/*/download
+Disallow: /laws/session-laws/*/download
+Disallow: /summary_attachments/
+Disallow: /summary_attachment/
+Disallow: /house/calendar
+Disallow: /house/journal
+Disallow: /house/ss
+Disallow: /senate/calendar
+Disallow: /senate/journal
+Disallow: /senate/ss
+Allow: /
+
+# Point crawlers to the canonical sitemap so they can discover public URLs faster.
+#Sitemap: https://leg.colorado.gov/sitemap.xml

@@ -1,0 +1,33 @@
+{
+  "id": "eeba80472a7c4e2a98b023dce4bfbad5",
+  "url": "https://www.law.cornell.edu/uscode/text/26/141",
+  "kind": "fetch",
+  "host": "www.law.cornell.edu",
+  "status": 200,
+  "headers": {
+    "server": "envoy",
+    "date": "Sat, 03 Oct 2026 18:38:17 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "content-length": "539338",
+    "last-modified": "Thu, 23 Apr 2026 11:44:04 GMT",
+    "vary": "Accept-Encoding",
+    "etag": "\"69ea0604-83aca\"",
+    "expires": "Sun, 04 Oct 2026 18:38:17 GMT",
+    "cache-control": "max-age=86400",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000",
+    "x-xss-protection": "1; mode=block",
+    "content-security-policy": "frame-src https: 'self'; frame-ancestors 'self';",
+    "accept-ranges": "bytes",
+    "x-envoy-upstream-service-time": "137",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:38:17.034758+00:00",
+  "sha256": "a55389be50a8dfd03c781837e1fa2616bcb21d47188818933dfbc937b0eb24b4",
+  "bytes": 539338,
+  "body_path": "/workspace/freshness-control/transport-evidence/eeba80472a7c4e2a98b023dce4bfbad5.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/eeba80472a7c4e2a98b023dce4bfbad5.body"
+}

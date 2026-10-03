@@ -1,0 +1,14 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots HTTP 503; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T18:36:40.001182+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cached": true,
+  "requested_url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/resume-20261003/1476cfc20ced3a6c9cb1eb44.body"
+}

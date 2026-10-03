@@ -1,0 +1,19 @@
+# Hi! I'm DynamicRobot 1.1.248.0. You'll be happy to know I'm installed properly.
+# I'm serving up robots__www.gtlaw.com.txt, because it matched the request's host "www.gtlaw.com".
+
+User-agent: *
+Disallow: /*?format=vcard
+Disallow: /*?format=pdf
+
+Sitemap: https://www.gtlaw.com/en/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/en-GB/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/de/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/es/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/he/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/it/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/ja/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/ko/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/nl/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/pl/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/pt/SiteInfo/Index.ashx
+Sitemap: https://www.gtlaw.com/zh/SiteInfo/Index.ashx
