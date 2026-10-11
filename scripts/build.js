@@ -2202,20 +2202,23 @@ function build() {
     const containers = loadContainers(containerDir);
     const authorities = loadDir(authorityDir);
     const mappingIndex = loadMappingIndex(mappingPath);
+    const sourceAdmission = require('./lib/source-admission');
     const admissionReceipts = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/admission/receipts.json'), 'utf8'));
     const evidenceInput = (filename, kind, unitKey = null) => {
         const bytes = fs.readFileSync(path.join(ROOT, filename));
-        const snapshot = require('./lib/source-admission').nativeSnapshot(filename, bytes);
+        const snapshot = sourceAdmission.nativeSnapshot(filename, bytes);
         const state = admission.emitted[filename];
         if (!state) throw new Error(`Missing source admission state for ${filename}`);
         const receipt = admissionReceipts.records[filename];
-        const unitReview = unitKey ? receipt?.units?.[unitKey] : null;
+        // Successor receipts leave unchanged units under their predecessor's review.
+        const unitReviews = receipt ? sourceAdmission.effectiveUnitReviews(receipt) : {};
+        const unitReview = unitKey ? unitReviews[unitKey] : null;
         const reviewed = unitKey ? Boolean(unitReview) : state.admission_status === 'reviewed-changes';
-        const evidenceRefs = unitKey ? (unitReview?.evidence || []) : Object.values(receipt?.units || {}).flatMap(unit => unit.evidence || []);
-        const retainedPrimary = reviewed ? [...new Set(evidenceRefs.flatMap(reference => {
-            const evidence = typeof reference === 'string' ? receipt?.evidence?.[reference] : reference;
+        const evidenceRefs = unitKey ? (unitReview ? [unitReview] : []) : Object.values(unitReviews);
+        const retainedPrimary = reviewed ? [...new Set(evidenceRefs.flatMap(({ review, receipt: owner }) => (review.evidence || []).flatMap(reference => {
+            const evidence = typeof reference === 'string' ? owner.evidence?.[reference] : reference;
             return evidence?.original?.sha256 ? [evidence.original.sha256] : [];
-        }))].sort() : null;
+        })))].sort() : null;
         return {
             kind,
             native_path: filename,

@@ -16,6 +16,7 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 - Add source-controlled publication state with dated npm, MCP Registry, tag, and release snapshots, plus tests and evals that retain independent provider evidence through partial publication.
 - Add per-kind evidence inputs (`pub:evidence_inputs`, `admission_status`, `evidence_type`, `pub:source_review_state`) to every Obligation-First record, with regression coverage for the evidence boundary. A reviewed mapping input cannot promote a record whose native instrument or obligation definition remains legacy-unreviewed.
 - Retain D. Colo. ECF 24, the Utah HB 452 enrolled bill, and the Doctronic signed agreement, outcomes report, FAQ, and pilot page as admission sources, with source-specific regressions.
+- Add admission receipt succession: a successor receipt embeds the accepted receipt verbatim, reviews only units changed since it, and must carry forward its unresolved items. Accepted receipts become immutable; the base-commit check rejects a rewritten receipt. `prepare-source-admission.js --supersede` prepares a successor packet, and Obligation-First evidence inputs read unit reviews through the lineage.
 - Retain the Legion and ElizaChat signed agreements (with OCR review snapshots), the OAIP authorized-pilots register and pilot pages, the OAIP home page, and the Utah SB 149 bill-status page as admission sources.
 
 ### Changed
@@ -25,6 +26,7 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 - README and current guides link to provider observations; `agents.json` and `/.well-known/mcp.json` render the independently evidenced install identity and any actual source candidate.
 - CI checks out full history so receipt retention is compared against the pull-request base or prior push head.
 - Correct the nine overdue Utah records (issue #3) and six linked obligation files against retained sources, under agent source-consistency receipts: enacting-bill citations, sunset and term-ceiling history, vote and introduction rows, sponsors and titles, statutory versus proposed disclosure triggers, RMA cure periods, phase thresholds, reporting clocks, forbearance scope, and dead official URLs. Unconfirmed facts are qualified rather than asserted. After human review and approval by Sam Rogers, the nine records' `last_verified` is renewed to 2026-09-23 under human review receipts.
+- Correct the Utah SB 226 instrument Summary against the retained enrolled bill (conjunctive on-request content, safe-harbor alternatives and regulated-services branch, the individual regulated-occupation actor, the complete high-risk definition, timing, and the underlying-violation boundary of §13-75-102) under an agent successor receipt that embeds the 2026-09-24 human-reviewed receipt. `last_verified` stays 2026-09-23 and is not renewed.
 - Add an `obligation_qualification` field to two mapping entries; it appears in `api/v1/mappings.json`.
 
 ### Fixed

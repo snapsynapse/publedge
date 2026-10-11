@@ -154,6 +154,108 @@ function isIssuanceEvidence(evidence) {
     const identityShowsIssuance = /\b(?:issued|executed|signed|enacted|official notice|order|decision|determination|agreement)\b/.test(identity);
     return eligibleType && identityShowsIssuance;
 }
+// A receipt is reviewed against a base state: the frozen legacy record, or for a
+// successor receipt the exact record state its embedded predecessor admitted.
+// Successors embed the predecessor verbatim, so an earlier human review stays
+// immutable and keeps covering every unit the successor does not change.
+function legacyState(previous) {
+    return { sha256: previous?.sha256 || null, units: { ...(previous?.units || {}) } };
+}
+function receiptLineage(receipt) {
+    const lineage = [];
+    for (let current = receipt; current; current = current.supersedes?.receipt) lineage.unshift(current);
+    return lineage;
+}
+// Units still covered by some review in the lineage, newest review winning.
+function effectiveUnitReviews(receipt) {
+    const units = {};
+    for (const entry of receiptLineage(receipt)) {
+        for (const [key, review] of Object.entries(entry.units || {})) {
+            if (review?.after_sha256 === null) delete units[key];
+            else units[key] = { review, receipt: entry };
+        }
+    }
+    return units;
+}
+function reviewReceipt(receipt, base, target, { read, now, metadata = null }) {
+    requireValue(receipt.record_sha256 === target.sha256, 'Receipt is stale for current record');
+    requireValue(receipt.baseline_sha256 === base.sha256, 'Wrong historical input binding');
+    requireValue(receipt.whole_record?.before_sha256 === base.sha256 && receipt.whole_record?.after_sha256 === target.sha256, 'Whole-record before/after binding is stale');
+    requireValue(receipt.review?.packet_sha256 === packetDigest(receipt), 'Review packet changed after acceptance');
+    requireValue(['agent', 'human'].includes(receipt.review?.actor_type), 'Explicit reviewer type required');
+    nonempty(receipt.review.actor, 'review.actor');
+    requireValue(validTimestamp(receipt.review.reviewed_at), 'Invalid review timestamp');
+    requireValue(Date.parse(receipt.review.reviewed_at) <= now.getTime(), 'Review timestamp cannot be in the future');
+    requireValue(receipt.review.decision === 'source-consistency-reviewed', 'Pending/rejected review cannot admit a record');
+    nonempty(receipt.review.scope, 'review.scope');
+    requireValue(Array.isArray(receipt.unresolved), 'Unresolved conflicts must be explicit');
+    requireValue(receipt.units && typeof receipt.units === 'object' && !Array.isArray(receipt.units), 'Unit reviews required');
+    const changed = [...new Set([...Object.keys(base.units), ...Object.keys(target.units)])].filter(key => (base.units[key] || null) !== (target.units[key] || null));
+    requireValue(changed.length > 0, 'Receipt cannot relabel unchanged legacy information as reviewed');
+    const usedEvidence = new Set();
+    const reviewedEvidence = [];
+    for (const key of changed) {
+        const review = receipt.units[key];
+        requireValue(review, `Unreviewed changed unit: ${key}`);
+        requireValue(review.before_sha256 === (base.units[key] || null) && review.after_sha256 === (target.units[key] || null), `Stale unit review: ${key}`);
+        // Unit hashes are digests of unit content, so this binds the displayed text.
+        const displayed = review.after_sha256 === null ? review.candidate_content === null : digest(review.candidate_content) === review.after_sha256;
+        requireValue(Object.hasOwn(review, 'candidate_content') && displayed, `Review displays stale candidate content: ${key}`);
+        nonempty(review.reason, 'unit reason');
+        for (const qualifier of ['scope', 'exceptions', 'time']) nonempty(review.qualifications?.[qualifier], `unit qualifications.${qualifier}`);
+        requireValue(Array.isArray(review.evidence) && review.evidence.length > 0, `Missing supporting evidence: ${key}`);
+        for (const reference of review.evidence) {
+            const evidence = typeof reference === 'string' ? receipt.evidence?.[reference] : reference;
+            if (typeof reference === 'string') usedEvidence.add(reference);
+            validateEvidence(evidence, read, now);
+            reviewedEvidence.push(evidence);
+        }
+        if (isVerifiedUnit(key)) requireValue(receipt.review.actor_type === 'human', 'Agent source consistency review cannot renew Verified');
+    }
+    for (const key of Object.keys(receipt.units)) requireValue(changed.includes(key), `Extraneous or stale unit acceptance: ${key}`);
+    for (const key of Object.keys(receipt.evidence || {})) requireValue(usedEvidence.has(key), `Unreferenced evidence in review packet: ${key}`);
+    if (metadata) {
+        const issuanceClaimChanged = changed.some(key => [
+            'metadata:source', 'metadata:editorial_status', 'metadata:status', 'metadata:issuance_event', 'metadata:enacted'
+        ].includes(key));
+        const claimsCurrentIssuance = metadata.source === 'authority-issued' &&
+            (metadata.editorial_status === 'published' || metadata.status === 'enforcing');
+        if (issuanceClaimChanged && claimsCurrentIssuance) {
+            requireValue(reviewedEvidence.some(isIssuanceEvidence), 'Authority-issued publication/enforcement claims require an issued agreement, enactment, official order, or official authority instrument; proposals, drafts, complaints, and press coverage are insufficient');
+        }
+        if (issuanceClaimChanged && metadata.source === 'publedge-original-draft') {
+            requireValue(metadata.status === 'proposed' && !metadata.issuance_event && !metadata.enacted, 'PubLedge original drafts must remain proposed without issuance_event or enacted until authority sign-off changes the source');
+        }
+    }
+    requireValue(!receipt.review.human_approved || receipt.review.actor_type === 'human', 'Agent cannot assert human approval');
+    return changed.length;
+}
+// Validates an embedded predecessor chain and returns the record state it admitted.
+// Predecessor content is not on disk, so each unit is checked against its own
+// displayed candidate content and the whole record against its unit hashes.
+function admittedState(receipt, previous, options) {
+    const base = receipt.supersedes ? successorBase(receipt, previous, options) : legacyState(previous);
+    const units = { ...base.units };
+    for (const [key, review] of Object.entries(receipt.units || {})) {
+        if (review?.after_sha256 === null) delete units[key];
+        else units[key] = review?.after_sha256;
+    }
+    const sha256 = digest(units);
+    requireValue(receipt.record_sha256 === sha256, 'Superseded receipt does not reproduce its admitted record');
+    reviewReceipt(receipt, base, { sha256, units }, options);
+    return { sha256, units };
+}
+function successorBase(receipt, previous, options) {
+    const prior = receipt.supersedes.receipt;
+    requireValue(prior && typeof prior === 'object' && !Array.isArray(prior), 'Superseded receipt must be embedded verbatim');
+    requireValue(receipt.supersedes.packet_sha256 === prior.review?.packet_sha256, 'Superseded packet binding is stale');
+    nonempty(receipt.supersedes.reason, 'supersedes.reason');
+    const base = admittedState(prior, previous, options);
+    for (const item of prior.unresolved || []) {
+        requireValue((receipt.unresolved || []).includes(item), 'Successor must carry forward every unresolved item of the superseded receipt');
+    }
+    return base;
+}
 function validateAdmission({ current, legacy, admissions, read, now = new Date() }) {
     requireValue(legacy.version === 1 && admissions.version === 1, 'Unknown admission contract version');
     requireValue(legacy.status === 'legacy-unreviewed', 'Historical corpus must remain explicitly legacy-unreviewed');
@@ -174,53 +276,12 @@ function validateAdmission({ current, legacy, admissions, read, now = new Date()
             return;
         }
         requireValue(receipt, 'Changed/new source information requires an admission receipt');
-        requireValue(receipt.record_sha256 === snapshot.sha256, 'Receipt is stale for current record');
-        requireValue(receipt.baseline_sha256 === (previous?.sha256 || null), 'Wrong historical input binding');
-        requireValue(receipt.whole_record?.before_sha256 === (previous?.sha256 || null) && receipt.whole_record?.after_sha256 === snapshot.sha256, 'Whole-record before/after binding is stale');
-        requireValue(receipt.review?.packet_sha256 === packetDigest(receipt), 'Review packet changed after acceptance');
-        requireValue(['agent', 'human'].includes(receipt.review?.actor_type), 'Explicit reviewer type required');
-        nonempty(receipt.review.actor, 'review.actor');
-        requireValue(validTimestamp(receipt.review.reviewed_at), 'Invalid review timestamp');
-        requireValue(Date.parse(receipt.review.reviewed_at) <= now.getTime(), 'Review timestamp cannot be in the future');
-        requireValue(receipt.review.decision === 'source-consistency-reviewed', 'Pending/rejected review cannot admit a record');
-        nonempty(receipt.review.scope, 'review.scope');
-        requireValue(Array.isArray(receipt.unresolved), 'Unresolved conflicts must be explicit');
-        requireValue(receipt.units && typeof receipt.units === 'object' && !Array.isArray(receipt.units), 'Unit reviews required');
-        const changed = [...new Set([...Object.keys(previous?.units || {}), ...Object.keys(snapshot.units)])].filter(key => previous?.units[key] !== snapshot.units[key]?.sha256);
-        requireValue(changed.length > 0, 'Receipt cannot relabel unchanged legacy information as reviewed');
-        const usedEvidence = new Set();
-        const reviewedEvidence = [];
-        for (const key of changed) {
-            const review = receipt.units[key];
-            requireValue(review, `Unreviewed changed unit: ${key}`);
-            requireValue(review.before_sha256 === (previous?.units[key] || null) && review.after_sha256 === (snapshot.units[key]?.sha256 || null), `Stale unit review: ${key}`);
-            requireValue(Object.hasOwn(review, 'candidate_content') && digest(review.candidate_content) === digest(snapshot.units[key]?.content ?? null), `Review displays stale candidate content: ${key}`);
-            nonempty(review.reason, 'unit reason');
-            for (const qualifier of ['scope', 'exceptions', 'time']) nonempty(review.qualifications?.[qualifier], `unit qualifications.${qualifier}`);
-            requireValue(Array.isArray(review.evidence) && review.evidence.length > 0, `Missing supporting evidence: ${key}`);
-            for (const reference of review.evidence) {
-                const evidence = typeof reference === 'string' ? receipt.evidence?.[reference] : reference;
-                if (typeof reference === 'string') usedEvidence.add(reference);
-                validateEvidence(evidence, read, now);
-                reviewedEvidence.push(evidence);
-            }
-            if (isVerifiedUnit(key)) requireValue(receipt.review.actor_type === 'human', 'Agent source consistency review cannot renew Verified');
-            changedUnits++;
-        }
-        for (const key of Object.keys(receipt.units)) requireValue(changed.includes(key), `Extraneous or stale unit acceptance: ${key}`);
-        for (const key of Object.keys(receipt.evidence || {})) requireValue(usedEvidence.has(key), `Unreferenced evidence in review packet: ${key}`);
-        const issuanceClaimChanged = changed.some(key => [
-            'metadata:source', 'metadata:editorial_status', 'metadata:status', 'metadata:issuance_event', 'metadata:enacted'
-        ].includes(key));
-        const claimsCurrentIssuance = snapshot.metadata.source === 'authority-issued' &&
-            (snapshot.metadata.editorial_status === 'published' || snapshot.metadata.status === 'enforcing');
-        if (issuanceClaimChanged && claimsCurrentIssuance) {
-            requireValue(reviewedEvidence.some(isIssuanceEvidence), 'Authority-issued publication/enforcement claims require an issued agreement, enactment, official order, or official authority instrument; proposals, drafts, complaints, and press coverage are insufficient');
-        }
-        if (issuanceClaimChanged && snapshot.metadata.source === 'publedge-original-draft') {
-            requireValue(snapshot.metadata.status === 'proposed' && !snapshot.metadata.issuance_event && !snapshot.metadata.enacted, 'PubLedge original drafts must remain proposed without issuance_event or enacted until authority sign-off changes the source');
-        }
-        requireValue(!receipt.review.human_approved || receipt.review.actor_type === 'human', 'Agent cannot assert human approval');
+        const options = { read, now };
+        const base = receipt.supersedes ? successorBase(receipt, previous, options) : legacyState(previous);
+        const target = { sha256: snapshot.sha256, units: unitHashes(snapshot) };
+        reviewReceipt(receipt, base, target, { ...options, metadata: snapshot.metadata });
+        // Count every unit review in the lineage, including superseded ones.
+        changedUnits += receiptLineage(receipt).reduce((total, entry) => total + Object.keys(entry.units).length, 0);
         reviewedCount++;
         emitted[filename] = { record_sha256: snapshot.sha256, admission_status: 'reviewed-changes', review_packet_sha256: receipt.review.packet_sha256 };
     });
@@ -249,4 +310,4 @@ function validateRuntimeSeal({ current, legacy, admissions }) {
     return { status: errors.length ? 'failed' : 'passed', errors };
 }
 
-module.exports = { hash, digest, safePath, readRegular, markdownSnapshot, nativeSnapshot, unitHashes, protectedPath, packetDigest, validateEvidence, validateAdmission, validateRuntimeSeal, isIssuanceEvidence };
+module.exports = { hash, digest, safePath, readRegular, markdownSnapshot, nativeSnapshot, unitHashes, protectedPath, packetDigest, validateEvidence, validateAdmission, validateRuntimeSeal, isIssuanceEvidence, receiptLineage, effectiveUnitReviews, admittedState, legacyState };

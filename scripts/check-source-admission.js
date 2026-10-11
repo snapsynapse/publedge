@@ -56,9 +56,19 @@ function assertForEmission(options = {}) {
     return result;
 }
 
+// Accepted receipts are immutable: a later review must embed the base receipt
+// verbatim through supersedes rather than rewrite or replace it.
 function retainPriorReceipts(result, admissions, prior) {
-    for (const filename of Object.keys(prior?.records || {})) {
-        if (!admissions.records[filename]) result.errors.push(`${filename}: previously reviewed record lost its receipt`);
+    for (const [filename, accepted] of Object.entries(prior?.records || {})) {
+        const receipt = admissions.records[filename];
+        if (!receipt) {
+            result.errors.push(`${filename}: previously reviewed record lost its receipt`);
+            continue;
+        }
+        const acceptedDigest = admission.digest(accepted);
+        if (!admission.receiptLineage(receipt).some(entry => admission.digest(entry) === acceptedDigest)) {
+            result.errors.push(`${filename}: previously accepted receipt was rewritten instead of superseded`);
+        }
     }
     result.status = result.errors.length ? 'failed' : 'passed';
     return result;
