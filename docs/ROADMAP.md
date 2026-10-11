@@ -240,6 +240,18 @@ The shared eval design, inputs, controls, and acceptance limits are owned by the
 | EV02 (PUB-EVAL-2) | Source-grounded Utah chatbot-disclosure fixture and projection fixes | Delivered 2026-09-23 (see above) |
 | EV03/EV06/EV07 (PUB-EVAL-3) | Supply EveryAILaw's candidate runner with an exact PubLedge commit and its own admission base; keep source/build and `docs/` parity; keep release and route metadata current for EV06; verify owned record routes after authorized publication | Waiting on the EveryAILaw candidate runner |
 
+## Legal Graph supply comparison
+
+PubLedge's contribution to the Foundation supply comparison (September 22 Moonshots decisions) is recorded in [design/SUPPLY-COMPARISON-2026-10-11.md](design/SUPPLY-COMPARISON-2026-10-11.md): the issuance evidence current consumers need, reusable conventions versus demonstration ingestion versus external services, a maintenance-scope check, and the residual capability. No record, schema, projection, or published surface changes until an owner choice is made.
+
+| Item | Owner | Status |
+|---|---|---|
+| Supply comparison delivered to Foundation | maintainer | Delivered 2026-10-11 |
+| S1: freeze statute-derived obligation extraction; route new statutory duties to EveryAILaw | Sam, with EveryAILaw | Owner choice; depends on EV01 |
+| S2: publication-time proof stays pluggable and unimplemented until a named consumer requires it | Sam | No change to INTENT |
+| S3: reclassify the five federal remaps as frozen schema fixtures; stop currentness renewal and source-access work for them | Sam | Owner choice |
+| S4: narrow statute records to act-level issuance and identity anchors; route currentness and codification to EveryAILaw | Sam, with EveryAILaw | Owner choice; pairs with the open Utah and Colorado source-access items |
+
 ## Frontmatter spec v0.2 — follow-ups
 
 All five v0.2 enforcement items shipped 2026-04-22 (see "Shipped" entry above). The polymorphic `instrument.schema.json` is enforced in CI by `scripts/eval-instrument-schema.js` using a JSON Schema 2020-12 validator.
