@@ -29,13 +29,62 @@ function getReviewCadence(config) {
 }
 
 function containerCadenceDays(container, cadence) {
-    const isHistoricalDemonstration = container.source === 'demonstration-remap' &&
-        !['jia', 'rma', 'statute'].includes(container.type);
-    return isHistoricalDemonstration ? cadence.historicalDemonstration : cadence.active;
+    return isHistoricalDemonstration(container) ? cadence.historicalDemonstration : cadence.active;
 }
 
 function getAllowedUnmappedInstrumentIds(config) {
     return new Set(toArray(config.verification?.allowed_unmapped_instruments).map(String));
+}
+
+// Frozen schema fixtures: published records exempt from currentness review.
+function getFrozenFixtureIds(config) {
+    const v = config.verification || {};
+    const ids = key => new Set(toArray(v[key]).map(String));
+    return {
+        instruments: ids('frozen_fixture_instruments'),
+        obligations: ids('frozen_fixture_obligations'),
+        authorities: ids('frozen_fixture_authorities')
+    };
+}
+
+function isHistoricalDemonstration(container) {
+    return container.source === 'demonstration-remap' &&
+        !['jia', 'rma', 'statute'].includes(container.type);
+}
+
+// A freeze may only cover historical demonstrations and records reachable
+// solely from them, so an active record can never be frozen by association.
+function frozenFixtureErrors(frozen, { containers, primaries, authorities, mappings }) {
+    const errors = [];
+    const byId = new Map(containers.map(c => [c.id, c]));
+    const known = {
+        instruments: new Set(containers.map(c => c.id)),
+        obligations: new Set(primaries.map(p => p.id)),
+        authorities: new Set(authorities.map(a => a.id))
+    };
+    for (const [kind, ids] of Object.entries(frozen)) {
+        for (const id of ids) {
+            if (!known[kind].has(id)) errors.push(`frozen fixture ${kind} entry "${id}" does not exist`);
+        }
+    }
+    for (const id of frozen.instruments) {
+        const c = byId.get(id);
+        if (c && !isHistoricalDemonstration(c)) errors.push(`frozen fixture instrument "${id}" is not a historical demonstration remap`);
+    }
+    for (const m of mappings) {
+        const cId = m.regulation || m.container || m.framework;
+        if (!cId || frozen.instruments.has(cId)) continue;
+        for (const o of toArray(m.obligations)) {
+            const oId = typeof o === 'string' ? o : (o && (o.id || o.primary));
+            if (frozen.obligations.has(oId)) errors.push(`frozen fixture obligation "${oId}" is mapped from non-frozen instrument "${cId}"`);
+        }
+    }
+    for (const c of containers) {
+        if (!frozen.instruments.has(c.id) && frozen.authorities.has(c.authority)) {
+            errors.push(`frozen fixture authority "${c.authority}" is used by non-frozen instrument "${c.id}"`);
+        }
+    }
+    return errors;
 }
 
 function classifyUnmappedContainers(containers, mappings, allowedIds) {
@@ -61,6 +110,8 @@ function classifyUnmappedContainers(containers, mappings, allowedIds) {
 module.exports = {
     classifyUnmappedContainers,
     containerCadenceDays,
+    frozenFixtureErrors,
+    getFrozenFixtureIds,
     getReviewCadence,
     getAllowedUnmappedInstrumentIds
 };

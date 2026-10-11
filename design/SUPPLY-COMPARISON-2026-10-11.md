@@ -148,7 +148,7 @@ PubLedge's residual, not adequately supplied elsewhere, is the record convention
 |---|---|---|---|---|
 | S1 | Freeze statute-derived obligation extraction in PubLedge; route new statutory-duty extraction to EveryAILaw | Lower 90-day review load; no record removed | Yes | EV01 correspondence decision; EAL agreement |
 | S2 | No change: publication-time proof stays pluggable (RFC 3161 or OpenTimestamps) and unimplemented until a named consumer requires it | Confirms INTENT | Yes | None |
-| S3 | Reclassify the 5 federal remaps as frozen schema fixtures; stop currentness renewal and official-source access work for them | Lower 365-day review and source-access load; site unchanged | Yes | Sam's approval; a fixture label convention if one is wanted |
+| S3 | Reclassify the 5 federal remaps as frozen schema fixtures; stop currentness renewal and official-source access work for them | Lower 365-day review and source-access load; record pages show a frozen-fixture badge | Yes | Approved by Sam Rogers 2026-10-11 and implemented (see below) |
 | S4 | Narrow statute records to act-level issuance and identity anchors; route currentness and codification questions to EveryAILaw | Clarifies ownership of the open Utah and Colorado source-access items | Yes | Paired review in the 2026-10-03 queue |
 
 No proposal removes a published record, URL, schema, or MCP tool.
@@ -162,4 +162,6 @@ No proposal removes a published record, URL, schema, or MCP tool.
 
 ## Implementation note
 
-Any selected proposal is a later, separately scoped change. S1, S3, and S4 would touch `ROADMAP.md`, `ops/MAINTENANCE-PILOT.md`, and possibly `scripts/lib/verify-policy.js` (cadence) and would need the normal build, validators, evals, and admission rules. This note changes no record, schema, or projection.
+S3 was approved on 2026-10-11 and implemented: `project.yml` lists the 5 instruments, the 5 obligation definitions mapped only from them, and their 5 authorities under `verification.frozen_fixture_*`; `scripts/verify.js` exempts them from the staleness gate and rejects a freeze that reaches an active record; instrument pages render a non-ageing frozen-fixture badge. No record content, date, schema, or projection changed.
+
+Any other selected proposal is a later, separately scoped change. S1, S3, and S4 would touch `ROADMAP.md`, `ops/MAINTENANCE-PILOT.md`, and possibly `scripts/lib/verify-policy.js` (cadence) and would need the normal build, validators, evals, and admission rules. This note changes no record, schema, or projection.

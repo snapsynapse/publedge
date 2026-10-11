@@ -223,6 +223,32 @@ verification:
     - us-co-legislature-statute-2025-sb25b-004
     # Sunset-date-only: extended Utah Code Title 13 Chapter 72 repeal date.
     - us-ut-legislature-statute-2025-sb332
+  # Frozen schema fixtures (supply comparison S3, approved by Sam Rogers
+  # 2026-10-11; see design/SUPPLY-COMPARISON-2026-10-11.md). These federal
+  # demonstration remaps have no current graph consumer and stay published only
+  # as schema-coverage fixtures. They keep their recorded last_verified dates,
+  # are exempt from the staleness gate, and get no currentness renewal or
+  # official-source access work. verify.js rejects a frozen instrument that is
+  # not a historical demonstration remap, a frozen obligation mapped from a
+  # non-frozen instrument, and a frozen authority used by a non-frozen one.
+  frozen_fixture_instruments:
+    - us-cfpb-ao-2022-001
+    - us-cftc-dsio-il-2017-001
+    - us-irs-chief-counsel-plr-2025-001
+    - us-irs-tege-plr-2026-001
+    - us-sec-corpfin-nal-2025-001
+  frozen_fixture_obligations:
+    - cfpb-pay-to-pay-fee-prohibited
+    - cftc-unbundled-fee-not-cta-trigger
+    - irs-incentive-fee-not-net-profits-share
+    - irs-501c3-dual-test-failure
+    - sec-reg-d-506c-verification-safe-harbor
+  frozen_fixture_authorities:
+    - cfpb
+    - cftc-dsio
+    - irs-chief-counsel
+    - irs-tege
+    - sec-corpfin
 
 # ---------------------------------------------------------------------------
 # Ontology framework — semantic layer binding PubLedge entities to gist

@@ -94,4 +94,37 @@ withFixture(failures, 'unknown mapping target', root => {
     fs.writeFileSync(mapping, fs.readFileSync(mapping, 'utf-8').replace('regulation: us-cfpb-ao-2022-001', 'regulation: does-not-exist'));
 }, ['ERROR: Mapping', 'does-not-exist', 'Result: REVIEW NEEDED']);
 
+// Frozen schema fixtures keep their recorded date and are never aged.
+{
+    const tempRoot = makeTempRepo();
+    try {
+        replaceVerified(tempRoot, '2000-01-01');
+        const res = runVerify(tempRoot);
+        const output = `${res.stdout || ''}\n${res.stderr || ''}`;
+        if (res.status !== 0) failures.push('frozen fixture: an aged frozen instrument failed the staleness gate');
+        if (!output.includes('us-cfpb-ao-2022-001 — frozen schema fixture (2000-01-01)')) failures.push('frozen fixture: aged frozen instrument was not reported as frozen');
+    } finally {
+        fs.rmSync(tempRoot, { recursive: true, force: true });
+    }
+}
+
+const editConfig = (root, from, to) => {
+    const config = path.join(root, 'project.yml');
+    const text = fs.readFileSync(config, 'utf-8');
+    if (!text.includes(from)) throw new Error(`fixture anchor missing: ${from}`);
+    fs.writeFileSync(config, text.replace(from, to));
+};
+
+withFixture(failures, 'frozen active instrument', root => editConfig(root,
+    'frozen_fixture_instruments:\n', 'frozen_fixture_instruments:\n    - us-ut-oaip-rma-2025-002\n'
+), ['frozen fixture instrument "us-ut-oaip-rma-2025-002" is not a historical demonstration remap', 'Result: REVIEW NEEDED']);
+
+withFixture(failures, 'unfrozen source of frozen obligation', root => editConfig(root,
+    '    - us-cfpb-ao-2022-001\n', ''
+), ['frozen fixture obligation "cfpb-pay-to-pay-fee-prohibited" is mapped from non-frozen instrument "us-cfpb-ao-2022-001"', 'frozen fixture authority "cfpb" is used by non-frozen instrument "us-cfpb-ao-2022-001"', 'Result: REVIEW NEEDED']);
+
+withFixture(failures, 'unknown frozen entry', root => editConfig(root,
+    'frozen_fixture_authorities:\n', 'frozen_fixture_authorities:\n    - does-not-exist\n'
+), ['frozen fixture authorities entry "does-not-exist" does not exist', 'Result: REVIEW NEEDED']);
+
 reportFailures('eval-verification-exit', failures);

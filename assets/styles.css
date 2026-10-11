@@ -814,6 +814,7 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
     letter-spacing: 0.02em;
 }
 .freshness-badge.fresh { background: #1f7a43; color: #fff; }
+.freshness-badge.frozen { border: 1px solid currentColor; font-weight: 500; }
 .freshness-badge.aging { background: #d4a017; color: #0a1f3e; }
 .freshness-badge.stale { background: #a64a4a; color: #fff; }
 
