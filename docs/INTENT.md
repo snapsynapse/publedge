@@ -17,7 +17,7 @@ Standalone product ambitions are parked. The repository remains public and maint
 ## Active work
 
 - Routine security, dependency, accessibility, build, and registry maintenance.
-- Accurate maintenance of existing demonstration remaps.
+- Accurate maintenance of existing Utah demonstration remaps. The federal demonstration remaps are frozen schema fixtures, published but not reviewed for currentness.
 - Obligation-First naming-profile and schema compatibility.
 - Legal-graph integration work required by an active downstream consumer.
 - Corrections and authority responses that improve record fidelity.
@@ -49,3 +49,4 @@ Reconsider parked work only when at least one of these occurs:
 - 2026-07-21: Promoted that disposition into the repository's authoritative intent and aligned maintenance priorities around it.
 - 2026-07-28: Clarified the administrative issuance boundary with AI Incident Law's adjudicative determinations.
 - 2026-09-24: Recorded the served-only `agents.json` exception to Repo Standards.
+- 2026-10-11: Froze the five federal demonstration remaps, with the obligations and authorities reachable only from them, as schema fixtures (supply comparison S3, `design/SUPPLY-COMPARISON-2026-10-11.md`).

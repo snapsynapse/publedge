@@ -211,7 +211,7 @@ The local [qualified-time acceptance sidecar](reference/F14-QUALIFIED-TIME.md) s
 | Lawyer review and JIA promotion | Sam | Resume when a regulator, adopter, or legal-graph counterparty creates demand |
 | Public promotion | Sam | Parked pending an INTENT.md revisit trigger |
 
-Verification cadence is risk-based: active statutes and agreements use 90 days, authorities and obligation definitions use 180 days, and historical federal demonstration remaps use 365 days. A changed source or explicit authority response always triggers immediate review regardless of cadence.
+Verification cadence is risk-based: active statutes and agreements use 90 days, authorities and obligation definitions use 180 days, and historical demonstration remaps use 365 days. The five federal demonstration remaps, the five obligation definitions mapped only from them, and their five authorities are frozen schema fixtures (S3, approved 2026-10-11): they keep their recorded `last_verified` dates, are exempt from the staleness gate (`verification.frozen_fixture_*` in `project.yml`), and receive no currentness renewal or official-source access work. A changed source or explicit authority response always triggers immediate review regardless of cadence.
 
 ## Open maintenance items
 
@@ -239,6 +239,18 @@ The shared eval design, inputs, controls, and acceptance limits are owned by the
 | EV01 (PUB-EVAL-1) | Finite input declarations for the selected shared slice: IDs, original or amending act identity, source/version/locator evidence, declared correspondent or explicit different granularity, comparable fields, expected unknowns, relationship targets. Positive control: a reviewed Colorado pair. Negative controls: opposite enforcement assertions, wrong amendment direction, absent required target, unjustified whole-record identity. Do not equate EveryAILaw's amended Utah stack to individual PubLedge acts | Not started |
 | EV02 (PUB-EVAL-2) | Source-grounded Utah chatbot-disclosure fixture and projection fixes | Delivered 2026-09-23 (see above) |
 | EV03/EV06/EV07 (PUB-EVAL-3) | Supply EveryAILaw's candidate runner with an exact PubLedge commit and its own admission base; keep source/build and `docs/` parity; keep release and route metadata current for EV06; verify owned record routes after authorized publication | Waiting on the EveryAILaw candidate runner |
+
+## Legal Graph supply comparison
+
+PubLedge's contribution to the Foundation supply comparison (September 22 Moonshots decisions) is recorded in [design/SUPPLY-COMPARISON-2026-10-11.md](design/SUPPLY-COMPARISON-2026-10-11.md): the issuance evidence current consumers need, reusable conventions versus demonstration ingestion versus external services, a maintenance-scope check, and the residual capability. No record, schema, projection, or published surface changes until an owner choice is made.
+
+| Item | Owner | Status |
+|---|---|---|
+| Supply comparison delivered to Foundation | maintainer | Delivered 2026-10-11 |
+| S1: freeze statute-derived obligation extraction; route new statutory duties to EveryAILaw | Sam, with EveryAILaw | Owner choice; depends on EV01 |
+| S2: publication-time proof stays pluggable and unimplemented until a named consumer requires it | Sam | No change to INTENT |
+| S3: reclassify the five federal remaps as frozen schema fixtures; stop currentness renewal and source-access work for them | Sam | Approved by Sam Rogers 2026-10-11; implemented (15 frozen records, verify gate and record-page badge) |
+| S4: narrow statute records to act-level issuance and identity anchors; route currentness and codification to EveryAILaw | Sam, with EveryAILaw | Owner choice; pairs with the open Utah and Colorado source-access items |
 
 ## Frontmatter spec v0.2 — follow-ups
 

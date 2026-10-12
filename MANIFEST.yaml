@@ -138,7 +138,7 @@ files:
 
   - path: project.yml
     role: config
-    hash: sha256:670e8d8cb4c700da01242a275b79e49591b5c8c45e69ed7e4a4f377faaa271c9
+    hash: sha256:2dfa785f194d958f55d8cd959690de2f424d89c0a0d8374cba03bdef03baa554
     note: project.yml
 
   - path: data/examples/instruments/us-cfpb-ao-2022-001.md
@@ -483,12 +483,12 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:74aa77f1b01e57668015b9ceb58cad57a531749b49994f6816925d1160ab20f5
+    hash: sha256:e9cd641d6e3314e12ca07b7ea72daaa6d40b9df9a1b123c25e4110529e46af58
     note: ROADMAP.md
 
   - path: INTENT.md
     role: protocol
-    hash: sha256:0a7b8c7fa0c5f8248a751f58cafe64fc3c03b58b2c81f267b63e3e37a4ba0e8e
+    hash: sha256:11d7a2adf2fcef4640fcb8d406863f91e7d5c48a21afdd1cee4d7c0ab7261b65
     note: INTENT.md
 
   - path: SECURITY.md
@@ -598,7 +598,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:0ea9b3d271f36829c75e01943da3956143aa47fb581083894b171ae4067bcf96
+    hash: sha256:2b65fa0573ffce83e9a6a91214f37f2fa4641bef40b70553283729c5c7f7fbc3
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -763,7 +763,7 @@ files:
 
   - path: scripts/eval-verification-exit.js
     role: tooling
-    hash: sha256:0608d9b333453c0527894a5106574c9bc1dc3c44aca2169523624f69ccb91a20
+    hash: sha256:cada69fe7d1452e927c50c7d0de716399712d16d9c1b0592065bdb63efbde4bd
     note: scripts/eval-verification-exit.js
 
   - path: scripts/eval-search-structured-data.js
@@ -828,7 +828,7 @@ files:
 
   - path: scripts/lib/verify-policy.js
     role: tooling
-    hash: sha256:160300832c7319eab1ad67a4809eebcb1a81963c79a12f4e46be0081df47602e
+    hash: sha256:bb9e62621850c834f5e0087505200f7e50568f8e4ed664c77ee099ff382b6f74
     note: scripts/lib/verify-policy.js
 
   - path: scripts/ocr-pdf.sh
@@ -853,7 +853,7 @@ files:
 
   - path: scripts/verify.js
     role: tooling
-    hash: sha256:661d837aec73b8cce20f40ecbcb6c169f1969654a3796c4e1a7906f4acc6aaf5
+    hash: sha256:3a1f45a46fa0c991b1e8425e9a0920c6cfa3a958f8bcf0685c94110f856b55d5
     note: scripts/verify.js
 
   - path: scripts/verify-ci.js
@@ -888,7 +888,7 @@ files:
 
   - path: assets/styles.css
     role: site-source
-    hash: sha256:31d923cd05ea71babb105e4f539e752e8052f2cb0caef31b90fd130abd09a7a1
+    hash: sha256:d88eac2418162a49d79392925b098803348cfa557b33ebbd910fa56cc0e3d631
     note: assets/styles.css
 
   - path: assets/tables.js
