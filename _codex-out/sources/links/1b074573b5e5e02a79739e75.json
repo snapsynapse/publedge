@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.902651+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/1b074573b5e5e02a79739e75.body"
+}

@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://le.utah.gov/xcode/Title76/Chapter2/76-2-S107.html",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.915843+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://le.utah.gov/xcode/Title76/Chapter2/76-2-S107.html",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/4176c09d43986d221b7ea423.body"
+}

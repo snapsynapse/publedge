@@ -1,0 +1,26 @@
+{
+  "id": "c24d6d7300bc4f9888a6662f3b4eff74",
+  "url": "https://cftc.gov/csl/17-65/download",
+  "kind": "fetch",
+  "host": "cftc.gov",
+  "status": 301,
+  "headers": {
+    "date": "Sat, 03 Oct 2026 18:37:49 GMT",
+    "content-type": "text/html; charset=UTF-8",
+    "location": "https://www.cftc.gov/csl/17-65/download",
+    "strict-transport-security": "max-age=15552000; includeSubDomains",
+    "set-cookie": "[REDACTED]",
+    "server": "envoy",
+    "cf-ray": "a44e0f6d8e3f1133-ORD",
+    "x-envoy-upstream-service-time": "12",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:49.010664+00:00",
+  "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+  "bytes": 167,
+  "body_path": "/workspace/freshness-control/transport-evidence/c24d6d7300bc4f9888a6662f3b4eff74.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/c24d6d7300bc4f9888a6662f3b4eff74.body"
+}

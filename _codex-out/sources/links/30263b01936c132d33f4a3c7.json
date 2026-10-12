@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.law.cornell.edu/uscode/text/26/501",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.876105+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.law.cornell.edu/uscode/text/26/501",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/30263b01936c132d33f4a3c7.body"
+}

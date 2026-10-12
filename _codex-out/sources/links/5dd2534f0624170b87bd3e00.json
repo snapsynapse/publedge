@@ -1,0 +1,29 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://leg.colorado.gov/bills/sb26-189",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [
+    {
+      "id": "98cd02d7393f456f9c7f74129b398585",
+      "url": "https://leg.colorado.gov/robots.txt",
+      "kind": "robots",
+      "host": "leg.colorado.gov",
+      "status": null,
+      "headers": {},
+      "complete": false,
+      "error": "Tunnel connection failed: 403 Forbidden",
+      "retrieved_at": "2026-10-03T03:03:02.879340+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "body_path": "/workspace/freshness-control/transport-evidence/98cd02d7393f456f9c7f74129b398585.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T03:03:02.893451+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cached": true,
+  "requested_url": "https://leg.colorado.gov/bills/sb26-189",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/5dd2534f0624170b87bd3e00.body"
+}

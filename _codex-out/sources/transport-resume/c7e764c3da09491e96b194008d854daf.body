@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Search engine indexing exclusions for thin and machine-readable endpoints.
+# Agent discovery files remain fetchable because they are advertised below.
+User-agent: Googlebot
+Disallow: /api/
+Disallow: /llms.txt
+Disallow: /llms-full.txt
+Disallow: /agents.json
+Disallow: /.well-known/
+Disallow: /calendar.ics
+Disallow: /alerts.xml
+
+User-agent: Bingbot
+Disallow: /api/
+Disallow: /llms.txt
+Disallow: /llms-full.txt
+Disallow: /agents.json
+Disallow: /.well-known/
+Disallow: /calendar.ics
+Disallow: /alerts.xml
+
+Sitemap: https://everyailaw.com/sitemap.xml
+
+# AI agent discovery (non-standard headers for agent crawlers)
+Agents: https://everyailaw.com/agents.json
+MCP: https://everyailaw.com/.well-known/mcp.json
+
+# LLM context
+LLMs-Txt: https://everyailaw.com/llms.txt
+LLM-Txt: https://everyailaw.com/llm.txt
+LLMs-Full-Txt: https://everyailaw.com/llms-full.txt
+
+# API schema
+OpenAPI: https://everyailaw.com/api/v1/openapi.json

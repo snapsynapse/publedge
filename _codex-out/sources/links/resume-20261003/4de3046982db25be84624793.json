@@ -1,0 +1,111 @@
+{
+  "status": 301,
+  "headers": {
+    "content-type": "text/html; charset=iso-8859-1",
+    "content-length": "326",
+    "server": "envoy",
+    "strict-transport-security": "max-age=31556952; includeSubDomains; preload",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "permissions-policy": "geolocation=(), microphone=(), camera=()",
+    "content-security-policy": "frame-ancestors 'self'",
+    "x-frame-options": "SAMEORIGIN",
+    "location": "http://dc.aws-sec.akadns.net/divisions/corpfin/",
+    "date": "Sat, 03 Oct 2026 18:37:49 GMT",
+    "x-envoy-upstream-service-time": "235",
+    "connection": "close"
+  },
+  "finalUrl": "http://dc.aws-sec.akadns.net/divisions/corpfin/",
+  "complete": false,
+  "redirects": [
+    {
+      "from": "https://www.sec.gov/divisions/corpfin",
+      "to": "http://dc.aws-sec.akadns.net/divisions/corpfin/",
+      "status": 301
+    }
+  ],
+  "error": "BLOCKED: robots HTTP 403 blocks access",
+  "attempts": [
+    {
+      "id": "67f26e926eff4a0fa7f54e4429e64d75",
+      "url": "https://www.sec.gov/robots.txt",
+      "kind": "robots",
+      "host": "www.sec.gov",
+      "status": 200,
+      "headers": {
+        "server": "envoy",
+        "content-type": "text/plain",
+        "x-content-type-options": "nosniff",
+        "last-modified": "Wed, 23 Sep 2026 18:18:15 GMT",
+        "x-request-id": "v-cf20ecc8-b881-11f1-b808-4b12fbafd555",
+        "x-ah-environment": "prod",
+        "x-cache-hits": "2",
+        "x-age": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=43",
+        "expires": "Sat, 03 Oct 2026 18:38:30 GMT",
+        "date": "Sat, 03 Oct 2026 18:37:47 GMT",
+        "content-length": "2736",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains ; preload",
+        "x-envoy-upstream-service-time": "115",
+        "connection": "close"
+      },
+      "complete": true,
+      "error": null,
+      "retrieved_at": "2026-10-03T18:37:47.469455+00:00",
+      "sha256": "f83678ce2bb4a1f7603e0f7f0eac1bc7f1063f45997516a8cd6f4029f234c623",
+      "bytes": 2736,
+      "body_path": "/workspace/freshness-control/transport-evidence/67f26e926eff4a0fa7f54e4429e64d75.body"
+    },
+    {
+      "id": "b1171d2b9b3d431da8ec123b19efbb61",
+      "url": "https://www.sec.gov/divisions/corpfin",
+      "kind": "fetch",
+      "host": "www.sec.gov",
+      "status": 301,
+      "headers": {
+        "content-type": "text/html; charset=iso-8859-1",
+        "content-length": "326",
+        "server": "envoy",
+        "strict-transport-security": "max-age=31556952; includeSubDomains; preload",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "permissions-policy": "geolocation=(), microphone=(), camera=()",
+        "content-security-policy": "frame-ancestors 'self'",
+        "x-frame-options": "SAMEORIGIN",
+        "location": "http://dc.aws-sec.akadns.net/divisions/corpfin/",
+        "date": "Sat, 03 Oct 2026 18:37:49 GMT",
+        "x-envoy-upstream-service-time": "235",
+        "connection": "close"
+      },
+      "complete": true,
+      "error": null,
+      "retrieved_at": "2026-10-03T18:37:49.469565+00:00",
+      "sha256": "24b8b427482bf21b76dbfc57e616c41a27d3317c5c13dca9fb0125903aa2d138",
+      "bytes": 326,
+      "body_path": "/workspace/freshness-control/transport-evidence/b1171d2b9b3d431da8ec123b19efbb61.body"
+    },
+    {
+      "id": "f24965f7ecbb4d5c8fef4526b4ab87b3",
+      "url": "http://dc.aws-sec.akadns.net/robots.txt",
+      "kind": "robots",
+      "host": "dc.aws-sec.akadns.net",
+      "status": 403,
+      "headers": {
+        "content-length": "16",
+        "content-type": "text/plain",
+        "date": "Sat, 03 Oct 2026 18:37:49 GMT",
+        "server": "envoy",
+        "connection": "close"
+      },
+      "complete": true,
+      "error": null,
+      "retrieved_at": "2026-10-03T18:37:49.748579+00:00",
+      "sha256": "301ab39b129a9f65a8f8d7bfee350718cd0268497182e59c7ce9c036adf0a213",
+      "bytes": 16,
+      "body_path": "/workspace/freshness-control/transport-evidence/f24965f7ecbb4d5c8fef4526b4ab87b3.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T18:37:49.469565+00:00",
+  "sha256": "24b8b427482bf21b76dbfc57e616c41a27d3317c5c13dca9fb0125903aa2d138",
+  "requested_url": "https://www.sec.gov/divisions/corpfin",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/resume-20261003/4de3046982db25be84624793.body"
+}

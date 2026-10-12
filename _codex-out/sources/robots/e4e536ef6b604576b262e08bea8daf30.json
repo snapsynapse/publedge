@@ -1,0 +1,14 @@
+{
+  "id": "e4e536ef6b604576b262e08bea8daf30",
+  "url": "https://le.utah.gov/robots.txt",
+  "kind": "robots",
+  "host": "le.utah.gov",
+  "status": null,
+  "headers": {},
+  "complete": false,
+  "error": "[Errno -3] Temporary failure in name resolution",
+  "retrieved_at": "2026-10-03T03:01:14.010245+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/e4e536ef6b604576b262e08bea8daf30.body"
+}

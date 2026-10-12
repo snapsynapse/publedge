@@ -1,0 +1,60 @@
+{
+  "status": 200,
+  "headers": {
+    "date": "Sat, 03 Oct 2026 18:38:12 GMT",
+    "content-type": "application/pdf",
+    "content-length": "625095",
+    "server": "envoy",
+    "vary": "accept-encoding",
+    "accept-ranges": "bytes",
+    "last-modified": "Tue, 03 Feb 2026 14:19:18 GMT",
+    "cloudlare-cdn-cache-control": "no-store",
+    "set-cookie": "[REDACTED]",
+    "cache-control": "no-store",
+    "cf-cache-status": "BYPASS",
+    "cf-ray": "a44e1000da9ab7cd-ORD",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "x-envoy-upstream-service-time": "122",
+    "connection": "close"
+  },
+  "finalUrl": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+  "complete": true,
+  "redirects": [],
+  "error": null,
+  "attempts": [
+    {
+      "id": "fb2c6deee1234e798f075ea2363128ed",
+      "url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "kind": "fetch",
+      "host": "commerce.utah.gov",
+      "status": 200,
+      "headers": {
+        "date": "Sat, 03 Oct 2026 18:38:12 GMT",
+        "content-type": "application/pdf",
+        "content-length": "625095",
+        "server": "envoy",
+        "vary": "accept-encoding",
+        "accept-ranges": "bytes",
+        "last-modified": "Tue, 03 Feb 2026 14:19:18 GMT",
+        "cloudlare-cdn-cache-control": "no-store",
+        "set-cookie": "[REDACTED]",
+        "cache-control": "no-store",
+        "cf-cache-status": "BYPASS",
+        "cf-ray": "a44e1000da9ab7cd-ORD",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "x-envoy-upstream-service-time": "122",
+        "connection": "close"
+      },
+      "complete": true,
+      "error": null,
+      "retrieved_at": "2026-10-03T18:38:12.545331+00:00",
+      "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+      "bytes": 625095,
+      "body_path": "/workspace/freshness-control/transport-evidence/fb2c6deee1234e798f075ea2363128ed.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T18:38:12.545331+00:00",
+  "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+  "requested_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/resume-20261003/d9838473fec6f643779fd2e6.body"
+}

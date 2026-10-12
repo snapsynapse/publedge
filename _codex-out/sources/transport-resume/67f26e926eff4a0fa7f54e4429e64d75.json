@@ -1,0 +1,32 @@
+{
+  "id": "67f26e926eff4a0fa7f54e4429e64d75",
+  "url": "https://www.sec.gov/robots.txt",
+  "kind": "robots",
+  "host": "www.sec.gov",
+  "status": 200,
+  "headers": {
+    "server": "envoy",
+    "content-type": "text/plain",
+    "x-content-type-options": "nosniff",
+    "last-modified": "Wed, 23 Sep 2026 18:18:15 GMT",
+    "x-request-id": "v-cf20ecc8-b881-11f1-b808-4b12fbafd555",
+    "x-ah-environment": "prod",
+    "x-cache-hits": "2",
+    "x-age": "0",
+    "vary": "Accept-Encoding",
+    "cache-control": "max-age=43",
+    "expires": "Sat, 03 Oct 2026 18:38:30 GMT",
+    "date": "Sat, 03 Oct 2026 18:37:47 GMT",
+    "content-length": "2736",
+    "strict-transport-security": "max-age=31536000 ; includeSubDomains ; preload",
+    "x-envoy-upstream-service-time": "115",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:47.469455+00:00",
+  "sha256": "f83678ce2bb4a1f7603e0f7f0eac1bc7f1063f45997516a8cd6f4029f234c623",
+  "bytes": 2736,
+  "body_path": "/workspace/freshness-control/transport-evidence/67f26e926eff4a0fa7f54e4429e64d75.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/67f26e926eff4a0fa7f54e4429e64d75.body"
+}

@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.6",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.858811+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.6",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/9ad20e5c2c657b6fa282f853.body"
+}

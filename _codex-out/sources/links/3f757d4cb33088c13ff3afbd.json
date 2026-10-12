@@ -1,0 +1,28 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.consumerfinance.gov/",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [
+    {
+      "id": "4c33a001d05340078839665d8a693ef4",
+      "url": "https://www.consumerfinance.gov/robots.txt",
+      "kind": "robots",
+      "host": "www.consumerfinance.gov",
+      "status": null,
+      "headers": {},
+      "complete": false,
+      "error": "Tunnel connection failed: 403 Forbidden",
+      "retrieved_at": "2026-10-03T03:03:47.803803+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "body_path": "/workspace/freshness-control/transport-evidence/4c33a001d05340078839665d8a693ef4.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T03:03:47.818035+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.consumerfinance.gov/",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/3f757d4cb33088c13ff3afbd.body"
+}

@@ -1,0 +1,60 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8",
+    "server": "envoy",
+    "content-security-policy": "connect-src 'self' *.consumerfinance.gov dap.digitalgov.gov *.google-analytics.com *.tiles.mapbox.com api.mapbox.com bam.nr-data.net gov-bam.nr-data.net s3.amazonaws.com public.govdelivery.com *.mouseflow.com *.qualtrics.com raw.githubusercontent.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.consumerfinance.gov dap.digitalgov.gov *.googleanalytics.com *.google-analytics.com *.googletagmanager.com api.mapbox.com js-agent.newrelic.com bam.nr-data.net gov-bam.nr-data.net *.youtube.com *.ytimg.com *.mouseflow.com *.geo.census.gov about: www.federalregister.gov *.qualtrics.com www.ssa.gov/accessibility/andi/ ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js; font-src 'self' fonts.gstatic.com; default-src 'self'; media-src 'self' *.consumerfinance.gov; frame-src 'self' *.consumerfinance.gov *.googletagmanager.com *.google-analytics.com www.youtube.com *.qualtrics.com mailto:; img-src 'self' *.cfpb.gov *.consumerfinance.gov www.ecfr.gov s3.amazonaws.com img.youtube.com *.google-analytics.com *.googletagmanager.com api.mapbox.com *.tiles.mapbox.com blob: data: www.gravatar.com *.qualtrics.com *.mouseflow.com i.ytimg.com www.ssa.gov/accessibility/andi/; style-src 'self' 'unsafe-inline' *.consumerfinance.gov *.googletagmanager.com fonts.googleapis.com api.mapbox.com www.ssa.gov/accessibility/andi/",
+    "x-frame-options": "SAMEORIGIN",
+    "etag": "\"33ac4f61d22c86f8ac642bbe74bccccc\"",
+    "permissions-policy": "interest-cohort=()",
+    "x-content-type-options": "nosniff",
+    "referrer-policy": "same-origin",
+    "cross-origin-opener-policy": "same-origin",
+    "x-envoy-upstream-service-time": "14",
+    "vary": "Accept-Encoding",
+    "date": "Sat, 03 Oct 2026 18:37:50 GMT",
+    "strict-transport-security": "max-age=31536000",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "finalUrl": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+  "complete": true,
+  "redirects": [],
+  "error": null,
+  "attempts": [
+    {
+      "id": "81bd48a649a948528b3ad936fb84aae0",
+      "url": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+      "kind": "fetch",
+      "host": "www.consumerfinance.gov",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "envoy",
+        "content-security-policy": "connect-src 'self' *.consumerfinance.gov dap.digitalgov.gov *.google-analytics.com *.tiles.mapbox.com api.mapbox.com bam.nr-data.net gov-bam.nr-data.net s3.amazonaws.com public.govdelivery.com *.mouseflow.com *.qualtrics.com raw.githubusercontent.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.consumerfinance.gov dap.digitalgov.gov *.googleanalytics.com *.google-analytics.com *.googletagmanager.com api.mapbox.com js-agent.newrelic.com bam.nr-data.net gov-bam.nr-data.net *.youtube.com *.ytimg.com *.mouseflow.com *.geo.census.gov about: www.federalregister.gov *.qualtrics.com www.ssa.gov/accessibility/andi/ ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js; font-src 'self' fonts.gstatic.com; default-src 'self'; media-src 'self' *.consumerfinance.gov; frame-src 'self' *.consumerfinance.gov *.googletagmanager.com *.google-analytics.com www.youtube.com *.qualtrics.com mailto:; img-src 'self' *.cfpb.gov *.consumerfinance.gov www.ecfr.gov s3.amazonaws.com img.youtube.com *.google-analytics.com *.googletagmanager.com api.mapbox.com *.tiles.mapbox.com blob: data: www.gravatar.com *.qualtrics.com *.mouseflow.com i.ytimg.com www.ssa.gov/accessibility/andi/; style-src 'self' 'unsafe-inline' *.consumerfinance.gov *.googletagmanager.com fonts.googleapis.com api.mapbox.com www.ssa.gov/accessibility/andi/",
+        "x-frame-options": "SAMEORIGIN",
+        "etag": "\"33ac4f61d22c86f8ac642bbe74bccccc\"",
+        "permissions-policy": "interest-cohort=()",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "same-origin",
+        "cross-origin-opener-policy": "same-origin",
+        "x-envoy-upstream-service-time": "14",
+        "vary": "Accept-Encoding",
+        "date": "Sat, 03 Oct 2026 18:37:50 GMT",
+        "strict-transport-security": "max-age=31536000",
+        "connection": "close",
+        "transfer-encoding": "chunked"
+      },
+      "complete": true,
+      "error": null,
+      "retrieved_at": "2026-10-03T18:37:50.037517+00:00",
+      "sha256": "76f8533dd31b1041976bc3d494dbfcea3fe92bb373631facfc32e387faffbfd2",
+      "bytes": 142857,
+      "body_path": "/workspace/freshness-control/transport-evidence/81bd48a649a948528b3ad936fb84aae0.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T18:37:50.037517+00:00",
+  "sha256": "76f8533dd31b1041976bc3d494dbfcea3fe92bb373631facfc32e387faffbfd2",
+  "requested_url": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/resume-20261003/d6e4c8164e56ccfdd4446202.body"
+}

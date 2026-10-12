@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://everyailaw.com/instrument/colorado-sb26-189.json",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.839929+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://everyailaw.com/instrument/colorado-sb26-189.json",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/53049ca501608964826f846a.body"
+}

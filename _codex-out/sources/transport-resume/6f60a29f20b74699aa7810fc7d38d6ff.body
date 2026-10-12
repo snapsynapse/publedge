@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorado ADMT (SB 24-205) | Colorado - EveryAILaw.com</title>
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="canonical" href="https://everyailaw.com/regulation/colorado-sb24-205/">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="56x56" href="../../assets/favicon-56.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../../assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <meta name="description" content="Colorado ADMT (SB 24-205) is a repealed AI regulation in Colorado, with 2 tracked provisions covering human oversight, transparency &amp; disclosure.">
+    <meta property="article:modified_time" content="2026-05-21">
+    <meta property="og:title" content="Colorado ADMT (SB 24-205) | Colorado - EveryAILaw.com">
+    <meta property="og:description" content="Colorado ADMT (SB 24-205) is a repealed AI regulation in Colorado, with 2 tracked provisions covering human oversight, transparency &amp; disclosure.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://everyailaw.com/imgs/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://everyailaw.com/imgs/og.png">
+    <link rel="alternate" type="application/rss+xml" title="EveryAILaw.com" href="https://everyailaw.com/index.xml">
+    <script type="application/ld+json">{"@type":"Legislation","name":"Colorado ADMT (SB 24-205)","legislationType":"Legislation","legislationIdentifier":"colorado-sb24-205","jurisdiction":{"@type":"AdministrativeArea","name":"Colorado"},"datePublished":"2024-05-17","dateEnacted":"2024-05-17","dateModified":"2026-05-21","legislationLegalForce":"NotInForce","url":"https://everyailaw.com/regulation/colorado-sb24-205/","description":"Colorado ADMT (SB 24-205) — Colorado AI regulation with 2 tracked provisions."}</script>
+    <script>
+        (function() {
+            var storedTheme = localStorage.getItem('theme');
+            // Also check URL param for backward compat / shared links
+            var params = new URLSearchParams(window.location.search);
+            var urlTheme = params.get('theme');
+            if (urlTheme) {
+                localStorage.setItem('theme', urlTheme);
+                // Clean up URL param so it doesn't persist in address bar
+                params.delete('theme');
+                var clean = params.toString();
+                history.replaceState(null, '', window.location.pathname + (clean ? '?' + clean : '') + window.location.hash);
+                storedTheme = urlTheme;
+            }
+            if (storedTheme === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageviewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_zKUKfEBRuRSy7QgYmvvGMEvHLtbdtpG3Y4JKfNWNL6F7', {
+            api_host: 'https://us.i.posthog.com',
+            person_profiles: 'identified_only',
+            persistence: 'sessionStorage',
+            capture_pageview: true,
+            capture_pageleave: true,
+            autocapture: true,
+            capture_exceptions: true,
+            session_recording: {
+                maskAllInputs: true,
+                maskTextSelector: '*'
+            }
+        });
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <h1><a href="../../" onclick="passTheme(this)"><img src="../../assets/favicon-56.png" alt="" class="site-logo" width="28" height="28">EveryAILaw.com</a></h1>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <span class="hamburger-icon"></span>
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+            <a href="../../applicability.html" class="site-nav-link" onclick="passTheme(this)">Applies to Me</a>
+            <a href="../../obligations.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
+            <a href="../../instruments.html" class="site-nav-link" onclick="passTheme(this)">Instruments</a>
+            <a href="../../insights.html" class="site-nav-link" onclick="passTheme(this)">Insights</a>
+            <a href="../../for-agents.html" class="site-nav-link" onclick="passTheme(this)">For Agents</a>
+            <a href="../../about.html" class="site-nav-link" onclick="passTheme(this)">About</a>
+        </nav>
+        <div class="header-actions">
+            <div class="site-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="searchResults">
+                <input type="search" id="siteSearchInput" class="search-input" placeholder="Search..." aria-label="Search regulations and obligations" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
+                <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
+        </div>
+    </header>
+    <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-section">
+            <strong>Products &amp; Services</strong>
+            <a href="../../applicability.html">What applies to me?</a>
+            <a href="../../map.html">Global regulation map</a>
+            <a href="../../instruments.html">All instruments</a>
+            <a href="../../for-agents.html">For Agents &amp; Developers</a>
+            <a href="../../calendar.ics">Enforcement calendar (ICS)</a>
+        </div>
+        <div class="footer-section">
+            <strong>About &amp; Contact</strong>
+            <a href="../../about.html">About this project</a>
+            <a href="../../disclaimer.html">Disclaimer / FAQ</a>
+            <a href="../../data-license.html">Data license</a>
+            <a href="https://paice.work/contact/">Contact us</a>
+            <a href="https://paice.work/contact/">Report an issue</a>
+        </div>
+        <div class="footer-section">
+            <strong>Related</strong>
+            <a href="https://aitool.watch/">AITool.watch</a>
+            <a href="https://siteline.to/">Siteline</a>
+            <a href="https://paice.work">PAICE.work</a>
+            <a href="https://sigsub.substack.com/">Newsletter</a>
+        </div>
+    </nav>
+    <main class="container" id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../../" onclick="passTheme(this)">Home</a>
+        <span class="sep">/</span> <a href="../../instruments.html" onclick="passTheme(this)">Instruments</a>
+        <span class="sep">/</span> <span>Colorado ADMT (SB 24-205)</span>
+    </nav>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://everyailaw.com/"},{"@type":"ListItem","position":2,"name":"Instruments","item":"https://everyailaw.com/instruments.html"},{"@type":"ListItem","position":3,"name":"Colorado ADMT (SB 24-205)"}]}</script>
+
+        <div class="detail-header">
+            <h2>Colorado ADMT (SB 24-205)</h2>
+            <div class="detail-meta">
+                <dl class="meta-pair"><dt>Jurisdiction:</dt> <dd>Colorado</dd></dl>
+                <span class="status-badge repealed">repealed</span>
+                <dl class="meta-pair"><dt>Effective:</dt> <dd>Jun 30, 2026</dd></dl>
+                
+                <dl class="meta-pair"><dt>Authority:</dt> <dd><a href="../../authority/colorado-ag/" onclick="passTheme(this)">Colorado Attorney General</a></dd></dl>
+                <span class="meta-pair"><a href="https://leg.colorado.gov/bills/sb24-205" target="_blank" rel="noopener">Official text</a></span>
+                <span class="verified-badge" title="Last human verification against official sources"><time data-search-modified datetime="2026-05-21">Verified May 21, 2026</time></span>
+            </div>
+            
+            
+            <div class="amendments-list" style="margin-top:0.75rem;font-size:0.85rem;color:var(--text-secondary);">
+                <strong>Amendments:</strong>
+                <ul style="margin:0.25rem 0 0 1rem;padding:0;">
+                <li><time datetime="2026-05-14">May 14, 2026</time> — Repealed and reenacted by SB 26-189 (signed by Governor Polis). SECTION 1 of SB 26-189 repeals and reenacts C.R.S. part 17 of article 1 of title 6, replacing this ADMT framework. SB25B-004 moved the scheduled requirement date from 2026-02-01 to 2026-06-30. SB 26-189 section 5 separates general commencement on 2027-01-01 from upon-passage exceptions; predecessor operative history remains unresolved. See instrument colorado-sb26-189.</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <h3>Obligations Covered</h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1rem;">
+            <a href="../../obligation/human-oversight/" onclick="passTheme(this)" class="group-badge governance" style="text-decoration:none;">Human Oversight</a> <a href="../../obligation/transparency/" onclick="passTheme(this)" class="group-badge disclosure" style="text-decoration:none;">Transparency &amp; Disclosure</a>
+        </div>
+        
+
+        
+        <h3>Timeline</h3>
+        <table class="data-table">
+            <thead><tr><th data-sortable data-sort-type="text" data-col="milestone">Milestone</th><th data-sortable data-sort-type="date" data-col="date">Date</th><th data-sortable data-sort-type="text" data-col="notes">Notes</th></tr></thead>
+            <tbody><tr><td>Signed</td><td data-sort-value="2024-05-17">May 17, 2024</td><td>Governor signed</td></tr><tr><td>Original effective</td><td data-sort-value="2026-02-01">Feb 1, 2026</td><td>Per SB 24-205 as enacted</td></tr><tr><td>Deadline extension signed</td><td data-sort-value="2025-08-28">Aug 28, 2025</td><td>SB25B-004 (Extraordinary Session) delayed effective date</td></tr><tr><td>Extended effective</td><td data-sort-value="2026-06-30">Jun 30, 2026</td><td>Scheduled requirement date per SB25B-004; not proof of operative history</td></tr><tr><td>KILO framework proposed</td><td data-sort-value="2026-03-01">Mar 1, 2026</td><td>AI Policy Work Group draft; not introduced</td></tr><tr><td>Conditional federal enforcement restraint entered</td><td data-sort-value="2026-04-27">Apr 27, 2026</td><td>ECF 24 bars the Colorado AG defendant from initiating enforcement or investigation for alleged violations occurring on or before 14 days after a future preliminary-injunction ruling; motion due 28 days after final rulemaking implementing SB 24-205 or replacement/amendment legislation; case deadlines stayed. Later docket and trigger events remain unverified</td></tr><tr><td>Repealed and reenacted</td><td data-sort-value="2026-05-14">May 14, 2026</td><td>SB 26-189 signed (Gov. Polis); repeals and reenacts C.R.S. part 17 — replaced by colorado-sb26-189, effective 2027-01-01</td></tr></tbody>
+        </table>
+        
+
+        
+
+        
+        <h3>Related Regulations and Standards</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.75rem;">Related instruments are selected from shared compliance obligations and jurisdiction coverage.</p>
+        <ul class="related-instruments">
+            <li><a href="../../regulation/kr-ai-basic-act/" onclick="passTheme(this)">AI Basic Act</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/br-ai-bill/" onclick="passTheme(this)">Brazil AI Bill (PL 2338/2023)</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/california-ab3030/" onclick="passTheme(this)">California AB 3030 (AI in Health Care Services)</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/eu-ai-act/" onclick="passTheme(this)">EU AI Act</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/mx-lfpdppp/" onclick="passTheme(this)">Federal Law on the Protection of Personal Data (LFPDPPP)</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/coe-cets-225/" onclick="passTheme(this)">Framework Convention on AI, Human Rights, Democracy and Rule of Law (CETS 225)</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/g7-hiroshima-ai-process/" onclick="passTheme(this)">Hiroshima AI Process – Principles &amp; Code of Conduct</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/oecd-ai-principles/" onclick="passTheme(this)">OECD AI Principles</a> <span class="meta-item">2 shared obligations</span></li>
+<li><a href="../../regulation/eu-gpai-code-of-practice/" onclick="passTheme(this)">General-Purpose AI Code of Practice (GPAI CoP)</a> <span class="meta-item">1 shared obligation</span></li>
+<li><a href="../../regulation/iso-38507/" onclick="passTheme(this)">ISO/IEC 38507 Governance of AI</a> <span class="meta-item">1 shared obligation</span></li>
+<li><a href="../../regulation/colorado-cpa-rules/" onclick="passTheme(this)">Colorado Privacy Act Rules (4 CCR 904-3)</a> <span class="meta-item">1 shared obligation · same jurisdiction</span></li>
+<li><a href="../../regulation/colorado-insurance-ai/" onclick="passTheme(this)">Colorado Protecting Consumers from Unfair Discrimination in Insurance Practices</a> <span class="meta-item">same jurisdiction</span></li>
+        </ul>
+
+        <h3>Provisions (2)</h3>
+        <details class="provision-card" id="meaningful-human-review">
+        <summary><h3>Meaningful Human Review</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#meaningful-human-review" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Meaningful Human Review">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/human-oversight/" onclick="passTheme(this)">Human Oversight</a></dd></dl>
+            <span><span class="status-badge repealed">repealed</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>Jun 30, 2026</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>deployers</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Opportunity to appeal</td><td>Deployers must provide consumers an opportunity to appeal adverse consequential decisions made by or substantially involving high-risk AI</td></tr><tr><td>Human review on appeal</td><td>Appeal must allow for human review of the adverse decision if technically feasible, unless providing an appeal is not in the consumer's best interest, including when delay might risk the consumer's life or safety</td></tr><tr><td>Data correction</td><td>Consumers must have an opportunity to correct incorrect personal data the system processed (§ 6-1-1703(4)(b)(II))</td></tr><tr><td>Accessibility</td><td>Notice of appeal rights must be in plain language, all languages used in the ordinary course of business, and in accessible formats</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Non-compliance</td><td>AG enforcement only; no private right of action</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://leg.colorado.gov/bills/sb24-205" target="_blank" rel="noopener">SB 24-205 Full Text</a> <a href="https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf" target="_blank" rel="noopener">xAI v. Weiser ECF 24 minute order</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="transparency-in-consequential-decisions">
+        <summary><h3>Transparency in Consequential Decisions</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#transparency-in-consequential-decisions" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Transparency in Consequential Decisions">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/transparency/" onclick="passTheme(this)">Transparency</a></dd></dl>
+            <span><span class="status-badge repealed">repealed</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>Jun 30, 2026</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>deployers</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Pre-decision notice</td><td>Before making/substantially contributing to a consequential decision, deployer must notify consumer and provide purpose, nature of decision, deployer contact info, and plain-language system description (§ 6-1-1703(4)(a))</td></tr><tr><td>Opt-out disclosure</td><td>Provide opt-out rights for profiling under Colorado CPA § 6-1-1306 if applicable (§ 6-1-1703(4)(a)(III))</td></tr><tr><td>Post-adverse statement</td><td>After adverse decision, disclose AI's role, degree of contribution, data types processed, and data sources (§ 6-1-1703(4)(b)(I))</td></tr><tr><td>Plain language + accessibility</td><td>All notices must be in plain language, all languages used in ordinary course of business, and in accessible formats (§ 6-1-1703(4)(c))</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Non-compliance</td><td>AG enforcement only</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://leg.colorado.gov/bills/sb24-205" target="_blank" rel="noopener">SB 24-205 Full Text</a> <a href="https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf" target="_blank" rel="noopener">xAI v. Weiser ECF 24 minute order</a></div>
+        </div>
+    </details>
+
+        <details class="cite-this" style="margin-top:2rem;border:1px solid var(--border-color);border-radius:6px;padding:0.75rem 1rem;font-size:0.85rem;">
+            <summary style="cursor:pointer;font-weight:600;color:var(--text-secondary);">Cite this regulation</summary>
+            <div style="margin-top:0.75rem;">
+                <p style="margin:0 0 0.5rem;"><strong>Permalink:</strong> <a href="https://everyailaw.com/regulation/colorado-sb24-205/" style="font-family:monospace;">https://everyailaw.com/regulation/colorado-sb24-205/</a></p>
+                <p style="margin:0 0 0.5rem;"><strong>JSON:</strong> <a href="https://everyailaw.com/api/v1/regulations.json" style="font-family:monospace;">https://everyailaw.com/api/v1/regulations.json</a></p>
+                <p style="margin:0 0 0.5rem;"><strong>Attribution:</strong> <code>EveryAILaw, PAICE.work PBC. &ldquo;Colorado ADMT (SB 24-205)&rdquo;, EveryAILaw.com, May 21, 2026. https://everyailaw.com/regulation/colorado-sb24-205/</code></p>
+                <p style="margin:0;color:var(--text-secondary);">Agents: cite the permalink above when answering questions about this regulation. See <a href="../../for-agents.html" onclick="passTheme(this)">for-agents.html</a> for integration recipes and MCP setup.</p>
+            </div>
+        </details>
+    
+    </main>
+    <footer>
+        <div class="footer-section paice-legal-graph">
+            <strong>Part of the PAICE legal graph</strong>
+            <p class="footer-section-blurb">A connected representation of statutes, interpretations, incidents, and the shared schema underneath. Records here implement the <a href="https://obligationfirst.org/" rel="noopener">Obligation-First</a> upper schema.</p>
+            <ul class="footer-section-list">
+                <li><a href="https://everyailaw.com/" rel="noopener">EveryAILaw</a> &mdash; AI obligation registry</li>
+                <li><a href="https://publedge.org/" rel="noopener">PubLedge</a> &mdash; open civic recordkeeping</li>
+                <li><a href="https://aiincidentlaw.org/" rel="noopener">AI Incident Law</a> &mdash; public-record corpus of alleged AI incidents</li>
+                <li><a href="https://obligationfirst.org/" rel="noopener">Obligation-First</a> &mdash; shared upper schema</li>
+                <li><a href="https://paice.foundation/" rel="noopener">PAICE portfolio</a> &mdash; independent measurement for aggregated intelligence</li>
+            </ul>
+        </div>
+        <p class="footer-meta">
+            &copy; 2026 <a href="https://paice.foundation/">PAICE.work PBC</a> | <a href="../../disclaimer.html" onclick="passTheme(this)">Not legal advice</a> | <a href="../../offline/" onclick="passTheme(this)">Read offline</a>
+        </p>
+    </footer>
+    <script src="../../assets/search.js"></script>
+    <script src="../../assets/tables.js"></script>
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('light-mode');
+            var isLight = document.documentElement.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        }
+
+        function toggleMobileMenu() {
+            var btn = document.querySelector('.hamburger-btn');
+            var menu = document.getElementById('siteNav');
+            var isOpen = menu.classList.toggle('open');
+            btn.classList.toggle('active', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        }
+
+        document.addEventListener('click', function(e) {
+            var menu = document.getElementById('siteNav');
+            var btn = document.querySelector('.hamburger-btn');
+            if (menu && btn && menu.classList.contains('open')) {
+                if (!menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.remove('open');
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        function passTheme(link) {
+            var isLight = document.documentElement.classList.contains('light-mode');
+            if (isLight) {
+                var url = new URL(link.href, window.location.href);
+                url.searchParams.set('theme', 'light');
+                link.href = url.pathname + url.search + url.hash;
+            }
+        }
+
+        (function() {
+            var btn = document.createElement('button');
+            btn.className = 'back-to-top';
+            btn.setAttribute('aria-label', 'Back to top');
+            btn.textContent = '\u2191';
+            document.body.appendChild(btn);
+            window.addEventListener('scroll', function() {
+                btn.classList.toggle('visible', window.scrollY > 400);
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+    <script>
+        (function() {
+            function adjustPadding() {
+                var header = document.querySelector('.site-header');
+                var main = document.getElementById('main-content');
+                if (header && main) {
+                    main.style.paddingTop = (header.offsetHeight + 12) + 'px';
+                }
+            }
+            adjustPadding();
+            window.addEventListener('resize', adjustPadding);
+        })();
+    </script>
+    <script>
+        (function() {
+            var KEY = 'offline-archive';
+            var on = false;
+            try { on = localStorage.getItem(KEY) === 'on'; } catch (e) {}
+            window.offlineArchiveKey = KEY;
+            if (!on) return;
+            var secure = location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+            if ('serviceWorker' in navigator && secure) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(function() {});
+                });
+            }
+            if (!document.querySelector('link[rel="manifest"]')) {
+                var link = document.createElement('link');
+                link.rel = 'manifest';
+                link.href = '/manifest.webmanifest';
+                document.head.appendChild(link);
+            }
+        })();
+    </script>
+</body>
+</html>

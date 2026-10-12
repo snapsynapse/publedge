@@ -1,0 +1,15 @@
+{
+  "id": "a2f6ddbdc89e4282bd1c784693f9e8d8",
+  "url": "https://content.leg.colorado.gov/robots.txt",
+  "kind": "robots",
+  "host": "content.leg.colorado.gov",
+  "status": null,
+  "headers": {},
+  "complete": false,
+  "error": "Tunnel connection failed: 403 Forbidden",
+  "retrieved_at": "2026-10-03T18:37:58.919725+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/a2f6ddbdc89e4282bd1c784693f9e8d8.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/a2f6ddbdc89e4282bd1c784693f9e8d8.body"
+}

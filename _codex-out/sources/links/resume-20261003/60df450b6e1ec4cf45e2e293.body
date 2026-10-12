@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments) | Utah - EveryAILaw.com</title>
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="canonical" href="https://everyailaw.com/regulation/utah-sb149/">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="56x56" href="../../assets/favicon-56.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../../assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <meta name="description" content="Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments) is a enforcing AI regulation in Utah, with 8 tracked provisions covering transparency &amp; disclosure, data governance.">
+    <meta property="article:modified_time" content="2026-06-04">
+    <meta property="og:title" content="Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments) | Utah - EveryAILaw.com">
+    <meta property="og:description" content="Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments) is a enforcing AI regulation in Utah, with 8 tracked provisions covering transparency &amp; disclosure, data governance.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://everyailaw.com/imgs/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://everyailaw.com/imgs/og.png">
+    <link rel="alternate" type="application/rss+xml" title="EveryAILaw.com" href="https://everyailaw.com/index.xml">
+    <script type="application/ld+json">{"@type":"Legislation","name":"Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments)","legislationType":"Legislation","legislationIdentifier":"utah-sb149","jurisdiction":{"@type":"AdministrativeArea","name":"Utah"},"datePublished":"2024-03-13","dateEnacted":"2024-03-13","dateModified":"2026-06-04","legislationLegalForce":"InForce","url":"https://everyailaw.com/regulation/utah-sb149/","description":"Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments) — Utah AI regulation with 8 tracked provisions."}</script>
+    <script>
+        (function() {
+            var storedTheme = localStorage.getItem('theme');
+            // Also check URL param for backward compat / shared links
+            var params = new URLSearchParams(window.location.search);
+            var urlTheme = params.get('theme');
+            if (urlTheme) {
+                localStorage.setItem('theme', urlTheme);
+                // Clean up URL param so it doesn't persist in address bar
+                params.delete('theme');
+                var clean = params.toString();
+                history.replaceState(null, '', window.location.pathname + (clean ? '?' + clean : '') + window.location.hash);
+                storedTheme = urlTheme;
+            }
+            if (storedTheme === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageviewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_zKUKfEBRuRSy7QgYmvvGMEvHLtbdtpG3Y4JKfNWNL6F7', {
+            api_host: 'https://us.i.posthog.com',
+            person_profiles: 'identified_only',
+            persistence: 'sessionStorage',
+            capture_pageview: true,
+            capture_pageleave: true,
+            autocapture: true,
+            capture_exceptions: true,
+            session_recording: {
+                maskAllInputs: true,
+                maskTextSelector: '*'
+            }
+        });
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <h1><a href="../../" onclick="passTheme(this)"><img src="../../assets/favicon-56.png" alt="" class="site-logo" width="28" height="28">EveryAILaw.com</a></h1>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <span class="hamburger-icon"></span>
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+            <a href="../../applicability.html" class="site-nav-link" onclick="passTheme(this)">Applies to Me</a>
+            <a href="../../obligations.html" class="site-nav-link" onclick="passTheme(this)">Obligations</a>
+            <a href="../../instruments.html" class="site-nav-link" onclick="passTheme(this)">Instruments</a>
+            <a href="../../insights.html" class="site-nav-link" onclick="passTheme(this)">Insights</a>
+            <a href="../../for-agents.html" class="site-nav-link" onclick="passTheme(this)">For Agents</a>
+            <a href="../../about.html" class="site-nav-link" onclick="passTheme(this)">About</a>
+        </nav>
+        <div class="header-actions">
+            <div class="site-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="searchResults">
+                <input type="search" id="siteSearchInput" class="search-input" placeholder="Search..." aria-label="Search regulations and obligations" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
+                <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">&#x1F313;</button>
+        </div>
+    </header>
+    <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-section">
+            <strong>Products &amp; Services</strong>
+            <a href="../../applicability.html">What applies to me?</a>
+            <a href="../../map.html">Global regulation map</a>
+            <a href="../../instruments.html">All instruments</a>
+            <a href="../../for-agents.html">For Agents &amp; Developers</a>
+            <a href="../../calendar.ics">Enforcement calendar (ICS)</a>
+        </div>
+        <div class="footer-section">
+            <strong>About &amp; Contact</strong>
+            <a href="../../about.html">About this project</a>
+            <a href="../../disclaimer.html">Disclaimer / FAQ</a>
+            <a href="../../data-license.html">Data license</a>
+            <a href="https://paice.work/contact/">Contact us</a>
+            <a href="https://paice.work/contact/">Report an issue</a>
+        </div>
+        <div class="footer-section">
+            <strong>Related</strong>
+            <a href="https://aitool.watch/">AITool.watch</a>
+            <a href="https://siteline.to/">Siteline</a>
+            <a href="https://paice.work">PAICE.work</a>
+            <a href="https://sigsub.substack.com/">Newsletter</a>
+        </div>
+    </nav>
+    <main class="container" id="main-content">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../../" onclick="passTheme(this)">Home</a>
+        <span class="sep">/</span> <a href="../../instruments.html" onclick="passTheme(this)">Instruments</a>
+        <span class="sep">/</span> <span>Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments)</span>
+    </nav>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://everyailaw.com/"},{"@type":"ListItem","position":2,"name":"Instruments","item":"https://everyailaw.com/instruments.html"},{"@type":"ListItem","position":3,"name":"Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments)"}]}</script>
+
+        <div class="detail-header">
+            <h2>Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments)</h2>
+            <div class="detail-meta">
+                <dl class="meta-pair"><dt>Jurisdiction:</dt> <dd>Utah</dd></dl>
+                <span class="status-badge enforcing">enforcing</span>
+                <dl class="meta-pair"><dt>Effective:</dt> <dd>May 1, 2024</dd></dl>
+                
+                <dl class="meta-pair"><dt>Authority:</dt> <dd><a href="../../authority/utah-dcp/" onclick="passTheme(this)">Utah Division of Consumer Protection</a></dd></dl>
+                <span class="meta-pair"><a href="https://le.utah.gov/~2024/bills/static/SB0149.html" target="_blank" rel="noopener">Official text</a></span>
+                <span class="verified-badge" title="Last human verification against official sources"><time data-search-modified datetime="2026-06-04">Verified Jun 4, 2026</time></span>
+            </div>
+            
+            
+        </div>
+
+        
+        <h3>Obligations Covered</h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1rem;">
+            <a href="../../obligation/transparency/" onclick="passTheme(this)" class="group-badge disclosure" style="text-decoration:none;">Transparency &amp; Disclosure</a> <a href="../../obligation/data-governance/" onclick="passTheme(this)" class="group-badge governance" style="text-decoration:none;">Data Governance</a> <a href="../../obligation/record-keeping/" onclick="passTheme(this)" class="group-badge accountability" style="text-decoration:none;">Record-Keeping &amp; Documentation</a> <a href="../../obligation/risk-assessment/" onclick="passTheme(this)" class="group-badge governance" style="text-decoration:none;">Risk Assessment</a> <a href="../../obligation/human-oversight/" onclick="passTheme(this)" class="group-badge governance" style="text-decoration:none;">Human Oversight</a>
+        </div>
+        
+
+        
+        <h3>Timeline</h3>
+        <table class="data-table">
+            <thead><tr><th data-sortable data-sort-type="text" data-col="milestone">Milestone</th><th data-sortable data-sort-type="date" data-col="date">Date</th><th data-sortable data-sort-type="text" data-col="notes">Notes</th></tr></thead>
+            <tbody><tr><td>SB 149 signed</td><td data-sort-value="2024-03-13">Mar 13, 2024</td><td>Gov. Cox signed</td></tr><tr><td>SB 149 effective</td><td data-sort-value="2024-05-01">May 1, 2024</td><td>Office + disclosure + criminal mirror</td></tr><tr><td>Boyd appointed</td><td data-sort-value="2024-04-30">Apr 30, 2024</td><td>Director, Office of AI Policy</td></tr><tr><td>Office formally launched</td><td data-sort-value="2024-07 (month only)">2024-07 (month only)</td><td>Per GovTech, May 2025</td></tr><tr><td>SB 226, SB 271, SB 332, HB 452 effective</td><td data-sort-value="2025-05-07">May 7, 2025</td><td>Four-bill single-day package</td></tr><tr><td>2025 annual report deadline</td><td data-sort-value="Before 2025-11-30">Before 2025-11-30</td><td>Annual duty to Business &amp; Labor Interim Committee; this row does not identify the first report</td></tr><tr><td>HB 320 effective</td><td data-sort-value="2026-05-06">May 6, 2026</td><td>Learning Lab restructure</td></tr><tr><td>2026 annual report deadline</td><td data-sort-value="Before 2026-11-30">Before 2026-11-30</td><td>Include recommended legislation from Learning Lab findings (§13-72-201(3)(d)); no guaranteed replacement enactment</td></tr><tr><td>Chapter 72 sunset</td><td data-sort-value="2027-07-01">Jul 1, 2027</td><td>Office + Lab + agreements expire; other chapters survive</td></tr></tbody>
+        </table>
+        
+
+        
+
+        
+        <h3>Related Regulations and Standards</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.75rem;">Related instruments are selected from shared compliance obligations and jurisdiction coverage.</p>
+        <ul class="related-instruments">
+            <li><a href="../../regulation/eu-ai-act/" onclick="passTheme(this)">EU AI Act</a> <span class="meta-item">4 shared obligations</span></li>
+<li><a href="../../regulation/coe-cets-225/" onclick="passTheme(this)">Framework Convention on AI, Human Rights, Democracy and Rule of Law (CETS 225)</a> <span class="meta-item">4 shared obligations</span></li>
+<li><a href="../../regulation/eu-gpai-code-of-practice/" onclick="passTheme(this)">General-Purpose AI Code of Practice (GPAI CoP)</a> <span class="meta-item">4 shared obligations</span></li>
+<li><a href="../../regulation/g7-hiroshima-ai-process/" onclick="passTheme(this)">Hiroshima AI Process – Principles &amp; Code of Conduct</a> <span class="meta-item">4 shared obligations</span></li>
+<li><a href="../../regulation/kr-ai-basic-act/" onclick="passTheme(this)">AI Basic Act</a> <span class="meta-item">3 shared obligations</span></li>
+<li><a href="../../regulation/br-ai-bill/" onclick="passTheme(this)">Brazil AI Bill (PL 2338/2023)</a> <span class="meta-item">3 shared obligations</span></li>
+<li><a href="../../regulation/iso-42001/" onclick="passTheme(this)">ISO/IEC 42001 AI Management System</a> <span class="meta-item">3 shared obligations</span></li>
+<li><a href="../../regulation/oecd-ai-principles/" onclick="passTheme(this)">OECD AI Principles</a> <span class="meta-item">3 shared obligations</span></li>
+        </ul>
+
+        
+        <nav class="provision-toc" aria-label="Provision navigation">
+            <strong>Provisions (8)</strong>
+            <ul>
+                <li><a href="#general-genai-disclosure">General GenAI Disclosure</a> <span class="group-badge disclosure" style="font-size:0.6rem;padding:1px 5px;">disclosure</span></li>
+<li><a href="#high-risk-genai-disclosure-in-regulated-occupations">High-Risk GenAI Disclosure in Regulated Occupations</a> <span class="group-badge disclosure" style="font-size:0.6rem;padding:1px 5px;">disclosure</span></li>
+<li><a href="#mental-health-chatbot-disclosure">Mental Health Chatbot Disclosure</a> <span class="group-badge disclosure" style="font-size:0.6rem;padding:1px 5px;">disclosure</span></li>
+<li><a href="#mental-health-chatbot-data-protection">Mental Health Chatbot Data Protection</a> <span class="group-badge governance" style="font-size:0.6rem;padding:1px 5px;">governance</span></li>
+<li><a href="#mental-health-chatbot-safety-policy">Mental Health Chatbot Safety Policy</a> <span class="group-badge accountability" style="font-size:0.6rem;padding:1px 5px;">accountability</span></li>
+<li><a href="#ai-generated-personal-identity-abuse">AI-Generated Personal Identity Abuse</a> <span class="group-badge disclosure" style="font-size:0.6rem;padding:1px 5px;">disclosure</span></li>
+<li><a href="#regulatory-mitigation-and-joint-interpretation-agreements">Regulatory Mitigation and Joint Interpretation Agreements</a> <span class="group-badge accountability" style="font-size:0.6rem;padding:1px 5px;">accountability</span></li>
+<li><a href="#liability-for-ai-assisted-violations">Liability for AI-Assisted Violations</a> <span class="group-badge accountability" style="font-size:0.6rem;padding:1px 5px;">accountability</span></li>
+            </ul>
+        </nav>
+        
+        <details class="provision-card" id="general-genai-disclosure">
+        <summary><h3>General GenAI Disclosure</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#general-genai-disclosure" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to General GenAI Disclosure">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/transparency/" onclick="passTheme(this)">Transparency</a></dd></dl>
+            <span><span class="status-badge enforcing">enforcing</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>May 7, 2025</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>general</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>suppliers in consumer transactions</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>On-request disclosure</td><td>Must disclose AI use when consumer makes &quot;clear and unambiguous request&quot;</td></tr><tr><td>Safe harbor</td><td>Clear + conspicuous disclosure at outset and throughout eliminates enforcement exposure (§13-75-104)</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Admin enforcement</td><td>Up to $2,500 per violation</td></tr><tr><td>Court enforcement</td><td>Up to $2,500 per violation; disgorgement; attorney fees; investigative fees</td></tr><tr><td>Order violation</td><td>Up to $5,000 per violation</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://le.utah.gov/~2025/bills/static/SB0226.html" target="_blank" rel="noopener">SB 226 Text</a> <a href="../../raw/us-ut/SB0226.md" target="_blank" rel="noopener">raw/us-ut/SB0226.md</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="high-risk-genai-disclosure-in-regulated-occupations">
+        <summary><h3>High-Risk GenAI Disclosure in Regulated Occupations</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#high-risk-genai-disclosure-in-regulated-occupations" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to High-Risk GenAI Disclosure in Regulated Occupations">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/transparency/" onclick="passTheme(this)">Transparency</a></dd></dl>
+            <span><span class="status-badge enforcing">enforcing</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>May 7, 2025</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>regulated-occupation providers</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Proactive disclosure</td><td>Required only for &quot;high-risk AI interactions&quot; (§13-75-101(5)): sensitive data (health/financial/biometric) or personalized advice in finance/legal/medicine/mental health</td></tr><tr><td>Verbal at start</td><td>Required at start of oral exchange</td></tr><tr><td>Written before start</td><td>Required in electronic messaging before written exchange</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Same as general disclosure</td><td>$2,500 admin / $2,500 court / $5,000 order violation</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://le.utah.gov/~2025/bills/static/SB0226.html" target="_blank" rel="noopener">SB 226 Text</a> <a href="../../raw/us-ut/SB0226.md" target="_blank" rel="noopener">raw/us-ut/SB0226.md</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="mental-health-chatbot-disclosure">
+        <summary><h3>Mental Health Chatbot Disclosure</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#mental-health-chatbot-disclosure" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Mental Health Chatbot Disclosure">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/transparency/" onclick="passTheme(this)">Transparency</a></dd></dl>
+            <span><span class="status-badge enforcing">enforcing</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>May 7, 2025</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>mental health chatbot suppliers</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Pre-access disclosure</td><td>Must disclose before user may access chatbot features</td></tr><tr><td>Post-gap disclosure</td><td>Disclosure at start of interaction when &gt;7 days since user's last interaction</td></tr><tr><td>On-prompt disclosure</td><td>Disclosure any time user asks whether AI is used</td></tr><tr><td>Carve-out</td><td>Scripted-only output (meditations, mindfulness) and referral-to-human-therapist bots excluded (§13-72a-101(10)(b))</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Admin</td><td>Up to $2,500 per violation</td></tr><tr><td>Court</td><td>Up to $2,500 per violation; disgorgement; attorney fees</td></tr><tr><td>Order violation</td><td>Up to $5,000 per violation</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://le.utah.gov/~2025/bills/static/HB0452.html" target="_blank" rel="noopener">HB 452 Text</a> <a href="../../raw/us-ut/HB0452.md" target="_blank" rel="noopener">raw/us-ut/HB0452.md</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="mental-health-chatbot-data-protection">
+        <summary><h3>Mental Health Chatbot Data Protection</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#mental-health-chatbot-data-protection" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Mental Health Chatbot Data Protection">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/data-governance/" onclick="passTheme(this)">Data Governance</a></dd></dl>
+            <span><span class="status-badge enforcing">enforcing</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>May 7, 2025</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>mental health chatbot suppliers</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>No sale/sharing</td><td>May not sell or share identifiable health information or user input with third parties</td></tr><tr><td>Health care exception</td><td>Permitted when user-consented or user-requested to health care provider or health plan</td></tr><tr><td>HIPAA-equivalent controls</td><td>Third-party sharing for functionality requires HIPAA Parts 160 + 164 Subparts A/E compliance as if supplier were a covered entity</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Same as chatbot disclosure</td><td>$2,500 admin / court / $5,000 order violation</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://le.utah.gov/~2025/bills/static/HB0452.html" target="_blank" rel="noopener">HB 452 Text</a> <a href="../../raw/us-ut/HB0452.md" target="_blank" rel="noopener">raw/us-ut/HB0452.md</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="mental-health-chatbot-safety-policy">
+        <summary><h3>Mental Health Chatbot Safety Policy</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#mental-health-chatbot-safety-policy" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Mental Health Chatbot Safety Policy">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/record-keeping/" onclick="passTheme(this)">Record Keeping</a></dd></dl>
+            <span><span class="status-badge enforcing">enforcing</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>May 7, 2025</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>Mental health chatbot suppliers seeking the affirmative defense to administrative or civil liability alleged under §58-1-501(1) or (2); policy/documentation/filing duties here are conditions of that defense (§58-60-118(2),(6)), not a universal supplier mandate</dd></dl>
+            
+        </div>
+        
+        <div class="context-note">The defense does not bar an enforcement action or license a chatbot as a therapist (§58-60-118(7)); separate Chapter 72a consumer-protection duties remain applicable</div>
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Defense policy</td><td>To qualify, create, maintain and implement a written policy covering intended purposes, therapist involvement, clinical best practices, testing, risk identification, user reporting, acute-risk protocols, safety reviews, safe-use instructions, AI-awareness disclosure, engagement-over-safety prohibition, non-discrimination, HIPAA compliance</td></tr><tr><td>Documentation</td><td>To qualify, maintain documentation of foundation models used, training data, HIPAA compliance, user data practices, ongoing accuracy/safety efforts</td></tr><tr><td>Filing</td><td>To claim the defense, file the required policy and supplier/chatbot information with the Division of Consumer Protection in its required manner and pay the filing fee (§58-60-118(4)); the Division may impose an annual filing fee (§58-60-118(5)(b))</td></tr><tr><td>Compliance condition</td><td>To qualify, comply with all requirements of the filed policy at the time of the alleged violation (§58-60-118(2)(d))</td></tr><tr><td>Defense limits</td><td>The defense does not bar the Division from bringing the specified enforcement action, does not recognize a chatbot as a licensed therapist, and does not displace separate Chapter 72a consumer-protection duties (§58-60-118(6)-(7))</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Affirmative defense</td><td>Limited to administrative or civil actions alleging §58-1-501(1) or (2); it does not bar the Division from bringing such an action and does not extend to separate Chapter 72a consumer-protection liability (§58-60-118(6)-(7))</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://le.utah.gov/~2025/bills/static/HB0452.html" target="_blank" rel="noopener">HB 452 Text</a> <a href="../../raw/us-ut/HB0452.md" target="_blank" rel="noopener">raw/us-ut/HB0452.md</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="ai-generated-personal-identity-abuse">
+        <summary><h3>AI-Generated Personal Identity Abuse</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#ai-generated-personal-identity-abuse" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to AI-Generated Personal Identity Abuse">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/transparency/" onclick="passTheme(this)">Transparency</a></dd></dl>
+            <span><span class="status-badge enforcing">enforcing</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>May 7, 2025</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>high-risk</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>any person using or distributing tools for personal-identity creation</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Expanded scope</td><td>Personal identity now covers name, title, picture, portrait, video likeness, voice, audiovisual appearance — including AI simulation/reproduction</td></tr><tr><td>Voice definition</td><td>Any computer-generated sound &quot;readily identifiable and attributable&quot; to an individual</td></tr><tr><td>Tool distribution liability</td><td>Knowingly distributing tools whose &quot;intended primary purpose&quot; is unauthorized personal-identity content creation for commercial purposes = abuse</td></tr><tr><td>Exemptions</td><td>News, public affairs, sports, art, parody, political speech; §230 interactive-computer-service safe harbor</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Civil action</td><td></td></tr><tr><td>Criminal</td><td></td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://le.utah.gov/~2025/bills/static/SB0271.html" target="_blank" rel="noopener">SB 271 Text</a> <a href="../../raw/us-ut/SB0271.md" target="_blank" rel="noopener">raw/us-ut/SB0271.md</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="regulatory-mitigation-and-joint-interpretation-agreements">
+        <summary><h3>Regulatory Mitigation and Joint Interpretation Agreements</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#regulatory-mitigation-and-joint-interpretation-agreements" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Regulatory Mitigation and Joint Interpretation Agreements">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/record-keeping/" onclick="passTheme(this)">Record Keeping</a></dd></dl>
+            <span><span class="status-badge enforcing">enforcing</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>Invalid Date</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>variable (per agreement)</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>Learning Lab participants</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Participant eligibility</td><td>Five prongs per §13-72-402: technical capability, financial resources, substantial consumer benefits outweighing risks, risk-monitoring plan, appropriately-limited scope</td></tr><tr><td>Agreement contents</td><td>Scope limits, safeguards, mitigation granted, required consumer disclosures, reporting requirements (§13-72-401(4))</td></tr><tr><td>Counterparties</td><td>OAIP + relevant state agency or governmental entity (judiciary, higher-ed, political subdivisions per HB 320)</td></tr><tr><td>Term</td><td>Initial 12 months + up to 2 × 12-month extensions (36 months total per §13-72-403)</td></tr><tr><td>Mandatory audits</td><td>OAIP &quot;shall perform regular audits&quot; while agreement is active (§13-72-401(6), HB 320)</td></tr><tr><td>Agreement types</td><td>Regulatory mitigation (waives specified law) or joint interpretation (clarifies statute application to AI)</td></tr><tr><td>Annual report</td><td>Annually before November 30 to Business &amp; Labor Interim Committee: learning agenda, findings/participation/outcomes, executed agreements, and recommended legislation from Lab findings (§13-72-201(3)(d)); the provision does not mandate replacement enactment</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Agreement violation</td><td></td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://le.utah.gov/~2024/bills/static/SB0149.html" target="_blank" rel="noopener">SB 149 Text</a> <a href="https://le.utah.gov/~2026/bills/static/HB0320.html" target="_blank" rel="noopener">HB 320 Text</a> <a href="../../raw/us-ut/SB0149.md" target="_blank" rel="noopener">raw/us-ut/SB0149.md</a> <a href="../../raw/us-ut/HB0320.md" target="_blank" rel="noopener">raw/us-ut/HB0320.md</a> <a href="../../raw/us-ut/utah-hb320-enrolled-retrieved-2026-09-08.md" target="_blank" rel="noopener">HB 320 official enrolled source retrieved 2026-09-08</a></div>
+        </div>
+    </details>
+<details class="provision-card" id="liability-for-ai-assisted-violations">
+        <summary><h3>Liability for AI-Assisted Violations</h3></summary>
+        <div class="provision-details">
+            
+        <p class="provision-navigation"><a href="#liability-for-ai-assisted-violations" class="anchor-link" title="Copy link to this provision" aria-label="Copy link to Liability for AI-Assisted Violations">Copy link to this provision</a></p>
+        <div class="provision-meta">
+            <dl class="meta-pair"><dt>Obligation:</dt> <dd><a href="../../obligation/record-keeping/" onclick="passTheme(this)">Record Keeping</a></dd></dl>
+            <span><span class="status-badge enforcing">enforcing</span></span>
+            <dl class="meta-pair"><dt>Effective:</dt> <dd>Invalid Date</dd></dl>
+            
+            <dl class="meta-pair"><dt>Risk tier:</dt> <dd>all</dd></dl>
+            <dl class="meta-pair"><dt>Scope:</dt> <dd>any principal using or prompting GenAI</dd></dl>
+            
+        </div>
+        
+        
+            <h4>Requirements</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="requirement">Requirement</th><th data-sortable data-sort-type="text" data-col="details">Details</th></tr></thead><tbody><tr><td>Civil (§13-75-102)</td><td>&quot;Not a defense&quot; that GenAI made the violative statement, undertook the violative act, or was used in furtherance</td></tr><tr><td>Criminal (§76-2-107)</td><td>Principal may be found guilty if they commit offense &quot;with the aid of&quot; or &quot;intentionally prompt&quot; GenAI to commit offense</td></tr></tbody></table>
+            <h4>Penalties</h4><table class="data-table"><thead><tr><th data-sortable data-sort-type="text" data-col="violation">Violation</th><th data-sortable data-sort-type="text" data-col="fine">Fine</th></tr></thead><tbody><tr><td>Civil</td><td>Per underlying consumer-protection statute</td></tr><tr><td>Criminal</td><td>Per underlying offense — no separate penalty</td></tr></tbody></table>
+            <div class="provision-sources"><strong>Sources:</strong> <a href="https://le.utah.gov/~2024/bills/static/SB0149.html" target="_blank" rel="noopener">SB 149 Text</a> <a href="https://le.utah.gov/~2025/bills/static/SB0226.html" target="_blank" rel="noopener">SB 226 Text</a> <a href="../../raw/us-ut/SB0149.md" target="_blank" rel="noopener">raw/us-ut/SB0149.md</a> <a href="../../raw/us-ut/SB0226.md" target="_blank" rel="noopener">raw/us-ut/SB0226.md</a></div>
+        </div>
+    </details>
+
+        <details class="cite-this" style="margin-top:2rem;border:1px solid var(--border-color);border-radius:6px;padding:0.75rem 1rem;font-size:0.85rem;">
+            <summary style="cursor:pointer;font-weight:600;color:var(--text-secondary);">Cite this regulation</summary>
+            <div style="margin-top:0.75rem;">
+                <p style="margin:0 0 0.5rem;"><strong>Permalink:</strong> <a href="https://everyailaw.com/regulation/utah-sb149/" style="font-family:monospace;">https://everyailaw.com/regulation/utah-sb149/</a></p>
+                <p style="margin:0 0 0.5rem;"><strong>JSON:</strong> <a href="https://everyailaw.com/api/v1/regulations.json" style="font-family:monospace;">https://everyailaw.com/api/v1/regulations.json</a></p>
+                <p style="margin:0 0 0.5rem;"><strong>Attribution:</strong> <code>EveryAILaw, PAICE.work PBC. &ldquo;Utah AI Policy Act (stack — SB 149 + 2025 + 2026 amendments)&rdquo;, EveryAILaw.com, Jun 4, 2026. https://everyailaw.com/regulation/utah-sb149/</code></p>
+                <p style="margin:0;color:var(--text-secondary);">Agents: cite the permalink above when answering questions about this regulation. See <a href="../../for-agents.html" onclick="passTheme(this)">for-agents.html</a> for integration recipes and MCP setup.</p>
+            </div>
+        </details>
+    
+    </main>
+    <footer>
+        <div class="footer-section paice-legal-graph">
+            <strong>Part of the PAICE legal graph</strong>
+            <p class="footer-section-blurb">A connected representation of statutes, interpretations, incidents, and the shared schema underneath. Records here implement the <a href="https://obligationfirst.org/" rel="noopener">Obligation-First</a> upper schema.</p>
+            <ul class="footer-section-list">
+                <li><a href="https://everyailaw.com/" rel="noopener">EveryAILaw</a> &mdash; AI obligation registry</li>
+                <li><a href="https://publedge.org/" rel="noopener">PubLedge</a> &mdash; open civic recordkeeping</li>
+                <li><a href="https://aiincidentlaw.org/" rel="noopener">AI Incident Law</a> &mdash; public-record corpus of alleged AI incidents</li>
+                <li><a href="https://obligationfirst.org/" rel="noopener">Obligation-First</a> &mdash; shared upper schema</li>
+                <li><a href="https://paice.foundation/" rel="noopener">PAICE portfolio</a> &mdash; independent measurement for aggregated intelligence</li>
+            </ul>
+        </div>
+        <p class="footer-meta">
+            &copy; 2026 <a href="https://paice.foundation/">PAICE.work PBC</a> | <a href="../../disclaimer.html" onclick="passTheme(this)">Not legal advice</a> | <a href="../../offline/" onclick="passTheme(this)">Read offline</a>
+        </p>
+    </footer>
+    <script src="../../assets/search.js"></script>
+    <script src="../../assets/tables.js"></script>
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('light-mode');
+            var isLight = document.documentElement.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        }
+
+        function toggleMobileMenu() {
+            var btn = document.querySelector('.hamburger-btn');
+            var menu = document.getElementById('siteNav');
+            var isOpen = menu.classList.toggle('open');
+            btn.classList.toggle('active', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        }
+
+        document.addEventListener('click', function(e) {
+            var menu = document.getElementById('siteNav');
+            var btn = document.querySelector('.hamburger-btn');
+            if (menu && btn && menu.classList.contains('open')) {
+                if (!menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.remove('open');
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        function passTheme(link) {
+            var isLight = document.documentElement.classList.contains('light-mode');
+            if (isLight) {
+                var url = new URL(link.href, window.location.href);
+                url.searchParams.set('theme', 'light');
+                link.href = url.pathname + url.search + url.hash;
+            }
+        }
+
+        (function() {
+            var btn = document.createElement('button');
+            btn.className = 'back-to-top';
+            btn.setAttribute('aria-label', 'Back to top');
+            btn.textContent = '\u2191';
+            document.body.appendChild(btn);
+            window.addEventListener('scroll', function() {
+                btn.classList.toggle('visible', window.scrollY > 400);
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+    <script>
+        (function() {
+            function adjustPadding() {
+                var header = document.querySelector('.site-header');
+                var main = document.getElementById('main-content');
+                if (header && main) {
+                    main.style.paddingTop = (header.offsetHeight + 12) + 'px';
+                }
+            }
+            adjustPadding();
+            window.addEventListener('resize', adjustPadding);
+        })();
+    </script>
+    <script>
+        (function() {
+            var KEY = 'offline-archive';
+            var on = false;
+            try { on = localStorage.getItem(KEY) === 'on'; } catch (e) {}
+            window.offlineArchiveKey = KEY;
+            if (!on) return;
+            var secure = location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+            if ('serviceWorker' in navigator && secure) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(function() {});
+                });
+            }
+            if (!document.querySelector('link[rel="manifest"]')) {
+                var link = document.createElement('link');
+                link.rel = 'manifest';
+                link.href = '/manifest.webmanifest';
+                document.head.appendChild(link);
+            }
+        })();
+    </script>
+</body>
+</html>
