@@ -51,8 +51,8 @@ test('SB226 R1 native IDs, metadata, mapping and R3 civil/criminal content are u
         assert.match(text, /retained 2025 enrolled SB 226 only, not independently validated current codification/);
         assert.doesNotMatch(text, /§13-77-/);
     }
+    // The SB226 instrument Summary moved later under receipt succession; see sb226-summary-succession.test.js.
     const preserved = {
-        'data/examples/instruments/us-ut-legislature-statute-2025-sb226.md': '9cb602b984427da4e4f0bdc1ba9f56458de93a54911769c20584ce105b1c6cf0',
         'data/examples/mapping/index.yml': 'b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f',
         'data/examples/obligations/ai-defense-elimination.md': 'a55e45923f6c446174676808c25e74c677631fb8550f520ee92ba2786eb08151'
     };
@@ -101,8 +101,8 @@ test('SB226 R1 native safe harbor retains alternatives, full timing and section1
 });
 
 test('SB226 R1 admission binds exactly the new agent-reviewed units without rewriting prior receipts', () => {
+    // The SB226 instrument receipt is embedded verbatim by its successor; see sb226-summary-succession.test.js.
     const preservedReceipts = {
-        'data/examples/instruments/us-ut-legislature-statute-2025-sb226.md': '477433cdc9aa83a53073e06246dc52f2914874b80d326b8001ddeb27fa3ccd6b',
         'data/examples/mapping/index.yml': '0bd582f2ad5ddc22e117ed8fe463db2005702f26336f5ce749dd0284b4bb3c64',
         'data/examples/obligations/ai-defense-elimination.md': '468b8029d06d02225a297094b0dcc40becb5c4a139fe4416a5676bac8700f1a3'
     };

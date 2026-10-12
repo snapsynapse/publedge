@@ -37,18 +37,20 @@
     "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
     "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
     "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-    "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
+    "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+    "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
+    "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
-      "native_file_sha256": "9cb602b984427da4e4f0bdc1ba9f56458de93a54911769c20584ce105b1c6cf0",
+      "native_file_sha256": "e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb",
       "canonical_unit": null,
-      "canonical_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530",
+      "canonical_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "4ac77cfcca432ea01bcba7273922a36be25970b9c78729c8cd6241f6c3ee1733",
+      "review_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
       "retained_primary_sha256": [
         "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
         "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
@@ -59,7 +61,9 @@
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
         "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+        "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
+        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
       ]
     }
   ]

@@ -193,7 +193,7 @@ files:
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
     role: instrument
-    hash: sha256:9cb602b984427da4e4f0bdc1ba9f56458de93a54911769c20584ce105b1c6cf0
+    hash: sha256:e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:98f17b9e5d32be9ce450dc2ea08aaae0896474cd2902df914d82d036d8ef90cf
+    hash: sha256:5c82713637e50b390f4d129f76960fe90926f50c59ddab8508d4c10eda12db9b
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -558,12 +558,12 @@ files:
 
   - path: scripts/check-source-admission.js
     role: tooling
-    hash: sha256:72aff0b1b51b4f90062298dd3a0e055f8ab1128c775478941d90b540239b4221
+    hash: sha256:76a0e7590074fbe66084d92bbe3933fca6987f67fb2b611e7bacfbb2304db755
     note: Source admission gate and EAL-compatible report
 
   - path: scripts/lib/source-admission.js
     role: tooling
-    hash: sha256:a58ce91920f115db9b69e7e47eaf497385e622e855de535455852b51c73b1b4f
+    hash: sha256:9d055d9310be2a708493e9214cc2c44cc61c0790f11096614c417ee568c3dbc8
     note: Source admission digest and evidence policy
 
   - path: scripts/lib/api-projection.js
@@ -578,7 +578,7 @@ files:
 
   - path: scripts/prepare-source-admission.js
     role: tooling
-    hash: sha256:f1287f2196bac855ae2b84c6f939e64e4e786ccadab16e69e23c01f436711dc6
+    hash: sha256:a0b2780a88a9584ea5ea78600957d4521e6c000f5fcad0890c727bfa40da5f8e
     note: Pending admission packet generator
 
   - path: scripts/eval-mcp-rpc-framing.js
@@ -598,7 +598,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:2b65fa0573ffce83e9a6a91214f37f2fa4641bef40b70553283729c5c7f7fbc3
+    hash: sha256:28008102ee3321e82d7f85ea6250a7015699bd9dc6f9cdb70d575e1f2bfe9788
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -1038,7 +1038,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:e4fcbb61cf703c1dbcaf9b10c01feb50f548dfc3ac797b5ec3c717aeec3af5aa
+    hash: sha256:646f30d589ec1961dcc0f3377985c9dba1be6be2c0b0a66538135ba664632ac8
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js
@@ -1168,7 +1168,7 @@ files:
 
   - path: tests/sb226-r1.test.js
     role: code
-    hash: sha256:ba4f4636bad329be363c84d09c840cfe62a3fd89ec107025bddff21056a41c38
+    hash: sha256:8f90a6fcb138808b652fe69ebf86e50e7a5c18c46f098155112f6726af1141d8
     note: SB226 R1 retained-source and admission regressions
 
   - path: ops/evidence/sb226-r1-native-delta-2026-10-02.diff
@@ -1185,3 +1185,11 @@ files:
     role: evidence
     hash: sha256:6d6bbc43b88d1ca9510466460e092bd6fd9484d3344919e810fc5d8259f09322
     note: Scoped SB226 R1 owner repair receipt; instrument Summary remains gated
+  - path: ops/evidence/sb226-summary-succession-2026-10-11.md
+    role: evidence
+    hash: sha256:a26aa0c653c9c4f6ee4e89009914928e15ba15a3c567dda37cee3a865c3d5b86
+    note: SB226 instrument Summary correction under agent receipt succession
+  - path: tests/sb226-summary-succession.test.js
+    role: code
+    hash: sha256:e16c21f3bfaabd8c89c5ba26cb159cff98451e0f5bb4bf0bb49a54679f55aeda
+    note: SB226 Summary successor embeds the human receipt and changes one unit

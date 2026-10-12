@@ -473,3 +473,109 @@ test('a PubLedge original draft cites itself as source and its own section as lo
     assert.equal(emitted.source_locator, 'First-Session Disclosure (§13-72a-203)');
     assert.deepEqual(emitted.anchors, ['https://everyailaw.com/term/utah-sb149-chatbot-disclosure.json'], 'the interpreted statute stays linked through the anchor');
 });
+
+const MID = AFTER.replace('| Verified | 2026-01-01 |', '| Verified | 2026-09-09 |');
+const FINAL = MID.replace('Providers must comply, subject to the stated exception.', 'Providers in Section 8 must comply, subject to the stated exception.');
+
+function unitReview(base, target, key, reason) {
+    return {
+        before_sha256: base.units[key] || null,
+        after_sha256: target.units[key].sha256,
+        candidate_content: target.units[key].content,
+        reason,
+        qualifications: { scope: 'Providers in Section 8', exceptions: 'The stated exception remains', time: 'January 1, 2027' },
+        evidence: ['notice']
+    };
+}
+
+// Human review renews Verified; an agent successor later edits only the body text.
+function successionFixture() {
+    const data = fixture();
+    const legacyUnits = data.legacy.records[FILE].units;
+    const legacySha = data.legacy.records[FILE].sha256;
+    const mid = admission.markdownSnapshot(MID);
+    const final = admission.markdownSnapshot(FINAL);
+    const evidence = data.admissions.records[FILE].evidence;
+    const prior = {
+        record_sha256: mid.sha256,
+        baseline_sha256: legacySha,
+        whole_record: { before_sha256: legacySha, after_sha256: mid.sha256 },
+        review: { actor_type: 'human', actor: 'test-human', reviewed_at: '2026-09-09T12:00:00Z', decision: 'source-consistency-reviewed', human_approved: true, scope: 'Scope correction and Verified renewal' },
+        unresolved: ['Current applicability remains outside this fixture'],
+        evidence: structuredClone(evidence),
+        units: {
+            'section:Duty/property:Scope': unitReview({ units: legacyUnits }, mid, 'section:Duty/property:Scope', 'Remove unsupported universal scope'),
+            'section:Duty/property:Verified': unitReview({ units: legacyUnits }, mid, 'section:Duty/property:Verified', 'Human renewal')
+        }
+    };
+    prior.review.packet_sha256 = admission.packetDigest(prior);
+    const midUnits = admission.unitHashes(mid);
+    const successor = {
+        record_sha256: final.sha256,
+        baseline_sha256: mid.sha256,
+        whole_record: { before_sha256: mid.sha256, after_sha256: final.sha256 },
+        supersedes: { packet_sha256: prior.review.packet_sha256, reason: 'Body text correction after the human review', receipt: prior },
+        review: { actor_type: 'agent', actor: 'test-reviewer', reviewed_at: '2026-09-10T12:00:00Z', decision: 'source-consistency-reviewed', scope: 'Body text only' },
+        unresolved: ['Current applicability remains outside this fixture'],
+        evidence: structuredClone(evidence),
+        units: { 'section:Duty/text': unitReview({ units: midUnits }, final, 'section:Duty/text', 'Carry the Section 8 boundary into the body') }
+    };
+    successor.review.packet_sha256 = admission.packetDigest(successor);
+    data.current[FILE] = final;
+    data.admissions.records[FILE] = successor;
+    data.now = new Date('2026-09-10T13:00:00Z');
+    return { data, prior, successor };
+}
+const reseal = receipt => { receipt.review.packet_sha256 = admission.packetDigest(receipt); };
+
+test('an agent successor reviews only its own changes and keeps the human review of untouched units', () => {
+    const { data, prior } = successionFixture();
+    const result = admission.validateAdmission(data);
+    assert.equal(result.status, 'passed', result.errors.join('\n'));
+    assert.equal(result.changed_units_reviewed, 3, 'two superseded unit reviews plus one successor review');
+    const effective = admission.effectiveUnitReviews(data.admissions.records[FILE]);
+    assert.deepEqual(Object.keys(effective).sort(), ['section:Duty/property:Scope', 'section:Duty/property:Verified', 'section:Duty/text']);
+    assert.equal(effective['section:Duty/property:Verified'].receipt, prior);
+    assert.equal(effective['section:Duty/text'].receipt.review.actor_type, 'agent');
+});
+
+test('an agent successor still cannot renew Verified', () => {
+    const { data, successor } = successionFixture();
+    const renewed = admission.markdownSnapshot(FINAL.replace('| Verified | 2026-09-09 |', '| Verified | 2026-09-10 |'));
+    const midUnits = admission.unitHashes(admission.markdownSnapshot(MID));
+    successor.record_sha256 = renewed.sha256;
+    successor.whole_record.after_sha256 = renewed.sha256;
+    successor.units['section:Duty/text'] = unitReview({ units: midUnits }, renewed, 'section:Duty/text', 'Body');
+    successor.units['section:Duty/property:Verified'] = unitReview({ units: midUnits }, renewed, 'section:Duty/property:Verified', 'Attempted renewal');
+    reseal(successor);
+    data.current[FILE] = renewed;
+    assert.match(admission.validateAdmission(data).errors.join('\n'), /cannot renew Verified/);
+});
+
+test('a successor must embed the superseded receipt verbatim and carry its unresolved items', () => {
+    const tampered = successionFixture();
+    tampered.successor.supersedes.receipt.review.scope = 'Rewritten history';
+    reseal(tampered.successor);
+    assert.match(admission.validateAdmission(tampered.data).errors.join('\n'), /Superseded packet binding is stale|Review packet changed/);
+    const dropped = successionFixture();
+    dropped.successor.unresolved = [];
+    reseal(dropped.successor);
+    assert.match(admission.validateAdmission(dropped.data).errors.join('\n'), /carry forward every unresolved item/);
+    const unbound = successionFixture();
+    unbound.successor.baseline_sha256 = unbound.data.legacy.records[FILE].sha256;
+    reseal(unbound.successor);
+    assert.match(admission.validateAdmission(unbound.data).errors.join('\n'), /Wrong historical input binding/);
+});
+
+test('history comparison rejects a rewritten receipt and accepts a successor that embeds it', () => {
+    const { prior, successor } = successionFixture();
+    const rewritten = structuredClone(prior);
+    rewritten.review.actor = 'someone-else';
+    const failed = { status: 'passed', errors: [] };
+    admissionCheck.retainPriorReceipts(failed, { records: { [FILE]: rewritten } }, { records: { [FILE]: prior } });
+    assert.equal(failed.status, 'failed');
+    assert.match(failed.errors.join('\n'), /rewritten instead of superseded/);
+    const passed = { status: 'passed', errors: [] };
+    admissionCheck.retainPriorReceipts(passed, { records: { [FILE]: successor } }, { records: { [FILE]: prior } });
+    assert.equal(passed.status, 'passed', passed.errors.join('\n'));
+});

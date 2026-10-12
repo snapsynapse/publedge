@@ -3993,30 +3993,311 @@
       }
     },
     "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md": {
-      "record_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530",
-      "baseline_sha256": "7e4a5fbb8f032549b461c3d8840b09b6dfe91587e3b95cde0269b6a9bd69ac2c",
+      "record_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
+      "baseline_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530",
       "whole_record": {
-        "before_sha256": "7e4a5fbb8f032549b461c3d8840b09b6dfe91587e3b95cde0269b6a9bd69ac2c",
-        "after_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530"
+        "before_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530",
+        "after_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89"
+      },
+      "supersedes": {
+        "packet_sha256": "4ac77cfcca432ea01bcba7273922a36be25970b9c78729c8cd6241f6c3ee1733",
+        "reason": "Agent source-consistency correction of the Summary text unit only, approved as receipt succession by Sam Rogers on 2026-10-11. The superseded human-reviewed receipt is embedded verbatim and continues to cover every unit this receipt does not change.",
+        "receipt": {
+          "record_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530",
+          "baseline_sha256": "7e4a5fbb8f032549b461c3d8840b09b6dfe91587e3b95cde0269b6a9bd69ac2c",
+          "whole_record": {
+            "before_sha256": "7e4a5fbb8f032549b461c3d8840b09b6dfe91587e3b95cde0269b6a9bd69ac2c",
+            "after_sha256": "50b4e7a0685706064d5b50d211ba997047c14518a371a7ee1c859a4ccbe8e530"
+          },
+          "review": {
+            "actor_type": "human",
+            "actor": "Sam Rogers",
+            "reviewed_at": "2026-09-24T02:36:37Z",
+            "decision": "source-consistency-reviewed",
+            "human_approved": true,
+            "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Add SB 226 sponsors and its 63I-2-213 repeal-date amendment with the two-thirds effective-date alternative; narrow the safe-harbor scope to 13-75-103; replace the three 404 section anchor URLs with the chapter URL; relabel the report row as the SB 149 annual OAIP duty; drop the unsupported four-bill package note; mark introduction and signing rows unconfirmed; set modified. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
+            "packet_sha256": "4ac77cfcca432ea01bcba7273922a36be25970b9c78729c8cd6241f6c3ee1733"
+          },
+          "unresolved": [
+            "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
+            "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
+            "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
+            "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
+            "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
+          ],
+          "evidence": {
+            "sb226_sponsors": {
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+              "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+              "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+              "original": {
+                "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+                "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+              },
+              "acquisition": "retained_snapshot",
+              "document_id": "Utah SB 226 (2025)",
+              "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "Enrolled copy p1 header",
+              "excerpt": "Chief Sponsor: Kirk A. Cullimore\n                                         House Sponsor: Jefferson Moss",
+              "identity_excerpts": [
+                "Artificial Intelligence Consumer Protection Amendments"
+              ]
+            },
+            "sb226_sections": {
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+              "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+              "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+              "original": {
+                "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+                "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+              },
+              "acquisition": "retained_snapshot",
+              "document_id": "Utah SB 226 (2025)",
+              "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "Utah Code Sections Affected, p1-2 lines 27-30",
+              "excerpt": "13-75-102 (Effective 05/07/25), Utah Code Annotated 1953\n29         13-75-103 (Effective 05/07/25), Utah Code Annotated 1953\n30         13-75-104 (Effective 05/07/25), Utah Code Annotated 1953",
+              "identity_excerpts": [
+                "Artificial Intelligence Consumer Protection Amendments"
+              ]
+            },
+            "sb226_safe_harbor": {
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+              "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+              "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+              "original": {
+                "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+                "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+              },
+              "acquisition": "retained_snapshot",
+              "document_id": "Utah SB 226 (2025)",
+              "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "Section 4, Utah Code 13-75-104(1), p4 lines 118-119",
+              "excerpt": "(1) A person is not subject to an enforcement action for violating Section 13-75-103 if the",
+              "identity_excerpts": [
+                "Artificial Intelligence Consumer Protection Amendments"
+              ]
+            },
+            "sb226_repeal": {
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+              "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+              "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+              "original": {
+                "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+                "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+              },
+              "acquisition": "retained_snapshot",
+              "document_id": "Utah SB 226 (2025)",
+              "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "Section 7, Utah Code 63I-2-213(5), p6 lines 181-182",
+              "excerpt": "(5) Title 13, Chapter 72, Artificial Intelligence Policy Act, is repealed [May 1, 2025] July 1,",
+              "identity_excerpts": [
+                "Artificial Intelligence Consumer Protection Amendments"
+              ]
+            },
+            "sb226_effective": {
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+              "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+              "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+              "original": {
+                "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+                "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+              },
+              "acquisition": "retained_snapshot",
+              "document_id": "Utah SB 226 (2025)",
+              "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "Section 9, Effective Date, p6 lines 188-191",
+              "excerpt": "(a) except as provided in Subsection (2)(b), May 7, 2025; or\n191         (b) if approved by two-thirds of all members elected to each house:",
+              "identity_excerpts": [
+                "Artificial Intelligence Consumer Protection Amendments"
+              ]
+            },
+            "sb226_civil": {
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+              "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+              "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+              "original": {
+                "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+                "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+              },
+              "acquisition": "retained_snapshot",
+              "document_id": "Utah SB 226 (2025)",
+              "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "Section 2, Utah Code 13-75-102, p3 lines 90-92",
+              "excerpt": "13-75-102 (Effective 05/07/25). Liability for violation of consumer protection law.",
+              "identity_excerpts": [
+                "Artificial Intelligence Consumer Protection Amendments"
+              ]
+            },
+            "sb149_report": {
+              "official_url": "https://le.utah.gov/Session/2024/bills/enrolled/SB0149.pdf",
+              "snapshot_path": "data/admission/sources/utah-sb149/SB0149-enrolled.txt",
+              "snapshot_sha256": "0a85408fb06d18d8a6fd3ce2db74c19e86c17c84d9c375daecb5a0b3eece8d86",
+              "original": {
+                "path": "data/admission/sources/utah-sb149/SB0149-enrolled.pdf",
+                "sha256": "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+              },
+              "acquisition": "retained_snapshot",
+              "document_id": "Utah SB 149 (2024)",
+              "document_title": "Enrolled Copy S.B. 149 Artificial Intelligence Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2024 General Session enrolled copy",
+              "locator": "Section 5, Utah Code 13-70-201(3)(d), p14 line 465",
+              "excerpt": "(d) report annually, before November 30, to the Business and Labor Interim Committee",
+              "identity_excerpts": [
+                "ARTIFICIAL INTELLIGENCE AMENDMENTS"
+              ]
+            }
+          },
+          "units": {
+            "metadata:last_verified": {
+              "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+              "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+              "candidate_content": "2026-09-23",
+              "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+              "qualifications": {
+                "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+                "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+                "time": "Reviewed 2026-09-23."
+              },
+              "evidence": [
+                "sb226_sponsors"
+              ]
+            },
+            "metadata:modified": {
+              "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+              "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+              "candidate_content": "2026-09-23",
+              "reason": "Record the date of this bounded source-backed correction without renewing legal currentness.",
+              "qualifications": {
+                "scope": "This record edit only.",
+                "exceptions": "No last_verified, legal status or currentness renewal is accepted by this review.",
+                "time": "Correction reviewed September 24, 2026 UTC against retained sources."
+              },
+              "evidence": [
+                "sb226_sponsors"
+              ]
+            },
+            "metadata:statute_anchors": {
+              "before_sha256": "7d7ce0db7b4b15d9c30fb055cc2f0f49a11b3c2b8606c3e7ed26a13d16f4ab24",
+              "after_sha256": "8b9915dad1742faad90fee8eec2b1cbf86bec8454106ed23ddaec03b549bd5de",
+              "candidate_content": [
+                {
+                  "cite": "Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)",
+                  "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+                },
+                {
+                  "cite": "Utah Code §13-75-102 (civil AI-assisted-violation liability)",
+                  "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+                },
+                {
+                  "cite": "Utah Code §13-75-103 (disclosure requirements)",
+                  "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+                },
+                {
+                  "cite": "Utah Code §13-75-104 (disclosure safe harbor)",
+                  "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+                }
+              ],
+              "reason": "Point the three section anchors at the Chapter 75 page because the section URLs returned 404; the cited sections are unchanged and appear in the enrolled bill.",
+              "qualifications": {
+                "scope": "Anchor URLs only; citations unchanged.",
+                "exceptions": "URL reachability is from the 2026-09-24 url_checks, not a retained snapshot.",
+                "time": "Checked 2026-09-24."
+              },
+              "evidence": [
+                "sb226_sections"
+              ]
+            },
+            "section:Timeline/text": {
+              "before_sha256": "ea6e9ca331903aa90b963285665dbb6d83c213ab474e7bafa9387d490420dc2a",
+              "after_sha256": "29ccde23fabd81b5fc5a3fb6506de1a60c4d2d4d936ddc88e99dd122a66ceb24",
+              "candidate_content": "| Milestone | Date | Notes |\n|-----------|------|-------|\n| Introduced | 2025-02 | 2025 General Session (month unconfirmed: not in the enrolled copy) |\n| Governor Signed | 2025-03-25 | Unconfirmed: not in the enrolled copy; bill status page not retained |\n| Effective | 2025-05-07 | Chapter 75 and §13-2-12 repeal; the §63I-2-213 amendment took effect this date or on governor approval if passed by two-thirds of each house (vote not confirmed) |\n| Annual OAIP report due | 2025-11-30 | Before Nov 30, to Business & Labor Interim Committee; duty set by SB 149 (§13-70-201(3)(d)), not SB 226; filing history unverified |\n\n---",
+              "reason": "Replace the unsupported four-bill package note with the Chapter 75 effective date and the two-thirds alternative for the 63I-2-213 amendment; relabel the report row as the annual OAIP report due under SB 149; mark introduction and signing rows unconfirmed.",
+              "qualifications": {
+                "scope": "SB 226 Timeline rows.",
+                "exceptions": "Signing, introduction, vote and report filing remain unverified.",
+                "time": "SB 226 effective May 7, 2025; SB 149 report duty from 2024."
+              },
+              "evidence": [
+                "sb226_effective",
+                "sb149_report"
+              ]
+            },
+            "section:Summary/text": {
+              "before_sha256": "ae7be6e41fc99ec5a55191378e9b874d2babd2e849ee081f3656cf2984da9915",
+              "after_sha256": "0e758e31d80f165f53b33e1db60de126783036dc96d69f8fcb3f76646e3f34be",
+              "candidate_content": "SB 226 relocated and narrowed Utah's generative AI disclosure framework. The original §13-2-12 disclosure requirement (enacted by SB 149 in 2024) was repealed and re-enacted as a new Chapter 75 with substantive changes:\n\n- **Narrower trigger.** The 2024 on-request standard was rewritten to require a consumer's \"clear and unambiguous\" request for AI disclosure (§13-75-103(1)).\n- **New safe harbor.** Providing a clear and conspicuous disclosure at the outset of consumer interactions, and throughout, eliminates enforcement exposure for violating §13-75-103 (§13-75-104).\n- **High-risk-occupation proactive tier.** For \"high-risk AI interactions\" (§13-75-101(5)) — sensitive data collection or personalized advice in finance, legal, medicine, or mental health — disclosure must be proactive: verbal at the start of oral exchanges, written before written exchanges (§13-75-103(2)-(3)).\n- **Civil AI-assisted-violation liability.** §13-75-102 codifies the civil mirror of §76-2-107: \"not a defense\" that GenAI made the violative statement or was used in furtherance of the violation.\n- **Chapter 72 repeal date.** SB 226 §7 also amended §63I-2-213(5) to move the Chapter 72 (Artificial Intelligence Policy Act) repeal date from May 1, 2025 to July 1, 2027, the same amendment SB 332 made. That amendment took effect May 7, 2025, or on governor approval if passed by two-thirds of each house; the vote is not confirmed here.",
+              "reason": "Narrow the safe harbor to 13-75-103 violations and add the 63I-2-213(5) repeal-date amendment with its special effective date.",
+              "qualifications": {
+                "scope": "Utah SB 226 enrolled provisions only.",
+                "exceptions": "Two-thirds vote not confirmed.",
+                "time": "SB 226 enrolled 2025; reviewed September 24, 2026 UTC."
+              },
+              "evidence": [
+                "sb226_safe_harbor",
+                "sb226_repeal",
+                "sb226_effective",
+                "sb226_civil"
+              ]
+            },
+            "metadata:sponsors": {
+              "before_sha256": null,
+              "after_sha256": "2532ac224784054772f614fa9a20df45da591a64dda335844da6985c798614cf",
+              "candidate_content": [
+                "Sen. Kirk A. Cullimore (Senate sponsor)",
+                "Rep. Jefferson Moss (House floor sponsor)"
+              ],
+              "reason": "Add sponsors printed on the enrolled copy: Chief Sponsor Kirk A. Cullimore, House Sponsor Jefferson Moss.",
+              "qualifications": {
+                "scope": "Sponsor names and chamber roles from the enrolled header.",
+                "exceptions": "Format matches the SB 149 and SB 332 records.",
+                "time": "SB 226 enrolled 2025."
+              },
+              "evidence": [
+                "sb226_sponsors"
+              ]
+            }
+          }
+        }
       },
       "review": {
-        "actor_type": "human",
-        "actor": "Sam Rogers",
-        "reviewed_at": "2026-09-24T02:36:37Z",
+        "actor_type": "agent",
+        "actor": "Claude (PubLedge SB226 Summary receipt succession)",
+        "reviewed_at": "2026-10-11T22:52:26Z",
         "decision": "source-consistency-reviewed",
-        "human_approved": true,
-        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Add SB 226 sponsors and its 63I-2-213 repeal-date amendment with the two-thirds effective-date alternative; narrow the safe-harbor scope to 13-75-103; replace the three 404 section anchor URLs with the chapter URL; relabel the report row as the SB 149 annual OAIP duty; drop the unsupported four-bill package note; mark introduction and signing rows unconfirmed; set modified. Agent source-consistency correction only; does not renew last_verified, Verified rows, legal status or legal currentness.",
-        "packet_sha256": "4ac77cfcca432ea01bcba7273922a36be25970b9c78729c8cd6241f6c3ee1733"
+        "scope": "SB226 instrument Summary text unit only, against immutable retained 2025 enrolled SB 226. Agent self-review, not independent or human acceptance. No last_verified, Verified, effective-date, legal-status or currentness renewal; the superseded human review is not borrowed for the changed text.",
+        "packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c"
       },
       "unresolved": [
         "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
         "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+        "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
+        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
       ],
       "evidence": {
-        "sb226_sponsors": {
+        "sb226_on_request": {
           "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
           "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
           "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
@@ -4030,13 +4311,13 @@
           "issuing_body": "Utah State Legislature",
           "document_type": "enacted legislation",
           "version": "2025 General Session enrolled copy",
-          "locator": "Enrolled copy p1 header",
-          "excerpt": "Chief Sponsor: Kirk A. Cullimore\n                                         House Sponsor: Jefferson Moss",
+          "locator": "Section 3, Utah Code 13-75-103(1), printed lines 98-105",
+          "excerpt": "98     (1)(a) A supplier that uses generative artificial intelligence to interact with an individual\n 99         in connection with a consumer transaction shall disclose to the individual that the\n100         individual is interacting with generative artificial intelligence and not a human, if the\n101         individual asks or otherwise prompts the supplier about whether artificial intelligence\n102         is being used.\n103         (b) The individual's prompt or question under Subsection (1)(a) must be a clear and\n104                unambiguous request to determine whether the interaction is with a human or with\n105                artificial intelligence.",
           "identity_excerpts": [
             "Artificial Intelligence Consumer Protection Amendments"
           ]
         },
-        "sb226_sections": {
+        "sb226_regulated_duty": {
           "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
           "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
           "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
@@ -4050,13 +4331,13 @@
           "issuing_body": "Utah State Legislature",
           "document_type": "enacted legislation",
           "version": "2025 General Session enrolled copy",
-          "locator": "Utah Code Sections Affected, p1-2 lines 27-30",
-          "excerpt": "13-75-102 (Effective 05/07/25), Utah Code Annotated 1953\n29         13-75-103 (Effective 05/07/25), Utah Code Annotated 1953\n30         13-75-104 (Effective 05/07/25), Utah Code Annotated 1953",
+          "locator": "Section 3, Utah Code 13-75-103(2)-(3), printed lines 106-115",
+          "excerpt": "106     (2) An individual providing services in a regulated occupation shall:\n107         (a) prominently disclose when an individual receiving services is interacting with\n108                generative artificial intelligence in the provision of regulated services if the use of\n109                generative artificial intelligence constitutes a high-risk artificial intelligence\n110                interaction; and\n111         (b) comply with all requirements of the regulated occupation when providing services\n112                through generative artificial intelligence.\n113     (3) A disclosure required under Subsection (2) shall be provided:\n114         (a) verbally at the start of a verbal interaction; and\n115         (b) in writing before the start of a written interaction.",
           "identity_excerpts": [
             "Artificial Intelligence Consumer Protection Amendments"
           ]
         },
-        "sb226_safe_harbor": {
+        "sb226_high_risk": {
           "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
           "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
           "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
@@ -4070,8 +4351,88 @@
           "issuing_body": "Utah State Legislature",
           "document_type": "enacted legislation",
           "version": "2025 General Session enrolled copy",
-          "locator": "Section 4, Utah Code 13-75-104(1), p4 lines 118-119",
-          "excerpt": "(1) A person is not subject to an enforcement action for violating Section 13-75-103 if the",
+          "locator": "Section 1, Utah Code 13-75-101(5), printed lines 54-67",
+          "excerpt": "54     (5) \"High-risk artificial intelligence interaction\" means an interaction with generative\n55         artificial intelligence that involves:\n56         (a) the collection of sensitive personal information, including:\n57                (i) health data;\n58                (ii) financial data; or\n59                (iii) biometric data;\n60         (b) the provision of personalized recommendations, advice, or information that could\n61                reasonably be relied upon to make significant personal decisions, including the\n\n                                                       -2-\n\f     Enrolled Copy                                                                                    S.B. 226\n\n\n62            provision of:\n63            (i) financial advice or services;\n64            (ii) legal advice or services;\n65            (iii) medical advice or services; or\n66            (iv) mental health advice or services; or\n67        (c) other applications as defined by division rule.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "sb226_regulated_occupation": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "Section 1, Utah Code 13-75-101(8), printed lines 75-78",
+          "excerpt": "75    (8) \"Regulated occupation\" means an occupation that:\n76        (a) is regulated by the Department of Commerce; and\n77        (b) requires an individual to obtain a license or state certification to practice the\n78            occupation.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "sb226_safe_harbor_forms": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "Section 4, Utah Code 13-75-104(1), printed lines 118-126",
+          "excerpt": "118     (1) A person is not subject to an enforcement action for violating Section 13-75-103 if the\n119         person's generative artificial intelligence clearly and conspicuously discloses:\n120         (a) at the outset of any interaction with an individual in connection with:\n121                (i) a consumer transaction; or\n122                (ii) the provision of regulated services; and\n123         (b) throughout the interaction that it:\n124                (i) is generative artificial intelligence;\n125                (ii) is not human; or\n126                (iii) is an artificial intelligence assistant.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "sb226_scope": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "Section 6, Utah Code 13-75-106, printed lines 164-168",
+          "excerpt": "164              Section 6. Section 13-75-106 is enacted to read:\n165              13-75-106 (Effective 05/07/25). Scope.\n166         This chapter does not displace any other remedy or right authorized under:\n167     (1) the laws of this state; or\n168     (2) federal law.",
+          "identity_excerpts": [
+            "Artificial Intelligence Consumer Protection Amendments"
+          ]
+        },
+        "sb226_civil_scope": {
+          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
+          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
+          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
+          "original": {
+            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
+            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          },
+          "acquisition": "retained_snapshot",
+          "document_id": "Utah SB 226 (2025)",
+          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
+          "issuing_body": "Utah State Legislature",
+          "document_type": "enacted legislation",
+          "version": "2025 General Session enrolled copy",
+          "locator": "Section 2, Utah Code 13-75-102, printed lines 90-95",
+          "excerpt": "90          13-75-102 (Effective 05/07/25). Liability for violation of consumer protection law.\n91       It is not a defense to the violation of any statute administered and enforced by the\n92    division under Section 13-2-1 that generative artificial intelligence:\n93    (1) made the violative statement;\n94    (2) undertook the violative act; or\n95    (3) was used in furtherance of the violation.",
           "identity_excerpts": [
             "Artificial Intelligence Consumer Protection Amendments"
           ]
@@ -4115,155 +4476,29 @@
           "identity_excerpts": [
             "Artificial Intelligence Consumer Protection Amendments"
           ]
-        },
-        "sb226_civil": {
-          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0226.pdf",
-          "snapshot_path": "data/admission/sources/utah-sb226/SB0226-enrolled.txt",
-          "snapshot_sha256": "088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7",
-          "original": {
-            "path": "data/admission/sources/utah-sb226/SB0226-enrolled.pdf",
-            "sha256": "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
-          },
-          "acquisition": "retained_snapshot",
-          "document_id": "Utah SB 226 (2025)",
-          "document_title": "Enrolled Copy S.B. 226 Artificial Intelligence Consumer Protection Amendments",
-          "issuing_body": "Utah State Legislature",
-          "document_type": "enacted legislation",
-          "version": "2025 General Session enrolled copy",
-          "locator": "Section 2, Utah Code 13-75-102, p3 lines 90-92",
-          "excerpt": "13-75-102 (Effective 05/07/25). Liability for violation of consumer protection law.",
-          "identity_excerpts": [
-            "Artificial Intelligence Consumer Protection Amendments"
-          ]
-        },
-        "sb149_report": {
-          "official_url": "https://le.utah.gov/Session/2024/bills/enrolled/SB0149.pdf",
-          "snapshot_path": "data/admission/sources/utah-sb149/SB0149-enrolled.txt",
-          "snapshot_sha256": "0a85408fb06d18d8a6fd3ce2db74c19e86c17c84d9c375daecb5a0b3eece8d86",
-          "original": {
-            "path": "data/admission/sources/utah-sb149/SB0149-enrolled.pdf",
-            "sha256": "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
-          },
-          "acquisition": "retained_snapshot",
-          "document_id": "Utah SB 149 (2024)",
-          "document_title": "Enrolled Copy S.B. 149 Artificial Intelligence Amendments",
-          "issuing_body": "Utah State Legislature",
-          "document_type": "enacted legislation",
-          "version": "2024 General Session enrolled copy",
-          "locator": "Section 5, Utah Code 13-70-201(3)(d), p14 line 465",
-          "excerpt": "(d) report annually, before November 30, to the Business and Labor Interim Committee",
-          "identity_excerpts": [
-            "ARTIFICIAL INTELLIGENCE AMENDMENTS"
-          ]
         }
       },
       "units": {
-        "metadata:last_verified": {
-          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
-          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
-          "candidate_content": "2026-09-23",
-          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
-          "qualifications": {
-            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
-            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
-            "time": "Reviewed 2026-09-23."
-          },
-          "evidence": [
-            "sb226_sponsors"
-          ]
-        },
-        "metadata:modified": {
-          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
-          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
-          "candidate_content": "2026-09-23",
-          "reason": "Record the date of this bounded source-backed correction without renewing legal currentness.",
-          "qualifications": {
-            "scope": "This record edit only.",
-            "exceptions": "No last_verified, legal status or currentness renewal is accepted by this review.",
-            "time": "Correction reviewed September 24, 2026 UTC against retained sources."
-          },
-          "evidence": [
-            "sb226_sponsors"
-          ]
-        },
-        "metadata:statute_anchors": {
-          "before_sha256": "7d7ce0db7b4b15d9c30fb055cc2f0f49a11b3c2b8606c3e7ed26a13d16f4ab24",
-          "after_sha256": "8b9915dad1742faad90fee8eec2b1cbf86bec8454106ed23ddaec03b549bd5de",
-          "candidate_content": [
-            {
-              "cite": "Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)",
-              "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
-            },
-            {
-              "cite": "Utah Code §13-75-102 (civil AI-assisted-violation liability)",
-              "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
-            },
-            {
-              "cite": "Utah Code §13-75-103 (disclosure requirements)",
-              "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
-            },
-            {
-              "cite": "Utah Code §13-75-104 (disclosure safe harbor)",
-              "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
-            }
-          ],
-          "reason": "Point the three section anchors at the Chapter 75 page because the section URLs returned 404; the cited sections are unchanged and appear in the enrolled bill.",
-          "qualifications": {
-            "scope": "Anchor URLs only; citations unchanged.",
-            "exceptions": "URL reachability is from the 2026-09-24 url_checks, not a retained snapshot.",
-            "time": "Checked 2026-09-24."
-          },
-          "evidence": [
-            "sb226_sections"
-          ]
-        },
-        "section:Timeline/text": {
-          "before_sha256": "ea6e9ca331903aa90b963285665dbb6d83c213ab474e7bafa9387d490420dc2a",
-          "after_sha256": "29ccde23fabd81b5fc5a3fb6506de1a60c4d2d4d936ddc88e99dd122a66ceb24",
-          "candidate_content": "| Milestone | Date | Notes |\n|-----------|------|-------|\n| Introduced | 2025-02 | 2025 General Session (month unconfirmed: not in the enrolled copy) |\n| Governor Signed | 2025-03-25 | Unconfirmed: not in the enrolled copy; bill status page not retained |\n| Effective | 2025-05-07 | Chapter 75 and §13-2-12 repeal; the §63I-2-213 amendment took effect this date or on governor approval if passed by two-thirds of each house (vote not confirmed) |\n| Annual OAIP report due | 2025-11-30 | Before Nov 30, to Business & Labor Interim Committee; duty set by SB 149 (§13-70-201(3)(d)), not SB 226; filing history unverified |\n\n---",
-          "reason": "Replace the unsupported four-bill package note with the Chapter 75 effective date and the two-thirds alternative for the 63I-2-213 amendment; relabel the report row as the annual OAIP report due under SB 149; mark introduction and signing rows unconfirmed.",
-          "qualifications": {
-            "scope": "SB 226 Timeline rows.",
-            "exceptions": "Signing, introduction, vote and report filing remain unverified.",
-            "time": "SB 226 effective May 7, 2025; SB 149 report duty from 2024."
-          },
-          "evidence": [
-            "sb226_effective",
-            "sb149_report"
-          ]
-        },
         "section:Summary/text": {
-          "before_sha256": "ae7be6e41fc99ec5a55191378e9b874d2babd2e849ee081f3656cf2984da9915",
-          "after_sha256": "0e758e31d80f165f53b33e1db60de126783036dc96d69f8fcb3f76646e3f34be",
-          "candidate_content": "SB 226 relocated and narrowed Utah's generative AI disclosure framework. The original §13-2-12 disclosure requirement (enacted by SB 149 in 2024) was repealed and re-enacted as a new Chapter 75 with substantive changes:\n\n- **Narrower trigger.** The 2024 on-request standard was rewritten to require a consumer's \"clear and unambiguous\" request for AI disclosure (§13-75-103(1)).\n- **New safe harbor.** Providing a clear and conspicuous disclosure at the outset of consumer interactions, and throughout, eliminates enforcement exposure for violating §13-75-103 (§13-75-104).\n- **High-risk-occupation proactive tier.** For \"high-risk AI interactions\" (§13-75-101(5)) — sensitive data collection or personalized advice in finance, legal, medicine, or mental health — disclosure must be proactive: verbal at the start of oral exchanges, written before written exchanges (§13-75-103(2)-(3)).\n- **Civil AI-assisted-violation liability.** §13-75-102 codifies the civil mirror of §76-2-107: \"not a defense\" that GenAI made the violative statement or was used in furtherance of the violation.\n- **Chapter 72 repeal date.** SB 226 §7 also amended §63I-2-213(5) to move the Chapter 72 (Artificial Intelligence Policy Act) repeal date from May 1, 2025 to July 1, 2027, the same amendment SB 332 made. That amendment took effect May 7, 2025, or on governor approval if passed by two-thirds of each house; the vote is not confirmed here.",
-          "reason": "Narrow the safe harbor to 13-75-103 violations and add the 63I-2-213(5) repeal-date amendment with its special effective date.",
+          "before_sha256": "0e758e31d80f165f53b33e1db60de126783036dc96d69f8fcb3f76646e3f34be",
+          "after_sha256": "96f6fa0674c0e739df304f154a4699b6a088beb27d49822a374057d6d26a6205",
+          "candidate_content": "SB 226 relocated and narrowed Utah's generative AI disclosure framework. The original §13-2-12 disclosure requirement (enacted by SB 149 in 2024) was repealed and re-enacted as a new Chapter 75 with substantive changes:\n\n- **Narrower trigger.** A supplier that uses generative AI to interact with an individual in connection with a consumer transaction must disclose that the individual is interacting with generative AI and not a human if the individual asks or otherwise prompts the supplier about whether AI is being used. The prompt or question must be a \"clear and unambiguous\" request to determine whether the interaction is with a human or with AI (§13-75-103(1)).\n- **New safe harbor.** A person is not subject to an enforcement action for violating §13-75-103 if its generative AI clearly and conspicuously discloses, at the outset of any interaction in connection with a consumer transaction or the provision of regulated services and throughout the interaction, that it is generative AI, is not human, or is an AI assistant (§13-75-104(1)). These are alternative safe-harbor forms, not the on-request content of §13-75-103(1). Chapter 75 does not displace other state or federal remedies (§13-75-106).\n- **High-risk regulated-services tier.** An individual providing services in a regulated occupation (one regulated by the Department of Commerce that requires a license or state certification, §13-75-101(8)) must prominently disclose generative AI use in the provision of regulated services when that use is a \"high-risk artificial intelligence interaction,\" and must comply with all requirements of the occupation when providing services through generative AI (§13-75-103(2)). A high-risk interaction involves collection of sensitive personal information, including health, financial or biometric data; personalized recommendations, advice or information that could reasonably be relied upon to make significant personal decisions, including financial, legal, medical or mental health advice or services; or other applications defined by division rule (§13-75-101(5)). The disclosure is given verbally at the start of a verbal interaction and in writing before the start of a written interaction (§13-75-103(3)).\n- **Civil AI-assisted-violation liability.** §13-75-102 codifies the civil mirror of §76-2-107: for a violation of any statute administered and enforced by the division under §13-2-1, it is not a defense that generative AI made the violative statement, undertook the violative act, or was used in furtherance of the violation. It does not itself establish the elements of the underlying violation.\n- **Chapter 72 repeal date.** SB 226 §7 also amended §63I-2-213(5) to move the Chapter 72 (Artificial Intelligence Policy Act) repeal date from May 1, 2025 to July 1, 2027, the same amendment SB 332 made. That amendment took effect May 7, 2025, or on governor approval if passed by two-thirds of each house; the vote is not confirmed here.\n\nThese section references describe the retained 2025 enrolled SB 226, not independently validated current codification.",
+          "reason": "Carry the complete retained statutory content into the Summary: the conjunctive GenAI-and-not-human on-request content, the safe-harbor alternatives and regulated-services branch, the individual regulated-occupation actor without a supplier condition, the complete high-risk definition with its significance criterion and division-rule branch, prominence and occupational-compliance duties, channel-specific timing, and the underlying-violation boundary of 13-75-102 (Foundation SB226 comparison U02, U03.a2, U03.b, U04.a-d).",
           "qualifications": {
-            "scope": "Utah SB 226 enrolled provisions only.",
-            "exceptions": "Two-thirds vote not confirmed.",
-            "time": "SB 226 enrolled 2025; reviewed September 24, 2026 UTC."
+            "scope": "Retained 2025 enrolled SB 226 sections 1-4, 6, 7 and 9 only; the Summary text unit. Sponsors, Timeline, Talking Point, Sources, metadata, last_verified and every other unit keep the superseded human review unchanged.",
+            "exceptions": "Listed high-risk categories are inclusive examples. Current division rules, incorporated 13-11-3 supplier and consumer-transaction definitions, 13-2-1 scope and live codification are not retained or reviewed. Safe-harbor alternatives remain distinct from the on-request conjunction.",
+            "time": "Retained 2025 enrolled version only. The agent review timestamp is not a retrieval, currentness or verification date; last_verified 2026-09-23 remains the superseded human review."
           },
           "evidence": [
-            "sb226_safe_harbor",
+            "sb226_on_request",
+            "sb226_regulated_duty",
+            "sb226_high_risk",
+            "sb226_regulated_occupation",
+            "sb226_safe_harbor_forms",
+            "sb226_scope",
+            "sb226_civil_scope",
             "sb226_repeal",
-            "sb226_effective",
-            "sb226_civil"
-          ]
-        },
-        "metadata:sponsors": {
-          "before_sha256": null,
-          "after_sha256": "2532ac224784054772f614fa9a20df45da591a64dda335844da6985c798614cf",
-          "candidate_content": [
-            "Sen. Kirk A. Cullimore (Senate sponsor)",
-            "Rep. Jefferson Moss (House floor sponsor)"
-          ],
-          "reason": "Add sponsors printed on the enrolled copy: Chief Sponsor Kirk A. Cullimore, House Sponsor Jefferson Moss.",
-          "qualifications": {
-            "scope": "Sponsor names and chamber roles from the enrolled header.",
-            "exceptions": "Format matches the SB 149 and SB 332 records.",
-            "time": "SB 226 enrolled 2025."
-          },
-          "evidence": [
-            "sb226_sponsors"
+            "sb226_effective"
           ]
         }
       }
