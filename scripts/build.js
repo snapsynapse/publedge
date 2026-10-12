@@ -21,7 +21,7 @@ const { buildObligationFirstRecords, writeObligationFirstRecords } = require('./
 const { deriveBuildClock } = require('./lib/build-clock');
 const { assertForEmission: assertSourceAdmission } = require('./check-source-admission');
 const { containerSummary, upcomingItems, recentlyChangedItems } = require('./lib/api-projection');
-const { containerCadenceDays, getReviewCadence } = require('./lib/verify-policy');
+const { containerCadenceDays, getFrozenFixtureIds, getReviewCadence } = require('./lib/verify-policy');
 
 const ROOT = path.join(__dirname, '..');
 const BUILD_CLOCK = deriveBuildClock(ROOT);
@@ -544,11 +544,16 @@ function th(label, opts = {}) {
 // Keep generated HTML deterministic. assets/tables.js enhances this absolute
 // date into an age label and color in the browser, judged against the
 // record's review cadence (the same policy scripts/verify.js enforces).
-function freshnessBadge(lastVerified, cadenceDays) {
+// Frozen schema fixtures omit data-last-verified so the browser never ages them.
+function freshnessBadge(lastVerified, cadenceDays, frozen = false) {
     const value = String(lastVerified || '').trim();
     if (!value || /^(null|undefined|tbd|n\/a)$/i.test(value)) return '';
     const parsed = new Date(value + 'T00:00:00Z');
     if (isNaN(parsed.getTime())) return '';
+    if (frozen) {
+        const frozenTitle = `Frozen schema fixture: kept as last verified ${value}; not reviewed for currentness`;
+        return `<span class="freshness-badge frozen" title="${escapeHTML(frozenTitle)}">Frozen fixture (verified ${escapeHTML(value)})</span>`;
+    }
     const cadence = Number.isSafeInteger(cadenceDays) && cadenceDays > 0 ? cadenceDays : null;
     const cadenceAttr = cadence ? ` data-review-days="${cadence}"` : '';
     const title = cadence ? `Last verified ${value}; review cadence ${cadence} days` : `Last verified ${value}`;
@@ -1358,7 +1363,7 @@ function generateContainerDetail(config, container, data, configCSS) {
             <div class="detail-meta">
                 ${renderStatusBadge(container.status)}
                 <span><strong>Editorial:</strong> ${escapeHTML(humanizeId(container.editorial_status || 'unspecified'))}</span>
-                ${freshnessBadge(container.last_verified, containerCadenceDays(container, getReviewCadence(config)))}
+                ${freshnessBadge(container.last_verified, containerCadenceDays(container, getReviewCadence(config)), getFrozenFixtureIds(config).instruments.has(container.id))}
                 ${container.effective ? `<span><strong>Effective:</strong> ${formatDate(container.effective)}</span>` : '<!-- No effective date asserted. -->'}
                 ${container.official_url ? `<span><a href="${escapeHTML(container.official_url)}" target="_blank" rel="noopener">Official source</a></span>` : ''}
             </div>

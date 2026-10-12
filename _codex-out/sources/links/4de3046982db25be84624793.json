@@ -1,0 +1,28 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.sec.gov/divisions/corpfin",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [
+    {
+      "id": "bc771f74ed5a41359e187e2376e3e214",
+      "url": "https://www.sec.gov/robots.txt",
+      "kind": "robots",
+      "host": "www.sec.gov",
+      "status": null,
+      "headers": {},
+      "complete": false,
+      "error": "Tunnel connection failed: 403 Forbidden",
+      "retrieved_at": "2026-10-03T03:03:47.829796+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "body_path": "/workspace/freshness-control/transport-evidence/bc771f74ed5a41359e187e2376e3e214.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T03:03:47.851023+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.sec.gov/divisions/corpfin",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/4de3046982db25be84624793.body"
+}

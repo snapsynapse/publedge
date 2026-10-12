@@ -1,0 +1,14 @@
+{
+  "id": "c05c273f064845a8b9a1fef38bb58b1a",
+  "url": "https://www.cftc.gov/robots.txt",
+  "kind": "robots",
+  "host": "www.cftc.gov",
+  "status": null,
+  "headers": {},
+  "complete": false,
+  "error": "Tunnel connection failed: 403 Forbidden",
+  "retrieved_at": "2026-10-03T03:03:47.797399+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/c05c273f064845a8b9a1fef38bb58b1a.body"
+}

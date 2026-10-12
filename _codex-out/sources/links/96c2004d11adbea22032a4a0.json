@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.501(c)(3)-1",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.875246+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.501(c)(3)-1",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/96c2004d11adbea22032a4a0.body"
+}

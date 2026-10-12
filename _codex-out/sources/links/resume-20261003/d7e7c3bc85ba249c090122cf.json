@@ -1,0 +1,60 @@
+{
+  "status": 200,
+  "headers": {
+    "date": "Sat, 03 Oct 2026 18:38:14 GMT",
+    "content-type": "application/pdf",
+    "content-length": "388820",
+    "server": "envoy",
+    "vary": "accept-encoding",
+    "accept-ranges": "bytes",
+    "last-modified": "Tue, 03 Feb 2026 14:19:38 GMT",
+    "cloudlare-cdn-cache-control": "no-store",
+    "set-cookie": "[REDACTED]",
+    "cache-control": "no-store",
+    "cf-cache-status": "BYPASS",
+    "cf-ray": "a44e100d1fabb7cd-ORD",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "x-envoy-upstream-service-time": "84",
+    "connection": "close"
+  },
+  "finalUrl": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+  "complete": true,
+  "redirects": [],
+  "error": null,
+  "attempts": [
+    {
+      "id": "e968fcf9ab0143a5a734ca84c0b5290d",
+      "url": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+      "kind": "fetch",
+      "host": "commerce.utah.gov",
+      "status": 200,
+      "headers": {
+        "date": "Sat, 03 Oct 2026 18:38:14 GMT",
+        "content-type": "application/pdf",
+        "content-length": "388820",
+        "server": "envoy",
+        "vary": "accept-encoding",
+        "accept-ranges": "bytes",
+        "last-modified": "Tue, 03 Feb 2026 14:19:38 GMT",
+        "cloudlare-cdn-cache-control": "no-store",
+        "set-cookie": "[REDACTED]",
+        "cache-control": "no-store",
+        "cf-cache-status": "BYPASS",
+        "cf-ray": "a44e100d1fabb7cd-ORD",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "x-envoy-upstream-service-time": "84",
+        "connection": "close"
+      },
+      "complete": true,
+      "error": null,
+      "retrieved_at": "2026-10-03T18:38:14.545464+00:00",
+      "sha256": "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+      "bytes": 388820,
+      "body_path": "/workspace/freshness-control/transport-evidence/e968fcf9ab0143a5a734ca84c0b5290d.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T18:38:14.545464+00:00",
+  "sha256": "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+  "requested_url": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/resume-20261003/d7e7c3bc85ba249c090122cf.body"
+}

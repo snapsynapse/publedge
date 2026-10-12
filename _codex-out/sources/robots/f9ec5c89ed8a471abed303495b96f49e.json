@@ -1,0 +1,14 @@
+{
+  "id": "f9ec5c89ed8a471abed303495b96f49e",
+  "url": "https://paice.work/robots.txt",
+  "kind": "robots",
+  "host": "paice.work",
+  "status": null,
+  "headers": {},
+  "complete": false,
+  "error": "Tunnel connection failed: 403 Forbidden",
+  "retrieved_at": "2026-10-03T03:03:47.762442+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/f9ec5c89ed8a471abed303495b96f49e.body"
+}

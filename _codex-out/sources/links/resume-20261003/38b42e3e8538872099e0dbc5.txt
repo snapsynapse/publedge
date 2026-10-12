@@ -1,0 +1,764 @@
+26 CFR 601.601: Rules and regulations.
+(Also: §§ 141, 145, 1.141-3, 1.145-2)
+
+Rev. Proc. 2017-13
+
+SECTION 1. PURPOSE
+
+   This revenue procedure provides safe harbor conditions under which a management
+
+contract does not result in private business use of property financed with governmental
+
+tax-exempt bonds under § 141(b) of the Internal Revenue Code or cause the modified
+
+private business use test for property financed with qualified 501(c)(3) bonds under
+
+§ 145(a)(2)(B) to be met. This revenue procedure modifies, amplifies, and supersedes
+
+Rev. Proc. 2016-44, 2016-36 IRB 316, to address certain types of compensation, the
+
+timing of payment of compensation, the treatment of land, and methods of approval of
+
+rates. Sections 2.11 through 2.14 of this revenue procedure generally describe the
+
+modifications and amplifications made to Rev. Proc. 2016-44 by this revenue
+
+procedure.
+
+SECTION 2. BACKGROUND
+
+   .01 Section 103(a) provides that, except as provided in § 103(b), gross income does
+
+not include interest on any State or local bond. Section 103(b)(1) provides that § 103(a)
+
+shall not apply to any private activity bond that is not a qualified bond (within the
+
+meaning of § 141). Section 141(a) provides that the term “private activity bond” means
+
+any bond issued as part of an issue (1) that meets the private business use test and
+
+private security or payment test, or (2) that meets the private loan financing test.
+
+
+                                              1
+   .02 Section 141(b)(1) provides generally that an issue meets the private business
+
+use test if more than 10 percent of the proceeds of the issue are to be used for any
+
+private business use. Section 141(b)(6) defines “private business use” as use (directly
+
+or indirectly) in a trade or business carried on by any person other than a governmental
+
+unit. For this purpose, any activity carried on by a person other than a natural person
+
+must be treated as a trade or business.
+
+   .03 Section 1.141-3(a)(1) of the Income Tax Regulations provides, in part, that the
+
+10 percent private business use test of § 141(b)(1) is met if more than 10 percent of the
+
+proceeds of an issue is used in a trade or business of a nongovernmental person. For
+
+this purpose, the use of financed property is treated as the direct use of proceeds.
+
+Section 1.141-3(a)(2) provides that, in determining whether an issue meets the private
+
+business use test, it is necessary to look at both indirect and direct use of proceeds.
+
+Proceeds are treated as used in the trade or business of a nongovernmental person if a
+
+nongovernmental person, as a result of a single transaction or a series of related
+
+transactions, uses property acquired with the proceeds of an issue.
+
+   .04 Section 1.141-3(b)(1) provides that both actual and beneficial use by a
+
+nongovernmental person may be treated as private business use. In most cases, the
+
+private business use test is met only if a nongovernmental person has special legal
+
+entitlements to use the financed property under an arrangement with the issuer. In
+
+general, a nongovernmental person is treated as a private business user as a result of
+
+ownership; actual or beneficial use of property pursuant to a lease, a management
+
+
+
+
+                                             2
+contract, or an incentive payment contract; or certain other arrangements such as a
+
+take or pay or other output-type contract.
+
+   .05 Section 1.141-3(b)(3) provides generally that the lease of financed property to a
+
+nongovernmental person is private business use of that property. For this purpose, any
+
+arrangement that is properly characterized as a lease for federal income tax purposes is
+
+treated as a lease. Section 1.141-3(b)(3) further provides that, in determining whether a
+
+management contract is properly characterized as a lease, it is necessary to consider
+
+all the facts and circumstances, including the following factors: (1) the degree of control
+
+over the property that is exercised by a nongovernmental person; and (2) whether a
+
+nongovernmental person bears the risk of loss of the financed property.
+
+   .06 Section 1.141-3(b)(4)(i) provides generally that a management contract with
+
+respect to financed property may result in private business use of that property, based
+
+on all of the facts and circumstances. A management contract with respect to financed
+
+property generally results in private business use of that property if the contract
+
+provides for compensation for services rendered with compensation based, in whole or
+
+in part, on a share of net profits from the operations of the facility. Section 1.141-
+
+3(b)(4)(iv) provides generally that a management contract with respect to financed
+
+property results in private business use of that property if the service provider is treated
+
+as the lessee or owner of financed property for federal income tax purposes.
+
+   .07 Section 1.141-3(b)(4)(ii) defines “management contract” as a management,
+
+service, or incentive payment contract between a governmental person and a service
+
+provider under which the service provider provides services involving all, a portion, or
+
+
+                                              3
+any function, of a facility. For example, a contract for the provision of management
+
+services for an entire hospital, a contract for management services for a specific
+
+department of a hospital, and an incentive payment contract for physician services to
+
+patients of a hospital are each treated as a management contract.
+
+   .08 Section 1.141-3(b)(4)(iii) provides that the following arrangements generally are
+
+not treated as management contracts that give rise to private business use:
+
+(A) contracts for services that are solely incidental to the primary governmental function
+
+or functions of a financed facility (for example, contracts for janitorial, office equipment
+
+repair, hospital billing, or similar services); (B) the mere granting of admitting privileges
+
+by a hospital to a doctor, even if those privileges are conditioned on the provision of de
+
+minimis services if those privileges are available to all qualified physicians in the area,
+
+consistent with the size and nature of the hospital’s facilities; (C) a contract to provide
+
+for the operation of a facility or system of facilities that consists primarily of public utility
+
+property, if the only compensation is the reimbursement of actual and direct expenses
+
+of the service provider and reasonable administrative overhead expenses of the service
+
+provider; and (D) a contract to provide for services, if the only compensation is the
+
+reimbursement of the service provider for actual and direct expenses paid by the
+
+service provider to unrelated parties.
+
+   .09 Section 141(e) provides, in part, that the term “qualified bond” includes a
+
+qualified 501(c)(3) bond if certain requirements stated therein are met. Section 145(a)
+
+provides generally that “qualified 501(c)(3) bond” means any private activity bond
+
+issued as part of an issue if (1) all property that is to be provided by the net proceeds of
+
+
+                                                4
+the issue is to be owned by a 501(c)(3) organization or a governmental unit, and (2)
+
+such bond would not be a private activity bond if (A) 501(c)(3) organizations were
+
+treated as governmental units with respect to their activities that do not constitute
+
+unrelated trades or businesses, determined by applying § 513(a), and (B) § 141(b)(1)
+
+and (2) were applied by substituting “5 percent” for “10 percent” each place it appears
+
+and by substituting “net proceeds” for “proceeds” each place it appears. Section 1.145-
+
+2 provides that, with certain exceptions and modifications, §§ 1.141-0 through 1.141-15
+
+apply to § 145(a).
+
+   .10 Rev. Proc. 2016-44 provides safe harbor conditions under which a management
+
+contract does not result in private business use of property financed with governmental
+
+tax-exempt bonds under § 141(b) or cause the modified private business use test for
+
+property financed with qualified 501(c)(3) bonds under § 145(a)(2)(B) to be met. Rev.
+
+Proc. 2016-44 modified and superseded Rev. Proc. 97-13, 1997-1 C.B. 632; Rev. Proc.
+
+2001-39, 2001-2 C.B. 38; and section 3.02 of Notice 2014-67, 2014-46 I.R.B. 822.
+
+   .11 Section 5.02 of Rev. Proc. 2016-44 sets forth general financial requirements for
+
+management compensation arrangements eligible for the safe harbor. Sections 5.02(2)
+
+and 5.02(3) of Rev. Proc. 2016-44 provide that the contract must neither provide to the
+
+service provider a share of net profits nor impose on the service provider the burden of
+
+bearing any share of net losses from the operation of the managed property. Before the
+
+publication of Rev. Proc. 2016-44, previously applicable revenue procedures expressly
+
+treated certain types of compensation, including capitation fees, periodic fixed fees, and
+
+per-unit fees (as defined therein), as not providing a share of net profits. Questions
+
+
+                                             5
+have arisen regarding whether these common types of compensation continue to be
+
+treated in a similar manner under Rev. Proc. 2016-44. Related questions have arisen
+
+about whether a service provider’s payment of expenses of the operation of the
+
+managed property without reimbursement from the qualified user (as defined in section
+
+4.04 of Rev. Proc. 2016-44) affects the treatment of these types of compensation. To
+
+provide continuity with the previous safe harbors, this revenue procedure clarifies that
+
+these types of compensation and certain incentive compensation will not be treated as
+
+providing a share of net profits or requiring the service provider to bear a share of net
+
+losses.
+
+   .12 Sections 5.02(2) and 5.02(3) of Rev. Proc. 2016-44 also provide that the timing
+
+of payment of compensation cannot be contingent upon net profits or net losses from
+
+the operation of the managed property. Questions have arisen about the effect of these
+
+restrictions on the timing of payment of compensation. This revenue procedure clarifies
+
+that compensation subject to an annual payment requirement and reasonable
+
+consequences for late payment (such as interest charges or late payment fees) will not
+
+be treated as contingent upon net profits or net losses if the contract includes a
+
+requirement that the qualified user will pay the deferred compensation within five years
+
+of the original due date of the payment.
+
+   .13. Section 5.03 of Rev. Proc. 2016-44 provides that the term of the contract,
+
+including all renewal options (as defined in § 1.141-1(b)), must be no greater than the
+
+lesser of 30 years or 80 percent of the weighted average reasonably expected
+
+economic life of the managed property. For this purpose, under Rev. Proc. 2016-44,
+
+
+                                             6
+economic life is determined in the same manner as under § 147(b), but without regard
+
+to §147(b)(3)(B)(ii), as of the beginning of the term of contract. Section 147(b)(3)(B)(i)
+
+provides that generally land is not taken into account, but § 147(b)(3)(B)(ii) provides that
+
+if 25 percent or more of the net proceeds of any issue is to be used to finance the
+
+acquisition of land, such land shall be taken into account and treated as having an
+
+economic life of 30 years. Questions have arisen about excluding land when the cost of
+
+the land accounts for a significant portion of the managed property. This revenue
+
+procedure provides that economic life is determined in the same manner as under §
+
+147(b) as of the beginning of the term of the contract. Thus, land will be treated as
+
+having an economic life of 30 years if 25 percent or more of the net proceeds of the
+
+issue that finances the managed property is to be used to finance the costs of such
+
+land.
+
+   .14 Section 5.04 of Rev. Proc. 2016-44 provides that the qualified user must
+
+exercise a significant degree of control over the use of the managed property. Section
+
+5.04 of Rev. Proc. 2016-44 further provides that this requirement is met if the contract
+
+requires the qualified user to approve, among other things, the rates charged for use of
+
+the managed property. Section 5.04 of Rev. Proc. 2016-44 also provides that a
+
+qualified user may show approval of rates charged for use of the managed property by
+
+either expressly approving such rates (or the methodology for setting such rates) or by
+
+including in the contract a requirement that service provider charge rates that are
+
+reasonable and customary as specifically determined by an independent third party.
+
+Questions have arisen about the requirement to approve the rates in various
+
+
+                                             7
+circumstances in which it may not be feasible to approve each specific rate charged,
+
+such as for a physician’s professional services at a § 501(c)(3) hospital or hotel room
+
+rates at a governmentally-owned hotel. This revenue procedure clarifies that a qualified
+
+user may satisfy the approval of rates requirement by approving a reasonable general
+
+description of the method used to set the rates or by requiring that the service provider
+
+charge rates that are reasonable and customary as specifically determined by, or
+
+negotiated with, an independent third party.
+
+SECTION 3. SCOPE
+
+   This revenue procedure applies to a management contract (as defined in section
+
+4.03 of this revenue procedure) involving managed property (as defined in section 4.04
+
+of this revenue procedure) financed with the proceeds of an issue of governmental
+
+bonds (as defined in § 1.141-1(b)) or qualified 501(c)(3) bonds (as defined in § 145).
+
+SECTION 4. DEFINITIONS
+
+   For purposes of this revenue procedure, the following definitions apply:
+
+       .01 Capitation fee means a fixed periodic amount for each person for whom the
+
+service provider or the qualified user assumes the responsibility to provide all needed
+
+services for a specified period so long as the quantity and type of services actually
+
+provided to such persons varies substantially. For example, a capitation fee includes a
+
+fixed dollar amount payable per month to a medical service provider for each member of
+
+a health maintenance organization plan for whom the provider agrees to provide all
+
+needed medical services for a specified period. A fixed periodic amount may include an
+
+automatic increase according to a specified, objective, external standard that is not
+
+
+                                               8
+linked to the output or efficiency of the managed property. For example, the Consumer
+
+Price Index and similar external indices that track increases in prices in an area or
+
+increases in revenues or costs in an industry are objective, external standards. A
+
+capitation fee may include a variable component of up to 20 percent of the total
+
+capitation fee designed to protect the service provider against risk such as risk of
+
+catastrophic loss.
+
+   .02 Eligible expense reimbursement arrangement means a management contract
+
+under which the only compensation consists of reimbursements of actual and direct
+
+expenses paid by the service provider to unrelated parties and reasonable related
+
+administrative overhead expenses of the service provider.
+
+   .03 Management contract means a management, service, or incentive payment
+
+contract between a qualified user and a service provider under which the service
+
+provider provides services for a managed property. A management contract does not
+
+include a contract or portion of a contract for the provision of services before a managed
+
+property is placed in service (for example, pre-operating services for construction
+
+design or construction management).
+
+   .04 Managed property means the portion of a project (as defined in § 1.141-6(a)(3))
+
+with respect to which a service provider provides services.
+
+   .05 Periodic fixed fee means a stated dollar amount for services rendered for a
+
+specified period of time. For example, a stated dollar amount per month is a periodic
+
+fixed fee. The stated dollar amount may automatically increase according to a
+
+specified, objective external standard that is not linked to the output or efficiency of the
+
+
+                                              9
+managed property. For example, the Consumer Price Index and similar external indices
+
+that track increases in prices in an area or increases in revenues or costs in an industry
+
+are objective external standards. Capitation fees and per-unit fees are not periodic
+
+fixed fees.
+
+   .06 Per-unit fee means a fee based on a unit of service provided specified in the
+
+contract or otherwise specifically determined by an independent third party, such as the
+
+administrator of the Medicare program, or the qualified user. For example, a stated
+
+dollar amount for each specified medical procedure performed, car parked, or
+
+passenger mile is a per-unit fee. Separate billing arrangements between physicians and
+
+hospitals are treated as per-unit fee arrangements. A fee that is a stated dollar amount
+
+specified in the contract does not fail to be a per-unit fee as a result of a provision under
+
+which the fee may automatically increase according to a specified, objective, external
+
+standard that is not linked to the output or efficiency of the managed property. For
+
+example, the Consumer Price Index and similar external indices that track increases in
+
+prices in an area or increases in revenues or costs in an industry are objective, external
+
+standards.
+
+   .07 Qualified user means, for projects (as defined in § 1.141-6(a)(3)) financed with
+
+governmental bonds, any governmental person (as defined in § 1.141-1(b)) or, for
+
+projects financed with qualified 501(c)(3) bonds, any governmental person or any
+
+501(c)(3) organization with respect to its activities which do not constitute an unrelated
+
+trade or business, determined by applying § 513(a).
+
+
+
+
+                                             10
+   .08 Service provider means any person other than a qualified user that provides
+
+services to, or for the benefit of, a qualified user under a management contract.
+
+   .9 Unrelated parties means persons other than either: (1) a related party (as defined
+
+in § 1.150-1(b)) to the service provider or (2) a service provider’s employee.
+
+SECTION 5. SAFE HARBOR CONDITIONS UNDER WHICH MANAGEMENT
+CONTRACTS DO NOT RESULT IN PRIVATE BUSINESS USE
+
+   .01 In general. If a management contract meets all of the applicable conditions of
+
+sections 5.02 through section 5.07 of this revenue procedure, or is an eligible expense
+
+reimbursement arrangement, the management contract does not result in private
+
+business use under § 141(b) or 145(a)(2)(B). Further, under section 5.08 of this
+
+revenue procedure, use functionally related and subordinate to a management contract
+
+that meets these conditions does not result in private business use.
+
+   .02 General financial requirements.
+
+     (1) In general. The payments to the service provider under the contract must be
+
+reasonable compensation for services rendered during the term of the contract.
+
+Compensation includes payments to reimburse actual and direct expenses paid by the
+
+service provider and related administrative overhead expenses of the service provider.
+
+     (2) No net profits arrangements. The contract must not provide to the service
+
+provider a share of net profits from the operation of the managed property.
+
+Compensation to the service provider will not be treated as providing a share of net
+
+profits if no element of the compensation takes into account, or is contingent upon,
+
+either the managed property’s net profits or both the managed property’s revenues and
+
+
+
+                                            11
+expenses (other than any reimbursements of direct and actual expenses paid by the
+
+service provider to unrelated third parties) for any fiscal period. For this purpose, the
+
+elements of the compensation are the eligibility for, the amount of, and the timing of the
+
+payment of the compensation. Incentive compensation will not be treated as providing a
+
+share of net profits if the eligibility for the incentive compensation is determined by the
+
+service provider’s performance in meeting one or more standards that measure quality
+
+of services, performance, or productivity, and the amount and the timing of the payment
+
+of the compensation meet the requirements of this section 5.02(2).
+
+      (3) No bearing of net losses of the managed property.
+
+       (a) The contract must not, in substance, impose upon the service provider the
+
+burden of bearing any share of net losses from the operation of the managed property.
+
+An arrangement will not be treated as requiring the service provider to bear a share of
+
+net losses if:
+
+         (i) The determination of the amount of the service provider’s compensation and
+
+the amount of any expenses to be paid by the service provider (and not reimbursed),
+
+separately and collectively, do not take into account either the managed property’s net
+
+losses or both the managed property’s revenues and expenses for any fiscal period;
+
+and
+
+         (ii) The timing of the payment of compensation is not contingent upon the
+
+managed property’s net losses.
+
+       (b) For example, a service provider whose compensation is reduced by a stated
+
+dollar amount (or one of multiple stated dollar amounts) for failure to keep the managed
+
+
+                                             12
+property’s expenses below a specified target (or one of multiple specified targets) will
+
+not be treated as bearing a share of net losses as a result of this reduction.
+
+   (4) Treatment of certain types of compensation. Without regard to whether the
+
+service provider pays expenses with respect to the operation of the managed property
+
+without reimbursement by the qualified user, compensation for services will not be
+
+treated as providing a share of net profits or requiring the service provider to bear a
+
+share of net losses under sections 5.02(2) and 5.02(3) of this revenue procedure if the
+
+compensation for services is: (a) based solely on a capitation fee, a periodic fixed fee,
+
+or a per-unit fee; (b) incentive compensation described in the last sentence of section
+
+5.02(2) of this revenue procedure; or (c) a combination of these types of compensation.
+
+   (5) Treatment of timing of payment of compensation. Deferral due to insufficient net
+
+cash flows from the operation of the managed property of the payment of compensation
+
+that otherwise meets the requirements of sections 5.02(2) and 5.02(3) of this revenue
+
+procedure will not cause the deferred compensation to be treated as contingent upon
+
+net profits or net losses under sections 5.02(2) and 5.02(3) of this revenue procedure if
+
+the contract includes requirements that:
+
+     (a) The compensation is payable at least annually;
+
+     (b) The qualified user is subject to reasonable consequences for late payment,
+
+such as reasonable interest charges or late payment fees; and
+
+     (c) The qualified user will pay such deferred compensation (with interest or late
+
+payment fees) no later than the end of five years after the original due date of the
+
+payment.
+
+
+                                            13
+   .03 Term of the contract and revisions. The term of the contract, including all
+
+renewal options (as defined in § 1.141-1(b)), must not be greater than the lesser of 30
+
+years or 80 percent of the weighted average reasonably expected economic life of the
+
+managed property. For this purpose, economic life is determined in the same manner
+
+as under § 147(b) as of the beginning of the term of the contract. A contract that is
+
+materially modified with respect to any matters relevant to this section 5 is retested
+
+under this section 5 as a new contract as of the date of the material modification.
+
+   .04 Control over use of the managed property. The qualified user must exercise a
+
+significant degree of control over the use of the managed property. This control
+
+requirement is met if the contract requires the qualified user to approve the annual
+
+budget of the managed property, capital expenditures with respect to the managed
+
+property, each disposition of property that is part of the managed property, rates
+
+charged for the use of the managed property, and the general nature and type of use of
+
+the managed property (for example, the type of services). For this purpose, for
+
+example, a qualified user may show approval of capital expenditures for a managed
+
+property by approving an annual budget for capital expenditures described by functional
+
+purpose and specific maximum amounts; and a qualified user may show approval of
+
+dispositions of property that is part of the managed property in a similar manner.
+
+Further, for example, a qualified user may show approval of rates charged for use of the
+
+managed property by expressly approving such rates or a general description of the
+
+methodology for setting such rates (such as a method that establishes hotel room rates
+
+using specified revenue goals based on comparable properties), or by requiring that the
+
+
+                                            14
+service provider charge rates that are reasonable and customary as specifically
+
+determined by, or negotiated with, an independent third party (such as a medical
+
+insurance company).
+
+   .05 Risk of loss of the managed property. The qualified user must bear the risk of
+
+loss upon damage or destruction of the managed property (for example, due to force
+
+majeure). A qualified user does not fail to meet this risk of loss requirement as a result
+
+of insuring against risk of loss through a third party or imposing upon the service
+
+provider a penalty for failure to operate the managed property in accordance with the
+
+standards set forth in the management contract.
+
+   .06 No inconsistent tax position. The service provider must agree that it is not
+
+entitled to and will not take any tax position that is inconsistent with being a service
+
+provider to the qualified user with respect to the managed property. For example, the
+
+service provider must agree not to claim any depreciation or amortization deduction,
+
+investment tax credit, or deduction for any payment as rent with respect to the managed
+
+property.
+
+   .07 No circumstances substantially limiting exercise of rights.
+
+     (1) In general. The service provider must not have any role or relationship with
+
+the qualified user that, in effect, substantially limits the qualified user’s ability to exercise
+
+its rights under the contract, based on all the facts and circumstances.
+
+     (2) Safe harbor. A service provider will not be treated as having a role or
+
+relationship prohibited under section 5.07(1) of this revenue procedure if:
+
+
+
+
+                                               15
+       (a) No more than 20 percent of the voting power of the governing body of the
+
+qualified user is vested in the directors, officers, shareholders, partners, members, and
+
+employees of the service provider, in the aggregate;
+
+       (b) The governing body of the qualified user does not include the chief executive
+
+officer of the service provider or the chairperson (or equivalent executive) of the service
+
+provider’s governing body; and
+
+       (c) The chief executive officer of the service provider is not the chief executive
+
+officer of the qualified user or any of the qualified user’s related parties (as defined in
+
+§1.150-1(b)).
+
+     (3) For purposes of section 5.07(2) of this revenue procedure, the phrase “service
+
+provider” includes the service provider’s related parties (as defined in §1.150-1(b)) and
+
+the phrase “chief executive officer” includes a person with equivalent management
+
+responsibilities.
+
+   .08 Functionally related and subordinate use. A service provider’s use of a project
+
+(as defined in § 1.141-6(a)(3)) that is functionally related and subordinate to
+
+performance of its services under a management contract for managed property that
+
+meets the conditions of this section 5 does not result in private business use of that
+
+project. For example, use of storage areas to store equipment used to perform
+
+activities required under a management contract that meets the requirements of this
+
+section 5 does not result in private business use.
+
+SECTION 6. EFFECT ON OTHER DOCUMENTS
+
+   Rev. Proc. 2016-44 is modified, amplified, and superseded.
+
+
+                                              16
+SECTION 7. DATE OF APPLICABILITY
+
+   This revenue procedure applies to any management contract that is entered into on
+
+or after January 17, 2017, and an issuer may apply this revenue procedure to any
+
+management contract that was entered into before January 17, 2017. In addition, an
+
+issuer may apply the safe harbors in Rev. Proc. 97-13, as modified by Rev. Proc. 2001-
+
+39 and amplified by Notice 2014-67, to a management contract that is entered into
+
+before August 18, 2017 and that is not materially modified or extended on or after
+
+August 18, 2017 (other than pursuant to a renewal option as defined in § 1.141-1(b)).
+
+SECTION 8. DRAFTING INFORMATION
+
+   The principal authors of this revenue procedure are Johanna Som de Cerff and
+
+David White of the Office of Associate Chief Counsel (Financial Institutions & Products).
+
+For further information regarding this revenue procedure, contact David White on (202)
+
+317-6980 (not a toll free call).
+
+
+
+
+                                           17
+

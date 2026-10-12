@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://obligationfirst.org/v1/context.jsonld",
+    {
+      "eal": "https://everyailaw.com/vocab/"
+    }
+  ],
+  "@type": "of:Instrument",
+  "@id": "https://everyailaw.com/instrument/colorado-sb26-189.json",
+  "eal:id": "colorado-sb26-189",
+  "title": "Colorado ADMT Act (SB 26-189)",
+  "short_title": "Colorado ADMT Act (SB 26-189)",
+  "supersedes": [
+    "https://everyailaw.com/instrument/colorado-sb24-205.json"
+  ],
+  "describesSameEntityAs": [
+    "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json"
+  ],
+  "enforcedBy": [
+    "https://everyailaw.com/authority/colorado-ag.json"
+  ],
+  "kind": "statute",
+  "normative_force": "binding",
+  "enacted": "2026-05-14",
+  "effective": "2027-01-01",
+  "lifecycle_status": "enacted",
+  "operative_status": "unknown",
+  "enforcement_status": "unknown",
+  "hasTerm": [
+    "https://everyailaw.com/term/colorado-sb26-189-developer-documentation.json",
+    "https://everyailaw.com/term/colorado-sb26-189-deployer-disclosures.json",
+    "https://everyailaw.com/term/colorado-sb26-189-human-review.json",
+    "https://everyailaw.com/term/colorado-sb26-189-record-keeping.json"
+  ],
+  "jurisdiction": {
+    "@type": "of:Jurisdiction",
+    "territorial_scope": [
+      "us-co"
+    ]
+  },
+  "territorial_scope": [
+    "us-co"
+  ],
+  "source": "https://leg.colorado.gov/bills/sb26-189",
+  "language": "en",
+  "evidence_type": "official-source",
+  "verified": "2026-05-15",
+  "asserted_by_adopter": "https://everyailaw.com/",
+  "eal:status": "enacted",
+  "projection_basis": "native-record-projection",
+  "admission_status": "source-consistency-reviewed-changes",
+  "source_review_unresolved": [],
+  "eal:source_review_record": "data/instruments/colorado-sb26-189.md",
+  "eal:source_review_receipt_sha256": "fba32d5696296cbf0cfddfd9a6c13f43415fb08fb1e943904b6b5c862ba1bd83",
+  "eal:source_review_evidence": [
+    {
+      "sha256": "5674eb05ba829f3b04ad4ab43e7c2c4e922dbb4e1e9c7d908c8b575d40b64947",
+      "original_sha256": "2d1b86786aea6a9d497764883433e21b0f90d8e1a0adbe6fb0495c601451177d",
+      "acquisition": "primary_retrieval",
+      "document_type": "official codification"
+    },
+    {
+      "sha256": "89e4e3e43ff0d06bda9a7b43c30621690ca4c4691fd13b4318aa4adac23b3695",
+      "original_sha256": "2d1b86786aea6a9d497764883433e21b0f90d8e1a0adbe6fb0495c601451177d",
+      "acquisition": "primary_retrieval",
+      "document_type": "official codification"
+    }
+  ],
+  "eal:source_record_sha256": "afe65609f450e599acac9f1a0d99e1871d7fba02e9a282483ff4dd8247626e79"
+}

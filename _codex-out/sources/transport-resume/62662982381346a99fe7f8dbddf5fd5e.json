@@ -1,0 +1,31 @@
+{
+  "id": "62662982381346a99fe7f8dbddf5fd5e",
+  "url": "https://www.consumerfinance.gov/robots.txt",
+  "kind": "robots",
+  "host": "www.consumerfinance.gov",
+  "status": 200,
+  "headers": {
+    "content-type": "text/plain",
+    "server": "envoy",
+    "content-security-policy": "style-src 'self' 'unsafe-inline' *.consumerfinance.gov *.googletagmanager.com fonts.googleapis.com api.mapbox.com www.ssa.gov/accessibility/andi/; img-src 'self' *.cfpb.gov *.consumerfinance.gov www.ecfr.gov s3.amazonaws.com img.youtube.com *.google-analytics.com *.googletagmanager.com api.mapbox.com *.tiles.mapbox.com blob: data: www.gravatar.com *.qualtrics.com *.mouseflow.com i.ytimg.com www.ssa.gov/accessibility/andi/; font-src 'self' fonts.gstatic.com; connect-src 'self' *.consumerfinance.gov dap.digitalgov.gov *.google-analytics.com *.tiles.mapbox.com api.mapbox.com bam.nr-data.net gov-bam.nr-data.net s3.amazonaws.com public.govdelivery.com *.mouseflow.com *.qualtrics.com raw.githubusercontent.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.consumerfinance.gov dap.digitalgov.gov *.googleanalytics.com *.google-analytics.com *.googletagmanager.com api.mapbox.com js-agent.newrelic.com bam.nr-data.net gov-bam.nr-data.net *.youtube.com *.ytimg.com *.mouseflow.com *.geo.census.gov about: www.federalregister.gov *.qualtrics.com www.ssa.gov/accessibility/andi/ ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js; default-src 'self'; media-src 'self' *.consumerfinance.gov; frame-src 'self' *.consumerfinance.gov *.googletagmanager.com *.google-analytics.com www.youtube.com *.qualtrics.com mailto:",
+    "x-frame-options": "SAMEORIGIN",
+    "etag": "\"472f36441fd6574cc3512270ca06ff14\"",
+    "permissions-policy": "interest-cohort=()",
+    "x-content-type-options": "nosniff",
+    "referrer-policy": "same-origin",
+    "cross-origin-opener-policy": "same-origin",
+    "x-envoy-upstream-service-time": "63",
+    "vary": "Accept-Encoding",
+    "date": "Sat, 03 Oct 2026 18:37:45 GMT",
+    "content-length": "589",
+    "strict-transport-security": "max-age=31536000",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:45.011003+00:00",
+  "sha256": "82860737089392625ec580d390a73311c4d729799de2e3223fddc97d7e659fe3",
+  "bytes": 589,
+  "body_path": "/workspace/freshness-control/transport-evidence/62662982381346a99fe7f8dbddf5fd5e.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/62662982381346a99fe7f8dbddf5fd5e.body"
+}

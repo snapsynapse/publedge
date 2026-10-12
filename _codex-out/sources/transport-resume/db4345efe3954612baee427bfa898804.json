@@ -1,0 +1,23 @@
+{
+  "id": "db4345efe3954612baee427bfa898804",
+  "url": "https://irs.gov/pub/irs-wd/202614036.pdf",
+  "kind": "fetch",
+  "host": "irs.gov",
+  "status": 301,
+  "headers": {
+    "location": "https://www.irs.gov/pub/irs-wd/202614036.pdf",
+    "strict-transport-security": "max-age=31536000",
+    "server": "envoy",
+    "content-length": "0",
+    "x-envoy-upstream-service-time": "119",
+    "date": "Sat, 03 Oct 2026 18:37:49 GMT",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:49.756106+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/db4345efe3954612baee427bfa898804.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/db4345efe3954612baee427bfa898804.body"
+}

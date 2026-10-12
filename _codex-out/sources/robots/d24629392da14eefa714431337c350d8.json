@@ -1,0 +1,14 @@
+{
+  "id": "d24629392da14eefa714431337c350d8",
+  "url": "https://www.gtlaw.com/robots.txt",
+  "kind": "robots",
+  "host": "www.gtlaw.com",
+  "status": null,
+  "headers": {},
+  "complete": false,
+  "error": "Tunnel connection failed: 403 Forbidden",
+  "retrieved_at": "2026-10-03T03:03:47.818124+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/d24629392da14eefa714431337c350d8.body"
+}

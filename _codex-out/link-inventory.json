@@ -1,0 +1,1027 @@
+[
+  {
+    "id": "us-cfpb-ao-2022-001",
+    "source": "data/examples/instruments/us-cfpb-ao-2022-001.md",
+    "category": "instruments",
+    "title": "CFPB Advisory Opinion \u2014 Pay-to-Pay Fees (Regulation F)",
+    "links": [
+      {
+        "url": "https://www.consumerfinance.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.law.cornell.edu/uscode/text/15/1692f",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1006/subpart-B/section-1006.22",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-cftc-dsio-il-2017-001",
+    "source": "data/examples/instruments/us-cftc-dsio-il-2017-001.md",
+    "category": "instruments",
+    "title": "CFTC Letter 17-65 \u2014 CTA Registration Exemption Survives MiFID II Fee Unbundling",
+    "links": [
+      {
+        "url": "https://cftc.gov/LawRegulation/CFTCStaffLetters/index.htm",
+        "role": "body-source"
+      },
+      {
+        "url": "https://cftc.gov/csl/17-65/download",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.law.cornell.edu/uscode/text/7/1a",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.6",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.ecfr.gov/current/title-17/chapter-I/part-4/section-4.14",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-co-legislature-statute-2024-sb24-205",
+    "source": "data/examples/instruments/us-co-legislature-statute-2024-sb24-205.md",
+    "category": "instruments",
+    "title": "Colorado SB 24-205 (2024) \u2014 Consumer Protections for Interactions with Artificial Intelligence Systems",
+    "links": [
+      {
+        "url": "https://everyailaw.com/instrument/colorado-sb24-205.json",
+        "role": "describesSameEntityAs"
+      },
+      {
+        "url": "https://leg.colorado.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://leg.colorado.gov/bills/sb24-205",
+        "role": "body-source"
+      },
+      {
+        "url": "https://leg.colorado.gov/sites/default/files/2024a_205_signed.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.cod.253513/gov.uscourts.cod.253513.24.0.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-co-legislature-statute-2025-sb25b-004",
+    "source": "data/examples/instruments/us-co-legislature-statute-2025-sb25b-004.md",
+    "category": "instruments",
+    "title": "Colorado SB 25B-004 (2025) \u2014 Increase Transparency for Algorithmic Systems (Colorado AI Act Effective-Date Delay)",
+    "links": [
+      {
+        "url": "https://leg.colorado.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://leg.colorado.gov/bills/sb25b-004",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.gtlaw.com/en/insights/2025/9/colorado-delays-comprehensive-ai-law-with-further-changes-anticipated",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-co-legislature-statute-2026-sb26-189",
+    "source": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
+    "category": "instruments",
+    "title": "Colorado SB 26-189 (2026) \u2014 Automated Decision-Making Technology (ADMT) Act",
+    "links": [
+      {
+        "url": "https://everyailaw.com/instrument/colorado-sb26-189.json",
+        "role": "describesSameEntityAs"
+      },
+      {
+        "url": "https://leg.colorado.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://leg.colorado.gov/bills/sb26-189",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://paice.work/blog/modeling-colorado-ai-act-obligationfirst",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-irs-chief-counsel-plr-2025-001",
+    "source": "data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md",
+    "category": "instruments",
+    "title": "IRS Private Letter Ruling 202506001 \u2014 Management Contract Private Business Use (\u00a7141)",
+    "links": [
+      {
+        "url": "https://www.irs.gov/privacy-disclosure/written-determinations",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.law.cornell.edu/uscode/text/26/141",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.irs.gov/pub/irs-drop/rp-17-13.pdf",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-irs-tege-plr-2026-001",
+    "source": "data/examples/instruments/us-irs-tege-plr-2026-001.md",
+    "category": "instruments",
+    "title": "IRS PLR 202614036 \u2014 Adverse Determination: \u00a7501(c)(3) Exemption Denied, Mixed-Use Facility",
+    "links": [
+      {
+        "url": "https://irs.gov/privacy-disclosure/written-determinations",
+        "role": "body-source"
+      },
+      {
+        "url": "https://irs.gov/pub/irs-wd/202614036.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.law.cornell.edu/uscode/text/26/501",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/section-1.501(c)(3)-1",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.law.cornell.edu/uscode/text/26/170",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.irs.gov/pub/irs-tege/rr74-587.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.irs.gov/pub/irs-tege/rr76-419.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.irs.gov/pub/irs-tege/rr77-111.pdf",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-sec-corpfin-nal-2025-001",
+    "source": "data/examples/instruments/us-sec-corpfin-nal-2025-001.md",
+    "category": "instruments",
+    "title": "SEC No-Action Letter \u2014 Latham & Watkins (Rule 506(c) Verification)",
+    "links": [
+      {
+        "url": "https://www.sec.gov/divisions/corpfin",
+        "role": "ref"
+      },
+      {
+        "url": "https://www.sec.gov/rules-regulations/no-action-interpretive-exemptive-letters/division-corporation-finance-no-action/latham-watkins-503c-031225",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-230/subject-group-ECFRfdd94b1cf5a5091/section-230.506",
+        "role": "body-source"
+      },
+      {
+        "url": "https://www.law.cornell.edu/cfr/text/17/230.506",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-legislature-statute-2024-sb149",
+    "source": "data/examples/instruments/us-ut-legislature-statute-2024-sb149.md",
+    "category": "instruments",
+    "title": "Utah SB 149 (2024) \u2014 Artificial Intelligence Amendments",
+    "links": [
+      {
+        "url": "https://le.utah.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://le.utah.gov/~2024/bills/static/SB0149.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title76/Chapter2/76-2-S107.html",
+        "role": "url"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-legislature-statute-2025-hb452",
+    "source": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
+    "category": "instruments",
+    "title": "Utah HB 452 (2025) \u2014 Artificial Intelligence Amendments (Mental Health Chatbots)",
+    "links": [
+      {
+        "url": "https://le.utah.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S101.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S201.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S203.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60-S118.html",
+        "role": "url"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-data-protection",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-safety-policy",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-legislature-statute-2025-sb226",
+    "source": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+    "category": "instruments",
+    "title": "Utah SB 226 (2025) \u2014 Artificial Intelligence Consumer Protection Amendments",
+    "links": [
+      {
+        "url": "https://le.utah.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html",
+        "role": "url"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/#high-risk-genai-disclosure-in-regulated-occupations",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-legislature-statute-2025-sb332",
+    "source": "data/examples/instruments/us-ut-legislature-statute-2025-sb332.md",
+    "category": "instruments",
+    "title": "Utah SB 332 (2025) \u2014 Artificial Intelligence Revisions (AIPA Sunset Extension)",
+    "links": [
+      {
+        "url": "https://le.utah.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://le.utah.gov/~2025/bills/static/SB0332.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title63I/Chapter2/63I-2-S213.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/Session/2025/bills/enrolled/SB0332.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/index.html",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-legislature-statute-2026-hb320",
+    "source": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
+    "category": "instruments",
+    "title": "Utah HB 320 (2026) \u2014 Office of Artificial Intelligence Policy Amendments (Learning Lab Restructure + Joint Interpretation Agreements)",
+    "links": [
+      {
+        "url": "https://le.utah.gov/",
+        "role": "ref"
+      },
+      {
+        "url": "https://le.utah.gov/~2026/bills/static/HB0320.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S401.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S402.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S403.html",
+        "role": "url"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/#regulatory-mitigation-and-joint-interpretation-agreements",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-oaip-jia-2026-001",
+    "source": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+    "category": "instruments",
+    "title": "Utah Mental Health Chatbot Disclosure \u2014 Joint Interpretation",
+    "links": [
+      {
+        "url": "https://commerce.utah.gov/ai/",
+        "role": "official_url"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-oaip-rma-2024-001",
+    "source": "data/examples/instruments/us-ut-oaip-rma-2024-001.md",
+    "category": "instruments",
+    "title": "Utah OAIP \u00d7 ElizaChat \u2014 Teen Mental-Health App RMA (2024)",
+    "links": [
+      {
+        "url": "https://commerce.utah.gov/ai/",
+        "role": "ref"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/elizachat/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/wp-content/uploads/2024/11/Signed-Elizachat-Agreement-November-2024.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter2/13-2-S12.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60-S102.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter61/58-61-S102.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html",
+        "role": "url"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://github.com/snapsynapse/publedge/blob/main/ops/evidence/elizachat-source-review-2026-09-08.json",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter60/58-60.html",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-oaip-rma-2025-001",
+    "source": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
+    "category": "instruments",
+    "title": "Utah OAIP \u00d7 Dentacor \u2014 AI-Assisted Dental Radiograph Diagnosis RMA (2025)",
+    "links": [
+      {
+        "url": "https://commerce.utah.gov/ai/learning-lab/",
+        "role": "ref"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/dentacor/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S301.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S102.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter69/58-69-S5.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html",
+        "role": "url"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-oaip-rma-2025-002",
+    "source": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+    "category": "instruments",
+    "title": "Utah OAIP \u00d7 Doctronic \u2014 AI Prescription Renewal RMA (2025)",
+    "links": [
+      {
+        "url": "https://commerce.utah.gov/ai/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S301.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter17B/58-17b.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html",
+        "role": "url"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/ai-faq/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "us-ut-oaip-rma-2026-001",
+    "source": "data/examples/instruments/us-ut-oaip-rma-2026-001.md",
+    "category": "instruments",
+    "title": "Utah OAIP \u00d7 Legion Health \u2014 AI Maintenance Psychiatric Refill RMA (2026)",
+    "links": [
+      {
+        "url": "https://commerce.utah.gov/ai/",
+        "role": "ref"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a.html",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter17B/58-17b.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html",
+        "role": "url"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html",
+        "role": "url"
+      },
+      {
+        "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72.html",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "admt-60-day-cure-period",
+    "source": "data/examples/obligations/admt-60-day-cure-period.md",
+    "category": "obligations",
+    "title": "ADMT Sixty-Day Cure Period Before Enforcement",
+    "links": []
+  },
+  {
+    "id": "admt-correction-and-human-review",
+    "source": "data/examples/obligations/admt-correction-and-human-review.md",
+    "category": "obligations",
+    "title": "ADMT Data Correction And Human Review Of Adverse Outcomes",
+    "links": []
+  },
+  {
+    "id": "admt-deployer-3-year-record-retention",
+    "source": "data/examples/obligations/admt-deployer-3-year-record-retention.md",
+    "category": "obligations",
+    "title": "ADMT Deployer Three-Year Record Retention",
+    "links": []
+  },
+  {
+    "id": "admt-deployer-pre-decision-notice",
+    "source": "data/examples/obligations/admt-deployer-pre-decision-notice.md",
+    "category": "obligations",
+    "title": "ADMT Deployer Notice Before Consequential Decision",
+    "links": []
+  },
+  {
+    "id": "admt-developer-documentation-to-deployer",
+    "source": "data/examples/obligations/admt-developer-documentation-to-deployer.md",
+    "category": "obligations",
+    "title": "ADMT Developer Documentation To Deployer",
+    "links": []
+  },
+  {
+    "id": "admt-post-adverse-explanation-30-days",
+    "source": "data/examples/obligations/admt-post-adverse-explanation-30-days.md",
+    "category": "obligations",
+    "title": "ADMT Post-Adverse Explanation Within 30 Days",
+    "links": []
+  },
+  {
+    "id": "ai-authorized-rx-renewal",
+    "source": "data/examples/obligations/ai-authorized-rx-renewal.md",
+    "category": "obligations",
+    "title": "AI-Authorized Prescription Renewal (Utah Pilot)",
+    "links": []
+  },
+  {
+    "id": "ai-defense-elimination",
+    "source": "data/examples/obligations/ai-defense-elimination.md",
+    "category": "obligations",
+    "title": "GenAI Is Not A Defense \u2014 Civil And Criminal",
+    "links": []
+  },
+  {
+    "id": "cfpb-pay-to-pay-fee-prohibited",
+    "source": "data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md",
+    "category": "obligations",
+    "title": "Pay-To-Pay Fee Prohibited Without Express Authorization",
+    "links": []
+  },
+  {
+    "id": "cftc-unbundled-fee-not-cta-trigger",
+    "source": "data/examples/obligations/cftc-unbundled-fee-not-cta-trigger.md",
+    "category": "obligations",
+    "title": "Unbundled Advice Fee Does Not Trigger CTA Registration",
+    "links": []
+  },
+  {
+    "id": "chatbot-data-no-third-party-sharing",
+    "source": "data/examples/obligations/chatbot-data-no-third-party-sharing.md",
+    "category": "obligations",
+    "title": "Mental Health Chatbot \u2014 No Third-Party Data Sharing",
+    "links": []
+  },
+  {
+    "id": "chatbot-safety-policy-filing",
+    "source": "data/examples/obligations/chatbot-safety-policy-filing.md",
+    "category": "obligations",
+    "title": "Mental Health Chatbot \u2014 File 15-Element Safety Policy",
+    "links": []
+  },
+  {
+    "id": "dentacor-58-69-5-enforcement-forborne",
+    "source": "data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md",
+    "category": "obligations",
+    "title": "Dentacor \u2014 \u00a758-69-5 Enforcement Forborne",
+    "links": []
+  },
+  {
+    "id": "dentacor-hygienist-ai-concurrence-diagnosis",
+    "source": "data/examples/obligations/dentacor-hygienist-ai-concurrence-diagnosis.md",
+    "category": "obligations",
+    "title": "Dentacor \u2014 Hygienist + AI Concurrence Diagnosis",
+    "links": []
+  },
+  {
+    "id": "dentacor-informed-consent-no-dentist",
+    "source": "data/examples/obligations/dentacor-informed-consent-no-dentist.md",
+    "category": "obligations",
+    "title": "Dentacor \u2014 Informed Consent Disclosing Absence Of Dentist",
+    "links": []
+  },
+  {
+    "id": "disclose-genai-high-risk-proactive",
+    "source": "data/examples/obligations/disclose-genai-high-risk-proactive.md",
+    "category": "obligations",
+    "title": "Proactive GenAI Disclosure In High-Risk Interactions",
+    "links": []
+  },
+  {
+    "id": "disclose-genai-on-first-session",
+    "source": "data/examples/obligations/disclose-genai-on-first-session.md",
+    "category": "obligations",
+    "title": "Disclose GenAI on First Session",
+    "links": []
+  },
+  {
+    "id": "disclose-genai-on-request",
+    "source": "data/examples/obligations/disclose-genai-on-request.md",
+    "category": "obligations",
+    "title": "Disclose GenAI On Consumer Request",
+    "links": []
+  },
+  {
+    "id": "elizachat-phased-rollout",
+    "source": "data/examples/obligations/elizachat-phased-rollout.md",
+    "category": "obligations",
+    "title": "ElizaChat \u2014 Three-Phase Rollout Gate",
+    "links": []
+  },
+  {
+    "id": "elizachat-pre-access-disclosure-bundle",
+    "source": "data/examples/obligations/elizachat-pre-access-disclosure-bundle.md",
+    "category": "obligations",
+    "title": "ElizaChat \u2014 Pre-Access Disclosure Bundle",
+    "links": []
+  },
+  {
+    "id": "high-risk-ai-consumer-notice-correction-and-appeal",
+    "source": "data/examples/obligations/high-risk-ai-consumer-notice-correction-and-appeal.md",
+    "category": "obligations",
+    "title": "High-Risk AI Consumer Notice, Correction, And Appeal",
+    "links": []
+  },
+  {
+    "id": "high-risk-ai-impact-assessment",
+    "source": "data/examples/obligations/high-risk-ai-impact-assessment.md",
+    "category": "obligations",
+    "title": "High-Risk AI Impact Assessment",
+    "links": []
+  },
+  {
+    "id": "high-risk-ai-reasonable-care-against-algorithmic-discrimination",
+    "source": "data/examples/obligations/high-risk-ai-reasonable-care-against-algorithmic-discrimination.md",
+    "category": "obligations",
+    "title": "High-Risk AI Reasonable Care Against Algorithmic Discrimination",
+    "links": []
+  },
+  {
+    "id": "irs-501c3-dual-test-failure",
+    "source": "data/examples/obligations/irs-501c3-dual-test-failure.md",
+    "category": "obligations",
+    "title": "\u00a7501(c)(3) Exemption Denied \u2014 Organizational And Operational Test Failure",
+    "links": []
+  },
+  {
+    "id": "irs-incentive-fee-not-net-profits-share",
+    "source": "data/examples/obligations/irs-incentive-fee-not-net-profits-share.md",
+    "category": "obligations",
+    "title": "Incentive-Fee Management Contract Not A Share Of Net Profits",
+    "links": []
+  },
+  {
+    "id": "learning-lab-agreement-participation",
+    "source": "data/examples/obligations/learning-lab-agreement-participation.md",
+    "category": "obligations",
+    "title": "Learning Lab Agreement \u2014 Eligibility and Participation",
+    "links": []
+  },
+  {
+    "id": "named-prescriber-enforcement-forborne",
+    "source": "data/examples/obligations/named-prescriber-enforcement-forborne.md",
+    "category": "obligations",
+    "title": "Named-Prescriber Enforcement Forborne",
+    "links": []
+  },
+  {
+    "id": "rma-data-security-63a-19-102",
+    "source": "data/examples/obligations/rma-data-security-63a-19-102.md",
+    "category": "obligations",
+    "title": "RMA \u2014 Data Security Under \u00a763A-19-102",
+    "links": []
+  },
+  {
+    "id": "rma-end-of-term-report",
+    "source": "data/examples/obligations/rma-end-of-term-report.md",
+    "category": "obligations",
+    "title": "RMA \u2014 30-Day End-Of-Term Report",
+    "links": []
+  },
+  {
+    "id": "rma-hold-harmless-state",
+    "source": "data/examples/obligations/rma-hold-harmless-state.md",
+    "category": "obligations",
+    "title": "RMA \u2014 Hold Harmless The State",
+    "links": []
+  },
+  {
+    "id": "rma-incident-notification-24hr",
+    "source": "data/examples/obligations/rma-incident-notification-24hr.md",
+    "category": "obligations",
+    "title": "RMA \u2014 24-Hour Incident Notification",
+    "links": []
+  },
+  {
+    "id": "rma-monthly-report-to-oaip",
+    "source": "data/examples/obligations/rma-monthly-report-to-oaip.md",
+    "category": "obligations",
+    "title": "RMA \u2014 Monthly Report To OAIP",
+    "links": []
+  },
+  {
+    "id": "rma-no-advertising-reference",
+    "source": "data/examples/obligations/rma-no-advertising-reference.md",
+    "category": "obligations",
+    "title": "RMA \u2014 No Advertising Reference To Agreement",
+    "links": []
+  },
+  {
+    "id": "sec-reg-d-506c-verification-safe-harbor",
+    "source": "data/examples/obligations/sec-reg-d-506c-verification-safe-harbor.md",
+    "category": "obligations",
+    "title": "Rule 506(c) Verification Via High-Minimum + Representation",
+    "links": []
+  },
+  {
+    "id": "telehealth-compliance-per-proposal",
+    "source": "data/examples/obligations/telehealth-compliance-per-proposal.md",
+    "category": "obligations",
+    "title": "Telehealth Compliance Anchored To Participant Proposal",
+    "links": []
+  },
+  {
+    "id": "cfpb",
+    "source": "data/examples/authorities/cfpb.md",
+    "category": "authorities",
+    "title": "Consumer Financial Protection Bureau",
+    "links": [
+      {
+        "url": "https://www.consumerfinance.gov/",
+        "role": "website"
+      }
+    ]
+  },
+  {
+    "id": "cftc-dsio",
+    "source": "data/examples/authorities/cftc-dsio.md",
+    "category": "authorities",
+    "title": "CFTC Division of Swap Dealer and Intermediary Oversight",
+    "links": [
+      {
+        "url": "https://www.cftc.gov/About/CFTCOrganization/DSIO/index.htm",
+        "role": "website"
+      }
+    ]
+  },
+  {
+    "id": "colorado-legislature",
+    "source": "data/examples/authorities/colorado-legislature.md",
+    "category": "authorities",
+    "title": "Colorado General Assembly",
+    "links": [
+      {
+        "url": "https://leg.colorado.gov/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/colorado-sb24-205/",
+        "role": "body-source"
+      },
+      {
+        "url": "https://everyailaw.com/regulation/colorado-sb26-189/",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "irs-chief-counsel",
+    "source": "data/examples/authorities/irs-chief-counsel.md",
+    "category": "authorities",
+    "title": "IRS Office of Chief Counsel",
+    "links": [
+      {
+        "url": "https://www.irs.gov/privacy-disclosure/written-determinations",
+        "role": "website"
+      }
+    ]
+  },
+  {
+    "id": "irs-tege",
+    "source": "data/examples/authorities/irs-tege.md",
+    "category": "authorities",
+    "title": "IRS Tax Exempt and Government Entities Division",
+    "links": [
+      {
+        "url": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
+        "role": "website"
+      }
+    ]
+  },
+  {
+    "id": "sec-corpfin",
+    "source": "data/examples/authorities/sec-corpfin.md",
+    "category": "authorities",
+    "title": "SEC Division of Corporation Finance",
+    "links": [
+      {
+        "url": "https://www.sec.gov/divisions/corpfin",
+        "role": "website"
+      }
+    ]
+  },
+  {
+    "id": "utah-legislature",
+    "source": "data/examples/authorities/utah-legislature.md",
+    "category": "authorities",
+    "title": "Utah State Legislature",
+    "links": [
+      {
+        "url": "https://le.utah.gov/",
+        "role": "body-source"
+      }
+    ]
+  },
+  {
+    "id": "utah-oaip",
+    "source": "data/examples/authorities/utah-oaip.md",
+    "category": "authorities",
+    "title": "Utah Office of Artificial Intelligence Policy",
+    "links": [
+      {
+        "url": "https://commerce.utah.gov/ai/learning-lab/",
+        "role": "website"
+      }
+    ]
+  }
+]

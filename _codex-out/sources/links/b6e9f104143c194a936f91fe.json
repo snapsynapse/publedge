@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.883691+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.irs.gov/pub/irs-wd/202506001.pdf",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/b6e9f104143c194a936f91fe.body"
+}

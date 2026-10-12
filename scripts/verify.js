@@ -16,7 +16,7 @@ const fs = require('fs');
 const path = require('path');
 const { parseYaml, parseFrontmatter } = require('./lib/parse');
 const { loadMappingIndex } = require('./lib/mapping');
-const { classifyUnmappedContainers, containerCadenceDays, getAllowedUnmappedInstrumentIds, getReviewCadence } = require('./lib/verify-policy');
+const { classifyUnmappedContainers, containerCadenceDays, frozenFixtureErrors, getAllowedUnmappedInstrumentIds, getFrozenFixtureIds, getReviewCadence } = require('./lib/verify-policy');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -84,10 +84,11 @@ function verify() {
     const primaries = loadEntities(primaryDir);
     const containers = loadEntities(containerDir);
     const authorities = loadEntities(authorityDir);
+    const frozen = getFrozenFixtureIds(config);
     const allEntities = [
-        ...primaries.map(e => ({ ...e, role: config.entities?.primary?.name || 'Primary' })),
-        ...containers.map(e => ({ ...e, role: config.entities?.container?.name || 'Container' })),
-        ...authorities.map(e => ({ ...e, role: config.entities?.authority?.name || 'Authority' }))
+        ...primaries.map(e => ({ ...e, role: config.entities?.primary?.name || 'Primary', frozen: frozen.obligations.has(e.id) })),
+        ...containers.map(e => ({ ...e, role: config.entities?.container?.name || 'Container', frozen: frozen.instruments.has(e.id) })),
+        ...authorities.map(e => ({ ...e, role: config.entities?.authority?.name || 'Authority', frozen: frozen.authorities.has(e.id) }))
     ];
 
     // -----------------------------------------------------------------------
@@ -98,6 +99,7 @@ function verify() {
     const neverVerified = [];
     const invalidVerified = [];
     const futureVerified = [];
+    const frozenEntities = [];
 
     for (const entity of allEntities) {
         if (entity.last_verified === undefined || entity.last_verified === null || String(entity.last_verified).trim() === '') {
@@ -111,6 +113,11 @@ function verify() {
         }
         if (verifiedDate.getTime() > now.getTime()) {
             futureVerified.push(entity);
+            continue;
+        }
+        // Frozen schema fixtures keep their recorded date and are not aged.
+        if (entity.frozen) {
+            frozenEntities.push(entity);
             continue;
         }
         const daysSince = Math.floor((now - verifiedDate) / (1000 * 60 * 60 * 24));
@@ -152,8 +159,16 @@ function verify() {
         console.log();
     }
 
-    const freshCount = allEntities.length - staleEntities.length - neverVerified.length - invalidVerified.length - futureVerified.length;
-    console.log(`Fresh: ${freshCount}  |  Stale: ${staleEntities.length}  |  Never verified: ${neverVerified.length}  |  Invalid: ${invalidVerified.length}  |  Future: ${futureVerified.length}\n`);
+    if (frozenEntities.length > 0) {
+        console.log(`FROZEN FIXTURES (${frozenEntities.length}, exempt from staleness):`);
+        for (const e of frozenEntities) {
+            console.log(`  [${e.role}] ${e.id} — frozen schema fixture (${e.last_verified})`);
+        }
+        console.log();
+    }
+
+    const freshCount = allEntities.length - staleEntities.length - neverVerified.length - invalidVerified.length - futureVerified.length - frozenEntities.length;
+    console.log(`Fresh: ${freshCount}  |  Frozen: ${frozenEntities.length}  |  Stale: ${staleEntities.length}  |  Never verified: ${neverVerified.length}  |  Invalid: ${invalidVerified.length}  |  Future: ${futureVerified.length}\n`);
 
     // -----------------------------------------------------------------------
     // 2. Completeness check
@@ -200,6 +215,11 @@ function verify() {
             console.log(`  ERROR: Mapping "${m.id}" references unknown ${(config.entities?.container?.name || 'container').toLowerCase()} "${cId}"`);
             completenessErrors++;
         }
+    }
+
+    for (const error of frozenFixtureErrors(frozen, { containers, primaries, authorities, mappings })) {
+        console.log(`  ERROR: ${error}`);
+        completenessErrors++;
     }
 
     if (completenessErrors === 0) {

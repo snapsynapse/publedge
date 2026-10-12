@@ -1,0 +1,14 @@
+{
+  "id": "57026a22923f448b9251294f0f35a605",
+  "url": "https://www.law.cornell.edu/robots.txt",
+  "kind": "robots",
+  "host": "www.law.cornell.edu",
+  "status": null,
+  "headers": {},
+  "complete": false,
+  "error": "Tunnel connection failed: 403 Forbidden",
+  "retrieved_at": "2026-10-03T03:03:47.822982+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/57026a22923f448b9251294f0f35a605.body"
+}

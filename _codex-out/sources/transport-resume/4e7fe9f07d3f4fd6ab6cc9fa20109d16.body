@@ -1,0 +1,127 @@
+# Main Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Applebot
+Allow: /
+Crawl-delay: 1
+
+# AI/LLM Training & Retrieval Crawlers
+User-agent: GPTBot
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: Bytespider
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: YouBot
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: CCBot
+Allow: /
+Disallow: /results
+Disallow: /individual
+
+User-agent: DataForSeoBot
+Allow: /
+Crawl-delay: 2
+
+# Social Media Preview Crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Generic Crawlers
+User-agent: *
+Allow: /
+Disallow: /results
+Disallow: /resultsA
+Disallow: /resultsB
+Disallow: /resultsC
+Disallow: /dev/
+Disallow: /test-gauge
+Disallow: /sample-score-bar
+Disallow: /sample-score-gauge
+Disallow: /pack-inventory
+Disallow: /pilot-apply
+Disallow: /pilot-program
+Disallow: /admin/
+Disallow: /individual
+Disallow: /cohort
+Disallow: /history
+Disallow: /system-status
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://paice.work/sitemap-index.xml
+
+# RSS Feed (not a sitemap — listed here for discoverability only)
+# https://paice.work/blog/feed.xml
+
+# LLM / Agent Discovery
+# See /llms.txt for LLM-specific guidance (plural form — standard)
+# See /llm.txt for LLM-specific guidance (legacy)
+# See /agents.json for machine-readable service discovery
+# See /humans.txt for team information
+
+# Note: /results is intentionally blocked — accessible only after assessment completion

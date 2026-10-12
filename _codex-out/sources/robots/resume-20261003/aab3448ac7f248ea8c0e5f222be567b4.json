@@ -1,0 +1,33 @@
+{
+  "id": "aab3448ac7f248ea8c0e5f222be567b4",
+  "url": "https://www.cftc.gov/robots.txt",
+  "kind": "robots",
+  "host": "www.cftc.gov",
+  "status": 200,
+  "headers": {
+    "date": "Sat, 03 Oct 2026 18:37:29 GMT",
+    "content-type": "text/plain; charset=utf-8",
+    "content-length": "4817",
+    "server": "envoy",
+    "strict-transport-security": "max-age=15552000; includeSubDomains",
+    "x-request-id": "v-94e445c0-be97-11f1-bd10-637cfc5f5553",
+    "x-ah-environment": "prod",
+    "x-frame-options": "SAMEORIGIN",
+    "cache-control": "max-age=3600, public",
+    "via": "varnish",
+    "x-cache": "HIT",
+    "x-cache-hits": "1",
+    "set-cookie": "[REDACTED]",
+    "age": "83264",
+    "cf-cache-status": "HIT",
+    "cf-ray": "a44e0ef49e879300-ORD",
+    "x-envoy-upstream-service-time": "47",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:29.597937+00:00",
+  "sha256": "1d500ec03ef610b457287a8e55e6ad2f83a7bb888a630325c23573dccdcd81bb",
+  "bytes": 4817,
+  "body_path": "/workspace/freshness-control/transport-evidence/aab3448ac7f248ea8c0e5f222be567b4.body"
+}

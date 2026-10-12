@@ -1,0 +1,31 @@
+{
+  "id": "94741519f8384b3e9257574d11c6c77f",
+  "url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf",
+  "kind": "fetch",
+  "host": "commerce.utah.gov",
+  "status": 200,
+  "headers": {
+    "date": "Sat, 03 Oct 2026 18:38:16 GMT",
+    "content-type": "application/pdf",
+    "content-length": "165625",
+    "server": "envoy",
+    "vary": "accept-encoding",
+    "accept-ranges": "bytes",
+    "last-modified": "Thu, 21 May 2026 14:48:04 GMT",
+    "cloudlare-cdn-cache-control": "no-store",
+    "set-cookie": "[REDACTED]",
+    "cache-control": "no-store",
+    "cf-cache-status": "BYPASS",
+    "cf-ray": "a44e1019dda590c6-ORD",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "x-envoy-upstream-service-time": "116",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:38:16.545603+00:00",
+  "sha256": "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940",
+  "bytes": 165625,
+  "body_path": "/workspace/freshness-control/transport-evidence/94741519f8384b3e9257574d11c6c77f.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/94741519f8384b3e9257574d11c6c77f.body"
+}

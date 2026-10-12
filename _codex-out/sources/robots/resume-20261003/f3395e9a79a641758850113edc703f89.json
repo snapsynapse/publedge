@@ -1,0 +1,14 @@
+{
+  "id": "f3395e9a79a641758850113edc703f89",
+  "url": "https://everyailaw.com/robots.txt",
+  "kind": "robots",
+  "host": "everyailaw.com",
+  "status": null,
+  "headers": {},
+  "complete": false,
+  "error": "Tunnel connection failed: 403 Forbidden",
+  "retrieved_at": "2026-10-03T03:03:47.678896+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0,
+  "body_path": "/workspace/freshness-control/transport-evidence/f3395e9a79a641758850113edc703f89.body"
+}

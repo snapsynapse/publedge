@@ -1,0 +1,28 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [
+    {
+      "id": "b5a718fd1cda4fc391209df6d26b54d2",
+      "url": "https://www.irs.gov/robots.txt",
+      "kind": "robots",
+      "host": "www.irs.gov",
+      "status": null,
+      "headers": {},
+      "complete": false,
+      "error": "Tunnel connection failed: 403 Forbidden",
+      "retrieved_at": "2026-10-03T03:03:47.823528+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "body_path": "/workspace/freshness-control/transport-evidence/b5a718fd1cda4fc391209df6d26b54d2.body"
+    }
+  ],
+  "retrieved_at": "2026-10-03T03:03:47.838979+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://www.irs.gov/about-irs/tax-exempt-government-entities-at-a-glance",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/d5676365ad1411ab8ab40acc.body"
+}

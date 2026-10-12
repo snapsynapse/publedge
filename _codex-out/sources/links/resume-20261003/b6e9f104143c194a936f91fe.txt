@@ -1,0 +1,261 @@
+    Internal Revenue Service                                      Department of the Treasury
+                                                                  Washington, DC 20224
+
+    Number: 202506001                                             Third Party Communication: None
+    Release Date: 2/7/2025                                        Date of Communication: Not Applicable
+    Index Number: 141.00-00, 141.07-00
+                                                                  Person To Contact:
+    --------------------------------------------------------      -------------------------, ID No. -----------------
+    ---------------------------------------------------------     -----------------------------------------------------
+    -------------------------------                               Telephone Number:
+    ------------------------------                                --------------------
+    ---------------------------                                   Refer Reply To:
+                                                                  CC:FIP:B05
+                                                                  PLR-107247-24
+                                                                  Date:
+                                                                  November 06, 2024
+
+
+
+
+Legend
+
+Bonds                        =        ---------------------------------------------------------------------------------
+                             -----------------------------------------------
+
+Dates                        =        ----------------------------------------------------
+
+Service Provider             =        ------------------------
+
+
+Issuer                     =        ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+
+Hotel                        =        --------------------------------------------
+
+a                            =        --
+
+b                            =        ------
+
+c                            =        ---
+
+d                            =        ---
+
+e                            =        -------------
+
+f                            =        -------------
+PLR-107247-24                               2
+
+Dear -----------------:
+
+This letter is in response to a request for a ruling and subsequent correspondence,
+submitted on behalf of Issuer, that the management fees described below (Management
+Fees) will not cause the Hotel to be used for private business use within the meaning of
+§ 141(b)(6) of the Internal Revenue Code (Code) and § 1.141-3(b)(4)(i) of the Income
+Tax Regulations.
+
+Facts and Representations
+
+Issuer owns the Hotel. Issuer issued the Bonds on Dates, respectively, the proceeds of
+which were used in part to refund prior bonds that financed the Hotel. The Hotel is
+operated and managed by Service Provider.
+
+Under the agreement between Issuer and Service Provider with respect to the
+management of the Hotel (Agreement), the Management Fees, which constitute part of
+Service Provider’s compensation, include a base fee (the Base Fee) and an incentive
+fee (the Incentive Fee). The Base Fee is equal to a percent of the gross receipts of the
+Hotel in each fiscal year during the term of the Agreement payable on a monthly basis
+in arrears. The Incentive Fee is equal to b percent of the gross revenue of the Hotel in
+any year in which both the revenue per available room and the gross operating profit
+reach certain benchmarks (the RevPAR Test and GOP Margin Test, respectively) and,
+if payable, is payable annually. The RevPAR Test is met in any year in which the
+revenue per available room for the Hotel exceeds c percent of the average revenue per
+available room for a pre-determined group of hotels that are comparable to the Hotel.
+The GOP Margin Test is met in any year in which the gross operating profit of the Hotel
+meets or exceeds d percent. Gross operating profit is the excess (if any) of gross
+receipts for such year over operating expenses for such year. Operating expenses
+include the entire cost and expense of maintaining, operating, and supervising the
+operation of the Hotel. The gross receipts and operating expenses included in
+determining gross operating profit only include revenue and expense items that fall
+within the control of Service Provider. The expense items are each defined by the
+Uniform Systems of Accounts for the Lodging Industry, 11th Revised Edition, a
+publication of the Hospitality Financial and Technology Professionals. Issuer is required
+to fund an operating account (Operating Account) solely out of the gross receipts of the
+Hotel for use to timely pay all current liabilities of the Hotel, including the Service
+Provider's Management Fees. The bi-weekly balance in the Operating Account must be
+no less than $e (subject to consumer price index adjustment), but need not be greater
+than $f (subject to adjustment by Issuer and Service Provider in connection with the
+annual budget review process). Service Provider does not have any liability with
+respect to net operating losses of the Hotel.
+PLR-107247-24                                 3
+
+Law and Analysis
+
+Section 103(a) of the Code provides that, except as provided in § 103(b), gross income
+does not include interest on any state or local bond.
+
+Section 103(b) provides, in part, that § 103(a) shall not apply to any private activity bond
+which is not a qualified bond (within the meaning of § 141).
+
+Section 141(a) provides that the term “private activity bond” means any bond issued as
+part of an issue which meets (1) the private business use test of § 141(b)(1) and the
+private security or payment test of § 141(b)(2), or (2) the private loan financing test of
+§ 141(c).
+
+Section 141(b)(1) provides that, except as otherwise provided, an issue meets the
+private business use test if more than 10 percent of the proceeds of the issue are to be
+used for any private business use.
+
+Section 141(b)(6)(A) generally provides that the term “private business use” for
+purposes of § 141(b) means use (directly or indirectly) in a trade or business carried on
+by any person other than a governmental unit. For purposes of § 141(b)(6)(A), use as a
+member of the general public shall not be taken into account. Section 141(b)(6)(B)
+provides that, for purposes of § 141(b)(6)(A), any activity carried on by a person other
+than a natural person shall be treated as a trade or business.
+
+Section 1.141-3(a)(1) provides generally that the private business use test relates to the
+use of the proceeds of an issue. The 10 percent private business use test of
+§ 141(b)(1) is met if more than 10 percent of the proceeds of an issue is used in a trade
+or business of a nongovernmental person. For this purpose, the use of financed
+property is treated as the direct use of proceeds.
+
+Section 1.141-3(a)(2) provides that in determining whether an issue meets the private
+business use test, it is necessary to look to both the direct and indirect uses of
+proceeds. Section 1.141-3(b)(1) provides generally that both actual and beneficial use
+by a nongovernmental person may be treated as private business use. In most cases,
+the private business use test is met only if a nongovernmental person has special legal
+entitlements to use the financed property under an arrangement with the issuer. In
+general, a nongovernmental person is treated as a private business user of proceeds
+and financed property as a result of ownership; actual or beneficial use of property
+pursuant to a lease, or a management or incentive payment contract; or certain
+other arrangements such as a take or pay or other output-type contract.
+
+Section 1.141-3(b)(4)(i) provides that, subject to exceptions in § 1.141-3(d), a
+management contract with respect to financed property may result in private business
+use of that property, based on all of the facts and circumstances. A management
+contract with respect to financed property generally results in private business use of
+PLR-107247-24                                 4
+
+that property if the contract provides for compensation for services rendered with
+compensation based, in whole or in part, on a share of net profits from the operation of
+the facility.
+
+Section 1.141-3(b)(4)(ii) defines a management contract as a management, service, or
+incentive payment contract between a governmental person and a service provider
+under which the service provider provides services involving all, a portion of, or any
+function of, a facility. For example, a contract for the provision of management services
+for an entire hospital, a contract for management services for a specific department of a
+hospital, and an incentive payment contract for physician services to patients of a
+hospital are each treated as a management contract.
+
+Revenue Procedure 2017-13, 2017-6 I.R.B. 787, provides safe harbor conditions under
+which a management contract does not result in private business use under § 141(b). If
+a management contract meets all of the applicable conditions of sections 5.02 through
+5.07 of Rev. Proc. 2017-13, the management contract does not result in private
+business use under § 141(b). See Rev. Proc. 2017-13, Section 5.01.
+
+Section 5.02 of Rev. Proc. 2017-13 provides in part that the payments to the service
+provider under the contract must be reasonable compensation for services rendered
+during the term of the contract. Compensation includes payments to reimburse actual
+and direct expenses paid by the service provider and related administrative overhead
+expenses of the service provider. Further, the contract must not provide to the service
+provider a share of net profits from the operation of the managed property.
+Compensation to the service provider will not be treated as providing a share of net
+profits if no element of the compensation takes into account, or is contingent upon,
+either the managed property's net profits or both the managed property's revenues and
+expenses (other than any reimbursements of direct and actual expenses paid by the
+service provider to unrelated third parties) for any fiscal period. For this purpose, the
+elements of the compensation are the eligibility for, the amount of, and the timing of the
+payment of the compensation. Incentive compensation will not be treated as providing
+a share of net profits if the eligibility for the incentive compensation is determined by the
+service provider's performance in meeting one or more standards that measure quality
+of services, performance, or productivity, and the amount and the timing of the payment
+of the compensation meet the requirements of section 5.02. In addition, the contract
+must not, in substance, impose upon the service provider the burden of bearing any
+share of net losses from the operation of the managed property.
+
+In the instant case, the Base Fee under the Agreement is equal to a percentage of the
+annual gross revenue of the Hotel, payable monthly from the Operating Account, which
+must be sufficiently and regularly funded by Issuer from gross receipts of the Hotel to
+pay all of the liabilities of the Hotel, including the Management Fees. Because the
+eligibility for, the amount of, and timing of the payment of the Base Fee do not take into
+account net profits, or both revenues and expenses of the Hotel, the Base Fee does not
+provide the Service Provider a share of net profits.
+PLR-107247-24                                 5
+
+The Incentive Fee under the Agreement is similarly equal to a percentage of the gross
+revenue of the Hotel. The Incentive Fee differs from the Base Fee in that payment is
+contingent on satisfaction of two metrics, one of which is a variant of net profits. Given
+that, under both § 1.141-3(b)(4)(i) and § 5.02(2) of Rev. Proc. 2017-13, compensation
+may not provide the Service Provider with a share of net profits from the operation of
+the Hotel, we must determine whether the Incentive Fee, provides a share of net profits
+within the meaning of those provisions. In making this determination, we look to the
+facts and circumstances.
+
+Here, the Incentive Fee is equal to a predetermined, fixed percentage of gross revenue.
+Despite the eligibility for receiving the Incentive Fee being partly triggered by a variant
+of net profits (that is, the GOP Margin Test), the amount of the Incentive Fee is not
+structured in such a way that it rises in proportion to increases in the Hotel's net profits
+or falls in proportion to decreases in the Hotel's net profits. The Incentive Fee is further
+distanced from net profits because the payment of the Incentive Fee depends on
+meeting the RevPAR Test, the other of the two metrics triggering payment of the
+Incentive Fee, which is based solely on revenues. Thus, in years when the Hotel fails to
+satisfy the RevPAR Test because of insufficient revenues, the amount of the Incentive
+Fee will be zero dollars even if the Hotel satisfies the GOP Margin Test with strong net
+profits. The Incentive Fee, if the Service Provider is eligible, is payable annually from
+the Operating Account. Therefore, the timing of its payment does not take into account
+net profits, or both revenues and expenses, of the Hotel. Based on these facts and
+circumstances, we conclude that the Incentive Fee does not provide the Service
+Provider a share of net profits.
+
+Conclusion
+
+Accordingly, we conclude that, the Management Fees do not cause the Hotel to be
+used for private business use under § 141(b)(6) and § 1.141-3(b)(4)(i).
+
+Except as expressly provided herein, no opinion is expressed or implied concerning the
+tax consequences of any transaction or item discussed or referenced in this letter,
+including whether the interest on the Bonds is excludable from gross income under
+§ 103(a).
+
+This ruling is directed only to the taxpayer who requested it. Section 6110(k)(3)
+provides that it may not be used or cited as precedent.
+
+The ruling contained in this letter is based upon information and representations
+submitted by the taxpayer and accompanied by a penalty of perjury statement executed
+by an appropriate party. Because this office has not verified any of the material
+submitted in support of the request for rulings, such material is subject to verification on
+examination.
+PLR-107247-24                                        6
+
+In accordance with the Power of Attorney on file with this office, a copy of this letter is
+being sent to your authorized representative.
+
+                                                         Sincerely yours,
+
+                                                         Associate Chief Counsel
+                                                         (Financial Institutions & Products)
+
+
+                                                     By: __________________________
+                                                        Zoran Stojanovic
+                                                        Assistant to the Branch Chief
+                                                        Branch 5
+                                                        Office of Associate Chief
+                                                        Counsel(Financial Institutions &
+                                                        Products)
+Enclosure
+      Copy for § 6110 purposes
+
+cc: ----------------------------
+----------------------------------------------
+--------------------------------
+--------------------------------------------------
+
+--------------------------
+     ------------------------
+     ----------------------------------
+     -------------------------
+     ---------------
+     --------------------------
+

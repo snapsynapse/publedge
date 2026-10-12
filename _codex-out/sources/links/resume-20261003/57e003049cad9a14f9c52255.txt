@@ -1,0 +1,219 @@
+                             U.S. COMMODITY FUTURES TRADING COMMISSION
+                                                     Three Lafayette Centre
+                                          1155 21st Street, NW, Washington, DC 20581
+
+
+
+
+Division of Swap Dealer and                                                                             Matthew B. Kulkin
+   Intermediary Oversight                                                                                    Director
+
+
+        CFTC Letter No. 17-65
+        Interpretation
+        December 11, 2017
+        Division of Swap Dealer and Intermediary Oversight
+
+
+
+        Ms. Allison Lurton
+        Futures Industry Association
+        2001 Pennsylvania Avenue, NW
+        Suite 600
+        Washington, DC 20006
+
+
+                 Re:      Staff Interpretation Regarding Commodity Trading Advisor Registration
+                          Requirements
+
+        Dear Ms. Lurton:
+
+                This is in response to your letter, dated November 30, 2017, to the Division of Swap
+        Dealer and Intermediary Oversight (the “Division”) of the Commodity Futures Trading
+        Commission (the “Commission” or the “CFTC”). You submitted your letter on behalf of your
+        member futures commission merchants (“FCMs”), swap dealers (“SDs”), and introducing
+        brokers (“IBs”). By your letter, you request that the Division issue an interpretation that an FCM
+        or SD that offers commodity trading advice that is “solely incidental” to the conduct of its
+        business or profession as an FCM or SD, or an IB that issues commodity trading advice that is
+        “solely in connection with” its business as an IB, is not required to register as a commodity
+        trading advisor (a “CTA”) under section 4m(1) of the Commodity Exchange Act (the “Act”) if
+        such FCM, SD or IB receives separate payments from investment managers for such commodity
+        trading advice. 1
+
+        Background
+
+
+
+        1
+          For an FCM or IB, the interpretation provided herein would apply to their Associated Persons (“APs”) who are
+        performing duties within the scope of their employment as APs of such FCM or IB. Although there is no AP
+        registration category for SDs, this interpretation would apply to employees of the SD who are performing the duties
+        traditionally associated with an AP, when such employees are acting within the scope of their duties as employees of
+        the SD.
+Ms. Allison Lurton
+Page 2
+
+        You state that your member FCMs, SDs and IBs engage in business with investment
+management firms that are subject to the laws of the European Union (hereinafter referred to as
+“EU Investment Managers”). Your member FCMs, SDs and IBs may provide commodity
+trading advice to these EU Investment Managers. The EU Investment Managers may pay your
+members for such commodity trading advice as part of a bundled payment or commission fee
+that combines investment research services and execution services. Your member FCMs, SDs
+and IBs that currently provide commodity trading advice to these EU Investment Managers are
+not required to register as CTAs provided that the commodity trading advice is “solely
+incidental” to the conduct of their respective businesses as an FCM or SD, or that the commodity
+trading advice is “solely in connection with” their respective businesses as an IB. 2
+
+        You state that the EU Investment Managers will be required by the Markets in Financial
+Instruments Directive II (“MiFID II”) to unbundle payments for investment research (including
+commodity trading advice) from payments for execution services effective January 3, 2018. 3
+Accordingly, your members will no longer be able to collect a single, bundled fee for investment
+research services (including commodity trading advice) and execution services from EU
+Investment Managers. The separate investment research fees will be paid either from the EU
+Investment Managers’ own funds or through client funds that are specifically set aside in
+Research Payment Accounts (“RPAs”). You state that MiFID II requirements may have impacts
+that extend beyond EU Investment Managers. For example, investment managers that have
+global operations may elect to implement uniform payment protocols that comply with the
+MiFID II directive for investment research in EU and non-EU jurisdictions in lieu of developing
+controls for differing payment protocols in different jurisdictions. 4
+
+         You state that your members are concerned that receiving a separate payment from an
+investment manager, including an EU Investment Manager, to purchase investment research
+services, which may include commodity trading advice, either through a direct hard dollar
+payment or an RPA mechanism, could result in the FCM, SD, or IB being deemed by Division
+staff to be acting as a CTA even if the commodity trading advice is “solely incidental” to the
+FCM’s or SD’s conduct of its business as an FCM or SD, or the commodity trading advice is
+“solely in connection with” the IB’s business as an IB.
+
+        Accordingly, you request an interpretation from the Division that an FCM, SD, or IB will
+not be deemed to be a CTA, or alternatively, will not be subject to registration as a CTA, if such
+FCM, SD, or IB receives separate payment for investment research services provided to
+
+
+2
+ You state that the requested interpretation would not apply to an FCM, SD or IB that otherwise receives separate
+compensation for commodity trading advice that is not solely incidental to, or solely in connection with, its business.
+3
+  See, Directive 2014/65/EU of the European Parliament and of the Council of 15 May 2014 on markets in financial
+instruments and amending Directive 2002/92/EC and Directive 2011/61/EU.
+4
+  Although this interpretation was requested on behalf of CFTC registrants who will be required to charge their
+European clients a separate unbundled fee for advisory services to comply with the MiFID II directive, this
+interpretation is not limited to entities who are bound by the MiFID II directive.
+Ms. Allison Lurton
+Page 3
+
+investment managers, which services are solely incidental to the FCM’s or SD’s conduct of its
+business, or solely in connection with its IB’s business.
+
+        You state that the requested interpretation does not seek to redefine the term “commodity
+trading advisor” and would largely preserve the market’s status quo. You further state that the
+request would provide clarity to parties whose research and advisory services would otherwise
+be considered “solely incidental” to, or “solely in connection” with, their trade or business, but
+for the receipt of separate compensation.
+
+Current Regulatory Framework
+
+         Section 1a(12) of the Act broadly defines a CTA as any person who, for compensation or
+profit, directly or indirectly advises others as to the value or advisability of trading in futures,
+options or swaps, or regularly issues or promulgates analyses or reports concerning such
+derivative instruments. Section 1a(12) of the Act also excludes an FCM from the CTA definition
+if the FCM’s commodity trading advice is “solely incidental” to the conduct of its business as an
+FCM. Similarly, Commission regulation 4.6(a)(3) excludes a registered SD from the CTA
+definition if the SD’s commodity trading advice is “solely incidental” to the conduct of its
+business as an SD. Furthermore, Commission regulation 4.14(a)(6) exempts a registered IB from
+registering as a CTA if the IB’s commodity trading advice is “solely in connection with” its
+business as an IB.
+
+        The Commission has not provided guidance regarding the extent of the commodity
+trading advice that an FCM or SD can provide to clients and remain within the CTA exclusions
+of section 1a(12) of the Act or regulation 4.6(a)(3), respectively. Similarly, the Commission has
+not provided guidance regarding the extent of the commodity trading advice an IB can provide to
+clients and remain within the CTA registration exemption of regulation 4.14(a)(6). The
+Commission, however, discussed certain activities that would be beyond the scope of the “solely
+incidental” limitation in its SD external business conduct standards rulemaking. 5 In that
+preamble, the Commission stated that
+
+        [t]here are advisory activities that the Commission would consider to be beyond
+        the scope of the “solely incidental” exclusion, and depending on the facts and
+        circumstances could cause a swap dealer to be a CTA within the statutory
+        definition. For example, a swap dealer that has general discretion to trade the
+        account of, or otherwise act for or on behalf of, a counterparty would be engaging
+        in activity that is not solely incidental to the business of a swap dealer. Limited
+        discretion related to the execution of a particular counterparty order, however,
+        would not cause a swap dealer to be a CTA. Also, the exclusion would not apply
+        if a swap dealer received separate compensation for, or otherwise profited
+        primarily from, advice provided to a counterparty. Furthermore, a swap dealer
+5
+ See, Business Conduct Standards for Swap Dealers and Major Swap Participants With Counterparties, 77 Fed
+Reg. 9734 at 9740 (February 12, 2012).
+Ms. Allison Lurton
+Page 4
+
+          that enters into an agreement with its counterparty to provide advisory services or
+          a swap dealer that otherwise holds itself out to the public as a CTA would also not
+          be within the “solely incidental” exclusion. These examples are not exhaustive.
+          There may be other circumstances in which a swap dealer’s activity would fall
+          outside the available exclusion. A determination of whether activity is “solely
+          incidental” would necessarily need to be viewed in context based on the particular
+          facts and circumstances. 6
+
+        The Division does not believe that the Commission intended to imply that commodity
+trading advisory activities that are “solely incidental” to the conduct of the SD’s business as an
+SD would no longer qualify for the exemption under Commission regulation 4.6(a)(3) solely
+because the SD received separate compensation for such services. The receipt of a separate
+payment for commodity trading advisory services is merely a factor to be considered among the
+facts and circumstances related to the advisory activities provided in determining whether the
+activities are indeed “solely incidental” to the conduct of a SD’s business as a SD, or whether the
+advisory activities are a separate, independent line of business more commonly associated with
+the business of a CTA.
+
+Interpretation
+
+        Based upon the foregoing, the Division does not believe that an FCM, SD, or IB would
+be in violation of section 4m(l) of the Act for failing to register as a CTA in connection with the
+provision of commodity trading advice for separate compensation so long as the providing of the
+commodity trading advice is “solely incidental” to the conduct of its business as an FCM or SD,
+or “solely in connection with” its business as an IB. The analysis of whether the commodity
+trading advice is “solely incidental” to the FCM’s or SD’s conduct of its business, or “solely in
+connection with” the IB’s business must be performed by the FCM, SD or IB based upon the
+particular facts and circumstances of the relationship between the parties. Although direct
+payment for commodity trading advice may be one factor, receipt of separate compensation
+would not be dispositive on its own.
+
+        The interpretation provided herein represents the position of this Division only and does
+not necessarily reflect the views of the Commission or any other division or office of the
+Commission. This letter does not excuse persons relying on it from compliance with any other
+applicable requirements contained in the Act or in the Commission regulations issued
+thereunder. Further, this letter is based upon the representations made to the Division. Any
+different, changed or omitted material facts or circumstances might render this letter void.
+Finally, the Division retains the authority to condition further, modify, suspend, terminate, or
+otherwise restrict the terms of the interpretation provided herein, in its discretion.
+
+
+
+
+6
+    Id.
+Ms. Allison Lurton
+Page 5
+
+
+       Should you have any questions, please do not hesitate to contact Amanda Olear,
+Associate Director, at 202-418-5283, or Peter Sanchez, Special Counsel, at 202-418-5237.
+
+                                                          Very truly yours,
+
+
+
+                                                          Matthew B. Kulkin
+                                                          Director
+                                                          Division of Swap Dealer and
+                                                          Intermediary Oversight
+
+
+
+
+cc:    Regina Thoele, Compliance
+       National Futures Association, Chicago
+

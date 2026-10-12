@@ -1,0 +1,26 @@
+{
+  "id": "89f0399735c84b57b08574c4d69e3c49",
+  "url": "https://cftc.gov/LawRegulation/CFTCStaffLetters/index.htm",
+  "kind": "fetch",
+  "host": "cftc.gov",
+  "status": 301,
+  "headers": {
+    "date": "Sat, 03 Oct 2026 18:37:29 GMT",
+    "content-type": "text/html; charset=UTF-8",
+    "location": "https://www.cftc.gov/LawRegulation/CFTCStaffLetters/index.htm",
+    "strict-transport-security": "max-age=15552000; includeSubDomains",
+    "set-cookie": "[REDACTED]",
+    "server": "envoy",
+    "cf-ray": "a44e0ef3ee35ab95-ORD",
+    "x-envoy-upstream-service-time": "47",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:29.493227+00:00",
+  "sha256": "446a6087825fa73eadb045e5a2e9e2adf7df241b571228187728191d961dda1f",
+  "bytes": 167,
+  "body_path": "/workspace/freshness-control/transport-evidence/89f0399735c84b57b08574c4d69e3c49.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/89f0399735c84b57b08574c4d69e3c49.body"
+}

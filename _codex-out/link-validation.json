@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "expected_records": 61,
+  "actual_records": 61,
+  "link_occurrences": 143,
+  "confirmed_identity_links": 5,
+  "checks": [
+    "exact record cardinality and uniqueness",
+    "exact source URL/role coverage",
+    "all outcomes final (no PENDING)",
+    "current and previous receipts durable",
+    "source SHA256 integrity",
+    "PASS identity independently rechecked against retained bytes/text",
+    "shared robots and attempt evidence paths present",
+    "no tracked changes outside _codex-out"
+  ],
+  "generated_record_pages": 117,
+  "generated_source_link_occurrences": 123
+}

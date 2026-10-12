@@ -1,0 +1,31 @@
+{
+  "id": "721203d5a08d4454a6441682eedc6c52",
+  "url": "https://www.law.cornell.edu/robots.txt",
+  "kind": "robots",
+  "host": "www.law.cornell.edu",
+  "status": 200,
+  "headers": {
+    "server": "envoy",
+    "date": "Sat, 03 Oct 2026 18:37:47 GMT",
+    "content-type": "text/plain; charset=utf-8",
+    "content-length": "2280",
+    "last-modified": "Tue, 10 Sep 2024 12:38:28 GMT",
+    "vary": "Accept-Encoding",
+    "etag": "\"66e03dc4-8e8\"",
+    "x-frame-options": "SAMEORIGIN",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000",
+    "x-xss-protection": "1; mode=block",
+    "content-security-policy": "frame-src https: 'self'; frame-ancestors 'self';",
+    "accept-ranges": "bytes",
+    "x-envoy-upstream-service-time": "154",
+    "connection": "close"
+  },
+  "complete": true,
+  "error": null,
+  "retrieved_at": "2026-10-03T18:37:47.034350+00:00",
+  "sha256": "730a298f7b888e2a3a1e32dc4fe2270a108bf346873295acc17f3c90685911cf",
+  "bytes": 2280,
+  "body_path": "/workspace/freshness-control/transport-evidence/721203d5a08d4454a6441682eedc6c52.body",
+  "body_evidence_copy": "_codex-out/sources/transport-resume/721203d5a08d4454a6441682eedc6c52.body"
+}
