@@ -6645,16 +6645,24 @@
           "unresolved_review_state": "unknown"
         },
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "16769df863c540985bf05faefbfab94efb1882a1398d65eca9a16ec41f313ba2",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "189f4253b204692369145bf206f26cb66d414488405e0d4509edee0e4c57a9d3",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "894ec6c5333740656a3f50a3dec3cdb95ceeb60642a95c225a2fe9d8e51823f5",
+          "native_file_sha256": "f1ee01115a55072a4a046b49af6a81c109b4f0ffba49e6e6df58d775b25ca302",
           "native_path": "data/examples/obligations/disclose-genai-high-risk-proactive.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          ],
+          "review_packet_sha256": "53dc6fff3ee933e85a8596578c3985f836252418b30dc6025349ed3ebdb586bb",
+          "unresolved": [
+            "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+            "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+            "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+            "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+            "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
       "pub:source_review_state": "known-and-unknown",
@@ -6663,7 +6671,12 @@
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
         "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+        "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+        "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+        "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+        "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+        "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
       ],
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
       "source_citation": "Utah SB 226 (2025 General Session)",
@@ -6710,16 +6723,24 @@
           "unresolved_review_state": "unknown"
         },
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "2255b8372e20bccbf1f6b054201add8cda3e519dd4aded5ac492e91cc7c56d0c",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "df3231b4a2111975e8de105d84a2fa0d4f5d1b8b32ffb3f0aab9ee12622931a5",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "975530c0feb4bacd2989f3e1494c8f9cbe61dd4bbb1569c866490c6de88d514a",
+          "native_file_sha256": "24d7c8e63e37d24678f5225b2d0c97b16f2bbea97e2fda7df8c9deeda1ef8c92",
           "native_path": "data/examples/obligations/disclose-genai-on-request.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+          ],
+          "review_packet_sha256": "ae850f903e66d27eac95d560533460f50cea40532afb8f15ab6d5c6c41e9b98a",
+          "unresolved": [
+            "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+            "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+            "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+            "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+            "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
       "pub:source_review_state": "known-and-unknown",
@@ -6728,7 +6749,12 @@
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
         "The 404 status of the 13-75-S102/S103/S104 URLs and HTTP 200 for 13-75.html come from ops/evidence/utah-overdue-dispositions-2026-09-23.json url_checks, not a retained snapshot; a human should confirm the current le.utah.gov section URL pattern.",
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
-        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it."
+        "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
+        "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
+        "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
+        "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
+        "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
+        "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
       ],
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
       "source_citation": "Utah SB 226 (2025 General Session)",
