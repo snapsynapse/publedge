@@ -22,7 +22,7 @@ Utah removed "the AI did it" as a defense in both civil and criminal contexts. A
 
 ## What Counts
 
-- A civil defendant cannot argue that GenAI produced the violative statement, undertook the violative act, or was used in furtherance as a defense to a Chapter 75 or aligned consumer-protection claim
+- For a violation of a statute administered and enforced by the division under §13-2-102, it is not a defense that GenAI made the violative statement, undertook the violative act, or was used in furtherance of the violation (§13-77-102)
 - A criminal defendant may be convicted where the offense was committed "with the aid of" GenAI or the defendant "intentionally prompted" GenAI to commit the offense
 - Applies regardless of whether the AI output was foreseeable, if the defendant is a principal who deployed or prompted the system
 
@@ -34,5 +34,9 @@ Utah removed "the AI did it" as a defense in both civil and criminal contexts. A
 
 ## Statute Anchors
 
-- Utah Code §13-75-102 — Civil AI-as-defense elimination (SB 226, 2025; formerly §13-2-12(2), SB 149, 2024)
+- [Utah Code §13-77-102](https://le.utah.gov/xcode/Title13/Chapter77/13-77-S102.html) — Current civil rule; retained enrolled SB 226 used §13-75-102 (formerly §13-2-12(2), SB 149, 2024)
 - Utah Code §76-2-107 — Criminal AI-as-defense / intentional prompting (SB 149, 2024)
+
+### Codification bridge (selected sources)
+
+The October 15, 2026 bridge checks the selected current civil locator and its §13-2-102 cross-reference against the retained Chapter 77 code and 2026 enrolled SB 38 §§3-4, 163-164. The Summary retains the historical enrolled numbering. The criminal, principal, foreseeability and third-party assertions were not re-reviewed by this bridge; their existing qualifications and unknowns remain. No underlying violation is established merely by AI use, and no human verification date is renewed.

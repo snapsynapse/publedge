@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Error\nError: browserBackend.callTool: Target page, context or browser has been closed"
+    }
+  ],
+  "isError": true
+}

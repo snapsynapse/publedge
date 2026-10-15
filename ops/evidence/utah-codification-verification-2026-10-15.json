@@ -1,0 +1,91 @@
+{
+  "base": "d3ee6947a0f479d93f614c38b6cbe8ecc634609b",
+  "branch": "codex/utah-codification-bridge-20261015",
+  "candidate_state": "staged and uncommitted; no deployment",
+  "native_bindings_sha256": {
+    "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md": "dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2",
+    "data/examples/obligations/disclose-genai-on-request.md": "66addb67bcb49b1dc552158da69195700c3e386a9d9f005f600b11f7cbef778e",
+    "data/examples/obligations/disclose-genai-high-risk-proactive.md": "4aa7cb5ed7bb426ca776f24a2f8ec5d9e13dcf8143743e52983a467fa98ce221",
+    "data/examples/obligations/disclose-genai-on-first-session.md": "d91bf0caddd8506a80d2febe2f368d21acbaf3ebe5707607c842c290d743786c",
+    "data/examples/obligations/ai-defense-elimination.md": "468570e53f14e866a16aec2cc9c09cc3eb82924e025d2e4d02d912d8e479c3f7",
+    "data/examples/mapping/index.yml": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+    "data/admission/receipts.json": "8061650d9562a6206a7a2a002edc19dc9aa2cdc073de5cf3ecc28afa961c3760",
+    "scripts/build.js": "f22102525870c9c03f5bd22fe99e08d7a940a981758bdd57bedc2a3cd9b87d3b"
+  },
+  "canonical": {
+    "command": "env -u SOURCE_ADMISSION_BASE CHECK_OF_REQUIRED=1 OBLIGATION_FIRST_DIR=/private/tmp/obligation-first-publedge-provenance-20261014 npm run verify:ci",
+    "exit_code": 0,
+    "log": ".verification-reports/utah-codification-20261015/utah-bridge-verify-ci-local.log",
+    "log_sha256": "fc843e6f781ab45f14753185e5f8cbf9cbce6f452d73322a883b84412902158a",
+    "comparison": "Default HEAD working-tree comparison; HEAD equals the exact pre-tranche base. Explicit SOURCE_ADMISSION_BASE equal to HEAD is rejected by the committed-head migration guard, so that earlier attempt is retained as failed, not waived."
+  },
+  "exact_base_admission": {
+    "command": "SOURCE_ADMISSION_BASE=d3ee6947a0f479d93f614c38b6cbe8ecc634609b npm run check:admission",
+    "exit_code": 0,
+    "log_sha256": "7835a0f580d70108e525e4be0df6020a103dea0da9e0ab4fe8fc584ee1f11abe",
+    "records": 62,
+    "legacy_unreviewed": 41,
+    "reviewed_changes": 21,
+    "changed_units_reviewed_inventory_total": 159,
+    "tranche_changed_units": 18
+  },
+  "focused_regressions": {
+    "command": "node --test tests/sb226-r1.test.js tests/sb226-summary-succession.test.js tests/hb452-source-corrections.test.js tests/utah-codification-bridge.test.js",
+    "exit_code": 0,
+    "passed": 17,
+    "log_sha256": "1861daf6ded11d24e99dcfd30056f8fcae328f9211c4b9c2bc05f6b0cdb23186"
+  },
+  "separate_summary_succession": {
+    "exit_code": 0,
+    "passed": 3,
+    "log_sha256": "ffe21daf7f45b6ad4d26f80e68d218e873d823762dd32d770f41bd341d4011e2"
+  },
+  "checker": {
+    "required": true,
+    "commit": "1857e686efb674ed54be8c33b10b9d18f5c7db41",
+    "version": "0.6.6",
+    "validated_records": 130,
+    "identifiers_unchanged": 130
+  },
+  "fingerprint": {
+    "changed_sections": [
+      "provenance_claims"
+    ],
+    "affected_records": 74,
+    "all_other_sections_equal": true
+  },
+  "rendered": {
+    "tool": "persistent shared Comet tab / Playwright, axe-core 4.12.1",
+    "scope": "five affected routes, two viewport sizes and two themes; WCAG2.1 A/AA automated checks",
+    "samples": 20,
+    "http_200": 20,
+    "clean_samples": 18,
+    "samples_with_violations": 2,
+    "incomplete_instances": 0,
+    "result": "NOT a full accessibility pass",
+    "findings": [
+      "SB226 dark-mode Previous/Next links: serious color-contrast, two nodes, ratio1.89 against4.5; reproduced on unchanged base.",
+      "All four primary routes measured429px document width at390px viewport (375px content width). Prior HB452 evidence establishes the first-session shared-table baseline only; an additional four-route base comparison failed because the shared Comet target closed. Do not claim all four base comparisons completed."
+    ],
+    "evidence": "ops/evidence/utah-codification-rendered-final-2026-10-15.json",
+    "final_template_adjustment": "Removed empty-line indentation only;35 HTML files match the browser-reviewed index snapshot after intertag-whitespace normalization. No DOM, style or content change. Canonical checks rerun successfully."
+  },
+  "source_acquisition": {
+    "requests": 9,
+    "retained_http_200": 9,
+    "retries": 0,
+    "redirects_followed": 0,
+    "limitation": "Initial seven requests did not observe the reused robots Crawl-delay:10 directive. Actual plans, timing, headers and bytes retained; no replay. The two later witnessed body requests respected10seconds. SB38 status response is only a JS shell and does not prove signing/votes."
+  },
+  "limits": [
+    "Source consistency only, not all-Utah completion/currentness.",
+    "No rules completeness, full incorporated-definition coverage, full renumbering history, absence-of-later-amendments, annual-report or bill-vote certification.",
+    "Criminal/principal/foreseeability/third-party assertions were not re-reviewed.",
+    "No new human acceptance or verification-date renewal.",
+    "No committed-head CI or public live-byte check exists for this uncommitted candidate."
+  ],
+  "staged_whitespace_check": {
+    "command": "git diff --cached --check",
+    "exit_code": 0
+  }
+}

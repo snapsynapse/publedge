@@ -1,0 +1,11 @@
+HTTP/2 200 
+date: Thu, 15 Oct 2026 06:26:22 GMT
+content-type: text/html
+content-length: 14000
+vary: Accept-Encoding
+last-modified: Sat, 29 Aug 2026 07:18:25 GMT
+etag: "f3ecd7948637dd1:0"
+strict-transport-security: max-age=31536000
+content-security-policy: frame-ancestors 'self' https://www.utleg.gov https://utleg.gov
+x-frame-options: ALLOW-FROM https://www.utleg.gov
+

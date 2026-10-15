@@ -48,7 +48,8 @@
     "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
     "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
     "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-    "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+    "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+    "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
@@ -74,11 +75,11 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
       "canonical_unit": "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session",
       "canonical_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+      "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
       "retained_primary_sha256": [
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
       ],
@@ -90,7 +91,8 @@
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ]
     }
   ]

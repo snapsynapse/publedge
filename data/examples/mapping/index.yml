@@ -35,6 +35,7 @@
   authority: utah-legislature
   source_file: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
   source_heading: Summary
+  obligation_qualification: The instrument Summary describes retained enrolled SB 226 Chapter 75. The disclosure definitions use the corresponding selected current Chapter 77 sections reviewed October 15, 2026; the civil definition bridges to 13-77-102 and 13-2-102 only. This locator bridge does not renew dates, validate current division rules or re-review criminal/principal assertions.
   obligations:
     - disclose-genai-on-request
     - disclose-genai-high-risk-proactive
@@ -45,7 +46,7 @@
   authority: utah-legislature
   source_file: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
   source_heading: Summary
-  obligation_qualification: The disclose-genai-on-first-session mapping is related, not equivalent. HB 452 section 13-72a-203(2) requires disclosure before access, at the start of an interaction after seven days without access, and whenever the user asks or prompts; the 30-minute re-display condition belongs to the unissued JIA proposal, not the corrected shared obligation or the statute. Section 13-75-103(1) is the separate SB 226 on-request rule; this mapping does not establish equivalence among their scopes.
+  obligation_qualification: The disclose-genai-on-first-session mapping is related, not equivalent. HB 452 section 13-72a-203(2) requires disclosure before access, at the start of an interaction after seven days without access, and whenever the user asks or prompts; the 30-minute re-display condition belongs to the unissued JIA proposal, not the corrected shared obligation or the statute. Section 13-77-103(1) is the separate SB 226 on-request rule (13-75-103(1) in the retained enrolled bill); this mapping does not establish equivalence among their scopes.
   obligations:
     - disclose-genai-on-first-session
     - chatbot-data-no-third-party-sharing

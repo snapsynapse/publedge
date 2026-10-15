@@ -19,14 +19,14 @@ official_url: https://le.utah.gov/~2025/bills/static/SB0226.html
 obligation_kind: [requirement, permission]
 reliance_scope: public
 statute_anchors:
-  - cite: "Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)"
-    url: "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
-  - cite: "Utah Code §13-75-102 (civil AI-assisted-violation liability)"
-    url: "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
-  - cite: "Utah Code §13-75-103 (disclosure requirements)"
-    url: "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
-  - cite: "Utah Code §13-75-104 (disclosure safe harbor)"
-    url: "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+  - cite: "Utah Code Title 13, Chapter 77 (current codification; enrolled SB 226 used Chapter 75)"
+    url: "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
+  - cite: "Utah Code §13-77-102 (civil AI-assisted-violation liability)"
+    url: "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
+  - cite: "Utah Code §13-77-103 (disclosure requirements)"
+    url: "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
+  - cite: "Utah Code §13-77-104 (disclosure safe harbor)"
+    url: "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
 publication_citations:
   - cite: "Utah SB 226 (2025 General Session)"
     url: "https://le.utah.gov/~2025/bills/static/SB0226.html"
@@ -74,8 +74,31 @@ These section references describe the retained 2025 enrolled SB 226, not indepen
 
 > "SB 226 (2025) narrowed the original Utah on-request disclosure to require a 'clear and unambiguous' consumer prompt, added an outset+throughout safe harbor, and re-sited the civil mirror of the 'AI did it' defense at §13-75-102."
 
+### Codification bridge (selected sources)
+
+Reviewed October 15, 2026.
+
+The Summary and Talking Point describe the retained 2025 enrolled bill's Chapter 75 numbering. The Legislature's current Chapter 77 index and linked code PDF identify the corresponding provisions as §§13-77-101 through 13-77-106. This is a bridge between the retained versions, not a claim that SB 226 enacted Chapter 77 under that number.
+
+- §13-75-101 in enrolled SB 226 corresponds to current §13-77-101: Definitions
+- §13-75-102 in enrolled SB 226 corresponds to current §13-77-102: Civil AI-assisted-violation rule
+- §13-75-103 in enrolled SB 226 corresponds to current §13-77-103: Required disclosures
+- §13-75-104 in enrolled SB 226 corresponds to current §13-77-104: Safe harbor
+- §13-75-105 in enrolled SB 226 corresponds to current §13-77-105: Enforcement
+- §13-75-106 in enrolled SB 226 corresponds to current §13-77-106: Other remedies preserved
+
+The current definition of the division and the civil rule refer to §13-2-102, rather than enrolled §13-2-1. Retained 2026 enrolled SB 38 §§3-4 expressly renumber and amend that Division provision; §§163-164 change the Chapter 77 references. The Office definition now cites §13-72-201 rather than enrolled §13-74-201. The selected current §13-2-102 body is effective July 1, 2026; its selector also lists a future January 1, 2027 version, which this review does not apply.
+
+Comparison of the retained enrolled text with the selected code supports the described disclosure triggers, actors, channel timing, high-risk branches, safe-harbor alternatives and other-remedies boundary. The chapter PDF's 2025 filename/header does not date all its contents: §§101-102 carry 2026 amendment markers, and their selectors identify versions effective May 6, 2026. This selected-source bridge does not establish the full history or effective date of the Chapter 75-to-77 editorial numbering, current division rules, all incorporated definitions, or absence of later amendments. Existing unconfirmed bill metadata, prior review receipts and human verification dates remain unchanged.
+
+
 ### Sources
 
 - [SB 226 Bill Text](https://le.utah.gov/~2025/bills/static/SB0226.html)
 - [EveryAILaw — General GenAI Disclosure](https://everyailaw.com/regulation/utah-sb149/#general-genai-disclosure)
 - [EveryAILaw — High-Risk Disclosure](https://everyailaw.com/regulation/utah-sb149/#high-risk-genai-disclosure-in-regulated-occupations)
+
+- [Current Chapter 77 index](https://le.utah.gov/xcode/Title13/Chapter77/13-77.html)
+- [Reviewed Chapter 77 code PDF](https://le.utah.gov/xcode/Title13/Chapter77/C13-77_2025050820250508.pdf)
+- [2026 enrolled SB 38](https://le.utah.gov/Session/2026/bills/enrolled/SB0038.pdf)
+- [Current Division of Consumer Protection provision](https://le.utah.gov/xcode/Title13/Chapter2/13-2-S102.html)
