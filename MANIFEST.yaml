@@ -433,12 +433,12 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:5c82713637e50b390f4d129f76960fe90926f50c59ddab8508d4c10eda12db9b
+    hash: sha256:f1520107dec8ad10b32a074134a5c4f99a0a3ac62bc4f182aa843a6c0aaa8929
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
     role: protocol
-    hash: sha256:341fc1ea496129ffb33ba3a9e89d737775ebba40122f252f24bb9048d19443fc
+    hash: sha256:a5a95df7c5b51e184dee19e5e86a5abdc7981158ed3b468e72592ce3b59045b8
     note: CONTRIBUTING.md
 
   - path: DEFINITIONS.md
@@ -453,7 +453,7 @@ files:
 
   - path: PROTOCOL.md
     role: protocol
-    hash: sha256:9a49e7a3ea098c5fa5c1d9f82e00fb16831ed2d8535fb36a3bff850de2c822f0
+    hash: sha256:7695259a2c0f084acf332eb53237f78142cd3a89bf8547e2a07f601937ce9d4d
     note: PROTOCOL.md
 
   - path: README.md
@@ -498,7 +498,7 @@ files:
 
   - path: VERIFICATION.md
     role: protocol
-    hash: sha256:eafeded6cdd7c3547d4c40818b8c42ac4990dbbeecef598c2b892167df9753be
+    hash: sha256:d66e94cc5c3b100839c55ee09365f5a690f2c82514c578fdc3ce930ed275841f
     note: VERIFICATION.md
 
   - path: schema/context.jsonld
