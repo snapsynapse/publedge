@@ -5,6 +5,8 @@
 // carries the record's own source and editorial_status so a draft or
 // demonstration record keeps its labelling wherever a status appears.
 
+const { isOriginalDraft } = require('./content');
+
 function containerSummary(c) {
     return {
         id: c.id,
@@ -17,7 +19,7 @@ function containerSummary(c) {
         effective: c.effective,
         provision_count: (c.provisions || []).length,
         provision_count_scope: 'Structured clause-level sections indexed; zero does not mean no obligations',
-        url: c._canonicalPath ? '/' + c._canonicalPath : null
+        url: c._canonicalPath ? 'https://publedge.org/' + c._canonicalPath : null
     };
 }
 
@@ -28,7 +30,7 @@ function daysBetween(today, date) {
 function upcomingItems(containers, { today, siteUrl, href }) {
     const items = [];
     for (const c of containers) {
-        if (c.source === 'publedge-original-draft') continue;
+        if (isOriginalDraft(c)) continue;
         const push = (kind, date) => {
             if (!date || date < today) return;
             items.push({

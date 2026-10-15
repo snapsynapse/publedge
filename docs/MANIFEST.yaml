@@ -568,7 +568,7 @@ files:
 
   - path: scripts/lib/api-projection.js
     role: tooling
-    hash: sha256:4fee7be5510e811aac0e971a7d534aab25757141f73f883e3c0ce38a6d4f9b77
+    hash: sha256:86ee9542c554dfa158ae07d4aa7a3f5f7f5f27ce43b06bdbfee08619568eac57
     note: Pure docs/api/v1 aggregate projections carrying source and editorial labelling
 
   - path: scripts/lib/publication-state.js
@@ -593,12 +593,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:1340e0a08c317b56e1336062901912bf7fa0914c53873536183b36de9f757f3c
+    hash: sha256:52e42b963a64def9455fe713c77d0e4ef84f7f28080eaa9e4d7c6de549fb966e
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:446b5c8212b5b34a52e672b8983ccf524f80466b6fc14ec5083aa41e485e5a4d
+    hash: sha256:16787c201e9aaffc9672581e36ef6d7009bf3449547c0da1b18811be4f15e879
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -703,7 +703,7 @@ files:
 
   - path: scripts/eval-package-smoke.js
     role: tooling
-    hash: sha256:6da95ed2729c08117baabc91eb7a51f0ddc71d7e88b2db583e11ab32c7fcbe18
+    hash: sha256:a668d4a75074f75da1b55d596c6c365072a7037050cf2862e2beb107242ce187
     note: scripts/eval-package-smoke.js
 
   - path: scripts/eval-obligation-first-binding.js
@@ -793,7 +793,7 @@ files:
 
   - path: scripts/lib/content.js
     role: tooling
-    hash: sha256:64f0d3e0322c875c459aa2daee81d0895446094c3dc1da902186d4bb6ed5e6dd
+    hash: sha256:e99e1a23feb899aaa8e4bf9a33deb50a0c69af987f5ab8239bff77288edf30c0
     note: scripts/lib/content.js
 
   - path: scripts/lib/disclaimer.js
@@ -1038,7 +1038,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:0b23a41ef4189650c71176ba1bbe4d87d9ac656cf063bf149317cd2947410dd6
+    hash: sha256:ab3f82e45f9391e484fd21f87b3c46b35647a634da67976d9f99fa019ad263bb
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js

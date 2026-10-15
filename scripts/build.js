@@ -16,12 +16,14 @@ const path = require('path');
 const crypto = require('crypto');
 const { parseYaml } = require('./lib/parse');
 const { loadMappingIndex } = require('./lib/mapping');
-const { loadMarkdownDir } = require('./lib/content');
+const { loadMarkdownDir, isOriginalDraft } = require('./lib/content');
 const { buildObligationFirstRecords, writeObligationFirstRecords } = require('./lib/obligation-first');
 const { deriveBuildClock } = require('./lib/build-clock');
 const { assertForEmission: assertSourceAdmission } = require('./check-source-admission');
 const { containerSummary, upcomingItems, recentlyChangedItems } = require('./lib/api-projection');
 const { containerCadenceDays, getFrozenFixtureIds, getReviewCadence } = require('./lib/verify-policy');
+
+const PROVISION_COUNT_LABEL = 'Clause-level provisions indexed';
 
 const ROOT = path.join(__dirname, '..');
 const BUILD_CLOCK = deriveBuildClock(ROOT);
@@ -637,7 +639,7 @@ function renderRecordSummary(c, config) {
     const isBlank = v => !v || /^(null|undefined|tbd|n\/a)$/i.test(String(v).trim());
     const items = [];
     items.push(`<strong>Jurisdiction:</strong> ${jurisdictionChip(c.jurisdiction, { label: jur?.label || c.jurisdiction })}`);
-    if (c.authority) items.push(`<strong>${c.source === 'publedge-original-draft' ? 'Intended authority' : 'Authority'}:</strong> ${escapeHTML(c.intended_authority || c.authority)}`);
+    if (c.authority) items.push(`<strong>${isOriginalDraft(c) ? 'Intended authority' : 'Authority'}:</strong> ${escapeHTML(c.intended_authority || c.authority)}`);
     if (c.author_or_proponent) items.push(`<strong>Author/proponent:</strong> ${escapeHTML(c.author_or_proponent)}`);
     if (typeLabel) items.push(`<strong>Type:</strong> ${escapeHTML(typeLabel)}`);
     if (!isBlank(c.term_start) && !isBlank(c.term_end)) {
@@ -714,7 +716,7 @@ function renderUpcomingWidget(containers, config) {
     const events = [];
     const isValidDate = (s) => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s);
     for (const c of containers) {
-        if (c.source === 'publedge-original-draft') continue;
+        if (isOriginalDraft(c)) continue;
         const push = (kind, date) => {
             if (!isValidDate(date) || date < today) return;
             events.push({
@@ -839,7 +841,7 @@ function generateHomepage(config, data, configCSS) {
             return `
         <h2>${escapeHTML(containerName)} <span style="font-size:0.7em;color:var(--muted);font-weight:400;">— ${recent.length} most recent</span></h2>
         <table class="data-table">
-            <thead><tr>${th(config.entities?.container?.name || 'Container')}${th('Scope', { filter: 'scope' })}${th('Status', { filter: 'status' })}${th('Effective')}${th('Clause-level provisions indexed', { sortType: 'number' })}</tr></thead>
+            <thead><tr>${th(config.entities?.container?.name || 'Container')}${th('Scope', { filter: 'scope' })}${th('Status', { filter: 'status' })}${th('Effective')}${th(PROVISION_COUNT_LABEL, { sortType: 'number' })}</tr></thead>
             <tbody>${rows}</tbody>
         </table>
         ${hasMore ? `<p style="margin-top:0.75rem;"><a href="/instruments.html">See all ${containers.length} ${containerName.toLowerCase()} →</a></p>` : ''}`;
@@ -983,7 +985,7 @@ function generateContainersPage(config, data, configCSS) {
             <span class="table-result-count"><strong>${containers.length}</strong> of ${containers.length}</span>
         </div>
         <table class="data-table" id="itemTable">
-            <thead><tr>${th(cName)}${th('Scope', { filter: 'scope' })}${th('Status', { filter: 'status' })}${th('Effective')}${th('Clause-level provisions indexed', { sortType: 'number' })}</tr></thead>
+            <thead><tr>${th(cName)}${th('Scope', { filter: 'scope' })}${th('Status', { filter: 'status' })}${th('Effective')}${th(PROVISION_COUNT_LABEL, { sortType: 'number' })}</tr></thead>
             <tbody>
                 ${containers.map(c => `<tr data-scope="${escapeHTML(c[scopeField] || '')}">
                     <td><a href="${containerIndexHref(c)}" onclick="passTheme(this)">${escapeHTML(c.title || c.name || c.id)}</a></td>
@@ -1400,7 +1402,7 @@ function generateContainerDetail(config, container, data, configCSS) {
 ${renderOperationalObservation(container)}
         ${renderSourceDocuments(container)}
         ${renderExtractedText(container)}
-        ${container.provisions.length > 0 ? `<h3>Clause-level provisions indexed (${container.provisions.length})</h3>
+        ${container.provisions.length > 0 ? `<h3>${PROVISION_COUNT_LABEL} (${container.provisions.length})</h3>
         ${container.provisions.map(p => renderProvisionCard(p, '../../')).join('\n')}` : ''}
         ${renderPrevNext(container, data)}
         ${renderRecordChangelog(container)}
@@ -1414,6 +1416,8 @@ function renderOperationalStatusNotice(container) {
     // Promote the existing dated register observation, without claiming a fresh
     // source check or rewriting the retained agreement's terms.
     const section = extractSection(container._body || '', 'Operational observation (not an issued term)');
+    // Select the register paragraph in the retained dated observation. The
+    // presentation regression pins this notice without changing native evidence.
     const register = section.split(/\n\s*\n/).find(p => p.startsWith("OAIP's Authorized AI Pilots page,"));
     if (!register) return '';
     return `<aside class="record-disclaimer" aria-label="Operational status and limits"><strong>Dated operational status, separate from contractual permission.</strong> ${escapeHTML(register.replace(/\s*\n\s*/g, ' '))} <a href="#operational-observation">Full observation and source conflict</a>.</aside>`;
@@ -1469,7 +1473,7 @@ function generateAuthorityDetail(config, auth, data, configCSS) {
             </div>
         </div>
         <h3>${config.entities?.container?.plural || 'Containers'} (${authContainers.length})</h3>
-        ${authContainers.length ? `<table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>Clause-level provisions indexed</th></tr></thead><tbody>
+        ${authContainers.length ? `<table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>${PROVISION_COUNT_LABEL}</th></tr></thead><tbody>
             ${authContainers.map(c => `<tr><td><a href="${containerIndexHref(c)}" onclick="passTheme(this)">${escapeHTML(c.title || c.name || c.id)}</a></td><td>${renderStatusBadge(c.status)}</td><td>${formatDate(c.effective)}</td><td>${c.provisions.length}</td></tr>`).join('\n')}
         </tbody></table>` : '<p style="color:var(--text-secondary);">None tracked.</p>'}
     `;
@@ -1557,7 +1561,7 @@ function generateAppliesToBridge(config, scopeValue, data, configCSS) {
         <div class="bridge-header"><h2>${escapeHTML(config.entities?.container?.plural || 'Containers')} in ${escapeHTML(scopeValue)}</h2>
             <p class="bridge-subtitle">${scopeContainers.length} tracked</p>
         </div>
-        <table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>Clause-level provisions indexed</th></tr></thead><tbody>
+        <table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>${PROVISION_COUNT_LABEL}</th></tr></thead><tbody>
             ${scopeContainers.map(c => `<tr><td><a href="${containerIndexHref(c)}" onclick="passTheme(this)">${escapeHTML(c.title || c.name || c.id)}</a></td><td>${renderStatusBadge(c.status)}</td><td>${formatDate(c.effective)}</td><td>${c.provisions.length}</td></tr>`).join('\n')}
         </tbody></table>
         <div style="margin-top: 2rem; text-align: center;"><a href="/instruments.html" onclick="passTheme(this)" class="bridge-cta">All ${escapeHTML((config.entities?.container?.plural || 'containers').toLowerCase())}</a></div>
@@ -1786,7 +1790,7 @@ function generateLegalDocumentJsonLd(c, config) {
         'dateCreated': c.created || undefined,
         'dateModified': c.modified || c.last_verified || undefined,
         'datePublished': c.effective || c.enacted || undefined,
-        'author': c.source === 'publedge-original-draft' ? { '@type': 'Organization', 'name': c.author_or_proponent || 'PubLedge' } : c.issued_by && typeof c.issued_by === 'object' ? {
+        'author': isOriginalDraft(c) ? { '@type': 'Organization', 'name': c.author_or_proponent || 'PubLedge' } : c.issued_by && typeof c.issued_by === 'object' ? {
             '@type': c.issued_by['@type'] || 'GovernmentOrganization',
             'name': c.issued_by.name || c.interpreting_authority || '',
             'url': c.issued_by.ref || undefined
@@ -2139,6 +2143,8 @@ function generateDefinitionsPage(config, data, configCSS) {
 }
 
 function generateUtahLandingNarrative(data) {
+    // Load only after source admission runs. Pin this dated comparison so a new
+    // review retains its own evidence rather than replacing a historical file.
     const OAIP_COVERAGE = require('../ops/evidence/oaip-coverage-review-2026-10-14.json');
     return `
         <div class="about-content">
@@ -2789,7 +2795,7 @@ function build() {
     function icsDate(d) { return String(d).replace(/-/g, ''); }
     function icsEscape(s) { return String(s).replace(/[\\,;]/g, m => '\\' + m).replace(/\r?\n/g, '\\n'); }
     function icsEvent(c, kind, date) {
-        if (!date || c.source === 'publedge-original-draft') return;
+        if (!date || isOriginalDraft(c)) return;
         const dt = icsDate(date);
         const uid = `${c.id}-${kind}@publedge.org`;
         const url = siteUrl.replace(/\/$/, '') + containerHref(c);

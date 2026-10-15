@@ -13,6 +13,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const { composeDisclaimer } = require('./lib/disclaimer');
+const { isOriginalDraft } = require('./lib/content');
 const { parseFrontmatter } = require('./lib/parse');
 const { deriveBuildClock } = require('./lib/build-clock');
 const { loadPublicationState } = require('./lib/publication-state');
@@ -327,12 +328,19 @@ ${mdToHtml(t.body)}
     }).join('\n');
 
     ensureDir(path.join(DOCS_DIR, 'templates'));
-    const registryDrafts = JSON.parse(fs.readFileSync(path.join(DOCS_DIR, 'api/v1/containers.json'), 'utf8')).items.filter(c => c.source === 'publedge-original-draft');
+    // This separate process runs after build.js. Consume its canonical public
+    // projection instead of reloading native records and rebuilding their URLs.
+    const registryDrafts = JSON.parse(fs.readFileSync(path.join(DOCS_DIR, 'api/v1/containers.json'), 'utf8')).items.filter(isOriginalDraft);
+    const registryDraftItems = registryDrafts.map(c => `<li><a href="${escapeHTML(c.url)}">${escapeHTML(c.name)}</a></li>`).join('');
     const indexBody = `
 <h1>PubLedge Templates</h1>
 <p>Suggested prior-art templates for Joint Interpretation Agreements (JIAs) and Regulatory Mitigation Agreements (RMAs) under Utah Code Title 13 Chapter 72 Part 4. Not official OAIP output.</p>
 ${sections || '<p>No templates published.</p>'}
-<section><h2>Proposed templates in the registry (unissued)</h2><p>Authored by PubLedge for discussion. OAIP has not issued these proposals.</p><ul>${registryDrafts.map(c => `<li><a href="${escapeHTML(c.url)}">${escapeHTML(c.name)}</a></li>`).join('')}</ul></section>
+<section>
+<h2>Proposed templates in the registry (unissued)</h2>
+<p>Authored by PubLedge for discussion. OAIP has not issued these proposals.</p>
+<ul>${registryDraftItems}</ul>
+</section>
 <p><a href="../about/">← Back to protocol</a></p>`;
     fs.writeFileSync(path.join(DOCS_DIR, 'templates', 'index.html'), pageShell({
         title: 'Templates',

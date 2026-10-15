@@ -197,222 +197,6 @@
       "theme": "dark"
     }
   ],
-  "attempts": [
-    {
-      "url": "http://127.0.0.1:8764/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": false,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/instruments.html",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": false,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/us/utah/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": false,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/us/utah/oaip/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 27,
-      "overflow": false,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/templates/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 16,
-      "overflow": false,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/us/utah/oaip/rma/2025-002/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 25,
-      "overflow": false,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/matrix.html",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 27,
-      "overflow": true,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/us/utah/oaip/jia/2026-001/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": false,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 390,
-        "height": 844
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": true,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/instruments.html",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 390,
-        "height": 844
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": true,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/us/utah/oaip/jia/2026-001/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 390,
-        "height": 844
-      },
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "impact": "serious",
-          "nodes": [
-            {
-              "target": [
-                ".summary-item:nth-child(2)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-            }
-          ]
-        }
-      ],
-      "passes": 29,
-      "overflow": true,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/us/utah/oaip/jia/2026-001/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 390,
-        "height": 844
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": false,
-      "theme": "light"
-    },
-    {
-      "url": "http://127.0.0.1:8764/us/utah/oaip/jia/2026-001/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 390,
-        "height": 844
-      },
-      "violations": [],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": false,
-      "theme": "dark"
-    },
-    {
-      "url": "http://127.0.0.1:8764/",
-      "axe_version": "4.12.1",
-      "viewport": {
-        "width": 1280,
-        "height": 900
-      },
-      "violations": [
-        {
-          "id": "color-contrast",
-          "impact": "serious",
-          "nodes": [
-            {
-              "target": [
-                "div[data-date=\"2026-10-24\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.69 (foreground color: #1a4180, background color: #161d2d, font size: 16.8pt (22.4px), font weight: bold). Expected contrast ratio of 3:1"
-            },
-            {
-              "target": [
-                "div[data-date=\"2027-01-01\"]"
-              ],
-              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.69 (foreground color: #1a4180, background color: #161d2d, font size: 16.8pt (22.4px), font weight: bold). Expected contrast ratio of 3:1"
-            }
-          ]
-        }
-      ],
-      "incomplete": [],
-      "passes": 29,
-      "overflow": false,
-      "theme": "dark"
-    }
-  ],
   "baseline_dark_home": {
     "url": "http://127.0.0.1:8766/",
     "axe_version": "4.12.1",
@@ -484,5 +268,34 @@
     "Existing dark homepage date-card contrast failures reproduced unchanged on the committed baseline",
     "Existing homepage/instrument table overflow reproduced at 390px on baseline; matrix overflow decreased",
     "Initial mobile JIA summary overflow and incomplete contrast were resolved by allowing summary text to wrap"
-  ]
+  ],
+  "superseded_attempts": [
+    {
+      "url": "http://127.0.0.1:8764/us/utah/oaip/jia/2026-001/",
+      "axe_version": "4.12.1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".summary-item:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 29,
+      "overflow": true,
+      "theme": "light"
+    }
+  ],
+  "retention_note": "Final captures are in results. The one superseded mobile JIA attempt is retained separately; identical copies of the same captures from the prior results/attempts layout were removed. The independent baseline capture retains its own URL and full payload."
 }
