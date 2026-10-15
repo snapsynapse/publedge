@@ -57,7 +57,8 @@ test('an unreviewed exact-target retarget invalidates the accepted mapping recei
         legacy: { ...legacy, records: { [FILE]: legacy.records[FILE] } },
         admissions: { ...receipts, records: { [FILE]: receipts.records[FILE] } },
         read: relative => admission.readRegular(ROOT, relative),
-        now: new Date('2026-09-09T23:59:59Z')
+        // Exercise target tampering at the accepted receipt's own time, including successors.
+        now: new Date(receipts.records[FILE].review.reviewed_at)
     });
     assert.equal(result.status, 'failed');
     assert.match(result.errors.join('\n'), /Receipt is stale for current record/);

@@ -1,0 +1,31 @@
+{
+  "scope": "HB452-only source review; fresh dated observation, not replay of October 2 run",
+  "base": "ef3ce5fae6aa4e8c255d1a21a7c0c04a859ca03e",
+  "frozen_at": "2026-10-15T05:27:36.704857+00:00",
+  "max_requests": 5,
+  "retries": 0,
+  "redirects_followed": 0,
+  "existing_evidence": "Reuse enrolled PDF/text unchanged and the retained October 2 codified bodies as dated comparison; do not revisit failed Chapter75/77 or Title58 routes.",
+  "requests": [
+    {
+      "name": "robots",
+      "url": "https://le.utah.gov/robots.txt"
+    },
+    {
+      "name": "13-72a-201",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72A/C13-72a-S201_2025050720250507.html"
+    },
+    {
+      "name": "13-72a-203",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72A/C13-72a-S203_2025050720250507.html"
+    },
+    {
+      "name": "13-72a-101-shell",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72a/13-72a-S101.html"
+    },
+    {
+      "name": "13-11-3-shell",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter11/13-11-S3.html"
+    }
+  ]
+}

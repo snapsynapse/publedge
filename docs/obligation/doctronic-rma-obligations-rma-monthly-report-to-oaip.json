@@ -89,7 +89,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
       "canonical_unit": "entry:doctronic-rma-obligations",
       "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
       "admission_status": "legacy-unreviewed",

@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
   "pub:id": "hb452-mental-health-chatbot-stack-disclose-genai-on-first-session",
   "title": "Disclose GenAI on First Session",
-  "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before access, again after seven days without access, and whenever asked (§13-72a-203(2)). No Utah provision anchored here requires re-display at every session or after a fixed inactivity period.",
+  "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before a Utah user may access its features, at the beginning of an interaction if the user has not accessed it within the previous seven days, and any time the user asks or otherwise prompts it about whether AI is being used (§13-72a-203(2)). These anchored provisions do not require re-display at every session or after 30 minutes of inactivity; the statutory seven-day absence-of-access condition remains distinct.",
   "created_by": [
     "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
   ],
@@ -45,11 +45,14 @@
     "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
     "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
     "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+    "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+    "Prior carve-out-not-reviewed limitation is preserved as historical receipt context; this successor reviews only the newly displayed HB452 scope wording against the retained enrolled and selected 2026 codified definitions. The deferred literal amendment edge and safety-policy actor/type decisions remain unchanged.",
     "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
     "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
     "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
     "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
     "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+    "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
     "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
     "last_verified renewal requires a separate human review receipt."
   ],
@@ -58,32 +61,37 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-      "native_file_sha256": "c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb",
+      "native_file_sha256": "99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd",
       "canonical_unit": null,
-      "canonical_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde",
+      "canonical_sha256": "bbcc08b38384420f2450790f2ef7382cfd6f7f446339441eff25ec1c4c64e292",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "be382469d216fa204a551bbd826747b34bbc49fc2e9581723266bd05df6a9690",
+      "review_packet_sha256": "c8887d9176e6ccfda6cfbf8eccfa8abb829545b4e94164d086d25600e54f43a3",
       "retained_primary_sha256": [
-        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+        "3c15a70c135f047a5c8c06b0b9362f231ff87992a88991d40d65d1a17ddeead6",
+        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+        "74f54badd0a701c49577a76df00b300b2b68e11d4b4de2048e39d362b2ae476a",
+        "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
         "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
         "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
-        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
+        "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "Prior carve-out-not-reviewed limitation is preserved as historical receipt context; this successor reviews only the newly displayed HB452 scope wording against the retained enrolled and selected 2026 codified definitions. The deferred literal amendment edge and safety-policy actor/type decisions remain unchanged."
       ]
     },
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
       "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
-      "canonical_sha256": "66bc4b8a16d6100604ecc6c10e8fd489aed581208679ce6a3c847cb44b7b3d7c",
+      "canonical_sha256": "f80fca441179c3ab9b59e973ab2855fe5d7fd796a96907f26033ba75bc23e9c5",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+      "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
       "retained_primary_sha256": [
-        "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+        "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
@@ -91,25 +99,30 @@
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
       ]
     },
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/disclose-genai-on-first-session.md",
-      "native_file_sha256": "785f11886a59611ca6458facf971ef6bcf088085a4c12675492498d88380fc8d",
+      "native_file_sha256": "60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365",
       "canonical_unit": null,
-      "canonical_sha256": "c87615a8fc2a979ae02b7d3c833c2b2cfcb476b6b61bdfae0d86d17343eb787d",
+      "canonical_sha256": "b7fba567682c9757769071c4e8df9492b638dcccaeb7de5552e64975eadb4b45",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "8086134b9fedbd88d7dd4e183a80419860da6b3e77dd75151942f662cdfca44c",
+      "review_packet_sha256": "74ae4d983684859783dd7606114665ffd2bf801cf5c005f5d2b1e29240b50cb9",
       "retained_primary_sha256": [
         "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+        "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
         "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
-        "last_verified renewal requires a separate human review receipt."
+        "last_verified renewal requires a separate human review receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
       ]
     }
   ]

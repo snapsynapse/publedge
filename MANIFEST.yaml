@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:af6642457235638f1179832bcdd954c8dda92017a2b0afa6ccb329472f998144
+    hash: sha256:b494b83aa648de803df5f5ba912a203df3878eee51d6f3a7e7e1039d59f06593
     note: package.json
 
   - path: package-lock.json
@@ -188,7 +188,7 @@ files:
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
     role: instrument
-    hash: sha256:c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb
+    hash: sha256:99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd
     note: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
@@ -253,7 +253,7 @@ files:
 
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f
+    hash: sha256:792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6
     note: data/examples/mapping/index.yml
 
   - path: data/examples/obligations/admt-60-day-cure-period.md
@@ -308,7 +308,7 @@ files:
 
   - path: data/examples/obligations/chatbot-data-no-third-party-sharing.md
     role: obligation
-    hash: sha256:0e5686bc0715dbb79dbf24b558e381bb1803109061e8e3a930b82c011a8d2240
+    hash: sha256:e7b5193eb7d251b77075a0b072ec844a87deddcdfc250cc3aa609e6582e508cb
     note: data/examples/obligations/chatbot-data-no-third-party-sharing.md
 
   - path: data/examples/obligations/chatbot-safety-policy-filing.md
@@ -338,7 +338,7 @@ files:
 
   - path: data/examples/obligations/disclose-genai-on-first-session.md
     role: obligation
-    hash: sha256:785f11886a59611ca6458facf971ef6bcf088085a4c12675492498d88380fc8d
+    hash: sha256:60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365
     note: data/examples/obligations/disclose-genai-on-first-session.md
 
   - path: data/examples/obligations/disclose-genai-on-request.md
@@ -1053,7 +1053,7 @@ files:
 
   - path: tests/source-owned-mapping.test.js
     role: code
-    hash: sha256:e6d397b35cd5ea691bee3dca7b2a3e6eb7cd0c6830989bd08f7a68f4afca047e
+    hash: sha256:cbdd835801664732ce76c71528d022ebf12b92d877f8f691369116227db5e7e0
     note: Source-owned relationship mapping and parser regressions
 
   - path: tests/of-evidence-inputs.test.js
@@ -1168,7 +1168,7 @@ files:
 
   - path: tests/sb226-r1.test.js
     role: code
-    hash: sha256:8f90a6fcb138808b652fe69ebf86e50e7a5c18c46f098155112f6726af1141d8
+    hash: sha256:25e2fe0e67d3e9eb76ff8f6d89007e742efa14dfc8833439b775b65a17984f9f
     note: SB226 R1 retained-source and admission regressions
 
   - path: ops/evidence/sb226-r1-native-delta-2026-10-02.diff

@@ -15,14 +15,14 @@ search_terms:
 
 ## Summary
 
-Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before access, again after seven days without access, and whenever asked (§13-72a-203(2)). No Utah provision anchored here requires re-display at every session or after a fixed inactivity period.
+Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before a Utah user may access its features, at the beginning of an interaction if the user has not accessed it within the previous seven days, and any time the user asks or otherwise prompts it about whether AI is being used (§13-72a-203(2)). These anchored provisions do not require re-display at every session or after 30 minutes of inactivity; the statutory seven-day absence-of-access condition remains distinct.
 
 ## What Counts
 
 - A disclosure that identifies the service as artificial intelligence and not a human
 - Consumer transactions: disclosing when the individual clearly and unambiguously asks whether they are interacting with a human or AI (§13-75-103(1))
 - Regulated occupations, high-risk interactions: a prominent disclosure given verbally at the start of a verbal interaction, or in writing before a written interaction (§13-75-103(2)-(3))
-- Mental health chatbots: a clear and conspicuous disclosure before the user may access the chatbot's features, again at the start of an interaction when the user hasn't accessed it within the previous seven days, and whenever the user asks (§13-72a-203)
+- Mental health chatbots: a clear and conspicuous AI-and-not-human disclosure before a Utah user may access the chatbot's features, at the beginning of an interaction if the user has not accessed it within the previous seven days, and any time the user asks or otherwise prompts it about whether AI is being used (§13-72a-203). A Utah user is located in Utah at access or use (§13-72a-101)
 - Stricter terms, such as re-display after 30 minutes of inactivity in the draft JIA `us-ut-oaip-jia-2026-001`, are proposals beyond the statute, not statutory requirements
 
 ## What Does Not Count

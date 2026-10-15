@@ -46,7 +46,9 @@
     "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
     "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
     "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-    "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+    "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+    "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+    "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
   ],
   "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
@@ -72,11 +74,11 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
       "canonical_unit": "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session",
       "canonical_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+      "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
       "retained_primary_sha256": [
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
       ],
@@ -86,7 +88,9 @@
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
       ]
     }
   ]

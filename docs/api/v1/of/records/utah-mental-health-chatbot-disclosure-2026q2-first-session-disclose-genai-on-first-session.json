@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json",
   "pub:id": "utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session",
   "title": "Disclose GenAI on First Session",
-  "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before access, again after seven days without access, and whenever asked (§13-72a-203(2)). No Utah provision anchored here requires re-display at every session or after a fixed inactivity period.",
+  "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before a Utah user may access its features, at the beginning of an interaction if the user has not accessed it within the previous seven days, and any time the user asks or otherwise prompts it about whether AI is being used (§13-72a-203(2)). These anchored provisions do not require re-display at every session or after 30 minutes of inactivity; the statutory seven-day absence-of-access condition remains distinct.",
   "created_by": [
     "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json"
   ],
@@ -51,6 +51,8 @@
     "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
     "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
     "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+    "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+    "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
     "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
     "last_verified renewal requires a separate human review receipt."
   ],
@@ -78,11 +80,11 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
       "canonical_unit": "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session",
       "canonical_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+      "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
       "retained_primary_sha256": [
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
       ],
@@ -92,25 +94,30 @@
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
       ]
     },
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/disclose-genai-on-first-session.md",
-      "native_file_sha256": "785f11886a59611ca6458facf971ef6bcf088085a4c12675492498d88380fc8d",
+      "native_file_sha256": "60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365",
       "canonical_unit": null,
-      "canonical_sha256": "c87615a8fc2a979ae02b7d3c833c2b2cfcb476b6b61bdfae0d86d17343eb787d",
+      "canonical_sha256": "b7fba567682c9757769071c4e8df9492b638dcccaeb7de5552e64975eadb4b45",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "8086134b9fedbd88d7dd4e183a80419860da6b3e77dd75151942f662cdfca44c",
+      "review_packet_sha256": "74ae4d983684859783dd7606114665ffd2bf801cf5c005f5d2b1e29240b50cb9",
       "retained_primary_sha256": [
         "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+        "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+        "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
         "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
-        "last_verified renewal requires a separate human review receipt."
+        "last_verified renewal requires a separate human review receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
       ]
     }
   ]

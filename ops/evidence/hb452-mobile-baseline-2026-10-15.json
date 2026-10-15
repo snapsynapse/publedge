@@ -1,0 +1,23 @@
+{
+  "base": "ef3ce5fae6aa4e8c255d1a21a7c0c04a859ca03e",
+  "served_reviewed_tree": "97cfb45bb51aabd56cf5e7586997ae72f060679a",
+  "method": "Existing base preview at localhost8765, same settled-axe adapter; mobile390x844 light theme",
+  "results": [
+    {
+      "route": "/primary/disclose-genai-on-first-session/",
+      "document_width": 429,
+      "viewport_width": 375,
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/primary/chatbot-data-no-third-party-sharing/",
+      "document_width": 429,
+      "viewport_width": 375,
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": []
+    }
+  ]
+}

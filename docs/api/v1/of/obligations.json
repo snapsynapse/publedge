@@ -13,7 +13,7 @@
       "@id": "https://publedge.org/obligation/utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session.json",
       "pub:id": "utah-mental-health-chatbot-disclosure-2026q2-first-session-disclose-genai-on-first-session",
       "title": "Disclose GenAI on First Session",
-      "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before access, again after seven days without access, and whenever asked (§13-72a-203(2)). No Utah provision anchored here requires re-display at every session or after a fixed inactivity period.",
+      "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before a Utah user may access its features, at the beginning of an interaction if the user has not accessed it within the previous seven days, and any time the user asks or otherwise prompts it about whether AI is being used (§13-72a-203(2)). These anchored provisions do not require re-display at every session or after 30 minutes of inactivity; the statutory seven-day absence-of-access condition remains distinct.",
       "created_by": [
         "https://publedge.org/term/utah-mental-health-chatbot-disclosure-2026q2-first-session.json"
       ],
@@ -55,6 +55,8 @@
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
         "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
         "last_verified renewal requires a separate human review receipt."
       ],
@@ -82,11 +84,11 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session",
           "canonical_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
           ],
@@ -96,25 +98,30 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
           ]
         },
         {
           "kind": "obligation-definition",
           "native_path": "data/examples/obligations/disclose-genai-on-first-session.md",
-          "native_file_sha256": "785f11886a59611ca6458facf971ef6bcf088085a4c12675492498d88380fc8d",
+          "native_file_sha256": "60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365",
           "canonical_unit": null,
-          "canonical_sha256": "c87615a8fc2a979ae02b7d3c833c2b2cfcb476b6b61bdfae0d86d17343eb787d",
+          "canonical_sha256": "b7fba567682c9757769071c4e8df9492b638dcccaeb7de5552e64975eadb4b45",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "8086134b9fedbd88d7dd4e183a80419860da6b3e77dd75151942f662cdfca44c",
+          "review_packet_sha256": "74ae4d983684859783dd7606114665ffd2bf801cf5c005f5d2b1e29240b50cb9",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
             "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
-            "last_verified renewal requires a separate human review receipt."
+            "last_verified renewal requires a separate human review receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
           ]
         }
       ]
@@ -175,6 +182,8 @@
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
         "Prongs (a), (d) and (e) in What Counts remain paraphrases and were not re-worded; \"limited to the statute, use case, and deployment period\" is not statutory wording for prong (e) (scale, scope, and duration of testing limited based on risk assessments).",
         "This agent review does not renew last_verified or authenticate human currentness review."
       ],
@@ -208,11 +217,11 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
           "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
           "retained_primary_sha256": [
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
             "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
@@ -223,7 +232,9 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
           ]
         },
         {
@@ -300,6 +311,8 @@
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
         "This agent review does not renew last_verified or authenticate human currentness review."
       ],
       "pub:source_review_state": "declared",
@@ -332,11 +345,11 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
           "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
           "retained_primary_sha256": [
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
             "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
@@ -347,7 +360,9 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
           ]
         },
         {
@@ -455,7 +470,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb226-disclosure-and-ai-defense",
           "canonical_sha256": "4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649",
           "admission_status": "legacy-unreviewed",
@@ -572,7 +587,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb226-disclosure-and-ai-defense",
           "canonical_sha256": "4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649",
           "admission_status": "legacy-unreviewed",
@@ -686,7 +701,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb226-disclosure-and-ai-defense",
           "canonical_sha256": "4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649",
           "admission_status": "legacy-unreviewed",
@@ -725,7 +740,7 @@
       "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-disclose-genai-on-first-session.json",
       "pub:id": "hb452-mental-health-chatbot-stack-disclose-genai-on-first-session",
       "title": "Disclose GenAI on First Session",
-      "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before access, again after seven days without access, and whenever asked (§13-72a-203(2)). No Utah provision anchored here requires re-display at every session or after a fixed inactivity period.",
+      "content": "Disclose plainly that the person is interacting with generative AI and not a human. When the disclosure is due depends on the Utah provision: on a clear request in a consumer transaction (§13-75-103(1)); at the start of a high-risk interaction in a regulated occupation (§13-75-103(2)-(3)); and for a mental health chatbot, before a Utah user may access its features, at the beginning of an interaction if the user has not accessed it within the previous seven days, and any time the user asks or otherwise prompts it about whether AI is being used (§13-72a-203(2)). These anchored provisions do not require re-display at every session or after 30 minutes of inactivity; the statutory seven-day absence-of-access condition remains distinct.",
       "created_by": [
         "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
       ],
@@ -761,11 +776,14 @@
         "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
         "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
         "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "Prior carve-out-not-reviewed limitation is preserved as historical receipt context; this successor reviews only the newly displayed HB452 scope wording against the retained enrolled and selected 2026 codified definitions. The deferred literal amendment edge and safety-policy actor/type decisions remain unchanged.",
         "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
         "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
         "last_verified renewal requires a separate human review receipt."
       ],
@@ -774,32 +792,37 @@
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "native_file_sha256": "c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb",
+          "native_file_sha256": "99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd",
           "canonical_unit": null,
-          "canonical_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde",
+          "canonical_sha256": "bbcc08b38384420f2450790f2ef7382cfd6f7f446339441eff25ec1c4c64e292",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "be382469d216fa204a551bbd826747b34bbc49fc2e9581723266bd05df6a9690",
+          "review_packet_sha256": "c8887d9176e6ccfda6cfbf8eccfa8abb829545b4e94164d086d25600e54f43a3",
           "retained_primary_sha256": [
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "3c15a70c135f047a5c8c06b0b9362f231ff87992a88991d40d65d1a17ddeead6",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "74f54badd0a701c49577a76df00b300b2b68e11d4b4de2048e39d362b2ae476a",
+            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
             "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
             "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
-            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
+            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "Prior carve-out-not-reviewed limitation is preserved as historical receipt context; this successor reviews only the newly displayed HB452 scope wording against the retained enrolled and selected 2026 codified definitions. The deferred literal amendment edge and safety-policy actor/type decisions remain unchanged."
           ]
         },
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
-          "canonical_sha256": "66bc4b8a16d6100604ecc6c10e8fd489aed581208679ce6a3c847cb44b7b3d7c",
+          "canonical_sha256": "f80fca441179c3ab9b59e973ab2855fe5d7fd796a96907f26033ba75bc23e9c5",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
           "retained_primary_sha256": [
-            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
@@ -807,25 +830,30 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
           ]
         },
         {
           "kind": "obligation-definition",
           "native_path": "data/examples/obligations/disclose-genai-on-first-session.md",
-          "native_file_sha256": "785f11886a59611ca6458facf971ef6bcf088085a4c12675492498d88380fc8d",
+          "native_file_sha256": "60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365",
           "canonical_unit": null,
-          "canonical_sha256": "c87615a8fc2a979ae02b7d3c833c2b2cfcb476b6b61bdfae0d86d17343eb787d",
+          "canonical_sha256": "b7fba567682c9757769071c4e8df9492b638dcccaeb7de5552e64975eadb4b45",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "8086134b9fedbd88d7dd4e183a80419860da6b3e77dd75151942f662cdfca44c",
+          "review_packet_sha256": "74ae4d983684859783dd7606114665ffd2bf801cf5c005f5d2b1e29240b50cb9",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
             "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
-            "last_verified renewal requires a separate human review receipt."
+            "last_verified renewal requires a separate human review receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
           ]
         }
       ]
@@ -841,7 +869,7 @@
       "@id": "https://publedge.org/obligation/hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing.json",
       "pub:id": "hb452-mental-health-chatbot-stack-chatbot-data-no-third-party-sharing",
       "title": "Mental Health Chatbot — No Third-Party Data Sharing",
-      "content": "A mental health chatbot supplier may not sell or share identifiable health information or user inputs with third parties. Narrow exceptions exist for user-consented or user-requested transfers to a health care provider or plan. Third-party sharing for functionality requires HIPAA-equivalent controls (45 CFR Parts 160 and 164, Subparts A and E) as if the supplier were a covered entity.",
+      "content": "A supplier of a mental health chatbot may not sell to or share with any third party a Utah user's individually identifiable health information or user input (§13-72a-201(1)). Subsection (2)'s exceptions concern individually identifiable health information: a health care provider requests it with the Utah user's consent; it is provided to the user's health plan upon the user's request; or it is shared in compliance with subsection (3). These are not a general consent exception for all user input. Under subsection (3), the supplier may share individually identifiable health information necessary for the chatbot's effective functionality with another party with which it has a contract related to that functionality. Both parties must comply with all applicable privacy and security provisions of 45 CFR Part 160 and Part 164, Subparts A and E, as if the supplier were a covered entity and the other entity a business associate. This sharing permission does not create a general permission to sell data.",
       "created_by": [
         "https://publedge.org/term/hb452-mental-health-chatbot-stack.json"
       ],
@@ -857,7 +885,7 @@
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
       "source_locator": "Summary",
       "source_citation": "Utah HB 452 (2025 General Session)",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "verified": "2026-04-21",
       "asserted_by_adopter": "https://publedge.org/",
       "pub:primary_id": "chatbot-data-no-third-party-sharing",
@@ -872,49 +900,59 @@
         "hb452"
       ],
       "projection_basis": "native-record-projection",
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "source_review_conflicts": null,
       "pub:source_review_unresolved": [
         "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
         "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
         "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "Prior carve-out-not-reviewed limitation is preserved as historical receipt context; this successor reviews only the newly displayed HB452 scope wording against the retained enrolled and selected 2026 codified definitions. The deferred literal amendment edge and safety-policy actor/type decisions remain unchanged.",
         "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Whether a particular transformed or aggregate dataset falls within either protected object remains unresolved; no categorical analytics exception established.",
+        "Statutory supplier definition is retained but equivalence with any cross-owner AI-provider role remains unknown. Incorporated federal definitions and complete HIPAA applicability have not been separately reviewed."
       ],
-      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "native_file_sha256": "c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb",
+          "native_file_sha256": "99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd",
           "canonical_unit": null,
-          "canonical_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde",
+          "canonical_sha256": "bbcc08b38384420f2450790f2ef7382cfd6f7f446339441eff25ec1c4c64e292",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "be382469d216fa204a551bbd826747b34bbc49fc2e9581723266bd05df6a9690",
+          "review_packet_sha256": "c8887d9176e6ccfda6cfbf8eccfa8abb829545b4e94164d086d25600e54f43a3",
           "retained_primary_sha256": [
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "3c15a70c135f047a5c8c06b0b9362f231ff87992a88991d40d65d1a17ddeead6",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "74f54badd0a701c49577a76df00b300b2b68e11d4b4de2048e39d362b2ae476a",
+            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
             "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
             "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
-            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
+            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "Prior carve-out-not-reviewed limitation is preserved as historical receipt context; this successor reviews only the newly displayed HB452 scope wording against the retained enrolled and selected 2026 codified definitions. The deferred literal amendment edge and safety-policy actor/type decisions remain unchanged."
           ]
         },
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
-          "canonical_sha256": "66bc4b8a16d6100604ecc6c10e8fd489aed581208679ce6a3c847cb44b7b3d7c",
+          "canonical_sha256": "f80fca441179c3ab9b59e973ab2855fe5d7fd796a96907f26033ba75bc23e9c5",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
           "retained_primary_sha256": [
-            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
@@ -922,20 +960,31 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
           ]
         },
         {
           "kind": "obligation-definition",
           "native_path": "data/examples/obligations/chatbot-data-no-third-party-sharing.md",
-          "native_file_sha256": "0e5686bc0715dbb79dbf24b558e381bb1803109061e8e3a930b82c011a8d2240",
+          "native_file_sha256": "e7b5193eb7d251b77075a0b072ec844a87deddcdfc250cc3aa609e6582e508cb",
           "canonical_unit": null,
-          "canonical_sha256": "c8f40842dc1e7173de039fe44d040e10d81c7a24208e18e183bf2a3178e9840f",
-          "admission_status": "legacy-unreviewed",
-          "review_packet_sha256": null,
-          "retained_primary_sha256": null,
-          "unresolved_review_state": "unknown",
-          "unresolved": null
+          "canonical_sha256": "9d0176cd3abc2079a598cdd5cc77dd544c07092e4c2a7d011b7a4ed61debc798",
+          "admission_status": "reviewed-changes",
+          "review_packet_sha256": "21f2c310171239e6b25eece32568c58494a8a7c74ef917128e3321994866fd2f",
+          "retained_primary_sha256": [
+            "3c15a70c135f047a5c8c06b0b9362f231ff87992a88991d40d65d1a17ddeead6",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "74f54badd0a701c49577a76df00b300b2b68e11d4b4de2048e39d362b2ae476a",
+            "85da2b78264c484e2800bef14cb78927e69d7265b93a73ffac8cc8d1e64aed1e"
+          ],
+          "unresolved_review_state": "declared",
+          "unresolved": [
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "Whether a particular transformed or aggregate dataset falls within either protected object remains unresolved; no categorical analytics exception established.",
+            "Statutory supplier definition is retained but equivalence with any cross-owner AI-provider role remains unknown. Incorporated federal definitions and complete HIPAA applicability have not been separately reviewed."
+          ]
         }
       ]
     },
@@ -988,11 +1037,14 @@
         "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
         "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
         "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "Prior carve-out-not-reviewed limitation is preserved as historical receipt context; this successor reviews only the newly displayed HB452 scope wording against the retained enrolled and selected 2026 codified definitions. The deferred literal amendment edge and safety-policy actor/type decisions remain unchanged.",
         "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
         "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
         "The record name (\"File 15-Element Safety Policy\"), group (requirement) and @type Requirement still frame the item as a requirement; the statute makes the policy a condition of an affirmative defense. These schema-level fields were left for a human decision.",
         "This agent review does not renew last_verified or authenticate human currentness review."
       ],
@@ -1001,32 +1053,37 @@
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-          "native_file_sha256": "c75fb508faa76236a1cd60e5ed221ff2df4bae4c426295098f1ac0cd9d7836fb",
+          "native_file_sha256": "99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd",
           "canonical_unit": null,
-          "canonical_sha256": "823a6f04b847768379b4f8d5218794e3c88e31d2fcdd1032d881da4cc49eccde",
+          "canonical_sha256": "bbcc08b38384420f2450790f2ef7382cfd6f7f446339441eff25ec1c4c64e292",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "be382469d216fa204a551bbd826747b34bbc49fc2e9581723266bd05df6a9690",
+          "review_packet_sha256": "c8887d9176e6ccfda6cfbf8eccfa8abb829545b4e94164d086d25600e54f43a3",
           "retained_primary_sha256": [
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "3c15a70c135f047a5c8c06b0b9362f231ff87992a88991d40d65d1a17ddeead6",
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "74f54badd0a701c49577a76df00b300b2b68e11d4b4de2048e39d362b2ae476a",
+            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
             "enacted (2025-03-26) and the Introduced month (2025-02) are not in the enrolled copy, and the le.utah.gov HB0452 status table is JavaScript-rendered and not retained; the Timeline rows are marked unconfirmed and the enacted field is unchanged.",
             "amends still names us-ut-legislature-statute-2024-sb149 although HB 452 amends 13-2-1 and enacts Chapter 72a and 58-60-118, amending no section SB 149 enacted; the schema relation was left for a human decision and the Summary now states the non-amending relation.",
-            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed."
+            "The §13-72a-101(10)(b) carve-out citation was not re-reviewed.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "Prior carve-out-not-reviewed limitation is preserved as historical receipt context; this successor reviews only the newly displayed HB452 scope wording against the retained enrolled and selected 2026 codified definitions. The deferred literal amendment edge and safety-policy actor/type decisions remain unchanged."
           ]
         },
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
-          "canonical_sha256": "66bc4b8a16d6100604ecc6c10e8fd489aed581208679ce6a3c847cb44b7b3d7c",
+          "canonical_sha256": "f80fca441179c3ab9b59e973ab2855fe5d7fd796a96907f26033ba75bc23e9c5",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "85eb4b8d00b8965fb04bca01487c0a599fa1b9b6351bc56518fd2ed0c56be3d4",
+          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
           "retained_primary_sha256": [
-            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
@@ -1034,7 +1091,9 @@
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
             "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
-            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt."
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
           ]
         },
         {
@@ -1138,7 +1197,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:hb320-joint-interpretation-agreements",
           "canonical_sha256": "b85f1f2ef1628ab2a223640d36314be87543371986c0cb7fdd43099d48765c2e",
           "admission_status": "legacy-unreviewed",
@@ -1239,7 +1298,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "admission_status": "legacy-unreviewed",
@@ -1334,7 +1393,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "admission_status": "legacy-unreviewed",
@@ -1429,7 +1488,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "admission_status": "legacy-unreviewed",
@@ -1523,7 +1582,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "admission_status": "legacy-unreviewed",
@@ -1618,7 +1677,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "admission_status": "legacy-unreviewed",
@@ -1714,7 +1773,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "admission_status": "legacy-unreviewed",
@@ -1811,7 +1870,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "admission_status": "legacy-unreviewed",
@@ -1911,7 +1970,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "admission_status": "legacy-unreviewed",
@@ -1996,7 +2055,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "admission_status": "legacy-unreviewed",
@@ -2080,7 +2139,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "admission_status": "legacy-unreviewed",
@@ -2164,7 +2223,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "admission_status": "legacy-unreviewed",
@@ -2247,7 +2306,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "admission_status": "legacy-unreviewed",
@@ -2331,7 +2390,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "admission_status": "legacy-unreviewed",
@@ -2416,7 +2475,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "admission_status": "legacy-unreviewed",
@@ -2501,7 +2560,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "admission_status": "legacy-unreviewed",
@@ -2585,7 +2644,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "admission_status": "legacy-unreviewed",
@@ -2699,7 +2758,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "admission_status": "legacy-unreviewed",
@@ -2812,7 +2871,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "admission_status": "legacy-unreviewed",
@@ -2925,7 +2984,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "admission_status": "legacy-unreviewed",
@@ -3037,7 +3096,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "admission_status": "legacy-unreviewed",
@@ -3150,7 +3209,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "admission_status": "legacy-unreviewed",
@@ -3265,7 +3324,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "admission_status": "legacy-unreviewed",
@@ -3382,7 +3441,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "admission_status": "legacy-unreviewed",
@@ -3503,7 +3562,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "admission_status": "legacy-unreviewed",
@@ -3606,7 +3665,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:legion-rma-obligations",
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "admission_status": "legacy-unreviewed",
@@ -3703,7 +3762,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:legion-rma-obligations",
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "admission_status": "legacy-unreviewed",
@@ -3800,7 +3859,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:legion-rma-obligations",
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "admission_status": "legacy-unreviewed",
@@ -3896,7 +3955,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:legion-rma-obligations",
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "admission_status": "legacy-unreviewed",
@@ -3993,7 +4052,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:legion-rma-obligations",
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "admission_status": "legacy-unreviewed",
@@ -4092,7 +4151,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:legion-rma-obligations",
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "admission_status": "legacy-unreviewed",
@@ -4193,7 +4252,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:legion-rma-obligations",
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "admission_status": "legacy-unreviewed",
@@ -4298,7 +4357,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:legion-rma-obligations",
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "admission_status": "legacy-unreviewed",
@@ -4388,7 +4447,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:cfpb-ao-2022-001-pay-to-pay",
           "canonical_sha256": "e20e0bcb6fa5c62776f77e650f41e715b8d0ce8458a1f56e75a3a91709f998e5",
           "admission_status": "legacy-unreviewed",
@@ -4474,7 +4533,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:cftc-il-17-65-cta-unbundled-fee",
           "canonical_sha256": "cb56b0ebd2521dd3f2e355886a0b19d77ceda42cd5ad315aa03459673efec377",
           "admission_status": "legacy-unreviewed",
@@ -4559,7 +4618,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:irs-plr-202506001-incentive-fee",
           "canonical_sha256": "c2145852b85e818957983272334c5f4d57d23b7aecb92fa4ab317cb205d88489",
           "admission_status": "legacy-unreviewed",
@@ -4645,7 +4704,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:irs-tege-2026-001-501c3-adverse",
           "canonical_sha256": "baba5d8ce4007aca04c51194d650f7639c767679b1e300d0f35b9ce0f8cb88bc",
           "admission_status": "legacy-unreviewed",
@@ -4730,7 +4789,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sec-corpfin-nal-2025-001-rule-506c",
           "canonical_sha256": "9c7546b5135751e232852b0e9fcdf18e02973c38dd7c819d999b897a259e32e4",
           "admission_status": "legacy-unreviewed",
@@ -4829,7 +4888,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb24-205-never-operative-obligations",
           "canonical_sha256": "4849304cb37f40f5cb292b4ab29c1230e89a3dbce9c3f16ba17c1d63f50f8e1b",
           "admission_status": "legacy-unreviewed",
@@ -4928,7 +4987,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb24-205-never-operative-obligations",
           "canonical_sha256": "4849304cb37f40f5cb292b4ab29c1230e89a3dbce9c3f16ba17c1d63f50f8e1b",
           "admission_status": "legacy-unreviewed",
@@ -5028,7 +5087,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb24-205-never-operative-obligations",
           "canonical_sha256": "4849304cb37f40f5cb292b4ab29c1230e89a3dbce9c3f16ba17c1d63f50f8e1b",
           "admission_status": "legacy-unreviewed",
@@ -5114,7 +5173,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "admission_status": "legacy-unreviewed",
@@ -5200,7 +5259,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "admission_status": "legacy-unreviewed",
@@ -5286,7 +5345,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "admission_status": "legacy-unreviewed",
@@ -5372,7 +5431,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "admission_status": "legacy-unreviewed",
@@ -5458,7 +5517,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "admission_status": "legacy-unreviewed",
@@ -5544,7 +5603,7 @@
         {
           "kind": "mapping-entry",
           "native_path": "data/examples/mapping/index.yml",
-          "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "admission_status": "legacy-unreviewed",
