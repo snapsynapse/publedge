@@ -1,0 +1,69 @@
+Home
+Utah Code
+Title 13
+Chapter 72a
+Part 2
+Section 201
+Title 13 
+                      Chapter 72a 
+                      Part 2 
+                      Section 201
+<< Previous Section (13-72a-101)
+Download Options
+PDF
+|
+RTF
+|
+XML
+Next Section (13-72a-202) >>
+Index
+Utah Code
+Title 13
+Commerce and Trade
+Chapter 72a
+Artificial Intelligence Applications Relating to Mental Health
+Part 2
+Protections for Users of Mental Health Chatbots
+Section 201
+Protection of personal information.
+(Effective 5/7/2025)
+Affected by
+63I-2-213
+on 7/1/2027
+Effective 5/7/2025
+13-72a-201.
+Protection of personal information.
+(1)
+A supplier of a mental health chatbot may not sell to or share with any third party any:
+(a)
+individually identifiable health information of a Utah user; or
+(b)
+user input of a Utah user.
+(2)
+Subsection
+(1)
+does not apply to individually identifiable health information:
+(a)
+requested by a health care provider with the consent of the Utah user;
+(b)
+provided to a health plan of a Utah user upon request of the Utah user; or
+(c)
+shared in compliance with Subsection
+(3)
+.
+(3)
+(a)
+A supplier may share individually identifiable health information necessary to ensure the effective functionality of the mental health chatbot with another party with which the supplier has a contract related to such functionality.
+(b)
+When sharing information under Subsection (3)(a), the supplier and the other entity shall comply with all applicable privacy and security provisions of 45 C.F.R. Part 160 and 45 C.F.R. Part 164, Subparts A and E, as if the supplier were a covered entity and the other entity were a business associate, as such terms are defined in 45 C.F.R. 160.103.
+Enacted by Chapter
+269
+, 2025 General Session
+<< Previous Section (13-72a-101)
+Download Options
+PDF
+|
+RTF
+|
+XML
+Next Section (13-72a-202) >>

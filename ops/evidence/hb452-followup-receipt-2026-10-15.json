@@ -1,0 +1,71 @@
+{
+  "plan": "hb452-followup-plan-2026-10-15.json",
+  "retries": 0,
+  "redirects_followed": 0,
+  "requests": [
+    {
+      "name": "13-72a-101",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72a/C13-72a-S101_2026050620260506.html",
+      "started_at": "2026-10-15T05:28:05.790111+00:00",
+      "attempted": true,
+      "attempt": 1,
+      "http_status": 200,
+      "final_url": "https://le.utah.gov/xcode/Title13/Chapter72a/C13-72a-S101_2026050620260506.html",
+      "content_type": "text/html",
+      "location": null,
+      "raw_path": "data/admission/sources/utah-hb452/2026-10-15/13-72a-101.html",
+      "raw_sha256": "3c15a70c135f047a5c8c06b0b9362f231ff87992a88991d40d65d1a17ddeead6",
+      "headers_path": "data/admission/sources/utah-hb452/2026-10-15/13-72a-101.headers.json",
+      "bytes": 12725,
+      "finished_at": "2026-10-15T05:28:05.930892+00:00"
+    },
+    {
+      "name": "13-11-3",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter11/C13-11-S3_2025050720250507.html",
+      "started_at": "2026-10-15T05:28:05.931127+00:00",
+      "attempted": true,
+      "attempt": 1,
+      "http_status": 200,
+      "final_url": "https://le.utah.gov/xcode/Title13/Chapter11/C13-11-S3_2025050720250507.html",
+      "content_type": "text/html",
+      "location": null,
+      "raw_path": "data/admission/sources/utah-hb452/2026-10-15/13-11-3.html",
+      "raw_sha256": "85da2b78264c484e2800bef14cb78927e69d7265b93a73ffac8cc8d1e64aed1e",
+      "headers_path": "data/admission/sources/utah-hb452/2026-10-15/13-11-3.headers.json",
+      "bytes": 9603,
+      "finished_at": "2026-10-15T05:28:06.075384+00:00"
+    },
+    {
+      "name": "13-72a-201-shell",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S201.html",
+      "started_at": "2026-10-15T05:28:06.075623+00:00",
+      "attempted": true,
+      "attempt": 1,
+      "http_status": 200,
+      "final_url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S201.html",
+      "content_type": "text/html",
+      "location": null,
+      "raw_path": "data/admission/sources/utah-hb452/2026-10-15/13-72a-201-shell.html",
+      "raw_sha256": "f61b77e79e88151879f004147af8319a174acd58161615546d1e53470d5e8644",
+      "headers_path": "data/admission/sources/utah-hb452/2026-10-15/13-72a-201-shell.headers.json",
+      "bytes": 26659,
+      "finished_at": "2026-10-15T05:28:06.244914+00:00"
+    },
+    {
+      "name": "13-72a-203-shell",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html",
+      "started_at": "2026-10-15T05:28:06.245252+00:00",
+      "attempted": true,
+      "attempt": 1,
+      "http_status": 200,
+      "final_url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html",
+      "content_type": "text/html",
+      "location": null,
+      "raw_path": "data/admission/sources/utah-hb452/2026-10-15/13-72a-203-shell.html",
+      "raw_sha256": "6bb7e69b59fe8a08260e750a923921965d3bf32d42fb6d11db991c5935ca01d5",
+      "headers_path": "data/admission/sources/utah-hb452/2026-10-15/13-72a-203-shell.headers.json",
+      "bytes": 26659,
+      "finished_at": "2026-10-15T05:28:06.425868+00:00"
+    }
+  ]
+}

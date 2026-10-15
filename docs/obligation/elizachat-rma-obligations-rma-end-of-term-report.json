@@ -70,7 +70,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
       "canonical_unit": "entry:elizachat-rma-obligations",
       "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
       "admission_status": "legacy-unreviewed",

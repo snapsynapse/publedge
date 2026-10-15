@@ -1,0 +1,13 @@
+{
+  "Date": "Thu, 15 Oct 2026 05:27:39 GMT",
+  "Content-Type": "text/plain",
+  "Content-Length": "866",
+  "Connection": "close",
+  "Vary": "Accept-Encoding",
+  "Last-Modified": "Wed, 29 Jun 2016 15:44:58 GMT",
+  "Accept-Ranges": "bytes",
+  "ETag": "\"5e4db301dd2d11:0\"",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Content-Security-Policy": "frame-ancestors 'self' https://www.utleg.gov https://utleg.gov",
+  "X-Frame-Options": "ALLOW-FROM https://www.utleg.gov"
+}

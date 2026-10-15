@@ -80,7 +80,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f",
+      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
       "canonical_unit": "entry:hb320-joint-interpretation-agreements",
       "canonical_sha256": "b85f1f2ef1628ab2a223640d36314be87543371986c0cb7fdd43099d48765c2e",
       "admission_status": "legacy-unreviewed",

@@ -53,11 +53,12 @@ test('SB226 R1 native IDs, metadata, mapping and R3 civil/criminal content are u
     }
     // The SB226 instrument Summary moved later under receipt succession; see sb226-summary-succession.test.js.
     const preserved = {
-        'data/examples/mapping/index.yml': 'b2bd75074c27efe6713cd7bdc7c0f5504225ce58f5767b822771f1768201c19f',
         'data/examples/obligations/ai-defense-elimination.md': 'a55e45923f6c446174676808c25e74c677631fb8550f520ee92ba2786eb08151'
     };
     for (const [filename, expected] of Object.entries(preserved)) assert.equal(admission.hash(read(filename)), expected, filename);
     const mapping = parseMappingIndex(read('data/examples/mapping/index.yml').toString('utf8')).find(entry => entry.id === 'sb226-disclosure-and-ai-defense');
+    // HB452 may change its own mapping entry; preserve the entire SB226 entry.
+    assert.equal(admission.digest(mapping), '4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649');
     assert.deepEqual(mapping.obligations, [...slugs, 'ai-defense-elimination']);
     assert.equal(Object.hasOwn(receipts.records['data/examples/mapping/index.yml'].units, 'entry:sb226-disclosure-and-ai-defense'), false);
 });
@@ -103,10 +104,11 @@ test('SB226 R1 native safe harbor retains alternatives, full timing and section1
 test('SB226 R1 admission binds exactly the new agent-reviewed units without rewriting prior receipts', () => {
     // The SB226 instrument receipt is embedded verbatim by its successor; see sb226-summary-succession.test.js.
     const preservedReceipts = {
-        'data/examples/mapping/index.yml': '0bd582f2ad5ddc22e117ed8fe463db2005702f26336f5ce749dd0284b4bb3c64',
         'data/examples/obligations/ai-defense-elimination.md': '468b8029d06d02225a297094b0dcc40becb5c4a139fe4416a5676bac8700f1a3'
     };
     for (const [filename, expected] of Object.entries(preservedReceipts)) assert.equal(admission.digest(receipts.records[filename]), expected, filename);
+    // The HB452 successor must retain the exact R1-era mapping receipt.
+    assert.ok(admission.receiptLineage(receipts.records['data/examples/mapping/index.yml']).some(entry => admission.digest(entry) === '0bd582f2ad5ddc22e117ed8fe463db2005702f26336f5ce749dd0284b4bb3c64'));
     for (const filename of nativePaths) {
         const snapshot = admission.nativeSnapshot(filename, read(filename));
         const receipt = receipts.records[filename];

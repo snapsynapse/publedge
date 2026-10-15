@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-15",
+  "method": "Existing shared Comet; installed axe 4.12.1 custom adapter; fonts ready, CSS animation/transition suppressed only during audit; settled two animation frames after theme change. Initial transient-theme scan excluded as unstable measurement.",
+  "scope": "Three affected routes, desktop/mobile, light/dark; sampled automated evidence only",
+  "results": [
+    {
+      "route": "/us/utah/legislature/statute/2025-002/",
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 1265,
+      "viewport_width": 1265
+    },
+    {
+      "route": "/us/utah/legislature/statute/2025-002/",
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 1265,
+      "viewport_width": 1265
+    },
+    {
+      "route": "/us/utah/legislature/statute/2025-002/",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 375,
+      "viewport_width": 375
+    },
+    {
+      "route": "/us/utah/legislature/statute/2025-002/",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 375,
+      "viewport_width": 375
+    },
+    {
+      "route": "/primary/disclose-genai-on-first-session/",
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 1265,
+      "viewport_width": 1265
+    },
+    {
+      "route": "/primary/disclose-genai-on-first-session/",
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 1265,
+      "viewport_width": 1265
+    },
+    {
+      "route": "/primary/disclose-genai-on-first-session/",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 429,
+      "viewport_width": 375
+    },
+    {
+      "route": "/primary/disclose-genai-on-first-session/",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 429,
+      "viewport_width": 375
+    },
+    {
+      "route": "/primary/chatbot-data-no-third-party-sharing/",
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 1265,
+      "viewport_width": 1265
+    },
+    {
+      "route": "/primary/chatbot-data-no-third-party-sharing/",
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 1265,
+      "viewport_width": 1265
+    },
+    {
+      "route": "/primary/chatbot-data-no-third-party-sharing/",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 429,
+      "viewport_width": 375
+    },
+    {
+      "route": "/primary/chatbot-data-no-third-party-sharing/",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "axe_version": "4.12.1",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29,
+      "document_width": 429,
+      "viewport_width": 375
+    }
+  ]
+}

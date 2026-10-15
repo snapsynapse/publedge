@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-10-15T05:38:45.843231+00:00",
+  "status": "passed",
+  "base": "ef3ce5fae6aa4e8c255d1a21a7c0c04a859ca03e",
+  "candidate": "Uncommitted staged worktree; not a committed or hosted-CI result",
+  "checker_commit": "1857e686efb674ed54be8c33b10b9d18f5c7db41",
+  "canonical_command": "OBLIGATION_FIRST_DIR=/private/tmp/obligation-first-publedge-provenance-20261014 CHECK_OF_REQUIRED=1 npm run verify:ci",
+  "canonical_log": "/private/tmp/hb452-verify-ci-20261015.log",
+  "canonical_log_sha256": "d3901dbce36d627939e1dcd0e853df7f12793024a7b09a59241400e1b6986965",
+  "comparison_modes": {
+    "canonical": "HEAD uncommitted comparison; exact candidate is staged before generated parity check",
+    "separate_source_admission": "Explicit SOURCE_ADMISSION_BASE=ef3ce5fae6aa4e8c255d1a21a7c0c04a859ca03e passed"
+  },
+  "native_raw_sha256": {
+    "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md": "99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd",
+    "data/examples/obligations/disclose-genai-on-first-session.md": "60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365",
+    "data/examples/obligations/chatbot-data-no-third-party-sharing.md": "e7b5193eb7d251b77075a0b072ec844a87deddcdfc250cc3aa609e6582e508cb",
+    "data/examples/mapping/index.yml": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+    "data/admission/receipts.json": "fbe899d212bcd34be39f5bc87be3b9d01114c2daa6ca515afda60b0058c00b46"
+  },
+  "source_semantic_review": "Scoped independent Codex PASS; nine changed units, no new human attestation",
+  "admission_test_suite": {
+    "passed": 36,
+    "failed": 0
+  },
+  "new_hb452_tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "rendered_samples": {
+    "axe_version": "4.12.1",
+    "samples": 12,
+    "violations": 0,
+    "incomplete": 0,
+    "mobile_limit": "Both shared primary pages retain base429px width in375px content viewport; not full mobile acceptance"
+  },
+  "preservation": [
+    "All native metadata/IDs/dates unchanged",
+    "Three predecessor receipts embedded verbatim and prior unknowns retained",
+    "Safety-policy definition and deferred amendment/model decisions untouched",
+    "Only provenance_claims fingerprint section changed,74records, other sections identical"
+  ],
+  "delivery": {
+    "committed": false,
+    "pushed": false,
+    "pr_created": false,
+    "deployed": false
+  }
+}

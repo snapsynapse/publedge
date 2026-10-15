@@ -1,0 +1,25 @@
+{
+  "scope": "Four new follow-up requests: witnessed definition bodies and current-version shell cross-checks, not retries",
+  "frozen_at": "2026-10-15T05:28:05.720440+00:00",
+  "max_requests": 4,
+  "requests": [
+    {
+      "name": "13-72a-101",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72a/C13-72a-S101_2026050620260506.html"
+    },
+    {
+      "name": "13-11-3",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter11/C13-11-S3_2025050720250507.html"
+    },
+    {
+      "name": "13-72a-201-shell",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S201.html"
+    },
+    {
+      "name": "13-72a-203-shell",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html"
+    }
+  ],
+  "retries": 0,
+  "redirects_followed": 0
+}
