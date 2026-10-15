@@ -16,6 +16,7 @@ const gates = [
     [npm, ['run', 'build']],
     [npm, ['run', 'test:of-evidence-inputs']],
     [npm, ['run', 'test:doctronic-observation']],
+    [npm, ['run', 'test:oaip-public-presentation']],
     [npm, ['run', 'test:colorado-order24']],
     [npm, ['run', 'check:search']],
     [npm, ['run', 'eval:search-structured-data']],

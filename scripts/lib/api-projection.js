@@ -5,15 +5,21 @@
 // carries the record's own source and editorial_status so a draft or
 // demonstration record keeps its labelling wherever a status appears.
 
-function containerSummary(c) {
+const { isOriginalDraft } = require('./content');
+
+function containerSummary(c, { siteUrl = '', href } = {}) {
     return {
         id: c.id,
         name: c.title || c.name || c.id,
         source: c.source || null,
+        author_or_proponent: c.author_or_proponent || null,
+        intended_authority: c.intended_authority || null,
         status: c.status,
         editorial_status: c.editorial_status || null,
         effective: c.effective,
-        provision_count: (c.provisions || []).length
+        provision_count: (c.provisions || []).length,
+        provision_count_scope: 'Structured clause-level sections indexed; zero does not mean no obligations',
+        url: href ? siteUrl + href(c) : null
     };
 }
 
@@ -24,6 +30,7 @@ function daysBetween(today, date) {
 function upcomingItems(containers, { today, siteUrl, href }) {
     const items = [];
     for (const c of containers) {
+        if (isOriginalDraft(c)) continue;
         const push = (kind, date) => {
             if (!date || date < today) return;
             items.push({
@@ -37,6 +44,8 @@ function upcomingItems(containers, { today, siteUrl, href }) {
                 authority: c.authority,
                 type: c.type,
                 source: c.source || null,
+                author_or_proponent: c.author_or_proponent || null,
+                intended_authority: c.intended_authority || null,
                 status: c.status || null,
                 editorial_status: c.editorial_status || null
             });
@@ -67,6 +76,8 @@ function recentlyChangedItems(containers, { since, siteUrl, href }) {
                 authority: c.authority,
                 type: c.type,
                 source: c.source || null,
+                author_or_proponent: c.author_or_proponent || null,
+                intended_authority: c.intended_authority || null,
                 status: c.status,
                 editorial_status: c.editorial_status || null
             };

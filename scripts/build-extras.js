@@ -13,6 +13,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const { composeDisclaimer } = require('./lib/disclaimer');
+const { isOriginalDraft } = require('./lib/content');
 const { parseFrontmatter } = require('./lib/parse');
 const { deriveBuildClock } = require('./lib/build-clock');
 const { loadPublicationState } = require('./lib/publication-state');
@@ -327,10 +328,19 @@ ${mdToHtml(t.body)}
     }).join('\n');
 
     ensureDir(path.join(DOCS_DIR, 'templates'));
+    // This separate process runs after build.js. Consume its canonical public
+    // projection instead of reloading native records and rebuilding their URLs.
+    const registryDrafts = JSON.parse(fs.readFileSync(path.join(DOCS_DIR, 'api/v1/containers.json'), 'utf8')).items.filter(isOriginalDraft);
+    const registryDraftItems = registryDrafts.map(c => `<li><a href="${escapeHTML(c.url)}">${escapeHTML(c.name)}</a></li>`).join('');
     const indexBody = `
 <h1>PubLedge Templates</h1>
 <p>Suggested prior-art templates for Joint Interpretation Agreements (JIAs) and Regulatory Mitigation Agreements (RMAs) under Utah Code Title 13 Chapter 72 Part 4. Not official OAIP output.</p>
 ${sections || '<p>No templates published.</p>'}
+<section>
+<h2>Proposed templates in the registry (unissued)</h2>
+<p>Authored by PubLedge for discussion. OAIP has not issued these proposals.</p>
+<ul>${registryDraftItems}</ul>
+</section>
 <p><a href="../about/">← Back to protocol</a></p>`;
     fs.writeFileSync(path.join(DOCS_DIR, 'templates', 'index.html'), pageShell({
         title: 'Templates',
@@ -618,7 +628,7 @@ function emitAdditionalFeeds() {
             id: it.url || it.id,
             url: it.url || `${baseUrl}`,
             title: it.title || it.name || it.id,
-            content_text: it.summary || it.description || (it.title || it.id),
+            content_text: `${it.summary || it.description || (it.title || it.id)}. Source: ${it.source || 'unknown'}; status: ${it.status || 'unknown'}.`,
             date_modified: it.last_changed || it.lastmod || it.updated || updated,
             tags: it.tags || undefined
         }))
@@ -631,7 +641,7 @@ function emitAdditionalFeeds() {
         const id = it.url || `${baseUrl}${it.id || ''}`;
         const title = it.title || it.name || it.id || '';
         const updatedAt = it.last_changed || it.lastmod || it.updated || updated;
-        const summary = it.summary || it.description || title;
+        const summary = `${it.summary || it.description || title}. Source: ${it.source || 'unknown'}; status: ${it.status || 'unknown'}.`;
         return `  <entry>
     <id>${esc(id)}</id>
     <title>${esc(title)}</title>
@@ -707,6 +717,9 @@ function writeRecordSchema() {
                     'authority': { 'type': ['string', 'null'], 'description': 'Authority slug (e.g. utah-oaip, cfpb, irs-chief-counsel).' },
                     'url': { 'type': ['string', 'null'], 'format': 'uri' },
                     'issued_by': { 'type': ['object', 'string', 'array', 'null'] },
+                    'author_or_proponent': {'type': ['string', 'null']},
+                    'intended_authority': {'type': ['string', 'null']},
+                    'intended_authority_url': {'type': ['string', 'null'], 'format': 'uri'},
                     'issuance_event': { 'type': ['string', 'null'] },
                     'enacted': { 'type': ['string', 'null'], 'format': 'date' },
                     'effective': { 'type': ['string', 'null'], 'format': 'date' },
@@ -787,6 +800,7 @@ function writeRecordSchema() {
                         },
                         'then': {
                             'properties': {
+                                'issued_by': { 'type': 'null' },
                                 'issuance_event': { 'type': 'null' },
                                 'enacted': { 'type': 'null' }
                             }

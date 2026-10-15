@@ -98,7 +98,7 @@
         </div>
     </header>
     <aside class="site-banner" aria-label="Site disclaimer">
-        <strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe each instrument's own legal state, not editorial endorsement — see <a href="/definitions/">Definitions</a>.
+        <strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe recorded instrument states, not current pilot authorization or editorial endorsement. See <a href="/definitions/">Definitions</a>.
     </aside>
     <main class="container" id="main-content">
         
@@ -113,17 +113,23 @@
             <p><em>The Utah Office of Artificial Intelligence Policy (OAIP) is the first dedicated US state AI regulator. It operates the Utah Artificial Intelligence Learning Laboratory — a regulatory-mitigation sandbox where participating companies receive tailored relief from specific state laws in exchange for data-sharing, safeguards, and audits. Under HB 320 (2026), OAIP may also issue Joint Interpretation Agreements that clarify how existing Utah law applies to AI without waiving the underlying law.</em></p>
             <p>PubLedge treats Utah OAIP's <strong>Regulatory Mitigation Agreement (RMA)</strong> and <strong>Joint Interpretation Agreement (JIA)</strong> as the prototypical instruments for its broader registry. The two-instrument architecture — waiver + interpretation — maps cleanly to SEC no-action letters, CFPB advisory opinions, and IRS private letter rulings at the federal level, and to analogous instruments in other jurisdictions.</p>
             <h3>Why this page exists</h3>
-            <p>Utah's <a href="https://commerce.utah.gov/ai/regulatory-mitigation/roadmap-for-regulatory-relief/">Roadmap for Regulatory Relief</a> commits OAIP to publishing "a public-facing version of the proposal with the agreement" for each RMA, to promote transparency and accountability. PubLedge is a ready-made, versioned, tamper-evident implementation of that commitment — discoverable, linkable, and machine-readable, with no change to OAIP's confidentiality posture.</p>
-            <p>Separately, <a href="https://le.utah.gov/~2026/bills/static/HB0320.html">HB 320 (2026)</a> §13-72-201(3)(d) requires OAIP to report annually to the Business and Labor Interim Committee on every executed RMA and JIA. PubLedge is a standing public-facing companion to that statutory report — continuously current between November cycles.</p>
+            <p>OAIP publishes agreements and status information on its <a href="https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/">official pilot register</a>. PubLedge is an independent companion that connects selected records, source versions, and obligation mappings. It does not replace OAIP's publication or establish agency issuance, legal completeness, or current operational permission.</p>
+            <p class="coverage-notice">PubLedge is an independently maintained, versioned companion to official records. Coverage is partial; record pages identify sources and recorded review dates. <a href="/us/utah/#coverage-review">Utah coverage review and known gaps</a>.</p>
+            <h3 id="coverage-review">Utah coverage review</h3>
+            <p>Coverage comparison date: <time datetime="2026-10-14">Oct 14, 2026</time>. This compares the official public index with PubLedge's inventory; it is not a new legal verification of each agreement. Source-document review and clause-level mapping remain separate steps.</p>
+            <p>Known records not yet indexed in this reference instance:</p>
+            <ul><li>Expect Fitness</li><li>August AI / August Labs, Inc.</li><li>Nolla Health / Magic Health entities</li><li>University of Utah Health master agreement</li><li>Intermountain Health master agreement</li></ul>
+            <p>A master agreement alone does not authorize a pilot. Unindexed means missing from this instance, not unissued by OAIP.</p>
+            <p>SHA-256 checks compare canonical source bytes with the current unsigned manifest. They do not prove agency issuance, source authenticity, publication time, completeness, or legal accuracy. <a href="/reference/verify/">How to verify and what the check proves</a>.</p>
             <h3>Propose a correction</h3>
             <p>PubLedge's Utah reference instance is a third-party public mirror, not an OAIP product. If you are OAIP staff, a participant, or an outside reviewer who has spotted an inaccuracy, please <a href="https://github.com/snapsynapse/publedge/issues/new?title=Utah%20correction%3A%20&labels=correction,us-ut">open a correction issue on GitHub</a> or email <a href="mailto:hello@paice.work?subject=PubLedge%20Utah%20correction">hello@paice.work</a>. Every page's frontmatter is versioned in <a href="https://github.com/snapsynapse/publedge">the public repo</a>; corrections land as commits with a clear audit trail.</p>
             <h3>Related Utah AI statutes (not in this registry)</h3>
-            <p>Per PubLedge's scope, statutes appear here only when a PubLedge instrument cites or interprets them. The following 2025 Utah AI statutes are intentionally not in this registry because no OAIP instrument currently invokes them; their authoritative obligation maps live at EveryAILaw:</p>
+            <p>This reference instance indexes selected statutory references alongside its agreement records. The following statutes are not indexed here. This is not a complete inventory of OAIP's citations; see EveryAILaw for broader statutory coverage:</p>
             <ul>
                 <li><strong>SB 180 (2025)</strong> — law-enforcement AI policy + police-report disclosure. See <a href="https://everyailaw.com/regulation/utah-sb149/index.html">EveryAILaw Utah AI stack</a>.</li>
                 <li><strong>SB 271 (2025)</strong> — unauthorized AI impersonation / deepfake amendments. See <a href="https://everyailaw.com/regulation/utah-sb149/index.html">EveryAILaw Utah AI stack</a>.</li>
             </ul>
-            <p>If OAIP later issues an RMA or JIA that invokes either statute, a scaffolding stub will be added here per the standard.</p>
+            <p>Additional statutory references can be indexed after source review.</p>
         </div>
     
         
@@ -213,7 +219,7 @@
                     <thead><tr><th>Record</th><th>Type</th><th>Status</th><th>Effective</th></tr></thead>
                     <tbody>
                         <tr>
-                            <td><a href="/us/utah/oaip/jia/2026-001/" onclick="passTheme(this)">Utah Mental Health Chatbot Disclosure — Joint Interpretation</a></td>
+                            <td><a href="/us/utah/oaip/jia/2026-001/" onclick="passTheme(this)">PubLedge proposed template (unissued): Utah Mental Health Chatbot Disclosure</a></td>
                             <td>Joint Interpretation Agreement</td>
                             <td data-sort-value="proposed"><span class="status-badge proposed">proposed</span></td>
                             <td data-sort-value="9999-12-31"></td>

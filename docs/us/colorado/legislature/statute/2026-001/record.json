@@ -26,6 +26,9 @@
       "name": "Colorado General Assembly",
       "ref": "https://leg.colorado.gov/"
     },
+    "author_or_proponent": null,
+    "intended_authority": null,
+    "intended_authority_url": null,
     "issuance_event": "gist:Enactment",
     "enacted": "2026-05-14",
     "effective": "2027-01-01",

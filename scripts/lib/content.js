@@ -5,6 +5,10 @@ const fs = require('fs');
 const path = require('path');
 const { parseFrontmatter } = require('./parse');
 
+function isOriginalDraft(record) {
+    return record.source === 'publedge-original-draft';
+}
+
 function parseTable(tableText) {
     const lines = tableText.trim().split('\n').filter(l => l.trim());
     if (lines.length < 2) return [];
@@ -82,6 +86,7 @@ function loadMarkdownDir(dir, options = {}) {
 }
 
 module.exports = {
+    isOriginalDraft,
     parseTable,
     parseProvisionSection,
     parseContainerBody,

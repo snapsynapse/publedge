@@ -22,7 +22,7 @@ Weekly checks flag overdue records and temporal inconsistencies for human review
 - [Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments](https://publedge.org/us/utah/legislature/statute/2025-001/): enforcing
 - [Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)](https://publedge.org/us/utah/legislature/statute/2025-003/): enforcing
 - [Utah HB 320 (2026) — Office of Artificial Intelligence Policy Amendments (Learning Lab Restructure + Joint Interpretation Agreements)](https://publedge.org/us/utah/legislature/statute/2026-001/): enforcing
-- [Utah Mental Health Chatbot Disclosure — Joint Interpretation](https://publedge.org/us/utah/oaip/jia/2026-001/): proposed
+- [PubLedge proposed template (unissued): Utah Mental Health Chatbot Disclosure](https://publedge.org/us/utah/oaip/jia/2026-001/): proposed
 - [Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)](https://publedge.org/us/utah/oaip/rma/2024-001/): expired
 - [Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-001/): expired
 - [Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-002/): enforcing

@@ -16,12 +16,14 @@ const path = require('path');
 const crypto = require('crypto');
 const { parseYaml } = require('./lib/parse');
 const { loadMappingIndex } = require('./lib/mapping');
-const { loadMarkdownDir } = require('./lib/content');
+const { loadMarkdownDir, isOriginalDraft } = require('./lib/content');
 const { buildObligationFirstRecords, writeObligationFirstRecords } = require('./lib/obligation-first');
 const { deriveBuildClock } = require('./lib/build-clock');
 const { assertForEmission: assertSourceAdmission } = require('./check-source-admission');
 const { containerSummary, upcomingItems, recentlyChangedItems } = require('./lib/api-projection');
 const { containerCadenceDays, getFrozenFixtureIds, getReviewCadence } = require('./lib/verify-policy');
+
+const PROVISION_COUNT_LABEL = 'Clause-level provisions indexed';
 
 const ROOT = path.join(__dirname, '..');
 const BUILD_CLOCK = deriveBuildClock(ROOT);
@@ -304,7 +306,7 @@ function renderSiteBanner() {
     // <aside> is a complementary landmark by default — brings the banner
     // inside the landmark graph (axe region rule) while keeping semantics.
     return `<aside class="site-banner" aria-label="Site disclaimer">
-        <strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe each instrument's own legal state, not editorial endorsement — see <a href="/definitions/">Definitions</a>.
+        <strong>Reference project in development.</strong> This registry is not authoritative and is not legal advice. Status values describe recorded instrument states, not current pilot authorization or editorial endorsement. See <a href="/definitions/">Definitions</a>.
     </aside>`;
 }
 
@@ -623,13 +625,22 @@ function renderAuthorityResponses(c) {
     </section>`;
 }
 
+function renderCoverageNotice() {
+    return `<p class="coverage-notice">PubLedge is an independently maintained, versioned companion to official records. Coverage is partial; record pages identify sources and recorded review dates. <a href="/us/utah/#coverage-review">Utah coverage review and known gaps</a>.</p>`;
+}
+
+function renderMappingCoverageNote() {
+    return `<p class="mapping-coverage-note">Mapping entries associate records with obligation anchors. The clause-level provision count measures structured sections indexed, a different measure. Zero means no clause-level sections indexed in this format, not that the instrument has no obligations. Registry totals include unissued proposals; they are not counts of executed or authority-issued instruments.</p>`;
+}
+
 function renderRecordSummary(c, config) {
     const typeLabel = config.hierarchy?.type_labels?.[c.type] || c.type;
     const jur = config.hierarchy?.jurisdictions?.[c.jurisdiction];
     const isBlank = v => !v || /^(null|undefined|tbd|n\/a)$/i.test(String(v).trim());
     const items = [];
     items.push(`<strong>Jurisdiction:</strong> ${jurisdictionChip(c.jurisdiction, { label: jur?.label || c.jurisdiction })}`);
-    if (c.authority) items.push(`<strong>Authority:</strong> ${escapeHTML(c.authority)}`);
+    if (c.authority) items.push(`<strong>${isOriginalDraft(c) ? 'Intended authority' : 'Authority'}:</strong> ${escapeHTML(c.intended_authority || c.authority)}`);
+    if (c.author_or_proponent) items.push(`<strong>Author/proponent:</strong> ${escapeHTML(c.author_or_proponent)}`);
     if (typeLabel) items.push(`<strong>Type:</strong> ${escapeHTML(typeLabel)}`);
     if (!isBlank(c.term_start) && !isBlank(c.term_end)) {
         const start = new Date(String(c.term_start) + 'T00:00:00Z');
@@ -705,6 +716,7 @@ function renderUpcomingWidget(containers, config) {
     const events = [];
     const isValidDate = (s) => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s);
     for (const c of containers) {
+        if (isOriginalDraft(c)) continue;
         const push = (kind, date) => {
             if (!isValidDate(date) || date < today) return;
             events.push({
@@ -748,12 +760,14 @@ function generateHomepage(config, data, configCSS) {
         <p style="color: var(--text-secondary); margin-bottom: 1rem;">${escapeHTML(config.description || '')}</p>
 
         <div class="stats-bar">
-            <a class="stat-card" href="/instruments.html"><span class="stat-number">${containers.length}</span><span class="stat-label">${escapeHTML(containerName)}</span></a>
+            <a class="stat-card" href="/instruments.html"><span class="stat-number">${containers.length}</span><span class="stat-label">Records (including proposals)</span></a>
             <a class="stat-card" href="/obligations.html"><span class="stat-number">${primaries.length}</span><span class="stat-label">${escapeHTML(primaryName)}</span></a>
-            <a class="stat-card" href="/matrix.html"><span class="stat-number">${data.mappingIndex.length}</span><span class="stat-label">Provisions Mapped</span></a>
+            <a class="stat-card" href="/matrix.html"><span class="stat-number">${data.mappingIndex.length}</span><span class="stat-label">Mapping entries</span></a>
             <a class="stat-card" href="/authorities.html"><span class="stat-number">${authorities.length}</span><span class="stat-label">${escapeHTML(config.entities?.authority?.plural || 'Authorities')}</span></a>
         </div>
 
+        ${renderCoverageNotice()}
+        ${renderMappingCoverageNote()}
         ${renderUpcomingWidget(containers, config)}
 
         <h2>Quick Links</h2>
@@ -827,7 +841,7 @@ function generateHomepage(config, data, configCSS) {
             return `
         <h2>${escapeHTML(containerName)} <span style="font-size:0.7em;color:var(--muted);font-weight:400;">— ${recent.length} most recent</span></h2>
         <table class="data-table">
-            <thead><tr>${th(config.entities?.container?.name || 'Container')}${th('Scope', { filter: 'scope' })}${th('Status', { filter: 'status' })}${th('Effective')}${th('Provisions', { sortType: 'number' })}</tr></thead>
+            <thead><tr>${th(config.entities?.container?.name || 'Container')}${th('Scope', { filter: 'scope' })}${th('Status', { filter: 'status' })}${th('Effective')}${th(PROVISION_COUNT_LABEL, { sortType: 'number' })}</tr></thead>
             <tbody>${rows}</tbody>
         </table>
         ${hasMore ? `<p style="margin-top:0.75rem;"><a href="/instruments.html">See all ${containers.length} ${containerName.toLowerCase()} →</a></p>` : ''}`;
@@ -965,11 +979,13 @@ function generateContainersPage(config, data, configCSS) {
 
     const content = `
         <h2 style="margin-top: 0.5rem;">${escapeHTML(cPlural)}</h2>
+        ${renderCoverageNotice()}
+        ${renderMappingCoverageNote()}
         <div class="filters">
             <span class="table-result-count"><strong>${containers.length}</strong> of ${containers.length}</span>
         </div>
         <table class="data-table" id="itemTable">
-            <thead><tr>${th(cName)}${th('Scope', { filter: 'scope' })}${th('Status', { filter: 'status' })}${th('Effective')}${th('Provisions', { sortType: 'number' })}</tr></thead>
+            <thead><tr>${th(cName)}${th('Scope', { filter: 'scope' })}${th('Status', { filter: 'status' })}${th('Effective')}${th(PROVISION_COUNT_LABEL, { sortType: 'number' })}</tr></thead>
             <tbody>
                 ${containers.map(c => `<tr data-scope="${escapeHTML(c[scopeField] || '')}">
                     <td><a href="${containerIndexHref(c)}" onclick="passTheme(this)">${escapeHTML(c.title || c.name || c.id)}</a></td>
@@ -1151,7 +1167,7 @@ function generateMatrixPage(config, data, configCSS) {
             const entry = (matrix[p.id] || {})[c.id];
             if (entry && entry.covered) {
                 const n = entry.provisions.length;
-                const linkLabel = `${n} ${n === 1 ? 'provision' : 'provisions'}`;
+                const linkLabel = `${n} ${n === 1 ? 'mapping entry' : 'mapping entries'}`;
                 return `<td class="matrix-cell covered" title="${escapeHTML(pLabel)} — ${escapeHTML(c.title || c.name || c.id)}: ${n}"><a href="/requires/${c.id}/${p.id}/" onclick="passTheme(this)" style="color:inherit;text-decoration:none;">${linkLabel}</a></td>`;
             }
             return `<td class="matrix-cell empty">&mdash;</td>`;
@@ -1161,6 +1177,7 @@ function generateMatrixPage(config, data, configCSS) {
 
     const content = `
         <h2 style="margin-top: 0.5rem;">Coverage Matrix</h2>
+        ${renderMappingCoverageNote()}
         <p style="color: var(--text-secondary); margin-bottom: 1rem;">Which ${(config.entities?.container?.plural || 'containers').toLowerCase()} cover which ${(config.entities?.primary?.plural || 'primaries').toLowerCase()}. Green cells link to details.</p>
         <div class="matrix-wrapper">
             <table class="matrix-table">
@@ -1365,10 +1382,10 @@ function generateContainerDetail(config, container, data, configCSS) {
                 <span><strong>Editorial:</strong> ${escapeHTML(humanizeId(container.editorial_status || 'unspecified'))}</span>
                 ${freshnessBadge(container.last_verified, containerCadenceDays(container, getReviewCadence(config)), getFrozenFixtureIds(config).instruments.has(container.id))}
                 ${container.effective ? `<span><strong>Effective:</strong> ${formatDate(container.effective)}</span>` : '<!-- No effective date asserted. -->'}
-                ${container.official_url ? `<span><a href="${escapeHTML(container.official_url)}" target="_blank" rel="noopener">Official source</a></span>` : ''}
+                ${container.official_url ? `<span><a href="${escapeHTML(container.official_url)}" target="_blank" rel="noopener">Official source</a></span>` : ''}${container.intended_authority_url ? `<span><a href="${escapeHTML(container.intended_authority_url)}" target="_blank" rel="noopener">Intended authority website (not an issued instrument)</a></span>` : ''}
             </div>
             ${renderIncompleteMetadataWarning(container)}
-            ${renderRecordDisclaimer(container)}
+            ${renderRecordDisclaimer(container)}${renderOperationalStatusNotice(container)}
             ${renderAuthorityResponses(container)}
             <div class="citation-block">
                 <strong>Cite as:</strong> <code>${escapeHTML(container.id)}</code>${container.official_ref ? ` &middot; <em>${escapeHTML(container.official_ref)}</em>` : ''}
@@ -1376,7 +1393,8 @@ function generateContainerDetail(config, container, data, configCSS) {
                 ${container.legacy_id ? `<br><small style="opacity:0.75;">Legacy identifier: <code>${escapeHTML(container.legacy_id)}</code></small>` : ''}
             </div>
         </div>
-        ${cPrimaries.length ? `<h3>${config.entities?.primary?.plural || 'Primaries'} Covered</h3>
+        <p>Structured sections indexed: ${container.provisions.length}. Associated obligation anchors: ${cPrimaries.length}. Zero indexed sections does not mean no obligations.</p>
+        ${cPrimaries.length ? `<h3>Associated ${config.entities?.primary?.plural || 'Primaries'}</h3>
         <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1rem;">
             ${cPrimaries.map(pId => { const p = primaries.find(pr => pr.id === pId); return `<a href="/primary/${pId}/" onclick="passTheme(this)" class="group-badge ${p?.group || ''}" style="text-decoration:none;">${escapeHTML(p?.name || humanizeId(pId))}</a>`; }).join(' ')}
         </div>` : ''}
@@ -1384,14 +1402,25 @@ function generateContainerDetail(config, container, data, configCSS) {
 ${renderOperationalObservation(container)}
         ${renderSourceDocuments(container)}
         ${renderExtractedText(container)}
-        ${container.provisions.length > 0 ? `<h3>Provisions (${container.provisions.length})</h3>
+        ${container.provisions.length > 0 ? `<h3>${PROVISION_COUNT_LABEL} (${container.provisions.length})</h3>
         ${container.provisions.map(p => renderProvisionCard(p, '../../')).join('\n')}` : ''}
         ${renderPrevNext(container, data)}
         ${renderRecordChangelog(container)}
     `;
 
     const displayName = container.title || container.name || container.id;
-    return renderBridgeShell(config, { title: displayName, depth: 2, content, canonicalPath: container._canonicalPath || `container/${container.id}/`, description: `${displayName} — ${container.provisions.length} provisions.`, configCSS, structuredData: generateLegalDocumentJsonLd(container, config) });
+    return renderBridgeShell(config, { title: displayName, depth: 2, content, canonicalPath: container._canonicalPath || `container/${container.id}/`, description: `${displayName} — ${container.provisions.length} clause-level provisions indexed.`, configCSS, structuredData: generateLegalDocumentJsonLd(container, config) });
+}
+
+function renderOperationalStatusNotice(container) {
+    // Promote the existing dated register observation, without claiming a fresh
+    // source check or rewriting the retained agreement's terms.
+    const section = extractSection(container._body || '', 'Operational observation (not an issued term)');
+    // Select the register paragraph in the retained dated observation. The
+    // presentation regression pins this notice without changing native evidence.
+    const register = section.split(/\n\s*\n/).find(p => p.startsWith("OAIP's Authorized AI Pilots page,"));
+    if (!register) return '';
+    return `<aside class="record-disclaimer" aria-label="Operational status and limits"><strong>Dated operational status, separate from contractual permission.</strong> ${escapeHTML(register.replace(/\s*\n\s*/g, ' '))} <a href="#operational-observation">Full observation and source conflict</a>.</aside>`;
 }
 
 function renderOperationalObservation(container) {
@@ -1421,8 +1450,8 @@ function generatePrimaryDetail(config, primary, data, configCSS) {
         ${summary ? `<p style="font-size:1rem;line-height:1.6;margin:1rem 0;">${escapeHTML(summary)}</p>` : ''}
         ${whatCounts ? `<h3>What Counts</h3><ul>${parseBulletList(whatCounts).map(i => `<li>${escapeHTML(i)}</li>`).join('')}</ul>` : ''}
         ${whatDoesNot ? `<h3>What Does Not Count</h3><ul>${parseBulletList(whatDoesNot).map(i => `<li>${escapeHTML(i)}</li>`).join('')}</ul>` : ''}
-        <h3>Implementing ${config.entities?.container?.plural || 'Containers'}</h3>
-        ${coveredContainers.length ? `<table class="data-table"><thead><tr><th>${config.entities?.container?.name || 'Container'}</th><th>Scope</th><th>Status</th><th>Provisions</th></tr></thead><tbody>
+        <h3>Associated records (including proposals)</h3>
+        ${coveredContainers.length ? `<table class="data-table"><thead><tr><th>${config.entities?.container?.name || 'Container'}</th><th>Scope</th><th>Status</th><th>Mapping entries</th></tr></thead><tbody>
             ${coveredContainers.map(cId => { const c = containers.find(co => co.id === cId); if (!c) return ''; return `<tr><td><a href="${containerIndexHref(c)}" onclick="passTheme(this)">${escapeHTML(c.title || c.name || c.id)}</a></td><td>${escapeHTML(c.jurisdiction || '')}</td><td>${renderStatusBadge(c.status)}</td><td>${pMatrix[cId].provisions.length}</td></tr>`; }).join('\n')}
         </tbody></table>` : `<p style="color:var(--text-secondary);">No ${cName}s currently implement this.</p>`}
     `;
@@ -1444,7 +1473,7 @@ function generateAuthorityDetail(config, auth, data, configCSS) {
             </div>
         </div>
         <h3>${config.entities?.container?.plural || 'Containers'} (${authContainers.length})</h3>
-        ${authContainers.length ? `<table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>Provisions</th></tr></thead><tbody>
+        ${authContainers.length ? `<table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>${PROVISION_COUNT_LABEL}</th></tr></thead><tbody>
             ${authContainers.map(c => `<tr><td><a href="${containerIndexHref(c)}" onclick="passTheme(this)">${escapeHTML(c.title || c.name || c.id)}</a></td><td>${renderStatusBadge(c.status)}</td><td>${formatDate(c.effective)}</td><td>${c.provisions.length}</td></tr>`).join('\n')}
         </tbody></table>` : '<p style="color:var(--text-secondary);">None tracked.</p>'}
     `;
@@ -1532,7 +1561,7 @@ function generateAppliesToBridge(config, scopeValue, data, configCSS) {
         <div class="bridge-header"><h2>${escapeHTML(config.entities?.container?.plural || 'Containers')} in ${escapeHTML(scopeValue)}</h2>
             <p class="bridge-subtitle">${scopeContainers.length} tracked</p>
         </div>
-        <table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>Provisions</th></tr></thead><tbody>
+        <table class="data-table"><thead><tr><th>Name</th><th>Status</th><th>Effective</th><th>${PROVISION_COUNT_LABEL}</th></tr></thead><tbody>
             ${scopeContainers.map(c => `<tr><td><a href="${containerIndexHref(c)}" onclick="passTheme(this)">${escapeHTML(c.title || c.name || c.id)}</a></td><td>${renderStatusBadge(c.status)}</td><td>${formatDate(c.effective)}</td><td>${c.provisions.length}</td></tr>`).join('\n')}
         </tbody></table>
         <div style="margin-top: 2rem; text-align: center;"><a href="/instruments.html" onclick="passTheme(this)" class="bridge-cta">All ${escapeHTML((config.entities?.container?.plural || 'containers').toLowerCase())}</a></div>
@@ -1548,7 +1577,7 @@ function generateAppliesToBridge(config, scopeValue, data, configCSS) {
 function buildSearchIndex(config, data) {
     const items = [];
     for (const c of data.containers) {
-        items.push({ type: config.entities?.container?.name?.toLowerCase() || 'container', name: c.title || c.name || c.id, id: c.id, href: containerIndexHref(c), jurisdiction: c.jurisdiction || '', _search: [c.title || c.name || c.id, c.jurisdiction || '', c.id, c.status || ''].join(' ').toLowerCase() });
+        items.push({ type: config.entities?.container?.name?.toLowerCase() || 'container', name: c.title || c.name || c.id, id: c.id, source: c.source || null, status: c.status || null, href: containerIndexHref(c), jurisdiction: c.jurisdiction || '', _search: [c.title || c.name || c.id, c.jurisdiction || '', c.id, c.status || ''].join(' ').toLowerCase() });
     }
     for (const p of data.primaries) {
         const summary = p._body ? (p._body.match(/## Summary\n\n([^\n#]+)/) || [])[1]?.trim() || '' : '';
@@ -1761,7 +1790,7 @@ function generateLegalDocumentJsonLd(c, config) {
         'dateCreated': c.created || undefined,
         'dateModified': c.modified || c.last_verified || undefined,
         'datePublished': c.effective || c.enacted || undefined,
-        'author': c.issued_by && typeof c.issued_by === 'object' ? {
+        'author': isOriginalDraft(c) ? { '@type': 'Organization', 'name': c.author_or_proponent || 'PubLedge' } : c.issued_by && typeof c.issued_by === 'object' ? {
             '@type': c.issued_by['@type'] || 'GovernmentOrganization',
             'name': c.issued_by.name || c.interpreting_authority || '',
             'url': c.issued_by.ref || undefined
@@ -1802,6 +1831,9 @@ function generateRecordJsonEndpoint(c, config) {
             authority: c.authority || null,
             url: (config.url || '').replace(/\/+$/, '') + containerHref(c),
             issued_by: c.issued_by || null,
+            author_or_proponent: c.author_or_proponent || null,
+            intended_authority: c.intended_authority || null,
+            intended_authority_url: c.intended_authority_url || null,
             issuance_event: c.issuance_event || null,
             enacted: c.enacted || null,
             effective: c.effective || null,
@@ -1864,7 +1896,7 @@ function generateJurisdictionsIndex(config, data, configCSS) {
     const content = `
         ${renderBreadcrumb([{ label: 'Registry' }])}
         <h2 style="margin-top:0.5rem;">Registry by Jurisdiction</h2>
-        <p style="color:var(--text-secondary);">Browse PubLedge records by country and jurisdiction. Each jurisdiction leads to its issuing authorities, instrument types, and canonical legal-instrument records.</p>
+        <p style="color:var(--text-secondary);">Browse PubLedge records by country and jurisdiction. Each jurisdiction leads to referenced authorities, instrument types, and records, including visibly labeled unissued proposals.</p>
         ${Object.entries(countries).map(([country, data]) => `
             <h3>${country.toUpperCase()}</h3>
             <table class="data-table">
@@ -2006,7 +2038,7 @@ function generateTypeIndex(config, data, jurId, authority, typeKey, configCSS) {
         depth: 4,
         content,
         canonicalPath: `${jur.country}/${jur.region}/${authority.url_segment}/${typeSeg}/`,
-        description: `All ${typeLabel}s issued by ${authority.name}.`,
+        description: `${typeLabel} records and proposals associated with ${authority.name}; a listing does not establish issuance.`,
         configCSS
     });
 }
@@ -2111,22 +2143,31 @@ function generateDefinitionsPage(config, data, configCSS) {
 }
 
 function generateUtahLandingNarrative(data) {
+    // Load only after source admission runs. Pin this dated comparison so a new
+    // review retains its own evidence rather than replacing a historical file.
+    const OAIP_COVERAGE = require('../ops/evidence/oaip-coverage-review-2026-10-14.json');
     return `
         <div class="about-content">
             <p><em>The Utah Office of Artificial Intelligence Policy (OAIP) is the first dedicated US state AI regulator. It operates the Utah Artificial Intelligence Learning Laboratory — a regulatory-mitigation sandbox where participating companies receive tailored relief from specific state laws in exchange for data-sharing, safeguards, and audits. Under HB 320 (2026), OAIP may also issue Joint Interpretation Agreements that clarify how existing Utah law applies to AI without waiving the underlying law.</em></p>
             <p>PubLedge treats Utah OAIP's <strong>Regulatory Mitigation Agreement (RMA)</strong> and <strong>Joint Interpretation Agreement (JIA)</strong> as the prototypical instruments for its broader registry. The two-instrument architecture — waiver + interpretation — maps cleanly to SEC no-action letters, CFPB advisory opinions, and IRS private letter rulings at the federal level, and to analogous instruments in other jurisdictions.</p>
             <h3>Why this page exists</h3>
-            <p>Utah's <a href="https://commerce.utah.gov/ai/regulatory-mitigation/roadmap-for-regulatory-relief/">Roadmap for Regulatory Relief</a> commits OAIP to publishing "a public-facing version of the proposal with the agreement" for each RMA, to promote transparency and accountability. PubLedge is a ready-made, versioned, tamper-evident implementation of that commitment — discoverable, linkable, and machine-readable, with no change to OAIP's confidentiality posture.</p>
-            <p>Separately, <a href="https://le.utah.gov/~2026/bills/static/HB0320.html">HB 320 (2026)</a> §13-72-201(3)(d) requires OAIP to report annually to the Business and Labor Interim Committee on every executed RMA and JIA. PubLedge is a standing public-facing companion to that statutory report — continuously current between November cycles.</p>
+            <p>OAIP publishes agreements and status information on its <a href="https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/">official pilot register</a>. PubLedge is an independent companion that connects selected records, source versions, and obligation mappings. It does not replace OAIP's publication or establish agency issuance, legal completeness, or current operational permission.</p>
+            ${renderCoverageNotice()}
+            <h3 id="coverage-review">Utah coverage review</h3>
+            <p>Coverage comparison date: <time datetime="${OAIP_COVERAGE.review_date}">${formatDate(OAIP_COVERAGE.review_date)}</time>. This compares the official public index with PubLedge's inventory; it is not a new legal verification of each agreement. Source-document review and clause-level mapping remain separate steps.</p>
+            <p>Known records not yet indexed in this reference instance:</p>
+            <ul>${OAIP_COVERAGE.not_yet_indexed.map(name => `<li>${escapeHTML(name)}</li>`).join('')}</ul>
+            <p>A master agreement alone does not authorize a pilot. Unindexed means missing from this instance, not unissued by OAIP.</p>
+            <p>SHA-256 checks compare canonical source bytes with the current unsigned manifest. They do not prove agency issuance, source authenticity, publication time, completeness, or legal accuracy. <a href="/reference/verify/">How to verify and what the check proves</a>.</p>
             <h3>Propose a correction</h3>
             <p>PubLedge's Utah reference instance is a third-party public mirror, not an OAIP product. If you are OAIP staff, a participant, or an outside reviewer who has spotted an inaccuracy, please <a href="https://github.com/snapsynapse/publedge/issues/new?title=Utah%20correction%3A%20&labels=correction,us-ut">open a correction issue on GitHub</a> or email <a href="mailto:hello@paice.work?subject=PubLedge%20Utah%20correction">hello@paice.work</a>. Every page's frontmatter is versioned in <a href="https://github.com/snapsynapse/publedge">the public repo</a>; corrections land as commits with a clear audit trail.</p>
             <h3>Related Utah AI statutes (not in this registry)</h3>
-            <p>Per PubLedge's scope, statutes appear here only when a PubLedge instrument cites or interprets them. The following 2025 Utah AI statutes are intentionally not in this registry because no OAIP instrument currently invokes them; their authoritative obligation maps live at EveryAILaw:</p>
+            <p>This reference instance indexes selected statutory references alongside its agreement records. The following statutes are not indexed here. This is not a complete inventory of OAIP's citations; see EveryAILaw for broader statutory coverage:</p>
             <ul>
                 <li><strong>SB 180 (2025)</strong> — law-enforcement AI policy + police-report disclosure. See <a href="https://everyailaw.com/regulation/utah-sb149/index.html">EveryAILaw Utah AI stack</a>.</li>
                 <li><strong>SB 271 (2025)</strong> — unauthorized AI impersonation / deepfake amendments. See <a href="https://everyailaw.com/regulation/utah-sb149/index.html">EveryAILaw Utah AI stack</a>.</li>
             </ul>
-            <p>If OAIP later issues an RMA or JIA that invokes either statute, a scaffolding stub will be added here per the standard.</p>
+            <p>Additional statutory references can be indexed after source review.</p>
         </div>
     `;
 }
@@ -2303,7 +2344,7 @@ function build() {
 
     // --- JSON API ---
     fs.writeFileSync(path.join(API_DIR, 'primaries.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: primaries.length }, items: primaries.map(p => ({ id: p.id, name: p.name || humanizeId(p.id), group: p.group || '', status: p.status || 'draft', lifecycle_status: p.lifecycle_status })) }, null, 2));
-    fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: containers.length }, items: containers.map(containerSummary) }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: containers.length }, items: containers.map(c => containerSummary(c, { siteUrl: (config.url || '').replace(/\/$/, ''), href: containerHref })) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'authorities.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: authorities.length }, items: authorities.map(a => ({ id: a.id, name: a.name || humanizeId(a.id), jurisdiction: a.jurisdiction || '' })) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'mappings.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: mappingIndex.length }, items: mappingIndex }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'matrix.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant }, matrix }, null, 2));
@@ -2709,7 +2750,7 @@ function build() {
         .filter(c => c.effective || c.last_verified)
         .sort((a, b) => (b.last_verified || b.effective || '').localeCompare(a.last_verified || a.effective || ''));
     const rssItems = sortedContainers.slice(0, 20).map(c => {
-        const desc = `${c.title || c.name || c.id}: ${c.status || 'unknown'}. ${c.provisions.length} provisions.`;
+        const desc = `${c.title || c.name || c.id}: ${c.status || 'unknown'}; source: ${c.source || 'unknown'}. ${c.provisions.length} clause-level provisions indexed; this is not a count of obligations.`;
         const pubDate = c.last_verified || c.effective;
         return [
             '    <item>',
@@ -2754,7 +2795,7 @@ function build() {
     function icsDate(d) { return String(d).replace(/-/g, ''); }
     function icsEscape(s) { return String(s).replace(/[\\,;]/g, m => '\\' + m).replace(/\r?\n/g, '\\n'); }
     function icsEvent(c, kind, date) {
-        if (!date) return;
+        if (!date || isOriginalDraft(c)) return;
         const dt = icsDate(date);
         const uid = `${c.id}-${kind}@publedge.org`;
         const url = siteUrl.replace(/\/$/, '') + containerHref(c);

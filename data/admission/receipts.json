@@ -1993,385 +1993,519 @@
       }
     },
     "data/examples/instruments/us-ut-oaip-jia-2026-001.md": {
-      "record_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
-      "baseline_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
+      "record_sha256": "cce15cddae55f4f4e2cefd07e6592f58ebead674765a7fe265f80cf795ceca6c",
+      "baseline_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
       "whole_record": {
-        "before_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
-        "after_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6"
+        "before_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
+        "after_sha256": "cce15cddae55f4f4e2cefd07e6592f58ebead674765a7fe265f80cf795ceca6c"
+      },
+      "supersedes": {
+        "packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
+        "reason": "Correct author versus intended authority attribution on an unissued PubLedge proposal; preserve prior human review verbatim.",
+        "receipt": {
+          "record_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
+          "baseline_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
+          "whole_record": {
+            "before_sha256": "c2190dfc51ff2893e9e1a4d49c9457f0fca3791cd8cca5878fe55c1a7b014c19",
+            "after_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6"
+          },
+          "review": {
+            "actor_type": "human",
+            "actor": "Sam Rogers",
+            "reviewed_at": "2026-09-24T02:36:37Z",
+            "decision": "source-consistency-reviewed",
+            "human_approved": true,
+            "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Corrects the JIA draft's enacting-bill citation, dead authority URL, statutory versus proposed disclosure triggers, provision date label and publication-state timeline against the retained HB 452 enrolled copy and the retained OAIP home page. Does not renew last_verified, promote the draft or assert issuance.",
+            "packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329"
+          },
+          "unresolved": [
+            "Lawyer review and authority sign-off remain pending; the draft is not issued.",
+            "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
+          ],
+          "evidence": {
+            "hb452-section": {
+              "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+              "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+              "original": {
+                "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+                "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+              "document_id": "Utah HB 452 (2025)",
+              "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "Section 5 enacting 13-72a-203, line 175",
+              "excerpt": "13-72a-203 . Disclosure requirements.",
+              "identity_excerpts": [
+                "Artificial Intelligence Amendments",
+                "13-72a-203 . Disclosure requirements."
+              ]
+            },
+            "hb452-before-access": {
+              "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+              "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+              "original": {
+                "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+                "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+              "document_id": "Utah HB 452 (2025)",
+              "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "13-72a-203(1)-(2)(a), lines 176-180",
+              "excerpt": "before the Utah user may access the features of the mental health chatbot",
+              "identity_excerpts": [
+                "Artificial Intelligence Amendments",
+                "13-72a-203 . Disclosure requirements."
+              ]
+            },
+            "hb452-seven-days": {
+              "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+              "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+              "original": {
+                "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+                "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+              "document_id": "Utah HB 452 (2025)",
+              "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "13-72a-203(2)(b), lines 181-182",
+              "excerpt": "accessed the mental health chatbot within the previous seven days",
+              "identity_excerpts": [
+                "Artificial Intelligence Amendments",
+                "13-72a-203 . Disclosure requirements."
+              ]
+            },
+            "hb452-on-request": {
+              "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+              "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+              "original": {
+                "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+                "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+              "document_id": "Utah HB 452 (2025)",
+              "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "13-72a-203(2)(c), lines 183-184",
+              "excerpt": "whether artificial intelligence is being used",
+              "identity_excerpts": [
+                "Artificial Intelligence Amendments",
+                "13-72a-203 . Disclosure requirements."
+              ]
+            },
+            "hb452-not-human": {
+              "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+              "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+              "original": {
+                "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+                "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+              "document_id": "Utah HB 452 (2025)",
+              "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "13-72a-203(1), lines 176-178",
+              "excerpt": "intelligence technology and not a human",
+              "identity_excerpts": [
+                "Artificial Intelligence Amendments",
+                "13-72a-203 . Disclosure requirements."
+              ]
+            },
+            "hb452-effective": {
+              "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
+              "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+              "original": {
+                "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
+                "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
+              "document_id": "Utah HB 452 (2025)",
+              "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
+              "issuing_body": "Utah State Legislature",
+              "document_type": "enacted legislation",
+              "version": "2025 General Session enrolled copy",
+              "locator": "Section 8 effective date, line 303",
+              "excerpt": "This bill takes effect on May 7, 2025.",
+              "identity_excerpts": [
+                "Artificial Intelligence Amendments",
+                "13-72a-203 . Disclosure requirements."
+              ]
+            },
+            "oaip-home": {
+              "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-AI-Home-2026-09-24.txt",
+              "snapshot_sha256": "8a86df5aec4d2c3cd1d7e1aec45577c61f12e04e0df11fec1cb6d1ef05e61062",
+              "original": {
+                "path": "data/admission/sources/oaip-pilots/OAIP-AI-Home-2026-09-24.html",
+                "sha256": "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
+              },
+              "acquisition": "primary_retrieval",
+              "retrieval": {
+                "http_status": 200,
+                "retrieved_at": "2026-09-24T02:10:40Z",
+                "final_url": "https://commerce.utah.gov/ai/",
+                "content_type": "text/html; charset=UTF-8"
+              },
+              "official_url": "https://commerce.utah.gov/ai/",
+              "document_id": "Utah OAIP home page",
+              "document_title": "AI Home - commerce.utah.gov",
+              "issuing_body": "Utah Department of Commerce, Office of Artificial Intelligence Policy",
+              "document_type": "official agency web page",
+              "version": "retrieved 2026-09-24T02:10:40Z; text snapshot of retained HTML",
+              "locator": "page body, final paragraph",
+              "excerpt": "The Office of Artificial Intelligence Policy (OAIP) partners with companies building responsible AI.",
+              "identity_excerpts": [
+                "AI Home - commerce.utah.gov"
+              ]
+            }
+          },
+          "units": {
+            "metadata:issued_by": {
+              "before_sha256": "f589813d6705665132182b4c08e90f9dea0e85c4673afb508c63b60b119d3989",
+              "after_sha256": "e2623753f76da570a3196ac804ea809c75fe2b5d151deafae8be9365fd8c20f6",
+              "candidate_content": {
+                "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+                "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
+                "ref": "https://commerce.utah.gov/ai/"
+              },
+              "reason": "The Learning Lab URL returns 404 (2026-09-24). Point the interpreting authority reference at the current OAIP home page.",
+              "qualifications": {
+                "scope": "Authority reference URL only; the named interpreting authority is unchanged.",
+                "exceptions": "Does not assert that OAIP issued or endorsed this draft.",
+                "time": "Page state as retrieved 2026-09-24."
+              },
+              "evidence": [
+                "oaip-home"
+              ]
+            },
+            "metadata:last_verified": {
+              "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+              "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+              "candidate_content": "2026-09-23",
+              "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+              "qualifications": {
+                "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+                "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+                "time": "Reviewed 2026-09-23."
+              },
+              "evidence": [
+                "oaip-home"
+              ]
+            },
+            "metadata:modified": {
+              "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+              "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+              "candidate_content": "2026-09-23",
+              "reason": "Record modified for the source-consistency corrections in this receipt.",
+              "qualifications": {
+                "scope": "Editorial modification date only.",
+                "exceptions": "Does not renew last_verified or verify legal currentness.",
+                "time": "2026-09-23."
+              },
+              "evidence": [
+                "hb452-section"
+              ]
+            },
+            "metadata:official_url": {
+              "before_sha256": "23f550f8125157f63e898da96e98268bfc4b3353b4d6844676b574b64789d9de",
+              "after_sha256": "e18b02b5cf7676c96de58b9c1ba7b3c59ac21a922e9fb79398ff97f1adc991e2",
+              "candidate_content": "https://commerce.utah.gov/ai/",
+              "reason": "Replace the dead Learning Lab URL with the current OAIP home page.",
+              "qualifications": {
+                "scope": "Official web location of the interpreting authority.",
+                "exceptions": "The OAIP page does not mention this draft JIA.",
+                "time": "Page state as retrieved 2026-09-24."
+              },
+              "evidence": [
+                "oaip-home"
+              ]
+            },
+            "metadata:statute_anchors": {
+              "before_sha256": "3d75f9999e27bf056fa3d915f46c57269ccd18c9493d7168b786ad3c91761add",
+              "after_sha256": "829449d6dde85a03d98fa546e13ee4704bb20c8b5ade9accba61b2cc95dd264e",
+              "candidate_content": [
+                {
+                  "cite": "Utah Code §13-72a-203",
+                  "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure"
+                },
+                {
+                  "cite": "Utah HB0452 (2025)",
+                  "url": "https://le.utah.gov/~2025/bills/static/HB0452.html"
+                }
+              ],
+              "reason": "Section 13-72a-203 was enacted by HB 452 (2025), not SB 149 (2024), whose enrolled text contains no 13-72a section.",
+              "qualifications": {
+                "scope": "Enacting-bill citation for the anchored section.",
+                "exceptions": "The EveryAILaw anchor models the amended stack under its SB 149 page; unchanged.",
+                "time": "Enrolled 2025 General Session text; later amendments not reviewed."
+              },
+              "evidence": [
+                "hb452-section",
+                "hb452-effective"
+              ]
+            },
+            "metadata:terms": {
+              "before_sha256": "e61175be3994b458006989cfbaba7af59941190e844350948235d4ffe4e6a9c3",
+              "after_sha256": "78e21f32d72de343fbe839426fa97c14f2ba4f19c7a7624c92ef6e4fddc6782c",
+              "candidate_content": [
+                {
+                  "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm",
+                  "text": "Proposed interpretation: provider displays the standardized GenAI disclosure before first access and again on session resumption after 30 minutes of inactivity. The 30-minute re-display is a proposed term stricter than the statute's seven-day trigger, not a statutory requirement."
+                }
+              ],
+              "reason": "Separate the proposed 30-minute re-display term from the statutory triggers and align first display with the statute's before-access trigger.",
+              "qualifications": {
+                "scope": "Proposed term text of an unissued draft.",
+                "exceptions": "This record is a PubLedge original draft (source publedge-original-draft, status proposed). No official document records issuance of this JIA; the cited statute establishes only what the draft interprets.",
+                "time": "Statute effective May 7, 2025."
+              },
+              "evidence": [
+                "hb452-before-access",
+                "hb452-seven-days"
+              ]
+            },
+            "section:Timeline/text": {
+              "before_sha256": "c5f3029a61ca394e6a523a40e69a11303cc9a116a9f346b26c809868caf19c49",
+              "after_sha256": "b3abbea694ba7903d83d20ec1c72735b8f64fb021ddc99d841cccc22da96a17f",
+              "candidate_content": "| Milestone | Date | Notes |\n|-----------|------|-------|\n| Drafted | 2026-04-15 | Initial PubLedge draft, suggested prior art |\n| Reviewed | TBD | Lawyer review pending |\n| Published | TBD | Not issued; remains a PubLedge draft pending lawyer review and authority sign-off |\n\n---",
+              "reason": "'Awaiting v0.1 release' was stale. State the draft's actual publication state.",
+              "qualifications": {
+                "scope": "Publication state of this PubLedge draft.",
+                "exceptions": "This record is a PubLedge original draft (source publedge-original-draft, status proposed). No official document records issuance of this JIA; the cited statute establishes only what the draft interprets.",
+                "time": "As of 2026-09-23."
+              },
+              "evidence": [
+                "hb452-section"
+              ]
+            },
+            "section:First-Session Disclosure (§13-72a-203)/property:Effective": {
+              "before_sha256": "0ac613da8ca0604c124fc03dce4c022b0cf3e9f64d13299b7935387e23712e24",
+              "after_sha256": null,
+              "candidate_content": null,
+              "reason": "A draft has no effective date; 2026-04-15 was the drafting date. Removed in favor of a Drafted property.",
+              "qualifications": {
+                "scope": "Provision date label.",
+                "exceptions": "This record is a PubLedge original draft (source publedge-original-draft, status proposed). No official document records issuance of this JIA; the cited statute establishes only what the draft interprets.",
+                "time": "Statute itself effective May 7, 2025."
+              },
+              "evidence": [
+                "hb452-effective"
+              ]
+            },
+            "section:First-Session Disclosure (§13-72a-203)/property:Verified": {
+              "before_sha256": "6f237c58c76c7629ba051c47a5a59579fcbb7ccea17e8abccdde6d130ef37c34",
+              "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+              "candidate_content": "2026-09-23",
+              "reason": "Human reviewer renews the provision's verification against the retained HB 452 enrolled text.",
+              "qualifications": {
+                "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+                "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+                "time": "Reviewed 2026-09-23."
+              },
+              "evidence": [
+                "hb452-section"
+              ]
+            },
+            "section:First-Session Disclosure (§13-72a-203)/subsection:Requirements/text": {
+              "before_sha256": "12af40ab28f6fe0a488c1d5225687b0456fb0c8a83207f6b94d64d51ff83a918",
+              "after_sha256": "5910594437739540af01dda2ede59b90d7bd00e43a2b4136a272efe1e00b2553",
+              "candidate_content": "| Requirement | Details |\n|-------------|---------|\n| Display disclosure (statute) | Clearly and conspicuously disclose that the chatbot is AI and not a human, before the user may access its features |\n| Re-display after absence (statute) | Disclose again at the start of an interaction if the user hasn't accessed the chatbot within the previous seven days |\n| Disclose on request (statute) | Disclose whenever the user asks or prompts the chatbot about whether AI is being used |\n| Re-display on resumption (proposed JIA term) | After 30 minutes of inactivity, re-display the disclosure. Stricter than the statute; not a statutory requirement |",
+              "reason": "List the three statutory triggers (before access, seven-day absence, on request) and mark the 30-minute re-display as a proposed JIA term, not a statutory requirement.",
+              "qualifications": {
+                "scope": "Statutory disclosure triggers and one proposed term.",
+                "exceptions": "The proposed 30-minute term is not interchangeable with the statutory seven-day trigger.",
+                "time": "Statute effective May 7, 2025."
+              },
+              "evidence": [
+                "hb452-not-human",
+                "hb452-before-access",
+                "hb452-seven-days",
+                "hb452-on-request"
+              ]
+            },
+            "section:First-Session Disclosure (§13-72a-203)/subsection:Talking Point/text": {
+              "before_sha256": "8c683e552fecbb35e872e8b784df29a5a32084ff72198b1b1d6d84f2b5cfd0d0",
+              "after_sha256": "75531cbbb89e2b5fe9677694f2cd66ddb61ec9b69a6d37482a800a356b1729a4",
+              "candidate_content": "> \"A mental-health chatbot must tell the user it is an AI before first access, again after seven days away, and whenever asked. This draft proposes re-displaying it after 30 minutes of inactivity.\"",
+              "reason": "Talking point presented the proposed inactivity trigger as statutory. Restate the statutory triggers and label the proposal.",
+              "qualifications": {
+                "scope": "Plain-language summary.",
+                "exceptions": "Summary, not statutory text.",
+                "time": "Statute effective May 7, 2025."
+              },
+              "evidence": [
+                "hb452-before-access",
+                "hb452-seven-days",
+                "hb452-on-request"
+              ]
+            },
+            "section:First-Session Disclosure (§13-72a-203)/subsection:Sources/text": {
+              "before_sha256": "29efed8a53b184aa9cfead8be2eae47519b76b6a0b3a848c3e53f3650572d968",
+              "after_sha256": "aeba3b74f48167ef6e42966bd627bdfe094ded1312002bcc87d102e1d89df9e6",
+              "candidate_content": "- [EveryAILaw — Mental Health Chatbot Disclosure](https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure)\n- [Utah Code §13-72a-203](https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html), enacted by [Utah HB 452 (2025)](https://le.utah.gov/~2025/bills/static/HB0452.html)",
+              "reason": "The §13-72a-203 link pointed at the SB 149 bill page. Link the codified section and the enacting HB 452 page.",
+              "qualifications": {
+                "scope": "Source links.",
+                "exceptions": "Codified-section URL checked HTTP 200 on 2026-09-24; not retained as evidence.",
+                "time": "Enrolled 2025 text."
+              },
+              "evidence": [
+                "hb452-section"
+              ]
+            },
+            "section:First-Session Disclosure (§13-72a-203)/property:Drafted": {
+              "before_sha256": null,
+              "after_sha256": "0ac613da8ca0604c124fc03dce4c022b0cf3e9f64d13299b7935387e23712e24",
+              "candidate_content": "2026-04-15",
+              "reason": "Relabels the 2026-04-15 date as the drafting date.",
+              "qualifications": {
+                "scope": "Provision date label.",
+                "exceptions": "This record is a PubLedge original draft (source publedge-original-draft, status proposed). No official document records issuance of this JIA; the cited statute establishes only what the draft interprets.",
+                "time": "Drafted 2026-04-15 per the record timeline."
+              },
+              "evidence": [
+                "hb452-effective"
+              ]
+            }
+          }
+        }
       },
       "review": {
-        "actor_type": "human",
-        "actor": "Sam Rogers",
-        "reviewed_at": "2026-09-24T02:36:37Z",
+        "actor_type": "agent",
+        "actor": "Codex",
+        "reviewed_at": "2026-10-15T00:57:54.688Z",
         "decision": "source-consistency-reviewed",
-        "human_approved": true,
-        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Corrects the JIA draft's enacting-bill citation, dead authority URL, statutory versus proposed disclosure triggers, provision date label and publication-state timeline against the retained HB 452 enrolled copy and the retained OAIP home page. Does not renew last_verified, promote the draft or assert issuance.",
-        "packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329"
+        "scope": "Proposal provenance and display title only. No term, statutory mapping, status, ID, or verification-date renewal.",
+        "packet_sha256": "153fba5daa0d880121f34002d688b48b39d9c987f1a5d1f25e4bfbfa4ff6bca0"
       },
       "unresolved": [
         "Lawyer review and authority sign-off remain pending; the draft is not issued.",
         "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
       ],
       "evidence": {
-        "hb452-section": {
-          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
-          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
+        "draft": {
+          "snapshot_path": "data/admission/sources/publedge-jia-draft-2026-10-14.md",
+          "snapshot_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
           "original": {
-            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
-            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
+            "path": "data/admission/sources/publedge-jia-draft-2026-10-14.md",
+            "sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad"
           },
           "acquisition": "retained_snapshot",
-          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
-          "document_id": "Utah HB 452 (2025)",
-          "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
-          "issuing_body": "Utah State Legislature",
-          "document_type": "enacted legislation",
-          "version": "2025 General Session enrolled copy",
-          "locator": "Section 5 enacting 13-72a-203, line 175",
-          "excerpt": "13-72a-203 . Disclosure requirements.",
+          "official_url": "https://github.com/snapsynapse/publedge/blob/d0100ab70cdcfbe12cf2b1a58954cfb70be66a59/data/examples/instruments/us-ut-oaip-jia-2026-001.md",
+          "document_id": "us-ut-oaip-jia-2026-001",
+          "document_title": "PubLedge original draft: Utah Mental Health Chatbot Disclosure",
+          "issuing_body": "PubLedge (draft author; no agency issuance)",
+          "document_type": "PubLedge original draft",
+          "version": "Exact native source at d0100ab70cdcfbe12cf2b1a58954cfb70be66a59",
+          "locator": "Frontmatter source/status and Timeline",
+          "excerpt": "Not issued; remains a PubLedge draft pending lawyer review and authority sign-off",
           "identity_excerpts": [
-            "Artificial Intelligence Amendments",
-            "13-72a-203 . Disclosure requirements."
-          ]
-        },
-        "hb452-before-access": {
-          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
-          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
-          "original": {
-            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
-            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
-          "document_id": "Utah HB 452 (2025)",
-          "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
-          "issuing_body": "Utah State Legislature",
-          "document_type": "enacted legislation",
-          "version": "2025 General Session enrolled copy",
-          "locator": "13-72a-203(1)-(2)(a), lines 176-180",
-          "excerpt": "before the Utah user may access the features of the mental health chatbot",
-          "identity_excerpts": [
-            "Artificial Intelligence Amendments",
-            "13-72a-203 . Disclosure requirements."
-          ]
-        },
-        "hb452-seven-days": {
-          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
-          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
-          "original": {
-            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
-            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
-          "document_id": "Utah HB 452 (2025)",
-          "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
-          "issuing_body": "Utah State Legislature",
-          "document_type": "enacted legislation",
-          "version": "2025 General Session enrolled copy",
-          "locator": "13-72a-203(2)(b), lines 181-182",
-          "excerpt": "accessed the mental health chatbot within the previous seven days",
-          "identity_excerpts": [
-            "Artificial Intelligence Amendments",
-            "13-72a-203 . Disclosure requirements."
-          ]
-        },
-        "hb452-on-request": {
-          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
-          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
-          "original": {
-            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
-            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
-          "document_id": "Utah HB 452 (2025)",
-          "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
-          "issuing_body": "Utah State Legislature",
-          "document_type": "enacted legislation",
-          "version": "2025 General Session enrolled copy",
-          "locator": "13-72a-203(2)(c), lines 183-184",
-          "excerpt": "whether artificial intelligence is being used",
-          "identity_excerpts": [
-            "Artificial Intelligence Amendments",
-            "13-72a-203 . Disclosure requirements."
-          ]
-        },
-        "hb452-not-human": {
-          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
-          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
-          "original": {
-            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
-            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
-          "document_id": "Utah HB 452 (2025)",
-          "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
-          "issuing_body": "Utah State Legislature",
-          "document_type": "enacted legislation",
-          "version": "2025 General Session enrolled copy",
-          "locator": "13-72a-203(1), lines 176-178",
-          "excerpt": "intelligence technology and not a human",
-          "identity_excerpts": [
-            "Artificial Intelligence Amendments",
-            "13-72a-203 . Disclosure requirements."
-          ]
-        },
-        "hb452-effective": {
-          "snapshot_path": "data/admission/sources/utah-hb452/HB0452-enrolled.txt",
-          "snapshot_sha256": "1223a7bd0156baa3d35ce2f93e71df811de442c5e12e4535caceb332595db481",
-          "original": {
-            "path": "data/admission/sources/utah-hb452/HB0452-enrolled.pdf",
-            "sha256": "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0452.pdf",
-          "document_id": "Utah HB 452 (2025)",
-          "document_title": "Enrolled Copy H.B. 452 Artificial Intelligence Amendments",
-          "issuing_body": "Utah State Legislature",
-          "document_type": "enacted legislation",
-          "version": "2025 General Session enrolled copy",
-          "locator": "Section 8 effective date, line 303",
-          "excerpt": "This bill takes effect on May 7, 2025.",
-          "identity_excerpts": [
-            "Artificial Intelligence Amendments",
-            "13-72a-203 . Disclosure requirements."
-          ]
-        },
-        "oaip-home": {
-          "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-AI-Home-2026-09-24.txt",
-          "snapshot_sha256": "8a86df5aec4d2c3cd1d7e1aec45577c61f12e04e0df11fec1cb6d1ef05e61062",
-          "original": {
-            "path": "data/admission/sources/oaip-pilots/OAIP-AI-Home-2026-09-24.html",
-            "sha256": "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
-          },
-          "acquisition": "primary_retrieval",
-          "retrieval": {
-            "http_status": 200,
-            "retrieved_at": "2026-09-24T02:10:40Z",
-            "final_url": "https://commerce.utah.gov/ai/",
-            "content_type": "text/html; charset=UTF-8"
-          },
-          "official_url": "https://commerce.utah.gov/ai/",
-          "document_id": "Utah OAIP home page",
-          "document_title": "AI Home - commerce.utah.gov",
-          "issuing_body": "Utah Department of Commerce, Office of Artificial Intelligence Policy",
-          "document_type": "official agency web page",
-          "version": "retrieved 2026-09-24T02:10:40Z; text snapshot of retained HTML",
-          "locator": "page body, final paragraph",
-          "excerpt": "The Office of Artificial Intelligence Policy (OAIP) partners with companies building responsible AI.",
-          "identity_excerpts": [
-            "AI Home - commerce.utah.gov"
+            "id: us-ut-oaip-jia-2026-001",
+            "source: publedge-original-draft",
+            "Initial PubLedge draft, suggested prior art"
           ]
         }
       },
       "units": {
         "metadata:issued_by": {
-          "before_sha256": "f589813d6705665132182b4c08e90f9dea0e85c4673afb508c63b60b119d3989",
-          "after_sha256": "e2623753f76da570a3196ac804ea809c75fe2b5d151deafae8be9365fd8c20f6",
-          "candidate_content": {
-            "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
-            "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-            "ref": "https://commerce.utah.gov/ai/"
-          },
-          "reason": "The Learning Lab URL returns 404 (2026-09-24). Point the interpreting authority reference at the current OAIP home page.",
+          "before_sha256": "e2623753f76da570a3196ac804ea809c75fe2b5d151deafae8be9365fd8c20f6",
+          "after_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_content": null,
+          "reason": "Distinguish PubLedge authorship and intended OAIP authority from agency issuance on an unissued proposal.",
           "qualifications": {
-            "scope": "Authority reference URL only; the named interpreting authority is unchanged.",
-            "exceptions": "Does not assert that OAIP issued or endorsed this draft.",
-            "time": "Page state as retrieved 2026-09-24."
+            "scope": "This proposed PubLedge template only",
+            "exceptions": "No authority issuance, endorsement or legal effect is asserted; proposal terms and prior human review remain unchanged",
+            "time": "Editorial provenance correction on 2026-10-14; last_verified remains 2026-09-23"
           },
           "evidence": [
-            "oaip-home"
-          ]
-        },
-        "metadata:last_verified": {
-          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
-          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
-          "candidate_content": "2026-09-23",
-          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
-          "qualifications": {
-            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
-            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
-            "time": "Reviewed 2026-09-23."
-          },
-          "evidence": [
-            "oaip-home"
-          ]
-        },
-        "metadata:modified": {
-          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
-          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
-          "candidate_content": "2026-09-23",
-          "reason": "Record modified for the source-consistency corrections in this receipt.",
-          "qualifications": {
-            "scope": "Editorial modification date only.",
-            "exceptions": "Does not renew last_verified or verify legal currentness.",
-            "time": "2026-09-23."
-          },
-          "evidence": [
-            "hb452-section"
+            "draft"
           ]
         },
         "metadata:official_url": {
-          "before_sha256": "23f550f8125157f63e898da96e98268bfc4b3353b4d6844676b574b64789d9de",
+          "before_sha256": "e18b02b5cf7676c96de58b9c1ba7b3c59ac21a922e9fb79398ff97f1adc991e2",
+          "after_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "candidate_content": null,
+          "reason": "Distinguish PubLedge authorship and intended OAIP authority from agency issuance on an unissued proposal.",
+          "qualifications": {
+            "scope": "This proposed PubLedge template only",
+            "exceptions": "No authority issuance, endorsement or legal effect is asserted; proposal terms and prior human review remain unchanged",
+            "time": "Editorial provenance correction on 2026-10-14; last_verified remains 2026-09-23"
+          },
+          "evidence": [
+            "draft"
+          ]
+        },
+        "metadata:title": {
+          "before_sha256": "ca80e6b6633a3f3783b600ef13d075a34db779796819af6f6c8c7bb3b5e640b6",
+          "after_sha256": "ebe8438f1ec8594ac2b734f02291eaf0fd8936120ff92b272509205279750d5a",
+          "candidate_content": "PubLedge proposed template (unissued): Utah Mental Health Chatbot Disclosure",
+          "reason": "Distinguish PubLedge authorship and intended OAIP authority from agency issuance on an unissued proposal.",
+          "qualifications": {
+            "scope": "This proposed PubLedge template only",
+            "exceptions": "No authority issuance, endorsement or legal effect is asserted; proposal terms and prior human review remain unchanged",
+            "time": "Editorial provenance correction on 2026-10-14; last_verified remains 2026-09-23"
+          },
+          "evidence": [
+            "draft"
+          ]
+        },
+        "metadata:author_or_proponent": {
+          "before_sha256": null,
+          "after_sha256": "ca7ea76c07071114ccede4d0b789ac4ebca65f51bb9db0d0b5adb641acd29368",
+          "candidate_content": "PubLedge",
+          "reason": "Distinguish PubLedge authorship and intended OAIP authority from agency issuance on an unissued proposal.",
+          "qualifications": {
+            "scope": "This proposed PubLedge template only",
+            "exceptions": "No authority issuance, endorsement or legal effect is asserted; proposal terms and prior human review remain unchanged",
+            "time": "Editorial provenance correction on 2026-10-14; last_verified remains 2026-09-23"
+          },
+          "evidence": [
+            "draft"
+          ]
+        },
+        "metadata:intended_authority": {
+          "before_sha256": null,
+          "after_sha256": "7894597b9140f131c9865b644d46a69850100a70074d7594fa015b15645ebbe6",
+          "candidate_content": "Utah Office of Artificial Intelligence Policy (OAIP)",
+          "reason": "Distinguish PubLedge authorship and intended OAIP authority from agency issuance on an unissued proposal.",
+          "qualifications": {
+            "scope": "This proposed PubLedge template only",
+            "exceptions": "No authority issuance, endorsement or legal effect is asserted; proposal terms and prior human review remain unchanged",
+            "time": "Editorial provenance correction on 2026-10-14; last_verified remains 2026-09-23"
+          },
+          "evidence": [
+            "draft"
+          ]
+        },
+        "metadata:intended_authority_url": {
+          "before_sha256": null,
           "after_sha256": "e18b02b5cf7676c96de58b9c1ba7b3c59ac21a922e9fb79398ff97f1adc991e2",
           "candidate_content": "https://commerce.utah.gov/ai/",
-          "reason": "Replace the dead Learning Lab URL with the current OAIP home page.",
+          "reason": "Distinguish PubLedge authorship and intended OAIP authority from agency issuance on an unissued proposal.",
           "qualifications": {
-            "scope": "Official web location of the interpreting authority.",
-            "exceptions": "The OAIP page does not mention this draft JIA.",
-            "time": "Page state as retrieved 2026-09-24."
+            "scope": "This proposed PubLedge template only",
+            "exceptions": "No authority issuance, endorsement or legal effect is asserted; proposal terms and prior human review remain unchanged",
+            "time": "Editorial provenance correction on 2026-10-14; last_verified remains 2026-09-23"
           },
           "evidence": [
-            "oaip-home"
-          ]
-        },
-        "metadata:statute_anchors": {
-          "before_sha256": "3d75f9999e27bf056fa3d915f46c57269ccd18c9493d7168b786ad3c91761add",
-          "after_sha256": "829449d6dde85a03d98fa546e13ee4704bb20c8b5ade9accba61b2cc95dd264e",
-          "candidate_content": [
-            {
-              "cite": "Utah Code §13-72a-203",
-              "url": "https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure"
-            },
-            {
-              "cite": "Utah HB0452 (2025)",
-              "url": "https://le.utah.gov/~2025/bills/static/HB0452.html"
-            }
-          ],
-          "reason": "Section 13-72a-203 was enacted by HB 452 (2025), not SB 149 (2024), whose enrolled text contains no 13-72a section.",
-          "qualifications": {
-            "scope": "Enacting-bill citation for the anchored section.",
-            "exceptions": "The EveryAILaw anchor models the amended stack under its SB 149 page; unchanged.",
-            "time": "Enrolled 2025 General Session text; later amendments not reviewed."
-          },
-          "evidence": [
-            "hb452-section",
-            "hb452-effective"
-          ]
-        },
-        "metadata:terms": {
-          "before_sha256": "e61175be3994b458006989cfbaba7af59941190e844350948235d4ffe4e6a9c3",
-          "after_sha256": "78e21f32d72de343fbe839426fa97c14f2ba4f19c7a7624c92ef6e4fddc6782c",
-          "candidate_content": [
-            {
-              "@type": "https://w3id.org/semanticarts/ns/ontology/gist/ContractTerm",
-              "text": "Proposed interpretation: provider displays the standardized GenAI disclosure before first access and again on session resumption after 30 minutes of inactivity. The 30-minute re-display is a proposed term stricter than the statute's seven-day trigger, not a statutory requirement."
-            }
-          ],
-          "reason": "Separate the proposed 30-minute re-display term from the statutory triggers and align first display with the statute's before-access trigger.",
-          "qualifications": {
-            "scope": "Proposed term text of an unissued draft.",
-            "exceptions": "This record is a PubLedge original draft (source publedge-original-draft, status proposed). No official document records issuance of this JIA; the cited statute establishes only what the draft interprets.",
-            "time": "Statute effective May 7, 2025."
-          },
-          "evidence": [
-            "hb452-before-access",
-            "hb452-seven-days"
-          ]
-        },
-        "section:Timeline/text": {
-          "before_sha256": "c5f3029a61ca394e6a523a40e69a11303cc9a116a9f346b26c809868caf19c49",
-          "after_sha256": "b3abbea694ba7903d83d20ec1c72735b8f64fb021ddc99d841cccc22da96a17f",
-          "candidate_content": "| Milestone | Date | Notes |\n|-----------|------|-------|\n| Drafted | 2026-04-15 | Initial PubLedge draft, suggested prior art |\n| Reviewed | TBD | Lawyer review pending |\n| Published | TBD | Not issued; remains a PubLedge draft pending lawyer review and authority sign-off |\n\n---",
-          "reason": "'Awaiting v0.1 release' was stale. State the draft's actual publication state.",
-          "qualifications": {
-            "scope": "Publication state of this PubLedge draft.",
-            "exceptions": "This record is a PubLedge original draft (source publedge-original-draft, status proposed). No official document records issuance of this JIA; the cited statute establishes only what the draft interprets.",
-            "time": "As of 2026-09-23."
-          },
-          "evidence": [
-            "hb452-section"
-          ]
-        },
-        "section:First-Session Disclosure (§13-72a-203)/property:Effective": {
-          "before_sha256": "0ac613da8ca0604c124fc03dce4c022b0cf3e9f64d13299b7935387e23712e24",
-          "after_sha256": null,
-          "candidate_content": null,
-          "reason": "A draft has no effective date; 2026-04-15 was the drafting date. Removed in favor of a Drafted property.",
-          "qualifications": {
-            "scope": "Provision date label.",
-            "exceptions": "This record is a PubLedge original draft (source publedge-original-draft, status proposed). No official document records issuance of this JIA; the cited statute establishes only what the draft interprets.",
-            "time": "Statute itself effective May 7, 2025."
-          },
-          "evidence": [
-            "hb452-effective"
-          ]
-        },
-        "section:First-Session Disclosure (§13-72a-203)/property:Verified": {
-          "before_sha256": "6f237c58c76c7629ba051c47a5a59579fcbb7ccea17e8abccdde6d130ef37c34",
-          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
-          "candidate_content": "2026-09-23",
-          "reason": "Human reviewer renews the provision's verification against the retained HB 452 enrolled text.",
-          "qualifications": {
-            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
-            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
-            "time": "Reviewed 2026-09-23."
-          },
-          "evidence": [
-            "hb452-section"
-          ]
-        },
-        "section:First-Session Disclosure (§13-72a-203)/subsection:Requirements/text": {
-          "before_sha256": "12af40ab28f6fe0a488c1d5225687b0456fb0c8a83207f6b94d64d51ff83a918",
-          "after_sha256": "5910594437739540af01dda2ede59b90d7bd00e43a2b4136a272efe1e00b2553",
-          "candidate_content": "| Requirement | Details |\n|-------------|---------|\n| Display disclosure (statute) | Clearly and conspicuously disclose that the chatbot is AI and not a human, before the user may access its features |\n| Re-display after absence (statute) | Disclose again at the start of an interaction if the user hasn't accessed the chatbot within the previous seven days |\n| Disclose on request (statute) | Disclose whenever the user asks or prompts the chatbot about whether AI is being used |\n| Re-display on resumption (proposed JIA term) | After 30 minutes of inactivity, re-display the disclosure. Stricter than the statute; not a statutory requirement |",
-          "reason": "List the three statutory triggers (before access, seven-day absence, on request) and mark the 30-minute re-display as a proposed JIA term, not a statutory requirement.",
-          "qualifications": {
-            "scope": "Statutory disclosure triggers and one proposed term.",
-            "exceptions": "The proposed 30-minute term is not interchangeable with the statutory seven-day trigger.",
-            "time": "Statute effective May 7, 2025."
-          },
-          "evidence": [
-            "hb452-not-human",
-            "hb452-before-access",
-            "hb452-seven-days",
-            "hb452-on-request"
-          ]
-        },
-        "section:First-Session Disclosure (§13-72a-203)/subsection:Talking Point/text": {
-          "before_sha256": "8c683e552fecbb35e872e8b784df29a5a32084ff72198b1b1d6d84f2b5cfd0d0",
-          "after_sha256": "75531cbbb89e2b5fe9677694f2cd66ddb61ec9b69a6d37482a800a356b1729a4",
-          "candidate_content": "> \"A mental-health chatbot must tell the user it is an AI before first access, again after seven days away, and whenever asked. This draft proposes re-displaying it after 30 minutes of inactivity.\"",
-          "reason": "Talking point presented the proposed inactivity trigger as statutory. Restate the statutory triggers and label the proposal.",
-          "qualifications": {
-            "scope": "Plain-language summary.",
-            "exceptions": "Summary, not statutory text.",
-            "time": "Statute effective May 7, 2025."
-          },
-          "evidence": [
-            "hb452-before-access",
-            "hb452-seven-days",
-            "hb452-on-request"
-          ]
-        },
-        "section:First-Session Disclosure (§13-72a-203)/subsection:Sources/text": {
-          "before_sha256": "29efed8a53b184aa9cfead8be2eae47519b76b6a0b3a848c3e53f3650572d968",
-          "after_sha256": "aeba3b74f48167ef6e42966bd627bdfe094ded1312002bcc87d102e1d89df9e6",
-          "candidate_content": "- [EveryAILaw — Mental Health Chatbot Disclosure](https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure)\n- [Utah Code §13-72a-203](https://le.utah.gov/xcode/Title13/Chapter72A/13-72a-S203.html), enacted by [Utah HB 452 (2025)](https://le.utah.gov/~2025/bills/static/HB0452.html)",
-          "reason": "The §13-72a-203 link pointed at the SB 149 bill page. Link the codified section and the enacting HB 452 page.",
-          "qualifications": {
-            "scope": "Source links.",
-            "exceptions": "Codified-section URL checked HTTP 200 on 2026-09-24; not retained as evidence.",
-            "time": "Enrolled 2025 text."
-          },
-          "evidence": [
-            "hb452-section"
-          ]
-        },
-        "section:First-Session Disclosure (§13-72a-203)/property:Drafted": {
-          "before_sha256": null,
-          "after_sha256": "0ac613da8ca0604c124fc03dce4c022b0cf3e9f64d13299b7935387e23712e24",
-          "candidate_content": "2026-04-15",
-          "reason": "Relabels the 2026-04-15 date as the drafting date.",
-          "qualifications": {
-            "scope": "Provision date label.",
-            "exceptions": "This record is a PubLedge original draft (source publedge-original-draft, status proposed). No official document records issuance of this JIA; the cited statute establishes only what the draft interprets.",
-            "time": "Drafted 2026-04-15 per the record timeline."
-          },
-          "evidence": [
-            "hb452-effective"
+            "draft"
           ]
         }
       }

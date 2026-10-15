@@ -26,6 +26,9 @@
       "name": "Utah State Legislature",
       "ref": "https://le.utah.gov/"
     },
+    "author_or_proponent": null,
+    "intended_authority": null,
+    "intended_authority_url": null,
     "issuance_event": "gist:Enactment",
     "enacted": "2025-03-25",
     "effective": "2025-05-07",
