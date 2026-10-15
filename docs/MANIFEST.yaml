@@ -568,7 +568,7 @@ files:
 
   - path: scripts/lib/api-projection.js
     role: tooling
-    hash: sha256:86ee9542c554dfa158ae07d4aa7a3f5f7f5f27ce43b06bdbfee08619568eac57
+    hash: sha256:91b0a87d79d5a1f170624ef1209629c43ad68dbc885f40f104a133bd36a784d2
     note: Pure docs/api/v1 aggregate projections carrying source and editorial labelling
 
   - path: scripts/lib/publication-state.js
@@ -598,7 +598,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:16787c201e9aaffc9672581e36ef6d7009bf3449547c0da1b18811be4f15e879
+    hash: sha256:3d84711ba2b146fa96071d01de41fc3e2fa6e39f4b709fbde5cea3d2f8e68ef7
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -1038,7 +1038,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:ab3f82e45f9391e484fd21f87b3c46b35647a634da67976d9f99fa019ad263bb
+    hash: sha256:ab6c21f353a5b3932fb501eb5db925d827af067175bdac0bac11518626d1a49f
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js

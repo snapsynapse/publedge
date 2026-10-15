@@ -362,6 +362,7 @@ test('aggregate exports and derived counts keep draft and demonstration labellin
     const href = c => `/${c.id}/`;
     const options = { today: '2026-09-09', since: '2026-08-10', siteUrl: 'https://publedge.org', href };
     const summaries = containers.map(projection.containerSummary);
+    assert.equal(projection.containerSummary(containers[0], { ...options, siteUrl: 'https://example.org' }).url, `https://example.org${href(containers[0])}`);
     const jia = summaries.find(item => item.id === 'us-ut-oaip-jia-2026-001');
     assert.deepEqual({ source: jia.source, status: jia.status, editorial_status: jia.editorial_status }, { source: 'publedge-original-draft', status: 'proposed', editorial_status: 'draft' });
     assert.equal(summaries.find(item => item.id === 'us-ut-oaip-rma-2025-002').source, 'demonstration-remap');

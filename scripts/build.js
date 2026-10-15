@@ -2344,7 +2344,7 @@ function build() {
 
     // --- JSON API ---
     fs.writeFileSync(path.join(API_DIR, 'primaries.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: primaries.length }, items: primaries.map(p => ({ id: p.id, name: p.name || humanizeId(p.id), group: p.group || '', status: p.status || 'draft', lifecycle_status: p.lifecycle_status })) }, null, 2));
-    fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: containers.length }, items: containers.map(containerSummary) }, null, 2));
+    fs.writeFileSync(path.join(API_DIR, 'containers.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: containers.length }, items: containers.map(c => containerSummary(c, { siteUrl: (config.url || '').replace(/\/$/, ''), href: containerHref })) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'authorities.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: authorities.length }, items: authorities.map(a => ({ id: a.id, name: a.name || humanizeId(a.id), jurisdiction: a.jurisdiction || '' })) }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'mappings.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant, count: mappingIndex.length }, items: mappingIndex }, null, 2));
     fs.writeFileSync(path.join(API_DIR, 'matrix.json'), JSON.stringify({ meta: { generated: BUILD_CLOCK.instant }, matrix }, null, 2));

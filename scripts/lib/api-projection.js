@@ -7,7 +7,7 @@
 
 const { isOriginalDraft } = require('./content');
 
-function containerSummary(c) {
+function containerSummary(c, { siteUrl = '', href } = {}) {
     return {
         id: c.id,
         name: c.title || c.name || c.id,
@@ -19,7 +19,7 @@ function containerSummary(c) {
         effective: c.effective,
         provision_count: (c.provisions || []).length,
         provision_count_scope: 'Structured clause-level sections indexed; zero does not mean no obligations',
-        url: c._canonicalPath ? 'https://publedge.org/' + c._canonicalPath : null
+        url: href ? siteUrl + href(c) : null
     };
 }
 
