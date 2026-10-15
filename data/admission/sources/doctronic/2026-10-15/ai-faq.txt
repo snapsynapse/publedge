@@ -1,0 +1,189 @@
+AI FAQ - commerce.utah.gov
+Skip to content
+Frequently Asked Questions
+Answers about what our office does, how our regulatory sandbox works, and how authorized AI pilots are supervised.
+General Questions
+What does the Office of AI Policy do?
+The Office of Artificial Intelligence Policy (OAIP) is part of the Utah Department of Commerce. The Legislature created our office in May 2024, and we work towards three objectives: Observe and Learn, Protect the Public, and Foster Innovation.
+In practice that means we study how AI is actually being used in Utah and we recommend changes to state law and rules based on what we learn. We are also authorized to enter agreements that adjust how an existing rule applies to a specific AI product for a limited, supervised period. See Utah Code § 13-72-301.
+What authority does the Office of AI Policy have?
+We have authority to work with the agency that regulates a given industry to craft a regulatory mitigation agreement. We cannot grant one alone. The head of the relevant agency, most often the Utah Division of Professional Licensing, signs alongside us, and no pilot proceeds without that approval.
+We also cannot rewrite a rule on our own. An agreement adjusts how a rule applies to one participant for a set period; changing the rule itself is for the Legislature or for the agency's own rulemaking process. See Utah Code § 13-72-401.
+What does “regulatory mitigation” mean?
+It means giving a company flexibility in how it satisfies an existing Utah rule, or setting that rule aside for a limited time when doing so serves the public interest. Most of Utah's rules were written before this technology existed, so a rule can block a useful product for reasons that have nothing to do with the harm the rule was written to prevent.
+The main reason we build these agreements is to gather evidence. A pilot helps us mak data-driven decisions by telling us whether a rule should be updated and what the updated version should say.
+Is the sandbox exclusively for clinical uses of AI?
+No. The sandbox is open to any AI application that runs into a state-level Utah rule, in any regulated field. Clinical applications are just a slice of that pie.
+There are practical reasons for the concentration. Clinical care is among the most heavily regulated activities in the state, and the distance between what these tools can now do and what the existing rules anticipated is wide. If your product sits in a different regulated space, we would still like to hear from you. Eligibility is set in Utah Code § 13-72-402.
+What if I want to apply for regulatory mitigation?
+Email the office at [email protected]. Tell us what your product does, which Utah rule you believe stands in the way, and who would be using it.
+Before you write, it is worth reading how the application process works. Eligibility criteria are set in Utah Code § 13-72-402.
+What are some recent laws OAIP has supported?
+S.B. 149 (2024)
+Bill Sponsors: Sen. Kirk Cullimore and Rep. Jefferson Moss. The Artificial Intelligence Policy Act created this office. It established that consumer protection law still applies when a person uses AI, and it requires disclosure when someone is interacting with AI in a regulated occupation.
+H.B. 452 (2025)
+Bill Sponsors: Rep. Moss and Sen. Cullimore. The mental health chatbot law set protections for people using an AI mental health chatbot. It limits what such a chatbot may do with personal information and requires it to disclose what it is. By setting clear standards, it also gave companies a defined path to offer these tools in Utah.
+S.B. 226 (2025)
+Bill Sponsors: Sen. Cullimore and Rep. Moss. Extended S.B. 149 by requiring disclosure when generative AI is used in a consumer transaction, and confirming liability for consumer protection violations that involve AI.
+H.B. 276 (2026)
+Bill Sponsors: Rep. Ariel Defay and Sen. Cullimore. Addresses deepfakes. It gives a person a way to act if someone uses AI to make intimate or private images of them without consent, and it requires digital content provenance, a kind of digital fingerprint that lets a viewer tell whether a photo or video came from a real camera or was generated.
+H.B. 408 (2026)
+Bill Sponsors: Rep. Doug Fiefia and Sen. Michael McKell. The Digital Choice Act sets an interoperability standard for social media platforms so a user can download their own data and take it to a competing service. It supports competition by making it easier to leave.
+What if I have comments or concerns?
+Please share your feedback with us. We want to hear from you, and what the public tells us shapes what we study next.
+How We Review and Supervise Pilots
+These questions cover who evaluates a proposal before it is approved, and what happens once a pilot is running.
+Who reviews a clinical AI proposal before it is approved?
+To ensure that technological innovation never supersedes patient safety, OAIP and DOPL enforce a multi-step evaluation framework before approving any clinical AI pilot:
+Step 1 - Proposal Submission & Initial Scope Review: Upon receiving an application, OAIP conducts an initial review to evaluate the proposed AI technology's role in diagnosis, treatment, medication management, or other clinical services. This step examines the scope of regulatory mitigation requested from DOPL, assesses the initial clinical risk profile, and identifies specific areas requiring further clarification or technical documentation.
+Step 2: Independent Clinical Review & Advisory Network Evaluation: Proposals are then submitted to independent, current or former practicing clinical subject-matter experts and OAIP’s Clinical AI Advisory Network (composed of local and national clinical leaders). These reviewers assess clinical appropriateness, patient safety risks, supporting evidence, and proposed safeguards, ensuring the protocol aligns with sound medical practice before advancing.
+Step 3 - Medical Board AI Working Group Collaboration: Earlier this year, Utah’s Medical Licensing Board established a dedicated AI Working Group that meets regularly with OAIP to discuss pilot proposals, refine clinical guardrails, and connect regulators with specialized clinical experts. Proposals are presented to the Medical Licensing Board’s AI working group and other relevant licensing boards to gather direct feedback on clinical findings, identified risks, and treatment protocols.
+Step 4 - Required Revisions, Protocol Hardening & Formulary Updates: Based on combined feedback from clinical reviewers, the Medical Board AI Working Group, and DOPL, applicants are required to update their proposals. Revisions address clinical risk mitigation, patient eligibility criteria, clinical decision boundaries, emergency escalation pathways, and medication formulary restrictions (e.g., strictly excluding controlled substances). Most applicants will undergo several rounds of revisions.
+Moving forward, new proposal submitted to the office will also undergo clinical and technical vetting from third-party evaluators approved by OAIP.
+Does the company set its own safety benchmarks?
+No. An applicant can propose benchmarks, but they must be approved by OAIP and with the regulating agency, informed by the clinical reviewers, before anything is signed. What ends up in the agreement is what those parties agreed to, and it is published so the standard is available to the public.
+The statute requires an agreement to specify the limits on scope, the safeguards, the disclosures owed to consumers, and the reporting we will audit against. Those are not optional terms. See Utah Code § 13-72-401(4).
+What role do the licensing boards play?
+A substantial one. The Utah Medical Board has raised concerns with this office about how the prescribing pilots are supervised, and this office has met with the Board to work through them. That exchange is a feature of the arrangement rather than a problem with it: the board that licenses physicians in this state is well placed to tell us where a pilot's oversight is thin.
+Board meetings are open and their minutes are public. The statute also directs us to consult the relevant agencies on the terms of any agreement. See Utah Code § 13-72-401(5).
+What if something goes wrong?
+Particpating organizations will be held responsible. A participant that breaks the law or breaches its agreement can be removed from the program and remains subject to every applicable civil and criminal penalty. Regulatory mitigation agreements apply strictly to state administrative enforcement; they do not grant a liability shield or waive legal accountability.
+We implement several requirements into our agreements to ensure that responsibility for mistakes and errors lies with the correct party:
+1- Every prescription issued through an authorized pilot is transmitted under the NPI and license of an overseeing, licensed human physician who serves as the medical prescriber of record.
+2- Patients retain all traditional civil, criminal, and medical malpractice legal remedies. Participating companies are contractually prohibited from broadly disclaiming legal liability for medical harm in user terms.
+3- Sandbox participants must either self-insure or maintain specialized professional liability and medical malpractice insurance that explicitly covers AI-initiated clinical risks before enrolling a single patient.
+Ending a pilot also restores nothing to the participant: the relief simply stops, and the rule applies as it did before. See Utah Code § 13-72-401(8).
+How do I report any concerns I have with a pilot?
+Tell us at [email protected], and tell us as specifically as you can what happened. First-hand patient experiences inform our audits.
+Where you report matters, though, and it is worth choosing deliberately. General concerns belong with our office. A complaint about a licensed practitioner's conduct belongs with the Division of Professional Licensing, which holds the license. A deceptive business practice belongs with the Division of Consumer Protection.
+Where can I see the agreements and the results for myself?
+The Authorized AI Pilots page lists every pilot with its signed date, its term, what relief was granted, and a link to the agreement itself. The Policy Development page carries our learning agenda and what we have published.
+We also report to the Legislature each year, before November 30, on the agenda, our findings, the agreements in place, and any legislation we recommend. That report goes to the Business and Labor Interim Committee and is a public document. See Utah Code § 13-72-201.
+If something you want is not published, you may request it under the Government Records Access and Management Act through the state records request portal.
+Does an agreement mean the State of Utah endorses the product?
+No. Participation in our regulatory sandbox is not an endorsement or approval from the state. The sandbox program is a proving ground for companies to ensure these AI tools are safe and effective.
+What an agreement represents is a decision that a specific use is worth studying under supervision, on stated conditions, for a limited time. See Utah Code § 13-72-401(9) and (10).
+Clinical Uses of AI
+Prescription refills were the first clinical application this office authorized, and the section that follows covers them in detail. The answers here apply to clinical pilots generally, including the applications we expect to see next.
+Which clinical uses of AI can the sandbox cover?
+Any clinical activity a Utah rule regulates. Prescription refills came first because the task is narrow and the safety question is easy to state plainly.
+Participating organizations are listed on the authorized AI pilots page.
+Will an AI tool diagnose me?
+Only where an agreement expressly allows it, and only on the terms that agreement sets. No pilot hands a tool an open-ended license to diagnose.
+Where diagnostic support is authorized, it is bounded on every side: a defined set of conditions, a defined patient population, and a licensed clinician who reviews the work before it changes anyone's care. Pilots begin in the supervised position and move out of it on evidence, not on schedule.
+Is a licensed clinician still responsible for my care?
+Yes. Every clinical agreement names licensed professionals who carry responsibility for what the tool does, and the licensing standards that apply to them are untouched. An agreement adjusts how one rule applies to one product for a set period. It does not license AI companies to practice a regulated profession.
+The rest of Utah law also keeps running during a pilot, including the standards governing clinical practice and the consequences when they are not met. Utah Code § 13-72-401 sets that out.
+What happens when a case is beyond what the tool is approved to do?
+It stops and hands the case to a person. Every clinical agreement defines the conditions that force this, and the tool is built so it cannot carry on through one.
+The specific triggers depend on the application. Across the prescribing pilots they include a sign that a condition is worsening, a mismatch in the patient's identity or record, or a safety concern of any kind. A patient can also ask for a human at any point without giving a reason. Participating organizations must treat escalation as the tool working correctly rather than as a failure. Agreements are written so that a company gains nothing by escalating less.
+How does the office decide a clinical use is safe enough to test?
+We start from what could go wrong rather than from what the product promises. A proposal is scored against the proposal rubric for clinical AI, and clinicians outside this office review it through the Healthcare AI Advisory Network. The regulator with authority over the practice area has to agree before anything starts.
+Approval is then typically staged rather than granted all at once. A tool ordinarily operates under prospective human review first, has to meet a numeric agreement rate with the clinicians checking its work, and only afterward moves to lighter monitoring. Missing a benchmark does not stretch the timeline. It stops the advance.
+Are some clinical uses off the table?
+Some are, and the exclusions are written into each agreement rather than left to anyone's judgment in the moment. For example, controlled substances have been excluded from every prescribing pilot so far. Emergency and acute care, patients whose condition is not stable, and higher-risk categories needing continuous monitoring have stayed outside the pilots as well.
+The rule we apply is straightforward: the greater the harm from a wrong answer, and the harder that harm is to undo, the less willing we are to test it here. Nothing is excluded forever, but the evidence we require rises with the risk.
+What happens to my health information?
+Taking part in a pilot loosens no privacy obligation. Health privacy law applies to a participant exactly as it would if this office had never signed anything, because an agreement reaches only the specific rule it names and leaves every other law in force. Utah Code § 13-72-401 states that directly.
+Participants also report to this office on a schedule set in their agreement. Those reports cover how the tool performed. They are not a channel for identifiable patient records.
+Do Utah-approved pilots override federal regulation or interfere with FDA oversight?
+No. These agreements apply strictly to Utah state professional practice laws and administrative rules. Approved pilots are structured to complement, rather than disrupt, federal authority.
+For example, Utah pilots do not interfere with the U.S. Food and Drug Administration’s (FDA) statutory jurisdiction over medical products, software, and devices. In keeping with established practice, the Office of AI Policy remains dedicated to actively coordinating with federal partners to make sure state-level learning initiatives synergize with federal frameworks to support responsible innovation and protect public health.
+Prescription Refill Pilots
+These questions cover the pilots in which an AI tool participates in refilling a prescription a licensed clinician already wrote. The answers here apply to Doctronic, Legion Health, and August AI.
+How do AI prescriptions work in these pilots?
+Throughout every one of these pilots, the AI tool may only refill a prescription a licensed physician already ordered. A new prescription, a dose change, or a change in frequency must come from a licensed physician.
+In the first phase, a licensed physician reviews each refill the AI recommends before it reaches a pharmacist. A company moves to the second phase only after it meets the benchmarks in its agreement and performs well against them.
+In the second phase, the AI tool may send the refill to the pharmacist directly. Pharmacists keep the authority to escalate any AI-generated refill to a licensed physician at the prescribing company, and each company gives pharmacists a direct way to do it.
+We design these pilots to change as little as possible about how a pharmacist works.
+What medications can be prescribed?
+Each pilot has its own formulary, built with regulators, pharmacists, clinicians, and the company itself. They run from roughly 20 to roughly 200 approved medications, depending on the pilot.
+These lists cover common medications for chronic conditions and for maintaining mental health. No formulary includes a controlled substance.
+Every formulary is published in full inside that pilot's signed agreement, which you can read on the Authorized AI Pilots page.
+If it’s generated by AI, then whose name is on the prescription?
+A licensed physician's. Every refill is signed and approved by a licensed physician, either directly or through the protocol that physicians set for the AI system. The order is still issued by a licensed practitioner, and that practitioner's name is attached to it.
+What if a pharmacist needs additional information, clinical clarification, or documentation?
+Every company in this program must give pharmacists a direct line to a licensed professional it employs. That is a condition of each agreement that includes prescriptions.
+A patient has to clear identity and prescription verification to qualify for an AI-generated prescription at all, and that process gives the service the original prescribing physician's details, which it can pass to a pharmacist on request. A physician's name is always attached to the authorization.
+What keeps the system’s refills aligned with what the prescriber intended?
+Several safeguards, working together. Controlled substances are excluded outright, which keeps these pilots to medications with established safety profiles for routine refill.
+A patient may also receive only a limited number of refills per medication before an in-person or telehealth visit with a clinician licensed in Utah is required.
+And the system carries built-in escalation rules. It refers a case to a human physician when the clinical picture is more complex than agreed thresholds allow, when the information it receives conflicts, or when the patient's status suggests a possible medication-related problem.
+What oversight can the public expect?
+Every company in the program files a monthly report with this office. Its agreement specifies exactly which metrics that report must carry, and the agreements are published, so anyone can see what a company is required to tell us.
+We verify the key figures rather than accepting them, and safety is the first among them. Auditing a participant while its agreement is in force is a duty the statute places on this office. See Utah Code § 13-72-401(6).
+If an AI tool approves a refill and an adverse event occurs, how is liability determined?
+The way we structure these pilots is meant to make such an event unlikely, but we do not treat it as impossible.
+Each company in the program employs a licensed physician whose name appears on the AI-generated refills, so there is an accountable practitioner behind every order. Our agreements also require the company to either carry medical malpractice insurance covering AI-related liability and risk or self-insure.
+An agreement waives none of a participant's other legal obligations, and a patient's remedies are unaffected by it. See Utah Code § 13-72-401(7).
+Is this program permanent?
+No. These pilots exist under this office's authority to permit an AI use case that needs regulatory relief, for a limited time.
+An initial demonstration period may not exceed 12 months. A participant may request a 12-month extension, and we may grant up to two. The Doctronic pilot, for example, runs from October 2025 to October 2026, and any continuation past that is a decision this office has to make rather than an automatic renewal. See Utah Code § 13-72-403.
+Does this mean any AI can practice medicine in Utah?
+No. An agreement covers one named company, one described product, and one defined set of tasks, for a limited period, on conditions that company must keep. It grants nothing to anyone else, and it grants nothing at all if the participant stops meeting its terms.
+We may end an agreement at any time and for any reason, and a participant has no property right or license in taking part. Signing one is also not a state endorsement or approval of the product. See Utah Code § 13-72-401(8) and (9).
+What changes have been made to the contract?
+The Doctronic agreement's phase 2 transition criteria were updated. The pilot previously advanced once 250 prescriptions had been filled in total. Now each medication group advances as a group, once 250 prescriptions have been filled within that group. Moving from phase 1 to phase 2 still requires this office's approval.
+Butalbital and Flecainide were also removed from Doctronic's formulary.
+Care Pathway Pilots
+Care pathway pilots authorize the use of AI technology to diagnose and treat a narrow set of protocolized conditions. The answers here apply to Nolla Health and Expect Fitness.
+How do care pathway pilots differ from prescription refill pilots?
+Routine prescription refill pilots (such as our agreements with Doctronic, August AI, and Legion Health) are strictly limited to processing maintenance refills for stable, existing prescriptions previously ordered by a licensed clinician. In contrast, a care pathway pilot authorizes an AI system to evaluate a patient's initial clinical presentation, perform protocolized staging, and recommend treatment.
+One of the benefits of care pathway pilots is preserving a patient's continuity of care, but there are also risks. Initiating new treatments carries higher clinical responsibility, so these pilots operate under heightened regulatory scrutiny and strict scope limits. For example, Nolla Health is authorized only to diagnose and treat low-acuity acne through pre-approved topical acne medications. Expect Fitness is authorized only to deliver assessments, symptom screenings, conservative physical therapy exercises, and associated care managment tools on an AI-enabled digital health platform.
+How did you vet these proposals before approving them?
+To ensure patient safety, OAIP and the Division of Professional Licensing enforce a multi-step evaluation framework before approving any clinical AI pilot:
+Step 1 - Proposal Submission & Initial Scope Review: Upon receiving an application, OAIP conducts an initial review to evaluate the proposed AI technology's role in diagnosis, treatment, medication management, or other clinical services. This step examines the scope of regulatory mitigation requested from DOPL, assesses the initial clinical risk profile, and identifies specific areas requiring further clarification or technical documentation.
+Step 2: Independent Clinical Review & Advisory Network Evaluation: Proposals are then submitted to independent, current or former practicing clinical subject-matter experts and OAIP’s Healthcare AI Advisory Network (composed of local and national clinical leaders). These reviewers assess clinical appropriateness, patient safety risks, supporting evidence, and proposed safeguards, ensuring the protocol aligns with sound medical practice before advancing.
+Step 3 - Medical Board AI Working Group Collaboration: Earlier this year, Utah’s Medical Licensing Board established a dedicated AI Working Group that meets regularly with OAIP to discuss pilot proposals, refine clinical guardrails, and connect regulators with specialized clinical experts. Proposals are presented to the Medical Licensing Board’s AI working group and other relevant licensing boards to gather direct feedback on clinical findings, identified risks, and treatment protocols.
+Step 4 - Required Revisions, Protocol Hardening & Formulary Updates: Based on combined feedback from clinical reviewers, the Medical Board AI Working Group, and DOPL, applicants are required to update their proposals. Revisions address clinical risk mitigation, patient eligibility criteria, clinical decision boundaries, emergency escalation pathways, and medication formulary restrictions (e.g., strictly excluding controlled substances). Most applicants will undergo several rounds of revisions.
+Moving forward, new proposal submitted to the office will also undergo clinical and technical vetting from third-party evaluators approved by OAIP.
+What clinical safeguards are there?
+Every care pathway pilot is bounded by narrow clinical use cases, restricted medication formularies, and automated hard-stop exclusion rules.
+In the Nolla Health pilot, for example:
+1- Prescribing is strictly confined to first-line, low-risk topical therapies (such as topical tretinoin, clindamycin, and azelaic acid). The AI is explicitly prohibited from ordering oral systemic medications, oral hormonal therapies, or isotretinoin (Accutane).
+2- Controlled substances are categorically excluded from all sandbox prescribing frameworks.
+3- The system automatically blocks or escalates patients who fall outside safe parameters—including minors under 18, severe or nodulocystic cases (Investigator Global Assessment score > 3.5), pregnant or breastfeeding individuals, or patients with known contraindications or organ impairment.
+Any future new-prescription proposal must similarly demonstrate deterministic, rules-based guardrails to restrict prescribing to low-risk, guideline-driven care.
+Is AI prescribing autonomously without human oversight?
+No AI pilot launches without direct human oversight. Utah’s regulatory sandbox employs a stage-gated oversight model where human physician review is heaviest during initial deployment:
+Stage 1 (Pre-Submission Review): During the initial phase, 100% of AI-generated prescriptions must be reviewed and approved by two independent Utah-licensed physicians before any prescription is transmitted to a pharmacy.
+Stage 2 (Retrospective Review): Only after demonstrating sustained physician-AI concordance (≥95%) and zero missed hard stops across hundreds of cases can a pilot apply to advance to weekly retrospective physician reviews.
+Stage 3 (Sampling Oversight): Long-term operations require monthly sampling-based audits (minimum 10% volume) combined with immediate 100% review of any reported adverse event or clinical disagreement.
+Furthermore, patients in any active pilot maintain 24/7 access to request a free, direct telehealth consultation with a licensed human physician at any point in their care journey.
+How does the office monitor these pilots after launch?
+Our office, in partnership with the Division of Professional Licensing, enforces a continuous post-deployment data surveillance protocol:
+1- Participants submit monthly safety summaries and quarterly operational reports tracking AI-physician agreement rates, hard-stop logs, escalation rates, and user complaints.
+2- Any critical system failure, data breach, or severe adverse event must be reported to state regulators within 24 hours, triggering an immediate pause of autonomous pathways and reverting the platform to 100% human physician review.
+3- Independent technical auditing firms and academic health organizations review de-identified decision logs and stress-test system guardrails to independently verify developer claims.
+What if something goes wrong?
+Particpating organizations will be held responsible. Regulatory mitigation agreements apply strictly to state administrative enforcement; they do not grant a liability shield or waive legal accountability. We implement several requirements into our agreements to ensure that responsibility for mistakes and errors lies with the correct party:
+1- Every prescription issued through an authorized pilot is transmitted under the NPI and license of an overseeing, licensed human physician who serves as the medical prescriber of record.
+2- Patients retain all traditional civil, criminal, and medical malpractice legal remedies. Participating companies are contractually prohibited from broadly disclaiming legal liability for medical harm in user terms.
+3- Sandbox participants must either self-insure or maintain specialized professional liability and medical malpractice insurance that explicitly covers AI-initiated clinical risks before enrolling a single patient.
+Follow us online(opens in a new tab)(opens in a new tab)(opens in a new tab)(opens in a new tab)(opens in a new tab)
+Office of Artificial Intelligence Policy
+Mailing Address: P.O. Box 146741, Salt Lake City, UT 84114-6741
+Physical Address: Heber M. Wells Building 160 East 300 South Salt Lake City, Utah 84111
+Contact Info
+Phone: (801) 530-6648
+Email: [email protected]
+Hours: 8:00 AM to 5:00 PM
+Monday - Friday
+Closed for State and Federal Holidays
+Services
+Regulatory Relief
+Learning Lab
+Resources
+GRAMA Record Request
+Privacy Policy
+Translate »
+<
+<
+<
+<
+<
+<
+<
+<
+<
+<

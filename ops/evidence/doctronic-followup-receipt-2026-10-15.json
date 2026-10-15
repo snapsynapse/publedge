@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan": "ops/evidence/doctronic-followup-plan-2026-10-15.json",
+  "requests": [
+    {
+      "id": "agreement",
+      "requested_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "final_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "started_at": "2026-10-15T04:49:44.974715+00:00",
+      "retrieved_at": "2026-10-15T04:49:45.261672+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "headers": {
+        "Date": "Thu, 15 Oct 2026 04:49:45 GMT",
+        "Last-Modified": "Tue, 03 Feb 2026 14:19:18 GMT",
+        "Content-Length": "625095"
+      },
+      "bytes": 625095,
+      "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+      "path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.pdf",
+      "complete": true
+    },
+    {
+      "id": "register_linked_pilot",
+      "requested_url": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/doctronic/",
+      "final_url": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/doctronic/",
+      "started_at": "2026-10-15T04:49:45.262525+00:00",
+      "retrieved_at": "2026-10-15T04:49:45.507722+00:00",
+      "http_status": 301,
+      "content_type": "text/html; charset=UTF-8",
+      "headers": {
+        "Date": "Thu, 15 Oct 2026 04:49:45 GMT",
+        "Location": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/"
+      },
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "data/admission/sources/doctronic/2026-10-15/register-linked-doctronic.html",
+      "complete": true
+    }
+  ],
+  "new_source_physical_attempts": 2,
+  "new_robots_physical_attempts": 0,
+  "retries": 0,
+  "redirects_followed": 0,
+  "limits": [
+    "Transport and source retention only; HTTP success is not document identity or legal acceptance.",
+    "No amendment/extension absence claim beyond selected linked pages."
+  ]
+}

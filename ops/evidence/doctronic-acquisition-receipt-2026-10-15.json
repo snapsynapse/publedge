@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "plan": "ops/evidence/doctronic-acquisition-plan-2026-10-15.json",
+  "requests": [
+    {
+      "id": "robots",
+      "requested_url": "https://commerce.utah.gov/robots.txt",
+      "final_url": "https://commerce.utah.gov/robots.txt",
+      "started_at": "2026-10-15T04:49:08.884442+00:00",
+      "retrieved_at": "2026-10-15T04:49:09.069136+00:00",
+      "http_status": 200,
+      "content_type": "text/plain",
+      "headers": {
+        "Date": "Thu, 15 Oct 2026 04:49:09 GMT",
+        "Last-Modified": "Wed, 14 Oct 2026 14:26:20 GMT",
+        "ETag": "W/\"6acf910c-c5\""
+      },
+      "bytes": 197,
+      "sha256": "574f07ea96224d8090223b455349c2fe72a08ed7c3e23583c73cc3d5663b09d3",
+      "path": "data/admission/sources/doctronic/2026-10-15/robots.txt",
+      "complete": true
+    },
+    {
+      "id": "register",
+      "requested_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+      "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+      "started_at": "2026-10-15T04:49:09.069528+00:00",
+      "retrieved_at": "2026-10-15T04:49:09.152828+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "headers": {
+        "Date": "Thu, 15 Oct 2026 04:49:09 GMT",
+        "Last-Modified": "Tue, 06 Oct 2026 06:47:53 GMT"
+      },
+      "bytes": 137382,
+      "sha256": "98bbcb33d3fdc43985e17bff65ca26b7f80c41cc91ee457d7211f7178012f2be",
+      "path": "data/admission/sources/doctronic/2026-10-15/authorized-pilots.html",
+      "complete": true
+    },
+    {
+      "id": "pilot",
+      "requested_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+      "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+      "started_at": "2026-10-15T04:49:09.153419+00:00",
+      "retrieved_at": "2026-10-15T04:49:09.233209+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "headers": {
+        "Date": "Thu, 15 Oct 2026 04:49:09 GMT",
+        "Last-Modified": "Wed, 17 Jun 2026 18:40:50 GMT"
+      },
+      "bytes": 100240,
+      "sha256": "d2db2d66bc5df6c57b4ebdcecf5f270e3769c4695d628339f0e18589a2e67f95",
+      "path": "data/admission/sources/doctronic/2026-10-15/doctronic-pilot.html",
+      "complete": true
+    },
+    {
+      "id": "faq",
+      "requested_url": "https://commerce.utah.gov/ai/ai-faq/",
+      "final_url": "https://commerce.utah.gov/ai/ai-faq/",
+      "started_at": "2026-10-15T04:49:09.234023+00:00",
+      "retrieved_at": "2026-10-15T04:49:09.343507+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "headers": {
+        "Date": "Thu, 15 Oct 2026 04:49:09 GMT",
+        "Last-Modified": "Tue, 06 Oct 2026 16:59:28 GMT"
+      },
+      "bytes": 145188,
+      "sha256": "baa85c45fa21bec0d573cefa6523fd780c7b20de33e46a2b1bbcb25ae20103a3",
+      "path": "data/admission/sources/doctronic/2026-10-15/ai-faq.html",
+      "complete": true
+    }
+  ],
+  "new_source_physical_attempts": 3,
+  "new_robots_physical_attempts": 1,
+  "retries": 0,
+  "redirects_followed": 0,
+  "limits": [
+    "Transport and source retention only; HTTP success is not document identity or legal acceptance.",
+    "No amendment/extension absence claim beyond selected linked pages."
+  ]
+}

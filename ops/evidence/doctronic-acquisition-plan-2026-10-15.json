@@ -1,0 +1,39 @@
+{
+  "scope": "One dated Doctronic source/status packet; no legal currentness renewal",
+  "base_commit": "1d47a0ee120c436f1f198373dd59fe0cdc1dbd2e",
+  "source_requests": [
+    {
+      "id": "register",
+      "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+      "file": "authorized-pilots.html"
+    },
+    {
+      "id": "pilot",
+      "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+      "file": "doctronic-pilot.html"
+    },
+    {
+      "id": "faq",
+      "url": "https://commerce.utah.gov/ai/ai-faq/",
+      "file": "ai-faq.html"
+    },
+    {
+      "id": "agreement",
+      "url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "file": "Doctronic-Final-Agreement.pdf",
+      "condition": "Only fetch if linked by the freshly retained pilot page"
+    }
+  ],
+  "max_source_requests": 4,
+  "max_robots_requests": 1,
+  "retries": 0,
+  "redirects_followed": 0,
+  "conditional_followup": "New relevant official amendment/extension/phase-approval links are reported before any separately frozen follow-up; no guessed URLs",
+  "prior_access_ledger": {
+    "path": "/Users/snap/Git/publedge/_codex-out/link-ledger.json",
+    "observed_at": "2026-10-03T18:55:42.770552+00:00",
+    "commerce_source_attempts": 14,
+    "commerce_robots_attempts": 3,
+    "limit": "Historical sweep counters only, not lifetime totals; retained unchanged. This is a new user-authorized dated observation, not a retry of an exhausted URL."
+  }
+}

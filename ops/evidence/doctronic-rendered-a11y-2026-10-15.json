@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-15",
+  "method": "Installed axe-core 4.12.1 executed in the existing shared Comet tab through a custom adapter; not the bundled full-site scanner.",
+  "standard_tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa"
+  ],
+  "scope": "Doctronic candidate detail page only",
+  "results": [
+    {
+      "url": "http://127.0.0.1:8765/us/utah/oaip/rma/2025-002/",
+      "axe_version": "4.12.1",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "document_width": 375,
+      "notice_bounds": {
+        "x": 16,
+        "y": 870.15625,
+        "width": 343,
+        "height": 428.90625,
+        "top": 870.15625,
+        "right": 359,
+        "bottom": 1299.0625,
+        "left": 16
+      },
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "url": "http://127.0.0.1:8765/us/utah/oaip/rma/2025-002/",
+      "axe_version": "4.12.1",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "document_width": 375,
+      "notice_bounds": {
+        "x": 16,
+        "y": 870.15625,
+        "width": 343,
+        "height": 428.90625,
+        "top": 870.15625,
+        "right": 359,
+        "bottom": 1299.0625,
+        "left": 16
+      },
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "url": "http://127.0.0.1:8765/us/utah/oaip/rma/2025-002/",
+      "axe_version": "4.12.1",
+      "theme": "light",
+      "width": 1280,
+      "height": 900,
+      "document_width": 1265,
+      "notice_bounds": {
+        "x": 24,
+        "y": 465.46875,
+        "width": 1217,
+        "height": 122.8125,
+        "top": 465.46875,
+        "right": 1241,
+        "bottom": 588.28125,
+        "left": 24
+      },
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "url": "http://127.0.0.1:8765/us/utah/oaip/rma/2025-002/",
+      "axe_version": "4.12.1",
+      "theme": "dark",
+      "width": 1280,
+      "height": 900,
+      "document_width": 1265,
+      "notice_bounds": {
+        "x": 24,
+        "y": 465.46875,
+        "width": 1217,
+        "height": 122.8125,
+        "top": 465.46875,
+        "right": 1241,
+        "bottom": 588.28125,
+        "left": 24
+      },
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    }
+  ],
+  "limits": [
+    "Sampled automated checks, not full-site conformance or manual screen-reader acceptance.",
+    "An earlier candidate with a long public SHA-256 string had mobile overflow and one incomplete contrast check; that string was removed from public prose and retained in evidence. These are the repeated final-candidate results."
+  ]
+}
