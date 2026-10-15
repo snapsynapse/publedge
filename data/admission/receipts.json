@@ -2,20 +2,677 @@
   "version": 1,
   "records": {
     "data/examples/instruments/us-ut-oaip-rma-2025-002.md": {
-      "record_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
-      "baseline_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
+      "record_sha256": "e95f77b2e2ed8b10e3ea9962ec98103de2067619db7f8e2aadfac39cb79a1bf1",
+      "baseline_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
       "whole_record": {
-        "before_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
-        "after_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156"
+        "before_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
+        "after_sha256": "e95f77b2e2ed8b10e3ea9962ec98103de2067619db7f8e2aadfac39cb79a1bf1"
+      },
+      "supersedes": {
+        "packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165",
+        "reason": "Append a dated source/status observation and distinguish Agreement modification from written Proposal approval; preserve the entire accepted human receipt and all inherited unresolved items.",
+        "receipt": {
+          "record_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
+          "baseline_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
+          "whole_record": {
+            "before_sha256": "bf5c7ce60c4fd1d9901613e1f258e5333755a67e84edc5c9a3a6f575f868eeb1",
+            "after_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156"
+          },
+          "review": {
+            "actor_type": "human",
+            "actor": "Sam Rogers",
+            "reviewed_at": "2026-09-24T02:36:37Z",
+            "decision": "source-consistency-reviewed",
+            "human_approved": true,
+            "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Corrected open findings from ops/evidence/utah-overdue-dispositions-2026-09-23.json for the Doctronic RMA: Schedule A 15.D.2 chapter citations reproduced as written, disclosure trigger, monthly versus separate adverse-outcome reporting, dated register observation on Phase 1 and the unlinked 2026 amendment, extension note, term-end and DRAFT-title locator notes, register terms absent from the agreement, stale legacy id, dead learning-lab and admin-rules links, and redirecting agreement-page link, plus the modified date. Carries forward the 2026-09-09 Codex unit reviews for Summary and official_url. Does not renew last_verified or legal currentness.",
+            "packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165"
+          },
+          "unresolved": [
+            "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
+            "The May 19, 2026 outcomes report says its limited sample is based on reports from Doctronic physicians and that OAIP initiated a separate independent review.",
+            "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
+            "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
+            "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
+            "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
+          ],
+          "evidence": {
+            "agreement": {
+              "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+              "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+              "original": {
+                "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+                "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+              "document_id": "Doctronic Regulatory Mitigation Agreement",
+              "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+              "document_type": "signed agreement",
+              "version": "signed October 23-24, 2025",
+              "locator": "Sections 2 and 4; Schedule A sections 15-16",
+              "excerpt": "The period of this Agreement is for 12 months, beginning on the date this agreement is executed.",
+              "identity_excerpts": [
+                "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
+              ]
+            },
+            "outcomes": {
+              "snapshot_path": "data/admission/sources/doctronic/Doctronic-Outcomes-May-2026-2026-09-09.txt",
+              "snapshot_sha256": "17c6aa35803126e6611d33575e1bb3543f8af7e319d3991a6e8445abb2042067",
+              "original": {
+                "path": "data/admission/sources/doctronic/Doctronic-Outcomes-May-2026-2026-09-09.pdf",
+                "sha256": "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf",
+              "document_id": "Doctronic Outcomes May 2026",
+              "document_title": "Key Statistics on the Doctronic Pilot Program: Assessment of the First Five Months from January Through April",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official outcomes report",
+              "version": "May 19, 2026",
+              "locator": "Background Information for Consideration; Outcomes; pages 1-2",
+              "excerpt": "In 72% of cases, Doctronic's AI recommended prescription renewal, which then",
+              "identity_excerpts": [
+                "Assessment of the First Five Months from January Through April",
+                "5/19/26"
+              ]
+            },
+            "faq": {
+              "snapshot_path": "data/admission/sources/doctronic/OAIP-AI-FAQ-2026-09-09.html",
+              "snapshot_sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
+              "original": {
+                "path": "data/admission/sources/doctronic/OAIP-AI-FAQ-2026-09-09.html",
+                "sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/ai/ai-faq/",
+              "document_id": "Utah OAIP AI FAQ",
+              "document_title": "AI FAQ",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official agency FAQ",
+              "version": "observed September 9, 2026",
+              "locator": "What changes have been made to the contract?",
+              "excerpt": "The Phase 2 transition criteria in the contract has been updated.",
+              "identity_excerpts": [
+                "<title>AI FAQ - commerce.utah.gov</title>"
+              ]
+            },
+            "pilot_page": {
+              "snapshot_path": "data/admission/sources/doctronic/OAIP-Doctronic-Pilot-2026-09-09.html",
+              "snapshot_sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
+              "original": {
+                "path": "data/admission/sources/doctronic/OAIP-Doctronic-Pilot-2026-09-09.html",
+                "sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+              "document_id": "Utah OAIP Doctronic RMA pilot page",
+              "document_title": "Office of AI Policy: Doctronic RMA",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official agency pilot page",
+              "version": "observed September 9, 2026",
+              "locator": "Page canonical URL and Doctronic AI Regulatory Mitigation Agreement section",
+              "excerpt": "Doctronic AI Regulatory Mitigation Agreement",
+              "identity_excerpts": [
+                "<title>Office of AI Policy: Doctronic RMA - commerce.utah.gov</title>"
+              ]
+            },
+            "home": {
+              "official_url": "https://commerce.utah.gov/ai/",
+              "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-AI-Home-2026-09-24.txt",
+              "snapshot_sha256": "8a86df5aec4d2c3cd1d7e1aec45577c61f12e04e0df11fec1cb6d1ef05e61062",
+              "original": {
+                "path": "data/admission/sources/oaip-pilots/OAIP-AI-Home-2026-09-24.html",
+                "sha256": "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
+              },
+              "acquisition": "primary_retrieval",
+              "retrieval": {
+                "http_status": 200,
+                "retrieved_at": "2026-09-24T02:10:40Z",
+                "final_url": "https://commerce.utah.gov/ai/",
+                "content_type": "text/html; charset=UTF-8"
+              },
+              "document_id": "Utah OAIP AI home page",
+              "document_title": "AI Home",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official agency home page",
+              "version": "server last-modified September 4, 2026; retrieved 2026-09-24",
+              "locator": "Our Mission",
+              "excerpt": "The Office of Artificial Intelligence Policy is dedicated to regulating the bleeding edge of AI",
+              "identity_excerpts": [
+                "AI Home - commerce.utah.gov"
+              ]
+            },
+            "agreement_cites": {
+              "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+              "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+              "original": {
+                "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+                "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+              "document_id": "Doctronic Regulatory Mitigation Agreement",
+              "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+              "document_type": "signed agreement",
+              "version": "signed October 23-24, 2025",
+              "locator": "Schedule A Section 15.D.2",
+              "excerpt": "58-61-502, 59-67-502, 58-68-502, 59-70a-503, and 58-71-502.",
+              "identity_excerpts": [
+                "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
+              ]
+            },
+            "agreement_disclosure": {
+              "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+              "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+              "original": {
+                "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+                "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+              "document_id": "Doctronic Regulatory Mitigation Agreement",
+              "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+              "document_type": "signed agreement",
+              "version": "signed October 23-24, 2025",
+              "locator": "Section 6.G.1-2",
+              "excerpt": "When a user indicates they are requesting the renewal of a prescription as described in Part 2",
+              "identity_excerpts": [
+                "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
+              ]
+            },
+            "agreement_reporting": {
+              "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+              "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+              "original": {
+                "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+                "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+              "document_id": "Doctronic Regulatory Mitigation Agreement",
+              "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+              "document_type": "signed agreement",
+              "version": "signed October 23-24, 2025",
+              "locator": "Section 6.H.2(b)",
+              "excerpt": "Any user complaint reported to Participant or adverse health outcome resulting from a",
+              "identity_excerpts": [
+                "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
+              ]
+            },
+            "agreement_extension": {
+              "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+              "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+              "original": {
+                "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+                "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+              "document_id": "Doctronic Regulatory Mitigation Agreement",
+              "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+              "document_type": "signed agreement",
+              "version": "signed October 23-24, 2025",
+              "locator": "Section 13 Agreement Extension",
+              "excerpt": "Participant may request a single extension of up to 12 months for regulatory mitigation no later than 30",
+              "identity_excerpts": [
+                "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
+              ]
+            },
+            "agreement_title": {
+              "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+              "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+              "original": {
+                "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+                "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+              "document_id": "Doctronic Regulatory Mitigation Agreement",
+              "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+              "document_type": "signed agreement",
+              "version": "signed October 23-24, 2025",
+              "locator": "Page 1 title",
+              "excerpt": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE",
+              "identity_excerpts": [
+                "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
+              ]
+            },
+            "register_phase": {
+              "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+              "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.txt",
+              "snapshot_sha256": "b5a9c67706dcc149a860f46bbde7ccc3a53a9447fe9dbac50b686f90156a0780",
+              "original": {
+                "path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.html",
+                "sha256": "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c"
+              },
+              "acquisition": "primary_retrieval",
+              "retrieval": {
+                "http_status": 200,
+                "retrieved_at": "2026-09-24T02:10:39Z",
+                "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+                "content_type": "text/html; charset=UTF-8"
+              },
+              "document_id": "Utah OAIP Authorized AI Pilots register",
+              "document_title": "Authorized AI Pilots",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official agency pilot register page",
+              "version": "server last-modified September 3, 2026; retrieved 2026-09-24",
+              "locator": "The Agreements: Doctronic entry, Where it stands",
+              "excerpt": "The pilot is still in Phase 1, which means a licensed medical practitioner authorizes every request.",
+              "identity_excerpts": [
+                "AI Authorized Pilots - commerce.utah.gov",
+                "This page is the public record of those agreements."
+              ]
+            },
+            "register_amendment": {
+              "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+              "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.txt",
+              "snapshot_sha256": "b5a9c67706dcc149a860f46bbde7ccc3a53a9447fe9dbac50b686f90156a0780",
+              "original": {
+                "path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.html",
+                "sha256": "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c"
+              },
+              "acquisition": "primary_retrieval",
+              "retrieval": {
+                "http_status": 200,
+                "retrieved_at": "2026-09-24T02:10:39Z",
+                "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+                "content_type": "text/html; charset=UTF-8"
+              },
+              "document_id": "Utah OAIP Authorized AI Pilots register",
+              "document_title": "Authorized AI Pilots",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official agency pilot register page",
+              "version": "server last-modified September 3, 2026; retrieved 2026-09-24",
+              "locator": "The Agreements: Doctronic entry, Where it stands",
+              "excerpt": "The 2026 amendment tightened that threshold and removed two medications from the list.",
+              "identity_excerpts": [
+                "AI Authorized Pilots - commerce.utah.gov",
+                "This page is the public record of those agreements."
+              ]
+            },
+            "register_term": {
+              "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+              "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.txt",
+              "snapshot_sha256": "b5a9c67706dcc149a860f46bbde7ccc3a53a9447fe9dbac50b686f90156a0780",
+              "original": {
+                "path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.html",
+                "sha256": "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c"
+              },
+              "acquisition": "primary_retrieval",
+              "retrieval": {
+                "http_status": 200,
+                "retrieved_at": "2026-09-24T02:10:39Z",
+                "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+                "content_type": "text/html; charset=UTF-8"
+              },
+              "document_id": "Utah OAIP Authorized AI Pilots register",
+              "document_title": "Authorized AI Pilots",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official agency pilot register page",
+              "version": "server last-modified September 3, 2026; retrieved 2026-09-24",
+              "locator": "The Agreements: Doctronic entry, Term",
+              "excerpt": "Term October 24, 2025 – October 24, 2026",
+              "identity_excerpts": [
+                "AI Authorized Pilots - commerce.utah.gov",
+                "This page is the public record of those agreements."
+              ]
+            },
+            "register_adversarial": {
+              "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+              "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.txt",
+              "snapshot_sha256": "b5a9c67706dcc149a860f46bbde7ccc3a53a9447fe9dbac50b686f90156a0780",
+              "original": {
+                "path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.html",
+                "sha256": "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c"
+              },
+              "acquisition": "primary_retrieval",
+              "retrieval": {
+                "http_status": 200,
+                "retrieved_at": "2026-09-24T02:10:39Z",
+                "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+                "content_type": "text/html; charset=UTF-8"
+              },
+              "document_id": "Utah OAIP Authorized AI Pilots register",
+              "document_title": "Authorized AI Pilots",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official agency pilot register page",
+              "version": "server last-modified September 3, 2026; retrieved 2026-09-24",
+              "locator": "The Agreements: Doctronic entry, What the company agreed to",
+              "excerpt": "Third party adversarial testing of the system.",
+              "identity_excerpts": [
+                "AI Authorized Pilots - commerce.utah.gov",
+                "This page is the public record of those agreements."
+              ]
+            },
+            "page_insurance": {
+              "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+              "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Doctronic-Pilot-2026-09-24.txt",
+              "snapshot_sha256": "ac938ca56be8fdc84a4c411688e168d446eb93cc1de7f8129f3907b21d4ea4c8",
+              "original": {
+                "path": "data/admission/sources/oaip-pilots/OAIP-Doctronic-Pilot-2026-09-24.html",
+                "sha256": "cd39386fe85beb33c49e4ab63ec82dc76212171be1bb16cef403dc7483a2cd37"
+              },
+              "acquisition": "primary_retrieval",
+              "retrieval": {
+                "http_status": 200,
+                "retrieved_at": "2026-09-24T02:10:40Z",
+                "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+                "content_type": "text/html; charset=UTF-8"
+              },
+              "document_id": "Utah OAIP Doctronic RMA pilot page",
+              "document_title": "Office of AI Policy: Doctronic RMA",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy",
+              "document_type": "official agency pilot page",
+              "version": "server last-modified June 17, 2026; retrieved 2026-09-24",
+              "locator": "Prescription Renewals FAQs, liability answer",
+              "excerpt": "we expect companies in the regulatory mitigation program to maintain medical malpractice insurance that covers AI liabilities and risk",
+              "identity_excerpts": [
+                "Office of AI Policy: Doctronic RMA - commerce.utah.gov"
+              ]
+            },
+            "agreement_telehealth": {
+              "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+              "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+              "original": {
+                "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+                "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+              },
+              "acquisition": "retained_snapshot",
+              "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+              "document_id": "Doctronic Regulatory Mitigation Agreement",
+              "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
+              "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+              "document_type": "signed agreement",
+              "version": "signed October 23-24, 2025",
+              "locator": "Schedule A §16(A)(1), telehealth compliance clause",
+              "excerpt": "nor in violation of subsection (4) of such section",
+              "identity_excerpts": [
+                "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
+              ]
+            }
+          },
+          "units": {
+            "metadata:issued_by": {
+              "before_sha256": "f589813d6705665132182b4c08e90f9dea0e85c4673afb508c63b60b119d3989",
+              "after_sha256": "e2623753f76da570a3196ac804ea809c75fe2b5d151deafae8be9365fd8c20f6",
+              "candidate_content": {
+                "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
+                "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
+                "ref": "https://commerce.utah.gov/ai/"
+              },
+              "reason": "Replace the dead learning-lab link (HTTP 404) with the current official OAIP home page.",
+              "qualifications": {
+                "scope": "issued_by.ref URL only.",
+                "exceptions": "The home page does not establish any term of this agreement.",
+                "time": "Home page retrieved 2026-09-24."
+              },
+              "evidence": [
+                "home"
+              ]
+            },
+            "metadata:last_verified": {
+              "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+              "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+              "candidate_content": "2026-09-23",
+              "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
+              "qualifications": {
+                "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
+                "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
+                "time": "Reviewed 2026-09-23."
+              },
+              "evidence": [
+                "agreement"
+              ]
+            },
+            "metadata:mitigations": {
+              "before_sha256": "da39c991478d4d2e62a0ad8772055325e39206b9dc1825dbd5b5f2a9a713e6e2",
+              "after_sha256": "c8bb73f12e51f840e3807ef9d2403c3584a79839382cc2d4372d513a6fb967e7",
+              "candidate_content": [
+                "Three-phase comprehensive case-review process (pre-pharmacy review → retrospective review → ongoing sampling)",
+                "Identity and prescription verification protocols before AI engages with renewal request",
+                "AI may not issue new prescriptions, change doses, handle controlled substances, or modify treatment plans",
+                "Formulary limit: Schedule C of the Agreement",
+                "GenAI disclosure (§13-77-103) when a user indicates a renewal request and before the AI engages further on it; user acknowledgment before access to any function",
+                "Data-security posture per §63A-19-102 applied as if Participant were a governmental entity",
+                "Monthly reporting to ai@utah.gov including acceptance/denial counts, physician-review agreement rates, and user-complaint information; separate duty to report user complaints and adverse health outcomes of which Participant becomes aware (no deadline stated)"
+              ],
+              "reason": "Match the disclosure trigger in Section 6.G and separate monthly reporting from the Section 6.H.2(b) complaint and adverse-outcome duty.",
+              "qualifications": {
+                "scope": "Disclosure and reporting mitigations only.",
+                "exceptions": "No incident clock is stated in the agreement; other mitigations unchanged.",
+                "time": "Agreement signed October 23-24, 2025."
+              },
+              "evidence": [
+                "agreement_disclosure",
+                "agreement_reporting"
+              ]
+            },
+            "metadata:modified": {
+              "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
+              "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
+              "candidate_content": "2026-09-23",
+              "reason": "Record the date of this bounded source-consistency correction.",
+              "qualifications": {
+                "scope": "This record edit only.",
+                "exceptions": "last_verified, Verified rows, status, and dates are unchanged; this does not renew legal currentness.",
+                "time": "Edit date 2026-09-23."
+              },
+              "evidence": [
+                "register_term"
+              ]
+            },
+            "metadata:official_url": {
+              "before_sha256": "8b14146b3d481e5b64e9a27d01797e200d9b12ce9642ca403637aa7d5852c797",
+              "after_sha256": "0178d3468419aa1c35ebfa5392b557c439025b892291344f72ccb7b2972df0bf",
+              "candidate_content": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+              "reason": "Replace the retired OAIP path with the current canonical official pilot page.",
+              "qualifications": {
+                "scope": "Official source landing-page URL only.",
+                "exceptions": "The landing page does not establish amendment effectiveness, Phase Two approval, compliance, extension, termination, or current status.",
+                "time": "Current OAIP page observed September 9, 2026."
+              },
+              "evidence": [
+                "pilot_page"
+              ]
+            },
+            "metadata:rules_mitigated": {
+              "before_sha256": "fb124f53a5466e0840f5f6cb49c43d1136d8e2e988b62c30f686a3745baeba09",
+              "after_sha256": "f912580e642a9dae35af768496cd01fed1b0b5f0d98ebc95c3de58ea7274e971",
+              "candidate_content": [
+                "Utah Code §58-1-501(1) and UAC R156-1-501(2)(b) — unlawful/unprofessional conduct for AI-authored Rx renewal",
+                "Utah Code §26B-4-704(6) and UAC R156-1-602 — telehealth provider requirements",
+                "Unprofessional-conduct provisions across prescriber chapters, as listed in Schedule A §15.D.2: §§58-31b-502, 58-60-110, 58-61-502, 59-67-502 [sic], 58-68-502, 59-70a-503 [sic], and 58-71-502 (the signed text cites 59-67-502 and 59-70a-503 as written)"
+              ],
+              "reason": "Reproduce the Schedule A 15.D.2 list as written (58-68-502) and mark the source's 59-67-502 and 59-70a-503 as [sic] without silently correcting them.",
+              "qualifications": {
+                "scope": "Chapter unprofessional-conduct list.",
+                "exceptions": "Other rules_mitigated entries unchanged.",
+                "time": "Agreement signed October 23-24, 2025."
+              },
+              "evidence": [
+                "agreement_cites"
+              ]
+            },
+            "metadata:statute_anchors": {
+              "before_sha256": "8d76cb819308e1bd92b009f2f5cfa54571ad44b06222e00fb1bb93c28e223ecb",
+              "after_sha256": "60a25b855acae65d6b31228ca810876a7ec676a58314eb4691524e46b83fed01",
+              "candidate_content": [
+                {
+                  "cite": "Utah Code §13-72-201",
+                  "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html"
+                },
+                {
+                  "cite": "Utah Code §13-72-301",
+                  "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S301.html"
+                },
+                {
+                  "cite": "Utah Code §13-72-302",
+                  "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html"
+                },
+                {
+                  "cite": "Utah Code §13-77-103",
+                  "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html"
+                },
+                {
+                  "cite": "Utah Code §58-17b (Pharmacy Practice Act)",
+                  "url": "https://le.utah.gov/xcode/Title58/Chapter17B/58-17b.html"
+                },
+                {
+                  "cite": "Utah Code §58-1-501 (Unlawful/unprofessional conduct)",
+                  "url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html"
+                },
+                {
+                  "cite": "Utah Code §26B-4-704 (Telehealth)",
+                  "url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html"
+                },
+                {
+                  "cite": "Utah Code §63A-19-102 (Data security)",
+                  "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html"
+                },
+                {
+                  "cite": "UAC R156-1-501 / R156-1-602"
+                }
+              ],
+              "reason": "Remove the dead adminrules.utah.gov link (HTTP 404); keep the R156-1 citation text because no current URL is established by retained evidence.",
+              "qualifications": {
+                "scope": "R156-1 anchor URL only.",
+                "exceptions": "Citation text unchanged.",
+                "time": "Link checked 2026-09-24."
+              },
+              "evidence": [
+                "agreement_cites"
+              ]
+            },
+            "section:Summary/text": {
+              "before_sha256": "c17b5eb680cf5339f9f8539480b96390fe9e1abf15e4744365d0ee61c9126607",
+              "after_sha256": "59b1f926eba4f01abc375794f7d2bbb1c27014532b919369c4cbf44d4ab0c7bc",
+              "candidate_content": "A Regulatory Mitigation Agreement between the Utah Office of Artificial Intelligence Policy (OAIP), the Utah Division of Professional Licensing (DOPL), and Doctronic, LLC, enrolling Doctronic's AI prescription-renewal system in the Utah AI Learning Laboratory for a 12-month demonstration period. The Agreement permits AI-authored renewals of previously prescribed, non-controlled medications on the formulary, subject to its phased human-review controls. The Division's enforcement forbearance applies only while Doctronic and its affiliated prescribers comply with the Agreement's safeguards, disclosures, reporting obligations, and incorporated Proposal.",
+              "reason": "State the source-bounded permission and conditional enforcement forbearance rather than implying unconstrained system operation.",
+              "qualifications": {
+                "scope": "Previously prescribed, non-controlled formulary medications under the agreement.",
+                "exceptions": "Only Doctronic and affiliated prescribers while complying with agreement controls; no unrelated reliance.",
+                "time": "Agreement term stated as 12 months from execution; current continued operation is unresolved."
+              },
+              "evidence": [
+                "agreement"
+              ]
+            },
+            "section:Obligations summary (Section 6 and Schedule A §16)/text": {
+              "before_sha256": "58f3f6a20dce1c77c841317b88ffd0549cdc58e96cf23cb7f98f9fe4f8b80627",
+              "after_sha256": "c5098be9126bcec882b6a8bd498b84b68c907537042d4b0463656347a1a524c2",
+              "candidate_content": "- Proposal-conforming methodology and safety protocols; amendments only by signed written approval.\n- AI considered in compliance with §26B-4-704(2)(b)/(c), and not in violation of §26B-4-704(4), when Patient Journey and Clinical Workflow (Schedule B, Part 2B) is followed; with §26B-4-704(2)(e) when Escalation Protocols (Part 3B) are followed; §26B-4-704(5) does not apply.\n- §13-77-103 GenAI disclosure when a user indicates a renewal request and before the AI engages further on it; users must acknowledge before accessing any function (§6.G).\n- Data-security posture per §63A-19-102 treated as if Participant were a governmental entity; no sale or advertising use of user data even if deidentified.\n- Monthly reports to ai@utah.gov: acceptance/denial counts, AI-vs-physician agreement rates, trends, and user-complaint information (§6.H.1).\n- Separate reporting of user complaints and adverse health outcomes from AI renewals of which Participant becomes aware, with no stated deadline (§6.H.2(b)); the Agreement sets no incident-notification clock.\n- 30-day post-term written report on deployment, incidents, legal actions, complaints.",
+              "reason": "Match the Section 6.G disclosure trigger and split monthly reports from the Section 6.H.2(b) complaint and adverse-outcome duty, which has no stated deadline. Telehealth line now says the AI is not in violation of §26B-4-704(4), as the agreement states, rather than in compliance with it.",
+              "qualifications": {
+                "scope": "Disclosure and reporting lines.",
+                "exceptions": "The agreement sets no incident-notification clock; other lines unchanged.",
+                "time": "Agreement signed October 23-24, 2025."
+              },
+              "evidence": [
+                "agreement_disclosure",
+                "agreement_reporting",
+                "agreement_telehealth"
+              ]
+            },
+            "section:PubLedge schema mapping/text": {
+              "before_sha256": "c51e959b407fbf569ad325bc76c3e772fb4bc98d84a3bd69e27fdf43dbdd5af4",
+              "after_sha256": "65e143abe0cbcb654c3c78d321e5f2bac5f9f262c47b6f4facc3652e1943b6fe",
+              "candidate_content": "| Source element | PubLedge field |\n|---|---|\n| \"Agreement between OAIP, Doctronic LLC, and DOPL\" | `title`, `name` |\n| Section 1 parties | `parties[]`, `participating_party`, `issuing_authority` |\n| Section 2 (12 months beginning on execution; no end date stated) and OAIP register term October 24, 2025 – October 24, 2026 | `term_start`, `term_end` |\n| Section 3 (Utah Code §13-72-201/301/302 authority) | `program`, `statute_anchors[]` |\n| Section 4 (Scope of Mitigation) + Schedule A §15 | `rules_mitigated[]`, `obligation_kind: permission` |\n| Section 6 (Participant Obligations) | `mitigations[]`, `obligation_kind: requirement/restriction` |\n| Latter signature date 2025-10-24 | `enacted`, `effective` |\n| Utah AI Learning Laboratory | `program` |",
+              "reason": "Note that Section 2 states 12 months from execution without an end date and that the OAIP register states October 24, 2026.",
+              "qualifications": {
+                "scope": "term_start and term_end mapping note.",
+                "exceptions": "term_end value unchanged.",
+                "time": "Register retrieved 2026-09-24."
+              },
+              "evidence": [
+                "agreement",
+                "register_term"
+              ]
+            },
+            "section:Limitations/text": {
+              "before_sha256": "51a5f9a4f8f3fa1d985862e39d275c51bc65208adb9eeb8add4458dcba5f96cf",
+              "after_sha256": "6dd5e500828399e8eee9f125b7cfdecb67f5c37fe8a726e35f74eb91a7c04567",
+              "candidate_content": "- Does not waive federal laws (including controlled-substances statutes), HIPAA, or disclosure/privacy laws beyond what the four corners of the Agreement expressly address.\n- Does not endorse Participant's technology (§3D); advertising references to the Agreement require prior written approval.\n- Terminable at will by either party (§10A) under §13-72-302(7).\n- Assignment requires prior written OAIP consent (§11).\n- Section 13 allows a single extension request of up to 12 months no later than 30 days before the initial 12-month period ends. No retained source shows an extension request or decision; `term_end` records the initial term only.\n- OAIP's register lists third-party adversarial testing among Doctronic's commitments, and OAIP's FAQ says participants are expected to maintain malpractice insurance covering AI liabilities. Neither term appears in the retained signed agreement text; where those terms are set out is unverified.",
+              "reason": "State the Section 13 extension mechanism without asserting any request or decision, and flag register terms absent from the signed agreement.",
+              "qualifications": {
+                "scope": "Extension and completeness notes.",
+                "exceptions": "No extension, insurance, or adversarial-testing term is asserted as an agreement term.",
+                "time": "Register retrieved 2026-09-24; agreement signed October 2025."
+              },
+              "evidence": [
+                "agreement_extension",
+                "register_adversarial",
+                "page_insurance"
+              ]
+            },
+            "section:Sources/text": {
+              "before_sha256": "0190b045b6bd1f233f41b04cc4209d180231f5b0a971f2430442d2ca25503944",
+              "after_sha256": "b97d54e340c914f3227e4d49dfe60290cda0ec83201480eed026b0bc618456fa",
+              "candidate_content": "- [Pilot page — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/)\n- [Authorized AI Pilots — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/)\n- [Signed PDF](https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf) (body title reads \"DRAFT AGREEMENT\"; signatures dated October 23-24, 2025)\n- [OAIP outcomes report — May 19, 2026](https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf)\n- [OAIP AI FAQ — Phase 2 criteria and formulary changes observed September 9, 2026](https://commerce.utah.gov/ai/ai-faq/)\n- [Utah Office of Artificial Intelligence Policy](https://commerce.utah.gov/ai/)\n- [Utah Code Title 13, Chapter 72](https://le.utah.gov/xcode/Title13/Chapter72/13-72.html)",
+              "reason": "Use the final pilot-page URL, add the OAIP register, note the PDF's DRAFT title, and replace the dead learning-lab link with the OAIP home page.",
+              "qualifications": {
+                "scope": "Source links and a title note.",
+                "exceptions": "Links are not evidence of amendment, phase, or current status.",
+                "time": "Retrieved 2026-09-24; report May 19, 2026; FAQ observed September 9, 2026."
+              },
+              "evidence": [
+                "pilot_page",
+                "register_term",
+                "agreement_title",
+                "outcomes",
+                "faq",
+                "home"
+              ]
+            },
+            "section:Notes on this demonstration remap/text": {
+              "before_sha256": "b6107c1c4b1b18a2101a70f0abf0e1296dfa44cceb383c24d23fc7a33f514e6d",
+              "after_sha256": "bf9da20f8b9a7d8cc7f124944e16b3eee433982668d675f3da10a4b3398fc995",
+              "candidate_content": "Third RMA (`us-ut-oaip-rma-2025-002`) by effective date. Exercises: (1) three-party contract (regulator + licensing division + participant), (2) multi-statute mitigation bundle including unprofessional-conduct provisions across seven prescriber chapters, (3) permission + requirement + restriction obligation mix in a single instrument, and (4) concurrent term with Utah's ongoing §13-72 → §13-72a statutory transition.",
+              "reason": "Replace the stale legacy id with the current record id.",
+              "qualifications": {
+                "scope": "Record id reference only.",
+                "exceptions": "No substantive change.",
+                "time": "Current id us-ut-oaip-rma-2025-002."
+              },
+              "evidence": [
+                "agreement"
+              ]
+            },
+            "section:Operational observation (not an issued term)/text": {
+              "before_sha256": null,
+              "after_sha256": "6d5dc2b305cdd909fa3fb755647f7371af676c8c4adbc367d8112e3420357927",
+              "candidate_content": "OAIP's May 19, 2026 outcomes report describes January-April activity while the pilot was still in Phase One. It says the AI recommended renewal in 72% of cases, and each recommendation then went to human physician review. Within that 72% subset, the first reviewing physician agreed renewal was appropriate in 91% of cases. When the first physician requested more information, a second physician also reviewed the case; OAIP reports that either the first or second physician found renewal appropriate in 97% of that recommendation subset based on the information the AI gathered. In the remaining 28% of all cases, the AI escalated without recommending renewal; physicians agreed the escalation was appropriate in 69% of that escalation subset.\n\nThe report says the sample was limited, based on reports from Doctronic physicians, and subject to a separate OAIP review. It is an operational observation, not an amendment or issued term. It does not establish a later phase, compliance, extension, termination, or the pilot's current phase or status after the reporting period.\n\nOAIP's AI FAQ, observed September 9, 2026, says the Phase 2 transition criteria were updated from 250 prescriptions total to 250 medications in each medication group, still subject to OAIP approval, and that Butalbital and Flecainide were removed from the formulary. The retained signed agreement instead describes the first 250 patients as Phase One and includes both medications in its formulary. OAIP's current Doctronic page links the signed agreement, outcomes report, medical-board correspondence, and a policy memorandum, but no signed amendment. The FAQ is therefore retained as an official dated observation and explicit source conflict; it does not establish the amendment mechanism or effective date, OAIP approval to enter Phase Two, or the pilot's current phase.\n\nOAIP's Authorized AI Pilots page, retrieved 2026-09-24 (UTC), lists Doctronic as Active with term October 24, 2025 – October 24, 2026. It states that the pilot is still in Phase 1, that moving to Phase 2 requires OAIP approval by medication group, and that Phase 2 has not been approved. The same page refers to \"the 2026 amendment\" as tightening that threshold and removing two medications, but neither it nor the Doctronic pilot page links an amendment document. The amendment's date, signatories, and exact text remain unverified; the retained signed agreement is the only executed text reviewed.",
+              "reason": "Keep the May 2026 outcomes and FAQ conflict text, and add the dated register statement that the pilot is in Phase 1, Phase 2 is not approved, and a 2026 amendment is described but not linked.",
+              "qualifications": {
+                "scope": "Dated agency observations about phase and an unlinked amendment.",
+                "exceptions": "Amendment date, signatories, and text unverified; the signed agreement remains the only executed text reviewed.",
+                "time": "Report May 19, 2026; FAQ observed September 9, 2026; register retrieved 2026-09-24."
+              },
+              "evidence": [
+                "agreement",
+                "outcomes",
+                "faq",
+                "register_phase",
+                "register_amendment",
+                "register_term"
+              ]
+            }
+          }
+        }
       },
       "review": {
-        "actor_type": "human",
-        "actor": "Sam Rogers",
-        "reviewed_at": "2026-09-24T02:36:37Z",
+        "actor_type": "agent",
+        "actor": "Codex",
+        "reviewed_at": "2026-10-15T04:58:38.253Z",
         "decision": "source-consistency-reviewed",
-        "human_approved": true,
-        "scope": "Human review and approval by Sam Rogers, attested in the Claude Code session on 2026-09-23, of source-consistency corrections prepared by an agent (Claude). Renews last_verified to 2026-09-23 on that basis. Agent preparation scope: Corrected open findings from ops/evidence/utah-overdue-dispositions-2026-09-23.json for the Doctronic RMA: Schedule A 15.D.2 chapter citations reproduced as written, disclosure trigger, monthly versus separate adverse-outcome reporting, dated register observation on Phase 1 and the unlinked 2026 amendment, extension note, term-end and DRAFT-title locator notes, register terms absent from the agreement, stale legacy id, dead learning-lab and admin-rules links, and redirecting agreement-page link, plus the modified date. Carries forward the 2026-09-09 Codex unit reviews for Summary and official_url. Does not renew last_verified or legal currentness.",
-        "packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165"
+        "scope": "Only two changed body units: correct the summary of Sections 5.A/12 and prepend the October 15 UTC source/status observation. Existing observation paragraphs are unchanged. No native frontmatter, agreement terms, mappings, relationship targets, human review date or Verified renewal; selected-page link absence is not proof of nonexistence.",
+        "packet_sha256": "980e16e98d00816b1a7033e07c4a58616071cba28d0d95fa1cf721b0e1ba459c"
       },
       "unresolved": [
         "The signed source PDF body retains the title DRAFT AGREEMENT although the official OAIP page and filename present it as final and the PDF contains signatures dated October 23-24, 2025.",
@@ -23,634 +680,234 @@
         "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
         "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
+        "October 15, 2026 UTC re-observation: the linked signed PDF is byte-identical to the retained September source, while the register and FAQ describe changed Phase 2 criteria and formulary. No amendment, written Proposal approval, Phase 2 approval or extension decision was identified among links on the three selected pages; no claim that those documents do not exist or that the pilot continues past October 24.",
+        "The current FAQ describes a general program allowance of up to two extensions; original Agreement Section 13 permits a single extension request. No new codification bridge, instrument amendment or extension decision was reviewed, and the source-specific wording remains distinct."
       ],
       "evidence": {
-        "agreement": {
-          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+        "proposal_approval": {
+          "snapshot_path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.txt",
           "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+          "acquisition": "primary_retrieval",
           "original": {
-            "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+            "path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.pdf",
             "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
           },
-          "acquisition": "retained_snapshot",
           "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-          "document_id": "Doctronic Regulatory Mitigation Agreement",
-          "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+          "document_id": "Signed OAIP Doctronic Agreement (body headed DRAFT AGREEMENT)",
+          "document_title": "Signed OAIP Doctronic Agreement (body headed DRAFT AGREEMENT)",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy",
           "document_type": "signed agreement",
-          "version": "signed October 23-24, 2025",
-          "locator": "Sections 2 and 4; Schedule A sections 15-16",
-          "excerpt": "The period of this Agreement is for 12 months, beginning on the date this agreement is executed.",
+          "version": "Retrieved 2026-10-15 UTC; agreement signatures October 23-24, 2025 where applicable",
+          "locator": "PDF page 7, Section 5.A",
+          "excerpt": "A. Participant shall perform all relevant activities in accordance with the methodologies and safety\nprotocols set forth in Participant’s Proposal and safety protocol and attached below as Schedule B\n(hereinafter referred to as the “Proposal”). The Proposal can be amended by the Office’s Director (in\nconsultation with the Division) as long as the amendment approval is in writing.",
           "identity_excerpts": [
-            "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
-          ]
-        },
-        "outcomes": {
-          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Outcomes-May-2026-2026-09-09.txt",
-          "snapshot_sha256": "17c6aa35803126e6611d33575e1bb3543f8af7e319d3991a6e8445abb2042067",
-          "original": {
-            "path": "data/admission/sources/doctronic/Doctronic-Outcomes-May-2026-2026-09-09.pdf",
-            "sha256": "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf",
-          "document_id": "Doctronic Outcomes May 2026",
-          "document_title": "Key Statistics on the Doctronic Pilot Program: Assessment of the First Five Months from January Through April",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official outcomes report",
-          "version": "May 19, 2026",
-          "locator": "Background Information for Consideration; Outcomes; pages 1-2",
-          "excerpt": "In 72% of cases, Doctronic's AI recommended prescription renewal, which then",
-          "identity_excerpts": [
-            "Assessment of the First Five Months from January Through April",
-            "5/19/26"
-          ]
-        },
-        "faq": {
-          "snapshot_path": "data/admission/sources/doctronic/OAIP-AI-FAQ-2026-09-09.html",
-          "snapshot_sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
-          "original": {
-            "path": "data/admission/sources/doctronic/OAIP-AI-FAQ-2026-09-09.html",
-            "sha256": "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://commerce.utah.gov/ai/ai-faq/",
-          "document_id": "Utah OAIP AI FAQ",
-          "document_title": "AI FAQ",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official agency FAQ",
-          "version": "observed September 9, 2026",
-          "locator": "What changes have been made to the contract?",
-          "excerpt": "The Phase 2 transition criteria in the contract has been updated.",
-          "identity_excerpts": [
-            "<title>AI FAQ - commerce.utah.gov</title>"
-          ]
-        },
-        "pilot_page": {
-          "snapshot_path": "data/admission/sources/doctronic/OAIP-Doctronic-Pilot-2026-09-09.html",
-          "snapshot_sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
-          "original": {
-            "path": "data/admission/sources/doctronic/OAIP-Doctronic-Pilot-2026-09-09.html",
-            "sha256": "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
-          "document_id": "Utah OAIP Doctronic RMA pilot page",
-          "document_title": "Office of AI Policy: Doctronic RMA",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official agency pilot page",
-          "version": "observed September 9, 2026",
-          "locator": "Page canonical URL and Doctronic AI Regulatory Mitigation Agreement section",
-          "excerpt": "Doctronic AI Regulatory Mitigation Agreement",
-          "identity_excerpts": [
-            "<title>Office of AI Policy: Doctronic RMA - commerce.utah.gov</title>"
-          ]
-        },
-        "home": {
-          "official_url": "https://commerce.utah.gov/ai/",
-          "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-AI-Home-2026-09-24.txt",
-          "snapshot_sha256": "8a86df5aec4d2c3cd1d7e1aec45577c61f12e04e0df11fec1cb6d1ef05e61062",
-          "original": {
-            "path": "data/admission/sources/oaip-pilots/OAIP-AI-Home-2026-09-24.html",
-            "sha256": "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
-          },
-          "acquisition": "primary_retrieval",
+            "DOCTRONIC, LLC",
+            "The Proposal can be amended"
+          ],
           "retrieval": {
             "http_status": 200,
-            "retrieved_at": "2026-09-24T02:10:40Z",
-            "final_url": "https://commerce.utah.gov/ai/",
-            "content_type": "text/html; charset=UTF-8"
+            "retrieved_at": "2026-10-15T04:49:45.261Z",
+            "final_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+            "content_type": "application/pdf"
+          }
+        },
+        "agreement_modification": {
+          "snapshot_path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.txt",
+          "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+          "acquisition": "primary_retrieval",
+          "original": {
+            "path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.pdf",
+            "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
           },
-          "document_id": "Utah OAIP AI home page",
-          "document_title": "AI Home",
+          "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+          "document_id": "Signed OAIP Doctronic Agreement (body headed DRAFT AGREEMENT)",
+          "document_title": "Signed OAIP Doctronic Agreement (body headed DRAFT AGREEMENT)",
           "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official agency home page",
-          "version": "server last-modified September 4, 2026; retrieved 2026-09-24",
-          "locator": "Our Mission",
-          "excerpt": "The Office of Artificial Intelligence Policy is dedicated to regulating the bleeding edge of AI",
-          "identity_excerpts": [
-            "AI Home - commerce.utah.gov"
-          ]
-        },
-        "agreement_cites": {
-          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
-          "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
-          "original": {
-            "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
-            "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-          "document_id": "Doctronic Regulatory Mitigation Agreement",
-          "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
           "document_type": "signed agreement",
-          "version": "signed October 23-24, 2025",
-          "locator": "Schedule A Section 15.D.2",
-          "excerpt": "58-61-502, 59-67-502, 58-68-502, 59-70a-503, and 58-71-502.",
+          "version": "Retrieved 2026-10-15 UTC; agreement signatures October 23-24, 2025 where applicable",
+          "locator": "PDF page 11, Section 12",
+          "excerpt": "Section 12. Entire Agreement\n\nThis Agreement, including all referenced documents and attachments, constitutes the entire agreement\nbetween the Parties regarding the subject matter hereof. This Agreement supersedes any other written or\noral understanding of the Parties. This Agreement may not be modified except by a written instrument\nexecuted by both Parties. This Agreement may be signed in counterparts, and may be signed\nelectronically.",
           "identity_excerpts": [
-            "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
-          ]
-        },
-        "agreement_disclosure": {
-          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
-          "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
-          "original": {
-            "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
-            "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-          "document_id": "Doctronic Regulatory Mitigation Agreement",
-          "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
-          "document_type": "signed agreement",
-          "version": "signed October 23-24, 2025",
-          "locator": "Section 6.G.1-2",
-          "excerpt": "When a user indicates they are requesting the renewal of a prescription as described in Part 2",
-          "identity_excerpts": [
-            "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
-          ]
-        },
-        "agreement_reporting": {
-          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
-          "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
-          "original": {
-            "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
-            "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-          "document_id": "Doctronic Regulatory Mitigation Agreement",
-          "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
-          "document_type": "signed agreement",
-          "version": "signed October 23-24, 2025",
-          "locator": "Section 6.H.2(b)",
-          "excerpt": "Any user complaint reported to Participant or adverse health outcome resulting from a",
-          "identity_excerpts": [
-            "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
-          ]
+            "DOCTRONIC, LLC",
+            "executed by both Parties"
+          ],
+          "retrieval": {
+            "http_status": 200,
+            "retrieved_at": "2026-10-15T04:49:45.261Z",
+            "final_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+            "content_type": "application/pdf"
+          }
         },
         "agreement_extension": {
-          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+          "snapshot_path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.txt",
           "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+          "acquisition": "primary_retrieval",
           "original": {
-            "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+            "path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.pdf",
             "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
           },
-          "acquisition": "retained_snapshot",
           "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-          "document_id": "Doctronic Regulatory Mitigation Agreement",
-          "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+          "document_id": "Signed OAIP Doctronic Agreement (body headed DRAFT AGREEMENT)",
+          "document_title": "Signed OAIP Doctronic Agreement (body headed DRAFT AGREEMENT)",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy",
           "document_type": "signed agreement",
-          "version": "signed October 23-24, 2025",
-          "locator": "Section 13 Agreement Extension",
-          "excerpt": "Participant may request a single extension of up to 12 months for regulatory mitigation no later than 30",
+          "version": "Retrieved 2026-10-15 UTC; agreement signatures October 23-24, 2025 where applicable",
+          "locator": "PDF page 11, Sections 13-14",
+          "excerpt": "Section 13. Agreement Extension\n\nParticipant may request a single extension of up to 12 months for regulatory mitigation no later than 30\ndays before the end of the initial 12-month period. The Office shall grant or deny an extension request\nbefore expiration of the initial demonstration period in accordance with Utah Code § 13-72-305.",
           "identity_excerpts": [
-            "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
-          ]
+            "DOCTRONIC, LLC",
+            "single extension of up to 12 months"
+          ],
+          "retrieval": {
+            "http_status": 200,
+            "retrieved_at": "2026-10-15T04:49:45.261Z",
+            "final_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+            "content_type": "application/pdf"
+          }
         },
-        "agreement_title": {
-          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
+        "agreement_phase": {
+          "snapshot_path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.txt",
           "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
+          "acquisition": "primary_retrieval",
           "original": {
-            "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
+            "path": "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.pdf",
             "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
           },
-          "acquisition": "retained_snapshot",
           "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-          "document_id": "Doctronic Regulatory Mitigation Agreement",
-          "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
+          "document_id": "Signed OAIP Doctronic Agreement (body headed DRAFT AGREEMENT)",
+          "document_title": "Signed OAIP Doctronic Agreement (body headed DRAFT AGREEMENT)",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy",
           "document_type": "signed agreement",
-          "version": "signed October 23-24, 2025",
-          "locator": "Page 1 title",
-          "excerpt": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE",
+          "version": "Retrieved 2026-10-15 UTC; agreement signatures October 23-24, 2025 where applicable",
+          "locator": "PDF page 21, Schedule B Part 3.C; Schedule C PDF pages 25-26, rows 2 and 79",
+          "excerpt": "Phase One – Pre-Issuance Review Period: For the first 250 patients processed through\nthe system, every AI-generated renewal decision will undergo review by licensed\nphysicians prior to the renewal being submitted to the pharmacy. This comprehensive\nanalysis will evaluate:\n     ●   Clinical appropriateness of renewal decisions\n     ●   Accuracy of medication history taking\n     ●   Effectiveness of drug interaction screening\n     ●   Quality of symptom assessment and clinical reasoning",
           "identity_excerpts": [
-            "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
-          ]
-        },
-        "register_phase": {
-          "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
-          "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.txt",
-          "snapshot_sha256": "b5a9c67706dcc149a860f46bbde7ccc3a53a9447fe9dbac50b686f90156a0780",
-          "original": {
-            "path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.html",
-            "sha256": "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c"
-          },
-          "acquisition": "primary_retrieval",
+            "DOCTRONIC, LLC",
+            "Acetaminophen; Butalbital;",
+            "79 Flecainide"
+          ],
           "retrieval": {
             "http_status": 200,
-            "retrieved_at": "2026-09-24T02:10:39Z",
-            "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
-            "content_type": "text/html; charset=UTF-8"
+            "retrieved_at": "2026-10-15T04:49:45.261Z",
+            "final_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+            "content_type": "application/pdf"
+          }
+        },
+        "register": {
+          "snapshot_path": "data/admission/sources/doctronic/2026-10-15/authorized-pilots.txt",
+          "snapshot_sha256": "1858478e83da9ffb02b1a82a579f364fde2aba27309e01900ce2631a334326a4",
+          "acquisition": "primary_retrieval",
+          "original": {
+            "path": "data/admission/sources/doctronic/2026-10-15/authorized-pilots.html",
+            "sha256": "98bbcb33d3fdc43985e17bff65ca26b7f80c41cc91ee457d7211f7178012f2be"
           },
-          "document_id": "Utah OAIP Authorized AI Pilots register",
+          "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+          "document_id": "Authorized AI Pilots",
           "document_title": "Authorized AI Pilots",
           "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official agency pilot register page",
-          "version": "server last-modified September 3, 2026; retrieved 2026-09-24",
-          "locator": "The Agreements: Doctronic entry, Where it stands",
-          "excerpt": "The pilot is still in Phase 1, which means a licensed medical practitioner authorizes every request.",
+          "document_type": "official agency status observation",
+          "version": "Retrieved 2026-10-15 UTC; agreement signatures October 23-24, 2025 where applicable",
+          "locator": "Summary of Agreements, Doctronic entry",
+          "excerpt": "Doctronic\nActive\nPrescription renewals\nSigned\nOctober 24, 2025\nTerm\nOctober 24, 2025 – October 24, 2026\nCo-signed with\nDivision of Professional Licensing\nWhat the pilot does\nDoctronic uses AI to process 30, 60, and 90 day renewals of medication a licensed provider has already prescribed. It does not write a new prescription, touch controlled or addictive substances, or change a treatment plan. The pilot covers a fixed list of medications set out in the agreement and no others.\nRelief granted\nThe same narrow relief as the Legion Health pilot: the Division of Professional Licensing agreed not to enforce the unlicensed conduct and telehealth provisions named in Schedule A against a renewal the AI authorizes under the agreed protocol. The relief covers the renewal function only and expressly reaches nothing else Doctronic offers.\nWhere it stands\nThe pilot is still in Phase 1, which means a licensed medical practitioner authorizes every request. Moving to Phase 2 requires this office to approve it, group of medications by group of medications, and it has not been approved. The 2026 amendment tightened that threshold and removed two medications from the list.\nWhat the company agreed to\nA three phase review, with this office deciding whether each phase advances.\nIdentity and prescription verification before any renewal is processed.\nTelling the user, before the conversation starts, that they are interacting with generative AI, how their data will be used, and that they can file a complaint with this office.\nMonthly reporting, including how often the AI and the reviewing physician agreed.\nNo selling user data and no advertising against it, deidentified or otherwise.\nThird party adversarial testing of the system.\nLearn more",
           "identity_excerpts": [
-            "AI Authorized Pilots - commerce.utah.gov",
-            "This page is the public record of those agreements."
-          ]
-        },
-        "register_amendment": {
-          "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
-          "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.txt",
-          "snapshot_sha256": "b5a9c67706dcc149a860f46bbde7ccc3a53a9447fe9dbac50b686f90156a0780",
-          "original": {
-            "path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.html",
-            "sha256": "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c"
-          },
-          "acquisition": "primary_retrieval",
+            "Authorized AI Pilots",
+            "The 2026 amendment tightened that threshold"
+          ],
           "retrieval": {
             "http_status": 200,
-            "retrieved_at": "2026-09-24T02:10:39Z",
+            "retrieved_at": "2026-10-15T04:49:09.152Z",
             "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
             "content_type": "text/html; charset=UTF-8"
-          },
-          "document_id": "Utah OAIP Authorized AI Pilots register",
-          "document_title": "Authorized AI Pilots",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official agency pilot register page",
-          "version": "server last-modified September 3, 2026; retrieved 2026-09-24",
-          "locator": "The Agreements: Doctronic entry, Where it stands",
-          "excerpt": "The 2026 amendment tightened that threshold and removed two medications from the list.",
-          "identity_excerpts": [
-            "AI Authorized Pilots - commerce.utah.gov",
-            "This page is the public record of those agreements."
-          ]
+          }
         },
-        "register_term": {
-          "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
-          "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.txt",
-          "snapshot_sha256": "b5a9c67706dcc149a860f46bbde7ccc3a53a9447fe9dbac50b686f90156a0780",
-          "original": {
-            "path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.html",
-            "sha256": "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c"
-          },
+        "faq": {
+          "snapshot_path": "data/admission/sources/doctronic/2026-10-15/ai-faq.txt",
+          "snapshot_sha256": "63ef4c71a7379a064ace0bb3f78f58755c245a9bb2715bb43107ce07ce96cd77",
           "acquisition": "primary_retrieval",
+          "original": {
+            "path": "data/admission/sources/doctronic/2026-10-15/ai-faq.html",
+            "sha256": "baa85c45fa21bec0d573cefa6523fd780c7b20de33e46a2b1bbcb25ae20103a3"
+          },
+          "official_url": "https://commerce.utah.gov/ai/ai-faq/",
+          "document_id": "AI FAQ",
+          "document_title": "AI FAQ",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy",
+          "document_type": "official agency FAQ observation",
+          "version": "Retrieved 2026-10-15 UTC; agreement signatures October 23-24, 2025 where applicable",
+          "locator": "Prescription renewal pilots: permanence and contract changes",
+          "excerpt": "Is this program permanent?\nNo. These pilots exist under this office's authority to permit an AI use case that needs regulatory relief, for a limited time.\nAn initial demonstration period may not exceed 12 months. A participant may request a 12-month extension, and we may grant up to two. The Doctronic pilot, for example, runs from October 2025 to October 2026, and any continuation past that is a decision this office has to make rather than an automatic renewal. See Utah Code § 13-72-403.\nDoes this mean any AI can practice medicine in Utah?\nNo. An agreement covers one named company, one described product, and one defined set of tasks, for a limited period, on conditions that company must keep. It grants nothing to anyone else, and it grants nothing at all if the participant stops meeting its terms.\nWe may end an agreement at any time and for any reason, and a participant has no property right or license in taking part. Signing one is also not a state endorsement or approval of the product. See Utah Code § 13-72-401(8) and (9).\nWhat changes have been made to the contract?\nThe Doctronic agreement's phase 2 transition criteria were updated. The pilot previously advanced once 250 prescriptions had been filled in total. Now each medication group advances as a group, once 250 prescriptions have been filled within that group. Moving from phase 1 to phase 2 still requires this office's approval.\nButalbital and Flecainide were also removed from Doctronic's formulary.",
+          "identity_excerpts": [
+            "AI FAQ",
+            "The Doctronic agreement's phase 2 transition criteria were updated."
+          ],
           "retrieval": {
             "http_status": 200,
-            "retrieved_at": "2026-09-24T02:10:39Z",
-            "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+            "retrieved_at": "2026-10-15T04:49:09.343Z",
+            "final_url": "https://commerce.utah.gov/ai/ai-faq/",
             "content_type": "text/html; charset=UTF-8"
-          },
-          "document_id": "Utah OAIP Authorized AI Pilots register",
-          "document_title": "Authorized AI Pilots",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official agency pilot register page",
-          "version": "server last-modified September 3, 2026; retrieved 2026-09-24",
-          "locator": "The Agreements: Doctronic entry, Term",
-          "excerpt": "Term October 24, 2025 – October 24, 2026",
-          "identity_excerpts": [
-            "AI Authorized Pilots - commerce.utah.gov",
-            "This page is the public record of those agreements."
-          ]
+          }
         },
-        "register_adversarial": {
-          "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
-          "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.txt",
-          "snapshot_sha256": "b5a9c67706dcc149a860f46bbde7ccc3a53a9447fe9dbac50b686f90156a0780",
-          "original": {
-            "path": "data/admission/sources/oaip-pilots/OAIP-Authorized-Pilots-2026-09-24.html",
-            "sha256": "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c"
-          },
+        "pilot": {
+          "snapshot_path": "data/admission/sources/doctronic/2026-10-15/doctronic-pilot.txt",
+          "snapshot_sha256": "4a45a112fac11d5d0bc1a45c7f570cee1513ecc647c26e8500b2b89d9eeeda2e",
           "acquisition": "primary_retrieval",
-          "retrieval": {
-            "http_status": 200,
-            "retrieved_at": "2026-09-24T02:10:39Z",
-            "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
-            "content_type": "text/html; charset=UTF-8"
+          "original": {
+            "path": "data/admission/sources/doctronic/2026-10-15/doctronic-pilot.html",
+            "sha256": "d2db2d66bc5df6c57b4ebdcecf5f270e3769c4695d628339f0e18589a2e67f95"
           },
-          "document_id": "Utah OAIP Authorized AI Pilots register",
-          "document_title": "Authorized AI Pilots",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official agency pilot register page",
-          "version": "server last-modified September 3, 2026; retrieved 2026-09-24",
-          "locator": "The Agreements: Doctronic entry, What the company agreed to",
-          "excerpt": "Third party adversarial testing of the system.",
-          "identity_excerpts": [
-            "AI Authorized Pilots - commerce.utah.gov",
-            "This page is the public record of those agreements."
-          ]
-        },
-        "page_insurance": {
           "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
-          "snapshot_path": "data/admission/sources/oaip-pilots/OAIP-Doctronic-Pilot-2026-09-24.txt",
-          "snapshot_sha256": "ac938ca56be8fdc84a4c411688e168d446eb93cc1de7f8129f3907b21d4ea4c8",
-          "original": {
-            "path": "data/admission/sources/oaip-pilots/OAIP-Doctronic-Pilot-2026-09-24.html",
-            "sha256": "cd39386fe85beb33c49e4ab63ec82dc76212171be1bb16cef403dc7483a2cd37"
-          },
-          "acquisition": "primary_retrieval",
+          "document_id": "Doctronic AI Regulatory Mitigation Agreement",
+          "document_title": "Doctronic AI Regulatory Mitigation Agreement",
+          "issuing_body": "Utah Office of Artificial Intelligence Policy",
+          "document_type": "official agency pilot observation",
+          "version": "Retrieved 2026-10-15 UTC; agreement signatures October 23-24, 2025 where applicable",
+          "locator": "Status of the Doctronic Pilot and Prescription Renewals FAQs; link inventory reviewed separately",
+          "excerpt": "What changes have been made to the Doctronic contract?\nThe Phase 2 transition criteria in the contract has been updated. Previously, the pilot progressed after 250 total prescriptions were filled. Now, each medication group will be eligible to move on to Phase 2 as a group once Doctronic has filled 250 medications in that group. Moving from phase 1 to phase 2 is still subject to OAIP approval.\nAdditionally, Butalbital and Flecainide have been removed from Doctronic’s formulary.",
+          "identity_excerpts": [
+            "Doctronic AI Regulatory Mitigation Agreement",
+            "The pilot remains in Phase 1"
+          ],
           "retrieval": {
             "http_status": 200,
-            "retrieved_at": "2026-09-24T02:10:40Z",
+            "retrieved_at": "2026-10-15T04:49:09.233Z",
             "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
             "content_type": "text/html; charset=UTF-8"
-          },
-          "document_id": "Utah OAIP Doctronic RMA pilot page",
-          "document_title": "Office of AI Policy: Doctronic RMA",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy",
-          "document_type": "official agency pilot page",
-          "version": "server last-modified June 17, 2026; retrieved 2026-09-24",
-          "locator": "Prescription Renewals FAQs, liability answer",
-          "excerpt": "we expect companies in the regulatory mitigation program to maintain medical malpractice insurance that covers AI liabilities and risk",
-          "identity_excerpts": [
-            "Office of AI Policy: Doctronic RMA - commerce.utah.gov"
-          ]
-        },
-        "agreement_telehealth": {
-          "snapshot_path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.txt",
-          "snapshot_sha256": "5c3b3a54fd01a88472f6e28a1ae43d88e84f71534387e6c602f77169f8252044",
-          "original": {
-            "path": "data/admission/sources/doctronic/Doctronic-Final-Agreement-2026-09-09.pdf",
-            "sha256": "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
-          },
-          "acquisition": "retained_snapshot",
-          "official_url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
-          "document_id": "Doctronic Regulatory Mitigation Agreement",
-          "document_title": "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE POLICY, DOCTRONIC, LLC, AND THE DIVISION OF PROFESSIONAL LICENSING",
-          "issuing_body": "Utah Office of Artificial Intelligence Policy and Utah Division of Professional Licensing",
-          "document_type": "signed agreement",
-          "version": "signed October 23-24, 2025",
-          "locator": "Schedule A §16(A)(1), telehealth compliance clause",
-          "excerpt": "nor in violation of subsection (4) of such section",
-          "identity_excerpts": [
-            "DRAFT AGREEMENT BETWEEN THE OFFICE OF ARTIFICIAL INTELLIGENCE"
-          ]
+          }
         }
       },
       "units": {
-        "metadata:issued_by": {
-          "before_sha256": "f589813d6705665132182b4c08e90f9dea0e85c4673afb508c63b60b119d3989",
-          "after_sha256": "e2623753f76da570a3196ac804ea809c75fe2b5d151deafae8be9365fd8c20f6",
-          "candidate_content": {
-            "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
-            "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-            "ref": "https://commerce.utah.gov/ai/"
-          },
-          "reason": "Replace the dead learning-lab link (HTTP 404) with the current official OAIP home page.",
-          "qualifications": {
-            "scope": "issued_by.ref URL only.",
-            "exceptions": "The home page does not establish any term of this agreement.",
-            "time": "Home page retrieved 2026-09-24."
-          },
-          "evidence": [
-            "home"
-          ]
-        },
-        "metadata:last_verified": {
-          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
-          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
-          "candidate_content": "2026-09-23",
-          "reason": "Human reviewer renews verification after reviewing the corrected record against its retained sources.",
-          "qualifications": {
-            "scope": "Whole-record source-consistency review against the retained sources cited in this receipt.",
-            "exceptions": "Items listed as unresolved remain unverified; review does not certify legal currentness beyond the cited sources.",
-            "time": "Reviewed 2026-09-23."
-          },
-          "evidence": [
-            "agreement"
-          ]
-        },
-        "metadata:mitigations": {
-          "before_sha256": "da39c991478d4d2e62a0ad8772055325e39206b9dc1825dbd5b5f2a9a713e6e2",
-          "after_sha256": "c8bb73f12e51f840e3807ef9d2403c3584a79839382cc2d4372d513a6fb967e7",
-          "candidate_content": [
-            "Three-phase comprehensive case-review process (pre-pharmacy review → retrospective review → ongoing sampling)",
-            "Identity and prescription verification protocols before AI engages with renewal request",
-            "AI may not issue new prescriptions, change doses, handle controlled substances, or modify treatment plans",
-            "Formulary limit: Schedule C of the Agreement",
-            "GenAI disclosure (§13-77-103) when a user indicates a renewal request and before the AI engages further on it; user acknowledgment before access to any function",
-            "Data-security posture per §63A-19-102 applied as if Participant were a governmental entity",
-            "Monthly reporting to ai@utah.gov including acceptance/denial counts, physician-review agreement rates, and user-complaint information; separate duty to report user complaints and adverse health outcomes of which Participant becomes aware (no deadline stated)"
-          ],
-          "reason": "Match the disclosure trigger in Section 6.G and separate monthly reporting from the Section 6.H.2(b) complaint and adverse-outcome duty.",
-          "qualifications": {
-            "scope": "Disclosure and reporting mitigations only.",
-            "exceptions": "No incident clock is stated in the agreement; other mitigations unchanged.",
-            "time": "Agreement signed October 23-24, 2025."
-          },
-          "evidence": [
-            "agreement_disclosure",
-            "agreement_reporting"
-          ]
-        },
-        "metadata:modified": {
-          "before_sha256": "e690a9db34a506022ddcf5d28c9159f07399430eedcb1db905f601ca73e1a743",
-          "after_sha256": "203550de69fd32247aa59c67343c1ec7437181af7576b6b4a0750aca2b15d62b",
-          "candidate_content": "2026-09-23",
-          "reason": "Record the date of this bounded source-consistency correction.",
-          "qualifications": {
-            "scope": "This record edit only.",
-            "exceptions": "last_verified, Verified rows, status, and dates are unchanged; this does not renew legal currentness.",
-            "time": "Edit date 2026-09-23."
-          },
-          "evidence": [
-            "register_term"
-          ]
-        },
-        "metadata:official_url": {
-          "before_sha256": "8b14146b3d481e5b64e9a27d01797e200d9b12ce9642ca403637aa7d5852c797",
-          "after_sha256": "0178d3468419aa1c35ebfa5392b557c439025b892291344f72ccb7b2972df0bf",
-          "candidate_content": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
-          "reason": "Replace the retired OAIP path with the current canonical official pilot page.",
-          "qualifications": {
-            "scope": "Official source landing-page URL only.",
-            "exceptions": "The landing page does not establish amendment effectiveness, Phase Two approval, compliance, extension, termination, or current status.",
-            "time": "Current OAIP page observed September 9, 2026."
-          },
-          "evidence": [
-            "pilot_page"
-          ]
-        },
-        "metadata:rules_mitigated": {
-          "before_sha256": "fb124f53a5466e0840f5f6cb49c43d1136d8e2e988b62c30f686a3745baeba09",
-          "after_sha256": "f912580e642a9dae35af768496cd01fed1b0b5f0d98ebc95c3de58ea7274e971",
-          "candidate_content": [
-            "Utah Code §58-1-501(1) and UAC R156-1-501(2)(b) — unlawful/unprofessional conduct for AI-authored Rx renewal",
-            "Utah Code §26B-4-704(6) and UAC R156-1-602 — telehealth provider requirements",
-            "Unprofessional-conduct provisions across prescriber chapters, as listed in Schedule A §15.D.2: §§58-31b-502, 58-60-110, 58-61-502, 59-67-502 [sic], 58-68-502, 59-70a-503 [sic], and 58-71-502 (the signed text cites 59-67-502 and 59-70a-503 as written)"
-          ],
-          "reason": "Reproduce the Schedule A 15.D.2 list as written (58-68-502) and mark the source's 59-67-502 and 59-70a-503 as [sic] without silently correcting them.",
-          "qualifications": {
-            "scope": "Chapter unprofessional-conduct list.",
-            "exceptions": "Other rules_mitigated entries unchanged.",
-            "time": "Agreement signed October 23-24, 2025."
-          },
-          "evidence": [
-            "agreement_cites"
-          ]
-        },
-        "metadata:statute_anchors": {
-          "before_sha256": "8d76cb819308e1bd92b009f2f5cfa54571ad44b06222e00fb1bb93c28e223ecb",
-          "after_sha256": "60a25b855acae65d6b31228ca810876a7ec676a58314eb4691524e46b83fed01",
-          "candidate_content": [
-            {
-              "cite": "Utah Code §13-72-201",
-              "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S201.html"
-            },
-            {
-              "cite": "Utah Code §13-72-301",
-              "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S301.html"
-            },
-            {
-              "cite": "Utah Code §13-72-302",
-              "url": "https://le.utah.gov/xcode/Title13/Chapter72/13-72-S302.html"
-            },
-            {
-              "cite": "Utah Code §13-77-103",
-              "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S103.html"
-            },
-            {
-              "cite": "Utah Code §58-17b (Pharmacy Practice Act)",
-              "url": "https://le.utah.gov/xcode/Title58/Chapter17B/58-17b.html"
-            },
-            {
-              "cite": "Utah Code §58-1-501 (Unlawful/unprofessional conduct)",
-              "url": "https://le.utah.gov/xcode/Title58/Chapter1/58-1-S501.html"
-            },
-            {
-              "cite": "Utah Code §26B-4-704 (Telehealth)",
-              "url": "https://le.utah.gov/xcode/Title26B/Chapter4/26B-4-S704.html"
-            },
-            {
-              "cite": "Utah Code §63A-19-102 (Data security)",
-              "url": "https://le.utah.gov/xcode/Title63A/Chapter19/63A-19-S102.html"
-            },
-            {
-              "cite": "UAC R156-1-501 / R156-1-602"
-            }
-          ],
-          "reason": "Remove the dead adminrules.utah.gov link (HTTP 404); keep the R156-1 citation text because no current URL is established by retained evidence.",
-          "qualifications": {
-            "scope": "R156-1 anchor URL only.",
-            "exceptions": "Citation text unchanged.",
-            "time": "Link checked 2026-09-24."
-          },
-          "evidence": [
-            "agreement_cites"
-          ]
-        },
-        "section:Summary/text": {
-          "before_sha256": "c17b5eb680cf5339f9f8539480b96390fe9e1abf15e4744365d0ee61c9126607",
-          "after_sha256": "59b1f926eba4f01abc375794f7d2bbb1c27014532b919369c4cbf44d4ab0c7bc",
-          "candidate_content": "A Regulatory Mitigation Agreement between the Utah Office of Artificial Intelligence Policy (OAIP), the Utah Division of Professional Licensing (DOPL), and Doctronic, LLC, enrolling Doctronic's AI prescription-renewal system in the Utah AI Learning Laboratory for a 12-month demonstration period. The Agreement permits AI-authored renewals of previously prescribed, non-controlled medications on the formulary, subject to its phased human-review controls. The Division's enforcement forbearance applies only while Doctronic and its affiliated prescribers comply with the Agreement's safeguards, disclosures, reporting obligations, and incorporated Proposal.",
-          "reason": "State the source-bounded permission and conditional enforcement forbearance rather than implying unconstrained system operation.",
-          "qualifications": {
-            "scope": "Previously prescribed, non-controlled formulary medications under the agreement.",
-            "exceptions": "Only Doctronic and affiliated prescribers while complying with agreement controls; no unrelated reliance.",
-            "time": "Agreement term stated as 12 months from execution; current continued operation is unresolved."
-          },
-          "evidence": [
-            "agreement"
-          ]
-        },
         "section:Obligations summary (Section 6 and Schedule A §16)/text": {
-          "before_sha256": "58f3f6a20dce1c77c841317b88ffd0549cdc58e96cf23cb7f98f9fe4f8b80627",
-          "after_sha256": "c5098be9126bcec882b6a8bd498b84b68c907537042d4b0463656347a1a524c2",
-          "candidate_content": "- Proposal-conforming methodology and safety protocols; amendments only by signed written approval.\n- AI considered in compliance with §26B-4-704(2)(b)/(c), and not in violation of §26B-4-704(4), when Patient Journey and Clinical Workflow (Schedule B, Part 2B) is followed; with §26B-4-704(2)(e) when Escalation Protocols (Part 3B) are followed; §26B-4-704(5) does not apply.\n- §13-77-103 GenAI disclosure when a user indicates a renewal request and before the AI engages further on it; users must acknowledge before accessing any function (§6.G).\n- Data-security posture per §63A-19-102 treated as if Participant were a governmental entity; no sale or advertising use of user data even if deidentified.\n- Monthly reports to ai@utah.gov: acceptance/denial counts, AI-vs-physician agreement rates, trends, and user-complaint information (§6.H.1).\n- Separate reporting of user complaints and adverse health outcomes from AI renewals of which Participant becomes aware, with no stated deadline (§6.H.2(b)); the Agreement sets no incident-notification clock.\n- 30-day post-term written report on deployment, incidents, legal actions, complaints.",
-          "reason": "Match the Section 6.G disclosure trigger and split monthly reports from the Section 6.H.2(b) complaint and adverse-outcome duty, which has no stated deadline. Telehealth line now says the AI is not in violation of §26B-4-704(4), as the agreement states, rather than in compliance with it.",
+          "before_sha256": "c5098be9126bcec882b6a8bd498b84b68c907537042d4b0463656347a1a524c2",
+          "after_sha256": "3fbc01a6329732bd4150591effc1a81b753534057f546b95ee95d5aff938490b",
+          "candidate_content": "- Proposal-conforming methodology and safety protocols. Section 5.A permits the Office Director, in consultation with the Division, to amend the incorporated Proposal (Schedule B) with approval in writing. Section 12 separately requires a written instrument executed by \"both Parties\" to modify the Agreement; that is the signed text's wording despite its three signatories. Neither mechanism establishes that a particular amendment was approved.\n- AI considered in compliance with §26B-4-704(2)(b)/(c), and not in violation of §26B-4-704(4), when Patient Journey and Clinical Workflow (Schedule B, Part 2B) is followed; with §26B-4-704(2)(e) when Escalation Protocols (Part 3B) are followed; §26B-4-704(5) does not apply.\n- §13-77-103 GenAI disclosure when a user indicates a renewal request and before the AI engages further on it; users must acknowledge before accessing any function (§6.G).\n- Data-security posture per §63A-19-102 treated as if Participant were a governmental entity; no sale or advertising use of user data even if deidentified.\n- Monthly reports to ai@utah.gov: acceptance/denial counts, AI-vs-physician agreement rates, trends, and user-complaint information (§6.H.1).\n- Separate reporting of user complaints and adverse health outcomes from AI renewals of which Participant becomes aware, with no stated deadline (§6.H.2(b)); the Agreement sets no incident-notification clock.\n- 30-day post-term written report on deployment, incidents, legal actions, complaints.",
+          "reason": "Correct the prior summary that collapsed two amendment mechanisms; do not infer that either mechanism was used.",
           "qualifications": {
-            "scope": "Disclosure and reporting lines.",
-            "exceptions": "The agreement sets no incident-notification clock; other lines unchanged.",
-            "time": "Agreement signed October 23-24, 2025."
+            "scope": "Doctronic Agreement Section 5.A and Section 12 only; source wording both Parties retained despite three signatories.",
+            "exceptions": "Missing amendment, written approval, phase approval, extension, termination and compliance evidence remain unresolved. Newer FAQ program guidance does not rewrite original agreement terms.",
+            "time": "Sources retrieved 2026-10-15 UTC; original initial term ends 2026-10-24; last_verified remains 2026-09-23. No new human attestation."
           },
           "evidence": [
-            "agreement_disclosure",
-            "agreement_reporting",
-            "agreement_telehealth"
-          ]
-        },
-        "section:PubLedge schema mapping/text": {
-          "before_sha256": "c51e959b407fbf569ad325bc76c3e772fb4bc98d84a3bd69e27fdf43dbdd5af4",
-          "after_sha256": "65e143abe0cbcb654c3c78d321e5f2bac5f9f262c47b6f4facc3652e1943b6fe",
-          "candidate_content": "| Source element | PubLedge field |\n|---|---|\n| \"Agreement between OAIP, Doctronic LLC, and DOPL\" | `title`, `name` |\n| Section 1 parties | `parties[]`, `participating_party`, `issuing_authority` |\n| Section 2 (12 months beginning on execution; no end date stated) and OAIP register term October 24, 2025 – October 24, 2026 | `term_start`, `term_end` |\n| Section 3 (Utah Code §13-72-201/301/302 authority) | `program`, `statute_anchors[]` |\n| Section 4 (Scope of Mitigation) + Schedule A §15 | `rules_mitigated[]`, `obligation_kind: permission` |\n| Section 6 (Participant Obligations) | `mitigations[]`, `obligation_kind: requirement/restriction` |\n| Latter signature date 2025-10-24 | `enacted`, `effective` |\n| Utah AI Learning Laboratory | `program` |",
-          "reason": "Note that Section 2 states 12 months from execution without an end date and that the OAIP register states October 24, 2026.",
-          "qualifications": {
-            "scope": "term_start and term_end mapping note.",
-            "exceptions": "term_end value unchanged.",
-            "time": "Register retrieved 2026-09-24."
-          },
-          "evidence": [
-            "agreement",
-            "register_term"
-          ]
-        },
-        "section:Limitations/text": {
-          "before_sha256": "51a5f9a4f8f3fa1d985862e39d275c51bc65208adb9eeb8add4458dcba5f96cf",
-          "after_sha256": "6dd5e500828399e8eee9f125b7cfdecb67f5c37fe8a726e35f74eb91a7c04567",
-          "candidate_content": "- Does not waive federal laws (including controlled-substances statutes), HIPAA, or disclosure/privacy laws beyond what the four corners of the Agreement expressly address.\n- Does not endorse Participant's technology (§3D); advertising references to the Agreement require prior written approval.\n- Terminable at will by either party (§10A) under §13-72-302(7).\n- Assignment requires prior written OAIP consent (§11).\n- Section 13 allows a single extension request of up to 12 months no later than 30 days before the initial 12-month period ends. No retained source shows an extension request or decision; `term_end` records the initial term only.\n- OAIP's register lists third-party adversarial testing among Doctronic's commitments, and OAIP's FAQ says participants are expected to maintain malpractice insurance covering AI liabilities. Neither term appears in the retained signed agreement text; where those terms are set out is unverified.",
-          "reason": "State the Section 13 extension mechanism without asserting any request or decision, and flag register terms absent from the signed agreement.",
-          "qualifications": {
-            "scope": "Extension and completeness notes.",
-            "exceptions": "No extension, insurance, or adversarial-testing term is asserted as an agreement term.",
-            "time": "Register retrieved 2026-09-24; agreement signed October 2025."
-          },
-          "evidence": [
-            "agreement_extension",
-            "register_adversarial",
-            "page_insurance"
-          ]
-        },
-        "section:Sources/text": {
-          "before_sha256": "0190b045b6bd1f233f41b04cc4209d180231f5b0a971f2430442d2ca25503944",
-          "after_sha256": "b97d54e340c914f3227e4d49dfe60290cda0ec83201480eed026b0bc618456fa",
-          "candidate_content": "- [Pilot page — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/)\n- [Authorized AI Pilots — Utah OAIP](https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/)\n- [Signed PDF](https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf) (body title reads \"DRAFT AGREEMENT\"; signatures dated October 23-24, 2025)\n- [OAIP outcomes report — May 19, 2026](https://commerce.utah.gov/wp-content/uploads/2026/05/Doctronic-Outcomes-May-2026.pdf)\n- [OAIP AI FAQ — Phase 2 criteria and formulary changes observed September 9, 2026](https://commerce.utah.gov/ai/ai-faq/)\n- [Utah Office of Artificial Intelligence Policy](https://commerce.utah.gov/ai/)\n- [Utah Code Title 13, Chapter 72](https://le.utah.gov/xcode/Title13/Chapter72/13-72.html)",
-          "reason": "Use the final pilot-page URL, add the OAIP register, note the PDF's DRAFT title, and replace the dead learning-lab link with the OAIP home page.",
-          "qualifications": {
-            "scope": "Source links and a title note.",
-            "exceptions": "Links are not evidence of amendment, phase, or current status.",
-            "time": "Retrieved 2026-09-24; report May 19, 2026; FAQ observed September 9, 2026."
-          },
-          "evidence": [
-            "pilot_page",
-            "register_term",
-            "agreement_title",
-            "outcomes",
-            "faq",
-            "home"
-          ]
-        },
-        "section:Notes on this demonstration remap/text": {
-          "before_sha256": "b6107c1c4b1b18a2101a70f0abf0e1296dfa44cceb383c24d23fc7a33f514e6d",
-          "after_sha256": "bf9da20f8b9a7d8cc7f124944e16b3eee433982668d675f3da10a4b3398fc995",
-          "candidate_content": "Third RMA (`us-ut-oaip-rma-2025-002`) by effective date. Exercises: (1) three-party contract (regulator + licensing division + participant), (2) multi-statute mitigation bundle including unprofessional-conduct provisions across seven prescriber chapters, (3) permission + requirement + restriction obligation mix in a single instrument, and (4) concurrent term with Utah's ongoing §13-72 → §13-72a statutory transition.",
-          "reason": "Replace the stale legacy id with the current record id.",
-          "qualifications": {
-            "scope": "Record id reference only.",
-            "exceptions": "No substantive change.",
-            "time": "Current id us-ut-oaip-rma-2025-002."
-          },
-          "evidence": [
-            "agreement"
+            "proposal_approval",
+            "agreement_modification"
           ]
         },
         "section:Operational observation (not an issued term)/text": {
-          "before_sha256": null,
-          "after_sha256": "6d5dc2b305cdd909fa3fb755647f7371af676c8c4adbc367d8112e3420357927",
-          "candidate_content": "OAIP's May 19, 2026 outcomes report describes January-April activity while the pilot was still in Phase One. It says the AI recommended renewal in 72% of cases, and each recommendation then went to human physician review. Within that 72% subset, the first reviewing physician agreed renewal was appropriate in 91% of cases. When the first physician requested more information, a second physician also reviewed the case; OAIP reports that either the first or second physician found renewal appropriate in 97% of that recommendation subset based on the information the AI gathered. In the remaining 28% of all cases, the AI escalated without recommending renewal; physicians agreed the escalation was appropriate in 69% of that escalation subset.\n\nThe report says the sample was limited, based on reports from Doctronic physicians, and subject to a separate OAIP review. It is an operational observation, not an amendment or issued term. It does not establish a later phase, compliance, extension, termination, or the pilot's current phase or status after the reporting period.\n\nOAIP's AI FAQ, observed September 9, 2026, says the Phase 2 transition criteria were updated from 250 prescriptions total to 250 medications in each medication group, still subject to OAIP approval, and that Butalbital and Flecainide were removed from the formulary. The retained signed agreement instead describes the first 250 patients as Phase One and includes both medications in its formulary. OAIP's current Doctronic page links the signed agreement, outcomes report, medical-board correspondence, and a policy memorandum, but no signed amendment. The FAQ is therefore retained as an official dated observation and explicit source conflict; it does not establish the amendment mechanism or effective date, OAIP approval to enter Phase Two, or the pilot's current phase.\n\nOAIP's Authorized AI Pilots page, retrieved 2026-09-24 (UTC), lists Doctronic as Active with term October 24, 2025 – October 24, 2026. It states that the pilot is still in Phase 1, that moving to Phase 2 requires OAIP approval by medication group, and that Phase 2 has not been approved. The same page refers to \"the 2026 amendment\" as tightening that threshold and removing two medications, but neither it nor the Doctronic pilot page links an amendment document. The amendment's date, signatories, and exact text remain unverified; the retained signed agreement is the only executed text reviewed.",
-          "reason": "Keep the May 2026 outcomes and FAQ conflict text, and add the dated register statement that the pilot is in Phase 1, Phase 2 is not approved, and a 2026 amendment is described but not linked.",
+          "before_sha256": "6d5dc2b305cdd909fa3fb755647f7371af676c8c4adbc367d8112e3420357927",
+          "after_sha256": "fc2c569c03393bff837ef7c76f1604c2d6f2efc447ffdad31cb366ed77bacc07",
+          "candidate_content": "OAIP's Authorized AI Pilots page, retrieved 2026-10-15 (UTC), still lists Doctronic as Active with the initial term October 24, 2025 – October 24, 2026. It reports Phase 1, requiring licensed-practitioner authorization of every request, and says Phase 2 requires approval by medication group and has not been approved. This is a dated agency status observation, not independently established operation, compliance, an amended term, or permission to continue past October 24. No amendment document, written Proposal approval, Phase 2 approval, or extension decision was located among the links on the register, Doctronic pilot page, and FAQ reviewed in this source check; their absence from those pages does not establish that no such document exists.\n\nThe agreement PDF linked by the reviewed pilot page was retrieved 2026-10-15 (UTC) and is byte-identical to the signed source retained September 9. It still describes the first 250 patients as Phase One and includes Butalbital and Flecainide in Schedule C. The current register and FAQ continue to describe a per-medication-group threshold and removal of those medications. The source conflict remains unresolved: the approval mechanism, document, date, signatories or approving official, and exact changed text are unverified. The FAQ now describes a general program allowance of up to two extensions, while Section 13 of this agreement permits a single extension request; the FAQ is not an amendment or a decision extending this agreement. Renewal beyond the recorded initial term, termination, and compliance remain unverified. This source check does not renew the September 23 legal verification date.\n\nOAIP's May 19, 2026 outcomes report describes January-April activity while the pilot was still in Phase One. It says the AI recommended renewal in 72% of cases, and each recommendation then went to human physician review. Within that 72% subset, the first reviewing physician agreed renewal was appropriate in 91% of cases. When the first physician requested more information, a second physician also reviewed the case; OAIP reports that either the first or second physician found renewal appropriate in 97% of that recommendation subset based on the information the AI gathered. In the remaining 28% of all cases, the AI escalated without recommending renewal; physicians agreed the escalation was appropriate in 69% of that escalation subset.\n\nThe report says the sample was limited, based on reports from Doctronic physicians, and subject to a separate OAIP review. It is an operational observation, not an amendment or issued term. It does not establish a later phase, compliance, extension, termination, or the pilot's current phase or status after the reporting period.\n\nOAIP's AI FAQ, observed September 9, 2026, says the Phase 2 transition criteria were updated from 250 prescriptions total to 250 medications in each medication group, still subject to OAIP approval, and that Butalbital and Flecainide were removed from the formulary. The retained signed agreement instead describes the first 250 patients as Phase One and includes both medications in its formulary. OAIP's current Doctronic page links the signed agreement, outcomes report, medical-board correspondence, and a policy memorandum, but no signed amendment. The FAQ is therefore retained as an official dated observation and explicit source conflict; it does not establish the amendment mechanism or effective date, OAIP approval to enter Phase Two, or the pilot's current phase.\n\nOAIP's Authorized AI Pilots page, retrieved 2026-09-24 (UTC), lists Doctronic as Active with term October 24, 2025 – October 24, 2026. It states that the pilot is still in Phase 1, that moving to Phase 2 requires OAIP approval by medication group, and that Phase 2 has not been approved. The same page refers to \"the 2026 amendment\" as tightening that threshold and removing two medications, but neither it nor the Doctronic pilot page links an amendment document. The amendment's date, signatories, and exact text remain unverified; the retained signed agreement is the only executed text reviewed.",
+          "reason": "Prepend newly retained dated agency observations and byte-identity result, preserving the existing historical observations verbatim and unresolved amendment/renewal limits.",
           "qualifications": {
-            "scope": "Dated agency observations about phase and an unlinked amendment.",
-            "exceptions": "Amendment date, signatories, and text unverified; the signed agreement remains the only executed text reviewed.",
-            "time": "Report May 19, 2026; FAQ observed September 9, 2026; register retrieved 2026-09-24."
+            "scope": "Selected Doctronic entry, pilot page/FAQ and currently linked original agreement only; not independently observed operation or whole-site document discovery.",
+            "exceptions": "Missing amendment, written approval, phase approval, extension, termination and compliance evidence remain unresolved. Newer FAQ program guidance does not rewrite original agreement terms.",
+            "time": "Sources retrieved 2026-10-15 UTC; original initial term ends 2026-10-24; last_verified remains 2026-09-23. No new human attestation."
           },
           "evidence": [
-            "agreement",
-            "outcomes",
+            "agreement_extension",
+            "agreement_phase",
+            "register",
             "faq",
-            "register_phase",
-            "register_amendment",
-            "register_term"
+            "pilot"
           ]
         }
       }

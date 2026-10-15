@@ -1,0 +1,22 @@
+{
+  "scope": "Complete previously unattempted PDF acquisition and inspect the actual pilot URL linked by the retained register",
+  "discovery_source": "data/admission/sources/doctronic/2026-10-15/authorized-pilots.html",
+  "pdf_link_source": "data/admission/sources/doctronic/2026-10-15/doctronic-pilot.html",
+  "source_requests": [
+    {
+      "id": "agreement",
+      "url": "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf",
+      "file": "Doctronic-Final-Agreement.pdf"
+    },
+    {
+      "id": "register_linked_pilot",
+      "url": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/doctronic/",
+      "file": "register-linked-doctronic.html"
+    }
+  ],
+  "max_source_requests": 2,
+  "retries": 0,
+  "redirects_followed": 0,
+  "robots": "Reuse successful freshly retained robots.txt policy",
+  "reason": "Initial link guard compared an absolute planned URL with the relative href and stopped before any PDF request; resolve relative links locally. The second URL is directly witnessed in the official register, not guessed. Three prior successful observations will not be replayed."
+}

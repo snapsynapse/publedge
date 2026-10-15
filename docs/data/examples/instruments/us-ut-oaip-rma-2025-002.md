@@ -105,7 +105,7 @@ May a participant's artificial-intelligence technology authorize the renewal of 
 
 ## Obligations summary (Section 6 and Schedule A §16)
 
-- Proposal-conforming methodology and safety protocols; amendments only by signed written approval.
+- Proposal-conforming methodology and safety protocols. Section 5.A permits the Office Director, in consultation with the Division, to amend the incorporated Proposal (Schedule B) with approval in writing. Section 12 separately requires a written instrument executed by "both Parties" to modify the Agreement; that is the signed text's wording despite its three signatories. Neither mechanism establishes that a particular amendment was approved.
 - AI considered in compliance with §26B-4-704(2)(b)/(c), and not in violation of §26B-4-704(4), when Patient Journey and Clinical Workflow (Schedule B, Part 2B) is followed; with §26B-4-704(2)(e) when Escalation Protocols (Part 3B) are followed; §26B-4-704(5) does not apply.
 - §13-77-103 GenAI disclosure when a user indicates a renewal request and before the AI engages further on it; users must acknowledge before accessing any function (§6.G).
 - Data-security posture per §63A-19-102 treated as if Participant were a governmental entity; no sale or advertising use of user data even if deidentified.
@@ -114,6 +114,10 @@ May a participant's artificial-intelligence technology authorize the renewal of 
 - 30-day post-term written report on deployment, incidents, legal actions, complaints.
 
 ## Operational observation (not an issued term)
+
+OAIP's Authorized AI Pilots page, retrieved 2026-10-15 (UTC), still lists Doctronic as Active with the initial term October 24, 2025 – October 24, 2026. It reports Phase 1, requiring licensed-practitioner authorization of every request, and says Phase 2 requires approval by medication group and has not been approved. This is a dated agency status observation, not independently established operation, compliance, an amended term, or permission to continue past October 24. No amendment document, written Proposal approval, Phase 2 approval, or extension decision was located among the links on the register, Doctronic pilot page, and FAQ reviewed in this source check; their absence from those pages does not establish that no such document exists.
+
+The agreement PDF linked by the reviewed pilot page was retrieved 2026-10-15 (UTC) and is byte-identical to the signed source retained September 9. It still describes the first 250 patients as Phase One and includes Butalbital and Flecainide in Schedule C. The current register and FAQ continue to describe a per-medication-group threshold and removal of those medications. The source conflict remains unresolved: the approval mechanism, document, date, signatories or approving official, and exact changed text are unverified. The FAQ now describes a general program allowance of up to two extensions, while Section 13 of this agreement permits a single extension request; the FAQ is not an amendment or a decision extending this agreement. Renewal beyond the recorded initial term, termination, and compliance remain unverified. This source check does not renew the September 23 legal verification date.
 
 OAIP's May 19, 2026 outcomes report describes January-April activity while the pilot was still in Phase One. It says the AI recommended renewal in 72% of cases, and each recommendation then went to human physician review. Within that 72% subset, the first reviewing physician agreed renewal was appropriate in 91% of cases. When the first physician requested more information, a second physician also reviewed the case; OAIP reports that either the first or second physician found renewal appropriate in 97% of that recommendation subset based on the information the AI gathered. In the remaining 28% of all cases, the AI escalated without recommending renewal; physicians agreed the escalation was appropriate in 69% of that escalation subset.
 

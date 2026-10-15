@@ -1,0 +1,20 @@
+{
+  "base_commit": "1d47a0ee120c436f1f198373dd59fe0cdc1dbd2e",
+  "checker_commit": "1857e686efb674ed54be8c33b10b9d18f5c7db41",
+  "status": "passed",
+  "canonical_command": "OBLIGATION_FIRST_DIR=/private/tmp/obligation-first-publedge-provenance-20261014 CHECK_OF_REQUIRED=1 npm run verify:ci",
+  "canonical_log": "/private/tmp/doctronic-verify-ci-accepted-20261015.log",
+  "canonical_log_sha256": "25f8a083738ef15da4378d760ff6f5747f5ff77cca8d803dec20497ae5eb038b",
+  "admission_comparison_commit": "1d47a0ee120c436f1f198373dd59fe0cdc1dbd2e",
+  "admission_packet_sha256": "980e16e98d00816b1a7033e07c4a58616071cba28d0d95fa1cf721b0e1ba459c",
+  "native_raw_sha256": "a906d83a5ea7d6cf6afe6b279acba9b99b38f251cae9896758ac11be630e9a7d",
+  "receipts_raw_sha256": "35f44567f9ea1d99c94a896ee97b5db50a8ead5398a9eb42239427942894e271",
+  "mode": "Uncommitted, staged review candidate. Canonical local migration comparison uses default HEAD, which resolves to the exact pre-tranche main; an explicit comparison equal to HEAD is rejected by the checker for committed-candidate use. Separate admission check explicitly against that exact main also passed. No guard changed or skipped.",
+  "rendered_a11y": "doctronic-rendered-a11y-2026-10-15.json",
+  "independent_review": "doctronic-source-independent-review-2026-10-15.md",
+  "limitations": [
+    "Local verification only; no new GitHub CI result, commit, push or deployment.",
+    "Sampled page accessibility only, no full-site or manual screen-reader acceptance.",
+    "No legal verification-date renewal or approval/renewal facts inferred."
+  ]
+}

@@ -50,6 +50,8 @@
     "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
     "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
     "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
+    "October 15, 2026 UTC re-observation: the linked signed PDF is byte-identical to the retained September source, while the register and FAQ describe changed Phase 2 criteria and formulary. No amendment, written Proposal approval, Phase 2 approval or extension decision was identified among links on the three selected pages; no claim that those documents do not exist or that the pilot continues past October 24.",
+    "The current FAQ describes a general program allowance of up to two extensions; original Agreement Section 13 permits a single extension request. No new codification bridge, instrument amendment or extension decision was reviewed, and the source-specific wording remains distinct.",
     "The Doctronic signed text cites 59-67-502 and 59-70a-503, which appear to be typographical errors for chapter 58 provisions; reproduced as written with [sic].",
     "This agent review does not renew last_verified or authenticate human review."
   ],
@@ -58,18 +60,21 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-      "native_file_sha256": "8793088d93de032d8f5b2ed3a50e9441d911ece3d01083ad61cd01d8c8672724",
+      "native_file_sha256": "a906d83a5ea7d6cf6afe6b279acba9b99b38f251cae9896758ac11be630e9a7d",
       "canonical_unit": null,
-      "canonical_sha256": "3239d831c257b9d90b0ba33e8c45f2412d43e78dc36bb7def8c7cc596085a156",
+      "canonical_sha256": "e95f77b2e2ed8b10e3ea9962ec98103de2067619db7f8e2aadfac39cb79a1bf1",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "0477b1b8256179798966ac53d86e5df9576f461bf5ba91e3e7948311ada05165",
+      "review_packet_sha256": "980e16e98d00816b1a7033e07c4a58616071cba28d0d95fa1cf721b0e1ba459c",
       "retained_primary_sha256": [
         "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
         "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
         "80655c9373edb6aa99613311c0dcc6e7339c50612704df24b1b8e7b0a1c3087c",
         "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
+        "98bbcb33d3fdc43985e17bff65ca26b7f80c41cc91ee457d7211f7178012f2be",
         "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+        "baa85c45fa21bec0d573cefa6523fd780c7b20de33e46a2b1bbcb25ae20103a3",
         "cd39386fe85beb33c49e4ab63ec82dc76212171be1bb16cef403dc7483a2cd37",
+        "d2db2d66bc5df6c57b4ebdcecf5f270e3769c4695d628339f0e18589a2e67f95",
         "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
       ],
       "unresolved_review_state": "declared",
@@ -79,7 +84,9 @@
         "OAIP's register and FAQ describe a 2026 amendment changing the Phase 2 criteria and removing two medications, which conflicts with the retained signed agreement; no amendment document is linked, so its date, signatories, and exact text are unverified.",
         "No retained source shows an extension request or decision under Section 13, a termination, or compliance; the register's Active status and Phase 1 statement are agency web statements retrieved 2026-09-24.",
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
-        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
+        "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
+        "October 15, 2026 UTC re-observation: the linked signed PDF is byte-identical to the retained September source, while the register and FAQ describe changed Phase 2 criteria and formulary. No amendment, written Proposal approval, Phase 2 approval or extension decision was identified among links on the three selected pages; no claim that those documents do not exist or that the pilot continues past October 24.",
+        "The current FAQ describes a general program allowance of up to two extensions; original Agreement Section 13 permits a single extension request. No new codification bridge, instrument amendment or extension decision was reviewed, and the source-specific wording remains distinct."
       ]
     },
     {

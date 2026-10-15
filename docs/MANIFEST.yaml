@@ -223,7 +223,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
     role: instrument
-    hash: sha256:8793088d93de032d8f5b2ed3a50e9441d911ece3d01083ad61cd01d8c8672724
+    hash: sha256:a906d83a5ea7d6cf6afe6b279acba9b99b38f251cae9896758ac11be630e9a7d
     note: data/examples/instruments/us-ut-oaip-rma-2025-002.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2026-001.md
@@ -1048,7 +1048,7 @@ files:
 
   - path: tests/doctronic-observation.test.js
     role: code
-    hash: sha256:d9964bfaeb126d4111b4f7c7363b085567c3713ed68cbcff5e75d2b4003b5089
+    hash: sha256:7f99e0e7802bdc2d8681e3fc04193771e5b068cc79880b28731a6af5e7f8ac4a
     note: Dated outcomes versus issued-term boundary regression
 
   - path: tests/source-owned-mapping.test.js

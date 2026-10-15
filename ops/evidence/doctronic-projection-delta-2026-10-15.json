@@ -1,0 +1,24 @@
+{
+  "base_commit": "1d47a0ee120c436f1f198373dd59fe0cdc1dbd2e",
+  "changed_section": "provenance_claims",
+  "changed_records": [
+    "https://publedge.org/determination/us-ut-oaip-rma-2025-002-issuance.json",
+    "https://publedge.org/instrument/us-ut-oaip-rma-2025-002.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-ai-authorized-rx-renewal.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-named-prescriber-enforcement-forborne.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-data-security-63a-19-102.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-end-of-term-report.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-hold-harmless-state.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-monthly-report-to-oaip.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-rma-no-advertising-reference.json",
+    "https://publedge.org/obligation/doctronic-rma-obligations-telehealth-compliance-per-proposal.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-doctronic-llc.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-division-of-professional-licensing.json",
+    "https://publedge.org/party/us-ut-oaip-rma-2025-002-utah-office-of-artificial-intelligence-policy.json",
+    "https://publedge.org/term/doctronic-rma-obligations.json"
+  ],
+  "record_count": 14,
+  "other_fingerprint_sections_unchanged": true,
+  "native_frontmatter_unchanged": true,
+  "limits": "Reviewed source-evidence updates only; no identifier or relationship baseline migration."
+}
