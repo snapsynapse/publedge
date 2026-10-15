@@ -22,7 +22,7 @@ test('HB452 keeps human dates, native identities and unrelated clauses/mappings 
     const mapping = 'data/examples/mapping/index.yml';
     const current = parseMappingIndex(read(mapping)), old = parseMappingIndex(before(mapping));
     assert.deepEqual(current.map(({ obligation_qualification, ...entry }) => entry), old.map(({ obligation_qualification, ...entry }) => entry));
-    assert.deepEqual(current.filter(entry => entry.id !== 'hb452-mental-health-chatbot-stack'), old.filter(entry => entry.id !== 'hb452-mental-health-chatbot-stack'));
+    assert.deepEqual(current.filter(entry => !['hb452-mental-health-chatbot-stack', 'sb226-disclosure-and-ai-defense'].includes(entry.id)), old.filter(entry => !['hb452-mental-health-chatbot-stack', 'sb226-disclosure-and-ai-defense'].includes(entry.id)));
 });
 
 test('HB452 new reviews retain exact predecessors and frozen originals', () => {
@@ -30,7 +30,11 @@ test('HB452 new reviews retain exact predecessors and frozen originals', () => {
     const old = JSON.parse(before('data/admission/receipts.json')).records;
     for (const [file, receipt] of Object.entries(old)) {
         assert.ok(admission.receiptLineage(current[file]).some(entry => admission.digest(entry) === admission.digest(receipt)), file);
-        if (![names[0], names[1], 'data/examples/mapping/index.yml'].includes(file)) assert.deepEqual(current[file], receipt);
+        if (![names[0], names[1], 'data/examples/mapping/index.yml'].includes(file)) {
+            // Check the immutable HB452-era checkpoint even after a later scoped successor.
+            const checkpoint = admission.receiptLineage(current[file]).find(entry => admission.digest(entry) === admission.digest(receipt));
+            assert.deepEqual(checkpoint, receipt);
+        }
     }
     for (const name of [...names, 'data/examples/mapping/index.yml']) {
         assert.equal(current[name].review.actor_type, 'agent');

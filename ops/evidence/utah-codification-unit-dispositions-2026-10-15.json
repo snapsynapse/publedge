@@ -1,0 +1,78 @@
+{
+  "base": "d3ee6947a0f479d93f614c38b6cbe8ecc634609b",
+  "scope": "Scoped current-code locator bridge; prior unresolved items retained historically, not silently resolved or erased",
+  "records": [
+    {
+      "file": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
+      "prior_receipt_digest": "710f3778baf2fc3466a0a95b376e2fc5aada6c0aa939dfa4a4efb54aacd27668",
+      "prior_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
+      "successor_packet_sha256": "9db09334618edbee7b44cf66a4cdf1f3fc3d87054a8977dd7a6f249147be7948",
+      "changed_units": [
+        "metadata:statute_anchors",
+        "section:Summary/subsection:Sources/text",
+        "section:Summary/subsection:Codification bridge (selected sources)/text"
+      ],
+      "prior_unresolved_preserved": true
+    },
+    {
+      "file": "data/examples/obligations/disclose-genai-on-request.md",
+      "prior_receipt_digest": "43eed7c1442a967692a210206d121cfb93ecd5e89f21d9f910dd448f77437cb0",
+      "prior_packet_sha256": "ae850f903e66d27eac95d560533460f50cea40532afb8f15ab6d5c6c41e9b98a",
+      "successor_packet_sha256": "c9bcea95d678c2d05f79807b9a1843470edd9fb35530c1dd1f442db6a8ee105c",
+      "changed_units": [
+        "section:Summary/text",
+        "section:What Does Not Count/text",
+        "section:Statute Anchors/text"
+      ],
+      "prior_unresolved_preserved": true
+    },
+    {
+      "file": "data/examples/obligations/disclose-genai-high-risk-proactive.md",
+      "prior_receipt_digest": "dd65259cdcd08e5624fdfa654d39e80c97496abb340f098f6538303841222f17",
+      "prior_packet_sha256": "53dc6fff3ee933e85a8596578c3985f836252418b30dc6025349ed3ebdb586bb",
+      "successor_packet_sha256": "57d1e4cb8e0e9de00fa652c7b9bce3e0a0f574c8a323937ea1731e3c0a2e7996",
+      "changed_units": [
+        "section:Summary/text",
+        "section:What Does Not Count/text",
+        "section:Statute Anchors/text"
+      ],
+      "prior_unresolved_preserved": true
+    },
+    {
+      "file": "data/examples/obligations/disclose-genai-on-first-session.md",
+      "prior_receipt_digest": "f522f1cfce9c6df137bb04eeee060a5778af72ade4bf028e1d86d01b926f9876",
+      "prior_packet_sha256": "74ae4d983684859783dd7606114665ffd2bf801cf5c005f5d2b1e29240b50cb9",
+      "successor_packet_sha256": "d8fd77066d7d397d5a47c85f1e7bb9614b20b0d9aabc9cbe6afb4ab4939aa7ab",
+      "changed_units": [
+        "section:Summary/text",
+        "section:What Counts/text",
+        "section:Statute Anchors/text",
+        "section:Statute Anchors/subsection:Codification bridge (selected sources)/text"
+      ],
+      "prior_unresolved_preserved": true
+    },
+    {
+      "file": "data/examples/obligations/ai-defense-elimination.md",
+      "prior_receipt_digest": "468b8029d06d02225a297094b0dcc40becb5c4a139fe4416a5676bac8700f1a3",
+      "prior_packet_sha256": "d55ff8b00852b7a4a493871057a1dc3b033c434c83fef2eea19d1295f5a9cd8c",
+      "successor_packet_sha256": "1329bb18e617c53d8bc19eee22ac74d40df11e95621d8aa27f308398bfa6b3d0",
+      "changed_units": [
+        "section:What Counts/text",
+        "section:Statute Anchors/text",
+        "section:Statute Anchors/subsection:Codification bridge (selected sources)/text"
+      ],
+      "prior_unresolved_preserved": true
+    },
+    {
+      "file": "data/examples/mapping/index.yml",
+      "prior_receipt_digest": "7ebf9c0fe8fdc4df723be7b8f17098fb744074b7ff6e40613a16b2073ac570bd",
+      "prior_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+      "successor_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
+      "changed_units": [
+        "entry:sb226-disclosure-and-ai-defense",
+        "entry:hb452-mental-health-chatbot-stack"
+      ],
+      "prior_unresolved_preserved": true
+    }
+  ]
+}

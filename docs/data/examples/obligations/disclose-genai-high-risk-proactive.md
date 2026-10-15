@@ -16,18 +16,18 @@ search_terms:
 
 ## Summary
 
-An individual providing services in a regulated occupation must prominently disclose when an individual receiving services is interacting with generative artificial intelligence in the provision of regulated services if that use constitutes a high-risk artificial intelligence interaction (§13-75-103(2)(a)). The statutory actor is the individual providing those services, without a supplier condition. A regulated occupation is regulated by the Department of Commerce and requires an individual to obtain a license or state certification to practice (§13-75-101(8)).
+An individual providing services in a regulated occupation must prominently disclose when an individual receiving services is interacting with generative artificial intelligence in the provision of regulated services if that use constitutes a high-risk artificial intelligence interaction (§13-77-103(2)(a)). The statutory actor is the individual providing those services, without a supplier condition. A regulated occupation is regulated by the Department of Commerce and requires an individual to obtain a license or state certification to practice (§13-77-101(8)).
 
-The required disclosure is provided verbally at the start of a verbal interaction, and in writing before the start of a written interaction (§13-75-103(3)). Written interactions are not limited to electronic messaging. The individual must also comply with all requirements of the regulated occupation when providing services through GenAI (§13-75-103(2)(b)); that requirement is not confined to high-risk interactions.
+The required disclosure is provided verbally at the start of a verbal interaction, and in writing before the start of a written interaction (§13-77-103(3)). Written interactions are not limited to electronic messaging. The individual must also comply with all requirements of the regulated occupation when providing services through GenAI (§13-77-103(2)(b)); that requirement is not confined to high-risk interactions.
 
-A high-risk artificial intelligence interaction is an interaction with GenAI involving any of the following (§13-75-101(5)):
+A high-risk artificial intelligence interaction is an interaction with GenAI involving any of the following (§13-77-101(5)):
 - Collection of sensitive personal information, including health, financial or biometric data
 - Provision of personalized recommendations, advice or information that could reasonably be relied upon to make significant personal decisions, including financial, legal, medical or mental health advice or services
 - Other applications as defined by division rule
 
-The listed data and advice or service categories are inclusive examples, not exhaustive lists. The separate §13-75-104(1) safe harbor also covers the provision of regulated services: it concerns enforcement actions for violating §13-75-103 only and requires the person's GenAI to clearly and conspicuously disclose at the outset and throughout the interaction that it is generative artificial intelligence, is not human, or is an artificial intelligence assistant. These are alternative safe-harbor forms; other state and federal remedies remain available (§13-75-106).
+The listed data and advice or service categories are inclusive examples, not exhaustive lists. The separate §13-77-104(1) safe harbor also covers the provision of regulated services: it concerns enforcement actions for violating §13-77-103 only and requires the person's GenAI to clearly and conspicuously disclose at the outset and throughout the interaction that it is generative artificial intelligence, is not human, or is an artificial intelligence assistant. These are alternative safe-harbor forms; other state and federal remedies remain available (§13-77-106).
 
-These locators and requirements describe the retained 2025 enrolled SB 226 only, not independently validated current codification. Current division rules defining other high-risk applications or disclosure forms and methods have not been retained or reviewed here.
+These locators refer to the selected current Chapter 77 code retained on October 15, 2026. The corresponding enrolled SB 226 provisions used Chapter 75; the checked definitions, disclosure and safe-harbor requirements match across those retained versions. Current division rules defining other high-risk applications or disclosure forms and methods, full incorporated-definition coverage and absence of later amendments remain unverified.
 
 ## What Counts
 
@@ -47,10 +47,11 @@ These locators and requirements describe the retained 2025 enrolled SB 226 only,
 - Adding a supplier condition to the individual regulated-services actor
 - Treating all personalized information as high-risk without the significant-personal-decisions criterion or another statutory branch
 - Treating the statutory examples as exhaustive or omitting the division-rule branch
-- Treating disclosure or the safe harbor as a waiver of other occupational requirements or of remedies outside §13-75-103
+- Treating disclosure or the safe harbor as a waiver of other occupational requirements or of remedies outside §13-77-103
 
 ## Statute Anchors
 
+- [Selected current Chapter 77 code](https://le.utah.gov/xcode/Title13/Chapter77/C13-77_2025050820250508.pdf), §§13-77-101, 13-77-103, 13-77-104 and 13-77-106, compared with the retained enrolled locators below on October 15, 2026
 - Retained 2025 enrolled SB 226, §13-75-103(2)-(3), printed lines 106-115: statutory actor, prominence, occupational requirements and channel-specific timing
 - Retained 2025 enrolled SB 226, §13-75-101(5), printed lines 54-67: complete high-risk interaction definition
 - Retained 2025 enrolled SB 226, §13-75-101(8), printed lines 75-78: regulated occupation definition

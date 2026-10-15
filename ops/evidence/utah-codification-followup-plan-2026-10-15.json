@@ -1,0 +1,18 @@
+{
+  "scope": "Two newly witnessed current body URLs from retained selectors, not retries; explicit current/future separation",
+  "frozen_at": "2026-10-15T06:26:02.024Z",
+  "requests": [
+    {
+      "name": "chapter77-body",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter77/C13-77_2025050820250508.html"
+    },
+    {
+      "name": "13-2-102-body",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter2/C13-2-S102_2026050620260701.html"
+    }
+  ],
+  "max_requests": 2,
+  "retries": 0,
+  "redirects_followed": 0,
+  "crawl_delay_seconds": 10
+}

@@ -41,20 +41,20 @@
     "parties": null,
     "statute_anchors": [
       {
-        "cite": "Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+        "cite": "Utah Code Title 13, Chapter 77 (current codification; enrolled SB 226 used Chapter 75)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
       },
       {
-        "cite": "Utah Code §13-75-102 (civil AI-assisted-violation liability)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+        "cite": "Utah Code §13-77-102 (civil AI-assisted-violation liability)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
       },
       {
-        "cite": "Utah Code §13-75-103 (disclosure requirements)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+        "cite": "Utah Code §13-77-103 (disclosure requirements)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
       },
       {
-        "cite": "Utah Code §13-75-104 (disclosure safe harbor)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+        "cite": "Utah Code §13-77-104 (disclosure safe harbor)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
       }
     ],
     "publication_citations": [
@@ -116,23 +116,23 @@
     "about": [
       {
         "@type": "Legislation",
-        "name": "Utah Code Title 13, Chapter 75 (Artificial Intelligence Consumer Protection Act)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+        "name": "Utah Code Title 13, Chapter 77 (current codification; enrolled SB 226 used Chapter 75)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
       },
       {
         "@type": "Legislation",
-        "name": "Utah Code §13-75-102 (civil AI-assisted-violation liability)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+        "name": "Utah Code §13-77-102 (civil AI-assisted-violation liability)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
       },
       {
         "@type": "Legislation",
-        "name": "Utah Code §13-75-103 (disclosure requirements)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+        "name": "Utah Code §13-77-103 (disclosure requirements)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
       },
       {
         "@type": "Legislation",
-        "name": "Utah Code §13-75-104 (disclosure safe harbor)",
-        "url": "https://le.utah.gov/xcode/Title13/Chapter75/13-75.html"
+        "name": "Utah Code §13-77-104 (disclosure safe harbor)",
+        "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html"
       }
     ],
     "license": "Public statute, regulation, or rule reference. The official source controls. PubLedge does not issue authoritative interpretations of public law."

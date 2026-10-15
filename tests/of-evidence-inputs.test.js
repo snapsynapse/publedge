@@ -14,7 +14,7 @@ const records = fs.readdirSync(RECORDS).filter(name => name.endsWith('.json')).m
 const byId = new Map(records.map(record => [record['@id'], record]));
 const digestFile = relative => crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, relative))).digest('hex');
 
-test('SB226 R1 generated disclosures carry exact reviewed definition inputs without promoting legacy mapping or roles', () => {
+test('SB226 generated disclosures carry exact reviewed bridge inputs without promoting unknown roles', () => {
     const receipts = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/admission/receipts.json'), 'utf8'));
     for (const slug of ['disclose-genai-on-request', 'disclose-genai-high-risk-proactive']) {
         const relative = `data/examples/obligations/${slug}.md`;
@@ -25,14 +25,25 @@ test('SB226 R1 generated disclosures carry exact reviewed definition inputs with
         assert.ok(record, id);
         assert.equal(record.content, summary);
         assert.deepEqual(record['pub:evidence_inputs'].map(input => input.kind), ['instrument', 'mapping-entry', 'obligation-definition']);
-        assert.deepEqual(record['pub:evidence_inputs'].map(input => input.admission_status), ['reviewed-changes', 'legacy-unreviewed', 'reviewed-changes']);
+        assert.deepEqual(record['pub:evidence_inputs'].map(input => input.admission_status), ['reviewed-changes', 'reviewed-changes', 'reviewed-changes']);
         const definition = record['pub:evidence_inputs'][2];
         assert.equal(definition.native_file_sha256, admission.hash(native));
         assert.equal(definition.canonical_sha256, receipts.records[relative].record_sha256);
         assert.equal(definition.review_packet_sha256, receipts.records[relative].review.packet_sha256);
-        assert.deepEqual(definition.retained_primary_sha256, ['279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8']);
-        assert.equal(record.admission_status, 'legacy-unreviewed');
-        assert.equal(record['pub:source_review_state'], 'known-and-unknown');
+        assert.deepEqual(definition.retained_primary_sha256, [
+            'data/admission/sources/utah-sb226/SB0226-enrolled.pdf',
+            'data/admission/sources/utah-sb226/2026-10-15/chapter77.pdf',
+            'data/admission/sources/utah-sb226/2026-10-15/chapter77-index.html',
+            'data/admission/sources/utah-sb226/2026-10-15/SB0038-enrolled.pdf',
+            'data/admission/sources/utah-sb226/2026-10-15/13-2-102-selector.html',
+            'data/admission/sources/utah-sb226/2026-10-15/13-2-102-body.html'
+        ].map(digestFile).sort());
+        const mapping = record['pub:evidence_inputs'][1];
+        assert.equal(mapping.canonical_unit, 'entry:sb226-disclosure-and-ai-defense');
+        assert.equal(mapping.canonical_sha256, receipts.records[mapping.native_path].units[mapping.canonical_unit].after_sha256);
+        assert.equal(mapping.review_packet_sha256, receipts.records[mapping.native_path].review.packet_sha256);
+        assert.equal(record.admission_status, 'source-consistency-reviewed-changes');
+        assert.equal(record['pub:source_review_state'], 'declared');
         assert.equal(record.verified, '2026-04-21');
         for (const field of ['lifecycle_status', 'operative_status', 'enforcement_status']) assert.equal(record[field], 'unknown');
         assert.equal(Object.hasOwn(record, 'effective'), false);

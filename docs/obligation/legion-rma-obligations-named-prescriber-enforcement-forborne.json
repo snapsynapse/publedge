@@ -76,7 +76,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
       "canonical_unit": "entry:legion-rma-obligations",
       "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
       "admission_status": "legacy-unreviewed",

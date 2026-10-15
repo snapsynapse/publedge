@@ -55,6 +55,7 @@
     "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
     "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
     "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+    "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
     "This agent review does not renew last_verified or authenticate human currentness review."
   ],
   "pub:source_review_state": "declared",
@@ -87,11 +88,11 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
       "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
       "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+      "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
       "retained_primary_sha256": [
         "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
         "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
@@ -104,24 +105,31 @@
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ]
     },
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/ai-defense-elimination.md",
-      "native_file_sha256": "a55e45923f6c446174676808c25e74c677631fb8550f520ee92ba2786eb08151",
+      "native_file_sha256": "468570e53f14e866a16aec2cc9c09cc3eb82924e025d2e4d02d912d8e479c3f7",
       "canonical_unit": null,
-      "canonical_sha256": "cfe3ca3e3ecabd66a2fae7c5efe481ad10b4a14f6ffb251c26b2e0ae99f45e26",
+      "canonical_sha256": "d52aa3297da1eb5c95b93f11dc42a7f8924f43db54b45dce9a28a905ad091179",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "d55ff8b00852b7a4a493871057a1dc3b033c434c83fef2eea19d1295f5a9cd8c",
+      "review_packet_sha256": "1329bb18e617c53d8bc19eee22ac74d40df11e95621d8aa27f308398bfa6b3d0",
       "retained_primary_sha256": [
         "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-        "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+        "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+        "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+        "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+        "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+        "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+        "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
-        "This agent review does not renew last_verified or authenticate human currentness review."
+        "This agent review does not renew last_verified or authenticate human currentness review.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ]
     }
   ]

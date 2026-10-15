@@ -13,7 +13,8 @@ const read = filename => admission.readRegular(ROOT, filename);
 const receipts = JSON.parse(read('data/admission/receipts.json'));
 const legacy = JSON.parse(read('data/admission/legacy.json'));
 const text = read(FILE).toString('utf8');
-const receipt = receipts.records[FILE];
+const activeReceipt = receipts.records[FILE];
+const receipt = admission.receiptLineage(activeReceipt).find(entry => entry.review.packet_sha256 === 'f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c');
 // The 2026-09-24 human-reviewed receipt as accepted on main before succession.
 const HUMAN_RECEIPT_DIGEST = '477433cdc9aa83a53073e06246dc52f2914874b80d326b8001ddeb27fa3ccd6b';
 
@@ -31,13 +32,13 @@ test('SB226 Summary successor is agent-only and changes the Summary text unit al
     assert.equal(Object.hasOwn(receipt.review, 'human_approved'), false);
     assert.deepEqual(Object.keys(receipt.units), ['section:Summary/text']);
     const admitted = admission.admittedState(receipt.supersedes.receipt, legacy.records[FILE], { read, now: new Date() });
-    const current = admission.nativeSnapshot(FILE, read(FILE));
+    const current = admission.admittedState(receipt, legacy.records[FILE], { read, now: new Date() });
     assert.equal(receipt.baseline_sha256, admitted.sha256);
-    for (const [key, sha] of Object.entries(admission.unitHashes(current))) {
+    for (const [key, sha] of Object.entries(current.units)) {
         if (key !== 'section:Summary/text') assert.equal(sha, admitted.units[key], key);
     }
     assert.equal(parseFrontmatter(text).frontmatter.last_verified, '2026-09-23');
-    const effective = admission.effectiveUnitReviews(receipt);
+    const effective = admission.effectiveUnitReviews(activeReceipt);
     assert.equal(effective['metadata:last_verified'].receipt.review.actor_type, 'human');
     assert.equal(effective['section:Summary/text'].receipt.review.actor_type, 'agent');
     const result = admissionCheck.runCurrent({ root: ROOT });

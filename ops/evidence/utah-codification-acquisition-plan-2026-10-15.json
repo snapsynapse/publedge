@@ -1,0 +1,46 @@
+{
+  "scope": "Utah SB226 enrolled-to-current codification bridge only; fresh user-authorized source packet, not a replay of exhausted prior collection",
+  "base": "d3ee6947a0f479d93f614c38b6cbe8ecc634609b",
+  "frozen_at": "2026-10-15T06:25:15.687Z",
+  "max_requests": 7,
+  "retries": 0,
+  "redirects_followed": 0,
+  "robots": "Reuse data/admission/sources/utah-hb452/2026-10-15/robots.txt from earlier today; preserve its original transport receipt",
+  "requests": [
+    {
+      "name": "chapter77-index",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77.html",
+      "extension": "html"
+    },
+    {
+      "name": "13-77-101-selector",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S101.html",
+      "extension": "html"
+    },
+    {
+      "name": "13-77-102-selector",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter77/13-77-S102.html",
+      "extension": "html"
+    },
+    {
+      "name": "13-2-102-selector",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter2/13-2-S102.html",
+      "extension": "html"
+    },
+    {
+      "name": "chapter77",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter77/C13-77_2025050820250508.pdf",
+      "extension": "pdf"
+    },
+    {
+      "name": "SB0038-enrolled",
+      "url": "https://le.utah.gov/Session/2026/bills/enrolled/SB0038.pdf",
+      "extension": "pdf"
+    },
+    {
+      "name": "SB0038-status",
+      "url": "https://le.utah.gov/~2026/bills/static/SB0038.html",
+      "extension": "html"
+    }
+  ]
+}

@@ -3005,16 +3005,21 @@
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
+          "canonical_sha256": "72146b1d18f06a50a875e36ff12a4aabf2fd0a95ea692ed10a45437c7e8e878e",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb",
+          "native_file_sha256": "dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
+          "review_packet_sha256": "9db09334618edbee7b44cf66a4cdf1f3fc3d87054a8977dd7a6f249147be7948",
           "unresolved": [
             "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
             "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -3022,7 +3027,8 @@
             "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
             "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
             "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
@@ -3035,7 +3041,8 @@
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
         "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
         "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ],
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
       "source_citation": "Utah SB 226 (2025 General Session)",
@@ -3576,16 +3583,21 @@
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
+          "canonical_sha256": "72146b1d18f06a50a875e36ff12a4aabf2fd0a95ea692ed10a45437c7e8e878e",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb",
+          "native_file_sha256": "dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
+          "review_packet_sha256": "9db09334618edbee7b44cf66a4cdf1f3fc3d87054a8977dd7a6f249147be7948",
           "unresolved": [
             "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
             "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -3593,7 +3605,8 @@
             "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
             "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
             "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
@@ -3606,7 +3619,8 @@
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
         "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
         "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ],
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
       "source_citation": "Utah SB 226 (2025 General Session)",
@@ -3899,7 +3913,7 @@
           "canonical_sha256": "e20e0bcb6fa5c62776f77e650f41e715b8d0ce8458a1f56e75a3a91709f998e5",
           "canonical_unit": "entry:cfpb-ao-2022-001-pay-to-pay",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -3949,7 +3963,7 @@
           "canonical_sha256": "cb56b0ebd2521dd3f2e355886a0b19d77ceda42cd5ad315aa03459673efec377",
           "canonical_unit": "entry:cftc-il-17-65-cta-unbundled-fee",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -3999,7 +4013,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4049,7 +4063,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4099,7 +4113,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4149,7 +4163,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4199,7 +4213,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4249,7 +4263,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4299,7 +4313,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4349,7 +4363,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4419,7 +4433,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4498,7 +4512,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4585,7 +4599,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4664,7 +4678,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4743,7 +4757,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4822,7 +4836,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4901,7 +4915,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -4980,7 +4994,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5053,7 +5067,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5114,7 +5128,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5182,7 +5196,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5243,7 +5257,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5304,7 +5318,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5365,7 +5379,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5426,7 +5440,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5487,7 +5501,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5550,7 +5564,7 @@
           "canonical_sha256": "b85f1f2ef1628ab2a223640d36314be87543371986c0cb7fdd43099d48765c2e",
           "canonical_unit": "entry:hb320-joint-interpretation-agreements",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5621,16 +5635,20 @@
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "f80fca441179c3ab9b59e973ab2855fe5d7fd796a96907f26033ba75bc23e9c5",
+          "canonical_sha256": "d07ec388553139cf8d52342b5d0d2327d55eaadfc88b1caea45feb7b2eb2eb03",
           "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
-            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -5638,7 +5656,8 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
@@ -5677,6 +5696,7 @@
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
         "Whether a particular transformed or aggregate dataset falls within either protected object remains unresolved; no categorical analytics exception established.",
         "Statutory supplier definition is retained but equivalence with any cross-owner AI-provider role remains unknown. Incorporated federal definitions and complete HIPAA applicability have not been separately reviewed."
       ],
@@ -5716,16 +5736,20 @@
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "f80fca441179c3ab9b59e973ab2855fe5d7fd796a96907f26033ba75bc23e9c5",
+          "canonical_sha256": "d07ec388553139cf8d52342b5d0d2327d55eaadfc88b1caea45feb7b2eb2eb03",
           "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
-            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -5733,7 +5757,8 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
@@ -5768,6 +5793,7 @@
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
         "The record name (\"File 15-Element Safety Policy\"), group (requirement) and @type Requirement still frame the item as a requirement; the statute makes the policy a condition of an affirmative defense. These schema-level fields were left for a human decision.",
         "This agent review does not renew last_verified or authenticate human currentness review."
       ],
@@ -5807,16 +5833,20 @@
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "f80fca441179c3ab9b59e973ab2855fe5d7fd796a96907f26033ba75bc23e9c5",
+          "canonical_sha256": "d07ec388553139cf8d52342b5d0d2327d55eaadfc88b1caea45feb7b2eb2eb03",
           "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
-            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -5824,28 +5854,34 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b7fba567682c9757769071c4e8df9492b638dcccaeb7de5552e64975eadb4b45",
+          "canonical_sha256": "188589bd5d9d0a461f0214bf210ab018bedc9b6e1140a3bf117e3830a76c0e6f",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365",
+          "native_file_sha256": "d91bf0caddd8506a80d2febe2f368d21acbaf3ebe5707607c842c290d743786c",
           "native_path": "data/examples/obligations/disclose-genai-on-first-session.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
-            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "74ae4d983684859783dd7606114665ffd2bf801cf5c005f5d2b1e29240b50cb9",
+          "review_packet_sha256": "d8fd77066d7d397d5a47c85f1e7bb9614b20b0d9aabc9cbe6afb4ab4939aa7ab",
           "unresolved": [
             "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
             "last_verified renewal requires a separate human review receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
@@ -5863,6 +5899,7 @@
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
         "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
         "last_verified renewal requires a separate human review receipt."
       ],
@@ -5894,7 +5931,7 @@
           "canonical_sha256": "c2145852b85e818957983272334c5f4d57d23b7aecb92fa4ab317cb205d88489",
           "canonical_unit": "entry:irs-plr-202506001-incentive-fee",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -5944,7 +5981,7 @@
           "canonical_sha256": "baba5d8ce4007aca04c51194d650f7639c767679b1e300d0f35b9ce0f8cb88bc",
           "canonical_unit": "entry:irs-tege-2026-001-501c3-adverse",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6003,7 +6040,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6066,7 +6103,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6137,7 +6174,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6200,7 +6237,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6263,7 +6300,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6326,7 +6363,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6389,7 +6426,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6452,7 +6489,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -6525,13 +6562,13 @@
           "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
           "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
             "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -6539,24 +6576,31 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "cfe3ca3e3ecabd66a2fae7c5efe481ad10b4a14f6ffb251c26b2e0ae99f45e26",
+          "canonical_sha256": "d52aa3297da1eb5c95b93f11dc42a7f8924f43db54b45dce9a28a905ad091179",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "a55e45923f6c446174676808c25e74c677631fb8550f520ee92ba2786eb08151",
+          "native_file_sha256": "468570e53f14e866a16aec2cc9c09cc3eb82924e025d2e4d02d912d8e479c3f7",
           "native_path": "data/examples/obligations/ai-defense-elimination.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "d55ff8b00852b7a4a493871057a1dc3b033c434c83fef2eea19d1295f5a9cd8c",
+          "review_packet_sha256": "1329bb18e617c53d8bc19eee22ac74d40df11e95621d8aa27f308398bfa6b3d0",
           "unresolved": [
-            "This agent review does not renew last_verified or authenticate human currentness review."
+            "This agent review does not renew last_verified or authenticate human currentness review.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
@@ -6574,6 +6618,7 @@
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
         "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
         "This agent review does not renew last_verified or authenticate human currentness review."
       ],
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
@@ -6617,13 +6662,13 @@
           "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
           "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
             "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -6631,7 +6676,8 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
@@ -6666,6 +6712,7 @@
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
         "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
         "Prongs (a), (d) and (e) in What Counts remain paraphrases and were not re-worded; \"limited to the statute, use case, and deployment period\" is not statutory wording for prong (e) (scale, scope, and duration of testing limited based on risk assessments).",
         "This agent review does not renew last_verified or authenticate human currentness review."
       ],
@@ -6675,23 +6722,28 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-ai-defense-elimination.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
+          "canonical_sha256": "72146b1d18f06a50a875e36ff12a4aabf2fd0a95ea692ed10a45437c7e8e878e",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb",
+          "native_file_sha256": "dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
+          "review_packet_sha256": "9db09334618edbee7b44cf66a4cdf1f3fc3d87054a8977dd7a6f249147be7948",
           "unresolved": [
             "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
             "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -6699,41 +6751,64 @@
             "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
             "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
             "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "b67ced14eea2f25de35bfb2632e67869db161b125b455ebb2f282892e8a0f109",
           "canonical_unit": "entry:sb226-disclosure-and-ai-defense",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
+          ],
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
+          "unresolved": [
+            "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+            "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+            "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+            "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "cfe3ca3e3ecabd66a2fae7c5efe481ad10b4a14f6ffb251c26b2e0ae99f45e26",
+          "canonical_sha256": "d52aa3297da1eb5c95b93f11dc42a7f8924f43db54b45dce9a28a905ad091179",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "a55e45923f6c446174676808c25e74c677631fb8550f520ee92ba2786eb08151",
+          "native_file_sha256": "468570e53f14e866a16aec2cc9c09cc3eb82924e025d2e4d02d912d8e479c3f7",
           "native_path": "data/examples/obligations/ai-defense-elimination.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "d55ff8b00852b7a4a493871057a1dc3b033c434c83fef2eea19d1295f5a9cd8c",
+          "review_packet_sha256": "1329bb18e617c53d8bc19eee22ac74d40df11e95621d8aa27f308398bfa6b3d0",
           "unresolved": [
-            "This agent review does not renew last_verified or authenticate human currentness review."
+            "This agent review does not renew last_verified or authenticate human currentness review.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_state": "declared",
       "pub:source_review_unresolved": [
         "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -6742,6 +6817,14 @@
         "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
         "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
         "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
+        "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+        "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+        "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+        "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
         "This agent review does not renew last_verified or authenticate human currentness review."
       ],
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
@@ -6750,23 +6833,28 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-high-risk-proactive.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
+          "canonical_sha256": "72146b1d18f06a50a875e36ff12a4aabf2fd0a95ea692ed10a45437c7e8e878e",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb",
+          "native_file_sha256": "dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
+          "review_packet_sha256": "9db09334618edbee7b44cf66a4cdf1f3fc3d87054a8977dd7a6f249147be7948",
           "unresolved": [
             "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
             "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -6774,44 +6862,67 @@
             "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
             "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
             "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "b67ced14eea2f25de35bfb2632e67869db161b125b455ebb2f282892e8a0f109",
           "canonical_unit": "entry:sb226-disclosure-and-ai-defense",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
+          ],
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
+          "unresolved": [
+            "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+            "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+            "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+            "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "189f4253b204692369145bf206f26cb66d414488405e0d4509edee0e4c57a9d3",
+          "canonical_sha256": "d4d1827067e8d0fe6f4c3bc4c6a5b808b26d20dade2d5410c1a04eec7c445364",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "f1ee01115a55072a4a046b49af6a81c109b4f0ffba49e6e6df58d775b25ca302",
+          "native_file_sha256": "4aa7cb5ed7bb426ca776f24a2f8ec5d9e13dcf8143743e52983a467fa98ce221",
           "native_path": "data/examples/obligations/disclose-genai-high-risk-proactive.md",
           "retained_primary_sha256": [
-            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "53dc6fff3ee933e85a8596578c3985f836252418b30dc6025349ed3ebdb586bb",
+          "review_packet_sha256": "57d1e4cb8e0e9de00fa652c7b9bce3e0a0f574c8a323937ea1731e3c0a2e7996",
           "unresolved": [
             "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
             "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
             "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
             "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
-            "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+            "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_state": "declared",
       "pub:source_review_unresolved": [
         "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -6820,6 +6931,14 @@
         "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
         "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
         "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
+        "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+        "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+        "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+        "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
         "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
         "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
         "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
@@ -6832,23 +6951,28 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/obligation/sb226-disclosure-and-ai-defense-disclose-genai-on-request.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
+          "canonical_sha256": "72146b1d18f06a50a875e36ff12a4aabf2fd0a95ea692ed10a45437c7e8e878e",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb",
+          "native_file_sha256": "dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
+          "review_packet_sha256": "9db09334618edbee7b44cf66a4cdf1f3fc3d87054a8977dd7a6f249147be7948",
           "unresolved": [
             "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
             "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -6856,44 +6980,67 @@
             "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
             "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
             "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "b67ced14eea2f25de35bfb2632e67869db161b125b455ebb2f282892e8a0f109",
           "canonical_unit": "entry:sb226-disclosure-and-ai-defense",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
+          ],
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
+          "unresolved": [
+            "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+            "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+            "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+            "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "df3231b4a2111975e8de105d84a2fa0d4f5d1b8b32ffb3f0aab9ee12622931a5",
+          "canonical_sha256": "186c5b61f38435b76d81eff1335bca73189f46fc37eac70f240ac40fb794b2d5",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "24d7c8e63e37d24678f5225b2d0c97b16f2bbea97e2fda7df8c9deeda1ef8c92",
+          "native_file_sha256": "66addb67bcb49b1dc552158da69195700c3e386a9d9f005f600b11f7cbef778e",
           "native_path": "data/examples/obligations/disclose-genai-on-request.md",
           "retained_primary_sha256": [
-            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8"
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "ae850f903e66d27eac95d560533460f50cea40532afb8f15ab6d5c6c41e9b98a",
+          "review_packet_sha256": "c9bcea95d678c2d05f79807b9a1843470edd9fb35530c1dd1f442db6a8ee105c",
           "unresolved": [
             "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
             "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
             "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
             "The existing human-reviewed instrument summary and legacy SB226 mapping admission remain unchanged; this receipt reviews only the displayed definition deltas.",
-            "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate."
+            "Parent reports that independent native review supports these two definition deltas with no substantive finding. Whole-R1 instrument Summary and receipt succession remain gated; generated output and final canonical owner acceptance are separate.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_state": "declared",
       "pub:source_review_unresolved": [
         "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -6902,6 +7049,14 @@
         "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
         "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
         "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
+        "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+        "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+        "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+        "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
         "These Chapter75 locators are 2025 enrolled-version only. Coordinator retained publisher observations identify a Chapter75 subject/locator mismatch. Chapter77 is an unverified candidate only, with no retained index evidence and no validated bridge; the current-codification bridge and current SB226 status are not validated in this repair.",
         "Current division rules defining other high-risk applications or acceptable disclosure forms and methods have not been retained or reviewed.",
         "The incorporated 13-11-3 supplier and consumer-transaction definitions are not retained here; no new controlled-role equivalence is inferred.",
@@ -6943,7 +7098,7 @@
           "canonical_sha256": "4849304cb37f40f5cb292b4ab29c1230e89a3dbce9c3f16ba17c1d63f50f8e1b",
           "canonical_unit": "entry:sb24-205-never-operative-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7005,7 +7160,7 @@
           "canonical_sha256": "4849304cb37f40f5cb292b4ab29c1230e89a3dbce9c3f16ba17c1d63f50f8e1b",
           "canonical_unit": "entry:sb24-205-never-operative-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7067,7 +7222,7 @@
           "canonical_sha256": "4849304cb37f40f5cb292b4ab29c1230e89a3dbce9c3f16ba17c1d63f50f8e1b",
           "canonical_unit": "entry:sb24-205-never-operative-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7122,7 +7277,7 @@
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7172,7 +7327,7 @@
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7222,7 +7377,7 @@
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7272,7 +7427,7 @@
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7322,7 +7477,7 @@
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7372,7 +7527,7 @@
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7422,7 +7577,7 @@
           "canonical_sha256": "9c7546b5135751e232852b0e9fcdf18e02973c38dd7c819d999b897a259e32e4",
           "canonical_unit": "entry:sec-corpfin-nal-2025-001-rule-506c",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -7479,12 +7634,12 @@
           "canonical_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
           "canonical_unit": "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -7492,28 +7647,34 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b7fba567682c9757769071c4e8df9492b638dcccaeb7de5552e64975eadb4b45",
+          "canonical_sha256": "188589bd5d9d0a461f0214bf210ab018bedc9b6e1140a3bf117e3830a76c0e6f",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365",
+          "native_file_sha256": "d91bf0caddd8506a80d2febe2f368d21acbaf3ebe5707607c842c290d743786c",
           "native_path": "data/examples/obligations/disclose-genai-on-first-session.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
-            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "74ae4d983684859783dd7606114665ffd2bf801cf5c005f5d2b1e29240b50cb9",
+          "review_packet_sha256": "d8fd77066d7d397d5a47c85f1e7bb9614b20b0d9aabc9cbe6afb4ab4939aa7ab",
           "unresolved": [
             "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
             "last_verified renewal requires a separate human review receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
@@ -7529,6 +7690,7 @@
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
         "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
         "The obligation id and name still say 'first session'; renaming the id is a separate schema decision.",
         "last_verified renewal requires a separate human review receipt."
       ],
@@ -8124,7 +8286,7 @@
           "canonical_sha256": "e20e0bcb6fa5c62776f77e650f41e715b8d0ce8458a1f56e75a3a91709f998e5",
           "canonical_unit": "entry:cfpb-ao-2022-001-pay-to-pay",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8162,7 +8324,7 @@
           "canonical_sha256": "cb56b0ebd2521dd3f2e355886a0b19d77ceda42cd5ad315aa03459673efec377",
           "canonical_unit": "entry:cftc-il-17-65-cta-unbundled-fee",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8200,7 +8362,7 @@
           "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
           "canonical_unit": "entry:dentacor-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8258,7 +8420,7 @@
           "canonical_sha256": "983a05b1054d5be1992813ca2c6de182c8a4f269fd1e44cec124a8d4f7cc13c3",
           "canonical_unit": "entry:doctronic-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8313,7 +8475,7 @@
           "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
           "canonical_unit": "entry:elizachat-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8364,7 +8526,7 @@
           "canonical_sha256": "b85f1f2ef1628ab2a223640d36314be87543371986c0cb7fdd43099d48765c2e",
           "canonical_unit": "entry:hb320-joint-interpretation-agreements",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8416,16 +8578,20 @@
         },
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "f80fca441179c3ab9b59e973ab2855fe5d7fd796a96907f26033ba75bc23e9c5",
+          "canonical_sha256": "d07ec388553139cf8d52342b5d0d2327d55eaadfc88b1caea45feb7b2eb2eb03",
           "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
-            "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
-            "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -8433,7 +8599,8 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
@@ -8450,7 +8617,8 @@
         "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
-        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ],
       "source": "https://le.utah.gov/~2025/bills/static/HB0452.html",
       "source_citation": "Utah HB 452 (2025 General Session)",
@@ -8480,7 +8648,7 @@
           "canonical_sha256": "c2145852b85e818957983272334c5f4d57d23b7aecb92fa4ab317cb205d88489",
           "canonical_unit": "entry:irs-plr-202506001-incentive-fee",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8518,7 +8686,7 @@
           "canonical_sha256": "baba5d8ce4007aca04c51194d650f7639c767679b1e300d0f35b9ce0f8cb88bc",
           "canonical_unit": "entry:irs-tege-2026-001-501c3-adverse",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8565,7 +8733,7 @@
           "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
           "canonical_unit": "entry:legion-rma-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8620,13 +8788,13 @@
           "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
           "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
             "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
             "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -8634,7 +8802,8 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
@@ -8651,7 +8820,8 @@
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ],
       "source": "https://le.utah.gov/~2024/bills/static/SB0149.html",
       "source_citation": "Utah SB 149 (2024 General Session), Governor Signed March 13, 2024",
@@ -8659,23 +8829,28 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/term/sb226-disclosure-and-ai-defense.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
+          "canonical_sha256": "72146b1d18f06a50a875e36ff12a4aabf2fd0a95ea692ed10a45437c7e8e878e",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb",
+          "native_file_sha256": "dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
-          "review_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
+          "review_packet_sha256": "9db09334618edbee7b44cf66a4cdf1f3fc3d87054a8977dd7a6f249147be7948",
           "unresolved": [
             "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
             "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -8683,24 +8858,41 @@
             "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
             "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
             "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         },
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "b67ced14eea2f25de35bfb2632e67869db161b125b455ebb2f282892e8a0f109",
           "canonical_unit": "entry:sb226-disclosure-and-ai-defense",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
+          ],
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
+          "unresolved": [
+            "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+            "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+            "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+            "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+            "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+            "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_state": "declared",
       "pub:source_review_unresolved": [
         "enacted (2025-03-25) and the Introduced month (2025-02) are not in the enrolled copy and the le.utah.gov SB0226 status table is not retained; rows are marked unconfirmed and the enacted field is unchanged.",
         "Whether SB 226 passed each house by two-thirds (so its 63I-2-213 amendment took effect on governor approval rather than May 7, 2025) is not confirmed.",
@@ -8708,7 +8900,15 @@
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
         "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
         "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance.",
+        "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
+        "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
+        "The EveryAILaw target identities and cross-owner existence remain federation assertions; this receipt does not make EveryAILaw an issuing authority or certify current law.",
+        "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
+        "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
+        "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
       ],
       "source": "https://le.utah.gov/~2025/bills/static/SB0226.html",
       "source_citation": "Utah SB 226 (2025 General Session)",
@@ -8745,7 +8945,7 @@
           "canonical_sha256": "4849304cb37f40f5cb292b4ab29c1230e89a3dbce9c3f16ba17c1d63f50f8e1b",
           "canonical_unit": "entry:sb24-205-never-operative-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8788,7 +8988,7 @@
           "canonical_sha256": "8208176ce48fdbdfcd77357ea089231259a600b6827dd8a0fcd6ed41047afd4d",
           "canonical_unit": "entry:sb26-189-admt-act-obligations",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8826,7 +9026,7 @@
           "canonical_sha256": "9c7546b5135751e232852b0e9fcdf18e02973c38dd7c819d999b897a259e32e4",
           "canonical_unit": "entry:sec-corpfin-nal-2025-001-rule-506c",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": null,
           "review_packet_sha256": null,
@@ -8871,12 +9071,12 @@
           "canonical_sha256": "c307d8182e42993daa76516e2a364800ab0cccdea4fa8febf65c53f4371cb5d6",
           "canonical_unit": "entry:utah-mental-health-chatbot-disclosure-2026q2-first-session",
           "kind": "mapping-entry",
-          "native_file_sha256": "792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6",
+          "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
           "native_path": "data/examples/mapping/index.yml",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f"
           ],
-          "review_packet_sha256": "abe64f791842d7838367d8deac792b50951bd32262cdd5f3fcc645e6c6261b47",
+          "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
           "unresolved": [
             "The PubLedge JIA and its 30-minute re-display term remain an unpublished draft and are not statutory terms.",
             "Utah HB 452 section 13-72a-203 uses a seven-day interaction condition rather than the draft JIA 30-minute resumption condition.",
@@ -8884,7 +9084,8 @@
             "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
             "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
             "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+            "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ],
           "unresolved_review_state": "declared"
         }
@@ -8899,7 +9100,8 @@
         "The sb149-learning-lab-and-ai-defense and hb452-mental-health-chatbot-stack mappings are kept and qualified, not removed; whether to remap them is a human decision.",
         "The disclose-genai-on-first-session obligation id and name still say 'first session'; its text was corrected in a separate receipt.",
         "This is selected-clause source consistency, not a complete current-law/applicability or agency-interpretation certification. No human verification date renewed.",
-        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses."
+        "SB226 current-codification locator/identity gap remains outside this HB452-only tranche; no new acceptance of its unchanged general-disclosure clauses.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ],
       "source": "https://publedge.org/us/utah/oaip/jia/2026-001/",
       "source_locator": "First-Session Disclosure (§13-72a-203)",

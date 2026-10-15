@@ -773,21 +773,27 @@
         "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
         "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
         "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+        "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+        "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
       ],
       "pub:source_review_state": "declared",
       "pub:evidence_inputs": [
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-sb226.md",
-          "native_file_sha256": "e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb",
+          "native_file_sha256": "dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2",
           "canonical_unit": null,
-          "canonical_sha256": "b5693470fc5d6d1f9432b62f1d9da837e2c19e73371be45c3c8e6f6800fc1f89",
+          "canonical_sha256": "72146b1d18f06a50a875e36ff12a4aabf2fd0a95ea692ed10a45437c7e8e878e",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "f57211556ad903c24f2b1860a03218bbbb66c58cef9fd29652819c29fde47c9c",
+          "review_packet_sha256": "9db09334618edbee7b44cf66a4cdf1f3fc3d87054a8977dd7a6f249147be7948",
           "retained_primary_sha256": [
             "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
-            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835"
+            "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",
+            "4f6d8e514b00c40ebe8036b5bbe1881e62d61a4bb9caf75ff94b17d9aea0ebc2",
+            "70325aa75611668e0129195d46b5200df0452330ca3339d06fa16c19e5d955c5",
+            "89f73bb5d33379dfb9b189555ed9a455823635af3e21324e685555ad3a78dd0c",
+            "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
+            "f7c786495cb6f6cfbf9c81fd21a3d78db4e4670616a5fc997b8e128073bff21f"
           ],
           "unresolved_review_state": "declared",
           "unresolved": [
@@ -797,7 +803,8 @@
             "Whether an OAIP annual report was filed for 2024 or 2025 is unverified.",
             "amends (us-ut-legislature-statute-2024-sb149) is unchanged; SB 226 repeals 13-2-12, which SB 149 enacted, so the source does not contradict it.",
             "The corrected Summary uses 2025 enrolled locators only. Coordinator publisher observations of 2026-10-02 found a Chapter 75 subject/locator mismatch; current codification of the Chapter 75 sections is not validated.",
-            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed."
+            "Current division rules under 13-75-101(5)(c) and 13-75-104(2), and the incorporated 13-11-3 and 13-2-1 provisions, are not retained or reviewed.",
+            "Prior unresolved strings are retained verbatim as dated historical review evidence. This packet addresses only selected Chapter77 and Division13-2-102 locator coverage; it does not establish the full renumbering history, current division rules, complete incorporated-definition or later-amendment coverage, bill status/votes, annual reports, criminal/principal/foreseeability/third-party assertions, or human legal acceptance."
           ]
         }
       ]

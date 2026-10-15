@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:b494b83aa648de803df5f5ba912a203df3878eee51d6f3a7e7e1039d59f06593
+    hash: sha256:0ef5b007e2f3227757058d243fddd100c440694c442d6bba0e5b0625a9f36ce9
     note: package.json
 
   - path: package-lock.json
@@ -193,7 +193,7 @@ files:
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
     role: instrument
-    hash: sha256:e0aa554d1054baf56ca817da2031b2355f67c08e80a22bee5dc0ccb0cb19e8eb
+    hash: sha256:dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
@@ -253,7 +253,7 @@ files:
 
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:792e0554d0a00914d009337c1238474b72c808f08a8b0796300c45062cd180b6
+    hash: sha256:d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a
     note: data/examples/mapping/index.yml
 
   - path: data/examples/obligations/admt-60-day-cure-period.md
@@ -293,7 +293,7 @@ files:
 
   - path: data/examples/obligations/ai-defense-elimination.md
     role: obligation
-    hash: sha256:a55e45923f6c446174676808c25e74c677631fb8550f520ee92ba2786eb08151
+    hash: sha256:468570e53f14e866a16aec2cc9c09cc3eb82924e025d2e4d02d912d8e479c3f7
     note: data/examples/obligations/ai-defense-elimination.md
 
   - path: data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md
@@ -333,17 +333,17 @@ files:
 
   - path: data/examples/obligations/disclose-genai-high-risk-proactive.md
     role: obligation
-    hash: sha256:f1ee01115a55072a4a046b49af6a81c109b4f0ffba49e6e6df58d775b25ca302
+    hash: sha256:4aa7cb5ed7bb426ca776f24a2f8ec5d9e13dcf8143743e52983a467fa98ce221
     note: data/examples/obligations/disclose-genai-high-risk-proactive.md
 
   - path: data/examples/obligations/disclose-genai-on-first-session.md
     role: obligation
-    hash: sha256:60121c9766d569f5ed690d473278de603f51ba4d7cc44a38fd66211c2db6b365
+    hash: sha256:d91bf0caddd8506a80d2febe2f368d21acbaf3ebe5707607c842c290d743786c
     note: data/examples/obligations/disclose-genai-on-first-session.md
 
   - path: data/examples/obligations/disclose-genai-on-request.md
     role: obligation
-    hash: sha256:24d7c8e63e37d24678f5225b2d0c97b16f2bbea97e2fda7df8c9deeda1ef8c92
+    hash: sha256:66addb67bcb49b1dc552158da69195700c3e386a9d9f005f600b11f7cbef778e
     note: data/examples/obligations/disclose-genai-on-request.md
 
   - path: data/examples/obligations/elizachat-phased-rollout.md
@@ -598,7 +598,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:3d84711ba2b146fa96071d01de41fc3e2fa6e39f4b709fbde5cea3d2f8e68ef7
+    hash: sha256:f22102525870c9c03f5bd22fe99e08d7a940a981758bdd57bedc2a3cd9b87d3b
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -1058,7 +1058,7 @@ files:
 
   - path: tests/of-evidence-inputs.test.js
     role: code
-    hash: sha256:1321a92efb7d004456d7190ff24b5600c444d7df7b49d2b4b08d28ef70bf84f4
+    hash: sha256:41af23e77dcc92bb62fc073d57330708b0478d0e8451d70b92c6e7a1224d45ad
     note: Per-kind native evidence input and review-boundary regressions
 
   - path: tests/colorado-order24.test.js
@@ -1168,7 +1168,7 @@ files:
 
   - path: tests/sb226-r1.test.js
     role: code
-    hash: sha256:25e2fe0e67d3e9eb76ff8f6d89007e742efa14dfc8833439b775b65a17984f9f
+    hash: sha256:734670deafc3c073bdc8d946a41418ecf91441d500d3fe98f283e2d48fd541e5
     note: SB226 R1 retained-source and admission regressions
 
   - path: ops/evidence/sb226-r1-native-delta-2026-10-02.diff
@@ -1191,7 +1191,7 @@ files:
     note: SB226 instrument Summary correction under agent receipt succession
   - path: tests/sb226-summary-succession.test.js
     role: code
-    hash: sha256:e16c21f3bfaabd8c89c5ba26cb159cff98451e0f5bb4bf0bb49a54679f55aeda
+    hash: sha256:30c8e3ca09b5cf766055de66d0cf2e666ea919c51224795e40c632b80ea46e3d
     note: SB226 Summary successor embeds the human receipt and changes one unit
 
   - path: ops/evidence/oaip-coverage-review-2026-10-14.json

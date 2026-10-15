@@ -1400,6 +1400,7 @@ function generateContainerDetail(config, container, data, configCSS) {
         </div>` : ''}
         ${timelineRows ? `<h3>Timeline</h3><table class="data-table"><thead><tr><th>Milestone</th><th>Date</th><th>Notes</th></tr></thead><tbody>${timelineRows}</tbody></table>` : ''}
 ${renderOperationalObservation(container)}
+${renderCodificationBridge(container)}
         ${renderSourceDocuments(container)}
         ${renderExtractedText(container)}
         ${container.provisions.length > 0 ? `<h3>${PROVISION_COUNT_LABEL} (${container.provisions.length})</h3>
@@ -1430,6 +1431,19 @@ function renderOperationalObservation(container) {
     return `<section class="about-content" aria-labelledby="operational-observation"><h3 id="operational-observation">Operational observation (not an issued term)</h3>${paragraphs}</section>`;
 }
 
+function renderCodificationBridge(record) {
+    const match = record._body?.match(/(?:^|\n)### Codification bridge \(selected sources\)\n\n([\s\S]*?)(?=\n#{2,3} |$)/);
+    if (!match) return '';
+    const content = match[1].trim().split(/\n\s*\n/).map(chunk => {
+        const lines = chunk.split('\n');
+        if (lines.every(line => line.startsWith('- '))) {
+            return `<ul>${lines.map(line => `<li>${escapeHTML(line.slice(2))}</li>`).join('')}</ul>`;
+        }
+        return `<p>${escapeHTML(chunk.replace(/\s*\n\s*/g, ' '))}</p>`;
+    }).join('\n');
+    return `<section class="about-content" aria-labelledby="codification-bridge"><h3 id="codification-bridge">Codification bridge (selected sources)</h3>${content}</section>`;
+}
+
 function generatePrimaryDetail(config, primary, data, configCSS) {
     const { containers, matrix } = data;
     const pPlural = config.entities?.primary?.plural || 'Primaries';
@@ -1447,7 +1461,7 @@ function generatePrimaryDetail(config, primary, data, configCSS) {
             <div class="detail-meta">${renderGroupBadge(primary.group)} ${renderLifecycleBadge(primary.lifecycle_status)} <span class="meta-item">${coveredContainers.length} ${cName}${coveredContainers.length !== 1 ? 's' : ''}</span></div>
         </div>${primary.lifecycle_status === 'never-operative' ? `
         <aside class="lifecycle-notice"><strong>Never operative.</strong> This obligation was enacted but superseded before its effective date. It is retained for historical and relationship fidelity, not as a current duty.</aside>` : ''}
-        ${summary ? `<p style="font-size:1rem;line-height:1.6;margin:1rem 0;">${escapeHTML(summary)}</p>` : ''}
+        ${summary ? `<p style="font-size:1rem;line-height:1.6;margin:1rem 0;">${escapeHTML(summary)}</p>` : ''}${renderCodificationBridge(primary)}
         ${whatCounts ? `<h3>What Counts</h3><ul>${parseBulletList(whatCounts).map(i => `<li>${escapeHTML(i)}</li>`).join('')}</ul>` : ''}
         ${whatDoesNot ? `<h3>What Does Not Count</h3><ul>${parseBulletList(whatDoesNot).map(i => `<li>${escapeHTML(i)}</li>`).join('')}</ul>` : ''}
         <h3>Associated records (including proposals)</h3>
