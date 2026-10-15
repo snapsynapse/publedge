@@ -26,6 +26,9 @@
       "name": "Internal Revenue Service, Tax Exempt and Government Entities",
       "ref": "https://irs.gov/privacy-disclosure/written-determinations"
     },
+    "author_or_proponent": null,
+    "intended_authority": null,
+    "intended_authority_url": null,
     "issuance_event": "gist:Determination",
     "enacted": "2026-01-12",
     "effective": "2026-01-12",

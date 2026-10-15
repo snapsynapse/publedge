@@ -114,7 +114,10 @@ function rpc(proc, id, method, params) {
             const response = await rpc(proc, id++, 'tools/call', { name: 'get_legal-instrument', arguments: { id: recordId } });
             const record = JSON.parse(response.result.content[0].text);
             if (record.source !== source) failures.push(`installed ${recordId} lost its source label`);
-            if (!record.official_url || !record.last_verified || !record.body) failures.push(`installed ${recordId} is missing provenance or body`);
+            const hasProvenance = source === 'publedge-original-draft'
+                ? record.author_or_proponent === 'PubLedge' && Boolean(record.intended_authority && record.intended_authority_url) && record.issued_by === null && record.official_url === null
+                : Boolean(record.official_url);
+            if (!hasProvenance || !record.last_verified || !record.body) failures.push(`installed ${recordId} is missing provenance or body`);
             if (source === 'publedge-original-draft' && (record.editorial_status !== 'draft' || record.status !== 'proposed')) {
                 failures.push('installed original draft lost its draft/proposed limits');
             }

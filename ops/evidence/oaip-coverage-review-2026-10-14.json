@@ -1,0 +1,17 @@
+{
+  "review_date": "2026-10-14",
+  "scope": "Comparison of OAIP public pilot index with PubLedge native instrument inventory; executed PDFs not reviewed in this pass",
+  "official_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+  "not_yet_indexed": [
+    "Expect Fitness",
+    "August AI / August Labs, Inc.",
+    "Nolla Health / Magic Health entities",
+    "University of Utah Health master agreement",
+    "Intermountain Health master agreement"
+  ],
+  "limits": [
+    "Partial coverage; not legal currentness certification",
+    "Master agreements do not themselves authorize pilots",
+    "No new legal-content admission or verification-date renewal"
+  ]
+}

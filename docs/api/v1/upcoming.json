@@ -16,6 +16,8 @@
       "authority": "utah-oaip",
       "type": "rma",
       "source": "demonstration-remap",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enforcing",
       "editorial_status": "published"
     },
@@ -30,6 +32,8 @@
       "authority": "colorado-legislature",
       "type": "statute",
       "source": "authoritative-reference",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enacted",
       "editorial_status": "published"
     }

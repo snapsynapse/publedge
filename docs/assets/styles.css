@@ -997,7 +997,7 @@ tr.row-focus { outline: 2px solid var(--navy); outline-offset: -2px; }
     border-radius: var(--radius);
     font-size: 0.9rem;
 }
-.record-summary-strip .summary-item { white-space: nowrap; }
+.record-summary-strip .summary-item { white-space: normal; }
 .record-summary-strip strong { color: var(--muted); font-weight: 600; margin-right: 0.25rem; }
 
 /* --------------------------------------------------------------------------

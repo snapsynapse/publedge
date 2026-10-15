@@ -411,11 +411,6 @@
     ],
     [
       "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
-      "issuedBy",
-      "https://publedge.org/authority/utah-oaip.json"
-    ],
-    [
-      "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
       "parties",
       "https://publedge.org/party/us-ut-oaip-jia-2026-001-publedge-illustrative-requesting-party.json"
     ],
@@ -1200,7 +1195,7 @@
       "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json"
     ]
   ],
-  "exact_edges_sha256": "d514d9b60fb4feb9439ed15cafe3e8ead620191d079c5ed65dceb910a748968c",
+  "exact_edges_sha256": "72d84e147710665b6bb92f3c8151a72bf8acab191ee38ce5e84dc7a210214eae",
   "field_coverage": {
     "of:Authority": {
       "@context": {
@@ -1482,9 +1477,9 @@
         "present": 18
       },
       "issuedBy": {
-        "missing": 0,
-        "populated": 18,
-        "present": 18
+        "missing": 1,
+        "populated": 17,
+        "present": 17
       },
       "jurisdiction": {
         "missing": 0,
@@ -3681,16 +3676,17 @@
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
+          "canonical_sha256": "cce15cddae55f4f4e2cefd07e6592f58ebead674765a7fe265f80cf795ceca6c",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
+          "native_file_sha256": "105b224a7764d7ab3d8bacc81b4fda2871bbbd5032f35336cb8ac76c938f4664",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
           ],
-          "review_packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
+          "review_packet_sha256": "153fba5daa0d880121f34002d688b48b39d9c987f1a5d1f25e4bfbfa4ff6bca0",
           "unresolved": [
             "Lawyer review and authority sign-off remain pending; the draft is not issued.",
             "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
@@ -7325,16 +7321,17 @@
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
+          "canonical_sha256": "cce15cddae55f4f4e2cefd07e6592f58ebead674765a7fe265f80cf795ceca6c",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
+          "native_file_sha256": "105b224a7764d7ab3d8bacc81b4fda2871bbbd5032f35336cb8ac76c938f4664",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
           ],
-          "review_packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
+          "review_packet_sha256": "153fba5daa0d880121f34002d688b48b39d9c987f1a5d1f25e4bfbfa4ff6bca0",
           "unresolved": [
             "Lawyer review and authority sign-off remain pending; the draft is not issued.",
             "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
@@ -7404,16 +7401,17 @@
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
+          "canonical_sha256": "cce15cddae55f4f4e2cefd07e6592f58ebead674765a7fe265f80cf795ceca6c",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
+          "native_file_sha256": "105b224a7764d7ab3d8bacc81b4fda2871bbbd5032f35336cb8ac76c938f4664",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
           ],
-          "review_packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
+          "review_packet_sha256": "153fba5daa0d880121f34002d688b48b39d9c987f1a5d1f25e4bfbfa4ff6bca0",
           "unresolved": [
             "Lawyer review and authority sign-off remain pending; the draft is not issued.",
             "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
@@ -7437,16 +7435,17 @@
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
+          "canonical_sha256": "cce15cddae55f4f4e2cefd07e6592f58ebead674765a7fe265f80cf795ceca6c",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
+          "native_file_sha256": "105b224a7764d7ab3d8bacc81b4fda2871bbbd5032f35336cb8ac76c938f4664",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
           ],
-          "review_packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
+          "review_packet_sha256": "153fba5daa0d880121f34002d688b48b39d9c987f1a5d1f25e4bfbfa4ff6bca0",
           "unresolved": [
             "Lawyer review and authority sign-off remain pending; the draft is not issued.",
             "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
@@ -8665,16 +8664,17 @@
       "pub:evidence_inputs": [
         {
           "admission_status": "reviewed-changes",
-          "canonical_sha256": "b935a9e9d2a81ec511b4f507e2086e60394cba0f5ca191721dfd405edb4c17d6",
+          "canonical_sha256": "cce15cddae55f4f4e2cefd07e6592f58ebead674765a7fe265f80cf795ceca6c",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
+          "native_file_sha256": "105b224a7764d7ab3d8bacc81b4fda2871bbbd5032f35336cb8ac76c938f4664",
           "native_path": "data/examples/instruments/us-ut-oaip-jia-2026-001.md",
           "retained_primary_sha256": [
             "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
+            "639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad",
             "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b"
           ],
-          "review_packet_sha256": "27b15547fb411ec37543f7deac2039683b39c228e9d71b8d5976e645c811d329",
+          "review_packet_sha256": "153fba5daa0d880121f34002d688b48b39d9c987f1a5d1f25e4bfbfa4ff6bca0",
           "unresolved": [
             "Lawyer review and authority sign-off remain pending; the draft is not issued.",
             "The EveryAILaw amended-stack correspondence for the SB 149 slug was not compared field by field."
@@ -8906,10 +8906,10 @@
       }
     },
     "issuedBy": {
-      "edges": 35,
-      "sources": 35,
+      "edges": 34,
+      "sources": 34,
       "target_hosts": {
-        "publedge.org": 35
+        "publedge.org": 34
       }
     },
     "parent_instrument": {

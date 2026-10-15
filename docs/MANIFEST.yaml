@@ -88,7 +88,7 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:6d2a6c830ef9ca8519b779a78c33debd9d5fcff5f20978164d4c4dc0fe065f1b
+    hash: sha256:f5ecc35daec11a43407c9e6459e7f6c2bbbfea832bd7f3c70cc617b284b2a926
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:b22e0dcdcd2e45a3f232b450795cb65c32c4a58723423f456071bfb288c009b7
+    hash: sha256:af6642457235638f1179832bcdd954c8dda92017a2b0afa6ccb329472f998144
     note: package.json
 
   - path: package-lock.json
@@ -208,7 +208,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-jia-2026-001.md
     role: instrument
-    hash: sha256:639f19ea3a4b559894f32da3142be916fbd98e3b9fe5791edb9a05d80a6d61ad
+    hash: sha256:105b224a7764d7ab3d8bacc81b4fda2871bbbd5032f35336cb8ac76c938f4664
     note: data/examples/instruments/us-ut-oaip-jia-2026-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2024-001.md
@@ -508,7 +508,7 @@ files:
 
   - path: schema/instrument.schema.json
     role: schema
-    hash: sha256:0208dce36b68bdd47a149ce7f7d1616dc44bed8cffbf7806e7eda86d91ebd62b
+    hash: sha256:b1751310bdd0849649f9e2204c992a3dcb262bb924e7735b11df8562e1075ba6
     note: schema/instrument.schema.json
 
   - path: schema/obligation-record.schema.json
@@ -568,7 +568,7 @@ files:
 
   - path: scripts/lib/api-projection.js
     role: tooling
-    hash: sha256:6cdb63b5b7e140208ec99a284336d94bf8c0567cc6f68a53a381a048902af03b
+    hash: sha256:4fee7be5510e811aac0e971a7d534aab25757141f73f883e3c0ce38a6d4f9b77
     note: Pure docs/api/v1 aggregate projections carrying source and editorial labelling
 
   - path: scripts/lib/publication-state.js
@@ -593,12 +593,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:08fb442fc6d4c0b996cfcc5dcbc5275c6c3c181408abc3f332c2b2dc4fa615a2
+    hash: sha256:1340e0a08c317b56e1336062901912bf7fa0914c53873536183b36de9f757f3c
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:28008102ee3321e82d7f85ea6250a7015699bd9dc6f9cdb70d575e1f2bfe9788
+    hash: sha256:446b5c8212b5b34a52e672b8983ccf524f80466b6fc14ec5083aa41e485e5a4d
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -703,7 +703,7 @@ files:
 
   - path: scripts/eval-package-smoke.js
     role: tooling
-    hash: sha256:9d400b585387c3de6efd37d09eccefc6b6cf71e29dcd9408fc1d9a1ff3b8e46d
+    hash: sha256:6da95ed2729c08117baabc91eb7a51f0ddc71d7e88b2db583e11ab32c7fcbe18
     note: scripts/eval-package-smoke.js
 
   - path: scripts/eval-obligation-first-binding.js
@@ -858,7 +858,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:8c002e38525f6701b778c61e59dbe08d9aa03637df19cb07afeceff8cf6723ec
+    hash: sha256:5ae1380f9e0d395604058b6cb601881d2f24f09f47c12cd9c3e70b45fbbd8e9e
     note: scripts/verify-ci.js
 
   - path: AGENTS.md
@@ -888,7 +888,7 @@ files:
 
   - path: assets/styles.css
     role: site-source
-    hash: sha256:d88eac2418162a49d79392925b098803348cfa557b33ebbd910fa56cc0e3d631
+    hash: sha256:7c7dbe3d997eeb1c154d9b76b7c7b4fda542c1544220c29fb5ba14dbf5ea8460
     note: assets/styles.css
 
   - path: assets/tables.js
@@ -1038,7 +1038,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:646f30d589ec1961dcc0f3377985c9dba1be6be2c0b0a66538135ba664632ac8
+    hash: sha256:0b23a41ef4189650c71176ba1bbe4d87d9ac656cf063bf149317cd2947410dd6
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js
@@ -1193,3 +1193,8 @@ files:
     role: code
     hash: sha256:e16c21f3bfaabd8c89c5ba26cb159cff98451e0f5bb4bf0bb49a54679f55aeda
     note: SB226 Summary successor embeds the human receipt and changes one unit
+
+  - path: ops/evidence/oaip-coverage-review-2026-10-14.json
+    role: evidence
+    hash: sha256:74b73417feda7bb0fec090804015c90737cc817e6238e0f641190cad7747d56d
+    note: Dated OAIP index coverage comparison; not per-record legal verification

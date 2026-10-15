@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "change": {
+        "kind": "top",
+        "subject": "https://publedge.org/instrument/us-ut-oaip-jia-2026-001.json",
+        "predicate": "issuedBy",
+        "old_targets": [
+          "https://publedge.org/authority/utah-oaip.json"
+        ],
+        "new_targets": []
+      },
+      "reason": "The PubLedge original proposal is unissued. OAIP is the intended authority, not its issuer; PubLedge authored the proposal.",
+      "source_admission": {
+        "path": "data/admission/receipts.json",
+        "pointer": "/records/data~1examples~1instruments~1us-ut-oaip-jia-2026-001.md",
+        "sha256": "0329e02d062ada83a4d153b7cce4f0ce06dcbf9de43d586cb6b896cc7045379d",
+        "reviewed_units": [
+          "metadata:author_or_proponent",
+          "metadata:intended_authority",
+          "metadata:intended_authority_url",
+          "metadata:issued_by",
+          "metadata:official_url",
+          "metadata:title"
+        ],
+        "relationship_unit": "adapter:publedge-jia-proposal-issuer-withdrawal-v1",
+        "adapter": {
+          "name": "publedge-jia-proposal-issuer-withdrawal-v1"
+        }
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex",
+        "reviewed_at": "2026-10-15T01:04:39.894Z",
+        "decision": "source-consistency-reviewed",
+        "packet_sha256": "da8043ace25dc0b3eb9de424c9930efe91977db6541b6fcdaf7fb7193c59820f"
+      }
+    }
+  ]
+}

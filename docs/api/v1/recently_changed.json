@@ -17,6 +17,8 @@
       "authority": "utah-legislature",
       "type": "statute",
       "source": "authoritative-reference",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enforcing",
       "editorial_status": "published"
     },
@@ -32,6 +34,8 @@
       "authority": "utah-legislature",
       "type": "statute",
       "source": "authoritative-reference",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enforcing",
       "editorial_status": "published"
     },
@@ -47,6 +51,8 @@
       "authority": "utah-legislature",
       "type": "statute",
       "source": "authoritative-reference",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enforcing",
       "editorial_status": "published"
     },
@@ -62,6 +68,8 @@
       "authority": "utah-legislature",
       "type": "statute",
       "source": "authoritative-reference",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enforcing",
       "editorial_status": "published"
     },
@@ -77,12 +85,14 @@
       "authority": "utah-legislature",
       "type": "statute",
       "source": "authoritative-reference",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enforcing",
       "editorial_status": "published"
     },
     {
       "record_id": "us-ut-oaip-jia-2026-001",
-      "title": "Utah Mental Health Chatbot Disclosure — Joint Interpretation",
+      "title": "PubLedge proposed template (unissued): Utah Mental Health Chatbot Disclosure",
       "url": "https://publedge.org/us/utah/oaip/jia/2026-001/",
       "change_type": "updated",
       "created": "2026-04-15",
@@ -92,6 +102,8 @@
       "authority": "utah-oaip",
       "type": "jia",
       "source": "publedge-original-draft",
+      "author_or_proponent": "PubLedge",
+      "intended_authority": "Utah Office of Artificial Intelligence Policy (OAIP)",
       "status": "proposed",
       "editorial_status": "draft"
     },
@@ -107,6 +119,8 @@
       "authority": "utah-oaip",
       "type": "rma",
       "source": "demonstration-remap",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "expired",
       "editorial_status": "published"
     },
@@ -122,6 +136,8 @@
       "authority": "utah-oaip",
       "type": "rma",
       "source": "demonstration-remap",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enforcing",
       "editorial_status": "published"
     },
@@ -137,6 +153,8 @@
       "authority": "utah-oaip",
       "type": "rma",
       "source": "demonstration-remap",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enacted",
       "editorial_status": "published"
     },
@@ -152,6 +170,8 @@
       "authority": "colorado-legislature",
       "type": "statute",
       "source": "authoritative-reference",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "enforcing",
       "editorial_status": "published"
     },
@@ -167,6 +187,8 @@
       "authority": "colorado-legislature",
       "type": "statute",
       "source": "authoritative-reference",
+      "author_or_proponent": null,
+      "intended_authority": null,
       "status": "superseded",
       "editorial_status": "published"
     }

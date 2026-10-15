@@ -3,16 +3,16 @@
 id: us-ut-oaip-jia-2026-001
 instance: 2026-001
 slug: utah-mental-health-chatbot-disclosure-2026q2
-title: "Utah Mental Health Chatbot Disclosure — Joint Interpretation"
+title: "PubLedge proposed template (unissued): Utah Mental Health Chatbot Disclosure"
 type: jia
 source: publedge-original-draft
 jurisdiction: us-ut
 authority: utah-oaip
-issued_by:
-  "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
-  name: "Utah Office of Artificial Intelligence Policy (OAIP)"
-  ref: "https://commerce.utah.gov/ai/"
-official_url: https://commerce.utah.gov/ai/
+issued_by: null
+author_or_proponent: "PubLedge"
+intended_authority: "Utah Office of Artificial Intelligence Policy (OAIP)"
+intended_authority_url: https://commerce.utah.gov/ai/
+official_url: null
 obligation_kind: [requirement, permission]
 reliance_scope: requesting-party-only
 requesting_party: "PubLedge (illustrative — suggested prior art, not party-specific)"

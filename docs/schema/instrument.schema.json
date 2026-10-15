@@ -67,6 +67,9 @@
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
     "issued_by": { "type": ["object", "string", "null"] },
+    "author_or_proponent": {"type": ["string", "null"]},
+    "intended_authority": {"type": ["string", "null"]},
+    "intended_authority_url": {"type": ["string", "null"], "format": "uri"},
     "reliance_scope": {
       "type": ["string", "null"],
       "enum": [
@@ -238,6 +241,7 @@
       },
       "then": {
         "properties": {
+          "issued_by": { "type": "null" },
           "issuance_event": { "type": "null" },
           "enacted": { "type": "null" }
         }

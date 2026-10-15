@@ -321,6 +321,7 @@ test('native instrument schema rejects a promoted or issued-looking PubLedge ori
     assert.equal(jia.editorial_status, 'draft');
     assert.equal(validate(jia), true, JSON.stringify(validate.errors));
     const mutations = {
+        'unissued proposal with an issuer': record => { record.issued_by = { name: 'OAIP' }; },
         'status enforcing': record => { record.status = 'enforcing'; },
         'status enacted and editorial published': record => { record.status = 'enacted'; record.editorial_status = 'published'; },
         'proposed but carrying issuance fields': record => { record.issuance_event = 'Signed by OAIP'; record.enacted = '2026-09-01'; },
@@ -377,12 +378,12 @@ test('aggregate exports and derived counts keep draft and demonstration labellin
     draft.modified = '2026-09-09';
     for (const item of [
         projection.containerSummary(draft),
-        projection.upcomingItems(promoted, options).find(item => item.record_id === draft.id),
         projection.recentlyChangedItems(promoted, options).find(item => item.record_id === draft.id)
     ]) {
         assert.equal(item.source, 'publedge-original-draft');
         assert.equal(item.editorial_status, 'draft');
     }
+    assert.equal(projection.upcomingItems(promoted, options).some(item => item.record_id === draft.id), false, 'Unissued proposals must not become operational milestones even with a forged effective date');
     // The promoted clone is not admissible, so the enforcing count stays fixed at admitted records.
     const validate = compileSchema('schema/instrument.schema.json');
     const frontmatterOf = c => Object.fromEntries(Object.entries(c).filter(([key]) => !key.startsWith('_') && !['provisions', 'timeline'].includes(key)));
@@ -393,7 +394,7 @@ test('aggregate exports and derived counts keep draft and demonstration labellin
     // Emitted docs agree with the projection.
     const emitted = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/containers.json'), 'utf8'));
     assert.deepEqual(projection.countByStatus(emitted.items), counts);
-    assert.deepEqual(emitted.items.find(item => item.id === jia.id), JSON.parse(JSON.stringify(jia)));
+    assert.deepEqual(emitted.items.find(item => item.id === jia.id), { ...JSON.parse(JSON.stringify(jia)), url: '/us/utah/oaip/jia/2026-001/' });
     for (const name of ['upcoming.json', 'recently_changed.json']) {
         const payload = JSON.parse(fs.readFileSync(path.join(ROOT, `docs/api/v1/${name}`), 'utf8'));
         for (const item of payload.items) assert.ok(item.source && item.editorial_status, `${name} ${item.record_id} lost its source labelling`);
@@ -411,7 +412,7 @@ test('Obligation-First issuance determinations exclude original drafts even when
     const instrument = obligationFirst.buildObligationFirstRecords(config, { containers: [promoted], primaries: [], authorities: [], mappingIndex: [] }).instruments[0];
     assert.equal(instrument.embodies_determination, undefined);
     assert.equal(instrument['pub:editorial_status'], 'published');
-    const remap = { ...promoted, source: 'demonstration-remap' };
+    const remap = { ...promoted, source: 'demonstration-remap', official_url: 'https://example.gov/signed-agreement' };
     assert.equal(determinations([remap]).length, 1);
 
     const emitted = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/of/index.json'), 'utf8'));

@@ -161,6 +161,25 @@
             "null"
           ]
         },
+        "author_or_proponent": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "intended_authority": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "intended_authority_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
         "issuance_event": {
           "type": [
             "string",
@@ -484,6 +503,9 @@
           },
           "then": {
             "properties": {
+              "issued_by": {
+                "type": "null"
+              },
               "issuance_event": {
                 "type": "null"
               },
