@@ -128,7 +128,7 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:0ef5b007e2f3227757058d243fddd100c440694c442d6bba0e5b0625a9f36ce9
+    hash: sha256:5ded7128665499296d4c1b1cb7e5572b55544f39e99c82bfe26fa07d631f624c
     note: package.json
 
   - path: package-lock.json
@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:a9057086d81083fd6054f207f6392a6b6d6f4ac649fa7da693f3acbfdecf106c
+    hash: sha256:3c41300ec2bbe8ab4f944ebbd0b4b4813ecb4b2aea77c9495f416f96fb70d377
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -498,7 +498,7 @@ files:
 
   - path: VERIFICATION.md
     role: protocol
-    hash: sha256:d66e94cc5c3b100839c55ee09365f5a690f2c82514c578fdc3ce930ed275841f
+    hash: sha256:5f46a806170e83d95b256f0cd22c93f61ebb1243e2bcc766f35afd1b1247688a
     note: VERIFICATION.md
 
   - path: schema/context.jsonld
@@ -778,12 +778,12 @@ files:
 
   - path: scripts/eval-workflow-invariants.js
     role: tooling
-    hash: sha256:2ee79a6d9d3c2e7d8a3a95df909bad8c64948bbc8b8b92ae33b4ca8856919de2
+    hash: sha256:e71389fff8aea8b0ddc2cc0355bee0a3c33949118577fd2496bf4454107959da
     note: scripts/eval-workflow-invariants.js
 
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:0357330c1494402604d8b4c3ec0d7c0abeffdb9d137f623600b018251a6f13c0
+    hash: sha256:6df8f14aa3a05949c7692c7a560d32c971eab34b7bec0732055391bdb50cdc51
     note: scripts/evals.js
 
   - path: scripts/lib/build-clock.js
@@ -858,7 +858,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:5ae1380f9e0d395604058b6cb601881d2f24f09f47c12cd9c3e70b45fbbd8e9e
+    hash: sha256:2a1ce4087ce59357027e4fd10e98119ed4b23e313848968dbe250efe09e7bdab
     note: scripts/verify-ci.js
 
   - path: AGENTS.md
@@ -1198,3 +1198,13 @@ files:
     role: evidence
     hash: sha256:74b73417feda7bb0fec090804015c90737cc817e6238e0f641190cad7747d56d
     note: Dated OAIP index coverage comparison; not per-record legal verification
+
+  - path: scripts/check-temporal-regressions.js
+    role: tooling
+    hash: sha256:6352a4f641525d32384cc51de4c01e372f61035f885127e046b7939eec0d4d30
+    note: scripts/check-temporal-regressions.js
+
+  - path: tests/temporal-regressions.test.js
+    role: tooling
+    hash: sha256:e0db0a2a8050c4e741a22b5703b13c5e1773a0a0e53c5fa9197acf016310eaa3
+    note: tests/temporal-regressions.test.js

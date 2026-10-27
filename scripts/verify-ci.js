@@ -13,6 +13,7 @@ const gates = [
     [npm, ['run', 'test:admission']],
     [npm, ['run', 'test:source-mapping']],
     [npm, ['run', 'test:publication-state']],
+    [npm, ['run', 'test:temporal-regressions']],
     [npm, ['run', 'build']],
     [npm, ['run', 'test:of-evidence-inputs']],
     [npm, ['run', 'test:doctronic-observation']],
@@ -23,7 +24,7 @@ const gates = [
     [npm, ['run', 'check:of']],
     [npm, ['run', 'validate:of']],
     [npm, ['run', 'check:of-continuity']],
-    [npm, ['run', 'evals']],
+    [npm, ['run', 'evals', '--', '--temporal-regressions']],
     [npm, ['run', 'test:maintenance']],
     ['git', ['diff', '--check']],
     ['git', ['diff', '--exit-code', '--', 'docs/']]
@@ -38,4 +39,4 @@ for (const [command, args] of gates) {
     if (result.status !== 0) process.exit(result.status || 1);
 }
 
-console.log('PubLedge canonical CI verification passed.');
+console.log('PubLedge engineering CI passed. Existing temporal findings remain source-review work.');

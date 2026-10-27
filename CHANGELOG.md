@@ -21,6 +21,7 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 
 ### Changed
 
+- Compare temporal findings against the exact pre-change commit in engineering CI, blocking new or changed findings and deletion of unresolved records. Existing findings remain visible in logs, GitHub warnings and summaries; strict full-corpus and scheduled temporal verification still fail while those findings remain unresolved.
 - Enforce the generated `record.schema.json` with Ajv (JSON Schema 2020-12); generated records now carry `source` and an `admission` block limited to status and limits.
 - Move EveryAILaw term and obligation anchors into the mapping index as source-owned fields with a related-not-equivalent relation, source URL, locator, and qualification, replacing the hardcoded special case in the Obligation-First export. The mapping parser now fails on malformed or duplicate entries.
 - README and current guides link to provider observations; `agents.json` and `/.well-known/mcp.json` render the independently evidenced install identity and any actual source candidate.

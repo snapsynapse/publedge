@@ -8,8 +8,19 @@ const { reportFailures } = require('./lib/eval-kit');
 const root = path.join(__dirname, '..');
 const workflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'build.yml'), 'utf8');
 const verifier = fs.readFileSync(path.join(root, 'scripts', 'verify-ci.js'), 'utf8');
+const evals = fs.readFileSync(path.join(root, 'scripts', 'evals.js'), 'utf8');
+const scheduled = fs.readFileSync(path.join(root, '.github', 'workflows', 'verify.yml'), 'utf8');
 const attributes = fs.readFileSync(path.join(root, '.gitattributes'), 'utf8');
 const failures = [];
+if (!verifier.includes("['run', 'evals', '--', '--temporal-regressions']") || !verifier.includes('test:temporal-regressions')) {
+    failures.push('engineering CI must exercise the temporal regression gate and its tests');
+}
+if (!evals.includes("'check-temporal-regressions.js' : 'eval-temporal-status.js'")) {
+    failures.push('default evals must retain strict temporal status verification');
+}
+if (!scheduled.includes('npm run eval:temporal-status') || scheduled.includes('--temporal-regressions')) {
+    failures.push('scheduled verification must retain the full temporal failure, not the regression comparison');
+}
 if (/^\s+env:\s*\n\s*(?:steps|runs-on|needs):/m.test(workflow)) failures.push('job env must not be empty; GitHub rejects a null environment map');
 
 if (!workflow.includes('run: npm ci')) failures.push('build workflow must install the project with npm ci');

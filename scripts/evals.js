@@ -4,11 +4,17 @@
 const { spawnSync } = require('child_process');
 const path = require('path');
 
+const args = process.argv.slice(2);
+if (args.some(arg => arg !== '--temporal-regressions') || args.length > 1) {
+    console.error('Usage: node scripts/evals.js [--temporal-regressions]');
+    process.exit(1);
+}
+
 const scripts = [
     'eval-parser.js',
     'eval-instrument-schema.js',
     'eval-obligation-schema.js',
-    'eval-temporal-status.js',
+    args.includes('--temporal-regressions') ? 'check-temporal-regressions.js' : 'eval-temporal-status.js',
     'eval-temporal-status-contract.js',
     'eval-record-schema.js',
     'eval-schema-parity.js',
