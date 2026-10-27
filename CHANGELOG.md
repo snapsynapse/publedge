@@ -31,6 +31,9 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 
 ### Fixed
 
+- Isolate verification exit-code regressions from aging live-corpus dates by refreshing review dates only in disposable test fixtures; source review dates and production freshness checks are unchanged.
+- Reconcile protocol frontmatter/identifier guidance, verification workflow and cadence documentation, and contributor examples with the current schemas and implementation (2026-10-15). This is documentation maintenance; protocol/package versions, legal statuses, review dates, and runtime behavior are unchanged.
+
 - Judge record-page freshness badges and homepage countdowns against the risk-based review cadence, shared with `verify.js` through `scripts/lib/verify-policy.js`; records past cadence read "review overdue" and generated HTML stays deterministic.
 - In the Obligation-First projection, an obligation created by a draft or proposed Term takes that Term's lifecycle instead of the shared obligation definition's generic values, so a draft JIA duty no longer projects as potentially binding.
 - Records projected from a `publedge-original-draft` instrument cite the draft's canonical PubLedge URL and section headings as source and locator, instead of the authority page and the interpreted statute.
