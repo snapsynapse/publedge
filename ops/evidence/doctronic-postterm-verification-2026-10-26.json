@@ -1,0 +1,180 @@
+{
+  "recorded": "2026-10-26",
+  "base_commit": "2475ff6d974d2da6982f194c58e43f8dec90883a",
+  "disposition": "evidence-gap-no-native-correction",
+  "all_base_tracked_files_unchanged": true,
+  "unchanged_tracked_file_count": 2008,
+  "unchanged_bindings_sha256": "a8caec6bf8bb3c4ea00993605f7dcc60f248ef78599b3da4ce812c82fdf9a018",
+  "native_receipts_generated_schemas_scripts_tests_prior_evidence_unchanged": true,
+  "source_requests": 3,
+  "robots_requests": 1,
+  "minimum_spacing_seconds": 10,
+  "retries": 0,
+  "redirects_followed": 0,
+  "conditional_requests_used": 0,
+  "source_receipt": "ops/evidence/doctronic-postterm-acquisition-2026-10-26.json",
+  "source_comparisons": [
+    {
+      "page": "authorized-pilots",
+      "visible_text_whitespace_normalized_matches_october15": true,
+      "anchors_match_ignoring_email_obfuscation_fragment_and_whitespace": true
+    },
+    {
+      "page": "doctronic-pilot",
+      "visible_text_whitespace_normalized_matches_october15": true,
+      "anchors_match_ignoring_email_obfuscation_fragment_and_whitespace": true
+    },
+    {
+      "page": "ai-faq",
+      "visible_text_whitespace_normalized_matches_october15": true,
+      "anchors_match_ignoring_email_obfuscation_fragment_and_whitespace": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "federation-records",
+      "exit_code": 0,
+      "log": "build/session-evidence/doctronic-postterm-20261026/federation-records.log",
+      "log_sha256": "72ad227b1ff76ac531f18d19727fccd6398bedc08131b125dabb5d914b5885ef"
+    },
+    {
+      "name": "federation-anchors",
+      "exit_code": 0,
+      "log": "build/session-evidence/doctronic-postterm-20261026/federation-anchors.log",
+      "log_sha256": "abd3381c82ea3e069a7a6389686f8da93a9b2822a2f20310b489b8d93bd0e8b0"
+    },
+    {
+      "name": "federation-consumers",
+      "exit_code": 0,
+      "log": "build/session-evidence/doctronic-postterm-20261026/federation-consumers.log",
+      "log_sha256": "793a61d4d72b33e5cc805feb977db4fb3b9e7c2f6f660d1412b8353b2416d141"
+    },
+    {
+      "name": "maintenance-tests",
+      "exit_code": 0,
+      "log": "build/session-evidence/doctronic-postterm-20261026/maintenance-tests.log",
+      "log_sha256": "80cc02d77cca03f9c55282564f1845811b6a2cc697236f00198feed677c860c2"
+    },
+    {
+      "name": "temporal-status",
+      "exit_code": 1,
+      "log": "build/session-evidence/doctronic-postterm-20261026/temporal-status.log",
+      "log_sha256": "028be30ed30ba22877edb3e0313de97b26e48daab327980b778316909ea36641"
+    },
+    {
+      "name": "staleness",
+      "exit_code": 1,
+      "log": "build/session-evidence/doctronic-postterm-20261026/staleness.log",
+      "log_sha256": "fcf36b4323505d699ad49c2833f8e51e7cee41fd6bbf8d8b99966a99a59a7ff9"
+    },
+    {
+      "name": "patch-whitespace",
+      "exit_code": 0,
+      "log": "build/session-evidence/doctronic-postterm-20261026/patch-whitespace.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "fingerprint-current",
+      "exit_code": 0,
+      "log": "build/session-evidence/doctronic-postterm-20261026/fingerprint-current.log",
+      "log_sha256": "c49cf1056060cf6deba62ba06b54a51d0143395480048527a288e8c7b494bb3a",
+      "scope": "unchanged candidate fingerprint; no committed-migration comparison"
+    },
+    {
+      "name": "baseline-verification-exit",
+      "exit_code": 1,
+      "log": "build/session-evidence/doctronic-postterm-20261026/baseline-verification-exit.log",
+      "log_sha256": "f3c2b95a408023a87884c9abaded5af57eda94ef74c4cc2d0433e68e9e258e41",
+      "scope": "unchanged primary baseline"
+    }
+  ],
+  "canonical_ci": {
+    "exit_code": 1,
+    "comparison_base": "2475ff6d974d2da6982f194c58e43f8dec90883a",
+    "workflow_checker_pin": "1857e686efb674ed54be8c33b10b9d18f5c7db41",
+    "log": "build/session-evidence/doctronic-postterm-20261026/canonical-ci.log",
+    "log_sha256": "516368bd89d40a94c86ad8b547cc5c3e5a1c8dfea281155f1ebdeeab4a07280a",
+    "failures": [
+      "Doctronic enforcing after recorded initial term end",
+      "Existing eval-verification-exit frozen-fixture assumption fails against stale corpus, also reproduced on unchanged primary main",
+      "Historical committed relationship-migration comparison rejects base equal to still-uncommitted HEAD; separate fingerprint check passes without that comparison"
+    ],
+    "status": "not-passed-no-skip"
+  },
+  "independent_review": {
+    "artifact": "ops/evidence/doctronic-postterm-independent-review-2026-10-26.md",
+    "scope": "Separately authored verdict; this receipt makes no independent-review claim."
+  },
+  "limits": [
+    "No human verification-date renewal, source admission, legal-currentness certification, clinical acceptance or hosted acceptance.",
+    "No native correction or schema change, no committed candidate, GitHub delivery or runtime activation.",
+    "Logs and collector script remain local ignored session evidence; committed source/hash bindings are the portable evidence if later delivered."
+  ],
+  "candidate_inputs": [
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/ai-faq.html",
+      "bytes": 145188,
+      "sha256": "a63ebb2fe3f22b93483347ac69d66c36ba5f2aa8918aa2dba6c622ca020dc67d"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/ai-faq.links.json",
+      "bytes": 5929,
+      "sha256": "79d295559ba6c0f88875c6251dff25a80e224187b53268b089c5274a8cbd8fca"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/ai-faq.txt",
+      "bytes": 29782,
+      "sha256": "98582f97a867103eec5a54872150e54914360f643bf11c056e0db5d6f39babf7"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/authorized-pilots.html",
+      "bytes": 137382,
+      "sha256": "f1be39be690ff205e0ef1f958baea4c9be4abca49f3f1280f9ca322b304c58be"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/authorized-pilots.links.json",
+      "bytes": 4088,
+      "sha256": "676ad11fad0aaabd18aeb9090f86783a986d3e97cf128b35c816efb7c4079d4b"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/authorized-pilots.txt",
+      "bytes": 22404,
+      "sha256": "324d39194181a715a1cbcb5505f776c57c7d2d8bec2f5e11f13abce3150b894c"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/doctronic-pilot.html",
+      "bytes": 100240,
+      "sha256": "bf1a25482a71453739a60e8f0945d5226b9b700ea42500567edc7462ae85ca81"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/doctronic-pilot.links.json",
+      "bytes": 2530,
+      "sha256": "069af7ed73c928251fed0d96d5ee122d12bfccf6c003eda80c81d3490558ad78"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/doctronic-pilot.txt",
+      "bytes": 11549,
+      "sha256": "3e43e4f511d21c2953eb0bf473583fd6bbb6bd60a6d03588b3b753ac30551e9c"
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-10-26/robots.txt",
+      "bytes": 197,
+      "sha256": "574f07ea96224d8090223b455349c2fe72a08ed7c3e23583c73cc3d5663b09d3"
+    },
+    {
+      "path": "ops/evidence/doctronic-postterm-acquisition-2026-10-26.json",
+      "bytes": 5520,
+      "sha256": "eebbb98e9bd57b1e305c9c41252e9d8d12ac4ffa63b4c55094b3bb4d0befa597"
+    },
+    {
+      "path": "ops/evidence/doctronic-postterm-plan-2026-10-26.json",
+      "bytes": 2736,
+      "sha256": "b6496119a1c244c226004d7c5312ff5db761d4de14e8e612d290bdfcf7d556c5"
+    },
+    {
+      "path": "ops/evidence/doctronic-postterm-review-2026-10-26.md",
+      "bytes": 9268,
+      "sha256": "8a9731b779d367bc62c11ecd0c168afdf9ed34e77cf18d8b8ee80846d9ab7d51"
+    }
+  ]
+}
