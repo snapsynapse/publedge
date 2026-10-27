@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "scope": "One existing Doctronic record: post-initial-term extension, renewal, termination and status evidence only",
+  "base_commit": "2475ff6d974d2da6982f194c58e43f8dec90883a",
+  "authorization": {
+    "date": "2026-10-26",
+    "user_quote": "approved, please continue as described",
+    "selected_scope": "The proposed bounded PubLedge Doctronic post-term review, finite official-source requests, supported minimal correction or explicit gap report, validation and independent review. Stop before commit or GitHub delivery."
+  },
+  "source_requests": [
+    {"id": "register", "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/", "file": "authorized-pilots.html"},
+    {"id": "pilot", "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/", "file": "doctronic-pilot.html"},
+    {"id": "faq", "url": "https://commerce.utah.gov/ai/ai-faq/", "file": "ai-faq.html"}
+  ],
+  "conditional_requests": {
+    "maximum": 2,
+    "condition": "Only previously unattempted official commerce.utah.gov links directly witnessed in the three retained pages whose link text and context identify a Doctronic extension, renewal, termination or current-term decision. Freeze exact URLs in an appended follow-up plan before requesting them.",
+    "exclude": "No refetch of the unchanged original agreement, unrelated reports, general statute research, guessed URLs or links to other pilots."
+  },
+  "max_source_requests": 5,
+  "max_robots_requests": 1,
+  "retries": 0,
+  "redirects_followed": 0,
+  "request_timeout_seconds": 25,
+  "minimum_request_spacing_seconds": 10,
+  "robots": "Fetch robots.txt once before sources; honor all applicable disallows and any larger crawl delay. Unavailable/ambiguous policy or access challenge produces an explicit gap, without bypass.",
+  "prior_access": {
+    "october3": "The retained historical sweep records 14 commerce source attempts and three robots attempts; these are dated sweep counters, not lifetime totals.",
+    "october15": "Five source requests and one robots request completed under the two retained October15 plans. No retries or redirects were followed. The linked pilot alias returned 301 to the canonical page already retained.",
+    "limit": "This separately authorized post-term observation does not replay any consumed run or reset historical counters. Prior originals, failures and receipts remain unchanged."
+  },
+  "acceptance": "A source-bound supported correction or explicit evidence-gap disposition, preservation proof, applicable validation and complete independent review. Human dates, prior receipts and all unrelated records remain unchanged; a gap must not be hidden by forcing temporal validation green."
+}
