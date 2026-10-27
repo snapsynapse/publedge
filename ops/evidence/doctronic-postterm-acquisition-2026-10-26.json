@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "plan": "ops/evidence/doctronic-postterm-plan-2026-10-26.json",
+  "plan_sha256": "b6496119a1c244c226004d7c5312ff5db761d4de14e8e612d290bdfcf7d556c5",
+  "requests": [
+    {
+      "id": "robots",
+      "requested_url": "https://commerce.utah.gov/robots.txt",
+      "started_at": "2026-10-26T15:57:44.863979+00:00",
+      "request_user_agent": "PubLedge-Doctronic-SourceReview/1.0 (+https://publedge.org/)",
+      "retry": false,
+      "http_status": 200,
+      "final_url": "https://commerce.utah.gov/robots.txt",
+      "content_type": "text/plain",
+      "headers": {
+        "Date": "Mon, 26 Oct 2026 15:57:45 GMT",
+        "Content-Type": "text/plain",
+        "Last-Modified": "Wed, 14 Oct 2026 14:26:20 GMT",
+        "ETag": "W/\"6acf910c-c5\""
+      },
+      "complete": true,
+      "path": "data/admission/sources/doctronic/2026-10-26/robots.txt",
+      "bytes": 197,
+      "sha256": "574f07ea96224d8090223b455349c2fe72a08ed7c3e23583c73cc3d5663b09d3",
+      "access_disposition": "retained-needs-identity-review",
+      "retrieved_at": "2026-10-26T15:57:45.020613+00:00"
+    },
+    {
+      "id": "register",
+      "requested_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+      "started_at": "2026-10-26T15:57:55.025659+00:00",
+      "request_user_agent": "PubLedge-Doctronic-SourceReview/1.0 (+https://publedge.org/)",
+      "retry": false,
+      "http_status": 200,
+      "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+      "content_type": "text/html; charset=UTF-8",
+      "headers": {
+        "Date": "Mon, 26 Oct 2026 15:57:55 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Last-Modified": "Tue, 06 Oct 2026 06:47:53 GMT"
+      },
+      "complete": true,
+      "path": "data/admission/sources/doctronic/2026-10-26/authorized-pilots.html",
+      "bytes": 137382,
+      "sha256": "f1be39be690ff205e0ef1f958baea4c9be4abca49f3f1280f9ca322b304c58be",
+      "access_disposition": "retained-needs-identity-review",
+      "review_text": {
+        "path": "data/admission/sources/doctronic/2026-10-26/authorized-pilots.txt",
+        "sha256": "324d39194181a715a1cbcb5505f776c57c7d2d8bec2f5e11f13abce3150b894c"
+      },
+      "link_inventory": {
+        "path": "data/admission/sources/doctronic/2026-10-26/authorized-pilots.links.json",
+        "sha256": "676ad11fad0aaabd18aeb9090f86783a986d3e97cf128b35c816efb7c4079d4b"
+      },
+      "retrieved_at": "2026-10-26T15:57:55.543921+00:00"
+    },
+    {
+      "id": "pilot",
+      "requested_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+      "started_at": "2026-10-26T15:58:05.550825+00:00",
+      "request_user_agent": "PubLedge-Doctronic-SourceReview/1.0 (+https://publedge.org/)",
+      "retry": false,
+      "http_status": 200,
+      "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+      "content_type": "text/html; charset=UTF-8",
+      "headers": {
+        "Date": "Mon, 26 Oct 2026 15:58:06 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Last-Modified": "Wed, 17 Jun 2026 18:40:50 GMT"
+      },
+      "complete": true,
+      "path": "data/admission/sources/doctronic/2026-10-26/doctronic-pilot.html",
+      "bytes": 100240,
+      "sha256": "bf1a25482a71453739a60e8f0945d5226b9b700ea42500567edc7462ae85ca81",
+      "access_disposition": "retained-needs-identity-review",
+      "review_text": {
+        "path": "data/admission/sources/doctronic/2026-10-26/doctronic-pilot.txt",
+        "sha256": "3e43e4f511d21c2953eb0bf473583fd6bbb6bd60a6d03588b3b753ac30551e9c"
+      },
+      "link_inventory": {
+        "path": "data/admission/sources/doctronic/2026-10-26/doctronic-pilot.links.json",
+        "sha256": "069af7ed73c928251fed0d96d5ee122d12bfccf6c003eda80c81d3490558ad78"
+      },
+      "retrieved_at": "2026-10-26T15:58:06.652015+00:00"
+    },
+    {
+      "id": "faq",
+      "requested_url": "https://commerce.utah.gov/ai/ai-faq/",
+      "started_at": "2026-10-26T15:58:16.656479+00:00",
+      "request_user_agent": "PubLedge-Doctronic-SourceReview/1.0 (+https://publedge.org/)",
+      "retry": false,
+      "http_status": 200,
+      "final_url": "https://commerce.utah.gov/ai/ai-faq/",
+      "content_type": "text/html; charset=UTF-8",
+      "headers": {
+        "Date": "Mon, 26 Oct 2026 15:58:17 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Last-Modified": "Tue, 06 Oct 2026 16:59:28 GMT"
+      },
+      "complete": true,
+      "path": "data/admission/sources/doctronic/2026-10-26/ai-faq.html",
+      "bytes": 145188,
+      "sha256": "a63ebb2fe3f22b93483347ac69d66c36ba5f2aa8918aa2dba6c622ca020dc67d",
+      "access_disposition": "retained-needs-identity-review",
+      "review_text": {
+        "path": "data/admission/sources/doctronic/2026-10-26/ai-faq.txt",
+        "sha256": "98582f97a867103eec5a54872150e54914360f643bf11c056e0db5d6f39babf7"
+      },
+      "link_inventory": {
+        "path": "data/admission/sources/doctronic/2026-10-26/ai-faq.links.json",
+        "sha256": "79d295559ba6c0f88875c6251dff25a80e224187b53268b089c5274a8cbd8fca"
+      },
+      "retrieved_at": "2026-10-26T15:58:17.194527+00:00"
+    }
+  ],
+  "retries": 0,
+  "redirects_followed": 0,
+  "new_source_physical_attempts": 3,
+  "new_robots_physical_attempts": 1,
+  "limits": [
+    "Transport/source retention only, not legal acceptance.",
+    "Prior dated counters and source bytes are preserved; these are this observation counters only."
+  ]
+}
