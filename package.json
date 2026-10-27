@@ -76,6 +76,8 @@
     "eval:obligation-schema": "node scripts/eval-obligation-schema.js",
     "eval:temporal-status": "node scripts/eval-temporal-status.js",
     "eval:temporal-status-contract": "node scripts/eval-temporal-status-contract.js",
+    "check:temporal-regressions": "node scripts/check-temporal-regressions.js",
+    "test:temporal-regressions": "node --test tests/temporal-regressions.test.js",
     "eval:record-schema": "node scripts/eval-record-schema.js",
     "eval:schema-parity": "node scripts/eval-schema-parity.js",
     "eval:authority-response": "node scripts/eval-authority-response.js",

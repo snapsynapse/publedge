@@ -128,12 +128,12 @@ files:
 
   - path: package.json
     role: config
-    hash: sha256:0ef5b007e2f3227757058d243fddd100c440694c442d6bba0e5b0625a9f36ce9
+    hash: sha256:5ded7128665499296d4c1b1cb7e5572b55544f39e99c82bfe26fa07d631f624c
     note: package.json
 
   - path: package-lock.json
     role: config
-    hash: sha256:d0e10a10f31d5ca96ffb1338795e40bcfa7eac72ae4f0a41bf83cc9ca7dd2a25
+    hash: sha256:61047a8a989d634b6076eb351acc47ebf71f75fb48040855c770ad4d13ed7d6d
     note: package-lock.json
 
   - path: project.yml
@@ -433,12 +433,12 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:5c82713637e50b390f4d129f76960fe90926f50c59ddab8508d4c10eda12db9b
+    hash: sha256:3c41300ec2bbe8ab4f944ebbd0b4b4813ecb4b2aea77c9495f416f96fb70d377
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
     role: protocol
-    hash: sha256:341fc1ea496129ffb33ba3a9e89d737775ebba40122f252f24bb9048d19443fc
+    hash: sha256:a5a95df7c5b51e184dee19e5e86a5abdc7981158ed3b468e72592ce3b59045b8
     note: CONTRIBUTING.md
 
   - path: DEFINITIONS.md
@@ -453,7 +453,7 @@ files:
 
   - path: PROTOCOL.md
     role: protocol
-    hash: sha256:9a49e7a3ea098c5fa5c1d9f82e00fb16831ed2d8535fb36a3bff850de2c822f0
+    hash: sha256:7695259a2c0f084acf332eb53237f78142cd3a89bf8547e2a07f601937ce9d4d
     note: PROTOCOL.md
 
   - path: README.md
@@ -498,7 +498,7 @@ files:
 
   - path: VERIFICATION.md
     role: protocol
-    hash: sha256:eafeded6cdd7c3547d4c40818b8c42ac4990dbbeecef598c2b892167df9753be
+    hash: sha256:5f46a806170e83d95b256f0cd22c93f61ebb1243e2bcc766f35afd1b1247688a
     note: VERIFICATION.md
 
   - path: schema/context.jsonld
@@ -763,7 +763,7 @@ files:
 
   - path: scripts/eval-verification-exit.js
     role: tooling
-    hash: sha256:cada69fe7d1452e927c50c7d0de716399712d16d9c1b0592065bdb63efbde4bd
+    hash: sha256:3350c03ff810133e2b002a1ebb1559595da1254c15607ed7e166f8ef147ad8cd
     note: scripts/eval-verification-exit.js
 
   - path: scripts/eval-search-structured-data.js
@@ -778,12 +778,12 @@ files:
 
   - path: scripts/eval-workflow-invariants.js
     role: tooling
-    hash: sha256:2ee79a6d9d3c2e7d8a3a95df909bad8c64948bbc8b8b92ae33b4ca8856919de2
+    hash: sha256:e71389fff8aea8b0ddc2cc0355bee0a3c33949118577fd2496bf4454107959da
     note: scripts/eval-workflow-invariants.js
 
   - path: scripts/evals.js
     role: tooling
-    hash: sha256:0357330c1494402604d8b4c3ec0d7c0abeffdb9d137f623600b018251a6f13c0
+    hash: sha256:6df8f14aa3a05949c7692c7a560d32c971eab34b7bec0732055391bdb50cdc51
     note: scripts/evals.js
 
   - path: scripts/lib/build-clock.js
@@ -858,7 +858,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:5ae1380f9e0d395604058b6cb601881d2f24f09f47c12cd9c3e70b45fbbd8e9e
+    hash: sha256:2a1ce4087ce59357027e4fd10e98119ed4b23e313848968dbe250efe09e7bdab
     note: scripts/verify-ci.js
 
   - path: AGENTS.md
@@ -1198,3 +1198,13 @@ files:
     role: evidence
     hash: sha256:74b73417feda7bb0fec090804015c90737cc817e6238e0f641190cad7747d56d
     note: Dated OAIP index coverage comparison; not per-record legal verification
+
+  - path: scripts/check-temporal-regressions.js
+    role: tooling
+    hash: sha256:6352a4f641525d32384cc51de4c01e372f61035f885127e046b7939eec0d4d30
+    note: scripts/check-temporal-regressions.js
+
+  - path: tests/temporal-regressions.test.js
+    role: tooling
+    hash: sha256:e0db0a2a8050c4e741a22b5703b13c5e1773a0a0e53c5fa9197acf016310eaa3
+    note: tests/temporal-regressions.test.js

@@ -12,6 +12,16 @@ function makeTempRepo() {
     fs.mkdirSync(path.join(dir, 'scripts', 'lib'), { recursive: true });
     fs.cpSync(path.join(ROOT, 'project.yml'), path.join(dir, 'project.yml'));
     fs.cpSync(path.join(ROOT, 'data'), path.join(dir, 'data'), { recursive: true });
+    // Isolate verifier regressions from aging review dates in the live corpus.
+    // These dates belong only to disposable test copies, not source records.
+    const today = new Date().toISOString().slice(0, 10);
+    for (const kind of ['instruments', 'obligations', 'authorities']) {
+        const entityDir = path.join(dir, 'data', 'examples', kind);
+        for (const name of fs.readdirSync(entityDir).filter(name => name.endsWith('.md'))) {
+            const file = path.join(entityDir, name);
+            fs.writeFileSync(file, fs.readFileSync(file, 'utf-8').replace(/^last_verified:.*$/m, `last_verified: ${today}`));
+        }
+    }
     fs.cpSync(path.join(ROOT, 'scripts', 'verify.js'), path.join(dir, 'scripts', 'verify.js'));
     for (const module of ['parse.js', 'mapping.js', 'verify-policy.js']) {
         fs.cpSync(path.join(ROOT, 'scripts', 'lib', module), path.join(dir, 'scripts', 'lib', module));
@@ -58,6 +68,7 @@ const replaceVerified = (root, value) => {
     try {
         const res = runVerify(tempRoot);
         const output = `${res.stdout || ''}\n${res.stderr || ''}`;
+        if (res.error || res.status !== 0) failures.push('baseline fixture: fresh review dates did not produce a successful verifier run');
         if (!output.includes('Staleness policy: active instruments 90d; authorities 180d; obligations 180d; historical demonstrations 365d')) {
             failures.push('baseline verifier output does not preserve the 90/180/365 differentiated cadence policy');
         }

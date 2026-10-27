@@ -1,112 +1,54 @@
 # Verification
-
-PubLedge inherits a verification system from the Knowledge-as-Code pattern that detects stale entities, validates cross-reference integrity, and provides a foundation for AI-assisted content review of registry instruments.
-
-## How It Works
-
-The verification script (`scripts/verify.js`) performs two categories of checks:
-
-### Staleness Detection
-
-Each entity file can include a `last_verified` date in its YAML frontmatter. The script compares this date against a configurable threshold to identify entities that may contain outdated information.
-
-Entities are reported in three categories:
-- **Fresh** — verified within the staleness window
-- **Stale** — `last_verified` date exceeds the threshold
-- **Never verified** — no `last_verified` field present
-
-### Cross-Reference Checking
-
-The script validates that:
-- Every container has at least one mapping entry
-- Every mapping references valid primary entity IDs
-- Every mapping references valid container IDs
-
-## Setting `last_verified` in Entity Frontmatter
-
-Add a `last_verified` field with an ISO date to any entity's frontmatter:
-
-```yaml
----
-title: Data Encryption
-group: technical
-last_verified: 2025-01-15
----
-```
-
-When you review an entity and confirm its content is current, update this date. The verification script will then consider it fresh until the staleness threshold is exceeded.
-
-## Configuring the Staleness Threshold
-
-In `project.yml`, set the number of days before an entity is considered stale:
-
+Last reconciled with the repository implementation: 2026-10-27.
+PubLedge's verification checks detect review work and structural problems. They do not establish legal currentness, source authenticity, agency endorsement, or corpus completeness. SHA-256 manifest consistency is a separate check; see [the public verification guide](reference/verify/index.html).
+## How it works
+`scripts/verify.js` checks review dates and mapping completeness. The scheduled workflow also runs the separate temporal-status eval.
+### Review-date checks
+Each instrument, obligation, and authority needs a `last_verified` date. The verifier reports:
+- **Fresh**: a valid, nonfuture review date within that entity's configured cadence.
+- **Stale**: review age exceeds the cadence.
+- **Never verified**: no `last_verified` value.
+- **Invalid**: the value is not a valid calendar date in `YYYY-MM-DD` form.
+- **Future**: the review date is later than the verifier's current UTC date.
+- **Frozen fixture**: an explicitly listed schema fixture with a valid, nonfuture date, exempt from aging. This does not mean it was reviewed for currentness.
+A fresh label measures the age of the recorded review. It is not a finding that the law, agreement, or underlying source remains current.
+### Mapping and frozen-fixture checks
+The verifier checks that instruments have mappings, except the relationship-only instruments explicitly listed in `verification.allowed_unmapped_instruments`, and that mappings reference existing instruments and obligations.
+It also checks the frozen-fixture declarations: ids must exist, frozen instruments must be historical demonstration remaps, frozen obligations cannot be mapped from nonfrozen instruments, and frozen authorities cannot be used by nonfrozen instruments.
+`node scripts/validate.js` checks additional cross-references and selected frontmatter rules. JSON Schema evals and admission checks are separate parts of canonical CI; passing `verify.js` alone is not equivalent to passing them.
+## Recording a review date
+Update `last_verified` only after actual source review, retaining the evidence and unresolved limits required by the repository's source-admission process. Do not change a date merely to clear a warning. A review of one source or unit does not renew the whole record or corpus; unresolved questions remain explicit.
+The five federal demonstration remaps and the obligations and authorities reachable only from them are frozen schema fixtures. Keep their recorded dates; do not renew them or perform official-source access work for them under routine currentness maintenance. [INTENT.md](INTENT.md) owns this scope, and `project.yml` names the exact frozen ids.
+See [ops/MAINTENANCE-PILOT.md](ops/MAINTENANCE-PILOT.md) for the bounded source-observation procedure. An observation does not itself renew verification dates or legal statuses.
+## Configuring review cadence
+The current `verification` cadence keys in `project.yml` are shown below. This is a configuration excerpt, not a replacement for the full verification block and its allowlists.
+Literal
 ```yaml
 verification:
   staleness_days: 90
+  authority_staleness_days: 180
+  obligation_staleness_days: 180
+  historical_demonstration_staleness_days: 365
 ```
-
-The default is 90 days. Adjust this based on how frequently your domain changes. Fast-moving regulatory environments may warrant 30 days; stable reference data might use 180.
-
-## Running Verification
-
+Active agreements and statutes use `staleness_days`; authorities and obligation definitions use their respective keys. Historical demonstration remaps other than JIAs, RMAs, and statutes use `historical_demonstration_staleness_days` unless explicitly frozen. The shared implementation is `scripts/lib/verify-policy.js`.
+The default active cadence is 90 days; omitted role-specific keys fall back to the active cadence. Invalid thresholds fail configuration validation. Change cadence or fixture scope only through reviewed configuration changes, not to mask overdue reviews.
+## Running verification
+From a repository checkout with development dependencies installed, run both checks used by the scheduled workflow:
+Literal
 ```bash
-node scripts/verify.js
+npm run verify
+npm run eval:temporal-status
 ```
-
-The script exits with code 0 if no entities are stale, and code 1 if any stale entities are found. This makes it suitable for CI pipelines.
-
-## GitHub Actions Workflow
-
-The included workflow (`.github/workflows/verify.yml`) runs verification on a weekly schedule (Mondays at 9am UTC) and can be triggered manually via `workflow_dispatch`.
-
-The workflow uses `continue-on-error: true` so that stale entities produce warnings rather than blocking other CI processes. Remove this flag if you want stale entities to fail the pipeline.
-
-## AI-Assisted Verification
-
-The `scripts/verify.js` file includes a commented-out placeholder for model-based verification. This pattern sends entity content to an LLM API to check for:
-
-- Outdated facts or references
-- Broken or changed URLs
-- Superseded standards or regulations
-- Factual inaccuracies
-
-To enable AI verification:
-
-1. Set environment variables for your AI provider:
-   ```bash
-   export AI_API_URL="https://api.example.com/v1/completions"
-   export AI_API_KEY="your-key"
-   ```
-
-2. Uncomment the `aiVerify` function in `scripts/verify.js`
-
-3. Uncomment the loop that calls `aiVerify` on stale entities
-
-4. Make the `verify` function `async` and add `await` to the AI calls
-
-The placeholder uses Node.js built-in `fetch` (available in Node 18+). No additional dependencies are required.
-
-### Example AI Verification Pattern
-
-```javascript
-async function aiVerify(entity) {
-    const prompt = `Review this entity for accuracy:
-      Title: ${entity.title}
-      Content: ${entity._body}
-
-      Check for outdated facts, broken URLs, and superseded standards.
-      Respond with JSON: { "status": "current"|"needs_review", "issues": [] }`;
-
-    const response = await fetch(process.env.AI_API_URL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.AI_API_KEY}`
-        },
-        body: JSON.stringify({ prompt, max_tokens: 500 })
-    });
-    return response.json();
-}
-```
-
-This can be integrated into the weekly GitHub Actions workflow by adding the API credentials as repository secrets and updating the workflow step to pass them as environment variables.
+`verify.js` exits 0 only when no stale, missing, invalid, future-dated, or completeness problems are found. It exits 1 when any of those problems occur, or when required configuration/data cannot be loaded. The temporal-status eval separately checks recorded lifecycle/date consistency; it does not establish current legal effect from fresh external evidence.
+A nonzero result is review work to resolve with evidence. It is not permission to alter status or verification dates.
+## GitHub Actions workflow
+[.github/workflows/verify.yml](.github/workflows/verify.yml) runs Mondays at 09:00 UTC and supports manual `workflow_dispatch`. It runs `npm ci`, captures both verification and temporal-status results, and attempts to upload the report with 14-day artifact retention before issue reporting.
+On failure, it creates or updates a stable `knowledge-drift` issue and deduplicates unchanged normalized reports. The final step fails the scheduled job if either check failed or its result is unavailable. It does not use `continue-on-error: true` to turn failed verification into a pass. Reporting failures can also fail the workflow; the artifact step and summary provide separate evidence of what completed.
+An existing drift issue is not automatically closed by a later passing run. Human review confirms resolution. Independent missing-run monitoring, recovery email acceptance, and human receipt remain separate open items; a configured weekly job is not proof that someone received its result.
+### Engineering CI and existing temporal findings
+The push/PR build workflow uses `npm run verify:ci`, which includes schema, admission, build, compatibility, and regression checks. Its temporal gate compares the exact `SOURCE_ADMISSION_BASE` commit and candidate native instruments using the same evaluation date and current evaluator. New or changed finding text blocks CI, even when the total finding count stays the same. Deleting a record with an unresolved base finding also blocks CI. A missing, invalid, nonancestor, or self comparison base fails closed.
+Unchanged findings are printed in full, annotated as warnings in GitHub Actions, and retained in the job summary. A passing engineering comparison means no temporal regression was introduced; it does not certify current legal status, renew human review dates, resolve an existing finding, or close the drift issue. Source admission and every other engineering gate remain required.
+`npm run eval:temporal-status`, default `npm run evals`, and scheduled verification retain strict full-corpus behavior and still fail on any current temporal finding. `verify:ci` explicitly selects `evals --temporal-regressions`; the comparison has no record-specific exemption or stored allowlist. The comparison date defaults to the current UTC date. `PUBLEDGE_EVAL_DATE` provides a reproducible evaluation date for local replay; both revisions always use the same value.
+The unresolved Doctronic post-term finding remains tracked in [issue #29](https://github.com/snapsynapse/publedge/issues/29). Passing an unrelated maintenance PR does not settle its status. See `scripts/verify-ci.js` for the canonical gate list.
+## AI-assisted review
+`scripts/verify.js` retains a commented-out model-review example. It is not executed by the verifier or scheduled workflow and is not an implemented source-currentness check. No provider integration, paid run, or automatic review-date/status update is enabled by this documentation. Any future integration requires its own reviewed scope, evidence policy, and authorization.
