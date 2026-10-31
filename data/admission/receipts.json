@@ -9000,6 +9000,89 @@
           ]
         }
       }
+    },
+    "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md": {
+      "record_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
+      "baseline_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+      "whole_record": {
+        "before_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+        "after_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "Codex PubLedge bounded certainty-withdrawal preparer",
+        "reviewed_at": "2026-10-31T17:58:48.090Z",
+        "decision": "source-consistency-reviewed",
+        "human_approved": false,
+        "scope": "Agent source-consistency review of exactly two changed prose units withdrawing unsupported predecessor-timing certainty against exact retained signed-act evidence. No human source acceptance, legal-history adjudication, whole-law currentness, date renewal or delivery.",
+        "packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac"
+      },
+      "unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
+      "evidence": {
+        "signed-sb26-189-qualified-timing": {
+          "snapshot_path": "data/admission/sources/colorado-sb26-189/sb26-189-signed-act-retained-2026-10-31.txt",
+          "snapshot_sha256": "d3c1d686cbd840d77aa1de831c0a4a05e7b1cf8e45518789582632feff3ab8af",
+          "original": {
+            "path": "data/admission/sources/colorado-sb26-189/sb26-189-signed-act-retained-2026-10-31.pdf",
+            "sha256": "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          },
+          "acquisition": "retained_snapshot",
+          "official_url": "https://leg.colorado.gov/bill_files/116489/download",
+          "document_id": "Colorado Senate Bill26-189 signed act",
+          "document_title": "SENATE BILL 26-189",
+          "issuing_body": "Colorado General Assembly",
+          "document_type": "signed act",
+          "version": "Retained signed-act bytes previously pinned by PubLedge F14; copied2026-10-31 from EAL commit0f8c1f776dd464b275cb78ef6a1ebb2f42d96b21. No new observation or present-currentness claim.",
+          "locator": "Signed PDFpages1,23-24, sections1 and5(1)-(3); retained extraction lines21-22 and1104-1116",
+          "excerpt": "      SECTION 5. Effective date - applicability. (1) Except as\notherwise provided in subsection (2) of this section, this act takes effect\nJanuary 1, 2027.\n\n          (2) Sections 6-1-1704 (4), 6-1-1705 (3 ), and 6-1-1706 (6), Colorado\nRevised Statutes, as amended in section 1 of this act, section 10-3-1104.9\n(3 )( e), Colorado Revised Statutes, as enacted in section 3 of this act, section\n4 of this act, this section, and section 6 of this act take effect upon passage.\n\n       (3) This act applies to consequential decisions made on or after\n\nPAGE 23-SENATE BILL 26-189\n\fJanuary 1, 2027.",
+          "identity_excerpts": [
+            "SENATE BILL 26-189",
+            "SECTION 5. Effective date - applicability."
+          ],
+          "provenance": {
+            "origin_path": "data/admission/sources/colorado-sb26-189/retained-evidence-origin-2026-10-31.json",
+            "origin_sha256": "2e112e50a4f45ceec09eeea688f24825ddfd874e1ae41aaea667c9b67eeb5241",
+            "prior_publedge_pin": "reference/F14-QUALIFIED-TIME.md:9",
+            "transport_qualification": "Exact retained source bytes only; no newly invented HTTP acquisition metadata."
+          }
+        }
+      },
+      "units": {
+        "section:Summary/text": {
+          "before_sha256": "556e06fea9bb159f09e9618d3abeedddadf1f255f03b4538c0aed099513a8d90",
+          "after_sha256": "e20b0bef188610b58ab29c68ef4bc49f7f7c3e42a95fe98edf6d7d665c2a6002",
+          "candidate_content": "SB 26-189 narrows and replaces the original Colorado AI Act (SB 24-205). Predecessor operative history remains unresolved; this record does not establish whether or when predecessor duties became operative. Rebranded as the Automated Decision-Making Technology (ADMT) Act and codified at C.R.S. §§6-1-1702 through 6-1-1706, the replacement statute drops the duty of reasonable care, the impact-assessment requirement, and most of the developer-liability scheme. Its substantive duties apply beginning January 1, 2027; specified rulemaking and administrative provisions took effect on passage. What survives is a much narrower disclosure-and-rights regime:\n\n- **Developer documentation (§6-1-1702).** Developers must disclose intended uses, training-data categories, known limitations, and human-review instructions to deployers.\n- **Deployer consumer notice (§6-1-1704).** Before a consequential decision is made using covered ADMT, the deployer must notify the consumer that an automated system is being used and disclose the decision's purpose and nature.\n- **Post-adverse explanation (§6-1-1705).** Within 30 days of an adverse consequential decision, the deployer must provide a plain-language explanation including the AI's role, degree of contribution, data types processed, and data sources.\n- **Consumer rights (§6-1-1705).** Consumers may correct inaccurate personal data and request meaningful human review and reconsideration of adverse outcomes.\n- **Record-keeping (§6-1-1703).** Deployers must retain compliance documentation for a minimum of 3 years.\n- **Enforcement (§6-1-1706).** Colorado Attorney General only; no private right of action; violations treated as deceptive trade practices under the Colorado Consumer Protection Act. A 60-day cure period is available through January 1, 2030.\n\nThe duty of reasonable care, the developer/deployer impact-assessment regime, and the rebuttable-presumption-of-compliance scaffolding from SB 24-205 are gone. The statute keeps the consumer-facing transparency core and reassigns the entire enforcement architecture to the AG's existing deceptive-trade-practices machinery.",
+          "reason": "Withdraw unsupported categorical assertion that replacement preceded every predecessor effect. The retained signed act distinguishes its replacement relation from section5 general commencement, enumerated upon-passage exceptions and applicability. Preserve unresolved predecessor operative history without asserting the opposite history.",
+          "qualifications": {
+            "scope": "Only Summary and Talking Point prose timing certainty. All unchanged statutory-duty, safe-harbor, commencement, status, relation and introduction claims retain prior scope; no whole-act review.",
+            "exceptions": "No adjudication of predecessor operation/cessation, court-order current effect, rulemaking finality, HB26-1263 interaction or downstream actor equivalence. No new status, date, instrument or schema choice.",
+            "time": "Historical retained signed-act bytes; no new retrieval or complete currentness observation. Native last_verified, all Verified/Checked rows, enacted/effective and Timeline dates stay byte-identical, including the unconfirmed Q1 introduction."
+          },
+          "evidence": [
+            "signed-sb26-189-qualified-timing"
+          ]
+        },
+        "section:Summary/subsection:Talking Point/text": {
+          "before_sha256": "53b8e58797afd988afc6d2582f048f51b99b64e372c497db238fa41b94833da2",
+          "after_sha256": "427de068b12b5dcdd42c85afe8f39816f09422aa7a59f487c15924cd03c2a980",
+          "candidate_content": "> \"Colorado SB 26-189 (2026) replaced the original AI Act, dropping the duty of reasonable care and impact-assessment regime and retaining a narrower transparency-plus-rights core enforced solely by the Attorney General through Colorado's deceptive-trade-practices statute.\"",
+          "reason": "Withdraw unsupported categorical assertion that replacement preceded every predecessor effect. The retained signed act distinguishes its replacement relation from section5 general commencement, enumerated upon-passage exceptions and applicability. Preserve unresolved predecessor operative history without asserting the opposite history.",
+          "qualifications": {
+            "scope": "Only Summary and Talking Point prose timing certainty. All unchanged statutory-duty, safe-harbor, commencement, status, relation and introduction claims retain prior scope; no whole-act review.",
+            "exceptions": "No adjudication of predecessor operation/cessation, court-order current effect, rulemaking finality, HB26-1263 interaction or downstream actor equivalence. No new status, date, instrument or schema choice.",
+            "time": "Historical retained signed-act bytes; no new retrieval or complete currentness observation. Native last_verified, all Verified/Checked rows, enacted/effective and Timeline dates stay byte-identical, including the unconfirmed Q1 introduction."
+          },
+          "evidence": [
+            "signed-sb26-189-qualified-timing"
+          ]
+        }
+      }
     }
   }
 }

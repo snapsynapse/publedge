@@ -1366,15 +1366,15 @@
         "present": 17
       },
       "pub:source_review_state": {
-        "explicit_unknown": 8,
+        "explicit_unknown": 7,
         "missing": 0,
-        "populated": 9,
+        "populated": 10,
         "present": 17
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 8,
-        "populated": 9,
+        "null": 7,
+        "populated": 10,
         "present": 17
       },
       "resulting_instrument": {
@@ -1544,15 +1544,15 @@
         "present": 18
       },
       "pub:source_review_state": {
-        "explicit_unknown": 8,
+        "explicit_unknown": 7,
         "missing": 0,
-        "populated": 10,
+        "populated": 11,
         "present": 18
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 8,
-        "populated": 10,
+        "null": 7,
+        "populated": 11,
         "present": 18
       },
       "pub:status": {
@@ -1800,15 +1800,15 @@
         "present": 12
       },
       "pub:source_review_state": {
-        "explicit_unknown": 6,
+        "explicit_unknown": 5,
         "missing": 0,
-        "populated": 6,
+        "populated": 7,
         "present": 12
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 6,
-        "populated": 6,
+        "null": 5,
+        "populated": 7,
         "present": 12
       },
       "pub:status": {
@@ -1952,15 +1952,15 @@
         "present": 35
       },
       "pub:source_review_state": {
-        "explicit_unknown": 10,
+        "explicit_unknown": 5,
         "missing": 0,
-        "populated": 25,
+        "populated": 30,
         "present": 35
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 10,
-        "populated": 25,
+        "null": 5,
+        "populated": 30,
         "present": 35
       },
       "pub:status": {
@@ -2238,15 +2238,15 @@
         "present": 16
       },
       "pub:source_review_state": {
-        "explicit_unknown": 7,
+        "explicit_unknown": 6,
         "missing": 0,
-        "populated": 9,
+        "populated": 10,
         "present": 16
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 7,
-        "populated": 9,
+        "null": 6,
+        "populated": 10,
         "present": 16
       },
       "section": {
@@ -2813,26 +2813,40 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/determination/us-co-legislature-statute-2026-sb26-189-issuance.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "declared",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_review_conflicts": null
@@ -3391,26 +3405,40 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/instrument/us-co-legislature-statute-2026-sb26-189.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "declared",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_review_conflicts": null
@@ -7261,16 +7289,24 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -7297,8 +7333,14 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_locator": "Summary",
@@ -7311,16 +7353,24 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -7347,8 +7397,14 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_locator": "Summary",
@@ -7361,16 +7417,24 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -7397,8 +7461,14 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_locator": "Summary",
@@ -7411,16 +7481,24 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -7447,8 +7525,14 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_locator": "Summary",
@@ -7461,16 +7545,24 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -7497,8 +7589,14 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_locator": "Summary",
@@ -7511,16 +7609,24 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -7547,8 +7653,14 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_locator": "Summary",
@@ -8972,16 +9084,24 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "dc7a12a013c0c638252fd67822834907b3d92d4abbd800ea5351287cdba1eeba",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "e2e3968100f83b4b75ab05e15bee181707c5cd6df05fc855dd0c4006fd3b417b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+          "native_file_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
           "native_path": "data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e"
+          ],
+          "review_packet_sha256": "721832360e4bdfc473199530aee72b6039ac2eb617344516d2df9848d46457ac",
+          "unresolved": [
+            "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+            "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+            "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+            "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+            "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -8996,8 +9116,14 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The exact introduction date is not accepted by this review. The native 2026-Q1 row remains unchanged; May1 is only a report/prompt lead in the reviewed holdings, not a retained primary history disposition.",
+        "Whether or when predecessor SB24-205 duties became operative or ceased remains unresolved. Section5 qualified timing is not complete predecessor operative/enforcement history.",
+        "Complete court-docket coverage, preliminary-injunction events, current continued effect of ECF24 and final implementing rulemaking remain unknown. This review supplies no later-event finding.",
+        "All unchanged substantive statutory duties, actors, retention, safe-harbor, enforcement, Governor signing and effective-date assertions remain outside this two-unit review; no whole-record certification or human date renewal.",
+        "HB26-1263 same-Part17 interaction and any broader Colorado source/currentness correction remain separate. Existing native statuses, relationship targets, dates and all unrelated records remain unchanged."
+      ],
       "source": "https://leg.colorado.gov/bills/sb26-189",
       "source_citation": "Colorado SB 26-189 (2026 Regular Session), Governor Signed May 14, 2026",
       "source_locator": "Summary",

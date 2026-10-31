@@ -163,7 +163,7 @@ files:
 
   - path: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
     role: instrument
-    hash: sha256:6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e
+    hash: sha256:e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e
     note: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
 
   - path: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
