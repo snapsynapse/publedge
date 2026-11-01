@@ -163,7 +163,7 @@ files:
 
   - path: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
     role: instrument
-    hash: sha256:e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e
+    hash: sha256:24d69be9993bc5348232a933e143d8eced74e7a8df6983ac38ea6f2094fcbbd0
     note: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
 
   - path: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
@@ -218,12 +218,12 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-001.md
     role: instrument
-    hash: sha256:c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617
+    hash: sha256:ff5744347015a193f20cdec64771d4f2b77f54fb8f2f323bd6e8736e89ad2128
     note: data/examples/instruments/us-ut-oaip-rma-2025-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
     role: instrument
-    hash: sha256:a906d83a5ea7d6cf6afe6b279acba9b99b38f251cae9896758ac11be630e9a7d
+    hash: sha256:7471adff448e8cb359319400649a03c922a1fab50f3ca1a0f11b6238382208ee
     note: data/examples/instruments/us-ut-oaip-rma-2025-002.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2026-001.md
@@ -318,7 +318,7 @@ files:
 
   - path: data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md
     role: obligation
-    hash: sha256:cd1f03c55b4ca26b7327a692c2ff3652a7993f2e27dfc7f4f230a124b81088f7
+    hash: sha256:7a636dd3038c9ec856f7ebadc2ccbb9860fc9fac1d3a51bfb523fb825d538bd8
     note: data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md
 
   - path: data/examples/obligations/dentacor-hygienist-ai-concurrence-diagnosis.md
@@ -1048,7 +1048,7 @@ files:
 
   - path: tests/doctronic-observation.test.js
     role: code
-    hash: sha256:7f99e0e7802bdc2d8681e3fc04193771e5b068cc79880b28731a6af5e7f8ac4a
+    hash: sha256:0eacd49a887bf7129dac0d73dfb70e091ca9a15d06dd056bc0d382e1203872f1
     note: Dated outcomes versus issued-term boundary regression
 
   - path: tests/source-owned-mapping.test.js

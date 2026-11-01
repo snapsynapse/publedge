@@ -1,0 +1,57 @@
+{
+  "status": "PROPOSAL ONLY; no source requests executed; root selection required",
+  "owner": "publedge; root coordinates shared commerce.utah.gov host",
+  "scope": "Existing Doctronic current-term decision evidence only; not candidate/new-JIA discovery",
+  "targets": [
+    {
+      "id": "doctronic-register-current-term-refresh",
+      "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+      "role": "Dated agency register observation, inspect only existing Doctronic entry and any explicitly identified extension/denial/termination/present-term decision links",
+      "dedup": "Latest retained exact canonical page located is Oct26HTTP200 body f1be39be690ff205e0ef1f958baea4c9be4abca49f3f1280f9ca322b304c58be; Sep24/Oct15/Oct26 selected card visible text matches. No newer retained exact original found in targeted Pub holdings/prior Foundation inventory. Do not refetch FAQ/pilot/agreement merely to repeat review.",
+      "prior_history": "Oct3 historical sweep records14commerce source+3robots attempts (dated run counters, notlifetime). Oct15two plans5source+1robots; known alias301 notfollowed; Oct26canonical register/pilot/FAQ3sources+1robots all200. Historicalfailures/counters remain retained; this proposed fresh dated canonical-register observation is not a replay/reset of earlier run.",
+      "latest_exact_target_outcome": {
+        "http_status": 200,
+        "retrieved_at": "2026-10-26T15:57:55.543921+00:00",
+        "source_path": "data/admission/sources/doctronic/2026-10-26/authorized-pilots.html",
+        "sha256": "f1be39be690ff205e0ef1f958baea4c9be4abca49f3f1280f9ca322b304c58be"
+      },
+      "robot_policy": {
+        "url": "https://commerce.utah.gov/robots.txt",
+        "refresh_required": true,
+        "retained_Oct26_sha256": "574f07ea96224d8090223b455349c2fe72a08ed7c3e23583c73cc3d5663b09d3",
+        "historical_policy": "User-agent* Disallow empty; Crawl-delay10. Historical only; fresh policy must be checked and honored."
+      },
+      "limits": {
+        "source_requests": 1,
+        "robots_requests": 1,
+        "conditional_source_requests": 0,
+        "retry": 0,
+        "redirects_followed": 0,
+        "request_timeout_seconds": 25,
+        "maximum_each_response_bytes": 20000000,
+        "maximum_total_retained_response_bytes": 20000000,
+        "minimum_seconds_after_prior_host_response": 10,
+        "host_concurrency": 1,
+        "stop": "Unknown/disallow robots, larger delay unmet, HTTPnon2xx/redirect/accesschallenge, cap/error produce retained gap; no bypass/followup retry. Any actual new attributable decision link gets frozen for root review before later fetch."
+      },
+      "capture": "Exact requested/finalURL,status,headers,UTCstart/retrieval,bytes,SHA256,originalbeforeextraction,readablecard+linkinventory; no human dates or legalstatus updates inferred."
+    }
+  ],
+  "excluded_acquisitions": [
+    {
+      "target": "Dentacor-Mitigation-Agreement.pdf",
+      "reason": "Exact successful Oct3 original located under opaque body names,388820bytes,SHA066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be; reuse now. No acquisition needed."
+    },
+    {
+      "target": "Colorado signed SB26-189 act",
+      "reason": "Retained owner original already copied/reviewed at6849; no refetch."
+    },
+    {
+      "target": "Colorado bill history introduction",
+      "reason": "Historical two robots failures plus406; no retry selected; neutral uncertainty withdrawal can be prepared offline."
+    }
+  ],
+  "source_requests_executed": 0,
+  "paid_calls": 0,
+  "limits_note": "At most one eligible target proposed now, not two by quota. No old request reservation is reset or treated as available capacity. Root decides exact separately dated observation under standing currentness authority."
+}

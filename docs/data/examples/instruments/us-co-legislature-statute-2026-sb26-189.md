@@ -55,7 +55,7 @@ modified: 2026-07-25
 
 | Milestone | Date | Notes |
 |-----------|------|-------|
-| Introduced | 2026-Q1 | 2026 Regular Session |
+| Introduced | Unconfirmed | 2026 Regular Session; exact introduction date is not established by the retained primary evidence reviewed here |
 | Governor Signed | 2026-05-14 | Replaces SB 24-205 in full |
 | Rulemaking sections effective | 2026-05-14 | §§6-1-1704(4), 6-1-1705(3), and 6-1-1706(6) took effect on passage |
 | Challenge window | 2026-05-14 → 2026-06-11 | 28-day window for further litigation noted in public commentary |

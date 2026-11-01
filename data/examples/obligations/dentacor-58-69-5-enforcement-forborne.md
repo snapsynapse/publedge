@@ -16,7 +16,7 @@ search_terms:
 
 ## Summary
 
-During the Dentacor demonstration period, the Utah Division of Professional Licensing (DOPL) forgave enforcement of unlawful and unprofessional-conduct actions under Utah Code §58-69-5 solely for conduct authorized by the RMA. The initial mitigation period ended May 31, 2026, and no public extension instrument was located as of July 25, 2026.
+The Dentacor Agreement states that the Utah Division of Professional Licensing (DOPL) will forgo enforcement action under Utah Code §58-69-5 during the demonstration period so long as Participant abides by the Agreement. This applies only to authorized conduct and does not preclude enforcement for other unlawful or unprofessional conduct. The recorded initial mitigation period ended May 31, 2026; the retained original does not establish whether a later extension or termination decision exists.
 
 ## What Counts
 
