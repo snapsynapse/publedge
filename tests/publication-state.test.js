@@ -197,10 +197,34 @@ test('guide anchor exists, is hash-bound, and remains outside the published pack
     const { state, snapshot } = fixtures();
     assert.equal(validatePublicationState(state, snapshot, ROOT), true);
     const actual = require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(ROOT, snapshot.guide.source_candidate_path))).digest('hex');
-    assert.equal(actual, snapshot.guide.source_candidate_sha256);
+    assert.equal(actual, state.guide_source?.source_sha256 ?? snapshot.guide.source_candidate_sha256);
     const broken = structuredClone(snapshot);
     broken.guide.source_candidate_sha256 = '0'.repeat(64);
     assert.throws(() => validatePublicationState(state, broken, ROOT), /snapshot content drift/);
+});
+
+test('guide revisions retain the publication snapshot and reject stale or mismatched bindings', () => {
+    const { state, snapshot } = fixtures();
+    assert.ok(state.guide_source);
+    const before = JSON.stringify(snapshot);
+    const identity = publicMcpIdentity(state, snapshot, ROOT);
+    assert.equal(identity.version, state.observations.npm.version);
+    assert.equal(JSON.stringify(snapshot), before);
+    for (const [field, message] of [
+        ['supersedes_source_sha256', /Guide source predecessor drift/],
+        ['source_sha256', /Source candidate guide hash drift/],
+        ['generated_sha256', /Hosted guide hash drift/]
+    ]) {
+        const broken = structuredClone(state);
+        broken.guide_source[field] = '0'.repeat(64);
+        assert.throws(() => validatePublicationState(broken, snapshot, ROOT), message);
+    }
+    const missing = structuredClone(state);
+    delete missing.guide_source;
+    assert.throws(() => validatePublicationState(missing, snapshot, ROOT), /Source candidate guide hash drift/);
+    const malformed = structuredClone(state);
+    malformed.guide_source = null;
+    assert.throws(() => validatePublicationState(malformed, snapshot, ROOT), /Guide source binding must be an object/);
 });
 
 test('generated publication state and evidence snapshots match source bytes', () => {

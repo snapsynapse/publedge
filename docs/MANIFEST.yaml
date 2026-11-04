@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:3c41300ec2bbe8ab4f944ebbd0b4b4813ecb4b2aea77c9495f416f96fb70d377
+    hash: sha256:e73f656b879de283c37f83ec9b4466d889aa2c16a0761d22b32667182e3c14c0
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -573,7 +573,7 @@ files:
 
   - path: scripts/lib/publication-state.js
     role: tooling
-    hash: sha256:04d1043030631e8b14a2f86d2bf563ef881891ae5c3de90f4b877c9fa06e05d9
+    hash: sha256:69863140006e6185cddfc861877a9b1a3fcacc02139ceffe36572d83bd4800df
     note: Published artifact and source-candidate identity boundary
 
   - path: scripts/prepare-source-admission.js
@@ -923,7 +923,7 @@ files:
 
   - path: reference/verify/index.html
     role: site-source
-    hash: sha256:84eba64b88b72a028b0c869785ea1da09b8114ad1b12b93b5917b09457ad8d30
+    hash: sha256:ab0a9b516003258cbef0e8e9dcf0ac82c0702c3a6e705301efa9acd88ee93391
     note: reference/verify/index.html
 
   - path: reference/vocabulary/index.html
@@ -1043,7 +1043,7 @@ files:
 
   - path: tests/publication-state.test.js
     role: code
-    hash: sha256:3b37be822ad795fc63718d2b59cc83445fd7a34f0799738666b67a67cc7fdccd
+    hash: sha256:4a325ed8603c4fa26b20ea39b13d806169ad5d1dfba232b4031c34d9d170f40b
     note: Published artifact identity and discovery regressions
 
   - path: tests/doctronic-observation.test.js
@@ -1068,7 +1068,7 @@ files:
 
   - path: design/publication-state.json
     role: evidence
-    hash: sha256:4964683951ced0ba2a73909cbc561138fe1f9ce19a4ad3bb30e79ccb755bc4fb
+    hash: sha256:d8358bbf7f0bae9cbd334536174a19e41c08bd6e5ba57281d307c77e78a645c4
     note: Independent provider observations and hosted selection policy
 
   - path: design/PUBLISHED-MCP-0.2.2.snapshot.json

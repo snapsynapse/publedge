@@ -151,13 +151,22 @@ function validatePublicationState(state, snapshot, root, now = new Date(), check
         assert.match(provider.limits || '', /raw responses are not retained/, 'Provider evidence must distinguish unretained response digests');
         const guide = snapshot.guide;
         assert.equal(guide.packaged, false, 'Published package guide boundary changed without artifact evidence');
+        // The guide is not packaged. Bind later source/generated revisions separately
+        // instead of rewriting the retained npm publication snapshot.
+        const guideSource = state.guide_source;
+        if (guideSource !== undefined) {
+            assert.ok(guideSource && typeof guideSource === 'object' && !Array.isArray(guideSource), 'Guide source binding must be an object');
+            assert.equal(guideSource.supersedes_source_sha256, guide.source_candidate_sha256, 'Guide source predecessor drift');
+            assert.match(guideSource.source_sha256 || '', /^[a-f0-9]{64}$/, 'Guide source digest missing');
+            assert.match(guideSource.generated_sha256 || '', /^[a-f0-9]{64}$/, 'Generated guide digest missing');
+        }
         const guidePath = path.join(root, guide.source_candidate_path || '');
         assert.equal(fs.existsSync(guidePath), true, 'Source candidate guide anchor is missing');
-        assert.equal(sha256(fs.readFileSync(guidePath)), guide.source_candidate_sha256, 'Source candidate guide hash drift');
+        assert.equal(sha256(fs.readFileSync(guidePath)), guideSource?.source_sha256 ?? guide.source_candidate_sha256, 'Source candidate guide hash drift');
         if (checkHosted) {
             const hostedGuide = path.join(root, 'docs', new URL(guide.hosted_url).pathname.replace(/^\//, ''), 'index.html');
             assert.equal(fs.existsSync(hostedGuide), true, 'Hosted guide anchor is missing');
-            assert.equal(sha256(fs.readFileSync(hostedGuide)), guide.hosted_sha256, 'Hosted guide hash drift');
+            assert.equal(sha256(fs.readFileSync(hostedGuide)), guideSource?.generated_sha256 ?? guide.hosted_sha256, 'Hosted guide hash drift');
         }
     }
     return true;
