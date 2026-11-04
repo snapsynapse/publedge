@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "document_updated": "2026-09-12",
+  "document_updated": "2026-11-04",
   "package": {
     "name": "publedge",
     "registry_server_name": "io.github.snapsynapse/publedge"
@@ -59,6 +59,12 @@
     "Provider observations are independent and may report different versions; a Git tag is not a GitHub Release.",
     "Null and error states are unknown, not evidence of absence.",
     "The hosted install identity and capability catalog come from the verified npm artifact, not the working source candidate.",
-    "This file records independent provider observations and can show partial publication without treating one channel as evidence for another."
-  ]
+    "This file records independent provider observations and can show partial publication without treating one channel as evidence for another.",
+    "guide_source binds the current source and expected generated verification guide, not a fresh hosted observation. Historical package/provider snapshots remain unchanged; no npm or MCP Registry republication is implied."
+  ],
+  "guide_source": {
+    "supersedes_source_sha256": "84eba64b88b72a028b0c869785ea1da09b8114ad1b12b93b5917b09457ad8d30",
+    "source_sha256": "ab0a9b516003258cbef0e8e9dcf0ac82c0702c3a6e705301efa9acd88ee93391",
+    "generated_sha256": "aa15e3f267fe8e4ba4c233e6246ec171a4169dccd3e059c6a4336fa993cfae63"
+  }
 }

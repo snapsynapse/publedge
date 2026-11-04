@@ -12,6 +12,9 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 
 ### Added
 
+- Correct verification-guide metadata to claim source-to-current-manifest consistency, with a separate source/generated guide binding that preserves historical package/provider snapshots.
+- Add an offline Doctronic four-checks exercise using retained agreement clauses and explicit initial-term/current-status limits; no legal record or verification date is changed.
+
 - Add a frozen legacy-unreviewed admission inventory, per-change admission receipts bound to retained primary source bytes, a `check:admission` gate in `verify:ci`, `prepack`, and MCP server startup, and admission tests. No legacy record is certified as reviewed; admission evidence and retained bytes stay out of the generated site and the npm package.
 - Add source-controlled publication state with dated npm, MCP Registry, tag, and release snapshots, plus tests and evals that retain independent provider evidence through partial publication.
 - Add per-kind evidence inputs (`pub:evidence_inputs`, `admission_status`, `evidence_type`, `pub:source_review_state`) to every Obligation-First record, with regression coverage for the evidence boundary. A reviewed mapping input cannot promote a record whose native instrument or obligation definition remains legacy-unreviewed.
