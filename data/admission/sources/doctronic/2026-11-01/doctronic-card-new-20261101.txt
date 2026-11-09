@@ -1,0 +1,20 @@
+Doctronic
+Active
+Prescription renewals
+SignedOctober 24, 2025
+TermOctober 24, 2025 – October 24, 2026
+Co-signed withDivision of Professional Licensing
+What the pilot does
+Doctronic uses AI to process 30, 60, and 90 day renewals of medication a licensed provider has already prescribed. It does not write a new prescription, touch controlled or addictive substances, or change a treatment plan. The pilot covers a fixed list of medications set out in the agreement and no others.
+Relief granted
+The same narrow relief as the Legion Health pilot: the Division of Professional Licensing agreed not to enforce the unlicensed conduct and telehealth provisions named in Schedule A against a renewal the AI authorizes under the agreed protocol. The relief covers the renewal function only and expressly reaches nothing else Doctronic offers.
+Where it stands
+The pilot is still in Phase 1, which means a licensed medical practitioner authorizes every request. Moving to Phase 2 requires this office to approve it, group of medications by group of medications, and it has not been approved. The 2026 amendment tightened that threshold and removed two medications from the list.
+What the company agreed to
+A three phase review, with this office deciding whether each phase advances.
+Identity and prescription verification before any renewal is processed.
+Telling the user, before the conversation starts, that they are interacting with generative AI, how their data will be used, and that they can file a complaint with this office.
+Monthly reporting, including how often the AI and the reviewing physician agreed.
+No selling user data and no advertising against it, deidentified or otherwise.
+Third party adversarial testing of the system.
+Learn more

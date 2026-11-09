@@ -1,0 +1,27 @@
+{
+  "source_kind": "Owner-authored native catalog; primary only for PubLedge-owned identifier namespace",
+  "git_commit": "6849a9dbadb39c0e41ff6fe06ab239e3e1df5702",
+  "source_observation": "Local exact git object extraction, not an HTTP retrieval or legal source acquisition",
+  "no_http_retrieval_claim": true,
+  "items": [
+    {
+      "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
+      "retained_path": "data/admission/sources/publedge-catalog/6849a9dbadb39c0e41ff6fe06ab239e3e1df5702/us-ut-oaip-rma-2025-001.md",
+      "sha256": "c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617",
+      "git_blob": "73e26bd9c1147a13e9cfda181a1467b4908658e8",
+      "source_url": "https://github.com/snapsynapse/publedge/blob/6849a9dbadb39c0e41ff6fe06ab239e3e1df5702/data/examples/instruments/us-ut-oaip-rma-2025-001.md"
+    },
+    {
+      "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
+      "retained_path": "data/admission/sources/publedge-catalog/6849a9dbadb39c0e41ff6fe06ab239e3e1df5702/us-ut-oaip-rma-2025-002.md",
+      "sha256": "a906d83a5ea7d6cf6afe6b279acba9b99b38f251cae9896758ac11be630e9a7d",
+      "git_blob": "77457b575f0ef3b30cd0366363b00bcde2665f93",
+      "source_url": "https://github.com/snapsynapse/publedge/blob/6849a9dbadb39c0e41ff6fe06ab239e3e1df5702/data/examples/instruments/us-ut-oaip-rma-2025-002.md"
+    }
+  ],
+  "limits": [
+    "Only id references in selected Notes unit are corrected.",
+    "No primary legal authenticity, chronology, issuance, term or legal currentness acceptance.",
+    "Selected Git commit binds historical source bytes; current candidate id fields remain equal to them."
+  ]
+}

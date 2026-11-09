@@ -5,7 +5,7 @@
     "generated": "2026-09-23T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
-      "status": "legacy-unreviewed",
+      "status": "reviewed-changes",
       "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
     }
   },

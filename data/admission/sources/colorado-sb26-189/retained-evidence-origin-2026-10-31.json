@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "scope": "Retained signed SB26-189 primary evidence for two existing PubLedge prose-unit uncertainty withdrawals only. No new law, current-law certification or human acceptance.",
+  "copied_at": "2026-10-31T17:58:48.068Z",
+  "acquisition": "retained_snapshot",
+  "official_url": "https://leg.colorado.gov/bill_files/116489/download",
+  "original_transport": "Not recorded by this copy. No fresh request or fabricated retrieval headers/timestamp.",
+  "originals": [
+    {
+      "source_repo": "/Users/snap/Git/every-ai-law",
+      "source_path": "raw/us-co/sb26-189-signed-act.pdf",
+      "source_commit": "0f8c1f776dd464b275cb78ef6a1ebb2f42d96b21",
+      "target": "data/admission/sources/colorado-sb26-189/sb26-189-signed-act-retained-2026-10-31.pdf",
+      "sha256": "87a8824f9071c63d2d47b736e414d28e216f5387ef5602484e53127bc94b283e",
+      "bytes": 11791344,
+      "acquisition": "retained_snapshot"
+    },
+    {
+      "source_repo": "/Users/snap/Git/every-ai-law",
+      "source_path": "raw/us-co/sb26-189-signed-act.md",
+      "source_commit": "0f8c1f776dd464b275cb78ef6a1ebb2f42d96b21",
+      "target": "data/admission/sources/colorado-sb26-189/sb26-189-signed-act-retained-2026-10-31.txt",
+      "sha256": "d3c1d686cbd840d77aa1de831c0a4a05e7b1cf8e45518789582632feff3ab8af",
+      "bytes": 40937,
+      "acquisition": "retained_snapshot"
+    }
+  ],
+  "prior_publedge_binding": {
+    "path": "reference/F14-QUALIFIED-TIME.md",
+    "commit": "e840d2b86fbd2c787a112c94c1d0b0fc0c273710",
+    "sha256": "8aedc847991f8e6982ff220f253236bebbc68b0c2868cdb568a6c85da40f7944",
+    "locator": "Lines7-9 and26; PDFpages23-24 and exact previously reviewed signed-PDF hash"
+  },
+  "reviewed_proposal_patch_sha256": "9474f3d8ef32a464ced1542dfb03aa14ad7f01116ba86eaa940a06aae40a2650",
+  "native_before_sha256": "6296cfedcf6618aebb3f2ff96f80e82d91faf28f2abb4d6b254352b2b464509e",
+  "native_after_sha256": "e9e679ef513a10c3315dac44d6f0549a8ccf93619b47a99bb3fdf77e3474408e",
+  "human_verified_or_checked_renewed": false,
+  "source_requests": 0,
+  "paid_calls": 0
+}

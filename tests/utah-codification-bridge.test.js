@@ -17,7 +17,13 @@ const files = report.records.map(r => r.file);
 test('bridge preserves all prior receipts and unknowns, and changes only the declared native units', () => {
     for (const [file, receipt] of Object.entries(prior)) {
         assert.ok(a.receiptLineage(receipts[file]).some(entry => a.digest(entry) === a.digest(receipt)), file);
-        if (!files.includes(file)) assert.deepEqual(receipts[file], receipt, file);
+        if (!files.includes(file)) {
+            const legacy = JSON.parse(read('data/admission/legacy.json')).records[file];
+            const admitted = a.admittedState(receipts[file], legacy, { read, now: new Date() });
+            const current = a.nativeSnapshot(file, read(file));
+            assert.equal(admitted.sha256, current.sha256, file);
+            assert.deepEqual(admitted.units, a.unitHashes(current), file);
+        }
     }
     const allowed = {
         'data/examples/instruments/us-ut-legislature-statute-2025-sb226.md': ['metadata:statute_anchors', 'section:Summary/subsection:Sources/text', 'section:Summary/subsection:Codification bridge (selected sources)/text'],

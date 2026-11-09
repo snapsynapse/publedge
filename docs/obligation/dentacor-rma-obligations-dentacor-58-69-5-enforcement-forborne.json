@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne.json",
   "pub:id": "dentacor-rma-obligations-dentacor-58-69-5-enforcement-forborne",
   "title": "Dentacor — §58-69-5 Enforcement Forborne",
-  "content": "During the Dentacor demonstration period, the Utah Division of Professional Licensing (DOPL) forgave enforcement of unlawful and unprofessional-conduct actions under Utah Code §58-69-5 solely for conduct authorized by the RMA. The initial mitigation period ended May 31, 2026, and no public extension instrument was located as of July 25, 2026.",
+  "content": "The Dentacor Agreement states that the Utah Division of Professional Licensing (DOPL) will forgo enforcement action under Utah Code §58-69-5 during the demonstration period so long as Participant abides by the Agreement. This applies only to authorized conduct and does not preclude enforcement for other unlawful or unprofessional conduct. The recorded initial mitigation period ended May 31, 2026; the retained original does not establish whether a later extension or termination decision exists.",
   "created_by": [
     "https://publedge.org/term/dentacor-rma-obligations.json"
   ],
@@ -42,20 +42,34 @@
   "projection_basis": "native-record-projection",
   "admission_status": "legacy-unreviewed",
   "source_review_conflicts": null,
-  "pub:source_review_unresolved": null,
-  "pub:source_review_state": "unknown",
+  "pub:source_review_unresolved": [
+    "This agent source-consistency candidate does not renew human Verified/Checked/last_verified or certify whole-record/current legal effect.",
+    "Unchanged parts of a reviewed unit are retained,not blanket source/legal acceptance; lineage preserves prior accepted units and human reviews.",
+    "Dentacor original metadata title is Working Draft. Retained official URL/body identity and selected text/signature appearances do not authenticate signatures,signatory authority,execution,effectiveness,current mitigation,testing-plan acceptance,extension ortermination. Existing legal status/lifecycle/initial dates remain unchanged; no actual extension/termination decision was reviewed.",
+    "Notes identifier maintenance only: retained owner-authored native catalog bytes are primary for PubLedge IDs, not primary legal evidence. Other Notes claims and historical numbering are not newly accepted; no conclusion that the older identifiers never existed."
+  ],
+  "pub:source_review_state": "known-and-unknown",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
-      "native_file_sha256": "c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617",
+      "native_file_sha256": "ff5744347015a193f20cdec64771d4f2b77f54fb8f2f323bd6e8736e89ad2128",
       "canonical_unit": null,
-      "canonical_sha256": "06ed1564673a32d12dc4a11a10be932242363e4ff5d46e80cf88dfbe30ff54a8",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "37d8090742ba2fc50edbdab00598471f76fb3ddab943994187ded9c01fbbc15e",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "f498689c70fa0e9ec314f534e8ee2d4354e7705e5a6ce7eb9e86558fa030caa0",
+      "retained_primary_sha256": [
+        "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+        "a906d83a5ea7d6cf6afe6b279acba9b99b38f251cae9896758ac11be630e9a7d",
+        "c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "This agent source-consistency candidate does not renew human Verified/Checked/last_verified or certify whole-record/current legal effect.",
+        "Unchanged parts of a reviewed unit are retained,not blanket source/legal acceptance; lineage preserves prior accepted units and human reviews.",
+        "Dentacor original metadata title is Working Draft. Retained official URL/body identity and selected text/signature appearances do not authenticate signatures,signatory authority,execution,effectiveness,current mitigation,testing-plan acceptance,extension ortermination. Existing legal status/lifecycle/initial dates remain unchanged; no actual extension/termination decision was reviewed.",
+        "Notes identifier maintenance only: retained owner-authored native catalog bytes are primary for PubLedge IDs, not primary legal evidence. Other Notes claims and historical numbering are not newly accepted; no conclusion that the older identifiers never existed."
+      ]
     },
     {
       "kind": "mapping-entry",
@@ -72,14 +86,21 @@
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/dentacor-58-69-5-enforcement-forborne.md",
-      "native_file_sha256": "cd1f03c55b4ca26b7327a692c2ff3652a7993f2e27dfc7f4f230a124b81088f7",
+      "native_file_sha256": "7a636dd3038c9ec856f7ebadc2ccbb9860fc9fac1d3a51bfb523fb825d538bd8",
       "canonical_unit": null,
-      "canonical_sha256": "29aa981a70293f3f7e6ad6a6170a497d0d392505739a1b47b9a7516b71e8d2c7",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "2903a7a9b3e8d19e093c71fd556156e269adcc7f3cb538ff1968230b9a57f774",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "e74877bbcb59fe5f8e4c9d97f097a553787e717dcb6945e8329d67dbb99906f0",
+      "retained_primary_sha256": [
+        "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+        "f1be39be690ff205e0ef1f958baea4c9be4abca49f3f1280f9ca322b304c58be"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "This agent source-consistency candidate does not renew human Verified/Checked/last_verified or certify whole-record/current legal effect.",
+        "Unchanged parts of a reviewed unit are retained,not blanket source/legal acceptance; lineage preserves prior accepted units and human reviews.",
+        "Dentacor original metadata title is Working Draft. Retained official URL/body identity and selected text/signature appearances do not authenticate signatures,signatory authority,execution,effectiveness,current mitigation,testing-plan acceptance,extension ortermination. Existing legal status/lifecycle/initial dates remain unchanged; no actual extension/termination decision was reviewed."
+      ]
     }
   ]
 }

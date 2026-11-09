@@ -51,6 +51,9 @@
     "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
     "October 15, 2026 UTC re-observation: the linked signed PDF is byte-identical to the retained September source, while the register and FAQ describe changed Phase 2 criteria and formulary. No amendment, written Proposal approval, Phase 2 approval or extension decision was identified among links on the three selected pages; no claim that those documents do not exist or that the pilot continues past October 24.",
     "The current FAQ describes a general program allowance of up to two extensions; original Agreement Section 13 permits a single extension request. No new codification bridge, instrument amendment or extension decision was reviewed, and the source-specific wording remains distinct.",
+    "This agent source-consistency candidate does not renew human Verified/Checked/last_verified or certify whole-record/current legal effect.",
+    "Unchanged parts of a reviewed unit are retained,not blanket source/legal acceptance; lineage preserves prior accepted units and human reviews.",
+    "November1dated source observation: one robots and one canonical register200; selected Doctronic card equalsOct26,stillActive+initialOct24,2025-Oct24,2026term. No attributable extension/denial/termination/new-interval decision orqualifying link supplied by selected scope; actual present legal status remains unresolved and the existing temporal finding remains.",
     "This agent review does not renew last_verified or authenticate human review."
   ],
   "pub:source_review_state": "known-and-unknown",
@@ -58,11 +61,11 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-002.md",
-      "native_file_sha256": "a906d83a5ea7d6cf6afe6b279acba9b99b38f251cae9896758ac11be630e9a7d",
+      "native_file_sha256": "7471adff448e8cb359319400649a03c922a1fab50f3ca1a0f11b6238382208ee",
       "canonical_unit": null,
-      "canonical_sha256": "e95f77b2e2ed8b10e3ea9962ec98103de2067619db7f8e2aadfac39cb79a1bf1",
+      "canonical_sha256": "aed930dfe0e0e763e4bd0d3137240aab62a55c6d5246004bacfa6292df2bf872",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "980e16e98d00816b1a7033e07c4a58616071cba28d0d95fa1cf721b0e1ba459c",
+      "review_packet_sha256": "0ad884fa83a63554fae0bcdb7919dbec66388cf48c109fb14947204713f862f7",
       "retained_primary_sha256": [
         "01be9384b07d7be04b9c24eab9760cea302dea48631cd8b8d4f7d96875bd386f",
         "66a376b02eebcd2c0c92dfbe7f51a59cbf9c1b6e4eaf59fd95d167530edf9b75",
@@ -70,10 +73,12 @@
         "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
         "98bbcb33d3fdc43985e17bff65ca26b7f80c41cc91ee457d7211f7178012f2be",
         "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f",
+        "ad42581905772a24ec51b10fc268fe353efa89d326c037d95561ade4a3e2e454",
         "baa85c45fa21bec0d573cefa6523fd780c7b20de33e46a2b1bbcb25ae20103a3",
         "cd39386fe85beb33c49e4ab63ec82dc76212171be1bb16cef403dc7483a2cd37",
         "d2db2d66bc5df6c57b4ebdcecf5f270e3769c4695d628339f0e18589a2e67f95",
-        "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940"
+        "ebddbd00bd97e950eba215ecabcbeac7b0ff08a41929bba24f76e58cea0cd940",
+        "f1be39be690ff205e0ef1f958baea4c9be4abca49f3f1280f9ca322b304c58be"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
@@ -84,7 +89,10 @@
         "The register's third-party adversarial testing term and the FAQ's malpractice insurance expectation do not appear in the retained signed agreement text.",
         "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
         "October 15, 2026 UTC re-observation: the linked signed PDF is byte-identical to the retained September source, while the register and FAQ describe changed Phase 2 criteria and formulary. No amendment, written Proposal approval, Phase 2 approval or extension decision was identified among links on the three selected pages; no claim that those documents do not exist or that the pilot continues past October 24.",
-        "The current FAQ describes a general program allowance of up to two extensions; original Agreement Section 13 permits a single extension request. No new codification bridge, instrument amendment or extension decision was reviewed, and the source-specific wording remains distinct."
+        "The current FAQ describes a general program allowance of up to two extensions; original Agreement Section 13 permits a single extension request. No new codification bridge, instrument amendment or extension decision was reviewed, and the source-specific wording remains distinct.",
+        "This agent source-consistency candidate does not renew human Verified/Checked/last_verified or certify whole-record/current legal effect.",
+        "Unchanged parts of a reviewed unit are retained,not blanket source/legal acceptance; lineage preserves prior accepted units and human reviews.",
+        "November1dated source observation: one robots and one canonical register200; selected Doctronic card equalsOct26,stillActive+initialOct24,2025-Oct24,2026term. No attributable extension/denial/termination/new-interval decision orqualifying link supplied by selected scope; actual present legal status remains unresolved and the existing temporal finding remains."
       ]
     },
     {

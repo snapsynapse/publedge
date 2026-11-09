@@ -1,0 +1,72 @@
+{
+  "status": "terminal",
+  "selection": "Root selected exact proposal66d854... under A-OCT31-EXISTING-COVERAGE-LOCAL; separately dated canonical refresh, not an old-run continuation",
+  "plan_sha256": "66d854c8fecf4a9bbd9a47afe88bbd82e966da0cab9e454efc4d7523db1b176e",
+  "requests": [
+    {
+      "id": "robots",
+      "requested_url": "https://commerce.utah.gov/robots.txt",
+      "started_at": "2026-11-01T16:45:08.842506+00:00",
+      "request_user_agent": "PubLedge-Doctronic-SourceReview/1.0 (+https://publedge.org/)",
+      "phase": "terminal",
+      "retry": false,
+      "http_status": 200,
+      "final_url": "https://commerce.utah.gov/robots.txt",
+      "content_type": "text/plain",
+      "headers": {
+        "Date": "Sun, 01 Nov 2026 16:45:09 GMT",
+        "Content-Type": "text/plain",
+        "Last-Modified": "Wed, 14 Oct 2026 14:26:20 GMT",
+        "etag": "W/\"6acf910c-c5\""
+      },
+      "path": "robots.txt",
+      "bytes": 197,
+      "sha256": "574f07ea96224d8090223b455349c2fe72a08ed7c3e23583c73cc3d5663b09d3",
+      "complete": true,
+      "received_at": "2026-11-01T16:45:09.109129+00:00",
+      "access_disposition": "retained-needs-identity-review",
+      "finished_at": "2026-11-01T16:45:09.109759+00:00"
+    },
+    {
+      "id": "register",
+      "requested_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+      "started_at": "2026-11-01T16:45:19.114834+00:00",
+      "request_user_agent": "PubLedge-Doctronic-SourceReview/1.0 (+https://publedge.org/)",
+      "phase": "terminal",
+      "retry": false,
+      "http_status": 200,
+      "final_url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/",
+      "content_type": "text/html; charset=UTF-8",
+      "headers": {
+        "Date": "Sun, 01 Nov 2026 16:45:19 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Last-Modified": "Tue, 06 Oct 2026 06:47:53 GMT"
+      },
+      "path": "authorized-pilots.html",
+      "bytes": 137388,
+      "sha256": "ad42581905772a24ec51b10fc268fe353efa89d326c037d95561ade4a3e2e454",
+      "complete": true,
+      "received_at": "2026-11-01T16:45:19.205174+00:00",
+      "access_disposition": "retained-needs-identity-review",
+      "finished_at": "2026-11-01T16:45:19.208371+00:00"
+    }
+  ],
+  "new_source_physical_attempts": 1,
+  "new_robots_physical_attempts": 1,
+  "retained_body_bytes": 137585,
+  "retries": 0,
+  "redirects_followed": 0,
+  "conditional_requests": 0,
+  "limits": {
+    "source_cap": 1,
+    "robots_cap": 1,
+    "aggregate_body_cap": 20000000,
+    "timeout_seconds": 25,
+    "host_concurrency": 1,
+    "minimum_after_response_seconds": 10
+  },
+  "historical_counters": "Retained separately in frozen proposal; no reset or derived available budget.",
+  "applied_after_response_spacing_seconds": 10,
+  "robots_can_fetch": true,
+  "finished_at": "2026-11-01T16:45:19.208729+00:00"
+}

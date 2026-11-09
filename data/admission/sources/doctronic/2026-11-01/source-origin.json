@@ -1,0 +1,87 @@
+{
+  "scope": "Separately dated source-only register observation; no renewed legal/human status",
+  "authorization_reference": "A-OCT31-EXISTING-COVERAGE-LOCAL plus root exact source selection66d854c8fecf4a9bbd9a47afe88bbd82e966da0cab9e454efc4d7523db1b176e",
+  "proposal_manifest_sha256": "7e58371890b6062d6443629d0942a665140c39ff253892aa006579305a369390",
+  "prior_Oct26_original_path": "data/admission/sources/doctronic/2026-10-26/authorized-pilots.html",
+  "prior_original_sha256": "f1be39be690ff205e0ef1f958baea4c9be4abca49f3f1280f9ca322b304c58be",
+  "current_original_sha256": "ad42581905772a24ec51b10fc268fe353efa89d326c037d95561ade4a3e2e454",
+  "copies": [
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/robots.txt",
+      "source_relative_to_packet": "doctronic-observation/robots.txt",
+      "sha256": "574f07ea96224d8090223b455349c2fe72a08ed7c3e23583c73cc3d5663b09d3",
+      "bytes": 197
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/authorized-pilots.html",
+      "source_relative_to_packet": "doctronic-observation/authorized-pilots.html",
+      "sha256": "ad42581905772a24ec51b10fc268fe353efa89d326c037d95561ade4a3e2e454",
+      "bytes": 137388
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/authorized-pilots.txt",
+      "source_relative_to_packet": "doctronic-observation/authorized-pilots.txt",
+      "sha256": "324d39194181a715a1cbcb5505f776c57c7d2d8bec2f5e11f13abce3150b894c",
+      "bytes": 22404
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/authorized-pilots.links.json",
+      "source_relative_to_packet": "doctronic-observation/authorized-pilots.links.json",
+      "sha256": "f3144fc00610c59773c6259844e4d0eebcf319fcbf850ec64e33c1e01d086237",
+      "bytes": 4088
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/doctronic-card-new-20261101.html",
+      "source_relative_to_packet": "doctronic-observation/doctronic-card-new-20261101.html",
+      "sha256": "345ac08557fdf9cd971c3ad617a9be071dd2da70e17021666c402a1fe1b1b36a",
+      "bytes": 2890
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/doctronic-card-new-20261101.txt",
+      "source_relative_to_packet": "doctronic-observation/doctronic-card-new-20261101.txt",
+      "sha256": "d06a6dd973d0fef7203c448daef557fa4e28af9bf5afb5948e97b43741d886fb",
+      "bytes": 1744
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/doctronic-card-old-20261026.html",
+      "source_relative_to_packet": "doctronic-observation/doctronic-card-old-20261026.html",
+      "sha256": "345ac08557fdf9cd971c3ad617a9be071dd2da70e17021666c402a1fe1b1b36a",
+      "bytes": 2890
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/doctronic-card-old-20261026.txt",
+      "source_relative_to_packet": "doctronic-observation/doctronic-card-old-20261026.txt",
+      "sha256": "d06a6dd973d0fef7203c448daef557fa4e28af9bf5afb5948e97b43741d886fb",
+      "bytes": 1744
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/receipt.json",
+      "source_relative_to_packet": "doctronic-observation/receipt.json",
+      "sha256": "9fa5c8876406abca9be18d2aa5f1eb482ea8ecd93737ff11bde978551ae78ef5",
+      "bytes": 2879
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/comparison.json",
+      "source_relative_to_packet": "doctronic-observation/comparison.json",
+      "sha256": "6e7adea20647c46bd70be27682f89848f41e71ff8f8fbc871aa150c743483262",
+      "bytes": 6234
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/qualifying-decision-links.json",
+      "source_relative_to_packet": "doctronic-observation/qualifying-decision-links.json",
+      "sha256": "41fa70c0bd353557005e36b21bb78039455954dcfe443687ce433da5b0379599",
+      "bytes": 114
+    },
+    {
+      "path": "data/admission/sources/doctronic/2026-11-01/selected-source-proposal.json",
+      "source_relative_to_packet": "source-slice-proposal.json",
+      "sha256": "66d854c8fecf4a9bbd9a47afe88bbd82e966da0cab9e454efc4d7523db1b176e",
+      "bytes": 3802
+    }
+  ],
+  "limits": [
+    "Originals precede derivative/exact-card review; one robots+one register200,0retries/redirects/conditional.",
+    "Old counters/failed history remain separate; no old manifest/reservation/claim was reset.",
+    "No qualifying Doctronic decision link identified; selected card equalsOct26, not legal/currentness or human renewal."
+  ]
+}
