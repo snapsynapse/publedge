@@ -1,0 +1,55 @@
+{
+  "status": "PASS scoped source observation/retention; present legal status remains unresolved",
+  "selected_proposal_sha256": "66d854c8fecf4a9bbd9a47afe88bbd82e966da0cab9e454efc4d7523db1b176e",
+  "actual_new_source_requests": 1,
+  "actual_new_robots_requests": 1,
+  "retries": 0,
+  "redirects_followed": 0,
+  "conditional_acquisitions": 0,
+  "response_gap_seconds": 10.005075,
+  "retained_body_bytes": 137585,
+  "robots_sha256": "574f07ea96224d8090223b455349c2fe72a08ed7c3e23583c73cc3d5663b09d3",
+  "raw_register_byte_equal": false,
+  "doctronic_card_raw_byte_equal": true,
+  "doctronic_card_visible_text_equal_ignoring_whitespace": true,
+  "cards": [
+    {
+      "label": "old-20261026",
+      "source_sha256": "f1be39be690ff205e0ef1f958baea4c9be4abca49f3f1280f9ca322b304c58be",
+      "UTF8_start": 97670,
+      "UTF8_end_exclusive": 100560,
+      "card_sha256": "345ac08557fdf9cd971c3ad617a9be071dd2da70e17021666c402a1fe1b1b36a",
+      "text_sha256": "d06a6dd973d0fef7203c448daef557fa4e28af9bf5afb5948e97b43741d886fb",
+      "text_without_whitespace_sha256": "a7a76b2abeac8b792f97052c4da38bc7ccd5709faa3292d4f1d8f193cb3131a0",
+      "text": "Doctronic\nActive\nPrescription renewals\nSignedOctober 24, 2025\nTermOctober 24, 2025 \u2013 October 24, 2026\nCo-signed withDivision of Professional Licensing\nWhat the pilot does\nDoctronic uses AI to process 30, 60, and 90 day renewals of medication a licensed provider has already prescribed. It does not write a new prescription, touch controlled or addictive substances, or change a treatment plan. The pilot covers a fixed list of medications set out in the agreement and no others.\nRelief granted\nThe same narrow relief as the Legion Health pilot: the Division of Professional Licensing agreed not to enforce the unlicensed conduct and telehealth provisions named in Schedule A against a renewal the AI authorizes under the agreed protocol. The relief covers the renewal function only and expressly reaches nothing else Doctronic offers.\nWhere it stands\nThe pilot is still in Phase 1, which means a licensed medical practitioner authorizes every request. Moving to Phase 2 requires this office to approve it, group of medications by group of medications, and it has not been approved. The 2026 amendment tightened that threshold and removed two medications from the list.\nWhat the company agreed to\nA three phase review, with this office deciding whether each phase advances.\nIdentity and prescription verification before any renewal is processed.\nTelling the user, before the conversation starts, that they are interacting with generative AI, how their data will be used, and that they can file a complaint with this office.\nMonthly reporting, including how often the AI and the reviewing physician agreed.\nNo selling user data and no advertising against it, deidentified or otherwise.\nThird party adversarial testing of the system.\nLearn more\n",
+      "links": [
+        {
+          "href": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/doctronic/",
+          "text": "Learn more"
+        }
+      ]
+    },
+    {
+      "label": "new-20261101",
+      "source_sha256": "ad42581905772a24ec51b10fc268fe353efa89d326c037d95561ade4a3e2e454",
+      "UTF8_start": 97670,
+      "UTF8_end_exclusive": 100560,
+      "card_sha256": "345ac08557fdf9cd971c3ad617a9be071dd2da70e17021666c402a1fe1b1b36a",
+      "text_sha256": "d06a6dd973d0fef7203c448daef557fa4e28af9bf5afb5948e97b43741d886fb",
+      "text_without_whitespace_sha256": "a7a76b2abeac8b792f97052c4da38bc7ccd5709faa3292d4f1d8f193cb3131a0",
+      "text": "Doctronic\nActive\nPrescription renewals\nSignedOctober 24, 2025\nTermOctober 24, 2025 \u2013 October 24, 2026\nCo-signed withDivision of Professional Licensing\nWhat the pilot does\nDoctronic uses AI to process 30, 60, and 90 day renewals of medication a licensed provider has already prescribed. It does not write a new prescription, touch controlled or addictive substances, or change a treatment plan. The pilot covers a fixed list of medications set out in the agreement and no others.\nRelief granted\nThe same narrow relief as the Legion Health pilot: the Division of Professional Licensing agreed not to enforce the unlicensed conduct and telehealth provisions named in Schedule A against a renewal the AI authorizes under the agreed protocol. The relief covers the renewal function only and expressly reaches nothing else Doctronic offers.\nWhere it stands\nThe pilot is still in Phase 1, which means a licensed medical practitioner authorizes every request. Moving to Phase 2 requires this office to approve it, group of medications by group of medications, and it has not been approved. The 2026 amendment tightened that threshold and removed two medications from the list.\nWhat the company agreed to\nA three phase review, with this office deciding whether each phase advances.\nIdentity and prescription verification before any renewal is processed.\nTelling the user, before the conversation starts, that they are interacting with generative AI, how their data will be used, and that they can file a complaint with this office.\nMonthly reporting, including how often the AI and the reviewing physician agreed.\nNo selling user data and no advertising against it, deidentified or otherwise.\nThird party adversarial testing of the system.\nLearn more\n",
+      "links": [
+        {
+          "href": "https://commerce.utah.gov/ai/regulatory-relief/authorized-ai-pilots/doctronic/",
+          "text": "Learn more"
+        }
+      ]
+    }
+  ],
+  "qualifying_new_decision_links": [],
+  "scope": "Only existing Doctronic card and explicitly Doctronic-labelled decision anchors reviewed; full original/link inventory retained without new-pilot discovery or admission. No source pages linked from register were fetched.",
+  "disposition": "The Nov1 register still labels Doctronic Active and repeats initialOct24,2025-Oct24,2026 term; no attributable extension/denial/termination/present-term decision is supplied by the selected card/links. The existing contradiction and temporal diagnostic remain visible, not expiry/renewal/currentness.",
+  "human_dates_renewed": false,
+  "native_edits": 0,
+  "historical_budget_reset": false
+}

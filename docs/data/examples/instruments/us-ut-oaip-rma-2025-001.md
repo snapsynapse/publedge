@@ -57,8 +57,8 @@ mitigations:
   - "Diagnosis limited to periodontal disease, complete edentulism, complete anodontia; procedures limited to scaling/root planing and full-denture installation and fitting"
   - "Dual-verification: hygienist + AI must concur; discrepancy escalates to licensed dentist"
   - "Informed consent including explicit notice that a dentist is not supervising and that hygienist scope is narrower than a dentist's"
-  - "Patient general-health review before procedure"
-  - "Testing plan approved by OAIP before any patient contact"
+  - "To the extent practicable, individual review of patient general health for underlying conditions or extenuating circumstances"
+  - "Appropriate testing plan accepted by the Office before the Agreement can take effect; adherence to the plan and OAIP approval of significant changes"
   - "Data security per §63A-19-102; State of Utah Enterprise Information Security Policy 5000-0002"
   - "Monthly reporting to ai@utah.gov (demographics, efficacy, complaints, adverse events, incidents)"
 status: expired
@@ -101,8 +101,8 @@ May licensed dental hygienists employed by Dentacor use an AI-assisted radiograp
 
 - Dual verification: diagnosis confirmed by both hygienist and AI; discrepancies auto-escalate to licensed dentist.
 - Informed consent for every patient, including explicit disclosure that no dentist is supervising and hygienist scope is narrower than a dentist's.
-- Patient general-health review to screen for contraindications.
-- Testing plan filed and approved by OAIP before rollout; material changes require OAIP sign-off.
+- To the extent practicable, individual review of the patient's general health to assess underlying conditions or extenuating circumstances that may make the authorized procedures inappropriate.
+- An appropriate testing plan must be accepted by the Office before the Agreement can take effect; Participant must adhere to the plan, with significant changes approved by OAIP.
 - Data security per §63A-19-102; Utah Enterprise Information Security Policy 5000-0002.
 - HIPAA-compliant patient management system; PHI excluded from monthly reports.
 - Monthly reports to ai@utah.gov: patient demographics, efficacy, incidents, complaints, hygienist observations.
@@ -140,4 +140,4 @@ Requesting-party-only. The Agreement confers mitigation only on Dentacor, LLC an
 
 ## Notes on this demonstration remap
 
-Second RMA (`us-ut-oaip-rma-0002`). Exercises scope-of-practice mitigation (non-prescribing profession) distinct from the prescription-renewal mitigation in `us-ut-oaip-rma-0003`. Narrows the mitigated provisions to one statute (§58-69-5) and a closed list of three diagnoses and two procedures — useful for demonstrating tight scope boundaries in the registry.
+Second RMA (`us-ut-oaip-rma-2025-001`). Exercises scope-of-practice mitigation (non-prescribing profession) distinct from the prescription-renewal mitigation in `us-ut-oaip-rma-2025-002`. Narrows the mitigated provisions to one statute (§58-69-5) and a closed list of three diagnoses and two procedures — useful for demonstrating tight scope boundaries in the registry.

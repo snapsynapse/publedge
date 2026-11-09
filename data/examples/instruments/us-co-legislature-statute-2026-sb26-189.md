@@ -55,7 +55,7 @@ modified: 2026-07-25
 
 | Milestone | Date | Notes |
 |-----------|------|-------|
-| Introduced | 2026-Q1 | 2026 Regular Session |
+| Introduced | Unconfirmed | 2026 Regular Session; exact introduction date is not established by the retained primary evidence reviewed here |
 | Governor Signed | 2026-05-14 | Replaces SB 24-205 in full |
 | Rulemaking sections effective | 2026-05-14 | §§6-1-1704(4), 6-1-1705(3), and 6-1-1706(6) took effect on passage |
 | Challenge window | 2026-05-14 → 2026-06-11 | 28-day window for further litigation noted in public commentary |
@@ -67,7 +67,7 @@ modified: 2026-07-25
 
 ## Summary
 
-SB 26-189 narrows and replaces the original Colorado AI Act (SB 24-205) before that statute ever took effect. Rebranded as the Automated Decision-Making Technology (ADMT) Act and codified at C.R.S. §§6-1-1702 through 6-1-1706, the replacement statute drops the duty of reasonable care, the impact-assessment requirement, and most of the developer-liability scheme. Its substantive duties apply beginning January 1, 2027; specified rulemaking and administrative provisions took effect on passage. What survives is a much narrower disclosure-and-rights regime:
+SB 26-189 narrows and replaces the original Colorado AI Act (SB 24-205). Predecessor operative history remains unresolved; this record does not establish whether or when predecessor duties became operative. Rebranded as the Automated Decision-Making Technology (ADMT) Act and codified at C.R.S. §§6-1-1702 through 6-1-1706, the replacement statute drops the duty of reasonable care, the impact-assessment requirement, and most of the developer-liability scheme. Its substantive duties apply beginning January 1, 2027; specified rulemaking and administrative provisions took effect on passage. What survives is a much narrower disclosure-and-rights regime:
 
 - **Developer documentation (§6-1-1702).** Developers must disclose intended uses, training-data categories, known limitations, and human-review instructions to deployers.
 - **Deployer consumer notice (§6-1-1704).** Before a consequential decision is made using covered ADMT, the deployer must notify the consumer that an automated system is being used and disclose the decision's purpose and nature.
@@ -80,7 +80,7 @@ The duty of reasonable care, the developer/deployer impact-assessment regime, an
 
 ### Talking Point
 
-> "Colorado SB 26-189 (2026) replaced the original AI Act before it took effect, dropping the duty of reasonable care and impact-assessment regime and retaining a narrower transparency-plus-rights core enforced solely by the Attorney General through Colorado's deceptive-trade-practices statute."
+> "Colorado SB 26-189 (2026) replaced the original AI Act, dropping the duty of reasonable care and impact-assessment regime and retaining a narrower transparency-plus-rights core enforced solely by the Attorney General through Colorado's deceptive-trade-practices statute."
 
 ### Sources
 

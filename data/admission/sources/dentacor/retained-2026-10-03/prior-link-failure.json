@@ -1,0 +1,13 @@
+{
+  "status": null,
+  "headers": {},
+  "finalUrl": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+  "complete": false,
+  "redirects": [],
+  "error": "BLOCKED: robots transport failed; policy unknown",
+  "attempts": [],
+  "retrieved_at": "2026-10-03T03:03:47.890870+00:00",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "requested_url": "https://commerce.utah.gov/wp-content/uploads/2025/06/Dentacor-Mitigation-Agreement.pdf",
+  "body_path": "/workspace/publedge/_codex-out/sources/links/d7e7c3bc85ba249c090122cf.body"
+}

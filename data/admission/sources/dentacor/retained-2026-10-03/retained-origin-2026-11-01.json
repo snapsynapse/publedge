@@ -1,0 +1,50 @@
+{
+  "scope": "PubLedge retained source identity/selected-clause candidate; not signature authenticity, execution/currentness or human acceptance",
+  "original_capture": "2026-10-03T18:38:14.545464+00:00",
+  "discovered_in_retained_holdings": "2026-11-01",
+  "copies": [
+    {
+      "path": "data/admission/sources/dentacor/retained-2026-10-03/Dentacor-Mitigation-Agreement.pdf",
+      "source_relative_to_packet": "dentacor/Dentacor-Mitigation-Agreement.pdf",
+      "sha256": "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+      "bytes": 388820
+    },
+    {
+      "path": "data/admission/sources/dentacor/retained-2026-10-03/Dentacor-Mitigation-Agreement.txt",
+      "source_relative_to_packet": "dentacor/retained-extracted.txt",
+      "sha256": "0f48dda919c8d7ff3cdfa3644fb58165ea1e65dea7bdd60c1620937e36b06d52",
+      "bytes": 25847
+    },
+    {
+      "path": "data/admission/sources/dentacor/retained-2026-10-03/original-transport.json",
+      "source_relative_to_packet": "retained-inputs/publedge/_codex-out/sources/transport-resume/e968fcf9ab0143a5a734ca84c0b5290d.json",
+      "sha256": "f295bb374eb05d2458f075b836eaa5ddc29bc630415a1a131d5bfe7611f90531",
+      "bytes": 1174
+    },
+    {
+      "path": "data/admission/sources/dentacor/retained-2026-10-03/original-link-capture.json",
+      "source_relative_to_packet": "retained-inputs/publedge/_codex-out/sources/links/resume-20261003/d7e7c3bc85ba249c090122cf.json",
+      "sha256": "01581997bd7134c3b7f24f882101bb88674bf271d1bc084370f7a6cada987c04",
+      "bytes": 2312
+    },
+    {
+      "path": "data/admission/sources/dentacor/retained-2026-10-03/prior-link-failure.json",
+      "source_relative_to_packet": "retained-inputs/publedge/_codex-out/sources/links/d7e7c3bc85ba249c090122cf.json",
+      "sha256": "30adce03e8899028927038340eaec01f40a67149aa7d568fdd68bf4acb558db6",
+      "bytes": 598
+    }
+  ],
+  "PDF_metadata_title": "Dentacor Mitigation (Working Draft)",
+  "reviewed_pages": [
+    1,
+    5,
+    6,
+    7,
+    8
+  ],
+  "limits": [
+    "The existing official URL and original retained HTTP200/body match were recovered; no new request or acquisition date is invented.",
+    "Visible signature appearances and dates do not authenticate signatures or establish current mitigation/extension/termination/testing-plan approval.",
+    "Previously untracked original is retained for source review; no public source_documents asset is claimed hosted or copied by build."
+  ]
+}

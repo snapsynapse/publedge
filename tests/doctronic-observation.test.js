@@ -57,14 +57,21 @@ test('Doctronic source review preserves all native metadata and the exact prior 
     assert.deepEqual(updated.frontmatter, old.frontmatter);
     const previous = JSON.parse(execFileSync('git', ['show', `${base}:data/admission/receipts.json`], { cwd: ROOT, encoding: 'utf8' })).records[relative];
     const successor = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/admission/receipts.json'), 'utf8')).records[relative];
-    assert.deepEqual(successor.supersedes.receipt, previous);
+    const admission = require('../scripts/lib/source-admission');
+    const lineage = admission.receiptLineage(successor);
+    assert.ok(lineage.some(receipt => admission.digest(receipt) === admission.digest(previous)));
+    assert.equal(previous.review.actor_type, 'human');
+    assert.equal(previous.review.human_approved, true);
+    const historicalAgent = lineage.find(receipt => receipt.supersedes?.packet_sha256 === previous.review.packet_sha256);
+    assert.deepEqual(historicalAgent.supersedes.receipt, previous);
     assert.equal(successor.review.actor_type, 'agent');
-    assert.equal(successor.review.human_approved, undefined);
+    assert.equal(successor.review.human_approved, false);
     for (const item of previous.unresolved) assert.ok(successor.unresolved.includes(item));
-    assert.deepEqual(Object.keys(successor.units).sort(), [
+    assert.deepEqual(Object.keys(historicalAgent.units).sort(), [
         'section:Obligations summary (Section 6 and Schedule A §16)/text',
         'section:Operational observation (not an issued term)/text'
     ]);
+    assert.deepEqual(Object.keys(successor.units), ['section:Operational observation (not an issued term)/text']);
     const observation = markdown => markdown.split('## Operational observation (not an issued term)\n\n')[1].split('\n## ')[0];
     assert.ok(observation(updated.body).endsWith(observation(old.body)));
 });
@@ -72,10 +79,15 @@ test('Doctronic source review preserves all native metadata and the exact prior 
 test('latest rendered notice attributes phase and term claims without inferring renewal', () => {
     const page = fs.readFileSync(path.join(ROOT, 'docs/us/utah/oaip/rma/2025-002/index.html'), 'utf8');
     const notice = page.match(/<aside class="record-disclaimer" aria-label="Operational status and limits">([\s\S]*?)<\/aside>/)[1];
-    assert.match(notice, /retrieved 2026-10-15 \(UTC\)/);
+    assert.match(notice, /retrieved 2026-11-01 \(UTC\)/);
     assert.doesNotMatch(notice, /retrieved 2026-09-24/);
-    assert.match(notice, /permission to continue past October 24/);
-    assert.match(notice, /does not establish that no such document exists/);
+    assert.match(notice, /present legal status unresolved/);
+    assert.match(notice, /does not establish expiry, renewal, termination, approval to continue operating, or absence of an Office decision elsewhere/);
+    assert.match(notice, /initial term October 24, 2025 to October 24, 2026/);
+    assert.match(notice, /September 23 verification date remain unchanged/);
+    assert.match(page, /retrieved 2026-10-15 \(UTC\)/);
+    assert.match(page, /does not establish that no such document exists/);
+    assert.match(page, /retrieved 2026-09-24/);
     const native = fs.readFileSync(SOURCE, 'utf8');
     assert.match(native, /Section 5.A permits the Office Director/);
     assert.match(native, /Section 12 separately requires a written instrument/);
