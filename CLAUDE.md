@@ -24,8 +24,8 @@ published static site under `docs/` (served by GitHub Pages from `main /docs`).
 
 ## Stack
 
-- **Node.js >= 20**, plain ESM scripts under `scripts/` — no framework, no bundler.
-- Content: markdown + YAML frontmatter; JSON Schema (draft 2020-12) + JSON-LD context in `schema/json/`.
+- **Node.js >= 20**; build/MCP/shared `.js` tooling is CommonJS, and the vendored search `.mjs` checks use ESM. No framework or bundler.
+- Content: markdown + YAML frontmatter; JSON Schema (draft 2020-12) + JSON-LD context in source `schema/`; the generated served endpoint is `/schema/json/`.
 - Static site: hand-written HTML generation in `scripts/build.js` + `scripts/build-extras.js`.
 - `mcp-server.js`: standalone MCP server exposing 13 read-only tools. Published to npm as `publedge` (`io.github.snapsynapse/publedge`) and the Official MCP Registry (`server.json`).
 - Integrity: `scripts/validate-hashes.sh` over `MANIFEST.yaml`.
@@ -43,7 +43,7 @@ published static site under `docs/` (served by GitHub Pages from `main /docs`).
 | `data/examples/authorities/`, `obligations/`, `mapping/` | Authority records, obligation defs, obligation-to-statute mapping |
 | `docs/` | **Generated** site (HTML, `api/v1/*.json`, feeds, discovery files) |
 | `about/`, `reference/` | Hand-crafted source HTML copied into `docs/` |
-| `schema/json/` | JSON Schemas + JSON-LD context |
+| `schema/` | Source JSON Schemas + JSON-LD context; published under `/schema/json/` |
 | `scripts/` | Build, validators, and `eval-*.js` conformance checks |
 | `scripts/lib/` | Shared parser/library code (shipped in npm package) |
 | `vendor/gist/` | Pinned Semantic Arts gist ontology snapshot |
@@ -88,12 +88,6 @@ filename must match the id. See `README.md` "Contributing an instrument" and
 - `.github/workflows/verify.yml` — weekly (Mon 09:00) + manual: runs
   `scripts/verify.js`, auto-opening/updating a `knowledge-drift` issue on failure.
 
-## Current state (2026-07)
+## Current scope and publication evidence
 
-Public and maintained. The MCP server is published to npm + MCP Registry
-(v0.1.2, stable). PubLedge is the thin recordkeeping convention of the PAICE
-legal graph. Standalone product expansion is parked pending a concrete demand
-signal. Active work is routine maintenance, existing-record fidelity,
-Obligation-First compatibility, authority responses, and integration required
-by an active downstream consumer. See `INTENT.md` for authoritative strategy
-and `ROADMAP.md` for maintenance work.
+Read `INTENT.md` for maintenance-only scope and demand gates; `ROADMAP.md` owns the bounded work queue. The five federal demonstration remaps and exclusively dependent obligations/authorities are frozen schema fixtures with retained human dates. For package/source identity read `package.json`; for dated npm/MCP/tag/release observations read `design/publication-state.json`. Git or site delivery does not establish a newly published package or fresh provider acceptance.

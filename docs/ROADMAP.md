@@ -9,6 +9,9 @@ status: living
 
 Living housekeeping document. Tracks what shipped, what's pending, and what's deferred. Updated as milestones move. The original workshop plan lives at [_workshop/ROADMAP.md](_workshop/ROADMAP.md) and is frozen as historical record.
 
+## Current bounded maintenance queue
+The [November18 handoff reconciliation](https://github.com/snapsynapse/publedge/blob/main/ops/handoff-reconciliation-2026-11-18.md) records delivered HB452/Utah/docs corrections, remaining source/model and renderer limits, exact documentation byte equivalence, and the local decoder/guidance preparation. It selects no new source retrieval, expansion or legal-currentness renewal. INTENT remains authoritative for maintenance-only scope and demand gates.
+
 ## Current version
 
 Package `v0.2.5`; protocol specification `v0.2.0`. Current npm, MCP Registry, GitHub tag, and GitHub Release observations are recorded in the [publication state](design/publication-state.json).
