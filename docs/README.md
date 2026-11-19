@@ -39,6 +39,8 @@ Three things in one place:
 
 ## Maintenance scope
 
+The five federal demonstration remaps and their exclusively dependent obligations and authorities are frozen schema fixtures, published for structural illustration and not reviewed for currentness. Their recorded human dates stay unchanged; [INTENT.md](INTENT.md) owns scope and `project.yml` names the exact fixture IDs.
+
 Weekly checks flag overdue records and temporal inconsistencies for human review. A separate manual pilot observes three selected official sources and retains inaccessible sources and unresolved findings. It does not renew verification dates, legal statuses, or the wider corpus. Independent missing-run monitoring and recovery email acceptance remain open. See [the maintenance pilot](ops/MAINTENANCE-PILOT.md) for dated evidence and review boundaries.
 
 ## Machine-readable endpoints

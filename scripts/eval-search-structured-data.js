@@ -3,10 +3,29 @@
 
 const fs = require('fs');
 const path = require('path');
+const vm = require('node:vm');
+const assert = require('node:assert/strict');
 
 const ROOT = path.join(__dirname, '..');
 const DOCS = path.join(ROOT, 'docs');
 const failures = [];
+
+// Exercise the vendored decoder used by repository and production validation.
+for (const file of ['check-search.mjs', 'check-production-search.mjs']) {
+    const source = fs.readFileSync(path.join(ROOT, 'scripts', file), 'utf8');
+    const decoder = source.match(/function decode\(value\) \{[\s\S]*?\n\}/)?.[0];
+    const entities = source.match(/const XML_ENTITIES = [^;]+;/)?.[0] || '';
+    assert.ok(decoder, `${file}: decoder exists`);
+    const decode = vm.runInNewContext(`${entities}\n${decoder}\ndecode`);
+    for (const [input, expected] of [
+        ['&amp;lt;tag&amp;gt;', '&lt;tag&gt;'],
+        ['a=1&amp;b=2', 'a=1&b=2'],
+        ['&lt;b&gt; &quot;q&quot; &apos;s&#39; &#x27;', `<b> "q" 's' '`],
+        ['&#38;amp;', '&amp;'],
+        ['\n https://publedge.org/ \n', 'https://publedge.org/'],
+        ['&#0; &#xD800; &#1114112; &unknown;', '&#0; &#xD800; &#1114112; &unknown;'],
+    ]) assert.equal(decode(input), expected, `${file}: ${input}`);
+}
 
 const home = fs.readFileSync(path.join(DOCS, 'index.html'), 'utf8');
 if (!home.includes('<link rel="canonical" href="https://publedge.org/">')) {

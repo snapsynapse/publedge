@@ -458,7 +458,7 @@ files:
 
   - path: README.md
     role: protocol
-    hash: sha256:ec8f13b6e85ba6dfef026de63bb13f715119324c641f392e40dcf89e8a437607
+    hash: sha256:99d6e8e2b188bed0b75d1fdc776066056925de7c442e755cca69a7551b1e9350
     note: README.md
 
   - path: RELEASE_NOTES-v0.2.2.md
@@ -483,7 +483,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:e9cd641d6e3314e12ca07b7ea72daaa6d40b9df9a1b123c25e4110529e46af58
+    hash: sha256:9079af957cf1d503a9cb813fe0e13f8cc2e0274ee1e1c0e9e0224c3a3928b4b3
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -603,12 +603,12 @@ files:
 
   - path: scripts/check-production-search.mjs
     role: script
-    hash: sha256:62597c5812201d38fb9c367f1365ec76c5cbe18c2c8ec6cc89275341e69d8319
+    hash: sha256:125a420fdff8680be48aa9b43b422439cde379479695b355715773cc0a1a7f83
     note: scripts/check-production-search.mjs
 
   - path: scripts/check-search.mjs
     role: script
-    hash: sha256:89c0f44722cb24b3b4747b5cd10a2a892977f3761d4b5a63c7da1afd60b53ae1
+    hash: sha256:fe01d2af4c2038d96755a80ee2b1e60a32817b98fa3893c3f4d26d1dba7ebd6b
     note: scripts/check-search.mjs
 
   - path: scripts/check-links.js
@@ -768,7 +768,7 @@ files:
 
   - path: scripts/eval-search-structured-data.js
     role: script
-    hash: sha256:b37c979d768f5e821df8b1a5bad8fe8fdcc5b2e2619286de3375ad930b73854f
+    hash: sha256:78a076f24a47bea5f752922f04f8c8e5b3fba749327352822a34d3c222982220
     note: scripts/eval-search-structured-data.js
 
   - path: scripts/eval-scheduled-verification.js
@@ -868,7 +868,7 @@ files:
 
   - path: CLAUDE.md
     role: agent-guidance
-    hash: sha256:fd22ce9692b922369d28ded92c71f20fcc5541422d0a579dab06301315440366
+    hash: sha256:e9147e4560a7c060e09babe1efbde4326c6b3a542259600a5518279fc5666699
     note: CLAUDE.md
 
   - path: PROJECT_CONTEXT.md
