@@ -9,6 +9,9 @@ status: living
 
 Living housekeeping document. Tracks what shipped, what's pending, and what's deferred. Updated as milestones move. The original workshop plan lives at [_workshop/ROADMAP.md](_workshop/ROADMAP.md) and is frozen as historical record.
 
+## Current bounded maintenance queue
+Maintenance remains limited to existing-record fidelity, Obligation-First compatibility, and integration demanded by an active consumer, as scoped in [INTENT.md](INTENT.md). The unresolved Doctronic post-term finding is [issue #29](https://github.com/snapsynapse/publedge/issues/29); dated Utah and OAIP evidence remains under [ops/evidence/](ops/evidence/), including [the OAIP coverage review](ops/evidence/oaip-coverage-review-2026-10-14.json). The search decoder correction is covered by `eval:search-structured-data` for both source and production checks. These engineering checks do not admit legal sources or renew record dates.
+
 ## Current version
 
 Package `v0.2.5`; protocol specification `v0.2.0`. Current npm, MCP Registry, GitHub tag, and GitHub Release observations are recorded in the [publication state](design/publication-state.json).
