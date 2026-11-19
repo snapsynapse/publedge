@@ -31,7 +31,7 @@ requireText('timeout-minutes: 15', 'scheduled verification must have a bounded j
 requireText('group: scheduled-verification', 'scheduled verification must serialize overlapping runs');
 requireText('cancel-in-progress: false', 'scheduled verification must not discard an earlier scheduled run');
 requireText('persist-credentials: false', 'scheduled verification checkout must not retain write credentials');
-requireText('uses: actions/upload-artifact@v4', 'scheduled verification must retain verifier evidence as an artifact');
+requirePattern(/uses: actions\/upload-artifact@[a-f0-9]{40}/, 'scheduled verification must retain verifier evidence as a SHA-pinned artifact');
 requireText('retention-days: 14', 'scheduled verification evidence must have a bounded retention period');
 requireText('TITLE="Knowledge drift detected"', 'drift issue identity must use a stable title without a run date');
 requireText('<elapsed-days>', 'drift fingerprint must normalize elapsed age counters only');
@@ -78,7 +78,7 @@ if (!(temporalExit < artifact && artifact < issue && issue < receipt && receipt 
     failures.push('scheduled verification must retain evidence and summarize issue receipt before the final failing gate');
 }
 
-requirePattern(/- name: Upload verification evidence\n\s+if: always\(\)\n\s+uses: actions\/upload-artifact@v4/, 'verification evidence artifact must upload even after a failed check');
+requirePattern(/- name: Upload verification evidence\n\s+if: always\(\)\n\s+uses: actions\/upload-artifact@[a-f0-9]{40}/, 'verification evidence artifact must upload even after a failed check');
 requirePattern(/- name: Summarize issue receipt\n\s+if: always\(\)/, 'issue receipt summary must run even when issue reporting fails');
 requirePattern(/- name: Fail scheduled verification when checks failed\n\s+if: always\(\)/, 'final verification gate must run after prior failure-handling steps');
 
