@@ -22,6 +22,7 @@ const { deriveBuildClock } = require('./lib/build-clock');
 const { assertForEmission: assertSourceAdmission } = require('./check-source-admission');
 const { containerSummary, upcomingItems, recentlyChangedItems } = require('./lib/api-projection');
 const { containerCadenceDays, getFrozenFixtureIds, getReviewCadence } = require('./lib/verify-policy');
+const { safePathSegment, containedPath, scriptSafeJson } = require('./lib/build-safety');
 
 const PROVISION_COUNT_LABEL = 'Clause-level provisions indexed';
 
@@ -71,6 +72,22 @@ function escapeHTML(str) {
     return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+function sourceDocumentHref(filename, canonical) {
+    if (typeof filename !== 'string') throw new Error('Unsafe source document path');
+    if (filename.startsWith('https://')) {
+        const url = new URL(filename);
+        if (url.username || url.password) throw new Error('Unsafe source document URL');
+        return url.href;
+    }
+    safePathSegment(filename, 'source document filename');
+    return `/${canonical}${filename}`;
+}
+
+function recordAssetPath(canonical, filename) {
+    safePathSegment(filename, 'record asset filename');
+    return containedPath(DOCS_DIR, canonical, filename);
+}
+
 function humanizeId(id) {
     return String(id || '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 }
@@ -99,12 +116,17 @@ function attachCanonicalPaths(containers, authorities, config) {
     const jurMap = config.hierarchy?.jurisdictions || {};
     const typeMap = config.hierarchy?.type_segments || {};
     for (const c of containers) {
+        safePathSegment(c.id, 'container id');
+        if (c.legacy_id) safePathSegment(c.legacy_id, 'legacy container id');
         const jur = jurMap[c.jurisdiction];
         const auth = authById[c.authority];
-        const typeSeg = typeMap[c.type] || c.type || 'record';
-        const instance = c.instance || c.id;
+        const typeSeg = safePathSegment(typeMap[c.type] || c.type || 'record', 'container type');
+        const instance = safePathSegment(c.instance || c.id, 'container instance');
         if (jur && auth && auth.url_segment) {
-            c._canonicalPath = `${jur.country}/${jur.region}/${auth.url_segment}/${typeSeg}/${instance}/`;
+            const country = safePathSegment(jur.country, 'country path');
+            const region = safePathSegment(jur.region, 'region path');
+            const authority = safePathSegment(auth.url_segment, 'authority path');
+            c._canonicalPath = `${country}/${region}/${authority}/${typeSeg}/${instance}/`;
             c._canonicalCountry = jur.country;
             c._canonicalRegion = jur.region;
             c._canonicalAuthority = auth.url_segment;
@@ -115,12 +137,28 @@ function attachCanonicalPaths(containers, authorities, config) {
         }
     }
     for (const a of authorities) {
+        safePathSegment(a.id, 'authority id');
         const jurMapEntry = jurMap[a.jurisdiction];
         if (jurMapEntry && a.url_segment) {
-            a._canonicalPath = `${jurMapEntry.country}/${jurMapEntry.region}/${a.url_segment}/`;
+            a._canonicalPath = `${safePathSegment(jurMapEntry.country, 'country path')}/${safePathSegment(jurMapEntry.region, 'region path')}/${safePathSegment(a.url_segment, 'authority path')}/`;
         } else {
             a._canonicalPath = `authority/${a.id}/`;
         }
+    }
+}
+
+function validateBuildPaths(primaries, containers, authorities, mappingIndex) {
+    for (const p of primaries) safePathSegment(p.id, 'primary id');
+    for (const a of authorities) safePathSegment(a.id, 'authority id');
+    for (const c of containers) {
+        containedPath(DOCS_DIR, c._canonicalPath);
+        if (c.extracted_text) recordAssetPath(c._canonicalPath, String(c.extracted_text).trim());
+        const docs = Array.isArray(c.source_documents) ? c.source_documents : (c.source_documents ? [c.source_documents] : []);
+        for (const doc of docs) sourceDocumentHref(String(doc).trim(), c._canonicalPath);
+    }
+    for (const m of mappingIndex) {
+        safePathSegment(m.regulation, 'mapping container id');
+        for (const id of m.obligations || []) safePathSegment(id, 'mapping primary id');
     }
 }
 
@@ -350,7 +388,7 @@ function renderPageShell(config, { title, activePage, prefix, content, descripti
     const siteUrl = config.url || '';
     const desc = description || config.description || '';
     const canonical = canonicalPath !== undefined ? `<link rel="canonical" href="${siteUrl}${canonicalPath}">` : '';
-    const jsonLd = structuredData ? `\n    <script type="application/ld+json">${JSON.stringify(structuredData)}</script>` : '';
+    const jsonLd = structuredData ? `\n    <script type="application/ld+json">${scriptSafeJson(structuredData)}</script>` : '';
     // Normalize URL joins: strip trailing slash from siteUrl before appending absolute paths
     const urlBase = siteUrl.replace(/\/$/, '');
     const absUrl = (p) => p.startsWith('/') ? `${urlBase}${p}` : `${urlBase}/${p}`;
@@ -396,7 +434,7 @@ function renderPageShell(config, { title, activePage, prefix, content, descripti
 function renderBridgeShell(config, { title, depth, content, description, canonicalPath, structuredData, configCSS, noindex }) {
     const prefix = depth > 0 ? '../'.repeat(depth) : '';
     const siteUrl = config.url || '';
-    const jsonLd = structuredData ? `\n    <script type="application/ld+json">${JSON.stringify(structuredData)}</script>` : '';
+    const jsonLd = structuredData ? `\n    <script type="application/ld+json">${scriptSafeJson(structuredData)}</script>` : '';
     const urlBase = siteUrl.replace(/\/$/, '');
     const absUrl = (p) => p.startsWith('/') ? `${urlBase}${p}` : `${urlBase}/${p}`;
     const ogImage = config.social?.og_image;
@@ -470,11 +508,9 @@ function renderSourceDocuments(container) {
     const canonical = container._canonicalPath || `container/${container.id}/`;
     const items = list.map(d => {
         const filename = String(d).trim();
-        const href = filename.startsWith('/') || filename.startsWith('http')
-            ? filename
-            : `/${canonical}${filename}`;
-        if (!filename.startsWith('http') && !filename.startsWith('/')) {
-            const localPath = path.join(DOCS_DIR, canonical, filename);
+        const href = sourceDocumentHref(filename, canonical);
+        if (!filename.startsWith('https://')) {
+            const localPath = recordAssetPath(canonical, filename);
             if (!fs.existsSync(localPath)) return '';
         }
         const label = filename.split('/').pop();
@@ -484,7 +520,7 @@ function renderSourceDocuments(container) {
     const textFile = container.extracted_text;
     let textLink = '';
     if (textFile) {
-        const textPath = path.join(DOCS_DIR, canonical, textFile);
+        const textPath = recordAssetPath(canonical, textFile);
         if (fs.existsSync(textPath)) {
             textLink = `<li><a href="${escapeHTML(textFile)}">${escapeHTML(textFile)}</a> <span style="opacity:0.6;font-size:0.85em;">(plain text — OCR-extracted)</span></li>`;
         }
@@ -497,14 +533,14 @@ function renderExtractedText(container) {
     const textFile = container.extracted_text;
     if (!textFile) return '';
     const canonical = container._canonicalPath || `container/${container.id}/`;
-    const fp = path.join(DOCS_DIR, canonical, textFile);
+    const fp = recordAssetPath(canonical, textFile);
     if (!fs.existsSync(fp)) return '';
     const raw = fs.readFileSync(fp, 'utf-8');
     const pageCount = (raw.match(/^---- Page \d+ ----$/gm) || []).length;
     const pagesLabel = pageCount > 0 ? `, ${pageCount} page${pageCount === 1 ? '' : 's'}` : '';
     return `<details class="extracted-text" style="margin-top:1.5rem;">
         <summary style="cursor:pointer;font-weight:600;padding:0.5rem 0;">Agreement Text (OCR-extracted${pagesLabel}) — expand to view inline</summary>
-        <p style="color:var(--text-secondary);font-size:0.85em;margin:0.5rem 0;"><em>Extracted via OCR from the signed PDF. Minor transcription errors possible — the <a href="${escapeHTML(container.source_documents?.[0] || '')}" target="_blank" rel="noopener">signed PDF</a> is the authoritative source.</em></p>
+        <p style="color:var(--text-secondary);font-size:0.85em;margin:0.5rem 0;"><em>Extracted via OCR from the signed PDF. Minor transcription errors possible — the <a href="${escapeHTML(container.source_documents?.[0] ? sourceDocumentHref(String(container.source_documents[0]).trim(), canonical) : '#')}" target="_blank" rel="noopener">signed PDF</a> is the authoritative source.</em></p>
         <pre style="white-space:pre-wrap;background:var(--bg-secondary,#0f2e5c22);padding:1rem;border-radius:4px;font-size:0.85em;line-height:1.5;max-height:70vh;overflow-y:auto;">${escapeHTML(raw)}</pre>
     </details>`;
 }
@@ -1278,7 +1314,6 @@ function generateComparePage(config, data, configCSS) {
     const cPlural = config.entities?.container?.plural || 'Containers';
 
     const checkboxes = containers.map(c => `<label><input type="checkbox" name="cmp" value="${escapeHTML(c.id)}" onchange="updateComparison()"> <span>${escapeHTML(c.title || c.name || c.id)}</span></label>`).join('\n');
-    const namesById = JSON.stringify(Object.fromEntries(containers.map(c => [c.id, c.title || c.name || c.id])));
     const comparisonLinks = comparisons
         .filter(comparison => comparison.shared_count > 0)
         .map(comparison => {
@@ -1300,14 +1335,32 @@ function generateComparePage(config, data, configCSS) {
         <div id="compareResult" class="compare-result"></div>
         ${comparisonLinks ? `<h3>Comparisons with shared obligations</h3><ul>${comparisonLinks}</ul>` : ''}
         <script>
-        var cmpData = ${JSON.stringify(containers.map(c => ({ id: c.id, name: c.title || c.name || c.id, primaries: [...new Set(mappingIndex.filter(m => m.regulation === c.id).flatMap(m => m.obligations))] })))};
-        var pNames = ${JSON.stringify(Object.fromEntries(primaries.map(p => [p.id, p.name || humanizeId(p.id)])))};
+        var cmpData = ${scriptSafeJson(containers.map(c => ({ id: c.id, name: c.title || c.name || c.id, primaries: [...new Set(mappingIndex.filter(m => m.regulation === c.id).flatMap(m => m.obligations))] })))};
+        var pNames = ${scriptSafeJson(Object.fromEntries(primaries.map(p => [p.id, p.name || humanizeId(p.id)])))};
+        function comparisonSection(title, ids, emptyLabel) {
+            var section = document.createElement('div'); section.className = 'compare-section';
+            var heading = document.createElement('h3'); heading.textContent = title; section.appendChild(heading);
+            if (!ids.length) {
+                var empty = document.createElement('p'); empty.style.color = 'var(--text-secondary)'; empty.textContent = emptyLabel; section.appendChild(empty);
+                return section;
+            }
+            var list = document.createElement('ul'); list.className = 'compare-list';
+            ids.forEach(function(id) {
+                var item = document.createElement('li'); var link = document.createElement('a');
+                link.href = '/primary/' + encodeURIComponent(id) + '/';
+                link.textContent = pNames[id] || id;
+                item.appendChild(link); list.appendChild(item);
+            });
+            section.appendChild(list);
+            return section;
+        }
         function updateComparison() {
+            var result = document.getElementById('compareResult');
             var checked = Array.from(document.querySelectorAll('#compareSelector input:checked'));
             if (checked.length > 3) { checked[0].checked = false; checked = checked.slice(1); }
             var sel = checked.map(function(cb) { return cb.value; });
-            if (sel.length < 2) { document.getElementById('compareResult').innerHTML = '<p style="color:var(--text-secondary);">Select at least 2.</p>'; return; }
-            var items = sel.map(function(id) { return cmpData.find(function(c) { return c.id === id; }); });
+            var items = sel.map(function(id) { return cmpData.find(function(c) { return c.id === id; }); }).filter(Boolean);
+            if (items.length < 2) { result.textContent = 'Select at least 2.'; return; }
             var all = new Set(); items.forEach(function(i) { i.primaries.forEach(function(p) { all.add(p); }); });
             var shared = [], unique = {}; items.forEach(function(i) { unique[i.id] = []; });
             all.forEach(function(p) {
@@ -1315,18 +1368,16 @@ function generateComparePage(config, data, configCSS) {
                 if (has.length === items.length) shared.push(p);
                 else has.forEach(function(i) { unique[i.id].push(p); });
             });
-            var html = '<div class="compare-section"><h3>Shared (' + shared.length + ')</h3>' +
-                (shared.length ? '<ul class="compare-list">' + shared.map(function(p) { return '<li><a href="primary/' + p + '/index.html">' + (pNames[p]||p) + '</a></li>'; }).join('') + '</ul>' : '<p style="color:var(--text-secondary);">None shared.</p>') + '</div>';
+            var sections = [comparisonSection('Shared (' + shared.length + ')', shared, 'None shared.')];
             items.forEach(function(i) {
                 var u = unique[i.id];
-                html += '<div class="compare-section"><h3>Only in ' + i.name + ' (' + u.length + ')</h3>' +
-                    (u.length ? '<ul class="compare-list">' + u.map(function(p) { return '<li><a href="primary/' + p + '/index.html">' + (pNames[p]||p) + '</a></li>'; }).join('') + '</ul>' : '<p style="color:var(--text-secondary);">None unique.</p>') + '</div>';
+                sections.push(comparisonSection('Only in ' + i.name + ' (' + u.length + ')', u, 'None unique.'));
             });
-            document.getElementById('compareResult').innerHTML = html;
+            result.replaceChildren.apply(result, sections);
             var url = new URL(window.location); url.searchParams.set('items', sel.join(',')); history.replaceState(null, '', url);
         }
         (function() { var p = new URLSearchParams(window.location.search); var ids = (p.get('items')||'').split(',').filter(Boolean);
-            if (ids.length) { ids.forEach(function(id) { var cb = document.querySelector('#compareSelector input[value="'+id+'"]'); if (cb) cb.checked = true; }); updateComparison(); }
+            if (ids.length) { Array.from(document.querySelectorAll('#compareSelector input')).forEach(function(cb) { if (ids.includes(cb.value)) cb.checked = true; }); updateComparison(); }
         })();
         </script>
     `;
@@ -1741,14 +1792,15 @@ open docs/index.html</code></pre>
 
 function buildSourceDocuments(c, config) {
     const siteUrl = (config.url || '').replace(/\/+$/, '');
-    const canonical = siteUrl + containerHref(c);
+    const canonical = c._canonicalPath || `container/${c.id}/`;
     const docs = Array.isArray(c.source_documents) ? c.source_documents
         : (c.source_documents ? [c.source_documents] : []);
     const out = [];
     for (const d of docs) {
         const filename = String(d).trim();
         const ext = (filename.split('.').pop() || '').toLowerCase();
-        const url = filename.startsWith('http') ? filename : `${canonical}${filename}`;
+        const href = sourceDocumentHref(filename, canonical);
+        const url = href.startsWith('https://') ? href : `${siteUrl}${href}`;
         const mediaType = ext === 'pdf' ? 'application/pdf'
             : ext === 'txt' ? 'text/plain'
             : ext === 'html' ? 'text/html'
@@ -1763,7 +1815,7 @@ function buildSourceDocuments(c, config) {
     }
     if (c.extracted_text) {
         const filename = String(c.extracted_text).trim();
-        const url = filename.startsWith('http') ? filename : `${canonical}${filename}`;
+        const url = `${siteUrl}${sourceDocumentHref(filename, canonical)}`;
         out.push({
             role: 'extracted-text',
             filename,
@@ -1882,7 +1934,7 @@ function generateRedirectStub(toPath, title) {
     <link rel="canonical" href="${p}">
     <meta name="robots" content="noindex">
     <meta http-equiv="refresh" content="0; url=${p}">
-    <script>window.location.replace(${JSON.stringify(toPath)});</script>
+    <script>window.location.replace(${scriptSafeJson(toPath)});</script>
 </head>
 <body>
     <p>This page has moved. Redirecting to <a href="${p}">${p}</a>.</p>
@@ -2243,8 +2295,6 @@ function build() {
     console.log(`  Reproducible build clock: ${BUILD_CLOCK.instant} from ${BUILD_CLOCK.source}`);
     console.log(`  Source admission: ${admission.legacy_unreviewed_records} legacy-unreviewed, ${admission.records_with_reviewed_changes} reviewed changes`);
 
-    cleanGeneratedOutputs();
-
     const dataDir = findDataDir(config);
     const primaryDir = path.join(dataDir, config.entities?.primary?.directory || 'primary');
     const containerDir = path.join(dataDir, config.entities?.container?.directory || 'container');
@@ -2314,6 +2364,8 @@ function build() {
 
     // Attach canonical hierarchy paths to every container + authority
     attachCanonicalPaths(containers, authorities, config);
+    validateBuildPaths(primaries, containers, authorities, mappingIndex);
+    cleanGeneratedOutputs();
     const containerById = buildContainerLookup(containers);
 
     console.log(`  ${config.entities?.primary?.plural || 'Primaries'}: ${primaries.length}`);
@@ -2443,7 +2495,7 @@ function build() {
     let legacyStubCount = 0;
     for (const c of containers) {
         const canonicalPath = c._canonicalPath || `container/${c.id}/`;
-        const canonicalDir = path.join(DOCS_DIR, canonicalPath);
+        const canonicalDir = containedPath(DOCS_DIR, canonicalPath);
         ensureDir(canonicalDir);
         const html = generateContainerDetail(config, c, data, configCSS);
         fs.writeFileSync(path.join(canonicalDir, 'index.html'), html);
@@ -2457,13 +2509,13 @@ function build() {
 
         // Legacy container/{id}/ redirect stub (skip if canonical path is itself the legacy path)
         if (canonicalPath !== `container/${c.id}/`) {
-            const legacyDir = path.join(DOCS_DIR, 'container', c.id);
+            const legacyDir = containedPath(DOCS_DIR, 'container', c.id);
             ensureDir(legacyDir);
             fs.writeFileSync(path.join(legacyDir, 'index.html'), generateRedirectStub('/' + canonicalPath, c.title || c.name || c.id));
             legacyStubCount++;
             // Also redirect from legacy stable-id if present (e.g. us-ut-oaip-rma-0002)
             if (c.legacy_id && c.legacy_id !== c.id) {
-                const legacyIdDir = path.join(DOCS_DIR, 'container', c.legacy_id);
+                const legacyIdDir = containedPath(DOCS_DIR, 'container', c.legacy_id);
                 ensureDir(legacyIdDir);
                 fs.writeFileSync(path.join(legacyIdDir, 'index.html'), generateRedirectStub('/' + canonicalPath, c.title || c.name || c.id));
                 legacyStubCount++;
@@ -2486,7 +2538,7 @@ function build() {
 
         // Each jurisdiction: /us/{region}/
         for (const [jurId, jur] of Object.entries(config.hierarchy.jurisdictions)) {
-            const jurDir = path.join(DOCS_DIR, jur.country, jur.region);
+            const jurDir = containedPath(DOCS_DIR, jur.country, jur.region);
             ensureDir(jurDir);
             const opts = {};
             if (jurId === 'us-ut') {
@@ -2502,7 +2554,7 @@ function build() {
             for (const authId of jurAuthIds) {
                 const auth = authorities.find(a => a.id === authId);
                 if (!auth || !auth.url_segment) continue;
-                const authDir = path.join(DOCS_DIR, jur.country, jur.region, auth.url_segment);
+                const authDir = containedPath(DOCS_DIR, jur.country, jur.region, auth.url_segment);
                 ensureDir(authDir);
                 fs.writeFileSync(path.join(authDir, 'index.html'), generateAuthorityUrlIndex(config, data, auth, configCSS));
                 sitemapPages.push(`${jur.country}/${jur.region}/${auth.url_segment}/`);
@@ -2512,7 +2564,7 @@ function build() {
                 const types = [...new Set(containers.filter(c => c.jurisdiction === jurId && c.authority === authId).map(c => c.type))];
                 for (const t of types) {
                     const typeSeg = config.hierarchy?.type_segments?.[t] || t;
-                    const typeDir = path.join(DOCS_DIR, jur.country, jur.region, auth.url_segment, typeSeg);
+                    const typeDir = containedPath(DOCS_DIR, jur.country, jur.region, auth.url_segment, typeSeg);
                     ensureDir(typeDir);
                     fs.writeFileSync(path.join(typeDir, 'index.html'), generateTypeIndex(config, data, jurId, auth, t, configCSS));
                     sitemapPages.push(`${jur.country}/${jur.region}/${auth.url_segment}/${typeSeg}/`);
@@ -2539,12 +2591,12 @@ function build() {
         fs.writeFileSync(path.join(aliasDir, 'index.html'), generateRedirectStub('/us/utah/', 'Utah'));
     }
 
-    for (const p of primaries) { const dir = path.join(DOCS_DIR, 'primary', p.id); ensureDir(dir); fs.writeFileSync(path.join(dir, 'index.html'), generatePrimaryDetail(config, p, data, configCSS)); sitemapPages.push(`primary/${p.id}/`); }
+    for (const p of primaries) { const dir = containedPath(DOCS_DIR, 'primary', p.id); ensureDir(dir); fs.writeFileSync(path.join(dir, 'index.html'), generatePrimaryDetail(config, p, data, configCSS)); sitemapPages.push(`primary/${p.id}/`); }
     console.log(`  Primary detail pages: ${primaries.length}`);
 
     for (const a of authorities) {
         const legacyPath = `authority/${a.id}/`;
-        const dir = path.join(DOCS_DIR, 'authority', a.id);
+        const dir = containedPath(DOCS_DIR, 'authority', a.id);
         ensureDir(dir);
         if (a._canonicalPath && a._canonicalPath !== legacyPath) {
             fs.writeFileSync(path.join(dir, 'index.html'), generateRedirectStub('/' + a._canonicalPath, a.name || a.id));
@@ -2560,7 +2612,7 @@ function build() {
     if (config.bridges?.requires !== false) {
         for (const m of mappingIndex) {
             for (const oblId of m.obligations) {
-                const dir = path.join(DOCS_DIR, 'requires', m.regulation, oblId); ensureDir(dir);
+                const dir = containedPath(DOCS_DIR, 'requires', m.regulation, oblId); ensureDir(dir);
                 const html = generateRequiresBridge(config, m.regulation, oblId, data, configCSS);
                 if (html) { fs.writeFileSync(path.join(dir, 'index.html'), html); sitemapPages.push(`requires/${m.regulation}/${oblId}/`); reqCount++; }
             }
@@ -2573,7 +2625,7 @@ function build() {
         for (const comp of comparisons) {
             const [aId, bId] = comp.regulations;
             const cA = containers.find(c => c.id === aId), cB = containers.find(c => c.id === bId);
-            if (cA && cB) { const dir = path.join(DOCS_DIR, 'compare', `${aId}-vs-${bId}`); ensureDir(dir); fs.writeFileSync(path.join(dir, 'index.html'), generateCompareBridge(config, cA, cB, comp, data, configCSS)); if (comp.shared_count > 0) sitemapPages.push(`compare/${aId}-vs-${bId}/`); cmpCount++; }
+            if (cA && cB) { const dir = containedPath(DOCS_DIR, 'compare', `${aId}-vs-${bId}`); ensureDir(dir); fs.writeFileSync(path.join(dir, 'index.html'), generateCompareBridge(config, cA, cB, comp, data, configCSS)); if (comp.shared_count > 0) sitemapPages.push(`compare/${aId}-vs-${bId}/`); cmpCount++; }
         }
     }
     console.log(`  Compare bridge pages: ${cmpCount}`);
@@ -2854,4 +2906,6 @@ function build() {
     console.log(`\nBuild complete in ${elapsed}ms — ${totalPages} HTML pages, 6 JSON API files`);
 }
 
-build();
+if (require.main === module) build();
+
+module.exports = { attachCanonicalPaths, validateBuildPaths, renderPageShell, renderBridgeShell, generateComparePage };
