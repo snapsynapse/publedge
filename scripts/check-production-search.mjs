@@ -6,11 +6,14 @@
 // previous_version: 6
 // change_summary: decode() also handles &apos; and numeric references and trims; repository contract remains v4.
 // Upstream: portfolio-search-indexing-audit contract v4.
+// Local security adaptation: bounded pinned-address transport and pre-enqueue URL rejection.
+// Decoder remains asset v7; this file is no longer byte-identical to upstream v7.
 // Release-triggered HTTP validation. Exit 2 means infrastructure is unavailable.
 'use strict';
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { DEFAULT_LIMITS, canonicalPageLocations, createTransport, previewBase } from './lib/production-search-transport.mjs';
 
 const CONFIG_ARG = process.argv.find(value => value.startsWith('--config='));
 const BASE_ARG = process.argv.find(value => value.startsWith('--base='));
@@ -43,7 +46,8 @@ function loadConfig() {
         const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
         if (![2, 3, 4].includes(config.contractVersion)) throw new Error('contractVersion must be 2, 3, or 4');
         const canonical = new URL(config.canonicalOrigin);
-        if (canonical.protocol !== 'https:' || canonical.pathname !== '/' || canonical.hostname.startsWith('www.')) {
+        if (canonical.protocol !== 'https:' || canonical.pathname !== '/' || canonical.hostname.startsWith('www.') ||
+            canonical.username || canonical.password || canonical.search || canonical.hash) {
             throw new Error('canonicalOrigin must be a bare HTTPS origin with trailing slash');
         }
         return { ...config, canonicalOrigin: canonical.href };
@@ -56,27 +60,16 @@ function loadConfig() {
 const config = loadConfig();
 if (!config) process.exit(2);
 const canonicalOrigin = new URL(config.canonicalOrigin);
-const base = new URL(BASE_ARG ? BASE_ARG.slice(7) : canonicalOrigin.href);
+let base;
+try {
+    base = previewBase(BASE_ARG ? BASE_ARG.slice(7) : canonicalOrigin.href, canonicalOrigin.href).base;
+} catch (error) {
+    report('infrastructure', error.message);
+    process.exit(2);
+}
 if (!base.pathname.endsWith('/')) base.pathname += '/';
 const production = base.href === canonicalOrigin.href;
-
-async function request(url) {
-    let lastError;
-    for (let attempt = 1; attempt <= 3; attempt++) {
-        try {
-            return await fetch(url, {
-                redirect: 'follow',
-                headers: { 'user-agent': 'portfolio-search-contract/4' },
-                signal: AbortSignal.timeout(15000)
-            });
-        } catch (error) {
-            lastError = error;
-            if (attempt < 3) await new Promise(resolve => setTimeout(resolve, attempt * 150));
-        }
-    }
-    report('infrastructure', `${url}: fetch failed after 3 attempts: ${lastError?.cause?.message || lastError?.message || 'unknown error'}`);
-    return null;
-}
+const { request } = createTransport({ canonicalOrigin: canonicalOrigin.href, base: base.href, report });
 
 function deployedUrl(canonical) {
     return production ? canonical : new URL(new URL(canonical).pathname.replace(/^\//, ''), base).href;
@@ -109,9 +102,14 @@ async function fetchText(url, rule = {}) {
 }
 
 const sitemapBodies = new Map();
+const seenSitemaps = new Set();
 
-async function fetchSitemap(canonical, seen = new Set()) {
+async function fetchSitemap(canonical, seen = seenSitemaps, depth = 0) {
     if (seen.has(canonical)) return;
+    if (seen.size >= DEFAULT_LIMITS.sitemaps || depth > DEFAULT_LIMITS.depth) {
+        report('infrastructure', `${canonical}: sitemap count/depth budget exhausted`);
+        return;
+    }
     seen.add(canonical);
     const target = deployedUrl(canonical);
     const result = await fetchText(target, { contentTypes: ['xml'] });
@@ -122,11 +120,11 @@ async function fetchSitemap(canonical, seen = new Set()) {
             let child;
             try { child = new URL(decode(match[1])); }
             catch { report('defect', `${canonical}: invalid child sitemap URL ${match[1]}`); continue; }
-            if (child.origin !== canonicalOrigin.origin) {
+            if (child.origin !== canonicalOrigin.origin || child.href !== decode(match[1])) {
                 report('defect', `${canonical}: child sitemap uses noncanonical origin ${child.href}`);
                 continue;
             }
-            await fetchSitemap(child.href, seen);
+            await fetchSitemap(child.href, seen, depth + 1);
         }
     }
 }
@@ -153,20 +151,10 @@ for (const sitemap of config.sitemaps || []) {
 
 const canonicals = [];
 const sitemapLastmods = new Map();
-for (const [sitemap, body] of sitemapBodies) {
-    for (const match of body.matchAll(/<url>([\s\S]*?)<\/url>/gi)) {
-        const canonical = decode(match[1].match(/<loc>([^<]+)<\/loc>/i)?.[1]);
-        const lastmod = match[1].match(/<lastmod>([^<]+)<\/lastmod>/i)?.[1]?.trim();
-        if (!canonical) {
-            report('defect', `${sitemap}: URL entry is missing loc`);
-            continue;
-        }
-        let url;
-        try { url = new URL(canonical); }
-        catch { report('defect', `${sitemap}: invalid page location ${canonical}`); continue; }
-        if (url.origin !== canonicalOrigin.origin || url.href !== canonical) {
-            report('defect', `${sitemap}: noncanonical page location ${canonical}`);
-        }
+for (const body of sitemapBodies.values()) {
+    for (const entry of canonicalPageLocations(body, canonicalOrigin.href, report, DEFAULT_LIMITS.pages - canonicals.length, decode)) {
+        const canonical = entry.canonical;
+        const lastmod = entry.lastmod;
         canonicals.push(canonical);
         sitemapLastmods.set(canonical, lastmod);
     }
@@ -294,7 +282,7 @@ await mapLimit([...new Set(canonicals)], 8, checkPage);
 
 if (production) {
     for (const redirect of config.redirects || []) {
-        const response = await request(redirect.from);
+        const response = await request(redirect.from, { allowLegacy: true });
         if (response && response.url !== redirect.to) {
             report('defect', `${redirect.from}: final URL is ${response.url}, expected ${redirect.to}`);
         }
