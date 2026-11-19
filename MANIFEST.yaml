@@ -88,12 +88,12 @@ files:
 
   - path: .github/workflows/build.yml
     role: ci
-    hash: sha256:f5ecc35daec11a43407c9e6459e7f6c2bbbfea832bd7f3c70cc617b284b2a926
+    hash: sha256:f4dfadfdcb1a5f159456a043a98d50989313b5663e8b2db3765882a4007936c7
     note: .github/workflows/build.yml
 
   - path: .github/workflows/verify.yml
     role: ci
-    hash: sha256:b08c418823845e6f5c31ac1b52b583b31c2e744d1f4db34224598c70f81898db
+    hash: sha256:704e9299a424f48456199bc8800ba02c1c7ebab3bd6d8e4612114861491de8da
     note: .github/workflows/verify.yml
 
   - path: .github/ISSUE_TEMPLATE/authority_response.md
@@ -773,12 +773,12 @@ files:
 
   - path: scripts/eval-scheduled-verification.js
     role: tooling
-    hash: sha256:73a71f06dc67321344e46fdd7fa14dfc3dc86fcc958d15201fb35daefdeb65f8
+    hash: sha256:0a76ea750e3746a919ec32c92ca064e05ae97081c16fc222c200bfb7c7e9ecf6
     note: scripts/eval-scheduled-verification.js
 
   - path: scripts/eval-workflow-invariants.js
     role: tooling
-    hash: sha256:e71389fff8aea8b0ddc2cc0355bee0a3c33949118577fd2496bf4454107959da
+    hash: sha256:2de8b1cb99985450989563ee1bd3bfed517bfeee6bc0965bcf8aefa2e91720fa
     note: scripts/eval-workflow-invariants.js
 
   - path: scripts/evals.js

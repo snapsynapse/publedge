@@ -12,6 +12,22 @@ const evals = fs.readFileSync(path.join(root, 'scripts', 'evals.js'), 'utf8');
 const scheduled = fs.readFileSync(path.join(root, '.github', 'workflows', 'verify.yml'), 'utf8');
 const attributes = fs.readFileSync(path.join(root, '.gitattributes'), 'utf8');
 const failures = [];
+const workflowDir = path.join(root, '.github', 'workflows');
+for (const filename of fs.readdirSync(workflowDir).filter(name => /\.ya?ml$/.test(name))) {
+    const contents = fs.readFileSync(path.join(workflowDir, filename), 'utf8');
+    if (!/^permissions:\s*$/m.test(contents)) failures.push(`${filename}: workflow permissions must be explicit`);
+    for (const match of contents.matchAll(/^\s*(?:-\s*)?uses:\s*([^\s#]+)/gm)) {
+        const action = match[1];
+        if (!action.startsWith('./') && !/@[a-f0-9]{40}$/.test(action)) {
+            failures.push(`${filename}: external action must use a full commit SHA: ${action}`);
+        }
+    }
+    for (const step of contents.split(/(?=^\s*- (?:uses|name):)/m)) {
+        if (/^\s*- uses: actions\/checkout@/m.test(step) && !/persist-credentials:\s*false/.test(step)) {
+            failures.push(`${filename}: checkout must disable persisted credentials`);
+        }
+    }
+}
 if (!verifier.includes("['run', 'evals', '--', '--temporal-regressions']") || !verifier.includes('test:temporal-regressions')) {
     failures.push('engineering CI must exercise the temporal regression gate and its tests');
 }
