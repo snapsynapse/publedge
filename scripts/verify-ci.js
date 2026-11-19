@@ -16,6 +16,7 @@ const gates = [
     [npm, ['run', 'test:temporal-regressions']],
     [npm, ['run', 'build']],
     ['node', ['--test', 'tests/build-safety.test.js']],
+    ['node', ['--test', 'tests/production-search-boundary.test.mjs']],
     [npm, ['run', 'test:of-evidence-inputs']],
     [npm, ['run', 'test:doctronic-observation']],
     [npm, ['run', 'test:oaip-public-presentation']],

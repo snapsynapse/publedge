@@ -603,7 +603,7 @@ files:
 
   - path: scripts/check-production-search.mjs
     role: script
-    hash: sha256:125a420fdff8680be48aa9b43b422439cde379479695b355715773cc0a1a7f83
+    hash: sha256:a2cfbb6ac2ba934fb0aef90be0a41edd6ce618553750cb8a4586ca14ac4829b1
     note: scripts/check-production-search.mjs
 
   - path: scripts/check-search.mjs
@@ -796,6 +796,11 @@ files:
     hash: sha256:5359d10f2d163ebecdf94c4aa79f60f9907b7ab01b57d568e966e07dacf883ba
     note: Output path containment and script-safe JSON encoding
 
+  - path: scripts/lib/production-search-transport.mjs
+    role: tooling
+    hash: sha256:9134315f06f3927730947d236af4b8f87b5a51963f4795101e1121720444c5b7
+    note: Pinned-address, manual-redirect and bounded search transport
+
   - path: scripts/lib/content.js
     role: tooling
     hash: sha256:e99e1a23feb899aaa8e4bf9a33deb50a0c69af987f5ab8239bff77288edf30c0
@@ -863,7 +868,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:86b09a2508cb1817745f031fd7ed9d3128bd8f3e466a0e8dddbe748e1af961e0
+    hash: sha256:1e0a54cf33ec8534b0aab517345dfbac14c42b37dcf1b53ac1f025e010fb312d
     note: scripts/verify-ci.js
 
   - path: AGENTS.md
@@ -1040,6 +1045,11 @@ files:
     role: code
     hash: sha256:7683f12e5502a7bc42ff2f9c738ab749226d495939e7bc1322937a1ae9862fbb
     note: Renderer and output-containment regressions
+
+  - path: tests/production-search-boundary.test.mjs
+    role: code
+    hash: sha256:862fb1ad8375c1a1fba09ff48d2e0b4a330a18a70ed5d5044419916ec524831f
+    note: Pre-request sitemap, redirect, DNS and response-budget controls
 
   - path: tests/generated-record-schema.test.js
     role: code
