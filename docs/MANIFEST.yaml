@@ -598,7 +598,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:f22102525870c9c03f5bd22fe99e08d7a940a981758bdd57bedc2a3cd9b87d3b
+    hash: sha256:3edc172c79c2597c1a191be7ab97cccd9359d96e3cf59f23264b5d9d9e47f66a
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -791,6 +791,11 @@ files:
     hash: sha256:8dc8582146958ee6a69c66253c2f3a82cacfec3215aaad91c07755b0c5d22ecc
     note: scripts/lib/build-clock.js
 
+  - path: scripts/lib/build-safety.js
+    role: tooling
+    hash: sha256:5359d10f2d163ebecdf94c4aa79f60f9907b7ab01b57d568e966e07dacf883ba
+    note: Output path containment and script-safe JSON encoding
+
   - path: scripts/lib/content.js
     role: tooling
     hash: sha256:e99e1a23feb899aaa8e4bf9a33deb50a0c69af987f5ab8239bff77288edf30c0
@@ -858,7 +863,7 @@ files:
 
   - path: scripts/verify-ci.js
     role: tooling
-    hash: sha256:2a1ce4087ce59357027e4fd10e98119ed4b23e313848968dbe250efe09e7bdab
+    hash: sha256:86b09a2508cb1817745f031fd7ed9d3128bd8f3e466a0e8dddbe748e1af961e0
     note: scripts/verify-ci.js
 
   - path: AGENTS.md
@@ -1030,6 +1035,11 @@ files:
     role: code
     hash: sha256:73a1456f27b4bacbd8aea385046f0ae29daef62df427091160766224ee462a40
     note: T10 bounded maintenance pilot
+
+  - path: tests/build-safety.test.js
+    role: code
+    hash: sha256:7683f12e5502a7bc42ff2f9c738ab749226d495939e7bc1322937a1ae9862fbb
+    note: Renderer and output-containment regressions
 
   - path: tests/generated-record-schema.test.js
     role: code
