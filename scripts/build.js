@@ -1423,6 +1423,10 @@ function generateContainerDetail(config, container, data, configCSS) {
     }
     crumbs.push({ label: container.title || container.name || container.id });
 
+    const issuedLabel = container.type === 'advisory-opinion' && container.enacted
+        ? `<span><strong>Issued:</strong> ${formatDate(container.enacted)}</span> `
+        : '';
+
     const content = `
         ${renderBreadcrumb(crumbs)}
         <div class="detail-header">
@@ -1432,7 +1436,7 @@ function generateContainerDetail(config, container, data, configCSS) {
                 ${renderStatusBadge(container.status)}
                 <span><strong>Editorial:</strong> ${escapeHTML(humanizeId(container.editorial_status || 'unspecified'))}</span>
                 ${freshnessBadge(container.last_verified, containerCadenceDays(container, getReviewCadence(config)), getFrozenFixtureIds(config).instruments.has(container.id))}
-                ${container.type === 'advisory-opinion' && container.enacted ? `<span><strong>Issued:</strong> ${formatDate(container.enacted)}</span> ` : ''}${container.effective ? `<span><strong>Effective:</strong> ${formatDate(container.effective)}</span>` : '<!-- No effective date asserted. -->'}
+                ${issuedLabel}${container.effective ? `<span><strong>Effective:</strong> ${formatDate(container.effective)}</span>` : '<!-- No effective date asserted. -->'}
                 ${container.official_url ? `<span><a href="${escapeHTML(container.official_url)}" target="_blank" rel="noopener">Official source</a></span>` : ''}${container.intended_authority_url ? `<span><a href="${escapeHTML(container.intended_authority_url)}" target="_blank" rel="noopener">Intended authority website (not an issued instrument)</a></span>` : ''}
             </div>
             ${renderIncompleteMetadataWarning(container)}

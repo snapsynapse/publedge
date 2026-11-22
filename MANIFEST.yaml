@@ -598,7 +598,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:ef97941c05cf2e5f687f09a3157a9f75dd8bd0212aba0311196c11b43238a09c
+    hash: sha256:ef064c121ca4f32199b8f6f0dede0bbebc6dd1aacfd2228f813e9c67fe29cf94
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
