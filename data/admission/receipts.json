@@ -9787,6 +9787,477 @@
           ]
         }
       }
+    },
+    "data/examples/instruments/us-cfpb-ao-2022-001.md": {
+      "record_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b",
+      "baseline_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
+      "whole_record": {
+        "before_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
+        "after_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "OpenAI Codex",
+        "reviewed_at": "2026-11-22T01:14:14.966Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "Compare the CFPB opinion and withdrawal notice to the stated effective date, withdrawal, and historical interpretation in this fixture.",
+        "packet_sha256": "7696cee144f0dffeb009752cc29cb0d5e56309520e55b43f73c2f2a31e5c416b",
+        "human_approved": false
+      },
+      "unresolved": [
+        "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+      ],
+      "evidence": {
+        "opinion": {
+          "snapshot_path": "data/admission/sources/cfpb-pay-to-pay/2022-14230.html",
+          "snapshot_sha256": "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c",
+          "official_url": "https://govinfo.gov/content/pkg/FR-2022-07-05/html/2022-14230.htm",
+          "document_id": "2022-14230",
+          "document_title": "Debt Collection Practices (Regulation F); Pay-to-Pay Fees",
+          "issuing_body": "Consumer Financial Protection Bureau",
+          "document_type": "official notice",
+          "version": "2022-07-05",
+          "locator": "87 FR 39733–39735",
+          "excerpt": "DATES: This advisory opinion is effective on July 5, 2022.",
+          "acquisition": "retained_snapshot",
+          "identity_excerpts": [
+            "FR Doc No: 2022-14230"
+          ],
+          "original": {
+            "path": "data/admission/sources/cfpb-pay-to-pay/2022-14230.html",
+            "sha256": "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c"
+          }
+        },
+        "withdrawal": {
+          "snapshot_path": "data/admission/sources/cfpb-pay-to-pay/2025-08286.html",
+          "snapshot_sha256": "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776",
+          "official_url": "https://govinfo.gov/content/pkg/FR-2025-05-12/html/2025-08286.htm",
+          "document_id": "2025-08286",
+          "document_title": "Interpretive Rules, Policy Statements, and Advisory Opinions; Withdrawal",
+          "issuing_body": "Consumer Financial Protection Bureau",
+          "document_type": "official notice",
+          "version": "2025-05-12",
+          "locator": "90 FR 20084–20087, DATES and section III, Advisory Opinions, item 9",
+          "excerpt": "9. Debt Collection Practices (Regulation F); Pay-to-Pay Fees, 87 FR \n39733 (July 5, 2022).",
+          "acquisition": "retained_snapshot",
+          "identity_excerpts": [
+            "FR Doc No: 2025-08286"
+          ],
+          "original": {
+            "path": "data/admission/sources/cfpb-pay-to-pay/2025-08286.html",
+            "sha256": "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776"
+          }
+        }
+      },
+      "units": {
+        "metadata:effective": {
+          "before_sha256": "ffb22dee96eccd1267b81a502eb459f803721218686b2b258ebbd6786a0a4f4f",
+          "after_sha256": "bf9013bfba47d438e7fa5eaadfb17b560bcf052d66fb1c532a26daa1b5dbaf71",
+          "candidate_content": "2022-07-05",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "metadata:modified": {
+          "before_sha256": "ef2d34f68c9a8475ee1e991ccb2feabbc4fcb43a798009eecb8e6acfb4862835",
+          "after_sha256": "29c899a7eeb66757d2c487522ae381f50b2d409276b71f0e2c611b0008beb0f0",
+          "candidate_content": "2026-11-21",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "metadata:publication_citations": {
+          "before_sha256": "2ca7a84254bc6899bc5591be8a81ecaa2a41613495470f7b4be273939eab9639",
+          "after_sha256": "406b9d6830d0b907dd9cc685d18b1233199e557d292e8050dddcde3c61b8caa3",
+          "candidate_content": [
+            {
+              "cite": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
+              "url": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/"
+            },
+            {
+              "cite": "87 FR 39733 (July 5, 2022), original advisory opinion",
+              "url": "https://govinfo.gov/content/pkg/FR-2022-07-05/html/2022-14230.htm"
+            },
+            {
+              "cite": "90 FR 20084 (May 12, 2025), withdrawal notice",
+              "url": "https://govinfo.gov/content/pkg/FR-2025-05-12/html/2025-08286.htm"
+            }
+          ],
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "metadata:status": {
+          "before_sha256": "851e2bab55b624879100c05195e0bd8c6a6e57f9c647c0c34eabd999dce41a6e",
+          "after_sha256": "946e0b019f18aaf57010f9477abc5b4fbf48ebb430728cbdb132c3f08e65a43f",
+          "candidate_content": "withdrawn",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "metadata:withdrawal_reason": {
+          "before_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "after_sha256": "b4a7d0c70c7f6ea2a951dbbb9fd928d19d181bdfe19620b389bc4ba50d574e90",
+          "candidate_content": "The CFPB withdrew this advisory opinion in its May 12, 2025 notice, 90 FR 20084, section III, Advisory Opinions, item 9.",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "metadata:withdrawn_by_instrument": {
+          "before_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "after_sha256": "ed55a9c1b60dfa8aa432db33bad43496780f44702b157086c0b58e8846bc1cd3",
+          "candidate_content": "90 FR 20084 (FR Doc. 2025-08286)",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "metadata:withdrawn_date": {
+          "before_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "after_sha256": "f87df26f1bdb61aecad275a3305b17e0ca60084835554baae21c43d5800c4f65",
+          "candidate_content": "2025-05-12",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Summary/text": {
+          "before_sha256": "38c375e802965b9d4215efbda8e2cc9381f60cbab567611cb6f193bf806b0f21",
+          "after_sha256": "4568d233e07a44025f60790abd32e2cfc6c6fc9b4bfd578a3e37cc685be79b07",
+          "candidate_content": "The CFPB issued this interpretation of FDCPA section 808(1) and Regulation F in June 2022. The opinion took effect July 5, 2022. The Bureau withdrew it on May 12, 2025. The withdrawal notice addressed guidance documents. It did not amend the FDCPA or Regulation F.",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Background/text": {
+          "before_sha256": "e24772565c195543dea8fe655b5414878e5e3132085be76f19bc36cbd499cd89",
+          "after_sha256": "4530bacb0a7de29738a843a0501afff9efce48cba4f0932d23b5ffd0f5929209",
+          "candidate_content": "The opinion addressed convenience fees for paying a debt online or by telephone. The CFPB discussed collection by debt collectors and by third-party processors that remit amounts to collectors.",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Question presented/text": {
+          "before_sha256": "963896961b951382128dce8c5f78db7331b1021441f353bcd59d3b186b51c2bc",
+          "after_sha256": "984b7f5c3051a7dd781a99cc6b22103b27cbbdf05645ca6b79800c59dcd06e55",
+          "candidate_content": "When did the Bureau consider a debt collector entitled to collect a pay-to-pay fee under FDCPA section 808(1) and 12 CFR 1006.22(b)?",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Interpretive position/text": {
+          "before_sha256": "8d50b738275473384142dfca11eaf567a4ea21df6d6fe514ae0fa431cfd94be9",
+          "after_sha256": "4045ec9e00ea8aa0b20582103c4db6234ca66eee70f670f9e106fc7ec7373679",
+          "candidate_content": "The Bureau interpreted section 808(1) to permit a collector to charge a fee if the agreement creating the debt expressly permitted the charge and law did not prohibit it, or if law expressly permitted the charge. The opinion rejected silence in the law and a separate payment agreement as sufficient authorization. It treated a collector as collecting a fee when a processor charged the consumer and remitted an amount to the collector in connection with the fee.",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Reliance scope/text": {
+          "before_sha256": "40f1ed8ff8112c4ca030c87c7b29c17580adaed12b1a2f4ca37173832f89cb07",
+          "after_sha256": "8f20088a68324c20fe1148971cef0226417f122d34d97bf9d52c2b03a8b42468",
+          "candidate_content": "The opinion addressed debt collectors generally. The public reliance classification records that historical audience. The Bureau's May 2025 withdrawal ended this opinion as Bureau guidance.",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:PubLedge schema mapping/text": {
+          "before_sha256": "925cf5e00c4472f31727a6621b256c0c42d3eb924913e3b58fb8290d5643f9ad",
+          "after_sha256": "04ed5abb305ff3004a7b46fc4d82ea360a405f6f0c1fc52a303c8eafadba0b83",
+          "candidate_content": "| Source-opinion element | PubLedge field |\n|------------------------|----------------|\n| FDCPA §808(1) (15 U.S.C. §1692f) | `statute_anchors[0]` |\n| Regulation F, 12 CFR §1006.22(b) | `statute_anchors[1]` |\n| CFPB as issuing bureau | `interpreting_authority` |\n| No named submitter | `requesting_party: null` |\n| \"A debt collector may not …\" | `obligation_kind: [restriction]` |\n| General regulated-entity reach | `reliance_scope: public` |\n| June 29, 2022 announcement | `enacted` |\n| July 5, 2022 effective date | `effective` |\n| May 12, 2025 withdrawal | `withdrawn_date` |",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Limitations/text": {
+          "before_sha256": "51e03f9c4bad07d632397f9c04b6983eabd89abfde4800443cf271c07ff05015",
+          "after_sha256": "baef7e13ba54481f9a8fb1e33905064d8db2a59e1aaa9c16ce82433cd6335dce",
+          "candidate_content": "This historical remap describes the Bureau’s advisory opinion. It does not determine present rights under the statute, the regulation, state law, or judicial decisions.",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Sources/text": {
+          "before_sha256": "f1b1d77ddbe3574c2e8c71e14ab62604855766a9496bbd2b94b8b7830c3dde84",
+          "after_sha256": "3ba351e527147b0104f494276ce8ba961887631b887ee021246b2087d6479f2e",
+          "candidate_content": "- [Original advisory opinion, 87 FR 39733, July 5, 2022](https://govinfo.gov/content/pkg/FR-2022-07-05/html/2022-14230.htm)\n- [Withdrawal notice, 90 FR 20084, section III, Advisory Opinions, item 9](https://govinfo.gov/content/pkg/FR-2025-05-12/html/2025-08286.htm)",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Notes on this demonstration remap/text": {
+          "before_sha256": "91e0943939ff902a1168669f90f2e3492f1dab42b33ee95b73767259e8d8e09f",
+          "after_sha256": "9d8aa0f053355b7aeec8648d5d1dbc456d672191a5129053167e2d4f1adea043",
+          "candidate_content": "The record illustrates a restriction, a public audience, and an opinion issued without a named requesting party. The withdrawal date and reason identify the later Bureau notice.",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        }
+      }
+    },
+    "data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md": {
+      "record_sha256": "aebc332ac247b2f93de14bd496982c4ef209bdbb781f6152e9ae45e5cec1678a",
+      "baseline_sha256": "ba4fb468cbef7318935054ebcf8da946b2fb32f4e64124bdfba2bf54a1559532",
+      "whole_record": {
+        "before_sha256": "ba4fb468cbef7318935054ebcf8da946b2fb32f4e64124bdfba2bf54a1559532",
+        "after_sha256": "aebc332ac247b2f93de14bd496982c4ef209bdbb781f6152e9ae45e5cec1678a"
+      },
+      "review": {
+        "actor_type": "agent",
+        "actor": "OpenAI Codex",
+        "reviewed_at": "2026-11-22T01:14:14.971Z",
+        "decision": "source-consistency-reviewed",
+        "scope": "Compare the CFPB opinion and withdrawal notice to the stated effective date, withdrawal, and historical interpretation in this fixture.",
+        "packet_sha256": "192b1c3f6d5d0c79b104a351c6c85f4ba7f3bfe77590a1748dbdfd98578c4397",
+        "human_approved": false
+      },
+      "unresolved": [
+        "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+      ],
+      "evidence": {
+        "opinion": {
+          "snapshot_path": "data/admission/sources/cfpb-pay-to-pay/2022-14230.html",
+          "snapshot_sha256": "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c",
+          "official_url": "https://govinfo.gov/content/pkg/FR-2022-07-05/html/2022-14230.htm",
+          "document_id": "2022-14230",
+          "document_title": "Debt Collection Practices (Regulation F); Pay-to-Pay Fees",
+          "issuing_body": "Consumer Financial Protection Bureau",
+          "document_type": "official notice",
+          "version": "2022-07-05",
+          "locator": "87 FR 39733–39735",
+          "excerpt": "DATES: This advisory opinion is effective on July 5, 2022.",
+          "acquisition": "retained_snapshot",
+          "identity_excerpts": [
+            "FR Doc No: 2022-14230"
+          ],
+          "original": {
+            "path": "data/admission/sources/cfpb-pay-to-pay/2022-14230.html",
+            "sha256": "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c"
+          }
+        },
+        "withdrawal": {
+          "snapshot_path": "data/admission/sources/cfpb-pay-to-pay/2025-08286.html",
+          "snapshot_sha256": "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776",
+          "official_url": "https://govinfo.gov/content/pkg/FR-2025-05-12/html/2025-08286.htm",
+          "document_id": "2025-08286",
+          "document_title": "Interpretive Rules, Policy Statements, and Advisory Opinions; Withdrawal",
+          "issuing_body": "Consumer Financial Protection Bureau",
+          "document_type": "official notice",
+          "version": "2025-05-12",
+          "locator": "90 FR 20084–20087, DATES and section III, Advisory Opinions, item 9",
+          "excerpt": "9. Debt Collection Practices (Regulation F); Pay-to-Pay Fees, 87 FR \n39733 (July 5, 2022).",
+          "acquisition": "retained_snapshot",
+          "identity_excerpts": [
+            "FR Doc No: 2025-08286"
+          ],
+          "original": {
+            "path": "data/admission/sources/cfpb-pay-to-pay/2025-08286.html",
+            "sha256": "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776"
+          }
+        }
+      },
+      "units": {
+        "metadata:lifecycle_status": {
+          "before_sha256": "fe8d33fa6ede9b53be0e987062b30e2ae42f16ca024b29a0f834e1bd8ab72e81",
+          "after_sha256": "946e0b019f18aaf57010f9477abc5b4fbf48ebb430728cbdb132c3f08e65a43f",
+          "candidate_content": "withdrawn",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Summary/text": {
+          "before_sha256": "3de7460c3ed044c2639bf98e915d092b06511fd0a7a2b184b9234c898afb8742",
+          "after_sha256": "a57d4cdfa38a00cd1363c10ae399613f71f3190cb58f4cf52a0f1f9461f6a9e8",
+          "candidate_content": "This fixture records the CFPB's withdrawn interpretation of FDCPA section 808(1) and Regulation F. The opinion took effect July 5, 2022, and its withdrawal took effect May 12, 2025. The lifecycle here describes the opinion as guidance. The withdrawal notice did not amend the underlying statute or regulation.",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:What Counts/text": {
+          "before_sha256": "0bc56544f741f25ff306dcf023990192c40875abfbcf8a4615524cd63c12b3d4",
+          "after_sha256": "6cf1edf4824104bbae91d45390bcafbfb02374e7541d7ceea359e7d6468dbc85",
+          "candidate_content": "- Under the opinion, express permission in the agreement creating the debt where law did not prohibit the charge\n- Under the opinion, express permission under law",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:What Does Not Count/text": {
+          "before_sha256": "c9047dfdee1fd94e91e4db263b5719072c62c14bc977432003bf8e246e9b2762",
+          "after_sha256": "66443e213da66d2e79ef5720235e20d459d9a7997f3207bbabc28824e08e9667",
+          "candidate_content": "- Silence in the law as authority for the charge\n- A separate payment agreement as authority under the agreement creating the debt\n- A processor collecting the fee and remitting an amount to the collector in connection with it as a way around the opinion",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Statute Anchors/text": {
+          "before_sha256": "a3a4eebe8d7e7329d922af7574fdd0a932ecc7e1a3e497f1480c0b426ca78f32",
+          "after_sha256": "8ff2eab16616b2fff0f8c7db549b5d67c0da6637b1bb150adccb268efc77c175",
+          "candidate_content": "- FDCPA section 808(1), 15 U.S.C. § 1692f(1)\n- Regulation F, 12 CFR § 1006.22(b)",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        },
+        "section:Sources/text": {
+          "before_sha256": null,
+          "after_sha256": "ea52df8f584896268c39f9f80b977d6f48116a26c60117d95519625b95622c35",
+          "candidate_content": "- [Original advisory opinion, 87 FR 39733](https://govinfo.gov/content/pkg/FR-2022-07-05/html/2022-14230.htm)\n- [Withdrawal notice, 90 FR 20084, section III, Advisory Opinions, item 9](https://govinfo.gov/content/pkg/FR-2025-05-12/html/2025-08286.htm)",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
+        }
+      }
     }
   }
 }

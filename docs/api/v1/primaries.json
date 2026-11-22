@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-09-23T00:00:00.000Z",
+    "generated": "2026-11-21T00:00:00.000Z",
     "count": 35
   },
   "items": [
@@ -65,7 +65,7 @@
       "name": "Pay-To-Pay Fee Prohibited Without Express Authorization",
       "group": "restriction",
       "status": "draft",
-      "lifecycle_status": "operative"
+      "lifecycle_status": "withdrawn"
     },
     {
       "id": "cftc-unbundled-fee-not-cta-trigger",

@@ -4,7 +4,7 @@ id: cfpb-pay-to-pay-fee-prohibited
 name: Pay-To-Pay Fee Prohibited Without Express Authorization
 group: restriction
 status: draft
-lifecycle_status: operative
+lifecycle_status: withdrawn
 last_verified: 2026-04-21
 search_terms:
   - fdcpa
@@ -16,23 +16,25 @@ search_terms:
 
 ## Summary
 
-A debt collector subject to the Fair Debt Collection Practices Act may not charge a pay-to-pay convenience fee for online or phone payments unless the fee is either expressly authorized by the agreement creating the debt or affirmatively permitted by a specific law. Silence, absence of prohibition, and third-party payment-processor routing do not cure the violation.
+This fixture records the CFPB's withdrawn interpretation of FDCPA section 808(1) and Regulation F. The opinion took effect July 5, 2022, and its withdrawal took effect May 12, 2025. The lifecycle here describes the opinion as guidance. The withdrawal notice did not amend the underlying statute or regulation.
 
 ## What Counts
 
-- Specific contractual language in the agreement creating the debt authorizing the particular fee
-- Affirmative statutory authorization permitting the fee
-- Uniform application across all payment channels under the agreement
+- Under the opinion, express permission in the agreement creating the debt where law did not prohibit the charge
+- Under the opinion, express permission under law
 
 ## What Does Not Count
 
-- General right-to-collect-costs language as substitute for fee-specific authorization
-- Silence in the debt-creating agreement treated as permission
-- Third-party payment processor charging the fee and remitting a portion to the collector
-- Later-in-time consumer agreement at the point of payment treated as §808(1) authorization
-- Common-law contract principles invoked as "permitted by law"
+- Silence in the law as authority for the charge
+- A separate payment agreement as authority under the agreement creating the debt
+- A processor collecting the fee and remitting an amount to the collector in connection with it as a way around the opinion
 
 ## Statute Anchors
 
-- FDCPA §808(1) — 15 U.S.C. §1692f(1)
-- Regulation F — 12 CFR §1006.22(b)
+- FDCPA section 808(1), 15 U.S.C. § 1692f(1)
+- Regulation F, 12 CFR § 1006.22(b)
+
+## Sources
+
+- [Original advisory opinion, 87 FR 39733](https://govinfo.gov/content/pkg/FR-2022-07-05/html/2022-14230.htm)
+- [Withdrawal notice, 90 FR 20084, section III, Advisory Opinions, item 9](https://govinfo.gov/content/pkg/FR-2025-05-12/html/2025-08286.htm)

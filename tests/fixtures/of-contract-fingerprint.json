@@ -1366,15 +1366,15 @@
         "present": 17
       },
       "pub:source_review_state": {
-        "explicit_unknown": 6,
+        "explicit_unknown": 5,
         "missing": 0,
-        "populated": 11,
+        "populated": 12,
         "present": 17
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 6,
-        "populated": 11,
+        "null": 5,
+        "populated": 12,
         "present": 17
       },
       "resulting_instrument": {
@@ -1508,9 +1508,9 @@
         "present": 1
       },
       "operative_status": {
-        "explicit_unknown": 3,
+        "explicit_unknown": 4,
         "missing": 0,
-        "populated": 15,
+        "populated": 14,
         "present": 18
       },
       "parties": {
@@ -1544,15 +1544,15 @@
         "present": 18
       },
       "pub:source_review_state": {
-        "explicit_unknown": 6,
+        "explicit_unknown": 5,
         "missing": 0,
-        "populated": 12,
+        "populated": 13,
         "present": 18
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 6,
-        "populated": 12,
+        "null": 5,
+        "populated": 13,
         "present": 18
       },
       "pub:status": {
@@ -2048,8 +2048,9 @@
         "present": 9
       },
       "lifecycle_status": {
-        "explicit_unknown": 9,
+        "explicit_unknown": 8,
         "missing": 0,
+        "populated": 1,
         "present": 9
       },
       "operative_status": {
@@ -2093,15 +2094,15 @@
         "present": 9
       },
       "pub:source_review_state": {
-        "explicit_unknown": 2,
+        "explicit_unknown": 1,
         "missing": 0,
-        "populated": 7,
+        "populated": 8,
         "present": 9
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 2,
-        "populated": 7,
+        "null": 1,
+        "populated": 8,
         "present": 9
       },
       "pub:status": {
@@ -2198,9 +2199,9 @@
         "present": 16
       },
       "operative_status": {
-        "explicit_unknown": 3,
+        "explicit_unknown": 4,
         "missing": 0,
-        "populated": 13,
+        "populated": 12,
         "present": 16
       },
       "parent_instrument": {
@@ -2234,15 +2235,15 @@
         "present": 16
       },
       "pub:source_review_state": {
-        "explicit_unknown": 5,
+        "explicit_unknown": 4,
         "missing": 0,
-        "populated": 11,
+        "populated": 12,
         "present": 16
       },
       "pub:source_review_unresolved": {
         "missing": 0,
-        "null": 5,
-        "populated": 11,
+        "null": 4,
+        "populated": 12,
         "present": 16
       },
       "section": {
@@ -2697,26 +2698,33 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/determination/us-cfpb-ao-2022-001-issuance.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "554698950a65f1295dbc1e9dee3fcb63a05ebf6e91817259672433a9e57d0d78",
+          "native_file_sha256": "9d52b63fc9c6532f836da08e456508873dd48050c5f278e1a8e3592edc0cfa92",
           "native_path": "data/examples/instruments/us-cfpb-ao-2022-001.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c",
+            "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776"
+          ],
+          "review_packet_sha256": "7696cee144f0dffeb009752cc29cb0d5e56309520e55b43f73c2f2a31e5c416b",
+          "unresolved": [
+            "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "declared",
+      "pub:source_review_unresolved": [
+        "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+      ],
       "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
       "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
       "source_review_conflicts": null
@@ -3317,26 +3325,33 @@
       "source_review_conflicts": null
     },
     "https://publedge.org/instrument/us-cfpb-ao-2022-001.json": {
-      "admission_status": "legacy-unreviewed",
+      "admission_status": "source-consistency-reviewed-changes",
       "asserted_by_adopter": "https://publedge.org/",
-      "evidence_type": "legacy-unreviewed-source-reference",
+      "evidence_type": "reviewed-source-reference",
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "554698950a65f1295dbc1e9dee3fcb63a05ebf6e91817259672433a9e57d0d78",
+          "native_file_sha256": "9d52b63fc9c6532f836da08e456508873dd48050c5f278e1a8e3592edc0cfa92",
           "native_path": "data/examples/instruments/us-cfpb-ao-2022-001.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c",
+            "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776"
+          ],
+          "review_packet_sha256": "7696cee144f0dffeb009752cc29cb0d5e56309520e55b43f73c2f2a31e5c416b",
+          "unresolved": [
+            "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "declared",
+      "pub:source_review_unresolved": [
+        "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+      ],
       "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
       "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
       "source_review_conflicts": null
@@ -3977,16 +3992,21 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "554698950a65f1295dbc1e9dee3fcb63a05ebf6e91817259672433a9e57d0d78",
+          "native_file_sha256": "9d52b63fc9c6532f836da08e456508873dd48050c5f278e1a8e3592edc0cfa92",
           "native_path": "data/examples/instruments/us-cfpb-ao-2022-001.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c",
+            "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776"
+          ],
+          "review_packet_sha256": "7696cee144f0dffeb009752cc29cb0d5e56309520e55b43f73c2f2a31e5c416b",
+          "unresolved": [
+            "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -4001,20 +4021,27 @@
           "unresolved_review_state": "unknown"
         },
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "ba4fb468cbef7318935054ebcf8da946b2fb32f4e64124bdfba2bf54a1559532",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "aebc332ac247b2f93de14bd496982c4ef209bdbb781f6152e9ae45e5cec1678a",
           "canonical_unit": null,
           "kind": "obligation-definition",
-          "native_file_sha256": "51d12024f6a0736ed3f5d56ca24c94b133cc657f0a1ebdffca8ce77a185252d0",
+          "native_file_sha256": "decb7f413e4afa20a4bc1b8bfcf5de2883b247738214d6af1e3f16691a703768",
           "native_path": "data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c",
+            "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776"
+          ],
+          "review_packet_sha256": "192b1c3f6d5d0c79b104a351c6c85f4ba7f3bfe77590a1748dbdfd98578c4397",
+          "unresolved": [
+            "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+          ],
+          "unresolved_review_state": "declared"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+      ],
       "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
       "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
       "source_locator": "Interpretive position",
@@ -8719,16 +8746,21 @@
       "projection_basis": "native-record-projection",
       "pub:evidence_inputs": [
         {
-          "admission_status": "legacy-unreviewed",
-          "canonical_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
+          "admission_status": "reviewed-changes",
+          "canonical_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b",
           "canonical_unit": null,
           "kind": "instrument",
-          "native_file_sha256": "554698950a65f1295dbc1e9dee3fcb63a05ebf6e91817259672433a9e57d0d78",
+          "native_file_sha256": "9d52b63fc9c6532f836da08e456508873dd48050c5f278e1a8e3592edc0cfa92",
           "native_path": "data/examples/instruments/us-cfpb-ao-2022-001.md",
-          "retained_primary_sha256": null,
-          "review_packet_sha256": null,
-          "unresolved": null,
-          "unresolved_review_state": "unknown"
+          "retained_primary_sha256": [
+            "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c",
+            "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776"
+          ],
+          "review_packet_sha256": "7696cee144f0dffeb009752cc29cb0d5e56309520e55b43f73c2f2a31e5c416b",
+          "unresolved": [
+            "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+          ],
+          "unresolved_review_state": "declared"
         },
         {
           "admission_status": "legacy-unreviewed",
@@ -8743,8 +8775,10 @@
           "unresolved_review_state": "unknown"
         }
       ],
-      "pub:source_review_state": "unknown",
-      "pub:source_review_unresolved": null,
+      "pub:source_review_state": "known-and-unknown",
+      "pub:source_review_unresolved": [
+        "The retained notices do not determine the current interpretation of the FDCPA or Regulation F by courts or other authorities. The historical last_verified date is preserved."
+      ],
       "source": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
       "source_citation": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
       "source_locator": "Interpretive position",
