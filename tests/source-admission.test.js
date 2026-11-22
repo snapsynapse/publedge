@@ -367,7 +367,8 @@ test('aggregate exports and derived counts keep draft and demonstration labellin
     assert.deepEqual({ source: jia.source, status: jia.status, editorial_status: jia.editorial_status }, { source: 'publedge-original-draft', status: 'proposed', editorial_status: 'draft' });
     assert.equal(summaries.find(item => item.id === 'us-ut-oaip-rma-2025-002').source, 'demonstration-remap');
     const counts = projection.countByStatus(summaries);
-    assert.equal(counts.enforcing, 12);
+    assert.equal(counts.enforcing, 11);
+    assert.equal(summaries.find(item => item.id === 'us-cfpb-ao-2022-001').status, 'withdrawn');
     assert.equal(counts.proposed, 1);
     for (const item of summaries) assert.ok(item.source && item.editorial_status, `${item.id} lost its source labelling`);
 
@@ -389,7 +390,7 @@ test('aggregate exports and derived counts keep draft and demonstration labellin
     const frontmatterOf = c => Object.fromEntries(Object.entries(c).filter(([key]) => !key.startsWith('_') && !['provisions', 'timeline'].includes(key)));
     const admitted = promoted.filter(c => validate(frontmatterOf(c)));
     assert.equal(admitted.length, containers.length - 1);
-    assert.equal(projection.countByStatus(admitted.map(projection.containerSummary)).enforcing, 12);
+    assert.equal(projection.countByStatus(admitted.map(projection.containerSummary)).enforcing, counts.enforcing);
 
     // Emitted docs agree with the projection.
     const emitted = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/api/v1/containers.json'), 'utf8'));

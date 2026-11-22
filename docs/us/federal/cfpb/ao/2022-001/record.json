@@ -2,10 +2,10 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/federal/cfpb/ao/2022-001/",
-    "generated": "2026-09-23T00:00:00.000Z",
+    "generated": "2026-11-21T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
-      "status": "legacy-unreviewed",
+      "status": "reviewed-changes",
       "limits": "Traceability and declared review only; no automatic legal truth, completeness, authenticated reviewer identity, or currentness certification."
     }
   },
@@ -31,7 +31,7 @@
     "intended_authority_url": null,
     "issuance_event": "gist:Determination",
     "enacted": "2022-06-29",
-    "effective": "2022-06-29",
+    "effective": "2022-07-05",
     "official_url": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/",
     "obligation_kind": [
       "restriction"
@@ -52,16 +52,35 @@
       {
         "cite": "CFPB Advisory Opinion Program, Pay-to-Pay Fees (June 29, 2022)",
         "url": "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/"
+      },
+      {
+        "cite": "87 FR 39733 (July 5, 2022), original advisory opinion",
+        "url": "https://govinfo.gov/content/pkg/FR-2022-07-05/html/2022-14230.htm"
+      },
+      {
+        "cite": "90 FR 20084 (May 12, 2025), withdrawal notice",
+        "url": "https://govinfo.gov/content/pkg/FR-2025-05-12/html/2025-08286.htm"
       }
     ],
     "terms": null,
-    "status": "enforcing",
+    "status": "withdrawn",
     "editorial_status": "published",
     "supersedes": null,
     "superseded_by": null,
     "authority_response": null,
     "last_verified": "2026-04-19",
-    "timeline": [],
+    "timeline": [
+      {
+        "milestone": "Opinion effective",
+        "date": "2022-07-05",
+        "notes": "The original notice gave July 5, 2022 as its effective date (87 FR 39733)."
+      },
+      {
+        "milestone": "Opinion withdrawn",
+        "date": "2025-05-12",
+        "notes": "The CFPB withdrew this guidance on May 12, 2025 (90 FR 20084, section III, Advisory Opinions, item 9). The notice did not amend the FDCPA or Regulation F."
+      }
+    ],
     "source_documents": []
   },
   "jsonld": {
@@ -76,8 +95,8 @@
       "https://www.consumerfinance.gov/rules-policy/final-rules/advisory-opinion-on-debt-collectors-collection-of-pay-to-pay-fees/"
     ],
     "dateCreated": "2026-04-19",
-    "dateModified": "2026-04-19",
-    "datePublished": "2022-06-29",
+    "dateModified": "2026-11-21",
+    "datePublished": "2022-07-05",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/GovernmentOrganization",
       "name": "Consumer Financial Protection Bureau",

@@ -1,30 +1,14 @@
 {
   "meta": {
-    "generated": "2026-09-23T00:00:00.000Z",
-    "count": 2,
-    "today": "2026-09-23"
+    "generated": "2026-11-21T00:00:00.000Z",
+    "count": 1,
+    "today": "2026-11-21"
   },
   "items": [
     {
-      "kind": "term-end",
-      "date": "2026-10-24",
-      "days_until": 31,
-      "record_id": "us-ut-oaip-rma-2025-002",
-      "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
-      "url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
-      "jurisdiction": "us-ut",
-      "authority": "utah-oaip",
-      "type": "rma",
-      "source": "demonstration-remap",
-      "author_or_proponent": null,
-      "intended_authority": null,
-      "status": "enforcing",
-      "editorial_status": "published"
-    },
-    {
       "kind": "effective",
       "date": "2027-01-01",
-      "days_until": 100,
+      "days_until": 41,
       "record_id": "us-co-legislature-statute-2026-sb26-189",
       "title": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
       "url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",

@@ -52,8 +52,14 @@ test('provenance successor preserves the prior receipt, terms, body and review d
 
 test('proposal label survives browse, search, feeds, templates and raw export', () => {
     const label = 'PubLedge proposed template (unissued)';
-    for (const file of ['instruments.html', 'us/utah/index.html', 'us/utah/oaip/index.html', 'us/utah/oaip/jia/index.html', 'us/utah/oaip/jia/2026-001/index.html', 'templates/index.html', 'feed.xml', 'atom.xml', 'feed.json', 'assets/data.json', `data/examples/instruments/${ID}.md`]) {
+    for (const file of ['instruments.html', 'us/utah/index.html', 'us/utah/oaip/index.html', 'us/utah/oaip/jia/index.html', 'us/utah/oaip/jia/2026-001/index.html', 'templates/index.html', 'feed.xml', 'assets/data.json', `data/examples/instruments/${ID}.md`]) {
         assert.ok(read(`docs/${file}`).includes(label), `${file} lost proposal label`);
+    }
+    // Atom and JSON Feed publish only the first 20 records in the rolling change window.
+    const inRecentFeed = json('docs/api/v1/recently_changed.json').items
+        .slice(0, 20).some(item => item.record_id === ID);
+    for (const file of ['atom.xml', 'feed.json']) {
+        assert.equal(read(`docs/${file}`).includes(label), inRecentFeed, file);
     }
     const summary = json('docs/api/v1/containers.json').items.find(c => c.id === ID);
     assert.equal(summary.author_or_proponent, 'PubLedge');

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-09-23T00:00:00.000Z",
+    "generated": "2026-11-21T00:00:00.000Z",
     "count": 18
   },
   "items": [
@@ -10,9 +10,9 @@
       "source": "demonstration-remap",
       "author_or_proponent": null,
       "intended_authority": null,
-      "status": "enforcing",
+      "status": "withdrawn",
       "editorial_status": "published",
-      "effective": "2022-06-29",
+      "effective": "2022-07-05",
       "provision_count": 0,
       "provision_count_scope": "Structured clause-level sections indexed; zero does not mean no obligations",
       "url": "https://publedge.org/us/federal/cfpb/ao/2022-001/"
