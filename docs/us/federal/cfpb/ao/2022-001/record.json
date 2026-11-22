@@ -69,7 +69,18 @@
     "superseded_by": null,
     "authority_response": null,
     "last_verified": "2026-04-19",
-    "timeline": [],
+    "timeline": [
+      {
+        "milestone": "Opinion effective",
+        "date": "2022-07-05",
+        "notes": "The original notice gave July 5, 2022 as its effective date (87 FR 39733)."
+      },
+      {
+        "milestone": "Opinion withdrawn",
+        "date": "2025-05-12",
+        "notes": "The CFPB withdrew this guidance on May 12, 2025 (90 FR 20084, section III, Advisory Opinions, item 9). The notice did not amend the FDCPA or Regulation F."
+      }
+    ],
     "source_documents": []
   },
   "jsonld": {

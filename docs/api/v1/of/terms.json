@@ -928,11 +928,11 @@
         {
           "kind": "instrument",
           "native_path": "data/examples/instruments/us-cfpb-ao-2022-001.md",
-          "native_file_sha256": "9d52b63fc9c6532f836da08e456508873dd48050c5f278e1a8e3592edc0cfa92",
+          "native_file_sha256": "670d9513091c8a48adb80ff923ba278b07c7b12bf820e682848a6075f3d3a5f8",
           "canonical_unit": null,
-          "canonical_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b",
+          "canonical_sha256": "83bdc41dc8c1203412e740e267a03ed36f32ad77414e2c21b830035f80116e41",
           "admission_status": "reviewed-changes",
-          "review_packet_sha256": "7696cee144f0dffeb009752cc29cb0d5e56309520e55b43f73c2f2a31e5c416b",
+          "review_packet_sha256": "4135097c2ae2423c5a8dd91a85de699b77cd61d2a3701b20323183ef1eddb7e5",
           "retained_primary_sha256": [
             "12bfa3c75e04609c6b3b0a0ca3b0d07aff9ba34634e52af87c9bf9fa4c22b40c",
             "4ee6d75207fe5bb2ec8dfb1570294c04cb3dc092861959dc0ab6fc3e631de776"

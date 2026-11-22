@@ -9789,19 +9789,19 @@
       }
     },
     "data/examples/instruments/us-cfpb-ao-2022-001.md": {
-      "record_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b",
+      "record_sha256": "83bdc41dc8c1203412e740e267a03ed36f32ad77414e2c21b830035f80116e41",
       "baseline_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
       "whole_record": {
         "before_sha256": "bee8c3df676f15e720b265ede1121fd6c52e9f2a23ec6fd3c21566a3b8664149",
-        "after_sha256": "0c2cd714e8e6d46f37cfb05b0aaaf38caf4dc7ca346cb3fd261d59a2a848f96b"
+        "after_sha256": "83bdc41dc8c1203412e740e267a03ed36f32ad77414e2c21b830035f80116e41"
       },
       "review": {
         "actor_type": "agent",
         "actor": "OpenAI Codex",
-        "reviewed_at": "2026-11-22T01:14:14.966Z",
+        "reviewed_at": "2026-11-22T01:17:57.864Z",
         "decision": "source-consistency-reviewed",
         "scope": "Compare the CFPB opinion and withdrawal notice to the stated effective date, withdrawal, and historical interpretation in this fixture.",
-        "packet_sha256": "7696cee144f0dffeb009752cc29cb0d5e56309520e55b43f73c2f2a31e5c416b",
+        "packet_sha256": "4135097c2ae2423c5a8dd91a85de699b77cd61d2a3701b20323183ef1eddb7e5",
         "human_approved": false
       },
       "unresolved": [
@@ -10102,6 +10102,21 @@
             "opinion",
             "withdrawal"
           ]
+        },
+        "section:Timeline/text": {
+          "before_sha256": null,
+          "after_sha256": "a5866cebac1c4b25b912ff85f9d0c08b5c00341f6d2649fb577da0bb33a5e5f5",
+          "candidate_content": "| Milestone | Date | Notes |\n|-----------|------|-------|\n| Opinion effective | 2022-07-05 | The original notice gave July 5, 2022 as its effective date (87 FR 39733). |\n| Opinion withdrawn | 2025-05-12 | The CFPB withdrew this guidance on May 12, 2025 (90 FR 20084, section III, Advisory Opinions, item 9). The notice did not amend the FDCPA or Regulation F. |",
+          "reason": "Align this historical remap with the Bureau’s original interpretation, its effective date and the later withdrawal of the guidance.",
+          "qualifications": {
+            "scope": "The 2022 CFPB advisory opinion and its withdrawal as agency guidance.",
+            "exceptions": "No statutory or regulatory repeal follows from this notice.",
+            "time": "Effective July 5, 2022. Withdrawn May 12, 2025."
+          },
+          "evidence": [
+            "opinion",
+            "withdrawal"
+          ]
         }
       }
     },
@@ -10115,10 +10130,10 @@
       "review": {
         "actor_type": "agent",
         "actor": "OpenAI Codex",
-        "reviewed_at": "2026-11-22T01:14:14.971Z",
+        "reviewed_at": "2026-11-22T01:17:57.868Z",
         "decision": "source-consistency-reviewed",
         "scope": "Compare the CFPB opinion and withdrawal notice to the stated effective date, withdrawal, and historical interpretation in this fixture.",
-        "packet_sha256": "192b1c3f6d5d0c79b104a351c6c85f4ba7f3bfe77590a1748dbdfd98578c4397",
+        "packet_sha256": "40b7c27cb87cf09d5f7c819c56f6827fdfe71b91139fe38ad0a42cbd1b73c4cc",
         "human_approved": false
       },
       "unresolved": [

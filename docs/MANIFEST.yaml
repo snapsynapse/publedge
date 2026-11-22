@@ -143,7 +143,7 @@ files:
 
   - path: data/examples/instruments/us-cfpb-ao-2022-001.md
     role: instrument
-    hash: sha256:9d52b63fc9c6532f836da08e456508873dd48050c5f278e1a8e3592edc0cfa92
+    hash: sha256:670d9513091c8a48adb80ff923ba278b07c7b12bf820e682848a6075f3d3a5f8
     note: data/examples/instruments/us-cfpb-ao-2022-001.md
 
   - path: data/examples/instruments/us-cftc-dsio-il-2017-001.md

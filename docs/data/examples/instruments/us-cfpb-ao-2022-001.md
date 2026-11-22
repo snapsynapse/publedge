@@ -52,6 +52,13 @@ modified: 2026-11-21
 
 The CFPB issued this interpretation of FDCPA section 808(1) and Regulation F in June 2022. The opinion took effect July 5, 2022. The Bureau withdrew it on May 12, 2025. The withdrawal notice addressed guidance documents. It did not amend the FDCPA or Regulation F.
 
+## Timeline
+
+| Milestone | Date | Notes |
+|-----------|------|-------|
+| Opinion effective | 2022-07-05 | The original notice gave July 5, 2022 as its effective date (87 FR 39733). |
+| Opinion withdrawn | 2025-05-12 | The CFPB withdrew this guidance on May 12, 2025 (90 FR 20084, section III, Advisory Opinions, item 9). The notice did not amend the FDCPA or Regulation F. |
+
 ## Background
 
 The opinion addressed convenience fees for paying a debt online or by telephone. The CFPB discussed collection by debt collectors and by third-party processors that remit amounts to collectors.
