@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/elizachat-rma-obligations-rma-no-advertising-reference.json",
   "pub:id": "elizachat-rma-obligations-rma-no-advertising-reference",
   "title": "RMA — No Advertising Reference To Agreement",
-  "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
+  "content": "ElizaChat and Dentacor restrict mentioning participation in advertising or promotional materials unless the Office approves in writing. Doctronic includes media in that restriction. Legion permits publicity consistent with the agreement’s scope and purpose, and requires prior written approval for promotional statements implying Office or State endorsement.",
   "created_by": [
     "https://publedge.org/term/elizachat-rma-obligations.json"
   ],
@@ -43,7 +43,8 @@
   "source_review_conflicts": null,
   "pub:source_review_unresolved": [
     "No retained source shows an extension request or decision, a termination, a replacement, or which rollout phases OAIP approved.",
-    "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed."
+    "Expired status rests on the initial 12-month term and the OAIP register entry retrieved 2026-09-24; no expiry notice was reviewed.",
+    "Contract-text comparison only. Aggregate legal lifecycle still depends on term and commencement decisions for mapped instruments."
   ],
   "pub:source_review_state": "known-and-unknown",
   "pub:evidence_inputs": [
@@ -70,7 +71,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "a46cb82e795a612a7f614711eb58883b7b865444710fefe7362f4908d10d520f",
       "canonical_unit": "entry:elizachat-rma-obligations",
       "canonical_sha256": "ea5e274a5d4a57593803cccd6055995a1064f1e3fc60fde6b76f2267c223154a",
       "admission_status": "legacy-unreviewed",
@@ -82,14 +83,21 @@
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/rma-no-advertising-reference.md",
-      "native_file_sha256": "cfd94c1c80489e8effb883823a7ad555d7d83ca431e61d6eab9330c4558a81f2",
+      "native_file_sha256": "c8081587d37f0a37ef53fa6a7fc30500aa964e2055620d266bb58a94b58bdc19",
       "canonical_unit": null,
-      "canonical_sha256": "a28d9d3f2893e6a8f76d5d2d6d776085a5a846972cebbac58665fb946c51b9bf",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "187cc94c842f430ff3eb4598282577ea9f592a86dd47f8c78112f3a1b4549fc5",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "6a047b5a5dcd9755c88f3aadd58b05d9ce555ef9d84d0d7d6306a9fd7d8ac5c5",
+      "retained_primary_sha256": [
+        "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+        "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
+        "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
+        "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "Contract-text comparison only. Aggregate legal lifecycle still depends on term and commencement decisions for mapped instruments."
+      ]
     }
   ]
 }

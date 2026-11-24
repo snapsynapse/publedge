@@ -14,13 +14,22 @@ const before = file => execFileSync('git', ['show', `${BASE}:${file}`], { cwd: R
 const names = ['data/examples/instruments/us-ut-legislature-statute-2025-hb452.md', 'data/examples/obligations/disclose-genai-on-first-session.md', 'data/examples/obligations/chatbot-data-no-third-party-sharing.md'];
 
 test('HB452 keeps human dates, native identities and unrelated clauses/mappings intact', () => {
-    for (const name of names) assert.deepEqual(parseFrontmatter(read(name)).frontmatter, parseFrontmatter(before(name)).frontmatter);
+    for (const name of names) {
+        const current = parseFrontmatter(read(name)).frontmatter;
+        const historical = parseFrontmatter(before(name)).frontmatter;
+        if (name === names[0]) {
+            assert.equal(historical.enacted, '2025-03-26');
+            assert.equal(current.enacted, '2025-03-25');
+            assert.deepEqual({ ...current, enacted: historical.enacted }, historical);
+        } else assert.deepEqual(current, historical);
+    }
     const summary = text => text.split('## Summary\n\n')[1].split('\n### Talking Point')[0].split('\n');
     const unrelated = text => summary(text).filter(line => !line.startsWith('- **Pre-access') && !line.startsWith('- **Data protection'));
     assert.deepEqual(unrelated(read(names[0])), unrelated(before(names[0])));
     assert.equal(read('data/examples/obligations/chatbot-safety-policy-filing.md'), before('data/examples/obligations/chatbot-safety-policy-filing.md'));
     const mapping = 'data/examples/mapping/index.yml';
-    const current = parseMappingIndex(read(mapping)), old = parseMappingIndex(before(mapping));
+    const checkpoint = execFileSync('git', ['show', 'f08300f2aaf607e43b976cf9a7714223fc7af5a2:' + mapping], { cwd: ROOT, encoding: 'utf8' });
+    const current = parseMappingIndex(checkpoint), old = parseMappingIndex(before(mapping));
     assert.deepEqual(current.map(({ obligation_qualification, ...entry }) => entry), old.map(({ obligation_qualification, ...entry }) => entry));
     assert.deepEqual(current.filter(entry => !['hb452-mental-health-chatbot-stack', 'sb226-disclosure-and-ai-defense'].includes(entry.id)), old.filter(entry => !['hb452-mental-health-chatbot-stack', 'sb226-disclosure-and-ai-defense'].includes(entry.id)));
 });

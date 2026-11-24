@@ -63,16 +63,18 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-      "native_file_sha256": "99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd",
+      "native_file_sha256": "0741ed0826049b6e964c14da28a4de4353efef05e8ecaeb9fc101494d490c42f",
       "canonical_unit": null,
-      "canonical_sha256": "bbcc08b38384420f2450790f2ef7382cfd6f7f446339441eff25ec1c4c64e292",
+      "canonical_sha256": "85160ae28e4950f0af51b6de0b68d13dd8c41d74bf23ee6b99e534e6f1b27c4c",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "c8887d9176e6ccfda6cfbf8eccfa8abb829545b4e94164d086d25600e54f43a3",
+      "review_packet_sha256": "2f03c5cd0ee8a1c65e53037431c8a5698a1d5c48afa77cb98991a1a86f7c73f9",
       "retained_primary_sha256": [
         "3c15a70c135f047a5c8c06b0b9362f231ff87992a88991d40d65d1a17ddeead6",
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
         "74f54badd0a701c49577a76df00b300b2b68e11d4b4de2048e39d362b2ae476a",
-        "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
+        "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4",
+        "84c903205c397301f5f1bcab35415cfe34d40416ddf210ae9d5c1e3f69bcefb7",
+        "c5ca68b6f1c97dcd3b0f20914c85ab61cf5d6da338a7c2f2684d9a7b484b81a4"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
@@ -86,11 +88,11 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "a46cb82e795a612a7f614711eb58883b7b865444710fefe7362f4908d10d520f",
       "canonical_unit": "entry:hb452-mental-health-chatbot-stack",
       "canonical_sha256": "d07ec388553139cf8d52342b5d0d2327d55eaadfc88b1caea45feb7b2eb2eb03",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
+      "review_packet_sha256": "ac717b5c28163989b4dad6d143c806033e4ad9c75fbc34543e687edd1bd66402",
       "retained_primary_sha256": [
         "279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8",
         "4c97f7617a282ea8083c87ea04ffe547128640bd6129d4dc7f7526f7287496ef",

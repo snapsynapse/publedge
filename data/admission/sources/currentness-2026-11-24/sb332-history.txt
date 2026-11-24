@@ -1,0 +1,36 @@
+SB0332 | Utah Legislature action history
+2/24/2025 1:42 PM | Bill Numbered but not Distributed | LNUMBER | 
+2/24/2025 1:42 PM | Numbered Bill Publicly Distributed | LLFA | 
+2/24/2025 2:53 PM | Senate/ received bill from Legislative Research | SRECLRGC | 
+2/24/2025 4:56 PM | Senate/ 1st reading (Introduced) | SREAD1 | 
+2/25/2025 3:41 PM | Senate/ to standing committee | STOSTAND | 
+2/26/2025 5:37 PM | Senate Comm - Favorable Recommendation | SCAFAV | 7-0-1
+2/27/2025 10:43 AM | Senate/ committee report favorable | SCR | 
+2/27/2025 10:43 AM | Senate/ placed on 2nd Reading Calendar | SON2ND | 
+2/27/2025 5:56 PM | Senate/ received fiscal note from Fiscal Analyst | SRECLFA | 
+2/28/2025 3:50 PM | Senate/ 2nd reading | SREAD2 | 
+2/28/2025 3:53 PM | Senate/ passed 2nd reading | SPASS2 | 25-0-4
+3/3/2025 10:54 AM | Senate/ 3rd reading | SREAD3 | 
+3/3/2025 10:57 AM | Senate/ passed 3rd reading | SPASS3 | 24-0-5
+3/3/2025 10:57 AM | Senate/ to House | STOHOU | 
+3/3/2025 12:19 PM | House/ received from Senate | HRECS | 
+3/3/2025 2:23 PM | House/ 1st reading (Introduced) | HREAD1 | 
+3/3/2025 3:23 PM | House/ to standing committee | HTOSTAND | 
+3/4/2025 5:32 PM | House Comm - Favorable Recommendation | HCAFAV | 8-0-3
+3/4/2025 9:21 PM | House/ committee report favorable | HCR | 
+3/4/2025 9:21 PM | House/ return to Rules due to fiscal impact | HRETRULFIS | 
+3/5/2025 11:45 AM | House/ Rules to 3rd Reading Calendar | HRUL3RD | 
+3/5/2025 11:45 AM | House/ 2nd reading | HREAD2 | 
+3/5/2025 3:14 PM | House/ 3rd reading | HREAD3 | 
+3/5/2025 3:17 PM | House/ passed 3rd reading | HPASS3 | 74-0-1
+3/5/2025 3:17 PM | House/ signed by Speaker/ returned to Senate | HSIGNS | 
+3/5/2025 3:17 PM | House/ to Senate | HTOSEN | 
+3/5/2025 6:01 PM | Senate/ received from House | SRECH | 
+3/5/2025 6:01 PM | Senate/ signed by President/ sent for enrolling | SSIGN | 
+3/6/2025 7:14 AM | Bill Received from Senate for Enrolling | LRGCRS | 
+3/6/2025 7:14 AM | Draft of Enrolled Bill Prepared | LENROLL | 
+3/7/2025 10:04 AM | Enrolled Bill Returned to House or Senate | LPASSREV | 
+3/7/2025 10:05 AM | Senate/ enrolled bill to Printing | STOPRINTEN | 
+3/13/2025 9:50 AM | Senate/ received enrolled bill from Printing | SRECENRP | 
+3/13/2025 9:50 AM | Senate/ to Governor | STOGOV | 
+3/25/2025 7:58 PM | Governor Signed | GSIGN | 

@@ -19,7 +19,7 @@ search_terms:
 
 ## Summary
 
-A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or the judiciary, a state-funded higher or public education institution, or a political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.
+A participant, the Office and a relevant agency or eligible governmental entity may enter a regulatory mitigation agreement (RMA) or joint interpretation agreement (JIA). An RMA can allow a specified use subject to a cure period or similar remedy, reduced civil fines, or other tailored terms. Each participant remains subject to requirements outside any express waiver or modification. A JIA clarifies how a provision of state law or rule applies to the technology. The initial demonstration period may last up to twelve months. The participant may request a twelve-month extension at least thirty days before expiry, and the Office must grant or deny the request before expiry. The Office may grant up to two extensions. Counterparties include OAIP plus the relevant state agency (or the judiciary, a state-funded higher or public education institution, or a political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.
 
 ## What Counts
 

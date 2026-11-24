@@ -65,7 +65,10 @@ test('SB226 R1 native IDs, metadata, mapping and R3 civil/criminal content are u
     const { obligation_qualification, ...originalMapping } = mapping;
     assert.equal(admission.digest(originalMapping), '4a99aeb263d40980aeb761d4572a047a19b10322e712878efd9d8c5f3bdda649');
     assert.deepEqual(mapping.obligations, [...slugs, 'ai-defense-elimination']);
-    assert.equal(Object.hasOwn(receipts.records['data/examples/mapping/index.yml'].supersedes.receipt.units, 'entry:sb226-disclosure-and-ai-defense'), false);
+    const lineage = admission.receiptLineage(receipts.records['data/examples/mapping/index.yml']);
+    const bridge = lineage.find(entry => Object.hasOwn(entry.units, 'entry:sb226-disclosure-and-ai-defense'));
+    assert.ok(bridge);
+    assert.equal(Object.hasOwn(bridge.supersedes.receipt.units, 'entry:sb226-disclosure-and-ai-defense'), false);
 });
 
 test('SB226 R1 native request content is conjunctive and retains supplier/transaction/request qualifiers', () => {

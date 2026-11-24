@@ -1,0 +1,43 @@
+HB0320 | Utah Legislature action history
+2026-01-22 08:18:03.063 | Bill Numbered but not Distributed | LNUMBER | 
+2026-01-22 08:18:03.063 | Numbered Bill Publicly Distributed | LLFA | 
+2026-01-22 08:18:06.847 | LFA/ bill assigned to staff for fiscal analysis for HB0320 | LFA1 | 
+2026-01-22 08:18:06.847 | LFA/ bill sent to agencies for fiscal input for HB0320 | LFA2 | 
+2026-01-22 10:15:56.000 | House/ received bill from Legislative Research | HRECLRGC | 
+2026-01-22 11:20:52.000 | House/ 1st reading (Introduced) | HREAD1 | 
+2026-01-27 12:16:09.471 | LFA/ fiscal note sent to sponsor for HB0320 | LFA3 | 
+2026-01-27 12:16:10.769 | LFA/ fiscal note publicly available for HB0320 | LFA4 | 
+2026-01-28 10:10:11.000 | House/ received fiscal note from Fiscal Analyst | HRECLFA | 
+2026-02-02 12:10:40.000 | House/ to standing committee | HTOSTAND | 
+2026-02-04 17:33:20.187 | House Comm - Amendment Recommendation | HCAAMD | 7-0-3
+2026-02-04 17:35:05.737 | House Comm - Favorable Recommendation | HCAFAV | 7-1-2
+2026-02-05 11:14:09.167 | House/ comm rpt/ amended | HCRAMD | 
+2026-02-05 11:14:10.167 | House/ 2nd reading | HREAD2 | 
+2026-02-17 10:51:26.677 | House/ 3rd reading | HREAD3 | 
+2026-02-17 10:54:40.567 | House/ passed 3rd reading | HPASS3 | 69-0-6
+2026-02-17 10:54:42.567 | House/ to Senate | HTOSEN | 
+2026-02-17 12:09:28.000 | Senate/ received from House | SRECH | 
+2026-02-17 14:28:42.000 | Senate/ 1st reading (Introduced) | SREAD1 | 
+2026-02-19 14:58:28.000 | Senate/ to standing committee | STOSTAND | 
+2026-02-23 08:10:41.443 | Senate Comm - Favorable Recommendation | SCAFAV | 6-0-1
+2026-02-23 14:36:33.830 | Senate/ committee report favorable | SCR | 
+2026-02-23 14:36:34.830 | Senate/ placed on 2nd Reading Calendar | SON2ND | 
+2026-02-26 11:25:22.493 | Senate/ 2nd reading | SREAD2 | 
+2026-02-26 11:25:38.927 | Senate/ circled | SCIRCLED | 
+2026-02-26 15:31:25.697 | Senate/ uncircled | SUNCIRCLED | 0-0-29
+2026-02-26 15:34:11.050 | Senate/ passed 2nd reading | SPASS2 | 26-0-3
+2026-02-27 11:43:37.347 | Senate/ 3rd reading | SREAD3 | 
+2026-02-27 11:43:53.947 | Senate/ circled | SCIRCLED | 0-0-29
+2026-02-27 14:29:04.277 | Senate/ uncircled | SUNCIRCLED | 0-0-29
+2026-02-27 14:31:27.063 | Senate/ passed 3rd reading | SPASS3 | 28-0-1
+2026-02-27 14:31:28.063 | Senate/ signed by President/ returned to House | SSIGNH | 
+2026-02-27 14:31:29.063 | Senate/ to House | STOHOU | 
+2026-03-02 09:27:53.000 | House/ received from Senate | HRECS | 
+2026-03-02 09:27:54.000 | House/ signed by Speaker/ sent for enrolling | HSIGN | 
+2026-03-03 08:09:05.747 | Bill Received from House for Enrolling | LRGCRH | 
+2026-03-03 08:09:07.697 | Draft of Enrolled Bill Prepared | LENROLL | 
+2026-03-06 12:26:26.867 | Enrolled Bill Returned to House or Senate | LPASSREV | 
+2026-03-06 12:26:29.787 | House/ enrolled bill to Printing | HTOPRINTEN | 
+2026-03-11 13:17:24.000 | House/ received enrolled bill from Printing | HRECENRP | 
+2026-03-11 13:17:26.000 | House/ to Governor | HTOGOV | 
+2026-03-18 10:13:00.000 | Governor Signed | GSIGN | 

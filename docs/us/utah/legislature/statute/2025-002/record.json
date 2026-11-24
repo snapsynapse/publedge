@@ -30,7 +30,7 @@
     "intended_authority": null,
     "intended_authority_url": null,
     "issuance_event": "gist:Enactment",
-    "enacted": "2025-03-26",
+    "enacted": "2025-03-25",
     "effective": "2025-05-07",
     "official_url": "https://le.utah.gov/~2025/bills/static/HB0452.html",
     "obligation_kind": [
@@ -77,13 +77,13 @@
     "timeline": [
       {
         "milestone": "Introduced",
-        "date": "2025-02",
-        "notes": "2025 General Session (month unconfirmed: not in the enrolled copy)"
+        "date": "2025-02-10",
+        "notes": "First reading in the chamber of origin"
       },
       {
         "milestone": "Governor Signed",
-        "date": "2025-03-26",
-        "notes": "Unconfirmed: not in the enrolled copy; bill status page not retained"
+        "date": "2025-03-25",
+        "notes": "Governor’s bill register and legislative action history (GSIGN)"
       },
       {
         "milestone": "Effective",

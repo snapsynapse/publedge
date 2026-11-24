@@ -24,7 +24,7 @@
     "issued_by": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-      "ref": "https://commerce.utah.gov/ai/learning-lab/"
+      "ref": "https://commerce.utah.gov/ai/"
     },
     "author_or_proponent": null,
     "intended_authority": null,
@@ -130,7 +130,7 @@
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah Office of Artificial Intelligence Policy (OAIP)",
-      "url": "https://commerce.utah.gov/ai/learning-lab/"
+      "url": "https://commerce.utah.gov/ai/"
     },
     "about": [
       {

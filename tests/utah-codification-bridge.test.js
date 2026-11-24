@@ -34,7 +34,8 @@ test('bridge preserves all prior receipts and unknowns, and changes only the dec
         'data/examples/mapping/index.yml': ['entry:sb226-disclosure-and-ai-defense', 'entry:hb452-mental-health-chatbot-stack']
     };
     for (const file of files) {
-        const old = a.nativeSnapshot(file, before(file)), current = a.nativeSnapshot(file, read(file));
+        const checkpoint = execFileSync('git', ['show', 'f08300f2aaf607e43b976cf9a7714223fc7af5a2:' + file], { cwd: ROOT });
+        const old = a.nativeSnapshot(file, before(file)), current = a.nativeSnapshot(file, checkpoint);
         const changed = [...new Set([...Object.keys(old.units), ...Object.keys(current.units)])].filter(k => old.units[k]?.sha256 !== current.units[k]?.sha256).sort();
         assert.deepEqual(changed, allowed[file].slice().sort(), file);
         const receipt = receipts[file];

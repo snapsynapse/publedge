@@ -83,7 +83,7 @@ files:
 
   - path: data/examples/authorities/utah-oaip.md
     role: authority
-    hash: sha256:e3f8e81c7f83fff77637ea432e5c3e4830515ed35b860d4055f69879e15308ed
+    hash: sha256:71f7ea8ff027e2527ea41ad131de1c7f0b203bb1ef73d96b84ebab328eaa85e9
     note: data/examples/authorities/utah-oaip.md
 
   - path: .github/workflows/build.yml
@@ -163,7 +163,7 @@ files:
 
   - path: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
     role: instrument
-    hash: sha256:24d69be9993bc5348232a933e143d8eced74e7a8df6983ac38ea6f2094fcbbd0
+    hash: sha256:40a7ba2708b6eb5eea01dd63ad167b208cd1c7e2b3ead8ba9526c0dfb2412e53
     note: data/examples/instruments/us-co-legislature-statute-2026-sb26-189.md
 
   - path: data/examples/instruments/us-irs-chief-counsel-plr-2025-001.md
@@ -188,22 +188,22 @@ files:
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
     role: instrument
-    hash: sha256:99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd
+    hash: sha256:0741ed0826049b6e964c14da28a4de4353efef05e8ecaeb9fc101494d490c42f
     note: data/examples/instruments/us-ut-legislature-statute-2025-hb452.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
     role: instrument
-    hash: sha256:dfeee57a0d8309db8fbe02fa4f24d25630f79beb8137bf9673bd2bac322d9eb2
+    hash: sha256:82ede80d1aabbe6f774fb958d1cd4f97fa00d9aee28b4b1f8e3b074c0823df5e
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb226.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
     role: instrument
-    hash: sha256:6de7ddf6525087ffe3f1e32b40dac48954dc0cfe7eceabd5e5717f24307a9a36
+    hash: sha256:ae1f5e11e45c39b495f16b8f00e7c1d2aaba6df9574069c02a648033c7488271
     note: data/examples/instruments/us-ut-legislature-statute-2025-sb332.md
 
   - path: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
     role: instrument
-    hash: sha256:01797df3b03a8a6d33869d8a1ed4a0575acea137ea8b84598087d3a0fca8008d
+    hash: sha256:e098c9734444cebd99463dc8f8487fa27906b2001c6f6b7781237480b7443238
     note: data/examples/instruments/us-ut-legislature-statute-2026-hb320.md
 
   - path: data/examples/instruments/us-ut-oaip-jia-2026-001.md
@@ -218,7 +218,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-001.md
     role: instrument
-    hash: sha256:ff5744347015a193f20cdec64771d4f2b77f54fb8f2f323bd6e8736e89ad2128
+    hash: sha256:cea33d4b431ccf9d25c04c389407d68fb2f900fcf16b613be66be6c4d0b8e124
     note: data/examples/instruments/us-ut-oaip-rma-2025-001.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
@@ -253,37 +253,37 @@ files:
 
   - path: data/examples/mapping/index.yml
     role: mapping
-    hash: sha256:d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a
+    hash: sha256:a46cb82e795a612a7f614711eb58883b7b865444710fefe7362f4908d10d520f
     note: data/examples/mapping/index.yml
 
   - path: data/examples/obligations/admt-60-day-cure-period.md
     role: obligation
-    hash: sha256:3ae66773fe8227d53bc56ec437490fc69995b36fff76a07e61b185566b05d369
+    hash: sha256:a0e9741286007db9a4a0e803a8f0a5c5ebc05b4064debfa8e62832bb26cc1a03
     note: data/examples/obligations/admt-60-day-cure-period.md
 
   - path: data/examples/obligations/admt-correction-and-human-review.md
     role: obligation
-    hash: sha256:f486f4a6477fb599d903b35b1f4126e250e987990c8adb9870d5daf33197da2d
+    hash: sha256:07871920289edcf54bd0023c4eda66774bb9d86efb618ab5c50a9febcf125b3e
     note: data/examples/obligations/admt-correction-and-human-review.md
 
   - path: data/examples/obligations/admt-deployer-3-year-record-retention.md
     role: obligation
-    hash: sha256:c6b1f8b63111fb7a32fbfa5ecafb32d4a1504b774ad614c79930e868883ed301
+    hash: sha256:1c1a8cdcc557cd10f52b41ff29992f7d3ff760c29abb2a7059b8f548a1d18c0e
     note: data/examples/obligations/admt-deployer-3-year-record-retention.md
 
   - path: data/examples/obligations/admt-deployer-pre-decision-notice.md
     role: obligation
-    hash: sha256:5c9b963aa84427ff4564a45d603d2c74ec305ab43819342d6e811e6f41e474bf
+    hash: sha256:2ae044b7336fc4bdbf95d040b9b73d23d9b244285bc7076cfa82be64c60e1eed
     note: data/examples/obligations/admt-deployer-pre-decision-notice.md
 
   - path: data/examples/obligations/admt-developer-documentation-to-deployer.md
     role: obligation
-    hash: sha256:94df66d03bc7071b6b764053a3c7e6f5ec0ac7d81beb072e2ee152a319e3e31c
+    hash: sha256:7d066fbbb654bdaffdd083a86cbf6cd3f6baedd8d1cd9ae4ce191ddd7c998e4e
     note: data/examples/obligations/admt-developer-documentation-to-deployer.md
 
   - path: data/examples/obligations/admt-post-adverse-explanation-30-days.md
     role: obligation
-    hash: sha256:5a92a40bd35daf97ddedceee5e9d2f34109dccc5dd40fdcbc670c0d6ce3f1bdd
+    hash: sha256:3a3c5e7148adb4d40174fb1a7027e500cdc6c50ad11de7652536fc7fb6ef9041
     note: data/examples/obligations/admt-post-adverse-explanation-30-days.md
 
   - path: data/examples/obligations/ai-authorized-rx-renewal.md
@@ -293,7 +293,7 @@ files:
 
   - path: data/examples/obligations/ai-defense-elimination.md
     role: obligation
-    hash: sha256:468570e53f14e866a16aec2cc9c09cc3eb82924e025d2e4d02d912d8e479c3f7
+    hash: sha256:549a9c79d374ee0458481351fed351b770be258f7040186cecc8a3f10eeb2486
     note: data/examples/obligations/ai-defense-elimination.md
 
   - path: data/examples/obligations/cfpb-pay-to-pay-fee-prohibited.md
@@ -383,7 +383,7 @@ files:
 
   - path: data/examples/obligations/learning-lab-agreement-participation.md
     role: obligation
-    hash: sha256:c7f07d610d5c3bb5aa942d5d80fb3dad563ed73529770ed89888a4fca1d537eb
+    hash: sha256:aa924e1c63baed1db9902a427d2b39fa739116ea870079529c9f472f17cc30f4
     note: data/examples/obligations/learning-lab-agreement-participation.md
 
   - path: data/examples/obligations/named-prescriber-enforcement-forborne.md
@@ -393,7 +393,7 @@ files:
 
   - path: data/examples/obligations/rma-data-security-63a-19-102.md
     role: obligation
-    hash: sha256:47742ea984d63c4ae681769ea4d67af7c307e03c45d8596140c1869cb23c0bce
+    hash: sha256:ba08c0b9e0f6204bb36d4c8333815ae84796b3d62ad85d8349ea66332f9e6c50
     note: data/examples/obligations/rma-data-security-63a-19-102.md
 
   - path: data/examples/obligations/rma-end-of-term-report.md
@@ -413,12 +413,12 @@ files:
 
   - path: data/examples/obligations/rma-monthly-report-to-oaip.md
     role: obligation
-    hash: sha256:931f6cb88887afd010f86d2c609a115504274d427da7599ccecc31a584fa8b31
+    hash: sha256:ff21d79dd69cf938c9f76eacbd7e9fd1febcf9dbeca321e552e4be486c403039
     note: data/examples/obligations/rma-monthly-report-to-oaip.md
 
   - path: data/examples/obligations/rma-no-advertising-reference.md
     role: obligation
-    hash: sha256:cfd94c1c80489e8effb883823a7ad555d7d83ca431e61d6eab9330c4558a81f2
+    hash: sha256:c8081587d37f0a37ef53fa6a7fc30500aa964e2055620d266bb58a94b58bdc19
     note: data/examples/obligations/rma-no-advertising-reference.md
 
   - path: data/examples/obligations/sec-reg-d-506c-verification-safe-harbor.md
@@ -558,7 +558,7 @@ files:
 
   - path: scripts/check-source-admission.js
     role: tooling
-    hash: sha256:76a0e7590074fbe66084d92bbe3933fca6987f67fb2b611e7bacfbb2304db755
+    hash: sha256:d9fcde457a28bc90a54e9ffb458e553e999d918fc7eb7bfc922ffd266f381a82
     note: Source admission gate and EAL-compatible report
 
   - path: scripts/lib/source-admission.js
@@ -1058,7 +1058,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:fcae401921d11d21ae2e76d8163d979215e84c7dae28c452a5562b5825b59f94
+    hash: sha256:f79377ed83f70b0be60267b2855ca8f9973f6de68cff32b7d84915a4ba38af72
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js
@@ -1078,7 +1078,7 @@ files:
 
   - path: tests/of-evidence-inputs.test.js
     role: code
-    hash: sha256:41af23e77dcc92bb62fc073d57330708b0478d0e8451d70b92c6e7a1224d45ad
+    hash: sha256:ed1816f080cbdefcdd846c5e7d05191c4340e79b24c2735e6016f4abce6d5d4e
     note: Per-kind native evidence input and review-boundary regressions
 
   - path: tests/colorado-order24.test.js
@@ -1188,7 +1188,7 @@ files:
 
   - path: tests/sb226-r1.test.js
     role: code
-    hash: sha256:734670deafc3c073bdc8d946a41418ecf91441d500d3fe98f283e2d48fd541e5
+    hash: sha256:667e980dd56c10ea4dfd912eff3ffda9597c40a19322bea881adf76f758d730b
     note: SB226 R1 retained-source and admission regressions
 
   - path: ops/evidence/sb226-r1-native-delta-2026-10-02.diff

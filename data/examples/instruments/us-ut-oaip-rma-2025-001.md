@@ -12,7 +12,7 @@ authority: utah-oaip
 issued_by:
   "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment"
   name: "Utah Office of Artificial Intelligence Policy (OAIP)"
-  ref: "https://commerce.utah.gov/ai/learning-lab/"
+  ref: "https://commerce.utah.gov/ai/"
 issuance_event: gist:Determination
 enacted: 2025-05-31
 effective: 2025-05-31

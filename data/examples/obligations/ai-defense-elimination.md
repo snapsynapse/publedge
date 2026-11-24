@@ -18,13 +18,12 @@ search_terms:
 
 ## Summary
 
-Utah removed "the AI did it" as a defense in both civil and criminal contexts. A principal who uses, prompts, or acts through generative AI remains liable for the resulting statement or act. The criminal rule (§76-2-107, SB 149, effective 2024-05-01) and the civil mirror together eliminate the doctrine across Utah consumer-protection and criminal law. The civil rule was first enacted at §13-2-12(2) (SB 149, effective 2024-05-01) and re-sited at §13-75-102 (SB 226, effective 2025-05-07).
+For a violation of a statute administered and enforced by the Utah Division of Consumer Protection under §13-2-102, §13-77-102 precludes a defense that generative AI made the statement, undertook the act, or furthered the violation. SB 149 first enacted the civil provision at §13-2-12(2), and enrolled SB 226 placed it at §13-75-102. Criminal §76-2-107(2) separately provides that an actor may be found guilty when the actor commits an offense with generative AI’s aid or intentionally prompts or otherwise causes generative AI to commit it.
 
 ## What Counts
 
-- For a violation of a statute administered and enforced by the division under §13-2-102, it is not a defense that GenAI made the violative statement, undertook the violative act, or was used in furtherance of the violation (§13-77-102)
-- A criminal defendant may be convicted where the offense was committed "with the aid of" GenAI or the defendant "intentionally prompted" GenAI to commit the offense
-- Applies regardless of whether the AI output was foreseeable, if the defendant is a principal who deployed or prompted the system
+- A violative act, statement, or use in furtherance of a violation within §13-77-102 and §13-2-102.
+- An underlying offense satisfying either condition in §76-2-107(2).
 
 ## What Does Not Count
 

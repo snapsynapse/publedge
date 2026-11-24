@@ -17,22 +17,19 @@ search_terms:
 
 ## Summary
 
-Beginning January 1, 2027, within 30 days of an adverse consequential decision made using covered automated decision-making technology, the deployer must give the consumer a plain-language explanation covering the AI's role in the decision, its degree of contribution, the types of data processed, and the sources of that data.
+For consequential decisions on or after January 1, 2027, a deployer using covered ADMT to materially influence a decision with an adverse outcome must provide the specified disclosure within thirty days after making the decision.
 
 ## What Counts
 
-- Explanation delivered inside the 30-day window running from the adverse decision
-- Plain-language account of what the ADMT contributed and how much it drove the outcome
-- Identification of the categories of personal data processed
-- Identification of where that data came from
+- Provide a plain-language description of the decision and the role covered ADMT played.
+- Provide instructions and a simple process to request additional system and input information, subject to the developer-information qualification in subsection (3)(b).
+- Explain §6-1-1705 consumer rights and how to exercise them.
 
 ## What Does Not Count
 
-- Explanation supplied only on the consumer's second or escalated request
-- A conclusory statement that the decision "was based on your profile"
-- Technical model documentation offered in place of a plain-language explanation
-- Omitting degree of contribution while describing only the data used
+- Waiting for a request before giving the initial disclosure.
+- Treating the request process as an obligation to deliver every requestable item automatically.
 
 ## Statute Anchors
 
-- C.R.S. §6-1-1705 — Consumer rights; 30-day post-adverse explanation (as enacted by Colorado SB 26-189)
+- [Colorado SB 26-189 signed act, §6-1-1704(3)(a)–(c)](https://leg.colorado.gov/bill_files/116489/download)

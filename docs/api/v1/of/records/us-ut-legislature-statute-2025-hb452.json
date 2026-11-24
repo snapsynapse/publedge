@@ -15,7 +15,7 @@
   ],
   "kind": "statute",
   "normative_force": "binding",
-  "enacted": "2025-03-26",
+  "enacted": "2025-03-25",
   "effective": "2025-05-07",
   "lifecycle_status": "in-force",
   "operative_status": "operative",
@@ -59,16 +59,18 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2025-hb452.md",
-      "native_file_sha256": "99d12083513bca0a0a78c9e54d934ea87047fc3b1fd898ae0264f033b9d46dfd",
+      "native_file_sha256": "0741ed0826049b6e964c14da28a4de4353efef05e8ecaeb9fc101494d490c42f",
       "canonical_unit": null,
-      "canonical_sha256": "bbcc08b38384420f2450790f2ef7382cfd6f7f446339441eff25ec1c4c64e292",
+      "canonical_sha256": "85160ae28e4950f0af51b6de0b68d13dd8c41d74bf23ee6b99e534e6f1b27c4c",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "c8887d9176e6ccfda6cfbf8eccfa8abb829545b4e94164d086d25600e54f43a3",
+      "review_packet_sha256": "2f03c5cd0ee8a1c65e53037431c8a5698a1d5c48afa77cb98991a1a86f7c73f9",
       "retained_primary_sha256": [
         "3c15a70c135f047a5c8c06b0b9362f231ff87992a88991d40d65d1a17ddeead6",
         "4a46dfa2524603d0ae5b90b9941c755206c19b16b269add496f55191749c4e9f",
         "74f54badd0a701c49577a76df00b300b2b68e11d4b4de2048e39d362b2ae476a",
-        "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4"
+        "7a2457cbfbabdd3ec1a9286ba2c9a393298ce2b06c79960753374241c9e3c3b4",
+        "84c903205c397301f5f1bcab35415cfe34d40416ddf210ae9d5c1e3f69bcefb7",
+        "c5ca68b6f1c97dcd3b0f20914c85ab61cf5d6da338a7c2f2684d9a7b484b81a4"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [

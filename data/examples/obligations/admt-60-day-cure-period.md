@@ -17,20 +17,18 @@ search_terms:
 
 ## Summary
 
-Beginning January 1, 2027, violations of the Colorado ADMT Act are enforced by the Attorney General as deceptive trade practices, with no private right of action. A regulated party may cure an alleged violation within 60 days of notice; the cure route is available through January 1, 2030.
+When the Attorney General deems a cure possible, a developer or deployer receives notice before enforcement and has sixty days from receipt to cure. A demonstrably knowing or repeated violation need not receive a cure period. The cure subsection is repealed effective January 1, 2030. The Act creates no new private right of action.
 
 ## What Counts
 
-- Curing the alleged violation within 60 days of receiving notice from the Attorney General
-- Curing on or before January 1, 2030, while the cure route remains available
-- Remedying the underlying conduct, not only the documentation of it
+- Track the date of receipt of a notice issued under subsection (3)(a).
+- In an enforcement action a court may consider a cure after written notice as a mitigating factor under subsection (3)(d).
 
 ## What Does Not Count
 
-- Asserting cure after the 60-day window has closed
-- Relying on the cure route for conduct noticed after the January 1, 2030 sunset
-- Treating the cure period as a defense to a claim brought by a private plaintiff, which the Act does not authorize in the first place
+- Treating notice or cure as an unconditional entitlement.
+- Treating January 1, 2030 as an additional day of availability.
 
 ## Statute Anchors
 
-- C.R.S. §6-1-1706 — Attorney General enforcement; 60-day cure period; deceptive trade practices (as enacted by Colorado SB 26-189)
+- [Colorado SB 26-189 signed act, §6-1-1706(3)](https://leg.colorado.gov/bill_files/116489/download)

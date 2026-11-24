@@ -59,7 +59,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "a46cb82e795a612a7f614711eb58883b7b865444710fefe7362f4908d10d520f",
       "canonical_unit": "entry:cfpb-ao-2022-001-pay-to-pay",
       "canonical_sha256": "e20e0bcb6fa5c62776f77e650f41e715b8d0ce8458a1f56e75a3a91709f998e5",
       "admission_status": "legacy-unreviewed",
