@@ -13,6 +13,7 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 ### Added
 
 - Correct verification-guide metadata to claim source-to-current-manifest consistency, with a separate source/generated guide binding that preserves historical package/provider snapshots.
+- Add a synthetic RUML rulemap publication example (`reference/RUML-PUBLICATION-EXAMPLE.md`) over the reviewed Obligation-First RUML fixture, pinned by commit and file-byte hash. It keeps model publication, model approval and authoritative legal issuance as separate events and adds no record, field, Determination or tooling.
 - Add an offline Doctronic four-checks exercise using retained agreement clauses and explicit initial-term/current-status limits; no legal record or verification date is changed.
 
 - Add a frozen legacy-unreviewed admission inventory, per-change admission receipts bound to retained primary source bytes, a `check:admission` gate in `verify:ci`, `prepack`, and MCP server startup, and admission tests. No legacy record is certified as reviewed; admission evidence and retained bytes stay out of the generated site and the npm package.
