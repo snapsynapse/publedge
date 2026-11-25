@@ -134,7 +134,7 @@ test('invalid or absent evidence input digests fail before projection', () => {
     assert.throws(() => withEvidenceBoundary({ '@id': 'https://example.com/record' }, [{ ...valid, review_packet_sha256: '3'.repeat(64) }]), /Missing exact native evidence input/);
 });
 
-test('Legion commencement uncertainty stays with the Legion mapping and instrument', () => {
+test('Legion mapping qualifications stay local to its entry', () => {
     const mappingFile = 'data/examples/mapping/index.yml';
     const receipt = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/admission/receipts.json'))).records[mappingFile];
     const specificLimit = 'No written commencement date or status finding.';
@@ -151,7 +151,9 @@ test('Legion commencement uncertainty stays with the Legion mapping and instrume
         assert.deepEqual(mapping.unresolved, receipt.supersedes.receipt.unresolved);
         assert.ok(!draft['pub:source_review_unresolved'].includes(specificLimit));
     }
+});
 
+test('every Legion projection carries its instrument commencement uncertainty', () => {
     const legion = records.filter(record => record['pub:evidence_inputs'].some(input =>
         input.canonical_unit === 'entry:legion-rma-obligations'
     ));

@@ -15,16 +15,14 @@ const readAt = (file, revision = BASE) => execFileSync('git', ['show', `${revisi
 const names = ['data/examples/instruments/us-ut-legislature-statute-2025-hb452.md', 'data/examples/obligations/disclose-genai-on-first-session.md', 'data/examples/obligations/chatbot-data-no-third-party-sharing.md'];
 
 test('HB452 keeps human dates, native identities and unrelated clauses/mappings intact', () => {
-    for (const name of names) {
-        const current = parseFrontmatter(read(name)).frontmatter;
-        const historical = parseFrontmatter(readAt(name)).frontmatter;
-        if (name === names[0]) {
-            const { enacted: oldDate, ...oldFields } = historical;
-            const { enacted: correctedDate, ...currentFields } = current;
-            assert.equal(oldDate, '2025-03-26');
-            assert.equal(correctedDate, '2025-03-25');
-            assert.deepEqual(currentFields, oldFields);
-        } else assert.deepEqual(current, historical);
+    const [instrument, ...obligations] = names;
+    const { enacted: originalDate, ...originalFields } = parseFrontmatter(readAt(instrument)).frontmatter;
+    const { enacted: correctedDate, ...currentFields } = parseFrontmatter(read(instrument)).frontmatter;
+    assert.equal(originalDate, '2025-03-26');
+    assert.equal(correctedDate, '2025-03-25');
+    assert.deepEqual(currentFields, originalFields);
+    for (const file of obligations) {
+        assert.deepEqual(parseFrontmatter(read(file)).frontmatter, parseFrontmatter(readAt(file)).frontmatter, file);
     }
     const summary = text => text.split('## Summary\n\n')[1].split('\n### Talking Point')[0].split('\n');
     const unrelated = text => summary(text).filter(line => !line.startsWith('- **Pre-access') && !line.startsWith('- **Data protection'));
