@@ -433,7 +433,7 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:e73f656b879de283c37f83ec9b4466d889aa2c16a0761d22b32667182e3c14c0
+    hash: sha256:a97cd5022141d84a9f039cd993e335862ba57023cbbef44d645c584e28f3b30f
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
@@ -483,7 +483,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:9079af957cf1d503a9cb813fe0e13f8cc2e0274ee1e1c0e9e0224c3a3928b4b3
+    hash: sha256:cda231ef794901fd670f30f0ec3f99801a6dddca65d17089a5dc1f8250886b3c
     note: ROADMAP.md
 
   - path: INTENT.md
@@ -975,6 +975,11 @@ files:
     role: documentation
     hash: sha256:8aedc847991f8e6982ff220f253236bebbc68b0c2868cdb568a6c85da40f7944
     note: Offline qualified-time acceptance and remaining source-history boundary
+
+  - path: reference/RUML-PUBLICATION-EXAMPLE.md
+    role: documentation
+    hash: sha256:b959cc1c5a988136ec9f479529fa62818193b7041ce754c47221ac4b288c839a
+    note: Synthetic RUML rulemap publication example separating model publication, model approval and legal issuance
 
   - path: ops/MAINTENANCE-PILOT.md
     role: documentation
