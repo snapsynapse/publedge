@@ -36,14 +36,15 @@ test('bridge preserves all prior receipts and unknowns, and changes only the dec
     };
     for (const file of files) {
         const checkpoint = readAt(file, BEFORE_NOVEMBER_24_REFRESH);
-        const old = a.nativeSnapshot(file, readAt(file)), current = a.nativeSnapshot(file, checkpoint);
-        const changed = [...new Set([...Object.keys(old.units), ...Object.keys(current.units)])].filter(k => old.units[k]?.sha256 !== current.units[k]?.sha256).sort();
+        const baseline = a.nativeSnapshot(file, readAt(file));
+        const reviewed = a.nativeSnapshot(file, checkpoint);
+        const changed = [...new Set([...Object.keys(baseline.units), ...Object.keys(reviewed.units)])].filter(k => baseline.units[k]?.sha256 !== reviewed.units[k]?.sha256).sort();
         assert.deepEqual(changed, allowed[file].slice().sort(), file);
         const receipt = receipts[file];
         assert.equal(receipt.review.actor_type, 'agent');
         assert.equal(receipt.review.human_approved, undefined);
         for (const unknown of prior[file].unresolved) assert.ok(receipt.unresolved.includes(unknown), unknown);
-        for (const key of Object.keys(current.metadata)) if (key !== 'statute_anchors') assert.deepEqual(current.metadata[key], old.metadata[key], `${file}:${key}`);
+        for (const key of Object.keys(reviewed.metadata)) if (key !== 'statute_anchors') assert.deepEqual(reviewed.metadata[key], baseline.metadata[key], `${file}:${key}`);
     }
     assert.equal(a.hash(read('data/admission/sources/utah-sb226/SB0226-enrolled.pdf')), '279184eb1ee69adb7c9ada3e29763f9766b0705c87770b6330c13bada07c60e8');
     assert.equal(a.hash(read('data/admission/sources/utah-sb226/SB0226-enrolled.txt')), '088cb7315787b8f1a2c999ab3cdf9527b10eae034d032c7912ad6530441f08d7');

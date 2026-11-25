@@ -19,9 +19,11 @@ test('HB452 keeps human dates, native identities and unrelated clauses/mappings 
         const current = parseFrontmatter(read(name)).frontmatter;
         const historical = parseFrontmatter(readAt(name)).frontmatter;
         if (name === names[0]) {
-            assert.equal(historical.enacted, '2025-03-26');
-            assert.equal(current.enacted, '2025-03-25');
-            assert.deepEqual({ ...current, enacted: historical.enacted }, historical);
+            const { enacted: oldDate, ...oldFields } = historical;
+            const { enacted: correctedDate, ...currentFields } = current;
+            assert.equal(oldDate, '2025-03-26');
+            assert.equal(correctedDate, '2025-03-25');
+            assert.deepEqual(currentFields, oldFields);
         } else assert.deepEqual(current, historical);
     }
     const summary = text => text.split('## Summary\n\n')[1].split('\n### Talking Point')[0].split('\n');
