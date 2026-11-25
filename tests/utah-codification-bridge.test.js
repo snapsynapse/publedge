@@ -6,12 +6,13 @@ const path = require('node:path');
 const { execFileSync } = require('node:child_process');
 const a = require('../scripts/lib/source-admission');
 const ROOT = path.join(__dirname, '..');
+const BEFORE_NOVEMBER_24_REFRESH = 'f08300f2aaf607e43b976cf9a7714223fc7af5a2';
 const BASE = 'd3ee6947a0f479d93f614c38b6cbe8ecc634609b';
 const read = f => fs.readFileSync(path.join(ROOT, f));
-const before = f => execFileSync('git', ['show', `${BASE}:${f}`], { cwd: ROOT });
+const readAt = (f, revision = BASE) => execFileSync('git', ['show', `${revision}:${f}`], { cwd: ROOT });
 const report = JSON.parse(read('ops/evidence/utah-codification-unit-dispositions-2026-10-15.json'));
 const receipts = JSON.parse(read('data/admission/receipts.json')).records;
-const prior = JSON.parse(before('data/admission/receipts.json')).records;
+const prior = JSON.parse(readAt('data/admission/receipts.json')).records;
 const files = report.records.map(r => r.file);
 
 test('bridge preserves all prior receipts and unknowns, and changes only the declared native units', () => {
@@ -34,8 +35,8 @@ test('bridge preserves all prior receipts and unknowns, and changes only the dec
         'data/examples/mapping/index.yml': ['entry:sb226-disclosure-and-ai-defense', 'entry:hb452-mental-health-chatbot-stack']
     };
     for (const file of files) {
-        const checkpoint = execFileSync('git', ['show', 'f08300f2aaf607e43b976cf9a7714223fc7af5a2:' + file], { cwd: ROOT });
-        const old = a.nativeSnapshot(file, before(file)), current = a.nativeSnapshot(file, checkpoint);
+        const checkpoint = readAt(file, BEFORE_NOVEMBER_24_REFRESH);
+        const old = a.nativeSnapshot(file, readAt(file)), current = a.nativeSnapshot(file, checkpoint);
         const changed = [...new Set([...Object.keys(old.units), ...Object.keys(current.units)])].filter(k => old.units[k]?.sha256 !== current.units[k]?.sha256).sort();
         assert.deepEqual(changed, allowed[file].slice().sort(), file);
         const receipt = receipts[file];
