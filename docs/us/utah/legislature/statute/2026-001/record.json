@@ -30,7 +30,7 @@
     "intended_authority": null,
     "intended_authority_url": null,
     "issuance_event": "gist:Enactment",
-    "enacted": "2026-03-19",
+    "enacted": "2026-03-18",
     "effective": "2026-05-06",
     "official_url": "https://le.utah.gov/~2026/bills/static/HB0320.html",
     "obligation_kind": [
@@ -77,13 +77,13 @@
     "timeline": [
       {
         "milestone": "Introduced",
-        "date": "2026-01",
-        "notes": "2026 General Session (month unconfirmed: not in the enrolled copy)"
+        "date": "2026-01-22",
+        "notes": "First reading in the chamber of origin"
       },
       {
         "milestone": "Governor Signed",
-        "date": "2026-03-19",
-        "notes": "Unconfirmed: not in the enrolled copy; bill status page not retained"
+        "date": "2026-03-18",
+        "notes": "Governor’s bill register and legislative action history (GSIGN)"
       },
       {
         "milestone": "Effective",
@@ -92,8 +92,8 @@
       },
       {
         "milestone": "Annual OAIP report due",
-        "date": "2026-11-30",
-        "notes": "Before Nov 30; first due date after HB 320 added executed RMAs and JIAs to the report (§13-72-201(3)(d)(iii)); filing history unverified"
+        "date": "Before 2026-11-30",
+        "notes": "Statutory deadline is before November 30 (§13-72-201(3)(d)). The September 16 committee highlights record receipt of a Learning Lab report. The highlights do not establish compliance with every reporting element."
       }
     ],
     "source_documents": []

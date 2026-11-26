@@ -43,7 +43,8 @@
   "pub:source_review_unresolved": [
     "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
     "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-    "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
+    "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
+    "No written commencement date or status finding."
   ],
   "pub:source_review_state": "known-and-unknown",
   "pub:evidence_inputs": [
@@ -71,14 +72,18 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "0d2f48f2501067771f86556c779dbeaa433bc4d53741f50811185c49f8597d7f",
       "canonical_unit": "entry:legion-rma-obligations",
-      "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "5ab4aab4e5f494c2a87fbcabfc0b83f0526d6a560086397e2dc2cc5caed23c31",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "cc34404c9036e5987c599f22264bab9fa6c16a2b9f33883e0b898333adbfc496",
+      "retained_primary_sha256": [
+        "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "No written commencement date or status finding."
+      ]
     },
     {
       "kind": "obligation-definition",

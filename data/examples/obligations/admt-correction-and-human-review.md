@@ -17,22 +17,18 @@ search_terms:
 
 ## Summary
 
-Beginning January 1, 2027, consumers subject to an adverse consequential decision made using covered automated decision-making technology may correct inaccurate personal data used in that decision and may request meaningful human review and reconsideration of the outcome. The deployer must provide both paths.
+On request after an adverse outcome from a consequential decision materially influenced by covered ADMT, the deployer provides instructions for requesting personal data and correcting factually incorrect or materially inaccurate personal data used in the decision. It provides an opportunity for meaningful human review and reconsideration to the extent commercially reasonable. This applies to consequential decisions on or after January 1, 2027.
 
 ## What Counts
 
-- A working route for the consumer to submit corrections to personal data used in the decision
-- Reconsideration of the decision once corrected data is supplied
-- Review by a human with authority to change the outcome
-- Communicating the result of the reconsideration to the consumer
+- Provide the applicable instructions and an opportunity for review on consumer request.
+- Covered educational deployers may use existing FERPA processes under the conditions in subsection (2).
 
 ## What Does Not Count
 
-- Human review by a reviewer who cannot overturn the automated outcome
-- Re-running the same model on the same data and reporting the same result as "review"
-- Accepting a correction into a customer record without reconsidering the decision
-- Conditioning review on the consumer waiving other rights
+- Treating the right as requiring correction of opinions, predictions, scores, or protected evaluations.
+- Treating human review as unconditional in every case.
 
 ## Statute Anchors
 
-- C.R.S. §6-1-1705 — Consumer rights; data correction; human review and reconsideration (as enacted by Colorado SB 26-189)
+- [Colorado SB 26-189 signed act, §6-1-1705(1)–(2)](https://leg.colorado.gov/bill_files/116489/download)

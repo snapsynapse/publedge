@@ -8,26 +8,36 @@ const { parseFrontmatter } = require('../scripts/lib/parse');
 const { parseMappingIndex } = require('../scripts/lib/mapping');
 const admission = require('../scripts/lib/source-admission');
 const ROOT = path.join(__dirname, '..');
+const BEFORE_NOVEMBER_24_REFRESH = 'f08300f2aaf607e43b976cf9a7714223fc7af5a2';
 const BASE = 'ef3ce5fae6aa4e8c255d1a21a7c0c04a859ca03e';
 const read = file => fs.readFileSync(path.join(ROOT, file), 'utf8');
-const before = file => execFileSync('git', ['show', `${BASE}:${file}`], { cwd: ROOT, encoding: 'utf8' });
+const readAt = (file, revision = BASE) => execFileSync('git', ['show', `${revision}:${file}`], { cwd: ROOT, encoding: 'utf8' });
 const names = ['data/examples/instruments/us-ut-legislature-statute-2025-hb452.md', 'data/examples/obligations/disclose-genai-on-first-session.md', 'data/examples/obligations/chatbot-data-no-third-party-sharing.md'];
 
 test('HB452 keeps human dates, native identities and unrelated clauses/mappings intact', () => {
-    for (const name of names) assert.deepEqual(parseFrontmatter(read(name)).frontmatter, parseFrontmatter(before(name)).frontmatter);
+    const [instrument, ...obligations] = names;
+    const { enacted: originalDate, ...originalFields } = parseFrontmatter(readAt(instrument)).frontmatter;
+    const { enacted: correctedDate, ...currentFields } = parseFrontmatter(read(instrument)).frontmatter;
+    assert.equal(originalDate, '2025-03-26');
+    assert.equal(correctedDate, '2025-03-25');
+    assert.deepEqual(currentFields, originalFields);
+    for (const file of obligations) {
+        assert.deepEqual(parseFrontmatter(read(file)).frontmatter, parseFrontmatter(readAt(file)).frontmatter, file);
+    }
     const summary = text => text.split('## Summary\n\n')[1].split('\n### Talking Point')[0].split('\n');
     const unrelated = text => summary(text).filter(line => !line.startsWith('- **Pre-access') && !line.startsWith('- **Data protection'));
-    assert.deepEqual(unrelated(read(names[0])), unrelated(before(names[0])));
-    assert.equal(read('data/examples/obligations/chatbot-safety-policy-filing.md'), before('data/examples/obligations/chatbot-safety-policy-filing.md'));
+    assert.deepEqual(unrelated(read(names[0])), unrelated(readAt(names[0])));
+    assert.equal(read('data/examples/obligations/chatbot-safety-policy-filing.md'), readAt('data/examples/obligations/chatbot-safety-policy-filing.md'));
     const mapping = 'data/examples/mapping/index.yml';
-    const current = parseMappingIndex(read(mapping)), old = parseMappingIndex(before(mapping));
+    const checkpoint = readAt(mapping, BEFORE_NOVEMBER_24_REFRESH);
+    const current = parseMappingIndex(checkpoint), old = parseMappingIndex(readAt(mapping));
     assert.deepEqual(current.map(({ obligation_qualification, ...entry }) => entry), old.map(({ obligation_qualification, ...entry }) => entry));
     assert.deepEqual(current.filter(entry => !['hb452-mental-health-chatbot-stack', 'sb226-disclosure-and-ai-defense'].includes(entry.id)), old.filter(entry => !['hb452-mental-health-chatbot-stack', 'sb226-disclosure-and-ai-defense'].includes(entry.id)));
 });
 
 test('HB452 new reviews retain exact predecessors and frozen originals', () => {
     const current = JSON.parse(read('data/admission/receipts.json')).records;
-    const old = JSON.parse(before('data/admission/receipts.json')).records;
+    const old = JSON.parse(readAt('data/admission/receipts.json')).records;
     for (const [file, receipt] of Object.entries(old)) {
         assert.ok(admission.receiptLineage(current[file]).some(entry => admission.digest(entry) === admission.digest(receipt)), file);
         if (![names[0], names[1], 'data/examples/mapping/index.yml'].includes(file)) {

@@ -15,14 +15,12 @@ search_terms:
 
 ## Summary
 
-An RMA participant must implement data security measures conforming to Utah Code §63A-19-102 and maintain a cybersecurity framework that is updated on an ongoing basis to address emerging threats and vulnerabilities. No statutory or common-law cybersecurity obligation is waived by the RMA.
+ElizaChat and Dentacor expressly incorporate Utah Code §63A-19-102. Doctronic applies its policies as if the participant were a governmental entity. Legion instead sets data-security obligations by reference to its Proposal and Office requirements, with reasonable safeguards and general cybersecurity practices under §6.F. Use the agreement governing the participant to identify the applicable baseline.
 
 ## What Counts
 
-- Written data security measures aligned with §63A-19-102 baselines
-- Reasonable protections against data leaks
-- Ongoing review and update of the cybersecurity framework against emerging threats
-- Continued compliance with all non-waived statutory and common-law cybersecurity obligations
+- For ElizaChat, Dentacor, and Doctronic, apply the §63A-19-102 terms of the relevant signed agreement.
+- For Legion, apply the privacy and safe-data-use terms in §6.E and the cybersecurity safeguards in §6.F.
 
 ## What Does Not Count
 
@@ -32,5 +30,4 @@ An RMA participant must implement data security measures conforming to Utah Code
 
 ## Statute Anchors
 
-- Utah Code §63A-19-102 — State data security baseline referenced by RMAs
-- Agreement-specific data security section
+- ElizaChat VI.E–F, Dentacor §6.E–F, Doctronic §6.E–F, and Legion §6.E–F.

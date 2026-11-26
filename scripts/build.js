@@ -2334,6 +2334,8 @@ function build() {
         const unitReview = unitKey ? unitReviews[unitKey] : null;
         const reviewed = unitKey ? Boolean(unitReview) : state.admission_status === 'reviewed-changes';
         const evidenceRefs = unitKey ? (unitReview ? [unitReview] : []) : Object.values(unitReviews);
+        // New mapping reviews can identify the uncertainties specific to an entry.
+        const unresolved = reviewed ? (unitReview?.review.unresolved ?? receipt.unresolved) : null;
         const retainedPrimary = reviewed ? [...new Set(evidenceRefs.flatMap(({ review, receipt: owner }) => (review.evidence || []).flatMap(reference => {
             const evidence = typeof reference === 'string' ? owner.evidence?.[reference] : reference;
             return evidence?.original?.sha256 ? [evidence.original.sha256] : [];
@@ -2347,8 +2349,8 @@ function build() {
             admission_status: reviewed ? 'reviewed-changes' : 'legacy-unreviewed',
             review_packet_sha256: reviewed ? receipt?.review?.packet_sha256 || null : null,
             retained_primary_sha256: reviewed && retainedPrimary.length ? retainedPrimary : null,
-            unresolved_review_state: reviewed ? (receipt.unresolved?.length ? 'declared' : 'none-declared') : 'unknown',
-            unresolved: reviewed ? [...(receipt.unresolved || [])] : null
+            unresolved_review_state: reviewed ? (unresolved.length ? 'declared' : 'none-declared') : 'unknown',
+            unresolved: reviewed ? [...unresolved] : null
         };
     };
     for (const primary of primaries) {

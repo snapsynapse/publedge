@@ -202,6 +202,9 @@ function reviewReceipt(receipt, base, target, { read, now, metadata = null }) {
         const displayed = review.after_sha256 === null ? review.candidate_content === null : digest(review.candidate_content) === review.after_sha256;
         requireValue(Object.hasOwn(review, 'candidate_content') && displayed, `Review displays stale candidate content: ${key}`);
         nonempty(review.reason, 'unit reason');
+        if (Object.hasOwn(review, 'unresolved')) {
+            requireValue(Array.isArray(review.unresolved) && review.unresolved.every(item => typeof item === 'string' && item.trim()), 'Unit unresolved items must be an array of nonempty strings');
+        }
         for (const qualifier of ['scope', 'exceptions', 'time']) nonempty(review.qualifications?.[qualifier], `unit qualifications.${qualifier}`);
         requireValue(Array.isArray(review.evidence) && review.evidence.length > 0, `Missing supporting evidence: ${key}`);
         for (const reference of review.evidence) {

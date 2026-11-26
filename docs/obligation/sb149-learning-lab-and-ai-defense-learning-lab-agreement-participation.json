@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation.json",
   "pub:id": "sb149-learning-lab-and-ai-defense-learning-lab-agreement-participation",
   "title": "Learning Lab Agreement — Eligibility and Participation",
-  "content": "A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or the judiciary, a state-funded higher or public education institution, or a political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
+  "content": "A participant, the Office and a relevant agency or eligible governmental entity may enter a regulatory mitigation agreement (RMA) or joint interpretation agreement (JIA). An RMA can allow a specified use subject to a cure period or similar remedy, reduced civil fines, or other tailored terms. Each participant remains subject to requirements outside any express waiver or modification. A JIA clarifies how a provision of state law or rule applies to the technology. The initial demonstration period may last up to twelve months. The participant may request a twelve-month extension at least thirty days before expiry, and the Office must grant or deny the request before expiry. The Office may grant up to two extensions. Counterparties include OAIP plus the relevant state agency (or the judiciary, a state-funded higher or public education institution, or a political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
   "created_by": [
     "https://publedge.org/term/sb149-learning-lab-and-ai-defense.json"
   ],
@@ -90,11 +90,11 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "0d2f48f2501067771f86556c779dbeaa433bc4d53741f50811185c49f8597d7f",
       "canonical_unit": "entry:sb149-learning-lab-and-ai-defense",
       "canonical_sha256": "56836cab160c49426e9224ae78e504cdbfa8c30d175cba082b10d0b98f1a2b21",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "8947f49e11be8a994c80345f967c5fcc0894df95dd319014829eb54c055f0a11",
+      "review_packet_sha256": "cc34404c9036e5987c599f22264bab9fa6c16a2b9f33883e0b898333adbfc496",
       "retained_primary_sha256": [
         "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
         "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
@@ -114,13 +114,14 @@
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/learning-lab-agreement-participation.md",
-      "native_file_sha256": "c7f07d610d5c3bb5aa942d5d80fb3dad563ed73529770ed89888a4fca1d537eb",
+      "native_file_sha256": "aa924e1c63baed1db9902a427d2b39fa739116ea870079529c9f472f17cc30f4",
       "canonical_unit": null,
-      "canonical_sha256": "649cf9611b65c4fd518106a4ce461906db0953381bb5b342dc92b1bd149bfae3",
+      "canonical_sha256": "a4eac297e847e63529871f2ec65fde7962d099c29b9c145f5d3f5494197b5a45",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "342fac2ddf576b7837c36901ef92ee9abfa96c0e6b3d6bd8459a87b57058c8b6",
+      "review_packet_sha256": "f3f263cbc87e0120a0757b01c9fc11e03e61e09eaf3f7306a40cc7e61726491c",
       "retained_primary_sha256": [
-        "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+        "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211",
+        "ff63235de104d04eae4fbf0359e4473800f24e45a94a69e3c4c8cd38608f60b0"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [

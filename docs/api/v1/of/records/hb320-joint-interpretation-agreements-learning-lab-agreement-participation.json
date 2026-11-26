@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/hb320-joint-interpretation-agreements-learning-lab-agreement-participation.json",
   "pub:id": "hb320-joint-interpretation-agreements-learning-lab-agreement-participation",
   "title": "Learning Lab Agreement — Eligibility and Participation",
-  "content": "A person deploying AI in Utah may enter either a Regulatory Mitigation Agreement (RMA) — which waives specified law in exchange for safeguards, data sharing, and disclosures — or a Joint Interpretation Agreement (JIA) — which clarifies how existing statute applies to a specific AI use without waiver. Agreements run for an initial twelve months with up to two twelve-month extensions, counterparties include OAIP plus the relevant state agency (or the judiciary, a state-funded higher or public education institution, or a political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
+  "content": "A participant, the Office and a relevant agency or eligible governmental entity may enter a regulatory mitigation agreement (RMA) or joint interpretation agreement (JIA). An RMA can allow a specified use subject to a cure period or similar remedy, reduced civil fines, or other tailored terms. Each participant remains subject to requirements outside any express waiver or modification. A JIA clarifies how a provision of state law or rule applies to the technology. The initial demonstration period may last up to twelve months. The participant may request a twelve-month extension at least thirty days before expiry, and the Office must grant or deny the request before expiry. The Office may grant up to two extensions. Counterparties include OAIP plus the relevant state agency (or the judiciary, a state-funded higher or public education institution, or a political subdivision under HB 320), and participants must satisfy five statutory eligibility prongs.",
   "created_by": [
     "https://publedge.org/term/hb320-joint-interpretation-agreements.json"
   ],
@@ -58,15 +58,17 @@
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-legislature-statute-2026-hb320.md",
-      "native_file_sha256": "01797df3b03a8a6d33869d8a1ed4a0575acea137ea8b84598087d3a0fca8008d",
+      "native_file_sha256": "e098c9734444cebd99463dc8f8487fa27906b2001c6f6b7781237480b7443238",
       "canonical_unit": null,
-      "canonical_sha256": "0602d5a250b66e24ed6f13779a1c055cc90a4f97b27249ef54d099a3e9eb9ad7",
+      "canonical_sha256": "b34c8a7114c00bb2086dfe0d3c37e7538cc1fde5fd30a3fce2ccf0f86c1c863a",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "b140f99a901d8f1e6f4bf389765fa85c72c5b7972a9ddf3f63132f56646e5da3",
+      "review_packet_sha256": "8b3991fd864a3a9843986d0b7571658dc74dd1ac231a7a6285b9d5a839e65dfd",
       "retained_primary_sha256": [
-        "8b9be8a722a44067aa49121a01729188bad79262843a01b21dc9e37ed7c7f42b",
-        "bfa2cca6c0a5a1f6e8c7ab123127d7c0263ef8f5f5a582672c8185af6c865835",
-        "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+        "84c903205c397301f5f1bcab35415cfe34d40416ddf210ae9d5c1e3f69bcefb7",
+        "94e3999f8fe042dae8ef8a0624348c6e554050d2346609f737b868563e43d2c2",
+        "ad48ca77f2273437edd006fee2bb0393027c8812870cde2ca3599c758572a7c4",
+        "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211",
+        "ff63235de104d04eae4fbf0359e4473800f24e45a94a69e3c4c8cd38608f60b0"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [
@@ -80,7 +82,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "0d2f48f2501067771f86556c779dbeaa433bc4d53741f50811185c49f8597d7f",
       "canonical_unit": "entry:hb320-joint-interpretation-agreements",
       "canonical_sha256": "b85f1f2ef1628ab2a223640d36314be87543371986c0cb7fdd43099d48765c2e",
       "admission_status": "legacy-unreviewed",
@@ -92,13 +94,14 @@
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/learning-lab-agreement-participation.md",
-      "native_file_sha256": "c7f07d610d5c3bb5aa942d5d80fb3dad563ed73529770ed89888a4fca1d537eb",
+      "native_file_sha256": "aa924e1c63baed1db9902a427d2b39fa739116ea870079529c9f472f17cc30f4",
       "canonical_unit": null,
-      "canonical_sha256": "649cf9611b65c4fd518106a4ce461906db0953381bb5b342dc92b1bd149bfae3",
+      "canonical_sha256": "a4eac297e847e63529871f2ec65fde7962d099c29b9c145f5d3f5494197b5a45",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "342fac2ddf576b7837c36901ef92ee9abfa96c0e6b3d6bd8459a87b57058c8b6",
+      "review_packet_sha256": "f3f263cbc87e0120a0757b01c9fc11e03e61e09eaf3f7306a40cc7e61726491c",
       "retained_primary_sha256": [
-        "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211"
+        "d27d659781af84c97cfffb677089c1f91711edd76b47c692be3adb62380e1211",
+        "ff63235de104d04eae4fbf0359e4473800f24e45a94a69e3c4c8cd38608f60b0"
       ],
       "unresolved_review_state": "declared",
       "unresolved": [

@@ -40,7 +40,9 @@ test('SB226 generated disclosures carry exact reviewed bridge inputs without pro
         ].map(digestFile).sort());
         const mapping = record['pub:evidence_inputs'][1];
         assert.equal(mapping.canonical_unit, 'entry:sb226-disclosure-and-ai-defense');
-        assert.equal(mapping.canonical_sha256, receipts.records[mapping.native_path].units[mapping.canonical_unit].after_sha256);
+        const applicable = admission.effectiveUnitReviews(receipts.records[mapping.native_path])[mapping.canonical_unit];
+        assert.equal(mapping.canonical_sha256, applicable.review.after_sha256);
+        assert.ok(admission.receiptLineage(receipts.records[mapping.native_path]).includes(applicable.receipt));
         assert.equal(mapping.review_packet_sha256, receipts.records[mapping.native_path].review.packet_sha256);
         assert.equal(record.admission_status, 'source-consistency-reviewed-changes');
         assert.equal(record['pub:source_review_state'], 'declared');
@@ -130,4 +132,38 @@ test('invalid or absent evidence input digests fail before projection', () => {
     assert.throws(() => withEvidenceBoundary({ '@id': 'https://example.com/record' }, [{ ...reviewed, native_path: 123 }]), /Missing exact native evidence input/);
     assert.throws(() => withEvidenceBoundary({ '@id': 'https://example.com/record' }, [{ ...reviewed, native_file_sha256: { toString: () => '1'.repeat(64) } }]), /Missing exact native evidence input/);
     assert.throws(() => withEvidenceBoundary({ '@id': 'https://example.com/record' }, [{ ...valid, review_packet_sha256: '3'.repeat(64) }]), /Missing exact native evidence input/);
+});
+
+test('Legion mapping qualifications stay local to its entry', () => {
+    const mappingFile = 'data/examples/mapping/index.yml';
+    const receipt = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/admission/receipts.json'))).records[mappingFile];
+    const specificLimit = 'No written commencement date or status finding.';
+    assert.deepEqual(receipt.unresolved, receipt.supersedes.receipt.unresolved);
+    assert.equal(receipt.units['entry:legion-rma-obligations'].qualifications.exceptions, specificLimit);
+
+    const firstSession = 'utah-mental-health-chatbot-disclosure-2026q2-first-session';
+    for (const url of [
+        'https://publedge.org/term/' + firstSession + '.json',
+        'https://publedge.org/obligation/' + firstSession + '-disclose-genai-on-first-session.json'
+    ]) {
+        const draft = byId.get(url);
+        const mapping = draft['pub:evidence_inputs'].find(input => input.kind === 'mapping-entry');
+        assert.deepEqual(mapping.unresolved, receipt.supersedes.receipt.unresolved);
+        assert.ok(!draft['pub:source_review_unresolved'].includes(specificLimit));
+    }
+});
+
+test('every Legion projection carries its instrument commencement uncertainty', () => {
+    const legion = records.filter(record => record['pub:evidence_inputs'].some(input =>
+        input.canonical_unit === 'entry:legion-rma-obligations'
+    ));
+    assert.equal(legion.length, 9);
+    for (const record of legion) {
+        const instrument = record['pub:evidence_inputs'].find(input => input.kind === 'instrument');
+        const mapping = record['pub:evidence_inputs'].find(input => input.kind === 'mapping-entry');
+        assert.deepEqual(mapping.unresolved, ['No written commencement date or status finding.']);
+        assert.equal(mapping.unresolved_review_state, 'declared');
+        assert.ok(instrument.unresolved.some(limit => limit.includes('Section 2.B commencement notice')));
+        assert.ok(record['pub:source_review_unresolved'].some(limit => limit.includes('Section 2.B commencement notice')));
+    }
 });

@@ -583,3 +583,26 @@ test('history comparison rejects a rewritten receipt and accepts a successor tha
     admissionCheck.retainPriorReceipts(passed, { records: { [FILE]: successor } }, { records: { [FILE]: prior } });
     assert.equal(passed.status, 'passed', passed.errors.join('\n'));
 });
+
+test('the history comparison reads accepted receipts larger than one MiB', t => {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'publedge-large-receipt-history-'));
+    t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+    fs.cpSync(path.join(ROOT, 'data'), path.join(root, 'data'), { recursive: true });
+    const filename = path.join(root, 'data/admission/receipts.json');
+    const current = fs.readFileSync(filename);
+    const history = JSON.parse(current);
+    const removedPath = 'data/examples/instruments/history-only.md';
+    history.records[removedPath] = { padding: 'x'.repeat(1024 * 1024) };
+    fs.writeFileSync(filename, JSON.stringify(history));
+    const git = (...args) => {
+        const result = spawnSync('git', args, { cwd: root, encoding: 'utf8' });
+        assert.equal(result.status, 0, result.stderr);
+    };
+    git('init', '--quiet');
+    git('add', '--', 'data/admission/receipts.json');
+    git('-c', 'user.name=Test', '-c', 'user.email=test@example.invalid', '-c', 'commit.gpgsign=false',
+        '-c', 'core.hooksPath=/dev/null', 'commit', '--quiet', '-m', 'Large historical receipt fixture');
+    fs.writeFileSync(filename, current);
+    const result = admissionCheck.run({ root, base: 'HEAD' });
+    assert.deepEqual(result.errors, [`${removedPath}: previously reviewed record lost its receipt`]);
+});

@@ -13,7 +13,7 @@ issued_by:
   name: "Utah State Legislature"
   ref: "https://le.utah.gov/"
 issuance_event: gist:Enactment
-enacted: 2025-03-26
+enacted: 2025-03-25
 effective: 2025-05-07
 official_url: https://le.utah.gov/~2025/bills/static/HB0452.html
 obligation_kind: [requirement, restriction]
@@ -53,8 +53,8 @@ modified: 2026-09-23
 
 | Milestone | Date | Notes |
 |-----------|------|-------|
-| Introduced | 2025-02 | 2025 General Session (month unconfirmed: not in the enrolled copy) |
-| Governor Signed | 2025-03-26 | Unconfirmed: not in the enrolled copy; bill status page not retained |
+| Introduced | 2025-02-10 | First reading in the chamber of origin |
+| Governor Signed | 2025-03-25 | Governor’s bill register and legislative action history (GSIGN) |
 | Effective | 2025-05-07 | Chapter 72a stands up |
 
 ---
@@ -80,3 +80,6 @@ Penalties: $2,500 per violation (administrative or court), $5,000 per violation 
 - [EveryAILaw — Mental Health Chatbot Disclosure](https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-disclosure)
 - [EveryAILaw — Mental Health Chatbot Data Protection](https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-data-protection)
 - [EveryAILaw — Mental Health Chatbot Safety Policy](https://everyailaw.com/regulation/utah-sb149/#mental-health-chatbot-safety-policy)
+
+- [Utah Legislature bill action history](https://le.utah.gov/data/2025GS/HB0452.json)
+- [Governor’s signed-bills register](https://governor.utah.gov/bills/)

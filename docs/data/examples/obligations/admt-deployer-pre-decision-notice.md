@@ -17,21 +17,17 @@ search_terms:
 
 ## Summary
 
-Beginning January 1, 2027, before a consequential decision is made using covered automated decision-making technology, the deployer must notify the consumer that an automated system is in use and disclose the purpose and nature of the decision. The notice is pre-decision; a post-hoc disclosure does not satisfy it.
+Beginning January 1, 2027, before using covered ADMT to materially influence a consequential decision affecting a consumer, the deployer must give clear, conspicuous notice of its use and instructions for obtaining additional information.
 
 ## What Counts
 
-- Notice delivered at or before the point the ADMT is used in the consequential decision
-- Plain statement that an automated decision-making technology is involved
-- Description of what the decision is for and what it determines
+- A prominent public notice reasonably accessible at consumer interaction points can satisfy the requirement. A link or posting reasonably proximate to the relevant interaction or transaction is an available method.
 
 ## What Does Not Count
 
-- Notice issued only after an adverse outcome is communicated
-- Disclosure buried in terms of service or a privacy policy the consumer is not shown
-- A generic statement that the company "uses technology" without identifying automated decision-making
-- Notice given to a third-party intermediary rather than to the consumer
+- Providing a generic technology reference that omits covered use or instructions for obtaining more information.
+- Giving the notice only after the relevant use.
 
 ## Statute Anchors
 
-- C.R.S. §6-1-1704 — Deployer consumer-notice obligation; consequential decisions (as enacted by Colorado SB 26-189)
+- [Colorado SB 26-189 signed act, §6-1-1704(1)–(2)](https://leg.colorado.gov/bill_files/116489/download)

@@ -16,23 +16,18 @@ search_terms:
 
 ## Summary
 
-Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.
+The four mapped agreements require a monthly report to OAIP. The agreement sets its contents. Dentacor reports dental pilot demographics, efficacy and incidents. Doctronic and Legion include prescription-renewal and clinical-review metrics. ElizaChat reports on its app demonstration.
 
 ## What Counts
 
-- Monthly cadence, sent to the Office's designated intake address
-- Qualitative and quantitative user data
-- User complaints and any incident summaries
-- Research findings, impact analyses, technology assessments
-- Additional information requested by the Office on a per-agreement basis
+- Monthly delivery to the Office’s designated address.
+- Include the fields specified for that participant under its reporting clause and any additional information required by the Office.
 
 ## What Does Not Count
 
-- Aggregate quarterly or annual summaries in lieu of monthly reports
-- Reports delivered only on request
-- Reports that omit complaints or incidents even when none occurred (null reports still required)
+- Substituting a quarterly or annual aggregate for an agreement that requires monthly delivery.
+- Applying one participant’s reporting template without checking the duties in the other participant’s agreement.
 
 ## Statute Anchors
 
-- Utah Code §13-72-401(4) — RMA reporting requirements
-- Agreement-specific reporting section (Section 6.G or equivalent)
+- ElizaChat VI.I, Dentacor §6.G, Doctronic §6.H and Legion §6.H.

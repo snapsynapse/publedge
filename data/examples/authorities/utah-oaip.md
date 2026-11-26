@@ -5,7 +5,7 @@ name: Utah Office of Artificial Intelligence Policy
 jurisdiction: us-ut
 url_segment: oaip
 path_jurisdiction: utah
-website: https://commerce.utah.gov/ai/learning-lab/
+website: https://commerce.utah.gov/ai/
 last_verified: 2026-04-18
 ---
 

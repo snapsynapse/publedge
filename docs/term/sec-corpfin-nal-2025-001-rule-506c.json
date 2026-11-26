@@ -52,7 +52,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "0d2f48f2501067771f86556c779dbeaa433bc4d53741f50811185c49f8597d7f",
       "canonical_unit": "entry:sec-corpfin-nal-2025-001-rule-506c",
       "canonical_sha256": "9c7546b5135751e232852b0e9fcdf18e02973c38dd7c819d999b897a259e32e4",
       "admission_status": "legacy-unreviewed",

@@ -26,9 +26,9 @@ statute_anchors:
     url: "https://leg.colorado.gov/bills/sb26-189"
   - cite: "C.R.S. §6-1-1703 (deployer record-keeping; 3-year retention)"
     url: "https://leg.colorado.gov/bills/sb26-189"
-  - cite: "C.R.S. §6-1-1704 (deployer consumer-notice obligation; consequential decisions)"
+  - cite: "C.R.S. §6-1-1704 (deployer notice and post-adverse disclosures)"
     url: "https://leg.colorado.gov/bills/sb26-189"
-  - cite: "C.R.S. §6-1-1705 (consumer rights; data correction; human review; 30-day post-adverse explanation)"
+  - cite: "C.R.S. §6-1-1705 (consumer rights; data correction; human review and reconsideration)"
     url: "https://leg.colorado.gov/bills/sb26-189"
   - cite: "C.R.S. §6-1-1706 (Attorney General enforcement; 60-day cure period; deceptive trade practices)"
     url: "https://leg.colorado.gov/bills/sb26-189"
@@ -55,26 +55,25 @@ modified: 2026-07-25
 
 | Milestone | Date | Notes |
 |-----------|------|-------|
-| Introduced | Unconfirmed | 2026 Regular Session; exact introduction date is not established by the retained primary evidence reviewed here |
-| Governor Signed | 2026-05-14 | Replaces SB 24-205 in full |
-| Rulemaking sections effective | 2026-05-14 | §§6-1-1704(4), 6-1-1705(3), and 6-1-1706(6) took effect on passage |
-| Challenge window | 2026-05-14 → 2026-06-11 | 28-day window for further litigation noted in public commentary |
+| Introduced | 2026-05-01 | Colorado General Assembly, All Versions |
+| Governor Signed | 2026-05-14 | Section 5 distinguishes enactment, provisions effective on passage, and the January 1, 2027 general commencement. |
+| Provisions effective on passage | 2026-05-14 | Section 5(2) includes the Attorney General rulemaking directives in §§6-1-1704(4) and 6-1-1705(3), the party-joinder provision in §6-1-1706(6), and the insurance commissioner’s authority to adopt or update insurer notice and disclosure rules under §10-3-1104.9(3)(e). It also includes act §§4–6. |
+| Implementing rules adopted | 2026-11-19 | The Colorado Secretary of State’s eDocket for 4 CCR 904-6 (tracking 2026-00360) lists November 19 as the adoption date and November 20 as the date an Attorney General opinion was requested. The November 24 docket observation supplies no effective date for the rules. |
 | Substantive duties effective | 2027-01-01 | Developer, deployer, consumer-rights, recordkeeping, and cure obligations apply to consequential decisions on or after this date |
-| Record-retention horizon | 2030-01-01 | First 3-year retention cycle closes |
-| Cure-period sunset | 2030-01-01 | 60-day cure available until this date per transition provisions |
+| Cure-period sunset | 2030-01-01 | Repeal of §6-1-1706(3) takes effect. |
 
 ---
 
 ## Summary
 
-SB 26-189 narrows and replaces the original Colorado AI Act (SB 24-205). Predecessor operative history remains unresolved; this record does not establish whether or when predecessor duties became operative. Rebranded as the Automated Decision-Making Technology (ADMT) Act and codified at C.R.S. §§6-1-1702 through 6-1-1706, the replacement statute drops the duty of reasonable care, the impact-assessment requirement, and most of the developer-liability scheme. Its substantive duties apply beginning January 1, 2027; specified rulemaking and administrative provisions took effect on passage. What survives is a much narrower disclosure-and-rights regime:
+SB 26-189 narrows and replaces the original Colorado AI Act (SB 24-205). Predecessor operative history remains unresolved; this record does not establish whether or when predecessor duties became operative. The signed Act reenacts C.R.S. §§6-1-1701 through 6-1-1709, including definitions (§1701), liability and allocation (§1707), treatment of other legal obligations and exemptions (§1708), and the limits on private actions and the effect of compliance under other law (§1709). The replacement statute drops the duty of reasonable care, the impact-assessment requirement, and most of the developer-liability scheme. Its substantive duties apply beginning January 1, 2027; specified rulemaking and administrative provisions took effect on passage. What survives is a much narrower disclosure-and-rights regime:
 
-- **Developer documentation (§6-1-1702).** Developers must disclose intended uses, training-data categories, known limitations, and human-review instructions to deployers.
-- **Deployer consumer notice (§6-1-1704).** Before a consequential decision is made using covered ADMT, the deployer must notify the consumer that an automated system is being used and disclose the decision's purpose and nature.
-- **Post-adverse explanation (§6-1-1705).** Within 30 days of an adverse consequential decision, the deployer must provide a plain-language explanation including the AI's role, degree of contribution, data types processed, and data sources.
-- **Consumer rights (§6-1-1705).** Consumers may correct inaccurate personal data and request meaningful human review and reconsideration of adverse outcomes.
-- **Record-keeping (§6-1-1703).** Deployers must retain compliance documentation for a minimum of 3 years.
-- **Enforcement (§6-1-1706).** Colorado Attorney General only; no private right of action; violations treated as deceptive trade practices under the Colorado Consumer Protection Act. A 60-day cure period is available through January 1, 2030.
+- **Developer documentation (§6-1-1702).** Within the statutory use and distribution scope, developers must make intended and known harmful or inappropriate uses, known training-data categories and limitations, instructions for appropriate use and monitoring, and applicable human-review instructions available to deployers. Developers must also supply reasonably necessary disclosure information or notify the deployer when they withhold it, and give notice of material changes within a reasonable time.
+- **Deployer notice (§6-1-1704(1)–(2)).** Before using covered ADMT to materially influence a consequential decision, the deployer must give the affected consumer clear and conspicuous notice of its use and instructions for obtaining additional information. A prominent notice reasonably accessible at the point of interaction can satisfy this duty.
+- **Post-adverse disclosure (§6-1-1704(3)).** Within 30 days of an adverse decision materially influenced by covered ADMT, the deployer must describe the decision and the technology’s role, provide instructions and a simple process to request additional system and input information, and explain the consumer’s rights and how to exercise them.
+- **Consumer rights (§6-1-1705).** On request after a qualifying adverse decision, the deployer provides instructions for requesting personal data and correcting factual or material inaccuracies. It provides an opportunity for meaningful human review and reconsideration to the extent commercially reasonable.
+- **Retention (§§6-1-1702(4), 6-1-1703).** Developers retain records reasonably necessary to demonstrate compliance for at least three years after creation. Deployers retain such records for at least three years after the consequential decision. Longer periods apply when required by other law.
+- **Enforcement (§6-1-1706).** The Attorney General enforces the act. It creates no new private right of action. Where the Attorney General deems a cure possible, the notice procedure allows 60 days from receipt. The Attorney General need not provide a cure period for demonstrably knowing or repeated violations. Subsection (3) is repealed effective January 1, 2030.
 
 The duty of reasonable care, the developer/deployer impact-assessment regime, and the rebuttable-presumption-of-compliance scaffolding from SB 24-205 are gone. The statute keeps the consumer-facing transparency core and reassigns the entire enforcement architecture to the AG's existing deceptive-trade-practices machinery.
 
@@ -88,3 +87,5 @@ The duty of reasonable care, the developer/deployer impact-assessment regime, an
 - [EveryAILaw — Colorado SB 26-189](https://everyailaw.com/regulation/colorado-sb26-189/)
 - [EveryAILaw — Colorado SB 24-205 (predecessor)](https://everyailaw.com/regulation/colorado-sb24-205/)
 - [PAICE.work — Modeling the Colorado AI Act with ObligationFirst](https://paice.work/blog/modeling-colorado-ai-act-obligationfirst)
+
+- [Colorado General Assembly signed act, §§6-1-1702 through 1706 and §5](https://leg.colorado.gov/bill_files/116489/download)
