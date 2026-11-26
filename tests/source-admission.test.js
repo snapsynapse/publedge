@@ -367,7 +367,9 @@ test('aggregate exports and derived counts keep draft and demonstration labellin
     assert.deepEqual({ source: jia.source, status: jia.status, editorial_status: jia.editorial_status }, { source: 'publedge-original-draft', status: 'proposed', editorial_status: 'draft' });
     assert.equal(summaries.find(item => item.id === 'us-ut-oaip-rma-2025-002').source, 'demonstration-remap');
     const counts = projection.countByStatus(summaries);
-    assert.equal(counts.enforcing, 11);
+    assert.equal(counts.enforcing, 10);
+    assert.equal(counts.unresolved, 1);
+    assert.equal(summaries.find(item => item.id === 'us-ut-oaip-rma-2025-002').status, 'unresolved');
     assert.equal(summaries.find(item => item.id === 'us-cfpb-ao-2022-001').status, 'withdrawn');
     assert.equal(counts.proposed, 1);
     for (const item of summaries) assert.ok(item.source && item.editorial_status, `${item.id} lost its source labelling`);

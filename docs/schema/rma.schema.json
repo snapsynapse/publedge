@@ -22,7 +22,7 @@
     "type": { "const": "rma" },
     "status": {
       "type": "string",
-      "enum": ["proposed", "enacted", "enforcing", "phased-enforcement", "pending-replacement", "expired", "superseded", "withdrawn", "terminated"]
+      "enum": ["proposed", "enacted", "enforcing", "phased-enforcement", "pending-replacement", "unresolved", "expired", "superseded", "withdrawn", "terminated"]
     },
     "editorial_status": {
       "type": "string",

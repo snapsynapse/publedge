@@ -80,7 +80,9 @@ function normalizeStatus(status) {
         terminated: 'sunset',
         superseded: 'superseded',
         withdrawn: 'withdrawn',
-        'never-operative': 'inactive'
+        'never-operative': 'inactive',
+        // Retained sources cannot support any lifecycle value; see status_unresolved.
+        unresolved: 'unknown'
     };
     return map[status] || 'unknown';
 }
@@ -93,6 +95,7 @@ function normativeForce(record) {
 }
 
 function operativeStatus(status, force) {
+    if (status === 'unresolved') return 'unknown';
     if (status === 'proposed' || status === 'draft') return 'future';
     if (status === 'expired' || status === 'terminated' || status === 'superseded' || status === 'never-operative') return 'inactive';
     if (status === 'enforcing') return 'operative';
@@ -101,6 +104,7 @@ function operativeStatus(status, force) {
 }
 
 function enforcementStatus(record, force = normativeForce(record)) {
+    if (record.status === 'unresolved') return 'unknown';
     if (record.status === 'proposed' || record.status === 'draft') return 'unsignaled';
     if (['expired', 'terminated', 'withdrawn', 'superseded'].includes(record.status)) return 'not-enforceable';
     if (force === 'nonbinding') return 'not-enforceable';
@@ -370,6 +374,10 @@ function buildObligationRecords(config, data) {
             const termStatus = provision.status || container?.status;
             const draftCreated = ['draft', 'proposed'].includes(normalizeStatus(termStatus));
             const lifecycle = draftCreated ? termStatus : primary.lifecycle_status || termStatus;
+            // A duty created by an instrument whose present status is unresolved
+            // cannot be projected as operative or enforceable from its definition.
+            const instrumentUnresolved = container?.status === 'unresolved';
+            const definitionStatusApplies = !draftCreated && !instrumentUnresolved;
             records.push(withEvidenceBoundary(compact({
                 '@context': recordContext(config),
                 '@type': obligationType(primary.group),
@@ -381,8 +389,8 @@ function buildObligationRecords(config, data) {
                 applicability: provision.scope ? [`scope:${provision.scope}`] : undefined,
                 anchors: sourceOwnedAnchors(mapping).obligationAnchors.length ? sourceOwnedAnchors(mapping).obligationAnchors : undefined,
                 lifecycle_status: normalizeStatus(lifecycle),
-                operative_status: (draftCreated ? undefined : primary.operative_status) || container?.operative_status || operativeStatus(lifecycle, force),
-                enforcement_status: (draftCreated ? undefined : primary.enforcement_status) || container?.enforcement_status || enforcementStatus({ status: lifecycle, type: container?.type }, force),
+                operative_status: (definitionStatusApplies ? primary.operative_status : undefined) || container?.operative_status || operativeStatus(instrumentUnresolved ? 'unresolved' : lifecycle, force),
+                enforcement_status: (definitionStatusApplies ? primary.enforcement_status : undefined) || container?.enforcement_status || enforcementStatus({ status: instrumentUnresolved ? 'unresolved' : lifecycle, type: container?.type }, force),
                 jurisdiction: typedJurisdiction(container?.jurisdiction),
                 ...provenance(config, recordSource(config, container), recordLocator(container, provision, mapping), primary.last_verified || provision.verified || container?.last_verified, instrumentCitation(container || {})),
                 'pub:primary_id': obligationId,

@@ -12,6 +12,8 @@ Source admission, per-kind evidence, and qualified legal uncertainty. The protoc
 
 ### Added
 
+- Add the `unresolved` instrument status, a PubLedge addition for a present legal state that retained sources cannot support. It requires a `status_unresolved` block (since, last evidenced status, open question, retained evidence paths, last source check). The temporal evaluator reports each unresolved record, fails on a missing or misdated block or missing evidence file, and fails again when the source check is more than 90 days old. Obligation-First projections map it, and duties created by the instrument, to unknown operative and enforcement status. The record page summary and `record.json` expose the block.
+- Mark the Doctronic RMA (`us-ut-oaip-rma-2025-002`) `unresolved` from 2026-10-24, last evidenced `enforcing`, with a successor admission receipt bound to already-retained sources. The initial term, legal dates and `last_verified` are unchanged; this records the evidence gap tracked in issue #29 and does not resolve it.
 - Correct verification-guide metadata to claim source-to-current-manifest consistency, with a separate source/generated guide binding that preserves historical package/provider snapshots.
 - Add a synthetic RUML rulemap publication example (`reference/RUML-PUBLICATION-EXAMPLE.md`) over the reviewed Obligation-First RUML fixture, pinned by commit and file-byte hash. It keeps model publication, model approval and authoritative legal issuance as separate events and adds no record, field, Determination or tooling.
 - Add an offline Doctronic four-checks exercise using retained agreement clauses and explicit initial-term/current-status limits; no legal record or verification date is changed.

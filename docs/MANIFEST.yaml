@@ -138,7 +138,7 @@ files:
 
   - path: project.yml
     role: config
-    hash: sha256:2dfa785f194d958f55d8cd959690de2f424d89c0a0d8374cba03bdef03baa554
+    hash: sha256:b7e598ea5802352930fd9baaada04913a13d11f252c6f3e38ebb9c55cfe43f4c
     note: project.yml
 
   - path: data/examples/instruments/us-cfpb-ao-2022-001.md
@@ -223,7 +223,7 @@ files:
 
   - path: data/examples/instruments/us-ut-oaip-rma-2025-002.md
     role: instrument
-    hash: sha256:7471adff448e8cb359319400649a03c922a1fab50f3ca1a0f11b6238382208ee
+    hash: sha256:8ada4448c46a9ca751a4492d7927248146f5af2bcf170b44c09bbfabaf2e4119
     note: data/examples/instruments/us-ut-oaip-rma-2025-002.md
 
   - path: data/examples/instruments/us-ut-oaip-rma-2026-001.md
@@ -433,17 +433,17 @@ files:
 
   - path: CHANGELOG.md
     role: protocol
-    hash: sha256:a97cd5022141d84a9f039cd993e335862ba57023cbbef44d645c584e28f3b30f
+    hash: sha256:5a47b0420b1d5cdadd20d8ac10ccf7a6e5b2ee631e507dc33e4c3efd92654930
     note: CHANGELOG.md
 
   - path: CONTRIBUTING.md
     role: protocol
-    hash: sha256:a5a95df7c5b51e184dee19e5e86a5abdc7981158ed3b468e72592ce3b59045b8
+    hash: sha256:8b8aeaf952d0e3e826e5c3fd635f9dbb0add84d30c236a2a5873a1d2c802d851
     note: CONTRIBUTING.md
 
   - path: DEFINITIONS.md
     role: protocol
-    hash: sha256:68907cf92cc224b13e6445a505e9432bf74103cd0c8cf6473c75d808776a675b
+    hash: sha256:85415c7f59d0241f96505fd733cb9792aeaac0be8f2f1f595a3541d20f531dbd
     note: DEFINITIONS.md
 
   - path: PRIOR-ART.md
@@ -508,7 +508,7 @@ files:
 
   - path: schema/instrument.schema.json
     role: schema
-    hash: sha256:b1751310bdd0849649f9e2204c992a3dcb262bb924e7735b11df8562e1075ba6
+    hash: sha256:0cb71f2f79b37803b20104df0f4c45ecc9af3770b429314e2ec75495ea18e877
     note: schema/instrument.schema.json
 
   - path: schema/obligation-record.schema.json
@@ -518,12 +518,12 @@ files:
 
   - path: schema/jia.schema.json
     role: schema
-    hash: sha256:317e47143a373e8ef5a984e55caeb3200b4ee6f69046be04542f663230b33985
+    hash: sha256:2cd70b4cff819c0e1e736852464fd9222ea76c71607f4718f509b8db652806f1
     note: schema/jia.schema.json
 
   - path: schema/rma.schema.json
     role: schema
-    hash: sha256:d2f35ee20ff0321cb8ccaffeb26437921b1f0ca3a6c49332efa747ce0efe3b08
+    hash: sha256:7452a4c6e71027641b019af559d51afcac5220de3379930881ff0d81156012d6
     note: schema/rma.schema.json
 
   - path: _templates/jia/utah-mental-health-chatbot-advertising.md
@@ -593,12 +593,12 @@ files:
 
   - path: scripts/build-extras.js
     role: tooling
-    hash: sha256:52e42b963a64def9455fe713c77d0e4ef84f7f28080eaa9e4d7c6de549fb966e
+    hash: sha256:3988397907de6906e0fc8eb4a4d6c4c40b636df96624897f01617e49f9e1b7e1
     note: scripts/build-extras.js
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:ef064c121ca4f32199b8f6f0dede0bbebc6dd1aacfd2228f813e9c67fe29cf94
+    hash: sha256:0e5ec876db23547b5701faf227b278e4851b7df1b982974733dbae0affdae7be
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -683,7 +683,7 @@ files:
 
   - path: scripts/eval-obligation-schema.js
     role: tooling
-    hash: sha256:5d0ad27f1585d983ff4e3583089c62c92937ec272cf763c33a6ebff222f9d4e0
+    hash: sha256:b76d1f501cd9a942565ef4374e36969b68e41d44c1d81fa50868a42316d22897
     note: scripts/eval-obligation-schema.js
 
   - path: scripts/eval-manifest-scope.js
@@ -723,12 +723,12 @@ files:
 
   - path: scripts/eval-temporal-status.js
     role: tooling
-    hash: sha256:a7017986122a89262d34257387b5009aca45eb37704cbd59674161e4d1d438d0
+    hash: sha256:f5bb8743fb157069fc1fc657edb8a64b347d28a7e840caebcb8dce5a40caf907
     note: scripts/eval-temporal-status.js
 
   - path: scripts/eval-temporal-status-contract.js
     role: tooling
-    hash: sha256:32426636d48463564b6b3e52199517bb38de1460660020b16c5012abc05eba91
+    hash: sha256:3e78d8a1d134c95fe6ef620ca72f1b41ca8aac4f9ae6d5f5de153301059e7d38
     note: scripts/eval-temporal-status-contract.js
 
   - path: scripts/eval-record-schema.js
@@ -823,12 +823,12 @@ files:
 
   - path: scripts/lib/obligation-first.js
     role: tooling
-    hash: sha256:a29612a4039a612edbcfc0a55c70a6cb7668645b87a2b64b9d1d49cadb3a9b0d
+    hash: sha256:728df95d8455d25b908b2a93ab16fe2210f7ec94c9f5a06d7ec4509047d3c101
     note: scripts/lib/obligation-first.js
 
   - path: scripts/lib/temporal-status.js
     role: tooling
-    hash: sha256:203e3d8f26aa8d5a15c4d1271f8cd909fcf884f11ba313283fe39e378a3d1a1f
+    hash: sha256:141098499e5bcddf7deaf05c60f3737f0b6f33fe357d1403a92bf1b6a90f1b75
     note: scripts/lib/temporal-status.js
 
   - path: scripts/lib/parse.js
@@ -888,7 +888,7 @@ files:
 
   - path: about/index.html
     role: site-source
-    hash: sha256:2520d82c8a2a58fe4079135487f3ea002ff16014991d6be522b0ff88d7626f81
+    hash: sha256:551297f6cf9914ee10c1d3fbdd0ebe4045493e91fc765880288566b406a3a4e4
     note: about/index.html
 
   - path: assets/search.js
@@ -1063,7 +1063,7 @@ files:
 
   - path: tests/source-admission.test.js
     role: code
-    hash: sha256:fcae401921d11d21ae2e76d8163d979215e84c7dae28c452a5562b5825b59f94
+    hash: sha256:a3f0b04d77826cee7ae2849e70a2a65a408c17c92ce3f66ce2a2c068e414a5e4
     note: Source admission policy and producer-gate regressions
 
   - path: tests/publication-state.test.js
@@ -1073,7 +1073,7 @@ files:
 
   - path: tests/doctronic-observation.test.js
     role: code
-    hash: sha256:0eacd49a887bf7129dac0d73dfb70e091ca9a15d06dd056bc0d382e1203872f1
+    hash: sha256:7f0e9b2c0429e53199e18ba49cf1b4d56954b653ba867e45c967c05522f4dd6f
     note: Dated outcomes versus issued-term boundary regression
 
   - path: tests/source-owned-mapping.test.js

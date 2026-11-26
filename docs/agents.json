@@ -217,7 +217,7 @@
       {
         "id": "us-ut-oaip-rma-2025-002",
         "name": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
-        "status": "enforcing",
+        "status": "unresolved",
         "url": "https://publedge.org/us/utah/oaip/rma/2025-002/"
       },
       {
@@ -542,7 +542,7 @@
     "protocol_authority_response": "https://publedge.org/about/#authority-response"
   },
   "meta": {
-    "last_updated": "2026-11-21",
+    "last_updated": "2026-11-25",
     "built_with": "Knowledge as Code",
     "pattern_url": "https://knowledge-as-code.com",
     "template_url": "https://github.com/snapsynapse/knowledge-as-code-template"

@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "meta": {
     "canonical_url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
-    "generated": "2026-11-21T00:00:00.000Z",
+    "generated": "2026-11-25T00:00:00.000Z",
     "schema": "https://publedge.org/schema/instrument.schema.json",
     "admission": {
       "status": "reviewed-changes",
@@ -94,7 +94,19 @@
       "https://commerce.utah.gov/wp-content/uploads/2026/01/Doctronic-Final-Agreement.pdf"
     ],
     "terms": null,
-    "status": "enforcing",
+    "status": "unresolved",
+    "status_unresolved": {
+      "since": "2026-10-24",
+      "last_evidenced_status": "enforcing",
+      "question": "The initial term ended 2026-10-24. OAIP's register still lists Doctronic as Active with that term, and OAIP's FAQ says continuation past October 2026 requires an Office decision. No retained source shows an extension or renewal grant, denial, new term, or termination.",
+      "last_checked": "2026-11-01",
+      "evidence": [
+        "data/admission/sources/doctronic/2026-11-01/doctronic-card-new-20261101.txt",
+        "data/admission/sources/doctronic/2026-10-15/ai-faq.txt",
+        "data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.txt",
+        "ops/evidence/doctronic-postterm-review-2026-10-26.md"
+      ]
+    },
     "editorial_status": "published",
     "supersedes": null,
     "superseded_by": null,
@@ -132,7 +144,7 @@
       "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/"
     ],
     "dateCreated": "2026-04-19",
-    "dateModified": "2026-09-23",
+    "dateModified": "2026-11-25",
     "datePublished": "2025-10-24",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",

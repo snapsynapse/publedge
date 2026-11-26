@@ -38,8 +38,17 @@ for (const filename of fs.readdirSync(project.dirs.primaryDir).filter(name => na
         status === 'enforcing' || status === 'phased-enforcement'
     );
     const prospectiveImplementations = implementingStatuses.filter(status => status === 'enacted');
+    // An unresolved implementation neither supports nor contradicts the
+    // definition's last evidenced lifecycle. The temporal evaluator keeps that
+    // status visible and time-bounded, and the Obligation-First projection
+    // reports the created duty as unknown, so it is reported here, not failed.
+    const unresolvedImplementations = implementingStatuses.filter(status => status === 'unresolved');
     if (record.lifecycle_status === 'operative' && activeImplementations.length === 0) {
-        failures.push(`${filename} is operative but has no enforcing implementation`);
+        if (unresolvedImplementations.length > 0) {
+            console.log(`eval-obligation-schema: UNRESOLVED ${filename} is operative as last evidenced; its only implementation status is unresolved`);
+        } else {
+            failures.push(`${filename} is operative but has no enforcing implementation`);
+        }
     }
     if (record.lifecycle_status === 'prospective' && prospectiveImplementations.length === 0) {
         failures.push(`${filename} is prospective but has no enacted implementation awaiting effect`);

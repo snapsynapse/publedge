@@ -68,8 +68,9 @@ last_verified: 2026-07-25
 For a new PubLedge-original proposal use legal `status: proposed` and `editorial_status: draft`. Record an issuer, issuance event, official source, or date only when supported by evidence. A draft's authority association does not mean that authority issued it. Deferred RMA commencement needs a `commencement_date_trigger`, not an invented `term_start`.
 Record supporting source/version/locator evidence and unresolved limits through the [source-admission procedure](data/admission/sources/README.md) and existing admission scripts. A complete schema is not semantic or legal acceptance.
 
-`status` must be one of the 9 values defined in [DEFINITIONS.md](DEFINITIONS.md):
-`proposed`, `enacted`, `enforcing`, `phased-enforcement`, `pending-replacement`, `expired`, `superseded`, `withdrawn`, `terminated`.
+`status` must be one of the 10 values defined in [DEFINITIONS.md](DEFINITIONS.md):
+`proposed`, `enacted`, `enforcing`, `phased-enforcement`, `pending-replacement`, `unresolved`, `expired`, `superseded`, `withdrawn`, `terminated`.
+`unresolved` is a last resort for a stated term that has ended, or other present-status question, where retained sources conflict or are silent. It requires a `status_unresolved` block (`since`, `last_evidenced_status`, `question`, `last_checked`, `evidence`) and must be rechecked against sources at least every 90 days. Never use it to avoid source review.
 
 `source` controls disclaimer composition at render time:
 - `demonstration-remap` - editorial reconstruction of a publicly available document.
