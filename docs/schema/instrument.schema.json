@@ -47,6 +47,7 @@
         "enforcing",
         "phased-enforcement",
         "pending-replacement",
+        "unresolved",
         "expired",
         "superseded",
         "withdrawn",
@@ -155,10 +156,34 @@
     "mitigations": { "type": ["array", "null"] },
     "provisions": { "type": ["array", "null"] },
     "timeline": { "type": ["array", "null"] },
-    "disclaimer": { "type": ["string", "null"] }
+    "disclaimer": { "type": ["string", "null"] },
+    "status_unresolved": {
+      "type": ["object", "null"],
+      "description": "Required when status is unresolved: retained sources conflict or are silent about the instrument's present legal status, so no lifecycle value can be supported. Records the last evidenced status, the open question, the retained evidence, and the last source check.",
+      "required": ["since", "last_evidenced_status", "question", "last_checked", "evidence"],
+      "properties": {
+        "since": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "last_evidenced_status": {
+          "type": "string",
+          "enum": ["proposed", "enacted", "enforcing", "phased-enforcement", "pending-replacement", "expired", "superseded", "withdrawn", "terminated"]
+        },
+        "question": { "type": "string", "minLength": 10 },
+        "last_checked": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "evidence": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+      },
+      "additionalProperties": false
+    }
   },
   "additionalProperties": true,
   "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "unresolved" } }, "required": ["status"] },
+      "then": { "required": ["status_unresolved"], "properties": { "status_unresolved": { "type": "object" } } }
+    },
+    {
+      "if": { "properties": { "status_unresolved": { "type": "object" } }, "required": ["status_unresolved"] },
+      "then": { "properties": { "status": { "const": "unresolved" } } }
+    },
     {
       "if": {
         "allOf": [

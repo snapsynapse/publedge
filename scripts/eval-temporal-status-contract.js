@@ -79,4 +79,58 @@ expectFailure('misstated-successor-link', {
     superseded_by: 'successor-record'
 }, 'has superseded_by but status is enforcing');
 
+const unresolvedBlock = {
+    since: '2026-06-30',
+    last_evidenced_status: 'enforcing',
+    question: 'Did the authority extend, renew, or end the term after 2026-06-30?',
+    last_checked: '2026-07-01',
+    evidence: ['ops/evidence/example.md']
+};
+const withBlock = changes => ({ ...unresolvedBlock, ...changes });
+
+expectPass('unresolved-after-term', {
+    status: 'unresolved',
+    term_start: '2025-06-30',
+    term_end: '2026-06-30',
+    status_unresolved: unresolvedBlock
+});
+expectFailure('unresolved-without-block', {
+    status: 'unresolved'
+}, 'without a status_unresolved block');
+expectFailure('block-without-unresolved-status', {
+    status: 'enforcing',
+    status_unresolved: unresolvedBlock
+}, 'has status_unresolved but status is enforcing');
+expectFailure('unresolved-without-evidence', {
+    status: 'unresolved',
+    status_unresolved: withBlock({ evidence: [] })
+}, 'without retained evidence');
+expectFailure('unresolved-without-question', {
+    status: 'unresolved',
+    status_unresolved: withBlock({ question: '' })
+}, 'without a stated open question');
+expectFailure('unresolved-self-referential', {
+    status: 'unresolved',
+    status_unresolved: withBlock({ last_evidenced_status: 'unresolved' })
+}, 'without a last evidenced status');
+expectFailure('unresolved-from-future', {
+    status: 'unresolved',
+    status_unresolved: withBlock({ since: '2026-08-01', last_checked: '2026-08-01' })
+}, 'unresolved from a future date');
+expectFailure('unresolved-checked-before-conflict', {
+    status: 'unresolved',
+    status_unresolved: withBlock({ last_checked: '2026-06-01' })
+}, 'before it became unresolved');
+expectFailure('unresolved-not-rechecked', {
+    status: 'unresolved',
+    status_unresolved: withBlock({ since: '2026-01-01', last_checked: '2026-04-01' })
+}, 'has not been rechecked against sources');
+{
+    const found = temporalStatusFailures({ id: 'unresolved-missing-evidence-file', status: 'unresolved', status_unresolved: unresolvedBlock },
+        TODAY, { exists: () => false });
+    if (!found.some(message => message.includes('cites missing unresolved-status evidence'))) {
+        failures.push(`unresolved-missing-evidence-file did not report missing evidence; got: ${found.join('; ') || 'no failures'}`);
+    }
+}
+
 reportFailures('eval-temporal-status-contract', failures);

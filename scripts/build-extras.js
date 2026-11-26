@@ -730,7 +730,20 @@ function writeRecordSchema() {
                     'statute_anchors': { 'type': ['array', 'null'], 'items': { 'type': ['object', 'string'] } },
                     'publication_citations': { 'type': ['array', 'null'], 'items': { 'type': ['object', 'string'] } },
                     'terms': { 'type': ['array', 'string', 'null'] },
-                    'status': { 'type': ['string', 'null'], 'enum': ['proposed', 'enacted', 'enforcing', 'phased-enforcement', 'pending-replacement', 'expired', 'superseded', 'withdrawn', 'terminated'] },
+                    'status': { 'type': ['string', 'null'], 'enum': ['proposed', 'enacted', 'enforcing', 'phased-enforcement', 'pending-replacement', 'unresolved', 'expired', 'superseded', 'withdrawn', 'terminated'] },
+                    'status_unresolved': {
+                        'type': 'object',
+                        'description': 'Present only when status is unresolved: the last evidenced status, the open question, retained evidence paths, and the last source check.',
+                        'required': ['since', 'last_evidenced_status', 'question', 'last_checked', 'evidence'],
+                        'properties': {
+                            'since': { 'type': 'string', 'format': 'date' },
+                            'last_evidenced_status': { 'type': 'string' },
+                            'question': { 'type': 'string' },
+                            'last_checked': { 'type': 'string', 'format': 'date' },
+                            'evidence': { 'type': 'array', 'items': { 'type': 'string' }, 'minItems': 1 }
+                        },
+                        'additionalProperties': false
+                    },
                     'editorial_status': { 'type': ['string', 'null'], 'enum': ['draft', 'reviewed', 'published'] },
                     'supersedes': { 'type': ['string', 'null'] },
                     'superseded_by': { 'type': ['string', 'null'] },

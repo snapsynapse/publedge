@@ -25,7 +25,7 @@ Weekly checks flag overdue records and temporal inconsistencies for human review
 - [PubLedge proposed template (unissued): Utah Mental Health Chatbot Disclosure](https://publedge.org/us/utah/oaip/jia/2026-001/): proposed
 - [Utah OAIP × ElizaChat — Teen Mental-Health App RMA (2024)](https://publedge.org/us/utah/oaip/rma/2024-001/): expired
 - [Utah OAIP × Dentacor — AI-Assisted Dental Radiograph Diagnosis RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-001/): expired
-- [Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-002/): enforcing
+- [Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)](https://publedge.org/us/utah/oaip/rma/2025-002/): unresolved
 - [Utah OAIP × Legion Health — AI Maintenance Psychiatric Refill RMA (2026)](https://publedge.org/us/utah/oaip/rma/2026-001/): enacted
 
 ## Obligations

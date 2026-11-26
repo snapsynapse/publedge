@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated": "2026-11-21T00:00:00.000Z",
+    "generated": "2026-11-25T00:00:00.000Z",
     "count": 1,
-    "today": "2026-11-21"
+    "today": "2026-11-25"
   },
   "items": [
     {
       "kind": "effective",
       "date": "2027-01-01",
-      "days_until": 41,
+      "days_until": 37,
       "record_id": "us-co-legislature-statute-2026-sb26-189",
       "title": "Colorado SB 26-189 (2026) — Automated Decision-Making Technology (ADMT) Act",
       "url": "https://publedge.org/us/colorado/legislature/statute/2026-001/",

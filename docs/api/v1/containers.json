@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-11-21T00:00:00.000Z",
+    "generated": "2026-11-25T00:00:00.000Z",
     "count": 18
   },
   "items": [
@@ -217,7 +217,7 @@
       "source": "demonstration-remap",
       "author_or_proponent": null,
       "intended_authority": null,
-      "status": "enforcing",
+      "status": "unresolved",
       "editorial_status": "published",
       "effective": "2025-10-24",
       "provision_count": 0,

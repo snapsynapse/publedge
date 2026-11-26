@@ -12,7 +12,10 @@ const SOURCE = path.join(ROOT, 'data/examples/instruments/us-ut-oaip-rma-2025-00
 test('Doctronic outcome statistics remain a dated observation outside issued terms', () => {
     const markdown = fs.readFileSync(SOURCE, 'utf8');
     const { frontmatter, body } = parseFrontmatter(markdown);
-    assert.equal(frontmatter.status, 'enforcing');
+    assert.equal(frontmatter.status, 'unresolved');
+    assert.equal(frontmatter.status_unresolved.since, '2026-10-24');
+    assert.equal(frontmatter.status_unresolved.last_evidenced_status, 'enforcing');
+    assert.equal(frontmatter.status_unresolved.last_checked, '2026-11-01');
     assert.equal(frontmatter.last_verified, '2026-09-23');
     assert.equal(frontmatter.effective, '2025-10-24');
     assert.equal(frontmatter.term_start, '2025-10-24');
@@ -38,7 +41,9 @@ test('Doctronic outcome statistics remain a dated observation outside issued ter
 
 test('generated Doctronic record preserves the source status and dated observation boundary', () => {
     const record = JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/us/utah/oaip/rma/2025-002/record.json'), 'utf8'));
-    assert.equal(record.record.status, 'enforcing');
+    assert.equal(record.record.status, 'unresolved');
+    assert.equal(record.record.status_unresolved.last_evidenced_status, 'enforcing');
+    assert.equal(record.record.status_unresolved.since, '2026-10-24');
     assert.equal(record.record.last_verified, '2026-09-23');
     assert.equal(record.record.effective, '2025-10-24');
     assert.equal(record.meta.admission.status, 'reviewed-changes');
@@ -54,7 +59,13 @@ test('Doctronic source review preserves all native metadata and the exact prior 
     const base = '1d47a0ee120c436f1f198373dd59fe0cdc1dbd2e';
     const old = parseFrontmatter(execFileSync('git', ['show', `${base}:${relative}`], { cwd: ROOT, encoding: 'utf8' }));
     const updated = parseFrontmatter(fs.readFileSync(SOURCE, 'utf8'));
-    assert.deepEqual(updated.frontmatter, old.frontmatter);
+    // Only the status representation changed after the source review: the
+    // evidence gap is stated as unresolved instead of enforcing.
+    const representationKeys = ['status', 'status_unresolved', 'modified'];
+    const withoutRepresentation = frontmatter => Object.fromEntries(Object.entries(frontmatter).filter(([key]) => !representationKeys.includes(key)));
+    assert.deepEqual(withoutRepresentation(updated.frontmatter), withoutRepresentation(old.frontmatter));
+    assert.equal(old.frontmatter.status, 'enforcing');
+    assert.equal(updated.frontmatter.status, 'unresolved');
     const previous = JSON.parse(execFileSync('git', ['show', `${base}:data/admission/receipts.json`], { cwd: ROOT, encoding: 'utf8' })).records[relative];
     const successor = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/admission/receipts.json'), 'utf8')).records[relative];
     const admission = require('../scripts/lib/source-admission');
@@ -66,12 +77,17 @@ test('Doctronic source review preserves all native metadata and the exact prior 
     assert.deepEqual(historicalAgent.supersedes.receipt, previous);
     assert.equal(successor.review.actor_type, 'agent');
     assert.equal(successor.review.human_approved, false);
+    assert.deepEqual(Object.keys(successor.units).sort(), ['metadata:modified', 'metadata:status', 'metadata:status_unresolved']);
+    const observationReceipt = successor.supersedes.receipt;
+    assert.equal(observationReceipt.review.actor_type, 'agent');
+    assert.equal(observationReceipt.review.human_approved, false);
+    for (const item of observationReceipt.unresolved) assert.ok(successor.unresolved.includes(item));
     for (const item of previous.unresolved) assert.ok(successor.unresolved.includes(item));
     assert.deepEqual(Object.keys(historicalAgent.units).sort(), [
         'section:Obligations summary (Section 6 and Schedule A §16)/text',
         'section:Operational observation (not an issued term)/text'
     ]);
-    assert.deepEqual(Object.keys(successor.units), ['section:Operational observation (not an issued term)/text']);
+    assert.deepEqual(Object.keys(observationReceipt.units), ['section:Operational observation (not an issued term)/text']);
     const observation = markdown => markdown.split('## Operational observation (not an issued term)\n\n')[1].split('\n## ')[0];
     assert.ok(observation(updated.body).endsWith(observation(old.body)));
 });

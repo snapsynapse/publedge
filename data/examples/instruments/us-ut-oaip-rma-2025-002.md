@@ -66,7 +66,17 @@ mitigations:
   - "GenAI disclosure (§13-77-103) when a user indicates a renewal request and before the AI engages further on it; user acknowledgment before access to any function"
   - "Data-security posture per §63A-19-102 applied as if Participant were a governmental entity"
   - "Monthly reporting to ai@utah.gov including acceptance/denial counts, physician-review agreement rates, and user-complaint information; separate duty to report user complaints and adverse health outcomes of which Participant becomes aware (no deadline stated)"
-status: enforcing
+status: unresolved
+status_unresolved:
+  since: 2026-10-24
+  last_evidenced_status: enforcing
+  question: "The initial term ended 2026-10-24. OAIP's register still lists Doctronic as Active with that term, and OAIP's FAQ says continuation past October 2026 requires an Office decision. No retained source shows an extension or renewal grant, denial, new term, or termination."
+  last_checked: 2026-11-01
+  evidence:
+    - data/admission/sources/doctronic/2026-11-01/doctronic-card-new-20261101.txt
+    - data/admission/sources/doctronic/2026-10-15/ai-faq.txt
+    - data/admission/sources/doctronic/2026-10-15/Doctronic-Final-Agreement.txt
+    - ops/evidence/doctronic-postterm-review-2026-10-26.md
 editorial_status: published
 supersedes: null
 superseded_by: null
@@ -78,7 +88,7 @@ disclaimer: ""
 last_verified: 2026-09-23
 schema: https://publedge.org/schema/instrument.schema.json
 created: 2026-04-19
-modified: 2026-09-23
+modified: 2026-11-25
 ---
 
 ## Summary

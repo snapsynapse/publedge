@@ -7,11 +7,18 @@
   "language": "en",
   "items": [
     {
+      "id": "https://publedge.org/us/utah/oaip/rma/2025-002/",
+      "url": "https://publedge.org/us/utah/oaip/rma/2025-002/",
+      "title": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025)",
+      "content_text": "Utah OAIP × Doctronic — AI Prescription Renewal RMA (2025). Source: demonstration-remap; status: unresolved.",
+      "date_modified": "2026-11-25T00:00:00.000Z"
+    },
+    {
       "id": "https://publedge.org/us/federal/cfpb/ao/2022-001/",
       "url": "https://publedge.org/us/federal/cfpb/ao/2022-001/",
       "title": "CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F)",
       "content_text": "CFPB Advisory Opinion — Pay-to-Pay Fees (Regulation F). Source: demonstration-remap; status: withdrawn.",
-      "date_modified": "2026-11-21T00:00:00.000Z"
+      "date_modified": "2026-11-25T00:00:00.000Z"
     }
   ]
 }

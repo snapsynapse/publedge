@@ -29,6 +29,7 @@ Instrument records separate legal state from PubLedge editorial maturity:
 proposed → enacted → enforcing → { expired, superseded, withdrawn, terminated }
                               ↘ pending-replacement → superseded
                               ↘ phased-enforcement → enforcing (per phase)
+any active or pre-active state ⇢ unresolved ⇢ { the state the evidence supports }
 ```
 
 ### Values
@@ -40,6 +41,7 @@ proposed → enacted → enforcing → { expired, superseded, withdrawn, termina
 | `enforcing` | Instrument is in force and its terms are operative. For statutes: enforceable by the relevant authority. For agreements: the term is active and the parties are bound. For agency instruments (no-action letters, advisory opinions, private letter rulings): the position remains the published view of the issuing office. | EveryAILaw convention |
 | `phased-enforcement` | Instrument is in force but specific provisions take effect on rolling dates. Used when a single record covers multiple obligations that phase in over time. | EveryAILaw convention |
 | `pending-replacement` | Instrument is known to be replaced by a forthcoming instrument covering the same subject matter. Forward-looking flag; once the replacement is executed, transition to `superseded`. | EveryAILaw convention |
+| `unresolved` | Retained official sources conflict or are silent about the instrument's present legal state, so no other value can be supported without inventing a date or decision. Typical case: a stated term has ended, the authority still lists the instrument as active, and no extension, renewal, or termination decision is retained. The record must carry a `status_unresolved` block naming the date the question arose, the last evidenced status, the open question, the retained evidence, and the last source check; the temporal evaluator fails if the check is more than 90 days old. This is a recordkeeping admission, not a legal state: it does not mean the instrument has lapsed or continues, and it projects to Obligation-First as unknown operative and enforcement status. Replace it as soon as an attributable source resolves the question. | PubLedge addition |
 | `expired` | Instrument's stated term has ended and no extension or replacement was executed. Natural discharge by the passage of time; no party action required. Distinguish from `terminated` (action by a party) and `superseded` (replaced by a newer instrument). Legal basis: Restatement (Second) of Contracts §235, discharge by expiration. | PubLedge addition |
 | `superseded` | Instrument has been replaced by a newer instrument on the same subject matter. The record should also populate the `superseded_by:` field with the canonical identifier of the replacing instrument. | PubLedge addition |
 | `withdrawn` | Instrument has been rescinded unilaterally by the issuing authority before its stated term ended. Applies to agency instruments (advisory opinions, no-action letters, interpretive letters) where the agency pulls back the position. Does not apply to statutes (which are "repealed") or to two-party agreements (which are "terminated"). | PubLedge addition |
@@ -52,6 +54,7 @@ The site renders status as a badge colored by semantic group:
 - **Active (green family)**: `enforcing`, `phased-enforcement`
 - **Pre-active (amber/blue family)**: `proposed`, `enacted`
 - **Future-facing (amber family)**: `pending-replacement`
+- **Unknown (violet)**: `unresolved`
 - **Past (gray family)**: `expired`, `superseded`
 - **Action-ended (red family)**: `withdrawn`, `terminated`
 

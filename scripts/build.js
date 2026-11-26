@@ -688,6 +688,10 @@ function renderRecordSummary(c, config) {
     } else if (c.commencement_date_trigger && !isBlank(c.commencement_date_trigger)) {
         items.push(`<strong>Term:</strong> pending commencement`);
     }
+    if (c.status === 'unresolved' && c.status_unresolved && typeof c.status_unresolved === 'object') {
+        const u = c.status_unresolved;
+        items.push(`<strong>Present status:</strong> unresolved since ${escapeHTML(formatDate(u.since))}; last evidenced ${escapeHTML(String(u.last_evidenced_status || '').replace(/-/g, ' '))}; sources last checked ${escapeHTML(formatDate(u.last_checked))}`);
+    }
     if (c.reliance_scope) items.push(`<strong>Reliance:</strong> ${escapeHTML(String(c.reliance_scope).replace(/-/g, ' '))}`);
     if (c.obligation_kind) {
         const kinds = String(c.obligation_kind).replace(/^\[|\]$/g, '').split(',').map(s => s.trim()).filter(Boolean);
@@ -1915,6 +1919,7 @@ function generateRecordJsonEndpoint(c, config) {
             publication_citations: c.publication_citations || null,
             terms: c.terms || null,
             status: c.status || null,
+            ...(c.status === 'unresolved' && c.status_unresolved ? { status_unresolved: c.status_unresolved } : {}),
             editorial_status: c.editorial_status || null,
             supersedes: c.supersedes || null,
             superseded_by: c.superseded_by || null,

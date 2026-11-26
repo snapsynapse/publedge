@@ -64,6 +64,7 @@ entities:
     # Status vocabulary — see DEFINITIONS.md for semantics + lifecycle.
     # proposed/enacted/enforcing/phased-enforcement/pending-replacement
     # track EveryAILaw's convention verbatim for cross-registry joins.
+    # unresolved is a PubLedge addition with a required status_unresolved block.
     statuses:
       - name: proposed
         color: "#d4a017"
@@ -80,6 +81,9 @@ entities:
       - name: pending-replacement
         color: "#c88e1a"
         color_light: "#a17011"
+      - name: unresolved
+        color: "#7b5ea7"
+        color_light: "#6a4c93"
       - name: expired
         color: "#7a8599"
         color_light: "#5a6572"
