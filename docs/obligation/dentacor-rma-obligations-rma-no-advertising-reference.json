@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/dentacor-rma-obligations-rma-no-advertising-reference.json",
   "pub:id": "dentacor-rma-obligations-rma-no-advertising-reference",
   "title": "RMA — No Advertising Reference To Agreement",
-  "content": "An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.",
+  "content": "ElizaChat and Dentacor restrict mentioning participation in advertising or promotional materials unless the Office approves in writing. Doctronic includes media in that restriction. Legion permits publicity consistent with the agreement’s scope and purpose, and requires prior written approval for promotional statements implying Office or State endorsement.",
   "created_by": [
     "https://publedge.org/term/dentacor-rma-obligations.json"
   ],
@@ -45,20 +45,23 @@
     "This agent source-consistency candidate does not renew human Verified/Checked/last_verified or certify whole-record/current legal effect.",
     "Unchanged parts of a reviewed unit are retained,not blanket source/legal acceptance; lineage preserves prior accepted units and human reviews.",
     "Dentacor original metadata title is Working Draft. Retained official URL/body identity and selected text/signature appearances do not authenticate signatures,signatory authority,execution,effectiveness,current mitigation,testing-plan acceptance,extension ortermination. Existing legal status/lifecycle/initial dates remain unchanged; no actual extension/termination decision was reviewed.",
-    "Notes identifier maintenance only: retained owner-authored native catalog bytes are primary for PubLedge IDs, not primary legal evidence. Other Notes claims and historical numbering are not newly accepted; no conclusion that the older identifiers never existed."
+    "Notes identifier maintenance only: retained owner-authored native catalog bytes are primary for PubLedge IDs, not primary legal evidence. Other Notes claims and historical numbering are not newly accepted; no conclusion that the older identifiers never existed.",
+    "Evidence that testing plan accepted and exact first operational date are outstanding.",
+    "Contract-text comparison only. Aggregate legal lifecycle still depends on term and commencement decisions for mapped instruments."
   ],
   "pub:source_review_state": "known-and-unknown",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
       "native_path": "data/examples/instruments/us-ut-oaip-rma-2025-001.md",
-      "native_file_sha256": "ff5744347015a193f20cdec64771d4f2b77f54fb8f2f323bd6e8736e89ad2128",
+      "native_file_sha256": "cea33d4b431ccf9d25c04c389407d68fb2f900fcf16b613be66be6c4d0b8e124",
       "canonical_unit": null,
-      "canonical_sha256": "37d8090742ba2fc50edbdab00598471f76fb3ddab943994187ded9c01fbbc15e",
+      "canonical_sha256": "8c746eaeee8907b93b884059c5d689052690e36feefff0533ecba443667c6333",
       "admission_status": "reviewed-changes",
-      "review_packet_sha256": "f498689c70fa0e9ec314f534e8ee2d4354e7705e5a6ce7eb9e86558fa030caa0",
+      "review_packet_sha256": "eb3a3bba1407d5708307414b9301c68193211f5954d4dc85f0599aeaa08d521b",
       "retained_primary_sha256": [
         "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+        "a6d20a991f9731e3c0e173e2d21095f00d320fe65358ea2635dbdda3361cc1dc",
         "a906d83a5ea7d6cf6afe6b279acba9b99b38f251cae9896758ac11be630e9a7d",
         "c9354f6299bdd94e42134d1b8017ba6e5d4756c70fc61ff1eaf364a495848617"
       ],
@@ -67,13 +70,14 @@
         "This agent source-consistency candidate does not renew human Verified/Checked/last_verified or certify whole-record/current legal effect.",
         "Unchanged parts of a reviewed unit are retained,not blanket source/legal acceptance; lineage preserves prior accepted units and human reviews.",
         "Dentacor original metadata title is Working Draft. Retained official URL/body identity and selected text/signature appearances do not authenticate signatures,signatory authority,execution,effectiveness,current mitigation,testing-plan acceptance,extension ortermination. Existing legal status/lifecycle/initial dates remain unchanged; no actual extension/termination decision was reviewed.",
-        "Notes identifier maintenance only: retained owner-authored native catalog bytes are primary for PubLedge IDs, not primary legal evidence. Other Notes claims and historical numbering are not newly accepted; no conclusion that the older identifiers never existed."
+        "Notes identifier maintenance only: retained owner-authored native catalog bytes are primary for PubLedge IDs, not primary legal evidence. Other Notes claims and historical numbering are not newly accepted; no conclusion that the older identifiers never existed.",
+        "Evidence that testing plan accepted and exact first operational date are outstanding."
       ]
     },
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "0d2f48f2501067771f86556c779dbeaa433bc4d53741f50811185c49f8597d7f",
       "canonical_unit": "entry:dentacor-rma-obligations",
       "canonical_sha256": "e9dab4526948a1a8bc2c9a496d9aceec2a9dbd7998b36eb976e7b1099c444602",
       "admission_status": "legacy-unreviewed",
@@ -85,14 +89,21 @@
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/rma-no-advertising-reference.md",
-      "native_file_sha256": "cfd94c1c80489e8effb883823a7ad555d7d83ca431e61d6eab9330c4558a81f2",
+      "native_file_sha256": "c8081587d37f0a37ef53fa6a7fc30500aa964e2055620d266bb58a94b58bdc19",
       "canonical_unit": null,
-      "canonical_sha256": "a28d9d3f2893e6a8f76d5d2d6d776085a5a846972cebbac58665fb946c51b9bf",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "187cc94c842f430ff3eb4598282577ea9f592a86dd47f8c78112f3a1b4549fc5",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "6a047b5a5dcd9755c88f3aadd58b05d9ce555ef9d84d0d7d6306a9fd7d8ac5c5",
+      "retained_primary_sha256": [
+        "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+        "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
+        "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
+        "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "Contract-text comparison only. Aggregate legal lifecycle still depends on term and commencement decisions for mapped instruments."
+      ]
     }
   ]
 }

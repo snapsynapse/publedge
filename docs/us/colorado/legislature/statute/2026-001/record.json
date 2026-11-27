@@ -53,11 +53,11 @@
         "url": "https://leg.colorado.gov/bills/sb26-189"
       },
       {
-        "cite": "C.R.S. §6-1-1704 (deployer consumer-notice obligation; consequential decisions)",
+        "cite": "C.R.S. §6-1-1704 (deployer notice and post-adverse disclosures)",
         "url": "https://leg.colorado.gov/bills/sb26-189"
       },
       {
-        "cite": "C.R.S. §6-1-1705 (consumer rights; data correction; human review; 30-day post-adverse explanation)",
+        "cite": "C.R.S. §6-1-1705 (consumer rights; data correction; human review and reconsideration)",
         "url": "https://leg.colorado.gov/bills/sb26-189"
       },
       {
@@ -81,23 +81,23 @@
     "timeline": [
       {
         "milestone": "Introduced",
-        "date": "Unconfirmed",
-        "notes": "2026 Regular Session; exact introduction date is not established by the retained primary evidence reviewed here"
+        "date": "2026-05-01",
+        "notes": "Colorado General Assembly, All Versions"
       },
       {
         "milestone": "Governor Signed",
         "date": "2026-05-14",
-        "notes": "Replaces SB 24-205 in full"
+        "notes": "Section 5 distinguishes enactment, provisions effective on passage, and the January 1, 2027 general commencement."
       },
       {
-        "milestone": "Rulemaking sections effective",
+        "milestone": "Provisions effective on passage",
         "date": "2026-05-14",
-        "notes": "§§6-1-1704(4), 6-1-1705(3), and 6-1-1706(6) took effect on passage"
+        "notes": "Section 5(2) includes the Attorney General rulemaking directives in §§6-1-1704(4) and 6-1-1705(3), the party-joinder provision in §6-1-1706(6), and the insurance commissioner’s authority to adopt or update insurer notice and disclosure rules under §10-3-1104.9(3)(e). It also includes act §§4–6."
       },
       {
-        "milestone": "Challenge window",
-        "date": "2026-05-14 → 2026-06-11",
-        "notes": "28-day window for further litigation noted in public commentary"
+        "milestone": "Implementing rules adopted",
+        "date": "2026-11-19",
+        "notes": "The Colorado Secretary of State’s eDocket for 4 CCR 904-6 (tracking 2026-00360) lists November 19 as the adoption date and November 20 as the date an Attorney General opinion was requested. The November 24 docket observation supplies no effective date for the rules."
       },
       {
         "milestone": "Substantive duties effective",
@@ -105,14 +105,9 @@
         "notes": "Developer, deployer, consumer-rights, recordkeeping, and cure obligations apply to consequential decisions on or after this date"
       },
       {
-        "milestone": "Record-retention horizon",
-        "date": "2030-01-01",
-        "notes": "First 3-year retention cycle closes"
-      },
-      {
         "milestone": "Cure-period sunset",
         "date": "2030-01-01",
-        "notes": "60-day cure available until this date per transition provisions"
+        "notes": "Repeal of §6-1-1706(3) takes effect."
       }
     ],
     "source_documents": []
@@ -154,12 +149,12 @@
       },
       {
         "@type": "Legislation",
-        "name": "C.R.S. §6-1-1704 (deployer consumer-notice obligation; consequential decisions)",
+        "name": "C.R.S. §6-1-1704 (deployer notice and post-adverse disclosures)",
         "url": "https://leg.colorado.gov/bills/sb26-189"
       },
       {
         "@type": "Legislation",
-        "name": "C.R.S. §6-1-1705 (consumer rights; data correction; human review; 30-day post-adverse explanation)",
+        "name": "C.R.S. §6-1-1705 (consumer rights; data correction; human review and reconsideration)",
         "url": "https://leg.colorado.gov/bills/sb26-189"
       },
       {

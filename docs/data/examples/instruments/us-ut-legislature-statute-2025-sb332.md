@@ -14,7 +14,7 @@ issued_by:
   ref: "https://le.utah.gov/"
 issuance_event: gist:Enactment
 enacted: 2025-03-25
-effective: 2025-05-07
+effective: 2025-03-25
 official_url: https://le.utah.gov/~2025/bills/static/SB0332.html
 obligation_kind: []
 reliance_scope: public
@@ -49,13 +49,13 @@ modified: 2026-09-23
 
 | Milestone | Date | Notes |
 |-----------|------|-------|
-| Introduced | 2025-02-24 | Senate Rules Committee (unconfirmed) |
-| Senate Business and Labor — favorable | 2025-02-26 | 7-0-1 (unconfirmed) |
-| Senate passed 3rd reading | 2025-03-03 | 24-0-5 (unconfirmed) |
-| House Law Enforcement and Criminal Justice — favorable | 2025-03-04 | 8-0-3 (unconfirmed) |
-| House passed | 2025-03-05 | 74-0-1 (unconfirmed) |
-| Governor Signed | 2025-03-25 | Gov. Cox (unconfirmed) |
-| Effective | 2025-05-07 | Special effective date (§2): May 7, 2025, or on governor approval if passed by two-thirds of each house; two-thirds vote not confirmed |
+| Introduced | 2025-02-24 | First reading in the chamber of origin |
+| Senate Business and Labor — favorable | 2025-02-26 | 7-0-1 |
+| Senate passed 3rd reading | 2025-03-03 | 24-0-5 |
+| House Law Enforcement and Criminal Justice — favorable | 2025-03-04 | 8-0-3 |
+| House passed | 2025-03-05 | 74-0-1 |
+| Governor Signed | 2025-03-25 | Governor’s bill register and legislative action history (GSIGN) |
+| Effective | 2025-03-25 | Section 2(2)(a) applied when the governor signed following two-thirds passage in both chambers. |
 | Chapter 72 sunset (post-amendment) | 2027-07-01 | Extended from 2025-05-01 (SB 226 §7 made the same amendment) |
 
 ---
@@ -66,7 +66,7 @@ SB 332 is a structural amendment to Utah Code §63I-2-213 (the state's legislati
 
 The bill introduced no new substantive obligations, no new disclosure duties, no new agency powers, and no new penalties. It is included in the PubLedge registry because it materially affects the reliance period of every Regulatory Mitigation Agreement, Joint Interpretation Agreement, and related authority artifact issued under Chapter 72. SB 226 (2025) §7 made the identical §63I-2-213(5) amendment in the same session, so SB 332 was one of two bills that moved the chapter's repeal date past 2025-05-01.
 
-The bill took effect May 7, 2025, or, if approved by two-thirds of all members elected to each house, on governor approval (§2). The introduction, committee, floor-vote and signing entries in the Timeline are not shown in the enrolled copy and are not confirmed against a retained bill status page, so which effective date applied is not confirmed here.
+The final votes were 24-0-5 in the Senate and 74-0-1 in the House. Both met the two-thirds threshold in §2. The governor approved the bill on March 25, 2025, bringing it into effect that day. The September 16, 2026 committee report recommended extending the sunset to July 1, 2037. On November 18 the committee approved a 2027 General Session draft bill that would make that change. The proposed 2037 date still requires enactment.
 
 Subsequent amendments by HB 320 (2026) further restructured Chapter 72 (Learning Lab redesign, JIA instrument formalization, 36-month term ceiling) but did not further alter the sunset date set by SB 332 and SB 226.
 
@@ -89,3 +89,8 @@ PubLedge's role here is limited to: (a) recording the extension as part of the s
 - [EveryAILaw — Utah AI Stack (full obligations)](https://everyailaw.com/regulation/utah-sb149/index.html)
 - [Utah Code §63I-2-213 (sunset registry)](https://le.utah.gov/xcode/Title63I/Chapter2/63I-2-S213.html)
 - [Utah Code Title 13, Chapter 72 (AIPA — extended chapter)](https://le.utah.gov/xcode/Title13/Chapter72/13-72.html)
+
+- [Utah Legislature bill action history](https://le.utah.gov/data/2025GS/SB0332.json)
+- [Governor’s signed-bills register](https://governor.utah.gov/bills/)
+- [September 16, 2026 interim committee highlights](https://le.utah.gov/interim/2026/pdf/00003528.pdf)
+- [November 2026 interim committee highlights, Business and Labor Interim Committee, page 1](https://le.utah.gov/interim/2026/pdf/00004250.pdf)

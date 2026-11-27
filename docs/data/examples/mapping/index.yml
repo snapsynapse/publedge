@@ -112,6 +112,7 @@
   authority: utah-oaip
   source_file: data/examples/instruments/us-ut-oaip-rma-2026-001.md
   source_heading: Obligations summary (Section 6 and Schedule A §17)
+  obligation_qualification: Legion §§6.E–F set Proposal, Office, and cybersecurity safeguards without expressly incorporating Utah Code §63A-19-102. Section 6.D.1 permits scope-consistent publicity and requires prior written Office approval for statements implying State or Office endorsement.
   obligations:
     - rma-monthly-report-to-oaip
     - rma-end-of-term-report

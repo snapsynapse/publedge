@@ -31,7 +31,7 @@
     "intended_authority_url": null,
     "issuance_event": "gist:Enactment",
     "enacted": "2025-03-25",
-    "effective": "2025-05-07",
+    "effective": "2025-03-25",
     "official_url": "https://le.utah.gov/~2025/bills/static/SB0332.html",
     "obligation_kind": [],
     "reliance_scope": "public",
@@ -67,37 +67,37 @@
       {
         "milestone": "Introduced",
         "date": "2025-02-24",
-        "notes": "Senate Rules Committee (unconfirmed)"
+        "notes": "First reading in the chamber of origin"
       },
       {
         "milestone": "Senate Business and Labor — favorable",
         "date": "2025-02-26",
-        "notes": "7-0-1 (unconfirmed)"
+        "notes": "7-0-1"
       },
       {
         "milestone": "Senate passed 3rd reading",
         "date": "2025-03-03",
-        "notes": "24-0-5 (unconfirmed)"
+        "notes": "24-0-5"
       },
       {
         "milestone": "House Law Enforcement and Criminal Justice — favorable",
         "date": "2025-03-04",
-        "notes": "8-0-3 (unconfirmed)"
+        "notes": "8-0-3"
       },
       {
         "milestone": "House passed",
         "date": "2025-03-05",
-        "notes": "74-0-1 (unconfirmed)"
+        "notes": "74-0-1"
       },
       {
         "milestone": "Governor Signed",
         "date": "2025-03-25",
-        "notes": "Gov. Cox (unconfirmed)"
+        "notes": "Governor’s bill register and legislative action history (GSIGN)"
       },
       {
         "milestone": "Effective",
-        "date": "2025-05-07",
-        "notes": "Special effective date (§2): May 7, 2025, or on governor approval if passed by two-thirds of each house; two-thirds vote not confirmed"
+        "date": "2025-03-25",
+        "notes": "Section 2(2)(a) applied when the governor signed following two-thirds passage in both chambers."
       },
       {
         "milestone": "Chapter 72 sunset (post-amendment)",
@@ -120,7 +120,7 @@
     ],
     "dateCreated": "2026-06-04",
     "dateModified": "2026-09-23",
-    "datePublished": "2025-05-07",
+    "datePublished": "2025-03-25",
     "author": {
       "@type": "https://w3id.org/semanticarts/ns/ontology/gist/SubCountryGovernment",
       "name": "Utah State Legislature",

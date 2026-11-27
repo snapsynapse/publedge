@@ -9,7 +9,7 @@
   "@id": "https://publedge.org/obligation/legion-rma-obligations-rma-monthly-report-to-oaip.json",
   "pub:id": "legion-rma-obligations-rma-monthly-report-to-oaip",
   "title": "RMA — Monthly Report To OAIP",
-  "content": "Each Learning Lab RMA participant submits a monthly report to OAIP at `ai@utah.gov` covering user data, incidents, complaints, research findings, and any other information specified by the Office. The report is the primary ongoing accountability mechanism between participant and regulator during the mitigation period.",
+  "content": "The four mapped agreements require a monthly report to OAIP. The agreement sets its contents. Dentacor reports dental pilot demographics, efficacy and incidents. Doctronic and Legion include prescription-renewal and clinical-review metrics. ElizaChat reports on its app demonstration.",
   "created_by": [
     "https://publedge.org/term/legion-rma-obligations.json"
   ],
@@ -25,7 +25,7 @@
   "source": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/ai-legion-health/",
   "source_locator": "Obligations summary (Section 6 and Schedule A §17)",
   "source_citation": "https://commerce.utah.gov/wp-content/uploads/2026/03/Legion-Agreement.pdf",
-  "evidence_type": "legacy-unreviewed-source-reference",
+  "evidence_type": "reviewed-source-reference",
   "verified": "2026-04-21",
   "asserted_by_adopter": "https://publedge.org/",
   "pub:primary_id": "rma-monthly-report-to-oaip",
@@ -40,14 +40,16 @@
     "learning lab"
   ],
   "projection_basis": "native-record-projection",
-  "admission_status": "legacy-unreviewed",
+  "admission_status": "source-consistency-reviewed-changes",
   "source_review_conflicts": null,
   "pub:source_review_unresolved": [
     "No retained source gives a Commencement Date or publishes the Section 2.B commencement notice; the register said the demonstration period had not started when retrieved 2026-09-24.",
     "The register lists malpractice insurance covering AI-related liability, but no insurance term appears in the retained signed agreement text.",
-    "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained."
+    "The UAC R156-1 link returned HTTP 404 and was removed; no current official Office of Administrative Rules URL was retained.",
+    "No written commencement date or status finding.",
+    "Contract-text comparison only. Aggregate legal lifecycle still depends on term and commencement decisions for mapped instruments."
   ],
-  "pub:source_review_state": "known-and-unknown",
+  "pub:source_review_state": "declared",
   "pub:evidence_inputs": [
     {
       "kind": "instrument",
@@ -73,26 +75,37 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "0d2f48f2501067771f86556c779dbeaa433bc4d53741f50811185c49f8597d7f",
       "canonical_unit": "entry:legion-rma-obligations",
-      "canonical_sha256": "8d53ca4c492a4efbde8299ec0998d2b0966db016cf54e627ddca6fae7aa8e88b",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "5ab4aab4e5f494c2a87fbcabfc0b83f0526d6a560086397e2dc2cc5caed23c31",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "cc34404c9036e5987c599f22264bab9fa6c16a2b9f33883e0b898333adbfc496",
+      "retained_primary_sha256": [
+        "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "No written commencement date or status finding."
+      ]
     },
     {
       "kind": "obligation-definition",
       "native_path": "data/examples/obligations/rma-monthly-report-to-oaip.md",
-      "native_file_sha256": "931f6cb88887afd010f86d2c609a115504274d427da7599ccecc31a584fa8b31",
+      "native_file_sha256": "ff21d79dd69cf938c9f76eacbd7e9fd1febcf9dbeca321e552e4be486c403039",
       "canonical_unit": null,
-      "canonical_sha256": "63ab4dbd0b67aef7f004156ae5694bbc52d51e8d74c3ea03f8bb08a68a11b017",
-      "admission_status": "legacy-unreviewed",
-      "review_packet_sha256": null,
-      "retained_primary_sha256": null,
-      "unresolved_review_state": "unknown",
-      "unresolved": null
+      "canonical_sha256": "974ae4466c2deaf22f0e07129cdce34add35f340bc2b0b68b99877511909666f",
+      "admission_status": "reviewed-changes",
+      "review_packet_sha256": "6488672cea709583268a12aa22ee860ec5c1915bd56d2902690c5ed7fe713f26",
+      "retained_primary_sha256": [
+        "066abb3c61caf45ab9c88aa58ec76134c352191c57d9b75361c375cbe5d5d9be",
+        "3b02de08d771cfe3b90f3f7913cb84c3516d61fd7041fcd60fd6deffb6b7cf1c",
+        "6b7c88c3117323ed84ac2e7e59820193aec5677a8d6cda04637cba9edff36b8d",
+        "a608ae66c362d6b6dd87a68d25055642d6dfcc6a19685aa614c9bb48c5340f7f"
+      ],
+      "unresolved_review_state": "declared",
+      "unresolved": [
+        "Contract-text comparison only. Aggregate legal lifecycle still depends on term and commencement decisions for mapped instruments."
+      ]
     }
   ]
 }

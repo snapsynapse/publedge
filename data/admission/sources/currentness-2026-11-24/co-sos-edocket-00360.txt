@@ -1,0 +1,81 @@
+Code of Colorado Regulations eDocket
+Skip to content
+|
+About Secretary Griswold
+|
+Español
+Home
+Colorado Revised Statutes
+Search
+Browse
+Colorado Register
+eDocket
+Log in
+Contact Us
+Code of Colorado Regulations eDocket
+Official Publication of the State Administrative Rules (24-4-103(11) C.R.S.)
+Details of Tracking Number 2026-00360
+CCR details
+Tracking Number
+2026-00360
+Type of Filing
+Permanent Rule
+Department
+900 Department of Law
+Agency
+904 Attorney General-Consumer Protection Section
+CCR Number
+4 CCR 904-6
+CCR Title
+AUTOMATED DECISION-MAKING TECHNOLOGY & CONVERSATIONAL ARTIFICIAL INTELLIGENCE SERVICE RULES
+Proposed rule
+Notice Filed with SOS
+08/11/2026
+Rule
+ProposedRuleAttach2026-00360.docx
+Additional Information
+AddInfoAttach2026-00360.docx
+Statutory Authority
+C.R.S. § 6-1-108(1), C.R.S. § 6-1-1707 (as enacted by SB24-205), C.R.S. § 6-1-1704(4) (as amended by SB26-189), C.R.S. § 6-1-1705(3) (as amended by SB26-189), and C.R.S. § 6-1-1706(5) (as amended by SB26-189).
+Description of Subjects/Issues
+The Colorado Department of Law (the Department) is considering rules governing the implementation of SB26-189, the Automated Decision Making Technology Act (ADMT Act), and HB26-1263, the Chatbot Safety Act, (together "the Acts"). The specific purpose of this rulemaking is to create rules governing the ways in which the Acts shall be carried out including the clarification of obligations imposed on developers and deployers of AI technology, disclosure and reporting requirements, and consumer rights, and to clarify the obligations of operators of Conversational Artificial Intelligence Services to protect users and report annually to the Attorney General.
+Purpose/Objective of Rule
+These purpose of the proposed Chatbot Safety Act and Automated Decision-Making Technology Act Rules is to implement and clarify both Acts by establishing standards and processes and ensuring that requirements are understandable and effective. The Automated Decision-Making Technology Act requires the Colorado Attorney General to adopt rules to clarify and implement the post-Adverse Outcome disclosure and Meaningful Human Review requirements by January 1, 2027. C.R.S. §§ 6-1-17041705 (eff. Jan. 1, 2027)
+Basis And Purpose
+BasisAndPurposeAttachment2026-00360.docx
+Regulatory analysis
+RegulatoryAnalysisAttachment2026-00360.docx
+Submitted in response to issues raised by COLS/OLLS?
+No
+Is this rule adopted in response to recent legislation?
+Yes
+Recent legislation bill number
+SB 24-204; HB 26-1263
+Hearing Date
+10/26/2026
+Hearing Time
+10:00 AM
+Hearing Location
+Office of The Attorney General, Colorado Department of Law, Ralph L. Carr Judicial Building, 1300 Broadway, Room 1D Denver, CO 80203, and via Zoom
+Contact Name
+Rick VanWie
+Contact Title
+Senior Paralegal
+Contact Telephone
+720-508-6243
+Contact email
+ai@coag.gov
+Adopted rule
+Adopted Rules
+AdoptedRules02026-00360.docx
+Redline
+Redline2026-00360.docx
+Adopted Date
+11/19/2026
+AGO requested date
+11/20/2026
+Terms & conditions
+|
+Accessibility statement
+|
+Browser compatibility

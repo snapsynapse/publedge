@@ -60,7 +60,7 @@
     {
       "kind": "mapping-entry",
       "native_path": "data/examples/mapping/index.yml",
-      "native_file_sha256": "d0b0398852b70986284082868a77e051d05860c5ceac94e7dcd6ac58ef1d292a",
+      "native_file_sha256": "0d2f48f2501067771f86556c779dbeaa433bc4d53741f50811185c49f8597d7f",
       "canonical_unit": "entry:irs-plr-202506001-incentive-fee",
       "canonical_sha256": "c2145852b85e818957983272334c5f4d57d23b7aecb92fa4ab317cb205d88489",
       "admission_status": "legacy-unreviewed",

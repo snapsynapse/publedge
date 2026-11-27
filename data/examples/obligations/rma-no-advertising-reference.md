@@ -15,19 +15,17 @@ search_terms:
 
 ## Summary
 
-An RMA participant may not reference the existence of the agreement in advertising, media, or promotional materials. The mitigation is a regulatory posture, not a marketable endorsement by the State of Utah.
+ElizaChat and Dentacor restrict mentioning participation in advertising or promotional materials unless the Office approves in writing. Doctronic includes media in that restriction. Legion permits publicity consistent with the agreement’s scope and purpose, and requires prior written approval for promotional statements implying Office or State endorsement.
 
 ## What Counts
 
-- No mention of the RMA in paid advertising
-- No mention in press releases, media appearances, or promotional content
-- No implication that OAIP or the State has endorsed or approved the participant's product or service
+- Apply §6.D.1 of the specific agreement and retain any applicable written approval.
+- For Legion, distinguish publicity about the project from statements that imply endorsement.
 
 ## What Does Not Count
 
-- Neutral disclosure to regulators, investors, or counterparties in business documents
-- Factual references in required legal disclosures where non-disclosure is not practicable
+- Applying another participant’s approval or publicity terms to a different agreement.
 
 ## Statute Anchors
 
-- Agreement-specific non-promotion clause (standard across Utah RMAs)
+- ElizaChat VI.D.1, Dentacor §6.D.1, Doctronic §6.D.1 and Legion §6.D.1.

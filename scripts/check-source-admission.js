@@ -81,7 +81,10 @@ function run({ root = ROOT, base = process.env.SOURCE_ADMISSION_BASE || 'HEAD', 
     execFileSync('git', ['cat-file', '-e', `${base}^{commit}`], { cwd: root, stdio: 'pipe' });
     let prior = null;
     try {
-        prior = JSON.parse(execFileSync('git', ['show', `${base}:data/admission/receipts.json`], { cwd: root, stdio: ['ignore', 'pipe', 'pipe'], encoding: 'utf8' }));
+        const object = `${base}:data/admission/receipts.json`;
+        const options = { cwd: root, stdio: ['ignore', 'pipe', 'pipe'], encoding: 'utf8' };
+        const byteLength = Number(execFileSync('git', ['cat-file', '-s', object], options).trim());
+        prior = JSON.parse(execFileSync('git', ['cat-file', 'blob', object], { ...options, maxBuffer: byteLength }));
     } catch {
         const resolved = execFileSync('git', ['rev-parse', base], { cwd: root, encoding: 'utf8' }).trim();
         if (resolved !== legacy.source_commit) {

@@ -134,8 +134,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2025-hb452-enacted@publedge.org
 DTSTAMP:20261125T000000Z
-DTSTART;VALUE=DATE:20250326
-DTEND;VALUE=DATE:20250326
+DTSTART;VALUE=DATE:20250325
+DTEND;VALUE=DATE:20250325
 SUMMARY:Enacted: Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots)
 DESCRIPTION:Utah HB 452 (2025) — Artificial Intelligence Amendments (Mental Health Chatbots) — enacted. https://publedge.org/us/utah/legislature/statute/2025-002/
 URL:https://publedge.org/us/utah/legislature/statute/2025-002/
@@ -152,8 +152,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2025-sb226-enacted@publedge.org
 DTSTAMP:20261125T000000Z
-DTSTART;VALUE=DATE:20250325
-DTEND;VALUE=DATE:20250325
+DTSTART;VALUE=DATE:20250327
+DTEND;VALUE=DATE:20250327
 SUMMARY:Enacted: Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments
 DESCRIPTION:Utah SB 226 (2025) — Artificial Intelligence Consumer Protection Amendments — enacted. https://publedge.org/us/utah/legislature/statute/2025-001/
 URL:https://publedge.org/us/utah/legislature/statute/2025-001/
@@ -168,19 +168,10 @@ DESCRIPTION:Utah SB 226 (2025) — Artificial Intelligence Consumer Protection A
 URL:https://publedge.org/us/utah/legislature/statute/2025-001/
 END:VEVENT
 BEGIN:VEVENT
-UID:us-ut-legislature-statute-2025-sb332-enacted@publedge.org
+UID:us-ut-legislature-statute-2025-sb332-effective@publedge.org
 DTSTAMP:20261125T000000Z
 DTSTART;VALUE=DATE:20250325
 DTEND;VALUE=DATE:20250325
-SUMMARY:Enacted: Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)
-DESCRIPTION:Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension) — enacted. https://publedge.org/us/utah/legislature/statute/2025-003/
-URL:https://publedge.org/us/utah/legislature/statute/2025-003/
-END:VEVENT
-BEGIN:VEVENT
-UID:us-ut-legislature-statute-2025-sb332-effective@publedge.org
-DTSTAMP:20261125T000000Z
-DTSTART;VALUE=DATE:20250507
-DTEND;VALUE=DATE:20250507
 SUMMARY:Effective: Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension)
 DESCRIPTION:Utah SB 332 (2025) — Artificial Intelligence Revisions (AIPA Sunset Extension) — effective. https://publedge.org/us/utah/legislature/statute/2025-003/
 URL:https://publedge.org/us/utah/legislature/statute/2025-003/
@@ -188,8 +179,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:us-ut-legislature-statute-2026-hb320-enacted@publedge.org
 DTSTAMP:20261125T000000Z
-DTSTART;VALUE=DATE:20260319
-DTEND;VALUE=DATE:20260319
+DTSTART;VALUE=DATE:20260318
+DTEND;VALUE=DATE:20260318
 SUMMARY:Enacted: Utah HB 320 (2026) — Office of Artificial Intelligence Policy Amendments (Learning Lab Restructure + Joint Interpretation Agreements)
 DESCRIPTION:Utah HB 320 (2026) — Office of Artificial Intelligence Policy Amendments (Learning Lab Restructure + Joint Interpretation Agreements) — enacted. https://publedge.org/us/utah/legislature/statute/2026-001/
 URL:https://publedge.org/us/utah/legislature/statute/2026-001/
