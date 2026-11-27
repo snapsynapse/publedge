@@ -598,7 +598,7 @@ files:
 
   - path: scripts/build.js
     role: tooling
-    hash: sha256:43c488b93710c7302a3dca7b63e0c34c54778697c89fdcaa9d99932d02b8dfd5
+    hash: sha256:7507dba08fc322a16dfa6a43efc641e31fd1cac6fa4b094b41d641659d2b6b9b
     note: scripts/build.js
 
   - path: scripts/check-production-search.mjs
@@ -1083,7 +1083,7 @@ files:
 
   - path: tests/of-evidence-inputs.test.js
     role: code
-    hash: sha256:7e16f8d3d744b48323dbdbb0b3c73000b83dbd12fa6049a826ce2fcdfca9e639
+    hash: sha256:c84a5065ecdda21ea55f6a3aa672d66ac8002b803dceb2860dfccb2ed8ab905c
     note: Per-kind native evidence input and review-boundary regressions
 
   - path: tests/colorado-order24.test.js

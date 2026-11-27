@@ -153,7 +153,14 @@ test('Legion mapping qualifications stay local to its entry', () => {
     }
 });
 
-test('every Legion projection carries its instrument commencement uncertainty', () => {
+test('all Legion projections preserve the instrument limits and exclude unrelated mapping history', () => {
+    const receipts = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/admission/receipts.json'))).records;
+    const instrumentLimits = receipts['data/examples/instruments/us-ut-oaip-rma-2026-001.md'].unresolved;
+    assert.ok(instrumentLimits.some(limit => limit.includes('Section 2.B commencement notice')));
+    assert.ok(instrumentLimits.some(limit => limit.includes('malpractice insurance')));
+    assert.ok(instrumentLimits.some(limit => limit.includes('UAC R156-1')));
+    const draftLimit = receipts['data/examples/mapping/index.yml'].unresolved.find(limit => limit.includes('30-minute re-display'));
+    assert.ok(draftLimit);
     const legion = records.filter(record => record['pub:evidence_inputs'].some(input =>
         input.canonical_unit === 'entry:legion-rma-obligations'
     ));
@@ -163,7 +170,9 @@ test('every Legion projection carries its instrument commencement uncertainty', 
         const mapping = record['pub:evidence_inputs'].find(input => input.kind === 'mapping-entry');
         assert.deepEqual(mapping.unresolved, ['No written commencement date or status finding.']);
         assert.equal(mapping.unresolved_review_state, 'declared');
-        assert.ok(instrument.unresolved.some(limit => limit.includes('Section 2.B commencement notice')));
-        assert.ok(record['pub:source_review_unresolved'].some(limit => limit.includes('Section 2.B commencement notice')));
+        assert.deepEqual(instrument.unresolved, instrumentLimits);
+        const projectedLimits = record['pub:source_review_unresolved'];
+        for (const limit of instrumentLimits) assert.ok(projectedLimits.includes(limit), record['@id']);
+        assert.ok(!projectedLimits.includes(draftLimit), record['@id']);
     }
 });
