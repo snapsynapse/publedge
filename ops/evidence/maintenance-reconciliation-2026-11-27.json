@@ -1,0 +1,313 @@
+{
+  "format": "publedge-maintenance-reconciliation-v1",
+  "date": "2026-11-27",
+  "main": "4392549be52703b801554f546b8adb1c298f8dc2",
+  "branch_refs": {
+    "refs/heads/codex/handoff-maintenance-20261118": "bd26b39eca39f5b599f262abc2efd863a12b9aec",
+    "refs/remotes/origin/codex/handoff-maintenance-20261118": "f813df350b75dfd0acfc84f7baf3243a1c38feb1",
+    "refs/remotes/origin/main": "4392549be52703b801554f546b8adb1c298f8dc2"
+  },
+  "unmerged_commits": [
+    "bd26b39eca39f5b599f262abc2efd863a12b9aec refactor: simplify output and search boundary guards",
+    "f813df350b75dfd0acfc84f7baf3243a1c38feb1 fix: contain renderer and production search boundaries",
+    "aa3898156ea86fc3bf041c04c8926069433930b0 fix: reconcile maintenance queues and search decoding"
+  ],
+  "ahead_of_main": 3,
+  "behind_main": 26,
+  "path_comparison": [
+    {
+      "path": ".github/workflows/build.yml",
+      "branch_blob": "9b226cb007f8300aa649239428f57a2d7e5839bc",
+      "main_blob": "9b226cb007f8300aa649239428f57a2d7e5839bc",
+      "byte_identical": true
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "branch_blob": "1b9b4889612049ac840ffa3852fbb33b98787618",
+      "main_blob": "1b9b4889612049ac840ffa3852fbb33b98787618",
+      "byte_identical": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "branch_blob": "562fb94803a0f2bbf041d13558ea072bf93e79eb",
+      "main_blob": "562fb94803a0f2bbf041d13558ea072bf93e79eb",
+      "byte_identical": true
+    },
+    {
+      "path": "MANIFEST.yaml",
+      "branch_blob": "a1ff9e2a690698114fcbc0be86dc8c2d3b4e4f9d",
+      "main_blob": "fd099d1f7be57e2bc333d55c987312d0e15d131a",
+      "byte_identical": false
+    },
+    {
+      "path": "README.md",
+      "branch_blob": "40bf179349bf4e9581314fba9a60e1a24bcd7958",
+      "main_blob": "40bf179349bf4e9581314fba9a60e1a24bcd7958",
+      "byte_identical": true
+    },
+    {
+      "path": "ROADMAP.md",
+      "branch_blob": "cbb1ff8a26fb831920cb3ccf61b88cbef74a5d12",
+      "main_blob": "32cc51517fedc8862c0828ebb0379999f949095b",
+      "byte_identical": false
+    },
+    {
+      "path": "docs/MANIFEST.yaml",
+      "branch_blob": "a1ff9e2a690698114fcbc0be86dc8c2d3b4e4f9d",
+      "main_blob": "fd099d1f7be57e2bc333d55c987312d0e15d131a",
+      "byte_identical": false
+    },
+    {
+      "path": "docs/README.md",
+      "branch_blob": "40bf179349bf4e9581314fba9a60e1a24bcd7958",
+      "main_blob": "40bf179349bf4e9581314fba9a60e1a24bcd7958",
+      "byte_identical": true
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "branch_blob": "cbb1ff8a26fb831920cb3ccf61b88cbef74a5d12",
+      "main_blob": "32cc51517fedc8862c0828ebb0379999f949095b",
+      "byte_identical": false
+    },
+    {
+      "path": "docs/compare.html",
+      "branch_blob": "ebdd7c3d9c486ed93b1779a11d2220737725dd75",
+      "main_blob": "b46f0c8b89f9ef05ef46528b51fa725e478a2f76",
+      "byte_identical": false
+    },
+    {
+      "path": "ops/handoff-reconciliation-2026-11-18.md",
+      "branch_blob": "e9869e6a5ea6ba7064f36d35bd50b65b2763d348",
+      "main_blob": null,
+      "byte_identical": false
+    },
+    {
+      "path": "scripts/build.js",
+      "branch_blob": "f8d57492717488ff20e44f802c525bc21da9874d",
+      "main_blob": "ab430b7d493abdc39343fa53174688c22ee235d0",
+      "byte_identical": false
+    },
+    {
+      "path": "scripts/check-production-search.mjs",
+      "branch_blob": "4804c29324cf39cdacd690dc4ad2ac3d7c372598",
+      "main_blob": "4804c29324cf39cdacd690dc4ad2ac3d7c372598",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/check-search.mjs",
+      "branch_blob": "d0c780728a914c96b1aae9ccb98cad32fd2dc099",
+      "main_blob": "d0c780728a914c96b1aae9ccb98cad32fd2dc099",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/eval-scheduled-verification.js",
+      "branch_blob": "0473d2fb9c2796a35f245877d4c888a7f6319930",
+      "main_blob": "0473d2fb9c2796a35f245877d4c888a7f6319930",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/eval-search-structured-data.js",
+      "branch_blob": "27d3185d3b1e6116c62558fb1bbd251fe8b1104e",
+      "main_blob": "27d3185d3b1e6116c62558fb1bbd251fe8b1104e",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/eval-workflow-invariants.js",
+      "branch_blob": "423fddb0e46d94b6b821fbd85cb9a093e10380e1",
+      "main_blob": "423fddb0e46d94b6b821fbd85cb9a093e10380e1",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/lib/build-safety.js",
+      "branch_blob": "b349b23c0066a0d5e286f2ad593ca969ef43d0f3",
+      "main_blob": "b349b23c0066a0d5e286f2ad593ca969ef43d0f3",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/lib/production-search-transport.mjs",
+      "branch_blob": "52a0fb23579ed02023e6308ab15c0995a07df613",
+      "main_blob": "52a0fb23579ed02023e6308ab15c0995a07df613",
+      "byte_identical": true
+    },
+    {
+      "path": "scripts/verify-ci.js",
+      "branch_blob": "19c23a3d7a8f92a9d1aa557327bb0026ceec7006",
+      "main_blob": "19c23a3d7a8f92a9d1aa557327bb0026ceec7006",
+      "byte_identical": true
+    },
+    {
+      "path": "tests/build-safety.test.js",
+      "branch_blob": "566881959e9354680cabb8c351da1c18480445cd",
+      "main_blob": "566881959e9354680cabb8c351da1c18480445cd",
+      "byte_identical": true
+    },
+    {
+      "path": "tests/production-search-boundary.test.mjs",
+      "branch_blob": "5ed9a569296f7b6843e57e22e1eb5fdccdea69e1",
+      "main_blob": "5ed9a569296f7b6843e57e22e1eb5fdccdea69e1",
+      "byte_identical": true
+    }
+  ],
+  "conflict_paths": [
+    "MANIFEST.yaml",
+    "ROADMAP.md",
+    "docs/MANIFEST.yaml",
+    "docs/ROADMAP.md"
+  ],
+  "deliveries": [
+    {
+      "number": 27,
+      "url": "https://github.com/snapsynapse/publedge/pull/27",
+      "title": "Correct HB452 disclosure and protected-data exceptions",
+      "reviewed_head": "8acfe417aba68f70711ee1107dc736979af11a81",
+      "merge": "d3ee6947a0f479d93f614c38b6cbe8ecc634609b",
+      "merged_at": "2026-10-15T05:54:07Z"
+    },
+    {
+      "number": 28,
+      "url": "https://github.com/snapsynapse/publedge/pull/28",
+      "title": "fix(utah): bridge enrolled and current citations",
+      "reviewed_head": "ee20a99cdc39de7418828019b746e22ef0fb9f06",
+      "merge": "2475ff6d974d2da6982f194c58e43f8dec90883a",
+      "merged_at": "2026-10-15T06:56:26Z"
+    },
+    {
+      "number": 32,
+      "url": "https://github.com/snapsynapse/publedge/pull/32",
+      "title": "fix: qualify verification claims and retain an offline Utah example",
+      "reviewed_head": "b664187cc52add498fa1c25e645ee74bac44cd54",
+      "merge": "9fafa1ca8d26d4b23a818188ef7f6dfab87b1a16",
+      "merged_at": "2026-11-04T07:25:20Z"
+    },
+    {
+      "number": 33,
+      "url": "https://github.com/snapsynapse/publedge/pull/33",
+      "title": "Preserve retained RMA qualifications and Colorado history uncertainty",
+      "reviewed_head": "03817428cbd595f686e670d04447e2d20fa3b21c",
+      "merge": "8c4713d8adc8b63e5d547b866511e3c7e75a7d31",
+      "merged_at": "2026-11-09T02:04:25Z"
+    },
+    {
+      "number": 34,
+      "url": "https://github.com/snapsynapse/publedge/pull/34",
+      "title": "Preserve PubLedge search decoding and maintenance boundaries",
+      "reviewed_head": "51047c46d06c8d65bef2a01b8fd3d93da30bcaa6",
+      "merge": "694899a964704ed4f979f2c0d8d971c23c4465c2",
+      "merged_at": "2026-11-19T08:04:07Z"
+    },
+    {
+      "number": 35,
+      "url": "https://github.com/snapsynapse/publedge/pull/35",
+      "title": "Contain PubLedge build paths and comparison rendering",
+      "reviewed_head": "9bef7a3902cde5deb2382a592722b699fb2412db",
+      "merge": "d00a5690f63fff7a8c7b76790f6c68745c00b0a4",
+      "merged_at": "2026-11-19T08:15:34Z"
+    },
+    {
+      "number": 36,
+      "url": "https://github.com/snapsynapse/publedge/pull/36",
+      "title": "Bound PubLedge production search transport",
+      "reviewed_head": "913af8563bdc40656433b8fee007ce664d4e8da5",
+      "merge": "cae85e98dbf176f52842e9eaeea060e4bf3b9c57",
+      "merged_at": "2026-11-19T08:25:28Z"
+    },
+    {
+      "number": 37,
+      "url": "https://github.com/snapsynapse/publedge/pull/37",
+      "title": "Pin PubLedge workflow actions and verification invariants",
+      "reviewed_head": "db62dee451841fbf51b9a4d6c24cea0580b2f4c6",
+      "merge": "647716f15e08e0eade0e0d94caa0032c9fa2a2a8",
+      "merged_at": "2026-11-19T08:35:06Z"
+    },
+    {
+      "number": 39,
+      "url": "https://github.com/snapsynapse/publedge/pull/39",
+      "title": "Add a synthetic RUML rulemap publication example",
+      "reviewed_head": "e5610ca73638d4b4438fd922e8f1fe05d9186d24",
+      "merge": "550e5606a54a67cc6562bda81e0fa2e8f8a547e0",
+      "merged_at": "2026-11-25T05:15:12Z"
+    },
+    {
+      "number": 40,
+      "url": "https://github.com/snapsynapse/publedge/pull/40",
+      "title": "Add an unresolved instrument status and apply it to the Doctronic RMA",
+      "reviewed_head": "c88167c148e5719963dd1916263be3a35f89b18f",
+      "merge": "1eeb9f72492d869115d158c8288805c3f3e05a10",
+      "merged_at": "2026-11-26T05:23:56Z"
+    },
+    {
+      "number": 41,
+      "url": "https://github.com/snapsynapse/publedge/pull/41",
+      "title": "Refresh public instrument sources and scope Legion evidence",
+      "reviewed_head": "c841614cf1a2441e4b3203f816f58d2fd82ac016",
+      "merge": "4392549be52703b801554f546b8adb1c298f8dc2",
+      "merged_at": "2026-11-27T19:47:05Z"
+    }
+  ],
+  "main_runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 46059111587,
+      "headSha": "4392549be52703b801554f546b8adb1c298f8dc2",
+      "name": "pages build and deployment",
+      "status": "completed",
+      "url": "https://github.com/snapsynapse/publedge/actions/runs/46059111587"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 46059112001,
+      "headSha": "4392549be52703b801554f546b8adb1c298f8dc2",
+      "name": "CI",
+      "status": "completed",
+      "url": "https://github.com/snapsynapse/publedge/actions/runs/46059112001"
+    }
+  ],
+  "issue_29_state": "OPEN",
+  "retained_primary_evidence": [
+    {
+      "path": ".verification-reports/doctronic-live-20261015",
+      "files": 5
+    },
+    {
+      "path": ".verification-reports/utah-codification-20261015",
+      "files": 20
+    },
+    {
+      "path": ".verification-reports/utco-quick-validation-20261015",
+      "files": 45
+    },
+    {
+      "path": "_codex-out/link-check.md",
+      "files": 1
+    },
+    {
+      "path": "_codex-out/link-ledger.json",
+      "files": 1
+    },
+    {
+      "path": "_codex-out/sources/links",
+      "files": 596
+    }
+  ],
+  "missing_temporary_logs": [
+    "/private/tmp/publedge-docs-canonical-check.log",
+    "/private/tmp/publedge-handoff-ci-20261118.log",
+    "/private/tmp/publedge-handoff-exact-ci-20261118.log"
+  ],
+  "recovery": {
+    "directory": ".git/codex-local-gates/handoff-maintenance-review-20261127",
+    "bundle_sha256": "222ac04f4f720f65bfd695e393bd872fee341439b982f2067dab730df662442c",
+    "archive_sha256": "fcf3c9f61fd2c411730fdd959d4a0e9251473c5bc86ed83c5387f10543964d3a",
+    "self_contained_bundle": true,
+    "independent_mirror_recovery": true,
+    "full_object_integrity": true,
+    "archive_members_verified": 1942
+  },
+  "limits": [
+    "Repository and retained-evidence reconciliation only; no new legal-source observation or human-date renewal.",
+    "Historical browser, source and gate reports retain their dated scope; missing temporary logs were not recovered.",
+    "CI and Pages success do not establish new hosted production-search acceptance, package identity or MCP publication.",
+    "No original handoff file is copied into the candidate. Full original Git history is preserved in the local recovery bundle.",
+    "The original assessment prepared an unapplied patch without source edits, commits, pushes, merges, ref deletion or worktree cleanup. Subsequent delivery and retirement require their own evidence."
+  ]
+}

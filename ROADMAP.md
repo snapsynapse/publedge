@@ -10,6 +10,7 @@ status: living
 Living housekeeping document. Tracks what shipped, what's pending, and what's deferred. Updated as milestones move. The original workshop plan lives at [_workshop/ROADMAP.md](_workshop/ROADMAP.md) and is frozen as historical record.
 
 ## Current bounded maintenance queue
+The [bounded maintenance record](https://github.com/snapsynapse/publedge/blob/main/ops/maintenance-queue.md) reconciles delivered work, dated evidence and remaining source, renderer and acceptance limits.
 Maintenance remains limited to existing-record fidelity, Obligation-First compatibility, and integration demanded by an active consumer, as scoped in [INTENT.md](INTENT.md). The unresolved Doctronic post-term finding is [issue #29](https://github.com/snapsynapse/publedge/issues/29); dated Utah and OAIP evidence remains under [ops/evidence/](ops/evidence/), including [the OAIP coverage review](ops/evidence/oaip-coverage-review-2026-10-14.json). The search decoder correction is covered by `eval:search-structured-data` for both source and production checks. These engineering checks do not admit legal sources or renew record dates. The [RUML publication example](reference/RUML-PUBLICATION-EXAMPLE.md) is a synthetic documentation example over the reviewed Obligation-First RUML fixture; it separates model publication, model approval and legal issuance and is not an adopter demand signal.
 
 ## Current version

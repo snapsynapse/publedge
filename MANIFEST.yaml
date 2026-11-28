@@ -483,7 +483,7 @@ files:
 
   - path: ROADMAP.md
     role: protocol
-    hash: sha256:cda231ef794901fd670f30f0ec3f99801a6dddca65d17089a5dc1f8250886b3c
+    hash: sha256:d6da63a2fceb9baec63baaed58662665609f09a2d3d3a63c70990ade90f03770
     note: ROADMAP.md
 
   - path: INTENT.md
